@@ -1,21 +1,21 @@
 ---
-title: Datenansichten und Zuordnung konfigurieren
-description: Beschreibt das Erstellen einer Datenansicht für einen Plattformdatensatz in Customer Journey Analytics
+title: Ansichten und Zuordnungen von Daten konfigurieren
+description: Beschreibt das Erstellen einer Ansicht zu einem Plattformdatensatz in Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 ---
 
 
 # Komponenten- und Zuordnungseinstellungen
 
-eVars, Props und Ereignisse im klassischen Adobe Analytics-Sinne existieren nicht mehr in Customer Journey Analytics. Stattdessen haben Sie unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie während des Datenerfassungsprozesses für eVars und Props verwendet haben, werden jetzt zur Abfragezeit angewendet - auch als Berichtszeitverarbeitung bezeichnet.
+eVars, Props und Ereignis im klassischen Adobe Analytics-Sinne gibt es in Customer Journey Analytics nicht mehr. Stattdessen verfügen Sie über unbegrenzte Schema-Elemente (Dimensionen, Metriken, Listen). Alle Zuordnungseinstellungen, die Sie während des Datenerfassungsprozesses für eVars und Props verwendet haben, werden jetzt zur Abfrage angewendet - auch als Berichtszeitverarbeitung bezeichnet.
 
 Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) , um eine Videoübersicht zu erhalten.
 
 Berücksichtigen Sie dies, bevor Sie Zuordnungseinstellungen anwenden:
 
-* In der Benutzeroberfläche &quot;Datenansichten&quot;geben Sie die Standardzuordnung an. **Hinweis**: Zu einem späteren Zeitpunkt können Sie diese Einstellungen in Workspace-Projekten überschreiben. Diese Funktion ist jedoch derzeit nicht verfügbar.
+* In der Benutzeroberfläche &quot;Data Ansichten&quot;geben Sie die Standardzuordnung an. **Hinweis**: Zu einem späteren Zeitpunkt können Sie diese Einstellungen in Workspace-Projekten überschreiben. Diese Funktion ist jedoch derzeit nicht verfügbar.
 
 * Zuordnungseinstellungen in Customer Journey Analytics sind nicht destruktiv und rückwirkend. Mit anderen Worten, Sie können Ihren Datensätzen in Customer Journey Analytics keinen irreparablen Schaden zufügen. Auch wenn Sie versehentlich etwas löschen, können Sie jederzeit zu Experience Platform zurückkehren und den Datensatz wieder in das Programm aufnehmen. (Beachten Sie jedoch, dass die Wiedereinsetzung des Datensatzes zusätzliche Kosten verursacht.)
 
@@ -29,16 +29,16 @@ Berücksichtigen Sie dies, bevor Sie Zuordnungseinstellungen anwenden:
 
 ## Festlegen von Komponenten- und Zuordnungseinstellungen
 
-Nachdem Sie die Einstellungen [für die Datenansicht](/help/data-views/create-dataview.md) festgelegt und gespeichert und Komponenten hinzugefügt haben, können Sie, falls gewünscht, Zuordnungseinstellungen angeben. Sie können Zuordnungs-/Ablauf-/Lookback-Einstellungen für Dimensionen und Metriken angeben. Wenn Sie z. B. möchten, dass die Zuordnung einer Dimension beibehalten wird, sollten Sie eine benutzerdefinierte Ablaufzeit festlegen. Wenn Sie z. B. die Dimension &quot;Rückverfolgungscode&quot;(eine Kampagnenvariable) auf &quot;Letztkontakt&quot;-Zuordnung setzen möchten, um eine Woche lang bestehen zu bleiben, fügen Sie einen benutzerdefinierten Ablauf von 1 Woche hinzu.
+Nachdem Sie die Einstellungen [für die Ansicht der Daten](/help/data-views/create-dataview.md) festgelegt und gespeichert und Komponenten hinzugefügt haben, können Sie, falls gewünscht, Zuordnungseinstellungen angeben. Sie können Zuordnungs-/Ablauf-/Lookback-Einstellungen für Dimensionen und Metriken angeben. Wenn Sie z. B. möchten, dass die Zuordnung einer Dimension beibehalten wird, sollten Sie eine benutzerdefinierte Ablaufzeit festlegen. Wenn Sie z. B. die Dimension &quot;Rückverfolgungscode&quot;(eine Campaign-Variable) auf &quot;Letztkontakt&quot;-Zuordnung setzen möchten, um eine Woche lang bestehen zu bleiben, fügen Sie einen benutzerdefinierten Ablauf von 1 Woche hinzu.
 
 >[!IMPORTANT]
->Sie können festlegen, dass keine Zuordnung/kein Ablauf festgelegt wird. In diesem Fall verhalten sich Dimensionen wie ... . Metriken ohne Zuordnungseinstellungen übernehmen die Einstellungen für die Dimension, auf die diese Metrik angewendet wird.
+>Sie können festlegen, dass keine Zuordnung/kein Ablauf festgelegt wird. In diesem Fall verhalten sich Dimensionen wie Props (&quot;Same Touch&quot;-Zuordnungsmodell). Metriken ohne Zuordnungseinstellungen übernehmen die Einstellungen für die Dimension, auf die diese Metrik angewendet wird.
 
 ![](assets/edit-component.png)
 
 1. Geben Sie Komponenten- und Zuordnungseinstellungen für Dimensionen und Metriken an. Informationen zu den einzelnen Einstellungen finden Sie unten.
 
-1. Klicken Sie auf **[!UICONTROL Save]** , um Ihre Datenansicht zu speichern.
+1. Klicken Sie auf **[!UICONTROL Save]** , um Ihre Daten-Ansicht zu speichern.
 
 
 ### Komponenteneinstellung
@@ -47,7 +47,7 @@ Sie können den Namen der Metrik oder Dimension in etwas benutzerfreundlicheres 
 
 ### Attributionsmodell
 
-Das Modell beschreibt die Verteilung von Konversionen an die Ereignisse in einer Gruppe. Zum Beispiel Erstkontakt oder Letztkontakt Legt fest, wie Customer Journey Analytics Gutschriften für ein Erfolgsereignis zuweist, wenn eine Variable mehrere Werte vor dem Ereignis erhält.
+Das Modell beschreibt die Verteilung der Konvertierungen an die Ereignis einer Gruppe. Zum Beispiel Erstkontakt oder Letztkontakt Legt fest, wie Customer Journey Analytics Gutschriften für ein Erfolgsereignis zuweist, wenn eine Variable mehrere Ereignis vor dem Ereignis erhält.
 
 | Benutzeroberflächensymbol | Attributionsmodell | Definition | Verwendungsbereiche |
 | --- | --- | --- | --- |
@@ -64,13 +64,13 @@ Das Modell beschreibt die Verteilung von Konversionen an die Ereignisse in einer
 
 ### Gültigkeit
 
-Gibt einen Zeitraum oder ein Ereignis an, nach dem der Dimensionswert abläuft (d. h. keine Gutschrift mehr für Erfolgsereignisse erhält). Sie können den Zuordnungsablauf auf Sitzungs-, Personen- oder benutzerspezifischer Ebene festlegen.
+Gibt einen Zeitraum oder ein Ereignis an, nach dem der Dimensionswert abläuft (d. h. keine Gutschrift mehr für Ereignis mit Erfolg erhält). Sie können den Zuordnungsablauf auf Sitzungs-, Personen- oder benutzerspezifischer Ebene festlegen.
 
 | Einstellung | Definition |
 |---|---|
-| Sitzung | Zuvor als &quot;Besuchsebene&quot;bezeichnet. Konversionsereignisse, die über die Seitenansicht oder Sitzung hinausgehen, sind nicht mit der Dimension oder Metrik verknüpft. |
-| Person (Berichtsfenster) | Zuvor als &quot;Besucherebene&quot;bezeichnet. Konversionsereignisse, die nicht mit dieser Person verbunden sind, sind nicht mit der Dimension oder Metrik verknüpft. |
-| Benutzerdefinierte Zeit | Geben Sie die benutzerdefinierten Minuten, Stunden, Tage, Monate oder Quartale an. Konversionsereignisse, die über den angegebenen Zeitraum hinausgehen, werden nicht mit der Dimension oder Metrik verknüpft. |
+| Sitzung | Zuvor als &quot;Besuchsebene&quot;bezeichnet. Umrechnungselemente, die über die Ansicht oder Sitzung hinausgehen, sind nicht mit der Dimension oder Metrik verknüpft. |
+| Person (Berichte) | Zuvor als &quot;Besucher&quot;bezeichnet. Umrechnungselemente, die nicht mit dieser Person verbunden sind, sind nicht mit der Dimension oder Metrik verknüpft. |
+| Benutzerdefinierte Zeit | Geben Sie die benutzerdefinierten Minuten, Stunden, Tage, Monate oder Quartale an. Konversionsdaten, die über den angegebenen Zeitraum hinausgehen, werden nicht mit der Dimension oder Metrik verknüpft. |
 
 Weitere Informationen finden Sie im Dokument [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
 
@@ -78,5 +78,5 @@ Weitere Informationen finden Sie im Dokument [Attribution IQ](https://docs.adobe
 
 Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend bei der Erfassung von Touchpoints berücksichtigt werden sollte. Attributionsmodelle, die der ersten Interaktion mehr Gewicht zuschreiben, sehen bei der Anzeige verschiedener Lookback-Fenster größere Unterschiede.
 
-* **Sitzung:** Sieht bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Die Lookback-Fenster für Besuche sind schmal, da sie nicht über die Sitzung hinausblicken. Sitzungs-Lookback-Fenster berücksichtigen die geänderte Besuchsdefinition in Datenansichten.
-* **Person (Berichtsfenster):** Betrachtet alle Sitzungen bis zum 1. des Monats des aktuellen Datumsbereichs. Die Lookback-Fenster für Personen sind breit, da sie viele Sitzungen umfassen können. Wenn der Datumsbereich des Berichts beispielsweise der 15. September bis 30. September ist, umfasst der Datumsbereich für die Personensuche den 1. September bis den 30. September.
+* **Sitzung:** Sieht bis zum Beginn einer Sitzung zurück, in der eine Konversion stattgefunden hat. Die Lookback-Fenster für Besuche sind schmal, da sie nicht über die Sitzung hinausblicken. Sitzungs-Lookback-Fenster berücksichtigen die geänderte Besuchsdefinition in den Ansichten.
+* **Person (Berichte):** Betrachtet alle Sitzungen bis zum 1. des Monats des aktuellen Datumsbereichs. Die Lookback-Fenster für Personen sind breit, da sie viele Sitzungen umfassen können. Wenn der Datumsbereich des Berichts beispielsweise der 15. September bis 30. September ist, umfasst der Datumsbereich für die Personensuche den 1. September bis den 30. September.
