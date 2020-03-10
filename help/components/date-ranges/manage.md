@@ -1,12 +1,38 @@
 ---
 title: Datumsbereiche verwalten
-description: Freigeben, Umbenennen oder Löschen von Datumsbereichen im Analysis Workspace.
+description: Freigeben, Umbenennen oder Löschen von Datumsbereichen im Arbeitsbereich für Analysen.
 translation-type: tm+mt
-source-git-commit: 076ee40e5aef1773976545692378f1b8a55089d4
+source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
 
 ---
 
 
 # Datumsbereiche verwalten
 
-Inhalt in Kürze verfügbar!
+Verwenden Sie den Datumsbereich-Manager, um Datumsbereiche freizugeben, umzubenennen oder zu löschen. So erreichen Sie den Datums-Manager:
+
+1. Melden Sie sich mit Ihren AdobeID-Anmeldeinformationen bei [analytics.adobe.com](https://analytics.adobe.com) an.
+1. Navigieren Sie zu [!UICONTROL Components] > [!UICONTROL Date Ranges].
+
+## Schnittstelle
+
+![Benutzeroberfläche](../assets/date-range-ui.png)
+
+Der Datumsbereich-Manager umfasst die folgenden Optionen:
+
+* **Hinzufügen**: Erstellen Sie einen neuen Datumsbereich. Weitere Informationen finden Sie unter [Datumsbereich](create.md) erstellen.
+* **Suche nach Titel**: Suchen Sie nach einem Datumsbereich nach Titel. Die Ergebnisse werden basierend auf dem hier eingegebenen Text gefiltert.
+* **Filter**: Filtern Sie Datumsbereiche mithilfe der linken Spalte. Sie können nach benutzerdefiniertem Tag, Inhaber, erstellt von Ihnen, Ihren Favoriten, genehmigt oder für Sie freigegeben filtern. Sie können auch nach gewünschten Filtern suchen.
+* **Favorit**: Klicken Sie auf das ![Sternsymbol](../assets/star.png) neben einem Datumsbereich, um ihn Ihren Favoriten hinzuzufügen.
+* **Spalten** anpassen: Klicken Sie auf das Symbol ![Spalten](../assets/columns.png) , um Spalten im Datumsbereich-Manager ein- oder auszublenden.
+
+Aktivieren Sie das Kontrollkästchen neben einem oder mehreren Datumsbereichen, um weitere Optionen anzuzeigen.
+
+* **Tag**: Wenden Sie ein Tag auf alle ausgewählten Datumsbereiche an. Mit Tags können Sie Datumsbereiche organisieren und mithilfe der linken Spalte filtern.
+* **Freigeben**: Freigeben eines Tags für andere Experience Cloud-Benutzer Wenn Sie Produktadministrator sind, können Sie die Freigabe auch für das gesamte Unternehmen oder die gesamte Gruppe durchführen. Datumsbereiche, die für andere Benutzer in Ihrer Organisation freigegeben wurden, enthalten ein ![freigegebenes](../assets/shared.png) Symbol neben dem Titel.
+* **Löschen**: Löschen Sie die ausgewählten Datumsbereiche endgültig.
+* **Umbenennen**: Wenn ein einzelner Datumsbereich ausgewählt ist, können Sie dessen Titel ändern.
+* **Genehmigen**: Als Produktadministrator können Sie einem Datumsbereich einen Genehmigungsstempel hinzufügen. Genehmigte Datumsbereiche informieren Benutzer in Ihrer Organisation, dass sie &quot;offiziell&quot;sind, und unterscheiden sie von Datumsbereichen, die von anderen Benutzern in Ihrer Organisation erstellt wurden. Genehmigte Datumsbereiche enthalten ein ![genehmigtes](../assets/approved.png) Symbol neben dem Titel.
+* **Nicht genehmigen**: Wenn Sie ein Produktadministrator sind und einen Datumsbereich auswählen, der bereits genehmigt wurde, können Sie die Genehmigung aufheben.
+* **Kopieren**: Erstellen Sie eine Kopie des/der ausgewählten Datumsbereiche. Das Kopieren von Datumsbereichen wird an das Ende des Titels des/der neu kopierten Datumsbereichs(s) angehängt. `(Copy)`
+* **In CSV** exportieren: Exportiert alle ausgewählten Datumsbereiche in eine CSV-Datei. Spalten in der resultierenden CSV-Datei enthalten alle sichtbaren Spalten im Datumsbereich-Manager.
