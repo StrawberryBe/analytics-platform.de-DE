@@ -2,7 +2,7 @@
 title: Häufig gestellte Fragen zu Customer Journey Analytics
 description: Customer Journey Analytics - Häufig gestellte Fragen.
 translation-type: tm+mt
-source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 | **Voraussetzungen** |  |
 | Benötigen Sie Gerätediagramm oder Gerätecoop für Customer Journey Analytics? | Nein, für Customer Journey Analytics sind kein eigenes Gerätediagramm oder keine Gerätekopie erforderlich. Tatsächlich werden sie noch nicht unterstützt. |
 | Benötigen Sie Experience Cloud ID (ECID) für Customer Journey Analytics? | Nein, Customer Journey Analytics unterstützt alle IDs in einem Datensatz, unabhängig davon, ob es sich um ECID oder eine andere ID handelt, die Sie auswählen. |
-| Was ist, wenn Sie Ihre Daten vor der Customer Journey Analytics ETL eingeben müssen? | Heute müssen Sie mit einem ETL-Partner (Unifi oder Informatica) zusammenarbeiten, wenn Sie Ihre Daten umwandeln müssen, bevor Sie sie in AEP einfügen. Wenn Sie ETL benötigen, nachdem die Daten bereits erfasst wurden, bietet AEP Abfrage Services einige eingeschränkte Optionen. |
+| Was ist, wenn Sie Ihre Daten vor der Customer Journey Analytics ETL (Extract, Transform, Load) ausgeben müssen? | Heute müssen Sie mit einem ETL-Partner (Unifi oder Informatica) zusammenarbeiten, wenn Sie Ihre Daten umwandeln müssen, bevor Sie sie in AEP einfügen. Wenn Sie ETL benötigen, nachdem die Daten bereits erfasst wurden, bietet AEP Abfrage Services einige eingeschränkte Optionen. |
 | **Sticken** |  |
 | Kann die Customer Journey Analytics geräteübergreifend oder über Datensätze hinweg &quot;zuordnen&quot;? | Nein. Customer Journey Analytics ist ein &quot;bring-your-own-ID&quot;-Analysesystem. Pläne für einen guten Nähansatz liegen in der Arbeit. |
 | Wird das Zuordnen vom anonymen Verhalten zum authentifizierten Verhalten unterstützt? | Nein, das ist noch nicht möglich. |
