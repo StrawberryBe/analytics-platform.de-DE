@@ -2,39 +2,18 @@
 title: Anwendungsfälle für Customer Journey Analytics
 description: Anwendungsfälle für Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 1cddd8624826bddb89c9b362ec91a2c0c30c7a6f
+source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 
 ---
 
 
 # Anwendungsfälle für Customer Journey Analytics
 
-Adobe arbeitet derzeit mit Kunden an der Erstellung von Anwendungsfällen. Achten Sie regelmäßig auf Updates.
+Customer Journey Analytics ermöglicht die folgenden wichtigen Anwendungsfälle:
 
-<!-- ## Report on full cross-channel customer journey for customers with high customer ID (join key) coverage
-
-More detail here.
-
-## Report on and visualize any event dataset in an interactive way
-
-Details
-
-## Combine datasets keyed off of ECID such as Analytics, Triggered Journeys, Target, and AAM data
-
-Details.
-
-## Report interactively on XDM data collection or Experience Edge deployments
-
-Details
-
-## Build "manually stitched" versions of your data to analyze
-
-Details
-
-## Analyze multi-channel data in Analysis Workspace even if unstitched
-
-Details
-
-## Combine multiple report suites
-
-Details -->
+* **Betrachten Sie den Kunden in einem Reisekontext**: Sie können Daten sequenziell über mehrere Kanal hinweg Ansicht und analysieren. Daten aus Call-Center, Point-of-Sale-Systemen und Online-Eigenschaften können zu einer einzigen Berichte-Ansicht kombiniert werden.
+* **Machen Sie allen** Einblicke zugänglich: Demokratisieren Sie den Datenzugriff und lassen Sie mehr Menschen Geschäftsentscheidungen mit datengestützten Erkenntnissen treffen. Jeder Mitarbeiter des Unternehmens, der für alle Aspekte der Kundenerfahrung verantwortlich ist, kann anhand vollständigerer Daten schneller echte Entscheidungen treffen.
+* **Nutzen Sie die Kraft der Datenwissenschaft für Ihre Analysten**: Customer Journey Analytics ermöglicht es normalen Menschen, mithilfe von Datenwissenschaften tiefe Einblicke und Analyse zu gewinnen.
+* **Visualisieren und interagieren Sie mit Ihren Datensets mithilfe von Ad-hoc-Berichten**: Workspace kann jeden Datensatz aus Adobe Experience Platform verwenden, der einigen grundlegenden Regeln entspricht.
+* **Nicht-Webdaten** der Ansicht: Workspace ist nicht mehr auf eine starre Definition von &quot;Treffer&quot;oder &quot;Ereignis&quot;beschränkt. Benutzerdefinierte Schema ermöglichen die vollständige Kontrolle über Daten und Definitionen.
+* **Verbessern Sie die Kontrolle über Ihre Datenbearbeitung**: Ändern Sie die hochgeladenen Daten, erstellen Sie neue Datensätze und importieren Sie sie in Workspace. Adobe Experience Platform bietet Werkzeuge zum Abfragen, Extrahieren, Transformieren und Laden über den Experience Cloud Abfrage Service.
