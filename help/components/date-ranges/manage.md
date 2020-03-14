@@ -2,7 +2,7 @@
 title: Datumsbereiche verwalten
 description: Freigeben, Umbenennen oder Löschen von Datumsbereichen im Arbeitsbereich für Analysen.
 translation-type: tm+mt
-source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
+source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 ---
 
@@ -29,8 +29,8 @@ Der Datumsbereich-Manager umfasst die folgenden Optionen:
 Aktivieren Sie das Kontrollkästchen neben einem oder mehreren Datumsbereichen, um weitere Optionen anzuzeigen.
 
 * **Tag**: Wenden Sie ein Tag auf alle ausgewählten Datumsbereiche an. Mit Tags können Sie Datumsbereiche organisieren und mithilfe der linken Spalte filtern.
-* **Freigeben**: Freigeben eines Tags für andere Experience Cloud-Benutzer Wenn Sie Produktadministrator sind, können Sie die Freigabe auch für das gesamte Unternehmen oder die gesamte Gruppe durchführen. Datumsbereiche, die für andere Benutzer in Ihrer Organisation freigegeben wurden, enthalten ein ![freigegebenes](../assets/shared.png) Symbol neben dem Titel.
-* **Löschen**: Löschen Sie die ausgewählten Datumsbereiche endgültig.
+* **Freigeben**: Geben Sie einen Datumsbereich für andere Experience Cloud-Benutzer frei. Wenn Sie Produktadministrator sind, können Sie die Freigabe auch für das gesamte Unternehmen oder die gesamte Gruppe durchführen. Datumsbereiche, die für andere Benutzer in Ihrer Organisation freigegeben wurden, enthalten ein ![freigegebenes](../assets/shared.png) Symbol neben dem Titel.
+* **Löschen**: Ausgewählte Datumsbereiche endgültig löschen.
 * **Umbenennen**: Wenn ein einzelner Datumsbereich ausgewählt ist, können Sie dessen Titel ändern.
 * **Genehmigen**: Als Produktadministrator können Sie einem Datumsbereich einen Genehmigungsstempel hinzufügen. Genehmigte Datumsbereiche informieren Benutzer in Ihrer Organisation, dass sie &quot;offiziell&quot;sind, und unterscheiden sie von Datumsbereichen, die von anderen Benutzern in Ihrer Organisation erstellt wurden. Genehmigte Datumsbereiche enthalten ein ![genehmigtes](../assets/approved.png) Symbol neben dem Titel.
 * **Nicht genehmigen**: Wenn Sie ein Produktadministrator sind und einen Datumsbereich auswählen, der bereits genehmigt wurde, können Sie die Genehmigung aufheben.
