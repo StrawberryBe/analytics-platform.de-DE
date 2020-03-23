@@ -15,7 +15,7 @@ Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UIC
 
 Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
 
-## Was bedeutet der Parameter „Include-Zeros“?
+## Was bedeutet der Parameter „Include-Zeros“? 
 
 Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. In manchen Fällen bedeutet eine Null „nichts“, in anderen Fällen kann sie aber auch wichtig sein.
 
@@ -48,9 +48,9 @@ Approximate Count Distinct (dimension)
 
 | Argument |  |
 |---|---|
-| *dimension* | Die Dimension, für die Sie den ungefähren Distinct Count für Elemente ermitteln möchten. |
+| *Dimension* | Die Dimension, für die Sie den ungefähren Distinct Count für Elemente ermitteln möchten. |
 
-## Beispielanwendungsfall
+## Beispielanwendungsfall 
 
 Ungefährer Distinct Count (Kunden-ID-eVar) ist ein typischer Anwendungsfall für diese Funktion.
 
@@ -62,11 +62,11 @@ So könnte die „Ungefähre Kunden“-Metrik für Berichte verwendet werden:
 
 ![](assets/approx-customers.png)
 
-## Individuelle Werte überschritten
+## Individuelle Werte überschritten 
 
 Ebenso wie Count() und RowCount() unterliegt Ungefährer Distinct Count() [„Uniques überschritten“-Beschränkungen](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html). Wird für eine Dimension in einem bestimmten Monat die „Uniques überschritten“-Beschränkung erreicht, wird der Wert als 1 Dimensionselement gezählt.
 
-## Vergleich von Count-Funktionen
+## Vergleich von Count-Funktionen 
 
 Ungefährer Distinct Count() ist eine Verbesserung im Vergleich zu Count()- und RowCount()-Funktionen, da die dadurch erstellte Metrik in allen Dimensionsberichten verwendet werden kann, um eine ungefähre Elementanzahl für eine separate Dimension zu rendern. Beispielsweise wird eine Anzahl an Kunden-IDs in einem Bericht zu Mobilgerätetypen verwendet.
 
@@ -135,7 +135,7 @@ cdf_t( x, ∞ ) ? cdf_z( x )
 
 ## Cdf-Z
 
-Gibt den Prozentsatz von Werten in einer Normalverteilung zurück, die einen z-Wert unter x aufweisen.
+Gibt den Prozentsatz von Werten in einer normalen Verteilung zurück, die einen z-Wert unter x aufweisen.
 
 ```
 cdf_z( -∞ ) = 0 
@@ -465,7 +465,7 @@ Gibt die Konstante PI (3,14159265358979) mit 15 Stellen zurück.
 PI()
 ```
 
-Die Funktion [!DNL PI] weist keine Argumente auf.
+Die Funktion [!DNL PI]weist keine Argumente auf.
 
 ## Potenzregression: Korrelationskoeffizient (Tabelle)
 
@@ -679,7 +679,7 @@ TAN (metric)
 
 ## z-Transformation (Zeile)
 
-Gibt die z-Transformation oder Normaltransformation basierend auf einer Normalverteilung zurück. Die z-Transformation ist die Anzahl der Standardabweichungen, die eine Beobachtung vom arithmetischen Mittel darstellt. Eine z-Transformation von 0 (null) gibt an, dass die Transformation mit dem arithmetischen Mittel identisch ist. Eine z-Transformation kann positiv oder negativ sein, abhängig davon, ob sie über oder unter dem arithmetischen Mittel liegt und um wie viele Standardabweichungen es sich handelt.
+Gibt die z-Transformation oder Normaltransformation basierend auf einer normalen Verteilung zurück. Die z-Transformation ist die Anzahl der Standardabweichungen, die eine Beobachtung vom arithmetischen Mittel darstellt. Eine z-Transformation von 0 (null) gibt an, dass die Transformation mit dem arithmetischen Mittel identisch ist. Eine z-Transformation kann positiv oder negativ sein, abhängig davon, ob sie über oder unter dem arithmetischen Mittel liegt und um wie viele Standardabweichungen es sich handelt.
 
 Die Gleichung für z-Transformation lautet:
 
