@@ -11,7 +11,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
 Verwenden Sie den Projektmanager, um Projekte freizugeben, umzubenennen oder zu löschen. So erreichen Sie den Datums-Manager:
 
-1. Melden Sie sich mit Ihren AdobeID-Anmeldeinformationen bei [analytics.adobe.com](https://analytics.adobe.com) an.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Navigieren Sie zu [!UICONTROL Components] > [!UICONTROL Projects].
 
 ## Schnittstelle
