@@ -11,7 +11,7 @@ source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 Verwenden Sie den Datumsbereich-Manager, um Datumsbereiche freizugeben, umzubenennen oder zu löschen. So erreichen Sie den Datums-Manager:
 
-1. Melden Sie sich mit Ihren AdobeID-Anmeldeinformationen bei [analytics.adobe.com](https://analytics.adobe.com) an.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Navigieren Sie zu [!UICONTROL Components] > [!UICONTROL Date Ranges].
 
 ## Schnittstelle
