@@ -16,7 +16,7 @@ Sie können einen benutzerdefinierten Datumsbereich mit einer der beiden folgend
 
 So erstellen Sie einen Datumsbereich im Datumsbereich-Manager:
 
-1. Melden Sie sich mit Ihren AdobeID-Anmeldeinformationen bei [analytics.adobe.com](https://analytics.adobe.com) an.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Navigieren Sie zu [!UICONTROL Components] > [!UICONTROL Date Ranges].
 1. Klicken Sie auf die [!UICONTROL Add] Schaltfläche, um das modale Fenster zu öffnen, das einen Datumsbereich erstellt.
 
