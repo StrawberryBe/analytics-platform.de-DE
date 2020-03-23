@@ -13,8 +13,8 @@ Nachdem Sie eine oder mehrere Verbindungen erstellt haben, können Sie diese im 
 
 * Löschen Sie eine Verbindung.
 * Benennen Sie eine Verbindung um.
-* Erstellen Sie eine Datenansicht aus einer Verbindung.
-* Starten und beenden Sie das Datenstreaming.
+* Erstellen Sie eine Daten-Ansicht aus einer Verbindung.
+* Beginn und Beenden des Datenstreaming.
 
 ![Connections-Manager](assets/connections-manager.png)
 
@@ -28,7 +28,7 @@ Nachdem Sie eine oder mehrere Verbindungen erstellt haben, können Sie diese im 
    |---|---|
    | Löschen | Durch das Löschen einer Verbindung wird der Datensatz nicht gelöscht, da sich die Daten noch in der Adobe Experience Platform befinden. |
    | Umbenennen | Eine Verbindung wird umbenannt... |
-   | Datenansicht erstellen | Über diesen Link gelangen Sie zum [Datenansichtsaufbau](/help/data-views/create-dataview.md). |
-   | Datenstreaming starten oder beenden | &quot;Streaming&quot;bedeutet, dass neue Daten, wenn neue Stapel zu einem Datensatz in der Verbindung hinzugefügt werden, zur Berichterstellung in Customer Journey Analytics eingebracht werden. |
+   | Datenansicht erstellen | Über diesen Link gelangen Sie zum [Data Ansicht Builder](/help/data-views/create-dataview.md). |
+   | Beginn- oder Stopp-Datenstreaming | &quot;Streaming&quot;bedeutet, dass, wenn neue Stapel zu einem der zugehörigen Datensätze hinzugefügt werden, diese neuen Daten zum Berichte in Customer Journey Analytics eingebracht werden. |
 
 
