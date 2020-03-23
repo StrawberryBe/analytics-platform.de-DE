@@ -1,6 +1,6 @@
 ---
 title: Produktdokumentation für Customer Journey Analytics
-description: Einstiegsseite für Customer Journey Analytics.
+description: Customer Journey Analytics-Landingpage.
 translation-type: tm+mt
 source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
 
@@ -11,7 +11,7 @@ source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
 
 Diese technische Dokumentation bietet Hilfe zur Selbsthilfe für Customer Journey Analytics. Customer Journey Analytics ermöglicht es Ihnen, Kundendaten von beliebigen Kanälen – sowohl online als auch offline – in Adobe Experience Platform zusammenzuführen und genauso zu analysieren wie vorhandene digitale Daten mithilfe von Analysis Workspace.
 
-Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Offline-Daten in Analysis Workspace mit einer beliebigen Kunden-ID verbinden, sodass Sie letztendlich Zuordnungen, Segmentierung, Fluss, Trichteranalyse usw. vornehmen können. über Ihren gesamten Kundendatensatz hinweg in Adobe Analytics durchführen.
+Mit Customer Journey Analytics können Sie steuern, wie Sie Ihre Online- und Offlinedaten in Analyse Workspace mit einer beliebigen Kunden-ID verbinden, und Sie können letztendlich Zuordnungen, Segmentierung, Fluss, Trichteranalyse usw. durchführen. über Ihren gesamten Kundendatensatz hinweg in Adobe Analytics durchführen.
 
 Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzprodukts qualifiziert. Weitere Informationen erhalten Ihren Ansprechpartnern beim Adobe Account Team.
 
