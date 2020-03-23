@@ -7,9 +7,9 @@ source-git-commit: 280c7d3feb953f99c7a302bb93f94662b585a07d
 ---
 
 
-# Durchführen einer grundlegenden Analyse
+# Grundlegende Analyse durchführen
 
-Nachdem Sie Verbindungen und Datenansichten erstellt haben, analysieren Sie die Daten, die Sie mit der Leistungsfähigkeit und Flexibilität des Analysis Workspace eingebracht haben. Experimentieren Sie mit Dimensionen und Metriken, ändern Sie die Zuordnungseinstellungen für Dimension und Metrik, ändern Sie Anzeigenamen, Zeitzonen, Sitzungseinstellungen usw.
+Nachdem Sie Verbindungen und Ansichten erstellt haben, analysieren Sie die Daten, die Sie mit der Leistungsfähigkeit und Flexibilität von Analyse Workspace eingebracht haben. Experimentieren Sie mit Dimensionen und Metriken, Zuordnungseinstellungen für Dimensionsänderung und Metriken, Anzeigenamen, Zeitzonen, Sitzungseinstellungen usw. und ziehen Sie sie.
 
 Im Folgenden finden Sie ein Beispiel für grundlegende Visualisierungen in Workspace. Sie können zum Beispiel
 
