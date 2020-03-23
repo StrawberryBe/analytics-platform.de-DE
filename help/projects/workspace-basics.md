@@ -22,7 +22,7 @@ Ein Rangbericht zeigt eine aggregierte Gesamtansicht jedes Dimensionswerts an, w
 1. Klicken Sie auf **[!UICONTROL Create New Project]**.
 1. In the modal popup, make sure &#39;Blank Project&#39; is selected, then click **[!UICONTROL Create]**.
 1. Links sehen Sie eine Liste mit Dimensionen, Metriken, Segmenten und Datumsbereichen. Suchen Sie die Dimension „Seiten“ (orange) und ziehen Sie sie auf die Arbeitsfläche mit der Angabe „Dimension hier ablegen“.
-1. Ein Bericht mit den wichtigsten Seiten für diesen Monat ist abrufbar. Analysis Workspace füllt den Bericht automatisch mit der Metrik [Vorfälle](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-occurrences.html).
+1. Es wird ein Bericht mit den wichtigsten Seiten für diesen Monat angezeigt. Analysis Workspace füllt den Bericht automatisch mit der Metrik [Vorfälle](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-occurrences.html).
 1. Suchen Sie die Metrik „Besuche“ (grün) und ziehen Sie sie entweder **über** oder **neben** die Kopfzeile der Metrik „Vorfälle“ (vermeiden Sie, sie über der Metrik zu platzieren). Wenn Sie die Metrik „Besuche“ über Vorfälle ziehen, wird die Metrik in den Berichten ersetzt. Wenn Sie die Metrik „Besuche“ neben „Vorfälle“ ziehen, werden beide Metriken nebeneinander angezeigt.
 1. If you&#39;d like to save your project, click **[!UICONTROL Project]>[!UICONTROL Save]**in the upper left menu.
 
