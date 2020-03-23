@@ -13,7 +13,7 @@ Berechnete und erweiterte berechnete (abgeleitete) Metriken sind benutzerdefinie
 
 Sie können
 
-* Create filtered metrics that are derived at report run time, [without having to change the implementation](https://youtu.be/CuQTm9RaUpY). Diese können historisch betrachtet werden, da sie auf Filtern basieren.
+* Create filtered metrics that are derived at report run time, [without having to change the implementation](https://youtu.be/CuQTm9RaUpY). Diese können historisch betrachtet werden, weil sie auf Filtern basieren.
 * Metriken über Report Suites hinweg freigeben. Das bedeutet, dass alle neu erstellten Metriken für alle Report Suites in demselben Anmeldeunternehmen gelten.
 * (Nur erweiterte berechnete Metriken) Filtern Sie nach Metriken. Sie können beispielsweise eine Metrik für „Neue Besucher“ erstellen, mit der Personen gezählt werden, für die dies die erste Sitzung ist.
 * (Nur erweiterte berechnete Metriken) Statistische Funktionen miteinbeziehen, um Daten besser beschreiben zu können. Sie könnten beispielsweise die Elemente in einem Bericht zählen oder die Anzahl der Standardabweichungen für jedes Element addieren.
@@ -36,7 +36,7 @@ Hier sehen Sie einen Vergleich zwischen den jeweiligen Möglichkeiten, die berec
 
 | Tool | Funktionen |
 |--- |--- |
-| Aufbau berechneter Metriken | <ul><li>Erstellen Sie einfache berechnete Metriken oder erweiterte berechnete Metriken mit erweiterten Zuordnungsmodellen.</li><li>Fügen Sie Filter inline zu Metrikformeln hinzu.</li><li>Vergleichen Sie Filter im gleichen Bericht. (beispielsweise lokale Besucher mit internationalen Besuchern vergleichen.)</li><li>Statistische Funktionen verwenden.</li><li> Detaillierte Metrikbeschreibungen angeben (was die Metrik macht, wo sie verwendet werden sollte, wo sie NICHT verwendet werden sollte.)</li><li>Definitionen in neue Metriken kopieren.</li><li>Eine Inline-Metrikvorschau bereitstellen.</li><li>Die Metrikpolarität festlegen, die angibt, ob es gut oder schlecht ist, wenn ein bestimmtes benutzerspezifisches Ereignis (eine Metrik) steigt.</li><li>Metriken taggen.</li></ul> |
+| Aufbau berechneter Metriken | <ul><li>Erstellen Sie einfache berechnete Metriken oder erweiterte berechnete Metriken mit erweiterten Zuordnungsmodellen.</li><li>Hinzufügen Filter inline zu metrischen Formeln.</li><li>Vergleichen Sie Filter im gleichen Bericht. (beispielsweise lokale Besucher mit internationalen Besuchern vergleichen.)</li><li>Statistische Funktionen verwenden.</li><li> Detaillierte Metrikbeschreibungen angeben (was die Metrik macht, wo sie verwendet werden sollte, wo sie NICHT verwendet werden sollte.)</li><li>Definitionen in neue Metriken kopieren.</li><li>Eine Inline-Metrikvorschau bereitstellen.</li><li>Die Metrikpolarität festlegen, die angibt, ob es gut oder schlecht ist, wenn ein bestimmtes benutzerspezifisches Ereignis (eine Metrik) steigt.</li><li>Metriken taggen.</li></ul> |
 | Berechnete Metrik – Manager | <ul><li>Metriken für andere freigeben.</li><li>Metriken genehmigen und kuratieren.</li><li>Metriken organisieren (taggen), damit sie von Benutzern gefunden werden können.</li><li>Metriken löschen.</li><li>Metriken umbenennen.</li></ul> |
 | API für berechnete Metriken | Teil des Adobe Analytics 2.0-API-Sets. |
 
