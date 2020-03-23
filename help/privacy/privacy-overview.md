@@ -13,7 +13,7 @@ Im Allgemeinen werden alle datenschutzrelevanten Einstellungen in Customer Journ
 
 ## GDPR
 
-Customer Journey Analytics wird den Central Service (GDPR) nicht direkt abonnieren und stattdessen alle in Experience Platform vorgenommenen Änderungen übernehmen. Wir sind auf Platform Data Lake angewiesen, um GDPR-Löschungsanfragen zu erzwingen und uns zu benachrichtigen, wenn sie auf Pipeline abgeschlossen wurden. Wir hören auf Pipeline und synchronisieren alle Änderungen an betroffenen Stapeln in Customer Journey Analytics für Ereignisdatensätze. Profil- und Nachschlagedatasets, die von GDPR-Löschanforderungen betroffen sind, werden nach jeder Löschanforderung vollständig neu erfasst. Wir können garantieren, dass Löschungsanfragen innerhalb von 7 Tagen nach einem Löschereignis in Data Lake ausgeführt werden.
+Customer Journey Analytics wird den Central Service (GDPR) nicht direkt abonnieren und stattdessen alle in Experience Platform vorgenommenen Änderungen übernehmen. Wir sind auf Platform Data Lake angewiesen, um GDPR-Löschungsanfragen zu erzwingen und uns zu benachrichtigen, wenn sie auf Pipeline abgeschlossen wurden. Wir hören auf Pipeline und synchronisieren alle Änderungen an betroffenen Stapeln in Customer Journey Analytics für Ereignis-Datensätze. Profil- und Nachschlagedatasets, die von GDPR-Löschanforderungen betroffen sind, werden nach jeder Löschanforderung vollständig neu erfasst. Wir können garantieren, dass Löschungsanfragen innerhalb von 7 Tagen nach Löschung des Ereignisses in Data Lake ausgeführt werden.
 
 ## CCPA
 
