@@ -17,7 +17,7 @@ source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 | Was ist, wenn Sie Ihre Daten vor der Customer Journey Analytics ETL (Extract, Transform, Load) ausgeben müssen? | Heute müssen Sie mit einem ETL-Partner (Unifi oder Informatica) zusammenarbeiten, wenn Sie Ihre Daten umwandeln müssen, bevor Sie sie in AEP einfügen. Wenn Sie ETL benötigen, nachdem die Daten bereits erfasst wurden, bietet AEP Abfrage Services einige eingeschränkte Optionen. |
 | **Sticken** |  |
 | Kann die Customer Journey Analytics geräteübergreifend oder über Datensätze hinweg &quot;zuordnen&quot;? | Nein. Customer Journey Analytics ist ein &quot;bring-your-own-ID&quot;-Analysesystem. Pläne für einen guten Nähansatz liegen in der Arbeit. |
-| Wird das Zuordnen vom anonymen Verhalten zum authentifizierten Verhalten unterstützt? | Nein, das ist noch nicht möglich. |
+| Wird das Zuordnen vom anonymen Verhalten zum authentifizierten Verhalten unterstützt? | Nein, noch nicht. |
 | **Daten in Customer Journey Analytics einbringen** |  |
 | Welche Latenz wird für Customer Journey Analytics auf der Plattform erwartet? | <ul><li>Unter normaler Belastung: &lt; 60<br>**MinutenHinweis:**Bei ungewöhnlich hohem Datenfluss durch die Pipeline kann es bis zu 24 Stunden dauern.</li><li>Aufstockungsdaten (bis zu 10 Mrd. Ereignis): &lt; 4 Wochen</li></ul> |
 | Wie verbinden Sie Online-Daten mit Offlinedaten in Customer Journey Analytics? | Customer Journey Analytics ist ein Analysesystem, das Ihre eigene ID anbietet. Solange die Personen-ID mit den Daten übereinstimmt, kann Customer Journey Analytics Segmente, Zuordnungen, Fluss, Trichteranalyse usw. verbinden. über Datensätze hinweg. |
