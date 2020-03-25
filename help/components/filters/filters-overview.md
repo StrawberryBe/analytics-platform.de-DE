@@ -11,18 +11,18 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 Mit Customer Journey Analytics können Sie leistungsstarke, fokussierte Audience-Filter erstellen, verwalten, freigeben und auf Ihre Berichte anwenden. Mit Filtern können Sie Untergruppen von Besuchern anhand von Merkmalen oder Website-Interaktionen identifizieren. Filter sind als kodifizierte Einblicke in die Audience konzipiert, die Sie für Ihre spezifischen Anforderungen erstellen und dann überprüfen, bearbeiten und mit anderen Teammitgliedern teilen können.
 
-Filter können auf Attributen (Browsertyp, Gerät, Anzahl der Besuche, Land, Geschlecht), Interaktionen (Campaign, Suchbegriffsuche, Suchmaschine), Ausstiege und Einträge (Besucher von Facebook, definierte Landingpage, Referrerdomäne), benutzerspezifischen Variablen (Formularfeld, definierte Kategorien, Kunden-ID) und anderen Kriterien basieren.
+Filter können auf Attributen (Browsertyp, Gerät, Anzahl der Besuche, Land, Geschlecht), Interaktionen (Kampagnen, Suchbegriffsuche, Suchmaschine), Ausstiege und Einträge (Besucher von Facebook, definierte Landingpage, Referrerdomäne), benutzerspezifischen Variablen (Formularfeld, definierte Kategorien, Kunden-ID) und anderen Kriterien basieren.
 
 Sie können Filter im Filteraufbau erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter gemeinsam als gestapelte Filter verwendet werden.
 
 >[!IMPORTANT]
 Filter werden in Adobe Analytics als &quot;Segmente&quot;bezeichnet. Wir haben Segmente in Filter umbenannt, da Adobe Experience Platform eine andere Definition von &quot;segment&quot;hat. Ein Segment in AEP bezieht sich auf ...
 
-Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
+Die Filterung umfasst den [Filteraufbau](/help/components/filters/create-filters.md) zum Erstellen von Filtern und zum Ausführen eines Vortests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zum Erfassen, Taggen, Genehmigen, Sicherheitseinstellungen und Freigeben von Filtern in Ihrem Unternehmen.
 
 ## Sequenzielle Filter
 
-Mit sequenziellen Filtern können Sie Besucher basierend auf der Navigation und der Ansicht der Seite auf Ihrer Website identifizieren und so einen Filter für definierte Aktionen und Interaktionen bereitstellen. Mit sequenziellen Segmenten können Sie erkennen, was ein Besucher mag und was er meidet. Beim Erstellen sequenzieller Filter wird der DANN-Operator verwendet, um die Navigation des Besuchers zu definieren und anzuordnen.
+Mit sequenziellen Filtern können Sie Besucher basierend auf der Navigation und der Ansicht der Seite auf Ihrer Website identifizieren und so einen Filter für definierte Aktionen und Interaktionen bereitstellen. Sequenzielle Segmente helfen Ihnen dabei, herauszufinden, was ein Besucher mag und was ein Besucher vermeidet. Beim Erstellen sequenzieller Filter wird der DANN-Operator verwendet, um die Navigation des Besuchers zu definieren und anzuordnen.
 
 Siehe folgendes Beispiel:
 
@@ -30,7 +30,7 @@ Siehe folgendes Beispiel:
 
 | Erster Besuch | Zweiter Besuch | Dritter Besuch |
 |---|---|---|
-| Der Besucher besuchte die Haupt-Landingpage (A), schloss die Campaign-Seite (B) aus und sah sich dann die Produktseite (C) an. | Der Besucher besuchte erneut die Hauptseite der Landingpage (A), schloss die Campaign-Seite (B) aus und wechselte erneut zur Produktseite (C) und dann zur neuen Seite (D). | Der Besucher trat ein und folgte demselben Pfad wie bei dem ersten und zweiten Besuch und schloss dann Seite F aus, um direkt zu einer zielgerichteten Produktseite (G) zu wechseln. |
+| Der Besucher besuchte die Hauptseite der Landingpage (A), schloss die Seite &quot;Kampagne&quot;(B) aus und sah dann die Produktseite (C) an. | Der Besucher besuchte erneut die Hauptseite der Landingpage (A), schloss die Kampagne (B) aus und wechselte erneut zur Produktseite (C) und dann zur neuen Seite (D). | Der Besucher trat ein und folgte demselben Pfad wie bei dem ersten und zweiten Besuch und schloss dann Seite F aus, um direkt zu einer zielgerichteten Produktseite (G) zu wechseln. |
 
 ## Container filtern
 
@@ -39,7 +39,7 @@ Filter basieren auf einer Hierarchie auf Ereignis-, Sitzungs- und Benutzerebene 
 >[!NOTE]
 >Der Container &quot;Person&quot;wurde früher als &quot;Besucher-Container&quot;bezeichnet. Der Session-Container wurde als &quot;Besuch&quot;-Container bezeichnet, und der Ereignis-Container war früher der TrefferContainer.
 
-Ein Filter legt Bedingungen zum Filtern eines Besuchers auf der Grundlage seiner Attribute oder Interaktionen mit Ihrer Site fest. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln zum Filtern von Besuchern auf der Grundlage von Besucher- und/oder Navigationsmerkmalen fest. Um die Besucherdaten weiter herunterzubrechen, können Sie jeden Besucher auf der Grundlage bestimmter Besuche und/oder Seitenansichten filtern. Der Filteraufbau bietet eine einfache Architektur zum Erstellen dieser Untergruppen und zum Anwenden von Regeln als verschachtelte, hierarchische Container für Person, Sitzung oder Ereignis.
+Ein Filter legt Bedingungen zum Filtern eines Besuchers auf der Grundlage seiner Attribute oder Interaktionen mit Ihrer Site fest. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln zum Filtern von Besuchern auf der Grundlage von Besucher- und/oder Navigationsmerkmalen fest. Zur weiteren Aufschlüsselung von Besucher-Daten können Sie für jeden Besucher nach bestimmten Besuchen und/oder Seitentreffern filtern. Der Filteraufbau bietet eine einfache Architektur zum Erstellen dieser Untergruppen und zum Anwenden von Regeln als verschachtelte, hierarchische Container für Person, Sitzung oder Ereignis.
 
 Die im Filteraufbau verwendete Container-Architektur definiert den Begriff &quot;&quot;als äußersten Container, der übergreifende Daten enthält, die für den Besucher spezifisch sind, und zwar besuchsübergreifend und seitenübergreifend, d. h. über Ansichten hinweg. In einem verschachtelten Session-Container können Sie Regeln festlegen, um die Daten des Besuchers auf Grundlage von Sitzungen aufzuschlüsseln. In einem verschachtelten Ereignis-Container können Sie die Informationen zum Besucher auf der Grundlage der einzelnen Ansichten aufschlüsseln. Mit jedem Container können Sie Berichte über den Verlauf eines Besuchers, Interaktionen nach Sitzungen unterteilt oder einzelne Ereignis unterteilen.
 
@@ -56,7 +56,7 @@ Container können Werte einbeziehen, die auf dem Gesamtverlauf des Besuchers bas
 
 ### Session Container
 
-Mit dem Session Container können Sie Seiteninteraktionen, Campaign oder Konversionen für eine bestimmte Sitzung identifizieren. Der Session Container ist der am häufigsten verwendete Container, da er Verhaltensweisen für die gesamte Besuchssitzung erfasst, sobald die Regel erfüllt ist, und Sie definieren können, welche Sitzungen Sie beim Erstellen und Anwenden eines Segments einbeziehen oder ausschließen möchten. Es kann Ihnen bei der Beantwortung dieser Fragen helfen:
+Mit dem Session Container können Sie Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifizieren. Der Session Container ist der am häufigsten verwendete Container, da er Verhaltensweisen für die gesamte Besuchssitzung erfasst, sobald die Regel erfüllt ist, und Sie definieren können, welche Sitzungen Sie beim Erstellen und Anwenden eines Segments einbeziehen oder ausschließen möchten. Es kann Ihnen bei der Beantwortung dieser Fragen helfen:
 
 * Wie viele Besucher haben den Bereich &quot;Nachrichten und Sport&quot;in derselben Sitzung angesehen?
 
@@ -66,7 +66,7 @@ Sitzungs-Container enthalten Werte, die auf dem Vorkommen pro Sitzung basieren:
 
 * Sitzung Nr.
 
-* Entrypage
+* Einstieg Seite
 
 * Rückkehrhäufigkeit
 
@@ -76,7 +76,7 @@ Sitzungs-Container enthalten Werte, die auf dem Vorkommen pro Sitzung basieren:
 
 ### Ereignis Container
 
-Der Container &quot;Ereignis&quot;definiert, welche Ereignis von Seiten Sie in einen Filter einschließen oder ausschließen möchten. Dies ist der engste verfügbare Behälter, mit dem Sie spezifische Klicks und Seitenansichten identifizieren können, für die eine Bedingung wahr ist, wobei Sie einen einzelnen Trackingcode oder ein isoliertes Verhalten in einem bestimmten Bereich Ihrer Site anzeigen können. Sie können auch einen bestimmten Wert erkennen, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, wenn ein Auftrag platziert wurde.
+Der Container &quot;Ereignis&quot;definiert, welche Ereignis von Seiten Sie in einen Filter einschließen oder ausschließen möchten. Es handelt sich dabei um die kleinsten verfügbaren Container, mit denen Sie bestimmte Klicks und die Ansicht der Seite identifizieren können, bei denen eine Bedingung wahr ist, sodass Sie einen einzigen Rückverfolgungscode oder ein isoliertes Verhalten innerhalb eines bestimmten Bereichs Ihrer Site Ansicht haben. Möglicherweise möchten Sie auch einen bestimmten Kanal genau bestimmen, wenn eine Aktion ausgeführt wird, z. B. den Marketingwert, wenn eine Bestellung aufgegeben wurde.
 
 Ereignis-Container enthalten Werte, die auf Einzelseitenunterteilungen basieren:
 
