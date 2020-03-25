@@ -30,7 +30,7 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + Workspace-Projekte {#cja-reporting}
    + [Einführung in Workspace](projects/workspace-basics.md)
    + [Grundlegende Analyse durchführen](projects/perform-basic-analysis.md)
-   + [Führen Sie erweiterte Analysen durch](projects/perform-adv-analysis.md)
+   + [Erweiterte Analyse durchführen](projects/perform-adv-analysis.md)
 + Verbindungen {#cja-connections}
    + [Erstellen einer Verbindung](connections/create-connection.md)
    + [Verbindungen verwalten](connections/manage-connection.md)
@@ -39,7 +39,7 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [Erstellen einer Ansicht](data-views/create-dataview.md)
    + [Ansichten und Zuordnungen von Daten konfigurieren](data-views/configure-dataviews.md)
 + Komponenten {#cja-components}
-   + Filter {#cja-filters}
+   + Filters {#cja-filters}
       + [Übersicht über Filter](components/filters/filters-overview.md)
       + [Filter erstellen](components/filters/create-filters.md)
       + [Filter verwalten](components/filters/manage-filters.md)
@@ -60,5 +60,5 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + Anwendungsbeispiele {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
 + Datenschutz {#cja-privacy}
-   + [Datenschutz-Übersicht](privacy/privacy-overview.md)
+   + [Datenschutzübersicht](privacy/privacy-overview.md)
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
