@@ -59,7 +59,7 @@ Wenn Ihre Verbindung nur die erste Tabelle und nicht die zweite enthält, zeigt 
 | string_color | metric_a |
 | --- | --- |
 | Blau | 5 |
-| „Nicht angegeben“ | 6 |
+| Nicht angegeben | 6 |
 | Rot | 2 |
 
 Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert sich die Zuordnung, da sie in beiden Datensätzen enthalten `user_847` ist. Eine Zeile aus den zweiten Datensatzattributen `metric_a` in &quot;Gelb&quot;, in der sie zuvor nicht angegeben wurden:
