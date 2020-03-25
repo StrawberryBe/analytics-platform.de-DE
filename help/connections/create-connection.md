@@ -15,7 +15,7 @@ Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutoria
 
 >[!IMPORTANT] Sie können mehrere Plattformdatasets zu einer einzigen Verbindung kombinieren.
 
-1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Wechseln Sie zu [https://analytics.adobe.com](https://analytics.adobe.com).
 
 1. Click the **[!UICONTROL Connections]** tab.
 
@@ -29,7 +29,7 @@ Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutoria
 
    | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
    |---|---|---|---|---|
-   | Ereignis- | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Daten zur Umfrage, Daten zu Anzeigenimpressionen usw.). Dies sind typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel. Mit Ereignis-Daten können Sie die gewünschte ID verwenden. | Wird auf Zeitstempel eingestellt. | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
+   | Ereignis | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Daten zur Umfrage, Daten zu Anzeigenimpressionen usw.). Dies sind typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel. Mit Ereignis-Daten können Sie die gewünschte ID verwenden. | Wird auf Zeitstempel eingestellt. | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
    | Suche | Entspricht einer Classifications-Datei. Diese Daten werden zum Nachschlagen von Werten oder Schlüsseln in Ihren Ereignis- oder Profil-Daten verwendet. Sie können beispielsweise Suchdaten hochladen, die numerische IDs in Ihren Ereignis-Daten Produktnamen zuordnen. | nicht angegeben | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
    | Profil | Analog zu Kundenattributen - für nicht veränderliche und nicht zeitliche Attribute. Daten, die in den Ereignis-Daten auf Ihre Besucher, Benutzer oder Kunden angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | Sie können auswählen, welche Person-ID Sie einbeziehen möchten. Jeder Datensatz, der in der Adobe Experience Platform definiert wird, verfügt über einen eigenen Satz von einer oder mehreren Personen-IDs, wie z. B. Cookie-ID, Stitched ID, Benutzer-ID, Rückverfolgungscode usw.<br>![Person](assets/person-id.png)**IDNote **: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies vom Berichte übernommen. Um Datasets wirklich zusammenzuführen, müssen Sie dieselbe Person-ID verwenden. |
 
