@@ -29,7 +29,7 @@ Berücksichtigen Sie dies, bevor Sie Zuordnungseinstellungen anwenden:
 
 ## Festlegen von Komponenten- und Zuordnungseinstellungen
 
-Nachdem Sie die Einstellungen [für die Ansicht der Daten](/help/data-views/create-dataview.md) festgelegt und gespeichert und Komponenten hinzugefügt haben, können Sie, falls gewünscht, Zuordnungseinstellungen angeben. Sie können Zuordnungs-/Ablauf-/Lookback-Einstellungen für Dimensionen und Metriken angeben. Wenn Sie z. B. möchten, dass die Zuordnung einer Dimension beibehalten wird, sollten Sie eine benutzerdefinierte Ablaufzeit festlegen. Wenn Sie z. B. die Dimension &quot;Rückverfolgungscode&quot;(eine Campaign-Variable) auf &quot;Letztkontakt&quot;-Zuordnung setzen möchten, um eine Woche lang bestehen zu bleiben, fügen Sie einen benutzerdefinierten Ablauf von 1 Woche hinzu.
+Nachdem Sie die Einstellungen [für die Ansicht der Daten](/help/data-views/create-dataview.md) festgelegt und gespeichert und Komponenten hinzugefügt haben, können Sie, falls gewünscht, Zuordnungseinstellungen angeben. Sie können Zuordnungs-/Ablauf-/Lookback-Einstellungen für Dimensionen und Metriken angeben. Wenn Sie z. B. möchten, dass die Zuordnung einer Dimension beibehalten wird, sollten Sie eine benutzerdefinierte Ablaufzeit festlegen. Wenn Sie z. B. die Dimension &quot;Rückverfolgungscode&quot;(eine Variable der Kampagne) auf &quot;Letztkontakt&quot;-Zuordnung setzen möchten, um eine Woche lang bestehen zu bleiben, fügen Sie einen benutzerdefinierten Ablauf von 1 Woche hinzu.
 
 >[!IMPORTANT]
 >Sie können festlegen, dass keine Zuordnung/kein Ablauf festgelegt wird. In diesem Fall verhalten sich Dimensionen wie Props (&quot;Same Touch&quot;-Zuordnungsmodell). Metriken ohne Zuordnungseinstellungen übernehmen die Einstellungen für die Dimension, auf die diese Metrik angewendet wird.
@@ -45,7 +45,7 @@ Nachdem Sie die Einstellungen [für die Ansicht der Daten](/help/data-views/crea
 
 Sie können den Namen der Metrik oder Dimension in etwas benutzerfreundlicheres ändern. Beachten Sie, dass sich der zugrunde liegende Name nicht ändert, sondern nur der Anzeigename.
 
-### Attributionsmodell
+### Zuordnungsmodell
 
 Das Modell beschreibt die Verteilung der Konvertierungen an die Ereignis einer Gruppe. Zum Beispiel Erstkontakt oder Letztkontakt Legt fest, wie Customer Journey Analytics Gutschriften für ein Erfolgsereignis zuweist, wenn eine Variable mehrere Ereignis vor dem Ereignis erhält.
 
