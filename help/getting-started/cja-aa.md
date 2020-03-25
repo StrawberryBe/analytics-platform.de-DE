@@ -25,9 +25,9 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | Projektkuratierung | Vollständige Unterstützung |
 | Projektverknüpfung | Vollständige Unterstützung |
 | Datumsvergleiche | Vollständige Unterstützung |
-| Virtual Report Suites | Nun als [Data Ansichten](/help/data-views/create-dataview.md)bezeichnet. |
+| Virtual Report Suites | Jetzt [Data Ansichten](/help/data-views/create-dataview.md)genannt. |
 | VRS-Komponentenkuratierung | Jetzt Teil der Data-Ansichten. |
-| Report Time Processing | CJA basiert ausschließlich auf der Verarbeitung der Berichtszeit. |
+| Berichtszeitverarbeitung | CJA basiert ausschließlich auf der Verarbeitung der Berichtszeit. |
 | GDPR-Löschung | Beachten Sie, dass GDPR jetzt in Abstimmung mit Adobe Experience Platform - CJA verarbeitet wird, unabhängig davon, welche Daten von Experience Platform an zugrunde liegenden Datensätzen geändert werden. |
 
 ## Mit Einschränkungen unterstützt
@@ -49,7 +49,7 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | --- | --- |
 | Dimensionen des Arbeitsbereichs für Analysen (z. B. Browsertyp, Werber-Typ, Marketing-Kanal, Besuchsnummer usw.) | CJA stellt diese Dimensionen nicht nativ bereit. Für Kunden, die Analytics Data Connector (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie unsere [Dokumentation darüber, welche Analytics-Variablen über ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)unterstützt werden. |
 | Bedienfelder | Leeres Bedienfeld, Zuordnungs-Bedienfeld und Freiform-Bedienfeld werden vollständig unterstützt. Segmentvergleich wird nicht unterstützt. |
-| Merchandising-eVars | Merchandising-eVars funktionieren nur mit ADC-basierten Datensätzen, es sei denn, sie entsprechen genau demselben XDM-Schema (ähnlich den Einschränkungen der Liste oben). |
+| Merchandising eVars | Merchandising-eVars funktionieren nur mit ADC-basierten Datensätzen, es sei denn, sie entsprechen genau demselben XDM-Schema (ähnlich den Einschränkungen der Liste oben). |
 | Bot-Filterung | Bei Analytics Data Connector (ADC)-basierten Datensätzen wird Bot-Filterung angewendet. Allgemeine Bot-Filterlogik für andere Datensätze wird nicht von der Experience Platform oder CJA ausgeführt. |
 | Verarbeitungsregeln | Bei ADC-basierten Datensätzen werden weiterhin Verarbeitungsregeln angewendet. |
 | Geräteübergreifende Identitätsfestsetzung | Kunden sind über den Abfrage Service auf &quot;einmalige&quot;Datenreihen beschränkt oder müssen diese Logik derzeit vor der Datenerfassung mit Experience Platform auf Daten anwenden. |
@@ -77,13 +77,13 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | Funktion | Hinweise |
 | --- | --- |
 | A4T | Die Unterstützung ist noch nicht geplant. |
-| Video-Analytics | Die Unterstützung ist noch nicht geplant. |
+| Video Analytics | Die Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Die Unterstützung ist noch nicht geplant. |
 | ReportBuilder (Excel-Plugin) | Die Unterstützung ist noch nicht geplant. |
 | Activity Map | Die Unterstützung ist noch nicht geplant. |
 | Classification Rule Builder | Die Unterstützung ist noch nicht geplant. |
 | Zusammenfassende Datenquellen | Die Unterstützung ist noch nicht geplant. |
-| Echtzeit-Reporting | Die Unterstützung ist noch nicht geplant. |
+| Echtzeit-Berichte | Die Unterstützung ist noch nicht geplant. |
 
 ## Wird nie unterstützt
 
@@ -95,6 +95,6 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | Reports &amp; Analysen-Zielgruppen |  |
 | Ereignis des Reports &amp; Analysen-Kalenders |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse Berichterstellung | Der Adobe Experience Platform Abfrage Service ist die neue Schnittstelle für diese Anwendungsfälle in CJA. |
+| Data Warehouse Berichterstellung  | Der Adobe Experience Platform Abfrage Service ist die neue Schnittstelle für diese Anwendungsfälle in CJA. |
 | Mobile Services |  |
 | Daten-Feeds |  |
