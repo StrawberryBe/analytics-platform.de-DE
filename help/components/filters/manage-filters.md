@@ -19,7 +19,7 @@ Rufen Sie den Filter-Manager auf, indem Sie **[!UICONTROL Customer Journey Analy
 
 ![](assets/filter-manager-ui.png)
 
-| Nr. | Funktion der Benutzeroberfläche | Beschreibung |
+| # | UI-Funktion | Beschreibung |
 |---|---|---|
 | 1 | Werkzeugleiste für die Filterverwaltung | Nachdem Sie einen Filter markiert haben, wird diese Werkzeugleiste angezeigt. Über diese Werkzeugleiste können die meisten Verwaltungsaufgaben erledigt werden. |
 | 2 | Kontrollkästchen | Überprüfen Sie einen Filter, um ihn zu verwalten. |
@@ -27,7 +27,7 @@ Rufen Sie den Filter-Manager auf, indem Sie **[!UICONTROL Customer Journey Analy
 | 5 | Titel und Beschreibung | Wird im Filter Builder bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, klicken Sie auf den Titel-Link, um zum Filter-Builder zurückzukehren. |
 | 6 | Report Suites | Diese Spalte zeigt an, in welcher Report Suite der Filter zuletzt gespeichert wurde. |
 | 7 | Inhaber | Gibt an, wem der Filter gehört. Als Nicht-Administrator können Sie nur Filter sehen, deren Inhaber Sie sind, oder solche, die für Sie freigegeben wurden. |
-| 8 | Tags (in der Spaltenauswahl nicht aktiviert, weshalb die Spalte nicht angezeigt wird) | Tags, die entweder von Ihnen oder von Personen, die den Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
+| 8 | Tags (nicht in der Spaltenauswahl markiert, daher wird die Spalte nicht angezeigt) | Tags, die entweder von Ihnen oder von Personen, die den Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
 | 9 | Freigegeben für | Listen von Einzelpersonen oder Gruppen (nur Admin) oder Alle (nur Admin), für die Sie den Filter freigegeben haben. |
 | 10 | Änderungsdatum | Zeigt das Datum der letzten Änderung des Filters an. |
 | 11 | Spaltenauswahl | (Oben rechts) Hier können Sie auswählen, welche Spalten im Filter-Manager angezeigt werden sollen. |
@@ -37,15 +37,15 @@ Rufen Sie den Filter-Manager auf, indem Sie **[!UICONTROL Customer Journey Analy
 
 ## Filter planen
 
-Wenn Sie für die Planung von Segmenten etwas Zeit aufwenden, verbessern Sie die Chancen, dass diese für Ihre Organisation von Nutzen sein werden und dass deren Anzahl unter Kontrolle bleibt.
+Wenn Sie etwas Zeit für die Planung von Segmenten aufwenden, verbessern sich die Chancen, dass diese für Ihr Unternehmen nützlich sein werden und dass die Anzahl der Segmente kontrolliert wird.
 
-* Bedenken Sie die Zielgruppe: Wer wird es benutzen? Für wen werden Sie es freigeben? Welche Personengruppen verwenden diesen Filter und wie sollte ich ihn entsprechend taggen? Dies bedeutet auch eine gute Filterbeschreibung. Die Beschreibung sollte mindestens die folgenden Fragen beantworten:
+* Betrachten wir die Audience: Wer wird es konsumieren? Mit wem wirst du es teilen? Welche Personengruppen verwenden diesen Filter und wie sollte ich ihn entsprechend taggen? Dies bedeutet auch eine gute Filterbeschreibung. Die Beschreibung sollte mindestens die folgenden Fragen beantworten:
 
    * Wofür ist dieser Filter nützlich?
 
    * Wann sollte ich diesen Filter verwenden?
 
-* Legen Sie den Filterbereich fest. Welcher [Filter-Container](/help/components/filters/filters-overview.md) stellt den Umfang am besten dar? Benutzen Sie den kleinstmöglichen Behälter.
+* Legen Sie den Filterbereich fest. Welcher [Filter-Container](/help/components/filters/filters-overview.md) stellt den Umfang am besten dar? Verwenden Sie den kleinstmöglichen Container.
 
 * Entscheiden Sie, welche Elemente in die Filterdefinition aufgenommen werden sollen und welche Werte.
 
@@ -57,15 +57,15 @@ Wenn Sie für die Planung von Segmenten etwas Zeit aufwenden, verbessern Sie die
 
 Im Filter-Manager können Sie Filter mit Tags organisieren. Alle Benutzer können Tags für Filter erstellen und eines oder mehrere Tags auf ein Segment anwenden. Sie können Tags jedoch nur für die Filter anzeigen, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
 
-Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:
+Welche Arten von Tags sollten Sie erstellen? Hier einige Vorschläge für nützliche Tags:
 
-* Auf Teamnamen basierende Tags wie Social Marketing, Mobile Marketing
+* Tags, die auf Teamnamen basieren, z. B. Social Marketing, Mobile Marketing.
 
-* Projekt-Tags (Analyse-Tags) wie Entrypage-Analyse
+* Projekt-Tags (Analyse-Tags), z. B. Entrypage-Analyse.
 
-* Kategorie-Tags: Männer, Region
+* Kategorien-Tags: Männer; Geografie.
 
-* Arbeitsablauf-Tags: Genehmigung ausstehend, kuratiert für (einen bestimmten Geschäftsbereich)
+* Workflow-Tags: zu genehmigen; Kuratiert für (eine bestimmte Geschäftseinheit)
 
 So markieren Sie einen Filter:
 
@@ -79,7 +79,7 @@ So markieren Sie einen Filter:
 
 1. Click **[!UICONTROL Tag]** again to tag the segment.
 
-Das Tag wird jetzt in der Spalte „Tags“ angezeigt. (Klicken Sie oben rechts auf das Zahnradsymbol, um Ihre Spalten zu verwalten.)
+Das Tag sollte nun in der Spalte Tags angezeigt werden. (Klicken Sie auf das Zahnradsymbol oben rechts, um Ihre Spalten zu verwalten.)
 You can also filter on tags by going to **[!UICONTROL Filters > Tags]**.
 
 ### Filter genehmigen
@@ -110,13 +110,13 @@ Je nach Ihren Berechtigungen können Sie Filter für Ihre gesamte Organisation, 
 |---|---|
 | Kann Filter für alle, für Gruppen und für Benutzer freigeben. Weitere Informationen finden Sie in der Dokumentation [zur](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) Admin-Konsole. | Kann Filter nur für einzelne Benutzer freigeben. |
 
-Wann sollten Sie Filter mit der gesamten Firma und nur mit einer Benutzergruppe oder Einzelpersonen teilen? Im Folgenden finden Sie einige Best Practices, an denen Sie sich orientieren können:
+Wann sollten Sie Filter mit der gesamten Firma und nur mit einer Benutzergruppe oder Einzelpersonen teilen? Im Folgenden finden Sie einige Best Practices, die Sie befolgen könnten:
 
 * Geben Sie als Administrator einen Filter für &quot;Alle&quot;frei, wenn er für die gesamte Firma von Nutzen ist und alle Benutzer ihn problemlos verwenden können. In diesem Fall sollten Sie auch erwägen, ihn zu einem genehmigten Filter zu machen.
 
 * Geben Sie als Administrator einen Profil für ein bestimmtes Produkt frei, wenn der Filter für dieses Team einen guten Geschäftswert bietet. Diesen Filtertyp nicht offiziell genehmigen.
 
-* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für andere Personen frei, um einen Filter zu prüfen und zu validieren. Wenn sie sich als nicht nützlich erweist, kann sie verworfen werden. Diesen Filtertyp nicht offiziell genehmigen.
+* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für andere Personen frei, um einen Filter zu prüfen und zu validieren. Wenn es sich nicht als nützlich erweist, kann es verworfen werden. Diesen Filtertyp nicht offiziell genehmigen.
 
 So geben Sie einen Filter frei:
 
