@@ -25,7 +25,7 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | Projektkuratierung | Vollständige Unterstützung |
 | Projektverknüpfung | Vollständige Unterstützung |
 | Datumsvergleiche | Vollständige Unterstützung |
-| Virtual Report Suites | Jetzt [Data Ansichten](/help/data-views/create-dataview.md)genannt. |
+| Virtual Report Suites | Nun als [Data Ansichten](/help/data-views/create-dataview.md)bezeichnet. |
 | VRS-Komponentenkuratierung | Jetzt Teil der Data-Ansichten. |
 | Berichtszeitverarbeitung | CJA basiert ausschließlich auf der Verarbeitung der Berichtszeit. |
 | GDPR-Löschung | Beachten Sie, dass GDPR jetzt in Abstimmung mit Adobe Experience Platform - CJA verarbeitet wird, unabhängig davon, welche Daten von Experience Platform an zugrunde liegenden Datensätzen geändert werden. |
