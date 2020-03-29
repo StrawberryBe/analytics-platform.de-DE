@@ -12,7 +12,7 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 
 ---
@@ -20,10 +20,10 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 
 # Hilfe zu Customer Journey Analytics {#using}
 
-+ [Produktdokumentation für Customer Journey Analytics](getting-started/cja-landing.md)
++ [Dokumentation zu Customer Journey Analytics](getting-started/cja-landing.md)
 + Überblick über Customer Journey Analytics {#cja-overview}
    + [Überblick über Customer Journey Analytics](getting-started/cja-overview.md)
-   + [Einstieg](getting-started/cja-getting-started.md)
+   + [Erste Schritte](getting-started/cja-getting-started.md)
    + [Häufig gestellte Fragen](getting-started/cja-faq.md)
    + [Unterstützung der Customer Journey Analytics-Funktion](getting-started/cja-aa.md)
    + [CJA-Glossar](getting-started/cja-glossary.md)
@@ -32,14 +32,14 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [Grundlegende Analyse durchführen](projects/perform-basic-analysis.md)
    + [Erweiterte Analyse durchführen](projects/perform-adv-analysis.md)
 + Verbindungen {#cja-connections}
-   + [Erstellen einer Verbindung](connections/create-connection.md)
+   + [Verbindung erstellen](connections/create-connection.md)
    + [Verbindungen verwalten](connections/manage-connection.md)
    + [Kombinierte Datensätze](connections/combined-dataset.md)
 + Datenansichten {#cja-dataviews}
-   + [Erstellen einer Ansicht](data-views/create-dataview.md)
-   + [Ansichten und Zuordnungen von Daten konfigurieren](data-views/configure-dataviews.md)
+   + [Datenschicht erstellen](data-views/create-dataview.md)
+   + [Ansichten und Attribution von Daten konfigurieren](data-views/configure-dataviews.md)
 + Komponenten {#cja-components}
-   + Filters {#cja-filters}
+   + Filter {#cja-filters}
       + [Übersicht über Filter](components/filters/filters-overview.md)
       + [Filter erstellen](components/filters/create-filters.md)
       + [Filter verwalten](components/filters/manage-filters.md)
@@ -54,11 +54,11 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
       + [Datumsbereich erstellen](components/date-ranges/create.md)
       + [Datumsbereiche verwalten](components/date-ranges/manage.md)
    + Projekte {cja-projects}
-      + [Projektübersicht](components/projects/overview.md)
-      + [Erstellen Sie ein Projekt](components/projects/create.md)
+      + [Übersicht über Projekte](components/projects/overview.md)
+      + [Projekt erstellen](components/projects/create.md)
       + [Projekte verwalten](components/projects/manage.md)
-+ Anwendungsbeispiele {#cja-usecases}
++ Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
 + Datenschutz {#cja-privacy}
-   + [Datenschutzübersicht](privacy/privacy-overview.md)
+   + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
