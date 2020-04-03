@@ -1,5 +1,5 @@
 ---
-title: Projektübersicht
+title: Übersicht über Projekte
 description: Organisieren und verwalten Sie Projekte im Arbeitsbereich für Analysen.
 translation-type: tm+mt
 source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
@@ -7,7 +7,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 ---
 
 
-# Projektübersicht
+# Übersicht über Projekte
 
 Projekte sind die übergreifende &quot;Datei&quot;, die in Analyse Workspace verwendet wird. Sie enthalten einen oder mehrere Bereiche, mit denen Sie Visualisierungen organisieren können.
 
