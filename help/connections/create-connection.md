@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Verbindung
+title: Verbindung erstellen
 description: Beschreibt, wie eine Verbindung zu einem Plattform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
 source-git-commit: 41029fb428308a247df65072af4e419a90098a15
@@ -7,7 +7,7 @@ source-git-commit: 41029fb428308a247df65072af4e419a90098a15
 ---
 
 
-# Erstellen einer Verbindung
+# Verbindung erstellen
 
 Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Workspace integrieren. Um einen Bericht über Plattformdatensätze zu erstellen, müssen Sie zunächst eine Verbindung zwischen Datensätzen in Platform und Workspace herstellen.
 
