@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Ansicht
+title: Datenschicht erstellen
 description: Beschreibt das Erstellen einer Ansicht von Daten zu einem Plattformdatensatz in Customer Journey Analytics (CJA).
 translation-type: tm+mt
 source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
@@ -7,7 +7,7 @@ source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
 ---
 
 
-# Erstellen einer Ansicht
+# Datenschicht erstellen
 
 Eine Ansicht von Daten ähnelt einer Virtual Report Suite in Analytics insofern, als es sich um eine &quot;gefilterte&quot;Ansicht der Daten handelt. Sie können verschiedene Ansichten für die gleiche Verbindung erstellen, mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. Sie können mehrere Ansichten für einen Datensatz erstellen. Sie können beispielsweise eine Datendimensionen mit der Einstellung &quot;Letztkontakt&quot;und gleichzeitig eine andere Ansicht mit einer Ansicht (basierend auf demselben Datensatz) mit allen Dimensionen mit der Einstellung &quot;Erstkontakt&quot;festlegen.
 
