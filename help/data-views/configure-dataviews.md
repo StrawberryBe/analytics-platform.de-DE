@@ -1,5 +1,5 @@
 ---
-title: Ansichten und Zuordnungen von Daten konfigurieren
+title: Ansichten und Attribution von Daten konfigurieren
 description: Beschreibt das Erstellen einer Ansicht zu einem Plattformdatensatz in Customer Journey Analytics
 translation-type: tm+mt
 source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
@@ -9,7 +9,7 @@ source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 # Komponenten- und Zuordnungseinstellungen
 
-eVars, Props und Ereignis im klassischen Adobe Analytics-Sinne gibt es in Customer Journey Analytics nicht mehr. Stattdessen verfügen Sie über unbegrenzte Schema-Elemente (Dimensionen, Metriken, Listen). Alle Zuordnungseinstellungen, die Sie während des Datenerfassungsprozesses für eVars und Props verwendet haben, werden jetzt zur Abfrage angewendet - auch als Berichtszeitverarbeitung bezeichnet.
+eVars, Props und Ereignisse im herkömmlichen Adobe Analytics-Sinne gibt es in Customer Journey Analytics nicht mehr. Stattdessen verfügen Sie über unbegrenzte Schema-Elemente (Dimensionen, Metriken, Listen). Alle Zuordnungseinstellungen, die Sie während des Datenerfassungsprozesses für eVars und Props verwendet haben, werden jetzt zur Abfrage angewendet - auch als Berichtszeitverarbeitung bezeichnet.
 
 Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) , um eine Videoübersicht zu erhalten.
 
