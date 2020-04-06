@@ -2,7 +2,7 @@
 title: Kombinierte Datensätze
 description: Erfahren Sie, wie CJA durch Kombinieren von Datensätzen eine Verbindung herstellt.
 translation-type: tm+mt
-source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -19,7 +19,7 @@ Wenn Sie eine Verbindung herstellen, kombiniert CJA alle Schema und Datensätze 
 
 Siehe folgendes Beispiel. Sie haben zwei Datensätze, von denen jedes unterschiedliche Felder mit unterschiedlichen Daten enthält.
 
-> [!NOTE] Adobe Experience Platform speichert Zeitstempel normalerweise in Unix-Millisekunden. Für die Lesbarkeit in diesem Beispiel werden Datum und Uhrzeit verwendet.
+>[!NOTE] Adobe Experience Platform speichert Zeitstempel normalerweise in Unix-Millisekunden. Für die Lesbarkeit in diesem Beispiel werden Datum und Uhrzeit verwendet.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
