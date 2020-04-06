@@ -2,7 +2,7 @@
 title: Referenz - Basisfunktionen
 description: 'Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen. '
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -13,7 +13,7 @@ Mit dem Generator für berechnete Metriken können Sie statistische und mathemat
 
 Im Folgenden werden die Funktionen und ihre Definitionen alphabetisch aufgelistet.
 
-> [!NOTE] Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispiel: [!DNL MAXV(metrics)] ermöglicht auch [!DNL MAXV(PageViews + Visits).]
+>[!NOTE] Wenn [!DNL metric] als Argument in einer Funktion angegeben ist, sind auch andere Ausdrücke von Metriken zulässig. Beispiel: [!DNL MAXV(metrics)] ermöglicht auch [!DNL MAXV(PageViews + Visits).]
 
 ## Vergleich zwischen Tabellenfunktionen und Zeilenfunktionen
 
