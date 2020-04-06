@@ -2,7 +2,7 @@
 title: Referenz - erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste Funktionen die Option „Erweitert anzeigen“ wählen.
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -27,7 +27,7 @@ Wenn Sie hingegen zwei Metriken haben, die Sie interessieren, ist es möglicherw
 
 Gibt den Wert des Arguments zurück. Verwenden Sie NOT, um sicherzustellen, dass ein Wert nicht mit einem bestimmten Wert übereinstimmt.
 
-> [!NOTE] 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
+>[!NOTE] 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -64,7 +64,7 @@ So könnte die „Ungefähre Kunden“-Metrik für Berichte verwendet werden:
 
 ## Individuelle Werte überschritten 
 
-Wie Count() und RowCount() unterliegt auch &quot;Ungefährer Zähler Distinct()&quot;den Beschränkungen [für](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html)&quot;Eindeutige Werte überschritten&quot;. Wenn die Grenze &quot;Individuelle Werte überschritten&quot;innerhalb eines bestimmten Monats für eine Dimension erreicht wird, wird der Wert als 1 Dimensionselement gezählt.
+Wie Count() und RowCount() unterliegt auch &quot;Ungefährer Zähler Distinct()&quot;den Beschränkungen [für](https://marketing.adobe.com/resources/help/de_DE/reference/metrics_uniques_high_numbers.html)&quot;Eindeutige Werte überschritten&quot;. Wenn die Grenze &quot;Individuelle Werte überschritten&quot;innerhalb eines bestimmten Monats für eine Dimension erreicht wird, wird der Wert als 1 Dimensionselement gezählt.
 
 ## Vergleich von Count-Funktionen 
 
@@ -203,7 +203,7 @@ Gibt den Durchschnitt der letzten N Zeilen zurück.
 
 Wenn N &lt;= 0, werden alle vorherigen Zeilen verwendet. Da sie nach der Dimension geordnet ist, ist sie nur bei Dimensionen mit einer natürlichen Reihenfolge wie Datum oder Pfadlänge nützlich.
 
-> [!NOTE] Mit Quotenmetriken, wie Umsatz/Besucher, funktioniert dies nicht so, wie Sie es vielleicht erwarten: Es wird der Quotendurchschnitt ermittelt, anstatt dass der Umsatz über die letzten N und die Besucher über die letzten N summiert und anschließend geteilt werden. Verwenden Sie stattdessen
+>[!NOTE] Mit Quotenmetriken, wie Umsatz/Besucher, funktioniert dies nicht so, wie Sie es vielleicht erwarten: Es wird der Quotendurchschnitt ermittelt, anstatt dass der Umsatz über die letzten N und die Besucher über die letzten N summiert und anschließend geteilt werden. Verwenden Sie stattdessen
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -446,7 +446,7 @@ Gibt alle Elemente zurück, die keine exakte Übereinstimmung mit dem eingegeben
 
 Gibt TRUE zurück, wenn ein Argument TRUE ist, oder FALSE, wenn alle Argumente FALSE sind.
 
-> [!NOTE] 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
+>[!NOTE] 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -687,7 +687,7 @@ Die Gleichung für den Z-Wert lautet:
 
 wobei [!DNL x] der Rohwert, [!DNL μ] das arithmetische Mittel der Population und [!DNL σ] die Standardabweichung der Population ist.
 
-> [!NOTE] [!DNL μ] (Mu) und[!DNL σ] (Sigma) werden automatisch aus der Metrik berechnet.
+>[!NOTE] [!DNL μ] (Mu) und[!DNL σ] (Sigma) werden automatisch aus der Metrik berechnet.
 
 z-Transformation (Metrik)
 
@@ -712,5 +712,5 @@ Führt einen n-seitigen Z-Test mit Z-Wert von A durch.
 
 Gibt die Wahrscheinlichkeit zurück, mit der die aktuelle Zeile zufällig in der Spalte angezeigt wird.
 
-> [!NOTE] Dabei wird von einer Normalverteilung der Werte ausgegangen.
+>[!NOTE] Dabei wird von einer Normalverteilung der Werte ausgegangen.
 
