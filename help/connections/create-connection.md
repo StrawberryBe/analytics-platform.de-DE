@@ -2,14 +2,14 @@
 title: Verbindung erstellen
 description: Beschreibt, wie eine Verbindung zu einem Plattform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 41029fb428308a247df65072af4e419a90098a15
+source-git-commit: fa7898d73756c33a0bae22c8758bc9f0a649626a
 
 ---
 
 
 # Verbindung erstellen
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Workspace integrieren. Um einen Bericht über Plattformdatensätze zu erstellen, müssen Sie zunächst eine Verbindung zwischen Datensätzen in Platform und Workspace herstellen.
+Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in integrieren [!UICONTROL Workspace]. Um einen Bericht über Plattformdatensätze zu erstellen, müssen Sie zunächst eine Verbindung zwischen Datensätzen in Platform und Workspace herstellen.
 
 Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) , um eine Videoübersicht zu erhalten.
 
@@ -23,31 +23,36 @@ Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutoria
 
 ![Verbindung herstellen](assets/create-connection.png)
 
-1. Die linke Leiste zeigt alle Datensätze in der Plattform an, aus denen Sie ziehen können. Wählen Sie einen oder mehrere Datensätze aus, die Sie in Customer Journey Analytics abrufen möchten, und klicken Sie auf **[!UICONTROL Add]**. (Wenn Sie viele Datensätze auswählen können, können Sie über die Suchleiste oberhalb der Liste der Datensätze nach den richtigen Datensätzen suchen.)
+1. Die linke Leiste zeigt alle Datensätze in der Plattform an, aus denen Sie ziehen können. Wählen Sie einen oder mehrere Datensätze aus, in die Sie ziehen möchten, [!UICONTROL Customer Journey Analytics] und klicken Sie auf **[!UICONTROL Add]**. (Wenn Sie viele Datensätze auswählen können, können Sie über die Suchleiste oberhalb der Liste der Datensätze nach den richtigen Datensätzen suchen.)
 
-1. Anschließend legt Customer Journey Analytics für jeden Datensatz, den Sie zu dieser Verbindung hinzugefügt haben, den Dataset-Typ automatisch anhand der Daten fest, die eingehen. Es gibt 3 verschiedene Datensatztypen: Ereignis-, Profil- und Suchdaten.
+1. Dann wird für jeden Datensatz, den Sie zu dieser Verbindung hinzugefügt haben, [!UICONTROL Customer Journey Analytics] automatisch der Datensatztyp basierend auf den Daten festgelegt, die eingehen. Es gibt 3 verschiedene Datensatztypen: Ereignis-, Profil- und Suchdaten.
 
    | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
    |---|---|---|---|---|
-   | Ereignis | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Daten zur Umfrage, Daten zu Anzeigenimpressionen usw.). Dies sind typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel. Mit Ereignis-Daten können Sie die gewünschte ID verwenden. | Wird auf Zeitstempel eingestellt. | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
-   | Suche | Entspricht einer Classifications-Datei. Diese Daten werden zum Nachschlagen von Werten oder Schlüsseln in Ihren Ereignis- oder Profil-Daten verwendet. Sie können beispielsweise Suchdaten hochladen, die numerische IDs in Ihren Ereignis-Daten Produktnamen zuordnen. | nicht angegeben | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
-   | Profil | Analog zu Kundenattributen - für nicht veränderliche und nicht zeitliche Attribute. Daten, die in den Ereignis-Daten auf Ihre Besucher, Benutzer oder Kunden angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | Sie können auswählen, welche Person-ID Sie einbeziehen möchten. Jeder Datensatz, der in der Adobe Experience Platform definiert wird, verfügt über einen eigenen Satz von einer oder mehreren Personen-IDs, wie z. B. Cookie-ID, Stitched ID, Benutzer-ID, Rückverfolgungscode usw.<br>![Person](assets/person-id.png)**IDNote **: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies vom Berichte übernommen. Um Datasets wirklich zusammenzuführen, müssen Sie dieselbe Person-ID verwenden. |
+   | [!UICONTROL Event] | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Daten zur Umfrage, Daten zu Anzeigenimpressionen usw.). Dies sind typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel. Mit Ereignis-Daten können Sie die gewünschte ID verwenden. | Wird auf Zeitstempel eingestellt. | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
+   | [!UICONTROL Lookup] | Entspricht einer Classifications-Datei. Diese Daten werden zum Nachschlagen von Werten oder Schlüsseln in Ihren Ereignis- oder Profil-Daten verwendet. Sie können beispielsweise Suchdaten hochladen, die numerische IDs in Ihren Ereignis-Daten Produktnamen zuordnen. | nicht angegeben | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
+   | [!UICONTROL Profile] | Analog zu [!UICONTROL Customer Attributes] - für nicht ändernde und nicht zeitliche Attribute. Daten, die auf Ihre Besucher, Benutzer oder Kunden in den [!UICONTROL Event] Daten angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Das [!UICONTROL Platform] Schema, auf dem dieser Datensatztyp basiert. | Sie können auswählen, welche Person-ID Sie einbeziehen möchten. Jeder Datensatz, der in der Adobe Experience Platform definiert wird, verfügt über einen eigenen Satz von einer oder mehreren Personen-IDs, wie z. B. Cookie-ID, Stitched ID, Benutzer-ID, Rückverfolgungscode usw.<br>![Person](assets/person-id.png)**IDNote **: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies vom Berichte übernommen. Um Datasets wirklich zusammenzuführen, müssen Sie dieselbe Person-ID verwenden. |
 
-1. Klicken Sie auf **[!UICONTROL Next]**.
+1. Durch Klicken **[!UICONTROL Next]** gelangen Sie zum [!UICONTROL Create Connection] Dialogfeld.
 
-1. Legen Sie im Dialogfeld &quot;Verbindung erstellen&quot;die folgenden Einstellungen fest:
+   ![Verbindung herstellen](assets/create-connection2.png)
+
+1. Legen Sie im [!UICONTROL Create Connection] Dialogfeld die folgenden Einstellungen fest:
 
    | Feld | Beschreibung |
    |---|---|
-   | Name | Geben Sie der Verbindung einen beschreibenden Namen. Die Verbindung kann nicht ohne Namen gespeichert werden. |
-   | Beschreibung | Hinzufügen detailliertere Informationen, um diese Verbindung von anderen zu unterscheiden. |
-   | Größe | Die kollektive Größe der Datensätze in der Datenverbindung. |
-   | Datensätze | Die in dieser Verbindung enthaltenen Datensätze. |
-   | Daten-Streaming | Um mit dem Streaming der Daten für diese Verbindung zu beginnen, aktivieren Sie das Datenstreaming. Wenn das Datenstreaming für diese Verbindung aktiviert ist, wird Ihrem Konto die Datenmenge in Rechnung gestellt, die diese Verbindung streaming. (Beachten Sie, dass Sie das Datenstreaming auch im Connections Manager aktivieren können.) |
+   | [!UICONTROL Name Connection] | Geben Sie der Verbindung einen beschreibenden Namen. Die Verbindung kann nicht ohne Namen gespeichert werden. |
+   | [!UICONTROL Description] | Hinzufügen detailliertere Informationen, um diese Verbindung von anderen zu unterscheiden. |
+   | [!UICONTROL Datasets] | Die in dieser Verbindung enthaltenen Datensätze. |
+   | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | Wählen Sie diese Option, wenn Sie eine fortlaufende Verbindung herstellen möchten, damit neue Datenstapel, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace]fließen. |
+   | [!UICONTROL Import all existing data] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten aus Plattform für alle in dieser Verbindung befindlichen Datensätze importiert. Künftig werden auch alle vorhandenen historischen Daten für neue Datensätze, die zu dieser gespeicherten Verbindung hinzugefügt werden, automatisch importiert. <br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
 
-1. Klicken Sie auf **[!UICONTROL Save]**. Wenn Sie diese Verbindung speichern, passiert Folgendes:
+   **Bedenken Sie Folgendes:**
 
-   * Sie ziehen alle historischen Daten von Platform für alle Datensätze ein, die in dieser Verbindung vorhanden sind.
-   * Wenn Sie das Streaming aktiviert haben, stellen Sie eine ständige Verbindung her, sodass neue Daten, die den Datasets in dieser Verbindung hinzugefügt werden, automatisch in Workspace fließen.
+   * Wenn die kumulative Größe der historischen Daten für alle Datensätze in der Verbindung 1,5 Milliarden Zeilen überschreitet, zeigt eine Fehlermeldung an, dass Sie diese Menge an historischen Daten nicht importieren können. Wenn Sie jedoch einen Datensatz mit 1 Milliarde Zeilen historischer Daten hinzufügen und diese Daten importieren würden, und eine Woche später einen weiteren Datensatz derselben Größe hinzufügen und seine historischen Daten importieren würden, würde dies funktionieren.
+   * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese Daten die niedrigste Latenz aufweisen.
+   * Sämtliche Aufstockungsdaten (historische Daten) werden langsamer importiert.
+
+1. Klicken Sie auf **[!UICONTROL Save]**.
 
 Der nächste Schritt im Workflow besteht darin, eine Ansicht [zu](/help/data-views/create-dataview.md)erstellen.
