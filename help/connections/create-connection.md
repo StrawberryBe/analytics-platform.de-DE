@@ -2,18 +2,18 @@
 title: Verbindung erstellen
 description: Beschreibt, wie eine Verbindung zu einem Plattform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: fa7898d73756c33a0bae22c8758bc9f0a649626a
+source-git-commit: 7fdda3a4171400ba018fe31b492737553c575998
 
 ---
 
 
 # Verbindung erstellen
 
-Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in integrieren [!UICONTROL Workspace]. Um einen Bericht über Plattformdatensätze zu erstellen, müssen Sie zunächst eine Verbindung zwischen Datensätzen in Platform und Workspace herstellen.
+Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in integrieren [!UICONTROL Workspace]. Um über [!DNL Experience Platform] Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen Datensätzen in und herstellen [!DNL Experience Platform][!UICONTROL Workspace].
 
 Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) , um eine Videoübersicht zu erhalten.
 
->[!IMPORTANT] Sie können mehrere Plattformdatasets zu einer einzigen Verbindung kombinieren.
+>[!IMPORTANT] Sie können mehrere [!DNL Experience Platform] Datensätze zu einer einzigen Verbindung kombinieren.
 
 1. Wechseln Sie zu [https://analytics.adobe.com](https://analytics.adobe.com).
 
@@ -23,15 +23,15 @@ Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutoria
 
 ![Verbindung herstellen](assets/create-connection.png)
 
-1. Die linke Leiste zeigt alle Datensätze in der Plattform an, aus denen Sie ziehen können. Wählen Sie einen oder mehrere Datensätze aus, in die Sie ziehen möchten, [!UICONTROL Customer Journey Analytics] und klicken Sie auf **[!UICONTROL Add]**. (Wenn Sie viele Datensätze auswählen können, können Sie über die Suchleiste oberhalb der Liste der Datensätze nach den richtigen Datensätzen suchen.)
+1. Die linke Leiste zeigt alle Datensätze an, aus [!DNL Experience Platform] denen Sie ziehen können. Wählen Sie einen oder mehrere Datensätze aus, in die Sie ziehen möchten, [!UICONTROL Customer Journey Analytics] und klicken Sie auf **[!UICONTROL Add]**. (Wenn Sie viele Datensätze auswählen können, können Sie über die Suchleiste oberhalb der Liste der Datensätze nach den richtigen Datensätzen suchen.)
 
-1. Dann wird für jeden Datensatz, den Sie zu dieser Verbindung hinzugefügt haben, [!UICONTROL Customer Journey Analytics] automatisch der Datensatztyp basierend auf den Daten festgelegt, die eingehen. Es gibt 3 verschiedene Datensatztypen: Ereignis-, Profil- und Suchdaten.
+1. Dann wird für jeden Datensatz, den Sie zu dieser Verbindung hinzugefügt haben, [!UICONTROL Customer Journey Analytics] automatisch der Datensatztyp basierend auf den Daten festgelegt, die eingehen. Es gibt 3 verschiedene Datensatztypen: [!UICONTROL Event] Daten, [!UICONTROL Profile] Daten und [!UICONTROL Lookup] Daten.
 
    | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
    |---|---|---|---|---|
-   | [!UICONTROL Event] | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Daten zur Umfrage, Daten zu Anzeigenimpressionen usw.). Dies sind typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel. Mit Ereignis-Daten können Sie die gewünschte ID verwenden. | Wird auf Zeitstempel eingestellt. | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
-   | [!UICONTROL Lookup] | Entspricht einer Classifications-Datei. Diese Daten werden zum Nachschlagen von Werten oder Schlüsseln in Ihren Ereignis- oder Profil-Daten verwendet. Sie können beispielsweise Suchdaten hochladen, die numerische IDs in Ihren Ereignis-Daten Produktnamen zuordnen. | nicht angegeben | Das Platform-Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
-   | [!UICONTROL Profile] | Analog zu [!UICONTROL Customer Attributes] - für nicht ändernde und nicht zeitliche Attribute. Daten, die auf Ihre Besucher, Benutzer oder Kunden in den [!UICONTROL Event] Daten angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Das [!UICONTROL Platform] Schema, auf dem dieser Datensatztyp basiert. | Sie können auswählen, welche Person-ID Sie einbeziehen möchten. Jeder Datensatz, der in der Adobe Experience Platform definiert wird, verfügt über einen eigenen Satz von einer oder mehreren Personen-IDs, wie z. B. Cookie-ID, Stitched ID, Benutzer-ID, Rückverfolgungscode usw.<br>![Person](assets/person-id.png)**IDNote **: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies vom Berichte übernommen. Um Datasets wirklich zusammenzuführen, müssen Sie dieselbe Person-ID verwenden. |
+   | [!UICONTROL Event] | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Daten zur Umfrage, Daten zu Anzeigenimpressionen usw.). Dies sind typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel. Mit Ereignis-Daten können Sie die gewünschte ID verwenden. | Wird auf Zeitstempel eingestellt. | Das [!DNL Experience Platform] Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
+   | [!UICONTROL Lookup] | Entspricht einer Classifications-Datei. Diese Daten werden zum Nachschlagen von Werten oder Schlüsseln in Ihren Ereignis- oder Profil-Daten verwendet. Sie können beispielsweise Suchdaten hochladen, die numerische IDs in Ihren Ereignis-Daten Produktnamen zuordnen. | nicht angegeben | Das [!DNL Experience Platform] Schema, auf dem dieser Datensatztyp basiert. | nicht angegeben |
+   | [!UICONTROL Profile] | Analog zu [!UICONTROL Customer Attributes] - für nicht ändernde und nicht zeitliche Attribute. Daten, die auf Ihre Besucher, Benutzer oder Kunden in den [!UICONTROL Event] Daten angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Das [!DNL Experience Platform] Schema, auf dem dieser Datensatztyp basiert. | Sie können auswählen, welche Person-ID Sie einbeziehen möchten. Jeder Datensatz, der in der definiert ist, [!DNL Experience Platform] verfügt über einen eigenen Satz von einer oder mehreren Personen-IDs, wie z. B. Cookie-ID, Stitched ID, Benutzer-ID, Rückverfolgungscode usw.<br>![Person](assets/person-id.png)**IDNote **: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies vom Berichte übernommen. Um Datasets wirklich zusammenzuführen, müssen Sie dieselbe Person-ID verwenden. |
 
 1. Durch Klicken **[!UICONTROL Next]** gelangen Sie zum [!UICONTROL Create Connection] Dialogfeld.
 
@@ -45,7 +45,7 @@ Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutoria
    | [!UICONTROL Description] | Hinzufügen detailliertere Informationen, um diese Verbindung von anderen zu unterscheiden. |
    | [!UICONTROL Datasets] | Die in dieser Verbindung enthaltenen Datensätze. |
    | [!UICONTROL Automatically import all new datasets in this connection, beginning today.] | Wählen Sie diese Option, wenn Sie eine fortlaufende Verbindung herstellen möchten, damit neue Datenstapel, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace]fließen. |
-   | [!UICONTROL Import all existing data] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten aus Plattform für alle in dieser Verbindung befindlichen Datensätze importiert. Künftig werden auch alle vorhandenen historischen Daten für neue Datensätze, die zu dieser gespeicherten Verbindung hinzugefügt werden, automatisch importiert. <br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
+   | [!UICONTROL Import all existing data] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten aus [!DNL Experience Platform] allen Datensätzen, die in dieser Verbindung vorhanden sind, importiert. Künftig werden auch alle vorhandenen historischen Daten für neue Datensätze, die zu dieser gespeicherten Verbindung hinzugefügt werden, automatisch importiert. <br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
 
    **Bedenken Sie Folgendes:**
 
