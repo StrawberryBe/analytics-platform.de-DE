@@ -2,14 +2,14 @@
 title: Verbindungen verwalten
 description: Beschreibt das Verwalten von Verbindungen zu Plattformdatensätzen.
 translation-type: tm+mt
-source-git-commit: 43d7606886c1e1e51c549d4741924a902a7de26c
+source-git-commit: fa7898d73756c33a0bae22c8758bc9f0a649626a
 
 ---
 
 
 # Verbindungen verwalten
 
-Nachdem Sie eine oder mehrere Verbindungen erstellt haben, können Sie diese im Connections Manager verwalten. Sie können
+Nachdem Sie eine oder mehrere Verbindungen erstellt haben, können Sie diese im [!UICONTROL Connections] Manager verwalten. Sie können
 
 * Löschen Sie eine Verbindung.
 * Benennen Sie eine Verbindung um.
@@ -26,9 +26,9 @@ Nachdem Sie eine oder mehrere Verbindungen erstellt haben, können Sie diese im 
 
    | Aktion | Beschreibung |
    |---|---|
-   | Löschen | Durch das Löschen einer Verbindung wird der Datensatz nicht gelöscht, da sich die Daten noch in der Adobe Experience Platform befinden. |
-   | Umbenennen | Eine Verbindung wird umbenannt... |
-   | Datenansicht erstellen | Über diesen Link gelangen Sie zum [Data Ansicht Builder](/help/data-views/create-dataview.md). |
-   | Beginn- oder Stopp-Datenstreaming | &quot;Streaming&quot;bedeutet, dass, wenn neue Stapel zu einem der zugehörigen Datensätze hinzugefügt werden, diese neuen Daten zum Berichte in Customer Journey Analytics eingebracht werden. |
+   | [!UICONTROL Delete] | Durch das Löschen einer Verbindung wird der Datensatz nicht gelöscht, da sich die Daten noch in der Adobe Experience Platform befinden. |
+   | [!UICONTROL Rename] | Sie können die Verbindung mit einem aussagekräftigeren Namen umbenennen. |
+   | [!UICONTROL Create Data View] | Über diesen Link gelangen Sie zum [Data Ansicht Builder](/help/data-views/create-dataview.md). |
+   | [!UICONTROL Start or stop data streaming] | &quot;Streaming&quot;bedeutet, dass, wenn neue Stapel zu einem Datensatz in der Verbindung hinzugefügt werden, diese neuen Daten [!UICONTROL Customer Journey Analytics] zum Berichte eingebracht werden. |
 
 
