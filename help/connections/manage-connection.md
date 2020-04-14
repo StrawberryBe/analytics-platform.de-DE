@@ -2,7 +2,7 @@
 title: Verbindungen verwalten
 description: Beschreibt das Verwalten von Verbindungen zu Plattformdatensätzen.
 translation-type: tm+mt
-source-git-commit: fa7898d73756c33a0bae22c8758bc9f0a649626a
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -26,7 +26,7 @@ Nachdem Sie eine oder mehrere Verbindungen erstellt haben, können Sie diese im 
 
    | Aktion | Beschreibung |
    |---|---|
-   | [!UICONTROL Delete] | Durch das Löschen einer Verbindung wird der Datensatz nicht gelöscht, da sich die Daten noch in der Adobe Experience Platform befinden. |
+   | [!UICONTROL Delete] | Durch das Löschen einer Verbindung wird der Datensatz nicht gelöscht, da sich die Daten noch in [!DNL Adobe Experience Platform]der Datenbank befinden. |
    | [!UICONTROL Rename] | Sie können die Verbindung mit einem aussagekräftigeren Namen umbenennen. |
    | [!UICONTROL Create Data View] | Über diesen Link gelangen Sie zum [Data Ansicht Builder](/help/data-views/create-dataview.md). |
    | [!UICONTROL Start or stop data streaming] | &quot;Streaming&quot;bedeutet, dass, wenn neue Stapel zu einem Datensatz in der Verbindung hinzugefügt werden, diese neuen Daten [!UICONTROL Customer Journey Analytics] zum Berichte eingebracht werden. |
