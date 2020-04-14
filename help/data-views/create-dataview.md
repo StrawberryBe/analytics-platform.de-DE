@@ -2,7 +2,7 @@
 title: Datenschicht erstellen
 description: Beschreibt das Erstellen einer Ansicht von Daten zu einem Plattformdatensatz in Customer Journey Analytics (CJA).
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutoria
 
 ## Voraussetzung
 
-Bevor Sie Daten-Ansichten erstellen können, müssen Sie eine oder mehrere Verbindungen zu Adobe Experience Platform-Datensätzen [einrichten](/help/connections/create-connection.md).
+Bevor Sie Ansichten erstellen können, müssen Sie eine oder mehrere Verbindungen zu Experience Platform [-Datensätzen] einrichten](/help/connections/create-connection.md).
 
 ## Einstellungen konfigurieren
 
@@ -27,7 +27,7 @@ Bevor Sie Daten-Ansichten erstellen können, müssen Sie eine oder mehrere Verbi
 
    | Sitzungseinstellungen | Definition |
    |---|---|
-   | Verbindung | In diesem Feld wird die Ansicht der Daten mit der Verbindung verknüpft, die Sie zuvor hergestellt haben und die den/die Plattformdatensatz/s enthält. |
+   | Verbindung | In diesem Feld wird die Ansicht der Daten mit der zuvor eingerichteten Verbindung verknüpft, die den bzw. die [!UICONTROL Experience Platform] Datensätze enthält. |
    | Name | Die Benennung der Ansicht ist obligatorisch. |
    | Beschreibung | Eine detaillierte Beschreibung ist nicht obligatorisch, wird jedoch empfohlen. |
    | Hinzufügen Tags | Mit Tags können Sie Ihre Daten-Ansichten in Kategorien organisieren. |
