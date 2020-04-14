@@ -2,7 +2,7 @@
 title: Unterstützung der Customer Journey Analytics-Funktion
 description: Funktionen von Customer Journey Analytics im Vergleich zu Adobe Analytics-Funktionen.
 translation-type: tm+mt
-source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -28,7 +28,7 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | Virtual Report Suites | Nun als [Data Ansichten](/help/data-views/create-dataview.md)bezeichnet. |
 | VRS-Komponentenkuratierung | Jetzt Teil der Data-Ansichten. |
 | Berichtszeitverarbeitung | CJA basiert ausschließlich auf der Verarbeitung der Berichtszeit. |
-| GDPR-Löschung | Beachten Sie, dass GDPR jetzt in Abstimmung mit Adobe Experience Platform - CJA verarbeitet wird, unabhängig davon, welche Daten von Experience Platform an zugrunde liegenden Datensätzen geändert werden. |
+| GDPR-Löschung | Beachten Sie, dass GDPR jetzt in Abstimmung mit [!UICONTROL Experience Platform] - CJA alle Datenänderungen übernimmt, die an zugrunde liegenden Datensätzen vorgenommen [!UICONTROL Experience Platform] werden. |
 
 ## Mit Einschränkungen unterstützt
 
@@ -36,7 +36,7 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | --- | --- |
 | Produktvariable | Die Produktvariable, die derzeit für den Berichte von Daten verfügbar ist, die dem Experience Ereignis-Schema entsprechen (insbesondere mit dem productListItems-Objekt). |
 | Visualisierungen | Mit Ausnahme der Imagemap-Visualisierung werden alle Visualisierungen unterstützt. |
-| AAM-Audiencen | Wenn Kunden Analytics Data Connector-Datensätze verwenden, sind diese Daten Teil der ADC-Daten. |
+| AAM-Audiencen | Wenn Kunden [!UICONTROL Analytics Data Connector] Datensätze verwenden, sind diese Daten Teil der ADC-Daten. |
 | Projektfreigabe | Die Projektfreigabe wird nur von CJA-Anwendern unterstützt. Die Projektfreigabe erfolgt nicht über CJA und den herkömmlichen Arbeitsbereich für Analysen. |
 | Benutzerdefinierte Sitzung | Unterstützung für alle benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundschlägen. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Persistenzeinstellungen gehören jetzt jedoch zu den Data Ansichten und stehen für alle Dimensionen zur Verfügung. Denken Sie daran, dass die Persistenz auf der Verarbeitung der Berichtszeit und nicht auf der Verarbeitung der Datenerfassung basiert. Dies bedeutet, dass die gesamte Persistenz auf dem Datumsbereich des Berichte und nicht auf der Gesamtheit der Daten basiert. |
@@ -50,9 +50,9 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | Dimensionen des Arbeitsbereichs für Analysen (z. B. Browsertyp, Werber-Typ, Marketing-Kanal, Besuchsnummer usw.) | CJA stellt diese Dimensionen nicht nativ bereit. Für Kunden, die Analytics Data Connector (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie unsere [Dokumentation darüber, welche Analytics-Variablen über ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md)unterstützt werden. |
 | Bedienfelder | Leeres Bedienfeld, Zuordnungs-Bedienfeld und Freiform-Bedienfeld werden vollständig unterstützt. Segmentvergleich wird nicht unterstützt. |
 | Merchandising eVars | Merchandising-eVars funktionieren nur mit ADC-basierten Datensätzen, es sei denn, sie entsprechen genau demselben XDM-Schema (ähnlich den Einschränkungen der Liste oben). |
-| Bot-Filterung | Bei Analytics Data Connector (ADC)-basierten Datensätzen wird Bot-Filterung angewendet. Allgemeine Bot-Filterlogik für andere Datensätze wird nicht von der Experience Platform oder CJA ausgeführt. |
+| Bot-Filterung | Bei Analytics Data Connector (ADC)-basierten Datensätzen wird Bot-Filterung angewendet. Allgemeine Bot-Filterlogik für andere Datensätze wird nicht vom [!UICONTROL Experience Platform] oder CJA ausgeführt. |
 | Verarbeitungsregeln | Bei ADC-basierten Datensätzen werden weiterhin Verarbeitungsregeln angewendet. |
-| Geräteübergreifende Identitätsfestsetzung | Kunden sind über den Abfrage Service auf &quot;einmalige&quot;Datenreihen beschränkt oder müssen diese Logik derzeit vor der Datenerfassung mit Experience Platform auf Daten anwenden. |
+| Geräteübergreifende Identitätsfestsetzung | Kunden sind über den Abfrage Service auf &quot;einmalige&quot;Datenreihen beschränkt oder müssen diese Logik derzeit vor der Datenerfassung auf Daten anwenden, bevor sie [!UICONTROL Experience Platform] Daten erfassen. |
 
 ## Derzeit nicht unterstützt, aber geplant
 
@@ -95,6 +95,6 @@ Die folgende Tabelle enthält eine Liste, die Funktionen in Adobe Analytics unte
 | Reports &amp; Analysen-Zielgruppen |  |
 | Ereignis des Reports &amp; Analysen-Kalenders |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse Berichterstellung  | Der Adobe Experience Platform Abfrage Service ist die neue Schnittstelle für diese Anwendungsfälle in CJA. |
+| Data Warehouse Berichterstellung  | [!UICONTROL Experience Platform Query Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein. |
 | Mobile Services |  |
 | Daten-Feeds |  |
