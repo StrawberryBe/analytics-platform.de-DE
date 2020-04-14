@@ -2,7 +2,7 @@
 title: Ansichten und Attribution von Daten konfigurieren
 description: Beschreibt das Erstellen einer Ansicht zu einem Plattformdatensatz in Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Berücksichtigen Sie dies, bevor Sie Zuordnungseinstellungen anwenden:
 
 * In der Benutzeroberfläche &quot;Data Ansichten&quot;geben Sie die Standardzuordnung an. **Hinweis**: Zu einem späteren Zeitpunkt können Sie diese Einstellungen in Workspace-Projekten überschreiben. Diese Funktion ist jedoch derzeit nicht verfügbar.
 
-* Zuordnungseinstellungen in Customer Journey Analytics sind nicht destruktiv und rückwirkend. Mit anderen Worten, Sie können Ihren Datensätzen in Customer Journey Analytics keinen irreparablen Schaden zufügen. Auch wenn Sie versehentlich etwas löschen, können Sie jederzeit zu Experience Platform zurückkehren und den Datensatz wieder in das Programm aufnehmen. (Beachten Sie jedoch, dass die Wiedereinsetzung des Datensatzes zusätzliche Kosten verursacht.)
+* Zuordnungseinstellungen in Customer Journey Analytics sind nicht destruktiv und rückwirkend. Mit anderen Worten, Sie können Ihren Datensätzen in Customer Journey Analytics keinen irreparablen Schaden zufügen. Auch wenn Sie versehentlich etwas löschen, können Sie jederzeit zu dem Datensatz zurückkehren [!UICONTROL Experience Platform] und ihn wieder einführen. (Beachten Sie jedoch, dass die Wiedereinsetzung des Datensatzes zusätzliche Kosten verursacht.)
 
 * Wenn Sie eine Dimension wie eine herkömmliche eVar (Konversionsvariable) &quot;benehmen&quot;möchten, sollten Sie sie standardmäßig mit der Zuordnung &quot;Last Touch-Besuch&quot;konfigurieren.
 
