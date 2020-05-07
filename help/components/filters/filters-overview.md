@@ -2,7 +2,10 @@
 title: Übersicht über Filter
 description: Verstehen Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 09dcb36b96d95276b357e0f1308a977f5db5d711
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 15%
 
 ---
 
@@ -16,13 +19,13 @@ Filter können auf Attributen (Browsertyp, Gerät, Anzahl der Besuche, Land, Ges
 Sie können Filter im Filteraufbau erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter gemeinsam als gestapelte Filter verwendet werden.
 
 >[!IMPORTANT]
-Filter werden in Adobe Analytics als &quot;Segmente&quot;bezeichnet. Wir haben Segmente in Filter umbenannt, da Adobe Experience Platform eine andere Definition von &quot;segment&quot;hat. Ein Segment in AEP bezieht sich auf ...
+>Filter werden in Adobe Analytics als &quot;Segmente&quot;bezeichnet. Wir haben Segmente in Filter umbenannt, da Adobe Experience Platform eine andere Definition von &quot;segment&quot;hat.
 
-Die Filterung umfasst den [Filteraufbau](/help/components/filters/create-filters.md) zum Erstellen von Filtern und zum Ausführen eines Vortests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zum Erfassen, Taggen, Genehmigen, Sicherheitseinstellungen und Freigeben von Filtern in Ihrem Unternehmen.
+Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
 ## Sequenzielle Filter
 
-Mit sequenziellen Filtern können Sie Besucher basierend auf der Navigation und der Ansicht der Seite auf Ihrer Website identifizieren und so einen Filter für definierte Aktionen und Interaktionen bereitstellen. Sequenzielle Segmente helfen Ihnen dabei, herauszufinden, was ein Besucher mag und was ein Besucher vermeidet. Beim Erstellen sequenzieller Filter wird der DANN-Operator verwendet, um die Navigation des Besuchers zu definieren und anzuordnen.
+Mit sequenziellen Filtern können Sie Besucher basierend auf der Navigation und der Ansicht der Seite auf Ihrer Website identifizieren und so einen Filter für definierte Aktionen und Interaktionen bereitstellen. Mit sequenziellen Segmenten können Sie erkennen, was ein Besucher mag und was er meidet. Beim Erstellen sequenzieller Filter wird der DANN-Operator verwendet, um die Navigation des Besuchers zu definieren und anzuordnen.
 
 Siehe folgendes Beispiel:
 
@@ -39,7 +42,7 @@ Filter basieren auf einer Hierarchie auf Ereignis-, Sitzungs- und Benutzerebene 
 >[!NOTE]
 >Der Container &quot;Person&quot;wurde früher als &quot;Besucher-Container&quot;bezeichnet. Der Session-Container wurde als &quot;Besuch&quot;-Container bezeichnet, und der Ereignis-Container war früher der TrefferContainer.
 
-Ein Filter legt Bedingungen zum Filtern eines Besuchers auf der Grundlage seiner Attribute oder Interaktionen mit Ihrer Site fest. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln zum Filtern von Besuchern auf der Grundlage von Besucher- und/oder Navigationsmerkmalen fest. Zur weiteren Aufschlüsselung von Besucher-Daten können Sie für jeden Besucher nach bestimmten Besuchen und/oder Seitentreffern filtern. Der Filteraufbau bietet eine einfache Architektur zum Erstellen dieser Untergruppen und zum Anwenden von Regeln als verschachtelte, hierarchische Container für Person, Sitzung oder Ereignis.
+Ein Filter legt Bedingungen zum Filtern eines Besuchers auf der Grundlage seiner Attribute oder Interaktionen mit Ihrer Site fest. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln zum Filtern von Besuchern auf der Grundlage von Besucher- und/oder Navigationsmerkmalen fest. Um die Besucherdaten weiter herunterzubrechen, können Sie jeden Besucher auf der Grundlage bestimmter Besuche und/oder Seitenansichten filtern. Der Filteraufbau bietet eine einfache Architektur zum Erstellen dieser Untergruppen und zum Anwenden von Regeln als verschachtelte, hierarchische Container für Person, Sitzung oder Ereignis.
 
 Die im Filteraufbau verwendete Container-Architektur definiert den Begriff &quot;&quot;als äußersten Container, der übergreifende Daten enthält, die für den Besucher spezifisch sind, und zwar besuchsübergreifend und seitenübergreifend, d. h. über Ansichten hinweg. In einem verschachtelten Session-Container können Sie Regeln festlegen, um die Daten des Besuchers auf Grundlage von Sitzungen aufzuschlüsseln. In einem verschachtelten Ereignis-Container können Sie die Informationen zum Besucher auf der Grundlage der einzelnen Ansichten aufschlüsseln. Mit jedem Container können Sie Berichte über den Verlauf eines Besuchers, Interaktionen nach Sitzungen unterteilt oder einzelne Ereignis unterteilen.
 
@@ -66,7 +69,7 @@ Sitzungs-Container enthalten Werte, die auf dem Vorkommen pro Sitzung basieren:
 
 * Sitzung Nr.
 
-* Einstieg Seite
+* Entrypage
 
 * Rückkehrhäufigkeit
 
@@ -76,7 +79,7 @@ Sitzungs-Container enthalten Werte, die auf dem Vorkommen pro Sitzung basieren:
 
 ### Ereignis Container
 
-Der Container &quot;Ereignis&quot;definiert, welche Ereignis von Seiten Sie in einen Filter einschließen oder ausschließen möchten. Es handelt sich dabei um die kleinsten verfügbaren Container, mit denen Sie bestimmte Klicks und die Ansicht der Seite identifizieren können, bei denen eine Bedingung wahr ist, sodass Sie einen einzigen Rückverfolgungscode oder ein isoliertes Verhalten innerhalb eines bestimmten Bereichs Ihrer Site Ansicht haben. Möglicherweise möchten Sie auch einen bestimmten Kanal genau bestimmen, wenn eine Aktion ausgeführt wird, z. B. den Marketingwert, wenn eine Bestellung aufgegeben wurde.
+Der Container &quot;Ereignis&quot;definiert, welche Ereignis von Seiten Sie in einen Filter einschließen oder ausschließen möchten. Dies ist der engste verfügbare Behälter, mit dem Sie spezifische Klicks und Seitenansichten identifizieren können, für die eine Bedingung wahr ist, wobei Sie einen einzelnen Trackingcode oder ein isoliertes Verhalten in einem bestimmten Bereich Ihrer Site anzeigen können. Sie können auch einen bestimmten Wert erkennen, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, wenn ein Auftrag platziert wurde.
 
 Ereignis-Container enthalten Werte, die auf Einzelseitenunterteilungen basieren:
 
