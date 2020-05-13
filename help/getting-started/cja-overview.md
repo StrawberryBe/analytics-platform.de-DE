@@ -2,7 +2,10 @@
 title: Überblick über Customer Journey Analytics
 description: Einführung in Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
+source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +27,7 @@ Die erste Version von Customer Journey Analytics umfasst viele der Funktionen vo
 
 ## Vergleichen von CJA mit geräteübergreifenden Analysen
 
-[Geräteübergreifende Analysen](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) können mit dem Identitätsdienst für Adobe Experience Platform integriert werden. Dabei wird entweder das Co-op-Diagramm oder das private Diagramm verwendet, um zu ermitteln, wie digitale Geräte Personen zugeordnet werden. Es ist für Adobe Analytics Ultimate-Kunden verfügbar.
+[Geräteübergreifende Analysen](https://docs.adobe.com/content/help/de-DE/analytics/components/cda/cda-home.html) können mit dem Identitätsdienst für Adobe Experience Platform integriert werden. Dabei wird entweder das Co-op-Diagramm oder das private Diagramm verwendet, um zu ermitteln, wie digitale Geräte Personen zugeordnet werden. Es ist für Adobe Analytics Ultimate-Kunden verfügbar.
 
 CJA ist mit Adobe Experience Platform-Datensätzen integriert und ermöglicht die Analyse über mehrere Kanal in Analyse Workspace. Obwohl CJA noch nicht in die Co-op- oder Private-Identity-Diagramme integriert ist, können Sie &quot;Ihre eigene ID&quot;zusammenführen, um Datasets zusammenzuführen. Diese Datensätze können über digitale Daten hinausgehen und sowohl Online- als auch Offline-Touchpoints einschließen. Die CJA-Voraussetzungen werden nachfolgend ausführlicher behandelt.
 
@@ -32,7 +35,7 @@ CJA ist mit Adobe Experience Platform-Datensätzen integriert und ermöglicht di
 
 Customer Journey Analytics ermöglicht Ihnen Folgendes:
 
-* **Betrachten Sie den Kunden in einem Reisekontext**: Sie können Daten sequenziell über mehrere Kanal hinweg Ansicht und analysieren. Daten aus Call Center, POS-Systemen und Online-Eigenschaften können in einer einzigen Berichte-Ansicht zusammengefasst werden.
+* **Betrachten Sie den Kunden in einem Reisekontext**: Sie können Daten sequenziell über mehrere Kanal hinweg Ansicht und analysieren. Daten aus Ihrem Call Center, POS-Systemen und Online-Eigenschaften können in einer einzigen Berichte-Ansicht zusammengefasst werden.
 * **Machen Sie allen** Einblicke zugänglich: Demokratisieren Sie den Datenzugriff und lassen Sie mehr Menschen Geschäftsentscheidungen mit datengestützten Erkenntnissen treffen. Jeder Mitarbeiter des Unternehmens, der für alle Aspekte der Kundenerfahrung verantwortlich ist, kann anhand vollständigerer Daten schneller echte Entscheidungen treffen.
 * **Nutzen Sie die Kraft der Datenwissenschaft für Ihre Analysten**: Customer Journey Analytics ermöglicht es normalen Menschen, mithilfe von Datenwissenschaften tiefe Einblicke und Analyse zu gewinnen.
 * **Visualisieren und interagieren Sie mit Ihren Datensets mithilfe von Ad-hoc-Berichten**: Workspace kann jeden Datensatz aus Adobe Experience Platform verwenden, der einigen grundlegenden Regeln entspricht.
