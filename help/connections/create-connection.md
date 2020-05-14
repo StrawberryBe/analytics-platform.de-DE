@@ -1,24 +1,24 @@
 ---
-title: Verbindung erstellen
-description: Beschreibt, wie eine Verbindung zu einem Plattform-Datensatz in Customer Journey Analytics hergestellt wird.
+title: Verbindung herstellen
+description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
+source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 4%
+source-wordcount: '886'
+ht-degree: 69%
 
 ---
 
 
-# Verbindung erstellen
+# Verbindung herstellen
 
-Mithilfe einer Verbindung können Sie Datensätze aus [!DNL Adobe Experience Platform] in [!UICONTROL Workspace]integrieren. Für die Berichterstellung zu [!DNL Experience Platform] Datensätzen müssen Sie zunächst eine Verbindung zwischen Datensätzen in [!DNL Experience Platform] und [!UICONTROL Workspace]herstellen.
+A connection lets you integrate datasets from [!DNL Adobe Experience Platform] into [!UICONTROL Workspace]. In order to report on [!DNL Experience Platform] datasets, you first have to establish a connection between datasets in [!DNL Experience Platform] and [!UICONTROL Workspace].
 
-Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) , um eine Videoübersicht zu erhalten.
+Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html).
 
->[!IMPORTANT] Sie können mehrere [!DNL Experience Platform] Datensätze zu einer einzigen Verbindung kombinieren.
+>[!IMPORTANT] Sie können mehrere [!DNL Experience Platform]-Datensätze zu einer Verbindung zusammenfassen.
 
-1. Go to [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Gehen Sie zu [https://analytics.adobe.com](https://analytics.adobe.com).
 
 1. Click the **[!UICONTROL Connections]** tab.
 
@@ -26,38 +26,39 @@ Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutoria
 
    ![Verbindung herstellen](assets/create-connection.png)
 
-1. Wählen Sie zunächst eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten. Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Sandboxes können als &quot;Datensilos&quot;mit Datensätzen betrachtet werden. Sandboxen dienen zur Steuerung des Zugriffs auf Datensätze. Sie können nicht über Sandboxen auf Daten zugreifen.
+1. Wählen Sie zunächst unter &quot; **[!UICONTROL Datensätze]** auswählen&quot;eine [!UICONTROL Sandbox] in der Erlebnisplattform aus, die den Datensatz/die Datensätze enthält, zu dem/denen Sie eine Verbindung herstellen möchten.
+Adobe Experience Platform bietet [Sandboxen](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) , die eine einzelne Plattforminstanz in separate virtuelle Umgebung aufteilen. Sie können sich [!UICONTROL Sandboxes] als &quot;Datensilos&quot;vorstellen, die Datensätze enthalten und zur Steuerung des Zugriffs auf Datensätze verwendet werden. Beachten Sie, dass Sie nicht auf Daten über [!UICONTROL Sandboxen]zugreifen können.
 
-1. Nachdem Sie die Sandbox ausgewählt haben, zeigt die linke Leiste alle Datensätze in der Sandbox an, aus denen Sie ziehen können. Wählen Sie einen oder mehrere Datensätze aus, die Sie in [!UICONTROL Customer Journey Analytics] ziehen möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**. (Wenn Sie viele Datensätze auswählen können, können Sie über die Suchleiste oberhalb der Liste der Datensätze nach den richtigen Datensätzen suchen.)
+1. Nachdem Sie die Sandbox ausgewählt haben, zeigt die linke Leiste alle Datensätze in der Sandbox an, aus denen Sie ziehen können. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. (Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste über der Liste der Datensätze nach den richtigen suchen.)
 
-1. Als Nächstes legt [!UICONTROL Customer Journey Analytics] für jeden Datensatz, den Sie zu dieser Verbindung hinzugefügt haben, automatisch den Datasettyp anhand der Daten fest, die eingehen. Es gibt 3 verschiedene Datensatztypen: [!UICONTROL Ereignis] -, [!UICONTROL Profil] - und [!UICONTROL Suchdaten] .
+1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
    | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
    |---|---|---|---|---|
-   | [!UICONTROL Ereignis] | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Daten zur Umfrage, Daten zu Anzeigenimpressionen usw.). Dies können beispielsweise typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel sein. Bei Ereignis-Daten haben Sie die Flexibilität, welche ID als Personen-ID verwendet wird. | Wird automatisch auf das Standardzeitstempelfeld von Ereignis-basierten Schemas in der [UICONTROL Experience Platform]eingestellt. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten &quot;Zeitreihen&quot;basiert. Beispiele sind &quot;XDM Experience Ereignis&quot;oder &quot;XDM Decision Ereignis&quot;. | Sie können auswählen, welche Person-ID Sie einbeziehen möchten. Jedes in der Erlebnisplattform definierte DataSet-Schema kann einen eigenen Satz einer oder mehrerer Identitäten definieren und mit einem Identitäts-Namensraum verknüpft sein. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugewiesene ID, Benutzer-ID, Rückverfolgungscode usw. |
-   | [!UICONTROL Suche] | Entspricht einer Classifications-Datei. Diese Daten werden zum Nachschlagen von Werten oder Schlüsseln in Ihren Ereignis- oder Profil-Daten verwendet. Sie können beispielsweise Suchdaten hochladen, die numerische IDs in Ihren Ereignis-Daten Produktnamen zuordnen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten &quot;Record&quot;basiert, mit Ausnahme der Klasse &quot;XDM Individuelles Profil&quot;. | nicht angegeben |
-   | [!UICONTROL Profil] | Analog zu [!UICONTROL Kundenattributen] - für nicht ändernde und nicht zeitliche Attribute. Daten, die auf Ihre Besucher, Benutzer oder Kunden in den [!UICONTROL Ereignis] -Daten angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse &quot;XDM Individuelles Profil&quot;basiert. | Sie können auswählen, welche Person-ID Sie einbeziehen möchten. Jeder Datensatz, der in der definiert ist, [!DNL Experience Platform] verfügt über einen eigenen Satz von einer oder mehreren Personen-IDs, wie z. B. Cookie-ID, Stitched ID, Benutzer-ID, Rückverfolgungscode usw.<br>![Person](assets/person-id.png)**IDNote **: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies vom Berichte übernommen. Um Datasets wirklich zusammenzuführen, müssen Sie dieselbe Person-ID verwenden. |
+   | [!UICONTROL Ereignis] | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Umfragedaten, Ad-Impression-Daten usw.). Dies können beispielsweise typische Klickdaten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [UICONTROL Experience Platform] gesetzt. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Zeitreihen“ basiert. Beispiele sind „XDM-Erlebnisereignis“ oder „XDM-Entscheidungsereignis“. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. |
+   | [!UICONTROL Suche] | Entspricht einer Classifications-Datei. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | nicht angegeben |
+   | [!UICONTROL Profil] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jeden in [!DNL Experience Platform] definierten Datensatz ist ein eigener Satz von einer oder mehreren definierten Personen-IDs definiert, z. B. Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID](assets/person-id.png)**Hinweis:** Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies in der Berichterstellung berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
 
 1. Durch Klicken auf **[!UICONTROL Weiter]** gelangen Sie zum Dialogfeld Verbindung [!UICONTROL erstellen] .
 
    ![Verbindung herstellen](assets/create-connection2.png)
 
-1. Legen Sie im Dialogfeld Verbindung [!UICONTROL erstellen] die folgenden Einstellungen fest:
+1. In the [!UICONTROL Create Connection] dialog, define these settings:
 
    | Feld | Beschreibung |
    |---|---|
    | [!UICONTROL Namensverbindung] | Geben Sie der Verbindung einen beschreibenden Namen. Die Verbindung kann nicht ohne Namen gespeichert werden. |
-   | [!UICONTROL Beschreibung] | Hinzufügen detailliertere Informationen, um diese Verbindung von anderen zu unterscheiden. |
+   | [!UICONTROL Beschreibung] | Fügen Sie weitere Details hinzu, um diese Verbindung von anderen zu unterscheiden. |
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
-   | [!UICONTROL Importieren Sie alle neuen Datensätze in dieser Verbindung automatisch, beginnend heute.] | Wählen Sie diese Option, wenn Sie eine fortlaufende Verbindung herstellen möchten, damit neue Datenstapel, die den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace]fließen. |
-   | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten aus [!DNL Experience Platform] allen Datensätzen, die in dieser Verbindung vorhanden sind, importiert. Künftig werden auch alle vorhandenen historischen Daten für neue Datensätze, die zu dieser gespeicherten Verbindung hinzugefügt werden, automatisch importiert. <br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
+   | [!UICONTROL Importieren Sie alle neuen Datensätze in dieser Verbindung automatisch, beginnend heute.] | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
+   | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten von [!DNL Experience Platform] für alle Datensätze importiert, die sich in dieser Verbindung befinden. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. <br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
 
    **Bedenken Sie Folgendes:**
 
-   * Wenn die kumulative Größe der historischen Daten für alle Datensätze in der Verbindung 1,5 Milliarden Zeilen überschreitet, zeigt eine Fehlermeldung an, dass Sie diese Menge an historischen Daten nicht importieren können. Wenn Sie jedoch einen Datensatz mit 1 Milliarde Zeilen historischer Daten hinzufügen und diese Daten importieren würden, und eine Woche später einen weiteren Datensatz derselben Größe hinzufügen und seine historischen Daten importieren würden, würde dies funktionieren.
-   * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese Daten die niedrigste Latenz aufweisen.
-   * Sämtliche Aufstockungsdaten (historische Daten) werden langsamer importiert.
+   * Wenn die kumulative Größe der historischen Daten für alle Datensätze in der Verbindung 1,5 Milliarden Zeilen überschreitet, wird eine Fehlermeldung angezeigt, dass Sie diese Menge an historischen Daten nicht importieren können. Wenn Sie jedoch einen Datensatz mit 1 Milliarde Zeilen historischer Daten hinzufügen und diese Daten importieren würden, und eine Woche später einen weiteren Datensatz derselben Größe hinzufügen und seine historischen Daten importieren würden, würde dies funktionieren.
+   * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese Daten die geringste Latenz aufweisen.
+   * Alle (historischen) Aufstockungsdaten werden langsamer importiert.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Der nächste Schritt im Workflow besteht darin, eine Ansicht [zu](/help/data-views/create-dataview.md)erstellen.
+Der nächste Schritt im Workflow ist das [Erstellen einer Datenansicht](/help/data-views/create-dataview.md).
