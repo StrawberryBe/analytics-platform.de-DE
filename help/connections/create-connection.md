@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
+source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 69%
+source-wordcount: '889'
+ht-degree: 68%
 
 ---
 
@@ -26,12 +26,17 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 
    ![Verbindung herstellen](assets/create-connection.png)
 
-1. Wählen Sie zunächst unter &quot; **[!UICONTROL Datensätze]** auswählen&quot;eine [!UICONTROL Sandbox] in der Erlebnisplattform aus, die den Datensatz/die Datensätze enthält, zu dem/denen Sie eine Verbindung herstellen möchten.
-Adobe Experience Platform bietet [Sandboxen](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) , die eine einzelne Plattforminstanz in separate virtuelle Umgebung aufteilen. Sie können sich [!UICONTROL Sandboxes] als &quot;Datensilos&quot;vorstellen, die Datensätze enthalten und zur Steuerung des Zugriffs auf Datensätze verwendet werden. Beachten Sie, dass Sie nicht auf Daten über [!UICONTROL Sandboxen]zugreifen können.
+1. Wählen Sie in Experience Platform eine Sandbox aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.
 
-1. Nachdem Sie die Sandbox ausgewählt haben, zeigt die linke Leiste alle Datensätze in der Sandbox an, aus denen Sie ziehen können. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. (Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste über der Liste der Datensätze nach den richtigen suchen.)
+   Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Sandboxes können als &quot;Datensilos&quot;mit Datensätzen betrachtet werden. Sandboxen dienen zur Steuerung des Zugriffs auf Datensätze. Sie können nicht über Sandboxen auf Daten zugreifen. Nachdem Sie die Sandbox ausgewählt haben, zeigt die linke Leiste alle Datensätze in der Sandbox an, aus denen Sie ziehen können.
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
+1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
+
+   (Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste über der Liste der Datensätze nach den richtigen suchen.)
+
+1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in.
+
+   There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
    | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
    |---|---|---|---|---|
@@ -39,7 +44,7 @@ Adobe Experience Platform bietet [Sandboxen](https://docs.adobe.com/content/help
    | [!UICONTROL Suche] | Entspricht einer Classifications-Datei. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | nicht angegeben |
    | [!UICONTROL Profil] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jeden in [!DNL Experience Platform] definierten Datensatz ist ein eigener Satz von einer oder mehreren definierten Personen-IDs definiert, z. B. Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID](assets/person-id.png)**Hinweis:** Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies in der Berichterstellung berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
 
-1. Durch Klicken auf **[!UICONTROL Weiter]** gelangen Sie zum Dialogfeld Verbindung [!UICONTROL erstellen] .
+1. Klicken Sie auf **[!UICONTROL Weiter]** , um zum Dialogfeld Verbindung [!UICONTROL erstellen] zu wechseln.
 
    ![Verbindung herstellen](assets/create-connection2.png)
 
