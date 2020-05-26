@@ -2,7 +2,10 @@
 title: Kombinierte Datensätze
 description: Erfahren Sie, wie CJA durch Kombinieren von Datensätzen eine Verbindung herstellt.
 translation-type: tm+mt
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 6%
 
 ---
 
@@ -58,8 +61,8 @@ Wenn Ihre Verbindung nur die erste Tabelle und nicht die zweite enthält, zeigt 
 
 | string_color | metric_a |
 | --- | --- |
-| Blau | 5 |
-| Nicht angegeben | 6 |
+| „Nicht angegeben“ | 6 |
+| Blau | 3 |
 | Rot | 2 |
 
 Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert sich die Zuordnung, da sie in beiden Datensätzen enthalten `user_847` ist. Eine Zeile aus den zweiten Datensatzattributen `metric_a` in &quot;Gelb&quot;, in der sie zuvor nicht angegeben wurden:
@@ -67,5 +70,5 @@ Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert
 | string_color | metric_a |
 | --- | --- |
 | Gelb | 6 |
-| Rot | 2 |
 | Blau | 3 |
+| Rot | 2 |
