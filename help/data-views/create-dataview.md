@@ -1,53 +1,53 @@
 ---
-title: Datenschicht erstellen
-description: Beschreibt das Erstellen einer Ansicht von Daten zu einem Plattformdatensatz in Customer Journey Analytics (CJA).
-translation-type: tm+mt
+title: Datenansicht erstellen
+description: Beschreibt, wie in Customer Journey Analytics (CJA) eine Datenansicht für einen Plattform-Datensatz erstellt wird.
+translation-type: ht
 source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
 
-# Datenschicht erstellen
+# Datenansicht erstellen
 
-Eine Ansicht von Daten ähnelt einer Virtual Report Suite in Analytics insofern, als es sich um eine &quot;gefilterte&quot;Ansicht der Daten handelt. Sie können verschiedene Ansichten für die gleiche Verbindung erstellen, mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. Sie können mehrere Ansichten für einen Datensatz erstellen. Sie können beispielsweise eine Datendimensionen mit der Einstellung &quot;Letztkontakt&quot;und gleichzeitig eine andere Ansicht mit einer Ansicht (basierend auf demselben Datensatz) mit allen Dimensionen mit der Einstellung &quot;Erstkontakt&quot;festlegen.
+Eine Datenansicht ähnelt einer Virtual Report Suite in Analytics, da es sich in gewissem Sinne um eine „gefilterte“ Ansicht der Daten handelt. Sie können verschiedene Datenansichten für dieselbe Verbindung mit unterschiedlichen Einstellungen für Besuchs-Timeout, Attribution usw. erstellen. Sie können für einen Datensatz mehrere Datenansichten erstellen. Beispielsweise könnten Sie eine Datenansicht haben, in der alle Dimensionen auf „Letztkontakt“ eingestellt sind, und gleichzeitig eine andere Datenansicht (basierend auf demselben Datensatz), in der alle Dimensionen auf „Erstkontakt“ eingestellt sind.
 
-Workspace-Projekte in Customer Journey Analytics basieren auf Ansichten von Daten.
+Workspace-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
-Klicken Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/basic-configuration-for-data-views.html) , um eine Videoübersicht zu erhalten.
+Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/basic-configuration-for-data-views.html).
 
 ## Voraussetzung
 
-Bevor Sie Ansichten erstellen können, müssen Sie eine oder mehrere Verbindungen zu Experience Platform [-Datensätzen] einrichten](/help/connections/create-connection.md).
+Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten] (/help/connections/create-connection.md).
 
 ## Einstellungen konfigurieren
 
-1. Gehen Sie in Customer Journey Analytics zur **[!UICONTROL Data Views]** Registerkarte.
+1. Gehen Sie in Customer Journey Analytics zur Registerkarte **[!UICONTROL Data Views]**.
 
-1. Klicken Sie auf , **[!UICONTROL Add]** um eine Ansicht hinzuzufügen und deren Einstellungen zu konfigurieren.
+1. Klicken Sie auf **[!UICONTROL Add]**, um eine Datenansicht hinzuzufügen und deren Einstellungen zu konfigurieren.
 
    | Sitzungseinstellungen | Definition |
    |---|---|
-   | Verbindung | In diesem Feld wird die Ansicht der Daten mit der zuvor eingerichteten Verbindung verknüpft, die den bzw. die [!UICONTROL Experience Platform] Datensätze enthält. |
-   | Name | Die Benennung der Ansicht ist obligatorisch. |
-   | Beschreibung | Eine detaillierte Beschreibung ist nicht obligatorisch, wird jedoch empfohlen. |
-   | Hinzufügen Tags | Mit Tags können Sie Ihre Daten-Ansichten in Kategorien organisieren. |
-   | Zeitzone | Wählen Sie die Zeitzone für die Ansicht Ihrer Daten aus. |
-   | Sitzungs-Timeout | Wählen Sie aus, was Ihre Definition von &quot;Sitzung&quot;ist. Die Einstellung für den Sitzungs-Timeout definiert die Inaktivität, die ein eindeutiger Besucher haben muss, bevor eine neue Sitzung automatisch gestartet wird. Der Standardwert ist 30 Minuten. Wenn Sie beispielsweise den Sitzungs-Timeout auf 45 Minuten setzen, wird für jede gesammelte Treffersequenz eine neue Sitzungsgruppierung erstellt, die durch 45 Minuten Inaktivität getrennt wird. <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | Beginn Neue Sitzung mit Ereignis | Eine neue Sitzung Beginn, wenn ein Ereignis ausgelöst wird, unabhängig davon, ob eine Sitzung abgelaufen ist. Die neu erstellte Sitzung enthält das Ereignis, das sie gestartet hat. Darüber hinaus können Sie mehrere Ereignis verwenden, um eine Sitzung Beginn, und eine neue Sitzung wird ausgelöst, wenn eines dieser Ereignis in den Daten beobachtet wird. Diese Einstellung wirkt sich auf Ihre Besuchszahl, den Segmentwert Sitzung (früher Besuch) und die Besuchsablauflogik auf Dimensionen aus. |
-   | Filter hinzufügen | &quot;Filter&quot;ist der Begriff &quot;Segmente&quot;in Customer Journey Analytics. Wenn Sie Ihre Daten filtern möchten, ziehen Sie den entsprechenden Filter hier aus der linken Leiste. Wenn Sie keinen Filter auswählen, enthält die Ansicht alle Daten. |
+   | Verbindung | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die die [!UICONTROL Experience Platform]-Datensätze enthält. |
+   | Name | Geben Sie der Datenansicht einen Namen. Dies ist ein Pflichtfeld. |
+   | Beschreibung | Eine detaillierte Beschreibung ist nicht zwingend erforderlich, wird jedoch empfohlen. |
+   | Tags hinzufügen | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
+   | Zeitzone | Wählen Sie die Zeitzone für Ihre Datenansicht aus. |
+   | Sitzungs-Timeout | Wählen Sie Ihre Definition einer „Sitzung“ aus. Die Einstellung des Sitzungs-Timeouts definiert den Umfang der Inaktivität, der für einen Unique Visitor erforderlich ist, bevor automatisch eine neue Sitzung gestartet wird. Die Standardeinstellung lautet 30 Minuten. Wenn Sie beispielsweise das Sitzungs-Timeout auf 45 Minuten festlegen, wird für jede Sequenz mit erfassten Treffern eine neue Sitzungsgruppierung erstellt, die durch 45 Minuten Inaktivität getrennt ist. <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
+   | Neue Sitzung mit Ereignis starten | Eine neue Sitzung beginnt dann, wenn ein Ereignis ausgelöst wird – unabhängig davon, ob bei einer Sitzung eine Zeitüberschreitung auftrat oder nicht. Zur neuen Sitzung gehört auch das Ereignis, das sie ausgelöst hat. Zudem können Sie mehrere Ereignisse nutzen, um eine Sitzung zu starten, und eine neue Sitzung wird dann begonnen, wenn beliebige dieser Ereignisse in den Daten auftreten. Diese Einstellung wirkt sich auf Ihre Besuchszählung, den Sitzungs- (früher Besuchs-) Segmentierungs-Container sowie die Besuchsgültigkeitslogik von Dimensionen aus. |
+   | Filter hinzufügen | „Filter“ ist der Begriff für „Segmente“ in Customer Journey Analytics. Wenn Sie Ihre Daten filtern möchten, ziehen Sie den entsprechenden Filter aus der linken Leiste. Wenn Sie keinen Filter auswählen, enthält die Datenansicht alle Daten. |
 
 1. Klicken Sie auf **[!UICONTROL Continue]**.
 
 ## Komponenten hinzufügen
 
-1. Jetzt ist es an der Zeit, der Ansicht der Daten Komponenten (Dimensionen, Metriken) hinzuzufügen (ähnlich wie bei der Kuratierung in Virtual Report Suites). Beachten Sie, dass alle Felder in den Datensätzen jetzt in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich oder **[!UICONTROL Alle** auswählen, um alle Komponenten hinzuzufügen.
+1. Lassen Sie uns jetzt den Datenansichten Komponenten (Dimensionen, Metriken) hinzuzufügen (ähnlich wie bei der Kuration in Virtual Report Suites). Beachten Sie, dass jetzt alle Felder in den Datensätzen in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich. Sie können auch **[!UICONTROL Alle auswählen]**, um alle Komponenten hinzuzufügen.
 
    ![](assets/add-all-components.png)
 
-1. Klicken Sie auf die **[!UICONTROL Add Components]** Registerkarte, um der Ansicht Dimensionen und Metriken hinzuzufügen.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Add Components]**, um der Datenansicht Dimensionen und Metriken hinzuzufügen.
 
    ![](assets/add-all-components2.png)
 
-1. (Optional) Sie können eine Komponente in einen benutzerfreundlichen Namen umbenennen oder ihre Zuordnungseinstellungen ändern, indem Sie sie auswählen und ihre Einstellung bearbeiten. Beachten Sie, dass der zugrunde liegende Name beibehalten wird. Weitere Informationen finden Sie unter Ansichten und Zuordnung [von Daten konfigurieren](/help/data-views/configure-dataviews.md).
+1. (Optional) Sie können eine Komponente in einen benutzerfreundlichen Namen (Anzeigenamen) umbenennen oder ihre Attributionseinstellungen ändern, indem Sie sie auswählen und ihre Einstellung bearbeiten. Beachten Sie, dass der zugrunde liegende Name beibehalten wird. Weitere Informationen finden Sie unter [Ansichten und Attribution von Daten konfigurieren](/help/data-views/configure-dataviews.md).
 
-1. Die nächsten Schritte sind die [Angabe der Komponenten- und Zuordnungseinstellungen](/help/data-views/configure-dataviews.md).
+1. In den nächsten Schritten [legen Sie die Komponenten- und Attributionseinstellungen fest](/help/data-views/configure-dataviews.md).
