@@ -1,31 +1,31 @@
 ---
-title: Referenz - erweiterte Funktionen
-description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste Funktionen die Option „Erweitert anzeigen“ wählen.
-translation-type: tm+mt
+title: Referenz – Erweiterte Funktionen
+description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
+translation-type: ht
 source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
 
-# Referenz - erweiterte Funktionen
+# Referenz – Erweiterte Funktionen
 
-Access these functions by checking **[!UICONTROL Show Advanced]** in the **[!UICONTROL Functions]** drop-down list.
+Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste **[!UICONTROL Functions]** die Option **[!UICONTROL Show Advanced]** auswählen.
 
 ## Vergleich zwischen Tabellenfunktionen und Zeilenfunktionen
 
-Eine Tabellenfunktion ist eine Funktion, bei der die Ausgabe für jede Tabellenzeile gleich ist. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
+Bei einer Tabellenfunktion ist die Ausgabe für jede Tabellenzeile gleich. Bei einer Zeilenfunktion ist die Ausgabe für jede Tabellenzeile unterschiedlich.
 
-## Was bedeutet der Parameter „Include-Zeros“? 
+## Was bedeutet der Parameter „Include-Zeros“?
 
-Er sagt, ob Nullen in die Berechnung einbezogen werden sollen. Manchmal bedeutet Null &quot;nichts&quot;, aber manchmal ist es wichtig.
+Damit wird angegeben, ob Nullen in die Berechnung einbezogen werden sollen. In manchen Fällen bedeutet eine Null „nichts“, in anderen Fällen kann sie aber auch wichtig sein.
 
-Wenn Sie z. B. eine Umsatzmetrik haben und dem Bericht dann eine Metrik für die Ansichten der Seite hinzufügen, gibt es plötzlich mehr Zeilen für Ihren Umsatz, die alle null sind. Dies soll sich sicherlich nicht auf Berechnungen für arithmetisches Mittel, Minimum, Quartil usw. Berechnungen, die Sie für die Umsatzspalte haben. In diesem Fall würden Sie den Parameter include-zeros überprüfen.
+Beispiel: Wenn Sie mit einer Umsatzmetrik arbeiten und dem Bericht dann eine Seitenansichtsmetrik hinzufügen, gibt es plötzlich mehr Zeilen für den Umsatz, die alle Nullwerte enthalten. Dies soll sich sicherlich nicht auf Berechnungen für arithmetisches Mittel, Minimum, Quartil usw. auswirken, die Sie für die Umsatzspalte eingerichtet haben. In diesem Fall würden Sie den include-zeros-Parameter aktivieren.
 
-Wenn Sie hingegen zwei Metriken haben, die Sie interessieren, ist es möglicherweise nicht fair zu sagen, dass eine Metrik einen höheren Durchschnitt oder einen höheren Mindestwert hat, weil einige ihrer Zeilen Nullen waren. Daher würden Sie den Parameter nicht auf Nullen überprüfen.
+Wenn Sie allerdings an zwei Metriken interessiert sind, soll vielleicht nicht eine Metrik einen höheren Durchschnitt oder Mindestwert erhalten, weil einige seiner Zeilen Null waren. Daher würden Sie den Parameter zum Einbeziehen der Nullwerte nicht aktivieren.
 
 ## UND
 
-Gibt den Wert des Arguments zurück. Verwenden Sie NOT, um sicherzustellen, dass ein Wert nicht mit einem bestimmten Wert übereinstimmt.
+Gibt den Wert des zugehörigen Arguments zurück. Mit „NICHT“ können Sie sicherstellen, dass ein Wert nicht mit einem bestimmten Wert übereinstimmt.
 
 >[!NOTE] 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
 
@@ -35,12 +35,12 @@ AND(logical_test1,[logical_test2],...)
 
 | Argument | Beschreibung |
 |---|---|
-| *logical_test1* | Erforderlich. Wert, der als TRUE oder FALSE bestimmt werden kann. |
-| *logical_test2* | Optional. Zusätzliche Bedingungen, die Sie als TRUE oder FALSE auswerten möchten |
+| *logical_test1* | Erforderlich. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann. |
+| *logical_test2* | Optional. Zusätzliche Bedingungen, die als TRUE oder FALSE ausgewertet werden sollen. |
 
 ## Ungefährer Distinct Count (Dimension)
 
-Gibt den ungefähren Distinct Count für die Elemente der ausgewählten Dimension zurück. Diese Funktion verwendet die HyperLogLog (HLL)-Methode zur ungefähren Bestimmung des Distinct Count.  Sie ist entsprechend eingestellt, um zu garantieren, dass der Wert zu 95 % der Zeit 5 % des tatsächlichen Werts beträgt.
+Gibt den ungefähren Distinct Count für die Elemente der ausgewählten Dimension zurück. Diese Funktion verwendet die HyperLogLog (HLL)-Methode zur ungefähren Bestimmung des Distinct Count. Sie ist entsprechend eingestellt, um zu garantieren, dass der Wert zu 95 % der Zeit 5 % des tatsächlichen Werts beträgt.
 
 ```
 Approximate Count Distinct (dimension)
@@ -48,9 +48,9 @@ Approximate Count Distinct (dimension)
 
 | Argument |  |
 |---|---|
-| *Dimension* | Die Dimension, für die Sie die ungefähre Elementanzahl ermitteln möchten. |
+| *Dimension* | Die Dimension, für die Sie den ungefähren Distinct Count für Elemente ermitteln möchten. |
 
-## Beispielanwendungsfall 
+## Beispielanwendungsfall
 
 Ungefährer Distinct Count (Kunden-ID-eVar) ist ein typischer Anwendungsfall für diese Funktion.
 
@@ -62,19 +62,19 @@ So könnte die „Ungefähre Kunden“-Metrik für Berichte verwendet werden:
 
 ![](assets/approx-customers.png)
 
-## Individuelle Werte überschritten 
+## Individuelle Werte überschritten
 
-Wie Count() und RowCount() unterliegt auch &quot;Ungefährer Zähler Distinct()&quot;den Beschränkungen [für](https://marketing.adobe.com/resources/help/de_DE/reference/metrics_uniques_high_numbers.html)&quot;Eindeutige Werte überschritten&quot;. Wenn die Grenze &quot;Individuelle Werte überschritten&quot;innerhalb eines bestimmten Monats für eine Dimension erreicht wird, wird der Wert als 1 Dimensionselement gezählt.
+Ebenso wie Count() und RowCount() unterliegt Ungefährer Distinct Count() [„Uniques überschritten“-Beschränkungen](https://marketing.adobe.com/resources/help/de_DE/reference/metrics_uniques_high_numbers.html). Wird für eine Dimension in einem bestimmten Monat die „Uniques überschritten“-Beschränkung erreicht, wird der Wert als 1 Dimensionselement gezählt.
 
-## Vergleich von Count-Funktionen 
+## Vergleich von Count-Funktionen
 
-Approximate Count Distinct() ist eine Verbesserung gegenüber den Funktionen Count() und RowCount(), da die erstellte Metrik in jedem Dimensionsbericht verwendet werden kann, um eine ungefähre Anzahl von Elementen für eine separate Dimension zu rendern. Beispiel: Anzahl der Kunden-IDs, die in einem Mobilgerätetypbericht verwendet werden.
+Ungefährer Distinct Count() ist eine Verbesserung im Vergleich zu Count()- und RowCount()-Funktionen, da die dadurch erstellte Metrik in allen Dimensionsberichten verwendet werden kann, um eine ungefähre Elementanzahl für eine separate Dimension zu rendern. Beispielsweise wird eine Anzahl an Kunden-IDs in einem Bericht zu Mobilgerätetypen verwendet.
 
-Diese Funktion ist geringfügig weniger genau als Count() und RowCount(), da sie die HLL-Methode verwendet, während Count() und RowCount() exakte Zählungen sind.
+Diese Funktion ist etwas weniger genau als Count() und RowCount(), da die HLL-Methode verwendet wird. Bei Count() und RowCount() hingegen handelt es sich um genaue Anzahlen.
 
 ## Arkuskosinus (Zeile)
 
-Gibt den Arkuskosinus (oder umgekehrten Kosinus) einer Metrik zurück. Der Arkuskosinus ist der Winkel, dessen Kosinus „Zahl“ ist. Der Ergebniswinkel wird im Bogenmaß (Radiant) im Wertebereich von 0 (Null) bis pi (Pi) angegeben. Möchten Sie ein Ergebnis aus dem Bogenmaß (Radiant) in Grad umrechnen, müssen Sie es mit 180/PI( ) multiplizieren.
+Gibt den Arkuskosinus (oder umgekehrten Kosinus) einer Metrik zurück. Der Arkuskosinus ist der Winkel, dessen Kosinus die Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen 0 (null) und Pi angegeben. Wenn Sie das Ergebnis von Radianten in Grad umrechnen möchten, multiplizieren Sie es mit 180/PI( ).
 
 ```
 ACOS(metric)
@@ -82,11 +82,11 @@ ACOS(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkussinus (Zeile)
 
-Gibt den Arkussinus oder auch umgekehrten Sinus einer Zahl zurück. Der Arkussinus ist der Winkel, dessen Sinus „Zahl“ ist. Der als Ergebnis zurückgegebene Winkel wird im Bogenmaß (Radiant) mit einem Wert zwischen -pi/2 und pi/2 ausgegeben. Soll ein Arkussinus in Grad ausgedrückt werden, müssen Sie das jeweilige Ergebnis mit 180/PI( ) multiplizieren.
+Gibt den Arkussinus (oder umgekehrten Sinus) einer Zahl zurück. Der Arkussinus ist der Winkel, dessen Sinus die Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen -Pi/2 und Pi/2 angegeben. Um den Arkussinus in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI( ).
 
 ```
 ASIN(metric) 
@@ -94,11 +94,11 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkustangens (Zeile)
 
-Gibt den Arkustangens oder auch umgekehrten Tangens einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens „Zahl“ ist. Der als Ergebnis zurückgegebene Winkel wird im Bogenmaß (Radiant) mit einem Wert zwischen -pi/2 und pi/2 ausgegeben. Soll ein Arkustangens in Grad ausgedrückt werden, müssen Sie das jeweilige Ergebnis mit 180/PI( ) multiplizieren.
+Gibt den Arkustangens (oder umgekehrten Tangens) einer Zahl zurück. Der Arkustangens ist der Winkel, dessen Tangens die Zahl ist. Der zurückgegebene Winkel wird in Radianten im Bereich zwischen -Pi/2 und Pi/2 angegeben. Um den Arkustangens in Grad auszudrücken, multiplizieren Sie das Ergebnis mit 180/PI( ).
 
 ```
 ATAN(metric)
@@ -106,11 +106,11 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Exponentielle Regression: Vorhersage für Y (Zeile)
 
-Berechnet die prognostizierten y-Werte (metric_Y) anhand der bekannten x-Werte (metric_X) mittels der Methode der kleinsten Quadrate für die Berechnung der Ausgleichsgeraden basierend auf .
+Berechnet die prognostizierten y-Werte (metric_Y) anhand der bekannten x-Werte (metric_X) mittels der Methode der kleinsten Quadrate für die Berechnung der Ausgleichsgeraden basierend auf.
 
 ```
 ESTIMATE.EXP(metric_X, metric_Y)
@@ -118,8 +118,8 @@ ESTIMATE.EXP(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Cdf-T
 
@@ -156,11 +156,11 @@ CEILING(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Kosinus (Zeile)
 
-Gibt den Kosinus eines Winkels zurück. Liegt der Winkel im Gradmaß vor, müssen Sie ihn durch Multiplizieren mit PI( )/180 in das Bogenmaß umwandeln.
+Gibt den Kosinus des angegebenen Winkels zurück. Wenn der Winkel in Grad vorliegt, multiplizieren Sie ihn mit PI( )/180.
 
 ```
 COS(metric)
@@ -168,7 +168,7 @@ COS(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radiant, dessen Kosinus gewünscht ist. |
+| *metric* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
 
 ## Kubikwurzel
 
@@ -180,13 +180,13 @@ CBRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, deren Kubikwurzel gewünscht ist. |
+| *metric* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
 
-## Zusammengefasst
+## Kumulativ
 
-Gibt die Summe von x für die letzten N Zeilen zurück (entsprechend der Reihenfolge der Dimension unter Verwendung von Hashwerten für zeichenfolgenbasierte Felder).
+Gibt die Summe von x für die letzten N Zeilen zurück (angeordnet nach Dimension mit Hashwerten für zeichenfolgenbasierte Felder).
 
-Wenn N &lt;= 0, werden alle vorherigen Zeilen verwendet. Da sie nach der Dimension geordnet ist, ist sie nur bei Dimensionen mit einer natürlichen Reihenfolge wie Datum oder Pfadlänge nützlich.
+Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. Da die Anordnung nach Dimensionen erfolgt, ist dies nur bei Dimensionen mit einer natürlichen Reihenfolge nützlich, wie Datum oder Pfadlänge.
 
 ```
 | Date | Rev  | cumul(0,Rev) | cumul(2,Rev) | 
@@ -201,7 +201,7 @@ Wenn N &lt;= 0, werden alle vorherigen Zeilen verwendet. Da sie nach der Dimensi
 
 Gibt den Durchschnitt der letzten N Zeilen zurück.
 
-Wenn N &lt;= 0, werden alle vorherigen Zeilen verwendet. Da sie nach der Dimension geordnet ist, ist sie nur bei Dimensionen mit einer natürlichen Reihenfolge wie Datum oder Pfadlänge nützlich.
+Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. Da die Anordnung nach Dimensionen erfolgt, ist dies nur bei Dimensionen mit einer natürlichen Reihenfolge nützlich, wie Datum oder Pfadlänge.
 
 >[!NOTE] Mit Quotenmetriken, wie Umsatz/Besucher, funktioniert dies nicht so, wie Sie es vielleicht erwarten: Es wird der Quotendurchschnitt ermittelt, anstatt dass der Umsatz über die letzten N und die Besucher über die letzten N summiert und anschließend geteilt werden. Verwenden Sie stattdessen
 
@@ -223,8 +223,8 @@ CORREL.EXP(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
-| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
+| *metric_X* | Die Metrik, die mit *metric_Y* korreliert werden soll. |
+| *metric_Y* | Die Metrik, die mit *metric_X* korreliert werden soll. |
 
 ## Exponentielle Regression: Konstante (Tabelle)
 
@@ -236,12 +236,12 @@ INTERCEPT.EXP(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Exponentielle Regression: Steigung (Tabelle)
 
-Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) zurück für.
+Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) zurück für
 
 ```
 SLOPE.EXP(metric_X, metric_Y)
@@ -249,8 +249,8 @@ SLOPE.EXP(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Nächstniedrigere ganze Zahl (Floor) (Zeile)
 
@@ -262,7 +262,7 @@ FLOOR(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Größer als
 
@@ -282,7 +282,7 @@ COSH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radiant, dessen hyperbolischer Kosinus berechnet werden soll. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
 
 ## Hyperbelsinus (Zeile)
 
@@ -294,7 +294,7 @@ SINH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radiant, dessen hyperbolischer Sinus berechnet werden soll. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
 
 ## Hyperbeltangens (Zeile)
 
@@ -306,11 +306,11 @@ TANH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie die hyperbolische Bindung finden möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
 
 ## WENN (Zeile)
 
-Die IF-Funktion gibt einen Wert zurück, wenn eine angegebene Bedingung TRUE ergibt, und einen anderen, wenn diese Bedingung FALSE ergibt.
+Die WENN-Funktion gibt einen Wert zurück, wenn eine angegebene Bedingung TRUE ergibt, und einen anderen Wert, wenn diese Bedingung FALSE ergibt.
 
 ```
 IF(logical_test, [value_if_true], [value_if_false])
@@ -318,9 +318,9 @@ IF(logical_test, [value_if_true], [value_if_false])
 
 | Argument | Beschreibung |
 |---|---|
-| *logical_test* | Erforderlich. Wert, der als TRUE oder FALSE bestimmt werden kann. |
-| *[value_if_true]* | The value that you want to be returned if the *logical_test* argument evaluates to TRUE. (This argument defaults to 0 if not included.) |
-| *[value_if_false]* | The value that you want to be returned if the *logical_test* argument evaluates to FALSE. (This argument defaults to 0 if not included.) |
+| *logical_test* | Erforderlich. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann. |
+| *[value_if_true]* | Der Wert, der zurückgegeben soll, wenn das Argument *logical_test* TRUE ergibt. (Für dieses Argument wird standardmäßig 0 verwendet, wenn es nicht angegeben wird.) |
+| *[value_if_false]* | Der Wert, der zurückgegeben soll, wenn das Argument *logical_test* FALSE ergibt. (Für dieses Argument wird standardmäßig 0 verwendet, wenn es nicht angegeben wird.) |
 
 ## Kleiner als
 
@@ -348,7 +348,7 @@ Y = a X + b. Gibt a zurück.
 
 ## Logarithmus zur Basis 10 (Zeile)
 
-Gibt den Logarithmus zur Basis 10 zurück.
+Gibt den Logarithmus zur Basis 10 einer Zahl zurück.
 
 ```
 LOG10(metric)
@@ -356,7 +356,7 @@ LOG10(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
+| *metric* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
 
 ## Logistische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -368,8 +368,8 @@ CORREL.LOG(metric_X,metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
-| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
+| *metric_X* | Die Metrik, die mit *metric_Y* korreliert werden soll. |
+| *metric_Y* | Die Metrik, die mit *metric_X* korreliert werden soll. |
 
 ## Logistische Regression: Konstante (Tabelle)
 
@@ -381,8 +381,8 @@ INTERCEPT.LOG(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Logistische Regression: Vorhersage für Y (Zeile)
 
@@ -396,8 +396,8 @@ ESTIMATE.LOG(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Logistische Regression: Steigung (Tabelle)
 
@@ -409,12 +409,12 @@ SLOPE.LOG(metric_A, metric_B)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_A* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_B* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_A* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_B* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Natürlicher Logarithmus
 
-Returns the natural logarithm of a number. Natural logarithms are based on the constant *e* (2.71828182845904). LN is the inverse of the EXP function.
+Gibt den natürlichen Logarithmus einer Zahl zurück. Natürliche Logarithmen basieren auf der Konstante *e* (2,71828182845904). LN ist die Umkehrung der Exponentialfunktion.
 
 ```
 LN(metric)
@@ -422,11 +422,11 @@ LN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, dessen natürlicher Logarithmus gewünscht ist. |
+| *metric* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
 
 ## NICHT
 
-Gibt 1 zurück, wenn die Zahl 0 ist, oder 0, wenn eine andere Zahl zurückgegeben wird.
+Gibt 1 zurück, wenn die Zahl 0 ist, oder gibt 0 zurück, wenn es eine andere Zahl ist.
 
 ```
 NOT(logical)
@@ -434,9 +434,9 @@ NOT(logical)
 
 | Argument | Beschreibung |
 |---|---|
-| *logisch* | Erforderlich. Ein Wert oder Ausdruck, der als TRUE oder FALSE bestimmt werden kann. |
+| *logisch* | Erforderlich. Ein Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann. |
 
-Die Verwendung von NOT erfordert das Wissen, ob die Ausdruck (&lt;, >, =, &lt;> usw.) 0- oder 1-Werte zurückgeben.
+Bei Verwendung von NICHT müssen Sie wissen, ob die Ausdrücke (&lt;, >, =, &lt;> usw.) 0- oder 1-Werte zurückgeben.
 
 ## Ungleich
 
@@ -454,8 +454,8 @@ OR(logical_test1,[logical_test2],...)
 
 | Argument | Beschreibung |
 |---|---|
-| *logical_test1* | Erforderlich. Wert, der als TRUE oder FALSE bestimmt werden kann. |
-| *logical_test2* | Optional. Zusätzliche Bedingungen, die Sie als TRUE oder FALSE auswerten möchten |
+| *logical_test1* | Erforderlich. Jeder Wert oder Ausdruck, der als TRUE oder FALSE ausgewertet werden kann. |
+| *logical_test2* | Optional. Zusätzliche Bedingungen, die als TRUE oder FALSE ausgewertet werden sollen. |
 
 ## Pi
 
@@ -477,8 +477,8 @@ CORREL.POWER(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
-| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
+| *metric_X* | Die Metrik, die mit *metric_Y* korreliert werden soll. |
+| *metric_Y* | Die Metrik, die mit *metric_X* korreliert werden soll. |
 
 ## Potenzregression: Konstante (Tabelle)
 
@@ -490,8 +490,8 @@ Gibt die Konstante *b* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) f
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Potenzregression: Vorhersage für Y (Zeile)
 
@@ -503,12 +503,12 @@ Berechnet die prognostizierten [!DNL y]-Werte ([!DNL metric_Y]) anhand der bekan
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Potenzregression: Steigung (Tabelle)
 
-Gibt die Steigung ** zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = b*X]a zurück.
+Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = b*X]a zurück.
 
 ```
 SLOPE.POWER(metric_X, metric_Y)
@@ -516,8 +516,8 @@ SLOPE.POWER(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Quadratische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -529,8 +529,8 @@ CORREL.QUADRATIC(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
-| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
+| *metric_X* | Die Metrik, die mit *metric_Y* korreliert werden soll. |
+| *metric_Y* | Die Metrik, die mit *metric_X* korreliert werden soll. |
 
 ## Quadratische Regression: Konstante (Tabelle)
 
@@ -542,8 +542,8 @@ INTERCEPT.POWER(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Quadratische Regression: Vorhersage für Y (Zeile)
 
@@ -555,8 +555,8 @@ ESTIMATE.QUADRATIC(metric_A, metric_B)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_A* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_B* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_A* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_B* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
 
 ## Quadratische Regression: Steigung (Tabelle)
 
@@ -568,8 +568,8 @@ SLOPE.QUADRATIC(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Reziproke Regression: Korrelationskoeffizient (Tabelle)
 
@@ -581,8 +581,8 @@ CORREL.RECIPROCAL(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | A metric that you would like to correlate with *metric_Y*. |
-| *metric_Y* | A metric that you would like to correlate with *metric_X*. |
+| *metric_X* | Die Metrik, die mit *metric_Y* korreliert werden soll. |
+| *metric_Y* | Die Metrik, die mit *metric_X* korreliert werden soll. |
 
 ## Reziproke Regression: Konstante (Tabelle)
 
@@ -594,8 +594,8 @@ INTERCEPT.RECIPROCAL(metric_A, metric_B)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Reziproke Regression: Vorhersage für Y (Zeile)
 
@@ -607,12 +607,12 @@ ESTIMATE.RECIPROCAL(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Reziproke Regression: Steigung (Tabelle)
 
-Gibt die Steigung ** zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = a/X+b]a zurück.
+Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = a/X+b]a zurück.
 
 ```
 SLOPE.RECIPROCAL(metric_X, metric_Y)
@@ -620,12 +620,12 @@ SLOPE.RECIPROCAL(metric_X, metric_Y)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric_X* | Eine Metrik, der abhängiger Datenstatus zugewiesen werden soll. |
-| *metric_Y* | Eine Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
+| *metric_X* | Die Metrik, der ein abhängiger Datenstatus zugewiesen werden soll. |
+| *metric_Y* | Die Metrik, der unabhängiger Datenstatus zugewiesen werden soll. |
 
 ## Sinus (Zeile)
 
-Gibt den Sinus eines Winkels zurück. Liegt der Winkel im Gradmaß vor, müssen Sie ihn durch Multiplizieren mit PI( )/180 in das Bogenmaß umwandeln.
+Gibt den Sinus des angegebenen Winkels zurück. Wenn der Winkel in Grad vorliegt, multiplizieren Sie ihn mit PI( )/180.
 
 ```
 SIN(metric)
@@ -633,7 +633,7 @@ SIN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radiant, dessen Sinus gewünscht ist. |
+| *metric* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
 
 ## t-Transformation
 
@@ -649,7 +649,7 @@ Hier gibt `m` die Anzahl der Seiten und `n` die Freiheitsgrade an. Hierbei sollt
 
 `X` ist die t-Test-Statistik. Hierbei handelt es sich häufig um eine auf einer Metrik basierende Formel (z. B. z-Wert), die in jeder Zeile bewertet wird.
 
-Der Rückgabewert ist die Wahrscheinlichkeit, mit der die Teststatistik x in Anbetracht der Freiheitsgrade und der Anzahl der Schwänze angezeigt wird.
+Der Rückgabewert ist die Wahrscheinlichkeit, die Teststatistik x zu erhalten, bei gegebenen Freiheitsgraden und der Anzahl an Seiten.
 
 **Beispiele:**
 
@@ -667,7 +667,7 @@ Der Rückgabewert ist die Wahrscheinlichkeit, mit der die Teststatistik x in Anb
 
 ## Tangens
 
-Gibt den Tangens eines Winkels zurück. Liegt der Winkel im Gradmaß vor, müssen Sie ihn durch Multiplizieren mit PI( )/180 in das Bogenmaß umwandeln.
+Gibt den Tangens des angegebenen Winkels zurück. Wenn der Winkel in Grad vorliegt, multiplizieren Sie ihn mit PI( )/180.
 
 ```
 TAN (metric)
@@ -675,13 +675,13 @@ TAN (metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radiant, dessen Tangens gewünscht ist. |
+| *metric* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
 
 ## z-Transformation (Zeile)
 
-Gibt die z-Transformation oder Normaltransformation basierend auf einer normalen Verteilung zurück. Der Z-Wert ist die Anzahl der Standardabweichungen, die eine Beobachtung vom arithmetischen Mittel ergibt. Ein Z-Wert von 0 (null) bedeutet, dass der Wert mit dem arithmetischen Mittel identisch ist. Ein Z-Wert kann positiv oder negativ sein, was angibt, ob er über oder unter dem Mittelwert liegt und wie viele Standardabweichungen vorliegen.
+Gibt die z-Transformation oder Normaltransformation basierend auf einer normalen Verteilung zurück. Die z-Transformation ist die Anzahl der Standardabweichungen, die eine Beobachtung vom arithmetischen Mittel darstellt. Eine z-Transformation von 0 (null) gibt an, dass die Transformation mit dem arithmetischen Mittel identisch ist. Eine z-Transformation kann positiv oder negativ sein, abhängig davon, ob sie über oder unter dem arithmetischen Mittel liegt und um wie viele Standardabweichungen es sich handelt.
 
-Die Gleichung für den Z-Wert lautet:
+Die Gleichung für z-Transformation lautet:
 
 ![](assets/z_score.png)
 
@@ -700,17 +700,17 @@ z-Transformation (Metrik)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>Metrik</i> </td> 
-   <td colname="col2"> <p> Gibt den Wert seines ersten Nicht-Null-Arguments aus. </p> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col2"> <p> Gibt den Wert des ersten Arguments ungleich null zurück. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## z-Test
 
-Führt einen n-seitigen Z-Test mit Z-Wert von A durch.
+Führt einen n-seitigen z-Test mit einem z-Wert von A durch.
 
-Gibt die Wahrscheinlichkeit zurück, mit der die aktuelle Zeile zufällig in der Spalte angezeigt wird.
+Gibt zurück, wie wahrscheinlich es ist, dass die aktuelle Zeile zufällig in der Spalte gesehen wird.
 
 >[!NOTE] Dabei wird von einer Normalverteilung der Werte ausgegangen.
 
