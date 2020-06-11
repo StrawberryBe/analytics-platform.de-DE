@@ -1,7 +1,7 @@
 ---
 title: Filter verwalten
-description: Leitfaden zur Verwaltung von Filtern in Customer Journey Analytics
-translation-type: tm+mt
+description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalten.
+translation-type: ht
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 ---
@@ -9,130 +9,130 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 # Filter verwalten
 
-Der Filter-Manager bietet viele Angebote zum Kuratieren von Segmenten, wie Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Kennzeichnen als Favoriten.
+Der Filter-Manager bietet verschiedene Möglichkeiten zum Kuratieren von Segmenten wie das Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Kennzeichnen als Favoriten.
 
-Der Filter-Manager zeigt Ihnen alle Filter an, deren Inhaber Sie sind und die für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter in der Organisation sehen. Diese Übersicht zeigt die Benutzeroberfläche und die Funktionen des Filter-Managers.
+Der Filter-Manager zeigt Ihnen alle Filter, die sich in Ihrem Besitz befinden und für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. Dieser Überblick stellt die Benutzeroberfläche und die Funktionen des Filter-Managers vor.
 
-Rufen Sie den Filter-Manager auf, indem Sie **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** in der oberen Navigation navigieren.
+Gehen Sie oben in der Navigation zu **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**, um den Filter-Manager aufzurufen.
 
 ## Filter Manager-Benutzeroberfläche
 
 ![](assets/filter-manager-ui.png)
 
-| # | UI-Funktion | Beschreibung |
+| Nr. | Funktion der Benutzeroberfläche | Beschreibung |
 |---|---|---|
-| 1 | Werkzeugleiste für die Filterverwaltung | Nachdem Sie einen Filter markiert haben, wird diese Werkzeugleiste angezeigt. Über diese Werkzeugleiste können die meisten Verwaltungsaufgaben erledigt werden. |
-| 2 | Kontrollkästchen | Überprüfen Sie einen Filter, um ihn zu verwalten. |
-| 4 | Favoriten | Wenn Sie auf den Stern neben einem Filter klicken, wird der Stern gelb dargestellt und kennzeichnet den Filter als Favorit. |
-| 5 | Titel und Beschreibung | Wird im Filter Builder bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, klicken Sie auf den Titel-Link, um zum Filter-Builder zurückzukehren. |
+| 1 | Werkzeugleiste für die Filterverwaltung | Diese Werkzeugleiste wird angezeigt, sobald Sie einen Filter aktivieren. Über diese Werkzeugleiste können die meisten Verwaltungsaufgaben erledigt werden. |
+| 2 | Kontrollkästchen | Aktivieren Sie einen Filter, um ihn zu verwalten. |
+| 4 | Favoriten | Wenn Sie auf den Stern neben einem Filter klicken, wird der Stern gelb und der Filter als Favorit markiert. |
+| 5 | Titel und Beschreibung | Werden durch den Filtergenerator bereitgestellt. Klicken Sie auf den Titel-Link, um den Titel und die Beschreibung zu bearbeiten. Dadurch gelangen Sie zurück zum Filtergenerator. |
 | 6 | Report Suites | Diese Spalte zeigt an, in welcher Report Suite der Filter zuletzt gespeichert wurde. |
-| 7 | Inhaber | Gibt an, wem der Filter gehört. Als Nicht-Administrator können Sie nur Filter sehen, deren Inhaber Sie sind, oder solche, die für Sie freigegeben wurden. |
-| 8 | Tags (nicht in der Spaltenauswahl markiert, daher wird die Spalte nicht angezeigt) | Tags, die entweder von Ihnen oder von Personen, die den Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
-| 9 | Freigegeben für | Listen von Einzelpersonen oder Gruppen (nur Admin) oder Alle (nur Admin), für die Sie den Filter freigegeben haben. |
+| 7 | Inhaber | Zeigt an, wer Inhaber des Filters ist. Wenn Sie kein Administrator sind, können Sie nur Filter sehen, deren Inhaber Sie sind, sowie Filter, die für Sie freigegeben wurden. |
+| 8 | Tags (in der Spaltenauswahl nicht aktiviert, weshalb die Spalte nicht angezeigt wird) | Tags, die entweder durch Sie oder durch Personen, die einen Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
+| 9 | Freigegeben für | Zeigt Personen oder Gruppen (nur Administrator) oder „Alle“ (nur Administrator) an, für die Sie den Filter freigegeben haben. |
 | 10 | Änderungsdatum | Zeigt das Datum der letzten Änderung des Filters an. |
 | 11 | Spaltenauswahl | (Oben rechts) Hier können Sie auswählen, welche Spalten im Filter-Manager angezeigt werden sollen. |
-| 12 | Gemeinsam-Symbol | Gibt an, dass dieser Filter von Ihnen oder für Sie freigegeben wird. |
-| 13 | Freigegeben-Symbol | Gibt an, dass dieser Filter von einem Administrator genehmigt wurde. |
-| 14 | Andere Filter | Hier können Sie Filter nach Tags, Report Suites, Inhabern und anderen anzeigen (Alle anzeigen, Meine, Für mich freigegeben, Genehmigt, Favoriten). |
+| 12 | Gemeinsam-Symbol | Gibt an, dass dieser Filter von Ihnen oder für Sie freigegeben wurde. |
+| 13 | Freigegeben-Symbol | Gibt an, dass dieser Filter durch einen Administrator genehmigt wurde. |
+| 14 | Andere Filter | Ermöglicht Ihnen, die Filter unter „Tags“, „Report Suites“, „Inhaber“ und „Sonstige“ („Alle anzeigen“, „Meine“, „Für mich freigegeben“, „Genehmigt“, „Favoriten“) zu sehen. |
 
 ## Filter planen
 
-Wenn Sie etwas Zeit für die Planung von Segmenten aufwenden, verbessern sich die Chancen, dass diese für Ihr Unternehmen nützlich sein werden und dass die Anzahl der Segmente kontrolliert wird.
+Wenn Sie für die Planung von Segmenten etwas Zeit aufwenden, verbessern Sie die Chancen, dass diese für Ihre Organisation von Nutzen sein werden und dass deren Anzahl unter Kontrolle bleibt.
 
-* Betrachten wir die Audience: Wer wird es konsumieren? Mit wem wirst du es teilen? Welche Personengruppen verwenden diesen Filter und wie sollte ich ihn entsprechend taggen? Dies bedeutet auch eine gute Filterbeschreibung. Die Beschreibung sollte mindestens die folgenden Fragen beantworten:
+* Bedenken Sie die Zielgruppe: Wer wird ihn benutzen? Für wen werden Sie er freigeben? Welche Personengruppe wird diesen Filter benutzen und wie sollte er demnach getaggt werden? Dies erfordert auch eine gute Filterbeschreibung. Die Beschreibung sollte mindestens die folgenden Fragen beantworten:
 
    * Wofür ist dieser Filter nützlich?
 
-   * Wann sollte ich diesen Filter verwenden?
+   * Wann sollte dieser Filter benutzt werden?
 
-* Legen Sie den Filterbereich fest. Welcher [Filter-Container](/help/components/filters/filters-overview.md) stellt den Umfang am besten dar? Verwenden Sie den kleinstmöglichen Container.
+* Legen Sie den Filterumfang fest. Welcher [Filter-Container](/help/components/filters/filters-overview.md) stellt den Umfang am besten dar? Benutzen Sie den kleinstmöglichen Container.
 
-* Entscheiden Sie, welche Elemente in die Filterdefinition aufgenommen werden sollen und welche Werte.
+* Entscheiden Sie, welche Elemente und welche Werte in die Filterdefinition aufgenommen werden.
 
-* Überlegen Sie, wie der Genehmigungsprozess verlaufen soll. Wird eine einzige Person die Filter überprüfen und genehmigen, oder wird es sich um eine Ausschussentscheidung handeln?
+* Überlegen Sie, wie der Genehmigungsprozess verlaufen soll. Wird eine einzelne Person die Filter prüfen und genehmigen oder wird dies die Entscheidung einer Kommission sein?
 
-* Definieren Sie Ihre Filter mit Ansicht zu einer Filterbibliothek, die es Geschäftsbenutzern ermöglicht, Filterelemente oder Komponenten modular zu stapeln und wiederzuverwenden. Welche „Module“ müssen Sie definieren, um diese Bibliothek zu realisieren?
+* Definieren Sie Ihre Filter mit Blick auf eine Filterbibliothek, die Unternehmensbenutzern die Möglichkeit gibt, Teile oder Komponenten von Filtern modular zu stapeln und wiederzuverwenden. Welche „Module“ müssen Sie definieren, um diese Bibliothek zu realisieren?
 
-### Taggen von Filtern
+### Filter taggen
 
-Im Filter-Manager können Sie Filter mit Tags organisieren. Alle Benutzer können Tags für Filter erstellen und eines oder mehrere Tags auf ein Segment anwenden. Sie können Tags jedoch nur für die Filter anzeigen, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
+Durch das Taggen von Filtern können Sie diese im Filter-Manager organisieren. Alle Benutzer können Tags für Filter erstellen und eines oder mehrere Tags auf einen Filter anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
 
-Welche Arten von Tags sollten Sie erstellen? Hier einige Vorschläge für nützliche Tags:
+Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:
 
-* Tags, die auf Teamnamen basieren, z. B. Social Marketing, Mobile Marketing.
+* Auf Teamnamen basierende Tags wie Social Marketing, Mobile Marketing
 
-* Projekt-Tags (Analyse-Tags), z. B. Entrypage-Analyse.
+* Projekt-Tags (Analyse-Tags) wie Entrypage-Analyse
 
-* Kategorien-Tags: Männer; Geografie.
+* Kategorie-Tags: Männer, Region
 
-* Workflow-Tags: zu genehmigen; Kuratiert für (eine bestimmte Geschäftseinheit)
+* Workflow-Tags: Genehmigung ausstehend, kuratiert für (einen bestimmten Geschäftsbereich).
 
-So markieren Sie einen Filter:
+Taggen eines Filters:
 
-1. Markieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie taggen möchten. Die Symbolleiste für die Filterverwaltung wird angezeigt.
+1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie taggen möchten. Die Werkzeugleiste für die Filterverwaltung wird angezeigt.
 
-1. Klicken **[!UICONTROL Tag]** Sie auf und
+1. Klicken Sie auf **[!UICONTROL Tag]** und
 
    * wählen Sie entweder ein vorhandenes Tag aus oder
 
-   * Geben Sie einen neuen Tag-Namen ein und drücken Sie **[!UICONTROL Enter]** die Eingabetaste.
+   * geben Sie einen neuen Tag-Namen ein und drucken Sie **[!UICONTROL Enter]**.
 
-1. Click **[!UICONTROL Tag]** again to tag the segment.
+1. Klicken Sie erneut auf **[!UICONTROL Tag]**, um das Segment zu taggen.
 
-Das Tag sollte nun in der Spalte Tags angezeigt werden. (Klicken Sie auf das Zahnradsymbol oben rechts, um Ihre Spalten zu verwalten.)
-You can also filter on tags by going to **[!UICONTROL Filters > Tags]**.
+Das Tag wird jetzt in der Spalte „Tags“ angezeigt. (Klicken Sie oben rechts auf das Zahnradsymbol, um Ihre Spalten zu verwalten.)
+Sie können unter **[!UICONTROL Filters > Tags]** auch nach Tags filtern.
 
 ### Filter genehmigen
 
-Im Filter-Manager können Sie einen Arbeitsablauf einrichten, der die Genehmigung von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen und die Übereinstimmung mit Berichte-Richtlinien umfasst.
+Im Filter-Manager können Sie einen Workflow einrichten, der das Genehmigen von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen umfasst und mit den Berichtserstellungsrichtlinien übereinstimmt.
 
-So kennzeichnen Sie einen Filter als genehmigt:
+So wird ein Filter als genehmigt gekennzeichnet:
 
 1. Aktivieren Sie im Filter-Manager das Kontrollkästchen links neben dem Filtertitel.
 
-1. Klicken Sie **[!UICONTROL Approve]** in der Aufgabe für die Filterverwaltung auf .
+1. Klicken Sie in der Werkzeugleiste für die Filterverwaltung auf **[!UICONTROL Approve]**.
 
 1. Entscheiden Sie, ob Sie die genehmigten Segmente für Ihre Organisation freigeben möchten.
 
 1. Klicken Sie auf **[!UICONTROL OK]**.
 
-   Beachten Sie das Genehmigungssymbol neben dem Filter in der Liste:
+   Beachten Sie, dass in der Liste neben dem Filter ein Genehmigungssymbol angezeigt wird:
 
    ![](assets/seg_approved.png)
 
-1. You can also unapprove an approved segment by clicking **[!UICONTROL Unapprove]**.
+1. Sie können die Genehmigung eines genehmigten Segments auch aufheben, indem Sie auf **[!UICONTROL Unapprove]** klicken.
 
 ### Filter freigeben
 
-Je nach Ihren Berechtigungen können Sie Filter für Ihre gesamte Organisation, für Gruppen oder für einzelne Benutzer freigeben.
+Abhängig von Ihren Berechtigungen können Sie Filter für Ihre gesamte Organisation, Gruppen oder einzelne Benutzer freigeben.
 
 | Administrator | Nicht-Administrator |
 |---|---|
-| Kann Filter für alle, für Gruppen und für Benutzer freigeben. Weitere Informationen finden Sie in der Dokumentation [zur](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) Admin-Konsole. | Kann Filter nur für einzelne Benutzer freigeben. |
+| Kann Filter für alle, für Gruppen und für Benutzer freigeben. Weitere Informationen finden Sie in der [Dokumentation zu Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-products-and-profiles.html). | Kann Filter nur für einzelne Benutzer freigeben. |
 
-Wann sollten Sie Filter mit der gesamten Firma und nur mit einer Benutzergruppe oder Einzelpersonen teilen? Im Folgenden finden Sie einige Best Practices, die Sie befolgen könnten:
+Wann sollten Filter für das gesamte Unternehmen und wann nur für eine Benutzergruppe oder einzelne Benutzer freigegeben werden? Im Folgenden finden Sie einige Best Practices, an denen Sie sich orientieren können:
 
-* Geben Sie als Administrator einen Filter für &quot;Alle&quot;frei, wenn er für die gesamte Firma von Nutzen ist und alle Benutzer ihn problemlos verwenden können. In diesem Fall sollten Sie auch erwägen, ihn zu einem genehmigten Filter zu machen.
+* Geben Sie als Administrator einen Filter für alle frei, wenn er für das gesamte Unternehmen von Nutzen ist und von jedem problemlos verwendet werden kann. In diesem Fall sollten Sie den Filter eventuell auch genehmigen.
 
-* Geben Sie als Administrator einen Profil für ein bestimmtes Produkt frei, wenn der Filter für dieses Team einen guten Geschäftswert bietet. Diesen Filtertyp nicht offiziell genehmigen.
+* Geben Sie als Administrator einen Filter für ein bestimmtes Produktprofil frei, wenn der Filter für das entsprechende Team einen Geschäftswert bietet. Führen Sie für diesen Filtertyp keine offizielle Genehmigung durch.
 
-* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für andere Personen frei, um einen Filter zu prüfen und zu validieren. Wenn es sich nicht als nützlich erweist, kann es verworfen werden. Diesen Filtertyp nicht offiziell genehmigen.
+* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für andere einzelne Benutzer frei, um einen Filter zu prüfen und zu validieren. Wenn er sich als nicht nützlich erweist, kann er verworfen werden. Führen Sie für diesen Filtertyp keine offizielle Genehmigung durch.
 
-So geben Sie einen Filter frei:
+Freigeben eines Filters:
 
-1. Markieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie freigeben möchten.
+1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie freigeben möchten.
 
-1. Klicken Sie in der Symbolleiste für die Filterverwaltung auf **[!UICONTROL Share]**.
+1. Klicken Sie in der Werkzeugleiste für die Filterverwaltung auf **[!UICONTROL Share]**.
 
-1. Wenn Sie Administrator sind, können Sie Alle oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Feld Suchen, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Share]**. The Shared icon appears next to the filter: ![](assets/share_icon.png)
+1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Share]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](assets/share_icon.png)
 
-1. Sie können nach Filtern filtern, die für Sie freigegeben wurden, indem Sie zu Filter > Andere Filter > Für mich freigegeben gehen.
+1. Sie können nach für Sie freigegebenen Filtern filtern, indem Sie „Filter“ > „Weitere Filter“ > „Für mich freigegeben“ verwenden.
 
 ### Filter als Favoriten markieren
 
 Das Kennzeichnen von Segmenten als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
 
-1. Markieren Sie im Filter-Manager den Stern neben dem Filter, den Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
+1. Klicken Sie im Filter-Manager auf den Stern neben allen Filtern, die Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
 
-1. Sie können unter Filter > Weitere Filter > Favoriten nach Favoriten filtern.
+1. Sie können unter „Filter“ > „Weitere Filter“ > „Favoriten“ nach Favoriten filtern.
 
