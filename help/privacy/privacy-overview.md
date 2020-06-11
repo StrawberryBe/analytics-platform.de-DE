@@ -1,7 +1,7 @@
 ---
 title: Überblick über die Datenschutzfunktion in Customer Journey Analytics
 description: Beschreibt, wie Datenschutzeinstellungen in Customer Journey Analytics funktionieren.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
 
 ---
