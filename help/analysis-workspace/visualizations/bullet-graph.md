@@ -1,0 +1,22 @@
+---
+description: Schauen wir uns einmal an, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt.
+title: Lineardiagramm
+uuid: 2f133189-2a50-45af-b225-7d2b433fbef5
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 80%
+
+---
+
+
+# Lineardiagramm
+
+>[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+
+Schauen wir uns einmal an, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt.
+
+![](assets/bullet-image.png)
+
+Das Lineardiagramm enthält einen einzigen primären Messwert (z. B. aktueller Umsatz im Jahr) und ermöglicht Ihnen die Eingabe qualitativer Bereiche und Leistungsbereiche (z. B. im Vergleich zu einem Zielumsatz). Sie können zwischen „Hoch“, „Mittel“ und „Niedrig“ wählen. In den [!UICONTROL Visualisierungseinstellungen] können Sie Zielbereiche festlegen.
