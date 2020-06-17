@@ -1,13 +1,18 @@
 ---
 title: Referenz – Grundfunktionen
 description: 'Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen. '
-translation-type: ht
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+translation-type: tm+mt
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 97%
 
 ---
 
 
 # Referenz – Grundfunktionen
+
+>[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen.
 
