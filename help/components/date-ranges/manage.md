@@ -1,18 +1,23 @@
 ---
 title: Datumsbereiche verwalten
-description: Freigeben, Umbenennen oder Löschen von Datumsbereichen im Arbeitsbereich für Analysen.
+description: Freigeben, Umbenennen oder Löschen von Datumsbereichen in Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 5%
 
 ---
 
 
 # Datumsbereiche verwalten
 
+>[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+
 Verwenden Sie den Datumsbereich-Manager, um Datumsbereiche freizugeben, umzubenennen oder zu löschen. So erreichen Sie den Datums-Manager:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
-1. Navigieren Sie zu [!UICONTROL Components] > [!UICONTROL Date Ranges].
+1. Navigieren Sie zu [!UICONTROL Komponenten] > [!UICONTROL Datumsbereiche].
 
 ## Schnittstelle
 
