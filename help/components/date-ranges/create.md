@@ -2,12 +2,17 @@
 title: Datumsbereich erstellen
 description: Erstellen Sie einen Datumsbereich für die Verwendung in Berichte.
 translation-type: tm+mt
-source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 4%
 
 ---
 
 
 # Datumsbereich erstellen
+
+>[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Sie können einen benutzerdefinierten Datumsbereich mit einer der beiden folgenden Methoden erstellen:
 
@@ -17,8 +22,8 @@ Sie können einen benutzerdefinierten Datumsbereich mit einer der beiden folgend
 So erstellen Sie einen Datumsbereich im Datumsbereich-Manager:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
-1. Navigieren Sie zu [!UICONTROL Components] > [!UICONTROL Date Ranges].
-1. Klicken Sie auf die [!UICONTROL Add] Schaltfläche, um das modale Fenster zu öffnen, das einen Datumsbereich erstellt.
+1. Navigieren Sie zu [!UICONTROL Komponenten] > [!UICONTROL Datumsbereiche].
+1. Klicken Sie auf die [!UICONTROL Hinzufügen] , um das modale Fenster zu öffnen, das einen Datumsbereich erstellt.
 
 ## Erstellen eines modalen Datumsbereichsfensters
 
