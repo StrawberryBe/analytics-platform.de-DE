@@ -1,8 +1,11 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: ht
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+translation-type: tm+mt
+source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 85%
 
 ---
 
@@ -21,6 +24,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Datumsbereiche | Die Unterstützung benutzerdefinierter Kalender ist geplant. |
 | Berechnete Metriken | Beachten Sie, dass vorhandene Berechnungsmetriken im herkömmlichen Analysis Workspace nicht auf CJA portiert werden. |
 | Segmente | Jetzt „Filter“ genannt. Beachten Sie, dass keine vorhandenen Segmente im traditionellen Analysis Workspace auf CJA portiert werden. |
+| Anomalieerkennung | Vollständige Unterstützung ab Juni 2020 |
 | Attribution IQ | Vollständige Unterstützung. |
 | Projektkuration | Vollständige Unterstützung. |
 | Projektverknüpfung | Vollständige Unterstützung. |
@@ -28,7 +32,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Virtual Report Suites | Jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
 | Kuration von VRS-Komponenten | Jetzt Teil der Datenansichten. |
 | Berichtszeitverarbeitung | CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
-| DSGVO-Löschung | Beachten Sie, dass DSGVO jetzt in Abstimmung mit [!UICONTROL Experience Platform] gehandhabt wird. CJA erbt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
+| DSGVO-Löschung | Note that GDPR is now handled in coordination with [!UICONTROL Experience Platform] - CJA inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |
 
 ## Mit Einschränkungen unterstützt
 
@@ -36,7 +40,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Produktvariable | Die Produktvariable, die derzeit für die Berichterstellung für Daten verfügbar ist, die dem Schema der Erlebnisereignisse entsprechen (insbesondere unter Verwendung des productListItems-Objekts). |
 | Visualisierungen | Alle Visualisierungen mit Ausnahme der Zuordnungsvisualisierung werden unterstützt. |
-| AAM-Audiences | Wenn Kunden [!UICONTROL Analytics Data Connector]-Datensätze verwenden, sind diese Daten Teil der ADC-Daten. |
+| AAM-Audiences | If customers are using [!UICONTROL Analytics Data Connector] datasets, this data will be part of the ADC data. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
 | Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern, |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dies bedeutet, dass die gesamte Persistenz auf dem Berichtszeitraum und nicht auf der Gesamtheit der Daten basiert. |
@@ -48,17 +52,16 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Vordefinierte Analysis Workspace-Dimensionen (z. B. Browser-Typ, Referrer-Typ, Marketing-Kanäle, Besuchsnummer usw.) | CJA stellt diese Dimensionen nicht nativ bereit. Für Kunden, die Analytics Data Connector (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Bedienfelder | Leeres Bedienfeld, Attribution-Bedienfeld und Freiform-Bedienfeld werden vollständig unterstützt. Der Segmentvergleich wird nicht unterstützt. |
+| Bedienfelder | Leeres Bedienfeld, Zuordnungs-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder &quot;Segmentvergleich&quot;und &quot;Analytics für Target&quot;(A4T) werden nicht unterstützt. |
 | Merchandising-eVars | Merchandising-eVars funktionieren nur mit ADC-basierten Datensätzen, es sei denn, sie entsprechen genau demselben XDM-Schema (ähnlich den oben genannten Einschränkungen der Produktliste). |
-| Bot-Filterung | Bei Analytics Data Connector (ADC)-basierten Datensätzen wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
+| Bot-Filterung | Bei Analytics Data Connector (ADC)-basierten Datensätzen wird die Bot-Filterung angewendet. General bot filtering logic for other datasets is not performed by the [!UICONTROL Experience Platform] or CJA. |
 | Verarbeitungsregeln | Bei ADC-basierten Datensätzen werden weiterhin Verarbeitungsregeln angewendet. |
-| Geräteübergreifende Identitätszuordnung | Kunden sind auf eine „einmalige“ Datenzuordnung über den Abfragedienst beschränkt oder müssen diese Logik derzeit auf die Daten vor der Datenerfassung durch [!UICONTROL Experience Platform] anwenden. |
+| Geräteübergreifende Identitätszuordnung | Customers are limited to &quot;one-time&quot; stitches of the data via Query Service, or currently must apply this logic to data prior to [!UICONTROL Experience Platform] data ingestion. |
 
 ## Derzeit nicht unterstützt, aber geplant
 
 | Funktion | Hinweise |
 | --- | --- |
-| Anomalieerkennung | Unterstützung ist geplant. |
 | Beitragsanalyse | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
 | Segmentveröffentlichung (Senden von Segmenten aus Workspace an Experience Cloud) | Unterstützung ist geplant. |
@@ -95,6 +98,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Reports &amp; Analytics-Zielgruppen |  |
 | Reports &amp; Analytics-Kalenderereignisse |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse Berichterstellung | [!UICONTROL Experience Platform Query Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein. |
+| Data Warehouse Berichterstellung | [!UICONTROL Experience Platform Abfrage Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein. |
 | Mobile Services |  |
 | Daten-Feeds |  |
