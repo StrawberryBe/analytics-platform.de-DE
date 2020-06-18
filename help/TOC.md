@@ -1,5 +1,5 @@
 ---
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.de-DE
+git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: experience-cloud
 product: adobe analytics
 sub-product: Customer Journey
@@ -13,10 +13,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: d8450b8435400aa16ce4d87868f804b82d1df4d7
+source-git-commit: 17e6cc8f79c542465971162666d846e2b1e0da58
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 91%
+source-wordcount: '375'
+ht-degree: 90%
 
 ---
 
@@ -141,6 +141,7 @@ ht-degree: 91%
       + [Datumsvergleich](components/date-ranges/time-comparison.md)
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
+   + [Objekte mit Arrays](use-cases/object-arrays.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
