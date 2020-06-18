@@ -1,16 +1,16 @@
 ---
-title: Verwenden von CJA mit Arrays von Objekten
+title: Objekte mit Arrays
 description: Verstehen Sie, wie CJA Berichte zu Datenhierarchien erstellt.
 translation-type: tm+mt
-source-git-commit: b7cd74f3fe2f0222e78452f58a7c387f6e0c86d2
+source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
 
-# Verwenden von CJA mit Arrays von Objekten
+# Objekte mit Arrays
 
 Bei einigen Plattformfeldern kann es sich um Objektarchiven handeln. Eines der häufigsten Beispiele wäre ein Einkaufswagen, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine SKU, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Facetten haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Treffer passen.
 
@@ -206,7 +206,7 @@ Eine Produktbestellung existiert ohne einen Garantienamen, der mit ihr verknüpf
       "SKU": "1234", 
       "category": "Washing Machines", 
       "name": "LG Washing Machine 2000", 
-      "orders": 1, 
++      "orders": 1, 
       "revenue": 1600, 
       "units": 1,
       "order_id":"abc123", 
@@ -239,3 +239,30 @@ Eine Produktbestellung existiert ohne einen Garantienamen, der mit ihr verknüpf
 +  "timestamp": 1534219229
 +}
 ```
+
+Notieren Sie die Bestellungen, die keinen Namen haben, der mit ihnen verbunden ist. Dies sind die Bestellungen, die dem Dimensionswert &quot;Nicht angegeben&quot;zugeordnet werden.
+
+### Kombinieren von Metriken
+
+CJA kombiniert keine ähnlich benannten Metriken nativ, wenn sie sich auf unterschiedlichen Objektebenen befinden.
+
+| `product : category` | `product : revenue` | `product : warranty : revenue` |
+| --- | --- | --- |
+| `Washing Machines` | `1600` | `250` |
+| `Dryers` | `500` | `0` |
+| `Total` | `2100` | `250` |
+
+Sie können jedoch eine berechnete Metrik erstellen, die die gewünschten Metriken kombiniert:
+
+Berechnete Metrik &quot;Gesamtumsatz&quot;: `[product : revenue] + [product : warranty : revenue]`
+
+Die Anwendung dieser berechneten Metrik zeigt die gewünschten Ergebnisse an:
+
+| `product : warranty : name` | `Total revenue (calculated metric)` |
+| --- | --- |
+| `Washing Machines` | `1850` |
+| `Dryers` | `500` |
+| `Total` | `2350` |
+
+## Persistenzbeispiele
+
