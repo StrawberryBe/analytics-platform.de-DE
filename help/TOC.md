@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 89%
 + Datenansichten {#cja-dataviews}
    + [Datenschicht erstellen](data-views/create-dataview.md)
    + [Ansichten und Attribution von Daten konfigurieren](data-views/configure-dataviews.md)
-+ Workspace projects {#cja-workspace}
++ Workspace-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](analysis-workspace/perform-basic-analysis.md)
    + [Erweiterte Analyse durchführen](analysis-workspace/perform-adv-analysis.md)
@@ -66,7 +66,7 @@ ht-degree: 89%
          + [Fallout-Übersicht](analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Fallout-Visualisierung konfigurieren](analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Interdimensionaler Fallout](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Anwenden von Filtern in der Fallout-Analyse](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Filter in Fallout-Analyse anwenden](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Fluss {#flow}
          + [Flussübersicht](analysis-workspace/visualizations/c-flow/flow.md)
          + [Flussvisualisierung konfigurieren](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
@@ -89,18 +89,18 @@ ht-degree: 89%
       + [Attributionsbedienfeld](analysis-workspace/c-panels/attribution.md)
       + [Leeres Bedienfeld](analysis-workspace/c-panels/blank-panel.md)
       + [Freiform-Bedienfeld](analysis-workspace/c-panels/freeform-panel.md)
-      + [Quick Insight-Bedienfeld](analysis-workspace/c-panels/quickinsight.md)
-   + Projekte kuratieren oder freigeben {#curate-share}
-      + [Projekte im Arbeitsbereich kuratieren](analysis-workspace/curate-share/curate.md)
+      + [Quick Insights-Bedienfeld](analysis-workspace/c-panels/quickinsight.md)
+   + Kuratieren oder Freigeben von Projekten {#curate-share}
+      + [Kuratieren von Workspace-Projekten](analysis-workspace/curate-share/curate.md)
       + [Freigeben von Workspace-Projekten](analysis-workspace/curate-share/share-projects.md)
-      + [Arbeitsbereich-Projekte, die nur für Ansichten gedacht sind](analysis-workspace/curate-share/view-only-projects.md)
+      + [Schreibgeschützte Workspace-Projekte](analysis-workspace/curate-share/view-only-projects.md)
       + [PDF- oder CSV-Dateien herunterladen](analysis-workspace/curate-share/download-send.md)
       + [Projektdateien freigeben und planen](analysis-workspace/curate-share/send-schedule-files.md)
       + [Datei senden – Bereitstellung eines Projekts planen](analysis-workspace/curate-share/t-schedule-report.md)
       + [Manager für geplante Projekte](analysis-workspace/curate-share/schedule-projects.md)
    + Attribution IQ {#attribution}
       + [Übersicht über Attribution](analysis-workspace/attribution/overview.md)
-      + [Zuordnungsmodelle und Lookback-Fenster](analysis-workspace/attribution/models.md)
+      + [Attributionsmodelle und Lookback-Fenster](analysis-workspace/attribution/models.md)
       + [Algorithmische Attribution](analysis-workspace/attribution/algorithmic.md)
       + [Häufig gestellte Fragen](analysis-workspace/attribution/faq.md)
    + Virtual Analyst {#virtual-analyst}
@@ -111,10 +111,10 @@ ht-degree: 89%
          + [In der Anomalieerkennung verwendete statistische Verfahren](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + Häufig gestellte Fragen zu Workspace {#workspace-faq}
       + [Häufig gestellte Fragen](analysis-workspace/workspace-faq/faq.md)
-      + [Analysis Workspace-Leistung optimieren](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Optimieren der Analysis Workspace-Leistung](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Analysis Workspace-Beschränkungen](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationsanforderungen](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Zugänglichkeit im Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Barrierefreiheit in Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Langschwanz im Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Komponenten {#cja-components}
    + [Komponentenübersicht](components/overview.md)
@@ -142,7 +142,7 @@ ht-degree: 89%
       + [Datumsvergleich](components/date-ranges/time-comparison.md)
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
-   + [Objekte mit Arrays](use-cases/object-arrays.md)
+   + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
