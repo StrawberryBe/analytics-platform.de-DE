@@ -1,24 +1,24 @@
 ---
-title: Objekte mit Arrays
-description: Verstehen Sie, wie CJA Berichte zu Datenhierarchien erstellt.
-translation-type: tm+mt
+title: Verwenden von Objekt-Arrays
+description: Hier wird erklärt, wie CJA-Berichte Datenhierarchien darstellen.
+translation-type: ht
 source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Objekte mit Arrays
+# Verwenden von Objekt-Arrays
 
-Bei einigen Plattformfeldern kann es sich um Objektarchiven handeln. Eines der häufigsten Beispiele wäre ein Einkaufswagen, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine SKU, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Facetten haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Treffer passen.
+Manche Plattformschemas können Objekt-Arrays enthalten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
 
-In früheren Versionen von Adobe Analytics wurde diese Leistung mit der `products` Variablen ausgeführt. Es handelte sich um eine verkettete Zeichenfolge, die durch Semikolons (`;`) getrennt war, um die Facetten eines Produkts zu trennen, während durch Kommas (`,`) getrennte Produkte definiert wurden. Es war die einzige Variable mit begrenzter Unterstützung von &quot;object arrays&quot;. Variablen mit mehreren Werten, wie z. B. Liste vars, könnten das Äquivalent zu Arrays unterstützen, &quot;object arrays&quot;konnten jedoch nicht unterstützt werden. CJA erweitert dieses Konzept durch die Unterstützung willkürlich tiefer Hierarchien in einer Datenzeile, eine Funktion, die in einer früheren Version von Adobe Analytics nicht verfügbar ist.
+In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. CJA erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien in einer Datenzeile. Diese Funktion war in keiner früheren Version von Adobe Analytics verfügbar.
 
-## Gleiches Trefferbeispiel
+## Beispiel für gleiche Hits
 
-Der folgende Treffer ist ein JSON-Objekt, das einen Kauf eines Kunden aus einer Waschmaschine und Trockner darstellt.
+Der folgende Hit ist ein JSON-Objekt, das den Kauf eines Kunden einer Waschmaschine und eines Trockners darstellt.
 
 ```json
 {
@@ -62,27 +62,27 @@ Der folgende Treffer ist ein JSON-Objekt, das einen Kauf eines Kunden aus einer 
 }
 ```
 
-Beim Erstellen einer Ansicht sind die folgenden Dimensionen und Metriken verfügbar (je nach Schema):
+Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und Metriken verfügbar (je nach Schema):
 
 * **Dimensionen:**
    * ID
    * Produkt: SKU
-   * Produkt: name
-   * Produkt: order_id
-   * Produkt: Garantie: Abdeckung
-   * Produkt: Garantie: length
-   * Produkt: Garantie: name
-   * Produkt: Garantie: type
+   * Produkt: Name
+   * Produkt: Bestell-ID
+   * Produkt: Garantie: Gültigkeit
+   * Produkt: Garantie: Länge
+   * Produkt: Garantie: Name
+   * Produkt: Garantie: Typ
 * **Metriken:**
-   * Produkt: Aufträge
+   * Produkt: Bestellungen
    * Produkt: Einheiten
    * Produkt: Umsatz
    * Produkt: Garantie
    * Produkt: Garantie: Umsatz
 
-### Gleiche Trefferbeispiele (Verhalten von Berichten)
+### Beispiele für gleiche Hits (Berichtsverhalten)
 
-Die folgenden Tabellen zeigen Workspace-Berichte mit einigen Dimensions- und Metrikkombinationen.
+Unter Verwendung des obigen Hits zeigen die folgenden Tabellen Workspace-Berichte mit einigen Dimensions- und Metrikkombinationen.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ Die folgenden Tabellen zeigen Workspace-Berichte mit einigen Dimensions- und Met
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-CJA untersucht selektiv die Dimension und die Metriken des Objekts, basierend auf der Tabelle.
+CJA untersucht basierend auf der Tabelle selektiv die Dimension und die Metriken des Objekts.
 
 ```diff
 {
@@ -134,7 +134,7 @@ CJA untersucht selektiv die Dimension und die Metriken des Objekts, basierend au
 +}
 ```
 
-Wenn Sie nur über Garantieinnahmen berichten möchten, würde Ihr Projekt in etwa wie folgt aussehen:
+Wenn Sie nur über Garantieumsätze berichten möchten, sieht Ihr Projekt in etwa wie folgt aus:
 
 | `product : warranty : coverage` | `product : warranty : revenue` |
 | --- | --- |
@@ -142,7 +142,7 @@ Wenn Sie nur über Garantieinnahmen berichten möchten, würde Ihr Projekt in et
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA untersucht die folgenden Teile des Treffers, um den Bericht zu generieren:
+CJA zieht für die Erstellung des Berichts diese Teile des Hits heran:
 
 ```diff
 {
@@ -186,9 +186,9 @@ CJA untersucht die folgenden Teile des Treffers, um den Bericht zu generieren:
 +}
 ```
 
-Da der Trockner keine Garantie enthielt, ist er nicht in der Tabelle enthalten.
+Da der Trockner keine Garantie hat, ist er nicht in der Tabelle enthalten.
 
-Da Sie jede Dimension mit einer beliebigen Metrik kombinieren können, zeigt die folgende Tabelle, wie Daten mit nicht angegebenen Dimensionswerten aussehen würden:
+Da Sie jede Dimension mit einer beliebigen Metrik kombinieren können, zeigt die folgende Tabelle, wie Daten mit nicht spezifizierten Dimensionswerten aussehen würden:
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ Da Sie jede Dimension mit einer beliebigen Metrik kombinieren können, zeigt die
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Eine Produktbestellung existiert ohne einen Garantienamen, der mit ihr verknüpft ist. Daher wird der Dimensionswert auf &quot;Nicht angegeben&quot;gesetzt. Dasselbe gilt auch für die Bestellung der Produktgarantie:
+Eine Produktbestellung existiert ohne einen verknüpften Garantienamen. Daher wird der Dimensionswert „Nicht spezifiziert“ zugeschrieben. Dasselbe gilt auch für die Bestellung der Produktgarantie:
 
 ```diff
 {
@@ -240,11 +240,11 @@ Eine Produktbestellung existiert ohne einen Garantienamen, der mit ihr verknüpf
 +}
 ```
 
-Notieren Sie die Bestellungen, die keinen Namen haben, der mit ihnen verbunden ist. Dies sind die Bestellungen, die dem Dimensionswert &quot;Nicht angegeben&quot;zugeordnet werden.
+Achten Sie auf die Bestellungen, die keinen mit ihnen verbundenen Namen haben. Dies sind die Bestellungen, die dem Dimensionswert „Nicht spezifiziert“ zugeordnet werden.
 
 ### Kombinieren von Metriken
 
-CJA kombiniert keine ähnlich benannten Metriken nativ, wenn sie sich auf unterschiedlichen Objektebenen befinden.
+CJA kombiniert nativ keine ähnlich benannten Metriken, wenn sie sich auf unterschiedlichen Objektebenen befinden.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |
@@ -254,9 +254,9 @@ CJA kombiniert keine ähnlich benannten Metriken nativ, wenn sie sich auf unters
 
 Sie können jedoch eine berechnete Metrik erstellen, die die gewünschten Metriken kombiniert:
 
-Berechnete Metrik &quot;Gesamtumsatz&quot;: `[product : revenue] + [product : warranty : revenue]`
+Berechnete Metrik „Gesamtumsatz“: `[product : revenue] + [product : warranty : revenue]`
 
-Die Anwendung dieser berechneten Metrik zeigt die gewünschten Ergebnisse an:
+Durch Anwendung dieser berechneten Metrik werden die gewünschten Ergebnisse angezeigt:
 
 | `product : warranty : name` | `Total revenue (calculated metric)` |
 | --- | --- |
@@ -264,5 +264,5 @@ Die Anwendung dieser berechneten Metrik zeigt die gewünschten Ergebnisse an:
 | `Dryers` | `500` |
 | `Total` | `2350` |
 
-## Persistenzbeispiele
+## Beispiele für Persistenz
 
