@@ -3,7 +3,7 @@ description: 'null'
 title: Fallout-Übersicht
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 95%
@@ -13,14 +13,16 @@ ht-degree: 95%
 
 # Fallout-Übersicht
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben (wo sie „ausgefallen“ sind) und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind).
 
 Mit Fallout-Visualisierungen können Sie:
 
 * eine Gegenüberstellung zweier verschiedener Segmente im gleichen Bericht vornehmen
-* Trichterschritte (Touchpoints) ziehen, ablegen und neu anordnen
+* Trichterschritte (Touchpoints) ziehen, ablegen und neu anordnen.
 * Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren
 * Einen multidimensionalen Fallout-Bericht erstellen
 * Feststellen, wohin Kunden unmittelbar nach dem Ausstieg navigieren
