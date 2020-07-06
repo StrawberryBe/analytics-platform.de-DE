@@ -2,7 +2,7 @@
 title: Algorithmische Attribution
 description: Details zum algorithmischen Zuordnungsmodell.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 7%
@@ -12,9 +12,13 @@ ht-degree: 7%
 
 # Algorithmische Attribution
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
->[!NOTE] **[!UICONTROL Die algorithmische Zuordnung]** wird derzeit nur eingeschränkt getestet. Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Analytics-Funktionen](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html) .
+>[!NOTE]
+>
+>**[!UICONTROL Die algorithmische Zuordnung]** wird derzeit nur eingeschränkt getestet. Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Analytics-Funktionen](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html) .
 
 Das algorithmische [Zuordnungsmodell](models.md) in Analysis Workspace unterscheidet sich von anderen Modellen insofern, als es mithilfe statistischer Verfahren Gutschriften über die Dimensionswerte in Ihrem Bericht oder Ihrer Freiformtabelle verteilt. Wie alle anderen Zuordnungsmodelle in Analysis Workspace kann es für jede Dimension oder Metrik verwendet werden und unterstützt eine unbegrenzte Segmentierung und Aufschlüsselung und verteilt 100 % der Konversionen auf die Dimension(en) in der Tabelle (auch als &quot;fraktionale&quot; Zuordnung bezeichnet).
 
@@ -25,4 +29,6 @@ Auf hoher Ebene betrachtet die Zuordnungsberechnung des Konversionsguthabens fü
 * Shapley, Lloyd S. (1953). Ein Wert für persönliche Spiele. *Beiträge zur Theorie der Spiele, 2(28)*, 307-317.
 * Harsanyi, John C. (1963). Ein vereinfachtes Verhandlungsmodell für das persönliche Genossenschaftsspiel. *International Economic Review 4(2)*, 194-220.
 
->[!NOTE] Das Ergebnis der algorithmischen Zuordnung unterscheidet sich nur dann von anderen Modellen, wenn innerhalb des angegebenen Lookback-Fensters mehrere Touchpoints vorhanden sind. Umrechnungen mit einem einzigen Touchpoint erhalten eine Gutschrift von 100 % unabhängig vom Zuordnungsmodell.
+>[!NOTE]
+>
+>Das Ergebnis der algorithmischen Zuordnung unterscheidet sich nur dann von anderen Modellen, wenn innerhalb des angegebenen Lookback-Fensters mehrere Touchpoints vorhanden sind. Umrechnungen mit einem einzigen Touchpoint erhalten eine Gutschrift von 100 % unabhängig vom Zuordnungsmodell.
