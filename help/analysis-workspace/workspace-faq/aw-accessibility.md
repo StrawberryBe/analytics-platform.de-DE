@@ -1,18 +1,20 @@
 ---
 description: Barrierefreiheitsunterstützende Funktionen in Analysis Workspace
-title: Zugänglichkeit im Analysis Workspace
+title: Barrierefreiheit in Analysis Workspace
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 
-# Zugänglichkeit im Analysis Workspace
+# Barrierefreiheit in Analysis Workspace
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Erfahren Sie mehr über die Barrierefreiheitsunterstützung in [!UICONTROL Analysis Workspace], dem führenden Tool zur Analyse von Adobe Analytics.
 
