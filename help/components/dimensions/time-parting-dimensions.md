@@ -3,7 +3,7 @@ description: Bei einer Zeitunterteilung wird der Zeitstempel erfasster Hits in a
 title: Dimensionen für die Zeitunterteilung
 uuid: c9fa7921-aa57-483c-b2f9-da55013ada17
 translation-type: tm+mt
-source-git-commit: 0c5bd5ce0b0ba4ba758a1ef1adf5a4a519e9cf8c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
@@ -22,7 +22,9 @@ Die Dimensionen für die Zeitunterteilung basieren auf der Zeitzone der Report S
 * Wie verhalten sich Verkäufe am Wochenende in Bezug auf Verkäufe während der Woche?
 * Führt eine bestimmte Marketing-Kampagne eher am Morgen oder am Nachmittag zu einer höheren Konversionsrate?
 
->[!NOTE] Die Dimensionen für die Zeitunterteilung sind nur in Analysis Workspace verfügbar. Wenn Sie Dimensionen für die Zeitunterteilung in anderen Analytics-Lösungen verwenden möchten, können Sie das [getTimeParting-Plug-in](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/plugins/gettimeparting.html) implementieren.
+>[!NOTE]
+>
+>Die Dimensionen für die Zeitunterteilung sind nur in Analysis Workspace verfügbar. Wenn Sie Dimensionen für die Zeitunterteilung in anderen Analytics-Lösungen verwenden möchten, können Sie das [getTimeParting-Plug-in](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/plugins/gettimeparting.html) implementieren.
 
 Zu den Dimensionen für die Zeitunterteilung in Analysis Workspace zählen:
 
