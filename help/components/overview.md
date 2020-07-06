@@ -2,7 +2,7 @@
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 86%
@@ -38,7 +38,9 @@ See [Create a project](/help/analysis-workspace/home.md) for information about u
 
 Sie können Komponenten (separat oder mehrere gleichzeitig) auf verschiedene Weisen verwalten. Klicken Sie mit der rechten Maustaste auf eine Komponente oder klicken Sie oben in der Komponentenliste auf **[!UICONTROL Aktionen]**.
 
->[!NOTE] Diese Aktionen beziehen sich nicht auf Zeitkomponenten.
+>[!NOTE]
+>
+>Diese Aktionen beziehen sich nicht auf Zeitkomponenten.
 
 | Komponentenaktion | Beschreibung |
 |--- |--- |
