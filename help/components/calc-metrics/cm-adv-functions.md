@@ -2,7 +2,7 @@
 title: Referenz – Erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2949'
 ht-degree: 99%
@@ -12,7 +12,9 @@ ht-degree: 99%
 
 # Referenz – Erweiterte Funktionen
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste **[!UICONTROL Funktionen]** die Option **[!UICONTROL Erweitert anzeigen]** wählen.
 
@@ -32,7 +34,9 @@ Wenn Sie allerdings an zwei Metriken interessiert sind, soll vielleicht nicht ei
 
 Gibt den Wert des zugehörigen Arguments zurück. Mit „NICHT“ können Sie sicherstellen, dass ein Wert nicht mit einem bestimmten Wert übereinstimmt.
 
->[!NOTE] 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
+>[!NOTE]
+>
+> 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -208,7 +212,9 @@ Gibt den Durchschnitt der letzten N Zeilen zurück.
 
 Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. Da die Anordnung nach Dimensionen erfolgt, ist dies nur bei Dimensionen mit einer natürlichen Reihenfolge nützlich, wie Datum oder Pfadlänge.
 
->[!NOTE] Mit Quotenmetriken, wie Umsatz/Besucher, funktioniert dies nicht so, wie Sie es vielleicht erwarten: Es wird der Quotendurchschnitt ermittelt, anstatt dass der Umsatz über die letzten N und die Besucher über die letzten N summiert und anschließend geteilt werden. Verwenden Sie stattdessen
+>[!NOTE]
+>
+>Mit Quotenmetriken, wie Umsatz/Besucher, funktioniert dies nicht so, wie Sie es vielleicht erwarten: Es wird der Quotendurchschnitt ermittelt, anstatt dass der Umsatz über die letzten N und die Besucher über die letzten N summiert und anschließend geteilt werden. Verwenden Sie stattdessen
 
 ```
 cumul(revenue)/cumul(visitor)
@@ -451,7 +457,9 @@ Gibt alle Elemente zurück, die keine exakte Übereinstimmung mit dem eingegeben
 
 Gibt TRUE zurück, wenn ein Argument TRUE ist, oder FALSE, wenn alle Argumente FALSE sind.
 
->[!NOTE] 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
+>[!NOTE]
+>
+> 0 (null) bedeutet „Falsch“ und jeder andere Wert „Wahr“.
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -470,7 +478,7 @@ Gibt die Konstante PI (3,14159265358979) mit 15 Stellen zurück.
 PI()
 ```
 
-Die Funktion [!DNL PI]weist keine Argumente auf.
+Die Funktion [!DNL PI] weist keine Argumente auf.
 
 ## Potenzregression: Korrelationskoeffizient (Tabelle)
 
@@ -692,7 +700,9 @@ Die Gleichung für z-Transformation lautet:
 
 wobei [!DNL x] der Rohwert, [!DNL μ] das arithmetische Mittel der Population und [!DNL σ] die Standardabweichung der Population ist.
 
->[!NOTE] [!DNL μ] (Mu) und[!DNL σ] (Sigma) werden automatisch aus der Metrik berechnet.
+>[!NOTE]
+>
+>[!DNL μ] (Mu) und[!DNL σ] (Sigma) werden automatisch aus der Metrik berechnet.
 
 z-Transformation (Metrik)
 
@@ -717,5 +727,7 @@ Führt einen n-seitigen z-Test mit einem z-Wert von A durch.
 
 Gibt zurück, wie wahrscheinlich es ist, dass die aktuelle Zeile zufällig in der Spalte gesehen wird.
 
->[!NOTE] Dabei wird von einer Normalverteilung der Werte ausgegangen.
+>[!NOTE]
+>
+>Dabei wird von einer Normalverteilung der Werte ausgegangen.
 
