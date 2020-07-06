@@ -5,7 +5,7 @@ title: Projekt erstellen – Übersicht
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 96%
@@ -15,7 +15,9 @@ ht-degree: 96%
 
 # Projekt erstellen – Übersicht
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
@@ -55,7 +57,7 @@ Die Workspace -Seite mit Projektliste umfasst die folgenden Informationen:
 | Einstellung | Beschreibung |
 |---|---|
 | Projekt  Name | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
-| Erstellt von | Name des Projektinhabers |
+| Erstellt von | Name des Projektinhabers. |
 | Zuletzt geändert | Das Datum, an dem die letzte Änderung an dem Projekt vorgenommen wurde. |
 | Tags | Zeigt eine Liste aller Tags an, die auf ein Projekt angewendet wurden, um die Kategorisierung zu vereinfachen. Sie können Projekte beim Speichern auch taggen. Die Tags eines Projekts können Sie auf der Workspace-Landingpage in der Spalte [!UICONTROL Tags] einsehen. |
 | Beschreibung | Eine Beschreibung hilft, den Zweck eines Projekts anzugeben. Sie können auf die Beschreibung doppelklicken, um sie zu bearbeiten. |
@@ -71,7 +73,9 @@ Die oberste Ebene des Menüs „Projekte“ sieht wie folgt aus:
 
 Die Untermenüs enthalten die folgenden Optionen.
 
->[!NOTE] Mit einem Sternchen (*) markierte Optionen werden nur bei **gespeicherten** Projekten angezeigt.
+>[!NOTE]
+>
+>Mit einem Sternchen (*) markierte Optionen werden nur bei **gespeicherten** Projekten angezeigt.
 
 | Projekt | Vorlage | Einfügen | Komponenten | Freigabe | Hilfe |
 |---|---|---|---|---|---|
@@ -79,7 +83,7 @@ Die Untermenüs enthalten die folgenden Optionen.
 | Öffnen | Leeren | Neues Freiformfeld | Neue Metrik | Projektverknüpfung abrufen* | Tastaturbefehle |
 | Speichern | Alle löschen | Neues Bedienfeld für Segmentvergleich | Neuer Datumsbereich | Datei jetzt senden* | Hilfeforum |
 | Speichern unter* |  | Neue Freiformtabelle | Neuer Warnhinweis | Datei planmäßig senden* |  |
-| Als Landingpage festlegen* |  | New Line | Komponenten aktualisieren | Projekt kuratieren |  |
+| Als Landingpage festlegen* |  | Neue Zeile | Komponenten aktualisieren | Projekt kuratieren |  |
 | Projekt aktualisieren |  | Neuer Balken |  |  |  |
 | CSV herunterladen |  |  |  |  |  |
 | PDF herunterladen* |  |  |  |  |  |
