@@ -3,7 +3,7 @@ description: Weitere Informationen zu Visualisierungen und Visualisierungseinste
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
 translation-type: tm+mt
-source-git-commit: c6d98c03362617d34213e5d0d4ca35a24350b26c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 97%
@@ -13,7 +13,9 @@ ht-degree: 97%
 
 # Visualisierungsübersicht
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Klicken Sie auf den Namen der Visualisierung, um weitere Informationen anzuzeigen.
 
@@ -66,7 +68,7 @@ Um auf die [!UICONTROL Visualisierungseinstellungen] zuzugreifen, ziehen Sie ein
 | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
 | Normalisierung | Erzwingt Metriken für gleiche Anteile. |
 | Zwei Achsen anzeigen | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). |
-| Anomalien anzeigen | Reichert Liniendiagramme und Freiformtabellen so an, dass sie auch Datenanomalien anzeigen. |
+| Anomalien anzeigen | Reichert Kantengraphen und Freiformtabellen so an, dass sie auch Datenanomalien anzeigen. |
 
 ## Symbol „Visualisierung erstellen“ {#section_9C11D9DEDC42413AA53E69A71A509DFC}
 
