@@ -1,19 +1,21 @@
 ---
 description: Nur-Ansichten-Projekte in Workspace
 keywords: View-only projects
-title: Arbeitsbereich-Projekte, die nur für Ansichten gedacht sind
+title: Schreibgeschützte Workspace-Projekte
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Arbeitsbereich-Projekte, die nur für Ansichten gedacht sind
+# Schreibgeschützte Workspace-Projekte
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Sie können Projekte über den [Projektfreigabe-Arbeitsablauf](/help/analysis-workspace/curate-share/share-projects.md)als &quot;nur Ansicht&quot;für Empfänger freigeben. Empfänger, die in der Rolle &quot;Kann Ansicht&quot;platziert wurden, erhalten eine eingeschränktere Projekterfahrung. Dies kann gewünscht werden, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, dem Analysis Workspace oder Adobe Analytics im Allgemeinen weniger vertraut sind, aber dennoch Daten und Erkenntnisse in einer sicheren Umgebung verarbeiten möchten.
 
