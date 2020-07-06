@@ -4,21 +4,25 @@ keywords: fallout and segmentation;segments in fallout analysis;compare segments
 title: Segmente in der Fallout-Analyse anwenden
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 
-# Anwenden von Filtern in der Fallout-Analyse
+# Filter in Fallout-Analyse anwenden
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Sie können Filter aus einem Touchpoint erstellen, Segmente als Touchpoint hinzufügen und wichtige Workflows über verschiedene Filter in Analysis Workspace hinweg vergleichen.
 
->[!IMPORTANT] Filter, die als Checkpoints in der Trichteranalyse verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer Trichteranalyse im Kontext des Besuchers müssen Filter, die als Checkpoints verwendet werden, besuchsbasierte oder trefferbasierte Filter sein. Bei einer besuchskontextbezogenen Trichteranalyse müssen Filter, die als Checkpoint verwendet werden, trefferbasierte Segmente sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Kombinationen aus Filter-Containern führen zu ungültigen Trichteranalysediagrammen, z. B.:
+>[!IMPORTANT]
+>
+>Filter, die als Checkpoints in der Trichteranalyse verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer Trichteranalyse im Kontext des Besuchers müssen Filter, die als Checkpoints verwendet werden, besuchsbasierte oder trefferbasierte Filter sein. Bei einer besuchskontextbezogenen Trichteranalyse müssen Filter, die als Checkpoint verwendet werden, trefferbasierte Segmente sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Kombinationen aus Filter-Containern führen zu ungültigen Trichteranalysediagrammen, z. B.:
 
 * Verwenden eines Besucher-basierten Filters als Touchpoint in einer Fallout-Visualisierung im Besucher-Kontext
 * Verwenden eines Besucher-basierten Filters als Touchpoint in einer Fallout-Visualisierung im Besuchskontext
