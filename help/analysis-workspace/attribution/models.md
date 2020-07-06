@@ -1,18 +1,20 @@
 ---
-title: Zuordnungsmodelle und Lookback-Fenster
+title: Attributionsmodelle und Lookback-Fenster
 description: Unterscheiden unterschiedliche Zuordnungstypen Gutschriften zwischen Dimensionswerten.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
 
-# Zuordnungsmodelle und Lookback-Fenster
+# Attributionsmodelle und Lookback-Fenster
 
->[!NOTE] Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Das Zuordnungskonzept in Adobe Analytics erfordert zwei Komponenten:
 
@@ -45,7 +47,9 @@ Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend be
 
 * **Benutzerdefiniertes Lookback-Fenster:** Ermöglicht Ihnen, das Zuordnungsfenster über den Datumsbereich des Berichte hinaus auf maximal 90 Tage zu erweitern. Benutzerdefinierte Lookback-Fenster werden bei jeder Konvertierung im Berichte ausgewertet. Beispiel: Bei einer Konvertierung am 20. Februar würde ein Lookback-Fenster von 10 Tagen alle Dimension-Touchpoints vom 10. bis 20. Februar im Zuordnungsmodell auswerten.
 
->[!NOTE] **[!UICONTROL Benutzerdefinierte Lookback-Fenster]** werden derzeit nur eingeschränkt getestet. Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Analytics-Funktionen](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html) .
+>[!NOTE]
+>
+>**[!UICONTROL Benutzerdefinierte Lookback-Fenster]** werden derzeit nur eingeschränkt getestet. Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Analytics-Funktionen](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html) .
 
 ## Beispiel
 
@@ -76,4 +80,6 @@ Je nach Lookback-Fenster und Attributionsmodell erhalten Kanäle eine unterschie
       * Social Media: 18,6 %, 9,32 Euro
       * Paid Search: 13,8 %, 6,92 Euro
 
->[!TIP] Andere Konversionsereignisse wie Bestellungen oder benutzerspezifische Ereignisse werden ebenfalls aufgeteilt, wenn die Gewichtung für mehrere Kanäle erfolgt. Wenn beispielsweise zwei Kanäle mit einem linearen Attributionsmodell zu einem benutzerspezifischen Ereignis beitragen, erhalten beide Kanäle 0,5 des benutzerspezifischen Ereignisses. Diese Ereignis-Teilbereiche werden über alle Besuche summiert und dann zur Berichterstellung auf die nächste Ganzzahl gerundet.
+>[!NOTE]
+>
+>Andere Konversionsereignisse wie Bestellungen oder benutzerspezifische Ereignisse werden ebenfalls aufgeteilt, wenn die Gewichtung für mehrere Kanäle erfolgt. Wenn beispielsweise zwei Kanäle mit einem linearen Attributionsmodell zu einem benutzerspezifischen Ereignis beitragen, erhalten beide Kanäle 0,5 des benutzerspezifischen Ereignisses. Diese Ereignis-Teilbereiche werden über alle Besuche summiert und dann zur Berichterstellung auf die nächste Ganzzahl gerundet.
