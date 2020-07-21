@@ -1,43 +1,53 @@
 ---
-description: Interaktion mit statischen Zeilen in Tabellen.
-title: Statische Zeilen im Vergleich zu dynamischen Zeilen
-uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
+title: Dynamische und statische Dimensionswerte
+description: Interaktion mit dynamischen und statischen Dimensionswerten in Tabellen.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 0477302df92ccab30d9f3a45cc7b22f2112a0c70
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 91%
+source-wordcount: '510'
+ht-degree: 8%
 
 ---
 
 
-# Statische Zeilen im Vergleich zu dynamischen Zeilen
+# Werte für dynamische und statische Dimensionen in Freiform-Tabellen
 
->[!NOTE]
->
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE] Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
-Analysis Workspace-Tabellen generieren dynamische Zeilen, wenn Sie eine Dimension in der Tabelle ablegen; d. h., dass alle für eine bestimmte Metrik zu der Dimension gehörenden Elemente in die Tabelle eingefügt werden.
+In Freiform-Tabellen können die Zeilen und Spalten verschiedene Komponentenwerte enthalten. Diese Werte können dynamisch (zeitabhängig) oder statisch (nicht zeitabhängig) sein, je nach Analyse, die Sie erstellen möchten.
 
-Wenn Sie zum Beispiel die Dimension „Browser“ in die Tabelle ziehen, dann werden alle Browser-Elemente (z. B. Android-Browser, Mobile Safari, Firefox usw.) dynamisch in die Tabelle eingefügt.
+## Dynamische Dimensionswerte
 
-Im Gegensatz dazu wird, wenn Sie manuell eine bestimmte Metrik, ein Segment, einen Datumsbereich oder ein einzelnes Dimensionselement in die Tabelle ziehen, jedes Mal eine fest kodierte oder „statische“ Zeile oder Liste eingefügt. Mit statischen Zeilen können Sie jetzt wie folgt interagieren:
+Dynamische Dimensionswerte ändern sich mit der Zeit und hängen von der in der Freiformtabelle sortierten Metrik ab. Dynamische Dimensionswerte werden bevorzugt, wenn Sie die obersten Elemente für einen bestimmten Zeitraum analysieren möchten.
 
-* Wenn Sie auf das Vorschau-Symbol in statischen Zeilen klicken, können Sie eine Vorschau von Segmenten, Metriken und Datumsbereichen anzeigen.
-* Klicken Sie auf das Symbol „X“, um die Zeile aus der Tabelle zu löschen.
-* Schränken Sie ein, wie viele Zeilen angezeigt werden und aktivieren Sie den Seitenwechsel.
-* Fügen Sie Elemente aus gemischten Dimensionen hinzu. Fügen Sie z. B. ein Element aus einer Browser-Dimension und ein weiteres Element aus einer Produkt-Dimension hinzu.
+Wenn Sie eine Dimension in eine Freiformtabelle ablegen, werden dynamische Zeilen zurückgegeben. Sie stellen die obersten Elemente dar, die der Dimension für eine bestimmte Metrik und einen bestimmten Zeitraum entsprechen. Sie können eine Dimension auch in Freiform-Tabellenspalten ablegen und die Dimension wird automatisch in die fünf wichtigsten Dimensionswerte erweitert.
 
-   Siehe folgende Abbildung:
+Wenn Sie beispielsweise die Dimension &quot;Browsertyp&quot;in die Tabelle ziehen, werden die oberen Browsertyp-Dimensionswerte (z. B. Microsoft, Apple, Google usw.) dynamisch zu den Tabellenzeilen zurückkehren. Wenn sie in eine Spalte abgelegt werden, werden die obersten 5 Browsertyp-Dimensionswerte dynamisch zurückgegeben.
 
-   ![](assets/static_rows.png)
+Dynamische Dimensionswerte haben die Option &quot;Zeilenfilter&quot;. Die Symbole &quot;Sperren&quot;und &quot;X&quot;sind **nicht** vorhanden.
 
-Darüber hinaus können Sie (nur) im statischen Zeilenmodus jetzt ändern, wie die Spaltensummen berechnet werden. Klicken Sie einfach auf das Zahnrad-Symbol und schalten Sie zwischen den beiden folgenden Optionen um:
+## Statische Dimensionswerte
 
-![](assets/column-totals.png)
+Statische Dimensionswerte ändern sich nicht mit der Zeit. Es handelt sich dabei um feste Komponenten, die immer in einer Freiform-Tabelle zurückgegeben werden. Statische Dimensionswerte werden bevorzugt, wenn Sie immer dasselbe Element analysieren möchten, unabhängig davon, ob es sich um bestimmte Kampagnen oder bestimmte Wochentage handelt.
 
-| Option | Beschreibung |
-|---|---|
-| (Standardmäßig) Berechnen der Summen durch Addieren der Werte, die sich zurzeit in jeder Spalte befinden. | Diese Option berechnet nur die aktuell in der Tabelle vorhandenen Spalten. (Clientseitige Berechnung) |
-| Berechnen der Summen anhand aller Zeilen für jede Metrik. | Diese Option bezieht alle Dimensionselemente für diese Dimension ein, auch dann, wenn diese nicht in der Tabelle aufgeführt sind. (Serverseitige Berechnung) |
+Jedes Mal, wenn Sie bestimmte Komponentenwerte (Dimension, Metrik, Segment, Datumsbereich) manuell in eine Tabelle eingeben, ist das Ergebnis eine statische Liste von Zeilen oder Spalten. Statische Dimensionswerte können auch erstellt werden, wenn Sie Folgendes auswählen:
 
+* Klicken Sie in den Zeilen mit der rechten Maustaste > Nur ausgewählte Zeilen [!UICONTROL anzeigen]
+* Klicken Sie in Spalten mit der rechten Maustaste > Element statisch [!UICONTROL machen]
+
+Wenn Sie beispielsweise über bestimmte Browsertyp-Elemente wie Microsoft und Apple ziehen, werden diese beiden Elemente immer in die Tabelle gezogen.
+
+Statische Dimensionswerte haben **nicht** die Option zum Zeilenfilter. Stattdessen sind für jedes Element Sperren- und X-Symbole vorhanden. Klicken Sie auf das X-Symbol, um diesen Dimensionswert aus der Tabelle zu entfernen.
+
+## Gemischte Dimensionswerte
+
+Dimensionswerte aus verschiedenen Dimensionen können derselben Tabelle hinzugefügt werden. In diesen Fällen steht in der Kopfzeile der Zeile &quot;Gemischte Dimensionen&quot;. Diese Dimensionswerte sind statisch. Fügen Sie beispielsweise bestimmte Dimensionswerte aus der Dimension &quot;Browsertyp&quot;und andere Dimensionswerte aus der Dimension &quot;Browser&quot;hinzu.
+
+## Freiformsummen
+
+Dynamische und statische Zeilen verhalten sich in der Freiformsumme unterschiedlich. Standardmäßig:
+
+* Dynamische Zeilen werden serverseitige und dekorative Metriken wie Besuche oder Besucher summiert
+* Statische Zeilen werden clientseitig zusammengefasst und deaktivieren **keine** Metriken.
+
+[Erfahren Sie mehr über die Gesamtoptionen](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) von Workspace für dynamische und statische Zeilen.
