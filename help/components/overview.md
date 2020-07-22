@@ -2,10 +2,10 @@
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 86%
+ht-degree: 82%
 
 ---
 
@@ -19,7 +19,7 @@ Komponenten sind Funktionen in Customer Journey Analytics, die in Berichten verw
 
 Sie können die folgenden Komponenten verwalten:
 
-* [**Filter:**](filters/filters-overview.md) Schließen Sie Teile Ihrer Daten aus, um sich auf gebräuchliche Dimensionswerte zu konzentrieren
+* [**Filter **](filters/filters-overview.md): Teile Ihrer Daten ausschließen, um sich auf allgemeine Dimensionselemente zu konzentrieren
 * [**Berechnete Metriken:**](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung
 * [**Datumsbereiche:**](date-ranges/overview.md) Passen Sie die von Analysis Workspace angebotenen Datumsbereiche an und präzisieren Sie diese
 * [**Projekte:**](/help/analysis-workspace/home.md) Organisieren und verwalten Sie Ihre Projekte in Analysis Workspace
