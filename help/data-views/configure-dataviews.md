@@ -1,8 +1,11 @@
 ---
 title: Ansichten und Attribution von Daten konfigurieren
 description: Beschreibt, wie in Customer Journey Analytics eine Datenansicht für einen Platform-Datensatz erstellt wird.
-translation-type: ht
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+translation-type: tm+mt
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +20,7 @@ Beachten Sie dies, bevor Sie Attributionseinstellungen anwenden:
 
 * In der Benutzeroberfläche für Datenansichten geben Sie die Standardattribution an. **Hinweis**: In der Zukunft werden Sie diese Einstellungen in Workspace-Projekten überschreiben können. Diese Funktion ist jedoch derzeit nicht verfügbar.
 
-* Die Attributionseinstellungen in Customer Journey Analytics sind zerstörungsfrei und rückwirkend. Mit anderen Worten, Sie können Ihren Datensätzen in Customer Journey Analytics keinen irreparablen Schaden zufügen. Selbst wenn Sie versehentlich etwas löschen, können Sie jederzeit zu [!UICONTROL Experience Platform] zurückkehren und den Datensatz wieder einspielen. (Beachten Sie jedoch, dass dieses erneute Einspielen des Datensatzes zusätzliche Kosten verursacht.)
+* Die Attributionseinstellungen in Customer Journey Analytics sind zerstörungsfrei und rückwirkend. Mit anderen Worten, Sie können Ihren Datensätzen in Customer Journey Analytics keinen irreparablen Schaden zufügen. Even if you accidentally delete something, you can always go back to [!UICONTROL Experience Platform] and bring the dataset back in. (Beachten Sie jedoch, dass dieses erneute Einspielen des Datensatzes zusätzliche Kosten verursacht.)
 
 * Wenn Sie möchten, dass sich eine Dimension wie eine traditionelle eVar (Konversionsvariable) „verhält“, sollten Sie sie standardmäßig mit der Attribution „Letztkontakt – Besuch“ konfigurieren.
 
@@ -38,7 +41,7 @@ Nachdem Sie die [Einstellungen für die Datenansicht festgelegt und gespeichert]
 
 1. Geben Sie Komponenten- und Attributionseinstellungen für Dimensionen und Metriken an. Informationen zu den einzelnen Einstellungen finden Sie weiter unten.
 
-1. Klicken Sie auf **[!UICONTROL Save]**, um Ihre Datenansicht zu speichern.
+1. Click **[!UICONTROL Save]** to save your data view.
 
 
 ### Komponenteneinstellung
@@ -64,7 +67,7 @@ Das Modell beschreibt die Verteilung der Konversionen auf die Ereignisse in eine
 
 ### Gültigkeit
 
-Gibt einen Zeitraum bzw. ein Ereignis an, nach dem der Dimensionswert abläuft (d. h. keine Gutschrift für Erfolgsereignisse mehr erhält). Sie können die Gültigkeit der Attribution auf Sitzungs-, Personen- oder benutzerdefinierter Ebene festlegen.
+Gibt einen Zeitraum oder ein Ereignis an, nach dem das Dimensionselement abläuft (d. h. keine Gutschrift mehr für Erfolgsereignisse erhält). Sie können die Gültigkeit der Attribution auf Sitzungs-, Personen- oder benutzerdefinierter Ebene festlegen.
 
 | Einstellung | Definition |
 |---|---|
