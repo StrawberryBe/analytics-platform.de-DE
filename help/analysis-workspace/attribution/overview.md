@@ -1,11 +1,11 @@
 ---
 title: Übersicht über Attribution
-description: Das Konzept der Zuordnung der Gutschrift eines Erfolgsereignisses zu mehreren Dimensionswerten.
+description: Das Konzept der Zuordnung der Gutschrift eines Erfolgsobjekts zu mehreren Dimensionselementen.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 50%
+ht-degree: 56%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
-Die Zuordnung gibt Analysten die Möglichkeit, anzupassen, wie Dimensionswerte für Erfolgsereignisse gutgeschrieben werden. Beispiel:
+Die Zuordnung gibt Analysten die Möglichkeit, anzupassen, wie Dimensionselemente für Erfolgsereignisse gutgeschrieben werden. Beispiel:
 
 1. Ein Besucher Ihrer Site klickt auf einen Link zur gebührenpflichtigen Suche zu einer Ihrer Produktseiten. Fügen Sie das Produkt zum Einkaufswagen hinzu, kaufen Sie es jedoch nicht.
 2. Am nächsten Tag sehen Sie einen Social-Media-Beitrag von einem ihrer Freunde, klicken Sie auf den Link und schließen Sie den Kauf.
