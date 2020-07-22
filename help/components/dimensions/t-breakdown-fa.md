@@ -5,10 +5,10 @@ title: Dimensionen aufschlüsseln
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 64%
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Schlüsseln Sie Dimensionen und Dimensionselemente in Analysis Workspace auf.
 
@@ -28,7 +28,7 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 
    ![Schritt Ergebnis](assets/fa_data_table_actions.png)
 
-   Sie können Metriken nach Dimensionswerten oder Zielgruppensegmenten über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
+   Sie können Metriken über ausgewählte Zeiträume nach Dimensionselementen oder Audiencen unterteilen. Sie können auch noch granularer aufschlüsseln.
 
    >[!NOTE] Die Anzahl der in der Tabelle angezeigten Aufschlüsselungen ist auf 200 beschränkt. Für das Exportieren von Aufschlüsselungen ist diese Einschränkung höher.
 
