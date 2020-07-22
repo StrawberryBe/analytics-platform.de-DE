@@ -3,10 +3,10 @@ description: Weitere Informationen zu Visualisierungen und Visualisierungseinste
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Klicken Sie auf den Namen der Visualisierung, um weitere Informationen anzuzeigen.
 
@@ -34,7 +34,7 @@ YouTube-Video: [Visualisierungstypen in Analysis Workspace](https://www.youtube.
 | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu Bereichen („Pakete“) zusammen. |
 | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Linie](/help/analysis-workspace/visualizations/line.md) | stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird. |
-| [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) | zeigt die Beziehung zwischen Dimensionswerten und bis zu drei Metriken. |
+| [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) | Zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
 | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | Je nachdem, welche Zelle ausgewählt ist, zeigt diese Visualisierung die Summen und Zusammenfassungen an. |
 | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Je nachdem, welche Zellen ausgewählt sind, werden bei dieser Visualisierung Zellen miteinander verglichen. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. |
