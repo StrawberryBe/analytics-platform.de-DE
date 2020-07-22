@@ -3,10 +3,10 @@ description: Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie
 title: Zeileneinstellungen
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: df326581abbbd0dd0d29638962ccb71bb0aee837
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 89%
+source-wordcount: '425'
+ht-degree: 24%
 
 ---
 
@@ -15,19 +15,15 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
-Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben.
-
-Sie können außerdem die ausgewählte(n) Zeile(n) mit den [Rechtsklickaktionen in einer Tabelle](/help/analysis-workspace/visualizations/freeform-table.md) verwalten.
-
-Um auf die Tabellenzeileneinstellungen zuzugreifen, klicken Sie auf das Einstellungs-Symbol neben einer Dimension, einem Segment, einer Metrik, einem Zeitraum oder einer Aufschlüsselung im jeweiligen Element:
+Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben. Um auf die Tabellenzeileneinstellungen zuzugreifen, klicken Sie auf das Einstellungs-Symbol neben einer Dimension, einem Segment, einer Metrik, einem Zeitraum oder einer Aufschlüsselung im jeweiligen Element:
 
 ![](assets/row-settings.png)
 
-| Zeileneinstellung | Beschreibung |
+| Einstellung | Beschreibung |
 |--- |--- |
-| Datumsvergleiche | Richten Sie die Daten in allen Spalten so aus, dass sie alle in derselben Zeile beginnen.   Wenn Sie z. B. die Daten in einem Monatsvergleich zwischen Oktober und September 2016 ausrichten, beginnt die linke Spalte mit dem 1. Oktober und die rechte Spalte mit dem 1. September.<br>Standardmäßig deaktiviert. |
-| Prozentsatz | Prozentsätze pro Zeile berechnen Erzwingt, dass in der Freiformtabelle die Zellprozentsätze über die Zeile anstatt für die Spalte berechnet werden. Dies ist besonders nützlich für die Trend-Darstellung von Prozentangaben.<br>Standardmäßig aktiviert, wenn Sie das Symbol „Visualisieren“ verwenden. |
-| Spaltensummen | Diese Einstellungen werden nur bei [static rows](/help/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md) (when you have selected a finite set of items), not with dynamic rows (i.e., when you drop in a dimension that shows all items).<ul><li>**[!UICONTROL Summe der aktuellen Zeilen als Gesamtsumme anzeigen]**: Zeigt eine clientseitige Summe der Zeilen in der Tabelle, was bedeutet, dass die Gesamtsumme die Metriken wie Besuche oder Besucher **nicht** dedupliziert.</li><li>**[!UICONTROL Gesamtsumme anzeigen]**: Zeigt eine serverseitig Summe an, d. h. die Gesamtsumme dedupliziert Metriken wie Besuche oder Besucher.</li></ul> |
-| Aufschlüsselung | **[!UICONTROL Aufschlüsselung nach Position]**: Sie können Aufschlüsselungen nach fester Position in einer Freiformtabelle durchführen. Sie können z. B. festlegen, dass die ersten sieben Zeilen immer aufgeschlüsselt werden.<br>(Zuvor war die Liste mit den Werten in der Aufschlüsselung „gesperrt“. Dies konnte z. B. dazu führen, dass wenn Sie eine Aufschlüsselung des Datums nach Seite durchführten, Sie die ersten 50 Seiten für den ausgewählten Datumsbereich erhielten. Wenn Sie diesen Bericht speicherten und ihn einen Monat später erneut durchführen wollten, hätten sich die ersten 50 Seiten wahrscheinlich geändert. In Analysis Workspace werden jedoch die Ergebnisse der ursprünglichen Aufschlüsselung verwendet und dieselben Seiten angezeigt, aber mit dem aktuellen Monat als Zeitraum.)<br>Ausführung einer Aufschlüsselung anhand einer festen Position: 1. Schlüsseln Sie einige Zeilen in Ihrer Tabelle auf. 2. Klicken Sie auf das Einstellungs-Symbol (Zahnrad) neben der Tabellenzeile, die Sie fixieren möchten. 3. Aktivieren Sie das Kästchen neben „Aufschlüsselung nach Position“. 4. Ändern Sie die Sortierungsreihenfolge oder den Datumsbereich. Die Aufschlüsselungen sind jetzt an die Zeilenposition und nicht die hartcodierten Zeilen gebunden.<br>Standardmäßig deaktiviert. |
+| Datumsausrichtung | Bei dieser Einstellung auf Tabellenebene werden Datumsangaben aus den einzelnen Spalten an allen Beginn in derselben Zeile ausgerichtet. Die Datumsausrichtung ist standardmäßig aktiviert, wenn eine Zeitdimension in den Tabellenzeilen verwendet wird und unterschiedliche Datumsbereiche in den Spalten angewendet werden. In einer Tabelle mit Tagespauschale, bei der Oktober und September auf die Spalten angewendet werden, werden die Beginn mit der linken Spalte mit dem 1. Oktober und die Beginn mit der rechten Spalte mit dem 1. September angezeigt. |
+| Aufschlüsselung nach Position | Standardmäßig ist diese Einstellung deaktiviert und die Aufschlüsselungen sind auf statische Zeilenelemente fixiert. Nehmen wir beispielsweise an, Sie unterteilen die drei wichtigsten Dimensionselemente der Seite (Homepage, Suchergebnisse, Kasse) nach Marketing-Kanal. Dann verlassen Sie das Projekt und kehren zwei Wochen später zurück. Nach dem erneuten Öffnen des Projekts haben sich die drei wichtigsten Seiten geändert. Jetzt sind Homepage, Suchergebnisse und Kasse die Top-4-6-Seiten. Standardmäßig werden Ihre Marketing-Kanal-Aufschlüsselungen weiterhin unter Homepage, Suchergebnisse und Checkout angezeigt, auch wenn sie sich jetzt in den Zeilen 4-6 befinden. <br> Im Gegensatz dazu werden bei einer **Aufschlüsselung nach Position** immer die drei wichtigsten Elemente unterteilt, unabhängig davon, was sie sind. Wenn Sie auf unser Beispiel zurückgreifen, werden die Marketing Kanal-Aufschlüsselungen beim erneuten Öffnen des Projekts an die drei obersten Tabellenseiten gebunden, nicht an Homepage, Suchergebnisse und Checkout, die sich nun in den Zeilen 4 bis 6 befinden. |
+| Prozentsatz | **Die Standardeinstellung ist die Berechnung der Prozentsätze nach Spalte** . die in einer Spalte sichtbaren Prozentsätze werden auf Basis der Spaltensumme berechnet. <br>**Die Berechnung der Prozentsätze nach Zeile **zwingt die Freiform-Tabelle, die Zellprozentsätze in der Zeile zu berechnen, anstatt in der Spalte, wobei die Gesamtsumme als Nenner dient. Dies ist besonders nützlich für die Trend-Darstellung von Prozentangaben. Diese Einstellung ist bei Verwendung des Visualize-Symbols standardmäßig aktiviert. |
+| Spaltensummen | Diese Einstellungen sind nur für [statische Zeilen](manual-vs-dynamic-rows.md)verfügbar. <br> **Die Summe der aktuellen Zeilen** zeigt eine clientseitige Summe der Zeilen in der Tabelle an. Dies bedeutet, dass die Gesamtsumme die Metriken zum Duplikat wie Besuche oder Besucher *nicht* entfernt. <br> **Die Gesamtsumme** anzeigen zeigt eine serverseitige Summe an, was bedeutet, dass die Metriken zum Entfernen des Duplikats insgesamt gelöscht werden. |
