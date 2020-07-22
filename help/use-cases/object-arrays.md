@@ -1,11 +1,11 @@
 ---
 title: Verwenden von Objekt-Arrays
 description: Hier wird erklärt, wie CJA-Berichte Datenhierarchien darstellen.
-translation-type: ht
-source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -188,7 +188,7 @@ CJA zieht für die Erstellung des Berichts diese Teile des Hits heran:
 
 Da der Trockner keine Garantie hat, ist er nicht in der Tabelle enthalten.
 
-Da Sie jede Dimension mit einer beliebigen Metrik kombinieren können, zeigt die folgende Tabelle, wie Daten mit nicht spezifizierten Dimensionswerten aussehen würden:
+Da Sie jede Dimension mit einer beliebigen Metrik kombinieren können, zeigt die folgende Tabelle, wie Daten mit nicht angegebenen Dimensionselementen aussehen würden:
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ Da Sie jede Dimension mit einer beliebigen Metrik kombinieren können, zeigt die
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Eine Produktbestellung existiert ohne einen verknüpften Garantienamen. Daher wird der Dimensionswert „Nicht spezifiziert“ zugeschrieben. Dasselbe gilt auch für die Bestellung der Produktgarantie:
+Eine Produktbestellung existiert ohne einen Garantienamen, der mit ihr verknüpft ist. Daher wird der Dimensionselement auf &quot;Nicht angegeben&quot;gesetzt. Dasselbe gilt auch für die Bestellung der Produktgarantie:
 
 ```diff
 {
@@ -240,7 +240,7 @@ Eine Produktbestellung existiert ohne einen verknüpften Garantienamen. Daher wi
 +}
 ```
 
-Achten Sie auf die Bestellungen, die keinen mit ihnen verbundenen Namen haben. Dies sind die Bestellungen, die dem Dimensionswert „Nicht spezifiziert“ zugeordnet werden.
+Achten Sie auf die Bestellungen, die keinen mit ihnen verbundenen Namen haben. Dies sind die Bestellungen, die dem Dimensionselement &quot;Nicht angegeben&quot;zugeordnet werden.
 
 ### Kombinieren von Metriken
 
