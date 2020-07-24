@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
+workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
       + Spalten- und Zeileneinstellungen {#column-row-settings}
          + [Spalteneinstellungen](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
          + [Zeileneinstellungen](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Manuelle Zeilen im Vergleich zu dynamischen Zeilen](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Dynamische und statische Elemente](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
       + [Einstellungen zum Rückgängigmachen und Wiederherstellen](analysis-workspace/build-workspace-project/undo-redo.md)
       + [In Analysis Workspace verfügbare Hotkeys](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Paginierung, Filtern und Sortieren von Tabellen](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
