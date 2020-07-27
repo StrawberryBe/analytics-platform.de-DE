@@ -1,11 +1,11 @@
 ---
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 82%
 Komponenten sind Funktionen in Customer Journey Analytics, die in Berichten verwendet werden können oder Berichtsfunktionen ergänzen. Sie können diese Komponenten wie folgt verwalten:
 
 1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei [analytics.adobe.com](https://analytics.adobe.com) an.
-2. Navigate to [!UICONTORL Components] > [!UICONTROL Components] in the header menu.
+2. Navigieren Sie oben im Menü zu [!UICONTORL Komponenten] > [!UICONTROL Komponenten].
 
 Sie können die folgenden Komponenten verwalten:
 
-* [**Filter **](filters/filters-overview.md): Teile Ihrer Daten ausschließen, um sich auf allgemeine Dimensionselemente zu konzentrieren
+* [**Filter:**](filters/filters-overview.md) Schließen Sie Teile Ihrer Daten aus, um sich auf gebräuchliche Dimensionselemente zu konzentrieren
 * [**Berechnete Metriken:**](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung
 * [**Datumsbereiche:**](date-ranges/overview.md) Passen Sie die von Analysis Workspace angebotenen Datumsbereiche an und präzisieren Sie diese
 * [**Projekte:**](/help/analysis-workspace/home.md) Organisieren und verwalten Sie Ihre Projekte in Analysis Workspace
@@ -28,11 +28,11 @@ Sie können die folgenden Komponenten verwalten:
 
 Komponenten in Analysis Workspace bestehen aus Metriken, Dimensionen, Segmenten und Zeitgranularitäten, die Sie per Drag-and-Drop in einem Projekt platzieren können. Wenn Sie benutzerdefinierte Komponenten erstellen, z. B. benutzerdefinierte Datumsbereiche, werden sie diesen Feldern hinzugefügt.
 
-Klicken Sie in der linken Leiste auf das Symbol **[!UICONTROL Komponenten]**, um auf das Bedienfeld „Komponenten“ zuzugreifen. You can switch among Panels (Blank panel, [Freeform panel](/help/analysis-workspace/visualizations/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md), or [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and Components using the left-rail icons or by using [hotkeys](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Klicken Sie in der linken Leiste auf das Symbol **[!UICONTROL Komponenten]**, um auf das Bedienfeld „Komponenten“ zuzugreifen. Sie können zwischen Bedienfeldern (leeres Bedienfeld, [Freiform-Bedienfeld](/help/analysis-workspace/visualizations/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) oder dem Bedienfeld [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) und Komponenten mithilfe der Symbole auf der linken Leiste oder mithilfe von [Tastaturbefehlen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) wechseln.
 
 ![](assets/components.png)
 
-See [Create a project](/help/analysis-workspace/home.md) for information about using Components in a project.
+Siehe [Erstellen eines Projekts](/help/analysis-workspace/home.md), um Informationen über die Verwendung von Komponenten in einem Projekt zu erhalten.
 
 ## Komponentenaktionen
 
