@@ -1,11 +1,11 @@
 ---
 title: Ansichten und Attribution von Daten konfigurieren
 description: Beschreibt, wie in Customer Journey Analytics eine Datenansicht für einen Platform-Datensatz erstellt wird.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Beachten Sie dies, bevor Sie Attributionseinstellungen anwenden:
 
 * In der Benutzeroberfläche für Datenansichten geben Sie die Standardattribution an. **Hinweis**: In der Zukunft werden Sie diese Einstellungen in Workspace-Projekten überschreiben können. Diese Funktion ist jedoch derzeit nicht verfügbar.
 
-* Die Attributionseinstellungen in Customer Journey Analytics sind zerstörungsfrei und rückwirkend. Mit anderen Worten, Sie können Ihren Datensätzen in Customer Journey Analytics keinen irreparablen Schaden zufügen. Even if you accidentally delete something, you can always go back to [!UICONTROL Experience Platform] and bring the dataset back in. (Beachten Sie jedoch, dass dieses erneute Einspielen des Datensatzes zusätzliche Kosten verursacht.)
+* Die Attributionseinstellungen in Customer Journey Analytics sind zerstörungsfrei und rückwirkend. Mit anderen Worten, Sie können Ihren Datensätzen in Customer Journey Analytics keinen irreparablen Schaden zufügen. Selbst wenn Sie versehentlich etwas löschen, können Sie jederzeit zu [!UICONTROL Experience Platform] zurückkehren und den Datensatz wieder einspielen. (Beachten Sie jedoch, dass dieses erneute Einspielen des Datensatzes zusätzliche Kosten verursacht.)
 
 * Wenn Sie möchten, dass sich eine Dimension wie eine traditionelle eVar (Konversionsvariable) „verhält“, sollten Sie sie standardmäßig mit der Attribution „Letztkontakt – Besuch“ konfigurieren.
 
@@ -41,7 +41,7 @@ Nachdem Sie die [Einstellungen für die Datenansicht festgelegt und gespeichert]
 
 1. Geben Sie Komponenten- und Attributionseinstellungen für Dimensionen und Metriken an. Informationen zu den einzelnen Einstellungen finden Sie weiter unten.
 
-1. Click **[!UICONTROL Save]** to save your data view.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um Ihre Datenansicht zu speichern.
 
 
 ### Komponenteneinstellung
@@ -67,7 +67,7 @@ Das Modell beschreibt die Verteilung der Konversionen auf die Ereignisse in eine
 
 ### Gültigkeit
 
-Gibt einen Zeitraum oder ein Ereignis an, nach dem das Dimensionselement abläuft (d. h. keine Gutschrift mehr für Erfolgsereignisse erhält). Sie können die Gültigkeit der Attribution auf Sitzungs-, Personen- oder benutzerdefinierter Ebene festlegen.
+Gibt einen Zeitraum bzw. ein Ereignis an, nach dem das Dimensionselement abläuft (d. h. keine Gutschrift für Erfolgsereignisse mehr erhält). Sie können die Gültigkeit der Attribution auf Sitzungs-, Personen- oder benutzerdefinierter Ebene festlegen.
 
 | Einstellung | Definition |
 |---|---|
@@ -75,7 +75,7 @@ Gibt einen Zeitraum oder ein Ereignis an, nach dem das Dimensionselement abläuf
 | Person (Berichterstellungsfenster) | Zuvor als „Besucher“ bezeichnet. Konversionsereignisse, die nicht an diese Person gebunden sind, werden nicht mit der Dimension oder Metrik verknüpft. |
 | Benutzerdefinierte Zeit | Geben Sie die benutzerdefinierten Minuten, Stunden, Tage, Monate oder Quartale an. Konversionsereignisse, die über den festgelegten Zeitraum hinausgehen, werden nicht mit der Dimension oder Metrik verknüpft. |
 
-Weitere Informationen finden Sie in der [Dokumentation zu Attribution IQ](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
+Weitere Informationen finden Sie in der [Dokumentation zu Attribution IQ](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/attribution/models.html).
 
 ### Lookback-Fenster
 
