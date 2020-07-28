@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
+source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 65%
+source-wordcount: '999'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 
 1. Klicken Sie oben rechts auf Neue Verbindung **** erstellen.
 
-   ![Verbindung herstellen](assets/create-connection.png)
+   ![Verbindung herstellen](assets/create-connection0.png)
 
 1. Wählen Sie eine Sandbox in der Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.
 
@@ -39,6 +39,8 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 ## Datensatz konfigurieren
 
 Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurieren.
+
+![Datensatz konfigurieren](assets/create-connection.png)
 
 1. **[!UICONTROL Datensatztyp]**: Für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, legt [!UICONTROL Customer Journey Analytics] den Datensatztyp automatisch anhand der Daten fest, die eingehen.
 
@@ -54,17 +56,25 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurier
 
 1. **[!UICONTROL Zeitstempel]**: Inhalt hier hinzufügen
 
-1. **[!UICONTROL Schema]**:
+1. **[!UICONTROL Schema]**: Dies ist das Schema, auf dem der Datensatz in Adobe Experience Platform erstellt wurde.
 
-1. **[!UICONTROL Personen-ID]**:
+1. **[!UICONTROL Person-ID]**: Wählen Sie eine Personen-ID aus den verfügbaren Identitäten, die im DataSet-Schema in der Experience Platform definiert sind.
+
+   >[!IMPORTANT]
+   >
+   >Wenn keine Personen-IDs zur Auswahl stehen, bedeutet das, dass eine oder mehrere Personen-IDs im Schema nicht definiert wurden. Ansicht [dieses Videos](https://youtu.be/G_ttmGl_LRU) zum Definieren einer Identität in der Experience Platform.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** , um das Dialogfeld Verbindung [!UICONTROL aktivieren] aufzurufen.
 
-   ![Verbindung aktivieren](assets/create-connection2.png)
+### Identitätszuordnung
+
+
 
 ## Verbindung aktivieren
 
-1. In the [!UICONTROL Create Connection] dialog, define these settings:
+![Verbindung aktivieren](assets/create-connection2.png)
+
+1. Um eine Verbindung zu aktivieren, definieren Sie die folgenden Einstellungen:
 
    | Feld | Beschreibung |
    |---|---|
