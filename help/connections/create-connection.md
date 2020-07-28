@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
+source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 46%
+source-wordcount: '1626'
+ht-degree: 38%
 
 ---
 
@@ -70,7 +70,7 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurier
 
 Customer Journey Analytics unterstützt jetzt die Möglichkeit, die Identitätskarte für seine Person-ID zu verwenden. Identity Map ist eine Map-Datenstruktur, die es jemandem ermöglicht, Schlüssel -> Wert Paare hochzuladen. Bei den Namensräumen handelt es sich um Identitätsschlüssel und bei dem Wert um eine Struktur, die den Identitätswert enthält. Die Identitätszuordnung existiert auf jeder hochgeladenen Zeile/jedem hochgeladenen Ereignis und wird für jede Zeile entsprechend gefüllt.
 
-Die Identitätszuordnung ist für alle Datensätze verfügbar, die ein Schema verwenden, das auf der ExperienceEvent XDM-Klasse basiert. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identitätszuordnung auswählen:
+Die Identitätszuordnung ist für alle Datensätze verfügbar, die ein Schema verwenden, das auf der XDM- [Klasse](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/home.html) von ExperienceEvent basiert. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identitätszuordnung auswählen:
 
 ![](assets/idmap1.png)
 
@@ -80,6 +80,15 @@ Wenn Sie &quot;Identitätskarte&quot;auswählen, erhalten Sie zwei zusätzliche 
 |---|---|
 | [!UICONTROL Primären ID-Namespace verwenden] | Dadurch wird CJA angewiesen, die Identität in der Identitätszuordnung, die mit dem Attribut &quot;primary=true&quot;gekennzeichnet ist, pro Zeile zu suchen und diese als Personen-ID für diese Zeile zu verwenden. Dies bedeutet, dass dies der Hauptschlüssel ist, der in der Experience Platform für die Partitionierung verwendet wird. Es ist außerdem der beste Kandidat für die Verwendung als CJA-Besucher-ID (je nachdem, wie der Datensatz in einer CJA-Verbindung konfiguriert ist). |
 | [!UICONTROL Namespace] | (Diese Option ist nur verfügbar, wenn Sie den Namensraum für die Primär-ID nicht verwenden.) Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. Wenn Sie einen Namensraum angeben, sucht CJA in der Identitätszuordnung jeder Zeile nach diesem Namensraum-Schlüssel und verwendet die Identität unter diesem Namensraum als Personen-ID für diese Zeile. Beachten Sie, dass, da CJA nicht alle Zeilen vollständig scannen kann, um festzustellen, welche Namensraum tatsächlich vorhanden sind, alle möglichen Namensraum in der Dropdown-Liste aufgeführt werden. Sie müssen wissen, welche Namensraum in den Daten angegeben werden. kann nicht automatisch erkannt werden. |
+
+### Edge-Fälle von Identitätszuordnungen
+
+Die folgende Tabelle zeigt die beiden Konfigurationsoptionen, wenn Edge-Fälle vorhanden sind und wie sie behandelt werden:
+
+| Option | In der Identitätszuordnung sind keine IDs vorhanden | Keine IDs werden als primär markiert | Mehrere IDs werden als primär markiert | Eine einzelne ID wird als primär markiert | Ungültiger Namensraum mit einer als primär markierten ID |
+|---|---|---|---|---|---|
+| **&quot;Primär ID-Namensraum verwenden&quot;markiert** | Die Zeile wird von CJA abgelegt. | Die Zeile wird von CJA abgelegt, da keine primäre ID angegeben wurde. | Alle als primär markierten IDs werden unter allen Namensräumen in eine Liste extrahiert. Sie werden dann alphabetisch sortiert; Bei dieser neuen Sortierung wird der erste Namensraum mit der ersten ID als Personen-ID verwendet. | Die als primär markierte einzelne ID wird als Person-ID verwendet. | Obwohl der Namensraum ungültig sein kann (nicht in AEP vorhanden), verwendet CJA die primäre ID unter diesem Namensraum als Personen-ID. |
+| **Spezifischer Identitätszuordnungs-Namensraum ausgewählt** | Die Zeile wird von CJA abgelegt. | Alle IDs unter dem ausgewählten Namensraum werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namensraum werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namensraum werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namensraum werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. (Bei der Erstellung der Verbindung kann nur ein gültiger Namensraum ausgewählt werden. Daher ist es nicht möglich, einen ungültigen Namensraum/eine ungültige ID als Personen-ID zu verwenden.) |
 
 ## Verbindung aktivieren
 
