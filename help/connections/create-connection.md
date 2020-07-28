@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 68%
+source-wordcount: '923'
+ht-degree: 65%
 
 ---
 
@@ -30,13 +30,17 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 
 1. Wählen Sie eine Sandbox in der Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.
 
-   Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Sandboxes können als &quot;Datensilos&quot;mit Datensätzen betrachtet werden. Sandboxen dienen zur Steuerung des Zugriffs auf Datensätze. Sie können nicht über Sandboxen auf Daten zugreifen. Nachdem Sie die Sandbox ausgewählt haben, zeigt die linke Leiste alle Datensätze in der Sandbox an, aus denen Sie ziehen können.
+   Adobe Experience Platform provides [sandboxes](https://docs.adobe.com/content/help/de-DE/experience-platform/sandbox/home.html) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. Sandboxes können als &quot;Datensilos&quot;mit Datensätzen betrachtet werden. Sandboxen dienen zur Steuerung des Zugriffs auf Datensätze. Sie können nicht über Sandboxen auf Daten zugreifen. Nachdem Sie die Sandbox ausgewählt haben, zeigt die linke Leiste alle Datensätze in der Sandbox an, aus denen Sie ziehen können.
 
 1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
 
-   (Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste über der Liste der Datensätze nach den richtigen suchen.)
+   (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in.
+## Datensatz konfigurieren
+
+Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurieren.
+
+1. **[!UICONTROL Datensatztyp]**: Für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, legt [!UICONTROL Customer Journey Analytics] den Datensatztyp automatisch anhand der Daten fest, die eingehen.
 
    There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
@@ -46,15 +50,25 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
    | [!UICONTROL Suche] | Entspricht einer Classifications-Datei. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | nicht angegeben |
    | [!UICONTROL Profil] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jeden in [!DNL Experience Platform] definierten Datensatz ist ein eigener Satz von einer oder mehreren definierten Personen-IDs definiert, z. B. Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID](assets/person-id.png)**Hinweis:** Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies in der Berichterstellung berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
 
-1. Klicken Sie auf **[!UICONTROL Weiter]** , um zum Dialogfeld Verbindung [!UICONTROL erstellen] zu wechseln.
+1. **[!UICONTROL Datenbestand-ID]**: Diese ID wird automatisch generiert.
 
-   ![Verbindung herstellen](assets/create-connection2.png)
+1. **[!UICONTROL Zeitstempel]**: Inhalt hier hinzufügen
+
+1. **[!UICONTROL Schema]**:
+
+1. **[!UICONTROL Personen-ID]**:
+
+1. Klicken Sie auf **[!UICONTROL Weiter]** , um das Dialogfeld Verbindung [!UICONTROL aktivieren] aufzurufen.
+
+   ![Verbindung aktivieren](assets/create-connection2.png)
+
+## Verbindung aktivieren
 
 1. In the [!UICONTROL Create Connection] dialog, define these settings:
 
    | Feld | Beschreibung |
    |---|---|
-   | [!UICONTROL Namensverbindung] | Geben Sie der Verbindung einen beschreibenden Namen. Die Verbindung kann nicht ohne Namen gespeichert werden. |
+   | [!UICONTROL Verbindung benennen] | Geben Sie der Verbindung einen beschreibenden Namen. Die Verbindung kann nicht ohne Namen gespeichert werden. |
    | [!UICONTROL Beschreibung] | Fügen Sie weitere Details hinzu, um diese Verbindung von anderen zu unterscheiden. |
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
    | [!UICONTROL Importieren Sie alle neuen Datensätze in dieser Verbindung automatisch, beginnend heute.] | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
