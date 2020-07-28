@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
+source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 60%
+source-wordcount: '1351'
+ht-degree: 46%
 
 ---
 
@@ -56,9 +56,9 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurier
 
 1. **[!UICONTROL Zeitstempel]**: Inhalt hier hinzufügen
 
-1. **[!UICONTROL Schema]**: Dies ist das Schema, auf dem der Datensatz in Adobe Experience Platform erstellt wurde.
+1. **[!UICONTROL Schema]**: Dies ist das [Schema](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/schema/composition.html) , auf dem der Datensatz in Adobe Experience Platform erstellt wurde.
 
-1. **[!UICONTROL Person-ID]**: Wählen Sie eine Personen-ID aus den verfügbaren Identitäten, die im DataSet-Schema in der Experience Platform definiert sind.
+1. **[!UICONTROL Person-ID]**: Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten. Diese Identitäten wurden im DataSet-Schema in der Experience Platform definiert. Weitere Informationen zur Verwendung von Identity Map als Personen-ID finden Sie unten.
 
    >[!IMPORTANT]
    >
@@ -66,9 +66,20 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurier
 
 1. Klicken Sie auf **[!UICONTROL Weiter]** , um das Dialogfeld Verbindung [!UICONTROL aktivieren] aufzurufen.
 
-### Identitätszuordnung
+### Identitätskarte als Personen-ID verwenden
 
+Customer Journey Analytics unterstützt jetzt die Möglichkeit, die Identitätskarte für seine Person-ID zu verwenden. Identity Map ist eine Map-Datenstruktur, die es jemandem ermöglicht, Schlüssel -> Wert Paare hochzuladen. Bei den Namensräumen handelt es sich um Identitätsschlüssel und bei dem Wert um eine Struktur, die den Identitätswert enthält. Die Identitätszuordnung existiert auf jeder hochgeladenen Zeile/jedem hochgeladenen Ereignis und wird für jede Zeile entsprechend gefüllt.
 
+Die Identitätszuordnung ist für alle Datensätze verfügbar, die ein Schema verwenden, das auf der ExperienceEvent XDM-Klasse basiert. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identitätszuordnung auswählen:
+
+![](assets/idmap1.png)
+
+Wenn Sie &quot;Identitätskarte&quot;auswählen, erhalten Sie zwei zusätzliche Konfigurationsoptionen:
+
+| Option | Beschreibung |
+|---|---|
+| [!UICONTROL Primären ID-Namespace verwenden] | Dadurch wird CJA angewiesen, die Identität in der Identitätszuordnung, die mit dem Attribut &quot;primary=true&quot;gekennzeichnet ist, pro Zeile zu suchen und diese als Personen-ID für diese Zeile zu verwenden. Dies bedeutet, dass dies der Hauptschlüssel ist, der in der Experience Platform für die Partitionierung verwendet wird. Es ist außerdem der beste Kandidat für die Verwendung als CJA-Besucher-ID (je nachdem, wie der Datensatz in einer CJA-Verbindung konfiguriert ist). |
+| [!UICONTROL Namespace] | (Diese Option ist nur verfügbar, wenn Sie den Namensraum für die Primär-ID nicht verwenden.) Identity namespaces are a component of [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) that serve as indicators of the context to which an identity relates. Wenn Sie einen Namensraum angeben, sucht CJA in der Identitätszuordnung jeder Zeile nach diesem Namensraum-Schlüssel und verwendet die Identität unter diesem Namensraum als Personen-ID für diese Zeile. Beachten Sie, dass, da CJA nicht alle Zeilen vollständig scannen kann, um festzustellen, welche Namensraum tatsächlich vorhanden sind, alle möglichen Namensraum in der Dropdown-Liste aufgeführt werden. Sie müssen wissen, welche Namensraum in den Daten angegeben werden. kann nicht automatisch erkannt werden. |
 
 ## Verbindung aktivieren
 
@@ -76,7 +87,7 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurier
 
 1. Um eine Verbindung zu aktivieren, definieren Sie die folgenden Einstellungen:
 
-   | Feld | Beschreibung |
+   | Option | Beschreibung |
    |---|---|
    | [!UICONTROL Verbindung benennen] | Geben Sie der Verbindung einen beschreibenden Namen. Die Verbindung kann nicht ohne Namen gespeichert werden. |
    | [!UICONTROL Beschreibung] | Fügen Sie weitere Details hinzu, um diese Verbindung von anderen zu unterscheiden. |
