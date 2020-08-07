@@ -5,10 +5,10 @@ title: Dimensionen aufschlüsseln
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: cee89d021e9cd034246fe9367bc8910dac7ca7cf
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 68%
+ht-degree: 94%
 
 ---
 
@@ -28,9 +28,11 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 
    ![Schritt Ergebnis](assets/fa_data_table_actions.png)
 
-   Sie können Metriken über ausgewählte Zeiträume nach Dimensionselementen oder Audiencen unterteilen. Sie können auch noch granularer aufschlüsseln.
+   You can break down metrics by dimension items or audience segments across selected time periods. Sie können auch noch granularer aufschlüsseln.
 
-   >[!NOTE] Die Anzahl der in der Tabelle angezeigten Aufschlüsselungen ist auf 200 beschränkt. Für das Exportieren von Aufschlüsselungen ist diese Einschränkung höher.
+   >[!NOTE]
+   >
+   >Die Anzahl der in der Tabelle angezeigten Aufschlüsselungen ist auf 200 beschränkt. Für das Exportieren von Aufschlüsselungen ist diese Einschränkung höher.
 
 [Dimensionen in Analysis Workspace auf YouTube](https://www.youtube.com/watch?v=P9W0hhIHhCs&amp;index=12&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:54)
 
@@ -38,6 +40,6 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 
 ## Attributionsmodelle auf Aufschlüsselungen anwenden
 
-Für jede Aufschlüsselung innerhalb einer Tabelle können auch beliebige Zuordnungsmodelle angewendet werden. Dieses Zuordnungsmodell kann identisch oder anders als die übergeordnete Spalte sein. Sie können beispielsweise lineare Bestellungen für Ihre Marketing-Kanal-Dimension analysieren, aber U-förmige Bestellungen auf die spezifischen Rückverfolgungscodes in einem Kanal anwenden. To edit the attribution model applied to a breakdown, hover over the breakdown model and click **[!UICONTROL Edit]**:
+Auf jede Aufschlüsselung innerhalb einer Tabelle kann auch ein beliebiges Attributionsmodell angewandt werden. Dieses Attributionsmodell kann mit der übergeordneten Spalte identisch sein oder sich von ihr unterscheiden. Sie können beispielsweise lineare Bestellungen in Ihrer Dimension „Marketing-Kanäle“ analysieren, jedoch U-förmige Bestellungen auf spezifische Trackingcodes in einem Kanal anwenden. Bewegen Sie zum Bearbeiten des auf eine Aufschlüsselung angewendeten Attributionsmodells einfach den Mauszeiger auf das Aufschlüsselungsmodell und klicken Sie auf **[!UICONTROL Bearbeiten]**:
 
-![Unterteilungseinstellungen](assets/breakdown_settings.png)
+![Aufschlüsselungseinstellungen](assets/breakdown_settings.png)
