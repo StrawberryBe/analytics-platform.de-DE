@@ -2,7 +2,7 @@
 title: Dynamische und statische Dimensionselemente in Freiform-Tabellen
 description: Interaktion mit dynamischen und statischen Dimensionselementen in Tabellen.
 translation-type: tm+mt
-source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
+source-git-commit: cee89d021e9cd034246fe9367bc8910dac7ca7cf
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 9%
@@ -12,7 +12,9 @@ ht-degree: 9%
 
 # Dynamische und statische Dimensionselemente in Freiform-Tabellen
 
->[!NOTE] Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 In Freiform-Tabellen können die Zeilen und Spalten verschiedene Komponentenwerte enthalten. Diese Werte können dynamisch (zeitabhängig) oder statisch (nicht zeitabhängig) sein, je nach Analyse, die Sie erstellen möchten.
 
@@ -24,7 +26,7 @@ Wenn Sie eine Dimension in eine Freiformtabelle ablegen, werden dynamische Zeile
 
 Wenn Sie beispielsweise die Dimension &quot;Browsertyp&quot;in die Tabelle ziehen, werden die obersten Dimensionselemente für den Browsertyp (z. B. Microsoft, Apple, Google usw.) dynamisch zu den Tabellenzeilen zurückkehren. Wenn sie in eine Spalte abgelegt werden, werden die obersten 5 Browsertyp-Dimensionselemente dynamisch zurückgegeben.
 
-Dynamische Dimensionselemente verfügen über die Option zum Zeilenfilter und sind **nicht** mit Schloss- und X-Symbolen versehen.
+Dynamische Dimensionselemente haben die Option zum Zeilenfilter und tun **not** haben Schloss- und X-Symbole vorhanden.
 
 ![](assets/dynamic-items.png)
 
@@ -34,25 +36,25 @@ Elemente der statischen Dimension ändern sich nicht mit der Zeit. Es handelt si
 
 Jedes Mal, wenn Sie bestimmte Komponentenwerte (Dimension, Metrik, Segment, Datumsbereich) manuell in eine Tabelle eingeben, ist das Ergebnis eine statische Liste von Zeilen oder Spalten. Statische Dimensionselemente können auch erstellt werden, wenn Sie Folgendes auswählen:
 
-* Klicken Sie in den Zeilen mit der rechten Maustaste > Nur ausgewählte Zeilen [!UICONTROL anzeigen]
-* Klicken Sie in den Spalten mit der rechten Maustaste > Element statisch [!UICONTROL machen]
+* Klicken Sie in Zeilen mit der rechten Maustaste auf > [!UICONTROL Nur ausgewählte Zeilen anzeigen]
+* Klicken Sie in den Spalten mit der rechten Maustaste > [!UICONTROL Element statisch machen]
 
 Wenn Sie beispielsweise über bestimmte Browsertyp-Elemente wie Microsoft und Apple ziehen, werden diese beiden Elemente immer in die Tabelle gezogen.
 
-Statische Dimensionselemente verfügen **nicht** über die Option zum Zeilenfilter. Stattdessen sind für jedes Element Sperren- und X-Symbole vorhanden. Klicken Sie auf das X-Symbol, um dieses Dimensionselement aus der Tabelle zu entfernen.
+Statische Dimensionselemente tun **not** verfügen über die Option zum Zeilenfilter. Stattdessen sind für jedes Element Sperren- und X-Symbole vorhanden. Klicken Sie auf das X-Symbol, um dieses Dimensionselement aus der Tabelle zu entfernen.
 
 ![](assets/static-items.png)
 
 ## Gemischte Dimensionselemente
 
-Dimensionselemente unterschiedlicher Dimensionen können derselben Tabelle hinzugefügt werden. In diesen Fällen steht in der Kopfzeile der Zeile &quot;Gemischte Dimensionen&quot;. Diese Dimensionselemente sind statisch. Fügen Sie beispielsweise bestimmte Dimensionselemente aus der Dimension &quot;Browsertyp&quot;und andere Dimensionselemente aus der Dimension &quot;Browser&quot;hinzu.
+Dimensionen aus verschiedenen Dimensionen können derselben Tabelle hinzugefügt werden. In diesen Fällen steht in der Kopfzeile der Zeile &quot;Gemischte Dimensionen&quot;. Diese Dimensionselemente sind statisch. Fügen Sie beispielsweise bestimmte Dimensionselemente aus der Dimension &quot;Browsertyp&quot;und andere Dimensionselemente aus der Dimension &quot;Browser&quot;hinzu.
 
 ![](assets/mixed-dimensions.png)
 
 ## Freiformsummen
 
-Dynamische und statische Zeilen verhalten sich in der Freiformsumme unterschiedlich. Standardmäßig:
+Dynamische und statische Zeilen verhalten sich in der Freiformsumme unterschiedlich. By default:
 
 * Dynamische Zeilen werden serverseitige und dekorative Metriken wie Besuche oder Besucher summiert
-* Statische Zeilen werden clientseitig zusammengefasst und deaktivieren **keine** Metriken. Um die gesamte Zeile serverseitig zu berechnen, ändern Sie die Einstellung &quot;Zeile&quot;auf &quot; **Gesamtsumme** anzeigen&quot;. [Mehr Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
+* Statische Zeilen werden clientseitig zusammengefasst und tun **not** Metriken zum Löschen von Duplikaten. Um die gesamte Zeile serverseitig zu berechnen, ändern Sie die Einstellung &quot;Zeile&quot;in **Gesamtsumme anzeigen**. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
 
