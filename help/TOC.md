@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 41ad1eeb2510fce0d73c7f14fe11621445e43420
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 100%
       + [Freiformtabelle](analysis-workspace/visualizations/freeform-table.md)
       + Kohortentabelle {#cohort-table}
          + [Was ist eine Kohortenanalyse?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [Kohortenanalysebericht konfigurieren](analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [Konfigurieren eines Kohortenanalyseberichts](analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Anwendungsfälle für die Kohortenanalyse](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Fallout {#fallout}
          + [Fallout-Übersicht](analysis-workspace/visualizations/fallout/fallout-flow.md)
@@ -143,6 +143,7 @@ ht-degree: 100%
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
+   + [(B2B) Hinzufügen Daten auf Kontoebene als Abfragedatensatz](use-cases/b2b.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
