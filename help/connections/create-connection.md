@@ -1,11 +1,11 @@
 ---
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
-translation-type: ht
-source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 92702a78f4b3d3413f91d896749db10102412fba
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,8 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 >
 >Sie können mehrere [!DNL Experience Platform]-Datensätze zu einer Verbindung zusammenfassen.
 
+## Sandbox und Datensätze auswählen
+
 1. Gehen Sie zu [https://analytics.adobe.com](https://analytics.adobe.com).
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Verbindungen]**.
@@ -30,7 +32,11 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 
 1. Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.
 
-   Adobe Experience Platform bietet [Sandboxes](https://docs.adobe.com/content/help/de-DE/experience-platform/sandbox/home.html) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sandboxes können als „Datensilos“ mit Datensätzen betrachtet werden. Sandboxes dienen zur Steuerung des Zugriffs auf Datensätze. Sie können nicht über Sandboxes hinweg auf Daten zugreifen. Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie abrufen können.
+   Adobe Experience Platform bietet [Sandboxes](https://docs.adobe.com/content/help/de-DE/experience-platform/sandbox/home.html) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sandboxes können als „Datensilos“ mit Datensätzen betrachtet werden. Sandboxes dienen zur Steuerung des Zugriffs auf Datensätze.  Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie abrufen können.
+
+   >[!IMPORTANT]
+   >
+   >Sie können nicht auf Daten über Sandboxen zugreifen, d. h. Sie können nur Datensätze innerhalb einer Sandbox kombinieren.
 
 1. Wählen Sie einen oder mehrere Datensätze aus, die Sie in [!UICONTROL Customer Journey Analytics] abrufen möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
@@ -50,7 +56,7 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz konfigurier
    |---|---|---|---|---|
    | [!UICONTROL Ereignis] | Daten, die zeitliche Ereignis darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Umfragedaten, Ad-Impression-Daten usw.). Dies können beispielsweise typische Clickstream-Daten mit einer Kunden-ID oder einer Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [UICONTROL Experience Platform] gesetzt. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Zeitreihen“ basiert. Beispiele sind „XDM-Erlebnisereignis“ oder „XDM-Entscheidungsereignis“. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. |
    | [!UICONTROL Suche] | Entspricht einer Classifications-Datei. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | nicht angegeben |
-   | [!UICONTROL Profil] | Analog zu [!UICONTROL Kundenattributen] – für unveränderliche und nicht-zeitliche Attribute. Daten, die auf Ihre Besucher, Benutzer oder Kunden in den [!UICONTROL Ereignis]-Daten angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jeden in [!DNL Experience Platform] definierten Datensatz ist ein eigener Satz von einer oder mehreren definierten Personen-IDs definiert, z. B. Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID](assets/person-id.png)**Hinweis:** Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies in der Berichterstellung berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
+   | [!UICONTROL Profil] | Analog zu [!UICONTROL Kundenattributen] – für unveränderliche und nicht-zeitliche Attribute. Daten, die auf Ihre Besucher, Benutzer oder Kunden in den [!UICONTROL Ereignis]-Daten angewendet werden. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jeden in [!DNL Experience Platform] definierten Datensatz ist ein eigener Satz von einer oder mehreren definierten Personen-IDs definiert, z. B. Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis:** Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies in der Berichterstellung berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
 
 1. **[!UICONTROL Datensatz-ID]**: Diese ID wird automatisch generiert.
 
