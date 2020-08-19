@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 41ad1eeb2510fce0d73c7f14fe11621445e43420
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ ht-degree: 97%
    + [Komponentenübersicht](components/overview.md)
    + Dimensionen {#dimensions}
       + [Dimensionenvorschau](components/dimensions/view-dimensions.md)
-      + [Schlüsseln Sie Dimensionen auf](components/dimensions/t-breakdown-fa.md)
+      + [Aufschlüsseln von Dimensionen](components/dimensions/t-breakdown-fa.md)
       + [Dimensionen für die Zeitunterteilung](components/dimensions/time-parting-dimensions.md)
    + [Metriken](components/apply-create-metrics.md)
    + Filter {#cja-filters}
@@ -143,7 +143,7 @@ ht-degree: 97%
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
-   + [(B2B) Hinzufügen Daten auf Kontoebene als Abfragedatensatz](use-cases/b2b.md)
+   + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
