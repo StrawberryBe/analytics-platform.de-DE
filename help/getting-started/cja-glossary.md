@@ -1,11 +1,11 @@
 ---
 title: Glossar zu Customer Journey Analytics
 description: Glossar zu Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 307bfae11f44d088aa8d004f1f7ddd17375f60fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 
 | Neuer Begriff in Customer Journey Analytics | Begriff in Adobe Analytics | Beschreibung |
 |---|---|---|
-| Suchdatensatz | Klassifizierung | Verwenden Sie die Suche, um den Wert aus dem angegebenen Datensatz für einen Schlüssel/Übereinstimmungsschlüssel (in einem Ereignis-Datensatz) abzurufen, bei dem eine 1-zu-1-Beziehung besteht. Sie können beispielsweise &quot;tracking_code&quot;als Schlüssel angeben, der mit &quot;tracking_code&quot;im Ereignis-Datensatz übereinstimmt. |
+| Lookup-Datensatz | Klassifizierung | Mit „Lookup“ können Sie den Wert eines bestimmten Datensatzes anhand eines Schlüssels/übereinstimmenden Schlüssels (in einem Ereignisdatensatz) abrufen, wenn eine Eins-zu-Eins-Beziehung vorliegt. So können Sie z. B. „tracking_code“ als den mit „tracking_code“ im Ereignis-Datensatz übereinstimmenden Schlüssel angeben. |
 | Profildatensatz | Kundenattribut | Wenn Sie Daten von Unternehmenskunden in einer CRM-Datenbank (CRM = Customer Relationship Management) erfassen, können Sie diese Daten in einen Profildatensatz in Adobe Experience Platform hochladen. Nachdem Sie eine Verbindung zu diesem Datensatz in Customer Journey Analytics hergestellt und eine Datenansicht erstellt haben, können Sie die Daten in Workspace nutzen. |
 | Anmeldeunternehmen | Experience Cloud-Organisation | Siehe [Organisationen und Kontoverknüpfung](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | nicht angegeben | Report Suite | Report Suites im traditionellen Sinne von Adobe Analytics existieren nicht mehr. Stattdessen erstellen Sie (virtuelle) [Datenansichten](/help/data-views/create-dataview.md) aus den Platform-Datensätzen, mit denen Sie Verbindungen hergestellt haben. |
