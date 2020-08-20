@@ -1,8 +1,11 @@
 ---
 title: Datenansicht erstellen
 description: Beschreibt, wie in Customer Journey Analytics (CJA) eine Datenansicht für einen Plattform-Datensatz erstellt wird.
-translation-type: ht
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+translation-type: tm+mt
+source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 83%
 
 ---
 
@@ -17,17 +20,17 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 
 ## Voraussetzung
 
-Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten] (/help/connections/create-connection.md).
+Bevor Sie Daten-Ansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
 
 ## Einstellungen konfigurieren
 
-1. Gehen Sie in Customer Journey Analytics zur Registerkarte **[!UICONTROL Data Views]**.
+1. Gehen Sie im Customer Journey Analytics zur **[!UICONTROL Ansichten]** angezeigt.
 
-1. Klicken Sie auf **[!UICONTROL Add]**, um eine Datenansicht hinzuzufügen und deren Einstellungen zu konfigurieren.
+1. Klicken **[!UICONTROL hinzufügen]** , um eine Ansicht hinzuzufügen und deren Einstellungen zu konfigurieren.
 
    | Sitzungseinstellungen | Definition |
    |---|---|
-   | Verbindung | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die die [!UICONTROL Experience Platform]-Datensätze enthält. |
+   | Verbindung | Dieses Feld verknüpft die Ansicht der Daten mit der zuvor eingerichteten Verbindung, die die Variable [!UICONTROL Experience Platform] Datensatzgruppe/n. |
    | Name | Geben Sie der Datenansicht einen Namen. Dies ist ein Pflichtfeld. |
    | Beschreibung | Eine detaillierte Beschreibung ist nicht zwingend erforderlich, wird jedoch empfohlen. |
    | Tags hinzufügen | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
@@ -36,15 +39,15 @@ Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbi
    | Neue Sitzung mit Ereignis starten | Eine neue Sitzung beginnt dann, wenn ein Ereignis ausgelöst wird – unabhängig davon, ob bei einer Sitzung eine Zeitüberschreitung auftrat oder nicht. Zur neuen Sitzung gehört auch das Ereignis, das sie ausgelöst hat. Zudem können Sie mehrere Ereignisse nutzen, um eine Sitzung zu starten, und eine neue Sitzung wird dann begonnen, wenn beliebige dieser Ereignisse in den Daten auftreten. Diese Einstellung wirkt sich auf Ihre Besuchszählung, den Sitzungs- (früher Besuchs-) Segmentierungs-Container sowie die Besuchsgültigkeitslogik von Dimensionen aus. |
    | Filter hinzufügen | „Filter“ ist der Begriff für „Segmente“ in Customer Journey Analytics. Wenn Sie Ihre Daten filtern möchten, ziehen Sie den entsprechenden Filter aus der linken Leiste. Wenn Sie keinen Filter auswählen, enthält die Datenansicht alle Daten. |
 
-1. Klicken Sie auf **[!UICONTROL Continue]**.
+1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 ## Komponenten hinzufügen
 
-1. Lassen Sie uns jetzt den Datenansichten Komponenten (Dimensionen, Metriken) hinzuzufügen (ähnlich wie bei der Kuration in Virtual Report Suites). Beachten Sie, dass jetzt alle Felder in den Datensätzen in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich. Sie können auch **[!UICONTROL Alle auswählen]**, um alle Komponenten hinzuzufügen.
+1. Lassen Sie uns jetzt den Datenansichten Komponenten (Dimensionen, Metriken) hinzuzufügen (ähnlich wie bei der Kuration in Virtual Report Suites). Beachten Sie, dass jetzt alle Felder in den Datensätzen in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich oder **[!UICONTROL Alle auswählen]** , um alle Komponenten hinzuzufügen.
 
    ![](assets/add-all-components.png)
 
-1. Klicken Sie auf die Registerkarte **[!UICONTROL Add Components]**, um der Datenansicht Dimensionen und Metriken hinzuzufügen.
+1. Klicken Sie auf **[!UICONTROL hinzufügen]** , um Dimensionen und Metriken zur Ansicht der Daten hinzuzufügen.
 
    ![](assets/add-all-components2.png)
 
