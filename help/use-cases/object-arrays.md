@@ -1,16 +1,16 @@
 ---
-title: Verwenden von Objekt-Arrays
+title: Objekte mit Arrays verwenden
 description: Hier wird erklärt, wie CJA-Berichte Datenhierarchien darstellen.
-translation-type: ht
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 
-# Verwenden von Objekt-Arrays
+# Objekte mit Arrays verwenden
 
 Manche Plattformschemas können Objekt-Arrays enthalten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
 
