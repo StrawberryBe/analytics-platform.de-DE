@@ -1,8 +1,11 @@
 ---
 title: Dokumentation zu Customer Journey Analytics
 description: Landingpage von Customer Journey Analytics.
-translation-type: ht
-source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
+translation-type: tm+mt
+source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 92%
 
 ---
 
@@ -19,7 +22,9 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
  <tbody> 
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Neue oder vorgestellte Funktionen</b> </p> <p> 
-     <ul> 
+     <ul>
+      <li><a href="https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-usecases/object-arrays.html"> Objekte mit Arrays verwenden </a> </li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-usecases/b2b.html"> hinzufügen von Daten auf Kontoebene als Abfragedataset </a> </li>
       <li><a href="https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-overview/cja-getting-started.html"> Erste Schritte mit Customer Journey Analytics </a> </li> 
       <li><a href="https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-overview/cja-faq.html"> Häufig gestellte Fragen</a> </li> 
       <li><a href="https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-overview/cja-glossary.html">Glossar zu Customer Journey Analytics</a> </li> 
