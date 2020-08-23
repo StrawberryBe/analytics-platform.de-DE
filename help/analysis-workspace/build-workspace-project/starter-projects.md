@@ -3,7 +3,7 @@ description: Vorlagen in Workspace
 title: Vorlagen
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: c7bf87b4ff3a7d0da930a22336db762fa3d74393
+source-git-commit: 43487b0dc9d0246fc4750fcc0175055899a198b5
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 99%
@@ -81,7 +81,9 @@ Diese Standardvorlagen führen Sie durch die gängige Terminologie und die Schri
 
 ### Handel
 
-* **Magento: Marketing und Handel**: Diese Vorlage schlüsselt Ihre E-Commerce-Konversionen nach der Marketing-Kanal-Attribution auf und bietet Einblicke nach Suchbegriff, Keyword, Standort und mehr. Eine Videoübersicht finden Sie unter > [!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+* **Magento: Marketing und Handel**: Diese Vorlage schlüsselt Ihre E-Commerce-Konversionen nach der Marketing-Kanal-Attribution auf und bietet Einblicke nach Suchbegriff, Keyword, Standort und mehr. Eine Videoübersicht finden Sie unter:
+
+>[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
 
 ### Medien
 
