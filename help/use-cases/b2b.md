@@ -1,11 +1,11 @@
 ---
 title: (B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
 description: Erfahren Sie, wie Sie in Customer Journey Analytics kontobasierte Daten als Lookup-Datensatz hinzufügen.
-translation-type: ht
-source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+workflow-type: tm+mt
+source-wordcount: '939'
+ht-degree: 89%
 
 ---
 
@@ -37,6 +37,12 @@ Durch die Erstellung eines eigenen Schemas für die [Lookup](/help/getting-start
 ## 2. Erstellen eines Lookup-Datensatzes (Experience Platform)
 
 Nachdem dem Erstellen des Schemas müssen Sie daraus in Experience Platform einen Lookup-Datensatz erstellen. Dieser Lookup-Datensatz enthält Marketing-Informationen auf Kontoebene wie etwa den Unternehmensnamen, die Gesamtzahl der Mitarbeiter, den Namen der Domain, die Branche, in der das Unternehmen tätig ist, den Jahresumsatz, ob es sich um aktuelle Kunden von Experience Platform handelt oder nicht, in welcher Phase des Verkaufszyklus sie sich befinden, welches Team in diesem Konto CJA nutzt usw.
+
+>[!IMPORTANT]
+>
+>CJA unterstützt keine Ganzzahlen in Lookup-Datensätzen. Wenn Sie die ganzzahligen Felder in Ihrem XDM-Schema für Ihren Nachschlagedataset hinzufügen, können Sie diese Ganzzahlen nicht als Metriken oder berechnete Metriken verwenden. Wenn beispielsweise AnnualRevenue oder totalEmployees als Ganzzahlen definiert sind, wird in CJA als &quot;0&quot;in Berichte angezeigt. Wenn Sie sie jedoch als Zeichenfolgen zuweisen, können Sie sie als Nachschlageinformationen verwenden.
+
+So werden beispielsweise &quot;yearRevenue&quot;oder &quot;totalEmployees&quot;im folgenden Beispiel als Integer definiert, was der Grund ist, dass &quot;0&quot;in CJA angezeigt wird.
 
 1. Rufen Sie in Adobe Experience Platform **[!UICONTROL Daten-Management > Datensätze]** auf.
 1. Klicken Sie auf **[!UICONTROL + Datensatz erstellen]**.
@@ -73,9 +79,9 @@ Gehen Sie wie folgt vor, um die Datensätze zu kombinieren:
 1. Geben Sie einen Namen und eine Beschreibung für die Verbindung ein und konfigurieren Sie sie entsprechend [dieser Anweisungen](/help/connections/create-connection.md).
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## 5. Erstellen einer Datenansicht aus dieser Verbindung
+## 5. Eine Ansicht mit Daten aus dieser Verbindung erstellen
 
-Befolgen Sie die Anweisungen unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
+Befolgen Sie die Anweisungen [Erstellen von Ansichten](/help/data-views/create-dataview.md).
 
 * Fügen Sie alle Komponenten (d. h. Dimensionen und Metriken), hinzu, die sie aus den Datensätzen benötigen.
 
