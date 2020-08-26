@@ -1,9 +1,9 @@
 ---
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
-translation-type: ht
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 Komponenten sind Funktionen in Customer Journey Analytics, die in Berichten verwendet werden können oder Berichtsfunktionen ergänzen. Sie können diese Komponenten wie folgt verwalten:
 
 1. Melden Sie sich mit Ihren Adobe ID-Anmeldedaten bei [analytics.adobe.com](https://analytics.adobe.com) an.
-2. Navigieren Sie oben im Menü zu [!UICONTORL Komponenten] > [!UICONTROL Komponenten].
+2. Navigieren Sie oben im Menü zu [!UICONTROL Komponenten] > [!UICONTROL Komponenten].
 
 Sie können die folgenden Komponenten verwalten:
 
