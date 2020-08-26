@@ -13,9 +13,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
+source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 98%
 
 ---
@@ -93,6 +93,7 @@ ht-degree: 98%
    + Kuratieren oder Freigeben von Projekten {#curate-share}
       + [Kuratieren von Workspace-Projekten](analysis-workspace/curate-share/curate.md)
       + [Freigeben von Workspace-Projekten](analysis-workspace/curate-share/share-projects.md)
+      + [Erstellen von freigegebenen Links](analysis-workspace/curate-share/shareable-links.md)
       + [Schreibgeschützte Workspace-Projekte](analysis-workspace/curate-share/view-only-projects.md)
       + [PDF- oder CSV-Dateien herunterladen](analysis-workspace/curate-share/download-send.md)
       + [Projektdateien freigeben und planen](analysis-workspace/curate-share/send-schedule-files.md)
