@@ -1,45 +1,97 @@
 ---
-description: Sie können gespeicherte und ungespeicherte Projekte im PDF- oder CSV-Format herunterladen.
+description: Sie können Daten von Analysis Workspace herunterladen, indem Sie sie kopieren oder in PDF- und CSV-Formaten.
 title: PDF- oder CSV-Dateien herunterladen
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 387e9755d963e70a9ba8dbc5f1f01f83541b5511
+source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 7%
 
 ---
 
 
-# PDF- oder CSV-Dateien herunterladen
+# PDF- oder CSV-Dateien herunterladen aus Workspace
 
->[!NOTE]
+Es gibt verschiedene Möglichkeiten, Daten aus Analysis Workspace zu exportieren, je nachdem, welcher Datensatz außerhalb des Tools analysiert werden soll und wer die Informationen erhalten muss. Exportierte Daten können in Form kopierter Daten, CSV- oder PDF-Dateien vorliegen. Eine PDF-Datei wird in der Regel bevorzugt, wenn Sie in der Datei enthaltene Visualisierungen verwenden möchten, während eine CSV-Datei (oder kopierte Daten) bevorzugt wird, wenn Sie einfach Daten im Klartext benötigen.
+
+>[!IMPORTANT]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+> Einige auf dieser Seite erwähnte Optionen, wie **Elemente als CSV herunterladen**, befinden sich derzeit in einem begrenzten Test. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
 
-Sie können gespeicherte und ungespeicherte Projekte im PDF- oder CSV-Format herunterladen.
+## Projekt als CSV oder PDF herunterladen {#download-project}
 
-Der Name der PDF- oder CSV-Datei entspricht dem aktuellen Projektnamen. Bei ungespeicherten Projekten sind die nicht gespeicherten Änderungen am Projekt in der heruntergeladenen Datei enthalten. Beachten Sie, dass Sie ungespeicherte Projekte im PDF- oder CSV-Format nicht planen können.
+Sie können ein vollständiges Projekt herunterladen, indem Sie **[!UICONTROL Projekt > Als PDF herunterladen (oder als CSV)]**. Die heruntergeladene Datei enthält alle angezeigten (sichtbaren) Tabellen und Visualisierungen im Projekt. Eine PDF-Datei wird in der Regel bevorzugt, wenn Sie in der Datei enthaltene Visualisierungen verwenden möchten, während eine CSV-Datei bevorzugt wird, wenn Sie einfach Daten mit normalem Text wünschen.
 
-Beachten Sie:
+![](assets/download-project.png)
 
-* Wir unterstützen auch die Fallout-Visualisierung im CSV-Format.
-* Wenn ein Projekt in eine PDF gerendert wird, wird nur der Seiteninhalt gerendert. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
-* Der Export von in den Browser heruntergeladenen PDFs kann einige Minuten dauern. Das liegt daran, dass wir das gesamte Projekt auf unseren Servern erneut ausführen müssen, bevor wir es im PDF-Format wiedergeben können. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen.
-* Derzeit werden die PDFs sehr langer Workspace-Projekte als eine einzige riesige Seite und nicht als paginiertes Dokument exportiert. Wir arbeiten an einer Verbesserung des PDF-Exports von Workspace, die eine Paginierung ermöglicht.
+Beachten Sie beim Herunterladen von Projekten Folgendes:
 
-1. Erstellen oder öffnen Sie ein Projekt.
-1. Klicken Sie auf **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen (bzw. PDF herunterladen).]**
+* Das Projekt kann gespeichert oder nicht gespeichert werden, wenn Sie einen Projektdownload anfordern. Es können jedoch nur gespeicherte Projekte [geplant](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
+* Der Export von im Browser heruntergeladenen PDF-Dateien kann mehrere Minuten dauern, da das Projekt auf den Adoben-Servern erneut ausgeführt wird, bevor es im PDF-Format wiedergegeben wird. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen. Wenn die Wiedergabe einer PDF-Datei länger als 5 Minuten dauert, werden Sie aufgefordert, stattdessen eine E-Mail-Nachricht zu senden.
+* PDF-Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
+* Wenn ein Projekt als PDF wiedergegeben wird, wird das gerendert, was sich auf der Seite befindet. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
 
-Am 11. April 2019 wurden mehrere Änderungen an **[!CSV Downloads]** (und **[!CIn Zwischenablage kopieren]**) in Analysis Workspace vorgenommen, um die Formatierung aus den exportierten Daten zu entfernen.
-* Das Tausendertrennzeichen ist nicht mehr enthalten. (Das Dezimaltrennzeichen wird weiterhin enthalten sein und dem unter **[!UICONTROL Komponenten > Berichtseinstellungen > Tausendertrennzeichen]** definierten Format entsprechen.)
-* Es werden keine Währungssymbole angezeigt.
-* Es werden keine Prozentzeichen angezeigt.
-* Prozentsätze sind dezimal; 75 % wird beispielsweise als 0,75 angezeigt.
-* Die Zeit wird in Sekunden angezeigt.
-* Kohortentabellen zeigen nur Rohwerte an. Prozentwerte wurden entfernt.
-* Wenn eine Zahl ungültig ist, wird eine leere Zelle angezeigt.
+## Daten in die Zwischenablage kopieren (Hotkey: Strg+C) {#copy-data}
 
->[!NOTE]
+Die Rechtsklick-Option **[!UICONTROL In Zwischenablage kopieren]** können Sie Daten aus Workspace schnell kopieren und an einer anderen Stelle einfügen.
+
+* Wenn die angezeigte Tabelle kopiert werden soll, klicken Sie mit der rechten Maustaste auf die Tabellenüberschrift und wählen Sie **Anzeigen von Daten in die Zwischenablage kopieren**.
+* Wenn Sie möchten, dass eine Teilmenge der Daten kopiert wird, wählen Sie die Tabelle aus und klicken Sie dann mit der rechten Maustaste auf > **Auswahl in Zwischenablage kopieren**.
+
+Zusätzlich wird der Hotkey `Ctrl+C` kopiert Ihre Auswahl in die Zwischenablage. Nach dem Kopieren können Sie in ein anderes Werkzeug gehen und die Informationen einfügen (oder auf `Ctrl+V`).
+
+![](assets/copy-selection.png)
+
+## Daten als CSV herunterladen {#download-data}
+
+Die Rechtsklick-Option **[!UICONTROL Daten als CSV herunterladen]** können Sie eine Datentabelle oder die Datenquelle einer beliebigen Visualisierung als CSV herunterladen.
+
+* Klicken Sie in der Kopfzeile einer Tabelle mit der rechten Maustaste auf **[!UICONTROL Angezeigte Daten als CSV herunterladen]**. Dadurch werden die in der Tabelle angezeigten Daten als CSV heruntergeladen.
+* Wenn eine Auswahl in der Tabelle vorgenommen wird, wird die Option **[!UICONTROL Auswahl als CSV herunterladen]**. Mit dieser Option wird nur die Auswahl heruntergeladen, nicht die vollständige, angezeigte Tabelle.
+* Klicken Sie in der Kopfzeile einer Visualisierung mit der rechten Maustaste auf **[!UICONTROL Daten als CSV herunterladen]**. Dadurch wird die Datenquellentabelle für eine Visualisierung als CSV heruntergeladen. Hinweis: Diese Option wird von der Imagemap-Visualisierung nicht unterstützt.
+
+![](assets/download-data-viz.png)
+
+## Elemente als CSV herunterladen {#download-items}
+
+Wenn Sie mehr als die sichtbaren 400 Datenzeilen in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (Name der Dimension)**. Diese Option exportiert bis zu 50.000 Dimensionselemente für die ausgewählte Dimension (basierend auf der Tabellensortierung), wobei Filter und Segmente angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in der Freiform-Tabelle keine Beschränkungen erzwungen werden, wird empfohlen, die Option &quot;Elemente herunterladen&quot;in Tabellen mit weniger als 20 Spalten zu verwenden, um eine optimale Leistung sicherzustellen.
+
+>[!TIP]
 >
->Numerische Werte, die ein Komma als Dezimaltrennzeichen verwenden, werden weiterhin in der exportierten CSV angegeben.
+> Wenn Ihre Dimension 50.000 Elemente überschreitet, laden Sie die Datei mit unterschiedlichen Sortiermetriken herunter oder wenden Sie einen Filter an. Sortieren Sie zum Beispiel absteigend nach Besuchen in einem Download und dann aufsteigend nach Besuchen in einem zweiten Download. Dieser Tipp hilft Ihnen beim Abrufen von Elementen mit längerem Tail.
+
+Sie können mehrere Aufgaben im Projekt ausführen und sogar zu einem neuen Workspace-Projekt auf derselben Registerkarte navigieren, während der Download läuft. Der Download wird angehalten, wenn Sie eine neue Browserregisterkarte öffnen. Der Download wird abgebrochen, wenn Sie Workspace vollständig verlassen oder die Browser-Registerkarte schließen.
+
+![](assets/download-items.png)
+
+### Datei mit heruntergeladenen Elementen
+
+Die Funktionen der Tabelle werden wie folgt auf die heruntergeladene Datei angewendet:
+
+* Alle Bereichssegmente werden als Filter angewendet.
+* Aufschlüsselungen **ove** Die ausgewählte Dimension in der Tabelle wird als Filter über jeder Spalte angewendet.
+* Aufschlüsselungen **below** Die ausgewählte Dimension in der Tabelle wird entfernt.
+
+Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldsegment (Neue Besucher Kunden) und den oben aufgeführten Komponenten (Marketing Kanal = E-Mail) als Filter heruntergeladen und die unten aufgeführten Komponenten (Mobilgerätetyp) aus der heruntergeladenen CSV entfernt.
+
+![](assets/downloaded-file.png)
+
+### Benachrichtigungen herunterladen
+
+Beim Herunterladen der Datei wird eine Benachrichtigung mit dem Fortschritt angezeigt. Sie können den Download jederzeit abbrechen, indem Sie auf **[!UICONTROL Download abbrechen]**. Den Toast schließen **will not** Herunterladen abbrechen.
+
+Sobald die Datei abgeschlossen ist, wird eine Benachrichtigung angezeigt und die Datei wird in Ihren Browser heruntergeladen.
+
+Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachrichtigung, dass jeder weitere Download in die Warteschlange gestellt wird, bis der vorherige Download abgeschlossen ist.
+
+![](assets/toast.png)
+
+## Häufig gestellte Fragen {#faq}
+
+| Frage | Antwort |
+| --- | --- |
+| Warum ist meine heruntergeladene PDF-Datei eine Seite? | In Workspace werden heruntergeladene PDFs derzeit nicht paginiert. |
+| Kann ich mehr als 50.000 Elemente mit der Option &quot;Elemente als CSV herunterladen&quot;exportieren? | Während jeder Download bis zu 50.000 Dimensionselemente enthalten kann, können Sie die Art der Tabelle ändern, um längere Endelemente abzurufen, oder einen Filter anwenden, um spezifischere Elemente herunterzuladen. |
+| Was macht **[!UICONTROL Visualisierung kopieren]** do? | **[!UICONTROL Visualisierung kopieren]** ist keine Exportoption. Damit können Sie eine Visualisierung oder einen Bereich von einem Ort in Workspace an einen anderen kopieren. Beispielsweise von einem Bereich zum anderen im selben Projekt oder von einem Projekt zu einem anderen. [Video ansehen](https://www.youtube.com/watch?v=lvmAdKNfWQw) |
+
