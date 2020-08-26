@@ -1,27 +1,56 @@
 ---
-description: 'null'
+description: Verwenden Sie die Linienvisualisierung zur Darstellung von (zeitbasierten) Trenddatensätzen
 title: Linie
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 74%
+source-wordcount: '384'
+ht-degree: 15%
 
 ---
 
 
 # Linie
 
->[!NOTE]
+Die Linienvisualisierung stellt Metriken mithilfe einer Zeile dar, um zu zeigen, wie sich Werte über einen bestimmten Zeitraum ändern. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
+
+![Linienvisualisierung](assets/line-viz.png)
+
+>[!IMPORTANT]
 >
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Einige Visualisierungseinstellungen für Linien, z. B. [!UICONTROL Trendlinie anzeigen], befinden sich derzeit in einem begrenzten Test. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
 
-Diese Visualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
+Klicken Sie auf das Zahnradsymbol oben rechts in der Linienvisualisierung, um Zugriff zu erhalten [**Visualisierungseinstellungen**](freeform-analysis-visualizations.md) verfügbar. Einstellungen werden wie folgt kategorisiert:
 
-![](assets/line.png)
+* **Allgemein**: Einstellungen, die bei allen Visualisierungstypen üblich sind
+* **Achse**: Einstellungen, die die X- oder Y-Achse der Linienvisualisierung beeinflussen
+* **Überlagerungen**: Optionen zum Hinzufügen zusätzlicher Kontexte zu den Serien, die in Ihrer Linienvisualisierung angezeigt werden.
 
-In den [Visualisierungseinstellungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B) können Sie über ein Dropdown-Menü für die Granularität eine Trend-Visualisierung (z. B. Linie, Balken) von täglich zu wöchentlich zu monatlich usw. ändern.
+![Visualisierungseinstellungen](assets/viz-settings-modal.png)
 
-![](assets/viz-granularity.png)
+## Granularität ändern
 
+In den [Visualisierungseinstellungen](freeform-analysis-visualizations.md) können Sie über ein Dropdown-Menü für die Granularität eine Trend-Visualisierung (z. B. Linie, Balken) von täglich zu wöchentlich zu monatlich usw. ändern. Die Granularität wird auch in der Datenquelle-Tabelle aktualisiert.
+
+## Min. oder Max. anzeigen
+
+under **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Min./Max. anzeigen]** können Sie eine Mindest- und Höchstwertebeschriftung überlagern, um die Spitzen und Täler in einer Metrik schnell hervorzuheben.
+
+![Min./Max. anzeigen](assets/min-max-labels.png)
+
+## Trendzeilenüberlagerung anzeigen
+
+under **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Trendlinie anzeigen]**, können Sie eine Regressions-Trendlinie zu Ihrer Zeilenzusammenstellung hinzufügen. Trendlinien helfen, ein klareres Muster in den Daten darzustellen.
+
+![Lineare Trendlinie](assets/show-linear-trendline.png)
+
+Alle Modelle passen mit den üblichen Minimalquadraten:
+
+| Modell | Beschreibung |
+|---|---|
+| Linear | Erstellt eine am besten geeignete gerade Linie für einfache lineare Datensätze und ist nützlich, wenn die Daten mit einer konstanten Rate erhöht oder verringert werden. Gleichung: `y = a + b * x` |
+| Logarithmisch | Erstellt eine am besten passende gekrümmte Linie und ist nützlich, wenn die Änderungsrate in den Daten schnell zunimmt oder abnimmt und dann ausgeglichen wird. Eine logarithmische Trendlinie kann negative und positive Werte verwenden. Gleichung: `y = a + b * log(x)` |
+| Exponentiell | Erzeugt eine Kurven-Linie und ist nützlich, wenn die Daten in ständig steigenden Raten ansteigen oder fallen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten null oder negative Werte enthalten. Gleichung: `y = a + e^(b * x)` |
+| Leistung | Erstellt eine Kurvenlinie und ist nützlich für Datensätze, die Messungen vergleichen, die mit einer bestimmten Rate zunehmen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten null oder negative Werte enthalten. Gleichung: `y = a * x^b` |
+| Quadratisch | Findet die beste Passform für einen Datensatz, der wie eine Parabola geformt ist (konkav nach oben oder unten). Gleichung: `y = a + b * x + c * x^2` |
