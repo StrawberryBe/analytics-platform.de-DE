@@ -3,9 +3,9 @@ description: Verwenden Sie die Visualisierungen "Zusammenfassungsnummer"und "Än
 title: Sammelnummer und Sammeländerung
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 3e8e628ac7fe782e060fd3e0ced209853d53540e
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 52%
 
 ---
@@ -21,6 +21,8 @@ Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl
 * Wenn eine einzelne Zelle ausgewählt ist, wird die Zusammenfassung für diese Zelle angezeigt.
 * Wenn mehr als eine Zelle ausgewählt ist, wird die zuerst ausgewählte Zelle angezeigt.
 * Wenn die Spalte ausgewählt ist, wird der erste Zellenwert in der Spalte verwendet.
+
+![Zusammenfassungszahl](assets/summary-number.png)
 
 Klicken Sie auf **Visualisierungseinstellungen** oben rechts hinein, um die Einstellungen für die Zusammenfassungsnummer zu konfigurieren:
 
@@ -43,6 +45,8 @@ Diese Visualisierung verhält sich wie folgt:
 * Wenn mehr als zwei Zellen ausgewählt sind, werden nur die ersten beiden Zellen für den Vergleich berücksichtigt.
 * Wenn ein Zellbereich ausgewählt ist, wird die erste Zelle mit den letzten im Bereich ausgewählten Zellen verglichen.
 * Wenn die Spalte ausgewählt ist, wird der erste Wert mit sich selbst verglichen, sodass eine Änderung von 0 angezeigt wird.
+
+![Zusammenfassungsänderung](assets/summary-change.png)
 
 Klicken Sie auf **Visualisierungseinstellungen** oben rechts hinein, um die Einstellungen für die Zusammenfassungsänderung zu konfigurieren:
 
