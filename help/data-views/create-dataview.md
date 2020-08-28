@@ -1,11 +1,11 @@
 ---
 title: Datenansicht erstellen
 description: Beschreibt, wie in Customer Journey Analytics (CJA) eine Datenansicht für einen Plattform-Datensatz erstellt wird.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -20,17 +20,17 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/pl
 
 ## Voraussetzung
 
-Bevor Sie Daten-Ansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
+Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
 
 ## Einstellungen konfigurieren
 
-1. Gehen Sie im Customer Journey Analytics zur **[!UICONTROL Ansichten]** angezeigt.
+1. Gehen Sie in Customer Journey Analytics zur Registerkarte **[!UICONTROL Datenansichten]**.
 
-1. Klicken **[!UICONTROL hinzufügen]** , um eine Ansicht hinzuzufügen und deren Einstellungen zu konfigurieren.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Datenansicht hinzuzufügen und deren Einstellungen zu konfigurieren.
 
    | Sitzungseinstellungen | Definition |
    |---|---|
-   | Verbindung | Dieses Feld verknüpft die Ansicht der Daten mit der zuvor eingerichteten Verbindung, die die Variable [!UICONTROL Experience Platform] Datensatzgruppe/n. |
+   | Verbindung | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die die [!UICONTROL Experience Platform]-Datensätze enthält. |
    | Name | Geben Sie der Datenansicht einen Namen. Dies ist ein Pflichtfeld. |
    | Beschreibung | Eine detaillierte Beschreibung ist nicht zwingend erforderlich, wird jedoch empfohlen. |
    | Tags hinzufügen | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
@@ -43,11 +43,11 @@ Bevor Sie Daten-Ansichten erstellen können, müssen Sie [eine oder mehrere Verb
 
 ## Komponenten hinzufügen
 
-1. Lassen Sie uns jetzt den Datenansichten Komponenten (Dimensionen, Metriken) hinzuzufügen (ähnlich wie bei der Kuration in Virtual Report Suites). Beachten Sie, dass jetzt alle Felder in den Datensätzen in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich oder **[!UICONTROL Alle auswählen]** , um alle Komponenten hinzuzufügen.
+1. Lassen Sie uns jetzt den Datenansichten Komponenten (Dimensionen, Metriken) hinzuzufügen (ähnlich wie bei der Kuration in Virtual Report Suites). Beachten Sie, dass jetzt alle Felder in den Datensätzen in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich. Sie können auch **[!UICONTROL Alle auswählen]**, um alle Komponenten hinzuzufügen.
 
    ![](assets/add-all-components.png)
 
-1. Klicken Sie auf **[!UICONTROL hinzufügen]** , um Dimensionen und Metriken zur Ansicht der Daten hinzuzufügen.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Komponenten hinzufügen]**, um der Datenansicht Dimensionen und Metriken hinzuzufügen.
 
    ![](assets/add-all-components2.png)
 
