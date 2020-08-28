@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -143,7 +143,7 @@ ht-degree: 98%
       + [Datumsvergleich](components/date-ranges/time-comparison.md)
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
-   + [Objekte mit Arrays verwenden](use-cases/object-arrays.md)
+   + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
