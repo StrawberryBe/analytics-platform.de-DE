@@ -22,7 +22,7 @@ Wenn bei jedem einzelnen Server, der eine Teilmenge von Daten verarbeitet, mehr 
 
 ## Unterschiede zwischen &quot;Long Tail&quot;und &quot;Low Traffic&quot;
 
-In früheren Versionen von Adobe Analytics wurde eine andere Verarbeitungsarchitektur verwendet. Die Daten wurden zum Zeitpunkt ihrer Erfassung verarbeitet. Dimensionselemente wurden unter &quot;geringer Traffic&quot;platziert, nachdem eine Dimension 500 K einzigartige Werte erreicht hatte, und eine aggressivere Filterung bei 1-M-eindeutigen Werten angewendet. Die Anzahl der individuellen Werte wurde zu Beginn jedes Kalendermonats zurückgesetzt. die verarbeiteten Daten dauerhaft waren; Es gab keine Möglichkeit, vorhandene Daten aus &quot;geringer Traffic&quot;zu erhalten.
+In früheren Versionen von Adobe Analytics wurde eine andere Verarbeitungsarchitektur verwendet. Die Daten wurden zum Zeitpunkt ihrer Erfassung verarbeitet. Elemente der Dimension wurden unter &quot;Geringe Traffic&quot;platziert, nachdem eine Dimension 500 K einzigartige Werte erreicht hatte, und eine aggressivere Filterung bei 1-M-Werten angewendet. Die Anzahl der individuellen Werte wurde zu Beginn jedes Kalendermonats zurückgesetzt. die verarbeiteten Daten dauerhaft waren; Es gab keine Möglichkeit, vorhandene Daten aus &quot;geringer Traffic&quot;zu erhalten.
 
 In CJA werden Dimensionselemente nur dann in &quot;Long Tail&quot;eingefügt, wenn ein einzelner Verarbeitungsserver mehr als 500 K eindeutige Werte enthält. Verarbeitete Daten sind nicht dauerhaft, d. h., Sie können das Dimensionselement &quot;Langzeit&quot;verringern, indem Sie Ihren Bericht ändern.
 
@@ -33,4 +33,4 @@ Wenn Sie das Dimensionselement &quot;Langzeit-Tail&quot;reduzieren möchten, emp
 * Verwenden Sie ein Segment. Segmente werden angewendet, wenn jeder Server eine Teilmenge von Daten verarbeitet. Wenn Sie die Anzahl der eindeutigen Werte, die sie zurückgeben, begrenzen, wird das Dimensionselement &quot;Langzeit-Zahl&quot;reduziert.
 * Verwenden Sie eine Dimension für den Nachschlagedataset. Suchdatenaset-Dimensionen kombinieren Ereignis-Dataset-Dimensionselemente, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
 
-Insgesamt ist es schwierig, einen Bericht zu verwenden, der mehr als 500 K einzigartige Dimensionselemente enthält. Wenn Sie ein Segment oder eine Nachschlagedataset-Dimension anwenden, können Sie das Vorhandensein von &quot;Long Tail&quot;reduzieren, während Sie Ihren Bericht benutzerfreundlicher gestalten. Adobe plant, diese Erfahrung zu verbessern, da CJA weiter entwickelt wird.
+Insgesamt ist es schwierig, einen Bericht zu verwenden, der mehr als 500 K einzigartige Dimensionselemente enthält. Wenn Sie ein Segment oder eine Nachschlagedataset-Dimension anwenden, können Sie das Vorhandensein von &quot;Long Tail&quot;reduzieren, während Sie Ihren Bericht benutzerfreundlicher gestalten. Die Adobe plant, diese Erfahrung zu verbessern, da die CJA weiter entwickelt wird.
