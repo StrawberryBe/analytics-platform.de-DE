@@ -1,9 +1,9 @@
 ---
 title: Ansichten und Attribution von Daten konfigurieren
 description: Beschreibt, wie in Customer Journey Analytics eine Datenansicht für einen Platform-Datensatz erstellt wird.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 100%
 
