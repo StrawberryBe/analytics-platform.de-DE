@@ -72,5 +72,5 @@ Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert
 | string_color | metric_a |
 | --- | --- |
 | Gelb | 6 |
-| Blau | 3 |
+| Blau | 1 |
 | Rot | 2 |
