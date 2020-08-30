@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 >
 >Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
-Das Zuordnungskonzept in Adobe Analytics erfordert zwei Komponenten:
+Das Attributionskonzept in Adobe Analytics erfordert zwei Komponenten:
 
 * **Attributionsmodell:** Das Modell beschreibt die Verteilung der Konversionen auf die Hits in einer Gruppe. Zum Beispiel Erstkontakt oder Letztkontakt
 * **Attributions-Lookback-Fenster:** Das Lookback-Fenster beschreibt, welche Gruppierungen der Hits für das jeweilige Modell berücksichtigt werden. Beispiel: Besuch oder Besucher.
@@ -43,13 +43,13 @@ Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend be
 
 * **Besuchs-Lookback-Fenster:** Sieht bis zum Beginn eines Besuchs zurück, bei dem eine Konversion stattgefunden hat. Besuchs-Lookback-Fenster sind klein, da sie nicht über den Besuch hinausblicken. Besuchs-Lookback-Fenster berücksichtigen die geänderte Besuchsdefinition in Virtual Report Suites.
 
-* **Besucher-Lookback-Fenster:** Betrachtet alle Besuche bis zum 1. des Monats des aktuellen Datumsbereichs. Besucher-Lookback-Fenster sind groß, da sie viele Besuche umfassen können. Bei der Besucher-Lookback-Funktion werden alle Werte ab dem Monatsbeginn des Datumsbereichs des Berichts berücksichtigt. Wenn der Berichts-Datumsbereich beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Besucher-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September.
+* **Besucher-Lookback-Fenster:** Betrachtet alle Besuche bis zum 1. des Monats des aktuellen Datumsbereichs. Besucher-Lookback-Fenster sind groß, da sie viele Besuche umfassen können. Bei der Besucher-Lookback-Funktion werden alle Werte ab dem Monatsanfang des Datumsbereichs des Berichts berücksichtigt. Wenn der Datumsbereich des Berichts beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Besucher-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September.
 
-* **Benutzerdefiniertes Lookback-Fenster:** Ermöglicht Ihnen, das Zuordnungsfenster über den Datumsbereich des Berichte hinaus auf maximal 90 Tage zu erweitern. Benutzerdefinierte Lookback-Fenster werden bei jeder Konvertierung im Berichte ausgewertet. Beispiel: Bei einer Konvertierung am 20. Februar würde ein Lookback-Fenster von 10 Tagen alle Dimension-Touchpoints vom 10. bis 20. Februar im Zuordnungsmodell auswerten.
+* **Benutzerdefiniertes Lookback-Fenster:** Ermöglicht Ihnen, das Attributionsfenster über den Datumsbereich des Berichte hinaus auf maximal 90 Tage zu erweitern. Benutzerdefinierte Lookback-Fenster werden bei jeder Konversion im Berichtszeitraum ausgewertet. Beispiel: Bei einer Konversion am 20. Februar würde ein Lookback-Fenster von 10 Tagen alle Touchpoints der Dimension vom 10. bis 20. Februar im Attributionsmodell auswerten.
 
 >[!NOTE]
 >
->**[!UICONTROL Benutzerdefinierte Lookback-Fenster]** werden derzeit nur eingeschränkt getestet. Weitere Informationen finden Sie in den Versionshinweisen zu [Adobe Analytics-Funktionen](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html) .
+>**[!UICONTROL Benutzerdefinierte Lookback-Fenster]** sind derzeit in beschränktem Umfang getestet. Siehe [Versionshinweise zu Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html) für weitere Informationen.
 
 ## Beispiel
 
