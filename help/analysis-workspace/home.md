@@ -3,9 +3,9 @@ keywords: Analysis Workspace
 title: Analysis Workspace – Übersicht
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Ein Projekt kann Datentabellen und eine beliebige Anzahl von Visualisierungen zu
 
 ## Zwei Möglichkeiten zum Erstellen einer Tabelle
 
-## Allgemeines Konzept für die Analyse
+## Gebräuchlicher Analyseansatz
 
 ### Schritt 1: Analysieren einer Dimension
 
@@ -47,9 +47,9 @@ Tippen Sie auf die Option zum Hinzufügen berechneter Metriken in diesem Abschni
 
 ### Schritt 3: Ändern des Datumsbereichs
 
-### Schritt 4: Aufschlüsseln einer Dimension
+### Schritt 4: Dimension aufschlüsseln
 
-### Schritt 5: Anwenden eines Segments auf Ihre Daten
+### Schritt 5: Segmente auf Daten anwenden
 
 ### Schritt 6: Hinzufügen allgemeiner Visualisierungen
 
