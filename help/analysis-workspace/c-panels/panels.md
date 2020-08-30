@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 80%
+ht-degree: 91%
 
 ---
 
@@ -14,18 +14,18 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen. Sie können auf Bedienfelder über das Symbol oben links in Workspace zugreifen. Bedienfelder sind hilfreich, wenn Sie Ihre Projekte anhand von Zeiträumen, Geschäftsbereichen, Standorten usw. organisieren möchten. Diese vier Paneltypen stehen in Analysis Workspace zum Customer Journey Analytics zur Verfügung:
 
 * [Leeres Bedienfeld](blank-panel.md)
-* [Quick Insights-Bedienfeld](quickinsight.md)
+* [Bedienfeld „Quick Insights“](quickinsight.md)
 * [Attributionsbedienfeld](attribution.md)
 * [Freiform-Bedienfeld](freeform-panel.md)
 
-Quick Insights-, Blank- und Freiform-Bedienfelder sind großartige Orte zum Beginn Ihrer Analyse, während sich das Namensnennungs-IQ-Bedienfeld für erweiterte Analysen eignet. In Projekten steht eine `"+"` Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bereiche hinzufügen können.
+Quick Insight-, Blank- und Freiform-Bedienfelder eignen sich hervorragend zum Beginn Ihrer Analyse, während sich das Bedienfeld &quot;Attribution IQ&quot;für erweiterte Analysen eignet. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
 
-The default starting panel is the Freeform panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
+Das standardmäßige Startbedienfeld ist das Freiform-Bedienfeld. Sie können jedoch auch das [leere Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) als Ihren Standard festlegen.
 
 ## Dropdown-Filter in Bedienfeldern
 
