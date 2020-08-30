@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,10 +31,10 @@ Um das schnelle Erstellen berechneter Metriken zu vereinfachen, wurde dem Spalte
 
 [Verwenden von Beitragsmetriken auf YouTube](https://www.youtube.com/watch?v=ngmJHcg65o8&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=32) (4:16)
 
-## Vergleichen von Metriken mit verschiedenen Zuordnungsmodellen
+## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
 
 Wenn Sie Attributionsmodelle schnell und einfach miteinander vergleichen möchten, sollten Sie mit der rechten Maustaste klicken und **[!UICONTROL Vergleichsattributionsmodell hinzufügen]** auswählen:
 
-![Vergleich der Zuordnung](assets/compare-attribution.png)
+![Vergleichsattribution](assets/compare-attribution.png)
 
-Mit diesem Tastaturbefehl können Sie ein Zuordnungsmodell schnell und einfach mit einem anderen vergleichen, ohne eine Metrik zweimal einzuziehen und zu konfigurieren.
+Dadurch können Sie Attributionsmodelle schnell und einfach miteinander vergleichen, ohne eine Metrik hereinzuziehen und sie zweifach zu konfigurieren.
