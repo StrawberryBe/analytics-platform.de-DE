@@ -1,8 +1,11 @@
 ---
 title: Filter verwalten
 description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalten.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+workflow-type: tm+mt
+source-wordcount: '1109'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +16,7 @@ Der Filter-Manager bietet verschiedene Möglichkeiten zum Kuratieren von Segment
 
 Der Filter-Manager zeigt Ihnen alle Filter, die sich in Ihrem Besitz befinden und für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. Dieser Überblick stellt die Benutzeroberfläche und die Funktionen des Filter-Managers vor.
 
-Gehen Sie oben in der Navigation zu **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]**, um den Filter-Manager aufzurufen.
+Rufen Sie den Filter-Manager auf, indem Sie **[!UICONTROL Customer Journey-Analyse]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** in der oberen Navigation.
 
 ## Filter Manager-Benutzeroberfläche
 
@@ -71,16 +74,16 @@ Taggen eines Filters:
 
 1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie taggen möchten. Die Werkzeugleiste für die Filterverwaltung wird angezeigt.
 
-1. Klicken Sie auf **[!UICONTROL Tag]** und
+1. Klicken Sie auf **[!UICONTROL Taggen]** und
 
    * wählen Sie entweder ein vorhandenes Tag aus oder
 
-   * geben Sie einen neuen Tag-Namen ein und drucken Sie **[!UICONTROL Enter]**.
+   * Geben Sie einen neuen Tag-Namen ein und drücken Sie die Eingabetaste **[!UICONTROL Eingabe]**.
 
-1. Klicken Sie erneut auf **[!UICONTROL Tag]**, um das Segment zu taggen.
+1. Klicken Sie erneut auf **[!UICONTROL Taggen]**, um das Segment zu taggen.
 
 Das Tag wird jetzt in der Spalte „Tags“ angezeigt. (Klicken Sie oben rechts auf das Zahnradsymbol, um Ihre Spalten zu verwalten.)
-Sie können unter **[!UICONTROL Filters > Tags]** auch nach Tags filtern.
+Sie können unter **[!UICONTROL Filter > Tags]** auch nach Tags filtern.
 
 ### Filter genehmigen
 
@@ -90,7 +93,7 @@ So wird ein Filter als genehmigt gekennzeichnet:
 
 1. Aktivieren Sie im Filter-Manager das Kontrollkästchen links neben dem Filtertitel.
 
-1. Klicken Sie in der Werkzeugleiste für die Filterverwaltung auf **[!UICONTROL Approve]**.
+1. Klicken **[!UICONTROL Genehmigen]** in der Aufgabe der Filterverwaltung.
 
 1. Entscheiden Sie, ob Sie die genehmigten Segmente für Ihre Organisation freigeben möchten.
 
@@ -100,7 +103,7 @@ So wird ein Filter als genehmigt gekennzeichnet:
 
    ![](assets/seg_approved.png)
 
-1. Sie können die Genehmigung eines genehmigten Segments auch aufheben, indem Sie auf **[!UICONTROL Unapprove]** klicken.
+1. Sie können die Genehmigung eines genehmigten Segments auch aufheben, indem Sie auf **[!UICONTROL Nicht genehmigen klicken]**.
 
 ### Filter freigeben
 
@@ -122,9 +125,9 @@ Freigeben eines Filters:
 
 1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie freigeben möchten.
 
-1. Klicken Sie in der Werkzeugleiste für die Filterverwaltung auf **[!UICONTROL Share]**.
+1. Klicken Sie in der Symbolleiste für die Filterverwaltung auf **[!UICONTROL Freigeben]**.
 
-1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Share]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](assets/share_icon.png)
+1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Freigabe]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](assets/share_icon.png)
 
 1. Sie können nach für Sie freigegebenen Filtern filtern, indem Sie „Filter“ > „Weitere Filter“ > „Für mich freigegeben“ verwenden.
 
