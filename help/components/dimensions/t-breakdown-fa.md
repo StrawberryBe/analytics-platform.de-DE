@@ -26,9 +26,9 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle.
 1. Klicken Sie in der Datentabelle mit der rechten Maustaste auf einen Zeileneintrag und wählen Sie **[!UICONTROL Aufschlüsselung]** > *`<item>`* aus.
 
-   ![Schritt Ergebnis](assets/fa_data_table_actions.png)
+   ![Ergebnis des Schritts](assets/fa_data_table_actions.png)
 
-   You can break down metrics by dimension items or audience segments across selected time periods. Sie können auch noch granularer aufschlüsseln.
+   Sie können Metriken über ausgewählte Zeiträume nach Dimensionselementen oder Audiencen unterteilen. Sie können auch noch granularer aufschlüsseln.
 
    >[!NOTE]
    >
