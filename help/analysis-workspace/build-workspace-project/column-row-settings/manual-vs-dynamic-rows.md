@@ -53,7 +53,7 @@ Dimensionen aus verschiedenen Dimensionen können derselben Tabelle hinzugefügt
 
 ## Freiformsummen
 
-Dynamische und statische Zeilen verhalten sich in der Freiformsumme unterschiedlich. By default:
+Dynamische und statische Zeilen verhalten sich in der Freiformsumme unterschiedlich. Standardmäßig:
 
 * Dynamische Zeilen werden serverseitige und dekorative Metriken wie Besuche oder Besucher summiert
 * Statische Zeilen werden clientseitig zusammengefasst und tun **not** Metriken zum Löschen von Duplikaten. Um die gesamte Zeile serverseitig zu berechnen, ändern Sie die Einstellung &quot;Zeile&quot;in **Gesamtsumme anzeigen**. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
