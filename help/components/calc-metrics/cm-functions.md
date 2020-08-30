@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Sie sehen sich die Dokumentation zum Analysis Workspace in Customer Journey Analytics an. Das Funktionssatz unterscheidet sich geringfügig von dem [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Mit dem Generator für berechnete Metriken können Sie statistische und mathematische Funktionen anwenden, um erweiterte berechnete Metriken zu erstellen.
 
@@ -50,7 +50,7 @@ MAXV(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, die Sie auswerten möchten. |
+| *Metrik* | Die Metrik, die Sie auswerten möchten. |
 
 ## Spaltenminimum
 
@@ -62,7 +62,7 @@ MINV(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, die Sie auswerten möchten. |
+| *Metrik* | Die Metrik, die Sie auswerten möchten. |
 
 ## Spaltensumme
 
@@ -74,7 +74,7 @@ SUM(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, für die Sie den Gesamtwert oder die Summe ermitteln möchten. |
+| *Metrik* | Die Metrik, für die Sie den Gesamtwert oder die Summe ermitteln möchten. |
 
 ## Anzahl (Tabelle)
 
@@ -86,7 +86,7 @@ COUNT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, die gezählt werden soll. |
+| *Metrik* | Die Metrik, die gezählt werden soll. |
 
 ## Exponent (Zeile)
 
@@ -98,7 +98,7 @@ EXP(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Exponent, der auf Basis *e* angewendet wird. |
+| *Metrik* | Der Exponent, der auf Basis *e* angewendet wird. |
 
 ## Potenzierung
 
@@ -118,7 +118,7 @@ MEAN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, für die Sie den Durchschnitt ermitteln möchten. |
+| *Metrik* | Die Metrik, für die Sie den Durchschnitt ermitteln möchten. |
 
 ## Medianwert (Tabelle)
 
@@ -130,7 +130,7 @@ MEDIAN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, für die Sie den Medianwert ermitteln möchten. |
+| *Metrik* | Die Metrik, für die Sie den Medianwert ermitteln möchten. |
 
 ## Modulo
 
@@ -173,7 +173,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>Metrik</i> </td> 
    <td colname="col2"> Die Metrikspalte, die die relative Position definiert. </td> 
   </tr> 
   <tr> 
@@ -200,7 +200,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>Metrik</i> </td> 
    <td colname="col2"> Die Metrik, für die Sie den Quartilwert abrufen möchten. </td> 
   </tr> 
   <tr> 
@@ -222,7 +222,7 @@ ROUND(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Anzahl* | Die Metrik, die gerundet werden soll. |
+| *number* | Die Metrik, die gerundet werden soll. |
 
 Das Runden ohne Stellenparameter ist mit dem Runden mit dem Stellenparameter 0 identisch, also der Rundung zur nächsten Ganzzahl. Wenn Sie einen Stellenparameter angeben, wird die angegebene Anzahl an Stellen rechts neben dem Dezimalzeichen zurückgegeben. Wenn der Stellenparameter negativ ist, werden Nullen links neben dem Dezimalzeichen zurückgegeben.
 
@@ -259,7 +259,7 @@ SQRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Anzahl* | Die Metrik, für die Sie die Quadratwurzel abrufen möchten. |
+| *number* | Die Metrik, für die Sie die Quadratwurzel abrufen möchten. |
 
 ## Standardabweichung (Tabelle)
 
@@ -304,7 +304,7 @@ VARIANCE(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, für die Sie die Schwankung ermitteln möchten. |
+| *Metrik* | Die Metrik, für die Sie die Schwankung ermitteln möchten. |
 
 Zur Berechnung einer Varianz sehen Sie sich eine gesamte Spalte von Zahlen an. Aus dieser Liste von Zahlen berechnen Sie zunächst den Durchschnitt. Sobald Sie den Durchschnitt ermittelt haben, sehen Sie sich jeden Eintrag an und tun Folgendes:
 
