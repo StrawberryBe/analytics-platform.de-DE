@@ -1,9 +1,9 @@
 ---
 title: Datenansicht erstellen
 description: Beschreibt, wie in Customer Journey Analytics (CJA) eine Datenansicht für einen Plattform-Datensatz erstellt wird.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 100%
 
