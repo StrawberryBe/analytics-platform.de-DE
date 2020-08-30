@@ -30,7 +30,7 @@ Zu den Dimensionen für die Zeitunterteilung in Analysis Workspace zählen:
 
 | Dimension | Beispielwerte |
 |--- |--- |
-| Uhrzeit | 0–23 |
+| Stunde des Tages | 0–23 |
 | Vormittag/Nachmittag | Vormittag (AM), Nachmittag (PM) |
 | Wochentag | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
 | Wochenende/Wochentag | Wochenende, Wochentag |
