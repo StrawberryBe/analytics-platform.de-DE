@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ Das Attributionsbedienfeld unterstützt alle Dimensionen. Nicht unterstützte Me
 * Besuchszeitmetriken
 * Absprünge
 * Absprungrate
-* Einträge
+* Einstiege
 * Ausstiege
 * Seiten nicht gefunden
 * Suchvorgänge
@@ -65,21 +65,21 @@ Ja, die meisten Datenquellen werden unterstützt. Bei Datenquellen auf Zusammenf
 
 **Funktioniert Attribution mit der Advertising Analytics-Integration?**
 
-Metadatendimensionen wie Übereinstimmungstyp und Suchbegriff funktionieren mit Attribution. Metriken (wie Impressions, Kosten, Klicks, durchschnittliche Position und durchschnittliche Qualitätsbewertung) verwenden jedoch Datenquellen auf Zusammenfassungsebene und sind daher inkompatibel.
+Metadatendimensionen wie Übereinstimmungstyp und Keyword funktionieren mit Attribution. Metriken (wie Impressions, Kosten, Klicks, durchschnittliche Position und durchschnittliche Qualitätsbewertung) verwenden jedoch Datenquellen auf Zusammenfassungsebene und sind daher inkompatibel.
 
-**Wie funktioniert die Zuordnung bei Marketing-Kanälen?**
+**Wie funktioniert die Attribution bei Marketing-Kanälen?**
 
-Als Marketing-Kanäle eingeführt wurden, hatten sie nur die Dimensionen „Erstkontakt“ und „Letztkontakt“. Explizite First Touch-/Last Touch-Dimensionen sind mit der aktuellen Version der Zuordnung nicht mehr erforderlich. Adobe stellt allgemeine Dimensionen für &quot;Marketing-Kanal&quot;und &quot;Marketing-Kanal-Detail&quot;bereit, damit Sie diese mit Ihrem gewünschten Zuordnungsmodell verwenden können. Diese generischen Dimensionen verhalten sich identisch mit den Dimensionen des Last Touch-Kanals, sind jedoch anders gekennzeichnet, um Verwirrung bei der Verwendung von Marketing-Kanälen mit einem anderen Zuordnungsmodell zu vermeiden.
+Als Marketing-Kanäle eingeführt wurden, hatten sie nur die Dimensionen „Erstkontakt“ und „Letztkontakt“. Explizite Dimensionen „Erstkontakt“ und „Letztkontakt“ sind mit der aktuellen Attributionsversion nicht mehr erforderlich. Adobe stellt allgemeine Dimensionen für „Marketing-Kanal“ und „Marketing-Kanal-Detail“ bereit, damit Sie diese mit Ihrem gewünschten Attributionsmodell verwenden können. Diese allgemeinen Dimensionen verhalten sich identisch mit den Dimensionen des Letztkontakt-Kanals, sind jedoch anders gekennzeichnet, um Verwirrung bei der Verwendung von Marketing-Kanälen mit einem anderen Attributionsmodell zu vermeiden.
 
 Da die Marketing-Kanal-Dimensionen von einer traditionellen Besuchsdefinition abhängen (wie in den Verarbeitungsregeln definiert), kann ihre Besuchsdefinition nicht mit Virtual Report Suites geändert werden.
 
-**Wie funktioniert die Zuordnung mit Variablen mit mehreren Werten, wie z. B. Liste vars?**
+**Wie funktioniert die Attribution mit Variablen mit mehreren Werten, wie z. B. Listenvariablen?**
 
 Einige Dimensionen in Analytics können bei einem einzelnen Hit mehrere Werte enthalten. Häufige Beispiele sind Listenvariablen und die Produktvariable.
 
 Wenn die Attribution auf Hits mit mehreren Werten angewendet wird, erhalten alle Werte im selben Hit dieselbe Gewichtung. Da viele Werte diese Gewichtung erhalten können, kann sich die Berichtssumme von der Summe der einzelnen Zeileneinträge unterscheiden. Die Berichtsgesamtsumme wird dedupliziert, während jedem einzelnen Dimensionselement die korrekte Gutschrift zugeschrieben wird.
 
-**Wie funktioniert die Zuordnung bei der Segmentierung?**
+**Wie funktioniert die Attribution bei der Segmentierung?**
 
 Die Attribution wird immer vor der Segmentierung ausgeführt und die Segmentierung wird ausgeführt, bevor Berichtsfilter angewendet werden. Dieses Konzept gilt auch für Virtual Report Suites, die Segmente verwenden.
 
@@ -89,4 +89,4 @@ Wenn Sie z. B. eine VRS mit angewendetem Segment „Hits anzeigen“ erstellen, 
 
 >[!NOTE]
 >
->Wenn ein Segment Hits unterdrückt, die Ihre Metrik enthalten, werden diese Metrikinstanzen keiner Dimension zugeordnet. Bei einem ähnlichen Berichtsfilter werden jedoch nur einige Dimensionselemente ausgeblendet, ohne dass sich dies auf die pro Zuordnungsmodell verarbeiteten Metriken auswirkt. Daher kann ein Segment niedrigere Werte zurückgeben als ein Filter mit einer vergleichbaren Definition.
+>Wenn ein Segment Treffer unterdrückt, die Ihre Metrik enthalten, werden diese Metrikinstanzen keiner Dimension zugeordnet. Bei einem ähnlichen Berichtsfilter werden jedoch nur einige Dimensionselemente ausgeblendet, ohne dass sich dies auf die pro Zuordnungsmodell verarbeiteten Metriken auswirkt. Daher kann ein Segment niedrigere Werte zurückgeben als ein Filter mit einer vergleichbaren Definition.
