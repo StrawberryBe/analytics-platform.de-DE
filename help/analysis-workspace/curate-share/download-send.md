@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -53,7 +53,7 @@ Die Rechtsklick-Option **[!UICONTROL Daten als CSV herunterladen]** können Sie 
 
 ![](assets/download-data-viz.png)
 
-## Elemente als CSV herunterladen {#download-items}
+## Objekte als CSV herunterladen.{#download-items}
 
 Wenn Sie mehr als die sichtbaren 400 Datenzeilen in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (Name der Dimension)**. Diese Option exportiert bis zu 50.000 Dimensionselemente für die ausgewählte Dimension (basierend auf der Tabellensortierung), wobei Filter und Segmente angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in der Freiform-Tabelle keine Beschränkungen erzwungen werden, wird empfohlen, die Option &quot;Elemente herunterladen&quot;in Tabellen mit weniger als 20 Spalten zu verwenden, um eine optimale Leistung sicherzustellen.
 
