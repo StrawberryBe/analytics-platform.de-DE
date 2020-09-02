@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ Nachdem dem Erstellen des Schemas müssen Sie daraus in Experience Platform eine
 
 >[!IMPORTANT]
 >
->CJA unterstützt keine Ganzzahlen in Lookup-Datensätzen. Wenn Sie die ganzzahligen Felder in Ihrem XDM-Schema für Ihren Nachschlagedataset hinzufügen, können Sie diese Ganzzahlen nicht als Metriken oder berechnete Metriken verwenden. Wenn beispielsweise AnnualRevenue oder totalEmployees als Ganzzahlen definiert sind, wird in CJA als &quot;0&quot;in Berichte angezeigt. Wenn Sie sie jedoch als Zeichenfolgen zuweisen, können Sie sie als Nachschlageinformationen verwenden.
+>CJA unterstützt keine Ganzzahlen in Lookup-Datensätzen. Wenn Sie die Ganzzahlen-Felder in Ihrem XDM-Schema für Ihren Lookup-Datensatz hinzufügen, können Sie diese Ganzzahlen nicht als Metriken oder berechnete Metriken verwenden. Wenn beispielsweise annualRevenue oder totalEmployees als Ganzzahlen definiert sind, werden sie in CJA in Berichten als „0“ angezeigt. Wenn Sie sie jedoch als Zeichenfolgen zuweisen, können Sie sie als Lookup-Informationen verwenden.
 
-So werden beispielsweise &quot;yearRevenue&quot;oder &quot;totalEmployees&quot;im folgenden Beispiel als Integer definiert, was der Grund ist, dass &quot;0&quot;in CJA angezeigt wird.
+So werden beispielsweise annualRevenue oder totalEmployees im folgenden Beispiel als Ganzzahl definiert, weshalb in CJA „0“ angezeigt wird.
 
 1. Rufen Sie in Adobe Experience Platform **[!UICONTROL Daten-Management > Datensätze]** auf.
 1. Klicken Sie auf **[!UICONTROL + Datensatz erstellen]**.
@@ -79,11 +79,11 @@ Gehen Sie wie folgt vor, um die Datensätze zu kombinieren:
 1. Geben Sie einen Namen und eine Beschreibung für die Verbindung ein und konfigurieren Sie sie entsprechend [dieser Anweisungen](/help/connections/create-connection.md).
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## 5. Eine Ansicht mit Daten aus dieser Verbindung erstellen
+## 5. Erstellen einer Datenschicht aus dieser Verbindung
 
-Befolgen Sie die Anweisungen [Erstellen von Ansichten](/help/data-views/create-dataview.md).
+Befolgen Sie die Anweisungen zum [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 
-* Fügen Sie alle Komponenten (d. h. Dimensionen und Metriken), hinzu, die sie aus den Datensätzen benötigen.
+* Fügen Sie alle Komponenten (d. h. Dimensionen und Metriken) hinzu, die sie aus den Datensätzen benötigen.
 
 ## 6. Analysieren der Daten in Workspace
 
