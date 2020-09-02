@@ -2,10 +2,10 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 translation-type: tm+mt
-source-git-commit: 7d2abfb2cd91ee7574fce10847abb89f14b5388e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Datumsbereiche | Die Unterstützung benutzerdefinierter Kalender ist geplant. |
 | Berechnete Metriken | Beachten Sie, dass vorhandene Berechnungsmetriken im herkömmlichen Analysis Workspace nicht auf CJA portiert werden. |
 | Segmente | Jetzt „Filter“ genannt. Beachten Sie, dass keine vorhandenen Segmente im traditionellen Analysis Workspace auf CJA portiert werden. |
-| Anomalieerkennung | Vollständige Unterstützung ab Juni 2020 |
+| Anomalieerkennung | Volle Unterstützung ab September 2020 |
 | Attribution IQ | Vollständige Unterstützung. |
 | Projektkuration | Vollständige Unterstützung. |
 | Projektverknüpfung | Vollständige Unterstützung. |
@@ -80,7 +80,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | A4T | Unterstützung ist noch nicht geplant. |
-| Video Analytics | Unterstützung ist noch nicht geplant. |
+| Media Analytics | Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Unterstützung ist noch nicht geplant. |
 | Report Builder (Excel-Plug-in) | Unterstützung ist noch nicht geplant. |
 | Activity Map | Unterstützung ist noch nicht geplant. |
@@ -90,14 +90,12 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 ## Keine Unterstützung geplant.
 
-| Funktion | Hinweise |
-| --- | --- |
-| Benutzermetriken mit Cross-Device Coop |  |
-| Reports &amp; Analytics-Dashboards |  |
-| Reports &amp; Analytics-Lesezeichen |  |
-| Reports &amp; Analytics-Zielgruppen |  |
-| Reports &amp; Analytics-Kalenderereignisse |  |
-| Ad Hoc Analysis |  |
-| Data Warehouse Berichterstellung | [!UICONTROL Experience Platform-Abfrage-Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein. |
-| Mobile Services |  |
-| Daten-Feeds |  |
+* Benutzermetriken mit Cross-Device Coop
+* Reports &amp; Analytics-Dashboards
+* Reports &amp; Analytics-Lesezeichen
+* Reports &amp; Analytics-Zielgruppen
+* Reports &amp; Analytics-Kalenderereignisse
+* Ad Hoc Analysis
+* Data Warehouse Berichte - [!UICONTROL Experience Platform Abfrage Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein.
+* Mobile Services
+* Daten-Feeds
