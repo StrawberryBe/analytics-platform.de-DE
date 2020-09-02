@@ -3,15 +3,19 @@ description: Verwenden Sie die Visualisierungen "Zusammenfassungsnummer"und "Än
 title: Sammelnummer und Sammeländerung
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 3e8e628ac7fe782e060fd3e0ced209853d53540e
+source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 52%
+source-wordcount: '438'
+ht-degree: 56%
 
 ---
 
 
 # Sammelnummer und Sammeländerung
+
+>[!NOTE]
+>
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 ## Visualisierung für Zusammenfassungsnummer {#summary-number}
 
