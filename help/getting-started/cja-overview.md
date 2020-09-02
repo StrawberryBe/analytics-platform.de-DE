@@ -2,10 +2,10 @@
 title: Überblick über Customer Journey Analytics
 description: Einführung in Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1202'
+ht-degree: 87%
 
 ---
 
@@ -54,16 +54,20 @@ Bevor Sie Customer Journey Analytics verwenden können, müssen die folgenden Vo
 Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie die folgenden Berechtigungen in der [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
 * Zur Verwaltung von Datensätzen in Experience Platform müssen Sie Teil eines Platform-Produktprofils sein, das Ihnen die Berechtigung „Datensätze verwalten“ erteilt. Weitere Informationen finden Sie unter [Zugangssteuerung in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
-* Um eine Verbindung zu einem Platform-Datensatz herzustellen, müssen Sie Teil eines Platform-Produktprofils, das Ihnen die folgenden Berechtigungen erteilt:
+* Um eine Verbindung zu einem Dataset der Experience Platform herzustellen, müssen Sie Teil eines Plattform-Produkt-Profils sein, das Ihnen die folgenden Berechtigungen erteilt:
    * Schemata anzeigen
    * Datensätze anzeigen
    * Identitäts-Namespaces verwalten
    * Sandboxes anzeigen
-* Um auf Customer Journey Analytics zuzugreifen oder eine Verbindung herzustellen, müssen Sie auch einem Customer Journey Analytics-Produktprofil in der [Admin Console](https://adminconsole.adobe.com/enterprise/) hinzugefügt werden.
+* Ab dem 9. September 2020 müssen Sie als Administrator für ein Customer Journey Analytics Product Profil im [Admin Console](https://adminconsole.adobe.com/enterprise/). Administratoren haben folgende Berechtigungen:
+   * Verbindungen oder Ansichten erstellen/aktualisieren/löschen
+   * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken oder von anderen Benutzern erstellten Segmenten
+   * Freigeben eines Workspace-Projekts für alle Benutzer
+* Nicht-Administratoren (Benutzer) in Customer Journey Analytics können keine Ansicht von Data Ansichten oder Verbindungen durchführen, sondern Filter, Projekte und berechnete Metriken erstellen.
 
 ### Aktualisierungen der Terminologie
 
-Mehrere Funktionen in CJA wurden in Übereinstimmung mit Industriestandards umbenannt. Zu den aktualisierten Namen gehören:
+Verschiedene Funktionen von CJA wurden im Vergleich zum herkömmlichen Adobe Analytics umbenannt, um sie an Branchenstandards anzupassen. Zu den aktualisierten Terminologie gehören:
 
 * Segmente werden jetzt als Filter bezeichnet.
 * Virtual Report Suites werden jetzt als Ansichten bezeichnet.
@@ -75,7 +79,7 @@ Mehrere Funktionen in CJA wurden in Übereinstimmung mit Industriestandards umbe
 
 ## Weitere auf Adobe Experience Platform basierende Funktionen
 
-Customer Journey Analytics ist eine von vielen Funktionen, die auf Adobe Experience Platform basieren. Mehrere andere Funktionen, die ebenfalls auf Platform basieren, ermöglichen die optimale Datennutzung.
+Customer Journey Analytics ist eine von vielen Funktionen, die auf Adobe Experience Platform basieren. Einige andere Funktionen, die auch auf der Experience Platform basieren, ermöglichen es Ihnen, das Beste aus Ihren Daten zu machen.
 
 Mit Adobe Experience Platform können Sie Kundendaten und Inhalte aus beliebigen Systemen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern. Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html).
 
