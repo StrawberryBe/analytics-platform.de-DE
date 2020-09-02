@@ -1,41 +1,41 @@
 ---
-description: Erfahren Sie, wie Sie freigegebene Links zu Projekten oder Visualisierungen erstellen.
+description: Erfahren Sie, wie Sie teilbare Verknüpfungen für Projekte oder Visualisierungen erstellen.
 keywords: Analysis Workspace sharing
-title: Erstellen von freigegebenen Links
+title: 'Erstellen von teilbaren Verknüpfungen '
 translation-type: tm+mt
 source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Erstellen von freigegebenen Links
+# Erstellen von teilbaren Verknüpfungen
 
-Analysis Workspace Angebots bietet verschiedene Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder zu einem bestimmten Teil eines Projekts zu erhalten. Benutzer, die einen Link erhalten, müssen sich bei Adobe Analytics anmelden, bevor sie zum Projekt gelangen können.
+Analysis Workspace bietet verschiedene Möglichkeiten, ein Projekt mit Ihren Benutzern zu teilen, einschließlich der Möglichkeit, eine Verknüpfung zu einem Projekt oder einem bestimmten Teil eines Projekts zu übermitteln. Benutzer, die eine Verknüpfung erhalten, müssen sich zuerst bei Adobe Analytics anmelden, bevor sie das Projekt aufrufen können.
 
-## Projektlink abrufen {#project-link}
+## Empfangen einer Projektverknüpfung {#project-link}
 
-Um einen Link zum vollständigen Projekt freizugeben, gehen Sie zu **[!UICONTROL Freigeben > Projektverknüpfung abrufen]**. Wenn dem Empfänger des Links kein [Projektrolle](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/share-projects.html), Administratoren empfangen **[!UICONTROL Kann bearbeiten]** und Nichtadministratoren **[!UICONTROL Kann Duplikat]** Erlebnisse.
+Um eine Verknüpfung zum gesamten Projekt freizugeben, gehen Sie zu **[!UICONTROL Freigeben > Projektverknüpfung abrufen]**. Wenn der Empfänger der Verknüpfung keine [Projektrolle](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/share-projects.html) zugewiesen hat, erhalten Administratoren **[!UICONTROL Kann bearbeiten]** und Nicht-Administratoren erhalten **[!UICONTROL Kann duplizieren]**.
 
 ![](assets/get-project-link.png)
 
-## Link zum Abrufen des Bereichs oder der Visualisierung {#panel-link}
+## Empfangen einer Bereichs- oder Visualisierungsverknüpfung {#panel-link}
 
-Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. einem Bereich oder einer individuellen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzer auf wichtige Einblicke im Projekt zu lenken.
+Sie können auch eine Verknüpfung für einen bestimmten Teil eines Projekts freigeben, z. B. einen Bereich oder eine einzelne Visualisierung. Dies wird auch als interne Verknüpfung bezeichnet. Dies hilft Ihnen, die Aufmerksamkeit von Benutzern auf wichtige Aspekte des Projekts zu lenken.
 
 * Klicken Sie in einer Bereichsüberschrift mit der rechten Maustaste auf **[!UICONTROL Bereichsverknüpfung abrufen]**
-* Klicken Sie in einer Tabelle oder Visualisierungskopfzeile mit der rechten Maustaste auf **[!UICONTROL Link zur Visualisierung abrufen]**
+* Klicken Sie in einer Tabelle oder Visualisierungskopfzeile mit der rechten Maustaste auf **[!UICONTROL Visualisierungsverknüpfung abrufen]**
 
-[Video ansehen](https://www.youtube.com/watch?v=lvmAdKNfWQw) Informationen zum Erstellen von Links und deren Verwendung, um Empfänger zu bestimmten Teilen Ihres Projekts zu bewegen.
+[Sehen Sie sich dieses Video an](https://www.youtube.com/watch?v=lvmAdKNfWQw), um zu erfahren, wie Sie Verknüpfungen erstellen und Empfängern zum Abrufen bestimmter Teile Ihres Projekts bereitstellen können.
 
 ![](assets/get-viz-link.png)
 
-## Links in Inhaltsverzeichnissen verwenden {#TOC}
+## Verknüpfungen in Inhaltsverzeichnissen verwenden {#TOC}
 
-Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, immer ein Inhaltsverzeichnis am Anfang Ihres Workspace-Projekts einzufügen. Im Inhaltsverzeichnis können Sie Links zu anderen relevanten Projekten, spezifischen Bereichen und spezifischen Visualisierungen erstellen. Auf diese Weise wird der Empfänger des Projekts einfacher navigieren können.
+Ein Tipp für die Nutzung der verschiedenen Verknüpfungsoptionen: Verwenden Sie immer ein Inhaltsverzeichnis am Anfang Ihres Workspace-Projekts. Im Inhaltsverzeichnis können Sie Verknüpfungen zu anderen relevanten Projekten sowie spezifischen Bereichen und Visualisierungen erstellen. Dies ermöglicht dem Projektempfänger eine einfachere Navigation.
 
-[Video ansehen](https://www.youtube.com/watch?v=Xo6fTguWm-M) Informationen zum Erstellen eines Inhaltsverzeichnisses mithilfe von Links und dem Rich-Text-Editor von Workspace.
+[Sehen Sie sich dieses Video an](https://www.youtube.com/watch?v=Xo6fTguWm-M), um zu erfahren, wie Sie ein Inhaltsverzeichnis mit Verknüpfungen und dem Rich-Text-Editor von Workspace erstellen.
 
 ![](assets/toc.png)
