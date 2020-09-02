@@ -3,15 +3,19 @@ description: Verwenden Sie die Linienvisualisierung zur Darstellung von (zeitbas
 title: Linie
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
+source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 15%
+source-wordcount: '443'
+ht-degree: 20%
 
 ---
 
 
 # Linie
+
+>[!NOTE]
+>
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Die Linienvisualisierung stellt Metriken mithilfe einer Zeile dar, um zu zeigen, wie sich Werte über einen bestimmten Zeitraum ändern. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
 
@@ -35,7 +39,7 @@ In den [Visualisierungseinstellungen](freeform-analysis-visualizations.md) könn
 
 ## Min. oder Max. anzeigen
 
-under **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Min./Max. anzeigen]** können Sie eine Mindest- und Höchstwertebeschriftung überlagern, um die Spitzen und Täler in einer Metrik schnell hervorzuheben.
+under **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Min./Max. anzeigen]** können Sie eine Mindest- und Höchstwertebeschriftung überlagern, um die Spitzen und Täler in einer Metrik schnell hervorzuheben. Hinweis: Die Min/Max-Werte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.
 
 ![Min./Max. anzeigen](assets/min-max-labels.png)
 
@@ -48,7 +52,7 @@ under **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerun
 Alle Modelle passen mit den üblichen Minimalquadraten:
 
 | Modell | Beschreibung |
-|---|---|
+| --- | --- |
 | Linear | Erstellt eine am besten geeignete gerade Linie für einfache lineare Datensätze und ist nützlich, wenn die Daten mit einer konstanten Rate erhöht oder verringert werden. Gleichung: `y = a + b * x` |
 | Logarithmisch | Erstellt eine am besten passende gekrümmte Linie und ist nützlich, wenn die Änderungsrate in den Daten schnell zunimmt oder abnimmt und dann ausgeglichen wird. Eine logarithmische Trendlinie kann negative und positive Werte verwenden. Gleichung: `y = a + b * log(x)` |
 | Exponentiell | Erzeugt eine Kurven-Linie und ist nützlich, wenn die Daten in ständig steigenden Raten ansteigen oder fallen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten null oder negative Werte enthalten. Gleichung: `y = a + e^(b * x)` |
