@@ -2,10 +2,10 @@
 title: Aktualisierungen der CJA-Dokumentation
 description: 'Listen enthalten Inhaltsaktualisierungen für die seit Dezember 2019 festgelegte Dokumentation zum Customer Journey Analytics. '
 translation-type: tm+mt
-source-git-commit: deb34a4a836d10e4925dcced68c5949ea85ffc3f
+source-git-commit: 59c255d6428db7795cce507f9de7c3c67ea0c743
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 17%
+source-wordcount: '118'
+ht-degree: 16%
 
 ---
 
@@ -16,6 +16,7 @@ Die folgenden Aktualisierungen wurden von Anfang an an an der CJA-Dokumentation 
 
 | Datum | Beschreibung aktualisieren |
 | --- | --- |
+| 2. Sept. 2020 | Aktualisierter Abschnitt am [Benutzerberechtigungen](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions) |
 | 7. August 2020 | Neues Thema auf [B22-Anwendungsfall - Nachschlagedataset](/help/use-cases/b2b.md) hinzugefügt. |
 | Juli 2020 | Es wurden Informationen zu [Option &quot;Identitätszuordnung&quot;für Person-ID](https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-connections/create-connection.html#use-identity-map-as-a-person-id) |
 | Juli 2020 | Neues Thema auf [object-Arrays](/help/use-cases/object-arrays.md) oder &quot;Datenhierarchien&quot;hinzugefügt. |
