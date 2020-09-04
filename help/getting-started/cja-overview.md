@@ -2,7 +2,7 @@
 title: Überblick über Customer Journey Analytics
 description: Einführung in Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 14b2cbfde4fd76f76addba58d9c22939a00925a9
+source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 82%
@@ -61,7 +61,9 @@ Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie
    * Schemata anzeigen
    * Verwalten von Schemas
    * Anzeigen von Identitäts-Namensräumen
-   * Ansichten-Datensätze Weitere Informationen zu Berechtigungen für Experience Platformen finden Sie unter [Zugriffskontrolle in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+   * Datensätze anzeigen
+
+Weitere Informationen zu Berechtigungen für Experience Platformen finden Sie unter [Zugriffskontrolle in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### Benutzerzugriff
 
