@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Datumsbereiche | Die Unterstützung benutzerdefinierter Kalender ist geplant. |
 | Berechnete Metriken | Beachten Sie, dass vorhandene Berechnungsmetriken im herkömmlichen Analysis Workspace nicht auf CJA portiert werden. |
 | Segmente | Jetzt „Filter“ genannt. Beachten Sie, dass keine vorhandenen Segmente im traditionellen Analysis Workspace auf CJA portiert werden. |
-| Anomalieerkennung | Volle Unterstützung ab September 2020 |
+| Anomalieerkennung | Vollständige Unterstützung ab September 2020. |
 | Attribution IQ | Vollständige Unterstützung. |
 | Projektkuration | Vollständige Unterstützung. |
 | Projektverknüpfung | Vollständige Unterstützung. |
@@ -42,7 +42,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Visualisierungen | Alle Visualisierungen mit Ausnahme der Zuordnungsvisualisierung werden unterstützt. |
 | AAM-Audiences | Wenn Kunden [!UICONTROL Analytics-Connector]-Datensätze verwenden, sind diese Daten Teil der ADC-Daten. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
-| Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern, |
+| Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dies bedeutet, dass die gesamte Persistenz auf dem Berichtszeitraum und nicht auf der Gesamtheit der Daten basiert. |
 | Klassifizierungen | Jetzt als „Suchdatensätze“ bezeichnet, werden sie nicht automatisch aus der traditionellen Analytics importiert. Sie müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
 | Kundenattribute | Jetzt als „Profildatensätze“ bezeichnet, werden sie nicht automatisch aus Experience Cloud importiert, sondern müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
@@ -85,7 +85,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Report Builder (Excel-Plug-in) | Unterstützung ist noch nicht geplant. |
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Classification Rule Builder | Unterstützung ist noch nicht geplant. |
-| Zusammenfassungs-Data-Sources | Unterstützung ist noch nicht geplant. |
+| Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
 | Echtzeitberichterstellung | Unterstützung ist noch nicht geplant. |
 
 ## Keine Unterstützung geplant.
@@ -96,6 +96,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 * Reports &amp; Analytics-Zielgruppen
 * Reports &amp; Analytics-Kalenderereignisse
 * Ad Hoc Analysis
-* Data Warehouse Berichte - [!UICONTROL Experience Platform Abfrage Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein.
+* Data Warehouse Reporting: [!UICONTROL Experience Platform-Abfrage-Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein.
 * Mobile Services
 * Daten-Feeds
