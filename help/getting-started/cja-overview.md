@@ -1,11 +1,11 @@
 ---
 title: Überblick über Customer Journey Analytics
 description: Einführung in Customer Journey Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0e04957e5a89862731b0a5d2c1d880e4c90a17ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1215'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die erste Version von Customer Journey Analytics enthält viele der in Analysis 
 
 [Geräteübergreifende Analysen](https://docs.adobe.com/content/help/de-DE/analytics/components/cda/cda-home.html) lassen sich mit dem Adobe Experience Platform Identity-Dienst integrieren und verwenden entweder das Kooperationsdiagramm oder das private Diagramm, um zu ermitteln, wie digitale Geräte Personen zugeordnet werden. Sie sind für Adobe Analytics Ultimate-Kunden verfügbar.
 
-CJA hingegen ist mit Adobe Experience Platform-Datensätzen integriert und ermöglicht die Analyse über Kanal hinweg in Analysis Workspace. Obwohl CJA noch nicht in die Kooperations- oder privaten Identitätsdiagramme integriert ist, können Sie „Ihre eigene ID mitbringen“, um Datensätze zusammenzuführen, und diese Datensätze können über digitale Daten hinausgehen und sowohl Online- als auch Offline-Touchpoints enthalten. Die Voraussetzungen für CJA werden nachfolgend ausführlicher behandelt.
+CJA lässt sich dagegen mit Adobe Experience Platform-Datensätzen integrieren und ermöglicht die kanalübergreifende Analyse in Analysis Workspace. Obwohl CJA noch nicht in die Kooperations- oder privaten Identitätsdiagramme integriert ist, können Sie „Ihre eigene ID mitbringen“, um Datensätze zusammenzuführen, und diese Datensätze können über digitale Daten hinausgehen und sowohl Online- als auch Offline-Touchpoints enthalten. Die Voraussetzungen für CJA werden nachfolgend ausführlicher behandelt.
 
 ## Wichtige Anwendungsfälle
 
@@ -53,25 +53,25 @@ Bevor Sie Customer Journey Analytics verwenden können, müssen die folgenden Vo
 
 Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie die folgenden Berechtigungen in der [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* Ab dem 9. September 2020 müssen Sie als Administrator zu einem **Customer Journey Analytics Product Profil** im [Admin Console](https://adminconsole.adobe.com/enterprise/). Administratoren benötigen die folgenden Berechtigungen:
-   * Verbindungen oder Ansichten erstellen/aktualisieren/löschen
-   * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken oder von anderen Benutzern erstellten Segmenten
+* Ab 9. September 2020 gilt Folgendes: Um auf Customer Journey Analytics zuzugreifen oder eine Verbindung herzustellen, müssen Sie als Administrator einem **Customer Journey Analytics-Produktprofil** in der [Admin Console](https://adminconsole.adobe.com/enterprise/) hinzugefügt werden. Administratoren benötigen die folgenden Berechtigungen:
+   * Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten
+   * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken oder von durch andere Benutzer erstellte Segmenten
    * Freigeben eines Workspace-Projekts für alle Benutzer
-* Es reicht nicht aus, eine Verbindung zu erstellen, zu aktualisieren oder zu löschen, wenn Sie in Customer Journey Analytics Produktadministrator werden. Um eine Verbindung zu einem Dataset der Experience Platform herzustellen, benötigen Sie auch Experience Platformen. Insbesondere müssen Sie Teil eines **Experience Platform Product Profil** die Ihnen die folgenden Berechtigungen gewährt:
-   * Schemata anzeigen
-   * Verwalten von Schemas
-   * Anzeigen von Identitäts-Namensräumen
-   * Datensätze anzeigen
+* Wenn Sie in Customer Journey Analytics Produktadministrator werden, reicht dies nicht aus, um eine Verbindung zu erstellen, zu aktualisieren oder zu löschen. Um eine Verbindung zu einem Experience Platform-Datensatz herzustellen, benötigen Sie auch Experience Platform-Berechtigungen. Insbesondere müssen Sie Teil eines **Experience Platform-Produktprofils** ein, das Ihnen die folgenden Berechtigungen gewährt:
+   * Anzeigen von Schemata
+   * Verwalten von Schemata
+   * Anzeigen von Identitäts-Namespaces
+   * Anzeigen von Datensätzen
 
-Weitere Informationen zu Berechtigungen für Experience Platformen finden Sie unter [Zugriffskontrolle in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugangssteuerung in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### Benutzerzugriff
 
-Nicht-Administratoren (Benutzer) in Customer Journey Analytics können keine Ansicht von Data Ansichten oder Verbindungen durchführen, sondern Filter, Projekte und berechnete Metriken erstellen.
+Nicht-Administratoren (Benutzer) in Customer Journey Analytics können keine Datenansichten oder Verbindungen anzeigen, sie können aber Filter, Projekte und berechnete Metriken erstellen.
 
 ## Aktualisierungen der Terminologie
 
-Verschiedene Funktionen von CJA wurden im Vergleich zum herkömmlichen Adobe Analytics umbenannt, um sie an Branchenstandards anzupassen. Zu den aktualisierten Terminologie gehören:
+Verschiedene Funktionen von CJA wurden gegenüber dem herkömmlichen Adobe Analytics umbenannt, um sie an Branchenstandards anzupassen. Zur aktualisierten Terminologie gehören:
 
 * Segmente werden jetzt als Filter bezeichnet.
 * Virtual Report Suites werden jetzt als Ansichten bezeichnet.
@@ -83,7 +83,7 @@ Verschiedene Funktionen von CJA wurden im Vergleich zum herkömmlichen Adobe Ana
 
 ## Weitere auf Adobe Experience Platform basierende Funktionen
 
-Customer Journey Analytics ist eine von vielen Funktionen, die auf Adobe Experience Platform basieren. Einige andere Funktionen, die auch auf der Experience Platform basieren, ermöglichen es Ihnen, das Beste aus Ihren Daten zu machen.
+Customer Journey Analytics ist eine von vielen Funktionen, die auf Adobe Experience Platform basieren. Mehrere andere Funktionen, die ebenfalls auf Experience Platform basieren, ermöglichen die optimale Datennutzung.
 
 Mit Adobe Experience Platform können Sie Kundendaten und Inhalte aus beliebigen Systemen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern. Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html).
 
