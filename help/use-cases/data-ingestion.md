@@ -2,10 +2,10 @@
 title: Optionen zur Datenaufnahme für Customer Journey Analytics
 description: Verstehen Sie, wie Sie Daten auf verschiedene Weise in Customer Journey Analytics erfassen können.
 translation-type: tm+mt
-source-git-commit: 32dd6194ab2777652c3fb7df5fadd42395a0697d
+source-git-commit: a48ebc2fbd4cb43de4424e9c1805504752a44fce
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 31%
+source-wordcount: '481'
+ht-degree: 32%
 
 ---
 
@@ -31,27 +31,3 @@ Dieser Arbeitsablauf nutzt den Adobe Analytics Data Connector und variiert je na
 1. Verwendung [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/en/analytics/implementation/launch/overview.html) , um Code für die Datenerfassung auf Ihrer Site zu implementieren, falls noch nicht geschehen. Launch ist eine Tag-Management-Lösung, mit der Sie Analytics-Code zusammen mit anderen Tagging-Anforderungen bereitstellen können. Starten Sie Angebot-Integrationen mit anderen Lösungen und Produkten und können Sie benutzerdefinierten Code bereitstellen. Alle diese Aufgaben können ausgeführt werden, ohne dass Entwicklungsteams in Ihrer Organisation Code auf Ihrer Website aktualisieren müssen..
 1. Erstellen Sie eine [Adobe Analytics-Quellanschluss](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) in Adobe Experience Platform. Dieser Source Connector erfasst Ihre Analytics-Daten in einer standardisierten Umgebung mit dem Namen [Erlebnis-Datenmodell (XDM)-System](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html).
 1. Verwendung [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) , um eine oder mehrere Ansichten für Verbindungen und Daten zu erstellen, die Ihren Kanal-Berichte informieren.
-
-## Daten aus dem AEP Web SDK erfassen
-
-TBD
-
-### Über Experience Edge
-
-TBD
-
-### Über Start
-
-TBD
-
-## Stapelerfassung und Streaming-Erfassung
-
-TBD
-
-## Daten zu Google Analytics einbeziehen
-
-TBD
-
-## Daten über die Bulk Ingestion API erfassen
-
-TBD
