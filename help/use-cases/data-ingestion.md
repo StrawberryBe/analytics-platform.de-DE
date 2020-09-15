@@ -2,9 +2,9 @@
 title: Optionen zur Datenaufnahme für Customer Journey Analytics
 description: Verstehen Sie, wie Sie Daten auf verschiedene Weise in Customer Journey Analytics erfassen können.
 translation-type: tm+mt
-source-git-commit: a48ebc2fbd4cb43de4424e9c1805504752a44fce
+source-git-commit: 4ea06ca1f13255c570ccc9f69cb328d57bf975b2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '487'
 ht-degree: 32%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 32%
 
 # Optionen zur Datenaufnahme für Customer Journey Analytics
 
-Sie haben eine Reihe von Möglichkeiten, Daten in Customer Journey Analytics zu integrieren. Einige von ihnen gehen davon aus, dass Sie traditionelle Adobe Analytics-Daten verschieben möchten, andere gehen davon aus, dass Sie Daten direkt von Adobe Experience Platform erfassen. Dieser Verweis enthält allgemeine Schritte, die Sie ausführen müssen.
+Sie haben eine Reihe von Möglichkeiten, Daten in Customer Journey Analytics zu integrieren. Einige von ihnen gehen davon aus, dass Sie traditionelle Adobe Analytics-Daten verschieben möchten, andere gehen davon aus, dass Sie Daten direkt von Adobe Experience Platform erfassen. Dieser Verweis enthält allgemeine Schritte mit Links zu detaillierteren Informationen.
 
 ## Daten aus dem traditionellen Adobe Analytics erfassen
 
