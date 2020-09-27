@@ -1,16 +1,16 @@
 ---
-title: Dokumentation zu Customer Journey Analytics
+title: Handbuch für Customer Journey Analytics
 description: Landingpage von Customer Journey Analytics.
-translation-type: ht
-source-git-commit: 59c255d6428db7795cce507f9de7c3c67ea0c743
-workflow-type: ht
-source-wordcount: '288'
+translation-type: tm+mt
+source-git-commit: 8cf9f257ccf2afd830a7f8e211c8e42b3f786e86
+workflow-type: tm+mt
+source-wordcount: '286'
 ht-degree: 100%
 
 ---
 
 
-# Dokumentation zu Customer Journey Analytics
+# Handbuch für Customer Journey Analytics
 
 Diese technische Dokumentation bietet Hilfe zur Selbsthilfe für Customer Journey Analytics. Customer Journey Analytics ermöglicht es Ihnen, Kundendaten von beliebigen Kanälen – sowohl online als auch offline – in Adobe Experience Platform zusammenzuführen und genauso zu analysieren wie vorhandene digitale Daten mithilfe von Analysis Workspace.
 
