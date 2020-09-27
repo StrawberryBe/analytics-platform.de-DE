@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 47e4d06be87ef32d63a1003f5073d75f61d6f38d
+source-git-commit: 8cf9f257ccf2afd830a7f8e211c8e42b3f786e86
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 # Handbuch für Customer Journey Analytics {#using}
 
-+ [Dokumentation zu Customer Journey Analytics](getting-started/cja-landing.md)
++ [Handbuch für Customer Journey Analytics](getting-started/cja-landing.md)
 + Überblick über Customer Journey Analytics {#cja-overview}
    + [Überblick über Customer Journey Analytics](getting-started/cja-overview.md)
    + [Erste Schritte](getting-started/cja-getting-started.md)
