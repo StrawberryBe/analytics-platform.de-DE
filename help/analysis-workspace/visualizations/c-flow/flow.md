@@ -3,19 +3,15 @@ description: 'null'
 title: Flussübersicht
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 93%
 
 ---
 
 
 # Flussübersicht
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 Die neue Flussfunktion zeigt Kundenpfade durch Ihre Websites und Apps an.
 
@@ -29,7 +25,7 @@ Damit können Sie:
 >
 >Informationen dazu, wie sich die Ergebnisse bei der Anwendung von Segmenten auf den Fluss zwischen Analysis Workspace und Reports &amp; Analytics/Ad Hoc Analysis unterscheiden können, finden Sie unter [Segmentierung als Grundlage für Fluss und Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
-[Flussvisualisierung auf YouTube](https://www.youtube.com/watch?v=3R1HTM7y_RM&amp;index=55&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:56)
+[Videoschulung zur Flussvisualisierung](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
 ## Interdimensionale Flüsse {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
@@ -37,6 +33,6 @@ Sie können den [Fluss zwischen Dimensionen](/help/analysis-workspace/visualizat
 
 Jede Spalte könnte eine andere Dimension anzeigen. Ziehen Sie einen Dimension per Drag-and-Drop in eine Dropzone, um diese Dimension zum Diagramm hinzuzufügen.
 
-## Flussdiagramme als Teil von Projekt-CSV-Dateien exportieren {#section_BACD2639A0FC4C49A75398F7D0363D9D}
+## Flussdiagramme als Teil von Projekt-CSV-Dateien exportieren  {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
 Flussdiagramme sind Teil der .CSV-Datei eines Projekts, die Sie erstellen können, indem Sie **[!UICONTROL Projekt]** > **[!UICONTROL CSV herunterladen]** aufrufen. Dies ermöglicht es Ihnen, Flussergebnisse in Microsoft Excel (als Tabelle visualisiert) oder anderen Programmen zu analysieren.
