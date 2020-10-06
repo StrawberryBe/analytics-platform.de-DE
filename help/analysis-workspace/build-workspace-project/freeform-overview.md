@@ -5,19 +5,15 @@ title: Projekt erstellen – Übersicht
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 100%
+source-wordcount: '758'
+ht-degree: 84%
 
 ---
 
 
 # Projekt erstellen – Übersicht
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
@@ -27,7 +23,7 @@ Analysis Workspace bietet Ihnen komplett neue Möglichkeiten zum Vergleich und z
 
 Die Abfrage erfolgt direkt an die Berichts-Engine. Sie können Änderungen inline durchführen, ohne andere Berichte aufzurufen, um Ihre Analyse zu erstellen. Die Ergebnisse sind sofort sichtbar, ohne Browseraktualisierung.
 
-## Workspace -Seite mit Projektliste {#section_39AA007D7C384F4E869F842F1C7B11F8}
+## Workspace -Seite mit Projektliste  {#section_39AA007D7C384F4E869F842F1C7B11F8}
 
 Wenn Sie **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** erstmalig aufrufen, werden auf der Seite alle Projekte aufgeführt, die Ihnen gehören oder zu denen Ihnen Zugriff gewährt wurde. Sie können diese Seite als Startseite für Adobe Analytics festlegen, indem Sie auf **[!UICONTROL Als Landingpage festlegen]** klicken. (Wenn die Option wie im unten stehenden Screenshot nicht angezeigt wird, ist die Seite bereits Ihre Landingpage.)
 
@@ -37,18 +33,22 @@ Die Workspace -Seite mit Projektliste umfasst die folgenden Informationen:
 
 | Element | Beschreibung |
 |---|---|
-| Projekt [Vorlagen](/help/analysis-workspace/build-workspace-project/starter-projects.md) | Sie können diese fertig ausgefüllten Projektvorlagen unverändert übernehmen oder an Ihre spezifischen Anforderungen anpassen (indem Sie beispielsweise Metriken oder Visualisierungen hinzufügen oder austauschen) und dann unter einem neuen Namen speichern. |
-| [Neues Projekt erstellen](/help/analysis-workspace/home.md) | Klicken Sie auf diesen Link, um ein neues Projekt von Grund auf zu erstellen. |
+| Neues Projekt erstellen | Klicken Sie auf diesen Link, um [beginn eines neuen Projekts von Grund auf](/help/analysis-workspace/home.md). |
 | Projekte verwalten | Wenn Sie auf diesen Link klicken, wird der Projektkomponentenmanager aufgerufen (**[!UICONTROL Analytics]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Projekte]**). Dort sind all Ihre Projekte aufgeführt und Sie können Projekte taggen, freigeben, löschen, umbenennen, genehmigen, kopieren und in CSV exportieren. |
-| Tutorials anzeigen | Sie gelangen zu den [YouTube-Videos für Analysis Workspace](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS). |
+| Als Landingpage festlegen | Wandelt diese Seite in Ihre Workspace-Landingpage um. |
+| Tutorials anzeigen | Führt Sie zum [Analysis Workspace-Videolehrgänge](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html). |
 | Name | Name des Workspace-Projekts. |
-| Erstellt von | Die Person, die dieses Projekt erstellt hat (entweder Sie oder eine Person, die das Projekt für Sie freigegeben hat). |
-| Tags | Auf das Projekt angewendete Tags, entweder im Projektkomponentenmanager oder unter **[!UICONTROL Arbeitsbereich]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**. |
+| Inhaber | Die Person, die dieses Projekt erstellt hat (entweder Sie oder eine Person, die das Projekt für Sie freigegeben hat). |
+| Typ | Gibt an, ob es sich um ein Workspace-Projekt oder um ein [Mobile Scorecard](https://docs.adobe.com/content/help/de-DE/analytics/analyze/mobapp/home.html). |
+| Projektrolle | Gibt an, ob Sie der Eigentümer des Projekts sind, ob Sie das Projekt bearbeiten können oder ob es sich um ein Duplikat-Projekt handelt. |
+| Tags | Auf das Projekt angewendete Tags, entweder im Projektkomponentenmanager oder unter **[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**. |
 | Zuletzt geändert | Datum und Zeitpunkt der letzten Änderung des Projekts. |
+| Meine Lieblingsprojekte | Um ein Projekt als Favoriten zu markieren, öffnen Sie das Projekt und klicken Sie auf den Stern neben seinem Namen. Es wird in dieser Liste angezeigt, wenn Sie Workspace das nächste Mal öffnen. |
+| Häufig angezeigte Projekte | Liste aller häufig geöffneten Projekte, um den Zugriff zu erleichtern. |
 
 ## Projektinfo und Einstellungen {#section_63773D0B9E4543E88068ECECB9EEB4C6}
 
-**[!UICONTROL Arbeitsbereich]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**
+**[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**
 
 ![](assets/projectinfo.png)
 
@@ -56,7 +56,7 @@ Die Workspace -Seite mit Projektliste umfasst die folgenden Informationen:
 
 | Einstellung | Beschreibung |
 |---|---|
-| Projekt Name | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
+| Projekt  Name | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
 | Erstellt von | Name des Projektinhabers. |
 | Zuletzt geändert | Das Datum, an dem die letzte Änderung an dem Projekt vorgenommen wurde. |
 | Tags | Zeigt eine Liste aller Tags an, die auf ein Projekt angewendet wurden, um die Kategorisierung zu vereinfachen. Sie können Projekte beim Speichern auch taggen. Die Tags eines Projekts können Sie auf der Workspace-Landingpage in der Spalte [!UICONTROL Tags] einsehen. |
@@ -77,7 +77,7 @@ Die Untermenüs enthalten die folgenden Optionen.
 >
 >Mit einem Sternchen (*) markierte Optionen werden nur bei **gespeicherten** Projekten angezeigt.
 
-| Projekt | Vorlage | Einfügen | Komponenten | Freigabe | Hilfe |
+| Projekt | Vorlage | Einfügen | Komponenten | Freigeben | Hilfe |
 |---|---|---|---|---|---|
 | Neu | Rückgängig | Neues Bedienfeld | Neues Segment | Projekt freigeben | Videos |
 | Öffnen | Leeren | Neues Freiformfeld | Neue Metrik | Projektverknüpfung abrufen* | Tastaturbefehle |
@@ -89,7 +89,7 @@ Die Untermenüs enthalten die folgenden Optionen.
 | PDF herunterladen* |  |  |  |  |  |
 | Projektinfo und Einstellungen |  |  |  |  |  |
 
-## Linke Leiste {#section_271295C26EC840ABB2A8E7EC0498B60E}
+## Linke Leiste  {#section_271295C26EC840ABB2A8E7EC0498B60E}
 
 Die linke Leiste enthält 3 Symbole, über die Sie mit einem Klick auf Bedienfelder, [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) und [Komponenten](/help/components/overview.md) (Dimensionen, Metriken, Segmente, Datenbereiche) zugreifen können:
 
