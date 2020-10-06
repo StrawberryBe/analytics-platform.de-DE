@@ -2,10 +2,10 @@
 title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 38%
+source-wordcount: '372'
+ht-degree: 33%
 
 ---
 
@@ -46,4 +46,4 @@ Es gibt verschiedene weitere Methoden zum Anwenden von Filtern auf ein Projekt:
 | Filter aus Auswahl erstellen | Erstellen Sie einen Inline-Filter. Wählen Sie Zeilen aus, klicken Sie mit der rechten Maustaste auf die Auswahl und erstellen Sie dann einen Inline-Filter. Dieser Filter gilt nur für das geöffnete Projekt und wird nicht als CJA-Filter gespeichert. 1. Zeilen auswählen.  2. Rechtsklick auf die Auswahl.  3. Klicken *Filter aus Auswahl erstellen*. |
 | Komponenten > Neuer Filter | Zeigt den Filter-Builder an. Siehe [Filter Builder](https://docs.adobe.com/content/help/de-DE/analytics/components/segmentation/segmentation-workflow/seg-build.html) für weitere Informationen zum Filtern. |
 | „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Kuratieren und Freigeben](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), erfahren Sie, wie Filter, die Sie auf das Projekt anwenden, in der freigegebenen Analyse für den Empfänger verfügbar sind. |
-| Filter als Dimensionen verwenden | Video: [Verwenden von Segmenten als Dimensionen in Analysis Workspace](https://www.youtube.com/watch?v=WmSdReKTWto&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=39) |
+| Filter als Dimensionen verwenden | Video: Filter als Dimensionen in Analysis Workspace verwenden<br>>[!VIDEO](https://video.tv.adobe.com/v/23974) |
