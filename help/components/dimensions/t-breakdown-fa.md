@@ -5,10 +5,10 @@ title: Dimensionen aufschlüsseln
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: cee89d021e9cd034246fe9367bc8910dac7ca7cf
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 94%
+source-wordcount: '232'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Schlüsseln Sie Dimensionen und Dimensionselemente in Analysis Workspace auf.
 
@@ -28,15 +28,19 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 
    ![Ergebnis des Schritts](assets/fa_data_table_actions.png)
 
-   Sie können Metriken über ausgewählte Zeiträume nach Dimensionselementen oder Audiencen unterteilen. Sie können auch noch granularer aufschlüsseln.
+   Sie können Metriken nach Dimensionselementen oder Zielgruppensegmenten über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
 
    >[!NOTE]
    >
    >Die Anzahl der in der Tabelle angezeigten Aufschlüsselungen ist auf 200 beschränkt. Für das Exportieren von Aufschlüsselungen ist diese Einschränkung höher.
 
-[Dimensionen in Analysis Workspace auf YouTube](https://www.youtube.com/watch?v=P9W0hhIHhCs&amp;index=12&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:54)
+**Video: Dimensionen in Analysis Workspace**
 
-[Dimensionsaufschlüsselungen auf YouTube](https://www.youtube.com/watch?v=3mQ2HN7-lIc&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=13) (2:02)
+>[!VIDEO](https://video.tv.adobe.com/v/23971)
+
+**Video: Aufschlüsselungen der Dimensionen**
+
+>[!VIDEO](https://video.tv.adobe.com/v/23969)
 
 ## Attributionsmodelle auf Aufschlüsselungen anwenden
 
