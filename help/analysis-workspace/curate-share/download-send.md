@@ -3,10 +3,10 @@ description: Sie können Daten von Analysis Workspace herunterladen, indem Sie s
 title: PDF- oder CSV-Dateien herunterladen
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 23856a744ce66ac03656d84f72b4bce4cdef253a
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 11%
+source-wordcount: '1043'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Es gibt verschiedene Möglichkeiten, Daten aus Analysis Workspace zu exportieren, je nachdem, welcher Datensatz außerhalb des Tools analysiert werden soll und wer die Informationen erhalten muss. Exportierte Daten können in Form kopierter Daten, CSV- oder PDF-Dateien vorliegen. Eine PDF-Datei wird in der Regel bevorzugt, wenn Sie in der Datei enthaltene Visualisierungen verwenden möchten, während eine CSV-Datei (oder kopierte Daten) bevorzugt wird, wenn Sie einfach Daten im Klartext benötigen.
 
@@ -31,7 +31,7 @@ Sie können ein vollständiges Projekt herunterladen, indem Sie **[!UICONTROL Pr
 
 Beachten Sie beim Herunterladen von Projekten Folgendes:
 
-* Das Projekt kann gespeichert oder nicht gespeichert werden, wenn Sie einen Projektdownload anfordern. Es können jedoch nur gespeicherte Projekte [geplant](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
+* Das Projekt kann gespeichert oder nicht gespeichert werden, wenn Sie einen Projektdownload anfordern. Es können jedoch nur gespeicherte Projekte [geplant](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
 * Der Export von im Browser heruntergeladenen PDF-Dateien kann mehrere Minuten dauern, da das Projekt auf den Adoben-Servern erneut ausgeführt wird, bevor es im PDF-Format wiedergegeben wird. Wir empfehlen, das Projekt nicht zu verlassen, bis die PDF-Datei in Ihren Browser heruntergeladen wurde. Sie können jedoch beim Warten weiterhin Änderungen am Projekt vornehmen. Wenn die Wiedergabe einer PDF-Datei länger als 5 Minuten dauert, werden Sie aufgefordert, stattdessen eine E-Mail-Nachricht zu senden.
 * PDF-Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
 * Wenn ein Projekt als PDF wiedergegeben wird, wird das gerendert, was sich auf der Seite befindet. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
@@ -96,5 +96,6 @@ Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachricht
 | --- | --- |
 | Warum ist meine heruntergeladene PDF-Datei eine Seite? | In Workspace werden heruntergeladene PDFs derzeit nicht paginiert. |
 | Kann ich mehr als 50.000 Elemente mit der Option &quot;Elemente als CSV herunterladen&quot;exportieren? | Während jeder Download bis zu 50.000 Dimensionselemente enthalten kann, können Sie die Art der Tabelle ändern, um längere Endelemente abzurufen, oder einen Filter anwenden, um spezifischere Elemente herunterzuladen. |
-| Was macht **[!UICONTROL Visualisierung kopieren]** do? | **[!UICONTROL Visualisierung kopieren]** ist keine Exportoption. Damit können Sie eine Visualisierung oder einen Bereich von einem Ort in Workspace an einen anderen kopieren. Beispielsweise von einem Bereich zum anderen im selben Projekt oder von einem Projekt zu einem anderen. [Video ansehen](https://www.youtube.com/watch?v=lvmAdKNfWQw) |
+| Was macht **[!UICONTROL Visualisierung kopieren]** do? | **[!UICONTROL Visualisierung kopieren]** ist keine Exportoption. Damit können Sie eine Visualisierung oder einen Bereich von einem Ort in Workspace an einen anderen kopieren. Beispielsweise von einem Bereich zum anderen im selben Projekt oder von einem Projekt zu einem anderen. Sehen Sie sich das Video an: |
 
+>[!VIDEO](https://video.tv.adobe.com/v/23724)
