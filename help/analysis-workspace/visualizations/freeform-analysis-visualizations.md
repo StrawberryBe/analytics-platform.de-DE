@@ -3,38 +3,34 @@ description: Weitere Informationen zu Visualisierungen und Visualisierungseinste
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 98%
+source-wordcount: '1046'
+ht-degree: 95%
 
 ---
 
 
 # Visualisierungsübersicht
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
-
 Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Klicken Sie auf den Namen der Visualisierung, um weitere Informationen anzuzeigen.
 
-YouTube-Video: [Visualisierungstypen in Analysis Workspace](https://www.youtube.com/watch?v=b1zLEywRa6w&amp;index=39&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:57)
+Video-Lernprogramm: [Visualisierungstypen in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
 
 | Name der Visualisierung | Beschreibung |
-|---|---|
-| [Bereich](/help/analysis-workspace/visualizations/area.md) | entspricht einem Kantengraphen, bei dem der Bereich unter der Linie farbig dargestellt ist. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
+| --- | --- |
+| [Bereich](/help/analysis-workspace/visualizations/area.md) | Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
 | [Balken](/help/analysis-workspace/visualizations/bar.md) | zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) | zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
-| [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die Kohortenanalyse ist z. B. dann nützlich, wenn Sie wissen möchten, wie eine Kohorte mit einer Marke interagiert. Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. |
+| [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine Kohorte ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die Kohortenanalyse ist z. B. dann nützlich, wenn Sie wissen möchten, wie eine Kohorte mit einer Marke interagiert. Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. |
 | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile oder Segmente eines Ganzen. |
 | [Trichteranalyse](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben (wo sie „ausgefallen“ sind) und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). |
 | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Zeigt Kundenpfade durch Ihre Websites und Apps. |
 | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table.md) | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. |
-| [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu Bereichen („Pakete“) zusammen. |
+| [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu Bereichen (Behältern) zusammen. |
 | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Linie](/help/analysis-workspace/visualizations/line.md) | stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird. |
-| [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) | Zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
+| [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) | zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
 | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | Je nachdem, welche Zelle ausgewählt ist, zeigt diese Visualisierung die Summen und Zusammenfassungen an. |
 | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Je nachdem, welche Zellen ausgewählt sind, werden bei dieser Visualisierung Zellen miteinander verglichen. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. |
@@ -43,7 +39,7 @@ YouTube-Video: [Visualisierungstypen in Analysis Workspace](https://www.youtube.
 
 ## Visualisierungsbereich {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-Klicken Sie im seitlichen Bedienfeld auf **[!UICONTROL Visualisierungen]**, um den Visualisierungsbereich zu öffnen.
+Klicken Sie zum Anzeigen des Visualisierungs-Bedienfelds auf **[!UICONTROL Visualisierungen]** in der linken Leiste.
 
 ![Schritt Ergebnis](assets/visualizations.png)
 
@@ -60,10 +56,10 @@ Um auf die [!UICONTROL Visualisierungseinstellungen] zuzugreifen, ziehen Sie ein
 ![](assets/visualization_settings.png)
 
 | Einstellung | Beschreibung |
-|--- |--- |
+| --- | --- |
 | Prozentsatz | Zeigt Werte als Prozentzahlen an. |
-| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in zu „100 % gestapelte“ Visualisierungen um. Beispiel: ![](assets/stacked_100_percent.png) |
-| Legende eingeblendet | Hiermit können Sie den Text zu Filterdetails für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |
+| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in zu „100 % gestapelte“ Visualisierungen um. Beispiel:  ![](assets/stacked_100_percent.png) |
+| Legende sichtbar | Hiermit können Sie den Text zu Filterdetails für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |
 | Grenzwert für max. Anzahl Elemente | Hiermit können Sie die Anzahl der Elemente begrenzen, die in einer Visualisierung angezeigt werden. |
 | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
 | Normalisierung | Erzwingt Metriken für gleiche Anteile. |
@@ -83,7 +79,7 @@ Auf Einstellungen, die sich auf eine Grafik beziehen, können Sie per Rechtsklic
 ![](assets/right-click_menu.png)
 
 | Einstellung | Beschreibung |
-|--- |--- |
+| --- | --- |
 | Kopierte Visualisierung/Kopiertes Feld einfügen | Sie können das kopierte Element an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen. |
 | Visualisierung/Fenster kopieren | Sie können per Rechtsklick eine Visualisierung oder ein Fenster kopieren. |
 | Visualisierung/Fenster duplizieren | Fertigt ein exaktes Duplikat der aktuellen Visualisierung an, das Sie dann bearbeiten können. |
@@ -112,4 +108,4 @@ Wenn Sie beispielsweise eine Legendenbeschriftung für ein Liniendiagramm bearbe
 1. Geben Sie den neuen Beschriftungstext ein.
 1. Drücken Sie zum Speichern die **[!UICONTROL Eingabetaste]**.
 
-Hier finden Sie einen [Link zu einem Video](https://www.youtube.com/watch?v=mry3vDrTml0&amp;index=61&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) zu diesem Thema.
+Hier finden Sie einen [Link zu einem Video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) zu diesem Thema.
