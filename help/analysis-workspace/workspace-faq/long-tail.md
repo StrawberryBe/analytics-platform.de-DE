@@ -2,7 +2,7 @@
 title: Längs-Enddimensionselement
 description: Erläutert das Dimensionselement "Long Tail"und warum es in Berichte angezeigt wird.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -30,7 +30,7 @@ In CJA werden Dimensionselemente nur dann in &quot;Long Tail&quot;eingefügt, we
 
 Wenn Sie das Dimensionselement &quot;Langzeit-Tail&quot;reduzieren möchten, empfiehlt Adobe Folgendes:
 
-* Verwenden Sie ein Segment. Segmente werden angewendet, wenn jeder Server eine Teilmenge von Daten verarbeitet. Wenn Sie die Anzahl der eindeutigen Werte, die sie zurückgeben, begrenzen, wird das Dimensionselement &quot;Langzeit-Zahl&quot;reduziert.
+* Verwenden Sie einen Filter. Filter werden angewendet, wenn jeder Server eine Teilmenge der Daten verarbeitet. Wenn Sie die Anzahl der eindeutigen Werte, die sie zurückgeben, begrenzen, wird das Dimensionselement &quot;Langzeit-Zahl&quot;reduziert.
 * Verwenden Sie eine Dimension für den Nachschlagedataset. Suchdatenaset-Dimensionen kombinieren Ereignis-Dataset-Dimensionselemente, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
 
 Insgesamt ist es schwierig, einen Bericht zu verwenden, der mehr als 500 K einzigartige Dimensionselemente enthält. Wenn Sie ein Segment oder eine Nachschlagedataset-Dimension anwenden, können Sie das Vorhandensein von &quot;Long Tail&quot;reduzieren, während Sie Ihren Bericht benutzerfreundlicher gestalten. Die Adobe plant, diese Erfahrung zu verbessern, da die CJA weiter entwickelt wird.
