@@ -2,10 +2,10 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 translation-type: tm+mt
-source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
+source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 99%
+source-wordcount: '885'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Filter können auf Attributen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Ge
 Sie können Filter im Filtergenerator erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter zusammen als gestapelte Filter verwendet werden.
 
 >[!IMPORTANT]
->Filter werden in Adobe Analytics als „Segmente“ bezeichnet. Wir haben Segmente in Filter umbenannt, da Adobe Experience Platform eine andere Definition von „Segment“ verwendet. 
+>Filter werden in Adobe Analytics als „Segmente“ bezeichnet. Segmente wurden in Filter umbenannt, da Adobe Experience Platform [eine andere Definition von &quot;Segment&quot;](https://docs.adobe.com/content/help/de-DE/experience-platform/segmentation/home.html).
 
 Die Filterung umfasst den [Filtergenerator](/help/components/filters/create-filters.md) zum Aufbau von Filtern und zur Ausführung eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zur Erfassung, Kennzeichnung, Freigabe, Sicherheitseinstellung und Weitergabe von Filtern in Ihrer Organisation.
 
@@ -32,7 +32,7 @@ Siehe folgendes Beispiel:
 ![](assets/sequential_fil.png)
 
 | Erster Besuch | Zweiter Besuch | Dritter Besuch |
-|---|---|---|
+| --- | --- | --- |
 | Der Besucher besuchte die Haupt-Landingpage (A), schloss die Kampagnenseite (B) aus und sah sich dann die Produktseite (C) an. | Der Besucher besuchte die Haupt-Landingpage (A) erneut, schloss die Kampagnenseite (B) aus, besuchte erneut die Produktseite (C) und dann eine neue Seite (D). | Der Besucher folgte demselben Weg wie beim ersten und zweiten Besuch, schloss dann die Seite (F) aus, um direkt zu einer Targeting-Produktseite (G) zu wechseln. |
 
 ## Filter-Container
@@ -52,9 +52,7 @@ Der Personen-Container enthält sämtliche Besuche und Seitenansichten für Besu
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf eines Besuchers basieren:
 
 * Tage bis Erstkauf
-
 * Ursprüngliche Entrypage
-
 * Ursprünglich Referrerdomänen
 
 ### Sitzungs-Container
@@ -62,19 +60,14 @@ Personen-Container können Werte enthalten, die auf dem Gesamtverlauf eines Besu
 Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Sitzungs-Container ist der am häufigsten verwendete Behälter, da er die Verhaltensweisen der gesamten Besuchssitzung erfasst, sobald die Regel erfüllt wird, und Ihnen die Möglichkeit gibt, zu definieren, welche Sitzungen ein- oder ausgeschlossen werden sollen, indem Sie ein Segment erstellen und anwenden. Er kann Ihnen bei der Beantwortung dieser Fragen helfen:
 
 * Wie viele Besucher haben die Bereiche „Nachrichten“ und „Sport“ in derselben Sitzung angesehen?
-
 * Welche Seiten haben zu einer erfolgreichen Konversion in einem Verkauf beigetragen?
 
 Sitzungs-Container enthalten Werte, die auf dem Auftreten pro Sitzung basieren:
 
 * Sitzungsnummer
-
 * Entrypage
-
 * Rückkehrhäufigkeit
-
 * Beitragsmetriken
-
 * Linear zugeordnete Metriken
 
 ### Ereignis-Container
@@ -84,9 +77,6 @@ Der Ereignis-Container definiert, welche Seitenereignisse von einem Filter einge
 Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
 * Produkte
-
 * Listen-Props
-
 * Listendimensionen
-
 * Merchandising-Dimensionen (im Kontext von Ereignissen)
