@@ -2,10 +2,10 @@
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
 translation-type: tm+mt
-source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 100%
+source-wordcount: '343'
+ht-degree: 97%
 
 ---
 
@@ -47,8 +47,9 @@ Sie können Komponenten (separat oder mehrere gleichzeitig) auf verschiedene Wei
 | Tag | Organisieren oder verwalten Sie Komponenten, indem Sie Tags darauf anwenden. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise „Analysen“ > „Komponenten“ > „Segmente“ oder „Analysen“ > „Komponenten“ > „Projekte“. |
 | Favorit | Fügen Sie die Komponente Ihrer Favoritenliste hinzu. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise „Analysen“ > „Komponenten“ > „Segmente“ oder „Analysen“ > „Komponenten“ > „Projekte“. |
 | Genehmigen | Genehmigen Sie die Komponente, um sie zu autorisieren. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise „Analysen“ > „Komponenten“ > „Segmente“ oder „Analysen“ > „Komponenten“ > „Projekte“. |
-| Freigabe | Gilt nur für Segmente. |
+| Freigeben | Gilt nur für Segmente. |
 | Löschen | Gilt nur für Segmente. |
 
-[Erstellen von Metriken, Segmenten und Daten auf YouTube](https://www.youtube.com/watch?v=XXJuNAte8E8&amp;index=25&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
+Sehen Sie sich das Video zum Erstellen von Metriken, Segmenten und Daten an:
 
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
