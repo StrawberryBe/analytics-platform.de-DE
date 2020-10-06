@@ -3,25 +3,21 @@ description: 'null'
 title: Paginierung, Filtern und Sortieren von Tabellen
 uuid: 53263cec-c378-459b-9689-6adaeb66e5c9
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '92'
+ht-degree: 81%
 
 ---
 
 
 # Paginierung, Filtern und Sortieren von Tabellen
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+Eine Übersicht finden Sie in diesem Video-Lernprogramm:
 
-Mit diesem Video auf YouTube können Sie sich einen Überblick verschaffen:
+[Paginierung, Filtern und Sortieren von Tabellen in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
-[Paginierung, Filtern und Sortieren von Tabellen in Analysis Workspace](https://www.youtube.com/watch?v=2zxpRPCGspg)
-
-## Erweiterte Filteroptionen
+## Erweiterte Filteroptionen {#section_36E92E31442B4EBCB052073590C1F025}
 
 Wenn Sie auf das Filtersymbol und anschließend neben einer Dimension in einer Freiformtabelle auf „Erweiterte Optionen anzeigen“ klicken, können Sie nach folgenden Kriterien filtern:
 
