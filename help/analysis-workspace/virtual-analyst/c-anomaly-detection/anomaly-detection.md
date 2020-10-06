@@ -3,23 +3,19 @@ description: Datenanomalien können kontextbezogen in Analysis Workspace angeze
 title: Übersicht über die Anomalieerkennung
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 96%
+source-wordcount: '184'
+ht-degree: 92%
 
 ---
 
 
 # Übersicht über die Anomalieerkennung
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
-
 Datenanomalien können kontextbezogen in Analysis Workspace angezeigt und analysiert werden.
 
-[Anomalieerkennung auf YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&amp;index=63&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
+[Videoschulung zur Anomalieerkennung](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
 
 Die Anomalieerkennung bietet eine statistische Methode, mit der festgestellt wird, wie sich eine bestimmte Metrik in Bezug auf frühere Daten verändert hat.
 
@@ -34,19 +30,7 @@ Zu Beispielen von Fehlern, die ein Eingreifen Ihrerseits erfordern, zählen:
 * Spitzen in Videopufferereignissen
 * Spitzen in niedrigen Video-Bitraten
 
-Sowohl die Anomalieerkennung als auch die [Beitragsanalyse](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) sind zentrale Workflows in Analysis Workspace. Sie können Beitragsanalysen zu jeder beliebigen täglichen Anomalie ausführen und das Ergebnis in Ihr Analysis Workspace-Projekt einbetten.
-
->[!IMPORTANT]
->
->Die Analyse des Beitrags ist in Customer Journey Analytics noch nicht verfügbar.
-
 Der Algorithmus der Analysis Workspace-Anomalieerkennung umfasst:
 
 * Unterstützung für die Einstellungen „Stündlich“, „Wöchentlich“ und „Monatlich“ (zusätzlich zur vorhandenen Einstellung „Täglich“)
 * Berücksichtigung von besonderen Tagen (wie z. B. Black Friday) und Feiertagen
-
-## Anomalieerkennung deaktivieren
-
-Sie können die Anomalieerkennung auf Spaltenebene ausschalten, indem Sie in die Spalteneinstellungen wechseln und das Kontrollkästchen **[!UICONTROL Anomalien]** deaktivieren.
-
-![](assets/turnoff_anomalies.png)
