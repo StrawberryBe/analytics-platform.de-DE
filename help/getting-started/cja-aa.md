@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: ht
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: ht
-source-wordcount: '879'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Datumsbereiche | Die Unterstützung benutzerdefinierter Kalender ist geplant. |
 | Berechnete Metriken | Beachten Sie, dass vorhandene Berechnungsmetriken im herkömmlichen Analysis Workspace nicht auf CJA portiert werden. |
 | Segmente | Jetzt „Filter“ genannt. Beachten Sie, dass keine vorhandenen Segmente im traditionellen Analysis Workspace auf CJA portiert werden. |
-| Anomalieerkennung | Vollständige Unterstützung ab September 2020. |
+| Anomalieerkennung | Vollständige Unterstützung. |
 | Attribution IQ | Vollständige Unterstützung. |
 | Projektkuration | Vollständige Unterstützung. |
 | Projektverknüpfung | Vollständige Unterstützung. |
@@ -33,6 +33,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Kuration von VRS-Komponenten | Jetzt Teil der Datenansichten. |
 | Berichtszeitverarbeitung | CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
 | DSGVO-Löschung | Beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Experience Platform] gehandhabt wird. CJA erbt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
+| Benutzerberechtigungen/Datenzugangssteuerung | CJA unterscheidet zwischen Produktadministratoren und Anwendern von Adobe Admin Console. Nur Produktadministratoren können 1) Verbindungen oder Data Ansichten erstellen/aktualisieren/löschen, 2) Projekte, Filter oder Berechnungsmetriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen und 3) ein Workspace-Projekt für alle Benutzer freigeben |
 
 ## Mit Einschränkungen unterstützt
 
@@ -52,7 +53,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Vordefinierte Analysis Workspace-Dimensionen (z. B. Browser-Typ, Referrer-Typ, Marketing-Kanäle, Besuchsnummer usw.) | CJA stellt diese Dimensionen nicht nativ bereit. Für Kunden, die Analytics Data Connector (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
+| Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder &quot;Segmentvergleich&quot;, &quot;Analytics für Zielgruppe&quot;(A4T) und &quot;Media Concurrent Viewers&quot;werden nicht unterstützt. |
 | Merchandising-eVars | Merchandising-eVars funktionieren nur mit ADC-basierten Datensätzen, es sei denn, sie entsprechen genau demselben XDM-Schema (ähnlich den oben genannten Einschränkungen der Produktliste). |
 | Bot-Filterung | Bei Analytics Data Connector (ADC)-basierten Datensätzen wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
 | Verarbeitungsregeln | Bei ADC-basierten Datensätzen werden weiterhin Verarbeitungsregeln angewendet. |
@@ -65,7 +66,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Beitragsanalyse | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
 | Segmentveröffentlichung (Senden von Segmenten aus Workspace an Experience Cloud) | Unterstützung ist geplant. |
-| Benutzerberechtigungen/Datenzugangssteuerung | Für alle CJA-Benutzer gilt dieselbe Zugangssteuerung. Das bedeutet, dass alle Benutzer Zugriff auf alle Verbindungen, Datenansichten usw. haben. Grundsätzlich sind alle Benutzer in CJA Administratoren. Die Unterstützung ist für 2020 geplant. |
 | CSV-Download | Unterstützung ist geplant. |
 | Terminierte Berichte/Projekte | Unterstützung ist geplant. |
 | Warnhinweise | Unterstützung ist geplant. |
