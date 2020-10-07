@@ -3,9 +3,9 @@ description: Faktoren, die sich auf die Leistung von Workspace und empfohlene Op
 title: Leistungsfaktoren und Optimierung von Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2028'
 ht-degree: 20%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 20%
 
 Verschiedene Faktoren können die Leistung eines Projekts in Analysis Workspace beeinflussen. Es ist wichtig zu wissen, was diese Mitarbeiter leisten, bevor Sie ein Projekt erstellen, damit Sie das Projekt optimal planen und erstellen können. Auf dieser Seite finden Sie eine Liste von Faktoren, die sich auf die Leistung auswirken und empfohlene Optimierungen, die Sie vornehmen können, um eine Spitzenleistung in Analysis Workspace sicherzustellen.
 
->[!IMPORTANT HINWEIS]
+>[!IMPORTANT]
 >
 >Die Seite &quot;Leistung&quot;in Analysis Workspace ist in limitierter Version verfügbar. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
 
