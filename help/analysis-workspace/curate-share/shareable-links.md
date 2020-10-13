@@ -2,11 +2,11 @@
 description: Erfahren Sie, wie Sie freigebbare Links zu Projekten oder Visualisierungen erstellen.
 keywords: Analysis Workspace sharing
 title: Erstellen von freigebbaren Links
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer f
 
 ## Projekt-Link abrufen {#project-link}
 
-Um einen Link zum vollständigen Projekt freizugeben, klicken Sie auf **[!UICONTROL Freigeben > Projekt-Link abrufen]**. Wenn dem Empfänger des Links keine [Projektrolle](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/share-projects.html)zugewiesen wurde, erhalten Administratoren **[!UICONTROL Kann bearbeiten]**- und Nicht-Administratoren erhalten **[!UICONTROL Kann duplizieren]**-Erlebnisse.
+Um einen Link zum vollständigen Projekt freizugeben, klicken Sie auf **[!UICONTROL Freigeben > Projekt-Link abrufen]**. Wenn dem Empfänger des Links keine [Projektrolle](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/share-projects.html) zugewiesen wurde, erhalten Administratoren **[!UICONTROL Kann bearbeiten]**- und Nicht-Administratoren erhalten **[!UICONTROL Kann duplizieren]**-Erlebnisse.
 
 ![](assets/get-project-link.png)
 
