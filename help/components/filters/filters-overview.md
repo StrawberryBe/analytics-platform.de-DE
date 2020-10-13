@@ -1,11 +1,11 @@
 ---
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Filter können auf Attributen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Ge
 Sie können Filter im Filtergenerator erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter zusammen als gestapelte Filter verwendet werden.
 
 >[!IMPORTANT]
->Filter werden in Adobe Analytics als „Segmente“ bezeichnet. Segmente wurden in Filter umbenannt, da Adobe Experience Platform [eine andere Definition von &quot;Segment&quot;](https://docs.adobe.com/content/help/de-DE/experience-platform/segmentation/home.html).
+>Filter werden in Adobe Analytics als „Segmente“ bezeichnet. Wir haben Segmente in Filter umbenannt, da Adobe Experience Platform [eine andere Definition von „Segment“ verwendet. ](https://docs.adobe.com/content/help/de-DE/experience-platform/segmentation/home.html)
 
 Die Filterung umfasst den [Filtergenerator](/help/components/filters/create-filters.md) zum Aufbau von Filtern und zur Ausführung eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zur Erfassung, Kennzeichnung, Freigabe, Sicherheitseinstellung und Weitergabe von Filtern in Ihrer Organisation.
 
