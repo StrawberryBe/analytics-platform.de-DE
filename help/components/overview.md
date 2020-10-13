@@ -1,11 +1,11 @@
 ---
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,4 +52,4 @@ Sie können Komponenten (separat oder mehrere gleichzeitig) auf verschiedene Wei
 
 Sehen Sie sich das Video zum Erstellen von Metriken, Segmenten und Daten an:
 
->[!VIDEO](https://video.tv.adobe.com/v/23979)
+>[!VIDEO](https://video.tv.adobe.com/v/23979?captions=ger)
