@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
+source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz bzw. die hi
 
 1. **[!UICONTROL Datensatz-ID]**: Diese ID wird automatisch generiert.
 
-1. **[!UICONTROL Zeitstempel]**: Inhalt hier hinzufügen.
+1. **[!UICONTROL Zeitstempel]**: Nur für Ereignis-Datasets wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL Schema]**: Dies ist das [Schema](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/schema/composition.html), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde.
 
