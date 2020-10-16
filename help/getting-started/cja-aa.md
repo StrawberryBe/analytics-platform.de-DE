@@ -2,9 +2,9 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 translation-type: tm+mt
-source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
+source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '871'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Produktvariable | Die Produktvariable, die derzeit für die Berichterstellung für Daten verfügbar ist, die dem Schema der Erlebnisereignisse entsprechen (insbesondere unter Verwendung des productListItems-Objekts). |
 | Visualisierungen | Alle Visualisierungen mit Ausnahme der Zuordnungsvisualisierung werden unterstützt. |
-| AAM-Audiences | Wenn Kunden [!UICONTROL Analytics-Connector]-Datensätze verwenden, sind diese Daten Teil der ADC-Daten. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
 | Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dies bedeutet, dass die gesamte Persistenz auf dem Berichtszeitraum und nicht auf der Gesamtheit der Daten basiert. |
