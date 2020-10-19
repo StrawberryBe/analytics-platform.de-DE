@@ -2,10 +2,10 @@
 title: Überblick über Customer Journey Analytics
 description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Workspace mit Daten aus Experience Platform verwenden können.
 translation-type: tm+mt
-source-git-commit: 8067bb355934f8f6f1d54776f44abfd853aee231
+source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 100%
+source-wordcount: '1229'
+ht-degree: 93%
 
 ---
 
@@ -53,11 +53,11 @@ Bevor Sie Customer Journey Analytics verwenden können, müssen die folgenden Vo
 
 Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie die folgenden Berechtigungen in der [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* Ab 9. September 2020 gilt Folgendes: Um auf Customer Journey Analytics zuzugreifen oder eine Verbindung herzustellen, müssen Sie als Administrator einem **Customer Journey Analytics-Produktprofil** in der [Admin Console](https://adminconsole.adobe.com/enterprise/) hinzugefügt werden. Administratoren benötigen die folgenden Berechtigungen:
+* Ab dem 9. September 2020 müssen Sie als Administrator der **Customer Journey Analytics** im [Admin Console](https://adminconsole.adobe.com/enterprise/). Produktadministratoren erhalten die folgenden Berechtigungen:
    * Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten
    * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken oder von durch andere Benutzer erstellte Segmenten
    * Freigeben eines Workspace-Projekts für alle Benutzer
-* Wenn Sie in Customer Journey Analytics Produktadministrator werden, reicht dies nicht aus, um eine Verbindung zu erstellen, zu aktualisieren oder zu löschen. Um eine Verbindung zu einem Experience Platform-Datensatz herzustellen, benötigen Sie auch Experience Platform-Berechtigungen. Insbesondere müssen Sie Teil eines **Experience Platform-Produktprofils** ein, das Ihnen die folgenden Berechtigungen gewährt:
+* Es reicht nicht aus, eine Verbindung zu erstellen, zu aktualisieren oder zu löschen, wenn Sie nur in Customer Journey Analytics Produktadministrator werden. Um eine Verbindung zu einem Experience Platform-Datensatz herzustellen, benötigen Sie auch Experience Platform-Berechtigungen. Insbesondere müssen Sie Teil eines **Experience Platform-Produktprofils** ein, das Ihnen die folgenden Berechtigungen gewährt:
    * Anzeigen von Schemata
    * Verwalten von Schemata
    * Anzeigen von Identitäts-Namespaces
@@ -67,7 +67,7 @@ Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unte
 
 ### Benutzerzugriff
 
-Nicht-Administratoren (Benutzer) in Customer Journey Analytics können keine Datenansichten oder Verbindungen anzeigen, sie können aber Filter, Projekte und berechnete Metriken erstellen.
+Nicht-Produktadministratoren (Benutzer) in Customer Journey Analytics können keine Ansicht von Data Ansichten oder Verbindungen durchführen, sondern Filter, Projekte und berechnete Metriken erstellen.
 
 ## Aktualisierungen der Terminologie
 
