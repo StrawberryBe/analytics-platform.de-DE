@@ -1,9 +1,9 @@
 ---
 title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -46,6 +46,6 @@ Es gibt verschiedene weitere Methoden für das Anwenden von Filtern auf ein Proj
 | Filter aus Auswahl erstellen | Erstellen Sie einen Inline-Filter. Wählen Sie Zeilen aus, klicken Sie mit der rechten Maustaste auf die Auswahl und erstellen Sie einen Inline-Filter. Dieser Filter wird nur auf das geöffnete Projekt angewendet und nicht als CJA-Filter gespeichert. 1. Zeilen auswählen.  2. Rechtsklick auf die Auswahl.  3. Klick auf *Filter aus Auswahl erstellen*. |
 | Komponenten > Neuer Filter | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](https://docs.adobe.com/content/help/de-DE/analytics/components/segmentation/segmentation-workflow/seg-build.html). |
 | „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Kuratieren und freigeben](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) werden Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar. |
-| Filter als Dimensionen verwenden | Video: Verwenden von Filtern als Dimensionen in Analysis Workspace |
+| Filter als Dimensionen verwenden | Video: Verwenden von Filtern als Dimensionen in Analysis Workspace. |
 
->[!VIDEO](https://video.tv.adobe.com/v/23974)
+>[!VIDEO](https://video.tv.adobe.com/v/23974?captions=ger)
