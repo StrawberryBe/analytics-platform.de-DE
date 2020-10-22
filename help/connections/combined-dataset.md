@@ -1,18 +1,18 @@
 ---
 title: Kombinierte Ereignis-Datensätze
 description: Erfahren Sie, wie CJA durch Kombinieren von Datensätzen eine Verbindung herstellt.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # Kombinierte Ereignis-Datensätze
 
-Wenn Sie eine Verbindung herstellen, kombiniert CJA alle Schemata und Datensätze zu einem Datensatz. Dieser &quot;kombinierte Ereignis-Datensatz&quot;wird von CJA zum Berichte verwendet. Wenn Sie mehrere Schemata oder Datensätze in eine Verbindung einschließen:
+Wenn Sie eine Verbindung herstellen, kombiniert CJA alle Schemata und Datensätze zu einem Datensatz. Dieser „kombinierte Ereignis-Datensatz“ wird von CJA für das Reporting verwendet. Wenn Sie mehrere Schemata oder Datensätze in eine Verbindung einschließen:
 
 * Schemata werden kombiniert. Doppelte Schemafelder werden zusammengeführt.
 * Die Spalte „Personen-ID“ jedes Datensatzes wird unabhängig von ihrem Namen in eine Spalte zusammengefasst. Diese Spalte bildet die Grundlage für die Identifizierung von Unique Visitors in CJA.
@@ -20,7 +20,7 @@ Wenn Sie eine Verbindung herstellen, kombiniert CJA alle Schemata und Datensätz
 
 ## Beispiel
 
-Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze, von denen jede unterschiedliche Felder unterschiedliche Daten enthält.
+Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unterschiedlichen Feldern, die unterschiedliche Daten enthalten.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze, von denen jede un
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
 
-Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen, wird die folgende Tabelle für den Berichte verwendet.
+Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen, wird die folgende Tabelle für das Reporting verwendet.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -55,7 +55,7 @@ Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen, wird
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Dieser kombinierte Ereignis-Datensatz wird in Berichte verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. CJA behandelt alle Daten so, als ob sie sich im selben Datensatz befinden. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als derselbe Unique Visitor betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
+Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. CJA behandelt alle Daten so, als ob sie sich im selben Datensatz befinden. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als derselbe Unique Visitor betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
 
 Dieses Konzept gilt auch für die Attribution. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Die Attribution funktioniert genau so, als ob alle Ereignisse aus einem einzigen Datensatz stammen. Anhand dem Beispiel der oben stehenden Tabellen:
 
