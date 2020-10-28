@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 619eaeabfbd0fb6a7205488075c1c9cfb0fd5a26
+source-git-commit: 3f57da53a377f357109a828721e7f3b2c964a1eb
 workflow-type: tm+mt
 source-wordcount: '1844'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -109,7 +109,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
    | [!UICONTROL Automatisch ab heute alle neuen Datensätze in dieser Verbindung importieren.] | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace] ein. |
    | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten aus [!DNL Experience Platform] für alle Datensätze in dieser Verbindung importiert oder aufgestockt werden. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. Siehe auch [Verlaufsdaten aufstocken](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) unten.<br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
-   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignis] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten) angeben. **und** Aufstockungsdaten) für alle Datensätze in der Verbindung. Dadurch kann die Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignis Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) um es herauszufinden. Folgende Optionen stehen zur Auswahl: ![tägliche Ereignisse](assets/daily_size.png) |
+   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten) angeben. **und** Aufstockungsdaten) für alle Datensätze in der Verbindung. Dadurch kann die Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignis Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) um es herauszufinden. Folgende Optionen stehen zur Auswahl:<br>![tägliche Ereignisse](assets/daily_size.png) |
 
 1. Klicken **[!UICONTROL Ansicht speichern und erstellen]**. Dokumentation finden Sie unter [ansicht erstellen](/help/data-views/create-dataview.md).
 
