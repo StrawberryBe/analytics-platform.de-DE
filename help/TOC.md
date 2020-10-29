@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 3fbeb322b21d7211363b3bfaaedbd8acf6c41fa7
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '410'
 ht-degree: 100%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 100%
    + [Erweiterte Analyse durchführen](analysis-workspace/perform-adv-analysis.md)
    + Workspace-Projekt erstellen {#build-workspace-project}
       + [Projekt erstellen – Übersicht](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Projekte speichern](analysis-workspace/build-workspace-project/save-projects.md)
       + [Vorlagen](analysis-workspace/build-workspace-project/starter-projects.md)
       + Spalten- und Zeileneinstellungen {#column-row-settings}
          + [Spalteneinstellungen](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
@@ -94,13 +95,13 @@ ht-degree: 100%
       + [Freiform-Bedienfeld](analysis-workspace/c-panels/freeform-panel.md)
       + [Quick Insights-Bedienfeld](analysis-workspace/c-panels/quickinsight.md)
    + Kuratieren oder Freigeben von Projekten {#curate-share}
-      + [Kuratieren von Workspace-Projekten](analysis-workspace/curate-share/curate.md)
-      + [Freigeben von Workspace-Projekten](analysis-workspace/curate-share/share-projects.md)
+      + [Menü „Freigeben“](analysis-workspace/curate-share/send-schedule-files.md)
+      + [Kuratieren von Projekten](analysis-workspace/curate-share/curate.md)
+      + [Freigeben von Projekten](analysis-workspace/curate-share/share-projects.md)
       + [Erstellen von freigebbaren Links](analysis-workspace/curate-share/shareable-links.md)
-      + [Schreibgeschützte Workspace-Projekte](analysis-workspace/curate-share/view-only-projects.md)
-      + [PDF- oder CSV-Dateien herunterladen](analysis-workspace/curate-share/download-send.md)
-      + [Projektdateien freigeben und planen](analysis-workspace/curate-share/send-schedule-files.md)
-      + [Datei senden – Bereitstellung eines Projekts planen](analysis-workspace/curate-share/t-schedule-report.md)
+      + [Schreibgeschützte Projekte](analysis-workspace/curate-share/view-only-projects.md)
+      + [Herunterladen von PDF- oder CSV-Dateien](analysis-workspace/curate-share/download-send.md)
+      + [Planen von Projekten](analysis-workspace/curate-share/t-schedule-report.md)
       + [Manager für geplante Projekte](analysis-workspace/curate-share/schedule-projects.md)
    + Attribution IQ {#attribution}
       + [Übersicht über Attribution](analysis-workspace/attribution/overview.md)
