@@ -2,9 +2,9 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: f1dcbd209a9b523db1c18ad0d81fcca0b7877a19
+source-git-commit: 240c0d33eb3db8bd3618698cac7f61f88048e953
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1885'
 ht-degree: 82%
 
 ---
@@ -109,7 +109,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
    | [!UICONTROL Automatisch ab heute alle neuen Datensätze in dieser Verbindung importieren.] | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace] ein. |
    | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten aus [!DNL Experience Platform] für alle Datensätze in dieser Verbindung importiert oder aufgestockt werden. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. Siehe auch [Verlaufsdaten aufstocken](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) unten.<br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
-   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten) angeben. **und** Aufstockungsdaten) für alle Datensätze in der Verbindung. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann die Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignis Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) um es herauszufinden. |
+   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten) angeben. **und** Aufstockungsdaten) für alle Datensätze in der Verbindung. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann die Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignis Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) um es herauszufinden. Die Abfrage würde wie folgt aussehen:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` |
 
 1. Klicken **[!UICONTROL Ansicht speichern und erstellen]**. Dokumentation finden Sie unter [ansicht erstellen](/help/data-views/create-dataview.md).
 
@@ -117,7 +117,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 **[!UICONTROL Alle vorhandenen Daten importieren]** ermöglicht Ihnen das Aufstocken von Verlaufsdaten. Beachten Sie:
 
-* Wir haben die Beschränkung für die Aufstockung (Import historischer Daten) entfernt. Bisher konnten Sie maximal 2,5 Milliarden Zeilen auf eigene Faust aufstocken und aus anderen Gründen war eine Ingenieurbeteiligung erforderlich. Jetzt können Sie Daten ohne Einschränkung selbst aufstocken.
+* Wir haben die Beschränkung für die Aufstockung (Import historischer Daten) entfernt. Bisher konnten Sie maximal 2,5 Milliarden Zeilen auf eigene Faust aufstocken und aus anderen Gründen war eine Ingenieurbeteiligung erforderlich. Jetzt können Sie Daten ohne Einschränkungen selbst aufstocken.
 * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die niedrigste Latenz aufweisen.
 * Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz wird durch die Anzahl der historischen Daten beeinflusst, kombiniert mit der **[!UICONTROL Durchschnittliche Anzahl der täglichen Ereignis]** auswählen. Wenn Sie zum Beispiel mehr als eine Milliarde Datenzeilen pro Tag und 3 Jahre historische Daten haben, kann der Import mehrere Wochen dauern. Wenn Sie hingegen weniger als eine Million Zeilen pro Tag und eine Woche historischer Daten haben, würde das weniger als eine Stunde dauern.
 * Die Aufstockung gilt für die gesamte Verbindung, nicht für jeden Datensatz einzeln.
