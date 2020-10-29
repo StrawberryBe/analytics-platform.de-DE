@@ -1,9 +1,9 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '871'
 ht-degree: 100%
 
@@ -51,10 +51,10 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-| Vordefinierte Analysis Workspace-Dimensionen (z. B. Browser-Typ, Referrer-Typ, Marketing-Kanäle, Besuchsnummer usw.) | CJA stellt diese Dimensionen nicht nativ bereit. Für Kunden, die Analytics Data Connector (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
+| Vordefinierte Analysis Workspace-Dimensionen (z. B. Browser-Typ, Referrer-Typ, Marketing-Kanäle, Besuchsnummer usw.) | CJA stellt diese Dimensionen nicht nativ bereit. Für Kunden, der Data Connector von Analytics (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“, „Analytics für Target (A4T)“ und „Gleichzeitige Medienbesucher“ werden nicht unterstützt. |
 | Merchandising-eVars | Merchandising-eVars funktionieren nur mit ADC-basierten Datensätzen, es sei denn, sie entsprechen genau demselben XDM-Schema (ähnlich den oben genannten Einschränkungen der Produktliste). |
-| Bot-Filterung | Bei Analytics Data Connector (ADC)-basierten Datensätzen wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
+| Bot-Filterung | Bei Data Connector von Analytics (ADC)-basierten Datensätzen wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
 | Verarbeitungsregeln | Bei ADC-basierten Datensätzen werden weiterhin Verarbeitungsregeln angewendet. |
 | Geräteübergreifende Identitätszuordnung | Kunden sind auf eine „einmalige“ Datenzuordnung über den Abfragedienst beschränkt oder müssen diese Logik derzeit auf die Daten vor der Datenerfassung durch [!UICONTROL Experience Platform] anwenden. |
 
@@ -95,6 +95,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 * Reports &amp; Analytics-Zielgruppen
 * Reports &amp; Analytics-Kalenderereignisse
 * Ad Hoc Analysis
-* Data Warehouse Reporting: [!UICONTROL Experience Platform-Abfrage-Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein.
+* Data Warehouse Reporting: [!UICONTROL Experience Platform Query Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein.
 * Mobile Services
 * Daten-Feeds
