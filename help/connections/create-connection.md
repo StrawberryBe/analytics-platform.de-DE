@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 240c0d33eb3db8bd3618698cac7f61f88048e953
+source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 82%
+source-wordcount: '1957'
+ht-degree: 79%
 
 ---
 
@@ -109,7 +109,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
    | [!UICONTROL Automatisch ab heute alle neuen Datensätze in dieser Verbindung importieren.] | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace] ein. |
    | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten aus [!DNL Experience Platform] für alle Datensätze in dieser Verbindung importiert oder aufgestockt werden. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. Siehe auch [Verlaufsdaten aufstocken](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) unten.<br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
-   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten) angeben. **und** Aufstockungsdaten) für alle Datensätze in der Verbindung. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann die Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignis Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) um es herauszufinden. Die Abfrage würde wie folgt aussehen:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` |
+   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten) angeben. **und** Aufstockungsdaten) für alle Datensätze in der Verbindung. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann die Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignis Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) um es herauszufinden.<br>Siehe &quot;Berechnen Sie die durchschnittliche Anzahl der täglichen Ereignis&quot; unten. |
 
 1. Klicken **[!UICONTROL Ansicht speichern und erstellen]**. Dokumentation finden Sie unter [ansicht erstellen](/help/data-views/create-dataview.md).
 
@@ -123,4 +123,13 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 * Die Aufstockung gilt für die gesamte Verbindung, nicht für jeden Datensatz einzeln.
 * Die [Adobe Analytics Data Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) Daten bis zu 13 Monate unabhängig von der Größe importiert.
 
-<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
+### Berechnen Sie die durchschnittliche Anzahl der täglichen Ereignis
+
+Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
+
+1. Zu [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+
+1. Die Abfrage würde wie folgt aussehen:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+
+* In diesem Beispiel ist &quot;analytics_demo_data&quot;der Name des Datensatzes.
+* Führen Sie die `Show Tables` abfrage, um alle in AEP vorhandenen Datensätze anzuzeigen.
