@@ -3,19 +3,15 @@ description: Schreibgeschützte Projekte in Workspace
 keywords: View-only projects
 title: Schreibgeschützte Projekte
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '246'
 ht-degree: 100%
 
 ---
 
 
 # Schreibgeschützte Projekte
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann wünschenswert sein, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Adobe Analytics im Allgemeinen weniger vertraut sind, aber dennoch Daten und Einblicke in einer sicheren Umgebung einsehen sollen.
 
@@ -40,7 +36,7 @@ Zu den deaktivierten Interaktionen in einem schreibgeschützten Projekt gehören
 Zu den wichtigen aktivierten Interaktionen in einem schreibgeschützten Projekt gehören:
 
 | Bereich | Aktivierte Interaktionen |
-|---|---|
+| --- | --- |
 | Freiformtabellen | <ul><li>Paginierung und Sortierung</li><li>Bewegen</li><li>Zellauswahl, die verknüpfte Visualisierungen aktualisiert</li><li>Rechtsklick > Visualisierungs-Link abrufen</li><li>Rechtsklick > In Zwischenablage kopieren</li></ul> |
 | Visualisierungen | <ul><li>Klicken zum Aktivieren/Deaktivieren der Legende</li><li>Bewegen</li><li>Rechtsklick > Visualisierungs-Link abrufen</li><li>Reduzieren/Erweitern</li><li>Fluss – Flussknoten erweitern</li><li>Karte – Zoomen</li></ul> |
 | Bedienfelder | <ul><li>Interaktive Dropdown-Filter</li><li>Rechtsklick > Bedienfeld-Link abrufen</li><li>Reduzieren/Erweitern</li></ul> |
