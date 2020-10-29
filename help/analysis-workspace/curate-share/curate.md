@@ -3,19 +3,15 @@ description: Durch Kuratierung können Sie die Komponenten einschränken, bevor 
 keywords: Analysis Workspace curation
 title: Kuratieren von Projekten
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '489'
 ht-degree: 100%
 
 ---
 
 
 # Kuratieren von Projekten
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Mit der Kuratierung können Sie die Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche) vor der Freigabe eines Projekts einschränken. Wenn ein Empfänger das Projekt öffnet, wird ihm eine begrenzte Anzahl von Komponenten angezeigt, die Sie für ihn kuratiert haben. Die Kuratierung ist ein optionaler, aber empfehlenswerter Schritt, bevor Sie ein Projekt freigeben.
 
@@ -43,6 +39,7 @@ Wenn ein Empfänger ein kuratiertes Projekt öffnet, wird ihm nur der ausgewähl
 ## Entfernen der Projektkuratierung
 
 So entfernen Sie die Projektkuratierung und stellen Sie den vollständigen Satz der Komponenten in der linken Leiste wieder her:
+
 1. Klicken Sie auf **[!UICONTROL Freigeben]** > **[!UICONTROL Projektdaten kuratieren]**.
 1. Klicken Sie auf **[!UICONTROL Kuratierung entfernen]**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
