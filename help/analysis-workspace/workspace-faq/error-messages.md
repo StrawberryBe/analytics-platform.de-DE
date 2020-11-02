@@ -1,16 +1,16 @@
 ---
-description: Liste der bekannten Einschränkungen in Analysis Workspace und der zugehörigen Komponenten
-title: Bekannte Einschränkungen in Analysis Workspace
+description: Liste von Fehlermeldungen in Analysis Workspace und den zugehörigen Komponenten
+title: Fehlermeldungen
 translation-type: tm+mt
-source-git-commit: 3d3620ef9180688b6216be0c930769e0f836370a
+source-git-commit: 130dd81b580a8a011d24401918c9cb1d6bb545e7
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 100%
+source-wordcount: '326'
+ht-degree: 95%
 
 ---
 
 
-# Allgemeine Fehlermeldungen
+# Fehlermeldungen
 
 Bei der Interaktion mit Analysis Workspace können Fehler auftreten, die auch die Leistung beeinflussen. Im Folgenden sind die häufigsten Fehlertypen, die Gründe dafür und Optimierungen aufgeführt, die vorgenommen werden können.
 
