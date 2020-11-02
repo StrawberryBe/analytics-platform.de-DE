@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: ht
-source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
-workflow-type: ht
-source-wordcount: '871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+workflow-type: tm+mt
+source-wordcount: '945'
+ht-degree: 94%
 
 ---
 
@@ -46,6 +46,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dies bedeutet, dass die gesamte Persistenz auf dem Berichtszeitraum und nicht auf der Gesamtheit der Daten basiert. |
 | Klassifizierungen | Jetzt als „Suchdatensätze“ bezeichnet, werden sie nicht automatisch aus der traditionellen Analytics importiert. Sie müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
 | Kundenattribute | Jetzt als „Profildatensätze“ bezeichnet, werden sie nicht automatisch aus Experience Cloud importiert, sondern müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
+| Geräte-, Browser-, Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schema-Felder enthält und der XDM Experience Ereignis-Klasse entspricht. |
+| Einstiege, Ausstiege und Zeitdimensionen und Metriken | Unterstützt (Einstiege und Ausstiege werden jetzt als Sitzungs- und Sitzungsende bezeichnet) und etwas anders berechnet. |
 
 ## Teilweise Unterstützung
 
@@ -66,6 +68,10 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Segment IQ | Unterstützung ist geplant. |
 | Segmentveröffentlichung (Senden von Segmenten aus Workspace an Experience Cloud) | Unterstützung ist geplant. |
 | CSV-Download | Unterstützung ist geplant. |
+| Deduplizierung der Metrik | Unterstützung ist geplant. |
+| Benutzerdefinierte Kalender | Unterstützung ist geplant. |
+| Deduplizierung der Metrik | Unterstützung ist geplant. |
+| Persistenz von Merchandising-Variablen | Unterstützung ist geplant. |
 | Terminierte Berichte/Projekte | Unterstützung ist geplant. |
 | Warnhinweise | Unterstützung ist geplant. |
 | Benutzerdefinierte Kalender | Unterstützung ist geplant. |
