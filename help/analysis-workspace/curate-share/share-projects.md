@@ -3,15 +3,19 @@ description: Projektfreigabe und Projektrollen in Workspace
 keywords: Analysis Workspace sharing
 title: Freigeben von Projekten
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1135'
 ht-degree: 100%
 
 ---
 
 
 # Freigeben von Projekten
+
+>[!NOTE]
+>
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Durch Freigeben können Sie ein Projekt anderen Analysis Workspace-Benutzern in Ihrer Organisation zur Verfügung stellen. Jede [Kuration](curate.md), die Sie vorgenommen haben, wird beim Öffnen des Projekts durch die Empfänger angezeigt.
 
