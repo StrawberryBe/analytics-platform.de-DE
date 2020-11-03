@@ -2,16 +2,20 @@
 description: Erfahren Sie, wie Sie freigebbare Links zu Projekten oder Visualisierungen erstellen.
 keywords: Analysis Workspace sharing
 title: Erstellen von freigebbaren Links
-translation-type: ht
-source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
-workflow-type: ht
-source-wordcount: '296'
+translation-type: tm+mt
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+workflow-type: tm+mt
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
 
 
 # Erstellen von freigebbaren Links
+
+>[!NOTE]
+>
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Benutzer, die einen Link erhalten, müssen sich bei Adobe Analytics anmelden, bevor sie zum Projekt gelangen können.
 
