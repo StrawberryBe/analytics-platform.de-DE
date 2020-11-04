@@ -16,9 +16,9 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: a5f7a17d99d5ea7c8f944d02fb304bddf759030a
+source-git-commit: 1a1b439f4b2c8d7a03dd6431edd5271fc5af0b18
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '404'
 ht-degree: 99%
 
 ---
@@ -48,20 +48,20 @@ ht-degree: 99%
       + [Projekt erstellen – Übersicht](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Projekte speichern](analysis-workspace/build-workspace-project/save-projects.md)
       + [Vorlagen](analysis-workspace/build-workspace-project/starter-projects.md)
-      + Spalten- und Zeileneinstellungen {#column-row-settings}
-         + [Spalteneinstellungen](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
-         + [Zeileneinstellungen](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Dynamische im Vergleich zu statischen Elementen](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Einstellungen zum Rückgängigmachen und Wiederherstellen](analysis-workspace/build-workspace-project/undo-redo.md)
-      + [In Analysis Workspace verfügbare Hotkeys](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
-      + [Paginierung, Filtern und Sortieren von Tabellen](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [Hotkeys (Tastaturbefehle)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Dichte anzeigen](analysis-workspace/build-workspace-project/view-density.md)
-      + [Workspace-Summen](analysis-workspace/build-workspace-project/workspace-totals.md)
    + Visualisierungen {#visualizations}
       + [Visualisierungsübersicht](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Data Sources verwalten](analysis-workspace/visualizations/t-sync-visualization.md)
-      + [Freiformtabelle](analysis-workspace/visualizations/freeform-table.md)
+      + Freiformtabelle {#freeform-table}
+         + [Freiformtabelle](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + Spalten- und Zeileneinstellungen {#column-row-settings}
+            + [Spalteneinstellungen](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
+            + [Zeileneinstellungen](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+            + [Dynamische im Vergleich zu statischen Elementen](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Paginierung, Filtern und Sortieren von Tabellen](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [Workspace-Summen](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortentabelle {#cohort-table}
          + [Was ist eine Kohortenanalyse?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren eines Kohortenanalyseberichts](analysis-workspace/visualizations/cohort-table/t-cohort.md)
