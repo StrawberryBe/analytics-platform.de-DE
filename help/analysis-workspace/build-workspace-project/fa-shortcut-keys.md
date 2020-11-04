@@ -1,21 +1,19 @@
 ---
 description: Tastaturinteraktionen, Tastaturbefehle und Point-and-Click-Verhaltensweisen, die in Analysis Workspace verfügbar sind.
 keywords: Analysis Workspace
-title: Hotkeys (Tastaturbefehle) in Analysis Workspace verfügbar
-topic: Reports and analytics
-uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
+title: Hotkeys (Tastaturbefehle)
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 77%
+source-wordcount: '306'
+ht-degree: 98%
 
 ---
 
 
-# Hotkeys (Tastaturbefehle) in Analysis Workspace verfügbar
+# Hotkeys (Tastaturbefehle)
 
-Hotkeys (Tastaturbefehle) stehen in Analysis Workspace zur Verfügung, um eine nahtlose Navigation, Analyse und Demokratisierung zu ermöglichen.
+In Analysis Workspace stehen Tastaturbefehle (Tastaturkürzel) für eine nahtlose Navigation, Analyse und Demokratisierung zur Verfügung.
 
 Hinweis: `CTRL` = Windows und `command` = Mac
 
@@ -28,12 +26,12 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Zum Fenster „Bereiche“ | ALT + UMSCHALT + 1 |
 | Zum Fenster „Visualisierungen“ | ALT + UMSCHALT + 2 |
 | Zum Fenster „Komponenten“ | ALT + UMSCHALT + 3 |
-| Alle Bereiche reduzieren/erweitern | ALT + M |
-| Aktiven Bereich reduzieren/erweitern | alt + Strg + m |
-| Zum nächsten Bereich wechseln | ALT + RECHTER Schlüssel |
-| Zum vorherigen Bereich wechseln | Alt + Linker Schlüssel |
+| Alle Bedienfelder reduzieren/erweitern | ALT + m |
+| Aktives Bedienfeld reduzieren/erweitern | ALT + STRG + m |
+| Zum nächsten Bereich wechseln | ALT + Rechtstaste |
+| Zum vorherigen Bereich wechseln | ALT + Linkstaste |
 
-## Analysen
+## Analyseaktionen
 
 | Aktion | Tastaturbefehl |
 |---|---|
@@ -43,29 +41,29 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Datumsbereich erstellen | STRG (oder Befehl) + UMSCHALT + D |
 | Segment erstellen | STRG (oder Befehl) + UMSCHALT + E |
 | Alle löschen | ALT + W |
-| Copy | STRG (oder Befehl) + C |
+| Kopieren | STRG (oder Befehl) + C |
 | Wiederherstellen | STRG (oder Befehl) + UMSCHALT + Z |
 | Rückgängig | STRG (oder Befehl) + Z |
 | Komponenten aktualisieren | ALT + UMSCHALT + R |
 | Projekt aktualisieren | ALT + R |
 | Als Landingpage festlegen | STRG (oder Befehl) + UMSCHALT + L |
 
-## Aktionen Hinzufügen Bedienfelder und Visualisierungen
+## Aktionen zum Hinzufügen von Bedienfeldern und Visualisierungen
 
 | Aktion | Tastaturbefehl |
 |---|---|
-| Neues Analysefeld für Zielgruppen | alt + g |
+| Neues Bedienfeld „Analytics for Target“ | ALT + g |
 | Neuer Attributionsbereich | ALT + E |
 | Neues leeres Bedienfeld | ALT + B |
 | Neues Freiformfeld | ALT + A |
-| Neue gleichzeitige Medienbetrachter-Bedienfeld | alt + h |
-| Neues Bedienfeld für schnelle Einblicke | ALT + F |
+| Neues Bedienfeld „Gleichzeitige Medienbetrachter“ | ALT + h |
+| Neues Bedienfeld „Quick Insights“ | ALT + f |
 | Neues Bedienfeld für Segmentvergleich | ALT + C |
 | Neue Freiformtabelle | ALT + 1 |
 | Neuer Kantengraph | ALT + 2 |
 | Neues Balkendiagramm | ALT + 3 |
 
-## Demokratisierungsmaßnahmen
+## Demokratisierungaktionen
 
 | Aktion | Tastaturbefehl |
 |---|---|
