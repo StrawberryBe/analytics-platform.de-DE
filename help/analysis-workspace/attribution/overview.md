@@ -1,11 +1,11 @@
 ---
 title: Übersicht über Attribution
-description: Das Konzept der Zuordnung der Gutschrift eines Erfolgsobjekts zu mehreren Dimensionselementen.
+description: Das Konzept der Zuordnung eines Erfolgsereignisses zu mehreren Dimensionselementen.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
-Die Zuordnung gibt Analysten die Möglichkeit, anzupassen, wie Dimensionselemente für Erfolgsereignisse gutgeschrieben werden. Beispiel:
+Mit Attribution können Analysten anpassen, wie Erfolgsereignisse Dimensionselementen zugeschrieben werden. Beispiel:
 
 1. Ein Besucher Ihrer Site klickt auf einen Paid-Search-Link zu einer Ihrer Produktseiten. Er fügt das Produkt zum Warenkorb hinzu, kauft es jedoch nicht.
 2. Am nächsten Tag sieht er einen Social-Media-Beitrag von einem seiner Freunde, klickt auf den Link und schließt den Kauf ab.
@@ -45,6 +45,6 @@ Adobe Analytics erweitert die Attribution und ermöglicht Ihnen Folgendes:
 Attribution IQ umfasst die folgenden Funktionen:
 
 * [Bedienfeld „Attribution“](../c-panels/attribution.md): Vergleichen Sie beliebige Dimensionen und Metriken schnell mit verschiedenen Attributionsmodellen.
-* [Attribution auf eine Metrik anwenden](../build-workspace-project/column-row-settings/column-settings.md): Verwenden Sie eine nicht standardmäßige Attribution für eine beliebige Metrik in einem Projekt.
+* [Attribution auf eine Metrik anwenden](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md): Verwenden Sie eine nicht standardmäßige Attribution für eine beliebige Metrik in einem Projekt.
 * [Attribution auf eine Aufschlüsselung anwenden](/help/components/dimensions/t-breakdown-fa.md): Verwenden Sie eine nicht standardmäßige Attribution für eine Aufschlüsselung.
 * [Attributionsmodelle vergleichen](/help/components/apply-create-metrics.md): Vergleichen Sie verschiedene Attributionsmodelle für eine beliebige Metrik.
