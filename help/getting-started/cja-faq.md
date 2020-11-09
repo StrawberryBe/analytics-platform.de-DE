@@ -2,10 +2,10 @@
 title: FAQ zu Customer Journey Analytics
 description: Customer Journey Analytics – häufig gestellte Fragen
 translation-type: tm+mt
-source-git-commit: 3b3d0b0858d559e94f1bed6a31a63b018ed32a23
+source-git-commit: 830e7d71ad38539d1a73fe2df9f8886956f57acc
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 40%
+source-wordcount: '1284'
+ht-degree: 42%
 
 ---
 
@@ -57,11 +57,11 @@ Was die Streichung betrifft, so geht es um sechs Komponenten: Sandbox-, Schema-,
 
 | Was ist, wenn ich... | Dies geschieht... |
 | --- | --- |
-| Eine Sandbox in [!UICONTROL Adobe Experience Platform]? | Wenn Sie eine Sandbox löschen, werden alle [!UICONTROL Customer Journey Analytics] Verbindungen zu Datensätzen in dieser Sandbox. Datensätze in CJA werden jedoch derzeit nicht gelöscht. |
+| Eine Sandbox in [!UICONTROL Adobe Experience Platform]? | Durch Löschen einer Sandbox wird der Datenfluss zu allen [!UICONTROL Customer Journey Analytics] Verbindungen zu Datensätzen in dieser Sandbox. Derzeit werden Verbindungen in CJA, die an diese Sandbox gebunden sind, nicht automatisch gelöscht. |
 | Löschen eines Schemas in [!UICONTROL Adobe Experience Platform], aber nicht die mit diesem Schema verknüpften Datensätze? | [!UICONTROL Adobe Experience Platform] das Löschen von Schemas, denen ein oder mehrere Datensätze zugeordnet sind, nicht erlaubt. Ein Administrator mit den entsprechenden Rechten kann die Datensätze jedoch zuerst löschen und dann das Schema löschen. |
-| Einen Datensatz löschen in [!UICONTROL Adobe Experience Platform]? | Es würde keine Notifizierung in [!UICONTROL Customer Journey Analytics]; Wenn das Streaming aktiviert ist, werden nach dem Löschen der Datensätze keine neuen Daten mehr angezeigt.<br>Mit anderen Worten, wenn die Einstellung **[!UICONTROL Importieren Sie alle neuen Datensätze in dieser Verbindung automatisch, beginnend heute]** Wenn die Verbindung aktiviert ist, werden nach dem Löschen der Datensätze keine neuen Daten mehr angezeigt. |
+| Einen Datensatz löschen in [!UICONTROL Adobe Experience Platform]? | Durch das Löschen eines Datensatzes in AEP wird der Datenfluss von diesem Datensatz zu allen Verbindungen, die diesen Datensatz enthalten, gestoppt. Daten aus diesem Datensatz werden nicht automatisch aus den zugehörigen CJA-Verbindungen gelöscht. |
 | Einen Datensatz löschen in [!UICONTROL Customer Journey Analytics]? | Derzeit ist es nicht möglich, einen Datensatz in einer gespeicherten Verbindung zu löschen. Sie müssen die gesamte Verbindung und den Beginn löschen. (Sie können einen Datensatz jedoch löschen in [!UICONTROL Adobe Experience Platform].) |
-| Stapel aus einem Datensatz löschen (in [!UICONTROL Adobe Experience Platform])? | Wenn der Stapel bereits in [!UICONTROL Customer Journey Analytics], [!UICONTROL Customer Journey Analytics] ist derzeit nicht bekannt, dass der Stapel gelöscht wurde. Wenn der Stapel nicht erfasst wurde, kann er nach dem Löschen in [!UICONTROL Adobe Experience Platform]. |
+| Stapel aus einem Datensatz löschen (in [!UICONTROL Adobe Experience Platform])? | Wenn ein Stapel aus einem AEP-Datensatz gelöscht wird, wird derselbe Stapel aus allen CJA-Verbindungen entfernt, die diesen spezifischen Stapel enthalten. |
 | Stapel löschen **während der Erfassung** into [!UICONTROL Customer Journey Analytics]? | Wenn der Datensatz nur einen Stapel enthält, werden keine Daten oder Teildaten aus diesem Stapel in [!UICONTROL Customer Journey Analytics]. Die Erfassung wird rückgängig gemacht. Wenn der Datensatz beispielsweise 5 Stapel enthält und 3 davon bereits beim Löschen des Datensatzes aufgenommen wurden, werden Daten aus diesen 3 Stapeln in [!UICONTROL Customer Journey Analytics]. |
 | Löschen Sie eine Verbindung in [!UICONTROL Customer Journey Analytics]? | Eine Fehlermeldung weist darauf hin, dass<ul><li>Für die gelöschte Verbindung erstellte Ansichten funktionieren nicht mehr.</li><li> Ebenso funktionieren alle Workspace-Projekte, die von den Ansichten der gelöschten Verbindung abhängig sind, nicht mehr.</li></ul> |
 | Löschen Sie eine Ansicht in [!UICONTROL Customer Journey Analytics]? | Eine Fehlermeldung gibt an, dass alle Workspace-Projekte, die von dieser gelöschten Ansicht abhängen, nicht mehr funktionieren. |
