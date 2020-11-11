@@ -1,0 +1,57 @@
+---
+title: Geschätzte Verbindungsgröße
+description: Bericht zu Ihrer aktuellen Nutzung von Customer Journey Analytics (für Rechnungszwecke)
+translation-type: tm+mt
+source-git-commit: 62172cafb080e4eb4a1bba2c9d7d874fe68d14b2
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 0%
+
+---
+
+
+# Geschätzte Verbindungsgröße
+
+Möglicherweise müssen Sie wissen, wie viele Datenzeilen Sie derzeit in [!UICONTROL Customer Journey Analytics] haben. In diesem Thema erfahren Sie, wie Sie zum Zwecke der Rechnungsstellung berichten können, was Ihr aktueller Einsatz von [!UICONTROL Customer Journey Analytics] ist.
+
+1. Klicken Sie unter [!UICONTROL Customer Journey Analytics] auf die Registerkarte **[!UICONTROL Verbindungen]**.
+1. Wählen Sie im Bildschirm [!UICONTROL Verbindung bearbeiten] eine Verbindung aus, für die Sie die Nutzung/Verbindungsgröße festlegen möchten.
+
+   ![Verbindung bearbeiten](assets/edit-connection.png)
+
+1. Wählen Sie in der linken Leiste einen Datensatz aus, der Ihr Teil der Verbindung ist. In diesem Fall handelt es sich um den Datensatz &quot;B2B-Impression&quot;.
+
+   ![Datensatz](assets/dataset.png)
+
+1. Klicken Sie auf das blaue Symbol (i) neben dem Namen. Beachten Sie, dass der Datensatz 3,8.000 Zeilen/Ereignisse hat. Klicken Sie außerdem für die genaue Anzahl der Zeilen unter der Tabelle &quot;Vorschau&quot;auf **[!UICONTROL In Experience Platform bearbeiten]**. Dadurch werden Sie zu den Datensätzen in [!UICONTROL Adobe Experience Platform] umgeleitet.
+
+   ![AEP-Dataset-Info](assets/data-size.png)
+
+1. Beachten Sie, dass die Datensätze für diesen Datensatz insgesamt 3,83 KB betragen, wobei die Größe der Daten 388,59 KB beträgt.****
+
+1. Wiederholen Sie die Schritte 1 bis 5 für andere Datensätze in Ihrer Verbindung und addieren Sie die Anzahl der Datensätze/Zeilen. Die letzte aggregierte Zahl ist die Nutzungsmetrik Ihrer Verbindung, und dies ist die Anzahl der Zeilen der Datensätze Ihrer Verbindung, die Sie von [!UICONTROL Adobe Experience Platform] erfassen werden.
+
+## Bestimmen der Anzahl der aufgenommenen Zeilen
+
+Die Anzahl der tatsächlich in CJA erfassten Ereignis hängt von Ihren Verbindungskonfigurationseinstellungen ab. Wenn Sie außerdem die falsche Personen-ID ausgewählt haben oder diese ID für einige Zeilen in den Datensätzen nicht verfügbar ist, ignorieren [!UICONTROL Customer Journey Analytics] diese Zeilen. Auf diese Weise können Sie ermitteln, welche Ereignis tatsächlich aufgenommen wurden, sobald eine Verbindung gespeichert wurde.
+
+1. Nachdem Sie die Verbindung gespeichert haben, erstellen Sie eine Ansicht der gleichen Verbindung ohne Filter.
+1. Erstellen Sie ein Workspace-Projekt und wählen Sie die richtige Ansicht der Daten aus. Erstellen Sie eine Freiformtabelle und ziehen Sie die Metrik **[!UICONTROL Ereignis]** mit der Dimension **[!UICONTROL Jahr]** per Drag &amp; Drop. Wählen Sie den maximalen Datumsbereich aus Ihrem Datumsauswahlkalender. Auf diese Weise können Sie die Anzahl der Ereignis sehen, die in [!UICONTROL Customer Journey Analytics] aufgenommen werden.
+
+   ![Workspace-Projekt](assets/event-number.png)
+
+   >[!NOTE]
+   >
+   >Auf diese Weise können Sie sehen, wie viele Ereignis aus dem Dataset Ihrer Ereignis aufgenommen werden. Es enthält keine Profil- und Nachschlagetyp-Datensätze. Führen Sie die Schritte 1 bis 3 für Profil- und Nachschlagedaten aus und addieren Sie die Nummern, um die Gesamtanzahl der Ereignis für diese Verbindung abzurufen.
+
+## Debug-Diskrepanzen
+
+Sie haben vielleicht bemerkt, dass die Gesamtanzahl der aufgenommenen Ereignis &quot;7650&quot;ist, die Verbindung jedoch nur den Ereignis-Datensatz &quot;B2B-Impression&quot;mit &quot;3830 Zeilen&quot;in AEP hatte. Warum gibt es eine Diskrepanz? Machen wir ein paar Debugging.
+
+1. Schlüsseln Sie diese Dimension nach **[!UICONTROL Plattform-Dataset-ID]** auf und Sie werden zwei Datensätze mit derselben Größe, aber unterschiedlichen **[!UICONTROL Plattform-Dataset-IDs]** bemerken. Jeder Datensatz enthält 3825 Datensätze. Das bedeutet, dass [!UICONTROL Customer Journey Analytics] 5 Datensätze aufgrund fehlender Personen-IDs oder BAVIDs (Big Besucher-IDs) ignoriert wurden:
+
+   ![Aufschlüsselung](assets/data-size2.png)
+
+1. Wenn Sie außerdem [!UICONTROL Adobe Experience Platform] einchecken, gibt es keinen Datensatz mit der ID &quot;5f21c12b732044194bffc1d0&quot;. Daher hat jemand diesen Datensatz bei der Erstellung der ersten Verbindung aus [!UICONTROL Adobe Experience Platform] gelöscht. Später wurde es erneut zu [!UICONTROL Customer Journey Analytics] hinzugefügt, aber es wurde eine andere [!UICONTROL Plattform-Dataset-ID] von [!UICONTROL Adobe Experience Platform] generiert.
+
+   Lesen Sie mehr über die Implikationen von Dataset und Verbindungslöschung[ in ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)Customer Journey Analytics[!UICONTROL  und ]Adobe Experience Platform[!UICONTROL .]
