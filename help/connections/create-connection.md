@@ -2,7 +2,7 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 translation-type: tm+mt
-source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 95%
@@ -121,15 +121,15 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.
 * Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz wird durch die Anzahl der historischen Daten beeinflusst, kombiniert mit der von Ihnen ausgewählten Einstellung zur **[!UICONTROL durchschnittlichen Anzahl der täglichen Ereignisse]**. Wenn Sie zum Beispiel mehr als eine Milliarde Datenzeilen pro Tag und drei Jahre historischer Daten haben, könnte der Import mehrere Wochen dauern. Wenn Sie hingegen weniger als eine Million Zeilen pro Tag und eine Woche historischer Daten haben, würde das weniger als eine Stunde dauern.
 * Die Aufstockung gilt für die gesamte Verbindung, nicht für jeden einzelnen Datensatz.
-* Der [Adobe Analytics Data Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importiert bis zu 13 Monate Daten unabhängig von der Größe.
+* Der [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importiert bis zu 13 Monate Daten, unabhängig von der Größe.
 
 ### Berechnen Sie die durchschnittliche Anzahl der täglichen Ereignis
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Zu [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
 
 1. Die Abfrage würde wie folgt aussehen:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
 * In diesem Beispiel ist &quot;analytics_demo_data&quot;der Name des Datensatzes.
-* Führen Sie die `Show Tables` abfrage, um alle in AEP vorhandenen Datensätze anzuzeigen.
+* Führen Sie die Abfrage `Show Tables` aus, um alle in AEP vorhandenen Datensätze anzuzeigen.
