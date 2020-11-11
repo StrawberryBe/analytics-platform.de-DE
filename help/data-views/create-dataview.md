@@ -2,10 +2,10 @@
 title: Datenansicht erstellen
 description: Beschreibt, wie in Customer Journey Analytics (CJA) eine Datenansicht für einen Plattform-Datensatz erstellt wird.
 translation-type: tm+mt
-source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 94%
 
 ---
 
@@ -54,3 +54,7 @@ Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbi
 1. (Optional) Sie können eine Komponente in einen benutzerfreundlichen Namen (Anzeigenamen) umbenennen oder ihre Attributionseinstellungen ändern, indem Sie sie auswählen und ihre Einstellung bearbeiten. Beachten Sie, dass der zugrunde liegende Name beibehalten wird. Weitere Informationen finden Sie unter [Ansichten und Attribution von Daten konfigurieren](/help/data-views/configure-dataviews.md).
 
 1. In den nächsten Schritten [legen Sie die Komponenten- und Attributionseinstellungen fest](/help/data-views/configure-dataviews.md).
+
+## Ansichten löschen
+
+Wenn Sie eine Ansicht mit Daten in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, dass alle Workspace-Projekte, die von dieser gelöschten Ansicht abhängen, nicht mehr funktionieren.
