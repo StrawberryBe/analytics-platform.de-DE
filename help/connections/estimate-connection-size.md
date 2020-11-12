@@ -2,9 +2,9 @@
 title: Geschätzte Verbindungsgröße
 description: Bericht zu Ihrer aktuellen Nutzung von Customer Journey Analytics (für Rechnungszwecke)
 translation-type: tm+mt
-source-git-commit: 443b878d90c52ae29fe127b4b6f151c4fbc3a0e9
+source-git-commit: 27b3b1d9e6042f4c61cd1d5bb9d574cc268c3460
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Geschätzte Verbindungsgröße
 
-Möglicherweise müssen Sie wissen, wie viele Datenzeilen Sie derzeit in [!UICONTROL Customer Journey Analytics] haben. In diesem Thema erfahren Sie, wie Sie zum Zwecke der Rechnungsstellung berichten können, was Ihr aktueller Einsatz von [!UICONTROL Customer Journey Analytics] ist.
+Möglicherweise müssen Sie wissen, wie viele Datenzeilen Sie derzeit in [!UICONTROL Customer Journey Analytics] haben. In diesem Thema erfahren Sie, wie Sie Berichte zur aktuellen Verwendung von [!UICONTROL Customer Journey Analytics] erstellen.
 
 1. Klicken Sie unter [!UICONTROL Customer Journey Analytics] auf die Registerkarte **[!UICONTROL Verbindungen]**.
 1. Wählen Sie im Bildschirm [!UICONTROL Verbindung bearbeiten] eine Verbindung aus, für die Sie die Nutzung/Verbindungsgröße festlegen möchten.
@@ -33,22 +33,22 @@ Möglicherweise müssen Sie wissen, wie viele Datenzeilen Sie derzeit in [!UICON
 
 ## Bestimmen der Anzahl der aufgenommenen Zeilen
 
-Die Anzahl der tatsächlich in CJA erfassten Ereignis hängt von Ihren Verbindungskonfigurationseinstellungen ab. Wenn Sie außerdem die falsche Personen-ID ausgewählt haben oder diese ID für einige Zeilen in den Datensätzen nicht verfügbar ist, ignorieren [!UICONTROL Customer Journey Analytics] diese Zeilen. Auf diese Weise können Sie ermitteln, welche Ereignis tatsächlich aufgenommen wurden, sobald eine Verbindung gespeichert wurde.
+Die Anzahl der tatsächlich in CJA erfassten Ereignis hängt von Ihren Verbindungskonfigurationseinstellungen ab. Wenn Sie außerdem die falsche Personen-ID ausgewählt haben oder diese ID für einige Zeilen in den Datensätzen nicht verfügbar ist, ignorieren [!UICONTROL Customer Journey Analytics] diese Zeilen. Gehen Sie wie folgt vor, um die eigentlichen Zeilen der Ereignis zu ermitteln:
 
 1. Nachdem Sie die Verbindung gespeichert haben, erstellen Sie eine Ansicht der gleichen Verbindung ohne Filter.
-1. Erstellen Sie ein Workspace-Projekt und wählen Sie die richtige Ansicht der Daten aus. Erstellen Sie eine Freiformtabelle und ziehen Sie die Metrik **[!UICONTROL Ereignis]** mit der Dimension **[!UICONTROL Jahr]** per Drag &amp; Drop. Wählen Sie den maximalen Datumsbereich aus Ihrem Datumsauswahlkalender. Auf diese Weise können Sie die Anzahl der Ereignis sehen, die in [!UICONTROL Customer Journey Analytics] aufgenommen werden.
+1. Erstellen Sie ein Workspace-Projekt und wählen Sie die richtige Ansicht der Daten aus. Erstellen Sie eine Freiformtabelle und ziehen Sie die Metrik **[!UICONTROL Ereignis]** mit der Dimension **[!UICONTROL Jahr]** per Drag &amp; Drop. Wählen Sie einen ausreichend großen Datumsbereich aus Ihrem Datumsauswahlkalender aus, um alle Daten in Ihrer Verbindung zu kapseln. Auf diese Weise können Sie die Anzahl der Ereignis sehen, die in [!UICONTROL Customer Journey Analytics] aufgenommen werden.
 
    ![Workspace-Projekt](assets/event-number.png)
 
    >[!NOTE]
    >
-   >Auf diese Weise können Sie sehen, wie viele Ereignis aus dem Dataset Ihrer Ereignis aufgenommen werden. Es enthält keine Profil- und Nachschlagetyp-Datensätze. Führen Sie die Schritte 1 bis 3 für Profil- und Nachschlagedaten aus und addieren Sie die Nummern, um die Gesamtanzahl der Ereignis für diese Verbindung abzurufen.
+   >Auf diese Weise können Sie sehen, wie viele Ereignis aus dem Dataset Ihrer Ereignis aufgenommen werden. Es enthält keine Profil- und Nachschlagetyp-Datensätze. Führen Sie die Schritte 1 bis 3 für Profil- und Lookup-Datensätze aus und addieren Sie die Zahlen, um die Gesamtanzahl der Zeilen für diese Verbindung abzurufen.
 
-## Debug-Diskrepanzen
+## Diagnose von Diskrepanzen
 
-Sie haben vielleicht bemerkt, dass die Gesamtanzahl der aufgenommenen Ereignis &quot;7650&quot;ist, die Verbindung jedoch nur den Ereignis-Datensatz &quot;B2B-Impression&quot;mit &quot;3830 Zeilen&quot;in AEP hatte. Warum gibt es eine Diskrepanz? Machen wir ein paar Debugging.
+In einigen Fällen können Sie bemerken, dass die Gesamtanzahl der von Ihrer Verbindung erfassten Ereignis sich von der Anzahl der Zeilen im Datensatz in AEP unterscheidet. In diesem Fall hat der Datensatz &quot;B2B-Impression&quot;7650 Zeilen, der Datensatz enthält jedoch 3830 Zeilen in AEP. Es gibt mehrere Gründe, warum Diskrepanzen auftreten können, und die folgenden Schritte können zur Diagnose unternommen werden:
 
-1. Schlüsseln Sie diese Dimension nach **[!UICONTROL Plattform-Dataset-ID]** auf und Sie werden zwei Datensätze mit derselben Größe, aber unterschiedlichen **[!UICONTROL Plattform-Dataset-IDs]** bemerken. Jeder Datensatz enthält 3825 Datensätze. Das bedeutet, dass [!UICONTROL Customer Journey Analytics] 5 Datensätze aufgrund fehlender Personen-IDs oder BAVIDs (Big Besucher-IDs) ignoriert wurden:
+1. Schlüsseln Sie diese Dimension nach **[!UICONTROL Plattform-Dataset-ID]** auf und Sie werden zwei Datensätze mit derselben Größe, aber unterschiedlichen **[!UICONTROL Plattform-Dataset-IDs]** bemerken. Jeder Datensatz enthält 3825 Datensätze. Das bedeutet, dass [!UICONTROL Customer Journey Analytics] 5 Datensätze aufgrund fehlender Personen-IDs oder fehlender Zeitstempel ignoriert hat:
 
    ![Aufschlüsselung](assets/data-size2.png)
 
