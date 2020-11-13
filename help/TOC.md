@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
+source-git-commit: 8eb7d3e24a941eaf882426e230561e2bf0d0145e
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 98%
+source-wordcount: '424'
+ht-degree: 95%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 98%
    + [Verbindungen verwalten](connections/manage-connection.md)
    + [Geschätzte Verbindungsgröße](connections/estimate-connection-size.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
+   + Kanal-übergreifende Analytics {#cca}
+      + [Überblick über Kanal-Analytics](connections/cca/overview.md)
+      + [Funktionsweise der Wiederholung](connections/cca/replay.md)
+      + [Häufig gestellte Fragen zu Analytics für verschiedene Kanal](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
    + [Datenschicht erstellen](data-views/create-dataview.md)
    + [Ansichten und Attribution von Daten konfigurieren](data-views/configure-dataviews.md)
@@ -152,6 +156,7 @@ ht-degree: 98%
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
+   + [Call Center- und Webdaten importieren](use-cases/call-center.md)
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
