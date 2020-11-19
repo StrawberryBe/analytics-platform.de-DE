@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 8eb7d3e24a941eaf882426e230561e2bf0d0145e
+source-git-commit: e0946d2e0490e25314367a86ed241eadd09b09e5
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 95%
+source-wordcount: '428'
+ht-degree: 94%
 
 ---
 
@@ -158,6 +158,7 @@ ht-degree: 95%
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
    + [Call Center- und Webdaten importieren](use-cases/call-center.md)
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
+   + [Marketing Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
