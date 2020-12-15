@@ -39,7 +39,7 @@ Video-Lernprogramm: [Visualisierungstypen in Analysis Workspace](https://docs.ad
 
 ## Visualisierungsbereich {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
-Klicken Sie zum Anzeigen des Visualisierungs-Bedienfelds auf **[!UICONTROL Visualisierungen]** in der linken Leiste.
+Um das Bedienfeld &quot;Visualisierungen&quot;anzuzeigen, klicken Sie in der linken Leiste auf **[!UICONTROL Visualisierungen]**.
 
 ![Schritt Ergebnis](assets/visualizations.png)
 
@@ -58,7 +58,7 @@ Um auf die [!UICONTROL Visualisierungseinstellungen] zuzugreifen, ziehen Sie ein
 | Einstellung | Beschreibung |
 | --- | --- |
 | Prozentsatz | Zeigt Werte als Prozentzahlen an. |
-| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in zu „100 % gestapelte“ Visualisierungen um. Beispiel:  ![](assets/stacked_100_percent.png) |
+| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in zu „100 % gestapelte“ Visualisierungen um. Beispiel:   ![](assets/stacked_100_percent.png) |
 | Legende sichtbar | Hiermit können Sie den Text zu Filterdetails für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |
 | Grenzwert für max. Anzahl Elemente | Hiermit können Sie die Anzahl der Elemente begrenzen, die in einer Visualisierung angezeigt werden. |
 | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
