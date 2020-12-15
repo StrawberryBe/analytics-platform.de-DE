@@ -1,9 +1,9 @@
 ---
 title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -48,4 +48,4 @@ Es gibt verschiedene weitere Methoden für das Anwenden von Filtern auf ein Proj
 | „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Kuratieren und freigeben](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) werden Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar. |
 | Filter als Dimensionen verwenden | Video: Verwenden von Filtern als Dimensionen in Analysis Workspace. |
 
->[!VIDEO](https://video.tv.adobe.com/v/23974?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/23974)
