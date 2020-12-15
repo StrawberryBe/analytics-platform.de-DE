@@ -38,7 +38,7 @@ Die Anzahl der tatsächlich in [!UICONTROL Customer Journey Analytics] erfassten
 1. Nachdem Sie die Verbindung gespeichert haben, erstellen Sie eine Ansicht der gleichen Verbindung ohne Filter.
 1. Erstellen Sie ein Workspace-Projekt und wählen Sie die richtige Ansicht der Daten aus. Erstellen Sie eine Freiformtabelle und ziehen Sie die Metrik **[!UICONTROL Ereignis]** mit der Dimension **[!UICONTROL Jahr]** per Drag &amp; Drop. Wählen Sie einen ausreichend großen Datumsbereich aus Ihrem Datumsauswahlkalender aus, um alle Daten in Ihrer Verbindung einzuschließen. Auf diese Weise können Sie die Anzahl der Ereignis sehen, die in [!UICONTROL Customer Journey Analytics] aufgenommen werden.
 
-   ![Workspace-Projekt](assets/event-number.png)
+   ![Arbeitsbereich-Projekt](assets/event-number.png)
 
    >[!NOTE]
    >
