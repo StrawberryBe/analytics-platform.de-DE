@@ -14,7 +14,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 In einem leeren Bedienfeld werden alle Visualisierungen hervorgehoben, die Sie innerhalb eines Bedienfelds erstellen können, einschließlich Freiformtabelle, Zuordnung, Fallout, Fluss, Histogramm, Kohorte und Venn. Sie können das leere Bedienfeld auch anstelle des Freiform-Bedienfelds standardmäßig für den Projektbeginn auswählen.
 
