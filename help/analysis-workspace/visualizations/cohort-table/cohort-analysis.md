@@ -26,7 +26,7 @@ Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 
 Die [!UICONTROL Kohortenanalyse] steht allen Adobe Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace] zur Verfügung.
 
-[Videoschulung zur Analyse von Kohorten](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
+[Videoschulung](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html)  zur Kohorte-Analyse (4:36)
 
 >[!IMPORTANT]
 >
