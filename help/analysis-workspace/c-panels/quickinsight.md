@@ -14,11 +14,11 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Schnelle Einblicke]** befindet sich derzeit in einem eingeschränkten Test. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick]** Insightspanel wird derzeit nur eingeschränkt getestet. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
 
 [!UICONTROL Quick Insights] bietet Nicht-Analytikern und neuen Benutzern von [!UICONTROL Analysis Workspace] die Möglichkeit, betriebliche Fragen schnell und einfach zu beantworten. Es ist auch ein großartiges Tool für fortgeschrittene Benutzer, die eine einfache Frage schnell beantworten möchten, ohne selbst eine Tabelle erstellen zu müssen.
 
@@ -94,11 +94,11 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
    ![](assets/qibuilder5.png)
 
-* **Weitere Metriken hinzufügen**: Mithilfe des UND-Operators können Sie bis zu 2 weitere Metriken hinzufügen.
+* **Weitere Metriken hinzufügen**: Mithilfe des AND-Operators können Sie bis zu 2 weitere Metriken hinzufügen.
 
    ![](assets/qibuilder6.png)
 
-* **Weitere Segmente hinzufügen**: Mithilfe des UND- oder ODER-Operators können Sie bis zu 2 weitere Segmente hinzufügen. Sehen Sie sich an, was mit der Tabelle passiert, wenn Sie „Mobilbenutzer ODER Treue Besucher“ hinzufügen. Sie finden sie nebeneinander über den Metriken. Wenn Sie „Mobilbenutzer UND Treue Besucher“ hinzufügen, werden die Ergebnisse beider Segmente zusammen angezeigt und in der Tabelle übereinander gestapelt.
+* **Weitere Segmente hinzufügen**: Mithilfe des AND- oder OR-Operators können Sie bis zu 2 weitere Segmente hinzufügen. Sehen Sie sich an, was mit der Tabelle passiert, wenn Sie „Mobilbenutzer OR Treue Besucher“ hinzufügen. Sie finden sie nebeneinander über den Metriken. Wenn Sie „Mobilbenutzer AND Treue Besucher“ hinzufügen, werden die Ergebnisse beider Segmente zusammen angezeigt und in der Tabelle übereinander gestapelt.
 
    ![](assets/qibuilder7.png)
 
