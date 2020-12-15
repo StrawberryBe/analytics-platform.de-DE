@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 7dc245671d98e63cc4f0d97c1b1fdb11509b7d45
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Beim ersten Klick auf einen Kalender wird die Auswahl eines Datumsbereichs begon
 
 Sie können Datums- (und Zeitdimensionen) mittels Drag-and-Drop in einem Workspace-Projekt ablegen. Sie können spezifische Tage, Wochen, Monate, Jahre oder ein rollierendes Datum auswählen.
 
-[Verwendung von Datumsbereichen und Kalender in Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
+[Verwendung von Datumsbereichen und Kalender in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=de-DE) (4:07)
 
 | Einstellung | Beschreibung |
 | --- | --- |
