@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Neue oder vorgestellte Funktionen</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#cja-connections"> Neue Dokumentation zu Kanal-übergreifenden Analysen (Zusammenfügen von IDs in Customer Journey Analytics)  </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de-DE#cja-connections"> Neue Dokumentation zu Kanal-übergreifenden Analysen (Zusammenfügen von IDs in Customer Journey Analytics)  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> Aktualisierte Anforderungen an Benutzerberechtigungen  </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> Verwenden von Objekt-Arrays </a> </li>
       <li><a href="https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-usecases/b2b.html"> Hinzufügen von Daten der Kontoebene als Lookup-Datensatz </a> </li>
