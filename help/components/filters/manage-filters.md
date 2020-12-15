@@ -16,7 +16,7 @@ Der Filter-Manager bietet verschiedene Möglichkeiten zum Kuratieren von Segment
 
 Der Filter-Manager zeigt Ihnen alle Filter, die sich in Ihrem Besitz befinden und für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. Dieser Überblick stellt die Benutzeroberfläche und die Funktionen des Filter-Managers vor.
 
-Rufen Sie den Filter-Manager auf, indem Sie **[!UICONTROL Customer Journey-Analyse]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** in der oberen Navigation.
+Greifen Sie auf den Filter-Manager zu, indem Sie in der oberen Navigation zu **[!UICONTROL Customer Journey-Analyse]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** gehen.
 
 ## Filter Manager-Benutzeroberfläche
 
@@ -78,7 +78,7 @@ Taggen eines Filters:
 
    * wählen Sie entweder ein vorhandenes Tag aus oder
 
-   * Geben Sie einen neuen Tag-Namen ein und drücken Sie die Eingabetaste **[!UICONTROL Eingabe]**.
+   * Geben Sie einen neuen Tag-Namen ein und drücken Sie **[!UICONTROL die Eingabetaste]**.
 
 1. Klicken Sie erneut auf **[!UICONTROL Taggen]**, um das Segment zu taggen.
 
@@ -93,7 +93,7 @@ So wird ein Filter als genehmigt gekennzeichnet:
 
 1. Aktivieren Sie im Filter-Manager das Kontrollkästchen links neben dem Filtertitel.
 
-1. Klicken **[!UICONTROL Genehmigen]** in der Aufgabe der Filterverwaltung.
+1. Klicken Sie in der Aufgabe der Filterverwaltung auf **[!UICONTROL Genehmigen]**.
 
 1. Entscheiden Sie, ob Sie die genehmigten Segmente für Ihre Organisation freigeben möchten.
 
