@@ -15,7 +15,7 @@ ht-degree: 92%
 
 Datenanomalien können kontextbezogen in Analysis Workspace angezeigt und analysiert werden.
 
-[Videoschulung zur Anomalieerkennung](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
+[Videoschulung](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html)  zur Anomalieerkennung (4:53)
 
 Die Anomalieerkennung bietet eine statistische Methode, mit der festgestellt wird, wie sich eine bestimmte Metrik in Bezug auf frühere Daten verändert hat.
 
