@@ -16,7 +16,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Mehr Infos...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Sie können Filter aus einem Touchpoint erstellen, Segmente als Touchpoint hinzufügen und wichtige Workflows über verschiedene Filter in Analysis Workspace hinweg vergleichen.
 
@@ -30,7 +30,7 @@ Sie können Filter aus einem Touchpoint erstellen, Segmente als Touchpoint hinzu
 
 ## Erstellen eines Filters aus einem Touchpoint {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, an dem Sie besonders interessiert sind und der möglicherweise für andere Berichte nützlich ist. Klicken Sie dazu mit der rechten Maustaste auf den Touchpoint und wählen Sie **[!UICONTROL Filter aus Touchpoint erstellen]**.
+1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, an dem Sie besonders interessiert sind und der möglicherweise für andere Berichte nützlich ist. Dazu klicken Sie mit der rechten Maustaste auf den Touchpoint und wählen **[!UICONTROL Filter aus Touchpoint erstellen]**.
 
    ![](assets/segment-from-touchpoint.png)
 
@@ -50,11 +50,11 @@ Wenn Sie z. B. sehen möchten, wie Ihre US-Benutzer den Trend verfolgen und den 
 
 Oder Sie erstellen einen AND-Touchpoint, indem Sie den Filter für US-Benutzer auf einen anderen Checkpoint ziehen.
 
-## Filter im Fallout vergleichen {#section_E0B761A69B1545908B52E05379277B56}
+## Filter im Fallout {#section_E0B761A69B1545908B52E05379277B56} vergleichen
 
 Sie können eine unbegrenzte Anzahl von Filtern in der Fallout-Visualisierung vergleichen.
 
-1. Wählen Sie die zu vergleichenden Segmente aus dem [!UICONTROL Filter] links. Im vorliegenden Beispiel haben wir 2 Segmente ausgewählt: „USA-Benutzer“ und „Benutzer außerhalb der USA“.
+1. Wählen Sie die zu vergleichenden Segmente in der Leiste [!UICONTROL Filter] links aus. Im vorliegenden Beispiel haben wir 2 Segmente ausgewählt: „USA-Benutzer“ und „Benutzer außerhalb der USA“.
 1. Ziehen Sie sie in den Filterbereich oben.
 
    ![](assets/segment-drop.png)
