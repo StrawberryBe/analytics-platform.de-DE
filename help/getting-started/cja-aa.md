@@ -2,10 +2,10 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 translation-type: tm+mt
-source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 94%
+source-wordcount: '985'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Produktvariable | Die Produktvariable, die derzeit für die Berichterstellung für Daten verfügbar ist, die dem Schema der Erlebnisereignisse entsprechen (insbesondere unter Verwendung des productListItems-Objekts). |
+| Marketing-Kanäle | Daten von Marketing-Kanälen fließen jetzt über den Analytics Data Connector in CJA. Die Regeln für den Marketing Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [CJA Marketing Kanals-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
 | Visualisierungen | Alle Visualisierungen mit Ausnahme der Zuordnungsvisualisierung werden unterstützt. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
 | Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
@@ -75,10 +76,11 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Terminierte Berichte/Projekte | Unterstützung ist geplant. |
 | Warnhinweise | Unterstützung ist geplant. |
 | Benutzerdefinierte Kalender | Unterstützung ist geplant. |
-| Marketing-Kanäle | Unterstützung ist geplant. |
 | PDF-Export | Unterstützung ist geplant. |
 | Zugriff auf Reporting-API | Unterstützung ist geplant - wird nur mit API 2.0 verfügbar sein. |
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
+| Report Builder (Excel-Plug-in) | Unterstützung ist geplant. |
+| Echtzeitberichterstellung | Unterstützung ist geplant. |
 
 ## Unterstützung ist noch nicht geplant.
 
@@ -87,11 +89,9 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | A4T | Unterstützung ist noch nicht geplant. |
 | Media Analytics | Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Unterstützung ist noch nicht geplant. |
-| Report Builder (Excel-Plug-in) | Unterstützung ist noch nicht geplant. |
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Classification Rule Builder | Unterstützung ist noch nicht geplant. |
 | Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
-| Echtzeitberichterstellung | Unterstützung ist noch nicht geplant. |
 
 ## Keine Unterstützung geplant.
 
