@@ -3,19 +3,15 @@ description: 'null'
 title: Flussvisualisierung konfigurieren
 uuid: ff36dc09-6175-43ed-a82a-630d28bca806
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '344'
 ht-degree: 100%
 
 ---
 
 
 # Flussvisualisierung konfigurieren
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Mithilfe der Flussfunktion können Sie einen Pfad durch Ihre Seiten oder Dimensionen verfolgen (z. B. eVars):
 
