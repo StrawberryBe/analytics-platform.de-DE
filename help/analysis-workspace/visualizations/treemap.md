@@ -3,19 +3,15 @@ description: Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter
 title: Treemap
 uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '94'
 ht-degree: 100%
 
 ---
 
 
 # Treemap
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an.
 
