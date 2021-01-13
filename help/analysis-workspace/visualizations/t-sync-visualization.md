@@ -3,9 +3,9 @@ description: Beim Synchronisieren von Visualisierungen können Sie kontrollieren
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: Data Sources verwalten
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '562'
 ht-degree: 100%
 
 ---
@@ -13,17 +13,13 @@ ht-degree: 100%
 
 # Data Sources verwalten
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
-
 Beim Synchronisieren von Visualisierungen können Sie kontrollieren, welche Datentabelle oder Datenquelle zu einer Visualisierung gehört.
 
 **Tipp:** Die Farbe des Punkts neben dem Titel gibt an, welche Visualisierungen zusammenhängen. Übereinstimmende Farben besagen, dass Visualisierungen auf derselben Datenquelle basieren.
 
 Beim Verwalten von Datenquellen können Sie die Datenquelle anzeigen oder die Auswahl sperren. Diese Einstellungen legen fest, ob sich die Visualisierung ändert (oder nicht ändert), sobald neue Daten eingehen.
 
-1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle und einer [Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+1. [Erstellen Sie ein Projekt](//help/analysis-workspace/home.md) mit einer Datentabelle und einer [Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 1. Wählen Sie in der Datentabelle die Zellen (Datenquelle) aus, die Sie der Visualisierung zuordnen möchten.
 1. Klicken Sie in der Visualisierung auf den Punkt neben dem Titel, um das Dialogfeld **[!UICONTROL Datenquelle]** zu öffnen. Wählen Sie **[!UICONTROL Datenquelle anzeigen]** oder **[!UICONTROL Auswahl sperren]** aus.
 
