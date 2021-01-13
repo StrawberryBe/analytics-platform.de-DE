@@ -3,19 +3,15 @@ description: Bei der Venn-Visualisierung können Sie bis zu 3 Segmente (aus Kom
 title: Venn
 uuid: 0a743378-f588-417f-9108-4a1313d6bfeb
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '104'
 ht-degree: 100%
 
 ---
 
 
 # Venn
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Bei der Venn-Visualisierung können Sie bis zu 3 Segmente (aus Komponenten) und eine Metrik einfügen, um ein Venn-Diagramm zu erstellen.
 
