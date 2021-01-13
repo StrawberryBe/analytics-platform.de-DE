@@ -3,9 +3,9 @@ description: 'null'
 title: Bereich und Bereich gestapelt
 uuid: 27f1bfd0-bf64-4424-8827-f7127d239762
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '84'
 ht-degree: 100%
 
 ---
@@ -13,17 +13,13 @@ ht-degree: 100%
 
 # Bereich und Bereich gestapelt
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
-
-## Bereich
+## Bereich {#section_FDC4B6AA944F4F8AAAEAA5E17359F28A}
 
 Diese Visualisierung entspricht einem Kantengraph, bei dem der Bereich unter der Linie farbig dargestellt ist. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird.
 
 ![](assets/area.png)
 
-## Bereich gestapelt
+## Bereich gestapelt {#section_922BBC5A6D254778A050DF710B0BD8D9}
 
 Diese Visualisierung entspricht einem Flächendiagramm, aber hier beginnt jede Serie über der vorherigen Serie.
 
