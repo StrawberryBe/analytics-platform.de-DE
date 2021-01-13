@@ -3,27 +3,19 @@ description: Linienvisualisierung zur Darstellung von (zeitbasierten) Trend-Date
 title: Linie
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 94%
+source-wordcount: '511'
+ht-degree: 65%
 
 ---
 
 
 # Linie
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
-
 Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
 
 ![Linienvisualisierung](assets/line-viz.png)
-
->[!IMPORTANT]
->
->Einige Einstellungen der Linienvisualisierung, wie z. B. [!UICONTROL Trendlinie anzeigen], werden derzeit in begrenztem Umfang getestet. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html)
 
 Klicken Sie auf das Zahnradsymbol oben rechts in der Linienvisualisierung, um auf die verfügbaren [**Visualisierungseinstellungen**](freeform-analysis-visualizations.md) zuzugreifen. Die Einstellungen sind in folgende Kategorien unterteilt:
 
@@ -45,11 +37,15 @@ Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerun
 
 ## Trendzeilenüberlagerung anzeigen
 
-Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Trendlinie anzeigen]** können Sie Ihrer Linienserie eine Regressionstrendlinie hinzufügen. Trendlinien helfen, ein Muster in den Daten besser darzustellen.
+Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Trendlinie anzeigen]** können Sie eine Regression oder Verschiebung der durchschnittlichen Trendlinie zu Ihrer Zeilenreihe hinzufügen. Trendlinien helfen, ein Muster in den Daten besser darzustellen.
+
+>[!TIP]
+>
+>Es wird empfohlen, Trendlinien auf Daten anzuwenden, die weder aktuelle (partielle Daten) noch zukünftige Daten enthalten, da diese die Trendlinie verfälschen. Wenn Sie jedoch zukünftige Daten einbeziehen müssen, entfernen Sie Nullen aus den Daten, um eine Verzerrung dieser Tage zu vermeiden. Gehen Sie dazu zur Datenquelle-Tabelle der Visualisierung, wählen Sie Ihre Metrikspalte und aktivieren Sie dann **[!UICONTROL Spalteneinstellungen]** > **[!UICONTROL Null als Wert]** interpretieren.
 
 ![Lineare Trendlinie](assets/show-linear-trendline.png)
 
-Alle Modelle werden mit der gewöhnlichen Methode der kleinsten Quadrate angepasst:
+Alle Trendlinien des Regressionsmodells passen mit den üblichen Minimalquadraten:
 
 | Modell | Beschreibung |
 | --- | --- |
@@ -58,3 +54,4 @@ Alle Modelle werden mit der gewöhnlichen Methode der kleinsten Quadrate angepas
 | Exponentiell | Erstellt eine gekrümmte Linie und ist nützlich, wenn Daten mit ständig steigenden Raten steigen oder fallen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a + e^(b * x)` |
 | Potenzfunktion | Erstellt eine gekrümmte Linie und ist nützlich für Datensätze, die Messungen vergleichen, die mit einer bestimmten Rate ansteigen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a * x^b` |
 | Quadratisch | Findet die beste Anpassung für einen Datensatz in Form einer Parabel (konkav nach oben oder unten). Gleichung: `y = a + b * x + c * x^2` |
+| Gleitender Mittelwert | Erstellt eine glatte Trendlinie basierend auf einer Reihe von Durchschnittswerten. Auch als rollierender Durchschnitt bezeichnet, verwendet ein sich bewegender Durchschnitt eine bestimmte Anzahl von Datenpunkten (bestimmt durch die Auswahl der &quot;Zeiträume&quot;), verwendet Durchschnittswerte und verwendet den Durchschnitt als Punkt in der Zeile. Beispiele sind der Durchschnitt für 7 Tage oder der Durchschnitt für 4 Wochen. |
