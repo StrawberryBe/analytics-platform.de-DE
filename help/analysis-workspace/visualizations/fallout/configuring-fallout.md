@@ -3,19 +3,15 @@ description: 'null'
 title: Fallout-Visualisierung konfigurieren
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
 
 
 # Fallout-Visualisierung konfigurieren
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Ein Touchpoint ist im Allgemeinen eine Seite auf Ihrer Website. Touchpoints sind jedoch nicht auf Webseiten eingeschränkt. So können Sie zum Beispiel Ereignisse (z. B. Einheiten) sowie Unique Visitors und erneute Besuche hinzufügen. Auch Dimensionen können Sie hinzufügen (wie Kategorie, Browsertyp oder interner Suchbegriff).
 
@@ -69,7 +65,6 @@ Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listV
 | Einstellung | Beschreibung |
 |--- |--- |
 | Fallout-Container <ul><li>Besuch</li><li>Besucher.</li></ul> | Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Die Standardeinstellung lautet „Besucher“.  Mithilfe dieser Einstellungen können Sie Einblicke in Besucheraktivitäten auf der Besucherebene (besuchsübergreifend) erhalten oder die Analyse auf einen einzelnen Besuch einschränken. |
-| „Alle Besucher“ als ersten Touchpoint anzeigen. | Diese Option können Sie deaktivieren, wenn Sie nicht möchten, dass „Alle Besucher“ der erste Touchpoint ist. |
 
 Wenn Sie **mit der rechten Maustaste auf einen Touchpoint klicken**, werden die folgenden Optionen angezeigt:
 
