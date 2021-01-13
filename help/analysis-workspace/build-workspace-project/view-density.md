@@ -2,19 +2,15 @@
 description: Erfahren Sie, wie Sie die Anzeigedichte anpassen.
 title: Dichte anzeigen
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '104'
 ht-degree: 100%
 
 ---
 
 
 # Dichte anzeigen
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand der linken Schiene, Freiformtabellen und Kohortentabellen reduzieren.
 Sie haben beim Umstellen der Anzeigedichte über die Optionsfelder 3 Optionen:
