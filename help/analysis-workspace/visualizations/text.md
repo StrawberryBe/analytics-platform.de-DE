@@ -3,32 +3,32 @@ description: Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen
 title: Text
 uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 100%
+source-wordcount: '168'
+ht-degree: 7%
 
 ---
 
 
 # Text
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+Sie können Ihrem Workspace-Projekt benutzerdefinierten Text hinzufügen, indem Sie Textvisualisierungen oder Bedienfeld-/Visualisierungsbeschreibungen verwenden (klicken Sie mit der rechten Maustaste auf die Überschrift > **[!UICONTROL Beschreibung bearbeiten]**). Sie können auch die Formatierung Ihres Textes ändern, Hyperlinks hinzufügen und Bilder hinzufügen.
 
-Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen.
+## Anpassen der Formatierung {#format}
 
-Sie können die Schrifteinstellungen ändern (fett, kursiv usw.) und Hyperlinks in Textfeldvisualisierungen und Bereichs-/Visualisierungsbeschreibungen hinzufügen.
+Beim Bearbeiten des Textfelds oder der Beschreibung können Sie die Schriftgröße (Überschriftenebenen), Farbe, Formatierung (fett, kursiv, unterstrichen) und Ausrichtung des ausgewählten Textes anpassen. Sie können auch Aufzählungs- und nummerierte Listen hinzufügen.
 
-## Texteinstellungen ändern {#section_32727EE03FD04A8EB1D1B387DCAF6537}
+![](assets/format.png)
 
-![](assets/rich-text1.png)
+## Hyperlinks hinzufügen {#hyperlinks}
 
-Wenn Sie eine Textvisualisierung in einen Bereich gezogen und Text hinzugefügt haben, können Sie den Text formatieren, indem Sie Überschriftenebenen hinzufügen, die Schriftauszeichnung ändern (fett, kursiv oder unterstrichen), die Textfarbe ändern usw.
+Um einen Hyperlink hinzuzufügen, markieren Sie den Text und klicken Sie im Menü auf das Hyperlink-Symbol. Hyperlinks können Links zu externen Websites, Dokumentationsseiten, [Arbeitsbereichsprojekte/Bedienfelder/Visualisierungen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) und mehr enthalten, um Ihre Empfänger weiter zu unterstützen.
 
-## Hyperlinks hinzufügen {#section_D55B857188A74A06B49006DF3511DC7C}
+![](assets/hyperlink.png)
 
-![](assets/rich-text2.png)
+## hinzufügen Bilder {#images}
 
-Markieren Sie Text und klicken Sie auf das Hyperlink-Symbol im Formatierungsmenü, um Hyperlinks hinzuzufügen.
+Um ein Bild zu Ihrem Projekt hinzuzufügen, klicken Sie auf das Bildsymbol im Menü und fügen Sie eine URL für ein öffentliches Bild ein. Die Bild-URL muss öffentlich zugänglich sein, mit `https` beginnen und das Format `.png`, `.jpeg`, `.jpg` oder `.gif` haben. Statische und animierte Bilder werden unterstützt.
+
+![](assets/image.png)
