@@ -4,10 +4,10 @@ title: Analysis Workspace – Übersicht
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en#analysis-workspace). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und Insights austauschen können. Mithilfe der Drag-and-Drop-Oberfläche können Sie Ihre Analyse gestalten, Visualisierungen hinzufügen, um Daten optisch darzustellen, einen Datensatz kuratieren sowie Projekte für andere in Ihrer Organisation freigeben und planen.
 
