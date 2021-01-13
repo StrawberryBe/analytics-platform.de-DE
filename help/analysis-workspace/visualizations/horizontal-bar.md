@@ -3,19 +3,15 @@ description: 'null'
 title: Horizontalbalken und Horizontalbalken gestapelt
 uuid: 3730929d-42e6-4543-b12a-d002f86ac82d
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '62'
 ht-degree: 100%
 
 ---
 
 
 # Horizontalbalken und Horizontalbalken gestapelt
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 ## Horizontalbalken {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
 
