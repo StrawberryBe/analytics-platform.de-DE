@@ -3,19 +3,15 @@ description: Verwenden Sie die Visualisierungen „Zusammenfassungsnummer“ und
 title: Sammelnummer und Sammeländerung
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '462'
 ht-degree: 100%
 
 ---
 
 
 # Sammelnummer und Sammeländerung
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 ## Visualisierung für Zusammenfassungsnummer   {#summary-number}
 
@@ -26,7 +22,15 @@ Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl
 * Wenn mehr als eine Zelle ausgewählt ist, wird die zuerst ausgewählte Zelle angezeigt.
 * Wenn die Spalte ausgewählt ist, wird der erste Zellenwert in der Spalte verwendet.
 
-![Zusammenfassungszahl](assets/summary-number.png)
+Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstellungen für die Zusammenfassungsnummer zu konfigurieren:
+
+| Einstellung | Definition |
+|--- |--- |
+| Prozentsatz | Zeigt Prozentsätze und keine Rohdaten an. |
+| Legende sichtbar | Zeigt Informationen zur angezeigten Metrik an. |
+| Wert abkürzen | Wählen Sie diese Option, um Werte zu kürzen und bis zu 3 Dezimalstellen anzuzeigen. |
+| Wert zusammenfassen nach | Wählen Sie diese Option, um das Maximum, das Minimum, den Mittelwert, den Median oder die Summe für eine Auswahl von Daten anzuzeigen. |
+
 
 Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstellungen für die Zusammenfassungsnummer zu konfigurieren:
 
@@ -36,6 +40,7 @@ Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstel
 | Legende sichtbar | Zeigt Informationen zur angezeigten Metrik an. |
 | Wert abkürzen | Wählen Sie diese Option, um Werte zu kürzen und bis zu 3 Dezimalstellen anzuzeigen. |
 | Wert zusammenfassen nach | Wählen Sie diese Option, um das Maximum, das Minimum, den Mittelwert, den Median oder die Summe für eine Auswahl von Daten anzuzeigen. |
+
 
 ## Visualisierung für Zusammenfassungsänderung: {#summary-change}
 
@@ -50,7 +55,9 @@ Diese Visualisierung verhält sich folgendermaßen:
 * Wenn ein Zellbereich ausgewählt ist, wird die erste Zelle mit den letzten im Bereich ausgewählten Zellen verglichen.
 * Wenn die Spalte ausgewählt ist, wird der erste Wert mit sich selbst verglichen, sodass eine Änderung von 0 angezeigt wird.
 
-![Zusammenfassungsänderung](assets/summary-change.png)
+
+![](assets/summary-change.png)
+
 
 Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstellungen für die Zusammenfassungsänderung zu konfigurieren:
 
