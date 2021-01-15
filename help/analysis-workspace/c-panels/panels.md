@@ -2,9 +2,9 @@
 description: Ein Bereich ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '813'
 ht-degree: 8%
 
 ---
@@ -27,14 +27,6 @@ Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen.
 
 Das Standard-Startbedienfeld ist das Bedienfeld [!UICONTROL Freiform]. Sie können jedoch auch das leere Bedienfeld [als Standard festlegen.](/help/analysis-workspace/c-panels/blank-panel.md)
 
-## Report Suite {#report-suite}
-
-Tabellen und Visualisierungen innerhalb eines Bedienfelds leiten Daten von der [!UICONTROL Report Suite] ab, die oben rechts im Bedienfeld ausgewählt wurde. Die Report Suite bestimmt auch, welche Komponenten in der linken Leiste verfügbar sind. In einem Projekt können Sie je nach Anwendungsfällen Ihrer Analyse eine oder [viele Report Suites](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html?lang=de-DE) verwenden. Um eine einzelne Report Suite auf alle Bereiche in einem Projekt anzuwenden, klicken Sie **mit der rechten Maustaste auf Bereichsüberschrift > Report Suite auf alle Bereiche anwenden**.
-
-Die Liste der Report Suites wird nach Relevanz sortiert. Die Adobe richtet sich danach, wie oft und wie oft die Suite vom aktuellen Benutzer verwendet wurde und wie oft die Suite in der Organisation verwendet wird.
-
-![](assets/panel-report-suite.png)
-
 ## Kalender {#calendar}
 
 Der Bedienfeldkalender steuert den Tabellenbereich und die Visualisierungen innerhalb eines Berichte.
@@ -49,15 +41,15 @@ Mit dem Bedienfeld-Dropzone können Sie Segment- und Dropdown-Filter auf alle Ta
 
 ### Filter segmentieren
 
-Ziehen Sie ein beliebiges Segment aus der linken Leiste in den Ablagebereich des Bedienfelds, um mit dem Filtern des Bedienfelds zu beginnen.
+Ziehen Sie alle Filter aus der linken Leiste in den Ablagebereich des Bedienfelds, um mit dem Filtern des Bedienfelds zu beginnen.
 
 ![](assets/segment-filter.png)
 
-### Ad-hoc-SegmentFilter
+### Ad-hoc-Filter
 
-Nicht-Segmentkomponenten können auch direkt in die Dropzone gezogen werden, um Ad-hoc-Segmente zu erstellen. So sparen Sie Zeit und Mühe beim Aufrufen des Segmentaufbaus. Auf diese Weise erstellte Segmente werden automatisch als Segmente auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Segment klicken, dann auf das Bleistiftsymbol zum Bearbeiten und im Segmentaufbau bearbeiten.
+Sie können auch Nicht-Segmentkomponenten direkt in die Dropzone ziehen, um Ad-hoc-Filter zu erstellen. So sparen Sie Zeit und Mühe beim Aufrufen des Filteraufbaus. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das Bleistift-förmige Bearbeitungssymbol klicken und sie im Filter Builder bearbeiten.
 
-Ad-hoc-Segmente sind lokal im Projekt und werden nicht in der linken Leiste angezeigt, es sei denn, Sie veröffentlichen sie.
+Ad-hoc-Filter sind lokal im Projekt vorhanden und werden nicht in der linken Leiste angezeigt, es sei denn, Sie veröffentlichen sie.
 
 ![](assets/adhoc-segment-filter.png)
 
@@ -89,11 +81,10 @@ Die folgenden Einstellungen sind verfügbar:
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| Kopiertes Bedienfeld/Visualisierung einfügen | Ermöglicht das Einfügen (&quot;Einfügen&quot;) eines kopierten Bereichs oder einer Visualisierung an eine andere Stelle im Projekt oder in ein komplett anderes Projekt. |
-| Bedienfeld kopieren | Hiermit können Sie mit der rechten Maustaste klicken und einen Bereich kopieren, sodass Sie ihn an einer anderen Stelle im Projekt oder in ein komplett anderes Projekt einfügen können. |
-| Report Suite auf alle Bereiche anwenden | Damit können Sie die Report Suite des aktiven Bereichs auf alle Bereiche im Projekt anwenden. |
-| Duplikat | Erstellt ein exaktes Duplikat des aktuellen Bedienfelds, das Sie dann ändern können. |
-| Alle Bedienfelder reduzieren/erweitern | Reduziert und erweitert alle Projektfenster. |
-| Alle Visualisierungen im Bedienfeld reduzieren/erweitern | Reduziert und erweitert alle Visualisierungen im aktuellen Bedienfeld. |
-| Beschreibung bearbeiten | hinzufügen (oder bearbeiten) Sie eine Textbeschreibung für das Bedienfeld. |
-| Bereichslink abrufen | Sie können Personen zu einem bestimmten Bereich innerhalb eines Projekts leiten. Wenn auf den Link geklickt wird, muss sich der Empfänger anmelden, bevor er zu dem exakten Bereich weitergeleitet wird, mit dem er verknüpft ist. |
+| [!UICONTROL Kopiertes Bedienfeld/Visualisierung einfügen] | Ermöglicht das Einfügen (&quot;Einfügen&quot;) eines kopierten Bereichs oder einer Visualisierung an eine andere Stelle im Projekt oder in ein komplett anderes Projekt. |
+| [!UICONTROL Bedienfeld kopieren] | Hiermit können Sie mit der rechten Maustaste klicken und einen Bereich kopieren, sodass Sie ihn an einer anderen Stelle im Projekt oder in ein komplett anderes Projekt einfügen können. |
+| [!UICONTROL Duplikat] | Erstellt ein exaktes Duplikat des aktuellen Bedienfelds, das Sie dann ändern können. |
+| [!UICONTROL Alle Bedienfelder reduzieren/erweitern] | Reduziert und erweitert alle Projektfenster. |
+| [!UICONTROL Alle Visualisierungen im Bedienfeld reduzieren/erweitern] | Reduziert und erweitert alle Visualisierungen im aktuellen Bedienfeld. |
+| [!UICONTROL Beschreibung bearbeiten] | hinzufügen (oder bearbeiten) Sie eine Textbeschreibung für das Bedienfeld. |
+| [!UICONTROL Bereichslink abrufen] | Sie können Personen zu einem bestimmten Bereich innerhalb eines Projekts leiten. Wenn auf den Link geklickt wird, muss sich der Empfänger anmelden, bevor er zu dem exakten Bereich weitergeleitet wird, mit dem er verknüpft ist. |
