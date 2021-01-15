@@ -2,7 +2,7 @@
 title: Geschätzte Verbindungsgröße
 description: Bericht zur aktuellen Nutzung von Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -54,4 +54,4 @@ In einigen Fällen können Sie bemerken, dass die Gesamtanzahl der von Ihrer Ver
 
 1. Wenn Sie außerdem [!UICONTROL Adobe Experience Platform] einchecken, gibt es keinen Datensatz mit der ID &quot;5f21c12b732044194bffc1d0&quot;. Daher hat jemand diesen Datensatz bei der Erstellung der ersten Verbindung aus [!UICONTROL Adobe Experience Platform] gelöscht. Später wurde es erneut zu [!UICONTROL Customer Journey Analytics] hinzugefügt, aber eine andere [!UICONTROL Plattform-Dataset-ID] wurde von [!UICONTROL Adobe Experience Platform] generiert.
 
-   Lesen Sie mehr über die Implikationen von Dataset und Verbindungslöschung[ in ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components)Customer Journey Analytics[!UICONTROL  und ]Adobe Experience Platform[!UICONTROL .]
+Lesen Sie mehr über die Implikationen von Dataset und Verbindungslöschung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) in [!UICONTROL Customer Journey Analytics] und [!UICONTROL Adobe Experience Platform].[
