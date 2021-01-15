@@ -2,10 +2,10 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 translation-type: tm+mt
-source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 89%
+source-wordcount: '986'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Virtual Report Suites | Jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
 | Kuration von VRS-Komponenten | Jetzt Teil der Datenansichten. |
 | Berichtszeitverarbeitung | CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
-| DSGVO-Löschung | Beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Experience Platform] gehandhabt wird. CJA erbt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
+| DSGVO-Löschung | Beachten Sie, dass GDPR jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] - CJA alle Datenänderungen von [!UICONTROL Experience Platform] an zugrunde liegenden Datensätzen übernimmt. |
 | Benutzerberechtigungen/Datenzugangssteuerung | CJA unterscheidet zwischen Produktadministratoren und Anwendern von Adobe Admin Console. Nur Produktadministratoren können 1) Verbindungen oder Datenansichten erstellen/aktualisieren/löschen, 2) Projekte, Filter oder Berechnungsmetriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen und 3) ein Workspace-Projekt für alle Benutzer freigeben |
 
 ## Mit Einschränkungen unterstützt
