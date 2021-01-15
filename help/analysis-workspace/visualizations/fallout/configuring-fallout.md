@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: Erfahren Sie, wie Sie die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen.
 title: Fallout-Visualisierung konfigurieren
-uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 100%
+source-wordcount: '690'
+ht-degree: 98%
 
 ---
 
