@@ -1,10 +1,9 @@
 ---
 description: Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segmente als Touchpoints hinzufügen und wichtige Workflows über verschiedene Segmente hinweg vergleichen.
 keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
-title: Segmente in der Fallout-Analyse anwenden
-uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
+title: Filter in Fallout-Analyse anwenden
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 23%
