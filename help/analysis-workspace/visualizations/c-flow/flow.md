@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: Die Flussfunktion zeigt Kundenpfade durch Ihre Websites und Apps an.
 title: Flussübersicht
-uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 98%
+source-wordcount: '187'
+ht-degree: 86%
 
 ---
 
@@ -19,11 +18,7 @@ Damit können Sie:
 
 * Visualisieren der Kundenpfade in Ihrer Website oder Anwendung
 * Analysieren, wohin Kunden vor und nach festgelegten Checkpoints navigieren, wie zum Beispiel Einsteig, eine bestimmte Dimension oder Ausstieg
-* Erstellen von Segmenten, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben
-
->[!NOTE]
->
->Informationen dazu, wie sich die Ergebnisse bei der Anwendung von Segmenten auf den Fluss zwischen Analysis Workspace und Reports &amp; Analytics/Ad Hoc Analysis unterscheiden können, finden Sie unter [Segmentierung als Grundlage für Fluss und Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
+* Erstellen von Filtern durch Angabe eines bestimmten Punktes in einem ausgewählten Pfad
 
 [Videoschulung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=de-DE) zur Flussvisualisierung (4:56)
 
