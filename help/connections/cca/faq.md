@@ -2,7 +2,7 @@
 title: Häufig gestellte Fragen zu Analytics für verschiedene Kanal
 description: Häufig gestellte Fragen zu Kanal Analytics
 translation-type: tm+mt
-source-git-commit: dd4e7e5cd04db6483f0e4a1f3161f23f8a5a8294
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 20%
