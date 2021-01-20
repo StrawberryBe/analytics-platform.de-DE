@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 42%
+ht-degree: 44%
 
 ---
 
@@ -86,7 +86,7 @@ Zusätzliche Funktionen für eine Visualisierung sind verfügbar, wenn Sie mit d
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| Kopiertes Bedienfeld/Visualisierung einfügen | Ermöglicht das Einfügen (&quot;Einfügen&quot;) eines kopierten Bereichs oder einer Visualisierung an eine andere Stelle im Projekt oder in ein komplett anderes Projekt. |
+| Kopiertes Bedienfeld/kopierte Visualisierung einfügen | Sie können das kopierte Bedienfeld oder die kopierte Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen. |
 | Visualisierung kopieren | Hiermit können Sie mit der rechten Maustaste auf eine Visualisierung klicken und diese an eine andere Stelle im Projekt oder in ein komplett anderes Projekt kopieren. |
 | [Objekte als CSV herunterladen.](/help/analysis-workspace/curate-share/download-send.md) | Laden Sie bis zu 50.000 Dimensionselemente für die ausgewählte Dimension als CSV herunter. |
 | [Daten als CSV herunterladen](/help/analysis-workspace/curate-share/download-send.md) | Laden Sie die Visualisierungsdatenquelle als CSV herunter. |
