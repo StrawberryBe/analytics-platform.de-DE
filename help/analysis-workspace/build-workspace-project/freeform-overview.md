@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 27%
 
 Mit Workspace-Projekten können Sie Datenkomponenten, Tabellen und Visualisierungen kombinieren, um Ihre Analyse zu gestalten und für andere Mitarbeiter Ihres Unternehmens freizugeben. Bevor Sie Ihr erstes Projekt starten, erfahren Sie, wie Sie auf Ihre Projekte zugreifen, durch sie navigieren und sie verwalten können.
 
-## Liste des Projekts {#project-list}
+## Projektliste {#project-list}
 
 Wenn Sie zum ersten Mal zu **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** wechseln, werden auf der Seite alle Projekte Liste, deren Eigentümer Sie sind oder die für Sie freigegeben wurden. Dies ist auch die Landingpage für Adobe Analytics, es sei denn, Sie haben zuvor eine benutzerdefinierte Landingpage festgelegt.
 
