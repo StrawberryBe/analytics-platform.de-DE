@@ -2,7 +2,7 @@
 title: Überblick über Kanal-Analytics
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zusammenfügen von Besuchern erneut verwenden.
 translation-type: tm+mt
-source-git-commit: b57895d037f8db3ffc418312b95fc43dd0280dc9
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 19%
@@ -12,7 +12,7 @@ ht-degree: 19%
 
 # Überblick über Kanal-Analytics
 
-**IQ: Die benutzerübergreifende** Analyse ist eine Funktion, mit der Sie die Personen-ID eines Datasets neu eingeben können. Dies ermöglicht eine nahtlose Kombination mehrerer Datensätze. CCA untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugewiesene ID zu generieren. Mithilfe von Cross-Kanal Analytics können Sie Fragen wie die folgenden beantworten:
+**Journey IQ: Die benutzerübergreifende** Analyse ist eine Funktion, mit der Sie die Personen-ID eines Datasets neu eingeben können. Dies ermöglicht eine nahtlose Kombination mehrerer Datensätze. CCA untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugewiesene ID zu generieren. Mithilfe von Cross-Kanal Analytics können Sie Fragen wie die folgenden beantworten:
 
 * Wie viele Menschen beginnen ihre Erfahrung in einem Kanal und dann in einem anderen?
 * Wie viele Menschen interagieren mit meiner Marke? Wie viele und welche Gerätetypen verwenden sie? Wie überschneiden sich diese?
