@@ -1,11 +1,11 @@
 ---
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1957'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in [!UICONTROL Workspace] integrieren. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Workspace] herstellen.
 
-Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html).
+Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/de-DE/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html).
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
    | [!UICONTROL Automatisch ab heute alle neuen Datensätze in dieser Verbindung importieren.] | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace] ein. |
    | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten von [!DNL Experience Platform] für alle Datensätze in dieser Verbindung importiert oder aufgestockt. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. Siehe auch unten [historische Daten aufstocken](https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data).<br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
-   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten **und** Aufstockungsdaten) für alle Datensätze in der Verbindung angeben. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignisse Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in den [Adobe Experience Platform-Abfragediensten](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) durchführen, um es herauszufinden.<br>Siehe &quot;Berechnen Sie die durchschnittliche Anzahl der täglichen Ereignis&quot; unten. |
+   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten **und** Aufstockungsdaten) für alle Datensätze in der Verbindung angeben. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignisse Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in den [Adobe Experience Platform-Abfragediensten](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) durchführen, um es herauszufinden.<br>Siehe unten „Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen“. |
 
 1. Klicken Sie auf **[!UICONTROL Speichern und Datenansicht erstellen]**. Die Dokumentation finden Sie unter [Datenansicht erstellen](/help/data-views/create-dataview.md).
 
@@ -117,19 +117,19 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 **[!UICONTROL Durch das Importieren aller vorhandenen Daten]** können Sie historische Daten aufstocken. Beachten Sie:
 
-* Wir haben die Beschränkung für die Aufstockung (Import historischer Daten) entfernt. Bisher konnten Sie maximal 2,5 Milliarden Zeilen selbst aufstocken und benötigten ansonsten die Hilfe eines Ingenieurs. Jetzt können Sie Daten ohne Einschränkungen selbst aufstocken.
+* Wir haben die Beschränkung für die Aufstockung (Import historischer Daten) entfernt. Bisher konnten Sie maximal 2,5 Milliarden Zeilen selbst aufstocken und benötigten ansonsten die Hilfe eines Ingenieurs. Jetzt können Sie Daten ohne Einschränkung selbst aufstocken.
 * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.
 * Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz wird durch die Anzahl der historischen Daten beeinflusst, kombiniert mit der von Ihnen ausgewählten Einstellung zur **[!UICONTROL durchschnittlichen Anzahl der täglichen Ereignisse]**. Wenn Sie zum Beispiel mehr als eine Milliarde Datenzeilen pro Tag und drei Jahre historischer Daten haben, könnte der Import mehrere Wochen dauern. Wenn Sie hingegen weniger als eine Million Zeilen pro Tag und eine Woche historischer Daten haben, würde das weniger als eine Stunde dauern.
 * Die Aufstockung gilt für die gesamte Verbindung, nicht für jeden einzelnen Datensatz.
-* Der [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importiert bis zu 13 Monate Daten, unabhängig von der Größe.
+* [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/de-DE/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importiert Daten aus bis zu 13 Monaten unabhängig von ihrer Größe.
 
-### Berechnen Sie die durchschnittliche Anzahl der täglichen Ereignis
+### Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Wechseln Sie zu [Adobe Experience Platform Abfrage Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
 
-1. Die Abfrage würde wie folgt aussehen:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+1. Die Abfrage würde wie folgt aussehen: <br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
-* In diesem Beispiel ist &quot;analytics_demo_data&quot;der Name des Datensatzes.
-* Führen Sie die Abfrage `Show Tables` aus, um alle in AEP vorhandenen Datensätze anzuzeigen.
+* In diesem Beispiel ist „analytics_demo_data“ der Name des Datensatzes.
+* Führen Sie die `Show Tables`-Abfrage aus, um alle in Adobe Experience Platform vorhandenen Datensätze anzuzeigen.
