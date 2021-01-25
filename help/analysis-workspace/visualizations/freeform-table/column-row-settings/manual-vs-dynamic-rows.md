@@ -1,11 +1,11 @@
 ---
 title: Dynamische und statische Dimensionselemente in Freiform-Tabellen
 description: Interaktion mit dynamischen und statischen Dimensionselementen in Tabellen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '519'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ Statische Dimensionselemente ändern sich nicht mit der Zeit. Es handelt sich da
 
 Jedes Mal, wenn Sie bestimmte Komponentenwerte (Dimension, Metrik, Segment, Datumsbereich) manuell in eine Tabelle eingeben, ist das Ergebnis eine statische Liste von Zeilen oder Spalten. Statische Dimensionselemente können auch erstellt werden, wenn Sie Folgendes ausführen:
 
-* Klicken Sie in den Zeilen mit der rechten Maustaste auf > [!UICONTROL Nur ausgewählte Zeilen anzeigen]
-* Klicken Sie in den Spalten mit der rechten Maustaste auf > [!UICONTROL Element statisch]
+* Klicken Sie in den Zeilen mit der rechten Maustaste und [!UICONTROL Zeigen Sie nur ausgewählte Zeilen an]
+* Klicken Sie in den Spalten mit der rechten Maustaste und [!UICONTROL Machen Sie ein Element statisch]
 
 Wenn Sie beispielsweise über bestimmte Browser-Typ-Elemente wie Microsoft und Apple ziehen, werden diese beiden Elemente immer in die Tabelle gezogen.
 
@@ -56,5 +56,5 @@ Dimensionselemente aus verschiedenen Dimensionen können derselben Tabelle hinzu
 Dynamische und statische Zeilen verhalten sich in der Freiform-Gesamtzeile unterschiedlich. Standardmäßig:
 
 * Dynamische Zeilen werden Server-seitig summiert und deduplizieren Metriken wie „Besuche“ oder „Besucher“.
-* Statische Zeilen werden Client-seitig summiert und deduplizieren **keine** Metriken. Um die Gesamtzeile Server-seitig zu berechnen, ändern Sie die Zeileneinstellung auf **Gesamtsumme anzeigen**. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=de-DE)
+* Statische Zeilen werden Client-seitig summiert und deduplizieren **keine** Metriken. Um die Gesamtzeile Server-seitig zu berechnen, ändern Sie die Zeileneinstellung auf **Gesamtsumme anzeigen**. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
 
