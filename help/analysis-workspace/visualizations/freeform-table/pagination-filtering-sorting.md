@@ -1,24 +1,28 @@
 ---
 description: Paginierung, Filtern und Sortieren von Tabellen in Workspace
 title: Paginierung, Filtern und Sortieren von Tabellen
-translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: ht
-source-wordcount: '97'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 71401db7bf034136eb053f559962b1eb49175ec1
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 35%
 
 ---
 
 
 # Paginierung, Filtern und Sortieren von Tabellen
 
-Mit diesem Video-Tutorial können Sie sich einen Überblick verschaffen:
+>[!NOTE]
+>
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
-[Paginierung, Filtern und Sortieren von Tabellen in Analysis Workspace](https://docs.adobe.com/help/de-DE/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
+Eine Übersicht über Paginierungs-, Filter- und Sortiertabellen in Analysis Workspace finden Sie in diesem Video-Lernprogramm:
+
+>[!VIDEO](https://publish.tv.adobe.com/bucket/1/category/2282/video/23968/)
 
 ## Erweiterte Filteroptionen {#section_36E92E31442B4EBCB052073590C1F025}
 
-Wenn Sie auf das Filtersymbol und anschließend neben einer Dimension in einer Freiformtabelle auf „Erweiterte Optionen anzeigen“ klicken, können Sie nach folgenden Kriterien filtern:
+Wenn Sie auf das Filtersymbol und dann auf **[!UICONTROL Erweitert anzeigen]** neben einer Dimension in einer Freiform-Tabelle klicken, können Sie nach den folgenden Kriterien filtern. Sie können mehrere Filterregeln anwenden.
 
 * Enthält
 * Enthält nicht
@@ -34,3 +38,15 @@ Wenn Sie auf das Filtersymbol und anschließend neben einer Dimension in einer F
 
 ![](assets/advanced-filter.png)
 
+## Sortieren von Dimensionen in Freiformtabellen
+
+>[!NOTE]
+>
+>Die Sortierung nach Dimensionen gilt nur für Freiformtabellen im Customer Journey Analytics, nicht im herkömmlichen Adobe Analytics. Die Sortierung von Metriken kann in beiden Versionen von Analytics durchgeführt werden.
+
+1. Klicken Sie in einer Freiform-Tabelle in einem Projekt auf den Pfeil neben dem Dimensionsnamen:
+
+Screenshot hier einfügen.
+
+* Der Nach-unten-Pfeil sortiert in absteigender Reihenfolge und der Nach-oben-Pfeil (Standard) in aufsteigender Reihenfolge.
+* Sie können Dimensionen alphabetisch oder numerisch sortieren. Sie können beispielsweise nummerierte Schritte in einem Workflow verwenden und nach der Schrittnummer sortieren. Sie können eine datumsbezogene Dimension nach Datum sortieren. Oder Sie können die Dimension &quot;Produktname&quot;alphabetisch sortieren.
