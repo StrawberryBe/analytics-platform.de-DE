@@ -2,10 +2,10 @@
 title: Kombinierte Ereignis-Datensätze
 description: Erfahren Sie, wie CJA durch Kombinieren von Datensätzen eine Verbindung herstellt.
 translation-type: tm+mt
-source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
+source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '344'
+ht-degree: 94%
 
 ---
 
@@ -17,6 +17,8 @@ Wenn Sie eine Verbindung herstellen, kombiniert CJA alle Schemata und Datensätz
 * Schemata werden kombiniert. Doppelte Schemafelder werden zusammengeführt.
 * Die Spalte „Personen-ID“ jedes Datensatzes wird unabhängig von ihrem Namen in eine Spalte zusammengefasst. Diese Spalte bildet die Grundlage für die Identifizierung von Unique Visitors in CJA.
 * Zeilen werden anhand des Zeitstempels verarbeitet.
+
+Das Konzept der kombinierten Datensätze ähnelt dem Konzept der Kombination von Report Suites im traditionellen Adobe Analytics.
 
 ## Beispiel
 
