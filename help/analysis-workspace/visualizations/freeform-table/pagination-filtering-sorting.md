@@ -2,7 +2,7 @@
 description: Paginierung, Filtern und Sortieren von Tabellen in Workspace
 title: Paginierung, Filtern und Sortieren von Tabellen
 translation-type: tm+mt
-source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
+source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 36%
@@ -46,7 +46,7 @@ Wenn Sie auf das Filtersymbol und dann auf **[!UICONTROL Erweitert anzeigen]** n
 
 1. Klicken Sie in einer Freiform-Tabelle in einem Projekt auf den Pfeil neben dem Dimensionsnamen:
 
-Screenshot hier einfügen.
+![](assets/sort-dimensions.png)
 
 * Der Nach-unten-Pfeil sortiert in absteigender Reihenfolge und der Nach-oben-Pfeil (Standard) in aufsteigender Reihenfolge.
-* Sie können Dimensionen alphabetisch oder numerisch sortieren. Sie können beispielsweise nummerierte Schritte in einem Workflow verwenden und nach der Schrittnummer sortieren. Sie können eine datumsbezogene Dimension nach Datum sortieren. Oder Sie können die Dimension &quot;Produktname&quot;alphabetisch sortieren.
+* Sie können Dimensionen alphabetisch oder numerisch sortieren. Sie können beispielsweise nummerierte Schritte in einem Workflow verwenden und nach der Schrittnummer sortieren. Sie können eine datumsbezogene Dimension nach Datum sortieren. Oder Sie können Datenquellen alphabetisch sortieren, wie im Screenshot oben.
