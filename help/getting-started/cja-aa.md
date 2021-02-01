@@ -2,10 +2,10 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 translation-type: tm+mt
-source-git-commit: c70662468126279110f14291c135a3f60dd919db
+source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 75%
+source-wordcount: '1014'
+ht-degree: 76%
 
 ---
 
@@ -34,6 +34,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Berichtszeitverarbeitung | CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
 | DSGVO-Löschung | Beachten Sie, dass GDPR jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] - CJA alle Datenänderungen von [!UICONTROL Experience Platform] an zugrunde liegenden Datensätzen übernimmt. |
 | Benutzerberechtigungen/Datenzugangssteuerung | CJA unterscheidet zwischen Produktadministratoren und Anwendern von Adobe Admin Console. Nur Produktadministratoren können 1) Verbindungen oder Datenansichten erstellen/aktualisieren/löschen, 2) Projekte, Filter oder Berechnungsmetriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen und 3) ein Workspace-Projekt für alle Benutzer freigeben. |
+| Geräteübergreifendes/Cross-Kanal-Heften | Siehe [Cross-Kanal Analytics](/help/connections/cca/overview.md). |
 | Vordefinierte Analysis Workspace-Dimensionen (z. B. Browsertyp, Werber-Typ, Betriebssystem usw.) | CJA stellt diese Dimensionen nativ bereit, solange die Basis-XDM-Felder (z. B. Benutzeragent oder Geräte-ID) ausgefüllt sind. Für Kunden, der Data Connector von Analytics (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Zugriff auf Reporting-API | Zurzeit mit der Analytics API 2.0 verfügbar. |
 
@@ -59,8 +60,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“, „Analytics für Target (A4T)“ und „Gleichzeitige Medienbesucher“ werden nicht unterstützt. |
 | Merchandising-eVars | Das Verhalten von Merchandising-eVars kann mithilfe von Dimensionen innerhalb eines Object-Arrays erreicht werden, sofern ein Merchandising-eVar nicht auf Persistenz eingestellt ist. Derzeit ist die Persistenz der Merchandising-Dimension nicht verfügbar. |
 | Bot-Filterung | Bei Data Connector von Analytics (ADC)-basierten Datensätzen wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
-| Verarbeitungsregeln | Bei ADC-basierten Datensätzen werden weiterhin Verarbeitungsregeln angewendet. |
-| Geräteübergreifende Identitätszuordnung | CJA unterstützt die geräteübergreifende Identitätszuordnung über Kanal hinweg, einschließlich der regelmäßigen Neuausrichtung historischer Daten. Derzeit kann dies nur mit einer einzelnen Kundenset-Identität in Kombination mit einer einzelnen Cookie-ID erfolgen. |
+| Verarbeitungsregeln | Bei Analytics Data Connector-basierten Datensätzen werden weiterhin Verarbeitungsregeln angewendet. |
 | Media Analytics | Mediendaten stehen als Teil des Analytics Data Connector zur Verfügung. |
 
 ## Derzeit nicht unterstützt, aber geplant
