@@ -1,12 +1,12 @@
 ---
 keywords: Analysis Workspace
 title: Analysis Workspace – Übersicht
-description: Übersicht über die Analysis Workspace-Funktionen
-translation-type: tm+mt
+description: Überblick über die Funktionen von Analysis Workspace
+translation-type: ht
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=en#analysis-workspace). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de-DE#analysis-workspace). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
 Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und Insights austauschen können. Mithilfe der Drag-and-Drop-Oberfläche können Sie Ihre Analyse gestalten, Visualisierungen hinzufügen, um Daten optisch darzustellen, einen Datensatz kuratieren sowie Projekte für andere in Ihrer Organisation freigeben und planen.
 
 Wenn Sie nur wenige Minuten Zeit haben, sehen Sie sich diese kurze Übersicht an, um zu sehen, was möglich ist.
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&captions=ger)
 
 ## Melden Sie sich bei Adobe Analytics {#login}
 
@@ -67,4 +67,4 @@ In Ihrem Workspace-Projekt können Sie von der linken Leiste aus auf **Bereiche,
 
 ## Zusätzliche Ressourcen {#resources}
 
-* Adobe bietet Hunderte [Analytics-Video-Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html).
+* Adobe bietet Hunderte [Analytics-Video-Tutorials](https://docs.adobe.com/content/help/de-DE/analytics-learn/tutorials/overview.html).
