@@ -1,66 +1,66 @@
 ---
-title: Überblick über Kanal-Analytics
-description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zusammenfügen von Besuchern erneut verwenden.
-translation-type: tm+mt
+title: Überblick über die kanalübergreifende Analyse
+description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# Überblick über Kanal-Analytics
+# Überblick über die kanalübergreifende Analyse
 
-**Journey IQ: Die benutzerübergreifende** Analyse ist eine Funktion, mit der Sie die Personen-ID eines Datasets neu eingeben können. Dies ermöglicht eine nahtlose Kombination mehrerer Datensätze. CCA untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugewiesene ID zu generieren. Mithilfe von Cross-Kanal Analytics können Sie Fragen wie die folgenden beantworten:
+**Journey IQ: Die kanalübergreifende Analyse** ist eine Funktion, mit der Sie die Personen-ID eines Datensatzes neu eingeben können. Dies ermöglicht eine nahtlose Kombination mehrerer Datensätze. Die kanalübergreifende Analyse untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugeordnete ID zu generieren. Mithilfe der kanalübergreifenden Analyse können Sie Fragen beantworten wie beispielsweise:
 
-* Wie viele Menschen beginnen ihre Erfahrung in einem Kanal und dann in einem anderen?
+* Wie viele Personen beginnen ihr Erlebnis auf einem Kanal und beenden es auf einem anderen?
 * Wie viele Menschen interagieren mit meiner Marke? Wie viele und welche Gerätetypen verwenden sie? Wie überschneiden sich diese?
 * Wie oft beginnen Personen mit einer Aufgabe auf einem Mobilgerät und wechseln dann zu einem Desktop-PC, um die Aufgabe abzuschließen? Führen Kampagnen-Clickthroughs auf einem Gerät zur Konversion auf einem anderen Gerät?
 * Wie ändern sich meine Daten zur Wirksamkeit einer Kampagne, wenn ich geräteübergreifende Journeys berücksichtige? Wie ändert sich meine Trichteranalyse?
 * Welche sind die häufigsten Pfade, die Benutzer beim Wechsel von einem Gerät zum anderen verwenden? Wo steigen sie aus? Wo schließen sie ihre Aktion erfolgreich ab?
 * Wie unterscheidet sich das Verhalten von Benutzern mit mehreren Geräten von Benutzern mit nur einem Gerät?
 
-Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Zuordnung geräteübergreifend und über Kanal hinweg übernommen. Beispiel: Ein Benutzer besucht Ihre Site zum ersten Mal über eine Werbeanzeige auf seinem Desktop. Dieser Benutzer stößt bei seiner Bestellung auf ein Problem und ruft dann das Kundendienstteam an, um es zu beheben. Mit Cross-Kanal Analytics können Sie Call-Center-Ereignis der Anzeige zuordnen, auf die sie ursprünglich geklickt haben.
+Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attribution geräte- und kanalübergreifend übernommen. Beispiel: Ein Benutzer besucht Ihre Site zum ersten Mal über eine Werbeanzeige auf seinem Desktop. Dieser Benutzer stößt bei seiner Bestellung auf ein Problem und ruft dann Ihren Kundendienst an, um das Problem zu beheben. Mit der kanalübergreifenden Analyse können Sie Callcenter-Ereignisse der Anzeige zuordnen, auf die ursprünglich geklickt wurde.
 
 ## Voraussetzungen
 
 >[!IMPORTANT]
 >
->Wird nicht alle Voraussetzungen erfüllt, kann es beim Kombinieren von Datensätzen zu einer CCA-Verbindung oder zu schlechten Ergebnissen kommen.
+>Werden nicht alle Voraussetzungen erfüllt, kann beim Kombinieren von Datensätzen unter Umständen keine Verbindung für die kanalübergreifende Analyse hergestellt werden oder die Ergebnisse fallen mangelhaft aus.
 
-Bevor Sie Analytics für verschiedene Kanal verwenden, sollten Sie sicherstellen, dass Ihr Unternehmen mit Folgendem vorbereitet ist:
+Bevor Sie die kanalübergreifende Analyse verwenden, sollten Sie sicherstellen, dass Ihr Unternehmen folgende Voraussetzungen erfüllt:
 
-* Ein Datensatz in Adobe Experience Platform muss aus zwei Spalten bestehen, mit denen Besucher identifiziert werden können:
-   * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement Library generiert wurde.
-   * Eine **transiente ID**, eine ID, die nur auf einigen Zeilen vorhanden ist. Beispiel: Ein Hash-Benutzername oder eine E-Mail-Adresse, sobald sich ein Besucher authentifiziert. Sie können praktisch jeden Bezeichner verwenden, den Sie möchten, sofern er mindestens einmal auf demselben Ereignis wie eine angegebene beständige ID vorhanden ist.
-* Ein anderer Datensatz, z. B. Call-Center-Daten, der in jeder Zeile eine transiente ID enthält. Diese Personen-ID muss ähnlich wie die transiente ID im anderen Datensatz formatiert sein.
-* Mit dieser Funktion können Sie Datasets zusammenführen, die authentifizierte und nicht authentifizierte Benutzerdaten zusammenführen können. Vergewissern Sie sich vor dem Zusammenführen von Datensätzen, dass Sie die geltenden Gesetze und Vorschriften einhalten, einschließlich der erforderlichen Endbenutzerberechtigungen.
+* Ein Datensatz in Adobe Experience Platform muss über zwei Spalten verfügen, mit denen Besucher identifiziert werden können:
+   * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde.
+   * Eine **vorübergehende ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispiel: ein/e gehashte/r Benutzername oder E-Mail-Adresse, wenn sich ein Besucher authentifiziert. Sie können praktisch jede beliebige Kennung verwenden, sofern sie mindestens einmal für dasselbe Ereignis als beständige ID vorkommt.
+* Ein anderer Datensatz, beispielsweise Callcenter-Daten, der in jeder Zeile eine vorübergehende ID enthält. Diese Personen-ID muss ähnlich wie die vorübergehende ID in dem anderen Datensatz formatiert sein.
+* Mit dieser Funktion können Sie Datensätze zuordnen und somit beispielsweise authentifizierte und nicht authentifizierte Benutzerdaten zusammenführen. Vergewissern Sie sich vor dem Zusammenführen von Datensätzen, dass Sie die geltenden Gesetze und Vorschriften einhalten, wie etwa das Einholen der erforderlichen Berechtigungen der Endanwender.
 
 ## Einschränkungen
 
-Cross-Kanal Analytics ist eine bahnbrechende und robuste Funktion, deren Verwendung jedoch eingeschränkt werden kann.
+Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, deren Verwendung jedoch gewissen Einschränkungen unterliegt.
 
-* Die aktuellen Rekeying-Funktionen sind auf einen Schritt beschränkt (beständige ID auf transiente ID). Mehrstufige Neuzuordnung (z. B. beständige ID zu einer transienten ID und dann zu einer anderen transienten ID) wird nicht unterstützt.
-* Nur Ereignis-Datensätze werden unterstützt. Andere Datensätze, wie z. B. Nachschlagedatasets, werden nicht unterstützt.
+* Die aktuellen Funktionen zur Neuzuweisung sind auf einen Schritt beschränkt (beständige ID auf vorübergehende ID). Eine mehrstufige Neuzuweisung wird nicht unterstützt, beispielsweise beständige ID zu vorübergehender ID und dann zu einer weiteren vorübergehenden ID.
+* Es werden nur Ereignis-Datensätze unterstützt. Andere Datensätze, wie beispielsweise Lookup-Datensätze, werden nicht unterstützt.
 * Benutzerdefinierte ID-Maps, die in Ihrem Unternehmen verwendet werden, werden nicht unterstützt.
-* Das Adobe-Co-op-Diagramm und das Private-Diagramm werden nicht unterstützt.
+* Das Adobe Co-op-Diagramm und das Private-Diagramm werden nicht unterstützt.
 
-## Kanal-übergreifende Analyse aktivieren
+## Aktivieren der kanalübergreifenden Analyse
 
-Sobald Ihr Unternehmen alle Voraussetzungen erfüllt und die Einschränkungen versteht, können Sie die folgenden Schritte ausführen, um mit dem Unternehmen in CJA Beginn zu erzielen.
+Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen überblickt, können Sie die folgenden Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
 
-1. Importieren Sie die gewünschten Daten nach Adobe Experience Platform. Siehe [Erstellen eines Schemas](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/tutorials/create-schema-ui.html) und [Daten](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html) in der Adobe Experience Platform-Dokumentation.
-1. Wenden Sie sich an Ihren Adobe-Kundenbetreuer, der Folgendes enthält:
-   * Eine Anforderung zum Aktivieren von Kanal-übergreifender Analytics
-   * Die DataSet-ID für den Datensatz, den Sie neu starten möchten
-   * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Bezeichner, der in jeder Zeile angezeigt wird)
-   * Der Spaltenname der transienten ID für den gewünschten Datensatz (der Link zur Kennung der Person zwischen Datensätzen)
-   * Ihre Voreinstellung für [Wiederholung](replay.md) Häufigkeit und Lookback-Länge. Zu den Optionen gehören eine Wiederholung einmal pro Woche mit einem 7-tägigen Lookback-Fenster oder eine Wiederholung jeden Tag mit einem 1-tägigen Lookback-Fenster.
-1. Der Adobe Account Manager aktiviert Cross-Kanal Analytics, wenn Sie Ihre Anforderung erhalten. Nach der Aktivierung wird in Adobe Experience Platform ein neuer Datensatz mit einer neuen Person-ID angezeigt. Ihr Adobe-Kundenbetreuer kann die neue Dataset-ID und den Spaltennamen der Person-ID angeben.
-1. [Erstellen Sie eine ](../create-connection.md) Verbindung in CJA mit dem neu erstellten Datensatz und allen anderen Datensätzen, die Sie einbeziehen möchten. Wählen Sie die richtige Personen-ID für jeden Datensatz.
-1. [Erstellen Sie eine ](/help/data-views/create-dataview.md) Datenansicht basierend auf der Verbindung.
+1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Siehe unter [Ein Schema erstellen](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/tutorials/create-schema-ui.html) und [Daten aufnehmen](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html) in der Adobe Experience Platform-Dokumentation.
+1. Wenden Sie sich an Ihren Adobe Account Manager, was Folgendes umfassen kann:
+   * Eine Anfrage zum Aktivieren der kanalübergreifenden Analyse
+   * Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten
+   * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Kennung, die in jeder Zeile erscheint)
+   * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Verbindung der Personenkennung zwischen Datensätzen)
+   * Ihre Voreinstellung für die Häufigkeit der [Wiederholungen](replay.md) und die Lookback-Länge. Zu den verfügbaren Optionen gehören eine Wiederholung pro Woche mit einem 7-tägigen Lookback-Fenster oder eine tägliche Wiederholung mit einem 1-tägigen Lookback-Fenster.
+1. Der Adobe Account Manager aktiviert die kanalübergreifende Analyse nach Erhalt Ihrer Anfrage. Nach der Aktivierung erscheint in Adobe Experience Platform ein neu zugewiesener Datensatz mit einer neuen Personen-ID-Spalte. Ihr Adobe Account Manager kann die neue Datensatz-ID und den Namen der Person-ID-Spalte bereitstellen.
+1. [Erstellen Sie eine Verbindung](../create-connection.md) in CJA mit dem neu erstellten Datensatz und beliebigen weiteren Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
+1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Sobald die Ansicht eingerichtet ist, erfolgt die Analyse in CJA genau wie bei jeder anderen Analyse in CJA, bis auf die Tatsache, dass die Daten über mehrere Kanal und Geräte hinweg verarbeitet werden.
+Sobald die Datenansicht eingerichtet ist, erfolgt die Analyse in Customer Journey Analytics genau wie bei jeder anderen Customer Journey Analytics-Analyse, bis auf die Tatsache, dass die Daten nun kanal- und geräteübergreifend verarbeitet werden.
