@@ -2,11 +2,11 @@
 description: Erstellen Sie ein Projekt und fügen Sie dem Freiform-Bedienfeld Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche) hinzu.
 keywords: Analysis Workspace
 title: Workspace-Projekt erstellen
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '751'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
   </tr> 
   <tr> 
    <td colname="col1"> Segmente (blau) </td> 
-   <td colname="col2"> <p>Können per Drag-and-Drop nur auf Bereichsebene angewendet werden, Sie können jedoch Inline-Segmente in der Datentabelle erstellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Weitere Informationen finden Sie unter <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segmente </a>. </p> </td> 
+   <td colname="col2"> <p>Können per Drag-and-Drop nur auf Bereichsebene angewendet werden, Sie können jedoch Inline-Segmente in der Datentabelle erstellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Weitere Informationen finden Sie unter <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segmente</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Datumsbereiche und Granularitäten (violett) </td> 
