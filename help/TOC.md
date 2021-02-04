@@ -17,11 +17,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,10 +40,10 @@ ht-degree: 98%
    + [Verbindungen verwalten](connections/manage-connection.md)
    + [Schätzung der Verbindungsgröße](connections/estimate-connection-size.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
-   + Kanal-übergreifende Analytics {#cca}
-      + [Überblick über Kanal-Analytics](connections/cca/overview.md)
+   + Kanalübergreifende Analyse {#cca}
+      + [Überblick über die kanalübergreifende Analyse](connections/cca/overview.md)
       + [Funktionsweise der Wiederholung](connections/cca/replay.md)
-      + [Häufig gestellte Fragen zu Analytics für verschiedene Kanal](connections/cca/faq.md)
+      + [Häufig gestellte Fragen zur kanalübergreifenden Analyse](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
    + [Datenschicht erstellen](data-views/create-dataview.md)
    + [Ansichten und Attribution von Daten konfigurieren](data-views/configure-dataviews.md)
