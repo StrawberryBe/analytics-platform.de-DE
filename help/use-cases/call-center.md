@@ -1,18 +1,18 @@
 ---
 title: Callcenter- und Web-Daten importieren
 description: Erfahren Sie, wie Sie einen Datensatz erstellen, mit dem Sie Callcenter- und Website-Daten verknüpfen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Callcenter- und Web-Daten importieren
 
-Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus verschiedenen Quellen in einem einzigen Workspace-Projekt zu kombinieren. Verwenden Sie dieses Handbuch, um zu verstehen, wie Ihr Unternehmen Website-Daten mit Call-Center-Daten kombinieren kann.
+Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus verschiedenen Quellen in einem einzigen Workspace-Projekt zu kombinieren. Verwenden Sie diesen Leitfaden, um zu verstehen, wie Ihr Unternehmen Website-Daten mit Callcenter-Daten kombinieren kann.
 
 ## Voraussetzungen
 
@@ -31,7 +31,7 @@ Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus ve
 
 ## Web- und Callcenter-Daten in die Platform importieren
 
-Importieren Sie Ihre Daten nach Adobe Experience Platform. Informationen zum [Erstellen eines Schemas](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/tutorials/create-schema-ui.html) und [Aufnehmen von Daten](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html) finden Sie in der Adobe Experience Platform-Dokumentation.
+Importieren Sie die Daten in Adobe Experience Platform. Informationen zum [Erstellen eines Schemas](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/tutorials/create-schema-ui.html) und [Aufnehmen von Daten](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html) finden Sie in der Adobe Experience Platform-Dokumentation.
 
 Beim Importieren von Daten in die Platform können folgende Tipps hilfreich sein, um einen besseren Einblick in die resultierenden Berichte zu gewinnen:
 
@@ -43,13 +43,13 @@ Beim Importieren von Daten in die Platform können folgende Tipps hilfreich sein
 Customer Journey Analytics erfordert eine gemeinsame Kennung, sodass ein [kombinierter Datensatz](../connections/combined-dataset.md) generiert werden kann.
 
 * Wenn Ihre Datensätze bereits für jedes Ereignis in beiden Datensätzen eine gemeinsame Kennung aufweisen, können Sie diesen Schritt überspringen und eine Verbindung erstellen.
-* Wenn einer Ihrer Datensätze nur auf einigen Ereignissen einen gemeinsamen Bezeichner enthält, können Sie Daten mithilfe von Cross-Kanal Analytics zusammenfügen. Informationen zum Aktivieren von CCA für diese beiden Datensätze finden Sie unter [Übersicht über die Kanal-übergreifende Analyse](/help/connections/cca/overview.md).
+* Wenn einer Ihrer Datensätze nur für einige Ereignisse eine gemeinsame Kennung enthält, können Sie Daten mithilfe der kanalübergreifenden Analyse zuordnen. Informationen zum Aktivieren der kanalübergreifenden Analyse für diese beiden Datensätze finden Sie unter [Übersicht zur kanalübergreifenden Analyse](/help/connections/cca/overview.md).
 
 ## Erstellen einer Verbindung in Customer Journey Analytics
 
 [Erstellen Sie eine Verbindung](/help/connections/create-connection.md) in Customer Journey Analytics.
 
-* Wenn Cross-Channel-Analyse verwendet wird, steht Ihnen ein neuer zugeordneter Datensatz zur Verfügung. Verwenden Sie das neu erstellte Feld für die zugeordnete ID als die Personen-ID.
+* Wenn die kanalübergreifende Analyse verwendet wird, steht Ihnen ein neuer zugeordneter Datensatz zur Verfügung. Verwenden Sie das neu erstellte Feld für die zugeordnete ID als die Personen-ID.
 * Andernfalls können Sie auch die ursprünglichen Web- und Callcenter-Datensätze für die Verbindung verwenden.
 
 ## Datenansicht erstellen
@@ -63,7 +63,7 @@ Die folgenden Visualisierungen können verwendet werden, um Einblicke aus Ihrem 
 
 ### Datensatz-Überschneidung
 
-In dieser Visualisierung können Sie die Qualität der Datenzuordnung in Cross-Channel-Analyse erkennen.
+In dieser Visualisierung können Sie die Qualität der Datenzuordnung in der kanalübergreifenden Analyse erkennen.
 
 1. Erstellen Sie zwei Filter. Die in diesen beiden Filtern verwendete Variable ist dieselbe wie die oben erwähnte, die die Datenquelle jedes Ereignisses widerspiegelt. Weitere Informationen finden Sie unter [Filter erstellen](/help/components/filters/create-filters.md).
    * Personen-Container, bei dem die Datensatz-ID mit Ihren Web-Daten übereinstimmt
