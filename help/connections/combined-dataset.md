@@ -1,11 +1,11 @@
 ---
 title: Kombinierte Ereignis-Datensätze
 description: Erfahren Sie, wie CJA durch Kombinieren von Datensätzen eine Verbindung herstellt.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -74,5 +74,5 @@ Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert
 | string_color | metric_a |
 | --- | --- |
 | Gelb | 6 |
-| Blau | 1 |
+| Blau | 3 |
 | Rot | 2 |
