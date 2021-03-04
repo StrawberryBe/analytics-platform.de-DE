@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: ht
-source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
-workflow-type: ht
-source-wordcount: '1014'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1a436ac162df0ae96525fd2e71daef55b078a59c
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +19,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Adobe Analytics-Funktion | Hinweise |
 | --- | --- |
 | Metriken | CJA nutzt das Experience-Datenmodell (XDM) und unterstützt unbegrenzte Metriken und ist nicht an die benutzerspezifischen Erfolgsereignisse traditioneller Analytics gebunden. Beachten Sie, dass einige Standardmetriken aus der traditionellen Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
-| Dimensionen | CJA nutzt XDM und unterstützt unbegrenzte Dimensionen und ist nicht an die benutzerspezifischen Erfolgsereignisse traditioneller Analytics gebunden. |
-| Listenvariablen/Listen-Props | CJA nutzt XDM und unterstützt unbegrenzte Listenvariablen. |
+| Dimensionen | CJA nutzt XDM und unterstützt unbegrenzte Dimensionen und ist nicht an benutzerdefinierte eVars oder Props von herkömmlicher Analytics gebunden. |
+| Listenvariablen/Listen-Props | CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
 | Datumsbereiche | Die Unterstützung benutzerdefinierter Kalender ist geplant. |
 | Berechnete Metriken | Beachten Sie, dass vorhandene Berechnungsmetriken im herkömmlichen Analysis Workspace nicht auf CJA portiert werden. |
 | Segmente | Jetzt „Filter“ genannt. Beachten Sie, dass keine vorhandenen Segmente im traditionellen Analysis Workspace auf CJA portiert werden. |
@@ -80,6 +80,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
 | Report Builder (Excel-Plug-in) | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
+| Data Warehouse Berichte (100 % Zeilenexport) | Die Unterstützung ist über die Analysis Workspace-Oberfläche geplant. [!UICONTROL Experience Platform Abfrage ] Services bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
 
 ## Unterstützung ist noch nicht geplant.
 
@@ -90,6 +91,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Classification Rule Builder | Unterstützung ist noch nicht geplant. |
 | Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
+| Daten-Feeds | Unterstützung ist noch nicht geplant. |
 
 ## Keine Unterstützung geplant.
 
@@ -99,6 +101,4 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 * Reports &amp; Analytics-Zielgruppen
 * Reports &amp; Analytics-Kalenderereignisse
 * Ad Hoc Analysis
-* Data Warehouse Reporting: [!UICONTROL Experience Platform Query Service] wird die neue Schnittstelle für diese Anwendungsfälle in CJA sein.
 * Mobile Services
-* Daten-Feeds
