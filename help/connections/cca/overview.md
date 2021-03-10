@@ -1,11 +1,11 @@
 ---
 title: Überblick über die kanalübergreifende Analyse
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 93%
 
 ---
 
@@ -45,6 +45,8 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 * Es werden nur Ereignis-Datensätze unterstützt. Andere Datensätze, wie beispielsweise Lookup-Datensätze, werden nicht unterstützt.
 * Benutzerdefinierte ID-Maps, die in Ihrem Unternehmen verwendet werden, werden nicht unterstützt.
 * Das Adobe Co-op-Diagramm und das Private-Diagramm werden nicht unterstützt.
+* Das zum Verbinden verwendete Kanal wird in Analytics nicht transformiert. Die feldbasierte Suche verwendet den Wert im angegebenen Feld, wie er im nicht zugewiesenen Datensatz innerhalb des Datensees vorhanden ist. Wenn beispielsweise das Wort &quot;Bob&quot;im Feld erscheint und manchmal das Wort &quot;BOB&quot;angezeigt wird, werden diese als zwei separate Personen behandelt.
+
 
 ## Aktivieren der kanalübergreifenden Analyse
 
