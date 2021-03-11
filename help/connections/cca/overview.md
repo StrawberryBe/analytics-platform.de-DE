@@ -2,10 +2,10 @@
 title: Überblick über die kanalübergreifende Analyse
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
 translation-type: tm+mt
-source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+source-git-commit: cc78a3941a4179be0dbf46055fea60df8e7e8b97
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 93%
+source-wordcount: '898'
+ht-degree: 84%
 
 ---
 
@@ -59,7 +59,8 @@ Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen ü
    * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Kennung, die in jeder Zeile erscheint)
    * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Verbindung der Personenkennung zwischen Datensätzen)
    * Ihre Voreinstellung für die Häufigkeit der [Wiederholungen](replay.md) und die Lookback-Länge. Zu den verfügbaren Optionen gehören eine Wiederholung pro Woche mit einem 7-tägigen Lookback-Fenster oder eine tägliche Wiederholung mit einem 1-tägigen Lookback-Fenster.
-1. Der Adobe Account Manager aktiviert die kanalübergreifende Analyse nach Erhalt Ihrer Anfrage. Nach der Aktivierung erscheint in Adobe Experience Platform ein neu zugewiesener Datensatz mit einer neuen Personen-ID-Spalte. Ihr Adobe Account Manager kann die neue Datensatz-ID und den Namen der Person-ID-Spalte bereitstellen.
+1. Der Kundenbetreuer der Adobe arbeitet mit der Adobe-Engineering zusammen, um bei Eingang Ihrer Anfrage Cross-Kanal Analytics zu aktivieren. Nach der Aktivierung wird in Adobe Experience Platform ein neuer Datensatz mit einer neuen Spalte mit der ID der Person angezeigt. Ihr Adobe Account Manager kann die neue Datensatz-ID und den Namen der Person-ID-Spalte bereitstellen.
+1. Wenn die Adobe zum ersten Mal aktiviert ist, wird eine Aufstockung der gehefteten Daten bereitgestellt, die bis zum Beginn des Vormonats (bis zu 60 Tage) zurückreicht. Um diese Aufstockung durchführen zu können, muss die transiente ID bis zu diesem Zeitpunkt in den nicht zugewiesenen Daten vorhanden sein.
 1. [Erstellen Sie eine Verbindung](../create-connection.md) in CJA mit dem neu erstellten Datensatz und beliebigen weiteren Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
 
