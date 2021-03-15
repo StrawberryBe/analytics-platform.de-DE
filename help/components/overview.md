@@ -2,10 +2,10 @@
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
 translation-type: tm+mt
-source-git-commit: c1699c4319b3b840d8420f3ffa1a4bd1c1d9a4d4
+source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 57%
+source-wordcount: '360'
+ht-degree: 95%
 
 ---
 
@@ -43,10 +43,10 @@ Sie können Komponenten (separat oder mehrere gleichzeitig) auf verschiedene Wei
 >Diese Aktionen beziehen sich nicht auf Zeitkomponenten.
 
 | Komponentenaktion | Beschreibung |
-|--- |--- |
-| Tag | Organisieren oder verwalten Sie Komponenten, indem Sie Tags darauf anwenden. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise „Analysen“ > „Komponenten“ > „Segmente“ oder „Analysen“ > „Komponenten“ > „Projekte“. |
-| Favorit | Fügen Sie die Komponente Ihrer Favoritenliste hinzu. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise „Analysen“ > „Komponenten“ > „Segmente“ oder „Analysen“ > „Komponenten“ > „Projekte“. |
-| Genehmigen | Genehmigen Sie die Komponente, um sie zu autorisieren. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise „Analysen“ > „Komponenten“ > „Segmente“ oder „Analysen“ > „Komponenten“ > „Projekte“. |
+| --- | --- |
+| Tag | Organisieren oder verwalten Sie Komponenten, indem Sie Tags darauf anwenden. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Segmente] oder [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Projekte]. |
+| Favorit | Fügen Sie die Komponente Ihrer Favoritenliste hinzu. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Segmente] oder [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Projekte]. |
+| Genehmigen | Genehmigen Sie die Komponente, um sie zu autorisieren. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Segmente] oder [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Projekte]. |
 | Freigeben | Gilt nur für Segmente. |
 | Löschen | Gilt nur für Segmente. |
 
@@ -56,12 +56,4 @@ Sehen Sie sich das Video zum Erstellen von Metriken, Segmenten und Daten an:
 
 ## Berechtigungen für Komponentenzugriff
 
-Administratoren können (über [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en#manage-users-and-products)) kuratieren, welche Komponenten in Berichte Benutzern zur Verfügung stehen. Die folgende Tabelle zeigt, wie sich diese Komponentenzugriffsberechtigungen verhalten:
-
-| Kurationstyp | Admin kann | Der Eigentümer des Nicht-Admin-Projekts (oder die Bearbeitungsrolle) kann | Rolle &quot;Nicht-Admin-Duplikat&quot; |
-| --- | --- | --- | --- |
-| **Komponenten &quot;ausgeblendet&quot;aus einer Ansicht** | Alle für Berichte verfügbaren Komponenten zur Ansicht von Daten (ausgeblendete Komponenten erfordern Klicken auf &quot;Alle anzeigen&quot;) | Nicht verfügbar für Berichte | Nicht verfügbar für Berichte |
-| **Komponenten, die zu einer Ansicht hinzugefügt oder daraus entfernt wurden** | Nur Komponenten, die der Ansicht hinzugefügt wurden (ausgeblendet oder nicht ausgeblendet). Administratoren können keine Berichte zu Feldern oder Komponenten erstellen, die nicht von der Ansicht definiert sind. | Nur Komponenten, die der Datenkomponente hinzugefügt wurden, oder Komponenten, die dem Ansicht gehören oder für ihn freigegeben wurden. Ausgeblendete Komponenten sind nicht verfügbar (wie VRS-Kuration). | Nur Komponenten, die dem DV hinzugefügt wurden, werden nicht ausgeblendet und wurden in die Projektkuration aufgenommen. |
-| **Kuratierte Komponenten in einem Projekt** | Alle für Berichte verfügbaren Komponenten zur Ansicht von Daten (ausgeblendete Komponenten erfordern Klicken auf &quot;Alle anzeigen&quot;) | Alle nicht ausgeblendeten Datenkomponenten (Ansicht durch Klicken auf &quot;Alle anzeigen&quot;) | Nur kuratierte Komponenten sowie alle Komponenten, die dem Benutzer gehören oder für ihn freigegeben wurden |
-| **Kuratiertes Projekt mithilfe einer Ansicht mit verborgenen Komponenten** | Alle für den Berichte verfügbaren Datenkomponenten (ausgeblendete und nicht kuratierte Komponenten müssen auf &quot;Alle anzeigen&quot;klicken) | Alle nicht kuratierten Projektkomponenten, alle nicht verborgenen Komponenten der Ansicht von Daten sowie alle Komponenten, die dem Benutzer gehören oder für ihn freigegeben wurden | Nur kuratierte Komponenten sowie alle Komponenten, die dem Benutzer gehören oder für ihn freigegeben wurden |
-
+In Analysis Workspace können Administratoren [kuratieren, welche Komponenten in Berichte Benutzern zur Verfügung stehen.](/help/analysis-workspace/curate-share/curate.md)
