@@ -1,26 +1,22 @@
 ---
 description: Durch Kuratierung können Sie die Komponenten einschränken, bevor Sie ein Projekt freigeben.
-keywords: Analysis Workspace curation
+keywords: Analysis Workspace-Kuratierung
 title: Kuratieren von Projekten
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 50%
 
 ---
 
 
 # Kuratieren von Projekten
 
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
-
 Mit der Kuratierung können Sie die Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche) vor der Freigabe eines Projekts einschränken. Wenn ein Empfänger das Projekt öffnet, wird ihm eine begrenzte Anzahl von Komponenten angezeigt, die Sie für ihn kuratiert haben. Die Kuratierung ist ein optionaler, aber empfehlenswerter Schritt, bevor Sie ein Projekt freigeben.
 
 >[!NOTE]
-> Produktprofile bestimmen als Hauptmechanismen, welche Komponenten ein Anwender sehen kann. Sie werden über die Adobe Experience Cloud Admin Console verwaltet. Kuratierung ist ein Sekundärfilter.
+> Produktprofile bestimmen als Hauptmechanismen, welche Komponenten ein Anwender sehen kann. Sie werden über die [Adobe Experience Cloud-Admin Console](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/admin-getting-started.html) verwaltet. Kuratierung ist ein Sekundärfilter.
 
 ## Anwenden der Projektkuratierung
 
@@ -48,23 +44,18 @@ So entfernen Sie die Projektkuratierung und stellen Sie den vollständigen Satz 
 1. Klicken Sie auf **[!UICONTROL Kuratierung entfernen]**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
-## Virtual Report Suite (VRS)-Kuratierung
+## Optionen zur Komponentenkuratierung
 
-Um die Kuratierung auf Report Suite-Ebene anzuwenden, sodass sie für viele Projekte gleichzeitig gilt, können Sie Komponenten in einer [Virtual Report Suite (VRS) kuratieren](https://docs.adobe.com/content/help/de-DE/analytics/components/virtual-report-suites/vrs-components.html).
-
->[!NOTE]
-> Die VRS-Kuratierung wird immer vor der Projektkuratierung ausgeführt. Das bedeutet, dass selbst wenn Ihr kuratiertes Projekt bestimmte Komponenten enthält, werden diese herausgefiltert, wenn die kuratierte VRS diese nicht enthält.
-
-## Option „Alle anzeigen“ für Komponenten
-
-In einem kuratierten Projekt oder einer VRS wird dem Empfänger die Option **[!UICONTROL Alle anzeigen]** für Komponenten in der linken Leiste angezeigt. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
+In einem kuratierten Projekt wird dem Empfänger die Option **[!UICONTROL Alle]**-Komponenten in der linken Leiste anzeigen angezeigt. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
 
 * Berechtigungsebene des Benutzers (Administrator oder Nicht-Administrator)
 * Projektrolle (Inhaber/Bearbeiter oder nicht)
-* Art der angewendeten Kuratierung (VRS oder Projekt)
+* Art der beantragten Kuration (auf Projektebene)
 
-| Kuratierungstyp | Admins | Inhaber- oder Bearbeiterrolle, kein Admin | Nicht-Administrator-Rolle zum Duplizieren oder Anzeigen |
-|---|---|---|---|
-| Kuratierte VRS | Alle nicht kuratierten VRS-Komponenten | Nicht kuratierte VRS-Komponenten, die diese Rolle besitzt oder die für diese Rolle freigegeben wurden | Nicht kuratierte VRS-Komponenten, die diese Rolle besitzt oder die für diese Rolle freigegeben wurden |
-| Kuratierte Projekte | Alle nicht kuratierten Projektkomponenten | Alle nicht kuratierten Projektkomponenten | Nicht kuratierte Projektkomponenten, die diese Rolle besitzt oder die für diese Rolle freigegeben wurden |
-| Kuratierte Projekte in kuratierte VRS | Alle nicht kuratierten Komponenten, aufgeführt unter  **[!UICONTROL Nicht kuratierte Projektkomponenten]** und **[!UICONTROL Nicht kuratierte VRS-Komponenten]** | Alle nicht kuratierten Projektkomponenten UND nicht kuratierten VRS-Komponenten, die dieser Rolle gehören oder für sie freigegeben wurden | Nicht kuratierte VRS- und Projektkomponenten, die diese Rolle besitzt oder die für diese Rolle freigegeben wurden |
+| Kurationstyp | Admin kann | Der Eigentümer des Nicht-Admin-Projekts (oder die Bearbeitungsrolle) kann | Rolle &quot;Nicht-Admin-Duplikat&quot;kann |
+| --- | --- | --- | --- |
+| **Komponenten &quot;ausgeblendet&quot;aus einer Ansicht** | Alle für Berichte verfügbaren Komponenten zur Ansicht von Daten (ausgeblendete Komponenten erfordern Klicken auf &quot;Alle anzeigen&quot;) | Nicht verfügbar für Berichte | Nicht verfügbar für Berichte |
+| **Komponenten, die zu einer Ansicht hinzugefügt oder daraus entfernt wurden** | Nur Komponenten, die der Ansicht hinzugefügt wurden (ausgeblendet oder nicht ausgeblendet). Administratoren können keine Berichte zu Feldern oder Komponenten erstellen, die nicht von der Ansicht definiert sind. | Nur Komponenten, die der Datenkomponente hinzugefügt wurden, oder Komponenten, die dem Ansicht gehören oder für ihn freigegeben wurden. Ausgeblendete Komponenten sind nicht verfügbar (wie VRS-Kuration). | Nur Komponenten, die dem DV hinzugefügt wurden, werden nicht ausgeblendet und wurden in die Projektkuration aufgenommen. |
+| **Kuratierte Komponenten in einem Projekt** | Alle für Berichte verfügbaren Komponenten zur Ansicht von Daten (ausgeblendete Komponenten erfordern Klicken auf &quot;Alle anzeigen&quot;) | Alle nicht ausgeblendeten Datenkomponenten (Ansicht durch Klicken auf &quot;Alle anzeigen&quot;) | Nur kuratierte Komponenten sowie alle Komponenten, die dem Benutzer gehören oder für ihn freigegeben wurden |
+| **Kuratiertes Projekt mithilfe einer Ansicht mit verborgenen Komponenten** | Alle für den Berichte verfügbaren Datenkomponenten (ausgeblendete und nicht kuratierte Komponenten müssen auf &quot;Alle anzeigen&quot;klicken) | Alle nicht kuratierten Projektkomponenten, alle nicht verborgenen Komponenten der Ansicht von Daten sowie alle Komponenten, die dem Benutzer gehören oder für ihn freigegeben wurden | Nur kuratierte Komponenten sowie alle Komponenten, die dem Benutzer gehören oder für ihn freigegeben wurden |
+
