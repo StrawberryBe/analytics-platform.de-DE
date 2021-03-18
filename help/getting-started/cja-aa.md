@@ -1,11 +1,11 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1035'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
