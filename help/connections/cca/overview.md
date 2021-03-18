@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
 workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 70%
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 * Es werden nur Ereignis-Datensätze unterstützt. Andere Datensätze, wie beispielsweise Lookup-Datensätze, werden nicht unterstützt.
 * Benutzerdefinierte ID-Maps, die in Ihrem Unternehmen verwendet werden, werden nicht unterstützt.
 * Das Adobe Co-op-Diagramm und das Private-Diagramm werden nicht unterstützt.
-* Das zum Verbinden verwendete Kanal wird in Analytics nicht transformiert. Die feldbasierte Suche verwendet den Wert im angegebenen Feld, wie er im nicht zugewiesenen Datensatz innerhalb des Datensees vorhanden ist. Beim Sticken wird zwischen Groß- und Kleinschreibung unterschieden. Wenn beispielsweise das Wort &quot;Bob&quot;im Feld erscheint und manchmal das Wort &quot;BOB&quot;angezeigt wird, werden diese als zwei separate Personen behandelt.
+* Cross-Channel Analytics transformiert nicht das zum Verbinden verwendete Feld. Die feldbasierte Zuordnung verwendet den Wert im angegebenen Feld so, wie er im nicht zugewiesenen Datensatz innerhalb des Datensees vorhanden ist. Beim Sticken wird zwischen Groß- und Kleinschreibung unterschieden. Wenn beispielsweise das Wort „Bob“ im Feld erscheint und manchmal das Wort „BOB“ angezeigt wird, werden diese als zwei separate Personen behandelt.
 * Da bei der feldbasierten Suche die Groß-/Kleinschreibung beachtet wird, empfiehlt Adobe für Analytics-Datensätze, die über den Analytics-Datenschnittstellen generiert werden, die Überprüfung aller VISTA-Regeln oder Verarbeitungsregeln, die für das Feld für die transiente ID gelten, um sicherzustellen, dass keine dieser Regeln neue Formulare derselben ID einführt. So sollten Sie beispielsweise sicherstellen, dass keine VISTA- oder Verarbeitungsregeln das Feld für die transiente ID nur für einen Teil der Ereignis verkleinern.
 * Bei der feldbasierten Suche werden Felder nicht kombiniert oder verkettet.
 * Das Feld für die transiente ID sollte einen einzelnen ID-Typ enthalten (d. h. IDs aus einem Namensraum). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
@@ -63,8 +63,8 @@ Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen ü
    * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Kennung, die in jeder Zeile erscheint)
    * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Verbindung der Personenkennung zwischen Datensätzen)
    * Ihre Voreinstellung für die Häufigkeit der [Wiederholungen](replay.md) und die Lookback-Länge. Zu den verfügbaren Optionen gehören eine Wiederholung pro Woche mit einem 7-tägigen Lookback-Fenster oder eine tägliche Wiederholung mit einem 1-tägigen Lookback-Fenster.
-1. Der Kundenbetreuer der Adobe arbeitet mit der Adobe-Engineering zusammen, um bei Eingang Ihrer Anfrage Cross-Kanal Analytics zu aktivieren. Nach der Aktivierung wird in Adobe Experience Platform ein neuer Datensatz mit einer neuen Spalte mit der ID der Person angezeigt. Ihr Adobe Account Manager kann die neue Datensatz-ID und den Namen der Person-ID-Spalte bereitstellen.
-1. Wenn die Adobe zum ersten Mal aktiviert ist, wird eine Aufstockung der gehefteten Daten bereitgestellt, die bis zum Beginn des Vormonats (bis zu 60 Tage) zurückreicht. Um diese Aufstockung durchführen zu können, muss die transiente ID bis zu diesem Zeitpunkt in den nicht zugewiesenen Daten vorhanden sein.
+1. Wenn Sie eine Anfrage nach Cross-Channel Analytics an den Adobe-Kundenbetreuer stellen, wird diese Funktion in Zusammenarbeit mit dem Engineering von Adobe aktiviert. Nach der Aktivierung wird in Adobe Experience Platform ein neuer umgeschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Ihr Adobe Account Manager kann die neue Datensatz-ID und den Namen der Person-ID-Spalte bereitstellen.
+1. Bei der erstmaligen Verwendung stellt Adobe eine Aufstockung der zugeordneten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zugewiesenen Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein.
 1. [Erstellen Sie eine Verbindung](../create-connection.md) in CJA mit dem neu erstellten Datensatz und beliebigen weiteren Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
 
