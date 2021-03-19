@@ -1,20 +1,20 @@
 ---
-title: Customer Journey Analytics-Dashboard - Übersicht
+title: Analytics-Dashboard - Übersicht
 description: Produktdokumentation und Selbsthilfe für Customer Journey Analytics-Dashboard
 translation-type: tm+mt
-source-git-commit: 6a2e32f6bdac3b47a74e262c0b0e0f4f93b2dc4d
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 79%
+source-wordcount: '204'
+ht-degree: 87%
 
 ---
 
 
-# Customer Journey Analytics [!UICONTROL Dashboard] - Übersicht
+# Analytics [!UICONTROL Dashboard] - Übersicht
 
-**Customer Journey Analytics- ** Dashboards bieten jederzeit und überall Einblicke von Customer Journey Analytics. Die App ermöglicht Benutzern mobilen Zugriff auf intuitive Scorecards. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem gekachelten Layout dargestellt werden. Sie können auf eine Scorecard tippen, um detailliertere Aufschlüsselungen und Trendberichte zu erhalten. Die mobile App wird sowohl auf iOS- als auch auf Android-Geräten unterstützt.
+**Analytics- ** Dashboards bieten jederzeit und überall Einblicke von Customer Journey Analytics. Die App ermöglicht Benutzern mobilen Zugriff auf intuitive Scorecards. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem gekachelten Layout dargestellt werden. Sie können auf eine Scorecard tippen, um detailliertere Aufschlüsselungen und Trendberichte zu erhalten. Die mobile App wird sowohl auf iOS- als auch auf Android-Geräten unterstützt.
 
-Weitere Informationen zu Customer Journey Analytics [!UICONTROL Dashboard] finden Sie in den folgenden Ressourcen:
+Weitere Informationen zu Analytics-[!UICONTROL Dashboards] finden Sie in den folgenden Ressourcen:
 
 * [Kuratorleitfaden](/help/mobile-app/curator.md): Dieses Handbuch soll Kuratoren bei der Konfiguration von Scorecards für ausführende Benutzer in [!UICONTROL Dashboards] helfen. Kuratoren können organisatorische Administratoren oder Personen in anderen Rollen sein, die für die Einrichtung von Scorecards zuständig sind.
 
