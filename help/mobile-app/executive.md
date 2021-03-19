@@ -1,23 +1,23 @@
 ---
 description: Anleitung zur Verwendung der Dashboard-Scorecards.
-title: Handbuch zu Adobe Analytics-Dashboards
+title: Handbuch zu Analytics-Dashboards
 translation-type: tm+mt
-source-git-commit: 132aba710395c46e123b4c13d6d8ef32c86d2e15
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 100%
+source-wordcount: '1290'
+ht-degree: 91%
 
 ---
 
 
-# Adobe Analytics-Dashboards: Schnellstarthandbuch für ausführende Benutzer
+# Analytics-Dashboards: Schnellstarthandbuch für ausführende Benutzer
 
-Im Folgenden finden Sie Informationen zu Best Practices für die Verwendung und Anzeige von Adobe Analytics-Dashboards. Ein Video mit diesen Informationen finden Sie unter [Adobe Analytics-Dashboards – In-App-Erlebnis](https://youtu.be/QXqQ_PkArbA).
+Im Folgenden finden Sie Informationen zu Best Practices für die Verwendung und Anzeige von Analytics-Dashboards. Ein Video mit diesen Informationen finden Sie unter [ Analytics-Dashboards – In-App-Erlebnis](https://youtu.be/QXqQ_PkArbA).
 
 
 ## Einführung
 
-Adobe Analytics-Dashboards bieten jederzeit und überall Erkenntnisse aus Adobe Analytics.  Die App ermöglicht Benutzern mobilen Zugriff auf intuitive Scorecards. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem gekachelten Layout dargestellt werden. Sie können auf eine Scorecard tippen, um detailliertere Aufschlüsselungen und Trendberichte zu erhalten. Dashboards werden sowohl unter iOS- als auch Android-Betriebssystemen unterstützt.
+Analytics-Dashboard bieten jederzeit und überall Einblicke von Customer Journey Analytics.  Die App ermöglicht Benutzern mobilen Zugriff auf intuitive Scorecards. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem gekachelten Layout dargestellt werden. Sie können auf eine Scorecard tippen, um detailliertere Aufschlüsselungen und Trendberichte zu erhalten. Dashboards werden sowohl unter iOS- als auch Android-Betriebssystemen unterstützt.
 
 ## Weitere Informationen zu diesem Handbuch
 
@@ -27,8 +27,8 @@ Dieses Handbuch soll ausführenden Benutzern helfen, die Scorecards in den Analy
 
 | Begriff | Definition |
 |--- |--- |
-| Verbraucher | Ausführende Person, die wichtige Schlüsselmetriken und Einblicke aus Analytics auf einem Mobilgerät anzeigt |
-| Kurator | Person, die mit der Datenerfassung und -auswertung vertraut ist, Einblicke in Analytics erkennt und verteilt und die Scorecards konfiguriert, die von Verbrauchern angezeigt werden |
+| Verbraucher | Executive Persona, die wichtige Metriken und Einblicke von CJA auf einem Mobilgerät anzeigt |
+| Kurator | Datenwörterbuch-Persona, der Erkenntnisse aus CJA findet und verteilt und die vom Verbraucher anzuzeigenden Scorecards konfiguriert |
 | Kuratierung | Der Vorgang der Erstellung oder Bearbeitung einer mobilen Scorecard mit relevanten Metriken, Dimensionen und anderen Komponenten für den Verbraucher |
 | Scorecard | Eine Ansicht der Dashboards mit einer oder mehreren Kacheln |
 | Kachel | Wiedergabe einer Metrik in einer Scorecard-Ansicht |
@@ -44,7 +44,7 @@ Um die Dashboards effektiv zu nutzen, bitten Sie Ihren Scorecard-Kurator bei der
 
 Um auf Scorecards in Dashboards zuzugreifen, stellen Sie Folgendes sicher:
 
-* Sie haben gültige Anmeldeinformationen für Adobe Analytics.
+* Sie haben eine gültige Anmeldung bei Customer Journey Analytics
 * Ihr Kurator hat mobile Scorecards korrekt erstellt und für Sie freigegeben.
 
 ### Herunterladen und Installieren von Dashboards
@@ -53,13 +53,13 @@ Um die App herunterzuladen und zu installieren, führen Sie die Schritte entspre
 
 **Für ausführende Benutzer mit iOS-Geräten:**
 
-Klicken Sie auf den folgenden Link (auch in Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der Applikation:
+Klicken Sie auf den folgenden Link (er ist auch in CJA unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboard (Mobile App)]** verfügbar) und befolgen Sie die Eingabeaufforderungen zum Herunterladen, Installieren und Öffnen der App:
 
 [iOS-Link](https://apple.co/2zXq0aN)
 
 **Für ausführende Benutzer mit Android-Geräten:**
 
-Klicken Sie auf den folgenden Link (auch in Analytics unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboards (mobile App)]** verfügbar) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der Applikation:
+Klicken Sie auf den folgenden Link (er ist auch in CJA unter **[!UICONTROL Tools]** > **[!UICONTROL Analytics-Dashboard (Mobile App)]** verfügbar) und befolgen Sie die Eingabeaufforderungen zum Herunterladen, Installieren und Öffnen der App:
 
 [Android-Link](https://bit.ly/2LM38Oo)
 
