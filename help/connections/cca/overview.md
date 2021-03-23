@@ -1,11 +1,11 @@
 ---
 title: Überblick über die kanalübergreifende Analyse
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1076'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -45,11 +45,11 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 * Es werden nur Ereignis-Datensätze unterstützt. Andere Datensätze, wie beispielsweise Lookup-Datensätze, werden nicht unterstützt.
 * Benutzerdefinierte ID-Maps, die in Ihrem Unternehmen verwendet werden, werden nicht unterstützt.
 * Das Adobe Co-op-Diagramm und das Private-Diagramm werden nicht unterstützt.
-* Cross-Channel Analytics transformiert nicht das zum Verbinden verwendete Feld. Die feldbasierte Zuordnung verwendet den Wert im angegebenen Feld so, wie er im nicht zugewiesenen Datensatz innerhalb des Datensees vorhanden ist. Beim Sticken wird zwischen Groß- und Kleinschreibung unterschieden. Wenn beispielsweise das Wort „Bob“ im Feld erscheint und manchmal das Wort „BOB“ angezeigt wird, werden diese als zwei separate Personen behandelt.
-* Da bei der feldbasierten Suche die Groß-/Kleinschreibung beachtet wird, empfiehlt Adobe für Analytics-Datensätze, die über den Analytics-Datenschnittstellen generiert werden, die Überprüfung aller VISTA-Regeln oder Verarbeitungsregeln, die für das Feld für die transiente ID gelten, um sicherzustellen, dass keine dieser Regeln neue Formulare derselben ID einführt. So sollten Sie beispielsweise sicherstellen, dass keine VISTA- oder Verarbeitungsregeln das Feld für die transiente ID nur für einen Teil der Ereignis verkleinern.
-* Bei der feldbasierten Suche werden Felder nicht kombiniert oder verkettet.
-* Das Feld für die transiente ID sollte einen einzelnen ID-Typ enthalten (d. h. IDs aus einem Namensraum). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
-* Wenn mehrere Ereignis mit demselben Zeitstempel für dieselbe beständige ID auftreten, jedoch unterschiedliche Werte im Feld für die transiente ID vorliegen, wird die feldbasierte Suche auf Grundlage der alphabetischen Reihenfolge gewählt. Wenn also eine beständige ID A zwei Ereignis mit demselben Zeitstempel hat und eines der Ereignis Bob und das andere Ann angibt, wählt die feldbasierte Suche Ann.
+* Cross-Channel Analytics transformiert nicht das zum Verbinden verwendete Feld. Die feldbasierte Zuordnung verwendet den Wert im angegebenen Feld so, wie er im nicht zugewiesenen Datensatz innerhalb des Datensees vorhanden ist. Bei der Zuordnung wird zwischen Groß- und Kleinschreibung unterschieden. Wenn beispielsweise das Wort „Bob“ im Feld erscheint und manchmal das Wort „BOB“ angezeigt wird, werden diese als zwei separate Personen behandelt.
+* Da bei der feldbasierten Zuordnung die Groß- und Kleinschreibung beachtet wird, empfiehlt Adobe für Analytics-Datensätze, die über den Analytics-Daten-Connector generiert werden, die Überprüfung aller VISTA-Regeln oder Verarbeitungsregeln, die für das Feld für die vorübergehende ID gelten, um sicherzustellen, dass keine dieser Regeln neue Formen derselben ID einführt. So sollten Sie beispielsweise sicherstellen, dass keine VISTA- oder Verarbeitungsregeln dafür sorgen, dass im Feld für die vorübergehende ID nur für einen Teil der Ereignisse Kleinschreibung verwendet wird.
+* Bei der feldbasierten Suche werden Felder nicht kombiniert oder verknüpft.
+* Das Feld für die vorübergehende ID sollte nur einen ID-Typ enthalten (also IDs aus einem einzigen Namespace). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
+* Wenn mehrere Ereignis mit demselben Zeitstempel für dieselbe permanente ID auftreten, jedoch unterschiedliche Werte im Feld für die vorübergehende ID vorliegen, wird die feldbasierte Zuordnung auf Grundlage der alphabetischen Reihenfolge gewählt. Wenn also eine permanente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignis „Bob“ und das andere „Ann“ angibt, wählt die feldbasierte Zuordnung „Ann“.
 
 
 ## Aktivieren der kanalübergreifenden Analyse
