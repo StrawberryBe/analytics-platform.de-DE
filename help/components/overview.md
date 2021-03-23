@@ -1,11 +1,11 @@
 ---
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -56,4 +56,4 @@ Sehen Sie sich das Video zum Erstellen von Metriken, Segmenten und Daten an:
 
 ## Berechtigungen für Komponentenzugriff
 
-In Analysis Workspace können Administratoren [kuratieren, welche Komponenten in Berichte Benutzern zur Verfügung stehen.](/help/analysis-workspace/curate-share/curate.md)
+In Analysis Workspace können Administratoren [kuratieren](/help/analysis-workspace/curate-share/curate.md), welche Komponenten Benutzern beim Reporting zur Verfügung stehen.
