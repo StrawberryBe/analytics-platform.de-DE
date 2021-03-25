@@ -2,17 +2,17 @@
 title: Analytics-Dashboard - Übersicht
 description: Produktdokumentation und Selbsthilfe für Customer Journey Analytics-Dashboard
 translation-type: tm+mt
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
+source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 87%
+source-wordcount: '208'
+ht-degree: 73%
 
 ---
 
 
 # Analytics [!UICONTROL Dashboard] - Übersicht
 
-**Analytics- ** Dashboards bieten jederzeit und überall Einblicke von Customer Journey Analytics. Die App ermöglicht Benutzern mobilen Zugriff auf intuitive Scorecards. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem gekachelten Layout dargestellt werden. Sie können auf eine Scorecard tippen, um detailliertere Aufschlüsselungen und Trendberichte zu erhalten. Die mobile App wird sowohl auf iOS- als auch auf Android-Geräten unterstützt.
+**Analytics- ** Dashboards bieten jederzeit und überall Einblicke aus Adobe Analytics, einschließlich Customer Journey Analytics. Die App ermöglicht Benutzern mobilen Zugriff auf intuitive Scorecards. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem Kachellayout vorgestellt werden und auf die Sie für detailliertere Aufschlüsselungen und Trenddaten-Ansichten tippen können. Die mobile App wird sowohl auf iOS- als auch auf Android-Geräten unterstützt.
 
 Weitere Informationen zu Analytics-[!UICONTROL Dashboards] finden Sie in den folgenden Ressourcen:
 
