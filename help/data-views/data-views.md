@@ -1,11 +1,11 @@
 ---
 title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
-description: null
+description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
 translation-type: tm+mt
-source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
+source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 6%
+source-wordcount: '1126'
+ht-degree: 7%
 
 ---
 
@@ -52,13 +52,15 @@ Die neueste Aktualisierung der Daten-Ansichten bietet Ihnen viel mehr Flexibilit
 ## Voraussetzung
 
 * Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
-* Zum Erstellen oder Verwalten einer Ansicht benötigen Sie die folgenden Berechtigungen in Adobe Admin Console:
+* Zum Erstellen oder Verwalten einer Ansicht benötigen Sie einen [Berechtigungssatz in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de-DE#admin-access-permissions).
 
 ## Informationen zur Ansicht einer Komponente
 
 Klicken Sie in Workspace auf das Informationssymbol (i), um die Ansicht des Schema-Felds, auf dem eine Komponente basiert, und der zugehörigen Einstellungen, z. B. einer Beschreibung, zu treffen.
 
 ## Einstellungen für die Ansicht von Daten, die Sie in Workspace überschreiben können
+
+Einige Einstellungen für die Ansicht von Daten können in Analysis Workspace auf Projektebene überschrieben werden, andere nicht.
 
 * Lookback-Fenster
 * Metrikzuordnung
@@ -70,10 +72,6 @@ Klicken Sie in Workspace auf das Informationssymbol (i), um die Ansicht des Sche
 * Metrikformatierung
 * Name der Datenansicht
 * Zuweisung von Dimensionen
-
-## Kein Wert
-
-Sie können festlegen, wie diese Dimension &quot;Ohne/Kein Wert/Nicht angegeben&quot;aufgerufen werden soll und ob sie für Benutzer in Berichte sichtbar sein soll. Administratoren und Benutzer (für Projekte, deren Eigentümer sie sind) können die Sichtbarkeitseinstellung in Workspace jedoch ändern.
 
 ## Löschen von Datenansichten
 
