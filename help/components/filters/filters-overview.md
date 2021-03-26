@@ -2,10 +2,10 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 translation-type: tm+mt
-source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '967'
+ht-degree: 92%
 
 ---
 
@@ -80,3 +80,11 @@ Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 * Listen-Props
 * Listendimensionen
 * Merchandising-Dimensionen (im Kontext von Ereignissen)
+
+## Vordefinierte Filtervorlage
+
+Die herkömmliche Analytics-Version enthält eine Vielzahl vordefinierter Vorlagensegmente (Filter) und berechneter Metriken. Viele von ihnen gelten nicht für CJA oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen in CJA ab.
+
+| Filtername | Beschreibung |
+| --- | --- |
+| Alle Daten | Dies ist ein erforderlicher Filter, der dem Segment &quot;Alle Besuche&quot;in der herkömmlichen Adobe Analytics entspricht. Es wird dynamisch zum Berichte hinzugefügt, wenn eine Metrik zur Zeile einer Freiformtabelle hinzugefügt wird. |
