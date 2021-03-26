@@ -2,10 +2,10 @@
 title: Übersicht über berechnete Metriken
 description: 'Informationen zu den '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 82%
 
 ---
 
@@ -47,3 +47,12 @@ Hier sehen Sie einen Vergleich zwischen den jeweiligen Möglichkeiten, die berec
 | Manager für berechnete Metriken | <ul><li>Metriken für andere freigeben.</li><li>Metriken genehmigen und kuratieren.</li><li>Metriken organisieren (taggen), damit sie von Benutzern gefunden werden können.</li><li>Metriken löschen.</li><li>Metriken umbenennen.</li></ul> |
 | API für berechnete Metriken | Teil des Adobe Analytics 2.0-API-Sets. |
 
+## Vorlagen für berechnete Metriken in CJA
+
+| Name der berechneten Metrik | Beschreibung der berechneten Metrik |
+| --- | --- |
+| Sitzungen pro Person | Durchschnittliche Anzahl der Sitzungen pro Person |
+| Sitzungsrate Beginn | Der Prozentsatz der Zeit, zu der ein Dimensionselement im ersten Ereignis einer Sitzung auftrat. |
+| Endrate der Sitzung | Der Prozentsatz der Zeit, zu der ein Dimensionselement im letzten Ereignis einer Sitzung auftrat. |
+| Aufgewendete Zeit pro Person | Die durchschnittliche Zeit, die eine Person für einen bestimmten Dimensionselement verbracht hat. |
+| Besuchszeit pro Sitzung | Die durchschnittliche Zeit, die eine Person pro Sitzung für einen gegebenen Dimensionselement verbracht hat. |
