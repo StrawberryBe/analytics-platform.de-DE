@@ -2,10 +2,10 @@
 title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
 description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
 translation-type: tm+mt
-source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 7%
+source-wordcount: '1127'
+ht-degree: 4%
 
 ---
 
@@ -75,4 +75,4 @@ Einige Einstellungen für die Ansicht von Daten können in Analysis Workspace au
 
 ## Löschen von Datenansichten
 
-Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle Workspace-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
+Wenn Sie eine Ansicht mit Daten in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, dass Workspace-Projekte, die von dieser Ansicht der gelöschten Daten abhängen, nicht mehr funktionieren.
