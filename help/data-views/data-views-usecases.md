@@ -2,9 +2,9 @@
 title: Anwendungsfälle für die Ansicht von Daten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics zeigen
 translation-type: tm+mt
-source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
+source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Anwendungsfälle von Ansichten
 
-Die Möglichkeiten für
+Diese Anwendungsfälle zeigen die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics.
 
 ## Erstellen einer Bestellmetrik aus einem Seitentitel-(String-)Schema-Feld
 
