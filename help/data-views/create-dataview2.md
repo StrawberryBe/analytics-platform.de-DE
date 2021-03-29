@@ -2,7 +2,7 @@
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 translation-type: tm+mt
-source-git-commit: 6cfab7fc7ce3360b5ea2ed8bdd7f3e0a8e76a24d
+source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
 workflow-type: tm+mt
 source-wordcount: '2464'
 ht-degree: 8%
@@ -19,7 +19,7 @@ Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dime
 1. Gehen Sie in Customer Journey Analytics zur Registerkarte **Datenansichten**.
 2. Klicken Sie auf **Hinzufügen**, um eine neue Data Ansicht zu erstellen und deren Einstellungen zu konfigurieren.
 
-![](assets/)
+![](assets/new-data-view.png)
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
