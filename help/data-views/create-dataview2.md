@@ -2,40 +2,46 @@
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 translation-type: tm+mt
-source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '2464'
-ht-degree: 8%
+source-wordcount: '2621'
+ht-degree: 6%
 
 ---
 
 
 # Neue Ansicht erstellen
 
-Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dimensionen aus Schema-Elementen oder die Verwendung von Standardkomponenten. Die Erstellung von Metriken oder Dimensionen bietet Ihnen eine enorme Flexibilität. Bisher wurde angenommen, dass bei Datensätzen in Adobe Experience Platform Zeichenfolgenfelder Dimensionen und numerische Felder Metriken waren. Um diese Felder zu ändern, mussten Sie Ihr Schema in Plattform bearbeiten. Die Benutzeroberfläche &quot;Ansichten&quot;ermöglicht jetzt eine Freiformdefinition von Metriken und Dimensionen.
+>[!IMPORTANT]
+>
+>Diese Funktion wird derzeit nur eingeschränkt getestet.
 
-## Einstellungen und Container für Data Ansichten konfigurieren
+Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dimensionen aus Schema-Elementen oder die Verwendung von Standardkomponenten. Die Erstellung von Metriken oder Dimensionen bietet Ihnen eine enorme Flexibilität. Bisher wurde davon ausgegangen, dass bei Datensätzen in Adobe Experience Platform Zeichenfolgenfelder als Dimensionen und numerische Felder als Metriken verwendet wurden. Um diese Felder zu ändern, mussten Sie Ihr Schema in Plattform bearbeiten. Die Benutzeroberfläche &quot;Ansichten&quot;ermöglicht jetzt eine [Freiformdefinition von Metriken und Dimensionen](/help/data-views/data-views.md).
 
-1. Gehen Sie in Customer Journey Analytics zur Registerkarte **Datenansichten**.
-2. Klicken Sie auf **Hinzufügen**, um eine neue Data Ansicht zu erstellen und deren Einstellungen zu konfigurieren.
+## 1. Einstellungen und Container für Data Ansichten konfigurieren
+
+1. Gehen Sie in Customer Journey Analytics zur Registerkarte **[!UICONTROL Datenansichten]**.
+2. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Data Ansicht zu erstellen und deren Einstellungen zu konfigurieren.
 
 ![](assets/new-data-view.png)
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| Verbindung | In diesem Feld wird die Ansicht der Daten mit der zuvor eingerichteten Verbindung verknüpft, die einen oder mehrere Adobe Experience Platform-Datensätze enthält. |
-| Name | Geben Sie der Datenansicht einen Namen. Dies ist ein Pflichtfeld. |
-| Beschreibung | Eine detaillierte Beschreibung ist nicht obligatorisch, wird jedoch empfohlen. |
-| Zeitzone | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. |
-| Tags | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
-| Container | Sie können Ihre Container hier umbenennen und so werden sie in jedem Workspace-Projekt angezeigt, das auf dieser Ansicht basiert. Container werden in Filtern und Fallout/Fluss verwendet, um zu definieren, wie breit oder schmal der Umfang oder Kontext ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
-| Name des Containers... | Person (Standard). Der Personen-Container enthält sämtliche Besuche und Seitenansichten für Besucher innerhalb eines bestimmten Zeitraums. Sie können diesen Begriff in &quot;Benutzer&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
-| Der Name des Session Containers lautet... | Sitzung (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Sie können diesen Begriff in &quot;Besuch&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
-| Ereignis Container name ist... | Ereignis (Standard). Der Ereignis-Container definiert, welche Seitenereignisse von einem Filter eingeschlossen oder ausgeschlossen werden sollen. |
+| [!UICONTROL Verbindung] | In diesem Feld wird die Ansicht der Daten mit der zuvor eingerichteten Verbindung verknüpft, die einen oder mehrere Adobe Experience Platform-Datensätze enthält. |
+| [!UICONTROL Name] | Geben Sie der Datenansicht einen Namen. Dies ist ein Pflichtfeld. |
+| [!UICONTROL Beschreibung] | Eine detaillierte Beschreibung ist nicht obligatorisch, wird jedoch empfohlen. |
+| [!UICONTROL Zeitzone] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. |
+| [!UICONTROL Tags] | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
+| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen und so werden sie in jedem Workspace-Projekt angezeigt, das auf dieser Ansicht basiert. Container werden in Filtern und Fallout/Fluss verwendet, um zu definieren, wie breit oder schmal der Umfang oder Kontext ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Name des Containers...] | [!UICONTROL Person]  (Standard). Der Container [!UICONTROL Person] enthält alle Besuche und Ansichten für Besucher innerhalb eines bestimmten Zeitraums. Sie können diesen Begriff in &quot;Benutzer&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
+| [!UICONTROL Der Name des Session Containers lautet...] | [!UICONTROL Sitzung]  (Standard). Mit dem Container [!UICONTROL Sitzung] können Sie Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifizieren. Sie können diesen Begriff in &quot;Besuch&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
+| [!UICONTROL Ereignis Container name ist...] | [!UICONTROL Ereignis]  (Standard). Der Container [!UICONTROL Ereignis] definiert, welche Ereignis von Seiten Sie in einen Filter einbeziehen oder ausschließen möchten. |
 
-Als Nächstes erstellen Sie Metriken und Dimensionen aus Schema-Elementen.
+Als Nächstes können Sie Metriken und Dimensionen aus Schema-Elementen erstellen. Sie können auch Standardkomponenten verwenden.
 
-## Erstellen von Metriken und Dimensionen aus Schema-Elementen
+## 2. Erstellen von Metriken und Dimensionen aus Schema-Elementen
+
+
 
 1. Klicken Sie unter [!UICONTROL Customer Journey Analytics] > [!UICONTROL Data Ansichten] auf die Registerkarte [!UICONTROL Komponenten].
 
@@ -45,9 +51,13 @@ Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!
 
 1. Ziehen Sie nun ein Schema, z. B. [!UICONTROL pageTitle], aus der linken Leiste in den Bereich Metriken oder Dimensionen.
 
-   Sie können dasselbe Schema mehrere Male in die Dimensionen oder Metriken ziehen und dieselbe Dimension oder Metrik auf unterschiedliche Weise konfigurieren. Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension namens &quot;Produktseiten&quot;und eine weitere Dimension &quot;Fehlerseiten&quot;erstellen usw. von **[!UICONTROL pageTitle]**; können Sie auch Metriken aus einem Zeichenfolgenwert erstellen. Sie können beispielsweise eine oder mehrere **[!UICONTROL Bestellungen]** Metriken mit unterschiedlichen Zuordnungseinstellungen und unterschiedlichen Ein-/Ausschlusswerten erstellen.
+   Sie können dasselbe Schema mehrmals in die Dimensionen oder Metrikabschnitte ziehen und dieselbe Dimension oder Metrik auf unterschiedliche Weise konfigurieren. Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension namens &quot;Produktseiten&quot;und eine weitere Dimension &quot;Fehlerseiten&quot;erstellen usw. von **[!UICONTROL pageTitle]**; können Sie auch Metriken aus einem Zeichenfolgenwert erstellen. Sie können beispielsweise eine oder mehrere **[!UICONTROL Bestellungen]** Metriken mit unterschiedlichen Zuordnungseinstellungen und unterschiedlichen Ein-/Ausschlusswerten erstellen.
 
    ![](assets/components-tab-3.png)
+
+   >[!NOTE]
+   >
+   >Sie können ganze Schema-Feldordner aus der linken Leiste ziehen und sie werden automatisch in herkömmliche Bereiche sortiert. Die Zeichenfolgenfelder werden im Abschnitt [!UICONTROL Dimensionen] und die Zahlen im Abschnitt [!UICONTROL Metriken] angezeigt. Sie können auch auf **[!UICONTROL Hinzufügen alle]** klicken und alle Schema-Felder werden hinzugefügt.
 
 1. Nachdem Sie die Komponente ausgewählt haben, werden auf der rechten Seite eine Reihe von Einstellungen angezeigt. Konfigurieren Sie die Komponente mithilfe der unten beschriebenen Einstellungen.
 
@@ -66,8 +76,8 @@ Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!
 | [!UICONTROL Datensatz] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Feldtyp die Komponente stammt (z. B. String, Integer usw.). Dieses Feld kann mehrere Datensätze enthalten, z. B. wenn Sie mehrere Report Suites kombinieren. |
 | [!UICONTROL Typ des Schemas] | Gibt an, ob es sich bei der Komponente um eine Zeichenfolge, eine Ganzzahl usw. handelt. |
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [CJA-API](https://adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Sie können auf das Bearbeitungssymbol klicken und diese Komponenten-ID ändern. Wenn Sie diese Komponenten-ID ändern, werden jedoch alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, umgangen.<br>Wenn Sie jemals eine andere Datenfelddimension erstellen, die ein anderes Ansicht für eine pageTitle-Dimension verwendet, können Sie diese umbenennen und die Ansicht der Dimension für Datenübergreifende Inhalte kompatibel machen. |
-| Path | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
-| Komponente in Reports verbergen | Standard = aus. Ermöglicht das Kuratieren der Komponente aus der Data-Ansicht, wenn sie in Berichte verwendet wird. Dies wirkt sich nicht auf Berechtigungen aus, sondern nur auf die Kuratierung von Komponenten. Mit anderen Worten, Sie können die Komponente in Berichte vor Nicht-Admins ausblenden. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
+| [!UICONTROL Path] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
+| [!UICONTROL Komponente in Reports verbergen] | Standard = aus. Ermöglicht das Kuratieren der Komponente aus der Data-Ansicht, wenn sie in Berichte verwendet wird. Dies wirkt sich nicht auf Berechtigungen aus, sondern nur auf die Kuratierung von Komponenten. Mit anderen Worten, Sie können die Komponente in Berichte vor Nicht-Admins ausblenden. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
 
 ### Formateinstellungen konfigurieren
 
@@ -121,18 +131,20 @@ Sie können beispielsweise eine Dimension aus dem Feld &quot;pageTitle&quot;erst
 
 [!UICONTROL Keine ] Wertoptionen sind im Berichte identisch mit   Nicht festgelegten oder   Nicht-Werten. In der Benutzeroberfläche &quot;Ansichten&quot;können Sie für jede Komponente festlegen, wie diese Werte in Berichte behandelt werden sollen. Sie können [!UICONTROL Kein Wert] auch in etwas umbenennen, das Ihrer Umgebung besser entspricht, z. B. [!UICONTROL Null], [!UICONTROL Nicht festgelegt] oder andere.
 
-Wichtig: Wenn Sie dieses Feld in einen benutzerdefinierten Wert ändern, wird der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt. Wenn Sie also den Wert &quot;Red&quot;in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge &quot;Red&quot;in den Daten selbst ebenfalls unter dem von Ihnen angegebenen Zeileneintrag rollierend.
+>[!NOTE]
+>
+>Wenn Sie dieses Feld in einen benutzerdefinierten Wert ändern, wird der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt. Wenn Sie also den Wert &quot;Red&quot;in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge &quot;Red&quot;in den Daten selbst ebenfalls unter dem von Ihnen angegebenen Zeileneintrag rollierend.
 
-Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, für eine spezielle UI-Behandlung des Zeileneintrags &quot;Kein Wert&quot;in Berichte verwendet werden kann, wie in der Einstellung &quot;Keine Wertoptionen&quot;angegeben. (Nicht sicher, was das bedeutet.)
+Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, für eine spezielle UI-Behandlung des Zeileneintrags [!UICONTROL Kein Wert] in Berichte verwendet werden kann, wie in der Einstellung [!UICONTROL Keine Wertoptionen] beschrieben.
 
 ![](assets/no-value-options.png)
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| Wenn angezeigt, rufen Sie [!UICONTROL Kein Wert] auf... | Hier können Sie **[!UICONTROL Kein Wert]** in etwas Anderes umbenennen. |
-| **[!UICONTROL Kein Wert]** standardmäßig nicht anzeigen | Zeigt diesen Wert nicht in Berichte an. |
-| Standardmäßig **[!UICONTROL Kein Wert]** anzeigen | Zeigt diesen Wert in Berichte an. |
-| **[!UICONTROL Kein Wert]** als Wert behandeln | Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in &quot;Desktop&quot;umbenennen. |
+| [!UICONTROL Wenn angezeigt, wird Kein Wert] aufgerufen... | Hier können Sie **[!UICONTROL Kein Wert]** in etwas Anderes umbenennen. |
+| [!UICONTROL Kein Wert standardmäßig anzeigen] | Zeigt diesen Wert nicht in Berichte an. |
+| [!UICONTROL Standardmäßig keinen Wert anzeigen] | Zeigt diesen Wert in Berichte an. |
+| [!UICONTROL Kein Wert als Wert behandeln] | Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in &quot;Desktop&quot;umbenennen. |
 
 ### Persistenzeinstellungen konfigurieren
 
@@ -142,9 +154,9 @@ Diese Einstellungen ähneln den eVar im herkömmlichen Adobe Analytics.
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| Persistenz festlegen | Schlüssel umschalten |
-| Zuordnung | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind: Zuletzt verwendet: Original, Instanz, Alle. Wenn ein Wert beibehalten werden soll (ähnlich wie bei eVars in herkömmlichen Analytics), legen Sie ihn hier fest. Der einzige wichtige Unterschied besteht darin, dass die maximale Persistenz, die Sie einstellen können, 90 Tage beträgt. Außerdem ist [!UICONTROL Niemals ablaufen] keine Option. |
-| Gültigkeit | Hiermit können Sie das Persistenzfenster für eine Dimension angeben. Die Optionen sind: Sitzung (Standard), Person, Zeit, Metrik. Möglicherweise müssen Sie die Dimension bei einem Kauf ablaufen lassen können (z. B. interne Suchbegriffe oder andere Merchandising-Anwendungsfälle). Mit &quot;Metrik&quot;können Sie eine der definierten Metriken als Ablauf für diese Dimension angeben (z. B. eine &quot;Kauf&quot;-Metrik). |
+| [!UICONTROL Persistenz festlegen] | Schlüssel umschalten |
+| [!UICONTROL Zuordnung] | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind: Zuletzt verwendet: Original, Instanz, Alle. Wenn ein Wert beibehalten werden soll (ähnlich wie bei eVars in herkömmlichen Analytics), legen Sie ihn hier fest. Der einzige wichtige Unterschied besteht darin, dass die maximale Persistenz, die Sie einstellen können, 90 Tage beträgt. Außerdem ist [!UICONTROL Niemals ablaufen] keine Option. |
+| [!UICONTROL Ablauf] | Hiermit können Sie das Persistenzfenster für eine Dimension angeben. Die Optionen sind: [!UICONTROL Sitzung] (Standard), [!UICONTROL Person], [!UICONTROL Zeit], [!UICONTROL Metrik]. Möglicherweise müssen Sie die Dimension bei einem Kauf ablaufen lassen (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle).  Metriken, die Sie als Ablaufdatum für diese Dimension festlegen (z. B. eine   Kaufmetrik). |
 
 ### Einstellungen für die Wertberechnung konfigurieren
 
@@ -152,35 +164,35 @@ Diese Einstellungen ähneln den eVar im herkömmlichen Adobe Analytics.
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| Bucket-Wert | Ermöglicht das Erstellen einer zusammengefassten Version einer numerischen Dimension. Auf diese Weise können Sie Berichte zu Umsatzbehältern oder anderen numerischen Werten als Dimension in Berichte erstellen. Sie können bis zu 5 Behälter erstellen. |
-| Bis zu | Hier können Sie die Grenzen des ersten numerischen Dimensionsbuckets angeben. Dies gilt nur für numerische Dimensionen. |
-| Zwischen und bis | Hier können Sie die Grenzen der nachfolgenden numerischen Dimensionsbehälter angeben. |
-| Bucket hinzufügen | Ermöglicht das Hinzufügen eines weiteren Behälters zum Bucket für numerische Dimensionen. |
+| [!UICONTROL Bucket-Wert] | Ermöglicht das Erstellen einer zusammengefassten Version einer numerischen Dimension. Auf diese Weise können Sie Berichte zu Umsatzbehältern oder anderen numerischen Werten als Dimension in Berichte erstellen. Sie können bis zu 5 Behälter erstellen. |
+| [!UICONTROL Bis zu] | Hier können Sie die Grenzen des ersten numerischen Dimensionsbuckets angeben. Dies gilt nur für numerische Dimensionen. |
+| [!UICONTROL Zwischen und bis] | Hier können Sie die Grenzen der nachfolgenden numerischen Dimensionsbehälter angeben. |
+| [!UICONTROL Bucket hinzufügen] | Ermöglicht das Hinzufügen eines weiteren Behälters zum Bucket für numerische Dimensionen. |
 
-## Standardkomponenten verwenden
+### Verwenden Sie [!UICONTROL Standardkomponenten]
 
 Neben der Erstellung von Metriken und Dimensionen aus Schema-Elementen können Sie auch Standardkomponenten in Ihren Daten-Ansichten verwenden.
 
-Standardkomponenten sind Komponenten, die nicht aus Datenbestand-Schema-Feldern generiert werden, sondern stattdessen vom System generiert werden. Einige Systemkomponenten sind in jeder Data Ansicht erforderlich, um die Funktionen des Berichte in Analysis Workspace zu erleichtern, andere Systemkomponenten sind optional.
+[!UICONTROL Standardkomponenten ] sind Komponenten, die nicht aus Datenaset-Schema-Feldern generiert werden, sondern stattdessen vom System generiert werden. Einige Systemkomponenten sind in jeder Data Ansicht erforderlich, um die Funktionen des Berichte in Analysis Workspace zu erleichtern, andere Systemkomponenten sind optional.
 
-![](RackMultipart20210326-4-374d6q_html_1100d8d54f8c09ac.png)
+![](assets/standard-components.png)
 
 Erforderliche Standardkomponenten
 
 | Komponentenname | Dimension oder Metrik | Hinweise |
 | --- | --- | --- |
-| Personen | Metrik | Zuvor in Analytics als [!UICONTROL Individuelle Besucher] bezeichnet. Diese Metrik basiert auf der in einer Verbindung angegebenen Person-ID. |
-| Sitzungen | Metrik | Früher in herkömmlicher Analytics als [!UICONTROL Besuche] bezeichnet. Diese Metrik basiert auf den unten angegebenen Sitzungseinstellungen. |
-| Ereignisse | Metrik | Früher in traditionellen Analytics als [!UICONTROL Vorfälle] bezeichnet. Diese Metrik stellt die Anzahl der Zeilen aus allen Ereignis-Datensätzen in einer Verbindung dar. |
-| Tag | Dimension |  |
-| Woche | Dimension |  |
-| Monat | Dimension |  |
-| Quartal | Dimension |  |
-| Jahr | Dimension |  |
-| Stunde | Dimension |  |
-| Minute | Dimension |  |
+| [!UICONTROL Personen] | Metrik | Zuvor in Analytics als [!UICONTROL Individuelle Besucher] bezeichnet. Diese Metrik basiert auf der in einer Verbindung angegebenen Person-ID. |
+| [!UICONTROL Sitzungen] | Metrik | Früher in herkömmlicher Analytics als [!UICONTROL Besuche] bezeichnet. Diese Metrik basiert auf den unten angegebenen Sitzungseinstellungen. |
+| [!UICONTROL Ereignisse] | Metrik | Früher in traditionellen Analytics als [!UICONTROL Vorfälle] bezeichnet. Diese Metrik stellt die Anzahl der Zeilen aus allen Ereignis-Datensätzen in einer Verbindung dar. |
+| [!UICONTROL Tag] | Dimension |  |
+| [!UICONTROL Woche] | Dimension |  |
+| [!UICONTROL Monat] | Dimension |  |
+| [!UICONTROL Quartal] | Dimension |  |
+| [!UICONTROL Jahr] | Dimension |  |
+| [!UICONTROL Stunde] | Dimension |  |
+| [!UICONTROL Minute] | Dimension |  |
 
-## Optionale Standardkomponenten
+### Optionale Standardkomponenten
 
 Einige Systemkomponenten sind in jeder Data-Ansicht erforderlich, um die Funktionen des Berichte in Analysis Workspace zu erleichtern, während die folgenden Komponenten optional sind.
 
@@ -190,7 +202,24 @@ Einige Systemkomponenten sind in jeder Data-Ansicht erforderlich, um die Funktio
 | [!UICONTROL Sitzung endet] | Metrik | Diese Metrik zählt die Anzahl der Ereignis, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzungs-Beginn] kann es auch in einer Filterdefinition verwendet werden, um Dinge bis zum letzten Ereignis jeder Sitzung zu filtern. Beachten Sie, dass sich dies von [!UICONTROL Ausstiege] unterscheidet, da es immer das letzte Ereignis einer Sitzung zählt - nicht den letzten vorhandenen Wert für eine Dimension in einer Sitzung. |
 | [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Die Metrik [!UICONTROL Besuchszeit] funktioniert ähnlich wie im herkömmlichen Adobe Analytics - indem die Zeit zwischen zwei verschiedenen Werten für eine Dimension addiert wird. Mit den Metriken &quot;Sitzungsende&quot;und &quot;Sitzungsende&quot;können die Kunden jedoch die berechneten Metriken [!UICONTROL Besuchszeit pro Beginn] und [!UICONTROL Zeit pro Sitzung] selbst erstellen (siehe OTB-Filter und Berechnungsmetriken unten). |
 | [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | Funktionell gesehen handelt es sich hier eigentlich nur um eine Zusammenfassung der oben genannten Metrik. Wir stellen Standardbehälter bereit, erlauben Ihnen aber, die Behälter zu ändern, was Sie wollen. |
-| Aufgewendete Zeit pro Sitzung | Dimension |  |
-| Aufgewendete Zeit pro Person | Dimension |  |
-| Batch-ID | Dimension |  |
-| Datensatz-ID | Dimension |  |
+| [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension |  |
+| [!UICONTROL Aufgewendete Zeit pro Person] | Dimension |  |
+| [!UICONTROL Batch-ID] | Dimension |  |
+| [!UICONTROL Datensatz-ID] | Dimension |  |
+
+### Filtern von Schema-Feldern und Dimensionen/Metriken
+
+Sie können die Schema-Felder in der linken Leiste nach folgenden Datentypen filtern:
+
+![](assets/filter-fields.png)
+
+Sie können auch nach Datensätzen und danach filtern, ob ein Schema Daten enthält oder ob es sich um eine Identität handelt:
+
+![](assets/filter-other.png)
+
+## 3. hinzufügen einer globalen Ansicht
+
+Sie können Filter (früher &quot;Segmente&quot;) hinzufügen, die für die gesamte Ansicht der Daten gelten, ähnlich der gefilterten Ansicht der Daten in Virtual Report Suites (traditionelles Adobe Analytics).
+
+1. Klicken Sie auf die Registerkarte [!UICONTROL Settings] in [!UICONTROL Data Ansichten].
+1. Ziehen Sie einen Filter aus der Liste in der linken Leiste in das Feld [!UICONTROL Hinzufügen Filter].
