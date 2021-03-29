@@ -2,10 +2,10 @@
 title: Anwendungsfälle für die Ansicht von Daten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics zeigen
 translation-type: tm+mt
-source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
+source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
@@ -29,10 +29,12 @@ Wenn Sie beispielsweise eine Ansicht erstellen, können Sie eine Metrik [!UICONT
 1. Sie können ein Zuordnungsmodell für diese Metrik weiter angeben, z. B. [!UICONTROL Letztkontakt] mit einem [!UICONTROL Rückblickfenster] von [!UICONTROL Sitzung].
 Sie können auch eine weitere [!UICONTROL Metrik &quot;Bestellungen]&quot;aus demselben Feld erstellen und ein anderes Zuordnungsmodell angeben, z. B. [!UICONTROL Erstkontakt] und ein anderes [!UICONTROL Lookback-Fenster], z. B. [!UICONTROL 30 Tage].
 
-## Mehrere Dimensionen aus einem Schema erstellen
-
 ## Ganzzahlen als Dimensionen verwenden
 
-34:00
+Zuvor wurden ganze Zahlen in CJA automatisch als Metriken behandelt. Jetzt können numerische Zeichen (einschließlich benutzerdefinierter Ereignis aus Adobe Analytics) als Dimensionen behandelt werden. Siehe folgendes Beispiel:
 
-Einschließlich Blockieren
+1. Ziehen Sie die Ganzzahl [!UICONTROL call_length_min] in den Abschnitt [!UICONTROL Dimensionen] unter [!UICONTROL Einbezogene Komponenten]:
+   ![](assets/integers.png)
+
+1. Sie können jetzt [!UICONTROL Wertaufschlüsselung] hinzufügen, um diese Dimension in Berichte in zusammengefasster Form darzustellen. Andernfalls würde jede Instanz dieser Dimension als Zeilenelement in Workspace angezeigt.
+   ![](assets/bucketing.png)
