@@ -2,9 +2,9 @@
 title: Anwendungsfälle für die Ansicht von Daten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics zeigen
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Diese Funktion wird derzeit nur eingeschränkt getestet.
+>Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
 Diese Anwendungsfälle zeigen die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics.
 
@@ -38,7 +38,12 @@ Sie können auch eine weitere [!UICONTROL Metrik &quot;Bestellungen]&quot;aus de
 Zuvor wurden ganze Zahlen in CJA automatisch als Metriken behandelt. Jetzt können numerische Zeichen (einschließlich benutzerdefinierter Ereignis aus Adobe Analytics) als Dimensionen behandelt werden. Siehe folgendes Beispiel:
 
 1. Ziehen Sie die Ganzzahl [!UICONTROL call_length_min] in den Abschnitt [!UICONTROL Dimensionen] unter [!UICONTROL Einbezogene Komponenten]:
+
    ![](assets/integers.png)
 
-1. Sie können jetzt [!UICONTROL Wertaufschlüsselung] hinzufügen, um diese Dimension in Berichte in zusammengefasster Form darzustellen. Andernfalls würde jede Instanz dieser Dimension als Zeilenelement in Workspace angezeigt.
+1. Sie können jetzt [!UICONTROL Wertaufschlüsselung] hinzufügen, um diese Dimension in Berichte in zusammengefasster Form darzustellen. (Ohne Bucketing würde jede Instanz dieser Dimension als Zeilenelement in Workspace Berichte angezeigt.)
+
    ![](assets/bucketing.png)
+
+Weitere Informationen zu anderen Dateneinstellungen finden Sie unter [Daten-Ansichten erstellen](/help/data-views/create-dataview2.md).
+Eine konzeptionelle Übersicht über die Ansichten von Daten finden Sie unter [Übersicht über die Ansichten von Daten](/help/data-views/data-views.md).
