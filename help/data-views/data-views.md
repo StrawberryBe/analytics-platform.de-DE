@@ -2,9 +2,9 @@
 title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
 description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1133'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Diese Funktion wird derzeit nur eingeschränkt getestet.
+>Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
 Eine Ansicht mit Daten befindet sich auf einem Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Eine Verbindung kombiniert einen oder mehrere Datensätze aus Adobe Experience Platform und verbindet sie mit CJA. Die Ansicht &quot;Daten&quot;gibt an, wie Datenelemente in der Verbindung interpretiert werden sollen, z. B. Metriken, Dimensionen, Sitzungen usw. Datendefinitionen werden zur Vorbereitung des Berichte auf die Daten in Workspace definiert.
 
@@ -37,15 +37,15 @@ Die neueste Aktualisierung der Daten-Ansichten bietet Ihnen viel mehr Flexibilit
 
 * **Sie können die ID einer Komponente**  bearbeiten. Dies wird zur Kompatibilität zwischen Daten und Ansichten verwendet. Die Komponenten-ID wird von der Berichte-API zur Identifizierung einer bestimmten Metrik oder Dimension verwendet. Da Sie beliebig viele Metriken oder Dimensionen aus einem XDM-Feld erstellen können, können Sie Ihre eigene Komponenten-ID definieren. Daher kann eine Metrik, die Sie in einem Workspace-Projekt verwenden, über Datenverbindungen (und die API) hinweg kompatibel sein, auch wenn sie auf völlig unterschiedlichen Ansichten von verschiedenen Ansichten oder Daten oder von einem anderen Schema in XDM basiert.
 
-* **Sie können den Anzeigenamen der Komponente festlegen, der in Analysis Workspace** angezeigt wird. Standardmäßig wird dieser Name vom Anzeigenamen des Schemas übernommen, Sie können ihn jetzt jedoch für diese spezifische Data Ansicht überschreiben. (So funktioniert die Komponentenkuration auch in Virtual Report Suites im traditionellen Adobe Analytics).
+* **Sie können den Anzeigenamen der Komponente festlegen, der in Analysis Workspace** angezeigt wird. Standardmäßig wird dieser Name vom Anzeigenamen des Schemas übernommen, Sie können ihn jetzt jedoch für diese spezifische Ansicht überschreiben. (So funktioniert die Komponentenkuration auch in Virtual Report Suites im traditionellen Adobe Analytics).
 
 * **Sie können weitere Schema-bezogene Informationen zu Komponenten**  Ansicht erstellen, z. B.: welcher Datensatztyp (Ereignis, Profil, Suche) er stammt; welcher Schema-Typ (Zeichenfolge, Ganzzahl usw.) es stammt aus; und den zugehörigen Schema-Pfad (das XDM-Feld, auf dem es basiert).
 
 * **Sie können eine** Komponente taggen, um die Suche in Workspace zu vereinfachen.
 
-* **Sie können eine Komponente in Berichte** ausblenden. Für einige Metriken und Dimensionseinstellungen in DV2 war eine zweite Metrik oder Dimension für die Konfiguration erforderlich (z. B. metrisches Deduplizierung-Duplikate oder Deduplizierung-Duplikate zum Einkauf). Auf diese Weise können Sie eine Metrik oder Dimension definieren, die in den Einstellungen einer anderen Metrik oder Dimension verwendet werden kann, ohne direkt in Berichte angezeigt zu werden (z. B. Kauf-ID).
+* **Sie können eine Komponente in Berichte** ausblenden. Für einige Metriken und Dimensionseinstellungen ist eine zweite Metrik oder Dimension für die Konfiguration erforderlich (z. B. metrisches Deduplizierung-Duplikate oder Deduplizierung-Duplikate zum Einkauf). Auf diese Weise können Sie eine Metrik oder Dimension definieren, die in den Einstellungen einer anderen Metrik oder Dimension verwendet werden kann, ohne direkt in Berichte angezeigt zu werden (z. B. Kauf-ID).
 
-* **Sie können Formatierungen auf eine Metrik**  anwenden, z. B. Dezimalstellen, Uhrzeiten, Prozentwerte oder Währungen. die Angabe von Dezimalstellen; Aufwärtstrend als grün oder rot; und die Währungsoptionen festlegen.
+* **Sie können Formatierungen auf eine Metrik** anwenden, z. B. Dezimalstellen, Uhrzeiten, Prozentwerte oder Währungen. die Angabe von Dezimalstellen; Aufwärtstrend als grün oder rot; und die Währungsoptionen festlegen.
 
 * Sie können **eine Metrik oder Dimension nur auf Basis einiger Werte im Feld Schema** erstellen. Wenn Sie z. B. eine Fehlermetrik wünschen, können Sie eine Metrik aus dem Feld &quot;Seitenname&quot;erstellen, aber nur Seiten einschließen, die das Wort &quot;Fehler&quot;enthalten. Die auf dieser Grundlage erstellte Fehlermetrik wird von Filtern unterstützt, kann in berechnete Metriken eingefügt werden und funktioniert mit Zuordnung, Fluss, Trichteranalyse usw.
 
