@@ -2,9 +2,9 @@
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
 workflow-type: tm+mt
-source-wordcount: '2609'
+source-wordcount: '2566'
 ht-degree: 6%
 
 ---
@@ -122,7 +122,6 @@ Sie können beispielsweise eine Dimension aus dem Feld &quot;pageTitle&quot;erst
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Werte zählen] | Auf diese Weise können Sie eine Zählung der Häufigkeit erstellen, mit der ein boolesches Feld auf `true` gesetzt wurde; als Metrik. Beispielsweise ist die Anzahl der [!UICONTROL Ansichten], wobei für ein boolesches Feld mit dem Namen `isPage` `true` der Wert  festgelegt ist. |
 | [!UICONTROL Instanzen zählen] | Hiermit können Sie festlegen, ob ein numerisches Feld oder ein Datumsfeld, das als Metrik verwendet wird, statt des Werts selbst gezählt werden soll, wie lange es festgelegt wurde.<br> Wenn Sie die Instanzen eines numerischen Felds hinzufügen möchten und einfach die Anzahl der  ** Einstellungen eines Felds anstatt des tatsächlichen Werts darin addieren möchten.<br>Dies ist beispielsweise hilfreich, um eine   Bestellmetrik aus einem   Umsatzfeld zu erstellen. Wenn der Umsatz festgelegt wurde, sollten wir 1 einzelne Bestellung anstelle des numerischen Umsatzbetrags zählen. |
 
 ### Einstellungen für [!UICONTROL Keine Wertoptionen] konfigurieren
@@ -160,7 +159,7 @@ So wird beispielsweise ein Bucket mit dem Wert &quot;zwischen 5 und 10&quot;als 
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Bucket-Wert] | Ermöglicht das Erstellen einer zusammengefassten Version einer numerischen Dimension. Auf diese Weise können Sie Berichte zu Umsatzbehältern oder anderen numerischen Werten als Dimension in Berichte erstellen. Sie können bis zu 5 Behälter erstellen. |
+| [!UICONTROL Bucket-Wert] | Ermöglicht das Erstellen einer zusammengefassten Version einer numerischen Dimension. Auf diese Weise können Sie Berichte zu Umsatzbehältern oder anderen numerischen Werten als Dimension in Berichte erstellen. |
 | [!UICONTROL Bis zu] | Hier können Sie die Grenzen des ersten numerischen Dimensionsbuckets angeben. Dies gilt nur für numerische Dimensionen. |
 | [!UICONTROL Zwischen und bis] | Hier können Sie die Grenzen der nachfolgenden numerischen Dimensionsbehälter angeben. |
 | [!UICONTROL Bucket hinzufügen] | Ermöglicht das Hinzufügen eines weiteren Behälters zum Bucket für numerische Dimensionen. |
@@ -190,7 +189,7 @@ Erforderliche Standardkomponenten
 
 ### Optionale Standardkomponenten
 
-Einige Systemkomponenten sind in jeder Data-Ansicht erforderlich, um die Funktionen des Berichte in Analysis Workspace zu erleichtern, während die folgenden Komponenten optional sind.
+Einige Systemkomponenten sind in jeder Data Ansicht erforderlich, um Berichte in Analysis Workspace zu erleichtern, während die folgenden optional sind.
 
 | Komponentenname | Dimension oder Metrik | Hinweise |
 | --- | --- | --- |
