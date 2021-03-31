@@ -2,9 +2,9 @@
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2609'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->Diese Funktion wird derzeit nur eingeschränkt getestet.
+>Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
-Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dimensionen aus Schema-Elementen oder die Verwendung von Standardkomponenten. Die Erstellung von Metriken oder Dimensionen bietet Ihnen eine enorme Flexibilität. Bisher wurde davon ausgegangen, dass bei Datensätzen in Adobe Experience Platform Zeichenfolgenfelder als Dimensionen und numerische Felder als Metriken verwendet wurden. Um diese Felder zu ändern, mussten Sie Ihr Schema in Plattform bearbeiten. Die Benutzeroberfläche &quot;Ansichten&quot;ermöglicht jetzt eine [Freiformdefinition von Metriken und Dimensionen](/help/data-views/data-views.md).
+Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dimensionen aus Schema-Elementen oder die Verwendung von Standardkomponenten. Die Erstellung von Metriken oder Dimensionen bietet Ihnen eine enorme Flexibilität. Bisher wurde davon ausgegangen, dass bei Datensätzen in Adobe Experience Platform Zeichenfolgenfelder als Dimensionen und numerische Felder als Metriken verwendet wurden. Um diese Felder zu ändern, mussten Sie Ihr Schema in Plattform bearbeiten. Die Benutzeroberfläche &quot;Ansichten&quot;ermöglicht jetzt eine [Freiformdefinition von Metriken und Dimensionen](/help/data-views/data-views.md). Weitere Anwendungsfälle finden Sie unter [Anwendungsfälle für Data Ansichten](/help/data-views/data-views-usecases.md).
 
 ## 1. Einstellungen und Container für Data Ansichten konfigurieren
 
@@ -40,8 +40,6 @@ Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dime
 Als Nächstes können Sie Metriken und Dimensionen aus Schema-Elementen erstellen. Sie können auch Standardkomponenten verwenden.
 
 ## 2. Erstellen von Metriken und Dimensionen aus Schema-Elementen
-
-
 
 1. Klicken Sie unter [!UICONTROL Customer Journey Analytics] > [!UICONTROL Data Ansichten] auf die Registerkarte [!UICONTROL Komponenten].
 
@@ -112,7 +110,7 @@ Sie können beispielsweise eine Dimension aus dem Feld &quot;pageTitle&quot;erst
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Von Schreibweise abhängig] | Standard = Ein. Diese Einstellung unterscheidet sich geringfügig von Dimensionen im Vergleich zu Metriken.<ul><li>**Metrik**: Diese Einstellung gilt nur für die  [!UICONTROL Option ] &quot;Wert einschließen/ausschließen&quot;. Damit können Sie angeben, ob beim Filter, den Sie anwenden, die Groß-/Kleinschreibung beachtet werden soll.</li><li>**Dimension** : Diese Einstellung bestimmt, ob die Daten in dieser Dimension in einer Weise aggregiert werden sollen, bei der zwischen Groß- und Kleinschreibung unterschieden wird. Dadurch wird die Ausführung von Berichten/Filtern/Zuordnungseinstellungen für ein Zeichenfolgenfeld geändert.</li></ul> |
+| [!UICONTROL Von Schreibweise abhängig] | Standard = Ein. Diese Einstellung gilt nur für den Abschnitt [!UICONTROL Werte einschließen/ausschließen]. Damit können Sie angeben, ob bei der Regel zum Ein-/Ausschließen, die Sie anwenden, die Groß-/Kleinschreibung beachtet werden soll. |
 | [!UICONTROL Übereinstimmung] | Hier können Sie angeben, welche Werte Sie vor der Zuordnung und Segmentierung für den Berichte berücksichtigen möchten (z. B. nur Werte mit der Wortgruppe &quot;error&quot;). Sie können Folgendes angeben: **[!UICONTROL Wenn alle Kriterien erfüllt sind]** oder **[!UICONTROL Wenn ein Kriterium erfüllt ist]**. |
 | [!UICONTROL Kriterien] | Hier können Sie die Übereinstimmungslogik angeben, die auf eine bestimmte Filterregel angewendet werden soll.<ul><li>**Zeichenfolge**: Enthält die Wortgruppe, Enthält einen Begriff, enthält alle Begriffe, enthält keinen Begriff, enthält nicht die Wortgruppe, Ist gleich, Ist nicht gleich, Beginn mit, endet mit</li><li>**Dublette/Ganzzahl**: gleich, ungleich, größer als, kleiner als, größer gleich oder gleich, kleiner gleich oder gleich</li><li>**Datum**: gleich, ungleich, ist später als, liegt vor, tritt innerhalb von</li></ul> |
 | [!UICONTROL Übereinstimmungs-Operand] | Hiermit können Sie den Übereinstimmungs-Operanden angeben, auf den der Übereinstimmungsoperator angewendet werden soll.<ul><li>**Zeichenfolge**: Textfeld</li><li>**Dublette/Ganzzahl**: Textfeld mit Nach-oben-/Nach-unten-Pfeilen für numerische Werte</li><li>**Datum**: Granularitätsauswahl Tag (Kalender)</li><li>**Datums-Zeit**: Auswahl der Datums- und Uhrzeitgranularität</li></ul> |
@@ -131,10 +129,6 @@ Sie können beispielsweise eine Dimension aus dem Feld &quot;pageTitle&quot;erst
 
 [!UICONTROL Keine ] Wertoptionen sind im Berichte identisch mit   Nicht festgelegten oder   Nicht-Werten. In der Benutzeroberfläche &quot;Ansichten&quot;können Sie für jede Komponente festlegen, wie diese Werte in Berichte behandelt werden sollen. Sie können [!UICONTROL Kein Wert] auch in etwas umbenennen, das Ihrer Umgebung besser entspricht, z. B. [!UICONTROL Null], [!UICONTROL Nicht festgelegt] oder andere.
 
->[!NOTE]
->
->Wenn Sie dieses Feld in einen benutzerdefinierten Wert ändern, wird der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt. Wenn Sie also den Wert &quot;Red&quot;in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge &quot;Red&quot;in den Daten selbst ebenfalls unter dem von Ihnen angegebenen Zeileneintrag rollierend.
-
 Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, für eine spezielle UI-Behandlung des Zeileneintrags [!UICONTROL Kein Wert] in Berichte verwendet werden kann, wie in der Einstellung [!UICONTROL Keine Wertoptionen] beschrieben.
 
 ![](assets/no-value-options.png)
@@ -144,7 +138,7 @@ Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, für eine spez
 | [!UICONTROL Wenn angezeigt, wird Kein Wert] aufgerufen... | Hier können Sie **[!UICONTROL Kein Wert]** in etwas Anderes umbenennen. |
 | [!UICONTROL Kein Wert standardmäßig anzeigen] | Zeigt diesen Wert nicht in Berichte an. |
 | [!UICONTROL Standardmäßig keinen Wert anzeigen] | Zeigt diesen Wert in Berichte an. |
-| [!UICONTROL Kein Wert als Wert behandeln] | Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in &quot;Desktop&quot;umbenennen. |
+| [!UICONTROL Kein Wert als Wert behandeln] | Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in &quot;Desktop&quot;umbenennen. Beachten Sie, dass beim Ändern dieses Felds in einen benutzerdefinierten Wert der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt wird. Wenn Sie also den Wert &quot;Red&quot;in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge &quot;Red&quot;in den Daten selbst ebenfalls unter dem von Ihnen angegebenen Zeileneintrag rollierend. |
 
 ### Persistenzeinstellungen konfigurieren
 
@@ -155,10 +149,12 @@ Diese Einstellungen ähneln den eVar im herkömmlichen Adobe Analytics.
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
 | [!UICONTROL Persistenz festlegen] | Schlüssel umschalten |
-| [!UICONTROL Zuordnung] | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind: Zuletzt verwendet: Original, Instanz, Alle. Wenn ein Wert beibehalten werden soll (ähnlich wie bei eVars in herkömmlichen Analytics), legen Sie ihn hier fest. Der einzige wichtige Unterschied besteht darin, dass die maximale Persistenz, die Sie einstellen können, 90 Tage beträgt. Außerdem ist [!UICONTROL Niemals ablaufen] keine Option. |
+| [!UICONTROL Zuordnung] | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind: [!UICONTROL Zuletzt verwendet], [!UICONTROL Original], [!UICONTROL Instanz], [!UICONTROL Alle]. Wenn ein Wert beibehalten werden soll (ähnlich wie bei eVars in herkömmlichen Analytics), legen Sie ihn hier fest. Der einzige wichtige Unterschied besteht darin, dass die maximale Persistenz, die Sie einstellen können, 90 Tage beträgt. Außerdem ist [!UICONTROL Niemals ablaufen] keine Option. |
 | [!UICONTROL Ablauf] | Hiermit können Sie das Persistenzfenster für eine Dimension angeben. Die Optionen sind: [!UICONTROL Sitzung] (Standard), [!UICONTROL Person], [!UICONTROL Zeit], [!UICONTROL Metrik]. Möglicherweise müssen Sie die Dimension bei einem Kauf ablaufen lassen (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle).  Metriken, die Sie als Ablaufdatum für diese Dimension festlegen (z. B. eine   Kaufmetrik). |
 
 ### Einstellungen für die Wertberechnung konfigurieren
+
+So wird beispielsweise ein Bucket mit dem Wert &quot;zwischen 5 und 10&quot;als Zeileneintrag &quot;5 bis 10&quot;im Workspace-Berichte angezeigt.
 
 ![](assets/value-bucketing.png)
 
