@@ -1,11 +1,11 @@
 ---
-title: Festlegen von Benutzereinstellungen in Analysis Workspace
+title: So legen Sie Benutzereinstellungen in Analysis Workspace fest
 description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen für Benutzer festlegen.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
@@ -14,33 +14,33 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->Diese Funktion kommt bald. Die allgemeine Verfügbarkeit ist der 25. März 2021.
+>Diese Funktion kommt bald. Sie ist ab dem 25. März 2021 allgemein verfügbar.
 
-Auf der Seite [!UICONTROL Komponenten] > [!UICONTROL Benutzervoreinstellungen] können Sie die Analysis Workspace-Einstellungen und die zugehörigen Komponenten für Ihre Benutzer verwalten. Benutzervoreinstellungen gelten für *alle* neuen Projekte oder Bereiche.
+Unter [!UICONTROL Komponenten] > [!UICONTROL Benutzereinstellungen] können Sie die Analysis Workspace-Einstellungen und die zugehörigen Komponenten für Ihre Benutzer verwalten. Benutzereinstellungen gelten für *alle* neuen Projekte oder Bedienfelder.
 
 ![Benutzerpräferenzen](assets/user-preferences.png)
 
 ## Allgemeine Voreinstellungen
 
-Allgemeine Voreinstellungen gelten für Ihr CJA-Erlebnis im Browser.
+Allgemeine Voreinstellungen gelten für Ihr Customer Journey Analytics-Erlebnis im Browser.
 
 | Einstellung | Optionen |
 | --- | --- |
-| Landing page | <ul><li>Project Liste (Standard)</li><li>Leeres Projekt</li><li>Spezifisches Projekt</li></ul> |
+| Landing page | <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Spezifisches Projekt</li></ul> |
 | Tipps | <ul><li>Aktiviert (Standard)</li><li>Deaktiviert</li></ul> |
 
-## Projektvoreinstellungen
+## Projekteinstellungen
 
-Die Projektvoreinstellungen gelten für neue Projekte und in Analysis Workspace erstellte Bereiche. Voreinstellungen können auch pro Projekt unter &quot;Arbeitsbereich&quot;> &quot;Projekt&quot;> &quot;Projektinfo und Einstellungen&quot;verwaltet werden.
+Projekt-Voreinstellungen werden auf neue in Analysis Workspace erstellte Projekte und Bedienfelder angewendet. Voreinstellungen können auch für jedes Projekt einzeln unter „Workspace“ > „Projekt“ > „Projektinfo und Einstellungen“ verwaltet werden.
 
 | Abschnitt | Einstellung | Optionen |
 | --- | --- | --- |
 | **Anzeigen** |  |  |
-|  | [Dichte anzeigen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>Kompakt</li><li>Komfortabel</li><li>Erweitert (Standard)</li></ul> |
-|  | [Farbpalette](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>Paletten mit Adobe (Standard)</li><li>Benutzerdefinierte Paletten</li></ul> |
+|  | [Dichte anzeigen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=de) | <ul><li>Kompakt</li><li>Komfortabel</li><li>Erweitert (Standard)</li></ul> |
+|  | [Farbpalette](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html?lang=de) | <ul><li>Adobe-Paletten (Standard)</li><li>Benutzerdefinierte Paletten</li></ul> |
 | **Daten** |  |  |
-|  | [Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#report-suite) | <ul><li>Zuletzt verwendet (Standard)</li><li>Spezifisch - Auswahl aus einer Liste</li></ul> |
-|  | [Kalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#calendar) | Liste der vordefinierten Datumsbereiche, einschließlich **[!UICONTROL Diesen Monat]** (Standard) |
-|  | [Bereichstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html) | <ul><li>Freiform (Standard)</li><li>Leer</li><li>Quick Insights</li></ul> |
-|  | Zahlenformat | <ul><li>1.000.00 (Standard)</li><li>1 000 000</li><li>1 000,00</li></ul> |
+|  | [Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de#report-suite) | <ul><li>Zuletzt verwendet (Standard)</li><li>Spezifisch – Auswahl aus einer Liste</li></ul> |
+|  | [Kalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de#calendar) | Liste der vordefinierten Datumsbereiche, einschließlich **[!UICONTROL Diesen Monat]** (Standard) |
+|  | [Typ des Bedienfelds](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de) | <ul><li>Freiform (Standard)</li><li>Leer</li><li>Quick Insights</li></ul> |
+|  | Zahlenformat | <ul><li>1.000,00 (Standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-Trennzeichen | <ul><li>Komma (Standard)</li><li>Semikolon</li><li>Doppelpunkt</li><li>Verkettungszeichen</li><li>Zeitraum</li><li>Leerzeichen</li><li>Tab</li></ul> |
