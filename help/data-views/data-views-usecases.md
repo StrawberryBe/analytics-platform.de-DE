@@ -2,9 +2,9 @@
 title: Anwendungsfälle für die Ansicht von Daten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics zeigen
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Wenn Sie beispielsweise eine Ansicht erstellen, können Sie eine Metrik [!UICONT
 1. Öffnen Sie das Dialogfeld [!UICONTROL Werte] einschließen/ausschließen auf der rechten Seite und geben Sie Folgendes an:
    ![](assets/orders2.png)
 
-   Der Satz &quot;Bestätigung&quot;gibt an, dass es sich um eine Bestellung handelt. Nach Überprüfung aller Seitentitel, bei denen diese Kriterien erfüllt sind, wird für jede Instanz &quot;1&quot;gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Es funktioniert mit Attribution IQ, Filtern und überall sonst können Sie Standardmetriken verwenden.
+   Der Satz &quot;Bestätigung&quot;gibt an, dass es sich um eine Bestellung handelt. Nach Überprüfung aller Seitentitel, bei denen diese Kriterien erfüllt sind, wird für jede Instanz &quot;1&quot;gezählt. Das Ergebnis ist eine neue Metrik (keine berechnete Metrik). Eine Metrik, die Werte eingeschlossen/ausgeschlossen hat, kann überall dort verwendet werden, wo andere Metriken verwendet werden können. Es funktioniert mit Attribution IQ, Filtern und überall sonst können Sie Standardmetriken verwenden.
 1. Sie können ein Zuordnungsmodell für diese Metrik weiter angeben, z. B. [!UICONTROL Letztkontakt] mit einem [!UICONTROL Rückblickfenster] von [!UICONTROL Sitzung].
 Sie können auch eine weitere [!UICONTROL Metrik &quot;Bestellungen]&quot;aus demselben Feld erstellen und ein anderes Zuordnungsmodell angeben, z. B. [!UICONTROL Erstkontakt] und ein anderes [!UICONTROL Lookback-Fenster], z. B. [!UICONTROL 30 Tage].
 
