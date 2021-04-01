@@ -2,9 +2,9 @@
 title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
 description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1087'
 ht-degree: 4%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 4%
 >
 >Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
-Eine Ansicht mit Daten befindet sich auf einem Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Eine Verbindung kombiniert einen oder mehrere Datensätze aus Adobe Experience Platform und verbindet sie mit CJA. Die Ansicht &quot;Daten&quot;gibt an, wie Datenelemente in der Verbindung interpretiert werden sollen, z. B. Metriken, Dimensionen, Sitzungen usw. Datendefinitionen werden zur Vorbereitung des Berichte auf die Daten in Workspace definiert. Die Ansichten der Daten sind rückwirkend und nicht zerstörerisch. Mit anderen Worten, sie ändern Ihre zugrunde liegenden Daten nicht dauerhaft.
+Eine Ansicht mit Daten befindet sich auf einem Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Eine Verbindung kombiniert einen oder mehrere Datensätze aus Adobe Experience Platform und verbindet sie mit CJA. Die Ansicht &quot;Daten&quot;gibt an, wie Datenelemente in der Verbindung interpretiert werden sollen, z. B. Metriken, Dimensionen, Sitzungen usw. Datendefinitionen werden zur Vorbereitung des Berichte auf die Daten in Workspace definiert.
 
-Wenn Sie zuvor das herkömmliche Adobe Analytics verwendet haben, ähnelt eine Ansicht der Daten einer Virtual Report Suite, da es sich um eine gefilterte Ansicht der Daten handeln kann.
+>[!NOTE]
+>
+>Alle Einstellungen, die Sie in einer Ansicht auswählen oder ändern, sind rückwirkend und nicht zerstörerisch. Mit anderen Worten, sie ändern Ihre zugrunde liegenden Daten nicht dauerhaft.
 
 Sie können verschiedene Ansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Oder erstellen Sie Daten-Ansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. Sie können beispielsweise eine Datendimensionen mit [!UICONTROL Last Touch] und gleichzeitig eine andere Datendimensionen mit [!UICONTROL First Touch]-Ansicht (basierend auf demselben Datensatz) mit allen Dimensionen mit First Touch verwenden.
 
@@ -37,7 +39,7 @@ Die neueste Aktualisierung der Daten-Ansichten bietet Ihnen viel mehr Flexibilit
 
 * **Sie können die ID einer Komponente**  bearbeiten. Dies wird zur Kompatibilität zwischen Daten und Ansichten verwendet. Die Komponenten-ID wird von der Berichte-API zur Identifizierung einer bestimmten Metrik oder Dimension verwendet. Da Sie beliebig viele Metriken oder Dimensionen aus einem XDM-Feld erstellen können, können Sie Ihre eigene Komponenten-ID definieren. Daher kann eine Metrik, die Sie in einem Workspace-Projekt verwenden, über Datenverbindungen (und die API) hinweg kompatibel sein, auch wenn sie auf völlig unterschiedlichen Ansichten von verschiedenen Ansichten oder Daten oder von einem anderen Schema in XDM basiert.
 
-* **Sie können den Anzeigenamen der Komponente festlegen, der in Analysis Workspace** angezeigt wird. Standardmäßig wird dieser Name vom Anzeigenamen des Schemas übernommen, Sie können ihn jetzt jedoch für diese spezifische Ansicht überschreiben. (So funktioniert die Komponentenkuration auch in Virtual Report Suites im traditionellen Adobe Analytics).
+* **Sie können den Anzeigenamen der Komponente festlegen, der in Analysis Workspace** angezeigt wird. Standardmäßig wird dieser Name vom Anzeigenamen des Schemas übernommen, Sie können ihn jetzt jedoch für diese spezifische Ansicht überschreiben.
 
 * **Sie können weitere Schema-bezogene Informationen zu Komponenten**  Ansicht erstellen, z. B.: welcher Datensatztyp (Ereignis, Profil, Suche) er stammt; welcher Schema-Typ (Zeichenfolge, Ganzzahl usw.) es stammt aus; und den zugehörigen Schema-Pfad (das XDM-Feld, auf dem es basiert).
 
@@ -57,10 +59,6 @@ Die neueste Aktualisierung der Daten-Ansichten bietet Ihnen viel mehr Flexibilit
 
 * Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
 * Zum Erstellen oder Verwalten einer Ansicht benötigen Sie einen [Berechtigungssatz in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de-DE#admin-access-permissions).
-
-## Informationen zur Ansicht einer Komponente
-
-Klicken Sie in Workspace auf das Informationssymbol (i), um die Ansicht des Schema-Felds, auf dem eine Komponente basiert, und der zugehörigen Einstellungen, z. B. einer Beschreibung, zu treffen.
 
 ## Einstellungen für die Ansicht von Daten, die Sie in Workspace überschreiben können
 
