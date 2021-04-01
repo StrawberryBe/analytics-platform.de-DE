@@ -1,11 +1,11 @@
 ---
 description: Anweisungen zum Einrichten von Scorecards für die Dashboards.
-title: Leitfaden zum Kurator für Customer Journey Analytics Dashboards
+title: Handbuch zu Customer Journey Analytics-Dashboards für Kuratoren
 translation-type: tm+mt
 source-git-commit: 026771a61bcbd0eec8cb59a1d06f3dad0b96acf6
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
@@ -18,11 +18,11 @@ Die folgenden Informationen liefern Kuratoren von Adobe Analytics-Daten Informat
 
 ## Einführung
 
-Adobe Analytics-Dashboard bieten jederzeit und überall Einblicke auf Grundlage Ihrer Customer Journey Analytics-Daten. Die App ermöglicht Benutzern auf Mobilgeräten den Zugriff auf intuitive Scorecards, die Sie über die Benutzeroberfläche des Customer Journey Analytics erstellen und freigeben. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem Kachellayout vorgestellt werden und auf die Sie für detailliertere Aufschlüsselungen und Trenddaten-Ansichten tippen können. Sie können Scorecards entsprechend den für Sie wichtigsten Daten anpassen. Analytics-Dashboards werden sowohl unter iOS- als auch Android-Betriebssystemen unterstützt.
+Adobe Analytics-Dashboard bieten jederzeit und überall Einblicke auf Grundlage Ihrer Customer Journey Analytics-Daten. Die Mobile App bietet Benutzern auf Mobilgeräten Zugriff auf intuitive Scorecards, die Sie über die Desktop-Benutzeroberfläche von Customer Journey Analytics erstellen und freigeben. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem Kachellayout vorgestellt werden und auf die Sie für detailliertere Aufschlüsselungen und Trenddaten-Ansichten tippen können. Sie können Scorecards entsprechend den für Sie wichtigsten Daten anpassen. Analytics-Dashboards werden sowohl unter iOS- als auch Android-Betriebssystemen unterstützt.
 
 ## Weitere Informationen zu diesem Handbuch
 
-Dieses Handbuch soll Kuratoren von Customer Journey Analytics-Daten bei der Konfiguration von Scorecards für ihre Führungsbenutzer auf Dashboards unterstützen. Kuratoren können organisatorische Administratoren oder Personen in anderen Rollen sein, die für die Einrichtung von App-Scorecards zuständig sind. Diese ermöglichen es ausführenden Benutzern, eine umfassende Darstellung wichtiger Zusammenfassungsdaten schnell und einfach auf ihren eigenen Mobilgeräten anzuzeigen. Obwohl ausführende Benutzer die Endbenutzer der Analytics-Dashboards sind, hilft dieses Handbuch Datenkuratoren bei der effektiven Einrichtung der App für diese Benutzer.
+Dieses Handbuch soll Kuratoren von Customer Journey Analytics-Daten bei der Konfiguration von Scorecards für ausführende Benutzer in Dashboards helfen. Kuratoren können organisatorische Administratoren oder Personen in anderen Rollen sein, die für die Einrichtung von App-Scorecards zuständig sind. Diese ermöglichen es ausführenden Benutzern, eine umfassende Darstellung wichtiger Zusammenfassungsdaten schnell und einfach auf ihren eigenen Mobilgeräten anzuzeigen. Obwohl ausführende Benutzer die Endbenutzer der Analytics-Dashboards sind, hilft dieses Handbuch Datenkuratoren bei der effektiven Einrichtung der App für diese Benutzer.
 
 ## Glossar
 
@@ -30,8 +30,8 @@ In der folgenden Tabelle werden Begriffe zum Verständnis von Zielgruppe, Funkti
 
 | Begriff | Definition |
 |--- |--- |
-| Verbraucher | Executive Persona, die wichtige Metriken und Einblicke von CJA auf einem Mobilgerät anzeigt |
-| Kurator | Datenwörterbuch-Persona, der Erkenntnisse aus CJA findet und verteilt und die vom Verbraucher anzuzeigenden Scorecards konfiguriert |
+| Verbraucher | Ausführende Person, die wichtige Schlüsselmetriken und Einblicke aus Customer Journey Analytics auf einem Smartphone oder Tablet anzeigt |
+| Kurator | Person, die mit der Datenerfassung und -auswertung vertraut ist, Einblicke in Customer Journey Analytics erkennt und verteilt und die Scorecards konfiguriert, die von Verbrauchern angezeigt werden |
 | Kuratierung | Der Vorgang der Erstellung oder Bearbeitung einer mobilen Scorecard mit relevanten Metriken, Dimensionen und anderen Komponenten für den Verbraucher |
 | Scorecard | Eine Ansicht der Dashboards mit einer oder mehreren Kacheln |
 | Kachel | Wiedergabe einer Metrik in einer Scorecard-Ansicht |
@@ -270,4 +270,4 @@ Tippen Sie auf die Option und geben Sie im obersten Feld Ihre E-Mail-Adresse und
 
 >[!IMPORTANT]
 >
->Ab Oktober 2020 hat die Adobe schrittweise eine Reihe von Verbesserungen eingeführt, um die Leistung der App &quot;Adobe Analytics Dashboards&quot;zu optimieren. Diese Erweiterungen konzentrieren sich auf das Caching historischer Analytics-Daten, die zum Ausfüllen von Scorecards mit Datumsangaben (außer dem aktuellen Tag) verwendet werden. Diese Daten werden bis zu 24 Stunden lang in einem sicheren öffentlichen Microsoft Azure-Konto in der Cloud zwischengespeichert. Wenden Sie sich an Ihren CSM, wenn Sie diese Leistungsverbesserungsfunktionen nicht in Anspruch nehmen möchten.
+>Seit Oktober 2020 führt Adobe schrittweise eine Reihe von Verbesserungen durch, um die Leistung der Mobile App „Adobe Analytics-Dashboards“ zu optimieren. Diese Erweiterungen konzentrieren sich auf das Caching historischer Analytics-Daten, die zum Ausfüllen von Scorecards mit Datumsangaben (außer dem aktuellen Tag) verwendet werden. Diese Daten werden bis zu 24 Stunden lang in einem sicheren öffentlichen Microsoft Azure-Konto in der Cloud zwischengespeichert. Wenden Sie sich an Ihren CSM, wenn Sie diese Leistungsverbesserungsfunktionen nicht in Anspruch nehmen möchten.
