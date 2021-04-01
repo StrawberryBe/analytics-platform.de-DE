@@ -21,7 +21,7 @@ translation-type: tm+mt
 source-git-commit: 5182e6c97e475296ca5ecd4014193770491b1988
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 96%
    + [Marketing-Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)
    + [Globale Suchen zu Ihren Datensätzen hinzufügen](use-cases/global-lookups.md)
 + Analytics-Dashboards {#cja-dashboards}
-   + [Analytics-Dashboard - Übersicht](mobile-app/home.md)
+   + [Analytics-Dashboards – Übersicht](mobile-app/home.md)
    + [Leitfaden für Kuratoren](mobile-app/curator.md)
    + [Schnellstarthandbuch für ausführende Benutzer](mobile-app/executive.md)
 + Datenschutz {#cja-privacy}
