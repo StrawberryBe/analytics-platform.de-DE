@@ -2,9 +2,9 @@
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2599'
 ht-degree: 6%
 
 ---
@@ -144,7 +144,7 @@ Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, für eine spez
 
 ![](assets/persistence.png)
 
-Diese Einstellungen ähneln den eVar im herkömmlichen Adobe Analytics.
+Weitere Informationen finden Sie im Thema [Persistenz](/help/data-views/persistence.md).
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
@@ -215,7 +215,7 @@ Sie können auch nach Datensätzen und danach filtern, ob ein Schema Daten enth�
 
 ## 3. hinzufügen einer globalen Ansicht
 
-Sie können Filter (früher &quot;Segmente&quot;) hinzufügen, die für die gesamte Ansicht der Daten gelten, ähnlich der gefilterten Ansicht der Daten in Virtual Report Suites (traditionelles Adobe Analytics).
+Sie können Filter hinzufügen, die für die gesamte Ansicht der Daten gelten. Dieser Filter wird auf alle Berichte angewendet, die Sie in Workspace ausführen.
 
 1. Klicken Sie auf die Registerkarte [!UICONTROL Settings] in [!UICONTROL Data Ansichten].
 1. Ziehen Sie einen Filter aus der Liste in der linken Leiste in das Feld [!UICONTROL Hinzufügen Filter].
