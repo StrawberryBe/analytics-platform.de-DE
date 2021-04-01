@@ -2,9 +2,9 @@
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 translation-type: tm+mt
-source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2607'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dime
 | [!UICONTROL Beschreibung] | Eine detaillierte Beschreibung ist nicht obligatorisch, wird jedoch empfohlen. |
 | [!UICONTROL Zeitzone] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. |
 | [!UICONTROL Tags] | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
-| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen und so werden sie in jedem Workspace-Projekt angezeigt, das auf dieser Ansicht basiert. Container werden in Filtern und Fallout/Fluss verwendet, um zu definieren, wie breit oder schmal der Umfang oder Kontext ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
+| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen und so werden sie in jedem Workspace-Projekt angezeigt, das auf dieser Ansicht basiert. Container werden in Filtern und Fallout/Fluss usw. verwendet, um zu definieren, wie breit oder schmal der Umfang oder Kontext ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) |
 | [!UICONTROL Name des Containers...] | [!UICONTROL Person]  (Standard). Der Container [!UICONTROL Person] enthält alle Besuche und Ansichten für Besucher innerhalb eines bestimmten Zeitraums. Sie können diesen Begriff in &quot;Benutzer&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Der Name des Session Containers lautet...] | [!UICONTROL Sitzung]  (Standard). Mit dem Container [!UICONTROL Sitzung] können Sie Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifizieren. Sie können diesen Begriff in &quot;Besuch&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Ereignis Container name ist...] | [!UICONTROL Ereignis]  (Standard). Der Container [!UICONTROL Ereignis] definiert, welche Ereignis von Seiten Sie in einen Filter einbeziehen oder ausschließen möchten. |
@@ -45,11 +45,12 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schema-Elementen erstelle
 
 ![](assets/components-tab.png)
 
-Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schema-Felder] enthält.
+Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schema-Felder] enthält. Die bereits vorhandenen Komponenten sind die standardmäßigen erforderlichen Komponenten (System generiert).
 
 1. Ziehen Sie nun ein Schema, z. B. [!UICONTROL pageTitle], aus der linken Leiste in den Bereich Metriken oder Dimensionen.
 
-   Sie können dasselbe Schema mehrmals in die Dimensionen oder Metrikabschnitte ziehen und dieselbe Dimension oder Metrik auf unterschiedliche Weise konfigurieren. Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension namens &quot;Produktseiten&quot;und eine weitere Dimension &quot;Fehlerseiten&quot;erstellen usw. von **[!UICONTROL pageTitle]**; können Sie auch Metriken aus einem Zeichenfolgenwert erstellen. Sie können beispielsweise eine oder mehrere **[!UICONTROL Bestellungen]** Metriken mit unterschiedlichen Zuordnungseinstellungen und unterschiedlichen Ein-/Ausschlusswerten erstellen.
+   Sie können dasselbe Schema mehrmals in die Dimensionen oder Metrikabschnitte ziehen und dieselbe Dimension oder Metrik auf unterschiedliche Weise konfigurieren.
+Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension namens &quot;Produktseiten&quot;und eine weitere Dimension &quot;Fehlerseiten&quot;usw. erstellen, indem Sie **[!UICONTROL Komponentenname]** rechts umbenennen. von **[!UICONTROL pageTitle]**; können Sie auch Metriken aus einem Zeichenfolgenwert erstellen. Sie können beispielsweise eine oder mehrere **[!UICONTROL Bestellungen]** Metriken mit unterschiedlichen Zuordnungseinstellungen und unterschiedlichen Ein-/Ausschlusswerten erstellen.
 
    ![](assets/components-tab-3.png)
 
@@ -134,10 +135,10 @@ Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, für eine spez
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Wenn angezeigt, wird Kein Wert] aufgerufen... | Hier können Sie **[!UICONTROL Kein Wert]** in etwas Anderes umbenennen. |
+| [!UICONTROL Wenn angezeigt, wird &quot;Kein Wert&quot;aufgerufen...] | Hier können Sie **[!UICONTROL Kein Wert]** in etwas Anderes umbenennen. |
 | [!UICONTROL Kein Wert standardmäßig anzeigen] | Zeigt diesen Wert nicht in Berichte an. |
 | [!UICONTROL Standardmäßig keinen Wert anzeigen] | Zeigt diesen Wert in Berichte an. |
-| [!UICONTROL Kein Wert als Wert behandeln] | Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in &quot;Desktop&quot;umbenennen. Beachten Sie, dass beim Ändern dieses Felds in einen benutzerdefinierten Wert der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt wird. Wenn Sie also den Wert &quot;Red&quot;in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge &quot;Red&quot;in den Daten selbst ebenfalls unter dem von Ihnen angegebenen Zeileneintrag rollierend. |
+| [!UICONTROL Kein Wert als Wert behandeln] | Diese Einstellung ersetzt leere Werte in den Daten durch den Text, den Sie unter [!UICONTROL Wenn angezeigt, &quot;Kein Wert&quot; angeben ...]. Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in &quot;Desktop&quot;umbenennen. Beachten Sie, dass beim Ändern dieses Felds in einen benutzerdefinierten Wert der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt wird. Wenn Sie also den Wert &quot;Red&quot;in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge &quot;Red&quot;in den Daten selbst ebenfalls unter dem von Ihnen angegebenen Zeileneintrag rollierend. |
 
 ### Persistenzeinstellungen konfigurieren
 
