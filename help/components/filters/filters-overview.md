@@ -2,9 +2,9 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '957'
 ht-degree: 92%
 
 ---
@@ -87,4 +87,4 @@ Die herkömmliche Analytics-Version enthält eine Vielzahl vordefinierter Vorlag
 
 | Filtername | Beschreibung |
 | --- | --- |
-| Alle Daten | Dies ist ein erforderlicher Filter, der dem Segment &quot;Alle Besuche&quot;in der herkömmlichen Adobe Analytics entspricht. Es wird dynamisch zum Berichte hinzugefügt, wenn eine Metrik zur Zeile einer Freiformtabelle hinzugefügt wird. |
+| Alle Daten | Dies ist ein erforderlicher Filter, der dynamisch zum Berichte hinzugefügt wird, wenn eine Metrik zur Zeile einer Freiform-Tabelle hinzugefügt wird. |
