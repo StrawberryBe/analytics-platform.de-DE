@@ -1,10 +1,10 @@
 ---
-title: Was ist Persistenz im Customer Journey Analytics?
+title: Was ist Dimensionspersistenz in Customer Journey Analytics?
 description: Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Gemeinsam bestimmen sie, welche Dimensionswerte beibehalten werden.
 translation-type: tm+mt
-source-git-commit: 09f49cff89d69ae630e917243425967dbf56a9ed
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '524'
 ht-degree: 72%
 
 ---
