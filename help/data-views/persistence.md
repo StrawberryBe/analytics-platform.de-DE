@@ -2,10 +2,10 @@
 title: Was ist Dimensionspersistenz in Customer Journey Analytics?
 description: Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Gemeinsam bestimmen sie, welche Dimensionswerte beibehalten werden.
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: efe92e25229addadf57bff3f2ba73d831a3161ea
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 72%
+source-wordcount: '597'
+ht-degree: 18%
 
 ---
 
@@ -14,29 +14,85 @@ ht-degree: 72%
 
 Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Gemeinsam bestimmen sie, welche Dimensionswerte beibehalten werden. Adobe empfiehlt dringend, dass Sie innerhalb Ihres Unternehmens besprechen, wie mehrere Werte für jede Dimension verarbeitet werden (Zuordnung) und wann Dimensionswerte die Speicherung der Daten beenden (Ablauf).
 
-* Standardmäßig verwendet ein Dimensionswert die letzte Zuordnung. Neue Werte überschreiben persistente Werte.
+* Standardmäßig verwendet ein Dimensionswert ? zugeordnet.
 * Standardmäßig verwendet ein Dimensionswert einen Ablauf von [!UICONTROL Sitzung].
 
 ## Zuordnung
 
-Legt fest, wie CJA Gutschriften für ein Erfolgsereignis zuweist, wenn eine Variable mehrere Ereignis vor dem Ereignis erhält. Folgende Werte werden unterstützt:
+Die Zuordnung wendet eine Transformation auf den zugrunde liegenden Wert an, den Sie verwenden. Zu den unterstützten Zuordnungsmodellen gehören:
 
-* Zuletzt verwendet: Der letzte eVar-Wert erhält immer die Gutschrift für Erfolgsereignisse, bis diese eVar abläuft.
-* Ausgangswert: Der erste eVar-Wert erhält immer die Gutschrift für Erfolgsereignisse, bis diese eVar abläuft.
-* Instanz: ??
+* Zuletzt verwendet
+* Original
+* Alle
+* Erste bekannt
+* Zuletzt verwendet
 
-Hinweis: Beim Wechsel zu oder von linearen Werten wird unterbunden, dass historische Daten angezeigt werden. Das Mischen von Zuweisungstypen in der Berichterstellungsoberfläche kann zu falsch angegebenen Daten in Berichten führen. Bei einer linearen Zuweisung etwa könnte der Umsatz auf eine Reihe unterschiedlicher eVar-Werte aufgeschlüsselt werden. Nach dem Zurücksetzen auf die „Zuletzt“-Zuweisung würden 100 % des Umsatzes dem aktuellsten Einzelwert zugewiesen. Diese Zuweisung kann dazu führen, dass Benutzer die falschen Schlüsse ziehen.
+### [!UICONTROL Neueste ] Zuweisung
 
-Um die Wahrscheinlichkeit von Missverständnissen bei der Berichterstellung zu verringern, macht Analytics die historischen Daten für die Oberfläche nicht verfügbar. Wenn Sie sich entscheiden, die gegebene eVar wieder auf die ursprüngliche Zuweisungseinstellung zurückzusetzen, können diese angesehen werden – allerdings sollten Sie die eVar-Zuweisungseinstellungen nicht ändern, bloß um auf historische Daten zugreifen zu können. Adobe empfiehlt, eine neue eVar zu nutzen, wenn neue Zuweisungseinstellungen für bereits aufgezeichnete Daten gewünscht werden, statt die Zuweisungseinstellung einer eVar zu verändern, die bereits eine erhebliche Menge historischer Daten aufgebaut hat.
+Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL Zuletzt verwendete]-Zuordnung:
+
+| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| Originalwerte |  | C | B |  | A |
+| Zuletzt verwendete Zuteilung |  | C | B | B | A |
+
+###  Originalzuordnung
+
+Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL Original]-Zuordnung:
+
+| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
+| Originalwerte |  | C | B |  | A |
+| Ursprüngliche Zuordnung |  | C | C | C | C |
+
+###  Allzuweisung
+
+Diese neue Dimensionszuordnung kann sowohl auf Array- als auch auf Einzelwertdimensionen angewendet werden. Es funktioniert ähnlich wie das Zuordnungsmodell [!UICONTROL Beitrag] für Metriken. Der Unterschied besteht darin, dass einzelne Werte im Feld an unterschiedlichen Punkten ablaufen können. Nehmen wir an, wir haben 5 Ereignis in einem Zeichenfolgenfeld, wobei die Zuordnung auf &quot;Alle&quot;und der Ablauf auf 5 Minuten eingestellt ist. Wir erwarten folgendes Verhalten:
+
+| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| Originalwerte | A | B | C |  | A |
+| after-persistence | A | A,B | A,B,C | B,C | A,C |
+
+Beachten Sie, dass der Wert von A so lange erhalten bleibt, bis er die 5-Minuten-Markierung erreicht, während B und C weiterhin bei Treffer 4 bleiben, da für diese Werte noch 5 Minuten vergangen sind. Beachten Sie, dass mit dieser Zuordnung aus einem Feld mit einem Wert eine Dimension mit mehreren Werten erstellt wird. Dieses Modell sollte auch bei Array-basierten Dimensionen unterstützt werden:
+
+| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| Originalwerte | A,B | C | B,C |  | A |
+| after-persistence | A,B | A,B,C | A,B,C | B,C | A,B,C |
+
+### Zuordnungen von &quot;zuerst bekannt&quot;und &quot;Letzte bekannt&quot;
+
+Diese beiden neuen Zuordnungsmodelle nehmen den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerdefinierter Zeitraum mit Lookback) und wenden ihn auf alle Ereignis im angegebenen Bereich an. Beispiel: 
+
+| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+| --- | --- | --- | --- | --- | --- |
+| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
+| Originalwerte |  | C | B |  | A |
+| first known | C | C | C | C | C |
+| letzte bekannt | A | A | A | A | A |
+
+Die ersten oder letzten bekannten Werte können nur auf eine Sitzung oder auf den Personensegment (Berichte-Fenster) oder auf einen benutzerdefinierten oder zeitbasierten Bereich angewendet werden (im Wesentlichen auf einen Personensegment mit einem Lookback-Fenster).
 
 ## Gültigkeit
 
-Dimensionen laufen nach dem von Ihnen angegebenen Zeitraum ab. Nachdem der Dimensionswert abgelaufen ist, erhält er keine Gutschrift mehr für eine Metrik. Dimensionen können auch so konfiguriert werden, dass sie bei Metriken ablaufen. Beispiel: Wenn Sie eine interne Werbeaktion haben, die am Ende eines Besuchs abläuft, werden für diese interne Werbeaktionen nur Einkäufe oder Registrierungen gezählt, die während des Besuchs erfolgten, in der sie aktiviert wurde.
+[!UICONTROL Mit ] Ablauf können Sie das Persistenzfenster für eine Dimension angeben.
 
-Es gibt zwei Möglichkeiten für den Ablauf einer eVar:
+Es gibt vier Möglichkeiten, einen Dimensionswert ablaufen zu lassen:
 
-Sie können die eVar so einstellen, dass sie nach einem bestimmten Zeitraum oder Ereignis abläuft.
-Sie können das Ablaufen einer eVar erzwingen, indem Sie sie zurücksetzen (z. B. wenn eine Variable für einen anderen Zweck eingesetzt werden soll).
-Wenn Sie beispielsweise den Ablauf einer eVar von 30 auf 90 Tage ändern, bleiben die erfassten eVar-Werte für die Dauer des neu eingestellten Ablaufzeitraums (in diesem Fall 90 Tage) erhalten. Das System prüft lediglich die aktuelle Ablaufeinstellung und den letzten festgelegten Zeitstempel des erfassten eVar-Werts, um den Ablauf zu bestimmen. Nur die Option Zurücksetzen bewirkt ein unmittelbares Ablaufen von Werten.
+* Sitzung (Standard): Läuft nach einer bestimmten Sitzung ab.
+* Benutzer: ?
+* Zeit: Sie können den Dimensionswert so einstellen, dass er nach einem bestimmten Zeitraum oder Ereignis abläuft.
+* Metrik: Sie können eine der definierten Metriken als Ablaufdatum für diese Dimension angeben (z. B. eine &quot;Kauf&quot;-Metrik).
+* Anpassen:
 
-Ein weiteres Beispiel: Wenn eine eVar im Mai dazu dienen soll, interne Werbeaktionen widerzuspiegeln (wobei sie nach 21 Tagen ablaufen soll) und im Juni dann eingesetzt wird, um interne Keywords zu erfassen, müssen Sie am 1. Juni ihren Ablauf erzwingen oder die Variable zurücksetzen. Dies wird dazu beitragen, die Werte der internen Werbung aus den Berichten vom Juni herauszuhalten.
+### Was ist der Unterschied zwischen Zuordnung und Zuordnung?
+
+**Zuordnung**: Denken Sie an die Zuordnung als &quot;Datenumwandlung&quot;der Dimension. Die Zuordnung erfolgt vor der Filterung. Wenn Sie einen Filter erstellen, wird die transformierte Dimension als Schlüssel verwendet.
+
+**Zuordnung**: Wie verteilt ich die Gutschrift einer Metrik auf die Dimension, auf die sie angewendet wird? Die Zuordnung erfolgt nach dem Filtern.
+
