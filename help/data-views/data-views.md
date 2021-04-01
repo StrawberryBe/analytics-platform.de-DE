@@ -2,9 +2,9 @@
 title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
 description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1152'
 ht-degree: 4%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 4%
 >
 >Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
-Eine Ansicht mit Daten befindet sich auf einem Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Eine Verbindung kombiniert einen oder mehrere Datensätze aus Adobe Experience Platform und verbindet sie mit CJA. Die Ansicht &quot;Daten&quot;gibt an, wie Datenelemente in der Verbindung interpretiert werden sollen, z. B. Metriken, Dimensionen, Sitzungen usw. Datendefinitionen werden zur Vorbereitung des Berichte auf die Daten in Workspace definiert.
+Eine Ansicht mit Daten befindet sich auf einem Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Eine Verbindung kombiniert einen oder mehrere Datensätze aus Adobe Experience Platform und verbindet sie mit CJA. Die Ansicht &quot;Daten&quot;gibt an, wie Datenelemente in der Verbindung interpretiert werden sollen, z. B. Metriken, Dimensionen, Sitzungen usw. Datendefinitionen werden zur Vorbereitung des Berichte auf die Daten in Workspace definiert. Die Ansichten der Daten sind rückwirkend und nicht zerstörerisch. Mit anderen Worten, sie ändern Ihre zugrunde liegenden Daten nicht dauerhaft.
 
-Wenn Sie zuvor das herkömmliche Adobe Analytics verwendet haben, ähnelt eine Ansicht mit Daten einer Virtual Report Suite insofern, als es sich um eine gefilterte Ansicht der Daten handelt.
+Wenn Sie zuvor das herkömmliche Adobe Analytics verwendet haben, ähnelt eine Ansicht der Daten einer Virtual Report Suite, da es sich um eine gefilterte Ansicht der Daten handeln kann.
 
-Sie können verschiedene Ansichten für die gleiche Verbindung erstellen, mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw... Sie können auch mehrere Daten-Ansichten für einen Datensatz erstellen. Sie können beispielsweise eine Datendimensionen mit [!UICONTROL Last Touch] und gleichzeitig eine andere Datendimensionen mit [!UICONTROL First Touch]-Ansicht (basierend auf demselben Datensatz) mit allen Dimensionen mit First Touch verwenden.
+Sie können verschiedene Ansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Oder erstellen Sie Daten-Ansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. Sie können beispielsweise eine Datendimensionen mit [!UICONTROL Last Touch] und gleichzeitig eine andere Datendimensionen mit [!UICONTROL First Touch]-Ansicht (basierend auf demselben Datensatz) mit allen Dimensionen mit First Touch verwenden.
 
 Workspace-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
