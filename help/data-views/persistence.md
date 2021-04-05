@@ -1,20 +1,20 @@
 ---
 title: Was ist Dimensionspersistenz in Customer Journey Analytics?
 description: Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Gemeinsam bestimmen sie, welche Dimensionswerte beibehalten werden.
+exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: efe92e25229addadf57bff3f2ba73d831a3161ea
+source-git-commit: 16e43f5d938ac25445f382e5eba8fc12e0e67161
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '598'
 ht-degree: 18%
 
 ---
-
 
 # Persistenz
 
 Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Gemeinsam bestimmen sie, welche Dimensionswerte beibehalten werden. Adobe empfiehlt dringend, dass Sie innerhalb Ihres Unternehmens besprechen, wie mehrere Werte für jede Dimension verarbeitet werden (Zuordnung) und wann Dimensionswerte die Speicherung der Daten beenden (Ablauf).
 
-* Standardmäßig verwendet ein Dimensionswert ? zugeordnet.
+* Standardmäßig verwendet ein Dimensionswert [WAS?] zugeordnet.
 * Standardmäßig verwendet ein Dimensionswert einen Ablauf von [!UICONTROL Sitzung].
 
 ## Zuordnung
@@ -43,7 +43,7 @@ Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL Original]-Zuor
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
+| timestamp (min) | 3 | 2 | 1 | 6 | 7 |
 | Originalwerte |  | C | B |  | A |
 | Ursprüngliche Zuordnung |  | C | C | C | C |
 
@@ -61,7 +61,7 @@ Beachten Sie, dass der Wert von A so lange erhalten bleibt, bis er die 5-Minuten
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
 | Originalwerte | A,B | C | B,C |  | A |
 | after-persistence | A,B | A,B,C | A,B,C | B,C | A,B,C |
 
@@ -71,7 +71,7 @@ Diese beiden neuen Zuordnungsmodelle nehmen den ersten oder letzten beobachteten
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
 | Originalwerte |  | C | B |  | A |
 | first known | C | C | C | C | C |
 | letzte bekannt | A | A | A | A | A |
@@ -92,7 +92,6 @@ Es gibt vier Möglichkeiten, einen Dimensionswert ablaufen zu lassen:
 
 ### Was ist der Unterschied zwischen Zuordnung und Zuordnung?
 
-**Zuordnung**: Denken Sie an die Zuordnung als &quot;Datenumwandlung&quot;der Dimension. Die Zuordnung erfolgt vor der Filterung. Wenn Sie einen Filter erstellen, wird die transformierte Dimension als Schlüssel verwendet.
+**Zuordnung**: Denken Sie an die Zuordnung als &quot;Datenumwandlung&quot;der Dimension. Die Zuordnung erfolgt vor dem Filtern. Wenn Sie einen Filter erstellen, wird die transformierte Dimension als Schlüssel verwendet.
 
 **Zuordnung**: Wie verteilt ich die Gutschrift einer Metrik auf die Dimension, auf die sie angewendet wird? Die Zuordnung erfolgt nach dem Filtern.
-
