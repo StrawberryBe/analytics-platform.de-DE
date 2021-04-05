@@ -1,14 +1,14 @@
 ---
 title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
 description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
+exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 4%
 
 ---
-
 
 # Was ist eine Ansicht von Daten?
 
@@ -22,7 +22,7 @@ Eine Ansicht mit Daten befindet sich auf einem Customer Journey Analytics (CJA) 
 >
 >Alle Einstellungen, die Sie in einer Ansicht auswählen oder ändern, sind rückwirkend und nicht zerstörerisch. Mit anderen Worten, sie ändern Ihre zugrunde liegenden Daten nicht dauerhaft.
 
-Sie können verschiedene Ansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Oder erstellen Sie Daten-Ansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. Sie können beispielsweise eine Datendimensionen mit [!UICONTROL Last Touch] und gleichzeitig eine andere Datendimensionen mit [!UICONTROL First Touch]-Ansicht (basierend auf demselben Datensatz) mit allen Dimensionen mit First Touch verwenden.
+Sie können verschiedene Ansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Oder erstellen Sie Daten-Ansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. Sie könnten beispielsweise eine Datendimensionen mit [!UICONTROL Last Touch] und gleichzeitig eine andere Ansicht mit Daten (basierend auf demselben Datensatz) haben, bei denen alle Dimensionen auf [!UICONTROL First Touch] eingestellt sind.
 
 Workspace-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
