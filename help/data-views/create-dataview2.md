@@ -1,14 +1,14 @@
 ---
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
+exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 6%
+source-wordcount: '2813'
+ht-degree: 12%
 
 ---
-
 
 # Neue Ansicht erstellen
 
@@ -45,7 +45,10 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schema-Elementen erstelle
 
 ![](assets/components-tab.png)
 
-Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schema-Felder] enthält. Die bereits vorhandenen Komponenten sind die standardmäßigen erforderlichen Komponenten (System generiert).
+Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schema-Felder] enthält. Bedenken Sie Folgendes:
+
+* Die bereits enthaltenen Komponenten sind die Standardkomponenten, die erforderlich sind (System generiert).
+* Wir wenden den Filter **[!UICONTROL Enthält standardmäßig Daten]** an, sodass nur Schema-Felder mit Daten angezeigt werden. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie einfach den Filter.
 
 1. Ziehen Sie nun ein Schema, z. B. [!UICONTROL pageTitle], aus der linken Leiste in den Bereich Metriken oder Dimensionen.
 
@@ -173,35 +176,35 @@ Neben der Erstellung von Metriken und Dimensionen aus Schema-Elementen können S
 
 ![](assets/standard-components.png)
 
-Erforderliche Standardkomponenten
+Erforderliche Standardkomponenten werden standardmäßig zu Ihrer Ansicht hinzugefügt.
 
 | Komponentenname | Dimension oder Metrik | Hinweise |
 | --- | --- | --- |
-| [!UICONTROL Personen] | Metrik | Zuvor in Analytics als [!UICONTROL Individuelle Besucher] bezeichnet. Diese Metrik basiert auf der in einer Verbindung angegebenen Person-ID. |
-| [!UICONTROL Sitzungen] | Metrik | Früher in herkömmlicher Analytics als [!UICONTROL Besuche] bezeichnet. Diese Metrik basiert auf den unten angegebenen Sitzungseinstellungen. |
-| [!UICONTROL Ereignisse] | Metrik | Früher in traditionellen Analytics als [!UICONTROL Vorfälle] bezeichnet. Diese Metrik stellt die Anzahl der Zeilen aus allen Ereignis-Datensätzen in einer Verbindung dar. |
-| [!UICONTROL Tag] | Dimension |  |
-| [!UICONTROL Woche] | Dimension |  |
-| [!UICONTROL Monat] | Dimension |  |
-| [!UICONTROL Quartal] | Dimension |  |
-| [!UICONTROL Jahr] | Dimension |  |
-| [!UICONTROL Stunde] | Dimension |  |
-| [!UICONTROL Minute] | Dimension |  |
+| [!UICONTROL Personen] | Metrik | Diese Metrik basiert auf der in einer Verbindung angegebenen Person-ID. |
+| [!UICONTROL Sitzungen] | Metrik | Diese Metrik basiert auf den unten angegebenen Sitzungseinstellungen. |
+| [!UICONTROL Ereignisse] | Metrik | Diese Metrik stellt die Anzahl der Zeilen aus allen Ereignis-Datensätzen in einer Verbindung dar. |
+| [!UICONTROL Tag] | Dimension | Die Dimension &quot;Tag&quot;zeigt den Tag an, an dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist der erste Tag im Datumsbereich und das letzte Dimensionselement der letzte Tag im Datumsbereich. |
+| [!UICONTROL Woche] | Dimension | Die Dimension &quot;Woche&quot;zeigt die Woche an, in der eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist die erste Woche im Datumsbereich und das letzte Dimensionselement die letzte Woche im Datumsbereich. |
+| [!UICONTROL Monat] | Dimension | Die Dimension &quot;Monat&quot;zeigt den Monat an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist der erste Monat im Datumsbereich und das letzte Dimensionselement der letzte Monat im Datumsbereich. |
+| [!UICONTROL Quartal] | Dimension | Die Dimension &quot;Quartal&quot;zeigt das Quartal an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
+| [!UICONTROL Jahr] | Dimension | Die Dimension &quot;Jahr&quot;zeigt das Jahr an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
+| [!UICONTROL Stunde] | Dimension | Die Dimension &quot;Stunde&quot;gibt die Stunde an, zu der eine bestimmte Metrik aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Stunde im Datumsbereich und das letzte Dimensionselement die letzte Stunde im Datumsbereich. |
+| [!UICONTROL Minute] | Dimension | Die Dimension &quot;Minute&quot;berichtet, in welchem Moment eine bestimmte Metrik aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Minute im Datumsbereich und das letzte Dimensionselement die letzte Minute im Datumsbereich. |
 
 ### Optionale Standardkomponenten
 
-Einige Systemkomponenten sind in jeder Data Ansicht erforderlich, um Berichte in Analysis Workspace zu erleichtern, während die folgenden optional sind.
+Optionale Standardkomponenten sind auf der Registerkarte **[!UICONTROL Standardkomponenten]** verfügbar.
 
 | Komponentenname | Dimension oder Metrik | Hinweise |
 | --- | --- | --- |
-| [!UICONTROL Sitzung beginnt] | Metrik | Diese Metrik zählt die Anzahl der Ereignis, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (z. &#39;[!UICONTROL Session Beginns] existiert&quot;), wird nur das erste Ereignis jeder Sitzung Filter. Beachten Sie, dass sich dies von [!UICONTROL Einträge] unterscheidet, da es immer das erste Ereignis einer Sitzung zählt - nicht den ersten vorhandenen Wert für eine Dimension in einer Sitzung. |
-| [!UICONTROL Sitzung endet] | Metrik | Diese Metrik zählt die Anzahl der Ereignis, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzungs-Beginn] kann es auch in einer Filterdefinition verwendet werden, um Dinge bis zum letzten Ereignis jeder Sitzung zu filtern. Beachten Sie, dass sich dies von [!UICONTROL Ausstiege] unterscheidet, da es immer das letzte Ereignis einer Sitzung zählt - nicht den letzten vorhandenen Wert für eine Dimension in einer Sitzung. |
-| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Die Metrik [!UICONTROL Besuchszeit] funktioniert ähnlich wie im herkömmlichen Adobe Analytics - indem die Zeit zwischen zwei verschiedenen Werten für eine Dimension addiert wird. Mit den Metriken &quot;Sitzungsende&quot;und &quot;Sitzungsende&quot;können die Kunden jedoch die berechneten Metriken [!UICONTROL Besuchszeit pro Beginn] und [!UICONTROL Zeit pro Sitzung] selbst erstellen (siehe OTB-Filter und Berechnungsmetriken unten). |
-| [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | Funktionell gesehen handelt es sich hier eigentlich nur um eine Zusammenfassung der oben genannten Metrik. Wir stellen Standardbehälter bereit, erlauben Ihnen aber, die Behälter zu ändern, was Sie wollen. |
-| [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension |  |
-| [!UICONTROL Aufgewendete Zeit pro Person] | Dimension |  |
-| [!UICONTROL Batch-ID] | Dimension |  |
-| [!UICONTROL Datensatz-ID] | Dimension |  |
+| [!UICONTROL Sitzung beginnt] | Metrik | Diese Metrik zählt die Anzahl der Ereignis, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (z. &#39;[!UICONTROL Session Beginns] existiert&quot;), wird nur das erste Ereignis jeder Sitzung Filter. |
+| [!UICONTROL Sitzung endet] | Metrik | Diese Metrik zählt die Anzahl der Ereignis, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzungs-Beginn] kann es auch in einer Filterdefinition verwendet werden, um Dinge bis zum letzten Ereignis jeder Sitzung zu filtern. |
+| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Die Metrik [!UICONTROL Besuchszeit] addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension. |
+| [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | [!UICONTROL Die Zeit pro ] Ereignis fasst die  [!UICONTROL Besuchszeit ] in   Eventbuckets zusammen. |
+| [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | [!UICONTROL Die Zeit pro ] Sitzung erfasst die  [!UICONTROL Besuchszeit ] in   Sessionbuckets. |
+| [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | [!UICONTROL Die Zeit pro ] Personbucket ordnet die  [!UICONTROL Besuchszeitmetrik ] in   Personbuckets ein. |
+| [!UICONTROL Batch-ID] | Dimension | Stellt den Experience Platformen-Stapel dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
+| [!UICONTROL Datensatz-ID] | Dimension | Stellt den Dataset der Experience Platform dar, zu dem ein [!UICONTROL Ereignis] gehört. |
 
 ### Filtern von Schema-Feldern und Dimensionen/Metriken
 
@@ -209,9 +212,10 @@ Sie können die Schema-Felder in der linken Leiste nach folgenden Datentypen fil
 
 ![](assets/filter-fields.png)
 
-Sie können auch nach Datensätzen und danach filtern, ob ein Schema Daten enthält oder ob es sich um eine Identität handelt:
+Sie können auch nach Datensätzen und danach filtern, ob ein Schema Daten enthält oder ob es sich um eine Identität handelt. Standardmäßig wird der Filter **[!UICONTROL Enthält Daten]** auf alle Ansichten angewendet.
 
 ![](assets/filter-other.png)
+
 
 ## 3. hinzufügen einer globalen Ansicht
 
