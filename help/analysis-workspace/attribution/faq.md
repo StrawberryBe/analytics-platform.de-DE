@@ -1,14 +1,14 @@
 ---
 title: Häufig gestellte Fragen zu Attribution
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Attribution.
+exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: e4bef70f72019bdceb09938dffe2fd266ff4248d
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 93%
+source-wordcount: '307'
+ht-degree: 88%
 
 ---
-
 
 # Häufig gestellte Fragen zu Attribution
 
@@ -26,7 +26,7 @@ Diese zusätzlichen Daten sind auf das Lookback-Fenster des Besucherberichts zur
 
 **Wann sollte ich eine Rückmeldung zur Besuchszuordnung oder zur Besucherattribution verwenden?**
 
-Die Auswahl des Attributions-Lookbacks hängt von Ihrem Anwendungsfall ab. Wenn Konversionen in der Regel länger als einen Besuch dauern, wird ein Besucher-Lookback empfohlen. Die Erstellung einer Virtual Report Suite mit einer längeren Besuchsdefinition ist ebenfalls eine potenzielle Lösung.
+Die Auswahl des Attributions-Lookbacks hängt von Ihrem Anwendungsfall ab. Wenn Konversionen in der Regel länger als einen Besuch dauern, wird ein Besucher-Lookback empfohlen. Die Erstellung einer Ansicht mit einer längeren Besuchsdefinition ist ebenfalls eine potenzielle Lösung.
 
 **Worin unterscheiden sich Props und eVars bei der Verwendung von Attribution?**
 
