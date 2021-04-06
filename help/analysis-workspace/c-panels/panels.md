@@ -3,10 +3,10 @@ description: Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 84%
+source-wordcount: '802'
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen.
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights-], [!UICONTROL leere] und [!UICONTROL Freiform-]Bedienfelder eignen sich hervorragend als Ausgangspunkt für Ihre Analyse, während sich die Bedienfelder für [!UICONTROL Analytics for Target], [!UICONTROL Attribution IQ], [!UICONTROL gleichzeitige Medien-Viewer] und [!UICONTROL Segmentvergleich] mehr für erweiterte Analysen eignen. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
+[!UICONTROL Quick Insights],   Blankand   Freeformpanels sind großartige Orte zum Beginn Ihrer Analyse, während  [!UICONTROL Attribution ] IQs sich zu fortgeschritteneren Analysen eignen. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
 
 Das standardmäßige Startbedienfeld ist das [!UICONTROL Freiform-]Bedienfeld. Sie können jedoch auch das [leere Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) als Standard festlegen.
 
@@ -37,9 +37,9 @@ Hinweis: Wenn eine (violette) Datumsbereichskomponente in einer Tabelle, Visuali
 
 ## Ablagebereich {#dropzone}
 
-Mit dem Ablagebereich eines Bedienfeld können Sie Segment- und Dropdown-Filter auf alle Tabellen und Visualisierungen innerhalb eines Bedienfelds anwenden. Sie können einen oder mehrere Filter auf ein Bedienfeld anwenden. Der Titel über jedem Filter kann durch Klicken auf den Bearbeitungsstift geändert werden, oder Sie können mit der rechten Maustaste klicken, um ihn ganz zu entfernen.
+Mit dem Bedienfeld-Dropzone können Sie Filter und Dropdown-Filter auf alle Tabellen und Visualisierungen in einem Bedienfeld anwenden. Sie können einen oder mehrere Filter auf ein Bedienfeld anwenden. Der Titel über jedem Filter kann durch Klicken auf den Bearbeitungsstift geändert werden, oder Sie können mit der rechten Maustaste klicken, um ihn ganz zu entfernen.
 
-### Segmentfilter
+### Filter
 
 Ziehen Sie alle Filter aus der linken Leiste in den Ablagebereich des Bedienfelds, um mit dem Filtern des Bedienfelds zu beginnen.
 
@@ -47,7 +47,7 @@ Ziehen Sie alle Filter aus der linken Leiste in den Ablagebereich des Bedienfeld
 
 ### Ad-hoc-Filter
 
-Sie können auch Nicht-Segmentkomponenten direkt in die Dropzone ziehen, um Ad-hoc-Filter zu erstellen. So sparen Sie Zeit und Mühe beim Aufrufen des Filteraufbaus. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das Bleistift-förmige Bearbeitungssymbol klicken und sie im Filter Builder bearbeiten.
+Nicht-Filterkomponenten können auch direkt in die Dropzone gezogen werden, um Ad-hoc-Filter zu erstellen. So sparen Sie Zeit und Mühe beim Aufrufen des Filteraufbaus. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das Bleistift-förmige Bearbeitungssymbol klicken und sie im Filter Builder bearbeiten.
 
 Ad-hoc-Filter sind lokal im Projekt vorhanden und werden nicht in der linken Leiste angezeigt, es sei denn, Sie veröffentlichen sie.
 
@@ -55,16 +55,16 @@ Ad-hoc-Filter sind lokal im Projekt vorhanden und werden nicht in der linken Lei
 
 ### Dropdown-Filter {#dropdown-filter}
 
-Zusätzlich zu den Segmentfiltern ermöglichen Ihnen Dropdown-Filter eine kontrollierte Interaktion mit den Daten. Sie können beispielsweise einen Dropdown-Filter für Gerätetypen hinzufügen, damit Sie das Bedienfeld nach Tablet, Mobiltelefon oder Desktop segmentieren können.
+Zusätzlich zu den Filtern können Sie mithilfe von Dropdown-Filtern mit den Daten auf kontrollierte Weise interagieren. Sie können beispielsweise einen Dropdown-Filter für Mobilgerätetypen hinzufügen, damit Sie das Bedienfeld nach Tablet, Mobiltelefon oder Desktop filtern können.
 
-Dropdown-Filter können auch verwendet werden, um viele Projekte zu einem zusammenzufassen. Wenn Sie beispielsweise mehrere Versionen desselben Projekts mit unterschiedlichen Ländersegmenten verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdown-Filter „Land“ hinzufügen.
+Dropdown-Filter können auch verwendet werden, um viele Projekte zu einem zusammenzufassen. Wenn Sie z. B. mehrere Versionen desselben Projekts mit unterschiedlichen Filtern für Länder verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdownfilter für Länder hinzufügen.
 
 ![](assets/dropdown-filter-intro.png)
 
 So erstellen Sie Dropdown-Filter:
 
-1. Wenn Sie einen Dropdown-Filter mit [!UICONTROL Dimensionselementen] erstellen möchten, z. B. Werte innerhalb der Dimension [!UICONTROL Marketing-Kanal], klicken Sie in der linken Leiste auf das Pfeilsymbol neben Ihrer Dimension. Dadurch werden alle verfügbaren Elemente angezeigt. Wählen Sie ein oder mehrere Komponentenelemente aus der linken Leiste aus und legen Sie sie im Ablagebereich des Bedienfelds ab, **während Sie die Umschalttaste** gedrückt halten. Dadurch werden die Komponenten in einen Dropdown-Filter und nicht in ein einzelnes Segment umgewandelt.
-1. Wenn Sie einen Dropdown-Filter mit einer anderen Komponente wie z. B. Kennzahlen, Segmente oder Datumsbereiche erstellen möchten, wählen Sie in der linken Leiste einen Komponententyp aus und legen Sie ihn im Ablagebereich des Bedienfelds ab, **während Sie die Umschalttaste** gedrückt halten.
+1. Wenn Sie einen Dropdown-Filter mit [!UICONTROL Dimensionselementen] erstellen möchten, z. B. Werte innerhalb der Dimension [!UICONTROL Marketing-Kanal], klicken Sie in der linken Leiste auf das Pfeilsymbol neben Ihrer Dimension. Dadurch werden alle verfügbaren Elemente angezeigt. Wählen Sie ein oder mehrere Komponentenelemente aus der linken Leiste aus und legen Sie sie im Ablagebereich des Bedienfelds ab, **während Sie die Umschalttaste** gedrückt halten. Dadurch werden die Komponenten zu einem Dropdown-Filter und nicht zu einem einzigen Filter.
+1. Wenn Sie einen Dropdownfilter mit einer anderen Komponente wie Metriken, Filtern oder Datumsbereichen erstellen möchten, wählen Sie in der linken Leiste einen Komponententyp aus und legen Sie die Dropzone **im Bedienfeld ab, während Sie die Umschalttaste** gedrückt halten.
 1. Wählen Sie eine der Optionen aus der Dropdown-Liste aus, um die Daten im Bedienfeld zu ändern. Sie können auch auf die Filterung von Bedienfelddaten verzichten, indem Sie **[!UICONTROL Kein Filter]** auswählen.
 
 ![](assets/create-dropdown.png)
