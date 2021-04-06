@@ -3,17 +3,17 @@ description: Erstellen Sie ein Projekt und fügen Sie dem Freiform-Bedienfeld Ko
 keywords: Analysis Workspace
 title: Workspace-Projekt erstellen
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
 
 # Workspace-Projekt erstellen
 
-Erstellen Sie ein Projekt und fügen Sie dem Freiform-Bedienfeld Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche) hinzu.
+Erstellen Sie ein Projekt und fügen Sie dem Freiformbereich Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) hinzu.
 
 In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Workspace erläutert und Sie erfahren, wie ein Projekt erstellt wird.
 
@@ -36,8 +36,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
    Für die Erstellung eines Projekts gibt es folgende Ausgangspunkte:
 
 * Ein leeres Projekt (Standard). Eine Anleitung finden Sie unten.
-* Eine Standardvorlage. Diese Vorlagen wurden von Adobe erstellt und können sofort verwendet werden. Eine Anleitung finden Sie unter [Vorlagen](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md).
-* Eine benutzerdefinierte Vorlage. Diese Vorlagen werden von Benutzern mit Administratorrechten erstellt. Eine Anleitung finden Sie unter [Vorlagen](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md).
+* Eine benutzerdefinierte Vorlage. Diese Vorlagen werden von Benutzern mit Administratorrechten erstellt.
 
    ![](assets/start_modal.png)
 
@@ -49,10 +48,6 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
    Ein leeres Projekt wird angezeigt, das einen Freiformbereich und eine Datentabellenvisualisierung enthält.
 
    ![](assets/fa_project_new.png)
-
-   >[!NOTE]
-   >
-   >Manchmal wird beim Laden eines Projekts (oder beim Umschalten auf eine Report Suite) die Meldung „Inkompatible Report Suite“ angezeigt, wenn nicht alle Komponenten (Metriken/Dimensionen) des Projekts in der Report Suite enthalten sind. Sie können eine Liste der nicht kompatiblen Komponenten anzeigen und wissen somit, warum Sie die Meldung erhalten.
 
 <table id="table_3989E45D9D4241CBB2E58B29DA257B2F"> 
  <thead> 
@@ -89,7 +84,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
    >
    >Die internen Links beziehen sich nach dem Kopieren/Speichern nun auf das Projekt, in dem sie sich befinden, nicht auf das Originalprojekt, aus dem sie kopiert wurden.
 
-## Komponenten und Visualisierungen hinzufügen {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## hinzufügen Komponenten und Visualisierungen {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. Erstellen Sie Ihr Projekt durch Ziehen von *`components`* und *`visualizations`* in das Projekt.
 
@@ -134,7 +129,7 @@ Der Bereich [!UICONTROL Visualisierungen] enthält standardmäßige Analytics-Gr
 
 1. Schritt
 
-## Daten mit dem Kontextmenü per Rechtsklick individuell anpassen {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Verwenden Sie das Kontextmenü, um Ihre Daten anzupassen.{#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 Im Kontextmenü (Rechtsklick) können Sie die folgenden Aktionen ausführen (abhängig von der in der Tabelle ausgewählten Zelle).
 
@@ -173,7 +168,7 @@ Im Kontextmenü (Rechtsklick) können Sie die folgenden Aktionen ausführen (abh
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensionen </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Metriken </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Segmente </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Filter </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">Zeit </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -191,7 +186,7 @@ Im Kontextmenü (Rechtsklick) können Sie die folgenden Aktionen ausführen (abh
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Segment aus Auswahl erstellen</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Filter aus Auswahl erstellen</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
