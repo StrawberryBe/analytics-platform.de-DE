@@ -1,15 +1,15 @@
 ---
 description: Projektfreigabe und Projektrollen in Workspace
-keywords: Analysis Workspace sharing
+keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
+exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 98%
 
 ---
-
 
 # Freigeben von Projekten
 
@@ -52,7 +52,7 @@ So fügen Sie Ihrem freigegebenen Projekt Empfänger hinzu:
 Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 1. Fügen Sie Empfänger oder Gruppen von Empfängern hinzu.
 Beschreibungen der einzelnen Rollen finden Sie über das Hilfesymbol oben.
-1. (Optional) Geben Sie eingebettete Projektkomponenten (Segmente, berechnete Metriken und Datumsbereiche) für alle Empfänger frei.
+1. (Optional) Geben Sie eingebettete Projektkomponenten (Filter, berechnete Metriken und Datumsbereiche) für alle Empfänger frei.
 Nach der Freigabe werden diese Komponenten im Dropdown-Menü „Komponenten“ im Workspace des Empfängers angezeigt. Beachten Sie, dass diese Einstellung nicht beibehalten wird. Es handelt sich um eine einmalige Aktion zum Zeitpunkt der Freigabe.
 1. (Optional) Legen Sie diese Seite als die Landingpage für Empfänger fest.
 Diese Einstellung wird nicht beibehalten. Es handelt sich um eine einmalige Aktion zum Zeitpunkt der Freigabe.
