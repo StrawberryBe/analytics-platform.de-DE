@@ -1,20 +1,20 @@
 ---
 description: Erfahren Sie, wie Sie die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen.
 title: Fallout-Visualisierung konfigurieren
+exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 98%
+ht-degree: 85%
 
 ---
-
 
 # Fallout-Visualisierung konfigurieren
 
 Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Ein Touchpoint ist im Allgemeinen eine Seite auf Ihrer Website. Touchpoints sind jedoch nicht auf Webseiten eingeschränkt. So können Sie zum Beispiel Ereignisse (z. B. Einheiten) sowie Unique Visitors und erneute Besuche hinzufügen. Auch Dimensionen können Sie hinzufügen (wie Kategorie, Browsertyp oder interner Suchbegriff).
 
-Sogar Segmente können Sie innerhalb eines Touchpoints hinzufügen. Vielleicht möchten Sie zum Beispiel Segmente vergleichen (wie iOS- und Android-Benutzer). Wenn Sie die gewünschten Segmente an die Oberseite des Trichters ziehen, werden Informationen über diese Segmente zum Fallout-Bericht hinzugefügt. Wenn Sie möchten, dass nur diese Segmente angezeigt werden, können Sie die Grundlinie „Alle Besuche“ entfernen.
+Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Sie können beispielsweise Filter wie iOS- und Android-Benutzer vergleichen. Ziehen Sie die gewünschten Filter an den Anfang des Fallout-Berichts, und Informationen zu diesen Filtern werden dem Fallout-Bericht hinzugefügt. Wenn Sie nur diese Filter anzeigen möchten, können Sie die Grundlinie &quot;Alle Besuche&quot;entfernen.
 
 Bezüglich der Anzahl der Schritte, die hinzugefügt, oder der Dimensionen, die verwendet werden können, gibt es keine Einschränkungen.
 
@@ -38,7 +38,7 @@ Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listV
 
    >[!NOTE]
    >
-   >Hinweis: Mehrere Segmente werden mit AND verbunden, mehrere Elemente wie Dimensionselemente und Metriken hingegen mit OR.
+   >Mehrere Filter sind mit UND verbunden, aber mehrere Elemente wie Dimensionselemente und Metriken werden mit ODER verknüpft.
 
    ![](assets/multiple_obj_touchpoint.png)
 
@@ -74,4 +74,4 @@ Wenn Sie **mit der rechten Maustaste auf einen Touchpoint klicken**, werden die 
 | Trenderstellung aller Touchpoints (%) | Trends für alle Touchpoint-Prozentsätze im Fallout (außer „Alle Besuche“, falls vorhanden) im selben Diagramm. |
 | Aufschlüsselung des Fallthrough an diesem Touchpoint | Zeigt an, was Besucher zwischen zwei Touchpoints (diesem und dem nächsten Touchpoint) getan haben, wenn sie sich zum nächsten Touchpoint fortbewegt haben. Diese Option erstellt eine Freiformtabelle, die Ihre Dimensionen enthält. Dimensionen und andere Elemente der Tabelle können Sie austauschen. |
 | Aufschlüsselung des Fallout an diesem Touchpoint | Zeigt an, was Besucher, die nicht im Trichter verblieben sind, unmittelbar nach dem ausgewählten Schritt getan haben. |
-| Segment aus Touchpoint erstellen | Erstellen Sie ein Segment aus dem ausgewählten Touchpoint. |
+| Filter aus Touchpoint erstellen | Erstellen Sie einen neuen Filter aus dem ausgewählten Touchpoint. |
