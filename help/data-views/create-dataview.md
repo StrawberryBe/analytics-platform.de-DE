@@ -3,10 +3,10 @@ title: Datenansicht erstellen
 description: Beschreibt, wie in Customer Journey Analytics (CJA) eine Datenansicht für einen Plattform-Datensatz erstellt wird.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 97%
+source-wordcount: '553'
+ht-degree: 94%
 
 ---
 
@@ -35,9 +35,9 @@ Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbi
    | Beschreibung | Eine detaillierte Beschreibung ist nicht zwingend erforderlich, wird jedoch empfohlen. |
    | Tags hinzufügen | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
    | Zeitzone | Wählen Sie die Zeitzone für Ihre Datenansicht aus. |
-   | Sitzungs-Timeout | Wählen Sie Ihre Definition einer „Sitzung“ aus. Die Einstellung des Sitzungs-Timeouts definiert den Umfang der Inaktivität, der für einen Unique Visitor erforderlich ist, bevor automatisch eine neue Sitzung gestartet wird. Die Standardeinstellung lautet 30 Minuten. Wenn Sie beispielsweise das Sitzungs-Timeout auf 45 Minuten festlegen, wird für jede Sequenz mit erfassten Treffern eine neue Sitzungsgruppierung erstellt, die durch 45 Minuten Inaktivität getrennt ist. <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | Neue Sitzung mit Ereignis starten | Eine neue Sitzung beginnt dann, wenn ein Ereignis ausgelöst wird – unabhängig davon, ob bei einer Sitzung eine Zeitüberschreitung auftrat oder nicht. Zur neuen Sitzung gehört auch das Ereignis, das sie ausgelöst hat. Zudem können Sie mehrere Ereignisse nutzen, um eine Sitzung zu starten, und eine neue Sitzung wird dann begonnen, wenn beliebige dieser Ereignisse in den Daten auftreten. Diese Einstellung wirkt sich auf Ihre Besuchszählung, den Sitzungs- (früher Besuchs-) Segmentierungs-Container sowie die Besuchsgültigkeitslogik von Dimensionen aus. |
-   | Filter hinzufügen | „Filter“ ist der Begriff für „Segmente“ in Customer Journey Analytics. Wenn Sie Ihre Daten filtern möchten, ziehen Sie den entsprechenden Filter aus der linken Leiste. Wenn Sie keinen Filter auswählen, enthält die Datenansicht alle Daten. |
+   | Sitzungs-Timeout | Wählen Sie Ihre Definition einer „Sitzung“ aus. Die Einstellung des Sitzungs-Timeouts definiert den Umfang der Inaktivität, der für einen Unique Visitor erforderlich ist, bevor automatisch eine neue Sitzung gestartet wird. Die Standardeinstellung lautet 30 Minuten. Wenn Sie beispielsweise das Sitzungs-Timeout auf 45 Minuten festlegen, wird für jede Sequenz mit erfassten Treffern eine neue Sitzungsgruppierung erstellt, die durch 45 Minuten Inaktivität getrennt ist. <!--This setting impacts not only your visit counts, but also how visit filter containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
+   | Neue Sitzung mit Ereignis starten | Eine neue Sitzung beginnt dann, wenn ein Ereignis ausgelöst wird – unabhängig davon, ob bei einer Sitzung eine Zeitüberschreitung auftrat oder nicht. Zur neuen Sitzung gehört auch das Ereignis, das sie ausgelöst hat. Zudem können Sie mehrere Ereignisse nutzen, um eine Sitzung zu starten, und eine neue Sitzung wird dann begonnen, wenn beliebige dieser Ereignisse in den Daten auftreten. Diese Einstellung wirkt sich auf Ihre Besuchszahl, den Container des Sitzungsfilters (früher Besuch) und die Logik des Besuchsablaufs auf Dimensionen aus. |
+   | Filter hinzufügen | Wenn Sie Ihre Daten filtern möchten, ziehen Sie den entsprechenden Filter aus der linken Leiste. Wenn Sie keinen Filter auswählen, enthält die Datenansicht alle Daten. |
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
