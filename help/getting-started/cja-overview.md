@@ -1,14 +1,14 @@
 ---
 title: Überblick über Customer Journey Analytics
 description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Workspace mit Daten aus Experience Platform verwenden können.
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1217'
+ht-degree: 95%
 
 ---
-
 
 # Überblick über Customer Journey Analytics
 
@@ -19,7 +19,7 @@ Customer Journey Analytics ist eine Analytics-Funktion, mit der Sie die Funktion
 Customer Journey Analytics erweitert den Umfang von Analytics mit benutzerfreundlichen kanalübergreifenden Funktionen. Außerdem werden die Einschränkungen in früheren Versionen von Adobe Analytics aufgehoben. Einige wichtige Verbesserungen sind:
 
 * **Unbegrenzte Variablen und Ereignisse**: Die Konzepte von eVars, Props und Ereignissen existieren nicht mehr. Die Daten werden in erster Linie in Dimensionen und Metriken betrachtet. Datensätze können eine unbegrenzte Anzahl an eindeutigen Dimensionen und Metriken aufweisen.
-* **Unbegrenzte eindeutige Werte**: Eindeutige Werte sind in Adobe Experience Platform nicht eingeschränkt (traditionelle Report Suites sind beispielsweise auf 500,000 eindeutige Werte begrenzt).
+* **Unbegrenzte eindeutige Werte**: Adobe Experience Platform ist nicht auf eindeutige Einschränkungen beschränkt.
 * **Historische Daten ändern**: Mit Adobe Experience Platform können Daten entfernt oder korrigiert werden.
 * **Report Suite-übergreifende Daten**: Vorhandene Implementierungen aus mehreren Datensätzen können in Platform kombiniert werden.
 
@@ -74,7 +74,7 @@ Nicht-Produkt-Administratoren (Benutzer) in Customer Journey Analytics können k
 Verschiedene Funktionen von CJA wurden gegenüber dem herkömmlichen Adobe Analytics umbenannt, um sie an Branchenstandards anzupassen. Zur aktualisierten Terminologie gehören:
 
 * Segmente werden jetzt als Filter bezeichnet.
-* Virtual Report Suites werden jetzt als Ansichten bezeichnet.
+* Virtual Report Suites werden jetzt als &quot;Data Ansichten&quot;bezeichnet.
 * Klassifizierungen werden jetzt als Suchdatensätze bezeichnet.
 * Kundenattribute werden jetzt als Profildatensätze bezeichnet.
 * Treffer-Container werden jetzt als Ereignis-Container bezeichnet.
