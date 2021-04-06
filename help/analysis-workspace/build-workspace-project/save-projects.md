@@ -1,10 +1,11 @@
 ---
 description: Erfahren Sie mehr über die verschiedenen Speicheroptionen, einschließlich automatisches Speichern, Speichern unter und Speichern als Vorlage.
 title: Projekte speichern
-translation-type: ht
-source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
-workflow-type: ht
-source-wordcount: '313'
+exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -21,7 +22,7 @@ Es gibt verschiedene Speicheraktionen, die Sie im Menü **[!UICONTROL Projekt]**
 |---|---| 
 | **[!UICONTROL Speichern]** | Speichern Sie die Änderungen an Ihrem Projekt. Wenn das Projekt freigegeben ist, sehen auch die Empfänger des Projekts die Änderungen. Wenn Sie das Projekt zum ersten Mal speichern, werden Sie aufgefordert, dem Projekt einen Namen, eine (optionale) Beschreibung und (optionale) Tags hinzuzufügen. |
 | **[!UICONTROL Speichern unter]** | Erstellen Sie ein Duplikat Ihres Projekts. Das ursprüngliche Projekt bleibt davon unberührt. |
-| **[!UICONTROL Als Vorlage speichern]** | Speichern Sie Ihr Projekt als [benutzerdefinierte Vorlage](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html), die für Ihr Unternehmen unter **[!UICONTROL Projekt > Neu]** zur Verfügung steht. |
+| **[!UICONTROL Als Vorlage speichern]** | Speichern Sie Ihr Projekt als benutzerdefinierte Vorlage, die für Ihr Unternehmen unter **[!UICONTROL Projekt > Neu]** zur Verfügung steht. |
 
 ![](assets/save-project.png)
 
