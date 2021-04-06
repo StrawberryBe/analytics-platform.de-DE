@@ -1,14 +1,14 @@
 ---
 description: Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu Bereichen (Behältern) zusammen.
 title: Histogramm
+exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 95%
+ht-degree: 87%
 
 ---
-
 
 # Histogramm
 
@@ -60,7 +60,7 @@ Wenn Sie die Datenquelle für das Histogramm-Diagramm anzeigen oder ändern möc
 
 ![](assets/manage-data-source.png)
 
-Vorab erstellte Segmente, die in der Tabelle angezeigt werden, sind interne Segmente und werden in der Segmentauswahl nicht angezeigt. Klicken Sie auf das Symbol „i“ neben dem Segmentnamen und klicken Sie dann auf **[!UICONTROL Veröffentlichen]**, um das Segment öffentlich zu machen.
+Vordefinierte Filter, die in der Tabelle angezeigt werden, sind interne Filter und werden nicht in der Filterauswahl angezeigt. Klicken Sie auf das Symbol &quot;i&quot;neben dem Filternamen und dann auf **[!UICONTROL Als öffentlich einstellen]**, um den Filter öffentlich zu machen.
 
 ![](assets/prebuilt_segments.png)
 
