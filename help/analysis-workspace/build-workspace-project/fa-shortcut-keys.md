@@ -2,14 +2,14 @@
 description: Tastaturinteraktionen, Tastaturbefehle und Point-and-Click-Verhaltensweisen, die in Analysis Workspace verfügbar sind.
 keywords: Analysis Workspace
 title: Hotkeys (Tastaturbefehle)
+exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 100%
 
 ---
-
 
 # Hotkeys (Tastaturbefehle)
 
@@ -39,7 +39,7 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Erstellen eines Warnhinweises | STRG (oder Befehl) + UMSCHALT + A |
 | Berechnete Metrik erstellen | STRG (oder Befehl) + UMSCHALT + C |
 | Datumsbereich erstellen | STRG (oder Befehl) + UMSCHALT + D |
-| Segment erstellen | STRG (oder Befehl) + UMSCHALT + E |
+| Filter erstellen | STRG (oder Befehl) + UMSCHALT + E |
 | Alle löschen | ALT + W |
 | Kopieren | STRG (oder Befehl) + C |
 | Wiederherstellen | STRG (oder Befehl) + UMSCHALT + Z |
@@ -52,13 +52,10 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 
 | Aktion | Tastaturbefehl |
 |---|---|
-| Neues Bedienfeld „Analytics for Target“ | ALT + g |
 | Neuer Attributionsbereich | ALT + E |
 | Neues leeres Bedienfeld | ALT + B |
 | Neues Freiformfeld | ALT + A |
-| Neues Bedienfeld „Gleichzeitige Medienbetrachter“ | ALT + h |
 | Neues Bedienfeld „Quick Insights“ | ALT + f |
-| Neues Bedienfeld für Segmentvergleich | ALT + C |
 | Neue Freiformtabelle | ALT + 1 |
 | Neuer Kantengraph | ALT + 2 |
 | Neues Balkendiagramm | ALT + 3 |
