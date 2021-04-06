@@ -3,9 +3,9 @@ title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2802'
 ht-degree: 12%
 
 ---
@@ -106,7 +106,7 @@ Die Formateinstellungen gelten nur für Metriken.
 
 ### Einstellungen zum Einschließen/Ausschließen von Werten konfigurieren
 
-Mit dieser Einstellung können Sie die zugrunde liegenden Daten, auf denen Sie Berichte sind, zur Abfrage ändern. Es ist nicht dasselbe wie ein Filter (früher Segment genannt). Aber Filter werden diese neue Dimension respektieren, ebenso wie Pfade und Zuordnungen.
+Mit dieser Einstellung können Sie die zugrunde liegenden Daten, auf denen Sie Berichte sind, zur Abfrage ändern. Es ist nicht dasselbe wie ein Filter. Aber Filter werden diese neue Dimension respektieren, ebenso wie Pfade und Zuordnungen.
 
 Sie können beispielsweise eine Dimension aus dem Feld &quot;pageTitle&quot;erstellen, sie aber als &quot;Fehlerseiten&quot;bezeichnen und jede Seite einschließen, die [!UICONTROL die Wortgruppe] &quot;error&quot;enthält.
 
@@ -115,7 +115,7 @@ Sie können beispielsweise eine Dimension aus dem Feld &quot;pageTitle&quot;erst
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
 | [!UICONTROL Von Schreibweise abhängig] | Standard = Ein. Diese Einstellung gilt nur für den Abschnitt [!UICONTROL Werte einschließen/ausschließen]. Damit können Sie angeben, ob bei der Regel zum Ein-/Ausschließen, die Sie anwenden, die Groß-/Kleinschreibung beachtet werden soll. |
-| [!UICONTROL Übereinstimmung] | Hier können Sie angeben, welche Werte Sie vor der Zuordnung und Segmentierung für den Berichte berücksichtigen möchten (z. B. nur Werte mit der Wortgruppe &quot;error&quot;). Sie können Folgendes angeben: **[!UICONTROL Wenn alle Kriterien erfüllt sind]** oder **[!UICONTROL Wenn ein Kriterium erfüllt ist]**. |
+| [!UICONTROL Übereinstimmung] | Ermöglicht die Angabe der Werte, die Sie für den Berichte vor der Zuordnung und den Filtern berücksichtigen möchten (z. B. nur Werte mit der Wortgruppe &quot;error&quot;). Sie können Folgendes angeben: **[!UICONTROL Wenn alle Kriterien erfüllt sind]** oder **[!UICONTROL Wenn ein Kriterium erfüllt ist]**. |
 | [!UICONTROL Kriterien] | Hier können Sie die Übereinstimmungslogik angeben, die auf eine bestimmte Filterregel angewendet werden soll.<ul><li>**Zeichenfolge**: Enthält die Wortgruppe, Enthält einen Begriff, enthält alle Begriffe, enthält keinen Begriff, enthält nicht die Wortgruppe, Ist gleich, Ist nicht gleich, Beginn mit, endet mit</li><li>**Dublette/Ganzzahl**: gleich, ungleich, größer als, kleiner als, größer gleich oder gleich, kleiner gleich oder gleich</li><li>**Datum**: gleich, ungleich, ist später als, liegt vor, tritt innerhalb von</li></ul> |
 | [!UICONTROL Übereinstimmungs-Operand] | Hiermit können Sie den Übereinstimmungs-Operanden angeben, auf den der Übereinstimmungsoperator angewendet werden soll.<ul><li>**Zeichenfolge**: Textfeld</li><li>**Dublette/Ganzzahl**: Textfeld mit Nach-oben-/Nach-unten-Pfeilen für numerische Werte</li><li>**Datum**: Granularitätsauswahl Tag (Kalender)</li><li>**Datums-Zeit**: Auswahl der Datums- und Uhrzeitgranularität</li></ul> |
 | [!UICONTROL Regel hinzufügen] | Hiermit können Sie einen zusätzlichen Übereinstimmungsoperator und -opern angeben. |
