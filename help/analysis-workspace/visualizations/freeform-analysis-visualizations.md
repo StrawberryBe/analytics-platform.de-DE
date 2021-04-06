@@ -2,20 +2,20 @@
 description: Ihre Daten in Analysis Workspace visuell darstellen.
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
+exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 44%
+source-wordcount: '1060'
+ht-degree: 43%
 
 ---
-
 
 # Visualisierungsübersicht
 
 Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Die meisten Visualisierungstypen sind Ihnen bekannt, wenn Sie Adobe Analytics verwenden. Analysis Workspace verfügt jedoch über Visualisierungseinstellungen sowie viele neue und einzigartige Visualisierungsarten mit interaktiven Funktionen.
 
-Sie können auf Visualisierungen von oben links in Workspace, von einem [leeren Bereich](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html) oder über das Kontextmenü im Workflow zugreifen.
+Sie können auf Visualisierungen von oben links in Workspace, von einem [leeren Bereich](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=de) oder über das Kontextmenü im Workflow zugreifen.
 
 ![](assets/viz-rail.png)
 
@@ -27,7 +27,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Balken](/help/analysis-workspace/visualizations/bar.md) | zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) | zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
 | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die Kohorte-Analyse eignet sich für die Analyse von Retentionen, Kürzen oder Latenzzeiten. |
-| [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile oder Segmente eines Ganzen. |
+| [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich wie bei einem Kreisdiagramm zeigt diese Visualisierung Daten als Teile oder Filter eines Ganzen an. |
 | [Trichteranalyse](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben (wo sie „ausgefallen“ sind) und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). Kann auf mögliche oder exakte Sequenzen eingestellt werden |
 | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Zeigt genaue Kundenpfade durch Ihre Websites und Apps an. |
 | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. Es bildet die Grundlage für die Analyse von Daten in Workspace. |
@@ -39,7 +39,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Zeigt die Änderung zwischen den ausgewählten Zellen als 1 große Zahl/Prozent an. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zu den Bedienfeld-/Visualisierungsbeschreibungen |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu 3 Segmenten. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu 3 Filtern. |
 
 ## Einstellungen {#settings}
 
@@ -97,6 +97,6 @@ Zusätzliche Funktionen für eine Visualisierung sind verfügbar, wenn Sie mit d
 
 ## Symbol „Visualisierung erstellen“ {#quick-viz}
 
-Wenn Sie nicht sicher sind, welche Visualisierung ausgewählt werden soll, klicken Sie auf das Symbol **[!UICONTROL Visualisierung erstellen]** in einer Tabellenzeile (verfügbar beim Bewegen der Maus). Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Wenn Sie darauf klicken, sucht Analysis Workspace nach der Visualisierung, die aufgrund der vorhandenen Fakten am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine Zeile ausgewählt haben, wird ein Trendliniendiagramm erstellt. Wenn Sie drei Segmentzeilen ausgewählt haben, wird ein Venn-Diagramm erstellt.
+Wenn Sie nicht sicher sind, welche Visualisierung ausgewählt werden soll, klicken Sie auf das Symbol **[!UICONTROL Visualisierung erstellen]** in einer Tabellenzeile (verfügbar beim Bewegen der Maus). Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Wenn Sie darauf klicken, sucht Analysis Workspace nach der Visualisierung, die aufgrund der vorhandenen Fakten am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine Zeile ausgewählt haben, wird ein Trendliniendiagramm erstellt. Wenn Sie drei Filterzeilen ausgewählt haben, wird ein Venn-Diagramm erstellt.
 
 ![](assets/quick-viz.png)
