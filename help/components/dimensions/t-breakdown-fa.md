@@ -2,16 +2,16 @@
 description: Schlüsseln Sie Dimensionen und Dimensionselemente in Analysis Workspace auf.
 keywords: Analysis Workspace
 title: Dimensionen aufschlüsseln
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
+exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 translation-type: tm+mt
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 96%
+source-wordcount: '237'
+ht-degree: 79%
 
 ---
-
 
 # Dimensionen aufschlüsseln
 
@@ -21,14 +21,14 @@ ht-degree: 96%
 
 Schlüsseln Sie Dimensionen und Dimensionselemente in Analysis Workspace auf.
 
-Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlüsseln. Erstellen Sie Abfragen mithilfe relevanter Metriken, Dimensionen, Segmente, Zeitachsen und anderer Aufschlüsselungswerte für die Analyse.
+Daten auf unbegrenzte Weise für Ihre spezifischen Anforderungen aufschlüsseln; Erstellen Sie Abfragen mithilfe relevanter Metriken, Dimensionen, Filter, Zeitlinien und anderer Aufschlüsselungswerte für die Analyse.
 
 1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle.
 1. Klicken Sie in der Datentabelle mit der rechten Maustaste auf einen Zeileneintrag und wählen Sie **[!UICONTROL Aufschlüsselung]** > *`<item>`* aus.
 
    ![Ergebnis des Schritts](assets/fa_data_table_actions.png)
 
-   Sie können Metriken nach Dimensionselementen oder Zielgruppensegmenten über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
+   Sie können Metriken über ausgewählte Zeiträume nach Dimensionselementen oder Audiencen-Filtern unterteilen. Sie können auch noch granularer aufschlüsseln.
 
    >[!NOTE]
    >
