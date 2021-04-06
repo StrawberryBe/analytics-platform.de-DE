@@ -2,10 +2,10 @@
 description: Erfahren Sie mehr über die Optionen „Rückgängig“ und „Wiederholen“ in Analysis Workspace.
 title: Einstellungen zum Rückgängigmachen und Wiederherstellen
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '298'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 100%
 
 * Durch Auswahl von **[!UICONTROL Neues Projekt]** oder **[!UICONTROL Vorhandenes Projekt öffnen]** wird der Stapel **[!UICONTROL Rückgängig]** entfernt.
 
-* Änderungen der Report Suite können rückgängig gemacht/wiederhergestellt werden.
 * In der Nähe des Projektnamens wird eine Meldung bezüglich des Rückgängigmachens/Wiederherstellens angezeigt. Sie zeigt an, ob etwas rückgängig gemacht/wiederhergestellt wird.
 * Sie können die folgenden [Tastaturbefehle](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) verwenden:
 
@@ -36,7 +35,6 @@ ht-degree: 100%
 * Beitragsanalyse
 * Segmentvergleich
 * Projektname
-* Report Suite-Auswahl
 * Hinzufügen/Entfernen von Visualisierungen
 * Aus-/Einblenden von Bereichen und Visualisierungen
 * Einfügen mit Tastaturbefehle (STRG bzw. BEFEHL + Z zum Rückgängigmachen und STRG bzw. BEFEHL + UMSCHALT + Z zum Wiederherstellen)
