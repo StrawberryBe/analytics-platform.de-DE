@@ -3,10 +3,10 @@ description: Erfahren Sie mehr über die Optionen „Rückgängig“ und „Wied
 title: Einstellungen zum Rückgängigmachen und Wiederherstellen
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,6 @@ ht-degree: 100%
 * Alle löschen
 * Zeitraum
 * Beitragsanalyse
-* Segmentvergleich
 * Projektname
 * Hinzufügen/Entfernen von Visualisierungen
 * Aus-/Einblenden von Bereichen und Visualisierungen
@@ -45,7 +44,7 @@ ht-degree: 100%
 * Freiformoptionen per Rechtsklick
 * Auswahl
 * Auswahl der Visualisierungslegende
-* Hinzufügen von Segmenten zu Bereichen
+* Hinzufügen eines Filters zu einem Bedienfeld
 * Visualisierungseinstellungen für Diagramme
 * Bearbeiten von Legendenbezeichnungen
 * Magic-Visualisierungen
@@ -63,9 +62,9 @@ ht-degree: 100%
 
 * Änderungen von Projektinformationen und -einstellungen (Hinzufügen von Tags, Änderungen der Beschreibung, Einstellung „Wiederholte Instanzen zählen“)
 * Als Landingpage festlegen
-* Neu hinzufügen (Segment/Metrik/Datumsbereich/Warnhinweis)
+* hinzufügen neu (Filter/Metrik/Datumsbereich/Warnhinweis)
 * Projektfreigabe, Abruf von Projektlink, Dateisendung („Jetzt“ oder „Geplant“)
-* Segmenterstellung für diesen Pfad der Fluss-Visualisierung
+* Filter für diesen Pfad bei der Flussvisualisierung erstellen
 * Berechnete Metrik erstellen
 * Datumsbereich erstellen
 
