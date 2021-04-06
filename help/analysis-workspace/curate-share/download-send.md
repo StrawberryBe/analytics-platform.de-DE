@@ -1,14 +1,14 @@
 ---
 description: Sie können Daten von Analysis Workspace herunterladen, indem Sie sie kopieren oder in PDF- und CSV-Formaten.
 title: PDF- oder CSV-Dateien herunterladen
+exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 12%
 
 ---
-
 
 # PDF- oder CSV-Dateien herunterladen
 
@@ -53,7 +53,7 @@ Mit der Rechtsklick-Option **[!UICONTROL Daten als CSV]** herunterladen können 
 
 ## Objekte als CSV herunterladen.{#download-items}
 
-Wenn Sie mehr als die 400 Zeilen mit Daten in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (Dimension)**. Diese Option exportiert bis zu 50.000 Dimensionselemente (basierend auf der Tabellensortierung) für die ausgewählte Dimension, wobei Filter und Segmente angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in der Freiform-Tabelle keine Beschränkungen erzwungen werden, wird empfohlen, die Option &quot;Elemente herunterladen&quot;in Tabellen mit weniger als 20 Spalten zu verwenden, um eine optimale Leistung sicherzustellen.
+Wenn Sie mehr als die 400 Zeilen mit Daten in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (Dimension)**. Diese Option exportiert bis zu 50.000 Dimensionselemente (basierend auf der Tabellensortierung) für die ausgewählte Dimension, wobei Filter und Filter angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in der Freiform-Tabelle keine Beschränkungen erzwungen werden, wird empfohlen, die Option &quot;Elemente herunterladen&quot;in Tabellen mit weniger als 20 Spalten zu verwenden, um eine optimale Leistung sicherzustellen.
 
 >[!TIP]
 >
@@ -67,11 +67,11 @@ Sie können mehrere Aufgaben im Projekt ausführen und sogar zu einem neuen Work
 
 Die Funktionen der Tabelle werden wie folgt auf die heruntergeladene Datei angewendet:
 
-* Alle Bereichssegmente werden als Filter angewendet.
+* Alle Filter des Bedienfelds werden als Filter angewendet.
 * Unterteilungen **über** werden als Filter über jeder Spalte angewendet.
 * Unterteilungen **unterhalb** der ausgewählten Dimension in der Tabelle werden entfernt.
 
-Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldsegment (Neue Besucher Kunden) und den oben aufgeführten Komponenten (Marketing Kanal = E-Mail) als Filter heruntergeladen und die unten aufgeführten Komponenten (Mobilgerätetyp) aus der heruntergeladenen CSV entfernt.
+Im obigen Beispiel werden Seitenelemente mit dem Bereichsfilter (Neue Besucher Kunden) und den oben aufgeführten Komponenten (Marketing Kanal = E-Mail) als Filter heruntergeladen und die unten aufgeführten Komponenten (Mobilgerätetyp) aus der heruntergeladenen CSV entfernt.
 
 ![](assets/downloaded-file.png)
 
@@ -91,5 +91,4 @@ Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachricht
 | --- | --- |
 | Warum ist meine heruntergeladene PDF-Datei eine Seite? | In Workspace werden heruntergeladene PDFs derzeit nicht paginiert. |
 | Kann ich mehr als 50.000 Elemente mit der Option &quot;Elemente als CSV herunterladen&quot;exportieren? | Während jeder Download bis zu 50.000 Dimensionselemente enthalten kann, können Sie die Art der Tabelle ändern, um längere Endelemente abzurufen, oder einen Filter anwenden, um spezifischere Elemente herunterzuladen. |
-| Was macht **[!UICONTROL Visualisierung kopieren]**? | **[!UICONTROL Die Option &quot;]** Visualisierung kopieren&quot;ist keine Exportoption. Damit können Sie eine Visualisierung oder einen Bereich von einem Ort in Workspace an einen anderen kopieren. Beispielsweise von einem Bereich zum anderen im selben Projekt oder von einem Projekt zu einem anderen. [Intra-Linking-Video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
-
+| Was macht **[!UICONTROL Visualisierung kopieren]**? | **[!UICONTROL Die Option &quot;]** Visualisierung kopieren&quot;ist keine Exportoption. Damit können Sie eine Visualisierung oder einen Bereich von einem Ort in Workspace an einen anderen kopieren. Beispielsweise von einem Bereich zum anderen im selben Projekt oder von einem Projekt zu einem anderen. [Intra-Linking-Video](https://docs.adobe.com/content/help/de-DE/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
