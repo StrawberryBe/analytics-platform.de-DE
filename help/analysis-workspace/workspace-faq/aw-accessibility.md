@@ -1,14 +1,14 @@
 ---
 description: Unterstützende Funktionen für die Barrierefreiheit in Analysis Workspace
 title: Barrierefreiheit in Analysis Workspace
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
-
 
 # Barrierefreiheit in Analysis Workspace
 
@@ -67,9 +67,9 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 | Alt + 1 | Neue Freiformtabelle |
 | Strg + Umschalt + C | Neue berechnete Metrik |
 | Strg + Umschalt + D | Neuer Datumsbereich |
-| Strg + Umschalt + E | Neues Segment |
+| Strg + Umschalt + E | Neuer Filter |
 | Strg + Z | Rückgängig |
-| Umschalttaste gedrückt halten (in der Dropzone des Bedienfeldsegments) | Einen [Dropdown-Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de-DE) erstellen |
+| Umschalttaste gedrückt halten (im Dropzone des Bereichsfilters) | Einen [Dropdown-Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de-DE) erstellen |
 
 #### Demokratisierung
 
