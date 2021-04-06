@@ -1,14 +1,14 @@
 ---
 title: Filter verwalten
 description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalten.
+exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 96%
+source-wordcount: '1094'
+ht-degree: 94%
 
 ---
-
 
 # Filter verwalten
 
@@ -16,19 +16,18 @@ Der Filter-Manager bietet verschiedene Möglichkeiten zum Kuratieren von Segment
 
 Der Filter-Manager zeigt Ihnen alle Filter, die sich in Ihrem Besitz befinden und für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. Dieser Überblick stellt die Benutzeroberfläche und die Funktionen des Filter-Managers vor.
 
-Greifen Sie auf den Filter-Manager zu, indem Sie in der oberen Navigation zu **[!UICONTROL Customer Journey-Analyse]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** gehen.
+Rufen Sie den Filter-Manager auf, indem Sie in der oberen Navigation zu **[!UICONTROL Kunden-Journey-Analyse]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** wechseln.
 
 ## Filter Manager-Benutzeroberfläche
 
 ![](assets/filter-manager-ui.png)
 
-| Nr. | Funktion der Benutzeroberfläche | Beschreibung |
+| # | Funktion der Benutzeroberfläche | Beschreibung |
 |---|---|---|
 | 1 | Werkzeugleiste für die Filterverwaltung | Diese Werkzeugleiste wird angezeigt, sobald Sie einen Filter aktivieren. Über diese Werkzeugleiste können die meisten Verwaltungsaufgaben erledigt werden. |
 | 2 | Kontrollkästchen | Aktivieren Sie einen Filter, um ihn zu verwalten. |
 | 4 | Favoriten | Wenn Sie auf den Stern neben einem Filter klicken, wird der Stern gelb und der Filter als Favorit markiert. |
 | 5 | Titel und Beschreibung | Werden durch den Filtergenerator bereitgestellt. Klicken Sie auf den Titel-Link, um den Titel und die Beschreibung zu bearbeiten. Dadurch gelangen Sie zurück zum Filtergenerator. |
-| 6 | Report Suites | Diese Spalte zeigt an, in welcher Report Suite der Filter zuletzt gespeichert wurde. |
 | 7 | Inhaber | Zeigt an, wer Inhaber des Filters ist. Wenn Sie kein Administrator sind, können Sie nur Filter sehen, deren Inhaber Sie sind, sowie Filter, die für Sie freigegeben wurden. |
 | 8 | Tags (in der Spaltenauswahl nicht aktiviert, weshalb die Spalte nicht angezeigt wird) | Tags, die entweder durch Sie oder durch Personen, die einen Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
 | 9 | Freigegeben für | Zeigt Personen oder Gruppen (nur Administrator) oder „Alle“ (nur Administrator) an, für die Sie den Filter freigegeben haben. |
@@ -36,7 +35,7 @@ Greifen Sie auf den Filter-Manager zu, indem Sie in der oberen Navigation zu **[
 | 11 | Spaltenauswahl | (Oben rechts) Hier können Sie auswählen, welche Spalten im Filter-Manager angezeigt werden sollen. |
 | 12 | Gemeinsam-Symbol | Gibt an, dass dieser Filter von Ihnen oder für Sie freigegeben wurde. |
 | 13 | Freigegeben-Symbol | Gibt an, dass dieser Filter durch einen Administrator genehmigt wurde. |
-| 14 | Andere Filter | Ermöglicht Ihnen, die Filter unter „Tags“, „Report Suites“, „Inhaber“ und „Sonstige“ („Alle anzeigen“, „Meine“, „Für mich freigegeben“, „Genehmigt“, „Favoriten“) zu sehen. |
+| 14 | Andere Filter | Hier können Sie Filter nach Tags, Ansichten, Inhabern und anderen anzeigen (Alle anzeigen, Meine, Für mich freigegeben, Genehmigt, Favoriten). |
 
 ## Filter planen
 
@@ -138,4 +137,3 @@ Das Kennzeichnen von Segmenten als Favoriten bietet eine weitere Möglichkeit, d
 1. Klicken Sie im Filter-Manager auf den Stern neben allen Filtern, die Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
 
 1. Sie können unter „Filter“ > „Weitere Filter“ > „Favoriten“ nach Favoriten filtern.
-
