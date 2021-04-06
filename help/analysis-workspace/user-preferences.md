@@ -1,14 +1,14 @@
 ---
 title: So legen Sie Benutzereinstellungen in Analysis Workspace fest
 description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen für Benutzer festlegen.
-translation-type: ht
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
-workflow-type: ht
-source-wordcount: '216'
+exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
+translation-type: tm+mt
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+workflow-type: tm+mt
+source-wordcount: '197'
 ht-degree: 100%
 
 ---
-
 
 # Benutzerpräferenzen
 
@@ -39,7 +39,6 @@ Projekt-Voreinstellungen werden auf neue in Analysis Workspace erstellte Projekt
 |  | [Dichte anzeigen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html?lang=de) | <ul><li>Kompakt</li><li>Komfortabel</li><li>Erweitert (Standard)</li></ul> |
 |  | [Farbpalette](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html?lang=de) | <ul><li>Adobe-Paletten (Standard)</li><li>Benutzerdefinierte Paletten</li></ul> |
 | **Daten** |  |  |
-|  | [Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de#report-suite) | <ul><li>Zuletzt verwendet (Standard)</li><li>Spezifisch – Auswahl aus einer Liste</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de#calendar) | Liste der vordefinierten Datumsbereiche, einschließlich **[!UICONTROL Diesen Monat]** (Standard) |
 |  | [Typ des Bedienfelds](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de) | <ul><li>Freiform (Standard)</li><li>Leer</li><li>Quick Insights</li></ul> |
 |  | Zahlenformat | <ul><li>1.000,00 (Standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
