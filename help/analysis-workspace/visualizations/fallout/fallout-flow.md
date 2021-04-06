@@ -1,14 +1,14 @@
 ---
 description: Trichteranalysevisualisierungen zeigen, wo Besucher eine vordefinierte Seitenfolge verlassen (ausgefallen) und durch eine vordefinierte Seitenfolge weitergeführt (durchgegangen) haben.
 title: Fallout-Übersicht
+exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 81%
+source-wordcount: '245'
+ht-degree: 88%
 
 ---
-
 
 # Fallout-Übersicht
 
@@ -16,7 +16,7 @@ Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berich
 
 Mit Fallout-Visualisierungen können Sie:
 
-* eine Gegenüberstellung zweier verschiedener Segmente im gleichen Bericht vornehmen
+* Führen Sie im gleichen Bericht Vergleichswerte mit zwei verschiedenen Filtern durch.
 * Trichterschritte (Touchpoints) ziehen, ablegen und neu anordnen.
 * Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren
 * Einen multidimensionalen Fallout-Bericht erstellen
@@ -32,29 +32,5 @@ Eine Fallout-Visualisierung ist zur Analyse der folgenden Punkte nützlich:
 * Allgemeiner, breiter gefasster Trafficfluss: Dieser Fluss zeigt, wie viele Personen, die sich die Homepage ansahen, anschließend eine Suche durchführten und dann ein bestimmtes Element anzeigten.
 * Korrelationen zwischen Ereignissen auf Ihrer Site. Korrelationen zeigen, welcher Prozentsatz von Personen, die die Datenschutzrichtlinien durchlasen, ein Produkt kauften.
 
-[Videoschulung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=de-DE)  zur Fallout-Visualisierung (4:15)
+[Tutorial zur Fallout-Visualisierung](https://docs.adobe.com/content/help/de-DE/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 
-## Segmentierung als Grundlage für Fluss und Fallout {#section_654F37A398C24DDDB1552A543EE29AA9}
-
-Segmente, die auf Workspace-Bereiche angewendet werden, funktionieren etwas anders als Segmente, die in Reports &amp; Analysen in Adobe Analytics auf Trichteranalysen- und Flussberichte angewendet werden. In den meisten Fällen liefern beide genau dieselben Ergebnisse. Der Hauptunterschied besteht darin, dass Reports &amp; Analysen das Segment bei jedem Schritt der Sequenz anwendet. Dies kann zu leichten Abweichungen bei den Ergebnissen führen.
-
-Hier ist ein Beispiel eines Fallouts mit zwei Schritten:
-
-![](assets/fallout_segments1.png)
-
-Wenn Sie dann ein Segment auf Workspace-Bedienfeld-Ebene anwenden, kombiniert das Segment den Fallout folgendermaßen:
-
-![](assets/fallout_seg.png)
-
-Bei der Berechnung des Segments durch Reports &amp; Analysen wird das Segment dagegen folgendermaßen kombiniert:
-
-![](assets/fallout_segments3.png)
-
-Reports &amp; Analysen kombiniert das Segment mit jedem Schritt. Wenn sich die Container auf derselben Ebene wie der Fallout befinden (z. B. Besuch- oder Besucherebene), führt dies zu einem Angleich an die Anzahl an Besuchen oder Besuchern.
-
-Wenn sich das auf das Feld angewandte Segment jedoch unterhalb der Fallout-Ebene (d. h. Hit-Ebene) befindet, werden für das Segment je nach Kombination durch den Bericht unterschiedliche Ergebnisse angezeigt. Um dies zu wiederholen, stimmen die Zahlen in Analysis Workspace in den meisten Fällen mit denen in Reports &amp; Analysen überein. Nur wenn alle folgenden Punkte zutreffen, stimmen sie **nicht** überein:
-
-* Das Segment befindet sich nicht auf derselben Ebene wie der Fallout.
-* Das Segment weist eine Variable auf, bei der der Besucher/Besuch während eines Besuchs/Besuchers mehrere Werte besitzen kann.
-
-Im seltenen Fall, dass Sie in Analysis Workspace Segmente auf dieselbe Weise wie in Reports &amp; Analytics auf Fallout/Fluss anwenden müssen, legen Sie das Segment einfach in jedem Fallout-Schritt in Workspace ab und erhalten dieselben Zahlen.
