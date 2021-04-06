@@ -3,10 +3,10 @@ description: Häufig gestellte Fragen zum Arbeitsbereich und Tipps zur Fehlerbeh
 title: Häufig gestellte Fragen
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -34,6 +34,6 @@ ht-degree: 84%
 
 Wenn Sie einen Workspace-Bericht erfolgreich erstellt haben, aber keine Daten vorhanden sind, können Sie einige Punkte prüfen:
 
-* Wenn Sie ein Segment in Ihrem Bericht angewendet haben, stimmen die Segmentkriterien möglicherweise nicht mit den Daten überein. Versuchen Sie, das Segment zu entfernen oder die Segmentdefinition anzupassen.
+* Wenn Sie in Ihrem Bericht einen Filter angewendet haben, stimmen die Filterkriterien möglicherweise nicht mit den Daten überein. Versuchen Sie, den Filter zu entfernen oder die Filterdefinition anzupassen.
 * Überprüfen Sie den Datumsbereich oben rechts und stellen Sie sicher, dass er auf einen erwarteten Wert eingestellt ist.
 * Navigieren Sie zu Ihrer Website und überprüfen Sie mit dem [Debugger](https://docs.adobe.com/content/help/de-DE/debugger/using/experience-cloud-debugger.html), ob Daten erfasst werden.
