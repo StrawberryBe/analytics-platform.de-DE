@@ -1,14 +1,14 @@
 ---
 description: Sie können PDF-/CSV-Projekte für Empfänger in Ihrem Unternehmen kuratieren, freigeben und planen.
 title: Menü „Freigeben“
+exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 83%
+ht-degree: 78%
 
 ---
-
 
 # Menü „Freigeben“
 
@@ -24,4 +24,4 @@ Sie können PDF-/CSV-Projekte für Empfänger in Ihrem Unternehmen im Arbeitsber
 | [!UICONTROL Projektverknüpfung abrufen] | Erstellen Sie einen freigebbaren Link, um schnell auf ein Projekt zugreifen zu können. Benutzer müssen sich hierzu anmelden. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
 | [!UICONTROL Datei jetzt senden] | Senden Sie ein Projekt als CSV- oder PDF-Datei sofort an bestimmte Empfänger. |
 | [!UICONTROL Datei planmäßig senden] | Senden Sie ein Projekt als CSV- oder PDF-Datei planmäßig an bestimmte Empfänger. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
-| [!UICONTROL Projekt kuratieren] | Beschränken Sie die in einem Projekt verfügbaren Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche). [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/curate.html) |
+| [!UICONTROL Projekt kuratieren] | Beschränken Sie die in einem Projekt verfügbaren Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche). [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/curate-share/curate.html) |
