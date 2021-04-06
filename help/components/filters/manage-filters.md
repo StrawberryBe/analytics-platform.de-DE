@@ -3,16 +3,16 @@ title: Filter verwalten
 description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalten.
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1094'
-ht-degree: 94%
+ht-degree: 85%
 
 ---
 
 # Filter verwalten
 
-Der Filter-Manager bietet verschiedene Möglichkeiten zum Kuratieren von Segmenten wie das Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Kennzeichnen als Favoriten.
+Der Filter-Manager bietet viele Angebote zum Kuratieren von Filtern, wie Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Markieren als Favoriten.
 
 Der Filter-Manager zeigt Ihnen alle Filter, die sich in Ihrem Besitz befinden und für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. Dieser Überblick stellt die Benutzeroberfläche und die Funktionen des Filter-Managers vor.
 
@@ -39,7 +39,7 @@ Rufen Sie den Filter-Manager auf, indem Sie in der oberen Navigation zu **[!UICO
 
 ## Filter planen
 
-Wenn Sie für die Planung von Segmenten etwas Zeit aufwenden, verbessern Sie die Chancen, dass diese für Ihre Organisation von Nutzen sein werden und dass deren Anzahl unter Kontrolle bleibt.
+Wenn Sie sich etwas Zeit für die Planung von Filtern widmen, verbessert sich die Wahrscheinlichkeit, dass diese für Ihr Unternehmen nützlich sein werden und dass die Anzahl der Mitarbeiter kontrolliert wird.
 
 * Bedenken Sie die Zielgruppe: Wer wird ihn benutzen? Für wen werden Sie er freigeben? Welche Personengruppe wird diesen Filter benutzen und wie sollte er demnach getaggt werden? Dies erfordert auch eine gute Filterbeschreibung. Die Beschreibung sollte mindestens die folgenden Fragen beantworten:
 
@@ -57,7 +57,7 @@ Wenn Sie für die Planung von Segmenten etwas Zeit aufwenden, verbessern Sie die
 
 ### Filter taggen
 
-Durch das Taggen von Filtern können Sie diese im Filter-Manager organisieren. Alle Benutzer können Tags für Filter erstellen und eines oder mehrere Tags auf einen Filter anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
+Durch das Taggen von Filtern können Sie diese im Filter-Manager organisieren. Alle Benutzer können Tags für Filter erstellen und einen oder mehrere Tags auf einen Filter anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
 
 Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:
 
@@ -79,7 +79,7 @@ Taggen eines Filters:
 
    * Geben Sie einen neuen Tag-Namen ein und drücken Sie **[!UICONTROL die Eingabetaste]**.
 
-1. Klicken Sie erneut auf **[!UICONTROL Taggen]**, um das Segment zu taggen.
+1. Klicken Sie erneut auf **[!UICONTROL Tag]**, um den Filter zu taggen.
 
 Das Tag wird jetzt in der Spalte „Tags“ angezeigt. (Klicken Sie oben rechts auf das Zahnradsymbol, um Ihre Spalten zu verwalten.)
 Sie können unter **[!UICONTROL Filter > Tags]** auch nach Tags filtern.
@@ -94,7 +94,7 @@ So wird ein Filter als genehmigt gekennzeichnet:
 
 1. Klicken Sie in der Aufgabe der Filterverwaltung auf **[!UICONTROL Genehmigen]**.
 
-1. Entscheiden Sie, ob Sie die genehmigten Segmente für Ihre Organisation freigeben möchten.
+1. Erwägen Sie, die genehmigten Filter für Ihr Unternehmen freizugeben.
 
 1. Klicken Sie auf **[!UICONTROL OK]**.
 
@@ -102,7 +102,7 @@ So wird ein Filter als genehmigt gekennzeichnet:
 
    ![](assets/seg_approved.png)
 
-1. Sie können die Genehmigung eines genehmigten Segments auch aufheben, indem Sie auf **[!UICONTROL Nicht genehmigen klicken]**.
+1. Sie können die Genehmigung eines genehmigten Filters auch aufheben, indem Sie auf **[!UICONTROL Nicht genehmigen]** klicken.
 
 ### Filter freigeben
 
@@ -132,7 +132,7 @@ Freigeben eines Filters:
 
 ### Filter als Favoriten markieren
 
-Das Kennzeichnen von Segmenten als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
+Die Kennzeichnung von Filtern als Favoriten ist eine weitere Möglichkeit, sie für eine einfache Verwendung zu organisieren.
 
 1. Klicken Sie im Filter-Manager auf den Stern neben allen Filtern, die Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
 
