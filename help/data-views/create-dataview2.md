@@ -3,9 +3,9 @@ title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: c021892119cbebccaa49e5c04fd7cc7450cce8c6
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2805'
 ht-degree: 12%
 
 ---
@@ -75,7 +75,7 @@ Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension nam
 | [!UICONTROL Tags] | Optional. Ermöglicht das Taggen der Komponente mit benutzerdefinierten oder vordefinierten Tags zur einfacheren Suche/Filterung in der Analysis Workspace-Benutzeroberfläche. |
 | [!UICONTROL Feldname] | Der Name des Schema-Felds. |
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
-| [!UICONTROL Datensatz] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Feldtyp die Komponente stammt (z. B. String, Integer usw.). Dieses Feld kann mehrere Datensätze enthalten, z. B. wenn Sie mehrere Report Suites kombinieren. |
+| [!UICONTROL Datensatz] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Feldtyp die Komponente stammt (z. B. String, Integer usw.). Dieses Feld kann mehrere Datensätze enthalten. |
 | [!UICONTROL Typ des Schemas] | Gibt an, ob es sich bei der Komponente um eine Zeichenfolge, eine Ganzzahl usw. handelt. |
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [CJA-API](https://adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Sie können auf das Bearbeitungssymbol klicken und diese Komponenten-ID ändern. Wenn Sie diese Komponenten-ID ändern, werden jedoch alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, umgangen.<br>Wenn Sie jemals eine andere Datenfelddimension erstellen, die ein anderes Ansicht für eine pageTitle-Dimension verwendet, können Sie diese umbenennen und die Ansicht der Dimension für Datenübergreifende Inhalte kompatibel machen. |
 | [!UICONTROL Path] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
