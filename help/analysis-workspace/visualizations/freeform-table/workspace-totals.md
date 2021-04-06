@@ -3,7 +3,7 @@ description: Berechnung der Gesamtsummen in Workspace.
 title: Workspace-Summen
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 92%
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 In Freiformtabellen wird auf jeder Unterteilungsebene eine Zeile insgesamt angezeigt, die zwei Summen enthalten kann:
 
-* **[!UICONTROL Gesamtsumme]**  (graue &quot;Out-of&quot;-Zahl) - dieser Gesamtwert stellt alle erfassten Treffer dar. Wenn ein Filter entweder auf Bereichsebene oder in der Freiformtabelle angewendet wird, wird diese Summe angepasst, um alle Treffer wiederzugeben, die den Segmentkriterien entsprechen.
+* **[!UICONTROL Gesamtsumme]**  (graue &quot;Out-of&quot;-Zahl) - dieser Gesamtwert stellt alle erfassten Treffer dar. Wenn ein Filter entweder auf Bereichsebene oder innerhalb der Freiformtabelle angewendet wird, wird diese Summe angepasst, um alle Treffer wiederzugeben, die den Filterkriterien entsprechen.
 * **[!UICONTROL Tabellensumme]** (schwarze Zahl) - dieser Gesamtwert entspricht in der Regel der [!UICONTROL Gesamtsumme] oder einer Untergruppe davon. Er spiegelt alle Tabellenfilter wider, die innerhalb der Freiformtabelle angewendet werden, einschließlich der Option [!UICONTROL Keine einschließen].
 
 ![](assets/total-row.png)
