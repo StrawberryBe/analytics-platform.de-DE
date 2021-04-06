@@ -1,14 +1,14 @@
 ---
 title: Datenansicht erstellen
 description: Beschreibt, wie in Customer Journey Analytics (CJA) eine Datenansicht für einen Plattform-Datensatz erstellt wird.
-translation-type: ht
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: ht
-source-wordcount: '572'
-ht-degree: 100%
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 97%
 
 ---
-
 
 # Datenansicht erstellen
 
@@ -43,7 +43,7 @@ Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbi
 
 ## Komponenten hinzufügen
 
-1. Lassen Sie uns jetzt den Datenansichten Komponenten (Dimensionen, Metriken) hinzuzufügen (ähnlich wie bei der Kuration in Virtual Report Suites). Beachten Sie, dass jetzt alle Felder in den Datensätzen in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich. Sie können auch **[!UICONTROL Alle auswählen]**, um alle Komponenten hinzuzufügen.
+1. Jetzt ist es an der Zeit, Komponenten (Dimensionen, Metriken) zur Ansicht der Daten hinzuzufügen. Beachten Sie, dass jetzt alle Felder in den Datensätzen in Dimensionen oder Metriken übersetzt werden. Ziehen Sie Dimensionen und Metriken in den Bereich. Sie können auch **[!UICONTROL Alle auswählen]**, um alle Komponenten hinzuzufügen.
 
    ![](assets/add-all-components.png)
 
