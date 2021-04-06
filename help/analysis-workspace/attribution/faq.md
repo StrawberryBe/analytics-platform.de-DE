@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen zu Attribution
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Attribution.
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '308'
 ht-degree: 88%
 
 ---
@@ -53,4 +53,4 @@ Das Attributionsbedienfeld unterstützt alle Dimensionen. Nicht unterstützte Me
 
 **Wie funktioniert die Zuordnung mit Filtern?**
 
-Die Zuordnung wird immer vor Filtern ausgeführt und die Segmentierung wird ausgeführt, bevor andere Filter angewendet werden.
+Die Zuordnung wird immer vor Filtern ausgeführt und globale Filter werden ausgeführt, bevor andere Filter angewendet werden.
