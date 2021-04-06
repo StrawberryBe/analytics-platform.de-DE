@@ -1,32 +1,26 @@
 ---
 description: Bei einer Zeitunterteilung wird der Zeitstempel erfasster Hits in aussagekräftigere Dimensionen wie „Stunde des Tages“ oder „Tag der Woche“ unterteilt.
 title: Dimensionen für die Zeitunterteilung
-uuid: c9fa7921-aa57-483c-b2f9-da55013ada17
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '195'
+ht-degree: 91%
 
 ---
-
 
 # Dimensionen für die Zeitunterteilung
 
 Bei einer Zeitunterteilung wird der Zeitstempel erfasster Hits in aussagekräftigere Dimensionen wie „Stunde des Tages“ oder „Tag der Woche“ unterteilt.
 
-Die Dimensionen für die Zeitunterteilung basieren auf der Zeitzone der Report Suite bzw. der virtuellen Report Suite. Diese Dimensionen sind in Analysis Workspace verfügbar und können bei der Beantwortung der folgenden Fragen hilfreich sein:
+Zeitaufteilungsdimensionen basieren auf der Zeitzone der Ansicht. Diese Dimensionen sind in Analysis Workspace verfügbar und können bei der Beantwortung der folgenden Fragen hilfreich sein:
 
 * Welches ist in einem umfangreichen Datumsbereich die bevorzugte Tageszeit, zu der Besucher meine Site oder Anwendung aufrufen?
 * Gibt es Wochentage oder Zeiten, an bzw. zu denen auf meiner Site oder in meiner Anwendung mehr Konversionen erfolgen?
 * Wie verhalten sich Verkäufe am Wochenende in Bezug auf Verkäufe während der Woche?
 * Führt eine bestimmte Marketing-Kampagne eher am Morgen oder am Nachmittag zu einer höheren Konversionsrate?
 
->[!NOTE]
->
->Die Dimensionen für die Zeitunterteilung sind nur in Analysis Workspace verfügbar. Wenn Sie Dimensionen für die Zeitunterteilung in anderen Analytics-Lösungen verwenden möchten, können Sie das [getTimeParting-Plug-in](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/plugins/gettimeparting.html) implementieren.
-
-Zu den Dimensionen für die Zeitunterteilung in Analysis Workspace zählen:
+## Zeitaufteilungsdimensionen in Analysis Workspace
 
 | Dimension | Beispielwerte |
 |--- |--- |
