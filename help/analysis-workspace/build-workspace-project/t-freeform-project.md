@@ -1,12 +1,12 @@
 ---
-description: Erstellen Sie ein Projekt und fügen Sie dem Freiform-Bedienfeld Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche) hinzu.
+description: Erstellen Sie ein Projekt und fügen Sie dem Freiformbereich Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) hinzu.
 keywords: Analysis Workspace
 title: Workspace-Projekt erstellen
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 95%
+source-wordcount: '668'
+ht-degree: 86%
 
 ---
 
@@ -21,7 +21,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
 
 1. Legen Sie die Benutzerberechtigung zum Erstellen und Kuratieren von Projekten fest.
 
-   Damit Sie ein Projekt in Analysis Workspace erstellen oder kuratieren können, müssen die Administratoren Sie zuerst zu einer Gruppe hinzufügen, für die die Berechtigung zum **[!UICONTROL Erstellen/Kuratieren von Projekten in Analysis Workspace]** aktiviert ist, oder zu einer Benutzergruppe mit **[!UICONTROL Zugriff auf alle Berichte]**. (**[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Gruppen](https://docs.adobe.com/content/help/de-DE/analytics/admin/user-product-management/user-groups/groups.html)).
+   Damit Sie ein Projekt in Analysis Workspace erstellen oder kuratieren können, müssen die Administratoren Sie zuerst zu einer Gruppe hinzufügen, für die die Berechtigung zum **[!UICONTROL Erstellen/Kuratieren von Projekten in Analysis Workspace]** aktiviert ist, oder zu einer Benutzergruppe mit **[!UICONTROL Zugriff auf alle Berichte]**. (**[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Gruppen](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=de-DE)).
 
 1. Klicken Sie in [!DNL Experience Cloud] auf **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
@@ -59,7 +59,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > Komponenten</a> </td> 
-   <td colname="col2"> <p>Dimensionen, Metriken, Segmente und Datumsbereiche, die Sie in Projekte ziehen können </p> </td> 
+   <td colname="col2"> <p>Dimensionen, Metriken, Filter und Datumsbereiche, die Sie in Projekte ziehen können. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualisierungen</a> </td> 
@@ -90,7 +90,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
 
    **Komponenten**
 
-   Die Komponenten-Symbolleiste zeigt suchbare Dimensionen, Metriken, Segmente und Datumsbereiche an, die Sie häufig verwenden.
+   In der Komponentensymbolleiste werden durchsuchbare Dimensionen, Metriken, Filter und Datumsbereiche angezeigt, die Sie am häufigsten verwenden.
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -109,8 +109,8 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
    <td colname="col2"> <p>Werden auf der Projektebene angewendet. </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term">Vorkommen</span> ist die Standardmetrik für die Datentabelle. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Segmente (blau) </td> 
-   <td colname="col2"> <p>Können per Drag-and-Drop nur auf Bereichsebene angewendet werden, Sie können jedoch Inline-Segmente in der Datentabelle erstellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Weitere Informationen finden Sie unter <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segmente</a>. </p> </td> 
+   <td colname="col1"> Filter (blau) </td> 
+   <td colname="col2"> <p>Können nur auf Bereichsebene gezogen werden, Sie können jedoch Inline-Filter in der Datentabelle erstellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Weitere Informationen finden Sie unter <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Filter </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Datumsbereiche und Granularitäten (violett) </td> 
@@ -187,10 +187,6 @@ Im Kontextmenü (Rechtsklick) können Sie die folgenden Aktionen ausführen (abh
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Filter aus Auswahl erstellen</a> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > In Segmentvergleich ausführen</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
