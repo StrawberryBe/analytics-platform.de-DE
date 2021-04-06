@@ -5,10 +5,10 @@ title: Übersicht über Projekte
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 94%
+source-wordcount: '1165'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ Die Workspace -Seite mit Projektliste umfasst die folgenden Informationen:
 
 | Element | Beschreibung |
 |---|---|
-| [Neues Projekt erstellen](/help/analysis-workspace/home.md) | Klicken Sie auf diesen Link, um ein neues Projekt oder von einer für Sie erstellten [Vorlage](/help/analysis-workspace/build-workspace-project/starter-projects.md) zu starten. |
+| [Neues Projekt erstellen](/help/analysis-workspace/home.md) | Klicken Sie auf diesen Link, um ein neues Projekt von Grund auf zu erstellen. |
 | Projekte verwalten | Wenn Sie auf diesen Link klicken, wird der Projektkomponentenmanager aufgerufen (**[!UICONTROL Analytics]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Projekte]**). Dort sind all Ihre Projekte aufgeführt und Sie können Projekte taggen, freigeben, löschen, umbenennen, genehmigen, kopieren und in CSV exportieren. |
 | Als Landingpage festlegen | Wandelt diese Seite in Ihre Workspace-Landingpage um. |
 | [Tutorials anzeigen](/help/analysis-workspace/home.md) | Sie gelangen zu den Analysis Workspace-Tutorials. |
@@ -47,12 +47,12 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 | Menüelement | Beschreibung |
 |---|---|
-| Projekt | Umfasst allgemeine Aktionen für das Projekt-Management, einschließlich „Neu“, „Öffnen“, „Speichern“, „Speichern unter“ und [Als Vorlage speichern](/help/analysis-workspace/build-workspace-project/starter-projects.md). Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=de) können Sie Daten aus Workspace exportieren. [Projektinformation und Einstellungen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?lang=de#info-settings) bieten viele Optionen zum Verwalten Ihres Projekts. |
+| Projekt | Umfasst allgemeine Aktionen für das Projekt-Management, einschließlich „Neu“, „Öffnen“, „Speichern“, „Speichern unter“ und Als Vorlage speichern. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](/help/analysis-workspace/curate-share/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinfo und Projekteinstellungen**  (siehe unten) bieten viele Angebote zur Projektverwaltung. |
 | Vorlage | Rückgängigmachen oder Wiederholen der letzten Aktion. „Alles löschen“ setzt das Projekt auf den Ausgangspunkt zurück. |
 | Einfügen | Fügen Sie neue Bedienfelder oder Visualisierungen aus diesem Menü ein. Sie können auch neue Bedienfelder und Visualisierungen aus der linken Leiste einfügen. |
-| [Komponenten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=de) | Erstellen Sie neue Segmente, berechnete Metriken, Datumsbereiche oder Warnhinweiskomponenten aus Ihrem Projekt. Sie können auch über die linke Leiste neue Komponenten erstellen. Wenn sich Ihre Komponentendefinitionen kürzlich geändert haben, werden die neuesten Definitionen über „Komponenten aktualisieren“ abgerufen. |
-| [Freigeben](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/send-schedule-files.html?lang=de) | Sie können PDF-/CSV-Projekte für Empfänger in Ihrem Unternehmen kuratieren, freigeben und planen. |
-| Hilfe | Rufen Sie die Hilfedokumentation, Videos und die Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community) auf. Verwalten Sie die Sichtbarkeit der Workspace-Tipps sowie von [Debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Finden Sie Details über Workspace und Faktoren, die sich auf die [Projektleistung](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html?lang=de) auswirken. |
+| [Komponenten](/help/components/overview.md) | Erstellen Sie neue Filter, berechnete Metriken, Datumsbereiche oder Warnkomponenten aus Ihrem Projekt. Sie können auch über die linke Leiste neue Komponenten erstellen. Wenn sich Ihre Komponentendefinitionen kürzlich geändert haben, werden die neuesten Definitionen über „Komponenten aktualisieren“ abgerufen. |
+| [Freigeben](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratieren, Freigeben und Planen von PDF/CSV-Projekten für Empfänger in Ihrem Unternehmen. |
+| Hilfe | Rufen Sie die Hilfedokumentation, Videos und die Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community) auf. Verwalten Sie die Sichtbarkeit der Workspace-Tipps sowie von [Debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Finden Sie Details über Workspace und Faktoren, die sich auf die [Projektleistung](/help/analysis-workspace/workspace-faq/optimizing-performance.md) auswirken. |
 | Schaltfläche „Freigeben“ oder Inhaber | Wenn Sie im Projekt die Rolle „Inhaber“ oder „Bearbeiten“ innehaben, erhalten Sie über der Button „Freigeben“ oben rechts Zugriff auf die Verwaltung Ihrer Projektempfänger. Wenn Sie im Projekt die Rolle „Duplizieren“ oder „Anzeigen“ innehaben, wird der Name des Projektinhabers angezeigt. |
 
 ### Projektinfo und Einstellungen {#info-settings}
@@ -106,7 +106,7 @@ Die folgenden Aktionen können im Projekt-Manager für ein oder mehrere Projekte
 
 | Aktion | Beschreibung |
 |---|---|
-| Fügen Sie | Erstellen Sie ein neues Projekt oder beginnen Sie mit einer [Vorlage](/help/analysis-workspace/build-workspace-project/starter-projects.md). |
+| Fügen Sie | Erstellen Sie ein neues Projekt von Grund auf. |
 | Taggen oder genehmigen | Wählen Sie „Taggen“ oder „Genehmigen“, um Ihre Projekte zu organisieren und die Suche zu erleichtern. |
 | [Freigeben](/help/analysis-workspace/curate-share/share-projects.md) | Stellen Sie ein Projekt für andere Analysis Workspace-Benutzer in Ihrer Organisation zur Verfügung. |
 | Löschen | Löschen Sie Ihr Projekt. |
