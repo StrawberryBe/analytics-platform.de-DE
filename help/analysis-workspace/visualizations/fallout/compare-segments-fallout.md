@@ -1,15 +1,15 @@
 ---
-description: Sie können in Analysis Workspace Segmente aus einem Touchpoint erstellen, Segmente als Touchpoints hinzufügen und wichtige Workflows über verschiedene Segmente hinweg vergleichen.
-keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
+description: Sie können Filter aus einem Touchpoint erstellen, Filter als Touchpoint hinzufügen und Workflows über verschiedene Filter in Analysis Workspace hinweg vergleichen.
+keywords: Trichteranalyse und Filter;Filter in der Fallout-Analyse;Filter in Fallout vergleichen
 title: Filter in Fallout-Analyse anwenden
+exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 23%
+source-wordcount: '440'
+ht-degree: 15%
 
 ---
-
 
 # Filter in Fallout-Analyse anwenden
 
@@ -17,11 +17,11 @@ ht-degree: 23%
 >
 >Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
-Sie können Filter aus einem Touchpoint erstellen, Segmente als Touchpoint hinzufügen und wichtige Workflows über verschiedene Filter in Analysis Workspace hinweg vergleichen.
+Sie können Filter aus einem Touchpoint erstellen, Filter als Touchpoint hinzufügen und Workflows über verschiedene Filter in Analysis Workspace hinweg vergleichen.
 
 >[!IMPORTANT]
 >
->Filter, die als Checkpoints in der Trichteranalyse verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer Trichteranalyse im Kontext des Besuchers müssen Filter, die als Checkpoints verwendet werden, besuchsbasierte oder trefferbasierte Filter sein. Bei einer besuchskontextbezogenen Trichteranalyse müssen Filter, die als Checkpoint verwendet werden, trefferbasierte Segmente sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Kombinationen aus Filter-Containern führen zu ungültigen Trichteranalysediagrammen, z. B.:
+>Filter, die als Checkpoints in der Trichteranalyse verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer Trichteranalyse im Kontext des Besuchers müssen Filter, die als Checkpoints verwendet werden, besuchsbasierte oder trefferbasierte Filter sein. Bei einem Besuchskontext-Fallout müssen als Checkpoint verwendete Filter trefferbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Kombinationen aus Filter-Containern führen zu ungültigen Trichteranalysediagrammen, z. B.:
 
 * Verwenden eines Besucher-basierten Filters als Touchpoint in einer Fallout-Visualisierung im Besucher-Kontext
 * Verwenden eines Besucher-basierten Filters als Touchpoint in einer Fallout-Visualisierung im Besuchskontext
@@ -53,7 +53,7 @@ Oder Sie erstellen einen AND-Touchpoint, indem Sie den Filter für US-Benutzer a
 
 Sie können eine unbegrenzte Anzahl von Filtern in der Fallout-Visualisierung vergleichen.
 
-1. Wählen Sie die zu vergleichenden Segmente in der Leiste [!UICONTROL Filter] links aus. Im vorliegenden Beispiel haben wir 2 Segmente ausgewählt: „USA-Benutzer“ und „Benutzer außerhalb der USA“.
+1. Wählen Sie die zu vergleichenden Filter in der Leiste [!UICONTROL Filter] links aus. In unserem Beispiel haben wir 2 Filter ausgewählt: US-Benutzer und Nicht-US-Benutzer.
 1. Ziehen Sie sie in den Filterbereich oben.
 
    ![](assets/segment-drop.png)
