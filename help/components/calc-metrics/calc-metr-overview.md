@@ -1,14 +1,14 @@
 ---
 title: Übersicht über berechnete Metriken
-description: 'Informationen zu den '
+description: Informationen zu den
+exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 82%
+source-wordcount: '484'
+ht-degree: 81%
 
 ---
-
 
 # Übersicht über berechnete Metriken
 
@@ -16,12 +16,11 @@ ht-degree: 82%
 >
 >Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
 
-Berechnete und erweiterte berechnete (abgeleitete) Metriken sind benutzerdefinierte Metriken, die Sie über vorhandene Metriken erstellen können. Mit unseren Tools für berechnete Metriken können Sie Metriken auf flexiblere Weise erstellen, verwalten und kuratieren. Damit können Marketing-Experten, Produktmanager und Analytiker Fragen zu den Daten beantworten, ohne die [!DNL Analytics]-Implementierung ändern zu müssen.
+Berechnete und erweiterte berechnete (abgeleitete) Metriken sind benutzerdefinierte Metriken, die Sie über vorhandene Metriken erstellen können. Mit unseren Tools für berechnete Metriken können Sie Metriken auf flexiblere Weise erstellen, verwalten und kuratieren. Damit können Marketing-Experten, Produktmanager und Analytiker Fragen zu den Daten beantworten, ohne die -Implementierung ändern zu müssen.
 
 Sie können
 
-* gefilterte Metriken erstellen, die zur Berichtslaufzeit abgeleitet werden, [ohne die Implementierung ändern zu müssen](https://youtu.be/CuQTm9RaUpY). Diese Metriken können historisch angezeigt werden, da sie auf Filtern basieren.
-* Metriken über Report Suites hinweg freigeben. Das bedeutet, dass alle neu erstellten Metriken für alle Report Suites in demselben Anmeldeunternehmen gelten.
+* gefilterte Metriken erstellen, die zur Berichtslaufzeit abgeleitet werden, ohne die Implementierung ändern zu müssen. Diese Metriken können historisch angezeigt werden, da sie auf Filtern basieren.
 * (Nur erweiterte berechnete Metriken) nach Metriken filtern. Sie können beispielsweise eine Metrik für „Neue Besucher“ erstellen, mit der Personen gezählt werden, für die dies die erste Sitzung ist.
 * (Nur erweiterte berechnete Metriken) Statistische Funktionen miteinbeziehen, um Daten besser beschreiben zu können. Sie könnten beispielsweise die Elemente in einem Bericht zählen oder die Anzahl der Standardabweichungen für jedes Element addieren.
 
