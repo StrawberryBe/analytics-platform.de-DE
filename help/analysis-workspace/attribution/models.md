@@ -1,14 +1,14 @@
 ---
 title: Attributionsmodelle und Lookback-Fenster
 description: Die Art und Weise, wie verschiedene Arten von Attribution Gewichtungen zwischen Dimensionselementen verteilen.
+exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1541'
 ht-degree: 98%
 
 ---
-
 
 # Attributionsmodelle und Lookback-Fenster
 
@@ -41,7 +41,7 @@ Das Attributionskonzept in Adobe Analytics erfordert zwei Komponenten:
 
 Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend bei der Erfassung von Touchpoints berücksichtigt werden sollte. Attributionsmodelle, die der ersten Interaktion mehr Gewicht zuschreiben, sehen bei der Anzeige verschiedener Lookback-Fenster größere Unterschiede.
 
-* **Besuchs-Lookback-Fenster:** Sieht bis zum Beginn eines Besuchs zurück, bei dem eine Konversion stattgefunden hat. Besuchs-Lookback-Fenster sind klein, da sie nicht über den Besuch hinausblicken. Besuchs-Lookback-Fenster berücksichtigen die geänderte Besuchsdefinition in Virtual Report Suites.
+* **Besuchs-Lookback-Fenster:** Sieht bis zum Beginn eines Besuchs zurück, bei dem eine Konversion stattgefunden hat. Besuchs-Lookback-Fenster sind klein, da sie nicht über den Besuch hinausblicken. Rückblickfenster für Besuche berücksichtigen die geänderte Besuchsdefinition in den Ansichten.
 
 * **Besucher-Lookback-Fenster:** Betrachtet alle Besuche bis zum 1. des Monats des aktuellen Datumsbereichs. Besucher-Lookback-Fenster sind groß, da sie viele Besuche umfassen können. Bei der Besucher-Lookback-Funktion werden alle Werte ab dem Monatsanfang des Datumsbereichs des Berichts berücksichtigt. Wenn der Datumsbereich des Berichts beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Besucher-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September.
 
