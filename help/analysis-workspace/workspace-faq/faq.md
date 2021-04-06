@@ -1,14 +1,14 @@
 ---
 description: Häufig gestellte Fragen zum Arbeitsbereich und Tipps zur Fehlerbehebung.
 title: Häufig gestellte Fragen
+exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '416'
 ht-degree: 84%
 
 ---
-
 
 # Häufig gestellte Fragen
 
@@ -34,7 +34,6 @@ ht-degree: 84%
 
 Wenn Sie einen Workspace-Bericht erfolgreich erstellt haben, aber keine Daten vorhanden sind, können Sie einige Punkte prüfen:
 
-* Überprüfen Sie die Report Suite und stellen Sie sicher, dass sie mit Daten gefüllt ist.
 * Wenn Sie ein Segment in Ihrem Bericht angewendet haben, stimmen die Segmentkriterien möglicherweise nicht mit den Daten überein. Versuchen Sie, das Segment zu entfernen oder die Segmentdefinition anzupassen.
 * Überprüfen Sie den Datumsbereich oben rechts und stellen Sie sicher, dass er auf einen erwarteten Wert eingestellt ist.
-* Navigieren Sie zu Ihrer Website und überprüfen Sie mit dem [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=de-DE), ob Daten erfasst werden.
+* Navigieren Sie zu Ihrer Website und überprüfen Sie mit dem [Debugger](https://docs.adobe.com/content/help/de-DE/debugger/using/experience-cloud-debugger.html), ob Daten erfasst werden.
