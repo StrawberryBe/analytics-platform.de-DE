@@ -1,14 +1,14 @@
 ---
 title: Übersicht über Attribution
 description: Das Konzept der Zuordnung eines Erfolgsereignisses zu mehreren Dimensionselementen.
+exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
-
 
 # Übersicht über Attribution
 
@@ -35,7 +35,7 @@ Adobe Analytics erweitert die Attribution und ermöglicht Ihnen Folgendes:
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
 * Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann Customer Journey-Kontext erstellt und zur Laufzeit angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
-* Die Attribution nach Segmenten aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketingkanäle über ein beliebiges wichtiges Segment hinweg (z. B. Neu- mit Bestandskunden, Produkt X mit Produkt Y oder die Treueebene mit dem CLV).
+* Aufschlüsselung der Zuordnung nach Filtern: Vergleichen Sie einfach die Performance Ihrer Marketing-Kanal mit allen wichtigen Filtern (z.B. Neukunden im Vergleich zu Wiederholungskunden, Produkt X im Vergleich zu Produkt Y, Kundentreue oder CLV).
 * Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
 * Wichtige Marketing-Sequenzen visuell analysieren: Erkunden Sie zur Konversion führende Pfade visuell mithilfe von mehrknotigen Fluss- und Fallout-Visualisierungen.
 * Berechnete Metriken erstellen: Verwenden Sie eine beliebige Anzahl an Attributionszuordnungsmethoden.
