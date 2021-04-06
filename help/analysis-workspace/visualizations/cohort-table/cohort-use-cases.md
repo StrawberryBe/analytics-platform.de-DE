@@ -2,16 +2,16 @@
 description: Anwendungsfälle für die Kohortenanalyse.
 keywords: Analysis Workspace
 title: Anwendungsfälle für die Kohortenanalyse
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
+exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 82%
 
 ---
-
 
 # Anwendungsfälle für die [!UICONTROL Kohortenanalyse]
 
@@ -51,9 +51,9 @@ Da deutlich wird, dass Sie im dritten Monat keine potenziellen Kunden verlieren 
 
 Einige Monate später erstellen Sie erneut einen Kohortenanalysebericht. Für Kohorten, die nach dem Start der Kampagne gebildet wurden, ist die Konversion zu zahlungspflichtigen Creative Cloud-Abonnements von 4–5 % auf 13–14 % gestiegen, was pro Kohorte für mehrere hunderttausend Dollar steht, für alle monatlichen Kohorten, die ab diesem Punkt den dritten Monat erreichen.
 
-## Anwendungsfall für komplexe Kohortensegmente
+## Komplexe Kohorten-Filter
 
-Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten für die Zielgruppe zu identifizieren, sollen sehr spezifische Kohortengruppen gebildet werden. Mithilfe der erweiterten [!UICONTROL Aufnahme]- und [!UICONTROL Rückkehrkriterien] innerhalb der Kohortentabellen können genau die richtigen [!UICONTROL Kohortengruppierungen] mit mehreren Kennzahlen und Segmenten definiert werden, um leistungsschwache Kundengruppen zu identifizieren und diese mit Promotionen und Angeboten zur Steigerung der Buchungen anzusprechen.
+Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten für die Zielgruppe zu identifizieren, sollen sehr spezifische Kohortengruppen gebildet werden. Mithilfe der erweiterten Kriterien [!UICONTROL Inklusion] und [!UICONTROL Rückgabe] in [!UICONTROL Kohorte] können sie genau die richtigen Kohortengruppen mit mehreren Metriken und Filtern definieren, um leistungsschwache Kundengruppen zu identifizieren, um sie mit Promotions und Angeboten zur Erhöhung der Buchungen Zielgruppe.
 
 ## Anwendungsfall zur Annahme der App-Version
 
@@ -65,8 +65,8 @@ Ein internationales Medienunternehmen verwendet Zielgruppen-Kampagnen, um Benutz
 
 ## Anwendungsfall für Produktstart
 
-Ein großer Kleidungseinzelhändler verfügt über viele spezifische Kundensegmente, durch die große Teile des Unternehmensumsatzes gefördert werden. Für jedes Segment werden spezifische Produkte unter Berücksichtigung des jeweiligen Segments entwickelt und hergestellt. Mit jedem Produkt-Launch soll identifiziert werden, wie das neue Produkt im Laufe der Zeit den Verkauf in verschiedenen Kohorten gefördert hat. Mit der neuen Einstellung [!UICONTROL Latenztabelle] in der [!UICONTROL Kohortenanalyse] können das Verhalten und der Umsatz eines bestimmten Kundensegments vor und nach der Markteinführung analysiert werden. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei den Kunden weniger beliebt sind.
+Ein großer Bekleidungshändler hat viele spezifische Filter, die einen großen Teil des Umsatzes für sein Geschäft generieren. Jeder Filter hat spezielle Produkte, die unter Berücksichtigung des Filters entworfen und erstellt wurden. Mit jedem Produkt-Launch soll identifiziert werden, wie das neue Produkt im Laufe der Zeit den Verkauf in verschiedenen Kohorten gefördert hat. Mithilfe der neuen Einstellung [!UICONTROL Latenztabelle] in [!UICONTROL Kohortentabelle] können sie das Verhalten und den Umsatz eines bestimmten Kundenfilters vor und nach dem Start analysieren. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei den Kunden weniger beliebt sind.
 
 ## Anwendungsfall für individuelle Treue – die meisten treuen Benutzer  
 
-Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mit der neuen Einstellung [!UICONTROL Rollierende Berechnung] in der [!UICONTROL Kohortenanalyse] konnten jedoch Segmente treuer Kunden analysiert und Monat für Monat bestimmt werden, welche Reisenden erneut Kunden waren. So konnten diese Reisenden dann mit Vorteilen und Vergünstigungen für ihre Treue belohnt werden. Darüber hinaus konnte durch die Umstellung des Kohortentyps von Bindung auf Abwanderung auch Monat für Monat festgestellt werden, welche Reisenden nicht erneut Kunden waren, um diese Segmente mit Promotionen anzusprechen, die Interaktion mit diesen Kunden so wieder herzustellen und sicherzustellen, dass sie auch in Zukunft treue Kunden bleiben.
+Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mit der neuen Einstellung [!UICONTROL Rollierende Berechnung] in [!UICONTROL Kohortenberechnung] konnten sie jedoch treue Filter analysieren und herausfinden, welche Reisenden im Monat über Monat Wiederholungskäufer waren. So konnten diese Reisenden dann mit Vorteilen und Vergünstigungen für ihre Treue belohnt werden. Durch die Umstellung des Kohortentyps von Retention auf Curn konnten sie außerdem feststellen, welche Kunden keine monatlich wiederholten Käufer waren, und diese Filter mit Promotions Zielgruppe werden, um sich wieder mit ihnen zu beschäftigen und sicherzustellen, dass sie auch in Zukunft treue Kunden bleiben.
