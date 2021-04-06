@@ -1,14 +1,14 @@
 ---
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
+exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 92%
+source-wordcount: '926'
+ht-degree: 86%
 
 ---
-
 
 # Filterübersicht
 
@@ -18,14 +18,11 @@ Filter können auf Attributen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Ge
 
 Sie können Filter im Filtergenerator erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter zusammen als gestapelte Filter verwendet werden.
 
->[!IMPORTANT]
->Filter werden in Adobe Analytics als „Segmente“ bezeichnet. Wir haben Segmente in Filter umbenannt, da Adobe Experience Platform [eine andere Definition von „Segment“ verwendet. ](https://docs.adobe.com/content/help/de-DE/experience-platform/segmentation/home.html)
-
 Die Filterung umfasst den [Filtergenerator](/help/components/filters/create-filters.md) zum Aufbau von Filtern und zur Ausführung eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zur Erfassung, Kennzeichnung, Freigabe, Sicherheitseinstellung und Weitergabe von Filtern in Ihrer Organisation.
 
 ## Sequenzielle Filter
 
-Mit sequenziellen Filtern können Sie Besucher anhand der Navigation und den Seitenansichten innerhalb Ihrer Site identifizieren, indem Sie einen Filter mit definierten Aktionen und Interaktionen bereitstellen. Mit sequenziellen Segmenten können Sie erkennen, was ein Besucher mag und was er meidet. Beim Erstellen sequenzieller Filter wird der Operator DANN (THEN) eingesetzt, um die Navigation des Besuchers zu definieren und zu ordnen.
+Mit sequenziellen Filtern können Sie Besucher anhand der Navigation und den Seitenansichten innerhalb Ihrer Site identifizieren, indem Sie einen Filter mit definierten Aktionen und Interaktionen bereitstellen. Sequenzielle Filter helfen Ihnen dabei herauszufinden, was ein Besucher mag und was ein Besucher vermeidet. Beim Erstellen sequenzieller Filter wird der Operator DANN (THEN) eingesetzt, um die Navigation des Besuchers zu definieren und zu ordnen.
 
 Siehe folgendes Beispiel:
 
@@ -57,7 +54,7 @@ Personen-Container können Werte enthalten, die auf dem Gesamtverlauf eines Besu
 
 ### Sitzungs-Container
 
-Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Sitzungs-Container ist der am häufigsten verwendete Behälter, da er die Verhaltensweisen der gesamten Besuchssitzung erfasst, sobald die Regel erfüllt wird, und Ihnen die Möglichkeit gibt, zu definieren, welche Sitzungen ein- oder ausgeschlossen werden sollen, indem Sie ein Segment erstellen und anwenden. Er kann Ihnen bei der Beantwortung dieser Fragen helfen:
+Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Session Container ist der am häufigsten verwendete Container, da er Verhaltensweisen für die gesamte Besuchssitzung erfasst, sobald die Regel erfüllt ist, und Sie definieren können, welche Sitzungen Sie beim Erstellen und Anwenden eines Filters einschließen oder ausschließen möchten. Er kann Ihnen bei der Beantwortung dieser Fragen helfen:
 
 * Wie viele Besucher haben die Bereiche „Nachrichten“ und „Sport“ in derselben Sitzung angesehen?
 * Welche Seiten haben zu einer erfolgreichen Konversion in einem Verkauf beigetragen?
@@ -83,7 +80,7 @@ Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
 ## Vordefinierte Filtervorlage
 
-Die herkömmliche Analytics-Version enthält eine Vielzahl vordefinierter Vorlagensegmente (Filter) und berechneter Metriken. Viele von ihnen gelten nicht für CJA oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen in CJA ab.
+Die herkömmliche Analytics-Version bietet eine Vielzahl von vordefinierten Filtern (Filtern) und berechneten Metriken. Viele von ihnen gelten nicht für CJA oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen in CJA ab.
 
 | Filtername | Beschreibung |
 | --- | --- |
