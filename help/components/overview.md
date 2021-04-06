@@ -1,14 +1,14 @@
 ---
 title: Komponentenübersicht
 description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
-translation-type: ht
-source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
-workflow-type: ht
+exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 100%
+ht-degree: 75%
 
 ---
-
 
 # Komponentenübersicht
 
@@ -26,7 +26,7 @@ Sie können die folgenden Komponenten verwalten:
 
 ## Analysis Workspace-Komponenten
 
-Komponenten in Analysis Workspace bestehen aus Metriken, Dimensionen, Segmenten und Zeitgranularitäten, die Sie per Drag-and-Drop in einem Projekt platzieren können. Wenn Sie benutzerdefinierte Komponenten erstellen, z. B. benutzerdefinierte Datumsbereiche, werden sie diesen Feldern hinzugefügt.
+Komponenten in Analysis Workspace bestehen aus Metriken, Dimensionen, Filtern und Zeitgranularitäten, die Sie per Drag &amp; Drop in ein Projekt ziehen können. Wenn Sie benutzerdefinierte Komponenten erstellen, z. B. benutzerdefinierte Datumsbereiche, werden sie diesen Feldern hinzugefügt.
 
 Klicken Sie in der linken Leiste auf das Symbol **[!UICONTROL Komponenten]**, um auf das Bedienfeld „Komponenten“ zuzugreifen. Sie können zwischen Bedienfeldern (leeres Bedienfeld, [Freiform-Bedienfeld](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) oder dem Bedienfeld [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) und Komponenten mithilfe der Symbole auf der linken Leiste oder mithilfe von [Tastaturbefehlen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) wechseln.
 
@@ -44,13 +44,13 @@ Sie können Komponenten (separat oder mehrere gleichzeitig) auf verschiedene Wei
 
 | Komponentenaktion | Beschreibung |
 | --- | --- |
-| Tag | Organisieren oder verwalten Sie Komponenten, indem Sie Tags darauf anwenden. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Segmente] oder [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Projekte]. |
-| Favorit | Fügen Sie die Komponente Ihrer Favoritenliste hinzu. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Segmente] oder [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Projekte]. |
-| Genehmigen | Genehmigen Sie die Komponente, um sie zu autorisieren. Dies wird dann bei der jeweiligen Komponentenverwaltung angezeigt, beispielsweise [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Segmente] oder [!UICONTROL Analysen] > [!UICONTROL Komponenten] > [!UICONTROL Projekte]. |
-| Freigeben | Gilt nur für Segmente. |
-| Löschen | Gilt nur für Segmente. |
+| Tag | Organisieren oder verwalten Sie Komponenten, indem Sie Tags darauf anwenden. Er wird dann im entsprechenden Komponentenmanager angezeigt, z. B. [!UICONTROL Analytics] > [!UICONTROL Komponenten] > [!UICONTROL Filter] oder [!UICONTROL Analytics] > [!UICONTROL Komponenten] > [!UICONTROL Projekte] |
+| Favorit | Fügen Sie die Komponente Ihrer Favoritenliste hinzu. Er wird dann im entsprechenden Komponentenmanager angezeigt, z. B. [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Filters] oder [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Projects]. |
+| Genehmigen | Genehmigen Sie die Komponente, um sie zu autorisieren. Er wird dann im entsprechenden Komponentenmanager angezeigt, z. B. [!UICONTROL Analytics] > [!UICONTROL Komponenten] > [!UICONTROL Filter] oder [!UICONTROL Analytics] > [!UICONTROL Komponenten] > [!UICONTROL Projekte] |
+| Freigeben | Gilt nur für Filter. |
+| Löschen | Gilt nur für Filter. |
 
-Sehen Sie sich das Video zum Erstellen von Metriken, Segmenten und Daten an:
+Sehen Sie sich das Video zum Erstellen von Metriken, Filtern und Daten an:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
 
