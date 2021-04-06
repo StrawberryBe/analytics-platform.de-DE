@@ -1,14 +1,14 @@
 ---
 description: Einstellungen für die Flussvisualisierung in Workspace
 title: Flusseinstellungen
+exl-id: 85de8ee7-b79f-4ac4-9601-a4e7f6fb3b2a
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 97%
+ht-degree: 88%
 
 ---
-
 
 # Flusseinstellungen
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 | --- | --- |
 | Auf diesen Knoten fokussieren | Wechselt den Fokus auf den ausgewählten Knoten. Der Fokusknoten wird in der Mitte des Flussdiagramms angezeigt. |
 | Neu starten | Bringt Sie wieder zurück in den Freiform-Diagramm-Builder, in dem Sie ein neues Flussdiagramm erstellen können. |
-| Segment von diesem Punkt im Fluss aus erstellen | Erstellen eines Segments. Hiermit gelangen Sie in den Segment Builder, in dem Sie das neue Segment einrichten können. |
+| Filter aus diesem Punkt im Fluss erstellen | Filter erstellen. Dadurch gelangen Sie zum Filter-Builder, in dem Sie den neuen Filter konfigurieren können. |
 | Aufschlüsselung | Hiermit können Sie den Knoten nach verfügbaren Dimensionen, Metriken oder Zeiten aufschlüsseln. |
 | Trend | Mit dieser Option erstellen Sie ein Trenddiagramm für den Knoten. |
 | Gesamte Spalte erweitern | Hiermit erweitern Sie eine Spalte so, dass alle Knoten angezeigt werden. In der Standardeinstellung werden nur die obersten fünf Knoten angezeigt. |
