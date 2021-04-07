@@ -2,14 +2,14 @@
 description: Versenden Sie ein Projekt aus Analysis Workspace per E-Mail oder planen Sie die Bereitstellung.
 keywords: Analysis Workspace
 title: Planen von Projekten
+exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 5f9dc79e666303165f07fd203e29a3daf478e980
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # Planen von Projekten
 
@@ -30,7 +30,7 @@ So senden Sie eine Datei sofort per E-Mail an die Empfänger:
 1. Klicken Sie auf **Jetzt senden**.
 1. (Optional) Klicken Sie auf **Planungsoptionen anzeigen**, um einen Zeitplan für den Versand festzulegen.
 
-![Datei jetzt senden](assets/send-file-now.png)
+![Datei jetzt senden](assets/send-file-no-scheduling-options.JPG)
 
 ## Datei planmäßig senden
 
@@ -44,15 +44,13 @@ So senden Sie eine Datei basierend auf einem wiederkehrenden Zeitplan per E-Mail
 1. Geben Sie die Versandhäufigkeit an. Jede Häufigkeit ermöglicht unterschiedliche Anpassungen.
 1. Klicken Sie auf **Planmäßig senden**.
 
-![](assets/send-on-schedule.png)
+![](assets/send-file.JPG)
 
 ## Manager für geplante Projekte
 
 Geplante Analysis Workspace-Projekte können unter **Analytics > Komponenten > Geplante Projekte** verwaltet werden.
 
 Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearbeitet und gelöscht werden. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen in der linken Leiste nach einem Zeitplan. Sie können nach Tag, genehmigten Zeitplänen, Inhabern und mehr filtern.
-
-![](assets/scheduled-project-manager.png)
 
 Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgeführt:
 
@@ -65,4 +63,4 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 | **Abgelaufene Zeitpläne anzeigen** | Navigieren Sie zur linken Leiste > „Andere Filter“ > „Abgelaufen“, um Zeitpläne anzuzeigen, die abgelaufen sind. Klicken Sie auf den Titel des Zeitplans, um einen neuen Versandplan einzurichten. |
 | **Zeitplan-ID anzeigen** | Navigieren Sie oben rechts zu den Spaltenoptionen und fügen Sie der Tabelle die Spalte „Zeitplan-ID“ hinzu. Die Zeitplan-ID ist oft zum Debugging nützlich. |
 
-Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert wird, werden alle geplanten Bereitstellungen gestoppt. Die Eigentuemerschaft eines geplanten Projekts kann unter **Admin > Analytics-Benutzer und -Assets > Assets übertragen** **übertragen** werden.
+Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert wird, werden alle geplanten Bereitstellungen gestoppt.
