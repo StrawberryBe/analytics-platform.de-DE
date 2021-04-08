@@ -1,21 +1,21 @@
 ---
 title: Was ist Dimensionspersistenz in Customer Journey Analytics?
-description: Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Gemeinsam bestimmen sie, welche Dimensionswerte beibehalten werden.
+description: Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: 16e43f5d938ac25445f382e5eba8fc12e0e67161
+source-git-commit: 7370caf3495ff707698022889bf17528582da803
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 18%
+source-wordcount: '554'
+ht-degree: 9%
 
 ---
 
 # Persistenz
 
-Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Gemeinsam bestimmen sie, welche Dimensionswerte beibehalten werden. Adobe empfiehlt dringend, dass Sie innerhalb Ihres Unternehmens besprechen, wie mehrere Werte für jede Dimension verarbeitet werden (Zuordnung) und wann Dimensionswerte die Speicherung der Daten beenden (Ablauf).
+Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen. Die Persistenz der Dimension wird für eine Dimension innerhalb der Data-Ansichten konfiguriert und ist rückwirkend und nicht zerstörerisch für die Daten, auf die sie angewendet wird. Die Persistenz der Dimension ist eine sofortige Datenumwandlung, die auf eine Dimension angewendet wird, die vor dem Filtern oder anderen Analysen-Vorgängen in Berichte stattfindet.
 
-* Standardmäßig verwendet ein Dimensionswert [WAS?] zugeordnet.
-* Standardmäßig verwendet ein Dimensionswert einen Ablauf von [!UICONTROL Sitzung].
+* Standardmäßig ist für einen Dimensionswert keine Persistenz aktiviert.
+* Wenn ein Zuordnungsmodell für eine Dimension aktiviert ist, wird standardmäßig ein Ablauf von [!UICONTROL Sitzung] verwendet.
 
 ## Zuordnung
 
@@ -24,59 +24,33 @@ Die Zuordnung wendet eine Transformation auf den zugrunde liegenden Wert an, den
 * Zuletzt verwendet
 * Original
 * Alle
-* Erste bekannt
-* Zuletzt verwendet
 
 ### [!UICONTROL Neueste ] Zuweisung
 
-Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL Zuletzt verwendete]-Zuordnung:
+Die neueste Zuordnung bleibt der letzte in der Dimension vorhandene Wert (nach Zeitstempel). Alle nachfolgenden Werte, die innerhalb derselben Sitzung auftreten, ersetzen den zuvor bestehenden Wert. Beachten Sie, dass leere Werte vor der Anwendung der Persistenz durch &quot;Kein Wert&quot; ersetzt werden, wenn für diese Dimension &quot;Kein Wert behandeln&quot;ausgewählt wurde. Im Folgenden finden Sie ein Beispiel vor und nach der Zuordnung [!UICONTROL Zuletzt verwendete] unter der Annahme, dass eine [!UICONTROL Sitzung] für den Ablauf verwendet wird und alle Ereignis innerhalb einer [!UICONTROL Sitzung] auftreten:
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| Originalwerte |  | C | B |  | A |
+| Datensatzwerte |  | C | B |  | A |
 | Zuletzt verwendete Zuteilung |  | C | B | B | A |
 
 ###  Originalzuordnung
 
-Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL Original]-Zuordnung:
+Die ursprüngliche Zuordnung behält den ursprünglichen Wert (nach Zeitstempel) bei, der innerhalb der Dimension für einen Ablaufzeitraum vorhanden ist. Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL Original]-Zuordnung:
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 1 | 6 | 7 |
-| Originalwerte |  | C | B |  | A |
+| Datensatzwerte |  | C | B |  | A |
 | Ursprüngliche Zuordnung |  | C | C | C | C |
 
 ###  Allzuweisung
 
-Diese neue Dimensionszuordnung kann sowohl auf Array- als auch auf Einzelwertdimensionen angewendet werden. Es funktioniert ähnlich wie das Zuordnungsmodell [!UICONTROL Beitrag] für Metriken. Der Unterschied besteht darin, dass einzelne Werte im Feld an unterschiedlichen Punkten ablaufen können. Nehmen wir an, wir haben 5 Ereignis in einem Zeichenfolgenfeld, wobei die Zuordnung auf &quot;Alle&quot;und der Ablauf auf 5 Minuten eingestellt ist. Wir erwarten folgendes Verhalten:
+Diese Dimensionszuordnung kann sowohl auf Array- als auch auf Einzelwertdimensionen angewendet werden. Es funktioniert ähnlich wie das Zuordnungsmodell [!UICONTROL Beitrag] für Metriken. Ein wichtiger Unterschied besteht darin, dass Dimensionen mit der Zuordnung &quot;Alle&quot;in Filterdefinitionen verwendet werden können. Angenommen, in einem Zeichenfolgenfeld befinden sich 5 Ereignis, wobei die Zuordnung auf &quot;Alle&quot;und der Ablauf auf 5 Minuten eingestellt ist:
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| Originalwerte | A | B | C |  | A |
-| after-persistence | A | A,B | A,B,C | B,C | A,C |
-
-Beachten Sie, dass der Wert von A so lange erhalten bleibt, bis er die 5-Minuten-Markierung erreicht, während B und C weiterhin bei Treffer 4 bleiben, da für diese Werte noch 5 Minuten vergangen sind. Beachten Sie, dass mit dieser Zuordnung aus einem Feld mit einem Wert eine Dimension mit mehreren Werten erstellt wird. Dieses Modell sollte auch bei Array-basierten Dimensionen unterstützt werden:
-
-| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
-| --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
-| Originalwerte | A,B | C | B,C |  | A |
-| after-persistence | A,B | A,B,C | A,B,C | B,C | A,B,C |
-
-### Zuordnungen von &quot;zuerst bekannt&quot;und &quot;Letzte bekannt&quot;
-
-Diese beiden neuen Zuordnungsmodelle nehmen den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerdefinierter Zeitraum mit Lookback) und wenden ihn auf alle Ereignis im angegebenen Bereich an. Beispiel: 
-
-| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
-| --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| Originalwerte |  | C | B |  | A |
-| first known | C | C | C | C | C |
-| letzte bekannt | A | A | A | A | A |
-
-Die ersten oder letzten bekannten Werte können nur auf eine Sitzung oder auf den Personensegment (Berichte-Fenster) oder auf einen benutzerdefinierten oder zeitbasierten Bereich angewendet werden (im Wesentlichen auf einen Personensegment mit einem Lookback-Fenster).
+| Datensatzwerte | A | B | C |  | A |
+| after-persistence | A | A,B | A,B,C | A,B,C | A,B,C |
 
 ## Gültigkeit
 
@@ -85,13 +59,12 @@ Die ersten oder letzten bekannten Werte können nur auf eine Sitzung oder auf de
 Es gibt vier Möglichkeiten, einen Dimensionswert ablaufen zu lassen:
 
 * Sitzung (Standard): Läuft nach einer bestimmten Sitzung ab.
-* Benutzer: ?
-* Zeit: Sie können den Dimensionswert so einstellen, dass er nach einem bestimmten Zeitraum oder Ereignis abläuft.
-* Metrik: Sie können eine der definierten Metriken als Ablaufdatum für diese Dimension angeben (z. B. eine &quot;Kauf&quot;-Metrik).
-* Anpassen:
+* Person: Läuft am Ende des Berichte-Fensters ab.
+* Zeit: Sie können den Dimensionswert so einstellen, dass er nach einem bestimmten Zeitraum oder Ereignis abläuft. Diese Ablaufoption ist nur für die Zuordnungsmodelle &quot;Original&quot;und &quot;Zuletzt verwendet&quot;verfügbar.
+* Metrik: Sie können eine der definierten Metriken als Ablaufdatum für diese Dimension angeben (z. B. eine &quot;Kauf&quot;-Metrik). Dieser Ablauf ist nur für die Zuordnungsmodelle &quot;Original&quot;und &quot;Zuletzt verwendet&quot;verfügbar.
 
 ### Was ist der Unterschied zwischen Zuordnung und Zuordnung?
 
-**Zuordnung**: Denken Sie an die Zuordnung als &quot;Datenumwandlung&quot;der Dimension. Die Zuordnung erfolgt vor dem Filtern. Wenn Sie einen Filter erstellen, wird die transformierte Dimension als Schlüssel verwendet.
+**Zuordnung**: Denken Sie an die Zuordnung als Datenumwandlung zur Dimension. Die Zuordnung erfolgt vor dem Filtern. Wenn Sie einen Filter erstellen, wird die transformierte Dimension als Schlüssel verwendet.
 
-**Zuordnung**: Wie verteilt ich die Gutschrift einer Metrik auf die Dimension, auf die sie angewendet wird? Die Zuordnung erfolgt nach dem Filtern.
+**Zuordnung**: Wie verteilt ich die Gutschrift einer Metrik auf die Dimension, auf die sie angewendet wird? Die Zuordnung ist keine Datenumwandlung, wird während der Datenaggregation angewendet und hat keinen Einfluss darauf, welche Daten mithilfe eines Filters eingeschlossen werden.
