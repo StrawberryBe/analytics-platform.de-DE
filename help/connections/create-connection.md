@@ -1,20 +1,30 @@
 ---
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
+exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
+source-wordcount: '1974'
+ht-degree: 98%
 
 ---
-
 
 # Verbindung herstellen
 
 Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in [!UICONTROL Workspace] integrieren. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Workspace] herstellen.
 
 Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/de-DE/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html).
+
+Zum Erstellen einer CJA-Verbindung benötigen Sie die folgenden Berechtigungen:
+
+Adobe Experience Platform:
+* Datenmodellierung: Ansicht Schema, Schemas verwalten
+* Data Management: Ansicht DataSets, DataSets verwalten
+* Dateneinbettung: Quellen verwalten
+
+Customer Journey Analytics
+* Produktadministratorzugriff
 
 >[!IMPORTANT]
 >
