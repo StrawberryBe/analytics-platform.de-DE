@@ -2,9 +2,9 @@
 title: Einrichten des Google Analytics Berichte in Customer Journey Analytics
 description: null
 translation-type: tm+mt
-source-git-commit: 13828f484ec1edcd00a6d049ff78c7e2642d2b01
+source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '272'
 ht-degree: 1%
 
 ---
@@ -12,15 +12,7 @@ ht-degree: 1%
 
 # Einrichten des Google Analytics Berichte in Customer Journey Analytics
 
-Einrichten des Google Cloud Datenspeicherung Connector,
 
-Google Tag Manager konfigurieren
-
-BigQuery Export-Schema (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
-1. GA-Sitzungen in große Abfrage in Ereignis konvertieren
-1. Exportieren von Google Analytics-Ereignissen in die Google Cloud-Datenspeicherung
-1. Importieren von GCS-Ereignissen in Adobe Experience Platform und Zuordnen zu XDM-Schema
 
 ## Voraussetzungen
 
@@ -41,16 +33,26 @@ Die folgenden Anweisungen basieren auf universellen Google Analytics.
 
 1. Verbinden Sie Ihre Google Analytics-Daten mit BigQuery und
 Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3416092?hl=en).
-1. (Nur Universeller Analytics-Kunden) Transformieren Sie Google Analytics-Sitzungen in BigQuery in Ereignis. Dadurch sind die Daten mit Adobe Experience Platform kompatibel. Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3437618?hl=en).
+
+1. (Nur Universeller Analytics-Kunden) Transformieren Sie Google Analytics-Sitzungen in BigQuery in Ereignis.
+Dadurch sind die Daten mit Adobe Experience Platform kompatibel. Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3437618?hl=en).
 
    Details: In BigQuery werden Ihre GA-Daten als Tabelle angezeigt:
 
    ![](assets/ga-bigquery.png)
-Sie müssen eine SQL-Abfrage erstellen, um die universellen Analytics-Daten in ein Experience-Platform-kompatibles Format umzuwandeln.
-   * Ansicht dieses Videos für Anweisungen:
+Sie müssen eine SQL-Abfrage erstellen, um die universellen Analytics-Daten in ein Experience-Platform-kompatibles Format umzuwandeln. Ansicht dieses Videos für Anweisungen:
+
    >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. Exportieren Sie Google Analytics-Ereignis im JSON-Format in die Google Cloud-Datenspeicherung und speichern Sie sie in einem Behälter.
 Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
-1. Daten aus der Google Cloud-Datenspeicherung in die Experience Platform übernehmen (Video zu Folie 10 von Trevor)
+
+1. Daten aus der Google Cloud-Datenspeicherung in die Experience Platform übernehmen
+Ansicht dieses Videos für Anweisungen:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+1. Importieren von GCS-Ereignissen in Adobe Experience Platform und Zuordnen zu XDM-Schema
+
+BigQuery Export-Schema (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
 
