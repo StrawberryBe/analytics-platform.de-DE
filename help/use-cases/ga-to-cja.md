@@ -2,7 +2,7 @@
 title: Einrichten des Google Analytics Berichte in Customer Journey Analytics
 description: null
 translation-type: tm+mt
-source-git-commit: c07d32eef579432bf92f94cbbe4e99188b2de74c
+source-git-commit: 13828f484ec1edcd00a6d049ff78c7e2642d2b01
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 1%
@@ -47,7 +47,8 @@ Weitere Informationen finden Sie unter [diese Anweisungen](https://support.googl
 
    ![](assets/ga-bigquery.png)
 Sie müssen eine SQL-Abfrage erstellen, um die universellen Analytics-Daten in ein Experience-Platform-kompatibles Format umzuwandeln.
-   * Ansicht dieses Videos für Anleitungen.
+   * Ansicht dieses Videos für Anweisungen:
+   >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
 1. Exportieren Sie Google Analytics-Ereignis im JSON-Format in die Google Cloud-Datenspeicherung und speichern Sie sie in einem Behälter.
 Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
