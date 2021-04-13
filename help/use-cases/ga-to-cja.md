@@ -1,11 +1,11 @@
 ---
-title: So erhalten Sie Daten zu Google Analytics in Adobe Experience Platform zur Analyse in Customer Journey Analytics (CJA)
+title: Daten zu Google Analytics in Adobe Experience Platform importieren
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) zum Erfassen Ihrer Google Analytics- und Firebase-Daten in Adobe Experience Platform einsetzen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
+source-git-commit: b6f62c1d53d023c230fbd7f8ad366ac5c6b13954
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1033'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Wie Sie Daten zu Google Analytics in Adobe Experience Platform importieren, hän
 
 ### 1. Daten Ihrer Google Analytics mit BigQuery verbinden
 
-Beachten Sie, dass die folgenden Anweisungen auf universellen Google Analytics basieren. Sie gelten für historische Daten. Anweisungen zum Live-Streaming finden Sie unter Live-Streaming-Daten in AEP übertragen.
+Beachten Sie, dass die folgenden Anweisungen auf universellen Google Analytics basieren. Sie gelten für historische Daten. Anweisungen zu Live-Streaming-Daten finden Sie unter [Live-Streaming-Daten in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#ingest-live-streaming-google-analytics-data) übertragen.
 
 Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3416092?hl=en).
 
@@ -84,7 +84,7 @@ Oder Ansicht dieses Videos:
 
 ### 3. Exportieren Sie Google Analytics-Ereignis im JSON-Format in die Google Cloud-Datenspeicherung und speichern Sie sie in einem Behälter
 
-Als Nächstes importieren Sie die Google Analytics-Ereignis in die Google Cloud-Datenspeicherung im JSON-Format. Dann bringen Sie es in die Experience Platform.
+Als Nächstes importieren Sie die Google Analytics-Ereignis in die Google Cloud-Datenspeicherung im JSON-Format.
 
 Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
 
