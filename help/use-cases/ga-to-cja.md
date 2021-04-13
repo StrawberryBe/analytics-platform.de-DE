@@ -1,18 +1,18 @@
 ---
 title: Einrichten des Google Analytics Berichte in Customer Journey Analytics
 description: null
+exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
+source-git-commit: 49b49f24dbc68b1d9e843e0f4522123e6792a438
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
 
-
 # Einrichten des Google Analytics Berichte in Customer Journey Analytics
 
-
+In diesem Verwendungsfall wird erläutert, wie Sie Ihre Google Analytics-Daten in Adobe Experience Platform und dann
 
 ## Voraussetzungen
 
@@ -26,12 +26,12 @@ Wie Sie Daten zu Google Analytics in Adobe Experience Platform importieren, hän
 
 | Bei Verwendung von ... | Sie benötigen diese Lizenz auch... | Und tun Sie das... |
 | --- | --- | --- |
-| **Universelle Google Analytics** | Google Analytics 360 | Führen Sie die Schritte 1 - x der unten stehenden Anweisungen aus. |
-| **Google Analytics 4** | Kostenlose GA-Version oder Google Analytics 360 | In den Anweisungen unten ist Schritt x nicht erforderlich. |
+| **Universelle Google Analytics** | Google Analytics 360 | Führen Sie die Schritte 1 bis 5 der folgenden Anweisungen aus |
+| **Google Analytics 4** | Kostenlose GA-Version oder Google Analytics 360 | Führen Sie die Schritte 2 bis 5 der unten stehenden Anweisungen aus. Schritt 1 ist nicht erforderlich. |
 
 Die folgenden Anweisungen basieren auf universellen Google Analytics.
 
-1. Verbinden Sie Ihre Google Analytics-Daten mit BigQuery und
+1. Verbinden Sie Ihre Google Analytics-Daten mit BigQuery, damit Sie einige Daten transformieren können.
 Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3416092?hl=en).
 
 1. (Nur Universeller Analytics-Kunden) Transformieren Sie Google Analytics-Sitzungen in BigQuery in Ereignis.
@@ -55,4 +55,3 @@ Ansicht dieses Videos für Anweisungen:
 1. Importieren von GCS-Ereignissen in Adobe Experience Platform und Zuordnen zu XDM-Schema
 
 BigQuery Export-Schema (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
