@@ -3,9 +3,9 @@ title: So erhalten Sie Daten zu Google Analytics in Adobe Experience Platform zu
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) zum Erfassen Ihrer Google Analytics- und Firebase-Daten in Adobe Experience Platform einsetzen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
+source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1040'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Wie Sie Daten zu Google Analytics in Adobe Experience Platform importieren, hän
 
 | Bei Verwendung von ... | Sie benötigen diese Lizenz auch... | Und tun Sie das... |
 | --- | --- | --- |
-| **Universelle Google Analytics** | Google Analytics 360 | Führen Sie die Schritte 1 bis 5 der folgenden Anweisungen aus |
+| **Universal Analytics** | Google Analytics 360 | Führen Sie die Schritte 1 bis 5 der folgenden Anweisungen aus |
 | **Google Analytics 4** | Kostenlose GA-Version oder Google Analytics 360 | Führen Sie die Schritte 1 und 3-5 der folgenden Anweisungen aus. Schritt 2 ist nicht erforderlich. |
 
 ## Verlaufsdaten erfassen
@@ -53,11 +53,30 @@ Weitere Informationen finden Sie unter [diese Anweisungen](https://support.googl
 
 GA-Daten speichern jeden Datensatz in ihren Daten als Benutzersitzung und nicht als einzelne Ereignis. Sie müssen eine SQL-Abfrage erstellen, um die universellen Analytics-Daten in ein Experience-Platform-kompatibles Format umzuwandeln. Sie wenden die Funktion &quot;unest&quot;auf das Feld &quot;Treffer&quot;im GA-Schema an. Im Folgenden finden Sie das SQL-Beispiel, das Sie verwenden können:
 
-`SQL sample`
+`SELECT
+*,
+timestamp_seconds(`` + hit.time) AS `` 
+FROM
+(
+SELECT
+fullVisitorId,
+visitNumber,
+visitId,
+visitStartTime,
+trafficSource,
+socialEngagementType,
+channelGrouping,
+device,
+geoNetwork,
+hit 
+FROM
+`visitStartTimetimestampyour_bq_table_2021_04_*`,
+UNNEST(hits) AS hit 
+)`
 
 Speichern Sie nach Abschluss der Abfrage die vollständigen Ergebnisse in einer BigQuery-Tabelle.
 
-Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3437618?hl=en).
+Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql).
 
 Oder Ansicht dieses Videos:
 
