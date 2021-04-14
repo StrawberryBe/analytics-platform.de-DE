@@ -3,9 +3,9 @@ title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
 description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 4%
 
 ---
@@ -55,7 +55,7 @@ Die neueste Aktualisierung der Daten-Ansichten bietet Ihnen viel mehr Flexibilit
 
 * Sie können Ihre Container in einer Data Ansicht umbenennen und diese umbenannten Container in jedem Workspace-Projekt platzieren, das auf dieser Data Ansicht basiert.****
 
-## Voraussetzung
+## Voraussetzungen für die Ansicht von Daten
 
 * Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
 * Zum Erstellen oder Verwalten einer Ansicht benötigen Sie einen [Berechtigungssatz in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de-DE#admin-access-permissions).
