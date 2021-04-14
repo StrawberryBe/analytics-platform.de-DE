@@ -3,7 +3,7 @@ title: Callcenter- und Web-Daten importieren
 description: Erfahren Sie, wie Sie einen Datensatz erstellen, mit dem Sie Callcenter- und Website-Daten verknüpfen.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 100%
@@ -80,7 +80,7 @@ Diese Freiformtabelle zeigt die wichtigsten Seiten, die zum Aufruf von Callcente
 1. Ziehen Sie die Dimension, die die Namen Ihrer Web-Seiten beinhaltet, in eine Freiformtabellen-Visualisierung.
 1. Ersetzen Sie die Metrik durch die gewünschte Callcenter-Metrik, zu der Sie die Konversion messen möchten.
 1. Klicken Sie auf das Zahnradsymbol neben der Metrikkopfzeile. Klicken Sie auf **[!UICONTROL Nicht-standardmäßiges Attributionsmodell verwenden]**.
-1. Legen Sie das gewünschte [Attributionsmodell](/help/data-views/configure-dataviews.md#Attribution-model) fest.
+1. Legen Sie das gewünschte [Attributionsmodell](/help/data-views/create-dataview.md) fest.
 
 Der resultierende Bericht zeigt die wichtigste Metrik aus den Callcenter-Daten. <!-- Complement with donut visualization -->
 
