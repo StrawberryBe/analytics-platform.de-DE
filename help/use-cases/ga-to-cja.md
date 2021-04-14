@@ -3,9 +3,9 @@ title: Daten zu Google Analytics in Adobe Experience Platform importieren
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) zum Erfassen Ihrer Google Analytics- und Firebase-Daten in Adobe Experience Platform einsetzen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
+source-git-commit: df3b69b837fda821e1b50b0ba211ac578d856892
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ Ansicht dieses Videos:
 
 Als Nächstes exportieren Sie die Google Analytics-Ereignis in die Google Cloud-Datenspeicherung im JSON-Format. Klicken Sie einfach auf **Export > Export nach GCS**. Dort können die Daten nach Adobe Experience Platform gezogen werden.
 
-Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
+Weitere Informationen zu Universal Analytics](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089) finden Sie unter [.
+Weitere Informationen zu Google Analytics 4](https://support.google.com/analytics/answer/7029846?hl=en) finden Sie unter [.
 
 ### 4. Daten aus der Google Cloud-Datenspeicherung in die Experience Platform importieren
 
@@ -98,10 +99,11 @@ Beachten Sie:
 * Sie können einen vorhandenen Datensatz auswählen oder einen neuen Datensatz erstellen (empfohlen).
 * Stellen Sie sicher, dass Sie dasselbe Schema für Daten zu Verlaufsdaten und Live-Streaming-Google Analytics auswählen, auch wenn diese sich in separaten Datensätzen befinden. Anschließend können Sie die Datensätze in einer [CJA-Verbindung](/help/connections/combined-dataset.md) zusammenführen.
 
-
 Ansicht dieses Videos für Anweisungen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332641)
+
+Wenn Sie diesen Import regelmäßig planen möchten, lesen Sie bitte die Google-Dokumentation.
 
 ### 5. Importieren von GCS-Ereignissen in Adobe Experience Platform und Zuordnen zu XDM-Schema
 
@@ -110,6 +112,10 @@ Als Nächstes können Sie die GA-Ereignis-Daten einem vorhandenen Datensatz zuor
 ![](assets/schema-map.png)
 
 Zuordnungen lassen sich leicht ändern, und Sie können sogar abgeleitete oder berechnete Felder aus den Daten der Google Analytics erstellen. Nachdem Sie die Zuordnung der Felder zu Ihrem XDM-Schema abgeschlossen haben, können Sie diesen Import wiederholt planen und während des Erfassungsvorgangs eine Fehlerüberprüfung anwenden. Dadurch wird sichergestellt, dass keine Probleme mit den importierten Daten auftreten.
+
+Ansicht dieses Videos für Anweisungen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **Feld für Zeitstempel**
 
@@ -133,13 +139,13 @@ Sie können auch Live-Streaming-Ereignis von Google Tag Manager direkt nach Adob
 
 ### 1. hinzufügen benutzerspezifische Variablen
 
-Nach der Anmeldung beim Google Tag-Manager-Konto müssen Sie benutzerspezifische Konstantenvariablen hinzufügen, die sich auf die Adobe der Organisations-ID und der DataSet-IDs beziehen. Sie haben vermutlich bereits Variablen im Google Tag-Manager, die an Google Analytics gesendet werden, wie z. B. die E-Mail des Kunden, der Kundenname, die Sprache und der Status des angemeldeten Kunden. Sie müssen fünf neue benutzerdefinierte Variablen definieren:
+Nachdem Sie sich beim Google Tag-Manager-Konto angemeldet haben, müssen Sie einige benutzerspezifische Konstantenvariablen zur Adobe hinzufügen. Sie haben vermutlich bereits Variablen im Google Tag-Manager, die an Google Analytics gesendet werden, wie z. B. die E-Mail des Kunden, der Kundenname, die Sprache und der Status des angemeldeten Kunden. Sie müssen fünf neue benutzerdefinierte Variablen definieren:
 
 * Adobe Experience Cloud-Organisations-ID
 * DCS Streaming-Endpunkt
 * Experience Platform DataSet-ID
 * Schema
-* Zeitstempel der Seite.
+* Zeitstempel der Seite
 
 Durch das Abrufen dieser Werte wird sichergestellt, dass alle Google Analytics-Daten an den richtigen Datensatz gesendet werden und das richtige Schema haben. Wenn Sie Ihren Experience Cloud-Org oder eine der anderen soeben erwähnten Variablen nicht kennen, kann Ihr Kundenbetreuer Ihnen bei der Verfolgung helfen.
 
@@ -153,10 +159,16 @@ Anleitungen finden Sie in diesem Video in der Ansicht:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
+Sie können auch auf [Dateneinbettung und Google Tag-Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9) verweisen.
+
 ## Erstellen einer Verbindung in CJA mit dem Google Analytics-Datensatz
 
 Sobald die Adobe Experience Platform mit dem Empfang der Live-Google Analytics-Daten begonnen hat und Sie die historischen Google Analytics-Daten von BigQuery aufgestockt haben, können Sie in CJA springen und
 [Erstellen Sie Ihre erste Verbindung](/help/connections/create-connection.md). Diese Verbindung verbindet die GA-Daten mit allen anderen Kundendaten mit einer gemeinsamen Kunden-ID.
+
+Anleitungen finden Sie in diesem Video in der Ansicht:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332676)
 
 ## Machen Sie eine fantastische Analyse in Workspace
 
