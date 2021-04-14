@@ -1,14 +1,14 @@
 ---
 title: Anwendungsfälle für die Ansicht von Daten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics zeigen
+exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
 
 ---
-
 
 # Anwendungsfälle von Ansichten
 
@@ -45,5 +45,5 @@ Zuvor wurden ganze Zahlen in CJA automatisch als Metriken behandelt. Jetzt könn
 
    ![](assets/bucketing.png)
 
-Weitere Informationen zu anderen Dateneinstellungen finden Sie unter [Daten-Ansichten erstellen](/help/data-views/create-dataview2.md).
+Weitere Informationen zu anderen Dateneinstellungen finden Sie unter [Daten-Ansichten erstellen](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Ansichten von Daten finden Sie unter [Übersicht über die Ansichten von Daten](/help/data-views/data-views.md).
