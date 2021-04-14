@@ -3,9 +3,9 @@ title: Daten zu Google Analytics in Adobe Experience Platform importieren
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) zum Erfassen Ihrer Google Analytics- und Firebase-Daten in Adobe Experience Platform einsetzen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,25 @@ Ansicht dieses Videos für Anweisungen:
 
 Als Nächstes können Sie die GA-Ereignis-Daten einem vorhandenen Datensatz zuordnen, den Sie zuvor erstellt haben, oder Sie können einen neuen Datensatz erstellen, wobei Sie das gewünschte XDM-Schema verwenden. Nachdem Sie das Schema ausgewählt haben, wendet die Experience Platform maschinelles Lernen an, um jedes der Felder in den Daten des Google Analytics automatisch Ihrem [XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui) zuzuordnen.
 
+![](assets/schema-map.png)
+
 Zuordnungen lassen sich leicht ändern, und Sie können sogar abgeleitete oder berechnete Felder aus den Daten der Google Analytics erstellen. Nachdem Sie die Zuordnung der Felder zu Ihrem XDM-Schema abgeschlossen haben, können Sie diesen Import wiederholt planen und während des Erfassungsvorgangs eine Fehlerüberprüfung anwenden. Dadurch wird sichergestellt, dass keine Probleme mit den importierten Daten auftreten.
+
+**Feld für Zeitstempel**
+
+Für das Feld `timestamp` in den Daten zu Google Analytics müssen Sie ein spezielles berechnetes Feld in der Benutzeroberfläche des Experience Platform-Schemas erstellen. Klicken Sie auf **[!UICONTROL Hinzufügen berechnetes Feld]** und schließen Sie die `timestamp`-Zeichenfolge in eine `date`-Funktion wie die folgende ein:
+
+`date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+
+Anschließend müssen Sie dieses berechnete Feld in der Zeitstempeldatenstruktur im Schema speichern:
+
+![](assets/timestamp.png)
+
+**_id XDM-berechnetes Feld**
+
+Das Schema `_id` muss einen Wert enthalten - CJA spielt keine Rolle, was der Wert ist. Sie können dem Feld einfach eine &quot;1&quot;hinzufügen:
+
+![](assets/_id.png)
 
 ## Daten zu Live-Streaming-Google Analytics einbeziehen
 
