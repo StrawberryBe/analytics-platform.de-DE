@@ -3,7 +3,7 @@ title: (B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
 description: Erfahren Sie, wie Sie in Customer Journey Analytics kontobasierte Daten als Lookup-Datensatz hinzufügen.
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 89%
@@ -22,7 +22,7 @@ Dieser B2B-Anwendungsfall zeigt Ihnen, wie Sie Ihre Daten zur Analyse auf Kontoe
 
 Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/getting-started/cja-glossary.md)-Datensatz eintragen.
 
-Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Anschließend erstellen Sie eine Verbindung in Customer Journey Analytics (CJA0), die verschiedene Datensätze kombiniert, einschließlich der von Ihnen erstellten Suche. Anschließend erstellen Sie eine Daten-Ansicht und können schließlich alle Daten in Workspace nutzen.
+Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Anschließend erstellen Sie eine Verbindung in Customer Journey Analytics (CJA0), die verschiedene Datensätze kombiniert, einschließlich der von Ihnen erstellten Suche. Anschließend erstellen Sie eine Data Ansicht und können dann alle Daten in Workspace nutzen.
 
 >[!NOTE]
 >
