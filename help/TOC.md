@@ -10,17 +10,10 @@ user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, der auf der Adobe Experience Platform basierenden Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-solution-title: Experience Cloud
-solution-hub-url: https://helpx.adobe.com/de/support/experience-cloud.html
-solution-image: assets/experience-cloud-logo-24.png
-getting-started-title: Experience League
-getting-started-url: https://landing.adobe.com/experience-league/
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/de/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: c086f21e1a13ef4dec4e1be63d9f462bfb32f2ea
+source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '440'
 ht-degree: 95%
 
 ---
