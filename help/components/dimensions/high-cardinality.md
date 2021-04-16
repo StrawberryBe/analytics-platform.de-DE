@@ -2,9 +2,9 @@
 title: Dimensionen mit sehr hoher Kardinalität im Customer Journey Analytics
 description: Beschreibt Best Practices für den Umgang mit Dimensionen der hohen Kardinalität in Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: be423e0fd298ed3ea9d6efa272f865882406b811
+source-git-commit: 9af5c74164462851ac4a6cbc4764569789f677fc
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ Zeilenzählungen mit hohen Kardinalitätsdimensionen sind möglicherweise nicht 
 
 ![](assets/high-cardinality.png)
 
-### 2. Berechnete Metriken können Schätzungen zurückgeben
+### 2. Berechnete Metriken können Schätzungen für einige Funktionen und für die Sortierreihenfolge verwenden.
 
 Bei Verwendung mit hochgradig kardialen Dimensionen können einige Funktionen der berechneten Metrik Schätzungen zurückgeben, darunter: Spaltenmaximum, Spaltenminimum, Zeilenzählung, Mittel, Median, Perzentil, Quartil, Standardabweichung, Varianz, Regressionsfunktionen und T- und Z-Funktionen.
 
 Darüber hinaus kann die Sortierung einer Tabellenspalte mit einer berechneten Metrik auf einer Schätzung basieren und nicht immer die exakte Sortierreihenfolge widerspiegeln. Es erscheint eine Warnmeldung, die Sie darüber informiert, dass Schätzungen verwendet wurden.
 
-Beachten Sie, dass berechnete Metriken manchmal Schätzungen zurückgeben können, die Spaltensummen jedoch immer genau sind und nie auf Schätzungen basieren. Ebenso werden bei Verwendung von Standardmetriken Schätzungen nie zur Sortierung einer Spalte verwendet und spiegeln immer exakte Sortierreihenfolgen wider.
+Beachten Sie, dass berechnete Metriken manchmal Schätzungen zurückgeben können, die Spaltensummen jedoch immer genau sind und nie auf Schätzungen basieren. Ebenso werden bei Verwendung von Standardmetriken Schätzungen nie verwendet und geben immer exakte Sortierreihenfolgen wieder.
 
-## Wenn alle Dimensionswerte berücksichtigt werden
+### Wenn alle Dimensionswerte berücksichtigt werden
 
-Obwohl es Einschränkungen bei bestimmten berechneten Metriken und Zählungen von Dimensionszeilen gibt, beachten Sie, dass die folgenden Funktionen immer alle eindeutigen Werte in einer Dimension berücksichtigen. Sie berücksichtigen sie unabhängig davon, ob eine Dimension hochgradig kardinal ist oder nicht:
+Auch wenn bestimmte berechnete Metriken und Zählungen von Dimensionszeilen eingeschränkt sind, beachten Sie, dass die folgenden Funktionen immer alle eindeutigen Werte in einer Dimension berücksichtigen, unabhängig davon, ob eine Dimension hochgradig kredinal ist oder nicht:
 
 * Metrikzuordnung und Zuordnung von Dimensionen
 * Auf eine Freiformtabelle angewendete Suchen nach Zeilenelementen
@@ -45,11 +45,11 @@ Obwohl es Einschränkungen bei bestimmten berechneten Metriken und Zählungen vo
 
 ## Bewährte Verfahren für das Arbeiten mit Dimensionen mit hohem Kardinalwert
 
-Um die Warnungen oder Schätzungen zu vermeiden, die bei der Verwendung von Dimensionen mit hoher Kardinalität auftreten können, sollten Sie die Anzahl der in Ihrem Bericht berücksichtigten Zeilen mithilfe einer der folgenden Methoden eingrenzen:
+Um die Warnungen oder Schätzungen zu vermeiden, die bei der Verwendung von Dimensionen mit hoher Kardinalität auftreten können, sollten Sie die Anzahl der in Ihrem Bericht berücksichtigten Zeilen mit einer der folgenden Methoden eingrenzen:
 
 * hinzufügen Sie einen Filter auf die betreffende Spalte oder das betreffende Bedienfeld an.
 * Wenden Sie eine Suche auf Ihre Freiform-Tabelle an.
-* Wenden Sie eine Aufschlüsselung auf die Interessentenzeilen an oder verwenden Sie die hochkarätige Dimension als Aufschlüsselungsdimension.
+* Wenden Sie eine Aufschlüsselung auf die Interessenszeilen an oder verwenden Sie die hochkarätige Dimension als Aufschlüsselungsdimension
 * hinzufügen Sie Kriterien zur Datenkonfiguration der Dimension ein-/ausschließen, um die Anzahl der eindeutigen Ansichten in der Dimension einzugrenzen.
 
 Durch die Verwendung dieser Techniken können Sie häufig unerwünschte Schätzungen oder Warnungen bei der Verwendung von hochkarätigen Dimensionen vermeiden.
