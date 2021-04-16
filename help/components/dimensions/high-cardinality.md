@@ -2,9 +2,9 @@
 title: Dimensionen mit sehr hoher Kardinalität im Customer Journey Analytics
 description: Beschreibt Best Practices für den Umgang mit Dimensionen der hohen Kardinalität in Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 9af5c74164462851ac4a6cbc4764569789f677fc
+source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Abhängig von der Anzahl der Ereignis in einer bestimmten CJA-Verbindung können
 
 ### 1. Zeilenanzahl ist möglicherweise nicht genau meldebar
 
-Zeilenzählungen mit hohen Kardinalitätsdimensionen sind möglicherweise nicht genau zu reproduzieren. In diesem Fall werden in Freiform-Tabellen die folgenden Informationen angezeigt:
+Zeilenzählungen mit Dimensionen mit hoher Kardinalität sind möglicherweise nicht genau zu reproduzieren. In diesem Fall geben Freiform-Tabellen eine Anzeige wie folgt an:
 
 ![](assets/high-cardinality.png)
 
@@ -45,7 +45,7 @@ Auch wenn bestimmte berechnete Metriken und Zählungen von Dimensionszeilen eing
 
 ## Bewährte Verfahren für das Arbeiten mit Dimensionen mit hohem Kardinalwert
 
-Um die Warnungen oder Schätzungen zu vermeiden, die bei der Verwendung von Dimensionen mit hoher Kardinalität auftreten können, sollten Sie die Anzahl der in Ihrem Bericht berücksichtigten Zeilen mit einer der folgenden Methoden eingrenzen:
+Um die Warnungen oder Schätzungen zu vermeiden, die bei der Verwendung von Dimensionen mit hoher Kardinalität auftreten können, sollten Sie die Anzahl der in Ihrem Bericht berücksichtigten Zeilen mithilfe einer der folgenden Methoden eingrenzen:
 
 * hinzufügen Sie einen Filter auf die betreffende Spalte oder das betreffende Bedienfeld an.
 * Wenden Sie eine Suche auf Ihre Freiform-Tabelle an.
