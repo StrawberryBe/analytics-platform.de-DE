@@ -1,14 +1,14 @@
 ---
 title: Dimensionen mit sehr hoher Kardinalität im Customer Journey Analytics
 description: Beschreibt Best Practices für den Umgang mit Dimensionen der hohen Kardinalität in Customer Journey Analytics
+exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 translation-type: tm+mt
-source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
+source-git-commit: 8ae1cb5a84b26258fb30f6e630744b2e36a48e5c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
-
 
 # Dimensionen mit sehr hoher Kardinalität
 
@@ -49,7 +49,7 @@ Um die Warnungen oder Schätzungen zu vermeiden, die bei der Verwendung von Dime
 
 * hinzufügen Sie einen Filter auf die betreffende Spalte oder das betreffende Bedienfeld an.
 * Wenden Sie eine Suche auf Ihre Freiform-Tabelle an.
-* Wenden Sie eine Aufschlüsselung auf die Interessenszeilen an oder verwenden Sie die hochkarätige Dimension als Aufschlüsselungsdimension
+* Wenden Sie eine Aufschlüsselung auf die Interessentenzeilen an oder verwenden Sie die hochkarätige Dimension als Aufschlüsselungsdimension.
 * hinzufügen Sie Kriterien zur Datenkonfiguration der Dimension ein-/ausschließen, um die Anzahl der eindeutigen Ansichten in der Dimension einzugrenzen.
 
 Durch die Verwendung dieser Techniken können Sie häufig unerwünschte Schätzungen oder Warnungen bei der Verwendung von hochkarätigen Dimensionen vermeiden.
