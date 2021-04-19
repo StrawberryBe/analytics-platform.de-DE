@@ -3,9 +3,9 @@ title: Was ist Dimensionspersistenz in Customer Journey Analytics?
 description: Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: 7370caf3495ff707698022889bf17528582da803
+source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '574'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,7 @@ Es gibt vier Möglichkeiten, einen Dimensionswert ablaufen zu lassen:
 
 * Sitzung (Standard): Läuft nach einer bestimmten Sitzung ab.
 * Person: Läuft am Ende des Berichte-Fensters ab.
-* Zeit: Sie können den Dimensionswert so einstellen, dass er nach einem bestimmten Zeitraum oder Ereignis abläuft. Diese Ablaufoption ist nur für die Zuordnungsmodelle &quot;Original&quot;und &quot;Zuletzt verwendet&quot;verfügbar.
+* Zeit: Sie können den Dimensionswert so einstellen, dass er nach einem bestimmten Zeitraum (bis zu 90 Tagen) abläuft. Diese Ablaufoption ist nur für die Zuordnungsmodelle &quot;Original&quot;und &quot;Zuletzt verwendet&quot;verfügbar. Bei Verwendung der zeitbasierten Ablaufzeit werden Werte vor dem Beginn des Berichte-Fensters (bis zu 90 Tage) berücksichtigt.
 * Metrik: Sie können eine der definierten Metriken als Ablaufdatum für diese Dimension angeben (z. B. eine &quot;Kauf&quot;-Metrik). Dieser Ablauf ist nur für die Zuordnungsmodelle &quot;Original&quot;und &quot;Zuletzt verwendet&quot;verfügbar.
 
 ### Was ist der Unterschied zwischen Zuordnung und Zuordnung?
