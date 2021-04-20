@@ -3,9 +3,9 @@ title: Daten zu Google Analytics in Adobe Experience Platform importieren
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) zum Erfassen Ihrer Google Analytics- und Firebase-Daten in Adobe Experience Platform einsetzen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 99ae3fb2978afc2f5ec7db05ac82cfb5113df3b4
+source-git-commit: 1dcc566f286b0399e5ebd1e06e9d42a9522a1684
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---
@@ -34,18 +34,16 @@ Wie Sie Daten zu Google Analytics in Adobe Experience Platform importieren, hän
 
 | Bei Verwendung von ... | Sie benötigen diese Lizenz auch... | Und tun Sie das... |
 | --- | --- | --- |
-| **Universal Analytics** | Google Analytics 360 | Führen Sie die Schritte 1 bis 5 der folgenden Anweisungen aus |
-| **Google Analytics 4** | Kostenlose GA-Version oder Google Analytics 360 | Führen Sie die Schritte 1 und 3-5 der folgenden Anweisungen aus. Schritt 2 ist nicht erforderlich. |
+| **Universal Analytics** | Google Analytics 360 | Führen Sie die Schritte 1 bis 3 der folgenden Anweisungen aus. |
+| **Google Analytics 4** | Kostenlose GA-Version oder Google Analytics 360 | Führen Sie die Schritte 1 und 3 der folgenden Anweisungen aus. Schritt 2 ist nicht erforderlich. |
 
 ## Verlaufsdaten (Aufstockung) erfassen
 
 ### 1. Daten Ihrer Google Analytics mit BigQuery verbinden
 
-Beachten Sie, dass die folgenden Anweisungen auf universellen Google Analytics basieren. Sie gelten für historische Daten. Anweisungen zu Live-Streaming-Daten finden Sie unter [Live-Streaming-Daten in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#ingest-live-streaming-google-analytics-data) übertragen.
+Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3416092?hl=en). Beachten Sie, dass diese Anweisungen auf universellen Google Analytics basieren.
 
-Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/3416092?hl=en).
-
-### 2. Transformieren von Google Analytics in Ereignis in BigQuery
+### 2. Transformieren von Google Analytics in Ereignis in BigQuery und Exportieren in die Google Cloud-Datenspeicherung
 
 >[!IMPORTANT]
 >
@@ -76,20 +74,13 @@ UNNEST(hits) AS hit
 
 Speichern Sie nach Abschluss der Abfrage die vollständigen Ergebnisse in einer BigQuery-Tabelle.
 
-Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql).
+Weitere Informationen finden Sie unter [diese Anweisungen](https://support.google.com/analytics/answer/7029846?hl=en&amp;ref_topic=9359001#zippy=%2Cold-export-schema%2Cuse-this-script-to-migrate-existing-bigquery-datasets-from-the-old-export-schema-to-the-new-one%2Cscript-migration-scriptsql), die Anweisungen zur SQL-Abfrage enthalten.
 
-Ansicht dieses Videos:
+Im folgenden Video wird auch der nächste Schritt erläutert, der darin besteht, die Google Analytics-Ereignis in die Google Cloud-Datenspeicherung im JSON-Format zu exportieren. Klicken Sie einfach auf **Export > Export nach GCS**. Dort können die Daten nach Adobe Experience Platform gezogen werden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332634)
 
-### 3. Exportieren Sie Google Analytics-Ereignis im JSON-Format in die Google Cloud-Datenspeicherung und speichern Sie sie in einem Behälter
-
-Als Nächstes exportieren Sie die Google Analytics-Ereignis in die Google Cloud-Datenspeicherung im JSON-Format. Klicken Sie einfach auf **Export > Export nach GCS**. Dort können die Daten nach Adobe Experience Platform gezogen werden.
-
-Weitere Informationen zu Universal Analytics](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089) finden Sie unter [.
-Weitere Informationen zu Google Analytics 4](https://support.google.com/analytics/answer/7029846?hl=en) finden Sie unter [.
-
-### 4. Daten aus der Google Cloud-Datenspeicherung in die Experience Platform importieren
+### 3. Daten aus der Google Cloud-Datenspeicherung in Experience Platform importieren und XDM-Schema zuordnen
 
 Wählen Sie in der Experience Platform **[!UICONTROL Quellen]** und suchen Sie die Option **[!UICONTROL Google Cloud-Datenspeicherung]**. Von hier aus müssen Sie nur den Datensatz finden, den Sie aus BigQuery gespeichert haben.
 
@@ -99,15 +90,11 @@ Beachten Sie:
 * Sie können einen vorhandenen Datensatz auswählen oder einen neuen Datensatz erstellen (empfohlen).
 * Stellen Sie sicher, dass Sie dasselbe Schema für Daten zu Verlaufsdaten und Live-Streaming-Google Analytics auswählen, auch wenn diese sich in separaten Datensätzen befinden. Anschließend können Sie die Datensätze in einer [CJA-Verbindung](/help/connections/combined-dataset.md) zusammenführen.
 
-Ansicht dieses Videos für Anweisungen:
+Anleitungen finden Sie in diesem Video in der Ansicht:
 
->[!VIDEO](https://video.tv.adobe.com/v/332641)
+>[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-Wenn Sie diesen Import regelmäßig planen möchten, lesen Sie bitte die Google-Dokumentation.
-
-### 5. Importieren von GCS-Ereignissen in Adobe Experience Platform und Zuordnen zu XDM-Schema
-
-Als Nächstes können Sie die GA-Ereignis-Daten einem vorhandenen Datensatz zuordnen, den Sie zuvor erstellt haben, oder Sie können einen neuen Datensatz erstellen, wobei Sie das gewünschte XDM-Schema verwenden. Nachdem Sie das Schema ausgewählt haben, wendet die Experience Platform maschinelles Lernen an, um jedes der Felder in den Daten des Google Analytics automatisch Ihrem [XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui) zuzuordnen.
+Sie können die GA-Ereignis-Daten zu einem vorhandenen Datensatz zuordnen, den Sie zuvor erstellt haben, oder einen neuen Datensatz erstellen, wobei Sie das gewünschte XDM-Schema verwenden. Nachdem Sie das Schema ausgewählt haben, wendet die Experience Platform maschinelles Lernen an, um jedes der Felder in den Daten des Google Analytics automatisch Ihrem [XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui) zuzuordnen.
 
 ![](assets/schema-map.png)
 
@@ -117,9 +104,9 @@ Ansicht dieses Videos für Anweisungen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332641)
 
-**Feld für Zeitstempel**
+**Berechnetes Feld &quot;Zeitstempel&quot;**
 
-Für das Feld `timestamp` in den Daten zu Google Analytics müssen Sie ein spezielles berechnetes Feld in der Benutzeroberfläche des Experience Platform-Schemas erstellen. Klicken Sie auf **[!UICONTROL Hinzufügen berechnetes Feld]** und schließen Sie die `timestamp`-Zeichenfolge in eine `date`-Funktion wie die folgende ein:
+Für das Feld `timestamp` Schema in den Daten zu Google Analytics müssen Sie ein spezielles berechnetes Feld in der Benutzeroberfläche des Experience Platform Schema erstellen. Klicken Sie auf **[!UICONTROL Hinzufügen berechnetes Feld]** und schließen Sie die `timestamp`-Zeichenfolge in eine `date`-Funktion wie die folgende ein:
 
 `date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
 
@@ -127,7 +114,7 @@ Anschließend müssen Sie dieses berechnete Feld in der Zeitstempeldatenstruktur
 
 ![](assets/timestamp.png)
 
-**_id XDM-berechnetes Feld**
+**berechnetes Feld &#39;_id&#39;**
 
 Das Schema `_id` muss einen Wert enthalten - CJA spielt keine Rolle, was der Wert ist. Sie können dem Feld einfach eine &quot;1&quot;hinzufügen:
 
@@ -155,24 +142,19 @@ Nachdem Sie diese benutzerspezifischen Variablen definiert haben, können wir ei
 
 In diesem Beispiel wurde der Trigger &quot;Kontoerstellung&quot;definiert, wobei `pageUrl equals account-creation` verwendet wird. Durch Hinzufügen von Informationen zu diesem Trigger können Sie sicherstellen, dass Daten sowohl an Google Analytics als auch an AEP gesendet werden, wenn der Benutzer sich authentifiziert und die Seite zur Kontoerstellung geladen hat.
 
+Sie können auch auf [Dateneinbettung und Google Tag-Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9) verweisen.
+
 Anleitungen finden Sie in diesem Video in der Ansicht:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332668)
 
-Sie können auch auf [Dateneinbettung und Google Tag-Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=en#module9) verweisen.
-
 ## Erstellen einer Verbindung in CJA mit dem Google Analytics-Datensatz
 
-Sobald die Adobe Experience Platform mit dem Empfang der Live-Google Analytics-Daten begonnen hat und Sie die historischen Google Analytics-Daten von BigQuery aufgestockt haben, können Sie in CJA springen und
-[Erstellen Sie Ihre erste Verbindung](/help/connections/create-connection.md). Diese Verbindung verbindet die GA-Daten mit allen anderen Kundendaten mit einer gemeinsamen Kunden-ID.
-
-Anleitungen finden Sie in diesem Video in der Ansicht:
-
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+Sobald das Adobe Experience Platform mit dem Empfang der Daten zu den Live-Google Analytics begonnen hat und Sie die Daten zu den historischen Google Analytics von BigQuery aufgestockt haben, sind Sie bereit, in CJA zu springen und [Ihre erste Verbindung ](/help/connections/create-connection.md) zu erstellen. Diese Verbindung verbindet die GA-Daten mit allen anderen Kundendaten mit einer gemeinsamen Kunden-ID.
 
 ## Nächste Schritte
 
 * Ansicht von Daten auf der Grundlage von Google Analytics erstellen
 Als Nächstes erstellen Sie in CJA eine Data Ansicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews), basierend auf der Verbindung, die die Google Analytics-Daten enthält.[
 
-* Führen Sie eine erstaunliche Analyse in [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace) durch.
+* Führen Sie eine erstaunliche Analyse in [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace) durch. Später finden Sie einige Anwendungsfälle für Berichte.
