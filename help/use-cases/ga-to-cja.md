@@ -3,9 +3,9 @@ title: Daten zu Google Analytics in Adobe Experience Platform importieren
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) zum Erfassen Ihrer Google Analytics- und Firebase-Daten in Adobe Experience Platform einsetzen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1dcc566f286b0399e5ebd1e06e9d42a9522a1684
+source-git-commit: de822eb00a5e205889b4fa96f729845ad4c7e356
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
@@ -99,10 +99,6 @@ Sie können die GA-Ereignis-Daten zu einem vorhandenen Datensatz zuordnen, den S
 ![](assets/schema-map.png)
 
 Zuordnungen lassen sich leicht ändern, und Sie können sogar abgeleitete oder berechnete Felder aus den Daten der Google Analytics erstellen. Nachdem Sie die Zuordnung der Felder zu Ihrem XDM-Schema abgeschlossen haben, können Sie diesen Import wiederholt planen und während des Erfassungsvorgangs eine Fehlerüberprüfung anwenden. Dadurch wird sichergestellt, dass keine Probleme mit den importierten Daten auftreten.
-
-Ansicht dieses Videos für Anweisungen:
-
->[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **Berechnetes Feld &quot;Zeitstempel&quot;**
 
