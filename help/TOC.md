@@ -11,10 +11,10 @@ user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Custo
 breadcrumb-title: Handbuch für Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 95%
+source-wordcount: '447'
+ht-degree: 93%
 
 ---
 
@@ -157,6 +157,7 @@ ht-degree: 95%
    + [Marketing-Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)
    + [Globale Suchen zu Ihren Datensätzen hinzufügen](use-cases/global-lookups.md)
    + [Daten zu Google Analytics in Adobe Experience Platform importieren](use-cases/ga-to-cja.md)
+   + [Bericht zu Daten zu Google Analytics in CJA](use-cases/ga-to-cja-reporting.md)
 + Analytics-Dashboards {#cja-dashboards}
    + [Analytics-Dashboards – Übersicht](mobile-app/home.md)
    + [Leitfaden für Kuratoren](mobile-app/curator.md)
