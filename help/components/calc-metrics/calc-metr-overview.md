@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -46,12 +46,12 @@ Hier sehen Sie einen Vergleich zwischen den jeweiligen Möglichkeiten, die berec
 | Manager für berechnete Metriken | <ul><li>Metriken für andere freigeben.</li><li>Metriken genehmigen und kuratieren.</li><li>Metriken organisieren (taggen), damit sie von Benutzern gefunden werden können.</li><li>Metriken löschen.</li><li>Metriken umbenennen.</li></ul> |
 | API für berechnete Metriken | Teil des Adobe Analytics 2.0-API-Sets. |
 
-## Vorlagen für berechnete Metriken in CJA
+## Vorlagen für berechnete Metriken in Customer Journey Analytics
 
 | Name der berechneten Metrik | Beschreibung der berechneten Metrik |
 | --- | --- |
 | Sitzungen pro Person | Durchschnittliche Anzahl der Sitzungen pro Person |
-| Sitzungsrate Beginn | Der Prozentsatz der Zeit, zu der ein Dimensionselement im ersten Ereignis einer Sitzung auftrat. |
-| Endrate der Sitzung | Der Prozentsatz der Zeit, zu der ein Dimensionselement im letzten Ereignis einer Sitzung auftrat. |
-| Aufgewendete Zeit pro Person | Die durchschnittliche Zeit, die eine Person für einen bestimmten Dimensionselement verbracht hat. |
-| Besuchszeit pro Sitzung | Die durchschnittliche Zeit, die eine Person pro Sitzung für einen gegebenen Dimensionselement verbracht hat. |
+| Startrate der Sitzung | Der Prozentsatz der Zeit, zu der ein Dimensionselement im ersten Ereignis einer Sitzung auftrat. |
+| Endrate der Sitzung | Der Prozentsatz der Zeit, in der ein Dimensionselement im letzten Ereignis einer Sitzung auftrat. |
+| Aufgewendete Zeit pro Person | Die durchschnittliche Zeit, die eine Person mit einem bestimmten Dimensionselement verbracht hat. |
+| Aufgewendete Zeit pro Sitzung | Die durchschnittliche Zeit, die eine Person pro Sitzung mit einem bestimmten Dimensionselement verbracht hat. |
