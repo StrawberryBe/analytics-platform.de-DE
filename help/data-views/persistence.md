@@ -1,18 +1,18 @@
 ---
 title: Was ist Dimensionspersistenz in Customer Journey Analytics?
-description: Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen.
+description: Die Dimensionspersistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
 source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
 workflow-type: tm+mt
 source-wordcount: '574'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
 # Persistenz
 
-Dimension Persistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen. Die Persistenz der Dimension wird für eine Dimension innerhalb der Data-Ansichten konfiguriert und ist rückwirkend und nicht zerstörerisch für die Daten, auf die sie angewendet wird. Die Persistenz der Dimension ist eine sofortige Datenumwandlung, die auf eine Dimension angewendet wird, die vor dem Filtern oder anderen Analysen-Vorgängen in Berichte stattfindet.
+Die Dimensionspersistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen. Die Persistenz der Dimension wird für eine Dimension innerhalb der Data-Ansichten konfiguriert und ist rückwirkend und nicht zerstörerisch für die Daten, auf die sie angewendet wird. Die Persistenz der Dimension ist eine sofortige Datenumwandlung, die auf eine Dimension angewendet wird, die vor dem Filtern oder anderen Analysen-Vorgängen in Berichte stattfindet.
 
 * Standardmäßig ist für einen Dimensionswert keine Persistenz aktiviert.
 * Wenn ein Zuordnungsmodell für eine Dimension aktiviert ist, wird standardmäßig ein Ablauf von [!UICONTROL Sitzung] verwendet.
