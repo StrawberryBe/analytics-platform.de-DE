@@ -1,20 +1,16 @@
 ---
 title: Erstellen einer neuen Daten-Ansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Ansichten erforderlichen Einstellungen.
-exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 7cad7b1231b08b8311dd9a1d8e0b5a6da3af9c73
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2794'
 ht-degree: 12%
 
 ---
 
 # Neue Ansicht erstellen
-
->[!IMPORTANT]
->
->Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
 Das Erstellen einer Ansicht umfasst entweder das Erstellen von Metriken und Dimensionen aus Schema-Elementen oder die Verwendung von Standardkomponenten. Die Erstellung von Metriken oder Dimensionen bietet Ihnen eine enorme Flexibilität. Bisher wurde davon ausgegangen, dass bei Datensätzen in Adobe Experience Platform Zeichenfolgenfelder als Dimensionen und numerische Felder als Metriken verwendet wurden. Um diese Felder zu ändern, mussten Sie Ihr Schema in Plattform bearbeiten. Die Benutzeroberfläche &quot;Ansichten&quot;ermöglicht jetzt eine [Freiformdefinition von Metriken und Dimensionen](/help/data-views/data-views.md). Weitere Anwendungsfälle finden Sie unter [Anwendungsfälle für Data Ansichten](/help/data-views/data-views-usecases.md).
 
