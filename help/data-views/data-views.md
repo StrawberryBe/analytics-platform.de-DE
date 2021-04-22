@@ -3,18 +3,14 @@ title: Was ist eine Ansicht der Daten in Customer Journey Analytics?
 description: Eine Datenverbindung gibt an, wie Ansichten der Daten in der CJA-Verbindung wie Metriken, Dimensionen, Sitzungen usw. interpretiert werden sollen.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1081'
 ht-degree: 4%
 
 ---
 
 # Was ist eine Ansicht von Daten?
-
->[!IMPORTANT]
->
->Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
 Eine Ansicht mit Daten befindet sich auf einem Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Eine Verbindung kombiniert einen oder mehrere Datensätze aus Adobe Experience Platform und verbindet sie mit CJA. Die Ansicht &quot;Daten&quot;gibt an, wie Datenelemente in der Verbindung interpretiert werden sollen, z. B. Metriken, Dimensionen, Sitzungen usw. Datendefinitionen werden zur Vorbereitung des Berichte auf die Daten in Workspace definiert.
 
