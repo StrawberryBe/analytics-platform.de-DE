@@ -3,18 +3,14 @@ title: Anwendungsfälle für die Ansicht von Daten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics zeigen
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
 
 # Anwendungsfälle von Ansichten
-
->[!IMPORTANT]
->
->Diese Funktion ist ab dem 22. April 2021 allgemein verfügbar.
 
 Diese Anwendungsfälle zeigen die Flexibilität und Leistungsfähigkeit von Ansichten in Customer Journey Analytics.
 
