@@ -1,11 +1,11 @@
 ---
 description: Anweisungen zum Einrichten von Scorecards für die Dashboards.
 title: Handbuch zu Customer Journey Analytics-Dashboards für Kuratoren
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 026771a61bcbd0eec8cb59a1d06f3dad0b96acf6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2403'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Die folgenden Informationen liefern Kuratoren von Adobe Analytics-Daten Informat
 
 ## Einführung
 
-Adobe Analytics-Dashboard bieten jederzeit und überall Einblicke auf Grundlage Ihrer Customer Journey Analytics-Daten. Die Mobile App bietet Benutzern auf Mobilgeräten Zugriff auf intuitive Scorecards, die Sie über die Desktop-Benutzeroberfläche von Customer Journey Analytics erstellen und freigeben. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem Kachellayout vorgestellt werden und auf die Sie für detailliertere Aufschlüsselungen und Trenddaten-Ansichten tippen können. Sie können Scorecards entsprechend den für Sie wichtigsten Daten anpassen. Analytics-Dashboards werden sowohl unter iOS- als auch Android-Betriebssystemen unterstützt.
+Adobe Analytics-Dashboards bieten jederzeit und überall Einblicke auf Grundlage Ihrer Customer Journey Analytics-Daten. Die Mobile App bietet Benutzern auf Mobilgeräten Zugriff auf intuitive Scorecards, die Sie über die Desktop-Benutzeroberfläche von Customer Journey Analytics erstellen und freigeben. Scorecards sind eine Sammlung von Schlüsselmetriken und anderen Komponenten, die in einem gekachelten Layout dargestellt werden. Sie können auf eine Scorecard tippen, um detailliertere Aufschlüsselungen und Trend-Daten zu erhalten. Sie können Scorecards entsprechend den für Sie wichtigsten Daten anpassen. Analytics-Dashboards werden sowohl unter iOS- als auch Android-Betriebssystemen unterstützt.
 
 ## Weitere Informationen zu diesem Handbuch
 
@@ -74,15 +74,15 @@ Klicken Sie im Bildschirm **[!UICONTROL Projekte]** auf der Registerkarte **[!UI
 
 **Oder**
 
-Wählen Sie im Menü **[!UICONTROL Tools]** **[!UICONTROL Analytics-Dashboard (Mobile App)]** aus. Klicken Sie im nachfolgenden Bildschirm auf den Button **[!UICONTROL Neue Scorecard erstellen]**.
+Wählen Sie im Menü **[!UICONTROL Tools]** den Punkt **[!UICONTROL Analytics-Dashboards (Mobile App)]** aus. Klicken Sie im nachfolgenden Bildschirm auf den Button **[!UICONTROL Neue Scorecard erstellen]**.
 
 ### Scorecard mit Daten konfigurieren und speichern
 
 So implementieren Sie die Scorecard-Vorlage:
 
-1. Geben Sie unter **[!UICONTROL Properties]** (in der rechten Leiste) eine **[!UICONTROL Projektdaten-Ansicht]** an, aus der Sie Daten verwenden möchten.
+1. Geben Sie unter **[!UICONTROL Eigenschaften]** (in der rechten Leiste) eine **[!UICONTROL Datenansicht des Projekts]** an, aus der Sie Daten verwenden möchten.
 
-   ![Auswahl der Ansicht](assets/properties_save.png)
+   ![Auswahl der Datumsansicht](assets/properties_save.png)
 
 2. Um Ihrer Scorecard eine neue Kachel hinzuzufügen, ziehen Sie eine Metrik aus dem linken Bereich und legen Sie sie im Bereich **[!UICONTROL Metriken hierher ziehen und ablegen]** ab. Sie können auch eine Metrik zwischen zwei Kacheln einfügen, indem Sie einen ähnlichen Workflow verwenden.
 
@@ -98,7 +98,7 @@ So implementieren Sie die Scorecard-Vorlage:
 
    Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel verbunden sind. In dieser Leiste können Sie einen neuen **[!UICONTROL Titel]** für die Kachel angeben und alternativ die Kachel konfigurieren, indem Sie Komponenten angeben, anstatt sie aus der linken Leiste zu ziehen und abzulegen.
 
-   ![Eigenschaftenkachel](assets/properties_tile.png)
+   ![Kachel „Eigenschaften“](assets/properties_tile.png)
 
    Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup angezeigt, wie die Aufschlüsselungsansicht für ausführende Benutzer in der App dargestellt wird. Wenn keine Dimension auf die Kachel angewendet wurde, werden je nach Standarddatumsbereich entweder **Stunden** oder **Tage** als Aufschlüsselungsdimension verwendet.
 
@@ -106,33 +106,33 @@ So implementieren Sie die Scorecard-Vorlage:
 
    Jede der Kachel hinzugefügte Dimension wird in einer Dropdown-Liste in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den in der Dropdown-Liste aufgelisteten Optionen auswählen.
 
-4. Um Filter auf einzelne Kacheln anzuwenden, ziehen Sie einen Filter aus dem linken Bereich und legen Sie ihn direkt über die Kachel. Wenn Sie den Filter auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel auf der Scorecard ab. Sie können auch Filter anwenden, indem Sie im Filtermenü unterhalb der Datumsbereiche Filter auswählen. Sie [konfigurieren und wenden Filter für Ihre Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) genauso wie in Adobe Analytics Workspace an.
+4. Um Filter auf einzelne Kacheln anzuwenden, ziehen Sie den Filter aus dem linken Bedienfeld und legen Sie ihn direkt auf der Kachel ab. Wenn Sie den Filter auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel oben auf der Scorecard ab. Sie können auch Filter anwenden, indem Sie im Menü „Filter“ unterhalb der Datumsbereiche Filter auswählen. Sie [konfigurieren und wenden Filter für Ihre Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) genauso wie in Adobe Analytics Workspace an.
 
    ![Erstellen eines Filters](assets/segment_ui.png)
 
-5. Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie auf eine beliebige Stelle außerhalb der Kacheln und entfernen Sie sie, indem Sie auf **x** klicken, der angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für den Filter **Erstmalige Besuche** gezeigt:
+5. Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie auf eine beliebige Stelle außerhalb der Kacheln auf der Scorecard. Entfernen Sie die Komponente, indem Sie auf das **x** klicken, das angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für den Filter **Erstbesuche** dargestellt:
 
    ![Komponenten entfernen](assets/new_remove.png)
 
-6. hinzufügen und entfernen Sie Datumsbereichskombinationen, die in Ihrer Wertungsliste ausgewählt werden können, indem Sie die Dropdownliste Datumsbereich auswählen.
+6. Fügen Sie Datumsbereichskombinationen, die in Ihrer Scorecard ausgewählt werden können, hinzu, und entfernen Sie diese, indem Sie die Dropdown-Liste „Datumsbereich“ auswählen.
 
-   ![Neue Punktkarte](assets/new_score_card.png)
+   ![Neue Scorecard](assets/new_score_card.png)
 
-   Jede neue Scorecard Beginn mit 6 Datumsbereichskombinationen, die sich auf die Daten von heute und gestern konzentrieren. Sie können unnötige Datumsbereiche entfernen, indem Sie auf das X klicken, oder Sie können jede Kombination aus Datumsbereich durch Klicken auf den Stift bearbeiten.
+   Jede neue Scorecard hat zunächst einmal 6 Datumsbereichskombinationen, wobei das Augenmerk auf den Daten von heute und gestern liegt. Sie können unnötige Datumsbereiche entfernen, indem Sie auf „X“ klicken, oder Sie können jede Datumsbereichskombination durch Klicken auf den Stift bearbeiten.
 
-   ![Neue Punktkarte2](assets/new_score_card2.png)
+   ![Neue Scorecard2](assets/new_score_card2.png)
 
-   Um ein Primärdatum zu erstellen oder zu ändern, wählen Sie mit der Dropdownliste aus den verfügbaren Datumsbereichen aus oder ziehen Sie eine Datumskomponente aus der rechten Leiste in den Ablagebereich.
+   Um ein Primärdatum zu erstellen oder zu ändern, treffen Sie eine Auswahl aus der Dropdown-Liste mit den verfügbaren Datumsbereichen oder ziehen Sie eine Datumskomponente aus der rechten Leiste in den Ablagebereich.
 
-   ![Neue Punktkarte3](assets/new_score_card3.png)
+   ![Neue Scorecard3](assets/new_score_card3.png)
 
-   Um ein Vergleichsdatum zu erstellen, können Sie im Dropdown-Menü aus praktischen Vorgabe für allgemeine Zeitvergleiche auswählen. Sie können auch eine Datumskomponente aus der rechten Leiste ziehen und ablegen.
+   Um ein Vergleichsdatum zu erstellen, können Sie im Dropdown-Menü aus praktischen Voreinstellungen für häufig verwendete Zeitvergleiche eine Auswahl treffen. Sie können auch eine Datumskomponente aus der rechten Leiste ziehen und ablegen.
 
-   ![Neue Punktkarte4](assets/new_score_card4.png)
+   ![Neue Scorecard4](assets/new_score_card4.png)
 
    Wenn der gewünschte Datumsbereich noch nicht erstellt wurde, können Sie durch Klicken auf das Kalendersymbol einen neuen erstellen.
 
-   ![Neue Punktkarte4](assets/new_score_card5.png)
+   ![Neue Scorecard4](assets/new_score_card5.png)
 
 7. Dadurch gelangen Sie zum Generator für den Datumsbereich, in dem Sie eine neue Komponente für den Datumsbereich erstellen und speichern können. Um die Scorecard zu benennen, klicken Sie auf den Namensbereich in der oberen linken Ecke des Bildschirms und geben Sie den neuen Namen ein.
 
@@ -170,7 +170,7 @@ Um ausführenden Benutzern zu helfen, auf Ihre Scorecards in der App zuzugreifen
 * Auf den Geräten Ihrer Benutzer muss mindestens iOS-Version 10 oder Android-Version 4.4 (KitKat) installiert sein.
 * Die Adobe Analytics-Anmeldeinformationen Ihrer Benutzer müssen gültig sein.
 * Sie müssen die mobilen Scorecards für Ihre Benutzer korrekt erstellt und freigegeben haben.
-* Sie haben Zugang zu Analysis Workspace und der Ansicht der Daten, auf der der Binnenmarktanzeiger basiert
+* Ihre Benutzer haben Zugriff auf Analysis Workspace und die Datenansicht, auf der die Scorecard basiert.
 * Ihre Benutzer müssen Zugriff auf die Komponenten haben, die die Scorecard enthält. Hinweis: Sie können bei der Freigabe Ihrer Scorecards eine Option auswählen, um **[!UICONTROL eingebettete Komponenten freizugeben]**.
 
 ### Ausführenden Benutzern mit der App helfen
@@ -213,7 +213,7 @@ So unterstützen Sie ausführende Benutzer:
    * Vergewissern Sie sich, dass sich der ausführende Benutzer bei der richtigen Analytics-Instanz anmelden kann und dass die Scorecard freigegeben wurde.
 
 
-3. Erklären Sie dem geschäftsführenden Benutzer, wie Kacheln in den von Ihnen freigegebenen Scorecards angezeigt werden (die erste Scorecard unten ist im Dark-Modus eingestellt; Siehe **[!UICONTROL Voreinstellungen]** unten, wenn Sie der Meinung sind, dass Ihr geschäftsführender Benutzer diese Anzeigeoption bevorzugt):
+3. Erklären Sie dem ausführenden Benutzer, wie Kacheln in den von Ihnen freigegebenen Scorecards angezeigt werden (die erste Scorecard unten ist auf den Dunkelmodus festgelegt; weitere Informationen finden Sie unter **[!UICONTROL Voreinstellungen]** weiter unten, wenn Sie der Meinung sind, dass Ihr ausführender Benutzer diese Anzeigeoption bevorzugt):
 
    ![Kacheln erklären](assets/newexplain.png)
 
@@ -237,7 +237,7 @@ So unterstützen Sie ausführende Benutzer:
 
    * In einer Tabelle werden Daten zu den der Kachel hinzugefügten Dimensionen angezeigt. Tippen Sie auf den Abwärtspfeil, um Dimensionen auszuwählen. Wenn der Kachel keine Dimension hinzugefügt wurde, werden in der Tabelle Diagrammdaten angezeigt.
 
-5. Um die Datumsbereiche für die Scorecard zu ändern, tippen Sie auf die Kopfzeile &quot;Datum&quot;und wählen Sie die gewünschte Kombination aus Primär- und Vergleichsdatumsbereich aus.
+5. Um Datumsbereiche für die Scorecard zu ändern, tippen Sie auf die Kopfzeile für das Datum und wählen Sie die gewünschte Kombination aus Primär- und Vergleichsdatumsbereich aus.
 
    ![Datum ändern](assets/changedate.png)
 
