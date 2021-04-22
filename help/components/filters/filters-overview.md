@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 86%
+ht-degree: 90%
 
 ---
 
@@ -80,7 +80,7 @@ Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
 ## Vordefinierte Filtervorlage
 
-Die herkömmliche Analytics-Version bietet eine Vielzahl von vordefinierten Filtern (Filtern) und berechneten Metriken. Viele von ihnen gelten nicht für CJA oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen in CJA ab.
+Die herkömmliche Analytics-Version bietet eine Vielzahl von vordefinierten Filtern (Filtern) und berechneten Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen in Customer Journey Analytics ab.
 
 | Filtername | Beschreibung |
 | --- | --- |
