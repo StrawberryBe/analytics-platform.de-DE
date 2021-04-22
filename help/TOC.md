@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 93%
       + [Funktionsweise der Wiederholung](connections/cca/replay.md)
       + [Häufig gestellte Fragen zur kanalübergreifenden Analyse](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
-   + [Übersicht über die Ansichten](data-views/data-views.md)
+   + [Übersicht über die Datenansichten](data-views/data-views.md)
    + [Datenschicht erstellen](data-views/create-dataview.md)
-   + [Anwendungsfälle von Ansichten](data-views/data-views-usecases.md)
+   + [Anwendungsfälle zur Datenansicht](data-views/data-views-usecases.md)
    + [Persistenz](data-views/persistence.md)
 + Workspace-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](analysis-workspace/home.md)
