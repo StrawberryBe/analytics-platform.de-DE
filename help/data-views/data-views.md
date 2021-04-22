@@ -3,10 +3,10 @@ title: Was ist eine Datenansicht in Customer Journey Analytics?
 description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journey Analytics-Verbindung zu interpretieren sind, beispielsweise Metriken, Dimensionen, Sitzungen usw.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
+source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 91%
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ Eine Datenansicht befindet sich auf einer Customer Journey Analytics-[Verbindung
 
 >[!NOTE]
 >
->Alle Einstellungen, die Sie in einer Ansicht auswählen oder ändern, sind rückwirkend und nicht zerstörerisch. Mit anderen Worten ausgedrückt: Sie ändern Ihre zugrunde liegenden Daten nicht dauerhaft.
+>Alle Einstellungen, die Sie in einer Ansicht auswählen oder ändern, sind rückwirkend und nicht zerstörerisch. Mit anderen Worten, sie ändern Ihre zugrunde liegenden Daten nicht dauerhaft.
 
 Sie können verschiedene Datenansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Außerdem können Sie Datenansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. erstellen. Sie könnten beispielsweise eine Datendimensionen mit [!UICONTROL Last Touch] und gleichzeitig eine andere Ansicht mit Daten (basierend auf demselben Datensatz) haben, bei denen alle Dimensionen auf [!UICONTROL First Touch] eingestellt sind.
 
@@ -60,13 +60,13 @@ Die neueste Aktualisierung der Datenansichten bietet Ihnen viel mehr Flexibilit�
 
 Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Projektebene überschrieben werden, andere nicht.
 
-* Lookback-Fenster
-* Attribution von Metriken
-* Ob Benutzer den Zeileneintrag „Kein Wert“ in einem Bericht sehen
+* [!UICONTROL Lookback-Fenster]
+* Metrikzuordnung
+* Gibt an, ob Benutzer den Zeileneintrag [!UICONTROL Kein Wert] in einem Bericht sehen
 
 ## Einstellungen für die Ansicht von Daten, die Sie in Workspace nicht überschreiben können
 
-* Typ der Komponente
+* [!UICONTROL Typ der Komponente]
 * Formatierung von Metriken
 * Name der Datenansicht
 * Zuweisung von Dimensionen
