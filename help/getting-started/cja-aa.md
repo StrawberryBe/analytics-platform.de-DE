@@ -1,14 +1,14 @@
 ---
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
-translation-type: ht
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+exl-id: be19aa27-58aa-438d-806c-e27c9a289797
+translation-type: tm+mt
+source-git-commit: 4b543a1566580a8f3060c2387928148d55be70f2
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 99%
 
 ---
-
 
 # Customer Journey Analytics-Funktionen
 
@@ -36,7 +36,9 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Benutzerberechtigungen/Datenzugangssteuerung | CJA unterscheidet zwischen Produktadministratoren und Anwendern von Adobe Admin Console. Nur Produktadministratoren können 1) Verbindungen oder Datenansichten erstellen/aktualisieren/löschen, 2) Projekte, Filter oder Berechnungsmetriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen und 3) ein Workspace-Projekt für alle Benutzer freigeben. |
 | Geräteübergreifende/kanalübergreifende Zuordnung | Siehe [Cross-Channel-Analysen](/help/connections/cca/overview.md). |
 | Vorkonfigurierte Analysis Workspace-Dimensionen (Browser-Typ, Typ der verweisenden Stelle, Betriebssystem usw.) | Customer Journey Analytics stellt diese Dimensionen nativ bereit, solange die grundlegenden XDM-Felder (z. B. Benutzeragent oder Geräte-ID) ausgefüllt sind. Für Kunden, der Data Connector von Analytics (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Zugriff auf Reporting-API | Zurzeit mit Analytics API 2.0 verfügbar. |
+| Zugriff auf Reporting-API | Jetzt mit der [CJA API](https://www.adobe.io/cja-apis/docs/) verfügbar. |
+| Terminierte Berichte/Projekte | Vollständige Unterstützung. |
+| PDF-Export | Vollständige Unterstützung. |
 
 ## Mit Einschränkungen unterstützt
 
@@ -74,9 +76,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Benutzerdefinierte Kalender | Unterstützung ist geplant. |
 | Deduplizierung der Metrik | Unterstützung ist geplant. |
 | Persistenz von Merchandising-Variablen | Unterstützung ist geplant. |
-| Terminierte Berichte/Projekte | Unterstützung ist geplant. |
 | Warnhinweise | Unterstützung ist geplant. |
-| PDF-Export | Unterstützung ist geplant. |
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
 | Report Builder (Excel-Plug-in) | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
