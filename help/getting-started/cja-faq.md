@@ -3,7 +3,7 @@ title: FAQ zu Customer Journey Analytics
 description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
+source-git-commit: 9bc3e1c211c8cafa0abf73a8732d70185a4f0861
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 63%
@@ -37,8 +37,8 @@ ht-degree: 63%
 
 ## 3. Daten in [!UICONTROL Customer Journey Analytics]
 
-| # | Frage | Antwort |
-| --- | --- | --- |
+| Frage | Antwort |
+| --- | --- |
 | Kann ich Daten aus verschiedenen [!UICONTROL Adobe Experience Platform]-Sandboxen in einer [!UICONTROL Customer Journey Analytics]-Verbindung kombinieren? | Nein, Sie können nicht über Sandboxes hinweg auf Daten zugreifen. Sie können nur Datensätze kombinieren, die sich innerhalb derselben Sandbox befinden. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]? | <ul><li>Unter normaler Belastung: &lt; 60 Minuten <br>**Hinweis:** Bei ungewöhnlich hohem Datenfluss durch die Pipeline kann es bis zu 24 Stunden dauern.</li><li>Aufstockungsdaten (bis zu 13 Monate Daten, unabhängig von der Größe): &lt; 4 Wochen</li></ul> |
 | Wie werden in [!UICONTROL Customer Journey Analytics] Online-Daten mit Offline-Daten verbunden? | Solange die Personen-ID zwischen den Datensätzen übereinstimmt, kann [!UICONTROL Customer Journey Analytics] Filter, Zuordnung, Fluss, Trichteranalyse usw. verbinden. über Datensätze hinweg miteinander verbinden. |
