@@ -3,10 +3,10 @@ title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: b149b4e95d8395c41242de7a2a3997315ba142a6
+source-git-commit: bf8864103dc4e52734952c0c93d49f97e35b2817
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -44,17 +44,16 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-
-| Klassifizierungen | Jetzt &quot;Lookup DataSets&quot;. In Analytics verwendete Klassifizierungen können mit Data Connector für Analytics-Klassifizierungen in Experience Platform und in Customer Journey Analytics importiert werden. Lookup-Datensätze können auch direkt in Adobe Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
-| Benutzerdefinierte Sessionierung | Unterstützung für alle benutzerdefinierten Funktionen zur Sitzungsoptimierung mit Ausnahme von mobilen Hintergrundtreffern. |
-| Kundenattribute | Nun als &quot;Profil-Datasets&quot; bezeichnet, werden sie nicht automatisch aus Experience Cloud importiert, sondern müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
-| Geräte-, Browser-, Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schema-Felder enthält und der XDM Experience Ereignis-Klasse entspricht. |
-| Dimensionen und Metriken zu Einstiegen, Ausstiegen und Besuchszeit | Unterstützt (Einstiege und Ausstiege werden jetzt als Sitzungs- und Sitzungsende bezeichnet) und werden auf eine etwas andere Weise berechnet. |
+| Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können mit Data Connector für Analytics-Klassifizierungen in Experience Platform und in Customer Journey Analytics importiert werden. Lookup-Datensätze können auch direkt in Adobe Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
+| Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
+| Kundenattribute | Jetzt als „Profildatensätze“ bezeichnet, werden sie nicht automatisch aus Experience Cloud importiert, sondern müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
+| Geräte-, Browser- und Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein Adobe Experience Platform-Datensatz bestimmte XDM-Schema-Felder enthält und der XDM-Erlebnisereignis-Klasse entspricht. |
+| Dimensionen und Metriken zu Einstiegen, Ausstiegen und Besuchszeit | Unterstützt (Eintritte und Ausstiege werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
-| Marketing-Kanal | Daten von Marketing-Kanälen fließen über den Analytics Data Connector in CJA. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
-| Produktvariable | Innerhalb der Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem DataSet-Schema verwenden, um diesen Anwendungsfall zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf einzelne Variablen beschränkt. |
-| Projektfreigabe | Projektfreigabe wird nur von CJA-Nutzern unterstützt - es gibt keine Projektfreigabe zwischen CJA und dem herkömmlichen Analysis Workspace. |
-| Visualisierungen | Alle Visualisierungen werden mit Ausnahme der Imagemap-Visualisierung unterstützt. |
+| Marketing-Kanäle | Daten von Marketing-Kanälen werden jetzt über Analytics Data Connector an Customer Journey Analytics weitergeleitet. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
+| Produktvariable | In Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem Datensatzschema verwenden, um die Anforderungen dieses Anwendungsfalls zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf einzelne Variablen beschränkt. |
+| Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
+| Visualisierungen | Alle Visualisierungen mit Ausnahme der Zuordnungsvisualisierung werden unterstützt. |
 
 ## Teilweise Unterstützung
 
