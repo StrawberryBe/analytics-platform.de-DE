@@ -3,10 +3,10 @@ title: FAQ zu Customer Journey Analytics
 description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 translation-type: tm+mt
-source-git-commit: 6de1907e74eb0323bde921f4400e27bcdf06cdd1
+source-git-commit: aa11e81e63e993fdcddd400d491d863e05ac65b9
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 65%
+source-wordcount: '1388'
+ht-degree: 64%
 
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 65%
 | b | Benötige ich eine [!UICONTROL Experience Cloud ID] (ECID) für [!UICONTROL Customer Journey Analytics]? | Nein, [!UICONTROL Customer Journey Analytics] unterstützt alle IDs in einem Datensatz, unabhängig davon, ob es sich um eine [!UICONTROL ECID] oder eine andere ID handelt. |
 | c | Wie gehe ich vor, wenn ich meine Daten vor [!UICONTROL Customer Journey Analytics] einem ETL-Prozess (Extract, Transform, Load) unterziehen muss? | Customer Journey Analytics enthält die Funktionen [Datenvorgabe](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html), mit denen Sie Ihre Daten umwandeln können, bevor Sie sie in den Adobe Experience Platform Data Lake übernehmen. Wenn Sie ETL benötigen, nachdem die Daten bereits erfasst wurden, stehen Ihnen für [Adobe Experience Platform Abfrage Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=en#queries) einige begrenzte Optionen zur Verfügung, auch wenn zusätzliche Gebühren anfallen können. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 2. Stitching-Daten (Cross-Kanal Analytics)
 
 | # | Frage | Antwort |
@@ -30,6 +32,8 @@ ht-degree: 65%
 | b | Wird das Stitching vom anonymen Verhalten zum authentifizierten Verhalten unterstützt? | Ja. [Cross-Kanal ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) Analytics untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugewiesene ID zu generieren. |
 | c | Wie funktioniert &quot;Replay&quot;in CCA? | CCA &quot;wiederholt&quot;Daten basierend auf eindeutigen Bezeichnern, die sie gelernt hat. Bei einer erneuten Wiedergabe werden neue Geräte an der Verbindung angeheftet. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=en#step-1%3A-live-stitching) |
 | d | Wie funktioniert das Verbinden von historischen Daten (Aufstockung) in CCA? | Bei Aktivierung stellt die Adobe eine Aufstockung der gehefteten Daten bereit, die bis zum Beginn des Vormonats (bis zu 60 Tage) zurückreicht. Um diese Aufstockung durchführen zu können, muss die transiente ID in den nicht zugewiesenen Daten vorhanden sein, die weit zurück in der Zeit liegen. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=en#enable-cross-channel-analytics) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 3. Daten in [!UICONTROL Customer Journey Analytics]
 
@@ -43,6 +47,8 @@ ht-degree: 65%
 | f | Wie lange dauert es, bis Datensatzelemente in einer Datenansicht zusammengefasst werden? | Ein paar Stunden für eine erste Ansicht und ein paar Tage, um die Daten der letzten 13 Monate einzufügen. |
 | g | Sind PII-Daten notwendig, um Verbindungen zwischen den Daten herzustellen? | Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer Kunden-ID, bei der es sich nicht um personenbezogene Daten handelt. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## 4. Traditionelle Komponenten [!UICONTROL Adobe Analytics]
 
 | # | Frage | Antwort |
@@ -52,7 +58,9 @@ ht-degree: 65%
 | c | Wo sind jetzt meine Einstellungen für die Sitzungs- und Variablenpersistenz? | [!UICONTROL Customer Journey Analytics] verwendet alle diese Einstellungen zur Berichtszeit. Diese Einstellungen sind jetzt in Datenansichten verfügbar. Änderungen an diesen Einstellungen sind jetzt rückwirkend. Jetzt sind mehrere Versionen verfügbar, indem Sie mehrere Datenansichten verwenden. |
 | d | Was passiert mit den bereits vorhandenen Segmenten/berechneten Metriken? | [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein AEP-Schema. Das bedeutet, dass keine der vorhandenen Segmente oder Berechnungsmetriken mit [!UICONTROL Customer Journey Analytics] kompatibel sind. |
 | e | Wie werden in [!UICONTROL Customer Journey Analytics] `Uniques Exceeded`-Einschränkungen behandelt? | [!UICONTROL In Customer Journey Analytics] gibt es keine Beschränkungen hinsichtlich eindeutiger Werte, sodass Sie sie nicht beachten müssen. |
-| f | Kann ich als bestehender [!DNL Data Workbench]-Kunde jetzt zu [!UICONTROL Customer Journey Analytics] wechseln? | Es hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe Account Team. Ihre aktuellen Anwendungsfälle sind möglicherweise bereits gut für den Customer Journey Analytics geeignet. |
+| f | Kann ich als bestehender [!DNL Data Workbench]-Kunde jetzt zu [!UICONTROL Customer Journey Analytics] wechseln? | Es hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe Account Team. Ihre aktuellen Anwendungsfälle können bereits gut für den Customer Journey Analytics geeignet sein! |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## 5. Auswirkungen des Löschens von Datenkomponenten
 
