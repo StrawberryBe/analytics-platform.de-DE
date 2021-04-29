@@ -3,10 +3,10 @@ title: Globale Suchen zu Ihren Datensätzen hinzufügen
 description: Verwenden Sie globale Suchen, um die Berichte mit nützlichen Dimensionen in Customer Journey Analytics zu ergänzen.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
+source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 95%
+source-wordcount: '383'
+ht-degree: 100%
 
 ---
 
@@ -20,10 +20,6 @@ Im herkömmlichen Adobe Analytics werden diese Dimensionen eigenständig angezei
 ## Globale Suchen mit Adobe Data Connector-Datensätzen verwenden
 
 Globale Lookup-Datensätze werden zum Zeitpunkt des Berichts automatisch angewendet. Wenn Sie [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de-DE#connectors) verwenden und eine Dimension einbringen, für die Adobe eine globale Suche bereitstellt, wird diese globale Suche automatisch angewendet. Wenn ein Ereignis-Datensatz [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de-DE)-Felder enthält, können globale Suchen darauf angewendet werden.
-
-## Globale Suchen mit benutzerdefinierten Datensätzen verwenden
-
-Ein Schlüssel muss im Ereignis-Datensatz vorhanden sein, der mit den globalen Abfragedatensätzen kompatibel ist. Solange Sie die richtigen XDM-Felder ausfüllen, indem Sie einige unserer standardmäßigen [Adobe Experience Platform-Schema-Mixins](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=de-DE#mixins) hinzufügen, können Sie benutzerdefinierte Datensätze mit globalen Suchen verwenden.
 
 ## Verfügbare globale Suchfelder
 
