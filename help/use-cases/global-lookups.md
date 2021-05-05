@@ -3,23 +3,22 @@ title: Globale Suchen zu Ihren Datensätzen hinzufügen
 description: Verwenden Sie globale Suchen, um die Berichte mit nützlichen Dimensionen in Customer Journey Analytics zu ergänzen.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
+source-git-commit: 26ee2b61fb80b55a7982d90941ec121547423cfc
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 63%
 
 ---
 
 # Globale Suchen zu Ihren Datensätzen hinzufügen
 
-Anhand von globalen Suchen kann Customer Journey Analytics Berichte zu bestimmten Dimensionen/Attributen erstellen, die nicht für sich genommen, aber bei der Verknüpfung mit anderen Daten nützlich sind. Dies können beispielsweise Attribute von Smartphones oder Tablets und Attribute von OS- und Browser-Dimensionen wie etwa die Versionsnummern von Browsern sein. Eine „Globale Suche“ ist einem Lookup-Datensatz (im herkömmlichen Adobe Analytics als Klassifizierungen bezeichnet) ähnlich. Globale Suchen sind jedoch auf alle Experience Cloud-Organisationen anwendbar. Globale Suchen werden automatisch auf alle Ereignis-Datensätze angewendet, die bestimmte XDM-Schema-Felder enthalten (die jeweiligen Felder finden Sie unten).
-Für jeden Schema-Speicherort, den Adobe klassifiziert, gibt es einen globalen Lookup-Datensatz. Sie können globale Lookup-Datensätze mit Analytics Source Connector oder anderen benutzerdefinierten Datensätzen verwenden, die diese akzeptieren.
+Anhand von globalen Suchen kann Customer Journey Analytics Berichte zu bestimmten Dimensionen/Attributen erstellen, die nicht für sich genommen, aber bei der Verknüpfung mit anderen Daten nützlich sind. Dies können beispielsweise Attribute von Smartphones oder Tablets und Attribute von OS- und Browser-Dimensionen wie etwa die Versionsnummern von Browsern sein. Eine &quot;globale Suche&quot;ist ähnlich wie ein Suchlokup-Datensatz. Globale Suchvorgänge sind für alle Experience Cloud-Organisationen gültig. Sie werden automatisch auf alle Ereignis-Datensätze angewendet, die bestimmte XDM-Schema-Felder enthalten (siehe unten für die jeweiligen Felder). Für jeden Schema-Speicherort, den die Adobe klassifiziert, gibt es einen globalen Abfragedatensatz.
 
-Im herkömmlichen Adobe Analytics werden diese Dimensionen eigenständig angezeigt. In Customer Journey Analytics hingegen müssen Sie diese Dimensionen beim Erstellen von Datenansichten aktiv einbeziehen. Wenn ein Benutzer im Workflow „Verbindungen“ einen Datensatz auswählt, der mit einem Schlüssel für globale Suchen gekennzeichnet ist, dann bezieht die Benutzeroberfläche der Datenansichten alle globalen Lookup-Dimensionen ein, die für Berichte verfügbar sind. Der Workflow „Datenansichten“ bezieht diese globalen Lookup-Dimensionen, die für die Datenansicht verfügbar sind, mit ein. Die Lookup-Dateien werden automatisch aktualisiert und stehen für alle Regionen und Accounts zur Verfügung. Sie werden in regionsspezifischen Organisationen gespeichert, die dem Kunden zugeordnet sind.
+Im herkömmlichen Adobe Analytics werden diese Dimensionen eigenständig angezeigt. In Customer Journey Analytics hingegen müssen Sie diese Dimensionen beim Erstellen von Datenansichten aktiv einbeziehen. Im Arbeitsablauf &quot;Verbindungen&quot;wählen Sie einen Datensatz aus, der als ein Datensatz mit einem Schlüssel für die globale Suche gekennzeichnet wird. Die Benutzeroberfläche &quot;Data Ansichten&quot;weiß automatisch, dass alle globalen Suchdimensionen, wie sie für den Berichte verfügbar sind, einbezogen werden müssen. Die Lookup-Dateien werden automatisch aktualisiert und stehen für alle Regionen und Accounts zur Verfügung. Sie werden in regionsspezifischen Organisationen gespeichert, die dem Kunden zugeordnet sind.
 
 ## Globale Suchen mit Adobe Data Connector-Datensätzen verwenden
 
-Globale Lookup-Datensätze werden zum Zeitpunkt des Berichts automatisch angewendet. Wenn Sie [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de-DE#connectors) verwenden und eine Dimension einbringen, für die Adobe eine globale Suche bereitstellt, wird diese globale Suche automatisch angewendet. Wenn ein Ereignis-Datensatz [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de-DE)-Felder enthält, können globale Suchen darauf angewendet werden.
+Globale Lookup-Datensätze werden zum Zeitpunkt des Berichts automatisch angewendet. Wenn Sie den Analytics Data Connector verwenden und eine Dimension einbringen, für die die Adobe eine globale Suche bereitstellt, wird diese globale Suche automatisch angewendet. Wenn ein Ereignis-Datensatz XDM-Felder enthält, können globale Suchen darauf angewendet werden.
 
 ## Verfügbare globale Suchfelder
 
