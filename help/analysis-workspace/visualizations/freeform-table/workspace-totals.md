@@ -2,11 +2,11 @@
 description: Berechnung der Gesamtsummen in Workspace.
 title: Workspace-Summen
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 In Freiformtabellen wird auf jeder Unterteilungsebene eine Zeile insgesamt angezeigt, die zwei Summen enthalten kann:
 
-* **[!UICONTROL Gesamtsumme]**  (graue &quot;Out-of&quot;-Zahl) - dieser Gesamtwert stellt alle erfassten Treffer dar. Wenn ein Filter entweder auf Bereichsebene oder innerhalb der Freiformtabelle angewendet wird, wird diese Summe angepasst, um alle Treffer wiederzugeben, die den Filterkriterien entsprechen.
+* **[!UICONTROL Gesamtsumme]** (graue „Out-of“-Zahl) – dieser Gesamtwert stellt alle erfassten Treffer dar. Wenn ein Filter entweder auf Bedienfeldebene oder in der Freiformtabelle angewendet wird, passt sich diese Summe an, sodass alle Treffer wiedergegeben werden, die den Filterkriterien entsprechen.
 * **[!UICONTROL Tabellensumme]** (schwarze Zahl) - dieser Gesamtwert entspricht in der Regel der [!UICONTROL Gesamtsumme] oder einer Untergruppe davon. Er spiegelt alle Tabellenfilter wider, die innerhalb der Freiformtabelle angewendet werden, einschließlich der Option [!UICONTROL Keine einschließen].
 
 ![](assets/total-row.png)
