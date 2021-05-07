@@ -2,11 +2,11 @@
 title: Glossar zu Customer Journey Analytics
 description: Glossar zu Customer Journey Analytics.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,4 +26,4 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 ## Glossar zu Adobe Experience Platform
 
 In Adobe Experience Platform werden die Daten und Inhalte im gesamten Unternehmen standardisiert. Damit werden Echtzeitprofile für Verbraucher und Datenwissenschaft ermöglicht und Content Velocity beschleunigt, um die Personalisierung von Erlebnissen während der gesamten Customer Journey voranzutreiben.
-Weitere Informationen finden Sie im [Glossar zu Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/glossary.translate.html).
+Weitere Informationen finden Sie im [Glossar zu Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/glossary.html).
