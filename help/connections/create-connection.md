@@ -2,11 +2,11 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1974'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/de-DE
 Zum Erstellen einer CJA-Verbindung benötigen Sie die folgenden Berechtigungen:
 
 Adobe Experience Platform:
-* Datenmodellierung: Ansicht Schema, Schemas verwalten
-* Data Management: Ansicht DataSets, DataSets verwalten
-* Dateneinbettung: Quellen verwalten
+* Datenmodellierung: Schemas anzeigen, Schemas verwalten
+* Daten-Management: Datensätze anzeigen, Datensätze verwalten
+* Datenaufnahme: Quellen verwalten
 
 Customer Journey Analytics
 * Produktadministratorzugriff
@@ -137,7 +137,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
 
 1. Die Abfrage würde wie folgt aussehen: <br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
