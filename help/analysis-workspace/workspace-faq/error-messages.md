@@ -2,11 +2,11 @@
 description: Liste der Fehlermeldungen in Adobe Analysis Workspace und der zugehörigen Komponenten
 title: Allgemeine Fehlermeldungen in Analysis Workspace
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Bei der Interaktion mit Analysis Workspace können Fehler auftreten, die auch di
 | --- | --- | --- |
 | [!UICONTROL Es ist ein Systemfehler aufgetreten. Melden Sie eine Anfrage an die Kundenunterstützung unter **[!UICONTROL Hilfe > senden Sie ein Support-Ticket]** und geben Sie Ihren Fehler-Code an.] | Adobe hat ein Problem, das behoben werden muss. | Senden Sie den Fehler-Code an die Kundenunterstützung. |
 | [!UICONTROL Fehler 500: Seite konnte nicht geladen werden] | Probleme mit Ihrem lokalen Netzwerk, wie z. B. die [Firewall-Einstellungen](https://docs.adobe.com/content/help/de-DE/analytics/technotes/ip-addresses.html) der Firma, tragen zu diesem Fehler bei. Darüber hinaus tritt bei Adobe möglicherweise ein Problem auf, das behoben werden muss. | Versuchen Sie nach einigen Minuten erneut sich anzumelden. Wenn das Problem weiterhin besteht, senden Sie den EIM-Instanz-ID-Code an die Kundenunterstützung. |
-| [!UICONTROL Einer der Filter oder die Suche in dieser Visualisierung enthält eine Textsuche, bei der zu viele Ergebnisse zurückgegeben wurden.] | Ihre Filterkriterien oder Berichtsfilter sind zu breit. | Schränken Sie die Suchtextkriterien ein und führen Sie die Anfrage erneut aus. |
-| [!UICONTROL Die Anfrage ist zu komplex.] | Ihre Reporting-Anfrage ist zu groß und kann nicht ausgeführt werden. Die Ursache für diesen Fehler sind Timeouts aufgrund der Anforderungsgröße, zu viele übereinstimmende Elemente in einem Filter oder Suchfilter, zu viele eingeschlossene Metriken, inkompatible Dimensions- und Metrikkombinationen usw. | Vereinfachen Sie Ihre Anfrage, indem Sie einige Spalten oder Zeilen in der Tabelle entfernen oder die Tabelle in separate Anfragen aufteilen. |
+| [!UICONTROL Einer der Filter oder die Suche in dieser Visualisierung enthält eine Textsuche, die zu viele Ergebnisse zurückgibt.] | Ihre Filterkriterien oder Berichtsfilter sind zu breit angelegt. | Schränken Sie die Suchtextkriterien ein und führen Sie die Anfrage erneut aus. |
+| [!UICONTROL Die Anfrage ist zu komplex.] | Ihre Reporting-Anfrage ist zu groß und kann nicht ausgeführt werden. Gründe für diesen Fehler sind Zeitüberschreitungen aufgrund der Anfragengröße, zu viele übereinstimmende Elemente in einem Filter oder Suchfilter, zu viele eingeschlossene Metriken, inkompatible Dimensions- und Metrikkombinationen usw. | Vereinfachen Sie Ihre Anfrage, indem Sie einige Spalten oder Zeilen in der Tabelle entfernen oder die Tabelle in separate Anfragen aufteilen. |
 | [!UICONTROL Diese Dimension unterstützt nicht-standardmäßige Zuordnungsmodelle derzeit nicht.] | Nicht standardmäßige Zuordnung wird für die verwendete Dimension nicht unterstützt. | Ersetzen Sie die Dimension in Ihrer Tabelle durch eine Dimension, die mit [Attribution IQ](/help/analysis-workspace/attribution/overview.md) kompatibel ist. |
 | [!UICONTROL Ihre Anfrage schlug aufgrund zu vieler Spalten oder vorkonfigurierter Zeilen fehl.] | Ihre Tabelle enthält zu viele Freiformzellen (Zeile * Spalten). | Entfernen Sie Spalten oder Zeilen in der Tabelle oder erwägen Sie, die Tabelle in separate Anfragen zu unterteilen. |
