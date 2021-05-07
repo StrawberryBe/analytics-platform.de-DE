@@ -2,11 +2,11 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die Filterung umfasst den [Filtergenerator](/help/components/filters/create-filt
 
 ## Sequenzielle Filter
 
-Mit sequenziellen Filtern können Sie Besucher anhand der Navigation und den Seitenansichten innerhalb Ihrer Site identifizieren, indem Sie einen Filter mit definierten Aktionen und Interaktionen bereitstellen. Sequenzielle Filter helfen Ihnen dabei herauszufinden, was ein Besucher mag und was ein Besucher vermeidet. Beim Erstellen sequenzieller Filter wird der Operator DANN (THEN) eingesetzt, um die Navigation des Besuchers zu definieren und zu ordnen.
+Mit sequenziellen Filtern können Sie Besucher anhand der Navigation und den Seitenansichten innerhalb Ihrer Site identifizieren, indem Sie einen Filter mit definierten Aktionen und Interaktionen bereitstellen. Mit sequenziellen Filtern können Sie erkennen, was ein Besucher mag und was er meidet. Beim Erstellen sequenzieller Filter wird der Operator THEN eingesetzt, um die Navigation des Besuchers zu definieren und zu ordnen.
 
 Siehe folgendes Beispiel:
 
@@ -54,7 +54,7 @@ Personen-Container können Werte enthalten, die auf dem Gesamtverlauf eines Besu
 
 ### Sitzungs-Container
 
-Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Session Container ist der am häufigsten verwendete Container, da er Verhaltensweisen für die gesamte Besuchssitzung erfasst, sobald die Regel erfüllt ist, und Sie definieren können, welche Sitzungen Sie beim Erstellen und Anwenden eines Filters einschließen oder ausschließen möchten. Er kann Ihnen bei der Beantwortung dieser Fragen helfen:
+Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Sitzungs-Container ist der am häufigsten verwendete Container, da er die Verhaltensweisen der gesamten Besuchssitzung erfasst, sobald die Regel erfüllt wird, und Ihnen die Möglichkeit gibt, zu definieren, welche Sitzungen ein- oder ausgeschlossen werden sollen, indem Sie einen Filter erstellen und anwenden. Er kann Ihnen bei der Beantwortung dieser Fragen helfen:
 
 * Wie viele Besucher haben die Bereiche „Nachrichten“ und „Sport“ in derselben Sitzung angesehen?
 * Welche Seiten haben zu einer erfolgreichen Konversion in einem Verkauf beigetragen?
@@ -80,8 +80,8 @@ Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
 ## Vordefinierte Filtervorlage
 
-Die herkömmliche Analytics-Version bietet eine Vielzahl von vordefinierten Filtern (Filtern) und berechneten Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen in Customer Journey Analytics ab.
+Die herkömmliche Analytics-Version enthält eine Vielzahl vordefinierter Vorlagenfilter (Filter) und berechneter Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen in Customer Journey Analytics ab.
 
 | Filtername | Beschreibung |
 | --- | --- |
-| Alle Daten | Dies ist ein erforderlicher Filter, der dynamisch zum Berichte hinzugefügt wird, wenn eine Metrik zur Zeile einer Freiform-Tabelle hinzugefügt wird. |
+| Alle Daten | Dies ist ein erforderlicher Filter, der dynamisch zum Reporting hinzugefügt wird, wenn eine Metrik zur Zeile einer Freiform-Tabelle hinzugefügt wird. |
