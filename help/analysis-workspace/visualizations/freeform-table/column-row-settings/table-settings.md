@@ -3,11 +3,11 @@ description: Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie
 title: Zeileneinstellungen
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
-Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben. Um auf die Tabellenzeileneinstellungen zuzugreifen, klicken Sie auf das Symbol &quot;Einstellungen&quot;neben einer Dimension, einem Filter, einer Metrik, einem Zeitraum oder einer Unterteilung in den folgenden Bereichen:
+Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben. Um auf die Tabellenzeilen-Einstellungen zuzugreifen, klicken Sie auf das Einstellungs-Symbol neben einer Dimension, einem Filter, einer Metrik, einem Zeitraum oder einer Aufschlüsselung im jeweiligen Element:
 
 ![](assets/row-settings.png)
 
