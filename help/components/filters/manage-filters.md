@@ -2,21 +2,21 @@
 title: Filter verwalten
 description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalten.
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1094'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Filter verwalten
 
-Der Filter-Manager bietet viele Angebote zum Kuratieren von Filtern, wie Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Markieren als Favoriten.
+Der Filter-Manager bietet verschiedene Möglichkeiten zum Kuratieren von Filtern wie deren Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Kennzeichnen als Favoriten.
 
 Der Filter-Manager zeigt Ihnen alle Filter, die sich in Ihrem Besitz befinden und für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. Dieser Überblick stellt die Benutzeroberfläche und die Funktionen des Filter-Managers vor.
 
-Rufen Sie den Filter-Manager auf, indem Sie in der oberen Navigation zu **[!UICONTROL Kunden-Journey-Analyse]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** wechseln.
+Sie können den Filter-Manager aufrufen, indem Sie in der oberen Navigation zu **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** navigieren.
 
 ## Filter Manager-Benutzeroberfläche
 
@@ -35,11 +35,11 @@ Rufen Sie den Filter-Manager auf, indem Sie in der oberen Navigation zu **[!UICO
 | 11 | Spaltenauswahl | (Oben rechts) Hier können Sie auswählen, welche Spalten im Filter-Manager angezeigt werden sollen. |
 | 12 | Gemeinsam-Symbol | Gibt an, dass dieser Filter von Ihnen oder für Sie freigegeben wurde. |
 | 13 | Freigegeben-Symbol | Gibt an, dass dieser Filter durch einen Administrator genehmigt wurde. |
-| 14 | Andere Filter | Hier können Sie Filter nach Tags, Ansichten, Inhabern und anderen anzeigen (Alle anzeigen, Meine, Für mich freigegeben, Genehmigt, Favoriten). |
+| 14 | Andere Filter | Ermöglicht Ihnen, die Filter unter „Tags“, „Datenansichten“, „Inhaber“ und „Sonstige“ („Alle anzeigen“, „Meine“, „Für mich freigegeben“, „Genehmigt“, „Favoriten“) zu sehen. |
 
 ## Filter planen
 
-Wenn Sie sich etwas Zeit für die Planung von Filtern widmen, verbessert sich die Wahrscheinlichkeit, dass diese für Ihr Unternehmen nützlich sein werden und dass die Anzahl der Mitarbeiter kontrolliert wird.
+Wenn Sie für die Planung von Filtern etwas Zeit aufwenden, verbessern Sie die Chancen, dass diese für Ihre Organisation von Nutzen sein werden und dass ihre Anzahl unter Kontrolle bleibt.
 
 * Bedenken Sie die Zielgruppe: Wer wird ihn benutzen? Für wen werden Sie er freigeben? Welche Personengruppe wird diesen Filter benutzen und wie sollte er demnach getaggt werden? Dies erfordert auch eine gute Filterbeschreibung. Die Beschreibung sollte mindestens die folgenden Fragen beantworten:
 
@@ -57,7 +57,7 @@ Wenn Sie sich etwas Zeit für die Planung von Filtern widmen, verbessert sich di
 
 ### Filter taggen
 
-Durch das Taggen von Filtern können Sie diese im Filter-Manager organisieren. Alle Benutzer können Tags für Filter erstellen und einen oder mehrere Tags auf einen Filter anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
+Durch das Taggen von Filtern können Sie diese im Filter-Manager organisieren. Alle Benutzer können Tags für Filter erstellen und eines oder mehrere Tags auf einen Filter anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
 
 Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:
 
@@ -77,9 +77,9 @@ Taggen eines Filters:
 
    * wählen Sie entweder ein vorhandenes Tag aus oder
 
-   * Geben Sie einen neuen Tag-Namen ein und drücken Sie **[!UICONTROL die Eingabetaste]**.
+   * geben Sie einen neuen Tag-Namen ein und drücken Sie die **[!UICONTROL Eingabetaste]**.
 
-1. Klicken Sie erneut auf **[!UICONTROL Tag]**, um den Filter zu taggen.
+1. Klicken Sie erneut auf **[!UICONTROL Taggen]**, um den Filter zu taggen.
 
 Das Tag wird jetzt in der Spalte „Tags“ angezeigt. (Klicken Sie oben rechts auf das Zahnradsymbol, um Ihre Spalten zu verwalten.)
 Sie können unter **[!UICONTROL Filter > Tags]** auch nach Tags filtern.
@@ -92,9 +92,9 @@ So wird ein Filter als genehmigt gekennzeichnet:
 
 1. Aktivieren Sie im Filter-Manager das Kontrollkästchen links neben dem Filtertitel.
 
-1. Klicken Sie in der Aufgabe der Filterverwaltung auf **[!UICONTROL Genehmigen]**.
+1. Klicken Sie in der Task-Leiste für die Filterverwaltung auf **[!UICONTROL Genehmigen]**.
 
-1. Erwägen Sie, die genehmigten Filter für Ihr Unternehmen freizugeben.
+1. Überlegen Sie, ob Sie die genehmigten Filter für Ihre Organisation freigeben möchten.
 
 1. Klicken Sie auf **[!UICONTROL OK]**.
 
@@ -124,7 +124,7 @@ Freigeben eines Filters:
 
 1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie freigeben möchten.
 
-1. Klicken Sie in der Symbolleiste für die Filterverwaltung auf **[!UICONTROL Freigeben]**.
+1. Klicken Sie in der Toolbar für die Filterverwaltung auf **[!UICONTROL Freigeben]**.
 
 1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Freigabe]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](assets/share_icon.png)
 
@@ -132,7 +132,7 @@ Freigeben eines Filters:
 
 ### Filter als Favoriten markieren
 
-Die Kennzeichnung von Filtern als Favoriten ist eine weitere Möglichkeit, sie für eine einfache Verwendung zu organisieren.
+Das Kennzeichnen von Filtern als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
 
 1. Klicken Sie im Filter-Manager auf den Stern neben allen Filtern, die Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
 
