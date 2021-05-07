@@ -1,19 +1,19 @@
 ---
-description: Erstellen Sie ein Projekt und fügen Sie dem Freiformbereich Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) hinzu.
+description: Erstellen Sie ein Projekt und fügen Sie dem Freiform-Bedienfeld Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) hinzu.
 keywords: Analysis Workspace
 title: Workspace-Projekt erstellen
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Workspace-Projekt erstellen
 
-Erstellen Sie ein Projekt und fügen Sie dem Freiformbereich Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) hinzu.
+Erstellen Sie ein Projekt und fügen Sie dem Freiform-Bedienfeld Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) hinzu.
 
 In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Workspace erläutert und Sie erfahren, wie ein Projekt erstellt wird.
 
@@ -21,7 +21,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
 
 1. Legen Sie die Benutzerberechtigung zum Erstellen und Kuratieren von Projekten fest.
 
-   Damit Sie ein Projekt in Analysis Workspace erstellen oder kuratieren können, müssen die Administratoren Sie zuerst zu einer Gruppe hinzufügen, für die die Berechtigung zum **[!UICONTROL Erstellen/Kuratieren von Projekten in Analysis Workspace]** aktiviert ist, oder zu einer Benutzergruppe mit **[!UICONTROL Zugriff auf alle Berichte]**. (**[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Gruppen](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=de-DE)).
+   Damit Sie ein Projekt in Analysis Workspace erstellen oder kuratieren können, müssen die Administratoren Sie zuerst zu einer Gruppe hinzufügen, für die die Berechtigung zum **[!UICONTROL Erstellen/Kuratieren von Projekten in Analysis Workspace]** aktiviert ist, oder zu einer Benutzergruppe mit **[!UICONTROL Zugriff auf alle Berichte]**. (**[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Gruppen](https://docs.adobe.com/content/help/de-DE/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Klicken Sie in [!DNL Experience Cloud] auf **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
@@ -84,13 +84,13 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
    >
    >Die internen Links beziehen sich nach dem Kopieren/Speichern nun auf das Projekt, in dem sie sich befinden, nicht auf das Originalprojekt, aus dem sie kopiert wurden.
 
-## hinzufügen Komponenten und Visualisierungen {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## Komponenten und Visualisierungen hinzufügen {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. Erstellen Sie Ihr Projekt durch Ziehen von *`components`* und *`visualizations`* in das Projekt.
 
    **Komponenten**
 
-   In der Komponentensymbolleiste werden durchsuchbare Dimensionen, Metriken, Filter und Datumsbereiche angezeigt, die Sie am häufigsten verwenden.
+   Die Komponenten-Symbolleiste zeigt suchbare Dimensionen, Metriken, Filter und Datumsbereiche an, die Sie häufig verwenden.
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -110,7 +110,7 @@ In diesem Beitrag werden die Elemente der Benutzeroberfläche von Analysis Works
   </tr> 
   <tr> 
    <td colname="col1"> Filter (blau) </td> 
-   <td colname="col2"> <p>Können nur auf Bereichsebene gezogen werden, Sie können jedoch Inline-Filter in der Datentabelle erstellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Weitere Informationen finden Sie unter <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Filter </a>. </p> </td> 
+   <td colname="col2"> <p>Können per Drag-and-Drop nur auf Bereichsebene angewendet werden, aber Sie können Inline-Filter in der Datentabelle erstellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Weitere Informationen finden Sie unter <a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Filter </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Datumsbereiche und Granularitäten (violett) </td> 
@@ -129,7 +129,7 @@ Der Bereich [!UICONTROL Visualisierungen] enthält standardmäßige Analytics-Gr
 
 1. Schritt
 
-## Verwenden Sie das Kontextmenü, um Ihre Daten anzupassen.{#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Daten mit dem Kontextmenü per Rechtsklick individuell anpassen {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 Im Kontextmenü (Rechtsklick) können Sie die folgenden Aktionen ausführen (abhängig von der in der Tabelle ausgewählten Zelle).
 
