@@ -2,11 +2,11 @@
 title: Überblick über Customer Journey Analytics
 description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Workspace mit Daten aus Experience Platform verwenden können.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Customer Journey Analytics ist eine Analytics-Funktion, mit der Sie die Funktion
 Customer Journey Analytics erweitert den Umfang von Analytics mit benutzerfreundlichen kanalübergreifenden Funktionen. Außerdem werden die Einschränkungen in früheren Versionen von Adobe Analytics aufgehoben. Einige wichtige Verbesserungen sind:
 
 * **Unbegrenzte Variablen und Ereignisse**: Die Konzepte von eVars, Props und Ereignissen existieren nicht mehr. Die Daten werden in erster Linie in Dimensionen und Metriken betrachtet. Datensätze können eine unbegrenzte Anzahl an eindeutigen Dimensionen und Metriken aufweisen.
-* **Unbegrenzte eindeutige Werte**: Adobe Experience Platform ist nicht auf eindeutige Einschränkungen beschränkt.
+* **Unbegrenzte Anzahl eindeutiger Werte**: Bei Adobe Experience Platform ist die Anzahl eindeutiger Werte nicht beschränkt.
 * **Historische Daten ändern**: Mit Adobe Experience Platform können Daten entfernt oder korrigiert werden.
 * **Report Suite-übergreifende Daten**: Vorhandene Implementierungen aus mehreren Datensätzen können in Platform kombiniert werden.
 
@@ -55,7 +55,7 @@ Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie
 
 * Um auf Customer Journey Analytics zugreifen oder eine Verbindung herstellen zu können, müssen Sie als Administrator dem **Customer Journey Analytics-Produkt** in [Admin Console](https://adminconsole.adobe.com/enterprise/) hinzugefügt werden. Produktadministratoren erhalten die folgenden Berechtigungen:
    * Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten
-   * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken oder von anderen Benutzern erstellten Filtern
+   * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken oder von durch andere Benutzer erstellten Filtern
    * Freigeben eines Workspace-Projekts für alle Benutzer
 * Wenn Sie in Customer Journey Analytics Produktadministrator werden, reicht dies nicht aus, um eine Verbindung zu erstellen, zu aktualisieren oder zu löschen. Um eine Verbindung zu einem Experience Platform-Datensatz herzustellen, benötigen Sie auch Experience Platform-Berechtigungen. Insbesondere müssen Sie Teil eines **Experience Platform-Produktprofils** ein, das Ihnen die folgenden Berechtigungen gewährt:
    * Anzeigen von Schemata
@@ -63,7 +63,7 @@ Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie
    * Anzeigen von Identitäts-Namespaces
    * Anzeigen von Datensätzen
 
-Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugangssteuerung in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugangssteuerung in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 ### Benutzerzugriff
 
@@ -74,7 +74,7 @@ Nicht-Produkt-Administratoren (Benutzer) in Customer Journey Analytics können k
 Verschiedene Funktionen von CJA wurden gegenüber dem herkömmlichen Adobe Analytics umbenannt, um sie an Branchenstandards anzupassen. Zur aktualisierten Terminologie gehören:
 
 * Segmente werden jetzt als Filter bezeichnet.
-* Virtual Report Suites werden jetzt als &quot;Data Ansichten&quot;bezeichnet.
+* Virtuelle Report Suites werden jetzt als „Datenansichten“ bezeichnet.
 * Klassifizierungen werden jetzt als Suchdatensätze bezeichnet.
 * Kundenattribute werden jetzt als Profildatensätze bezeichnet.
 * Treffer-Container werden jetzt als Ereignis-Container bezeichnet.
@@ -85,11 +85,11 @@ Verschiedene Funktionen von CJA wurden gegenüber dem herkömmlichen Adobe Analy
 
 Customer Journey Analytics ist eine von vielen Funktionen, die auf Adobe Experience Platform basieren. Mehrere andere Funktionen, die ebenfalls auf Experience Platform basieren, ermöglichen die optimale Datennutzung.
 
-Mit Adobe Experience Platform können Sie Kundendaten und Inhalte aus beliebigen Systemen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern. Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html).
+Mit Adobe Experience Platform können Sie Kundendaten und Inhalte aus beliebigen Systemen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern. Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.html).
 
 Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von Experience Platform für Customer Journey Analytics von zentraler Bedeutung und agieren in Verbindung damit:
 
-* [Abfragedienst](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.translate.html): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein serverloses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können, der in Berichten, Data Science Workspace oder zur Erfassung in den Profildienst verwendet werden kann. Mit dem Abfragedienst können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen umfassen beispielsweise POS-Systeme, Web-, mobile und CRM-Systeme usw.
-* [Echtzeit-Kundenprofil](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/unified_profile_architectural_overview/unified_profile_architectural_overview.md):
-* [Identity-Dienst](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/identity_services_architectural_overview/identity_services_architectural_overview.md):
-* [Data Science Workspace](https://docs.adobe.com/content/help/de-DE/experience-platform/data-science-workspace/home.translate.html) in Entwicklermodus: Sie können vorgefertigte Modelle für künstliche Intelligenz (KI) und maschinelles Lernen in Adobe Experience Platform verwenden, um verschiedene Aspekte der Customer Journey zu beeinflussen. Durch das Aufspüren verborgener Erkenntnisse können Sie bessere Vorhersagen für die gesamte Customer Journey treffen, Empfehlungen für die besten nächsten Schritte geben oder umständliche Prozesse automatisieren.
+* [Abfragedienst](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein serverloses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können, der in Berichten, Data Science Workspace oder zur Erfassung in den Profildienst verwendet werden kann. Mit dem Abfragedienst können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen umfassen beispielsweise POS-Systeme, Web-, mobile und CRM-Systeme usw.
+* [Echtzeit-Kundenprofil](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/unified_profile_architectural_overview/unified_profile_architectural_overview.md):
+* [Identity-Dienst](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/identity_services_architectural_overview/identity_services_architectural_overview.md):
+* [Data Science Workspace](https://docs.adobe.com/content/help/de-DE/experience-platform/data-science-workspace/home.html) in Entwicklermodus: Sie können vorgefertigte Modelle für künstliche Intelligenz (KI) und maschinelles Lernen in Adobe Experience Platform verwenden, um verschiedene Aspekte der Customer Journey zu beeinflussen. Durch das Aufspüren verborgener Erkenntnisse können Sie bessere Vorhersagen für die gesamte Customer Journey treffen, Empfehlungen für die besten nächsten Schritte geben oder umständliche Prozesse automatisieren.
