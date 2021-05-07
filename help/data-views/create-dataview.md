@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
 workflow-type: tm+mt
 source-wordcount: '2795'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -43,13 +43,13 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen
 
 Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schemafelder] unten enthält. Bedenken Sie Folgendes:
 
-* Die bereits enthaltenen Komponenten sind die Standardkomponenten, die erforderlich sind (System generiert).
-* Wir wenden den Filter **[!UICONTROL Enthält standardmäßig Daten]** an, sodass nur Schema-Felder mit Daten angezeigt werden. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie einfach den Filter.
+* Die bereits enthaltenen Komponenten sind die erforderlichen Standardkomponenten (vom System generiert).
+* Wir wenden den Filter **[!UICONTROL Enthält Daten]** standardmäßig an, sodass nur Schemafelder mit Daten angezeigt werden. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie einfach den Filter.
 
 1. Ziehen Sie nun ein Schema, z. B. [!UICONTROL pageTitle], aus der linken Leiste in den Bereich „Metriken“ oder „Dimensionen“.
 
    Sie können dasselbe Schema mehrmals in die Bereiche „Dimensionen“ oder „Metriken“ ziehen und dieselbe Dimension oder Metrik auf unterschiedliche Weise konfigurieren.
-Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension namens &quot;Produktseiten&quot;und eine weitere Dimension &quot;Fehlerseiten&quot;usw. erstellen, indem Sie **[!UICONTROL Komponentenname]** rechts umbenennen. Vom Feld **[!UICONTROL pageTitle]** aus können Sie auch Metriken aus einem Zeichenfolgenwert erstellen. Sie können beispielsweise eine oder mehrere Metriken für **[!UICONTROL Bestellungen]** mit unterschiedlichen Attributionseinstellungen und unterschiedlichen Ein-/Ausschlusswerten erstellen.
+Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension namens „Produktseiten“ und eine weitere Dimension „Fehlerseiten“ usw. erstellen, indem Sie den **[!UICONTROL Komponentennamen]** rechts umbenennen. Vom Feld **[!UICONTROL pageTitle]** aus können Sie auch Metriken aus einem Zeichenfolgenwert erstellen. Sie können beispielsweise eine oder mehrere Metriken für **[!UICONTROL Bestellungen]** mit unterschiedlichen Attributionseinstellungen und unterschiedlichen Ein-/Ausschlusswerten erstellen.
 
    ![](assets/components-tab-3.png)
 
@@ -111,7 +111,7 @@ Sie können beispielsweise eine Dimension aus dem Feld „pageTitle“ erstellen
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
 | [!UICONTROL Von Schreibweise abhängig] | Standard = Ein. Diese Einstellung gilt nur für den Abschnitt [!UICONTROL Werte einschließen/ausschließen]. Damit können Sie angeben, ob bei der Regel zum Ein-/Ausschließen, die Sie anwenden, die Groß-/Kleinschreibung beachtet werden soll. |
-| [!UICONTROL Übereinstimmung] | Ermöglicht die Angabe der Werte, die Sie für den Berichte vor der Zuordnung und den Filtern berücksichtigen möchten (z. B. nur Werte mit der Wortgruppe &quot;error&quot;). Sie können wählen zwischen: **[!UICONTROL Wenn alle Kriterien erfüllt sind]** oder **[!UICONTROL Wenn ein Kriterium erfüllt ist]**. |
+| [!UICONTROL Übereinstimmung] | Hier können Sie angeben, welche Werte Sie vor der Attribution und den Filtern für das Reporting berücksichtigen möchten (z. B. nur Werte mit dem Wort „Fehler“). Sie können wählen zwischen: **[!UICONTROL Wenn alle Kriterien erfüllt sind]** oder **[!UICONTROL Wenn ein Kriterium erfüllt ist]**. |
 | [!UICONTROL Kriterien] | Hier können Sie die Übereinstimmungslogik angeben, die auf eine bestimmte Filterregel angewendet werden soll.<ul><li>**Zeichenfolge**: Enthält die Wortgruppe, Enthält einen Begriff, Enthält alle Begriffe, Enthält keinen Begriff, Enthält die Wortgruppe nicht, Ist gleich, Ist nicht gleich, Beginnt mit, Endet mit</li><li>**Dezimalzahl/Ganzzahl**: gleich, ungleich, größer als, kleiner als, größer oder gleich, kleiner oder gleich</li><li>**Datum**: gleich, ungleich, ist später als, ist früher als, liegt zwischen</li></ul> |
 | [!UICONTROL Übereinstimmungsoperand] | Hiermit können Sie den Übereinstimmungsoperanden angeben, auf den der Übereinstimmungsoperator angewendet werden soll.<ul><li>**Zeichenfolge**: Textfeld</li><li>**Dezimalzahl/Ganzzahl**: Textfeld mit Pfeilen nach oben/unten für numerische Werte</li><li>**Datum**: Auswahl der Tagesgranularität (Kalender)</li><li>**Datum Uhrzeit**: Auswahl der Datums- und Uhrzeitgranularität</li></ul> |
 | [!UICONTROL Regel hinzufügen] | Hier können Sie einen zusätzlichen Übereinstimmungsoperator und -operanden angeben. |
@@ -137,13 +137,13 @@ Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, von der Benutz
 | [!UICONTROL Wenn gezeigt, „kein Wert“ aufrufen...] | Hier können Sie **[!UICONTROL Kein Wert]** in etwas anderes umbenennen. |
 | [!UICONTROL Standardmäßig nicht „Kein Wert“ anzeigen] | Zeigt diesen Wert im Reporting nicht an. |
 | [!UICONTROL Standardmäßig „Kein Wert“ anzeigen] | Zeigt diesen Wert im Reporting an. |
-| [!UICONTROL „Kein Wert“ als Wert behandeln] | Diese Einstellung ersetzt leere Werte in den Daten durch den Text, den Sie unter [!UICONTROL Wenn angezeigt, &quot;Kein Wert&quot; angeben ...]. Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in „Desktop“ umbenennen. Beachten Sie, dass beim Ändern dieses Felds in einen benutzerdefinierten Wert der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt wird. Wenn Sie also z. B. den Wert „Rot“ in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge „Rot“, die in den Daten selbst vorkommen, auch unter demselben von Ihnen angegebenen Zeileneintrag erscheinen. |
+| [!UICONTROL „Kein Wert“ als Wert behandeln] | Diese Einstellung ersetzt leere Werte in den Daten durch den Text, den Sie unter [!UICONTROL Wenn angezeigt, „Kein Wert“ aufrufen...] angeben. Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in „Desktop“ umbenennen. Beachten Sie, dass beim Ändern dieses Felds in einen benutzerdefinierten Wert der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt wird. Wenn Sie also z. B. den Wert „Rot“ in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge „Rot“, die in den Daten selbst vorkommen, auch unter demselben von Ihnen angegebenen Zeileneintrag erscheinen. |
 
 ### Persistenzeinstellungen konfigurieren
 
 ![](assets/persistence.png)
 
-Weitere Informationen finden Sie im Thema [Persistenz](/help/data-views/persistence.md).
+Weitere Informationen finden Sie beim Thema [Persistenz](/help/data-views/persistence.md).
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
@@ -179,28 +179,28 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 | [!UICONTROL Personen] | Metrik | Diese Metrik basiert auf der in [!UICONTROL Verbindung] angegebenen Person-ID. |
 | [!UICONTROL Sitzungen] | Metrik | Diese Metrik basiert auf den unten angegebenen Sitzungseinstellungen. |
 | [!UICONTROL Ereignisse] | Metrik | Diese Metrik stellt die Anzahl der Zeilen aus allen Ereignis-Datensätzen in einer [!UICONTROL Verbindung] dar. |
-| [!UICONTROL Tag] | Dimension | Die Dimension &quot;Tag&quot;zeigt den Tag an, an dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist der erste Tag im Datumsbereich und das letzte Dimensionselement der letzte Tag im Datumsbereich. |
-| [!UICONTROL Woche] | Dimension | Die Dimension &quot;Woche&quot;zeigt die Woche an, in der eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist die erste Woche im Datumsbereich und das letzte Dimensionselement die letzte Woche im Datumsbereich. |
-| [!UICONTROL Monat] | Dimension | Die Dimension &quot;Monat&quot;zeigt den Monat an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist der erste Monat im Datumsbereich und das letzte Dimensionselement der letzte Monat im Datumsbereich. |
-| [!UICONTROL Quartal] | Dimension | Die Dimension &quot;Quartal&quot;zeigt das Quartal an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
-| [!UICONTROL Jahr] | Dimension | Die Dimension &quot;Jahr&quot;zeigt das Jahr an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
-| [!UICONTROL Stunde] | Dimension | Die Dimension &quot;Stunde&quot;gibt die Stunde an, zu der eine bestimmte Metrik aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Stunde im Datumsbereich und das letzte Dimensionselement die letzte Stunde im Datumsbereich. |
-| [!UICONTROL Minute] | Dimension | Die Dimension &quot;Minute&quot;berichtet, in welchem Moment eine bestimmte Metrik aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Minute im Datumsbereich und das letzte Dimensionselement die letzte Minute im Datumsbereich. |
+| [!UICONTROL Tag] | Dimension | Die Dimension „Tag“ zeigt den Tag an, an dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist der erste Tag im Datumsbereich und das letzte Dimensionselement der letzte Tag im Datumsbereich. |
+| [!UICONTROL Woche] | Dimension | Die Dimension „Woche“ zeigt die Woche an, in der eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist die erste Woche im Datumsbereich und das letzte Dimensionselement die letzte Woche im Datumsbereich. |
+| [!UICONTROL Monat] | Dimension | Die Dimension „Monat“ zeigt den Monat an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist der erste Monat im Datumsbereich und das letzte Dimensionselement der letzte Monat im Datumsbereich. |
+| [!UICONTROL Quartal] | Dimension | Die Dimension „Quartal“ zeigt das Quartal an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
+| [!UICONTROL Jahr] | Dimension | Die Dimension „Jahr“ zeigt das Jahr an, in dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
+| [!UICONTROL Stunde] | Dimension | Die Dimension „Stunde“ zeigt die Stunde an, in der eine bestimmte Metrik aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Stunde im Datumsbereich und das letzte Dimensionselement die letzte Stunde im Datumsbereich. |
+| [!UICONTROL Minute] | Dimension | Die Dimension „Minute“ zeigt die Minute an, in der eine bestimmte Metrik aufgetreten ist (abgerundet). Das erste Dimensionselement ist die erste Minute im Datumsbereich und das letzte Dimensionselement die letzte Minute im Datumsbereich. |
 
 ### Optionale Standardkomponenten
 
-Optionale Standardkomponenten sind auf der Registerkarte **[!UICONTROL Standardkomponenten]** verfügbar.
+Optionale Standardkomponenten sind auf dem Tab **[!UICONTROL Standardkomponenten]** verfügbar.
 
 | Name der Komponente | Dimension oder Metrik | Hinweise |
 | --- | --- | --- |
 | [!UICONTROL Sitzung beginnt] | Metrik | Diese Metrik zählt die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung gefiltert. |
 | [!UICONTROL Sitzung endet] | Metrik | Diese Metrik zählt die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Filterdefinition verwendet werden, um bis zum letzten Ereignis jeder Sitzung zu filtern. |
-| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Die Metrik [!UICONTROL Besuchszeit] addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension. |
-| [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | [!UICONTROL Die Zeit pro ] Ereignis fasst die  [!UICONTROL Besuchszeit ] in   Eventbuckets zusammen. |
-| [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | [!UICONTROL Die Zeit pro ] Sitzung erfasst die  [!UICONTROL Besuchszeit ] in   Sessionbuckets. |
-| [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | [!UICONTROL Aufgewendete Zeit pro Person] erfasst die Metrik [!UICONTROL Besuchszeit] in [!UICONTROL Person] Behälter. |
-| [!UICONTROL Batch-ID] | Dimension | Stellt den Experience Platformen-Stapel dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
-| [!UICONTROL Datensatz-ID] | Dimension | Stellt den Dataset der Experience Platform dar, zu dem ein [!UICONTROL Ereignis] gehört. |
+| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Die Metrik [!UICONTROL Aufgewendete Zeit] addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension. |
+| [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | [!UICONTROL Aufgewendete Zeit pro Ereignis] fasst die Metrik [!UICONTROL Aufgewendete Zeit] in [!UICONTROL Ereignis]-Buckets zusammen. |
+| [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | [!UICONTROL Aufgewendete Zeit pro Sitzung] erfasst die Metrik [!UICONTROL Aufgewendete Zeit] in [!UICONTROL Sitzungs]-Buckets. |
+| [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | [!UICONTROL Aufgewendete Zeit pro Person] fasst die Metrik [!UICONTROL Aufgewendete Zeit] in [!UICONTROL Personen]-Buckets zusammen. |
+| [!UICONTROL Batch-ID] | Dimension | Stellt den Experience Platform-Batch dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
+| [!UICONTROL Datensatz-ID] | Dimension | Stellt den Experience Platform-Datensatz dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
 
 ### Filtern von Schemafeldern und Dimensionen/Metriken
 
@@ -215,7 +215,7 @@ Sie können auch nach Datensätzen filtern und danach, ob ein Schemafeld Daten e
 
 ## 3. Hinzufügen eines globalen Filters zu Ihrer Datenansicht
 
-Sie können Filter hinzufügen, die für die gesamte Ansicht der Daten gelten. Dieser Filter wird auf alle Berichte angewendet, die Sie in Workspace ausführen.
+Sie können Filter hinzufügen, die für die gesamte Datenansicht gelten. Dieser Filter wird auf alle Berichte angewendet, die Sie in Workspace ausführen.
 
 1. Klicken Sie auf die Registerkarte [!UICONTROL Einstellungen] in [!UICONTROL Datenansichten].
 1. Ziehen Sie einen Filter aus der Liste in das Feld [!UICONTROL Filter hinzufügen] in der linken Leiste.
