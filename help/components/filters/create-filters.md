@@ -2,11 +2,11 @@
 title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 Der Filtergenerator bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metriken, Dimensionen, Filtern und Ereignissen für das Filtern von Besuchern anhand von Container-Hierarchielogik, Regeln und Operatoren. Mit diesem integrierten Entwicklungstool können Sie einfache oder komplexe Filter erstellen und speichern, mit deren Hilfe Besucherattribute und Aktionen bei Besuchen und Seitenaufrufen identifiziert werden.
 
-Sie können sofortige Filter erstellen, indem Sie jeden beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Filter, Filtervorlage, Datumsbereich) oben im Bedienfeld in die Filter-Dropzone ablegen.
+Sie können unmittelbar Filter erstellen, indem Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Filter, Filtervorlage, Datumsbereich) in die Ablagezone für Filter oben in einem Bedienfeld ablegen.
 
 Komponententypen werden automatisch in Filter umgewandelt. Alternativ können Sie auf das „+“-Symbol im Ablagefeld **[!UICONTROL Filter hinzufügen]** klicken.
 
