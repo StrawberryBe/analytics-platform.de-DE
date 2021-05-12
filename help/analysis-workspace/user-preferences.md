@@ -2,19 +2,14 @@
 title: So legen Sie Benutzereinstellungen in Analysis Workspace fest
 description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen für Benutzer festlegen.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-translation-type: ht
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
-workflow-type: ht
-source-wordcount: '197'
+source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
+workflow-type: tm+mt
+source-wordcount: '188'
 ht-degree: 100%
 
 ---
 
 # Benutzerpräferenzen
-
->[!NOTE]
->
->Diese Funktion kommt bald. Sie ist ab dem 25. März 2021 allgemein verfügbar.
 
 Unter [!UICONTROL Komponenten] > [!UICONTROL Benutzereinstellungen] können Sie die Analysis Workspace-Einstellungen und die zugehörigen Komponenten für Ihre Benutzer verwalten. Benutzereinstellungen gelten für *alle* neuen Projekte oder Bedienfelder.
 
