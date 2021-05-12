@@ -1,18 +1,19 @@
 ---
-description: Erfahren Sie mehr über die verschiedenen Speicheroptionen, einschließlich automatisches Speichern, Speichern unter und Speichern als Vorlage.
+description: Erfahren Sie mehr über die verschiedenen Speicheroptionen, einschließlich automatisches Speichern, Speichern unter, Speichern als Vorlage und Öffnen früherer Versionen.
 title: Projekte speichern
-exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-translation-type: ht
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
-workflow-type: ht
-source-wordcount: '303'
-ht-degree: 100%
+feature: Workspace – Allgemeines
+role: Business Practitioner, Administrator
+exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
+source-git-commit: 18b5a98cf5abb0d552cb7e87ee3098d314c5459a
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 54%
 
 ---
 
 # Projekte speichern
 
-Um Ihre Änderungen an einem Projekt zu speichern, gehen Sie zum Menü **[!UICONTROL Projekt]** in Workspace. Darüber hinaus speichert Adobe in bestimmten Fällen Projekte automatisch.
+Um Ihre Änderungen an einem Projekt zu speichern, gehen Sie zum Menü **[!UICONTROL Projekt]** in Workspace. In Workspace werden Projekte in bestimmten Fällen auch automatisch gespeichert.
 
 ## Projektoptionen speichern {#Save}
 
@@ -20,9 +21,10 @@ Es gibt verschiedene Speicheraktionen, die Sie im Menü **[!UICONTROL Projekt]**
 
 | Aktion | Beschreibung |
 |---|---| 
-| **[!UICONTROL Speichern]** | Speichern Sie die Änderungen an Ihrem Projekt. Wenn das Projekt freigegeben ist, sehen auch die Empfänger des Projekts die Änderungen. Wenn Sie das Projekt zum ersten Mal speichern, werden Sie aufgefordert, dem Projekt einen Namen, eine (optionale) Beschreibung und (optionale) Tags hinzuzufügen. |
+| **[!UICONTROL Speichern]** | Speichern Sie die Änderungen an Ihrem Projekt. Wenn das Projekt freigegeben ist, sehen auch die Empfänger des Projekts die Änderungen. Wenn Sie das Projekt zum ersten Mal speichern, werden Sie aufgefordert, dem Projekt einen Namen, eine (optionale) Beschreibung und (optionale) Tags zuzuweisen. |
+| **[!UICONTROL Mit Hinweisen speichern]** | Bevor Sie das Projekt speichern, fügen Sie Notizen zu den Änderungen im Projekt hinzu. Notizen werden mit der Projektversion gespeichert und stehen allen Editoren unter [!UICONTROL Projekt] > [!UICONTROL Frühere Version öffnen] zur Verfügung. |
 | **[!UICONTROL Speichern unter]** | Erstellen Sie ein Duplikat Ihres Projekts. Das ursprüngliche Projekt bleibt davon unberührt. |
-| **[!UICONTROL Als Vorlage speichern]** | Speichern Sie Ihr Projekt als benutzerdefinierte Vorlage, die für Ihr Unternehmen unter **[!UICONTROL Projekt > Neu]** zur Verfügung steht. |
+| **[!UICONTROL Als Vorlage speichern]** | Speichern Sie Ihr Projekt als [benutzerdefinierte Vorlage](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html), die für Ihr Unternehmen unter **[!UICONTROL Projekt > Neu]** zur Verfügung steht. |
 
 ![](assets/save-project.png)
 
@@ -46,8 +48,25 @@ Der Browser warnt, dass nicht gespeicherte Änderungen verloren gehen. Sie könn
 
 ### Browser-Abstürze oder Zeitüberschreitung der Sitzung
 
-Bei **bestehenden** Projekten wird dem Benutzer nach der Rückkehr zu Workspace ein Modal zur **Projektwiederherstellung** angezeigt. Durch Auswahl von „Ja“ wird das Projekt von der automatisch gespeicherten lokalen Kopie wiederhergestellt. „Nein“ löscht die automatisch gespeicherte lokale Kopie und öffnet die letzte vom Benutzer gespeicherte Version des Projekts.
+Bei **vorhandenen** Projekten sehen Sie bei der Rückkehr zu Workspace ein Modal **Projekterneuerung**. Durch Auswahl von &quot;Ja&quot;wird das Projekt aus der automatisch gespeicherten lokalen Kopie wiederhergestellt. „Nein“ löscht die automatisch gespeicherte lokale Kopie und öffnet die letzte vom Benutzer gespeicherte Version des Projekts.
 
 ![](assets/project-recovery.png)
 
 Bei **neuen** Projekten, die noch nie gespeichert wurden, können nicht gespeicherte Änderungen nicht wiederhergestellt werden.
+
+## Vorherige Version öffnen {#previous-version}
+
+>[!NOTE]
+>
+>Frühere Projektversionen sind derzeit in begrenztem Umfang verfügbar.
+
+So öffnen Sie eine frühere Version eines Projekts:
+
+1. Gehen Sie zu **[!UICONTROL Projekt]** > **[!UICONTROL Frühere Version öffnen]**
+
+   ![](assets/previous-versions.png)
+
+1. Überprüfen Sie die Liste der vorherigen verfügbaren Versionen.
+   [!UICONTROL Es werden ] Timestampand   Editorare angezeigt, zusätzlich zu   Notesif, wenn sie beim Speichern des   Editors hinzugefügt wurden. Versionen ohne Notizen werden 90 Tage lang gespeichert. Versionen mit Notizen werden für 1 Jahr gespeichert.
+1. Wählen Sie eine frühere Version und klicken Sie auf **[!UICONTROL Laden]**.
+Die vorherige Version wird dann mit einer Benachrichtigung geladen. Die vorherige Version wird erst dann zur aktuellen gespeicherten Version Ihres Projekts, wenn Sie auf **[!UICONTROL Speichern]** klicken. Wenn Sie von der geladenen Version weg navigieren, sehen Sie bei der Rückkehr die letzte gespeicherte Version des Projekts.
