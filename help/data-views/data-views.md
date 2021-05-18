@@ -2,11 +2,10 @@
 title: Was ist eine Datenansicht in Customer Journey Analytics?
 description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journey Analytics-Verbindung zu interpretieren sind, beispielsweise Metriken, Dimensionen, Sitzungen usw.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-translation-type: tm+mt
-source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
+source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 97%
+source-wordcount: '1070'
+ht-degree: 95%
 
 ---
 
@@ -22,9 +21,9 @@ Sie können verschiedene Datenansichten für die gleiche Verbindung mit sehr unt
 
 Workspace-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
-## Neue Funktionen in Datenansichten
+## Funktionen zur Ansicht von Daten
 
-Die neueste Aktualisierung der Datenansichten bietet Ihnen viel mehr Flexibilität bei den Nutzungsmöglichkeiten von Datenansichten. Mit diesen Erweiterungen können Sie **die Schema-Elementeinstellungen in Datenansichten spontan ändern, ohne dass das Schema in Adobe Experience Platform geändert oder Ihre Customer Journey Analytics-Umgebung erneut implementiert werden muss**.
+Mit Data Ansichten können Sie spontan die Einstellungen des Schema-Elements ändern, ohne das Schema in Adobe Experience Platform ändern oder Ihre CJA-Umgebung erneut implementieren zu müssen.
 
 * **Sie können eine Komponente von einer Metrik in eine Dimension ändern und umgekehrt**. Sie können Metriken aus Zeichenfolgenfeldern oder Dimensionen aus numerischen Feldern erstellen. Dies erleichtert Ihnen das Leben, da Sie nicht für jede gewünschte Metrik ein numerisches Feld in Ihrem XDM-Schema erstellen müssen. Stattdessen können Sie sie spontan im Dialog „Dateiansichten“ erstellen. Im Folgenden finden Sie einige Beispiele:
    * **Erstellen Sie eine oder mehrere Dimensionen und/oder eine Dimension aus einem Schema-Feld**. Es ist eine Eins-zu-viele-Beziehung. Sie können beispielsweise eine oder mehrere Umsatzmetriken und/oder eine oder mehrere Umsatzdimensionen aus einem einzigen Schemafeld erstellen.
@@ -78,5 +77,5 @@ Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, 
 ## Nächste Schritte
 
 * [Erstellen von Datenansichten](/help/data-views/create-dataview.md)
-* [Anwendungsfälle zur Datenansicht](/help/data-views/data-views-usecases.md)
+* [Anwendungsfälle von Datenansichten](/help/data-views/data-views-usecases.md)
 * Details zur Funktionsweise von [Persistenz](/help/data-views/persistence.md)
