@@ -2,11 +2,11 @@
 title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2795'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 
 | Name der Komponente | Dimension oder Metrik | Hinweise |
 | --- | --- | --- |
-| [!UICONTROL Personen] | Metrik | Diese Metrik basiert auf der in [!UICONTROL Verbindung] angegebenen Person-ID. |
+| [!UICONTROL Personen] | Metrik | Diese Metrik basiert auf der in einer [!UICONTROL Verbindung] angegebenen Personen-ID. |
 | [!UICONTROL Sitzungen] | Metrik | Diese Metrik basiert auf den unten angegebenen Sitzungseinstellungen. |
 | [!UICONTROL Ereignisse] | Metrik | Diese Metrik stellt die Anzahl der Zeilen aus allen Ereignis-Datensätzen in einer [!UICONTROL Verbindung] dar. |
 | [!UICONTROL Tag] | Dimension | Die Dimension „Tag“ zeigt den Tag an, an dem eine bestimmte Metrik aufgetreten ist. Das erste Dimensionselement ist der erste Tag im Datumsbereich und das letzte Dimensionselement der letzte Tag im Datumsbereich. |
