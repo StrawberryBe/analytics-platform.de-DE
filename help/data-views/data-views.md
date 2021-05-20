@@ -5,7 +5,7 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -15,15 +15,15 @@ Eine Datenansicht befindet sich auf einer Customer Journey Analytics-[Verbindung
 
 >[!NOTE]
 >
->Alle Einstellungen, die Sie in einer Datenansicht auswählen oder ändern, sind rückwirkend und nicht zerstörerisch. Mit anderen Worten, sie ändern Ihre zugrunde liegenden Daten nicht dauerhaft.
+>Alle Einstellungen, die Sie in einer Datenansicht auswählen oder ändern, sind rückwirkend und nicht zerstörerisch. Das heißt, dass sie Ihre zugrunde liegenden Daten nicht dauerhaft ändern.
 
 Sie können verschiedene Datenansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Außerdem können Sie Datenansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. erstellen. Beispielsweise könnten Sie eine Datenansicht haben, in der alle Dimensionen auf [!UICONTROL Letztkontakt] eingestellt sind, und gleichzeitig eine andere Datenansicht (basierend auf demselben Datensatz), in der alle Dimensionen auf [!UICONTROL Erstkontakt] eingestellt sind.
 
 Workspace-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
-## Funktionen zur Ansicht von Daten
+## Datenansichtsfunktionen
 
-Mit Data Ansichten können Sie spontan die Einstellungen des Schema-Elements ändern, ohne das Schema in Adobe Experience Platform ändern oder Ihre CJA-Umgebung erneut implementieren zu müssen.
+Mit Datenansichten können Sie spontan die Schemaelementeinstellungen ändern, ohne das Schema in Adobe Experience Platform ändern oder Ihre CJA-Umgebung neu implementieren zu müssen.
 
 * **Sie können eine Komponente von einer Metrik in eine Dimension ändern und umgekehrt**. Sie können Metriken aus Zeichenfolgenfeldern oder Dimensionen aus numerischen Feldern erstellen. Dies erleichtert Ihnen das Leben, da Sie nicht für jede gewünschte Metrik ein numerisches Feld in Ihrem XDM-Schema erstellen müssen. Stattdessen können Sie sie spontan im Dialog „Dateiansichten“ erstellen. Im Folgenden finden Sie einige Beispiele:
    * **Erstellen Sie eine oder mehrere Dimensionen und/oder eine Dimension aus einem Schema-Feld**. Es ist eine Eins-zu-viele-Beziehung. Sie können beispielsweise eine oder mehrere Umsatzmetriken und/oder eine oder mehrere Umsatzdimensionen aus einem einzigen Schemafeld erstellen.
@@ -60,8 +60,8 @@ Mit Data Ansichten können Sie spontan die Einstellungen des Schema-Elements än
 Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Projektebene überschrieben werden, andere nicht.
 
 * [!UICONTROL Lookback-Fenster]
-* Metrikzuordnung
-* Gibt an, ob Benutzer den Zeileneintrag [!UICONTROL Kein Wert] in einem Bericht sehen
+* Attribution von Metriken
+* Ob Benutzer den Zeileneintrag [!UICONTROL Kein Wert] in einem Bericht sehen
 
 ## Einstellungen für die Datenansicht, die Sie in Workspace nicht überschreiben können
 
@@ -72,7 +72,7 @@ Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Pro
 
 ## Löschen von Datenansichten
 
-Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle Workspace-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
+Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle [!UICONTROL Workspace]-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
 
 ## Nächste Schritte
 
