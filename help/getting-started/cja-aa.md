@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -43,11 +43,11 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-| Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können mit Data Connector für Analytics-Klassifizierungen in Experience Platform und in Customer Journey Analytics importiert werden. Lookup-Datensätze können auch direkt in Adobe Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
+| Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können in Experience Platform und Customer Journey Analytics mit dem Analytics Classifications Data Connector importiert werden. Lookup-Datensätze können auch direkt in Adobe Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
 | Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
 | Kundenattribute | Jetzt als „Profildatensätze“ bezeichnet, werden sie nicht automatisch aus Experience Cloud importiert, sondern müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
 | Geräte-, Browser- und Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein Adobe Experience Platform-Datensatz bestimmte XDM-Schema-Felder enthält und der XDM-Erlebnisereignis-Klasse entspricht. |
-| Dimensionen und Metriken zu Einstiegen, Ausstiegen und Besuchszeit | Unterstützt (Eintritte und Ausstiege werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
+| Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
 | Marketing-Kanäle | Daten von Marketing-Kanälen werden jetzt über Analytics Data Connector an Customer Journey Analytics weitergeleitet. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
 | Produktvariable | In Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem Datensatzschema verwenden, um die Anforderungen dieses Anwendungsfalls zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf einzelne Variablen beschränkt. |
@@ -62,7 +62,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Media Analytics | Mediendaten stehen als Teil von Analytics Data Connector zur Verfügung. |
 | Merchandising-eVars | Das Verhalten von Merchandising-eVars kann mithilfe von Dimensionen innerhalb eines Objectarrays erreicht werden, sofern eine Merchandising-eVar nicht für die Verwendung von Persistenz konfiguriert ist. Derzeit ist die Persistenz für die Merchandising-Dimension nicht verfügbar. |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“, „Analytics for Target (A4T)“ und „Gleichzeitige Medienbesucher“ werden nicht unterstützt. |
-| Verarbeitungsregeln | Auf Analytics Data Connector-basierte Datensätze werden weiterhin Verarbeitungsregeln angewendet. [Datenvorgabefunktionen in Adobe Experience ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Platform können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform gesendet werden. |
+| Verarbeitungsregeln | Auf Analytics Data Connector-basierte Datensätze werden weiterhin Verarbeitungsregeln angewendet. [Datenvorbereitungsfunktionen in Adobe Experience ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Platform können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform übermittelt werden. |
 
 ## Derzeit nicht unterstützt, aber geplant
 
