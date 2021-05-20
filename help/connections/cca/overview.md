@@ -2,11 +2,11 @@
 title: Überblick über die kanalübergreifende Analyse
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 * Bei der feldbasierten Suche werden Felder nicht kombiniert oder verknüpft.
 * Das Feld für die vorübergehende ID sollte nur einen ID-Typ enthalten (also IDs aus einem einzigen Namespace). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
 * Wenn mehrere Ereignis mit demselben Zeitstempel für dieselbe permanente ID auftreten, jedoch unterschiedliche Werte im Feld für die vorübergehende ID vorliegen, wird die feldbasierte Zuordnung auf Grundlage der alphabetischen Reihenfolge gewählt. Wenn also eine permanente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignis „Bob“ und das andere „Ann“ angibt, wählt die feldbasierte Zuordnung „Ann“.
-* In Analytics werden alle beständigen ID-Werte für einen Zeitraum von 1 Kanal verfolgt (TTL = 1 Jahr). Wenn ein Gerät länger als ein Jahr lang keine Aktivität hat und Beginn erneut Aktivität haben, werden die neuen Ereignis mit einem anonymen Benutzer verknüpft, bis der Benutzer erneut identifiziert wird (z. B. über eine neue Anmeldung).
+* In Analytics werden alle beständigen ID-Werte für einen Zeitraum von 1 Jahr verfolgt (TTL = 1 Jahr). Wenn ein Gerät länger als ein Jahr keine Aktivität aufweist und danach erneut Aktivität verzeichnet, werden die neuen Ereignisse mit einer anonymen Person verknüpft, bis der Benutzer wieder identifiziert wird (z. B. über eine erneute Anmeldung).
 
 
 ## Aktivieren der kanalübergreifenden Analyse
