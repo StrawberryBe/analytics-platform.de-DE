@@ -2,11 +2,10 @@
 title: Anwendungsfälle für Datenansichten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics zeigen
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '342'
-ht-degree: 100%
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 90%
 
 ---
 
@@ -40,6 +39,14 @@ Zuvor wurden Ganzzahlen in Customer Journey Analytics automatisch als Metriken b
 1. Sie können jetzt [!UICONTROL Wertgruppierung] hinzufügen, um diese Dimension in Berichten in zusammengefasster Form darzustellen. (Ohne Gruppierung würde jede Instanz dieser Dimension als Zeilenelement im Workspace-Reporting angezeigt.)
 
    ![](assets/bucketing.png)
+
+## Numerische Dimensionen als &quot;Metriken&quot;in Flussdiagrammen verwenden
+
+Sie können eine numerische Dimension verwenden, um &quot;Metriken&quot;in Ihre [!UICONTROL  Fluss] -Visualisierung zu übertragen. Das folgende Beispiel zeigt [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
+
+![](assets/flow.png)
+
+## Ein- oder Ausschließen von Metrikwerten
 
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
