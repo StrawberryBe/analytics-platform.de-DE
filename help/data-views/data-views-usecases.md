@@ -2,10 +2,10 @@
 title: Anwendungsfälle für Datenansichten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics zeigen
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 7386645aa63ddbf1fcc8835037c13382e117ef1e
+source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 59%
+source-wordcount: '707'
+ht-degree: 46%
 
 ---
 
@@ -53,14 +53,36 @@ Sie können eine numerische Dimension verwenden, um &quot;Metriken&quot;in Ihre 
 
 Sie können Ereignisse so filtern, dass nur das angezeigt wird, was Sie sehen möchten. Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten , um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 Dollar generierten. Wenn Sie also eine Bestellung haben, die einen 50-Dollar-Produktkauf und einen 25-Dollar-Produktkauf beinhaltet, würden wir nur den 25-Dollar-Produktkauf entfernen, nicht die gesamte Bestellung.
 
-1. Ziehen Sie auf der Registerkarte Datenansichten [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) das Schemafeld [!UICONTROL Bestellungen] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
+1. Ziehen Sie auf der Registerkarte Datenansichten [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 1. Wählen Sie die Metrik aus und konfigurieren Sie rechts Folgendes:
-   1. Wählen Sie unter [!UICONTROL Format] [!UICONTROL Währung] aus.
-   1. Wählen Sie unter [!UICONTROL Currency] die Option USD aus.
-   1. Aktivieren Sie unter [!UICONTROL Werte einschließen/ausschließen] das Kontrollkästchen neben [!UICONTROL Ein-/Ausschlusswerte festlegen].
-   1. Wählen Sie unter [!UICONTROL Match] [!UICONTROL Wenn alle Kriterien erfüllt sind].
-   1. Wählen Sie unter [!UICONTROL Kriterien] [!UICONTROL ist größer oder gleich] aus.
-   1. Geben Sie &quot;50&quot;als Wert an.
+a. Wählen Sie unter [!UICONTROL Format] [!UICONTROL Währung] aus.
+b. Wählen Sie unter [!UICONTROL Currency] die Option USD aus.
+c. Aktivieren Sie unter [!UICONTROL Werte einschließen/ausschließen] das Kontrollkästchen neben [!UICONTROL Ein-/Ausschlusswerte festlegen].
+d. Wählen Sie unter [!UICONTROL Match] [!UICONTROL Wenn alle Kriterien erfüllt sind].
+e. Wählen Sie unter [!UICONTROL Kriterien] [!UICONTROL ist größer oder gleich] aus.
+f. Geben Sie &quot;50&quot;als Wert an.
+
+Mit diesen neuen Einstellungen können Sie nur hochwertige Umsätze anzeigen und alles unter 50 Euro herausfiltern.
+
+## 5. Verwenden Sie die Einstellung [!UICONTROL Keine Wertoptionen] .
+
+Möglicherweise hat Ihr Unternehmen Zeit damit verbracht, Ihre Benutzer in Berichten mit &quot;Nicht angegeben&quot;zu vertraut zu machen. Der Standardwert in Datenansichten ist &quot;Kein Wert&quot;. Sie können in der Benutzeroberfläche für Datenansichten jetzt [&quot;Kein Wert&quot;in &quot;Nicht angegeben&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) umbenennen.
+
+## 6. Verwenden Sie die Funktion [!UICONTROL Duplizieren] .
+
+Das Duplizieren einer Metrik und anschließende Ändern spezifischer Einstellungen ist eine einfache Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen.
+
+Wählen Sie einfach die Einstellung Duplizieren unter dem Namen der Metrik oder Dimensionen oben rechts aus:
+
+![](assets/duplicate.png)
+
+## Erstellen mehrerer Metriken mit unterschiedlichen Attributionseinstellungen
+
+Erstellen Sie mit der oben erwähnten Funktion [!UICONTROL Duplizieren] eine Reihe von Umsatzmetriken mit verschiedenen Attributionseinstellungen wie [!UICONTROL Erstkontakt], [!UICONTROL Letztkontakt] und [!UICONTROL Algorithmus].
+
+Vergessen Sie nicht, jede Metrik umzubenennen, um die Unterschiede widerzuspiegeln, z. B. &quot;Algorithmischer Umsatz&quot;:
+
+![](assets/algo-revenue.png)
 
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
