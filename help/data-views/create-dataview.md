@@ -2,10 +2,10 @@
 title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
 workflow-type: tm+mt
-source-wordcount: '2812'
-ht-degree: 99%
+source-wordcount: '2848'
+ht-degree: 98%
 
 ---
 
@@ -71,9 +71,9 @@ Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension nam
 | [!UICONTROL Feldname] | Der Name des Schemafelds. |
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
 | [!UICONTROL Datensatz] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Feldtyp die Komponente stammt (z. B. String, Integer). Dieses Feld kann mehrere Datensätze enthalten. |
-| [!UICONTROL Typ des Schemas] | Gibt an, ob es sich bei der Komponente um eine Zeichenfolge, eine Ganzzahl usw. handelt. |
+| [!UICONTROL Datentyp des Schemas] | Gibt an, ob es sich bei der Komponente um eine Zeichenfolge, eine Ganzzahl usw. handelt. |
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [CJA-API](https://adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Sie können auf das Bearbeitungssymbol klicken und diese Komponenten-ID ändern. Durch das Ändern dieser Komponenten-ID werden jedoch alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, beschädigt.<br>Wenn Sie jemals eine andere Datenansicht erstellen, die ein anderes Feld für eine pageTitle-Dimension verwendet, können Sie diese umbenennen und die Dimension datenansichtübergreifend kompatibel machen. |
-| [!UICONTROL Path] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
+| [!UICONTROL Schemapfad] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
 | [!UICONTROL Komponente in Reports verbergen] | Standard = aus. Ermöglicht es Ihnen, die Komponente aus der Datenansicht auszublenden, wenn sie im Reporting verwendet wird. Dies wirkt sich nicht auf Berechtigungen aus, sondern nur auf die Kuratierung von Komponenten. Mit anderen Worten, Sie können die Komponente im Reporting für Nicht-Administratoren ausblenden. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
 
 ### Formateinstellungen konfigurieren
@@ -121,6 +121,7 @@ Sie können beispielsweise eine Dimension aus dem Feld „pageTitle“ erstellen
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
+| [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. |
 | [!UICONTROL Instanzen zählen] | Hier können Sie festlegen, ob ein numerisches Feld oder ein Datumsfeld, das als Metrik verwendet wird, zählen soll, wie oft es gesetzt wurde, anstatt den Wert selbst.<br> Ob Sie die Instanzen eines numerischen Felds aufaddieren möchten und einfach die Anzahl der *Festlegungen* eines Felds aufaddieren möchten, anstatt dessen tatsächlichen Wert zu nutzen.<br>Dies ist beispielsweise hilfreich, um eine [!UICONTROL Bestellmetrik] aus einem [!UICONTROL Umsatzfeld] zu erstellen. Wenn der Umsatz festgelegt wurde, geht es darum, anstelle des numerischen Umsatzbetrags eine einzelne Bestellung zu zählen. |
 
 ### Einstellungen für [!UICONTROL Optionen ohne Werte] konfigurieren
