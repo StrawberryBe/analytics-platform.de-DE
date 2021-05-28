@@ -2,10 +2,10 @@
 title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -27,9 +27,9 @@ Das Erstellen einer Datenansicht umfasst entweder das Erstellen von Metriken und
 | [!UICONTROL Beschreibung] | Eine detaillierte Beschreibung ist nicht zwingend erforderlich, wird jedoch empfohlen. |
 | [!UICONTROL Zeitzone] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. |
 | [!UICONTROL Tags] | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
-| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen, und sie werden so in jedem Workspace-Projekt angezeigt, das auf dieser Datenansicht basiert. Container werden in Filtern und Fallout/Fluss usw. verwendet, um zu definieren, wie breit oder schmal der Umfang oder Kontext ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) |
-| [!UICONTROL Name des Personen-Containers...] | [!UICONTROL Person] (Standard). Der [!UICONTROL Person]-Container enthält sämtliche Besuche und Seitenansichten für Besucher innerhalb eines bestimmten Zeitrahmens. Sie können diesen Begriff in „Benutzer“ oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
-| [!UICONTROL Der Name des Sitzungs-Containers lautet...] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Begriff in „Besuch“ oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
+| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen, um zu bestimmen, wie sie in einem Workspace-Projekt angezeigt werden, das auf dieser Datenansicht basiert. Container werden in Filtern, Fallout/Fluss usw. verwendet, um zu definieren, wie breit der Umfang oder Kontext ist oder wie stark er ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) |
+| [!UICONTROL Name des Personen-Containers...] | [!UICONTROL Person] (Standard). Der [!UICONTROL Person]-Container enthält sämtliche Besuche und Seitenansichten für Besucher innerhalb eines bestimmten Zeitrahmens. Sie können diesen Container in &quot;Benutzer&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
+| [!UICONTROL Der Name des Sitzungs-Containers lautet...] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in &quot;Besuch&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Der Name des Ereignis-Containers ist...] | [!UICONTROL Ereignis] (Standard). Der [!UICONTROL Ereignis]-Container definiert, welche Seitenereignisse von einem Filter eingeschlossen oder ausgeschlossen werden sollen. |
 
 Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen. Sie können auch Standardkomponenten verwenden.
@@ -43,7 +43,7 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen
 Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schemafelder] unten enthält. Bedenken Sie Folgendes:
 
 * Die bereits enthaltenen Komponenten sind die erforderlichen Standardkomponenten (vom System generiert).
-* Wir wenden den Filter **[!UICONTROL Enthält Daten]** standardmäßig an, sodass nur Schemafelder mit Daten angezeigt werden. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie einfach den Filter.
+* Adobe wendet den Filter **[!UICONTROL Enthält standardmäßig Daten]** an, sodass nur Schemafelder mit Daten angezeigt werden. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie den Filter.
 
 1. Ziehen Sie nun ein Schema, z. B. [!UICONTROL pageTitle], aus der linken Leiste in den Bereich „Metriken“ oder „Dimensionen“.
 
