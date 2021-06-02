@@ -3,7 +3,7 @@ title: So legen Sie Benutzereinstellungen in Analysis Workspace fest
 description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen für Benutzer festlegen.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
 ht-degree: 100%
 
