@@ -3,9 +3,9 @@ title: Überblick über Customer Journey Analytics
 description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Workspace mit Daten aus Experience Platform verwenden können.
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1257'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unte
 
 >[!NOTE]
 >
->Sie können keine einzelnen Metriken oder Dimensionen in Customer Journey Analytics zulassen, wie Sie es im herkömmlichen Adobe Analytics tun können. Metriken und Dimensionen können in der Ansicht von Daten geändert werden und unterliegen daher Veränderungen in CJA, wodurch auch der Berichte rückwirkend verändert wird.
+>Einzelne Metriken oder Dimensionen in Customer Journey Analytics können nicht wie im herkömmlichen Adobe Analytics genehmigt werden. Metriken und Dimensionen können in Datenansichten geändert werden und können sich daher auch in CJA ändern, wodurch sich auch das Reporting rückwirkend ändert.
 
 ### Benutzerzugriff
 
