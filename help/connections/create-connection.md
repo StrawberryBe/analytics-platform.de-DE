@@ -2,11 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: ht
-source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: ht
-source-wordcount: '1974'
-ht-degree: 100%
+source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+workflow-type: tm+mt
+source-wordcount: '1973'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 100%
 
 Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in [!UICONTROL Workspace] integrieren. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Workspace] herstellen.
 
-Eine Videoübersicht finden Sie [hier](https://docs.adobe.com/content/help/de-DE/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html).
+Eine Videoübersicht finden Sie [hier](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en).
 
 Zum Erstellen einer CJA-Verbindung benötigen Sie die folgenden Berechtigungen:
 
@@ -137,7 +136,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
 
 1. Die Abfrage würde wie folgt aussehen: <br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
