@@ -2,10 +2,10 @@
 title: Anwendungsfälle für Datenansichten in Customer Journey Analytics
 description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics zeigen
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 47%
+source-wordcount: '763'
+ht-degree: 42%
 
 ---
 
@@ -53,7 +53,9 @@ Sie können eine numerische Dimension verwenden, um &quot;Metriken&quot;in Ihre 
 
 ## 4. Unterereignisfilterung durchführen
 
-Sie können Ereignisse so filtern, dass nur das angezeigt wird, was Sie sehen möchten. Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten , um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 Dollar generierten. Wenn Sie also eine Bestellung haben, die einen 50-Dollar-Produktkauf und einen 25-Dollar-Produktkauf beinhaltet, würden wir nur den 25-Dollar-Produktkauf entfernen, nicht die gesamte Bestellung.
+Diese Funktion gilt speziell für Array-basierte Felder. Die Ein-/Ausschlussfunktion ermöglicht das Filtern auf der Ebene der Unterereignisse, während im Filter-Builder erstellte Filter (Segmente) nur die Filterung auf der Ereignisebene ermöglichen. So können Sie die Filterung von Unterereignissen durchführen, indem Sie Einschließen/Ausschließen in Datenansichten verwenden und dann auf der Ereignisebene in einem Filter auf diese neue Metrik/Dimension verweisen.
+
+Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten , um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 Dollar generierten. Wenn Sie also eine Bestellung haben, die einen 50-Dollar-Produktkauf und einen 25-Dollar-Produktkauf beinhaltet, würden wir nur den 25-Dollar-Produktkauf entfernen, nicht die gesamte Bestellung.
 
 1. Ziehen Sie auf der Registerkarte Datenansichten [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 1. Wählen Sie die Metrik aus und konfigurieren Sie rechts Folgendes:
@@ -69,6 +71,8 @@ Mit diesen neuen Einstellungen können Sie nur hochwertige Umsätze anzeigen und
 ## 5. Verwenden Sie die Einstellung [!UICONTROL Keine Wertoptionen] .
 
 Möglicherweise hat Ihr Unternehmen Zeit damit verbracht, Ihre Benutzer in Berichten mit &quot;Nicht angegeben&quot;zu vertraut zu machen. Der Standardwert in Datenansichten ist &quot;Kein Wert&quot;. Sie können in der Benutzeroberfläche für Datenansichten jetzt [&quot;Kein Wert&quot;in &quot;Nicht angegeben&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) umbenennen.
+
+Ein weiteres Beispiel wäre eine Dimension für die Registrierung eines Mitgliedschaftsprogramms. In diesem Fall können Sie &quot;Kein Wert&quot;in &quot;Registrierung für kein Mitgliedschaftsprogramm&quot;umbenennen.
 
 ## 6. Erstellen Sie mehrere Metriken mit unterschiedlichen [!UICONTROL Attributionseinstellungen].
 
