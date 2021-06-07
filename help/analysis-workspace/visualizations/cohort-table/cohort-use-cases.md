@@ -2,13 +2,12 @@
 description: Anwendungsfälle für die Kohortenanalyse.
 keywords: Analysis Workspace
 title: Anwendungsfälle für die Kohortenanalyse
-feature: Reports & Analytics Basics
+feature: Grundlagen zu Reports & Analytics
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '964'
 ht-degree: 81%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Anwendungsfälle für die [!UICONTROL Kohortenanalyse].
 
@@ -33,7 +32,7 @@ Sie können eine [!UICONTROL Kohortenanalyse] über sechs Monate erstellen:
 
 **Rückkehrmetrik**: Sitzungen oder Starts
 
-Besucher zählen in den nachfolgenden Monaten erst dann als  *`engaged`*, wenn eine Sitzung stattgefunden hat oder wenn sie die App gestartet haben. Die [!UICONTROL Kohortenanalyse] zeigt Ihnen dann Nutzungsmuster, bei denen *`App Install`* immer in Monat 0 auftritt. Vielleicht stellen Sie fest, dass die Verwendung im zweiten Monat zurückgeht, unabhängig vom Zeitpunkt der Installation der Anwendung durch die Benutzer. (Für diejenigen, die die Anwendung im Januar 2015 installiert haben, ist der zweite Monat der März 2015. Für diejenigen, die die Anwendung im Februar 2015 installiert haben, ist der zweite Monat der April 2015 usw.) Diese Analyse bietet Ihnen die Möglichkeit, im zweiten Monat nach der Installation der Anwendung an alle Benutzer eine E-Mail oder eine Push-Nachricht zu senden, um sie daran zu erinnern, die Anwendung zu verwenden.
+Besucher zählen in den nachfolgenden Monaten erst dann als *`engaged`*, wenn eine Sitzung stattgefunden hat oder wenn sie die App gestartet haben. Die [!UICONTROL Kohortenanalyse] zeigt Ihnen dann Nutzungsmuster, bei denen *`App Install`* immer in Monat 0 auftritt. Vielleicht stellen Sie fest, dass die Verwendung im zweiten Monat zurückgeht, unabhängig vom Zeitpunkt der Installation der Anwendung durch die Benutzer. (Für diejenigen, die die Anwendung im Januar 2015 installiert haben, ist der zweite Monat der März 2015. Für diejenigen, die die Anwendung im Februar 2015 installiert haben, ist der zweite Monat der April 2015 usw.) Diese Analyse bietet Ihnen die Möglichkeit, im zweiten Monat nach der Installation der Anwendung an alle Benutzer eine E-Mail oder eine Push-Nachricht zu senden, um sie daran zu erinnern, die Anwendung zu verwenden.
 
 ## Anwendungsfall: Abonnement
 
@@ -51,9 +50,9 @@ Da deutlich wird, dass Sie im dritten Monat keine potenziellen Kunden verlieren 
 
 Einige Monate später erstellen Sie erneut einen Kohortenanalysebericht. Für Kohorten, die nach dem Start der Kampagne gebildet wurden, ist die Konversion zu zahlungspflichtigen Creative Cloud-Abonnements von 4–5 % auf 13–14 % gestiegen, was pro Kohorte für mehrere hunderttausend Dollar steht, für alle monatlichen Kohorten, die ab diesem Punkt den dritten Monat erreichen.
 
-## Komplexe Kohorten-Filter
+## Anwendungsfall für komplexe Kohortenfilter
 
-Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten für die Zielgruppe zu identifizieren, sollen sehr spezifische Kohortengruppen gebildet werden. Mithilfe der erweiterten Kriterien [!UICONTROL Inklusion] und [!UICONTROL Rückgabe] in [!UICONTROL Kohorte] können sie genau die richtigen Kohortengruppen mit mehreren Metriken und Filtern definieren, um leistungsschwache Kundengruppen zu identifizieren, um sie mit Promotions und Angeboten zur Erhöhung der Buchungen Zielgruppe.
+Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten für die Zielgruppe zu identifizieren, sollen sehr spezifische Kohortengruppen gebildet werden. Mithilfe der erweiterten [!UICONTROL Aufnahme]- und [!UICONTROL Rückgabe]-Kriterien in [!UICONTROL Kohortentabellen]-Tabellen können genau die richtigen Kohortengruppierungen mit mehreren Metriken und Filtern definiert werden, um leistungsschwache Kundengruppen zu identifizieren und diese mit Promotionen und Angeboten zur Steigerung der Buchungen anzusprechen.
 
 ## Anwendungsfall zur Annahme der App-Version
 
@@ -65,8 +64,8 @@ Ein internationales Medienunternehmen verwendet Zielgruppen-Kampagnen, um Benutz
 
 ## Anwendungsfall für Produktstart
 
-Ein großer Bekleidungshändler hat viele spezifische Filter, die einen großen Teil des Umsatzes für sein Geschäft generieren. Jeder Filter hat spezielle Produkte, die unter Berücksichtigung des Filters entworfen und erstellt wurden. Mit jedem Produkt-Launch soll identifiziert werden, wie das neue Produkt im Laufe der Zeit den Verkauf in verschiedenen Kohorten gefördert hat. Mithilfe der neuen Einstellung [!UICONTROL Latenztabelle] in [!UICONTROL Kohortentabelle] können sie das Verhalten und den Umsatz eines bestimmten Kundenfilters vor und nach dem Start analysieren. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei den Kunden weniger beliebt sind.
+Ein großer Bekleidungshändler verfügt über viele spezifische Kundenfilter, die einen großen Teil des Umsatzes für sein Geschäft fördern. Für jeden Filter werden spezifische Produkte unter Berücksichtigung des Filters entwickelt und erstellt. Mit jedem Produkt-Launch soll identifiziert werden, wie das neue Produkt im Laufe der Zeit den Verkauf in verschiedenen Kohorten gefördert hat. Mit der neuen Einstellung [!UICONTROL Latenztabelle] in [!UICONTROL Kohortenanalyse] können das Verhalten und der Umsatz eines bestimmten Kundenfilters vor und nach der Markteinführung analysiert werden. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei den Kunden weniger beliebt sind.
 
 ## Anwendungsfall für individuelle Treue – die meisten treuen Benutzer  
 
-Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mit der neuen Einstellung [!UICONTROL Rollierende Berechnung] in [!UICONTROL Kohortenberechnung] konnten sie jedoch treue Filter analysieren und herausfinden, welche Reisenden im Monat über Monat Wiederholungskäufer waren. So konnten diese Reisenden dann mit Vorteilen und Vergünstigungen für ihre Treue belohnt werden. Durch die Umstellung des Kohortentyps von Retention auf Curn konnten sie außerdem feststellen, welche Kunden keine monatlich wiederholten Käufer waren, und diese Filter mit Promotions Zielgruppe werden, um sich wieder mit ihnen zu beschäftigen und sicherzustellen, dass sie auch in Zukunft treue Kunden bleiben.
+Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mit der neuen Einstellung [!UICONTROL Rollierende Berechnung] in [!UICONTROL Kohortenanalyse] konnten jedoch loyale Kundenfilter analysiert und Monat für Monat bestimmt werden, welche Reisenden erneut Kunden waren. So konnten diese Reisenden dann mit Vorteilen und Vergünstigungen für ihre Treue belohnt werden. Darüber hinaus konnten sie durch Umstellung des Kohortentyps von Bindung auf Abwanderung auch identifizieren, welche Kunden monatlich keine wiederkehrenden Käufer waren, und diese Filter mit Promotions ansprechen, um sie erneut anzusprechen und sicherzustellen, dass sie in Zukunft treue Kunden bleiben.
