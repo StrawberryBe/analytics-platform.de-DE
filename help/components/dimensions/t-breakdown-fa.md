@@ -3,11 +3,10 @@ description: Schlüsseln Sie Dimensionen und Dimensionselemente in Analysis Work
 keywords: Analysis Workspace
 title: Dimensionen aufschlüsseln
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
-translation-type: tm+mt
-source-git-commit: c086f21e1a13ef4dec4e1be63d9f462bfb32f2ea
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 79%
+source-wordcount: '232'
+ht-degree: 76%
 
 ---
 
@@ -15,18 +14,18 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Schlüsseln Sie Dimensionen und Dimensionselemente in Analysis Workspace auf.
 
-Daten auf unbegrenzte Weise für Ihre spezifischen Anforderungen aufschlüsseln; Erstellen Sie Abfragen mithilfe relevanter Metriken, Dimensionen, Filter, Zeitlinien und anderer Aufschlüsselungswerte für die Analyse.
+Aufschlüsseln Ihrer Daten auf unbegrenzte Weise für Ihre spezifischen Anforderungen; Abfragen mit relevanten Metriken, Dimensionen, Filtern, Zeitlinien und anderen Analyseaufschlüsselungswerten erstellen.
 
 1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle.
 1. Klicken Sie in der Datentabelle mit der rechten Maustaste auf einen Zeileneintrag und wählen Sie **[!UICONTROL Aufschlüsselung]** > *`<item>`* aus.
 
    ![Ergebnis des Schritts](assets/fa_data_table_actions.png)
 
-   Sie können Metriken über ausgewählte Zeiträume nach Dimensionselementen oder Audiencen-Filtern unterteilen. Sie können auch noch granularer aufschlüsseln.
+   Sie können Metriken nach Dimensionselementen oder Zielgruppenfiltern über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
 
    >[!NOTE]
    >
@@ -36,7 +35,7 @@ Daten auf unbegrenzte Weise für Ihre spezifischen Anforderungen aufschlüsseln;
 
 >[!VIDEO](https://video.tv.adobe.com/v/23971)
 
-**Video: Aufschlüsselungen der Dimensionen**
+**Video: Aufschlüsselung der Dimensionen**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23969)
 
