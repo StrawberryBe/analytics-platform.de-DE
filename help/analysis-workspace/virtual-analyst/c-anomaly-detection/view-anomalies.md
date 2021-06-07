@@ -2,20 +2,19 @@
 description: Sie können Anomalien in einer Tabelle oder einem Liniendiagramm anzeigen.
 title: Anomalien in Analysis Workspace anzeigen
 uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '273'
+ht-degree: 97%
 
 ---
-
 
 # Anomalien in Analysis Workspace anzeigen
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Sie können Anomalien in einer Tabelle oder einem Liniendiagramm anzeigen.
 
@@ -48,4 +47,3 @@ Das Konfidenzintervall der Anomalieerkennung skaliert nicht automatisch die Y-Ac
 Sie können festlegen, dass das Konfidenzintervall das Diagramm skaliert. Klicken Sie einfach auf das Symbol „Einstellungen“ (Zahnrad) und aktivieren Sie die Option **[!UICONTROL Skalierung der Y-Achse im Rahmen der Anomalieerkennung erlauben]**.
 
 ![](assets/scale-y-axis.png)
-
