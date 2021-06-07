@@ -3,11 +3,10 @@ description: Schreibgeschützte Projekte in Workspace
 keywords: Schreibgeschützte Projekte
 title: Schreibgeschützte Projekte
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 99%
+source-wordcount: '277'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann wünschenswert sein, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Adobe Analytics im Allgemeinen weniger vertraut sind, aber dennoch Daten und Einblicke in einer sicheren Umgebung einsehen sollen.
 
@@ -26,11 +25,11 @@ Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspa
 Zu den deaktivierten Interaktionen in einem schreibgeschützten Projekt gehören:
 
 * Ausgeblendete linke Leiste
-* Datumsbereich des Bedienfeldkalenders. Hinweis: Wenn Sie zulassen möchten, dass die Empfänger Kontrolle über den Kalender haben, fügen Sie einen [Dropdown-Filter mit Datumsbereichen](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) hinzu.
+* Datumsbereich des Bedienfeldkalenders. Hinweis: Wenn Sie zulassen möchten, dass die Empfänger Kontrolle über den Kalender haben, fügen Sie einen [Dropdown-Filter mit Datumsbereichen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) hinzu.
 * Freiformfilterung
 * Freiform – Anzahl der sichtbaren Zeilen
 * Freiformzeilen-, Spalten- oder Visualisierungseinstellungen
-* Bedienfeld-Filter
+* Bereichsfilter
 * Menüs „Bearbeiten“, „Einfügen“ und „Komponenten“
 * Workspace-Tipps
 
