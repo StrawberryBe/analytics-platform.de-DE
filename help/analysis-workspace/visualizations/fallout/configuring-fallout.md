@@ -2,11 +2,10 @@
 description: Erfahren Sie, wie Sie die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen.
 title: Fallout-Visualisierung konfigurieren
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 85%
+source-wordcount: '688'
+ht-degree: 84%
 
 ---
 
@@ -14,11 +13,11 @@ ht-degree: 85%
 
 Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Ein Touchpoint ist im Allgemeinen eine Seite auf Ihrer Website. Touchpoints sind jedoch nicht auf Webseiten eingeschränkt. So können Sie zum Beispiel Ereignisse (z. B. Einheiten) sowie Unique Visitors und erneute Besuche hinzufügen. Auch Dimensionen können Sie hinzufügen (wie Kategorie, Browsertyp oder interner Suchbegriff).
 
-Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Sie können beispielsweise Filter wie iOS- und Android-Benutzer vergleichen. Ziehen Sie die gewünschten Filter an den Anfang des Fallout-Berichts, und Informationen zu diesen Filtern werden dem Fallout-Bericht hinzugefügt. Wenn Sie nur diese Filter anzeigen möchten, können Sie die Grundlinie &quot;Alle Besuche&quot;entfernen.
+Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Sie können beispielsweise Filter wie iOS- und Android-Benutzer vergleichen. Ziehen Sie die gewünschten Filter an den Anfang des Fallout-Berichts, und Informationen zu diesen Filtern werden zum Fallout-Bericht hinzugefügt. Wenn Sie nur diese Filter anzeigen möchten, können Sie die Grundlinie Alle Besuche entfernen.
 
 Bezüglich der Anzahl der Schritte, die hinzugefügt, oder der Dimensionen, die verwendet werden können, gibt es keine Einschränkungen.
 
-Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listVars](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/page-vars/page-variables.html) (Variablen, die mehrere Werte pro Hit haben können, wie Produkte, listVars, Merchandising-eVars und Listen-Props). Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe,Shirt“ und auf der nächsten Seite nach „Schuhe,Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
+Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (Variablen, die mehrere Werte pro Hit haben können, wie Produkte, listVars, Merchandising-eVars und Listen-Props). Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe,Shirt“ und auf der nächsten Seite nach „Schuhe,Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
 
 1. Ziehen Sie eine [!UICONTROL Fallout]-Visualisierung aus dem Dropdownfeld „Visualisierung“ in eine [!UICONTROL Freiformtabelle].
 
@@ -38,7 +37,7 @@ Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listV
 
    >[!NOTE]
    >
-   >Mehrere Filter sind mit UND verbunden, aber mehrere Elemente wie Dimensionselemente und Metriken werden mit ODER verknüpft.
+   >Mehrere Filter werden mit UND verbunden, mehrere Elemente wie Dimensionselemente und Metriken werden jedoch mit ODER verbunden.
 
    ![](assets/multiple_obj_touchpoint.png)
 
