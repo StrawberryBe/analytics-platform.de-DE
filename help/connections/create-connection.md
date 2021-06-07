@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 99%
+source-wordcount: '1968'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform
 
 Eine Videoübersicht finden Sie [hier](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en).
 
-Zum Erstellen einer CJA-Verbindung benötigen Sie die folgenden Berechtigungen:
+Um eine CJA-Verbindung zu erstellen, benötigen Sie die folgenden Berechtigungen in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Datenmodellierung: Schemas anzeigen, Schemas verwalten
@@ -41,7 +41,7 @@ Customer Journey Analytics
 
 1. Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.
 
-   Adobe Experience Platform bietet [Sandboxes](https://docs.adobe.com/content/help/de-DE/experience-platform/sandbox/home.html) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sandboxes können als „Datensilos“ mit Datensätzen betrachtet werden. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.  Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie abrufen können.
+   Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sandboxes können als „Datensilos“ mit Datensätzen betrachtet werden. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.  Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie abrufen können.
 
    >[!IMPORTANT]
    >
@@ -71,7 +71,7 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz bzw. die hi
 
 1. **[!UICONTROL Zeitstempel]**: Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in [!UICONTROL Experience Platform] gesetzt.
 
-1. **[!UICONTROL Schema]**: Dies ist das [Schema](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/schema/composition.html), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde.
+1. **[!UICONTROL Schema]**: Dies ist das [Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde.
 
 1. **[!UICONTROL Personen-ID]**: Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Weitere Informationen zur Verwendung von Identity Map als Personen-ID finden Sie weiter unten.
 
@@ -85,7 +85,7 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz bzw. die hi
 
 In Customer Journey Analytics kann jetzt Identity Map für Personen-ID verwendet werden. Identity Map ist eine Map-Datenstruktur, mit der Schlüssel-/Wert-Paare hochgeladen werden können. Die Schlüssel sind Identity-Namespaces und der Wert ist eine Struktur, die den Identitätswert enthält. Die Identity Map ist für jede hochgeladene Zeile/jedes hochgeladene Ereignis vorhanden und wird für jede Zeile entsprechend aufgefüllt.
 
-Die Identity Map ist für jeden Datensatz verfügbar, der ein auf der [ExperienceEvent XDM](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/home.html)-Klasse basierendes Schema verwendet. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identity Map auswählen:
+Die Identity Map ist für jeden Datensatz verfügbar, der ein auf der [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)-Klasse basierendes Schema verwendet. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identity Map auswählen:
 
 ![](assets/idmap1.png)
 
@@ -94,7 +94,7 @@ Wenn Sie Identity Map auswählen, erhalten Sie zwei zusätzliche Konfigurationso
 | Option | Beschreibung |
 |---|---|
 | [!UICONTROL Primären ID-Namespace verwenden] | Dadurch wird CJA angewiesen, die Identität pro Zeile in der Identity Map zu finden, die mit dem Attribut „primär=wahr“ markiert ist, und diese als Personen-ID für diese Zeile zu verwenden. Dies bedeutet, dass dies der Primärschlüssel ist, der in Experience Platform zur Partitionierung verwendet wird. Er ist auch der Hauptkandidat für die Verwendung als Besucher-ID in CJA (je nachdem, wie der Datensatz in einer CJA-Verbindung konfiguriert ist). |
-| [!UICONTROL Namespace] | (Diese Option ist nur verfügbar, wenn Sie den primären Identity-Namespace nicht verwenden.) Identity-Namespace sind eine Komponente des [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/de-DE/experience-platform/identity/namespaces.html), die als Indikatoren für den Kontext dient, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht CJA in der Identity Map jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für diese Zeile. Da CJA die Datensätze in allen Zeilen nicht vollständig scannen kann, um festzustellen, welche Namespaces tatsächlich vorhanden sind, werden alle möglichen Namespaces in der Dropdown-Liste aufgeführt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Dies kann nicht automatisch erkannt werden. |
+| [!UICONTROL Namespace] | (Diese Option ist nur verfügbar, wenn Sie den primären Identity-Namespace nicht verwenden.) Identity-Namespace sind eine Komponente des [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html), die als Indikatoren für den Kontext dient, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht CJA in der Identity Map jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für diese Zeile. Da CJA die Datensätze in allen Zeilen nicht vollständig scannen kann, um festzustellen, welche Namespaces tatsächlich vorhanden sind, werden alle möglichen Namespaces in der Dropdown-Liste aufgeführt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Dies kann nicht automatisch erkannt werden. |
 
 ### Identity Map-Randfälle
 
@@ -117,8 +117,8 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
    | [!UICONTROL Beschreibung] | Fügen Sie weitere Details hinzu, um diese Verbindung von anderen zu unterscheiden. |
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
    | [!UICONTROL Automatisch ab heute alle neuen Datensätze in dieser Verbindung importieren.] | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace] ein. |
-   | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten von [!DNL Experience Platform] für alle Datensätze in dieser Verbindung importiert oder aufgestockt. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. Siehe auch unten [historische Daten aufstocken](https://docs.adobe.com/content/help/de-DE/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data).<br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
-   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten **und** Aufstockungsdaten) für alle Datensätze in der Verbindung angeben. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignisse Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in den [Adobe Experience Platform-Abfragediensten](https://docs.adobe.com/content/help/de-DE/experience-platform/query/home.html) durchführen, um es herauszufinden.<br>Siehe unten „Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen“. |
+   | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten von [!DNL Experience Platform] für alle Datensätze in dieser Verbindung importiert oder aufgestockt. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. Siehe auch unten [historische Daten aufstocken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data).<br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
+   | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten **und** Aufstockungsdaten) für alle Datensätze in der Verbindung angeben. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignisse Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in den [Adobe Experience Platform-Abfragediensten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) durchführen, um es herauszufinden.<br>Siehe unten „Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen“. |
 
 1. Klicken Sie auf **[!UICONTROL Speichern und Datenansicht erstellen]**. Die Dokumentation finden Sie unter [Datenansicht erstellen](/help/data-views/create-dataview.md).
 
@@ -130,13 +130,13 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.
 * Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz wird durch die Anzahl der historischen Daten beeinflusst, kombiniert mit der von Ihnen ausgewählten Einstellung zur **[!UICONTROL durchschnittlichen Anzahl der täglichen Ereignisse]**. Wenn Sie zum Beispiel mehr als eine Milliarde Datenzeilen pro Tag und drei Jahre historischer Daten haben, könnte der Import mehrere Wochen dauern. Wenn Sie hingegen weniger als eine Million Zeilen pro Tag und eine Woche historischer Daten haben, würde das weniger als eine Stunde dauern.
 * Die Aufstockung gilt für die gesamte Verbindung, nicht für jeden einzelnen Datensatz.
-* [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/de-DE/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importiert Daten aus bis zu 13 Monaten unabhängig von ihrer Größe.
+* [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html?lang=de) importiert Daten aus bis zu 13 Monaten unabhängig von ihrer Größe.
 
 ### Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
 
 1. Die Abfrage würde wie folgt aussehen: <br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
