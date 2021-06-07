@@ -2,11 +2,10 @@
 title: Häufig gestellte Fragen zu Attribution
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Attribution.
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 88%
+source-wordcount: '306'
+ht-degree: 85%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 **Was ist der Zeileneintrag „Keine“ bei Verwendung von Attribution?**
 
@@ -26,7 +25,7 @@ Diese zusätzlichen Daten sind auf das Lookback-Fenster des Besucherberichts zur
 
 **Wann sollte ich eine Rückmeldung zur Besuchszuordnung oder zur Besucherattribution verwenden?**
 
-Die Auswahl des Attributions-Lookbacks hängt von Ihrem Anwendungsfall ab. Wenn Konversionen in der Regel länger als einen Besuch dauern, wird ein Besucher-Lookback empfohlen. Die Erstellung einer Ansicht mit einer längeren Besuchsdefinition ist ebenfalls eine potenzielle Lösung.
+Die Auswahl des Attributions-Lookbacks hängt von Ihrem Anwendungsfall ab. Wenn Konversionen in der Regel länger als einen Besuch dauern, wird ein Besucher-Lookback empfohlen. Das Erstellen einer Datenansicht mit einer längeren Besuchsdefinition ist ebenfalls eine potenzielle Lösung.
 
 **Worin unterscheiden sich Props und eVars bei der Verwendung von Attribution?**
 
@@ -51,6 +50,6 @@ Das Attributionsbedienfeld unterstützt alle Dimensionen. Nicht unterstützte Me
 * Einzelseitenbesuche
 * Einzelzugriff
 
-**Wie funktioniert die Zuordnung mit Filtern?**
+**Wie funktioniert die Attribution mit Filtern?**
 
-Die Zuordnung wird immer vor Filtern ausgeführt und globale Filter werden ausgeführt, bevor andere Filter angewendet werden.
+Die Attribution wird immer vor Filtern ausgeführt und globale Filter werden ausgeführt, bevor andere Berichtsfilter angewendet werden.
