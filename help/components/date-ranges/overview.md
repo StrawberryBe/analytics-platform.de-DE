@@ -1,21 +1,20 @@
 ---
 title: Übersicht über Datumsbereiche
-description: Erfahren Sie, welche Datumsbereiche und wie Sie sie in Berichte verwenden können.
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+description: Erfahren Sie, welche Datumsbereiche sind und wie Sie sie in Berichten verwenden können.
+exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 35%
+source-wordcount: '112'
+ht-degree: 28%
 
 ---
-
 
 # Übersicht über Datumsbereiche
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
-Datumsbereiche sind eine Art von Komponente, die Sie in Workspace-Projekten verwenden können. Sie ermöglichen es Ihnen, Daten im Zeitverlauf zu sehen oder zu sehen, wann Ereignis am häufigsten auftreten. Datumsbereiche sind farbkodiert violett.
+Datumsbereiche sind eine Art Komponente, die Sie in Workspace-Projekten verwenden können. Damit können Sie Trends von Daten im Zeitverlauf anzeigen oder sehen, wann Ereignisse am häufigsten auftreten. Datumsbereiche sind farbcodiert violett.
 
-Mit benutzerdefinierten Datumsbereichen können Sie die Datumsangaben anpassen, die in Workspace-Projekten angezeigt werden. Verwenden Sie den Datumsbereich-Manager, um benutzerdefinierte Datumsbereiche für [manage](manage.md) oder [create](create.md) zu erstellen.
+Benutzerdefinierte Datumsbereiche ermöglichen es Ihnen, die in Workspace-Projekten angezeigten Daten anzupassen. Verwenden Sie den Datumsbereichsmanager, um die benutzerdefinierten Datumsbereiche [manage](manage.md) oder [create](create.md) zu verwalten.
