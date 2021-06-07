@@ -3,11 +3,10 @@ keywords: Analysis Workspace
 title: Analysis Workspace – Übersicht
 description: Überblick über die Funktionen von Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
-source-wordcount: '470'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +36,7 @@ Nach der Anmeldung sollten Sie als Erstes das Analysis Workspace-Tutorial besuch
 
 ## Neues Projekt erstellen {#new-project}
 
-Nach Abschluss des Tutorials können Sie mit der Erstellung Ihres ersten Projekts beginnen. Das **neue Projektmodell** bietet verschiedene Optionen zum Starten Ihrer Analyse. Je nachdem, ob Sie Ihre Analyse über den Browser oder die Adobe Analytics Dashboards-Mobile-App freigeben möchten, können Sie mit einem leeren Projekt oder einer [leeren mobilen Scorecard](https://docs.adobe.com/content/help/de-DE/analytics/analyze/mobapp/curator.html) beginnen.
+Nach Abschluss des Tutorials können Sie mit der Erstellung Ihres ersten Projekts beginnen. Das **neue Projektmodell** bietet verschiedene Optionen zum Starten Ihrer Analyse. Je nachdem, ob Sie Ihre Analyse über den Browser oder die Adobe Analytics Dashboards-Mobile-App freigeben möchten, können Sie mit einem leeren Projekt oder einer [leeren mobilen Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) beginnen.
 
 ![](assets/create-new-project.png)
 
@@ -65,4 +64,4 @@ In Ihrem Workspace-Projekt können Sie von der linken Leiste aus auf **Bereiche,
 
 ## Zusätzliche Ressourcen {#resources}
 
-* Adobe bietet Hunderte [Analytics-Video-Tutorials](https://docs.adobe.com/content/help/de-DE/analytics-learn/tutorials/overview.html).
+* Adobe bietet Hunderte von [Analytics-Video-Tutorials](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html).
