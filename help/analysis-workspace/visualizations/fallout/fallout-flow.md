@@ -1,22 +1,21 @@
 ---
-description: Trichteranalysevisualisierungen zeigen, wo Besucher eine vordefinierte Seitenfolge verlassen (ausgefallen) und durch eine vordefinierte Seitenfolge weitergeführt (durchgegangen) haben.
+description: Fallout-Visualisierungen zeigen, wo Besucher eine vordefinierte Seitensequenz verlassen (ausgefallen) und durchlaufen (durchgefallen) haben.
 title: Fallout-Übersicht
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 88%
+source-wordcount: '243'
+ht-degree: 84%
 
 ---
 
 # Fallout-Übersicht
 
-Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben (wo sie „ausgefallen“ sind) und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind).
+Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind).
 
 Mit Fallout-Visualisierungen können Sie:
 
-* Führen Sie im gleichen Bericht Vergleichswerte mit zwei verschiedenen Filtern durch.
+* Führen Sie einen parallelen Vergleich zweier verschiedener Filter im selben Bericht durch.
 * Trichterschritte (Touchpoints) ziehen, ablegen und neu anordnen.
 * Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren
 * Einen multidimensionalen Fallout-Bericht erstellen
@@ -32,5 +31,5 @@ Eine Fallout-Visualisierung ist zur Analyse der folgenden Punkte nützlich:
 * Allgemeiner, breiter gefasster Trafficfluss: Dieser Fluss zeigt, wie viele Personen, die sich die Homepage ansahen, anschließend eine Suche durchführten und dann ein bestimmtes Element anzeigten.
 * Korrelationen zwischen Ereignissen auf Ihrer Site. Korrelationen zeigen, welcher Prozentsatz von Personen, die die Datenschutzrichtlinien durchlasen, ein Produkt kauften.
 
-[Tutorial zur Fallout-Visualisierung](https://docs.adobe.com/content/help/de-DE/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
+[Tutorial zur Fallout-Visualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
 
