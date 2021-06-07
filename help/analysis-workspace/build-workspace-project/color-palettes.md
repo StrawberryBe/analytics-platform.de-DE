@@ -1,21 +1,20 @@
 ---
-description: Ändern der Palette "Visualisierungsfarbe"oder Festlegen einer eigenen benutzerdefinierten Farbpalette.
-title: Visualisierungsfarbe, Palette
+description: So ändern Sie die Farbpalette der Visualisierung oder legen Sie eine eigene benutzerdefinierte Farbpalette fest.
+title: Visualisierungsfarbpalette
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
-translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 91%
+source-wordcount: '245'
+ht-degree: 88%
 
 ---
 
-
-# Visualisierungsfarbe, Palette
+# Visualisierungsfarbpalette
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Sie können die in Workspace verwendete Visualisierungsfarbpalette ändern, indem Sie eine andere Farbpalette auswählen oder Ihre eigene Palette festlegen, die den Markenfarben Ihres Unternehmens entsprechen könnte. Diese Funktion wirkt sich auf die meisten Visualisierungen in Workspace aus. Die Zusammenfassungsänderung, die bedingte Formatierung in Freiformtabellen und die Zuordnungsvisualisierung sind davon jedoch **nicht** betroffen.
 
@@ -39,4 +38,3 @@ Bitte beachten Sie:
 
 1. Um Ihre eigene Palette festzulegen, wählen Sie **[!UICONTROL Benutzerdefinierte Palette]** unter den voreingestellten Optionen aus.
 1. Geben Sie bis zu 16 kommagetrennte hexadezimale Werte (z. B. #00a4e4) für die Farben an, die Sie verwenden möchten. Wenn Sie beispielsweise nur vier Werte verwenden möchten, werden diese Farben in Visualisierungen, die mehr Farben enthalten, automatisch wiederholt.
-
