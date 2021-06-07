@@ -2,11 +2,10 @@
 description: Verwalten Sie geplante Projekte in Analysis Workspace
 keywords: Analysis Workspace
 title: Manager für geplante Projekte
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Verwalten Sie geplante Projekte in Analysis Workspace.
 
