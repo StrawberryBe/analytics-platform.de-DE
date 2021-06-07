@@ -1,12 +1,11 @@
 ---
-source-git-commit: 5b484b851919607226c0deed6b5d62d1eafea50b
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 98%
 
 ---
-# Zur Dokumentation zum Customer Journey Analytics beitragen
+# Beitragen zur Customer Journey Analytics-Dokumentation
 
 Wir freuen uns über Beiträge unserer Community sowie von Adobe-Mitarbeitern, die nicht zum Dokumentationsteam gehören.
 
@@ -16,13 +15,13 @@ Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.
 
 ## Informationen zu Ihren Beiträgen zu den Adobe-Inhalten
 
-Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/content/help/de-DE/contributor/contributor-guide/introduction.html).
+Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
 ### Geringfügige Änderungen
 
-Wenn Sie aus Gemeinschaftsgeist kleine Updates beitragen wollen, besuchen Sie den Artikel, und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Contributor-Handbuch](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Wenn Sie aus Gemeinschaftsgeist kleine Updates beitragen wollen, besuchen Sie den Artikel, und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Contributor-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentation und Codebeispiele in diesem Repository senden, sind durch die Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -42,7 +41,7 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams
 
 Community-Mitarbeiter können die GitHub-Benutzeroberfläche zur einfachen Bearbeitung oder zur Abspaltung des Repositorys verwenden, um umfangreiche Beiträge vorzunehmen.
 
-Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Markdown zum Formatieren Ihres Themas verwenden
 
