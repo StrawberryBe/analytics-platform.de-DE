@@ -2,14 +2,13 @@
 description: Erstellen Sie benutzerdefinierte Datumsbereiche in Analysis Workspace und speichern Sie sie als Zeitkomponenten.
 keywords: Analysis Workspace
 title: Benutzerdefinierte Datumsbereiche erstellen
-feature: Reports & Analytics Basics
+feature: Grundlagen zu Reports & Analytics
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 98%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Erstellen Sie benutzerdefinierte Datumsbereiche in Analysis Workspace und speichern Sie sie als Zeitkomponenten.
 
