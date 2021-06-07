@@ -2,10 +2,9 @@
 title: Überblick über die kanalübergreifende Analyse
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-translation-type: ht
-source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
-workflow-type: ht
-source-wordcount: '1128'
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1124'
 ht-degree: 100%
 
 ---
@@ -57,7 +56,7 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 
 Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen überblickt, können Sie die folgenden Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
 
-1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Siehe unter [Ein Schema erstellen](https://docs.adobe.com/content/help/de-DE/experience-platform/xdm/tutorials/create-schema-ui.html) und [Daten aufnehmen](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html) in der Adobe Experience Platform-Dokumentation.
+1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Siehe unter [Ein Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Daten aufnehmen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
 1. Wenden Sie sich an Ihren Adobe Account Manager, was Folgendes umfassen kann:
    * Eine Anfrage zum Aktivieren der kanalübergreifenden Analyse
    * Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten
