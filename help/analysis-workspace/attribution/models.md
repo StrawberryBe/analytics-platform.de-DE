@@ -2,11 +2,10 @@
 title: Attributionsmodelle und Lookback-Fenster
 description: Die Art und Weise, wie verschiedene Arten von Attribution Gewichtungen zwischen Dimensionselementen verteilen.
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 98%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://docs.adobe.com/content/help/de-DE/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen ...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Das Attributionskonzept in Adobe Analytics erfordert zwei Komponenten:
 
@@ -41,7 +40,7 @@ Das Attributionskonzept in Adobe Analytics erfordert zwei Komponenten:
 
 Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend bei der Erfassung von Touchpoints berücksichtigt werden sollte. Attributionsmodelle, die der ersten Interaktion mehr Gewicht zuschreiben, sehen bei der Anzeige verschiedener Lookback-Fenster größere Unterschiede.
 
-* **Besuchs-Lookback-Fenster:** Sieht bis zum Beginn eines Besuchs zurück, bei dem eine Konversion stattgefunden hat. Besuchs-Lookback-Fenster sind klein, da sie nicht über den Besuch hinausblicken. Rückblickfenster für Besuche berücksichtigen die geänderte Besuchsdefinition in den Ansichten.
+* **Besuchs-Lookback-Fenster:** Sieht bis zum Beginn eines Besuchs zurück, bei dem eine Konversion stattgefunden hat. Besuchs-Lookback-Fenster sind klein, da sie nicht über den Besuch hinausblicken. Besuchs-Lookback-Fenster berücksichtigen die geänderte Besuchsdefinition in Datenansichten.
 
 * **Besucher-Lookback-Fenster:** Betrachtet alle Besuche bis zum 1. des Monats des aktuellen Datumsbereichs. Besucher-Lookback-Fenster sind groß, da sie viele Besuche umfassen können. Bei der Besucher-Lookback-Funktion werden alle Werte ab dem Monatsanfang des Datumsbereichs des Berichts berücksichtigt. Wenn der Datumsbereich des Berichts beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Besucher-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September.
 
@@ -49,7 +48,7 @@ Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend be
 
 >[!NOTE]
 >
->**[!UICONTROL Benutzerdefinierte Lookback-]** Fenster werden derzeit nur eingeschränkt getestet. Weitere Informationen finden Sie unter [Adobe Analytics feature release](https://docs.adobe.com/content/help/de-DE/analytics/landing/an-releases.html).
+>**[!UICONTROL Benutzerdefinierte Lookback-]** Fenster werden derzeit nur eingeschränkt getestet. Weitere Informationen finden Sie unter [Adobe Analytics feature releases](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) .
 
 ## Beispiel
 
