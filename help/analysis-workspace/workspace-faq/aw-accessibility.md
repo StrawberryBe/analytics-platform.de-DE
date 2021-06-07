@@ -2,11 +2,10 @@
 description: Unterstützende Funktionen für die Barrierefreiheit in Analysis Workspace
 title: Barrierefreiheit in Analysis Workspace
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 81%
+source-wordcount: '655'
+ht-degree: 98%
 
 ---
 
@@ -22,20 +21,20 @@ Barrierefreiheit bezieht sich darauf, Produkte für Menschen mit visuellen, akus
 
 Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unten und von links nach rechts. Die folgenden Navigationselemente erleichtern die Zugänglichkeit:
 
-* Die `Tab`-Taste ermöglicht richtungsweisende Verknüpfungen., wobei zwischen größeren Abschnitten innerhalb von Workspace gewechselt wird. In der linken Leiste können Sie `Tab` auch von einer ziehbaren Option zur nächsten wechseln.
-* Die `left/right arrows`-Bewegung zwischen einzelnen Elementen, nachdem `Tab` sie markiert hat.
-* Das `F6` navigiert zum ersten Bereich im Projekt und bewegt sich zwischen den Visualisierungen in diesem Bereich. Anschließend wird zum nächsten Bereich im Projekt gewechselt und es wird wiederholt.
+* Die `Tab`-Taste ermöglicht richtungsweisende Verknüpfungen.Hierbei wird zwischen größeren Abschnitten innerhalb von Workspace gewechselt. In der linken Leiste können Sie mit `Tab` auch von einer ziehbaren Option zur nächsten wechseln.
+* Mit den `left/right arrows` können Sie zwischen einzelnen Elementen wechseln, nachdem Sie sie mit `Tab` markiert haben.
+* Mit `F6` navigieren Sie zum ersten Bedienfeld im Projekt und können zwischen den Visualisierungen in diesem Bedienfeld wechseln. Anschließend wird zum nächsten Bedienfeld im Projekt gewechselt und es wird wiederholt.
 * Wir wenden Fokusindikatoren an, sodass sehende Tastaturbenutzer einen klaren Hinweis darauf haben, welches Element der Benutzeroberfläche derzeit im Fokus ist. Der Indikator ist ein blauer Rand um das ausgewählte Element herum.
 
    ![Fokusindikator](assets/focus-indicator.png)
 
-### Tastaturnavigation für die Menüleiste
+### Tastaturnavigation zur Menüleiste
 
-1. bis Sie die Menüleiste erreicht haben.
-1. Verwenden Sie die Nach-links-/Nach-rechts-Taste, um zum gewünschten Menü zu navigieren.
+1. Drücken Sie die Tabulatortaste, bis Sie die Menüleiste erreicht haben.
+1. Verwenden Sie die Pfeiltasten nach links/rechts, um zum gewünschten Menü zu navigieren.
 1. Drücken Sie die Taste `Enter`, um das Menü auszuwählen und seine Optionen anzuzeigen.
-1. Verwenden Sie die Nach-oben-/Nach-unten-Taste, um zur gewünschten Menüoption zu navigieren.
-1. Klicken Sie auf `Enter`, um die Option auszuwählen.
+1. Verwenden Sie die Pfeiltasten nach oben/unten, um zu der gewünschten Menüoption zu navigieren.
+1. Drücken Sie `Enter`, um die Option auszuwählen.
 
 ### Tastaturnavigation für Drag-and-Drop-Interaktionen
 
@@ -48,7 +47,7 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 
 ### Tastaturbefehle (Hotkeys)
 
-[!UICONTROL Analysis Workspace] bietet eine umfangreiche Auswahl an [Tastaturbefehlen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=de-DE) für einen nahtlosen Workflow. Nachfolgend sind einige allgemeine Kurzbefehle für die Navigation, die Erstellung von Analysen und die Demokratisierung von Erkenntnissen aufgeführt.
+[!UICONTROL Analysis Workspace] bietet eine umfangreiche Auswahl an [Tastaturbefehlen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=de) für einen nahtlosen Workflow. Nachfolgend sind einige allgemeine Kurzbefehle für die Navigation, die Erstellung von Analysen und die Demokratisierung von Erkenntnissen aufgeführt.
 
 #### Navigation
 
@@ -69,7 +68,7 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 | Strg + Umschalt + D | Neuer Datumsbereich |
 | Strg + Umschalt + E | Neuer Filter |
 | Strg + Z | Rückgängig |
-| Umschalttaste gedrückt halten (im Dropzone des Bereichsfilters) | Einen [Dropdown-Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de-DE) erstellen |
+| Umschalttaste gedrückt halten (im Dropzone des Bereichsfilters) | Einen [Dropdown-Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) erstellen |
 
 #### Demokratisierung
 
@@ -90,7 +89,7 @@ Eine Bildschirmlesehilfe liest Text, der auf dem Computer-Bildschirm angezeigt w
 
 [!UICONTROL Analysis Workspace] strebt die Konformität mit WCAG 2.1 AA an, einschließlich der Anforderungen an den Farbkontrast.
 
-Darüber hinaus können Benutzer ihre eigene bevorzugte Farbpalette für ein Projekt unter **[!UICONTROL Projekt]** > **[!UICONTROL Projekteinstellungen]** > [Farbpalette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=de-DE) festlegen.
+Darüber hinaus können Benutzer ihre eigene bevorzugte Farbpalette für ein Projekt unter **[!UICONTROL Projekt]** > **[!UICONTROL Projekteinstellungen]** > [Farbpalette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=de) festlegen.
 
 ## Erforderliche Feldvalidierung in Komponenten-Buildern
 
