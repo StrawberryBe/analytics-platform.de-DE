@@ -1,14 +1,13 @@
 ---
 description: Anleitung zur Verwendung der Dashboard-Scorecards.
 title: Handbuch zu Analytics-Dashboards
-translation-type: ht
-source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
-workflow-type: ht
-source-wordcount: '1288'
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1286'
 ht-degree: 100%
 
 ---
-
 
 # Analytics-Dashboards: Schnellstarthandbuch für ausführende Benutzer
 
@@ -120,7 +119,7 @@ So verwenden Sie Dashboards:
 
    * Je nachdem, auf welches Intervall Sie tippen (**Tag**, **Woche**, **Monat** oder **Jahr**), sehen Sie zwei Optionen für Datumsbereiche – entweder den aktuellen oder den unmittelbar vorhergehenden Zeitraum. Tippen Sie auf eine dieser beiden Optionen, um den ersten Bereich auszuwählen. Tippen Sie in der Liste unter **[!UICONTROL VERGLEICHEN MIT]** auf eine der angezeigten Optionen, um die Daten in diesem Zeitraum mit dem ersten von Ihnen ausgewählten Datumsbereich zu vergleichen. Tippen Sie oben rechts im Bildschirm auf **[!UICONTROL Fertig]**. Das Feld **[!UICONTROL Datumsbereiche]** und die Scorecard-Kacheln werden mit den neuen Vergleichsdaten aus den von Ihnen ausgewählten neuen Bereichen aktualisiert.
 
-7. Um einen Filter auf Ihre Scorecard anzuwenden, tippen Sie auf die Filter-Dropdown-Liste und wählen Sie einen Filter aus, der von Ihrem Kurator konfiguriert wurde. [Filter](https://docs.adobe.com/content/help/de-DE/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) in der App funktionieren auf dieselbe Weise wie in Analytics Workspace.
+7. Um einen Filter auf Ihre Scorecard anzuwenden, tippen Sie auf die Filter-Dropdown-Liste und wählen Sie einen Filter aus, der von Ihrem Kurator konfiguriert wurde. [Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) in der App funktionieren auf dieselbe Weise wie in Analytics Workspace.
 
    ![Filter](assets/segment_filter.png)
 
