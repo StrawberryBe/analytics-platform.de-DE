@@ -2,18 +2,17 @@
 description: Verwenden Sie die Visualisierungen „Zusammenfassungsnummer“ und „Zusammenfassungsänderung“, um wichtige Datenpunkte in einem Projekt anzuzeigen.
 title: Sammelnummer und Sammeländerung
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
-translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+exl-id: 8872fc58-0957-415d-9958-ce564612ce87
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 96%
 
 ---
 
-
 # Sammelnummer und Sammeländerung
 
-## Visualisierung für Zusammenfassungsnummer   {#summary-number}
+## Visualisierung für Zusammenfassungsnummer {#summary-number}
 
 Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist. Diese Visualisierung verhält sich folgendermaßen:
 
@@ -44,7 +43,7 @@ Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstel
 
 ## Visualisierung für Zusammenfassungsänderung: {#summary-change}
 
-Verwenden Sie die Visualisierung für Zusammenfassungsänderung, um das Delta (die Änderung) zwischen zwei Zahlen anzuzeigen. Die grüne und rote Farbe der Zusammenfassungsänderung kann über die [benutzerdefinierte Ereignispolarität](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/success-events/success-event.html) oder die Option [Aufwärts-Trend anzeigen als](https://docs.adobe.com/content/help/de-DE/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) einer berechneten Metrik gesteuert werden.
+Verwenden Sie die Visualisierung für Zusammenfassungsänderung, um das Delta (die Änderung) zwischen zwei Zahlen anzuzeigen. Die grüne und rote Farbe der Zusammenfassungsänderung kann über die [benutzerdefinierte Ereignispolarität](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) oder die Option [Aufwärts-Trend anzeigen als](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) einer berechneten Metrik gesteuert werden.
 
 Diese Visualisierung verhält sich folgendermaßen:
 
