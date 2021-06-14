@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
 workflow-type: tm+mt
-source-wordcount: '1968'
-ht-degree: 97%
+source-wordcount: '2084'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,9 @@ Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform
 
 Eine Videoübersicht finden Sie [hier](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en).
 
-Um eine CJA-Verbindung zu erstellen, benötigen Sie die folgenden Berechtigungen in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+## Erforderliche Berechtigungen
+
+Um eine Customer Journey Analytics-Verbindung (CJA) zu erstellen, benötigen Sie die folgenden Berechtigungen in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Datenmodellierung: Schemas anzeigen, Schemas verwalten
@@ -50,6 +52,9 @@ Customer Journey Analytics
 1. Wählen Sie einen oder mehrere Datensätze aus, die Sie in [!UICONTROL Customer Journey Analytics] abrufen möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
    (Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste **[!UICONTROL Datensätze suchen]** über der Liste der Datensätze nach den richtigen suchen.)
+
+   CJA basiert auf Experience Platform-Datensätzen. Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in CJA nicht alle Feldtypen unterstützt. Sie können CJA Datensätze mit anderen Schemafeldtypen als Zeichenfolgen oder Zahlen hinzufügen, CJA kann diese Daten jedoch nicht anzeigen. Außerdem sind derzeit nur Zeichenfolgen in Lookup-Datensätzen zulässig.
+Wenn Sie nach einem Feld suchen, das zu einer Datenansicht hinzugefügt werden soll, nachdem Sie den Datensatz zu einer Verbindung hinzugefügt haben, ist das Standard-Tag [!UICONTROL Enthält Daten] für alle Felder in den Datensätzen verfügbar. Mit diesem Tag lassen sich Datenansichten besser verwalten, da es nur Schemafelder mit Daten in Ihren Datensätzen enthält.
 
 ## Datensatz konfigurieren
 
