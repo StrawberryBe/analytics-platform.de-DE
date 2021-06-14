@@ -2,10 +2,10 @@
 title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
+source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
 workflow-type: tm+mt
-source-wordcount: '2934'
-ht-degree: 91%
+source-wordcount: '2988'
+ht-degree: 88%
 
 ---
 
@@ -26,8 +26,8 @@ Das Erstellen einer Datenansicht umfasst entweder das Erstellen von Metriken und
 | [!UICONTROL Name] | Geben Sie der Datenansicht einen Namen. Dies ist ein Pflichtfeld. |
 | [!UICONTROL Beschreibung] | Eine detaillierte Beschreibung ist nicht zwingend erforderlich, wird jedoch empfohlen. |
 | [!UICONTROL Zeitzone] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. |
-| [!UICONTROL Tags] | Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren. |
-| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen, um zu bestimmen, wie sie in einem Workspace-Projekt angezeigt werden, das auf dieser Datenansicht basiert. Container werden in Filtern, Fallout/Fluss usw. verwendet, um zu definieren, wie breit der Umfang oder Kontext ist oder wie stark er ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) |
+| [!UICONTROL Tags] | [!UICONTROL Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren.] |
+| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen, um zu bestimmen, wie sie in einem Workspace-Projekt angezeigt werden, das auf dieser Datenansicht basiert.  Container werden in Filtern, Fallout/Fluss usw. verwendet, um zu definieren, wie breit der Umfang oder Kontext ist oder wie stark er ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) |
 | [!UICONTROL Name des Personen-Containers...] | [!UICONTROL Person] (Standard). Der [!UICONTROL Person]-Container enthält sämtliche Besuche und Seitenansichten für Besucher innerhalb eines bestimmten Zeitrahmens. Sie können diesen Container in &quot;Benutzer&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Der Name des Sitzungs-Containers lautet...] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in &quot;Besuch&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Der Name des Ereignis-Containers ist...] | [!UICONTROL Ereignis] (Standard). Der [!UICONTROL Ereignis]-Container definiert, welche Seitenereignisse von einem Filter eingeschlossen oder ausgeschlossen werden sollen. |
@@ -71,7 +71,7 @@ Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension nam
 | [!UICONTROL Feldname] | Der Name des Schemafelds. |
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
 | [!UICONTROL Datensatz] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Feldtyp die Komponente stammt (z. B. String, Integer). Dieses Feld kann mehrere Datensätze enthalten. |
-| [!UICONTROL Datentyp des Schemas] | Gibt an, ob es sich bei der Komponente um eine Zeichenfolge, eine Ganzzahl usw. handelt. |
+| [!UICONTROL Datentyp des Schemas] | Gibt an, ob es sich bei der Komponente um eine Zeichenfolge, eine Ganzzahl usw. handelt.  Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in CJA nicht alle Feldtypen unterstützt. Sie können CJA Datensätze mit anderen Schemafeldtypen als Zeichenfolgen oder Ganzzahlen hinzufügen, CJA kann diese Daten jedoch nicht anzeigen. Außerdem sind derzeit nur Zeichenfolgen in Lookup-Datensätzen zulässig. |
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [CJA-API](https://adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Sie können auf das Bearbeitungssymbol klicken und diese Komponenten-ID ändern. Durch das Ändern dieser Komponenten-ID werden jedoch alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, beschädigt.<br>Wenn Sie jemals eine andere Datenansicht erstellen, die ein anderes Feld für eine pageTitle-Dimension verwendet, können Sie diese umbenennen und die Dimension datenansichtübergreifend kompatibel machen. |
 | [!UICONTROL Schemapfad] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
 | [!UICONTROL Komponente in Reports verbergen] | Standard = aus. Ermöglicht es Ihnen, die Komponente aus der Datenansicht auszublenden, wenn sie im Reporting verwendet wird. Dies wirkt sich nicht auf Berechtigungen aus, sondern nur auf die Kuratierung von Komponenten. Mit anderen Worten, Sie können die Komponente im Reporting für Nicht-Administratoren ausblenden. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
@@ -95,9 +95,9 @@ Die Formateinstellungen gelten nur für Metriken.
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Attribution festlegen] | Hier können Sie die Attributionseinstellungen angeben, die Sie bei Verwendung dieser Metrik standardmäßig anwenden möchten. Dieser Standard kann in einer Freiformtabelle oder in einer berechneten Metrik überschrieben werden. |
+| [!UICONTROL Attribution festlegen] | Hier können Sie die Attributionseinstellungen angeben, die Sie bei Verwendung dieser Metrik standardmäßig anwenden möchten. Dieser Standardwert kann in einer [!UICONTROL Freiformtabelle] oder in einer berechneten Metrik überschrieben werden. |
 | [!UICONTROL Attributionsmodell] | Ermöglicht die Angabe eines Standardzuordnungsmodells – nur aktiv, wenn Sie die Einstellung [!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden] aktivieren. Die Standardeinstellung ist [!UICONTROL Letztkontakt]. Die Optionen sind: Erstkontakt, Letztkontakt, Linear, Teilnahme, Same Touch, U-Shaped, J Curve, Inverse J, Time Decay, Benutzerdefiniert, Algorithmisch. Einige dieser Optionen erstellen zusätzliche Felder, die ausgefüllt werden müssen, z. B. „Benutzerdefiniert“ oder „Time Decay“. Sie können mehrere Metriken mit demselben Feld erstellen. Dies bedeutet, dass Sie z. B. eine Umsatzmetrik für den [!UICONTROL Letztkontakt] und eine Umsatzmetrik für den [!UICONTROL Erstkontakt] haben können, die jedoch beide auf demselben Umsatzfeld im Schema basieren. |
-| [!UICONTROL Lookback-Fenster] | Ermöglicht es Ihnen, ein standardmäßiges Rückblickfenster für eine Metrik festzulegen – nur aktiv, wenn Sie die Einstellung [!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden] aktivieren. Die Optionen sind: Person (Reporting-Fenster), Sitzung, Benutzerdefiniert. Wenn „Benutzerdefiniert“ ausgewählt ist, können Sie auch eine beliebige Anzahl von Tagen/Wochen/Monaten usw. auswählen (bis zu 90 Tage), genau wie Attribution IQ. Sie können über mehrere Metriken verfügen, die dasselbe Schema verwenden, jedoch jeweils ein separates Rückblickfenster. |
+| [!UICONTROL Lookback-Fenster] | Ermöglicht es Ihnen, ein standardmäßiges Rückblickfenster für eine Metrik festzulegen – nur aktiv, wenn Sie die Einstellung [!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden] aktivieren. Optionen sind: [!UICONTROL Person] (Berichtsfenster), [!UICONTROL Sitzung], [!UICONTROL Benutzerdefiniert]. Wenn [!UICONTROL Benutzerdefiniert] ausgewählt wird, können Sie auch eine beliebige Anzahl von Tagen/Wochen/Monaten/etc. auswählen. (bis zu 90 Tage), genau wie [!UICONTROL Attribution IQ]. Sie können über mehrere Metriken verfügen, die dasselbe Schema verwenden, jedoch jeweils ein separates Rückblickfenster. |
 
 ### Einstellungen zum Einschließen/Ausschließen von Werten konfigurieren
 
