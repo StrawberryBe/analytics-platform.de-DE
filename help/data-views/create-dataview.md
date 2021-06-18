@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
 workflow-type: tm+mt
 source-wordcount: '2974'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -27,9 +27,9 @@ Das Erstellen einer Datenansicht umfasst entweder das Erstellen von Metriken und
 | [!UICONTROL Beschreibung] | Eine detaillierte Beschreibung ist nicht zwingend erforderlich, wird jedoch empfohlen. |
 | [!UICONTROL Zeitzone] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. |
 | [!UICONTROL Tags] | [!UICONTROL Mit Tags können Sie Ihre Datenansichten in Kategorien organisieren.] |
-| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen, um zu bestimmen, wie sie in einem Workspace-Projekt angezeigt werden, das auf dieser Datenansicht basiert.  Container werden in Filtern, Fallout/Fluss usw. verwendet, um zu definieren, wie breit der Umfang oder Kontext ist oder wie stark er ist. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) |
-| [!UICONTROL Name des Personen-Containers...] | [!UICONTROL Person] (Standard). Der [!UICONTROL Person]-Container enthält sämtliche Besuche und Seitenansichten für Besucher innerhalb eines bestimmten Zeitrahmens. Sie können diesen Container in &quot;Benutzer&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
-| [!UICONTROL Der Name des Sitzungs-Containers lautet...] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in &quot;Besuch&quot;oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
+| [!UICONTROL Behälter] | Sie können Ihre Container hier umbenennen, um zu bestimmen, wie sie in jedem Workspace-Projekt erscheinen sollen, das auf dieser Datenansicht basiert. [!UICONTROL Container werden in Filtern und Fallout/Fluss usw. verwendet, um zu definieren, wie breit oder schmal der Umfang oder Kontext ist. ] [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) |
+| [!UICONTROL Name des Personen-Containers...] | [!UICONTROL Person] (Standard). Der [!UICONTROL Person]-Container enthält sämtliche Besuche und Seitenansichten für Besucher innerhalb eines bestimmten Zeitrahmens. Sie können diesen Container in „Benutzer“ oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
+| [!UICONTROL Der Name des Sitzungs-Containers lautet...] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihnen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Der Name des Ereignis-Containers ist...] | [!UICONTROL Ereignis] (Standard). Der [!UICONTROL Ereignis]-Container definiert, welche Seitenereignisse von einem Filter eingeschlossen oder ausgeschlossen werden sollen. |
 
 Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen. Sie können auch Standardkomponenten verwenden.
@@ -43,7 +43,7 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen
 Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schemafelder] unten enthält. Bedenken Sie Folgendes:
 
 * Die bereits enthaltenen Komponenten sind die erforderlichen Standardkomponenten (vom System generiert).
-* Adobe wendet den Filter **[!UICONTROL Enthält standardmäßig Daten]** an, sodass nur Schemafelder mit Daten angezeigt werden. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie den Filter.
+* Adobe wendet standardmäßig den Filter **[!UICONTROL Enthält Daten]** an, so dass nur Schemafelder erscheinen, die Daten enthalten. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie den Filter.
 
 1. Ziehen Sie nun ein Schema, z. B. [!UICONTROL pageTitle], aus der linken Leiste in den Bereich „Metriken“ oder „Dimensionen“.
 
@@ -73,7 +73,7 @@ Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension nam
 | [!UICONTROL Datensatz] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Feldtyp die Komponente stammt (z. B. String, Integer). Dieses Feld kann mehrere Datensätze enthalten. |
 | [!UICONTROL Datentyp des Schemas] | Gibt an, ob es sich bei der Komponente um eine Zeichenfolge, eine Ganzzahl usw. handelt.  Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in CJA nicht alle Feldtypen unterstützt. Die folgenden Datentypen werden unterstützt: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` und `Boolean`. Beachten Sie, dass derzeit nur Zeichenfolgen in Lookup-Datensätzen zulässig sind. |
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [CJA-API](https://adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Sie können auf das Bearbeitungssymbol klicken und diese Komponenten-ID ändern. Durch das Ändern dieser Komponenten-ID werden jedoch alle vorhandenen Workspace-Projekte, die diese Komponente enthalten, beschädigt.<br>Wenn Sie jemals eine andere Datenansicht erstellen, die ein anderes Feld für eine pageTitle-Dimension verwendet, können Sie diese umbenennen und die Dimension datenansichtübergreifend kompatibel machen. |
-| [!UICONTROL Schemapfad] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
+| [!UICONTROL Pfad des Schemas] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
 | [!UICONTROL Komponente in Reports verbergen] | Standard = aus. Ermöglicht es Ihnen, die Komponente aus der Datenansicht auszublenden, wenn sie im Reporting verwendet wird. Dies wirkt sich nicht auf Berechtigungen aus, sondern nur auf die Kuratierung von Komponenten. Mit anderen Worten, Sie können die Komponente im Reporting für Nicht-Administratoren ausblenden. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
 
 ### Formateinstellungen konfigurieren
@@ -123,7 +123,7 @@ Hier können Sie angeben, wie sich eine Metrik in Berichten verhalten soll.
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. Dadurch erhalten Sie den tatsächlichen Wert einer Metrik, z. B. &quot;50&quot;, wenn ein Bestellwert von 50 vorhanden war. |
+| [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. Dadurch erhalten Sie den tatsächlichen Wert einer Metrik, z. B. „50“, wenn ein Bestellwert von 50 vorhanden war. |
 | [!UICONTROL Instanzen zählen] | Hier können Sie festlegen, ob ein numerisches Feld oder ein Datumsfeld, das als Metrik verwendet wird, zählen soll, wie oft es gesetzt wurde, anstatt den Wert selbst.<br> Ob Sie die Instanzen eines numerischen Felds aufaddieren möchten und einfach die Anzahl der *Festlegungen* eines Felds aufaddieren möchten, anstatt dessen tatsächlichen Wert zu nutzen.<br>Dies ist beispielsweise hilfreich, um eine [!UICONTROL Bestellmetrik] aus einem [!UICONTROL Umsatzfeld] zu erstellen. Wenn der Umsatz festgelegt wurde, geht es darum, anstelle des numerischen Umsatzbetrags eine einzelne Bestellung zu zählen. |
 
 ### Einstellungen für [!UICONTROL Optionen ohne Werte] konfigurieren
@@ -151,7 +151,7 @@ Weitere Informationen finden Sie beim Thema [Persistenz](/help/data-views/persis
 | --- | --- |
 | [!UICONTROL Persistenz festlegen] | Schlüssel umschalten |
 | [!UICONTROL Zuordnung] | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind: [!UICONTROL Zuletzt verwendet], [!UICONTROL Original], [!UICONTROL Instanz], [!UICONTROL Alle]. Wenn ein Wert beibehalten werden soll (ähnlich wie bei eVars im herkömmlichen Analytics), legen Sie ihn hier fest. Der einzige wichtige Unterschied besteht darin, dass die maximale Persistenz, die Sie einstellen können, 90 Tage beträgt. Außerdem ist [!UICONTROL Niemals ablaufen lassen] keine Option. |
-| [!UICONTROL Ablauf] | Hier können Sie das Persistenzfenster für eine Dimension angeben. Die Optionen sind: [!UICONTROL Sitzung] (Standardeinstellung), [!UICONTROL Person], [!UICONTROL Zeit], [!UICONTROL Metrik]. Möglicherweise brauchen Sie die Option, dass die Dimension bei einem Kauf ablaufen soll (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle). [!UICONTROL Metrik] ermöglicht Ihnen, eine der definierten Metriken als Ablaufdatum für diese Dimension anzugeben (z. B. eine [!UICONTROL Kaufmetrik]).<br>**Hinweis**: Sie können keine benutzerdefinierte Gültigkeit für eine Dimension festlegen, wenn Sie eine Zuordnung von  [!UICONTROL Alle] auswählen. |
+| [!UICONTROL Ablauf] | Hier können Sie das Persistenzfenster für eine Dimension angeben. Die Optionen sind: [!UICONTROL Sitzung] (Standardeinstellung), [!UICONTROL Person], [!UICONTROL Zeit], [!UICONTROL Metrik]. Möglicherweise brauchen Sie die Option, dass die Dimension bei einem Kauf ablaufen soll (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle). [!UICONTROL Metrik] ermöglicht Ihnen, eine der definierten Metriken als Ablaufdatum für diese Dimension anzugeben (z. B. eine [!UICONTROL Kaufmetrik]).<br>**Hinweis**: Sie können keine benutzerdefinierte Gültigkeit für eine Dimension festlegen, wenn Sie für die Zuordnung [!UICONTROL Alle] auswählen. |
 
 ### Einstellungen für die Wertebereiche konfigurieren
 
@@ -204,9 +204,9 @@ Optionale Standardkomponenten sind auf dem Tab **[!UICONTROL Standardkomponenten
 | [!UICONTROL Batch-ID] | Dimension | Stellt den Experience Platform-Batch dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
 | [!UICONTROL Datensatz-ID] | Dimension | Stellt den Experience Platform-Datensatz dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
 
-## Verwenden Sie die Funktion [!UICONTROL Duplizieren] .
+## Verwenden Sie die Funktion [!UICONTROL Duplizieren].
 
-Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spezifischer Einstellungen ist eine einfache Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen. Wählen Sie einfach die Einstellung [!UICONTROL Duplizieren] unter dem Namen der Metrik oder Dimension oben rechts aus. Ändern Sie dann die neue Metrik oder Dimension und speichern Sie sie unter einem beschreibenden Namen.
+Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spezifischer Einstellungen ist eine einfache Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen. Wählen Sie einfach die Einstellung [!UICONTROL Duplizieren] unter dem Namen der Metrik oder Dimension oben rechts aus. Ändern Sie dann die neue Metrik oder Dimension und speichern Sie sie unter einem Namen, der sie besser beschreibt.
 
 ![](assets/duplicate.png)
 
