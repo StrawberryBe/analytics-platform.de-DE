@@ -5,7 +5,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 42%
+ht-degree: 88%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 42%
 
 Diese Anwendungsfälle zeigen die Flexibilität und Leistungsfähigkeit von Datenansichten in Customer Journey Analytics.
 
-## 1. Erstellen Sie eine Metrik aus einem Zeichenfolgenschemafeld
+## 1. Erstellen Sie eine Metrik aus einem Zeichenfolgen-Schemafeld
 
 Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!UICONTROL Bestellungen] aus einem Schemafeld [!UICONTROL pageTitle] erstellen, das eine Zeichenfolge ist. Hierzu sind folgende Schritte notwendig:
 
@@ -28,7 +28,7 @@ Wenn Sie beispielsweise eine Datenansicht erstellen, können Sie eine Metrik [!U
 1. Sie können darüber hinaus ein Zuordnungsmodell für diese Metrik angeben, beispielsweise [!UICONTROL Letztkontakt] mit einem [!UICONTROL Lookback-Fenster] von [!UICONTROL Sitzung].
 Sie können auch eine weitere Metrik [!UICONTROL Bestellungen] aus demselben Feld erstellen und dafür ein anderes Zuordnungsmodell festlegen, beispielsweise [!UICONTROL Erstkontakt], und ein anderes [!UICONTROL Lookback-Fenster], beispielsweise [!UICONTROL 30 Tage].
 
-Ein weiteres Beispiel wäre die Verwendung der Besucher-ID, einer Dimension, als Metrik zur Bestimmung der Anzahl der Besucher-IDs in Ihrem Unternehmen.
+Ein weiteres Beispiel wäre die Verwendung der Besucher-ID, also einer Dimension, als Metrik zur Bestimmung der Anzahl der Besucher-IDs in Ihrem Unternehmen.
 
 ## 2. Verwenden Sie Ganzzahlen als Dimensionen
 
@@ -42,11 +42,11 @@ Zuvor wurden Ganzzahlen in Customer Journey Analytics automatisch als Metriken b
 
    ![](assets/bucketing.png)
 
-## 3. Numerische Dimensionen als &quot;Metriken&quot;in Flussdiagrammen verwenden
+## 3. Verwenden Sie numerische Dimensionen als „Metriken“ in Flussdiagrammen
 
-Sie können eine numerische Dimension verwenden, um &quot;Metriken&quot;in Ihre [!UICONTROL  Fluss] -Visualisierung zu übertragen.
+Sie können eine numerische Dimension verwenden, um „Metriken“ in Ihre [!UICONTROL Fluss]-Visualisierung zu übertragen.
 
-1. Ziehen Sie auf der Registerkarte Datenansichten [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
+1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-component-settings) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Workspace-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
 
 ![](assets/flow.png)
@@ -55,30 +55,30 @@ Sie können eine numerische Dimension verwenden, um &quot;Metriken&quot;in Ihre 
 
 Diese Funktion gilt speziell für Array-basierte Felder. Die Ein-/Ausschlussfunktion ermöglicht das Filtern auf der Ebene der Unterereignisse, während im Filter-Builder erstellte Filter (Segmente) nur die Filterung auf der Ereignisebene ermöglichen. So können Sie die Filterung von Unterereignissen durchführen, indem Sie Einschließen/Ausschließen in Datenansichten verwenden und dann auf der Ereignisebene in einem Filter auf diese neue Metrik/Dimension verweisen.
 
-Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten , um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 Dollar generierten. Wenn Sie also eine Bestellung haben, die einen 50-Dollar-Produktkauf und einen 25-Dollar-Produktkauf beinhaltet, würden wir nur den 25-Dollar-Produktkauf entfernen, nicht die gesamte Bestellung.
+Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten, um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 Dollar generiert haben. Wenn Sie also eine Bestellung haben, die einen 50-Dollar-Produktkauf und einen 25-Dollar-Produktkauf beinhaltet, würden wir nur den 25-Dollar-Produktkauf entfernen, nicht die gesamte Bestellung.
 
-1. Ziehen Sie auf der Registerkarte Datenansichten [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
+1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) der Datenansichten das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 1. Wählen Sie die Metrik aus und konfigurieren Sie rechts Folgendes:
-a. Wählen Sie unter [!UICONTROL Format] [!UICONTROL Währung] aus.
-b. Wählen Sie unter [!UICONTROL Currency] die Option USD aus.
+a. Wählen Sie unter [!UICONTROL Format] die Option [!UICONTROL Währung] aus.
+b. Wählen Sie unter [!UICONTROL Währung] die Option „USD“ aus.
 c. Aktivieren Sie unter [!UICONTROL Werte einschließen/ausschließen] das Kontrollkästchen neben [!UICONTROL Ein-/Ausschlusswerte festlegen].
-d. Wählen Sie unter [!UICONTROL Match] [!UICONTROL Wenn alle Kriterien erfüllt sind].
-e. Wählen Sie unter [!UICONTROL Kriterien] [!UICONTROL ist größer oder gleich] aus.
-f. Geben Sie &quot;50&quot;als Wert an.
+d. Wählen Sie unter [!UICONTROL Match] die Option [!UICONTROL Wenn alle Kriterien erfüllt sind].
+e. Wählen Sie unter [!UICONTROL Kriterien] die Option [!UICONTROL ist größer oder gleich] aus.
+f. Geben Sie als Wert „50“ an.
 
-Mit diesen neuen Einstellungen können Sie nur hochwertige Umsätze anzeigen und alles unter 50 Euro herausfiltern.
+Mit diesen neuen Einstellungen können Sie nur Umsätze mit höheren Werten anzeigen und alles unter 50 Dollar herausfiltern.
 
-## 5. Verwenden Sie die Einstellung [!UICONTROL Keine Wertoptionen] .
+## 5. Verwenden Sie die Einstellung [!UICONTROL Keine Wertoptionen].
 
-Möglicherweise hat Ihr Unternehmen Zeit damit verbracht, Ihre Benutzer in Berichten mit &quot;Nicht angegeben&quot;zu vertraut zu machen. Der Standardwert in Datenansichten ist &quot;Kein Wert&quot;. Sie können in der Benutzeroberfläche für Datenansichten jetzt [&quot;Kein Wert&quot;in &quot;Nicht angegeben&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) umbenennen.
+Ihr Unternehmen hat vielleicht Zeit damit verbracht, Ihre Benutzer dahingehend zu schulen, dass sie in Berichten „Nicht angegeben“ erwarten. Der Standardwert in Datenansichten ist „Kein Wert“. Sie können in der Benutzeroberfläche für Datenansichten jetzt [„Kein Wert“ in „Nicht angegeben“ umbenennen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-no-value-options-settings).
 
 Ein weiteres Beispiel wäre eine Dimension für die Registrierung eines Mitgliedschaftsprogramms. In diesem Fall können Sie &quot;Kein Wert&quot;in &quot;Registrierung für kein Mitgliedschaftsprogramm&quot;umbenennen.
 
-## 6. Erstellen Sie mehrere Metriken mit unterschiedlichen [!UICONTROL Attributionseinstellungen].
+## 6. Erstellen Sie mehrere Metriken mit unterschiedlichen Einstellungen für die [!UICONTROL Attribution].
 
-Erstellen Sie mithilfe der Funktion [!UICONTROL Duplizieren] oben rechts eine Reihe von Umsatzmetriken mit verschiedenen Attributionseinstellungen wie [!UICONTROL Erstkontakt], [!UICONTROL Letztkontakt] und [!UICONTROL Algorithmisch].
+Erstellen Sie dazu mithilfe der Funktion [!UICONTROL Duplizieren] oben rechts eine Reihe von Umsatzmetriken mit verschiedenen Attributionseinstellungen wie [!UICONTROL Erstkontakt], [!UICONTROL Letztkontakt] und [!UICONTROL Algorithmisch].
 
-Vergessen Sie nicht, jede Metrik umzubenennen, um die Unterschiede widerzuspiegeln, z. B. &quot;Algorithmischer Umsatz&quot;:
+Vergessen Sie nicht, jeder Metrik einen neuen Namen zu geben, um die Unterschiede widerzuspiegeln, z. B. „Algorithmischer Umsatz“:
 
 ![](assets/algo-revenue.png)
 
