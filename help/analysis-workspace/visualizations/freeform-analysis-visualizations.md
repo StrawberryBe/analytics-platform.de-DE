@@ -3,9 +3,9 @@ description: Darstellen Sie Ihre Daten in Analysis Workspace visuell dar.
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1051'
 ht-degree: 93%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Die meisten Visualisierungstypen sind Ihnen schon bekannt, wenn Sie Adobe Analytics verwenden. Analysis Workspace verfügt jedoch über Visualisierungseinstellungen sowie viele neue und einzigartige Visualisierungsarten mit interaktiven Funktionen.
 
-Sie können auf Visualisierungen durch das Symbol oben links in Workspace, von einem [leeren Bedienfeld](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=de) aus oder über das Kontextmenü in Ihrem Workflow zugreifen.
+Sie können auf Visualisierungen durch das Symbol oben links in Workspace, von einem [leeren Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) aus oder über das Kontextmenü in Ihrem Workflow zugreifen.
 
 ![](assets/viz-rail.png)
 
