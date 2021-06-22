@@ -2,10 +2,9 @@
 title: Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) nutzen können, um Ihre Google Analytics-Daten in Adobe Experience Platform aufzunehmen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '1183'
+source-git-commit: 316819116e9b47110763479af4e8504a2bffaff3
+workflow-type: tm+mt
+source-wordcount: '1178'
 ht-degree: 100%
 
 ---
@@ -51,26 +50,28 @@ Weitere Informationen finden Sie in [diesen Anweisungen](https://support.google.
 
 GA-Daten speichern jeden Datensatz in ihren Daten als Benutzersitzung und nicht als einzelne Ereignisse. Sie müssen eine SQL-Abfrage erstellen, um die Universal Analytics-Daten in ein mit Experience Platform kompatibles Format umzuwandeln. Sie wenden die Funktion „unnest“ auf das Feld „Treffer“ im GA-Schema an. Hier finden Sie das SQL-Beispiel, das Sie verwenden können:
 
-`SELECT
-*,
-timestamp_seconds(`visitStartTime` + hit.time) AS `Zeitstempel` 
-FROM
-(
+```
 SELECT
-fullVisitorId,
-visitNumber,
-visitId,
-visitStartTime,
-trafficSource,
-socialEngagementType,
-channelGrouping,
-device,
-geoNetwork,
-hit 
+   *,
+   timestamp_seconds(`visitStartTime` + hit.time) AS `timestamp` 
 FROM
-`your_bq_table_2021_04_*`,
-UNNEST(hits) AS hit 
-)`
+   (
+      SELECT
+         fullVisitorId,
+         visitNumber,
+         visitId,
+         visitStartTime,
+         trafficSource,
+         socialEngagementType,
+         channelGrouping,
+         device,
+         geoNetwork,
+         hit 
+      FROM
+         `your_bq_table_2021_04_*`,
+         UNNEST(hits) AS hit 
+   )
+```
 
 Speichern Sie nach Abschluss der Abfrage die vollständigen Ergebnisse in einer BigQuery-Tabelle.
 
