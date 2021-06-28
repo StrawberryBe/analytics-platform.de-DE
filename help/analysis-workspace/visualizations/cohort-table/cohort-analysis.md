@@ -2,10 +2,10 @@
 title: Was ist eine Kohortenanalyse?
 description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 82%
+source-wordcount: '468'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,7 @@ Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 * Gewinnen Sie Ideen für A/B-Tests in Bereichen wie Preisstruktur, Upgrade-Pfad usw.
 * Zeigen Sie einen [!UICONTROL Kohortenanalysebericht] mit einem angeleiteten Analysebericht an.
 
-Die [!UICONTROL Kohortenanalyse] steht allen Adobe Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace] zur Verfügung.
+[!UICONTROL Die Kohortenanalyse ] steht allen Customer Journey Analytics mit Zugriffsrechten auf  [!UICONTROL Analysis Workspace] zur Verfügung.
 
 [Video-Tutorial zur Kohortenanalyse](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
 
@@ -64,7 +64,7 @@ Misst die Zeit, die vor und nach dem Aufnahmeereignis verstrichen ist. Ein hervo
 
 ### [!UICONTROL Angepasste Dimensionskohorte]
 
-Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder jede andere Dimension in Adobe Analytics, um anzuzeigen, wie die Bindung sich basierend auf verschiedenen Werten dieser Dimensionen verändert.
+Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder eine andere Dimension in Customer Journey Analytics, um anzuzeigen, wie sich die Bindung basierend auf den verschiedenen Werten dieser Dimensionen verändert.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
