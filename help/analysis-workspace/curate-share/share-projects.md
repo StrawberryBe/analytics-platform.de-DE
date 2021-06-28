@@ -3,10 +3,10 @@ description: Projektfreigabe und Projektrollen in Workspace
 keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 96%
+source-wordcount: '1128'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können einer von drei Projektrollen Empfänger hinzufügen. Projektrollen s
 |---|---|
 | Kann bearbeiten | Empfänger können Änderungen an einem Projekt **[!UICONTROL speichern]** und als Miteigentümer auftreten. Diese Rolle ist nützlich, wenn Sie ein Projekt mit anderen Kollegen gemeinsam verwalten möchten. Dazu gehören das Bearbeiten, Löschen und Bearbeiten von Empfängerlisten für ein freigegebenes Projekt. <br>Hinweis: Analysis Workspace unterstützt derzeit keine Live-Zusammenarbeit. Es wird daher empfohlen, dass zu jedem Zeitpunkt nur ein Benutzer ein Projekt bearbeitet. Wenn Projekte zum gleichen Zeitpunkt gespeichert werden, wird die letzte Version beibehalten. |
 | Kann duplizieren | Empfänger können **[!UICONTROL Speichern unter]** verwenden und auf die linke Navigationsleiste zugreifen. Projektinteraktionen sind in dieser Rolle nicht beschränkt. Diese Rolle ist nützlich, wenn Sie ein Projekt für Benutzer freigeben möchten, die die Daten Ihres Unternehmens und die Verwendung von Analysis Workspace verstehen, Ihr Projekt jedoch nicht ändern möchten. |
-| Kann anzeigen | Empfänger können „Speichern unter“ nicht verwenden und auch nicht auf die linke Navigationsleiste zugreifen. Auch die Projektinteraktionen sind begrenzt. Diese Rolle ist hilfreich, wenn Sie ein Projekt für Benutzer freigeben möchten, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Adobe Analytics im Allgemeinen nicht so vertraut sind. Sie möchten jedoch, dass sie Daten und Erkenntnisse in einer sicheren Umgebung einsehen können.<br>Weitere Informationen zum [Projekterlebnis „Kann anzeigen“](/help/analysis-workspace/curate-share/view-only-projects.md). |
+| Kann anzeigen | Empfänger können „Speichern unter“ nicht verwenden und auch nicht auf die linke Navigationsleiste zugreifen. Auch die Projektinteraktionen sind begrenzt. Diese Rolle ist nützlich, wenn Sie ein Projekt für Benutzer freigeben möchten, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen weniger vertraut sind. Sie möchten jedoch, dass sie Daten und Erkenntnisse in einer sicheren Umgebung einsehen können.<br>Weitere Informationen zum [Projekterlebnis „Kann anzeigen“](/help/analysis-workspace/curate-share/view-only-projects.md). |
 
 >[!IMPORTANT]
 > Vor dem 18. Juni 2020 hinzugefügte Empfänger wurden in eine Projektrolle migriert. Admin-Benutzer wurden in die Rolle **[!UICONTROL Kann bearbeiten]** und Nicht-Admin-Benutzer in die Rolle **[!UICONTROL Kann duplizieren]** migriert. Diese Rollen bieten dasselbe Projekterlebnis wie zuvor. Außerdem wurden alle Gruppen (einschließlich „Alle“) in die Rolle **[!UICONTROL Kann duplizieren]** migriert.
@@ -62,7 +62,7 @@ Sie können auch auf **[!UICONTROL Kuratieren und freigeben]** klicken, um die P
 
 ## Freigeben für eine Gruppe von Empfängern {#Groups}
 
-Alle Benutzer können Projekte für Gruppen freigeben, also für eine Sammlung von Empfängern. In Adobe Analytics werden Gruppen durch Produktprofile in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) definiert.
+Alle Benutzer können Projekte für Gruppen freigeben, also für eine Sammlung von Empfängern. Im Customer Journey Analytics werden Gruppen durch Produktprofile in der [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) definiert.
 
 * Administratoren können für jede Gruppe freigeben, einschließlich „Alle“.
 * Nicht-Administratoren können für Gruppen freigeben, denen sie angehören (mit Ausnahme von „Alle“).
