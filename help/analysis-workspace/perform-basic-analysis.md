@@ -2,9 +2,9 @@
 title: Grundlegende Analyse in Customer Journey Analytics durchführen
 description: Beschreibt die Verwendung grundlegender Visualisierungen zur Analyse von Daten in Customer Journey Analytics.
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Im Folgenden finden Sie ein Beispiel für grundlegende Visualisierungen in Works
 
 * einen Trend-Bericht über Online- und In-Store-Umsätze erstellen, in dem die beiden Datenquellen im Zeitverlauf verglichen werden.
 
-* Zeigen Sie die Zielgruppengröße anhand von Datenquellen an, z. B. Anzeigenimpressionsdaten, Adobe Analytics-Daten, E-Mail-Daten, POS-Daten, Callcenter-Daten und Umfragedaten.
+* Zeigen Sie die Zielgruppengröße anhand von Datenquellen an, z. B. Daten zu Anzeigenimpressionen, Customer Journey Analytics-Daten, E-Mail-Daten, POS-Daten, Callcenter-Daten und Umfragedaten.
 
 ![](assets/cja-basic-analysis.png)
 
