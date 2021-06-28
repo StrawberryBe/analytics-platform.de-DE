@@ -2,10 +2,10 @@
 title: Übersicht über Attribution
 description: Das Konzept der Zuordnung eines Erfolgsereignisses zu mehreren Dimensionselementen.
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 91%
+source-wordcount: '421'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Mit Attribution können Analysten anpassen, wie Erfolgsereignisse Dimensionselem
 1. Ein Besucher Ihrer Site klickt auf einen Paid-Search-Link zu einer Ihrer Produktseiten. Er fügt das Produkt zum Warenkorb hinzu, kauft es jedoch nicht.
 2. Am nächsten Tag sieht er einen Social-Media-Beitrag von einem seiner Freunde, klickt auf den Link und schließt den Kauf ab.
 
-In einigen Berichten möchten Sie die Bestellung eventuell Paid Search zuordnen. In anderen Berichten möchten Sie die Bestellung eventuell Social Media zuordnen. Mithilfe von Attribution können Sie diesen Aspekt des Berichts steuern. Die Funktion steht allen Unternehmen mit Adobe Analytics Ultimate, Prime, Select und Foundation zur Verfügung. Wenden Sie sich an den Kundenbetreuer Ihres Unternehmens, wenn Sie sich nicht sicher sind, welche Art von Vertrag Sie mit Adobe abgeschlossen haben.
+In einigen Berichten möchten Sie die Bestellung eventuell Paid Search zuordnen. In anderen Berichten möchten Sie die Bestellung eventuell Social Media zuordnen. Mithilfe von Attribution können Sie diesen Aspekt des Berichts steuern.
 
 ## Wert von Attribution IQ
 
@@ -28,7 +28,7 @@ Eine Customer Journey ist nie linear und oft unvorhersehbar. Jeder Kunde hat sei
 
 ![Attribution IQ-Problem](assets/attribution_iq_problem.png)
 
-Adobe Analytics erweitert die Attribution und ermöglicht Ihnen Folgendes:
+Customer Journey Analytics verbessert die Attribution, indem es Ihnen Folgendes ermöglicht:
 
 * Die Attribution über bezahlte Medien definieren: Dimensionen, Metriken, Kanäle oder Ereignisse können auf Modelle (z. B. die interne Suche) angewendet werden, nicht nur Marketing-Kampagnen.
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
