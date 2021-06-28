@@ -2,10 +2,10 @@
 title: Algorithmische Attribution
 description: Details zum algorithmischen Attributionsmodell.
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 34a1e7cea518e39ee665470dc3e1087d728b654d
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 78%
+source-wordcount: '290'
+ht-degree: 84%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 78%
 >[!NOTE]
 >
 >Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
-
->[!NOTE]
->
->**[!UICONTROL Die algorithmische]** Attribution wird derzeit in begrenztem Umfang getestet. Weitere Informationen finden Sie unter [Adobe Analytics feature releases](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) .
 
 Das algorithmische [Attributionsmodell](models.md) in Analysis Workspace unterscheidet sich von anderen Modellen insofern, als es mithilfe statistischer Verfahren Gewichtungen über die Dimensionselemente in Ihrem Bericht oder Ihrer Freiform-Tabelle verteilt. Wie alle anderen Attributionsmodelle in Analysis Workspace kann es für jede Dimension oder Metrik verwendet werden. Es unterstützt unbegrenzte Filter und Aufschlüsselungen und verteilt 100 % der Konversionen auf die Dimension(en) in der Tabelle (auch als &quot;Teilattribution&quot;bezeichnet).
 
