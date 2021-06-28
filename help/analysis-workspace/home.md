@@ -3,10 +3,10 @@ keywords: Analysis Workspace
 title: Analysis Workspace – Übersicht
 description: Überblick über die Funktionen von Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 98%
+source-wordcount: '461'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ Wenn Sie nur wenige Minuten Zeit haben, sehen Sie sich diese kurze Übersicht an
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Melden Sie sich bei Adobe Analytics {#login}
+## Anmelde-Customer Journey Analytics {#login}
 
-Um mit Analysis Workspace zu beginnen, melden Sie sich unter [experience.adobe.com/analytics](https://experience.adobe.com/analytics) bei Adobe Analytics an. Sie landen auf der Homepage der Workspace-Projektliste, wenn noch kein bestimmtes Projekt für Sie ausgewählt wurde.
+Um mit der Verwendung von Analysis Workspace zu beginnen, melden Sie sich unter [experience.adobe.com/analytics](https://experience.adobe.com/analytics) bei Customer Journey Analytics an. Sie landen auf der Homepage der Workspace-Projektliste, wenn noch kein bestimmtes Projekt für Sie ausgewählt wurde.
 
 ![](assets/login-analytics.png)
 
@@ -36,7 +36,7 @@ Nach der Anmeldung sollten Sie als Erstes das Analysis Workspace-Tutorial besuch
 
 ## Neues Projekt erstellen {#new-project}
 
-Nach Abschluss des Tutorials können Sie mit der Erstellung Ihres ersten Projekts beginnen. Das **neue Projektmodell** bietet verschiedene Optionen zum Starten Ihrer Analyse. Je nachdem, ob Sie Ihre Analyse über den Browser oder die Adobe Analytics Dashboards-Mobile-App freigeben möchten, können Sie mit einem leeren Projekt oder einer [leeren mobilen Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) beginnen.
+Nach Abschluss des Tutorials können Sie mit der Erstellung Ihres ersten Projekts beginnen. Das **neue Projektmodell** bietet verschiedene Optionen zum Starten Ihrer Analyse. Je nachdem, ob Sie Ihre Analyse über den Browser oder die Customer Journey Analytics-Dashboards-Mobile-App freigeben möchten, können Sie mit einem leeren Projekt oder [einer leeren mobilen Scorecard](/help/mobile-app/curator.md) beginnen.
 
 ![](assets/create-new-project.png)
 
