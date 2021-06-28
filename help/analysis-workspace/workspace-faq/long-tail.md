@@ -1,36 +1,35 @@
 ---
-title: Längs-Enddimensionselement
-description: Erläutert das Dimensionselement "Long Tail"und warum es in Berichte angezeigt wird.
+title: Dimensionselement "Long Tail"
+description: Erläutert das Dimensionselement "Long Tail"und warum es in Berichten angezeigt wird.
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# Längs-Enddimensionselement
+# Dimensionselement &quot;Long Tail&quot;
 
-Wenn Sie eine Dimension verwenden, die eine große Anzahl individueller Werte enthält, können Sie manchmal einen Wert in Berichte mit der Bezeichnung **[!UICONTROL Langzeit]** sehen. Dieses Dimensionselement bedeutet, dass die Berichte-Architektur, die von CJA verwendet wird, zu viele eindeutige Werte enthalten hat, um verarbeitet werden zu können.
+Wenn Sie eine Dimension verwenden, die eine große Anzahl eindeutiger Werte enthält, können Sie manchmal einen Wert in der Berichterstellung mit der Bezeichnung **[!UICONTROL Long Tail]** sehen. Dieses Dimensionselement bedeutet, dass die Berichterstellungsarchitektur, die von CJA verwendet wird, zu viele eindeutige Werte enthält, um verarbeitet werden zu können.
 
 ## CJA-Verarbeitungsarchitektur und eindeutige Werte
 
-CJA verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an eine Reihe von Servern. Daten pro Verarbeitungsserver werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungsserver enthält alle Daten für eine bestimmte Person. Nach Abschluss der Verarbeitung übergibt es eine Teilmenge der verarbeiteten Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
+CJA verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an mehrere Server. Die Daten pro Verarbeitungsserver werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungsserver enthält alle Daten für eine bestimmte Person. Sobald die Verarbeitung abgeschlossen ist, übergibt sie ihre Teilmenge der verarbeiteten Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
 
-Wenn bei jedem einzelnen Server, der eine Teilmenge der Daten verarbeitet, mehr als 500.000 individuelle Dimensionselemente auftreten, werden die Top-500.000-Dimensionselemente der eigenen Untergruppe zurückgegeben. Dann wird der Rest unter &quot;[!UICONTROL Long Tail]&quot;zurückgegeben. Das in einem Workspace-Bericht angezeigte Dimensionselement &quot;[!UICONTROL Long Tail]&quot;ist die aggregierte Summe der Werte jedes einzelnen Verarbeitungsservers, die 500 K einzigartige Werte überschritten haben.
+Wenn bei jedem einzelnen Server, der eine Teilmenge von Daten verarbeitet, mehr als 500.000 eindeutige Dimensionselemente auftreten, werden die 500.000 wichtigsten Dimensionselemente der eigenen Teilmenge zurückgegeben. Dann wird der Rest unter &quot;[!UICONTROL Long Tail]&quot;zurückgegeben. Das in einem Workspace-Bericht angezeigte Dimensionselement &quot;[!UICONTROL Long Tail]&quot;ist der aggregierte Gesamtwert der Werte jedes einzelnen Verarbeitungsservers, die 500.000 eindeutige Werte überschritten haben.
 
 ## Unterschiede zwischen &quot;Long Tail&quot;und &quot;Low Traffic&quot;
 
-In früheren Versionen von Adobe Analytics wurde eine andere Verarbeitungsarchitektur verwendet. Die Daten wurden zum Zeitpunkt ihrer Erfassung verarbeitet. Elemente der Dimension wurden unter &quot;Geringe Traffic&quot;platziert, nachdem eine Dimension 500 K einzigartige Werte erreicht hatte, und eine aggressivere Filterung bei 1-M-Werten angewendet. Die Anzahl der individuellen Werte wurde zu Beginn jedes Kalendermonats zurückgesetzt. die verarbeiteten Daten dauerhaft waren; Es gab keine Möglichkeit, vorhandene Daten aus &quot;geringer Traffic&quot;zu erhalten.
+In früheren Versionen von Analytics wurde eine andere Verarbeitungsarchitektur verwendet. Die Daten wurden zum Zeitpunkt ihrer Erfassung verarbeitet. Dimension Elemente wurden unter &quot;Geringer Traffic&quot;platziert, nachdem eine Dimension 500.000 eindeutige Werte erreicht hatte, und eine aggressivere Filterung bei einmaligen 1M-Werten angewendet wurde. Die Anzahl eindeutiger Werte wurde zu Beginn jedes Kalendermonats zurückgesetzt. Verarbeitete Daten waren dauerhaft; es gab keine Möglichkeit, vorhandene Daten aus &quot;Geringer Datenverkehr&quot;zu erhalten.
 
-In CJA werden Dimensionselemente nur dann in &quot;Long Tail&quot;eingefügt, wenn ein einzelner Verarbeitungsserver mehr als 500 K eindeutige Werte enthält. Verarbeitete Daten sind nicht dauerhaft, d. h., Sie können das Dimensionselement &quot;Langzeit&quot;verringern, indem Sie Ihren Bericht ändern.
+In CJA werden Dimensionselemente nur dann in &quot;Long Tail&quot;eingefügt, wenn ein einzelner Verarbeitungsserver mehr als 500.000 eindeutige Werte enthält. Die verarbeiteten Daten sind nicht dauerhaft, d. h. Sie können das Dimensionselement &quot;Langer Tail&quot;reduzieren, indem Sie Ihren Bericht ändern.
 
-## Dimensionselemente für &quot;Langes Tail&quot;reduzieren
+## Dimensionselement &quot;Long Tail&quot;reduzieren
 
-Wenn Sie das Dimensionselement &quot;Langzeit-Tail&quot;reduzieren möchten, empfiehlt Adobe Folgendes:
+Wenn Sie das Dimensionselement &quot;Long Tail&quot;reduzieren möchten, empfiehlt Adobe Folgendes:
 
-* Verwenden Sie einen [filter](/help/components/filters/create-filters.md). Filter werden angewendet, wenn jeder Server eine Teilmenge der Daten verarbeitet. Wenn Sie die Anzahl der eindeutigen Werte, die sie zurückgeben, begrenzen, wird das Dimensionselement &quot;Langzeit-Zahl&quot;reduziert.
-* Verwenden Sie eine Dimension für den Nachschlagedataset. Suchdatenaset-Dimensionen kombinieren Ereignis-Dataset-Dimensionselemente, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
+* Verwenden Sie einen [filter](/help/components/filters/create-filters.md). Filter werden angewendet, wenn jeder Server eine Teilmenge von Daten verarbeitet. Wenn Sie die Anzahl der eindeutigen Werte, die sie zurückgeben, begrenzen, wird das Dimensionselement &quot;Langer Tail&quot;reduziert.
+* Verwenden Sie eine Lookup-Datensatz-Dimension. Lookup-Datensatzdimensionen kombinieren Ereignis-Datensatz-Dimensionselemente, die die Anzahl der zurückgegebenen eindeutigen Werte begrenzen.
 
-Insgesamt ist es schwierig, einen Bericht zu verwenden, der mehr als 500 K einzigartige Dimensionselemente enthält. Wenn Sie eine Filter- oder Nachschlagedataset-Dimension anwenden, können Sie das Vorhandensein von &quot;Long Tail&quot;reduzieren, während Sie Ihren Bericht benutzerfreundlicher gestalten. Die Adobe plant, diese Erfahrung zu verbessern, da die CJA weiter entwickelt wird.
+Insgesamt ist es schwierig, einen Bericht zu verwenden, der mehr als 500.000 eindeutige Dimensionselemente enthält. Wenn Sie einen Filter oder eine Lookup-Datensatz-Dimension anwenden, können Sie das Vorhandensein von &quot;Long Tail&quot;reduzieren und gleichzeitig die Nutzung Ihres Berichts vereinfachen. Die Adobe plant, diese Erfahrung im Zuge der Weiterentwicklung des CJA zu verbessern.
