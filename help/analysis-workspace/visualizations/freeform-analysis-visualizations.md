@@ -3,16 +3,16 @@ description: Darstellen Sie Ihre Daten in Analysis Workspace visuell dar.
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 93%
+source-wordcount: '1052'
+ht-degree: 92%
 
 ---
 
 # Visualisierungsübersicht
 
-Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Die meisten Visualisierungstypen sind Ihnen schon bekannt, wenn Sie Adobe Analytics verwenden. Analysis Workspace verfügt jedoch über Visualisierungseinstellungen sowie viele neue und einzigartige Visualisierungsarten mit interaktiven Funktionen.
+Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Die meisten Visualisierungstypen kennen Sie, wenn Sie Customer Journey Analytics verwenden. Analysis Workspace verfügt jedoch über Visualisierungseinstellungen sowie viele neue und einzigartige Visualisierungsarten mit interaktiven Funktionen.
 
 Sie können auf Visualisierungen durch das Symbol oben links in Workspace, von einem [leeren Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) aus oder über das Kontextmenü in Ihrem Workflow zugreifen.
 
@@ -94,7 +94,7 @@ Zusätzliche Funktionen für eine Visualisierung sind verfügbar, indem Sie mit 
 | Visualisierungs-Link anfordern | Hiermit können Sie Personen zu einer bestimmten Visualisierung innerhalb eines Projekts leiten. Wenn auf den Link geklickt wird, muss sich der Empfänger anmelden, bevor er zu genau der verknüpften Visualisierung weitergeleitet wird. |
 | Neu starten | (Funktioniert für Fluss, Venn, Histogramm) Löscht die Konfiguration für die aktuelle Visualisierung, damit Sie sie von Grund auf neu konfigurieren können. |
 
-## Symbol „Visualisierung erstellen“ {#quick-viz}
+## Symbol „Visualisierung erstellen“  {#quick-viz}
 
 Wenn Sie sich nicht sicher sind, welche Visualisierung Sie auswählen sollen, bewegen Sie den Mauszeiger über eine beliebige Tabellenzeile und klicken Sie auf das dann erscheinende Symbol **[!UICONTROL Visualisierung erstellen]**. Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Wenn Sie darauf klicken, sucht Analysis Workspace nach der Visualisierung, die aufgrund der vorhandenen Fakten am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine einzelne Zeile ausgewählt haben, wird ein Trend-Liniendiagramm erstellt. Wenn Sie drei Filterzeilen ausgewählt haben, wird ein Venn-Diagramm erstellt.
 
