@@ -10,11 +10,10 @@ user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, der auf der Adobe Experience Platform basierenden Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: ht
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 99%
 
 ---
 
@@ -26,12 +25,13 @@ ht-degree: 100%
    + [Überblick über Customer Journey Analytics](getting-started/cja-overview.md)
    + [Erste Schritte](getting-started/cja-getting-started.md)
    + [Häufig gestellte Fragen](getting-started/cja-faq.md)
-   + [Unterstützung der Customer Journey Analytics-Funktion](getting-started/cja-aa.md)
+   + [Customer Journey Analytics-Funktionen](getting-started/cja-aa.md)
+   + [Auswirkungen des Löschens](getting-started/cja-deletion.md)
    + [CJA-Glossar](getting-started/cja-glossary.md)
 + Verbindungen {#cja-connections}
-   + [Verbindung erstellen](connections/create-connection.md)
-   + [Verbindungen verwalten](connections/manage-connection.md)
-   + [Schätzung der Verbindungsgröße](connections/estimate-connection-size.md)
+   + [Verbindung herstellen](connections/create-connection.md)
+   + [Verbindungen verwalten](connections/manage-connections.md)
+   + [Verbindungsgröße schätzen](connections/estimate-connection-size.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
    + Kanalübergreifende Analyse {#cca}
       + [Überblick über die kanalübergreifende Analyse](connections/cca/overview.md)
@@ -39,8 +39,8 @@ ht-degree: 100%
       + [Häufig gestellte Fragen zur kanalübergreifenden Analyse](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](data-views/data-views.md)
-   + [Datenschicht erstellen](data-views/create-dataview.md)
-   + [Anwendungsfälle zur Datenansicht](data-views/data-views-usecases.md)
+   + [Datenansicht erstellen](data-views/create-dataview.md)
+   + [Anwendungsfälle von Datenansichten](data-views/data-views-usecases.md)
    + [Persistenz](data-views/persistence.md)
 + Workspace-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](analysis-workspace/home.md)
@@ -54,7 +54,7 @@ ht-degree: 100%
       + [Dichte anzeigen](analysis-workspace/build-workspace-project/view-density.md)
    + Visualisierungen {#visualizations}
       + [Visualisierungsübersicht](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
-      + [Data Sources verwalten](analysis-workspace/visualizations/t-sync-visualization.md)
+      + [Datenquellen verwalten](analysis-workspace/visualizations/t-sync-visualization.md)
       + Freiformtabelle {#freeform-table}
          + [Freiformtabelle](analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + Spalten- und Zeileneinstellungen {#column-row-settings}
@@ -94,14 +94,14 @@ ht-degree: 100%
       + [Attributionsbedienfeld](analysis-workspace/c-panels/attribution.md)
       + [Leeres Bedienfeld](analysis-workspace/c-panels/blank-panel.md)
       + [Freiform-Bedienfeld](analysis-workspace/c-panels/freeform-panel.md)
-      + [Quick Insights-Bedienfeld](analysis-workspace/c-panels/quickinsight.md)
+      + [Bedienfeld „Quick Insights“](analysis-workspace/c-panels/quickinsight.md)
    + Kuratieren oder Freigeben von Projekten {#curate-share}
       + [Menü „Freigeben“](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratieren von Projekten](analysis-workspace/curate-share/curate.md)
       + [Freigeben von Projekten](analysis-workspace/curate-share/share-projects.md)
       + [Erstellen von freigebbaren Links](analysis-workspace/curate-share/shareable-links.md)
       + [Schreibgeschützte Projekte](analysis-workspace/curate-share/view-only-projects.md)
-      + [Herunterladen von PDF- oder CSV-Dateien](analysis-workspace/curate-share/download-send.md)
+      + [PDF- oder CSV-Dateien herunterladen](analysis-workspace/curate-share/download-send.md)
       + [Planen von Projekten](analysis-workspace/curate-share/t-schedule-report.md)
    + Attribution IQ {#attribution}
       + [Übersicht über Attribution](analysis-workspace/attribution/overview.md)
@@ -126,13 +126,13 @@ ht-degree: 100%
 + Komponenten {#cja-components}
    + [Komponentenübersicht](components/overview.md)
    + Dimensionen {#dimensions}
-      + [Dimensionenvorschau](components/dimensions/view-dimensions.md)
-      + [Aufschlüsseln von Dimensionen](components/dimensions/t-breakdown-fa.md)
+      + [Dimensionsvorschau](components/dimensions/view-dimensions.md)
+      + [Dimensionen aufschlüsseln](components/dimensions/t-breakdown-fa.md)
       + [Dimensionen für die Zeitunterteilung](components/dimensions/time-parting-dimensions.md)
       + [Dimensionen mit sehr hoher Kardinalität](components/dimensions/high-cardinality.md)
    + [Metriken](components/apply-create-metrics.md)
    + Filter {#cja-filters}
-      + [Übersicht über Filter](components/filters/filters-overview.md)
+      + [Filterübersicht](components/filters/filters-overview.md)
       + [Filter erstellen](components/filters/create-filters.md)
       + [Filter verwalten](components/filters/manage-filters.md)
    + Berechnete Metriken {#cja-calcmetrics}
@@ -146,7 +146,7 @@ ht-degree: 100%
       + [Datumsbereich erstellen](components/date-ranges/create.md)
       + [Datumsbereiche verwalten](components/date-ranges/manage.md)
       + [Überblick über den Kalender](components/date-ranges/calendar.md)
-      + [Erstellen Sie benutzerdefinierte Datumsbereiche](components/date-ranges/custom-date-ranges.md)
+      + [Benutzerdefinierte Datumsbereiche erstellen](components/date-ranges/custom-date-ranges.md)
       + [Datumsvergleich](components/date-ranges/time-comparison.md)
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
@@ -156,10 +156,10 @@ ht-degree: 100%
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
    + [Marketing-Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)
    + [Globale Suchen zu Ihren Datensätzen hinzufügen](use-cases/global-lookups.md)
-   + [Daten von Google Analytics in Adobe Experience Platform aufnehmen](use-cases/ga-to-cja.md)
+   + [Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](use-cases/ga-to-cja-reporting.md)
 + Analytics-Dashboards {#cja-dashboards}
-   + [Analytics-Dashboards – Übersicht](mobile-app/home.md)
+   + [Analytics-Dashboards – Übersicht](mobile-app/home.md)
    + [Leitfaden für Kuratoren](mobile-app/curator.md)
    + [Schnellstarthandbuch für ausführende Benutzer](mobile-app/executive.md)
 + Datenschutz {#cja-privacy}
