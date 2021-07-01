@@ -2,10 +2,10 @@
 title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
+source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 92%
+source-wordcount: '1980'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ Eine Videoübersicht finden Sie [hier](https://experienceleague.adobe.com/docs/c
 
 ## Erforderliche Berechtigungen
 
-Um eine Customer Journey Analytics-Verbindung (CJA) zu erstellen, benötigen Sie die folgenden Berechtigungen in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Um eine CJA-Verbindung zu erstellen, benötigen Sie die folgenden Berechtigungen in [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Datenmodellierung: Schemas anzeigen, Schemas verwalten
@@ -33,7 +33,9 @@ Customer Journey Analytics
 
 ## Wählen Sie Sandbox und Datensätze aus.
 
-1. Gehen Sie zu [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Gehen Sie zu [https://analytics.adobe.com](https://analytics.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
+
+1. Klicken Sie auf das Symbol [!DNL Customer Journey Analytics] .
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Verbindungen]**.
 
@@ -53,10 +55,7 @@ Customer Journey Analytics
 
    (Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste **[!UICONTROL Datensätze suchen]** über der Liste der Datensätze nach den richtigen suchen.)
 
-   CJA basiert auf Experience Platform-Datensätzen. Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in CJA nicht alle Feldtypen unterstützt. Sie können CJA Datensätze mit anderen Schemafeldtypen als Zeichenfolgen oder Zahlen hinzufügen, CJA kann diese Daten jedoch nicht anzeigen. Außerdem sind derzeit nur Zeichenfolgen in Lookup-Datensätzen zulässig.
-Wenn Sie nach einem Feld suchen, das zu einer Datenansicht hinzugefügt werden soll, nachdem Sie den Datensatz zu einer Verbindung hinzugefügt haben, ist das Standard-Tag [!UICONTROL Enthält Daten] für alle Felder in den Datensätzen verfügbar. Mit diesem Tag lassen sich Datenansichten besser verwalten, da es nur Schemafelder mit Daten in Ihren Datensätzen enthält.
-
-## Datensatz konfigurieren
+## 2. Datensatz konfigurieren
 
 Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz bzw. die hinzugefügten Datensätze konfigurieren.
 
@@ -76,7 +75,7 @@ Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz bzw. die hi
 
 1. **[!UICONTROL Zeitstempel]**: Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in [!UICONTROL Experience Platform] gesetzt.
 
-1. **[!UICONTROL Schema]**: Dies ist das [Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde.
+1. **[!UICONTROL Schema]**: Dies ist das [Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde.
 
 1. **[!UICONTROL Personen-ID]**: Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Weitere Informationen zur Verwendung von Identity Map als Personen-ID finden Sie weiter unten.
 
@@ -99,7 +98,7 @@ Wenn Sie Identity Map auswählen, erhalten Sie zwei zusätzliche Konfigurationso
 | Option | Beschreibung |
 |---|---|
 | [!UICONTROL Primären ID-Namespace verwenden] | Dadurch wird CJA angewiesen, die Identität pro Zeile in der Identity Map zu finden, die mit dem Attribut „primär=wahr“ markiert ist, und diese als Personen-ID für diese Zeile zu verwenden. Dies bedeutet, dass dies der Primärschlüssel ist, der in Experience Platform zur Partitionierung verwendet wird. Er ist auch der Hauptkandidat für die Verwendung als Besucher-ID in CJA (je nachdem, wie der Datensatz in einer CJA-Verbindung konfiguriert ist). |
-| [!UICONTROL Namespace] | (Diese Option ist nur verfügbar, wenn Sie den primären Identity-Namespace nicht verwenden.) Identity-Namespace sind eine Komponente des [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html), die als Indikatoren für den Kontext dient, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht CJA in der Identity Map jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für diese Zeile. Da CJA die Datensätze in allen Zeilen nicht vollständig scannen kann, um festzustellen, welche Namespaces tatsächlich vorhanden sind, werden alle möglichen Namespaces in der Dropdown-Liste aufgeführt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Dies kann nicht automatisch erkannt werden. |
+| [!UICONTROL Namespace] | (Diese Option ist nur verfügbar, wenn Sie den primären Identity-Namespace nicht verwenden.) Identity-Namespace sind eine Komponente des [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=de), die als Indikatoren für den Kontext dient, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht CJA in der Identity Map jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für diese Zeile. Da CJA die Datensätze in allen Zeilen nicht vollständig scannen kann, um festzustellen, welche Namespaces tatsächlich vorhanden sind, werden alle möglichen Namespaces in der Dropdown-Liste aufgeführt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Dies kann nicht automatisch erkannt werden. |
 
 ### Identity Map-Randfälle
 
