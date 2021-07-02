@@ -3,7 +3,7 @@ title: Callcenter- und Web-Daten importieren
 description: Erfahren Sie, wie Sie einen Datensatz erstellen, mit dem Sie Callcenter- und Website-Daten verknüpfen.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
