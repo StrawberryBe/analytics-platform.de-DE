@@ -1,11 +1,11 @@
 ---
 title: Datumsbereich erstellen
-description: Erstellen Sie einen Datumsbereich für die Verwendung in Berichten.
+description: Datumsbereich zur Verwendung in Berichten erstellen.
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '436'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
@@ -13,63 +13,63 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Sie können einen benutzerdefinierten Datumsbereich mit einer der beiden folgenden Methoden erstellen:
 
-* Direkt in einem Workspace-Projekt durch Klicken auf die Schaltfläche &quot;`+`&quot;neben der Liste der Datumsbereichskomponenten auf der linken Seite
+* Direkt in einem Workspace-Projekt durch Klicken auf die Schaltfläche ‚`+`‘ neben der Liste der Datumsbereichskomponenten auf der linken Seite
 * Innerhalb des Datumsbereichsmanagers
 
-So erstellen Sie einen Datumsbereich im Datumsbereich-Manager:
+So erstellen Sie einen Datumsbereich im Datumsbereichmanager:
 
 1. Melden Sie sich mit Ihren Adobe ID-Anmeldeinformationen bei [analytics.adobe.com](https://analytics.adobe.com) an.
 1. Navigieren Sie zu [!UICONTROL Komponenten] > [!UICONTROL Datumsbereiche].
-1. Klicken Sie auf die Schaltfläche [!UICONTROL Hinzufügen] , um das modale Fenster zu öffnen, das einen Datumsbereich erstellt.
+1. Klicken Sie auf die Schaltfläche [!UICONTROL Hinzufügen], um das modale Fenster zu öffnen, das einen Datumsbereich erstellt.
 
 ## Erstellen eines modalen Datumsbereichsfensters
 
 Das modale Fenster verfügt über vier Felder, die Sie bearbeiten können:
 
-* **Datumsbereich**: Der Datumsbereich, den Sie für diese Komponente wünschen.
-* **Titel**: Der Name, den Sie für diese Komponente benötigen. Der Titel wird in Workspace-Projekten verwendet.
-* **Beschreibung**: Die Beschreibung, die Sie für diese Komponente benötigen. Die Beschreibung wird beim Klicken auf das Symbol ![i](../assets/i.png) angezeigt.
+* **Datumsbereich**: Der Datumsbereich, den Sie für diese Komponente anlegen möchten.
+* **Titel**: Der Name, den Sie für diese Komponente vergeben möchten. Der Titel wird in Workspace-Projekten verwendet.
+* **Beschreibung**: Die Beschreibung, die Sie für diese Komponente verwenden möchten. Die Beschreibung wird beim Klicken auf das Symbol ![i](../assets/i.png) angezeigt.
 * **Tags**: Organisieren Sie Ihre Datumsbereiche mithilfe von Tags. Ein Datumsbereich kann mehreren Tags angehören.
 
 ## Datumsbereich auswählen
 
-Beim Klicken auf den Datumsbereich im modalen Fenster haben Sie mehrere Optionen:
+Wenn Sie im modalen Fenster auf den Datumsbereich klicken, haben Sie mehrere Optionen:
 
-* **Kalender**: Wählen Sie das Start- und Enddatum aus.
-* **Rollierende Datumswerte** verwenden: Aktivieren Sie dieses Kontrollkästchen, wenn Sie möchten, dass sich der Datumsbereich im Laufe der Zeit ändert. Aktivieren Sie dieses Kontrollkästchen nicht, wenn Ihr Datumsbereich statisch bleiben soll.
-* **Vorgabe auswählen**: Verwenden Sie dieses Dropdown-Menü, wenn Sie einen benutzerdefinierten Datumsbereich wünschen, der auf einem von Adobe standardmäßig angebotenen Bereich basiert. Wenn Sie eine Vorgabe auswählen, können Sie den Datumsbereich entsprechend Ihren Anforderungen weiter anpassen. Die von Adobe angebotene Vorgabe wird dadurch nicht beeinflusst.
+* **Kalender**: Wählen Sie das Anfangs- und das Enddatum aus.
+* **Rollierende Datumswerte verwenden**: Aktivieren Sie dieses Kontrollkästchen, wenn Sie möchten, dass sich der Datumsbereich im Zeitverlauf ändert. Aktivieren Sie dieses Kontrollkästchen nicht, wenn Ihr Datumsbereich statisch bleiben soll.
+* **Voreinstellung auswählen**: Verwenden Sie dieses Dropdown-Menü, wenn Sie einen benutzerdefinierten Datumsbereich benötigen, der auf einem von Adobe standardmäßig angebotenen Bereich basiert. Wenn Sie eine Voreinstellung auswählen, können Sie den Datumsbereich entsprechend Ihren Anforderungen weiter anpassen. Die von Adobe angebotenen Voreinstellungen werden dadurch nicht beeinflusst.
 
 ## Rollierende Datumsbereiche
 
-Wenn Sie einen rollierenden Datumsbereich wünschen, können Sie den Rollout anpassen. Sie können steuern, wann die Start- und Enddaten unabhängig voneinander rollierend sind.
+Wenn Sie einen rollierenden Datumsbereich benötigen, können Sie diesen während des Rollierens anpassen. Sie können das Anfangs- und das Enddatum unabhängig voneinander rollieren lassen.
 
-* **Wenn das Datum beginnt**: Wählen Sie aus, ob das Datum am Anfang eines Zeitraums, am Ende eines Zeitraums beginnt, oder verwenden Sie einen festen Tag.
-* **Der zu verwendende** Zeitraum: Wählen Sie aus, wie oft der Datumsbereich rolliert. Sie können es täglich, jede Woche, jeden Monat, jedes Quartal oder jedes Jahr rollen lassen.
-* **Versatz**: Wählen Sie den Versatz des Datumsbereichs aus. Sie können Tage, Wochen, Monate, Quartale oder Jahre hinzufügen oder subtrahieren.
+* **Anfangsdatum**: Wählen Sie, ob das Datum am Anfang eines Zeitraums oder am Ende eines Zeitraums beginnt, oder verwenden Sie einen festen Tag.
+* **Der zu verwendende Zeitraum**: Wählen Sie aus, wie oft der Datumsbereich rollieren soll. Sie können ihn täglich, jede Woche, jeden Monat, jedes Quartal oder jedes Jahr rollieren lassen.
+* **Versatz**: Wählen Sie den Versatz des Datumsbereichs aus. Sie können Tage, Wochen, Monate, Quartale oder Jahre hinzufügen oder abziehen.
 
-## Rollierende Datumsbeispiele
+## Beispiele für rollierende Daten
 
 Einige Datumsbereiche können in bestimmten Berichten nützlich sein.
 
-Jahr bis Datum:
+Seit Jahresbeginn bis heute:
 
 ```text
 Start: Start of current year
 End: End of current day
 ```
 
-Letzten Donnerstag bis Donnerstag:
+Seit letzten Donnerstag bis diesen Donnerstag:
 
 ```text
 Start: Start of current week minus 3 days
 End: Start of current week plus 4 days
 ```
 
-Haushaltsjahr (z. B. wenn ein Geschäftsjahr im Dezember beginnt)
+Geschäftsjahr (z. B. wenn ein Geschäftsjahr im Dezember beginnt)
 
 ```text
 Start: Start of current year minus 1 month
