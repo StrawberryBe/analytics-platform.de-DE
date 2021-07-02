@@ -3,9 +3,9 @@ title: (B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
 description: Erfahren Sie, wie Sie in Customer Journey Analytics kontobasierte Daten als Lookup-Datensatz hinzufügen.
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann 
 
 ## 1. Erstellen eines Lookup-Schemas (Experience Platform)
 
-Durch die Erstellung eines eigenen Schemas für die [Lookup](/help/getting-started/cja-glossary.md)-Tabelle stellen Sie sicher, dass der verwendete Datensatz in CJA korrekt eingerichtet ist (d. h. den Typ „Datensatz“ aufweist). Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
+Durch die Erstellung eines eigenen Schemas für die [Lookup](/help/getting-started/cja-glossary.md)-Tabelle stellen Sie sicher, dass der verwendete Datensatz in CJA korrekt eingerichtet ist (d. h. den Typ „Datensatz“ aufweist). Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
 
 ![](assets/create-new-class.png)
 
@@ -53,7 +53,7 @@ So werden beispielsweise annualRevenue oder totalEmployees im folgenden Beispiel
 
 ## 3. Erfassen von Daten in Experience Platform
 
-Anweisungen zum [Zuordnen einer CSV-Datei zu einem XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html) können Ihnen helfen, wenn Sie eine CSV-Datei verwenden.
+Anweisungen zum [Zuordnen einer CSV-Datei zu einem XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=de) können Ihnen helfen, wenn Sie eine CSV-Datei verwenden.
 
 [Andere Methoden](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) sind auch verfügbar.
 
