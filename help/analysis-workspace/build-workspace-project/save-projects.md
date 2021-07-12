@@ -2,10 +2,10 @@
 description: Erfahren Sie mehr über die verschiedenen Speicheroptionen, einschließlich automatisches Speichern, Speichern unter, Speichern als Vorlage und Öffnen früherer Versionen.
 title: Projekte speichern
 feature: Workspace – Allgemeines
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
+source-git-commit: 734f1fe702398034090e25c251b5ff193db8381e
+workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
 
