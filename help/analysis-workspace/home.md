@@ -4,9 +4,9 @@ title: Analysis Workspace – Übersicht
 description: Überblick über die Funktionen von Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Wenn Sie nur wenige Minuten Zeit haben, sehen Sie sich diese kurze Übersicht an
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Anmelde-Customer Journey Analytics {#login}
+## Anmelden bei Customer Journey Analytics {#login}
 
 Um mit der Verwendung von Analysis Workspace zu beginnen, melden Sie sich unter [experience.adobe.com/analytics](https://experience.adobe.com/analytics) bei Customer Journey Analytics an. Sie landen auf der Homepage der Workspace-Projektliste, wenn noch kein bestimmtes Projekt für Sie ausgewählt wurde.
 
@@ -36,7 +36,7 @@ Nach der Anmeldung sollten Sie als Erstes das Analysis Workspace-Tutorial besuch
 
 ## Neues Projekt erstellen {#new-project}
 
-Nach Abschluss des Tutorials können Sie mit der Erstellung Ihres ersten Projekts beginnen. Das **neue Projektmodell** bietet verschiedene Optionen zum Starten Ihrer Analyse. Je nachdem, ob Sie Ihre Analyse über den Browser oder die Customer Journey Analytics-Dashboards-Mobile-App freigeben möchten, können Sie mit einem leeren Projekt oder [einer leeren mobilen Scorecard](/help/mobile-app/curator.md) beginnen.
+Nach Abschluss des Tutorials können Sie mit der Erstellung Ihres ersten Projekts beginnen. Das **neue Projektmodell** bietet verschiedene Optionen zum Starten Ihrer Analyse. Sie können mit einem leeren Projekt oder einer [leeren mobilen Scorecard](/help/mobile-app/curator.md) starten, je nachdem, ob Sie Ihre Analyse über den Browser oder die Mobile App für Customer Journey Analytics-Dashboards freigeben möchten.
 
 ![](assets/create-new-project.png)
 
@@ -64,4 +64,4 @@ In Ihrem Workspace-Projekt können Sie von der linken Leiste aus auf **Bereiche,
 
 ## Zusätzliche Ressourcen {#resources}
 
-* Adobe bietet Hunderte von [Analytics-Video-Tutorials](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html).
+* Adobe bietet Hunderte von [Analytics-Video-Tutorials](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.html).
