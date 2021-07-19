@@ -3,7 +3,7 @@ title: Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) nutzen können, um Ihre Google Analytics-Daten in Adobe Experience Platform aufzunehmen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 source-git-commit: 316819116e9b47110763479af4e8504a2bffaff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
 ht-degree: 100%
 
