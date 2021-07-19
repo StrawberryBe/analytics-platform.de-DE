@@ -3,9 +3,9 @@ title: Verbindung herstellen
 description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Customer Journey Analytics hergestellt wird.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Eine Videoübersicht finden Sie [hier](https://experienceleague.adobe.com/docs/c
 
 ## Erforderliche Berechtigungen
 
-Um eine CJA-Verbindung zu erstellen, benötigen Sie die folgenden Berechtigungen in [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Um eine Customer Journey Analytics (CJA)-Verbindung zu erstellen, benötigen Sie in [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) die folgenden Berechtigungen:
 
 Adobe Experience Platform:
 * Datenmodellierung: Schemas anzeigen, Schemas verwalten
@@ -35,7 +35,7 @@ Customer Journey Analytics
 
 1. Gehen Sie zu [https://analytics.adobe.com](https://analytics.adobe.com) und melden Sie sich mit Ihrer Adobe ID an.
 
-1. Klicken Sie auf das Symbol [!DNL Customer Journey Analytics] .
+1. Klicken Sie auf das Symbol [!DNL Customer Journey Analytics].
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Verbindungen]**.
 
@@ -55,7 +55,7 @@ Customer Journey Analytics
 
    (Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste **[!UICONTROL Datensätze suchen]** über der Liste der Datensätze nach den richtigen suchen.)
 
-## 2. Datensatz konfigurieren
+## 2. Konfigurieren des Datensatzes
 
 Auf der rechten Seite können Sie jetzt den hinzugefügten Datensatz bzw. die hinzugefügten Datensätze konfigurieren.
 
@@ -140,7 +140,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) und erstellen Sie eine neue Abfrage.
 
 1. Die Abfrage würde wie folgt aussehen: <br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
