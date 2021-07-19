@@ -3,9 +3,9 @@ title: Übersicht über berechnete Metriken
 description: Informationen zu den
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Hier sehen Sie einen Vergleich zwischen den jeweiligen Möglichkeiten, die berec
 |--- |--- |
 | Generator für berechnete Metriken | <ul><li>Erstellen Sie einfache berechnete Metriken oder erweiterte berechnete Metriken mit erweiterten Zuordnungsmodellen.</li><li>Filter inline zu Metrik-Formeln hinzufügen.</li><li>Filter in einem Bericht vergleichen. (beispielsweise lokale Besucher mit internationalen Besuchern vergleichen.)</li><li>Statistische Funktionen verwenden.</li><li> Detaillierte Metrikbeschreibungen angeben (was die Metrik macht, wo sie verwendet werden sollte, wo sie NICHT verwendet werden sollte.)</li><li>Definitionen in neue Metriken kopieren.</li><li>Eine Inline-Metrikvorschau bereitstellen.</li><li>Die Metrikpolarität festlegen, die angibt, ob es gut oder schlecht ist, wenn ein bestimmtes benutzerspezifisches Ereignis (eine Metrik) steigt.</li><li>Metriken taggen.</li></ul> |
 | Manager für berechnete Metriken | <ul><li>Metriken für andere freigeben.</li><li>Metriken genehmigen und kuratieren.</li><li>Metriken organisieren (taggen), damit sie von Benutzern gefunden werden können.</li><li>Metriken löschen.</li><li>Metriken umbenennen.</li></ul> |
-| API für berechnete Metriken | Teil des CJA-API-Sets. |
+| API für berechnete Metriken | Teil des Customer Journey Analytics-API-Satzes. |
 
 ## Vorlagen für berechnete Metriken in Customer Journey Analytics
 
