@@ -5,7 +5,7 @@ mini-toc-levels: 3
 source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Nachdem Benutzer mit Administratorenrechten [eine oder mehrere Verbindungen erst
 * Damit können Sie **alle Datendiskrepanzen identifizieren**, die aufgrund einer Fehlkonfiguration entstanden sind bzw. entstehen. Fehlen Zeilen? Wenn ja, welche Zeilen fehlen und warum? Haben Sie Verbindungen falsch konfiguriert und dadurch das Fehlen von Daten in Customer Journey Analytics verursacht?
 
 >[!NOTE]
-> Diese Funktion ist ab dem 10. August 2021 allgemein verfügbar.
+> Diese Funktionen sind ab dem 10. August 2021 allgemein verfügbar.
 
 ## Verbindungs-Manager {#connections-manager}
 
@@ -27,9 +27,9 @@ Der Verbindungs-Manager ermöglicht Ihnen Folgendes:
 * Lassen Sie sich alle Verbindungen auf einen Blick anzeigen, einschließlich Eigentümer, Sandbox und des Zeitpunkts der Erstellung und Änderung.
 * Lassen Sie sich alle Datensätze in einer Verbindung anzeigen.
 * Status einer Verbindung überprüfen.
-* eine Verbindung löschen.
-* eine Verbindung umbenennen.
-* eine Datenschicht aus einer Verbindung erstellen.
+* Eine Verbindung löschen.
+* Eine Verbindung umbenennen.
+* Eine Datenschicht aus einer Verbindung erstellen.
 
 ![Verbindungen verwalten](assets/conn-manager.png)
 
@@ -38,7 +38,7 @@ Der Verbindungs-Manager ermöglicht Ihnen Folgendes:
 | [!UICONTROL Name] | Der Anzeigename der Verbindung. Wenn Sie auf den Hyperlink-Namen klicken, gelangen Sie zur Seite „Verbindungsdetails“, die unten beschrieben wird. |
 | Verbindungsinformationen | Klicken Sie auf das Informationssymbol neben dem Verbindungsnamen, um die folgenden Informationen anzuzeigen: ![Verbindungsinformationen anzeigen](assets/conn-info.png) |
 | Verbindung bearbeiten | Klicken Sie auf die Auslassungszeichen (…) neben dem Verbindungsnamen und dann auf [!UICONTROL Bearbeiten].![Bearbeiten einer Verbindung](assets/conn-edit-delete.png) Weitere Informationen finden Sie weiter unten unter „Bearbeiten einer Verbindung“. |
-| eine Verbindung löschen | Klicken Sie auf die Auslassungszeichen (…) neben dem Verbindungsnamen und dann auf [!UICONTROL Löschen]. Weitere Informationen finden Sie weiter unten unter der Überschrift „Löschen von Verbindungen“. |
+| Eine Verbindung löschen | Klicken Sie auf die Auslassungszeichen (…) neben dem Verbindungsnamen und dann auf [!UICONTROL Löschen]. Weitere Informationen finden Sie weiter unten unter der Überschrift „Löschen von Verbindungen“. |
 | Datenansicht erstellen | Klicken Sie auf die Auslassungszeichen (…) neben dem Verbindungsnamen und dann auf [!UICONTROL Datenansicht erstellen]. Diese Aktion erstellt eine neue Datenansicht, die auf dieser Verbindung basiert. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de) |
 | [!UICONTROL Datensätze] | Die Datensätze, die Teil der Verbindung sind. Sie können auf den Hyperlink klicken, um alle Datensätze in der Verbindung anzuzeigen. Wenn Sie auf einen Datensatz klicken, wird dieser Datensatz in Adobe Experience Platform in einer neuen Registerkarte geöffnet. |
 | [!UICONTROL Sandbox] | Die [Sandbox von Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de), aus der diese Verbindung ihre Datensätze zieht. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
@@ -113,7 +113,7 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | [!UICONTROL Neue Daten importieren] | Gibt an, ob den historischen Daten (Aufstockung) neue Datenstapel hinzugefügt werden sollen oder nicht. |
 | **Rechte Leiste auf Datensatzebene** |  |
 | [!UICONTROL Beschreibung des Datensatzes] | Beschreibt die Parameter der einzelnen Datensätze in dieser Verbindung. |
-| [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.Daten in Customer Journey Analytics importieren) vorhanden. |
+| [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-daten-in-customer-journey-analytics-einbringen) vorhanden. |
 | [!UICONTROL Hinzugefügte Datensätze] | Wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. |
 | [!UICONTROL Übersprungene Datensätze] | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden. |
 | [!UICONTROL Fehler bei übersprungenen Datensätzen] | Der Grund, warum Datensätze übersprungen wurden, wird hier angegeben. Gründe hierfür können fehlende Zeitstempel, fehlende Personen-ID usw. sein. |
@@ -129,4 +129,4 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 Ermöglicht es Administratoren, die Verbindung zu bearbeiten. Wählen Sie eine Verbindung aus und klicken Sie dann auf [!UICONTROL Verbindung bearbeiten], um zu diesem Dialogfeld zu gelangen. Hier können Sie Folgendes tun:
 
 * Starten und Beendes des Imports neuer Daten. Dieser Prozess wurde früher als „Daten-Streaming“ bezeichnet.
-* eine Verbindung umbenennen.
+* Eine Verbindung umbenennen.
