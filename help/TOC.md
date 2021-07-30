@@ -11,7 +11,7 @@ user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Custo
 breadcrumb-title: Handbuch für Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 source-git-commit: a2e8f8a48078bfe247645b4ca57e10bf4f4e3fab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
 ht-degree: 100%
 
