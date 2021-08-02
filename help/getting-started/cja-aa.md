@@ -2,10 +2,10 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
-workflow-type: ht
-source-wordcount: '1071'
-ht-degree: 100%
+source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
+workflow-type: tm+mt
+source-wordcount: '1086'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Benutzerberechtigungen/Datenzugangssteuerung | CJA unterscheidet zwischen Produktadministratoren und Anwendern von Adobe Admin Console. Nur Produktadministratoren können 1) Verbindungen oder Datenansichten erstellen/aktualisieren/löschen, 2) Projekte, Filter oder Berechnungsmetriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen und 3) ein Workspace-Projekt für alle Benutzer freigeben. |
 | Virtual Report Suites | Jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
 | Kuration von VRS-Komponenten | Jetzt Teil der Datenansichten. |
+| A4T | Unterstützung wird über Felder im [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) bereitgestellt. |
 
 ## Mit Einschränkungen unterstützt
 
@@ -85,7 +86,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-| A4T | Unterstützung ist noch nicht geplant. |
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Unterstützung ist noch nicht geplant. |
 | Classification Rule Builder | Unterstützung ist noch nicht geplant. |
