@@ -2,10 +2,10 @@
 title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
-workflow-type: ht
-source-wordcount: '2974'
-ht-degree: 100%
+source-git-commit: f2e13469faf540d997fcac4687aa51533b543c84
+workflow-type: tm+mt
+source-wordcount: '3024'
+ht-degree: 98%
 
 ---
 
@@ -125,6 +125,7 @@ Hier können Sie angeben, wie sich eine Metrik in Berichten verhalten soll.
 | --- | --- |
 | [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. Dadurch erhalten Sie den tatsächlichen Wert einer Metrik, z. B. „50“, wenn ein Bestellwert von 50 vorhanden war. |
 | [!UICONTROL Instanzen zählen] | Hier können Sie festlegen, ob ein numerisches Feld oder ein Datumsfeld, das als Metrik verwendet wird, zählen soll, wie oft es gesetzt wurde, anstatt den Wert selbst.<br> Ob Sie die Instanzen eines numerischen Felds aufaddieren möchten und einfach die Anzahl der *Festlegungen* eines Felds aufaddieren möchten, anstatt dessen tatsächlichen Wert zu nutzen.<br>Dies ist beispielsweise hilfreich, um eine [!UICONTROL Bestellmetrik] aus einem [!UICONTROL Umsatzfeld] zu erstellen. Wenn der Umsatz festgelegt wurde, geht es darum, anstelle des numerischen Umsatzbetrags eine einzelne Bestellung zu zählen. |
+| [!UICONTROL Kleinbuchstabe] | *Neu*  - Für Dimensionen vom Typ &quot;Zeichenfolge&quot;. Mit dieser Einstellung können Sie steuern, ob bei Dimensionswerten in Customer Journey Analytics zwischen Groß- und Kleinschreibung unterschieden wird. Dies ermöglicht die Deduplizierung von Zeilen mit demselben Wert, jedoch einer anderen Groß-/Kleinschreibung. Dieser Screenshot zeigt ein Beispiel für eine Dimension, bei der die Groß-/Kleinschreibung in Workspace beachtet wird:<br>![Dimension mit Unterscheidung zwischen Groß- und Kleinschreibung](assets/case-sens-workspace.png) |
 
 ### Einstellungen für [!UICONTROL Optionen ohne Werte] konfigurieren
 
