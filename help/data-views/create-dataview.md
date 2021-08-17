@@ -2,10 +2,10 @@
 title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: bf3744ce700adf29e63066c3f15a72f0b20d01b1
+source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
 workflow-type: tm+mt
-source-wordcount: '3054'
-ht-degree: 94%
+source-wordcount: '3069'
+ht-degree: 93%
 
 ---
 
@@ -125,7 +125,7 @@ Hier können Sie angeben, wie sich eine Metrik in Berichten verhalten soll.
 | --- | --- |
 | [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. Dadurch erhalten Sie den tatsächlichen Wert einer Metrik, z. B. „50“, wenn ein Bestellwert von 50 vorhanden war. |
 | [!UICONTROL Instanzen zählen] | Hier können Sie festlegen, ob ein numerisches Feld oder ein Datumsfeld, das als Metrik verwendet wird, zählen soll, wie oft es gesetzt wurde, anstatt den Wert selbst.<br> Ob Sie die Instanzen eines numerischen Felds aufaddieren möchten und einfach die Anzahl der *Festlegungen* eines Felds aufaddieren möchten, anstatt dessen tatsächlichen Wert zu nutzen.<br>Dies ist beispielsweise hilfreich, um eine [!UICONTROL Bestellmetrik] aus einem [!UICONTROL Umsatzfeld] zu erstellen. Wenn der Umsatz festgelegt wurde, geht es darum, anstelle des numerischen Umsatzbetrags eine einzelne Bestellung zu zählen. |
-| [!UICONTROL Kleinbuchstabe] | *Neu*  - Für Dimensionen vom Typ &quot;Zeichenfolge&quot;. Mit dieser Einstellung können Sie steuern, ob bei Dimensionswerten in Customer Journey Analytics zwischen Groß- und Kleinschreibung unterschieden wird. Dies ermöglicht die Deduplizierung von Zeilen mit demselben Wert, jedoch einer anderen Groß-/Kleinschreibung. Wenn Sie **[!UICONTROL Kleinbuchstaben]** aktivieren, werden alle Instanzen einer Dimension mit demselben Wert als Kleinbuchstaben gemeldet. Dieser Screenshot zeigt, was passiert, wenn Sie **not** [!UICONTROL Kleinbuchstaben] aktivieren. Beachten Sie, dass &quot;liverpool&quot;, &quot;Liverpool&quot;und &quot;LIVERPOOL&quot;bei der Berichterstellung zu drei separaten Zeileneinträgen führen:<br>![Dimension mit Unterscheidung zwischen Groß- und Kleinschreibung](assets/case-sens-workspace.png) |
+| [!UICONTROL Kleinbuchstabe] | *Neu*  - Für Dimensionen vom Typ &quot;Zeichenfolge&quot;. Mit dieser Einstellung können Sie steuern, ob bei Dimensionswerten in Customer Journey Analytics zwischen Groß- und Kleinschreibung unterschieden wird. Dies ermöglicht die Deduplizierung von Zeilen mit demselben Wert, jedoch einer anderen Groß-/Kleinschreibung. Wenn Sie **[!UICONTROL Kleinbuchstaben]** aktivieren, werden alle Instanzen einer Dimension mit demselben Wert als Kleinbuchstaben gemeldet. Dieser Screenshot zeigt, was passiert, wenn Sie **nicht** [!UICONTROL Kleinbuchstaben] aktivieren oder **** das Kontrollkästchen aktivieren. Beachten Sie in der linken Tabelle, wie &quot;liverpool&quot;, &quot;Liverpool&quot;und &quot;LIVERPOOL&quot;zu drei separaten Zeileneinträgen in der Berichterstellung führen. In der richtigen Tabelle wurden dieselben Werte dedupliziert und fallen unter einen Zeileneintrag:<br>![Dimension mit Unterscheidung zwischen Groß- und Kleinschreibung](assets/case-sens-workspace.png) |
 
 ### Einstellungen für [!UICONTROL Optionen ohne Werte] konfigurieren
 
@@ -151,7 +151,7 @@ Weitere Informationen finden Sie beim Thema [Persistenz](/help/data-views/persis
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
 | [!UICONTROL Persistenz festlegen] | Schlüssel umschalten |
-| [!UICONTROL Zuordnung] | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind: [!UICONTROL Zuletzt verwendet], [!UICONTROL Original], [!UICONTROL Instanz], [!UICONTROL Alle]. Wenn ein Wert beibehalten werden soll (ähnlich wie bei eVars im herkömmlichen Analytics), legen Sie ihn hier fest. Der einzige wichtige Unterschied besteht darin, dass die maximale Persistenz, die Sie einstellen können, 90 Tage beträgt. Außerdem ist [!UICONTROL Niemals ablaufen lassen] keine Option. |
+| [!UICONTROL Zuordnung] | Hier können Sie das Zuordnungsmodell angeben, das für eine Dimension für Persistenz verwendet wird. Die Optionen sind: [!UICONTROL Zuletzt verwendet], [!UICONTROL Original], [!UICONTROL Instanz], [!UICONTROL Alle]. Wenn ein Wert beibehalten werden soll, legen Sie ihn hier fest. Die maximale Persistenz, die Sie einstellen können, beträgt 90 Tage. Außerdem ist [!UICONTROL Niemals ablaufen lassen] keine Option. |
 | [!UICONTROL Ablauf] | Hier können Sie das Persistenzfenster für eine Dimension angeben. Die Optionen sind: [!UICONTROL Sitzung] (Standardeinstellung), [!UICONTROL Person], [!UICONTROL Zeit], [!UICONTROL Metrik]. Möglicherweise brauchen Sie die Option, dass die Dimension bei einem Kauf ablaufen soll (z. B. interne Suchbegriffe oder andere Merchandising-Verwendungsfälle). [!UICONTROL Metrik] ermöglicht Ihnen, eine der definierten Metriken als Ablaufdatum für diese Dimension anzugeben (z. B. eine [!UICONTROL Kaufmetrik]).<br>**Hinweis**: Sie können keine benutzerdefinierte Gültigkeit für eine Dimension festlegen, wenn Sie für die Zuordnung [!UICONTROL Alle] auswählen. |
 
 ### Einstellungen für die Wertebereiche konfigurieren
