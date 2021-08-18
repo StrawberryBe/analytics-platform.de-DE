@@ -1,10 +1,10 @@
 ---
 title: Best Practices für die Attribution
 description: Was sind die Best Practices bei der Entscheidung über ein Attributionsmodell?
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 2%
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Das Auswählen des richtigen Attributionsmodells für Ihre Organisation hängt v
 >[!NOTE]
 >Diese Analyse muss durchgeführt werden, bevor Sie ein Attributionsmodell auswählen.
 
-Diese Phase besteht zunächst aus dem Verständnis des Kundenverhaltens und der Definition von Konversionsmetriken. Basierend auf den Konversionsmetriken erleichtern Tools wie [Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en) (für Rohdaten) oder Analysis Workspace Ihr Verständnis von
+Diese Phase besteht zunächst aus dem Verständnis des Kundenverhaltens und der Definition von Konversionsmetriken. Basierend auf den Konversionsmetriken können Tools wie Analysis Workspace und das Abrufen von Datenquellen aus mehreren Kanälen (z. B. Impressionsdaten) Ihr Verständnis von
 
 * Wie viele Kunden greifen vor der Konvertierung auf verschiedene Marketing-Kanäle zu?
 * Der Anteil/die Verteilung dieser Verhaltensweisen.
@@ -53,6 +53,3 @@ Da es sehr schwierig ist, eine große Anzahl möglicher Hypothesen und Kombinati
 ## Sonstige Aspekte
 
 * Möglicherweise müssen Sie die Dienste eines Datenwissenschaftlers verwenden, anstatt sich allein auf Analysis Workspace zu verlassen.
-* Sie können sich auf Rohdaten verlassen, wie in Adobe Data Feeds.
-* Erwägen Sie beispielsweise die Verwendung von [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de), wenn Sie Ihre Impressionsdaten berücksichtigen möchten.
-
