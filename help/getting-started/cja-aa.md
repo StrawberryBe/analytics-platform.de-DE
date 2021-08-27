@@ -3,9 +3,9 @@ title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -19,24 +19,24 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Anomalieerkennung | Vollständige Unterstützung. |
 | Attribution IQ | Vollständige Unterstützung. |
-| Berechnete Metriken | volle Unterstützung; Beachten Sie, dass vorhandene berechnete Metriken im herkömmlichen Analysis Workspace nicht auf CJA portiert werden. |
-| Geräteübergreifende/kanalübergreifende Zuordnung | volle Unterstützung; Siehe [Kanalübergreifende Analyse](/help/connections/cca/overview.md). |
+| Berechnete Metriken | Vollständige Unterstützung; beachten Sie, dass vorhandene berechnete Metriken in herkömmlichem Analysis Workspace nicht in CJA portiert werden. |
+| Geräteübergreifende/kanalübergreifende Zuordnung | Vollständige Unterstützung; siehe [kanalübergreifende Analyse](/help/connections/cca/overview.md). |
 | Datumsvergleiche | Vollständige Unterstützung. |
-| Dimensionen | volle Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Dimensionen. Customer Journey Analytics ist nicht an benutzerdefinierte eVars oder Eigenschaften des herkömmlichen Adobe Analytics gebunden. |
+| Dimensionen | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Dimensionen. CJA ist nicht an benutzerdefinierte eVars oder Props von herkömmlichem Adobe Analytics gebunden. |
 | Vorkonfigurierte Analysis Workspace-Dimensionen (Browser-Typ, Typ der verweisenden Stelle, Betriebssystem usw.) | Customer Journey Analytics stellt diese Dimensionen nativ bereit, solange die grundlegenden XDM-Felder (z. B. Benutzeragent oder Geräte-ID) ausgefüllt sind. Für Kunden, der Data Connector von Analytics (ADC) verwenden, sind einige dieser Dimensionen verfügbar, jedoch nicht alle. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://docs.adobe.com/content/help/de-DE/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| DSGVO-Löschung | volle Unterstützung; Beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] gehandhabt wird. CJA übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
-| Listenvariablen/Listen-Props | volle Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
-| Metriken | volle Unterstützung; CJA nutzt das Experience-Datenmodell (XDM) und unterstützt unbegrenzte Metriken und ist nicht an die benutzerspezifischen Erfolgsereignisse herkömmlicher Analytics gebunden. Beachten Sie, dass einige Standardmetriken aus der traditionellen Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
+| DSGVO-Löschung | Vollständige Unterstützung; beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] gehandhabt wird. CJA übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
+| Listenvariablen/Listen-Props | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
+| Metriken | Vollständige Unterstützung; CJA nutzt das Experience-Datenmodell (XDM), unterstützt unbegrenzte Metriken und ist nicht an die benutzerspezifischen Erfolgsereignisse von traditionellem Analytics gebunden. Beachten Sie, dass einige Standardmetriken in traditionellem Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
 | PDF-Export | Vollständige Unterstützung. |
 | Projektkuration | Vollständige Unterstützung. |
 | Projektverknüpfung | Vollständige Unterstützung. |
-| Berichtszeitverarbeitung | volle Unterstützung; CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
-| Zugriff auf Reporting-API | volle Unterstützung; Verfügbar über die [CJA-API](https://www.adobe.io/cja-apis/docs/). |
+| Berichtszeitverarbeitung | Vollständige Unterstützung; CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
+| Zugriff auf die Reporting-API | Vollständige Unterstützung; verfügbar über die [CJA-API](https://www.adobe.io/cja-apis/docs/). |
 | Terminierte Berichte/Projekte | Vollständige Unterstützung. |
-| Segmente | volle Unterstützung; Jetzt als &quot;Filter&quot;bezeichnet - Beachten Sie, dass vorhandene Segmente im herkömmlichen Analysis Workspace nicht auf CJA portiert werden. |
-| Benutzerberechtigungen/Datenzugangssteuerung | volle Unterstützung; CJA unterscheidet zwischen [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=en)-Produktadministratoren und -benutzern. Nur Produktadministratoren können <ul><li>Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten</li><li>Aktualisieren/Löschen von Projekten, Filtern oder Berechnungsmetriken, die von anderen Benutzern erstellt wurden, und</li><li>Freigeben eines Workspace-Projekts für alle Benutzer.</li></ul> |
-| Virtual Report Suites | volle Unterstützung; Jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
-| Kuration von VRS-Komponenten | volle Unterstützung; Jetzt Teil der Datenansichten. |
+| Segmente | Vollständige Unterstützung; jetzt „Filter“ genannt. Beachten Sie, dass keine in traditionellem Analysis Workspace vorhandenen Segmente in CJA portiert werden. |
+| Benutzerberechtigungen/Datenzugangssteuerung | Vollständige Unterstützung; CJA unterscheidet zwischen Produktadministratoren von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de) und Anwendern. Nur Produktadministratoren können <ul><li>Verbindungen oder Datenansichten erstellen/aktualisieren/löschen</li><li>Projekte, Filter oder berechnete Metriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen</li><li>ein Workspace-Projekt für alle Anwender freigeben</li></ul> |
+| Virtual Report Suites | Vollständige Unterstützung; jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
+| Kuratierung von VRS-Komponenten | Vollständige Unterstützung; jetzt Teil der Datenansichten. |
 
 ## Mit Einschränkungen unterstützt
 
@@ -45,12 +45,12 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | A4T | Unterstützung wird über Felder im [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. |
 | Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können in Experience Platform und Customer Journey Analytics mit dem Analytics Classifications Data Connector importiert werden. Lookup-Datensätze können auch direkt in Adobe Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
 | Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
-| Kundenattribute | Jetzt als &quot;Profildatensätze&quot;bezeichnet, werden sie nicht automatisch aus Experience Cloud importiert, sondern müssen in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
-| Datumsbereiche | Mit Ausnahme der geplanten Unterstützung benutzerdefinierter Kalender werden alle Datumsbereichsfunktionen unterstützt. |
+| Kundenattribute | Sie werden jetzt als „Profildatensätze“ bezeichnet und nicht automatisch aus Experience Cloud importiert, sondern müssen erst in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
+| Datumsbereiche | Mit Ausnahme der Unterstützung benutzerdefinierter Kalender, die noch in Planung ist, werden alle Datumsbereichsfunktionen unterstützt. |
 | Geräte-, Browser- und Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein Adobe Experience Platform-Datensatz bestimmte XDM-Schema-Felder enthält und der XDM-Erlebnisereignis-Klasse entspricht. |
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
-| GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten GeoSegmentation/Geografie fließen über den Analytics Data Connector in Customer Journey Analytics. Bei Implementierungen, die nicht den Analytics Data Connector verwenden, z. B. solche, die für die digitale Datenerfassung auf das AEP Web SDK angewiesen sind, wird nicht die gesamte Verzögerung der geografischen Suchen automatisch durchgeführt (Land und Staat werden unterstützt, Stadt und ZIP nicht). |
+| GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie strömen über den Analytics Data Connector in CJA. Bei Implementierungen, die nicht den Analytics Data Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (Land und Bundesland werden unterstützt, Stadt und Postleitzahl nicht). |
 | Marketing-Kanäle | Daten von Marketing-Kanälen werden jetzt über Analytics Data Connector an Customer Journey Analytics weitergeleitet. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
 | Produktvariable | In Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem Datensatzschema verwenden, um die Anforderungen dieses Anwendungsfalls zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf einzelne Variablen beschränkt. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
