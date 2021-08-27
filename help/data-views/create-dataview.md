@@ -3,9 +3,9 @@ title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3069'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Hier können Sie angeben, wie sich eine Metrik in Berichten verhalten soll.
 | --- | --- |
 | [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. Dadurch erhalten Sie den tatsächlichen Wert einer Metrik, z. B. „50“, wenn ein Bestellwert von 50 vorhanden war. |
 | [!UICONTROL Instanzen zählen] | Hier können Sie festlegen, ob ein numerisches Feld oder ein Datumsfeld, das als Metrik verwendet wird, zählen soll, wie oft es gesetzt wurde, anstatt den Wert selbst.<br> Ob Sie die Instanzen eines numerischen Felds aufaddieren möchten und einfach die Anzahl der *Festlegungen* eines Felds aufaddieren möchten, anstatt dessen tatsächlichen Wert zu nutzen.<br>Dies ist beispielsweise hilfreich, um eine [!UICONTROL Bestellmetrik] aus einem [!UICONTROL Umsatzfeld] zu erstellen. Wenn der Umsatz festgelegt wurde, geht es darum, anstelle des numerischen Umsatzbetrags eine einzelne Bestellung zu zählen. |
-| [!UICONTROL Kleinbuchstabe] | *Neu*  - Für Dimensionen vom Typ &quot;Zeichenfolge&quot;. Mit dieser Einstellung können Sie steuern, ob bei Dimensionswerten in Customer Journey Analytics zwischen Groß- und Kleinschreibung unterschieden wird. Dies ermöglicht die Deduplizierung von Zeilen mit demselben Wert, jedoch einer anderen Groß-/Kleinschreibung. Wenn Sie **[!UICONTROL Kleinbuchstaben]** aktivieren, werden alle Instanzen einer Dimension mit demselben Wert als Kleinbuchstaben gemeldet. Dieser Screenshot zeigt, was passiert, wenn Sie **nicht** [!UICONTROL Kleinbuchstaben] aktivieren oder **** das Kontrollkästchen aktivieren. Beachten Sie in der linken Tabelle, wie &quot;liverpool&quot;, &quot;Liverpool&quot;und &quot;LIVERPOOL&quot;zu drei separaten Zeileneinträgen in der Berichterstellung führen. In der richtigen Tabelle wurden dieselben Werte dedupliziert und fallen unter einen Zeileneintrag:<br>![Dimension mit Unterscheidung zwischen Groß- und Kleinschreibung](assets/case-sens-workspace.png) |
+| [!UICONTROL Kleinbuchstaben] | *Neu* – Für Dimensionen vom Typ „Zeichenfolge“. Mit dieser Einstellung können Sie steuern, ob bei Dimensionswerten in Customer Journey Analytics zwischen Groß- und Kleinschreibung unterschieden wird. Dies ermöglicht die Deduplizierung von Zeilen mit demselben Wert, jedoch einer anderen Groß-/Kleinschreibung. Wenn Sie **[!UICONTROL Kleinbuchstaben]** aktivieren, werden alle Instanzen einer Dimension mit demselben Wert als Kleinbuchstaben gemeldet. Dieser Screenshot zeigt, was passiert, wenn Sie [!UICONTROL Kleinbuchstaben] **nicht** aktivieren, im Vergleich dazu, wenn Sie das Kontrollkästchen **aktivieren**. Beachten Sie in der linken Tabelle, wie „liverpool“, „Liverpool“ und „LIVERPOOL“ zu drei separaten Zeileneinträgen im Reporting führen. In der rechten Tabelle wurden dieselben Werte dedupliziert und sind in einem einzigen Zeileneintrag zusammengefasst:<br>![Dimension mit Unterscheidung zwischen Groß- und Kleinschreibung](assets/case-sens-workspace.png) |
 
 ### Einstellungen für [!UICONTROL Optionen ohne Werte] konfigurieren
 
@@ -140,7 +140,7 @@ Beachten Sie außerdem, dass das, was Sie in diesem Feld angeben, von der Benutz
 | [!UICONTROL Wenn gezeigt, „kein Wert“ aufrufen...] | Hier können Sie **[!UICONTROL Kein Wert]** in etwas anderes umbenennen. |
 | [!UICONTROL Standardmäßig nicht „Kein Wert“ anzeigen] | Zeigt diesen Wert im Reporting nicht an. |
 | [!UICONTROL Standardmäßig „Kein Wert“ anzeigen] | Zeigt diesen Wert im Reporting an. |
-| [!UICONTROL „Kein Wert“ als Wert behandeln] | Diese Einstellung ersetzt leere Werte in den Daten durch den Text, den Sie unter [!UICONTROL Wenn angezeigt, rufen Sie Kein Wert auf ...]. Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in „Desktop“ umbenennen. Beachten Sie, dass beim Ändern dieses Felds in einen benutzerdefinierten Wert der benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt wird. Wenn Sie daher den Wert &quot;Rot&quot;in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge &quot;Rot&quot;in den Daten selbst unter dem von Ihnen angegebenen Zeileneintrag rolliert. |
+| [!UICONTROL „Kein Wert“ als Wert behandeln] | Diese Einstellung ersetzt leere Werte in den Daten durch den Text, den Sie unter [!UICONTROL Wenn angezeigt, „Kein Wert“ aufrufen....] angegeben haben. Wenn Sie beispielsweise Mobilgerätetypen als Dimension haben, können Sie das Element **[!UICONTROL Kein Wert]** in „Desktop“ umbenennen. Beachten Sie, dass beim Ändern dieses Felds in einen benutzerdefinierten Wert dieser benutzerdefinierte Wert als legitimer Zeichenfolgenwert behandelt wird. Wenn Sie also z. B. den Wert „Rot“ in dieses Feld eingeben, werden alle Instanzen der Zeichenfolge „Rot“, die in den Daten selbst vorkommen, auch unter demselben von Ihnen angegebenen Zeileneintrag erscheinen. |
 
 ### Persistenzeinstellungen konfigurieren
 
@@ -201,7 +201,7 @@ Optionale Standardkomponenten sind auf dem Tab **[!UICONTROL Standardkomponenten
 | [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Die Metrik [!UICONTROL Aufgewendete Zeit] addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension. |
 | [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | [!UICONTROL Aufgewendete Zeit pro Ereignis] fasst die Metrik [!UICONTROL Aufgewendete Zeit] in [!UICONTROL Ereignis]-Buckets zusammen. |
 | [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | [!UICONTROL Aufgewendete Zeit pro Sitzung] erfasst die Metrik [!UICONTROL Aufgewendete Zeit] in [!UICONTROL Sitzungs]-Buckets. |
-| [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | [!UICONTROL Aufgewendete Zeit pro Person]  fasst die Metrik [!UICONTROL Aufgewendete Zeit] in [!UICONTROL Personen]-Buckets zusammen. |
+| [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | [!UICONTROL Aufgewendete Zeit pro Person]   fasst die Metrik [!UICONTROL Aufgewendete Zeit] in [!UICONTROL Personen]-Buckets zusammen. |
 | [!UICONTROL Batch-ID] | Dimension | Stellt den Experience Platform-Batch dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
 | [!UICONTROL Datensatz-ID] | Dimension | Stellt den Experience Platform-Datensatz dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
 
