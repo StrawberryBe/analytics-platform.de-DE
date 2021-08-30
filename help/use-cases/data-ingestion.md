@@ -2,9 +2,9 @@
 title: Optionen zur Datenaufnahme für Customer Journey Analytics
 description: Hier erhalten Sie Informationen über die unterschiedlichen Arten der Datenaufnahme für Customer Journey Analytics.
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
-source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
-workflow-type: ht
-source-wordcount: '939'
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
+workflow-type: tm+mt
+source-wordcount: '779'
 ht-degree: 100%
 
 ---
@@ -16,13 +16,6 @@ Sie haben eine Reihe von Möglichkeiten, Daten in Customer Journey Analytics auf
 ## Daten aus Adobe Analytics erfassen
 
 Dieser Workflow nutzt den Adobe Analytics Data Connector und variiert je nachdem, ob Sie DTM oder Launch als Tag-Manager verwenden.
-
-### Mit Dynamic Tag Management (DTM)
-
-1. [Erstellen Sie eine Datenschicht](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=de), wenn Sie das noch nicht getan haben. Eine Datenschicht ist ein Framework von JavaScript-Objekten auf Ihrer Website, die alle in Ihrer Implementierung verwendeten Variablenwerte enthalten. Sie ermöglicht eine bessere Kontrolle und einfachere Wartung Ihrer Implementierung.
-1. Verwenden Sie [DTM](https://experienceleague.adobe.com/docs/analytics/implementation/other/dtm/dtm-implementation-overview.html), um Code für die Datenerfassung auf Ihrer Website zu implementieren, falls Sie das noch nicht getan haben. Das Dynamic Tag Management stellt eine einzige Datenschicht bereit, die Daten aus mehreren Quellen übergibt.
-1. Erstellen Sie einen [Adobe Analytics-Quellen-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in Adobe Experience Platform. Dieser Quellen-Connector nimmt Ihre Analytics-Daten in Experience Platform in einem standardisierten Framework mit dem Namen [Experience-Datenmodell (XDM)-System](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) auf.
-1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
 
 ### Über Launch
 
@@ -36,7 +29,7 @@ Dieser Workflow nutzt den Adobe Analytics Data Connector und variiert je nachdem
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) ist eine Client-seitige JavaScript-Bibliothek, mit der Kunden von Adobe Experience Cloud mit den verschiedenen Services in Experience Cloud interagieren können.
 
 1. [Konfigurieren Sie die Adobe Experience Platform Web SDK-Erweiterung in Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=de), um Daten von Web-Eigenschaften über das Adobe Experience Platform Edge Network an Adobe Experience Cloud zu senden.
-1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
+1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
 
 ## Daten mit Batch-Erfassung und Streaming-Erfassung einlesen
 
@@ -45,12 +38,12 @@ Adobe Experience Platform bringt Daten aus mehreren Quellen zusammen, um Markete
 ### Batch-Erfassung
 
 1. Richten Sie die [Batch-Erfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=de#batch) ein, damit Sie Daten als Batch-Dateien in Adobe Experience Platform einlesen können. Daten, die aufgenommen werden, können Profildaten aus einer reduzierten Datei in einem CRM-System (z. B. eine Parquet-Datei) oder Daten sein, die einem bekannten Schema in der Experience-Datenmodell (XDM)-Registry entsprechen.
-1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
+1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
 
 ### Streaming-Erfassung
 
 1. Richten Sie die [Streaming-Erfassung](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=de#streaming) ein, um Daten von Client- und Server-seitigen Geräten in Echtzeit an Experience Platform zu senden.
-1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
+1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
 
 ## Einbringen von Google Analytics-Daten zur Analyse in Customer Journey Analytics
 
@@ -60,4 +53,4 @@ In diesem Tutorial finden Sie detaillierte Schritte, wie Sie [Daten von Google A
 
 1. [Verwenden Sie die Bulk Data Insertion API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md), um Server-seitig gesammelte Daten an Adobe Analytics zu senden. Damit können Sie Dateien im CSV-Format senden, die Ereignisdaten enthalten.
 1. [Erstellen Sie einen Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de), um diese Verbraucherdaten in Adobe Experience Platform zu importieren.
-1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
+1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html), um eine oder mehrere Verbindungen und Datenansichten zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.

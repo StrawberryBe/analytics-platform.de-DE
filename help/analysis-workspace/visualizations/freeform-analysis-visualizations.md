@@ -3,9 +3,9 @@ description: Darstellen Sie Ihre Daten in Analysis Workspace visuell dar.
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1043'
 ht-degree: 92%
 
 ---
@@ -16,24 +16,24 @@ Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstel
 
 Sie können auf Visualisierungen durch das Symbol oben links in Workspace, von einem [leeren Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) aus oder über das Kontextmenü in Ihrem Workflow zugreifen.
 
-![](assets/viz-rail.png)
+![Visualisierungsleiste](assets/viz-rail.png)
 
 Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
 | Name der Visualisierung | Beschreibung |
 | --- | --- |
 | [Bereich](/help/analysis-workspace/visualizations/area.md) | Wie ein Liniendiagramm, aber mit einem farbigen Bereich unterhalb der Linie. Verwenden Sie ein Flächendiagramm, wenn Sie mehrere Metriken darstellen und den Bereich visualisieren möchten, der durch die Schnittmenge von zwei oder mehr Metriken gebildet wird. |
-| [Balken](/help/analysis-workspace/visualizations/bar.md) | zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
-| [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) | zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
+| [Balken](/help/analysis-workspace/visualizations/bar.md) | Zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) | Zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
 | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die Kohortenanalyse ist nützlich für die Analyse von Verweildauer, Abwanderung oder Latenzzeiten. |
 | [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich wie bei einem Tortendiagramm zeigt diese Visualisierung Daten als Teile oder Filter eines Ganzen an. |
 | [Trichteranalyse](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). Kann auf mögliche oder exakte Sequenzen eingestellt werden |
 | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Zeigt Kundenpfade durch Ihre Websites und Programme. |
 | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. Es bildet die Grundlage für die Analyse von Daten in Workspace. |
 | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Ein Histogramm fasst Besucher, Besuche oder Treffer basierend auf einem Metrikvolumen in Behälter zusammen. |
-| [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
-| [Linie](/help/analysis-workspace/visualizations/line.md) | stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
-| [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) | zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
+| [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | Zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
+| [Linie](/help/analysis-workspace/visualizations/line.md) | Stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
+| [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) | Zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |
 | [Zusammenfassungszahl](/help/analysis-workspace/visualizations/summary-number-change.md) | Zeigt die ausgewählte Zelle als eine große Zahl an. |
 | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl/Prozentzahl an. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
@@ -44,7 +44,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
 Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Um auf [!UICONTROL Visualisierungseinstellungen] zuzugreifen, klicken Sie auf das Zahnradsymbol [!UICONTROL Visualisierungseinstellungen].
 
-![](assets/settings.png)
+![Einstellungen](assets/settings.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -70,18 +70,16 @@ So bearbeiten Sie eine Legendenbezeichnung:
 1. klicken Sie mit der rechten Maustaste auf die Legendenbeschriftungen.
 1. Klicken Sie auf **[!UICONTROL Bezeichnung bearbeiten]**.
 
-   ![](assets/edit-label.png)
+   ![Bezeichnung bearbeiten](assets/edit-label.png)
 
 1. Geben Sie den neuen Beschriftungstext ein.
 1. Drücken Sie zum Speichern die **[!UICONTROL Eingabetaste]**.
-
-Hier finden Sie einen [Link zu einem Video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) zu diesem Thema.
 
 ## Rechtsklick auf Menü {#right-click}
 
 Zusätzliche Funktionen für eine Visualisierung sind verfügbar, indem Sie mit der rechten Maustaste auf die Visualisierungskopfzeile klicken. Die Einstellungen variieren je nach Visualisierung. Einige der verfügbaren Einstellungen sind:
 
-![](assets/right-click.png)
+![Rechtsklick](assets/right-click.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -94,8 +92,8 @@ Zusätzliche Funktionen für eine Visualisierung sind verfügbar, indem Sie mit 
 | Visualisierungs-Link anfordern | Hiermit können Sie Personen zu einer bestimmten Visualisierung innerhalb eines Projekts leiten. Wenn auf den Link geklickt wird, muss sich der Empfänger anmelden, bevor er zu genau der verknüpften Visualisierung weitergeleitet wird. |
 | Neu starten | (Funktioniert für Fluss, Venn, Histogramm) Löscht die Konfiguration für die aktuelle Visualisierung, damit Sie sie von Grund auf neu konfigurieren können. |
 
-## Symbol „Visualisierung erstellen“  {#quick-viz}
+## Symbol „Visualisierung erstellen“ {#quick-viz}
 
 Wenn Sie sich nicht sicher sind, welche Visualisierung Sie auswählen sollen, bewegen Sie den Mauszeiger über eine beliebige Tabellenzeile und klicken Sie auf das dann erscheinende Symbol **[!UICONTROL Visualisierung erstellen]**. Dies ist die schnellste Möglichkeit, eine Visualisierung hinzuzufügen. Wenn Sie darauf klicken, sucht Analysis Workspace nach der Visualisierung, die aufgrund der vorhandenen Fakten am besten zu Ihren Daten passt. Wenn Sie beispielsweise eine einzelne Zeile ausgewählt haben, wird ein Trend-Liniendiagramm erstellt. Wenn Sie drei Filterzeilen ausgewählt haben, wird ein Venn-Diagramm erstellt.
 
-![](assets/quick-viz.png)
+![Schnellvisualisierung](assets/quick-viz.png)
