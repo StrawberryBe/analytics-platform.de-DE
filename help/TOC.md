@@ -2,7 +2,7 @@
 git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.de-DE
 cloud: Experience Cloud
 product: adobe analytics
-sub-product: Customer Journey
+sub-product: customer journey
 solution: Customer Journey Analytics
 type: Documentation
 index: true
@@ -11,9 +11,9 @@ user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Custo
 breadcrumb-title: Handbuch für Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
-workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '450'
+ht-degree: 100%
 
 ---
 
