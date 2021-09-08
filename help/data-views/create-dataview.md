@@ -2,14 +2,14 @@
 title: Erstellen einer neuen Datenansicht in Customer Journey Analytics.
 description: Beschreibt alle zum Erstellen neuer Datenansichten erforderlichen Einstellungen.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
-workflow-type: ht
-source-wordcount: '3069'
-ht-degree: 100%
+source-git-commit: fb8de8c65b44fd57ca5da6d993bb02b8574f7f47
+workflow-type: tm+mt
+source-wordcount: '3076'
+ht-degree: 95%
 
 ---
 
-# Neue Datenansicht erstellen
+# Datenansicht erstellen
 
 Das Erstellen einer Datenansicht umfasst entweder das Erstellen von Metriken und Dimensionen aus Schemaelementen oder die Verwendung von Standardkomponenten. Die Erstellung von Metriken oder Dimensionen bietet Ihnen eine enorme Flexibilität. Bisher wurde davon ausgegangen, dass bei Datensätzen in Adobe Experience Platform Zeichenfolgenfelder als Dimensionen und numerische Felder als Metriken verwendet wurden. Um diese Felder zu ändern, mussten Sie Ihr Schema in Platform bearbeiten. Die Benutzeroberfläche „Datenansichten“ ermöglicht jetzt eine [freiere Definition von Metriken und Dimensionen](/help/data-views/data-views.md). Weitere Anwendungsfälle finden Sie unter [Anwendungsfälle für Datenansichten](/help/data-views/data-views-usecases.md).
 
@@ -123,9 +123,13 @@ Hier können Sie angeben, wie sich eine Metrik in Berichten verhalten soll.
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. Dadurch erhalten Sie den tatsächlichen Wert einer Metrik, z. B. „50“, wenn ein Bestellwert von 50 vorhanden war. |
+| [!UICONTROL Werte zählen] | Nur für boolesche Metriken können Sie mit dieser Einstellung angeben, ob Sie als Metrikwert [!UICONTROL Count True], [!UICONTROL Count False] oder [!UICONTROL Count True oder False] verwenden möchten. Der Standardwert ist [!UICONTROL Count True]. Dadurch erhalten Sie den tatsächlichen Wert einer Metrik, z. B. &quot;50&quot;, wenn ein Bestellwert von 50 vorhanden war. |
 | [!UICONTROL Instanzen zählen] | Hier können Sie festlegen, ob ein numerisches Feld oder ein Datumsfeld, das als Metrik verwendet wird, zählen soll, wie oft es gesetzt wurde, anstatt den Wert selbst.<br> Ob Sie die Instanzen eines numerischen Felds aufaddieren möchten und einfach die Anzahl der *Festlegungen* eines Felds aufaddieren möchten, anstatt dessen tatsächlichen Wert zu nutzen.<br>Dies ist beispielsweise hilfreich, um eine [!UICONTROL Bestellmetrik] aus einem [!UICONTROL Umsatzfeld] zu erstellen. Wenn der Umsatz festgelegt wurde, geht es darum, anstelle des numerischen Umsatzbetrags eine einzelne Bestellung zu zählen. |
-| [!UICONTROL Kleinbuchstaben] | *Neu* – Für Dimensionen vom Typ „Zeichenfolge“. Mit dieser Einstellung können Sie steuern, ob bei Dimensionswerten in Customer Journey Analytics zwischen Groß- und Kleinschreibung unterschieden wird. Dies ermöglicht die Deduplizierung von Zeilen mit demselben Wert, jedoch einer anderen Groß-/Kleinschreibung. Wenn Sie **[!UICONTROL Kleinbuchstaben]** aktivieren, werden alle Instanzen einer Dimension mit demselben Wert als Kleinbuchstaben gemeldet. Dieser Screenshot zeigt, was passiert, wenn Sie [!UICONTROL Kleinbuchstaben] **nicht** aktivieren, im Vergleich dazu, wenn Sie das Kontrollkästchen **aktivieren**. Beachten Sie in der linken Tabelle, wie „liverpool“, „Liverpool“ und „LIVERPOOL“ zu drei separaten Zeileneinträgen im Reporting führen. In der rechten Tabelle wurden dieselben Werte dedupliziert und sind in einem einzigen Zeileneintrag zusammengefasst:<br>![Dimension mit Unterscheidung zwischen Groß- und Kleinschreibung](assets/case-sens-workspace.png) |
+| [!UICONTROL Kleinbuchstaben] | Wird mit Zeichenfolgendimensionen verwendet. Dedupliziert Zeilen, die denselben Wert, aber unterschiedliche Groß-/Kleinschreibung aufweisen. Wenn diese Option aktiviert ist, werden alle Instanzen einer Dimension mit demselben Wert als Kleinbuchstaben gemeldet. Beispielsweise enthält Ihr Datensatz die Werte `"liverpool"`, `"Liverpool"` und `"LIVERPOOL"` in einer Zeichenfolgendimension. Wenn [!UICONTROL Kleinbuchstaben] aktiviert ist, werden alle drei Werte zu `"liverpool"` kombiniert. Wenn diese Option deaktiviert ist, werden alle drei Werte als unterschiedliche Werte behandelt:<br>![Dimension, bei der die Groß-/Kleinschreibung beachtet wird](assets/case-sens-workspace.png)<br> |
+
+>[!NOTE]
+>
+>Wenn Sie [!UICONTROL Kleinbuchstaben] für eine Lookup-Datensatzdimension aktivieren, können für dieselbe Kennung mehrere Lookup-Werte vorhanden sein. In diesem Fall verwendet CJA den ersten gesammelten ASCII-Wert (Werte in Großbuchstaben vor Kleinbuchstaben). Adobe rät davon ab, Lookup-Datensätze zu verwenden, die denselben Wert enthalten, wenn [!UICONTROL Kleinbuchstaben] aktiviert ist.
 
 ### Einstellungen für [!UICONTROL Optionen ohne Werte] konfigurieren
 
