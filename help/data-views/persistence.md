@@ -2,11 +2,10 @@
 title: Was ist Dimensionspersistenz in Customer Journey Analytics?
 description: Die Dimensionspersistenz ist eine Kombination aus Zuordnung und Ablauf. Zusammengenommen bestimmen sie, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen bleiben.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
-translation-type: ht
-source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
-workflow-type: ht
-source-wordcount: '574'
-ht-degree: 100%
+source-git-commit: ab81c7fff2b7e942491fd417cfa115dd428f222d
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 84%
 
 ---
 
@@ -27,7 +26,7 @@ Die Zuordnung wendet eine Umwandlung auf den zugrunde liegenden Wert an, den Sie
 
 ### [!UICONTROL Zuletzt verwendete] Zuordnung
 
-Bei der zuletzt verwendeten Zuordnung bleibt der letzte (nach Zeitstempel) in der Dimension vorhandene Wert erhalten. Alle nachfolgenden Werte, die innerhalb derselben Sitzung auftreten, ersetzen den zuvor bestehenden Wert. Beachten Sie, dass leere Werte vor der Anwendung der Persistenz durch „Kein Wert“ ersetzt werden, wenn für diese Dimension „Kein Wert“ als „Wert behandeln“ ausgewählt wurde. Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL zuletzt verwendeten] Zuordnung unter der Annahme, dass für den Ablauf eine [!UICONTROL Sitzung] verwendet wird und alle Ereignisse innerhalb ein und derselben [!UICONTROL Sitzung] auftreten:
+Die neueste Zuordnung behält den neuesten (nach Zeitstempel) Wert bei, der in der Dimension vorhanden ist. Alle nachfolgenden Werte, die innerhalb derselben Sitzung auftreten, ersetzen den zuvor beibehaltenen Wert. Beachten Sie, dass, wenn für diese Dimension &quot;Kein Wert behandeln&quot;ausgewählt wurde, die leeren Werte durch &quot;Kein Wert&quot;ersetzt werden, bevor die Persistenz angewendet wird. Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL zuletzt verwendeten] Zuordnung unter der Annahme, dass für den Ablauf eine [!UICONTROL Sitzung] verwendet wird und alle Ereignisse innerhalb ein und derselben [!UICONTROL Sitzung] auftreten:
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -36,7 +35,7 @@ Bei der zuletzt verwendeten Zuordnung bleibt der letzte (nach Zeitstempel) in de
 
 ### [!UICONTROL Originale] Zuordnung
 
-Die originale Zuordnung behält den ursprünglichen Wert (nach Zeitstempel) bei, der innerhalb der Dimension für einen Ablaufzeitraum vorhanden ist. Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL originalen] Zuordnung:
+Die ursprüngliche Zuordnung behält den ursprünglichen Wert (nach Zeitstempel) bei, der innerhalb der Dimension für einen Ablaufzeitraum vorhanden ist. Im Folgenden finden Sie ein Beispiel vor und nach der [!UICONTROL originalen] Zuordnung:
 
 | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -60,7 +59,7 @@ Es gibt vier Möglichkeiten, einen Dimensionswert ablaufen zu lassen:
 
 * Sitzung (Standard): Läuft nach einer bestimmten Sitzung ab.
 * Person: Läuft am Ende des Reporting-Fensters ab.
-* Zeit: Sie können den Wert der Dimension so einstellen, dass er nach einem bestimmten Zeitraum (bis zu 90 Tage) abläuft. Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Ablaufzeit werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
+* Zeit: Sie können den Wert der Dimension so einstellen, dass er nach einem bestimmten Zeitraum (bis zu 90 Tage) abläuft. Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeit werden Werte berücksichtigt, die vor dem Beginn des Berichtsfensters (bis zu 90 Tage) liegen.
 * Metrik: ermöglicht Ihnen, eine der definierten Metriken als Ablaufdatum für diese Dimension anzugeben (z. B. eine Kaufmetrik). Diese Art des Ablaufens ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar.
 
 ### Was ist der Unterschied zwischen Zuordnung und Attribution?

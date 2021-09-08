@@ -1,14 +1,13 @@
 ---
 title: Häufig gestellte Fragen zur kanalübergreifenden Analyse
 description: Häufig gestellte Fragen zur kanalübergreifenden Analyse
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
+source-git-commit: 2be442915587780ce41f33b13e27b8cf44e239a6
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 46%
 
 ---
-
 
 # Häufig gestellte Fragen
 
@@ -46,3 +45,21 @@ Die Echtzeit-Zuordnung ist ca. 1 Woche, nachdem Adobe die kanalübergreifende An
 ## Wie handhabt die kanalübergreifende Analyse DSGVO- und CCPA-Anforderungen?
 
 Adobe handhabt DSGVO- und CCPA -Anforderungen gemäß den nationalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de-DE) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
+
+## Was passiert, wenn das Feld &quot;Persistent ID&quot;in einem oder mehreren Ereignissen leer ist?
+
+Wenn das Feld `Persistent ID` bei einem Ereignis in einem Datensatz, der mit feldbasiertem Stitching verknüpft ist, leer ist, füllt die kanalübergreifende Analyse die `Stitched ID` für dieses Ereignis auf zwei Arten aus:
+* Wenn das Feld `Transient ID` nicht leer ist, verwendet die kanalübergreifende Analyse den Wert in `Transient ID` als `Stitched ID`.
+* Wenn das Feld `Transient ID` leer ist, lässt die kanalübergreifende Analyse auch das Feld `Stitched ID` leer. In diesem Fall sind `Persistent ID`, `Transient ID` und `Stitched ID` beim Ereignis alle leer. Ereignisse wie diese werden aus CJA in jeder CJA-Verbindung mit dem zuzuordnenden Datensatz abgelegt, wobei `Stitched ID` als `Person ID` ausgewählt wurde.
+
+## Wie vergleichen sich Metriken in mit CJA zugeordneten Datensätzen mit ähnlichen Metriken in nicht zugeordneten CJA-Datensätzen und mit dem herkömmlichen Adobe Analytics?
+
+Bestimmte Metriken in CJA ähneln den Metriken in herkömmlichem Analytics, andere unterscheiden sich jedoch je nach dem, was Sie vergleichen. In der folgenden Tabelle werden verschiedene häufig verwendete Metriken verglichen:
+
+| **CJA-zugeordnete Daten** | **Nicht zugeordnete CJA-Daten** | **Traditioneller Adobe Analytics** | **Analytics Ultimate mit CDA** |
+| ----- | ----- | ----- | ----- |
+| **Personen**  = Anzahl der einzelnen  `Person ID`s, für die  `Stitched ID` ausgewählt  `Person ID`ist. **** Je nach Ergebnis des Stitching-Prozesses können Personen höher oder kleiner als  **Unique** Visitors im herkömmlichen Adobe Analytics sein. | **Personen**  = Anzahl der einzelnen  `Person ID`Zeichen basierend auf der Spalte, die als  `Person ID`ausgewählt wurde. **** Die Datensätze von People in Adobe Analytics Connector (ADC) ähneln denen von  **Unique** Visitors im herkömmlichen Adobe Analytics, wenn  `endUserIDs. _experience. aaid.id` wie  `Person ID` in CJA ausgewählt ist. | **Unique Visitors**  = Anzahl unterschiedlicher Besucher-IDs. Beachten Sie, dass **Unique Visitors** möglicherweise nicht mit der Anzahl der eindeutigen **ECID** s übereinstimmt. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=en). |
+| **Sitzungen**: Wird anhand der in der CJA-Datenansicht angegebenen Sitzungseinstellungen definiert. Der Stitching-Prozess kann einzelne Sitzungen von mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der CJA-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe  [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=en). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der  [Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=en) der geräteübergreifenden Analyse angegeben sind. |
+| **Ereignisse**  = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Im Allgemeinen sollte dies im herkömmlichen Adobe Analytics nahe **Vorfälle** sein. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einem leeren `Persistent ID`. | **Ereignisse**  = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Im Allgemeinen sollte dies im herkömmlichen Adobe Analytics nahe **Vorfälle** sein. Beachten Sie jedoch, dass, wenn Ereignisse in den nicht zugewiesenen Daten im AEP Data Lake ein leeres `Person ID` enthalten, diese Ereignisse in CJA abgelegt (nicht eingeschlossen) werden. | **Vorfälle**: Siehe  [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). | **Vorfälle**: Siehe  [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). |
+
+Andere Metriken können in CJA und im herkömmlichen Adobe Analytics ähnlich sein. Beispielsweise sollte die Gesamtanzahl für Adobe Analytics [benutzerdefinierte Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=en) (Ereignisse 1-100) im Allgemeinen in der herkömmlichen Adobe Analytics und CJA sehr nahe liegen (ob zugeordnet oder nicht zugeordnet). Beachten Sie jedoch, dass dies möglicherweise nicht immer zutrifft, da [die Funktionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=en) unterschiedlich sind, z. B. die Deduplizierung zwischen CJA und herkömmlichem Adobe Analytics.
