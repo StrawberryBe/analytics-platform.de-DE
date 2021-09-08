@@ -2,10 +2,11 @@
 title: Verbindungen verwalten
 description: Beschreibt, wie Verbindungen zu Experience Platform-Datensätzen in Customer Journey Analytics (CJA) verwaltet werden.
 mini-toc-levels: 3
-source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
+exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
+source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +19,7 @@ Nachdem Benutzer mit Administratorenrechten [eine oder mehrere Verbindungen erst
 * Damit können Sie **alle Datendiskrepanzen identifizieren**, die aufgrund einer Fehlkonfiguration entstanden sind bzw. entstehen. Fehlen Zeilen? Wenn ja, welche Zeilen fehlen und warum? Haben Sie Verbindungen falsch konfiguriert und dadurch das Fehlen von Daten in Customer Journey Analytics verursacht?
 
 >[!NOTE]
-> Diese Funktionen sind ab dem 10. August 2021 allgemein verfügbar.
+> Diese Funktion ist ab dem 20. September 2021 allgemein verfügbar.
 
 ## Verbindungs-Manager {#connections-manager}
 
