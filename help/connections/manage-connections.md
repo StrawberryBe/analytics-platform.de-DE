@@ -3,10 +3,10 @@ title: Verbindungen verwalten
 description: Beschreibt, wie Verbindungen zu Experience Platform-Datensätzen in Customer Journey Analytics (CJA) verwaltet werden.
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
+source-git-commit: d099c2559eea68aa1f44d345b103618f55fd0559
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 99%
+source-wordcount: '1587'
+ht-degree: 86%
 
 ---
 
@@ -80,6 +80,9 @@ Damit können Sie:
 * Identifizieren Sie Konfigurationsprobleme, die zu übersprungenen oder gelöschten Datensätzen führen.
 * Finden Sie heraus, wann die Daten für das Reporting verfügbar sind.
 
+>[!IMPORTANT]
+>Daten, die vor dem 13. August 2021 erfasst wurden, werden in diesem [!UICONTROL Connections]-Dialogfeld nicht angezeigt.
+
 Im Folgenden werden Widgets und Einstellungen erläutert:
 
 ![Verbindungsdetails anzeigen](assets/conn-details.png)
@@ -88,11 +91,11 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | --- | --- |
 | Datensatz-Auswahl | Ermöglicht die Auswahl eines Datensatzes oder aller Datensätze in der Verbindung. Datensätze können nicht mehrmals ausgewählt werden. Die Standardeinstellung ist [!UICONTROL Alle Datensätze]. |
 | Kalender/Datumsbereiche | Der Datumsbereich gibt an, wann Sie der Verbindung Daten hinzugefügt haben. Alle Standardkalendervorgaben sind enthalten. Sie können den Datumsbereich anpassen, es werden jedoch keine benutzerdefinierten Datumsbereiche in der Dropdown-Liste angezeigt. |
-| Widget [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der für das Reporting verfügbaren Zeilen dar, und das **für die gesamte Verbindung**. Diese Anzahl ist unabhängig von Kalendereinstellungen. Sie ändert sich, wenn Sie einen Datensatz aus der Datensatzauswahl auswählen, oder durch die Auswahl eines Datensatzes in der Tabelle. (Beachten Sie, dass es eine Latenz von 1–2 Stunden gibt, bis die Daten nach dem Hinzufügen in Berichten angezeigt werden.) |
-| Widget [!UICONTROL Metriken] | Fasst die hinzugefügten/übersprungenen/gelöschten Datensätze sowie die Anzahl der hinzugefügten Stapel **für den ausgewählten Datensatz und den ausgewählten Datumsbereich** zusammen. |
-| Widget [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** hinzugefügt wurden. Wird alle zehn Minuten aktualisiert. |
-| Widget [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende Personen-ID usw. Wird alle zehn Minuten aktualisiert. |
-| Widget [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** gelöscht wurden. Beispielsweise könnte jemand einen Datensatz in Experience Platform gelöscht haben. Wird alle zehn Minuten aktualisiert. |
+| [!UICONTROL Datensätze zu ] verfügbaren Ereignisdaten im Widget | Stellt die Gesamtzahl der für die Berichterstellung verfügbaren Ereignis-Datensatzzeilen dar, **für die gesamte Verbindung**. Diese Anzahl ist unabhängig von Kalendereinstellungen. Sie ändert sich, wenn Sie einen Datensatz aus der Datensatzauswahl auswählen, oder durch die Auswahl eines Datensatzes in der Tabelle. (Beachten Sie, dass es eine Latenz von 1–2 Stunden gibt, bis die Daten nach dem Hinzufügen in Berichten angezeigt werden.) |
+| Widget [!UICONTROL Metriken] | Fasst die hinzugefügten/übersprungenen/gelöschten Ereignisdatensätze sowie die Anzahl der hinzugefügten Batches, **für den ausgewählten Datensatz und Datumsbereich** zusammen. |
+| Widget [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** hinzugefügt wurden. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für  **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Lookup-Daten. |
+| Widget [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende Personen-ID usw. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für  **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Lookup-Daten. |
+| Widget [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** gelöscht wurden. Beispielsweise könnte jemand einen Datensatz in Experience Platform gelöscht haben. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für  **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Lookup-Daten. |
 | Datensatz-Suchfeld | Sie können nach Datensatznamen oder [!UICONTROL Datensatz-ID] suchen. |
 | [!UICONTROL Datensätze] | Zeigt die Datensätze an, die Teil der Verbindung sind. Sie können auf den Hyperlink klicken, um alle Datensätze in der Verbindung anzuzeigen. |
 | [!UICONTROL Datensatz-ID] | Diese ID wird automatisch von Adobe Experience Platform generiert. |
@@ -114,10 +117,11 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | [!UICONTROL Neue Daten importieren] | Gibt an, ob den historischen Daten (Aufstockung) neue Datenstapel hinzugefügt werden sollen oder nicht. |
 | **Rechte Leiste auf Datensatzebene** |  |
 | [!UICONTROL Beschreibung des Datensatzes] | Beschreibt die Parameter der einzelnen Datensätze in dieser Verbindung. |
-| [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-daten-in-customer-journey-analytics-einbringen) vorhanden. |
-| [!UICONTROL Hinzugefügte Datensätze] | Wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. |
-| [!UICONTROL Übersprungene Datensätze] | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden. |
-| [!UICONTROL Fehler bei übersprungenen Datensätzen] | Der Grund, warum Datensätze übersprungen wurden, wird hier angegeben. Gründe hierfür können fehlende Zeitstempel, fehlende Personen-ID usw. sein. |
+| [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtanzahl der für diesen Datensatz erfassten Zeilen für den ausgewählten Zeitraum im Kalender dar. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-daten-in-customer-journey-analytics-einbringen) vorhanden. |
+| [!UICONTROL Hinzugefügte Datensätze] | Wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. **Hinweis**: Daten für  **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Lookup-Daten. |
+| [!UICONTROL Übersprungene Datensätze] | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden. **Hinweis**: Daten für  **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Lookup-Daten. |
+| [!UICONTROL Gelöschte Datensätze] | Anzahl der im ausgewählten Zeitraum gelöschten Datensätze. **Hinweis**: Daten für  **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Lookup-Daten. |
+| [!UICONTROL Fehler bei übersprungenen Datensätzen] | Der Grund, warum Datensätze übersprungen wurden, wird hier angegeben. Mögliche Gründe sind fehlende Zeitstempel, fehlende Personen-ID usw. |
 | [!UICONTROL Aufgenommene Batches] | Wie viele Datenstapel diesem Datensatz hinzugefügt wurden. |
 | [!UICONTROL Zuletzt hinzugefügt] | Der Zeitpunkt, zu dem der letzte Stapel hinzugefügt wurde. |
 | [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
@@ -131,3 +135,5 @@ Ermöglicht es Administratoren, die Verbindung zu bearbeiten. Wählen Sie eine V
 
 * Starten und Beendes des Imports neuer Daten. Dieser Prozess wurde früher als „Daten-Streaming“ bezeichnet.
 * Eine Verbindung umbenennen.
+* Aktualisieren Sie die Datensätze.
+* Entfernen Sie Datensätze aus den Verbindungen.
