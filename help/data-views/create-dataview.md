@@ -2,10 +2,10 @@
 title: Datenansicht erstellen
 description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht zu erstellen oder zu bearbeiten.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+source-git-commit: 49b4998194274eec2ab8eca231029ccb5ccf648d
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 81%
+source-wordcount: '805'
+ht-degree: 77%
 
 ---
 
@@ -56,7 +56,17 @@ Beispielsweise können Sie im Feld **[!UICONTROL pageTitle]** eine Dimension nam
    >
    >Sie können ganze Ordner mit Schemafeldern aus der linken Leiste ziehen und sie werden automatisch in traditionelle Abschnitte unterteilt. Die Zeichenfolgenfelder werden im Abschnitt [!UICONTROL Dimensionen] und die Zahlen im Abschnitt [!UICONTROL Metriken] angezeigt. Alternativ können Sie auf **[!UICONTROL Alle]** hinzufügen klicken und alle Schemafelder werden hinzugefügt.
 
-1. Nachdem Sie die Komponente ausgewählt haben, werden auf der rechten Seite eine Reihe von Einstellungen angezeigt. Konfigurieren Sie die Komponente mithilfe der unten beschriebenen Einstellungen.
+1. Nachdem Sie die Komponente ausgewählt haben, werden auf der rechten Seite eine Reihe von Einstellungen angezeigt. Konfigurieren Sie die Komponente mithilfe der Einstellungen, die unter
+
+* [ Komponenteneinstellungen - Übersicht](/help/data-views/component-settings/overview.md)
+* [ Attributionskomponenteneinstellungen](/help/data-views/component-settings/attribution.md)
+* [ Behaviorcomponent-Einstellungen](/help/data-views/component-settings/behavior.md)
+* [ Formatkomponenteneinstellungen](/help/data-views/component-settings/format.md)
+* [[!UICONTROL Include|] excludecomponent settings](/help/data-views/component-settings/include-exclude-values.md)
+* [[!UICONTROL Einstellungen ] der Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md)
+* [[!UICONTROL Keine Einstellungen ] der Komponente](/help/data-views/component-settings/no-value-options.md)
+* [ Persistenzkomponenten-Einstellungen](/help/data-views/component-settings/persistence.md)
+   [[!UICONTROL Einstellungen ] der Wertaufschlüsselungskomponente](/help/data-views/component-settings/value-bucketing.md)
 
 ## Verwenden Sie die Funktion [!UICONTROL Duplizieren].
 

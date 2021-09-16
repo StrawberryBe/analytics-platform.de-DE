@@ -2,10 +2,10 @@
 title: Aktualisierungen der CJA-Dokumentation
 description: Listet Inhaltsaktualisierungen für die seit Dezember 2019 erstellte Customer Journey Analytics-Dokumentation auf.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 6fca2dbffb0a631b0c5425c7d8964296ad22b7cc
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 20%
+source-wordcount: '448'
+ht-degree: 18%
 
 ---
 
@@ -15,6 +15,7 @@ Die folgenden Aktualisierungen wurden seit der Gründung der CJA-Dokumentation v
 
 | Datum | Beschreibung aktualisieren |
 | --- | --- |
+| September 2021 | Aufschlüsseln der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[ Komponenteneinstellungen - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[ Attributionskomponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[ Behaviorcomponent-Einstellungen](/help/data-views/component-settings/behavior.md)</li><li>[ Formatkomponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einstellungen für Einschluss/] Ausschlusskomponente](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Einstellungen ] der Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Keine Einstellungen ] der Komponente](/help/data-views/component-settings/no-value-options.md)</li><li>[ Persistenzkomponenten-Einstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Einstellungen ] der Wertaufschlüsselungskomponente](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | September 2021 | Neuer Abschnitt zu den Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#6.-considerations-when-merging-report-suites-in-cja) in CJA.[ |
 | August 2021 | Neuer Abschnitt zum erweiterten Erlebnis [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) in CJA. |
 | August 2021 | Neuer Abschnitt zu [Groß-/Kleinschreibung in Datenansichtsdimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-behavior-settings). |

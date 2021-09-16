@@ -1,7 +1,7 @@
 ---
 title: Komponenteneinstellungen für WertBuffering
 description: Kombinieren Sie numerische Werte in einer Dimension.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 12%
@@ -9,7 +9,7 @@ ht-degree: 12%
 ---
 
 
-# Komponenteneinstellungen für die Wertberechnung
+# [!UICONTROL Einstellungen ] der Value Bucketingcomponent
 
 Beim Erstellen oder Bearbeiten einer Datenansicht können Sie mit der Wertaufschlüsselung numerische Werte basierend auf einem Bereich kombinieren. Sie ist nur für Dimensionen verfügbar, die Datentypen vom Typ Integer oder Doppeltes Schema verwenden.
 
