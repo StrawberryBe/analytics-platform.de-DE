@@ -1,17 +1,17 @@
 ---
-title: Was ist eine Datenansicht in Customer Journey Analytics?
+title: Übersicht über die Datenansichten
 description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journey Analytics-Verbindung zu interpretieren sind, beispielsweise Metriken, Dimensionen, Sitzungen usw.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
+source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1047'
+ht-degree: 94%
 
 ---
 
-# Was ist eine Datenansicht?
+# Übersicht über die Datenansichten
 
-Eine Datenansicht befindet sich auf einer Customer Journey Analytics-[Verbindung](/help/connections/create-connection.md). Eine Verbindung kombiniert einen oder mehrere Datensätze aus Adobe Experience Platform und verbindet sie mit Customer Journey Analytics. Die Datenansicht gibt an, wie Datenelemente in der Verbindung zu interpretieren sind, beispielsweise Metriken, Dimensionen, Sitzungen usw. Datenansichten werden zur Vorbereitung für das Reporting zu Daten in Workspace definiert.
+Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer [Verbindung](/help/connections/create-connection.md) interpretiert werden. Es werden alle in Analysis Workspace verfügbaren Dimensionen und Metriken sowie die Spalten angegeben, aus denen diese Dimensionen und Metriken ihre Daten abrufen. Datenansichten werden in Vorbereitung auf die Berichterstellung in Analysis Workspace definiert.
 
 >[!NOTE]
 >
@@ -78,4 +78,3 @@ Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, 
 
 * [Erstellen von Datenansichten](/help/data-views/create-dataview.md)
 * [Anwendungsfälle von Datenansichten](/help/data-views/data-views-usecases.md)
-* Details zur Funktionsweise von [Persistenz](/help/data-views/persistence.md)

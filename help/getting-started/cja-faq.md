@@ -2,7 +2,7 @@
 title: FAQ zu Customer Journey Analytics
 description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: af683f97284ed24c3285a5819217ad329d5a8067
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 87%
@@ -86,5 +86,5 @@ Wenn Sie planen, Adobe Analytics-Daten über den Quell-Connector [Adobe Analytic
 |  Sitzungen und   Personenergebnisse | Sie werden über Report Suites hinweg dedupliziert. Daher stimmen die Zahlen möglicherweise nicht überein. |
 | Deduplizierung der Metrik | Dedupliziert Instanzen einer Metrik (z. B. [!UICONTROL Bestellungen]), wenn mehrere Zeilen dieselbe Transaktions-ID aufweisen (z. B. [!UICONTROL Kauf-ID]). Dadurch wird verhindert, dass Schlüsselmetriken übergezählt werden. Daher werden Metriken wie [!UICONTROL Bestellungen] möglicherweise nicht für alle Report Suites addiert. |
 | Währung | Die Währungsumrechnung wird in CJA noch nicht unterstützt. Wenn die Report Suites, die Sie zusammenführen möchten, unterschiedliche Basiswährungen verwenden, können Probleme auftreten. |
-| [!UICONTROL Persistenz] | [](/help/data-views/persistence.md) Die Persistenz erstreckt sich über Report Suites hinweg, was sich auf  [!UICONTROL Filter],  [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
+| [!UICONTROL Persistenz] | [](../data-views/component-settings/persistence.md) Die Persistenz erstreckt sich über Report Suites hinweg, was sich auf  [!UICONTROL Filter],  [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
 | [!UICONTROL Klassifizierungen] |  Klassifizierungen werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Wenn Sie mehrere Klassifizierungsdateien in einem einzigen [!UICONTROL Lookup]-Datensatz kombinieren, können Probleme auftreten. |

@@ -2,7 +2,7 @@
 title: Aktualisierungen der CJA-Dokumentation
 description: Listet Inhaltsaktualisierungen für die seit Dezember 2019 erstellte Customer Journey Analytics-Dokumentation auf.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 8f576a8321c0e50cc34c1c08c8f8f7c48b427233
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 20%
@@ -19,7 +19,7 @@ Die folgenden Aktualisierungen wurden seit der Gründung der CJA-Dokumentation v
 | August 2021 | Neuer Abschnitt zum erweiterten Erlebnis [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) in CJA. |
 | August 2021 | Neuer Abschnitt zu [Groß-/Kleinschreibung in Datenansichtsdimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-behavior-settings). |
 | Juni 2021 | Neue Dokumentation zu [früheren Projektversionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version) in Workspace. |
-| April 2021 | Neues Thema zu [persistence](/help/data-views/persistence.md). |
+| April 2021 | Neues Thema zu [persistence](data-views/component-settings/persistence.md). |
 | April 2021 | Neue Dokumentation zur Unterstützung geplanter Projekte in Workspace. |
 | April 2021 | Neue Themen zum Erlebnis [Erweiterte Datenansichten](/help/data-views/data-views.md). |
 | April 2021 | Neue Themen zu [Erfassen von Google Analytics-Daten](/help/use-cases/ga-to-cja.md) und [Analysieren dieser Daten](/help/use-cases/ga-to-cja-reporting.md). |
