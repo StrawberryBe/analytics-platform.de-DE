@@ -1,14 +1,13 @@
 ---
 title: Funktionsweise der Wiederholung
 description: Das Konzept der „Wiederholung“ in der kanalübergreifenden Analyse
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
+source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 95%
 
 ---
-
 
 # Funktionsweise der Wiederholung
 
@@ -54,6 +53,10 @@ In regelmäßigen Abständen (einmal pro Woche oder einmal pro Tag, je nach ausg
 | `5` | `3579` | `Bob` | – | `Bob` | Bob meldet sich über ein Smartphone oder Tablet an | `1` (Bob) |
 | `6` | – | – | `Bob` | `Bob` | Bob ruft erneut den Kundendienst an | `1` (Bob) |
 | `7` | `246` | – | – | `Bob` | Bob greift erneut auf Ihre Website auf dem Desktop zu und ist nicht authentifiziert | `1` (Bob) |
+
+>[!NOTE]
+>
+>Daten werden nur für den Website-Datensatz wiederholt. Der Callcenter-Datensatz bleibt unverändert, stimmt jedoch überein, wenn die richtige Personen-ID verwendet wird.
 
 ## Zusammenfassung
 
