@@ -2,10 +2,10 @@
 title: Datenansicht erstellen oder bearbeiten
 description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht zu erstellen oder zu bearbeiten.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 384679788d140a01a12e1c830b47099398a920b1
+source-git-commit: 36b7cc72c34e27f90af29146f7a32c525b279b9b
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 18%
+ht-degree: 16%
 
 ---
 
@@ -60,12 +60,9 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Datenansicht zu erstellen, oder klicken Sie auf eine vorhandene Datenansicht, um sie zu bearbeiten.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Komponenten]** .
 
-![Registerkarte &quot;Komponenten&quot;](assets/components-tab.png)
+   ![Registerkarte &quot;Komponenten&quot;](assets/components-tab.png)
 
-Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schemafelder] unten enthält. Bedenken Sie Folgendes:
-
-    * Die bereits eingeschlossenen Komponenten sind die standardmäßigen erforderlichen Komponenten (System generiert).
-    * Adobe wendet den Filter **[!UICONTROL Enthält Daten]** standardmäßig an, sodass nur Schemafelder mit Daten angezeigt werden. Wenn Sie nach einem Feld suchen, das keine Daten enthält, entfernen Sie den Filter.
+   Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schemafelder] unten enthält. Beachten Sie, dass es sich bei den bereits eingeschlossenen Komponenten um standardmäßige erforderliche Komponenten (vom System generiert) für alle Datenansichten handelt. Adobe wendet standardmäßig auch den Filter **[!UICONTROL Enthält Daten]** an, sodass nur Schemafelder mit Daten angezeigt werden. Wenn Sie ein Feld wünschen, das keine Daten enthält, entfernen Sie diesen Filter.
 
 1. Ziehen Sie ein Schemafeld wie `pageTitle` aus der linken Leiste in den Bereich Metriken oder Dimensionen .
 

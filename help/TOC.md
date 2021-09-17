@@ -10,10 +10,10 @@ user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, der auf der Adobe Experience Platform basierenden Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 46dbc257e7e2ec1709f5380061033a7ed8578797
+source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 97%
+source-wordcount: '477'
+ht-degree: 96%
 
 ---
 
@@ -163,6 +163,7 @@ ht-degree: 97%
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
+   + [Daten kanalübergreifend analysieren](use-cases/cross-channel.md)
    + [Callcenter- und Web-Daten importieren](use-cases/call-center.md)
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
    + [Marketing-Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)

@@ -2,16 +2,16 @@
 title: Callcenter- und Web-Daten importieren
 description: Erfahren Sie, wie Sie einen Datensatz erstellen, mit dem Sie Callcenter- und Website-Daten verknüpfen.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+workflow-type: tm+mt
+source-wordcount: '778'
+ht-degree: 86%
 
 ---
 
 # Callcenter- und Web-Daten importieren
 
-Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus verschiedenen Quellen in einem einzigen Workspace-Projekt zu kombinieren. Verwenden Sie diesen Leitfaden, um zu verstehen, wie Ihr Unternehmen Website-Daten mit Callcenter-Daten kombinieren kann.
+Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus verschiedenen Quellen in einem einzigen Workspace-Projekt zu kombinieren. Verwenden Sie diesen Leitfaden, um zu verstehen, wie Ihr Unternehmen Website-Daten mit Callcenter-Daten kombinieren kann. Sie können beispielsweise verstehen, welche Aktionen ein Kunde durchführt, welche Inhalte er anzeigt und nach welchen Begriffen er sucht, bevor er sich an den Support wendet. Anschließend können Sie die Inhalte und Self-Service-Tools ermitteln, die verbessert werden sollen, damit Kunden Probleme besser selbst lösen können, ohne sich einloggen zu müssen.
 
 ## Voraussetzungen
 
@@ -53,8 +53,10 @@ Customer Journey Analytics erfordert eine gemeinsame Kennung, sodass ein [kombin
 
 ## Datenansicht erstellen
 
-Nachdem Sie eine Verbindung erstellt haben, können Sie eine [Datenansicht erstellen](/help/data-views/create-dataview.md), die in Analysis Workspace verwendet werden kann. <!-- page dimension last touch, session persistence -->
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+Nachdem Sie eine Verbindung erstellt haben, können Sie eine [Datenansicht erstellen](/help/data-views/create-dataview.md), die in Analysis Workspace verwendet werden kann. Nützliche Komponenten sind:
+
+* Eine Seitendimension mit Letztkontakt- und Sitzungspersistenz. Sie können Callcenter-Metriken mit der letzten Seite verbinden, die ein Kunde vor dem Aufruf aufgerufen hat.
+* Eine Aufrufmetrik, die das Schemafeld &quot;Callcenter-Grund&quot;verwendet, um das Vorkommen zu erhöhen. Verwenden Sie [Metrikdeduplizierung](/help/data-views/component-settings/metric-deduplication.md), damit sie nur einmal pro Sitzung erhöht wird.
 
 ## Visualisierungen erstellen
 
@@ -81,14 +83,13 @@ Diese Freiformtabelle zeigt die wichtigsten Seiten, die zum Aufruf von Callcente
 1. Klicken Sie auf das Zahnradsymbol neben der Metrikkopfzeile. Klicken Sie auf **[!UICONTROL Nicht-standardmäßiges Attributionsmodell verwenden]**.
 1. Legen Sie das gewünschte [Attributionsmodell](/help/data-views/create-dataview.md) fest.
 
-Der resultierende Bericht zeigt die wichtigste Metrik aus den Callcenter-Daten. <!-- Complement with donut visualization -->
+Der resultierende Bericht zeigt die wichtigste Metrik aus den Callcenter-Daten.
 
 <!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
 ### Histogram
-
 
 ### Fallout
 
