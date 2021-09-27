@@ -2,9 +2,8 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
+source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
+workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
 
@@ -49,7 +48,7 @@ Der Personen-Container enthält sämtliche Besuche und Seitenansichten für Besu
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf eines Besuchers basieren:
 
 * Tage bis Erstkauf
-* Ursprüngliche Entrypage
+* Ursprüngliche Einstiegsseite
 * Ursprünglich Referrerdomänen
 
 ### Sitzungs-Container
@@ -62,14 +61,14 @@ Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversio
 Sitzungs-Container enthalten Werte, die auf dem Auftreten pro Sitzung basieren:
 
 * Sitzungsnummer
-* Entrypage
+* Einstiegsseite
 * Rückkehrhäufigkeit
 * Beitragsmetriken
 * Linear zugeordnete Metriken
 
 ### Ereignis-Container
 
-Der Ereignis-Container definiert, welche Seitenereignisse von einem Filter eingeschlossen oder ausgeschlossen werden sollen. Dies ist der engste verfügbare Behälter, mit dem Sie spezifische Klicks und Seitenansichten identifizieren können, für die eine Bedingung wahr ist, wobei Sie einen einzelnen Trackingcode oder ein isoliertes Verhalten in einem bestimmten Bereich Ihrer Site anzeigen können. Sie können auch einen bestimmten Wert erkennen, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, wenn ein Auftrag platziert wurde.
+Der Ereignis-Container definiert, welche Seitenereignisse von einem Filter eingeschlossen oder ausgeschlossen werden sollen. Dies ist der engste verfügbare Container, mit dem Sie spezifische Klicks und Seitenansichten identifizieren können, für die eine Bedingung wahr ist, wobei Sie einen einzelnen Trackingcode oder ein isoliertes Verhalten in einem bestimmten Bereich Ihrer Site anzeigen können. Sie können auch einen bestimmten Wert erkennen, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, wenn ein Auftrag platziert wurde.
 
 Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
