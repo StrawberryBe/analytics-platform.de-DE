@@ -3,13 +3,13 @@ description: Verwenden Sie Schnellfilter in Analysis Workspace.
 title: Schnellfilter
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: a32b260fb4c4696ac460903f44b240cb71a62db9
+exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
+source-git-commit: 23ae3185b29b72638e5ecdb4c9cf8a0680e48d5e
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 1%
+source-wordcount: '927'
+ht-degree: 3%
 
 ---
-
 
 # Schnellfilter
 
@@ -27,7 +27,7 @@ Einen Vergleich der Möglichkeiten von Schnellfiltern mit vollständigen Kompone
 
 ## Voraussetzungen
 
-Benutzer benötigen die Berechtigung [!UICONTROL Filtererstellung] in [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools), um Schnellfilter erstellen zu können.
+Benutzer benötigen die Berechtigung [!UICONTROL Segmenterstellung] in [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools), um Schnellfilter erstellen zu können.
 
 ## Schnellfilter erstellen
 
@@ -37,9 +37,9 @@ Klicken Sie in einer Freiformtabelle auf das Symbol filter+ in der Bedienfeldüb
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| Name | Der Standardname eines Filters ist eine Kombination der Regelnamen im Filter. Sie können den Filter umbenennen. |
+| Name | Der Standardname eines Filters ist eine Kombination der Regelnamen im Filter. Sie können den Filter in einen benutzerfreundlicheren Namen umbenennen. |
 | Ein-/Ausschließen | Sie können Komponenten in Ihrer Filterdefinition entweder ein- oder ausschließen, aber nicht beides. |
-| Treffer-/Besuchs-/Besucherbehälter | Schnellfilter enthalten nur einen [Filter-Container](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en#section_AF2A28BE92474DB386AE85743C71B2D6) , mit dem Sie eine Dimension/Metrik/einen Datumsbereich in den Filter einbeziehen (oder ihn daraus ausschließen) können.  Besucher enthält übergreifende Daten, die für den Besucher über Besuche und Seitenansichten hinweg spezifisch sind. Mit einem [!UICONTROL Besuchsbehälter] können Sie Regeln festlegen, mit denen die Besucherdaten auf der Grundlage von Besuchen aufgeschlüsselt werden, und einen [!UICONTROL Trefferbehälter] , mit dem die Besucherinformationen auf der Grundlage einzelner Seitenansichten aufgeschlüsselt werden. Der Standardcontainer ist [!UICONTROL Hit]. |
+| Treffer-/Besuchs-/Besucherbehälter | Schnellfilter enthalten nur einen [Filter-Container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) , mit dem Sie eine Dimension/Metrik/einen Datumsbereich in den Filter einbeziehen (oder ihn daraus ausschließen) können.  Besucher enthält übergreifende Daten, die für den Besucher über Besuche und Seitenansichten hinweg spezifisch sind. Mit einem [!UICONTROL Besuchsbehälter] können Sie Regeln festlegen, mit denen die Besucherdaten auf der Grundlage von Besuchen aufgeschlüsselt werden, und einen [!UICONTROL Trefferbehälter] , mit dem die Besucherinformationen auf der Grundlage einzelner Seitenansichten aufgeschlüsselt werden. Der Standardcontainer ist [!UICONTROL Hit]. |
 | Komponenten (Dimension/Metrik/Datumsbereich) | Definieren Sie bis zu 3 Regeln, indem Sie Dimensionen und/oder Metriken und/oder Datumsbereiche und deren Werte hinzufügen. Es gibt 3 Möglichkeiten, die richtige Komponente zu finden:<ul><li>Beginnen Sie mit der Eingabe und der [!UICONTROL Schnellfilter]-Builder findet automatisch die entsprechende Komponente.</li><li>Verwenden Sie die Dropdownliste, um die Komponente zu finden.</li><li>Ziehen Sie Komponenten per Drag-and-Drop aus der linken Leiste.</li></ul> |
 | Operator | Verwenden Sie das Dropdown-Menü, um Standardoperatoren und [!UICONTROL Unique Count]-Operatoren zu finden. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
 | Pluszeichen (+) | Eine weitere Regel hinzufügen |
@@ -83,9 +83,6 @@ Beachten Sie, dass sich die Seitenleiste des Filters von gestreiftem Blau in Bla
 
 1. Bewegen Sie den Mauszeiger über den Schnellfilter und wählen Sie das Infosymbol (&quot;i&quot;) aus.
 1. Wählen Sie **[!UICONTROL Filter speichern]**
-
-   ![](assets/save-quick-seg.png)
-
 1. Belassen Sie den Namen unverändert oder benennen Sie den Filter um.
 
    Gehen Sie zurück zu Workspace und sehen Sie, wie der Filter jetzt über eine blaue Seitenleiste verfügt. Dies bedeutet, dass sie nicht mehr im Schnellfilteraufbau bearbeitet/geöffnet werden kann. Und durch Speichern wird sie Teil der Komponentenliste.
@@ -100,7 +97,7 @@ Nachdem Sie den Filter angewendet haben, können Sie ihn Ihrer Liste der Filterk
 
    ![](assets/project-only.png)
 
-1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Stellen Sie diesen Filter für alle Ihre Projekte zur Verfügung und fügen Sie ihn Ihrer Komponentenliste hinzu.]**
+1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Alle Projekte verfügbar machen und zur Komponentenliste hinzufügen.]**
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Der Filter wird jetzt in der Liste der Filterkomponenten für alle Ihre Projekte angezeigt.
 1. Sie können auch [den Filter](/help/components/filters/manage-filters.md) für andere Personen in Ihrer Organisation freigeben.

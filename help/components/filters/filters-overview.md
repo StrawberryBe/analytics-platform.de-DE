@@ -2,10 +2,10 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4564b2d33e2222c7ad3e2db3c85b5a27d70d05ee
+source-git-commit: ff1f28015a2c52f79fae975c16bb7cb76f6179c3
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 100%
+source-wordcount: '1099'
+ht-degree: 84%
 
 ---
 
@@ -18,6 +18,18 @@ Filter können auf Attributen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Ge
 Sie können Filter im Filtergenerator erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter zusammen als gestapelte Filter verwendet werden.
 
 Die Filterung umfasst den [Filtergenerator](/help/components/filters/create-filters.md) zum Aufbau von Filtern und zur Ausführung eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zur Erfassung, Kennzeichnung, Freigabe, Sicherheitseinstellung und Weitergabe von Filtern in Ihrer Organisation.
+
+## Filtertypen
+
+Sie können verschiedene Filtertypen in Workspace und im Filtergenerator erstellen, je nachdem, wie komplex sie sein müssen, ob sie nur für dieses Projekt gelten sollen usw. Im Folgenden finden Sie eine Zusammenfassung der Filtertypen:
+
+| Filtertyp | Wo erstellt? | Wo finde ich Anwendung? | Verwendungsbereiche |
+| --- | --- | --- | --- |
+| Komponentenlistenfilter | Klicken Sie auf +, wodurch Sie zum Filtergenerator [geleitet werden.](/help/components/filters/create-filters.md) | Alle Workspace-Projekte | Für komplexere Filter werden sequenzielle Filter verwendet |
+| Schnellfilter | [Schnellfilter-Builder](/help/components/filters/quick-filters.md) | Nur Projekt, kann jedoch speichern und Ihrer Segmentliste hinzufügen. | Flexibilität beim Hinzufügen/Bearbeiten einer oder mehrerer Regeln |
+| Ad-hoc-Projektfilter | [Ziehen und Ablegen in den Segmentablagebereich eines Projekts](/help/components/filters/ad-hoc-filters.md) | Nur Projekt, kann aber speichern und Ihrer Filterliste hinzufügen. | Für Einzelregelfilter |
+| Filter in der Fallout-Analyse | [Fallout-](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) Visualisierung in Analysis Workspace | So zeigen Sie einzelne Fallout-Visualisierungen an | Erstellen Sie Filter aus einem Touchpoint, fügen Sie Filter als Touchpoint hinzu und vergleichen Sie wichtige Workflows über verschiedene Filter hinweg. |
+| Auf berechneten Metriken basierende Filter | [Generator für berechnete Metriken](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | So definieren Sie einzelne berechnete Metriken | Filter innerhalb Ihrer Metrikdefinition anwenden |
 
 ## Sequenzielle Filter
 
