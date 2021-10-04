@@ -2,9 +2,9 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: d833e12c67d74696438be9547db159438e671b2c
+source-git-commit: 8efb8da477b2680a44294553fdca944461ba0f0c
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 99%
 
 ---
@@ -21,6 +21,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Attribution IQ | Vollständige Unterstützung. |
 | Berechnete Metriken | Vollständige Unterstützung; beachten Sie, dass vorhandene berechnete Metriken in herkömmlichem Analysis Workspace nicht in CJA portiert werden. |
 | Geräteübergreifende/kanalübergreifende Zuordnung | Vollständige Unterstützung; siehe [kanalübergreifende Analyse](/help/connections/cca/overview.md). |
+| CSV-Download | Vollständige Unterstützung. |
 | Benutzerdefinierte Kalender | Vollständige Unterstützung. |
 | Datumsvergleiche | Vollständige Unterstützung. |
 | Datumsbereiche | Alle Datumsbereichsfunktionen werden unterstützt. |
@@ -77,7 +78,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
 | Beitragsanalyse | Unterstützung ist geplant. |
-| CSV-Download | Unterstützung ist geplant. |
 | Data Warehouse-Berichte (100 % Zeilenexport) | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [!UICONTROL Abfrage-Service von Experience Platform] bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
 | Persistenz von Merchandising-Variablen | Unterstützung ist geplant. |
