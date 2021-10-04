@@ -2,9 +2,9 @@
 title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+source-git-commit: d833e12c67d74696438be9547db159438e671b2c
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1196'
 ht-degree: 99%
 
 ---
@@ -31,9 +31,11 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Listenvariablen/Listen-Props | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
 | Metriken | Vollständige Unterstützung; CJA nutzt das Experience-Datenmodell (XDM), unterstützt unbegrenzte Metriken und ist nicht an die benutzerspezifischen Erfolgsereignisse von traditionellem Analytics gebunden. Beachten Sie, dass einige Standardmetriken in traditionellem Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
 | Deduplizierung der Metrik | Vollständige Unterstützung. |
+| Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. |
 | PDF-Export | Vollständige Unterstützung. |
 | Projektkuration | Vollständige Unterstützung. |
 | Projektverknüpfung | Vollständige Unterstützung. |
+| Report Builder (Excel-Plug-in) | Vollständige Unterstützung (Oktober 2021) |
 | Berichtszeitverarbeitung | Vollständige Unterstützung; CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
 | Zugriff auf die Reporting-API | Vollständige Unterstützung; verfügbar über die [CJA-API](https://www.adobe.io/cja-apis/docs/). |
 | Terminierte Berichte/Projekte | Vollständige Unterstützung. |
@@ -80,7 +82,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
 | Persistenz von Merchandising-Variablen | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
-| Report Builder (Excel-Plug-in) | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
 | Segmentveröffentlichung (Senden von Segmenten aus Workspace an Experience Cloud) | Unterstützung ist geplant. |
 
