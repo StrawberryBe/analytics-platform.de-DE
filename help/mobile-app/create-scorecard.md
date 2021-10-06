@@ -3,13 +3,13 @@ description: So erstellen Sie eine Scorecard für Adobe Analytics-Dashboards
 title: Scorecard erstellen
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
+exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1342'
 ht-degree: 53%
 
 ---
-
 
 # Scorecard erstellen
 
@@ -112,32 +112,31 @@ Oder klicken Sie in der linken Leiste auf das Symbol [!UICONTROL Visualisierunge
 
 ![Visualisierungen](assets/vizs.png)
 
-**[!UICONTROL Zusammenfassungsnummer]**
+### [!UICONTROL Zusammenfassungsnummer]
 
 Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist.
 
 ![Zusammenfassungszahl](assets/sparkline.png)
 
-** Donutvisualisierung**
+### [!UICONTROL Ringdiagramm]
 
 Ähnlich wie bei einem Tortendiagramm zeigt diese Visualisierung Daten als Teile oder Segmente eines Ganzen an. Verwenden Sie ein Ringdiagramm, wenn Sie Prozentsätze eines Gesamtwerts vergleichen. Nehmen wir beispielsweise an, Sie möchten sehen, welche Anzeigenplattform zur Gesamtzahl der Unique Visitors beigetragen hat:
 
 ![Donut-Visualisierung](assets/donut-viz.png)
 
-**Linienvisualisierung**
+### [!UICONTROL Linie]
 
 Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm zeigt Dimensionen im Zeitverlauf an, funktioniert aber bei jeder Visualisierung. In diesem Beispiel visualisieren Sie die Dimension &quot;Produktkategorie&quot;.
 
 ![Linienvisualisierung](assets/line.png)
 
-
-**[!UICONTROL Horizontale ] Barvisualisierung**
+### [!UICONTROL Horizontalbalken]
 
 Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. Um beispielsweise Ihre wichtigsten Produkte einfach anzuzeigen, verwenden Sie [!UICONTROL Horizontalbalken] für Ihre bevorzugte Visualisierung.
 
 ![Horizontalbalken](assets/horizontal.png)
 
-**Entfernen von  [!UICONTROL Nicht angegeben]**
+### Dimensionselement [!UICONTROL Nicht spezifiziert] entfernen
 
 Wenn Sie [!UICONTROL Nicht angegebene] Dimensionselemente aus Ihren Daten entfernen möchten, gehen Sie wie folgt vor:
 
@@ -153,6 +152,8 @@ Wenn Sie [!UICONTROL Nicht angegebene] Dimensionselemente aus Ihren Daten entfer
 Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die dieser Kachel zugeordnet sind. In dieser Leiste können Sie einen neuen **[!UICONTROL Titel]** für die Kachel angeben und alternativ die Kachel konfigurieren, indem Sie Komponenten angeben, anstatt sie aus der linken Leiste zu ziehen und abzulegen.
 
 ![Kachel „Eigenschaften“](assets/properties_tile.png)
+
+## Anzeigen von Drillins (Aufschlüsselungen)
 
 Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup angezeigt, wie die Ansicht &quot;Drill ins&quot;(Aufschlüsselung) für ausführende Benutzer in der App angezeigt wird. Wenn keine Dimension auf die Kachel angewendet wurde, werden je nach Standarddatumsbereich entweder **Stunden** oder **Tage** als Aufschlüsselungsdimension verwendet.
 
