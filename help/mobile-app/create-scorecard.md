@@ -4,10 +4,10 @@ title: Scorecard erstellen
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
-source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
+source-git-commit: 9a7fa68bd7b4b9a7164a80691ddfb7aedaf8e3e4
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 53%
+source-wordcount: '1378'
+ht-degree: 52%
 
 ---
 
@@ -16,6 +16,9 @@ ht-degree: 53%
 Die folgenden Informationen liefern Kuratoren von Adobe Analytics-Daten Informationen dazu, wie Dashboards für ausführende Benutzer konfiguriert und dargestellt werden. Beginnen Sie mit dem Video zum Adobe Analytics Dashboards Scorecard Builder :
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
+
+>[!NOTE]
+>Scorecard-Screenshots für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus CJA. Die Benutzeroberfläche ist fast identisch.
 
 Eine Adobe Analytics-Scorecard zeigt wichtige Datenvisualisierungen für ausführende Benutzer in einem gekachelten Layout an, wie unten dargestellt:
 
@@ -116,7 +119,7 @@ Oder klicken Sie in der linken Leiste auf das Symbol [!UICONTROL Visualisierunge
 
 Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist.
 
-![Zusammenfassungszahl](assets/sparkline.png)
+![Zusammenfassungszahl](assets/summary-number.png)
 
 ### [!UICONTROL Ringdiagramm]
 
@@ -155,9 +158,9 @@ Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste d
 
 ## Anzeigen von Drillins (Aufschlüsselungen)
 
-Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup angezeigt, wie die Ansicht &quot;Drill ins&quot;(Aufschlüsselung) für ausführende Benutzer in der App angezeigt wird. Wenn keine Dimension auf die Kachel angewendet wurde, werden je nach Standarddatumsbereich entweder **Stunden** oder **Tage** als Aufschlüsselungsdimension verwendet.
+Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup angezeigt, wie die Ansicht &quot;Drill ins&quot;(Aufschlüsselung) für ausführende Benutzer in der App angezeigt wird. Sie können Dimensionen und Dimensionselemente aufschlüsseln, um Ihre Daten für Ihre spezifischen Anforderungen aufzuschlüsseln. Wenn keine Dimension auf die Kachel angewendet wurde, werden je nach Standarddatumsbereich entweder **Stunden** oder **Tage** als Aufschlüsselungsdimension verwendet.
 
-Aufschlüsselungen verfeinern Ihre Analyse, indem sie Metriken und Dimensionen buchstäblich nach anderen Metriken und Dimensionen aufschlüsseln, z. B. in diesem Einzelhandelsbeispiel:
+Aufschlüsselungen verfeinern Ihre Analyse, indem sie Dimensionen buchstäblich nach anderen Metriken und Dimensionen aufschlüsseln, wie in diesem Einzelhandelsbeispiel:
 
 * Metrik &quot;Unique Visitors&quot;aufgeschlüsselt nach Anzeigenplattform (AMO-ID)
 * Besuche aufgeschlüsselt nach Produktkategorie (Einzelhandel)
