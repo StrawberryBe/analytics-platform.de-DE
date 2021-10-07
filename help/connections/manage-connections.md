@@ -3,10 +3,10 @@ title: Verbindungen verwalten
 description: Beschreibt, wie Verbindungen zu Experience Platform-Datensätzen in Customer Journey Analytics (CJA) verwaltet werden.
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: d099c2559eea68aa1f44d345b103618f55fd0559
+source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 86%
+source-wordcount: '1714'
+ht-degree: 80%
 
 ---
 
@@ -137,3 +137,10 @@ Ermöglicht es Administratoren, die Verbindung zu bearbeiten. Wählen Sie eine V
 * Eine Verbindung umbenennen.
 * Aktualisieren Sie die Datensätze.
 * Entfernen Sie Datensätze aus den Verbindungen.
+
+## Rollierendes Fenster für [!UICONTROL Verbindung] Datenaufbewahrung festlegen
+
+>[!IMPORTANT]
+>Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer für Adoben, um diese Einstellung implementieren zu lassen. Sie ist noch nicht über die Benutzeroberfläche von CJA verfügbar.
+
+Mit dieser Einstellung können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (3 Monate, 6 Monate usw.) auf einer [!UICONTROL connection]-Ebene (nicht auf einer [!UICONTROL dataset]-Ebene) definieren. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignisdatensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenaufbewahrungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind. Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte erstellen, die anwendbar sind, sowie nützliche Daten und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko von Überlebenskosten zu reduzieren.
