@@ -4,9 +4,9 @@ title: Schnellfilter
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,6 @@ Sie können innerhalb eines Projekts schnelle Filter erstellen, um die Komplexit
 * Gilt nur für Projekte, in denen sie erstellt wurden (Sie können dies ändern).
 * Bis zu drei Regeln zulassen
 * Sie dürfen keine verschachtelten Container oder sequenziellen Regeln aufnehmen.
-* Arbeiten in Projekten mit mehreren Report Suites
 
 Einen Vergleich der Möglichkeiten von Schnellfiltern mit vollständigen Komponentenlistenfiltern finden Sie unter [hier](/help/components/filters/filters-overview.md).
 
