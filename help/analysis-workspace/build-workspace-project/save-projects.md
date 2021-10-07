@@ -1,12 +1,12 @@
 ---
 description: Erfahren Sie mehr über die verschiedenen Speicheroptionen, einschließlich automatisches Speichern, Speichern unter, Speichern als Vorlage und Öffnen früherer Versionen.
 title: Projekte speichern
-feature: Workspace – Allgemeines
+feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 734f1fe702398034090e25c251b5ff193db8381e
-workflow-type: ht
-source-wordcount: '463'
+source-git-commit: 1c19c8cb9cad7b4b7938915d04396cc4646a1f32
+workflow-type: tm+mt
+source-wordcount: '461'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Um Ihre Änderungen an einem Projekt zu speichern, gehen Sie zum Menü **[!UICON
 Es gibt verschiedene Speicheraktionen, die Sie im Menü **[!UICONTROL Projekt]** ausführen können, je nachdem, wie Sie in Zukunft auf Ihre Analyse zugreifen möchten.
 
 | Aktion | Beschreibung |
-|---|---| 
+|---|---|
 | **[!UICONTROL Speichern]** | Speichern Sie die Änderungen an Ihrem Projekt. Wenn das Projekt freigegeben ist, sehen auch die Empfänger des Projekts die Änderungen. Wenn Sie das Projekt zum ersten Mal speichern, werden Sie aufgefordert, dem Projekt einen Namen, eine (optionale) Beschreibung und (optionale) Tags hinzuzufügen. |
 | **[!UICONTROL Mit Hinweisen speichern]** | Bevor Sie das Projekt speichern, fügen Sie Notizen zu den Änderungen im Projekt hinzu. Notizen werden mit der Projektversion gespeichert und stehen allen Editoren unter [!UICONTROL Projekt] > [!UICONTROL Frühere Version öffnen] zur Verfügung. |
 | **[!UICONTROL Speichern unter]** | Erstellen Sie ein Duplikat Ihres Projekts. Das ursprüngliche Projekt bleibt davon unberührt. |
