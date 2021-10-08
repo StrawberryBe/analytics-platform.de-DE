@@ -4,13 +4,13 @@ description: Beschreibt, wie ein Datenblock erstellt wird.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: d946e6dbda608499594cf48a9456131485e7349a
+exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
+source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Erstellen eines Datenblocks
 
@@ -36,7 +36,7 @@ Konfigurieren Sie die anfänglichen Datenblockparameter für die Position der Da
 
 1. Legen Sie den **Datumsbereich** fest.
 
-   Mit der Option Datumsbereich können Sie einen Datumsbereich auswählen. Datumsbereiche können fest oder rollierend sein. Weitere Informationen zu den Datumsbereichsoptionen finden Sie unter &lt;&lt; Abschnitt zum Datumsbereich >>.
+   Mit der Option Datumsbereich können Sie einen Datumsbereich auswählen. Datumsbereiche können fest oder rollierend sein. Weitere Informationen zu den Datumsbereichsoptionen finden Sie unter [Einen Datumsbereich auswählen](select-date-range.md).
 
 1. Klicken Sie auf **Next**.
 
