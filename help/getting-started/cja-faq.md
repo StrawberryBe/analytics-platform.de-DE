@@ -2,10 +2,10 @@
 title: FAQ zu Customer Journey Analytics
 description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 87%
+source-wordcount: '1611'
+ht-degree: 83%
 
 ---
 
@@ -39,7 +39,6 @@ ht-degree: 87%
 | Frage | Antwort |
 | --- | --- |
 | Kann ich Daten aus verschiedenen [!UICONTROL Adobe Experience Platform]-Sandboxen in einer [!UICONTROL Customer Journey Analytics]-Verbindung kombinieren? | Nein, Sie können nicht über Sandboxes hinweg auf Daten zugreifen. Sie können nur Datensätze kombinieren, die sich innerhalb derselben Sandbox befinden. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#select-sandbox-and-datasets) |
-| Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]? | <ul><li>Unter normaler Belastung: &lt; 60 Minuten <br>**Hinweis:** Bei ungewöhnlich hohem Datenfluss durch die Pipeline kann es bis zu 24 Stunden dauern.</li><li>Aufstockungsdaten (bis zu 13 Monate Daten, unabhängig von der Größe): &lt; 4 Wochen</li></ul> |
 | Wie werden in [!UICONTROL Customer Journey Analytics] Online-Daten mit Offline-Daten verbunden? | Solange die Personen-ID zwischen Datensätzen übereinstimmt, kann [!UICONTROL Customer Journey Analytics] Filter, Attributionen, Flüsse, Fallout usw. verbinden. über Datensätze hinweg miteinander verbinden. |
 | Wie integriere ich meine Offline-Daten in [!UICONTROL Customer Journey Analytics]? | Mit Ihrer Berechtigung zur Nutzung von Customer Journey Analytics können Sie Daten in Experience Platform aufnehmen. Sie können dann zu diesen Daten und Datenansichten in [!UICONTROL Customer Journey Analytics] Verbindungen herstellen, um in Analysis Workspace Berichte zu generieren. Das Datenerfassungs-Team der Experience Platform bietet bei Bedarf Empfehlungen oder eine Beratung für Sie an. |
 | Wie integriere ich [!UICONTROL Adobe Analytics]-Daten in [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics]-Daten können über [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) mit Experience Platform verbunden werden. Die meisten [!UICONTROL Adobe Analytics]-Felder werden im XDM-Format übermittelt, andere Felder sind aber noch nicht verfügbar. |
@@ -48,7 +47,17 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. Herkömmliche [!UICONTROL Adobe Analytics]-Komponenten
+## 4. Latenzaspekte
+
+>[!NOTE]
+>In CJA gibt es keine feste Datengröße und daher kann die Adobe nicht auf eine standardmäßige Erfassungszeit übertragen werden. Wir arbeiten aktiv daran, diese Latenzen durch neue Updates und Erfassungsoptimierung zu reduzieren.
+
+| Frage | Antwort |
+| --- | --- |
+| Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-Daten oder -Ereignisse: Wird innerhalb von 90 Minuten verarbeitet und erfasst, sobald Daten in AEP verfügbar sind.</li><li>Stapelgröße > 50 Millionen Zeilen: länger als 90 Minuten.</li><li>Kleine Backfilets - z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 24 Stunden<li>Große Rückstände - z. B. 500 Milliarden Zeilen: 30 Tage</li></ul> |
+
+
+## 5. Herkömmliche [!UICONTROL Adobe Analytics]-Komponenten
 
 | Frage | Antwort |
 | --- | --- |
@@ -61,7 +70,7 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 5. Auswirkungen des Löschens von Datenkomponenten
+## 6. Auswirkungen des Löschens von Datenkomponenten
 
 In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet werden: Sandbox, Schema, Datensatz, Verbindung, Datenansicht und Workspace-Projekte. Im Folgenden sind einige Szenarien für das Löschen der jeweiligen Komponenten aufgeführt:
 
@@ -76,14 +85,14 @@ In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet 
 | Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass<ul><li>für die gelöschte Verbindung erstellte Datenansichten nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Workspace-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul> |
 | Löschen einer Datenansicht in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass kein Workspace-Projekt mehr funktioniert, das von dieser gelöschten Datenansicht abhängt. |
 
-## 6. Überlegungen beim Zusammenführen von Report Suites in Customer Journey Analytics
+## 7. Überlegungen beim Zusammenführen von Report Suites in Customer Journey Analytics
 
 Wenn Sie planen, Adobe Analytics-Daten über den Quell-Connector [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) zu erfassen, sollten Sie diese Auswirkungen beim Zusammenführen von zwei oder mehr Adobe Analytics Report Suites berücksichtigen.
 
 | Problem | Hinweis |
 | --- | --- |
 | Variablen | Variablen wie [!UICONTROL eVars] werden möglicherweise nicht in allen Report Suites angezeigt. Beispielsweise kann eVar 1 in Report Suite 1 auf **[!UICONTROL Seite]** verweisen. In Report Suite 2 kann eVar 1 auf **[!UICONTROL Interne Kampagne]** verweisen, was zu gemischten und ungenauen Berichten führt. |
-|  Sitzungen und   Personenergebnisse | Sie werden über Report Suites hinweg dedupliziert. Daher stimmen die Zahlen möglicherweise nicht überein. |
+|  Sitzungen und   Personenkosten | Sie werden über Report Suites hinweg dedupliziert. Daher stimmen die Zahlen möglicherweise nicht überein. |
 | Deduplizierung der Metrik | Dedupliziert Instanzen einer Metrik (z. B. [!UICONTROL Bestellungen]), wenn mehrere Zeilen dieselbe Transaktions-ID aufweisen (z. B. [!UICONTROL Kauf-ID]). Dadurch wird verhindert, dass Schlüsselmetriken übergezählt werden. Daher werden Metriken wie [!UICONTROL Bestellungen] möglicherweise nicht für alle Report Suites addiert. |
 | Währung | Die Währungsumrechnung wird in CJA noch nicht unterstützt. Wenn die Report Suites, die Sie zusammenführen möchten, unterschiedliche Basiswährungen verwenden, können Probleme auftreten. |
 | [!UICONTROL Persistenz] | [](../data-views/component-settings/persistence.md) Die Persistenz erstreckt sich über Report Suites hinweg, was sich auf  [!UICONTROL Filter],  [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
