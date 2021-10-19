@@ -1,20 +1,20 @@
 ---
-title: Komponenteneinstellungen für die Metrikdeduplizierung
+title: Komponenteneinstellungen für die Metrik-Deduplizierung
 description: Zählen Sie nur das erste Vorkommen einer Metrik in Berichten.
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
-workflow-type: tm+mt
+exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
+source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
+# Komponenteneinstellungen für die Metrik-Deduplizierung
 
-# Komponenteneinstellungen für die Metrikdeduplizierung
-
-Mit der Metrikdeduplizierung können Sie eine Metrik so konfigurieren, dass Werte nicht wiederholt gezählt werden.
+Mit der Metrik-Deduplizierung können Sie eine Metrik so konfigurieren, dass Werte nicht wiederholt gezählt werden.
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| Deduplizierung der Metrik | Ein Kontrollkästchen, mit dem Sie die Metrikdeduplizierung aktivieren können. Standardmäßig deaktiviert. |
-| Umfang der Deduplizierung | Hiermit können Sie bestimmen, wie weit die eindeutige Prüfung zurückliegt.<br>**Sitzung**: Es wird nur das erste Metrikereignis der Sitzung gezählt.<br>**Person**: Es wird nur das erste Metrikereignis im Berichtsfenster gezählt. |
-| Deduplizierungs-ID | Ermöglicht es Ihnen, anstelle der Deduplizierung auf die Metrik selbst die Metrikdeduplizierung auf Grundlage einer Dimension anzuwenden. Wertvoll für Dimensionen wie Kauf-ID, um eine Deduplizierung anzuwenden. |
+| Deduplizierung der Metrik | Ein Kontrollkästchen, mit dem Sie die Metrik-Deduplizierung aktivieren können. Standardmäßig deaktiviert. |
+| Umfang der Deduplizierung | Hiermit können Sie bestimmen, wie weit die eindeutige Prüfung in die Vergangenheit reicht.<br>**Sitzung**: Es wird nur das erste Metrikereignis der Sitzung gezählt.<br>**Person**: Es wird nur das erste Metrikereignis im Reporting-Fenster gezählt. |
+| Deduplizierungs-ID | Ermöglicht es Ihnen, anstelle der Deduplizierung in der Metrik selbst die Metrik-Deduplizierung auf Grundlage einer Dimension anzuwenden. Wertvoll für Dimensionen wie Kauf-ID, um eine Deduplizierung anzuwenden. |
