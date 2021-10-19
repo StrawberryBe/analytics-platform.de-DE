@@ -3,15 +3,15 @@ title: Callcenter- und Web-Daten importieren
 description: Erfahren Sie, wie Sie einen Datensatz erstellen, mit dem Sie Callcenter- und Website-Daten verknüpfen.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 # Callcenter- und Web-Daten importieren
 
-Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus verschiedenen Quellen in einem einzigen Workspace-Projekt zu kombinieren. Verwenden Sie diesen Leitfaden, um zu verstehen, wie Ihr Unternehmen Website-Daten mit Callcenter-Daten kombinieren kann. Sie können beispielsweise verstehen, welche Aktionen ein Kunde durchführt, welche Inhalte er anzeigt und nach welchen Begriffen er sucht, bevor er sich an den Support wendet. Anschließend können Sie die Inhalte und Self-Service-Tools ermitteln, die verbessert werden sollen, damit Kunden Probleme besser selbst lösen können, ohne sich einloggen zu müssen.
+Customer Journey Analytics bietet die wertvolle Möglichkeit, Datensätze aus verschiedenen Quellen in einem einzigen Workspace-Projekt zu kombinieren. Verwenden Sie diesen Leitfaden, um zu verstehen, wie Ihr Unternehmen Website-Daten mit Callcenter-Daten kombinieren kann. Sie können beispielsweise verstehen, welche Aktionen ein Kunde durchführt, welche Inhalte er anzeigt und nach welchen Begriffen er sucht, bevor er sich an den Support wendet. Anschließend können Sie die Inhalte und Self-Service-Tools ermitteln, die verbessert werden sollen, damit Kunden Probleme besser selbst lösen können, ohne anrufen zu müssen.
 
 ## Voraussetzungen
 
@@ -55,8 +55,8 @@ Customer Journey Analytics erfordert eine gemeinsame Kennung, sodass ein [kombin
 
 Nachdem Sie eine Verbindung erstellt haben, können Sie eine [Datenansicht erstellen](/help/data-views/create-dataview.md), die in Analysis Workspace verwendet werden kann. Nützliche Komponenten sind:
 
-* Eine Seitendimension mit Letztkontakt- und Sitzungspersistenz. Sie können Callcenter-Metriken mit der letzten Seite verbinden, die ein Kunde vor dem Aufruf aufgerufen hat.
-* Eine Aufrufmetrik, die das Schemafeld &quot;Callcenter-Grund&quot;verwendet, um das Vorkommen zu erhöhen. Verwenden Sie [Metrikdeduplizierung](/help/data-views/component-settings/metric-deduplication.md), damit sie nur einmal pro Sitzung erhöht wird.
+* Eine Seitendimension mit Letztkontakt- und Sitzungspersistenz. Sie können Callcenter-Metriken mit der letzten Seite verbinden, die ein Kunde vor dem Anruf aufgerufen hat.
+* Eine Anrufmetrik, die das Schemafeld „Callcenter-Grund“ verwendet, um das Vorkommen zu erhöhen. Verwenden Sie [Metrik-Deduplizierung](/help/data-views/component-settings/metric-deduplication.md), damit sie nur einmal pro Sitzung erhöht wird.
 
 ## Visualisierungen erstellen
 
@@ -81,37 +81,37 @@ Diese Freiformtabelle zeigt die wichtigsten Seiten, die zum Aufruf von Callcente
 1. Ziehen Sie die Dimension, die die Namen Ihrer Web-Seiten beinhaltet, in eine Freiformtabellen-Visualisierung.
 1. Ersetzen Sie die Metrik durch die gewünschte Callcenter-Metrik, die Sie messen möchten.
 1. Klicken Sie auf das Zahnradsymbol neben der Metrikkopfzeile. Klicken Sie auf **[!UICONTROL Nicht-standardmäßiges Attributionsmodell verwenden]**.
-1. Legen Sie das gewünschte [Attributionsmodell](/help/analysis-workspace/attribution/models.md) fest. Beispiel: ein Modell für einen Zeitverfall mit einer Halbwertszeit von 15 Minuten und einem Lookback-Fenster für die Sitzung. Dieses Attributionsmodell schreibt die Seiten gut, die zu dem Aufruf an Ihr Callcenter führen.
+1. Legen Sie das gewünschte [Attributionsmodell](/help/analysis-workspace/attribution/models.md) fest. Beispiel: ein Modell für einen Zeitverfall mit einer Halbwertszeit von 15 Minuten und einem Lookback-Fenster für die Sitzung. Dieses Attributionsmodell schreibt den Seiten gut, die zu dem Anruf in Ihrem Callcenter führen.
 
-Der resultierende Bericht zeigt die wichtigsten Seiten an, die Aufrufe an Ihr Callcenter leiten. <!-- use case behind what we use these pages for -->
+Der resultierende Bericht zeigt die wichtigsten Seiten an, die Anufe an Ihr Callcenter leiten. <!-- use case behind what we use these pages for -->
 
 <!-- Complement with donut visualization -->
 
-Sie können die Einblicke in diese Tabelle weiter verbessern, indem Sie Aufrufe nach Grund oder Kategorie aufteilen.
+Sie können die Einblicke in diese Tabelle weiter verbessern, indem Sie Anrufe nach Grund oder Kategorie aufteilen.
 
-1. Klicken Sie in der Komponentenliste unter der Dimension &quot;Grund des Aufrufs&quot;auf den richtigen Pfeil. Diese Aktion zeigt individuelle Dimensionswerte an.
-2. Ziehen Sie den/die gewünschten Dimensionswert(e) unter die Metrik &quot;Aufrufe&quot;, die diese Metrik nach jedem jeweiligen Aufrufgrund filtert.
-3. Wiederholen Sie diesen Vorgang für jeden Anrufgrund, in den Sie den Drilldown durchführen möchten. Verwenden Sie den Filter &quot;Alle Sitzungen&quot;, um die Gesamtsumme anzuzeigen.
+1. Klicken Sie in der Komponentenliste unter der Dimension „Grund des Anrufs“ auf den Pfeil nach rechts. Diese Aktion zeigt individuelle Dimensionswerte an.
+2. Ziehen Sie den/die gewünschten Dimensionswert(e) unter die Metrik „Anrufe“, die diese Metrik nach jedem jeweiligen Anrufgrund filtert.
+3. Wiederholen Sie diesen Vorgang für jeden Anrufgrund, den Sie detailliert anzeigen möchten. Verwenden Sie den Filter „Alle Sitzungen“, um die Gesamtsumme anzuzeigen.
 
 <!-- screenshot -->
 
 ### Flussvisualisierung
 
-Sie können Einblicke in das erhalten, was ein Kunde versucht hat, bevor er den Callcenter-Kanal verwendet hat. Diese Flussvisualisierung hilft Ihnen dabei, die häufigsten Journey zu verstehen, die ein Kunde zum Erreichen Ihres Callcenters benötigt. Mit diesen Einblicken können Sie die effektivsten Verbesserungen ermitteln, die Sie an Ihrer Site vornehmen können, sodass Kunden mit geringerer Wahrscheinlichkeit eingreifen.
+Sie können Einblicke in das erhalten, was ein Kunde versucht hat, bevor er den Callcenter-Kanal verwendet hat. Diese Flussvisualisierung hilft Ihnen dabei, die häufigsten Journey zu verstehen, über die ein Kunde in Ihr Callcenter gelangt. Mit diesen Einblicken können Sie die effektivsten Verbesserungen ermitteln, die Sie an Ihrer Site vornehmen können, sodass Kunden mit geringerer Wahrscheinlichkeit anrufen.
 
-1. Klicken Sie links auf die Registerkarte **[!UICONTROL Visualisierungen]** und ziehen Sie eine Flussvisualisierung auf die Arbeitsfläche des Arbeitsbereichs.
-2. Klicken Sie links auf die Registerkarte **[!UICONTROL Komponenten]** und suchen Sie die Dimension &quot;Grund des Aufrufs&quot;.
-3. Klicken Sie auf den rechten Pfeil neben dieser Dimension. Diese Aktion zeigt individuelle Dimensionswerte an.
+1. Klicken Sie auf das Symbol **[!UICONTROL Visualisierungen]** auf der linken Seite und ziehen Sie die gewünschte Visualisierung in den Arbeitsbereich.
+2. Klicken Sie links auf die Registerkarte **[!UICONTROL Komponenten]** und suchen Sie die Dimension „Grund des Anrufs“.
+3. Klicken Sie auf den Pfeil nach rechts neben dieser Dimension. Diese Aktion zeigt individuelle Dimensionswerte an.
 4. Ziehen Sie das gewünschte Dimensionselement für den Anrufgrund an die mittlere Position der Flussvisualisierung.
-5. Die Flussvisualisierung füllt automatisch die Gründe für den vorherigen und nächsten Aufruf. Ersetzen Sie den vorherigen Anrufgrund durch die Dimension der Website-Seite .
-6. Klicken Sie auf das Zahnradsymbol oben rechts in der Flussvisualisierung und ändern Sie den Flussbehälter in **[!UICONTROL Sitzung]**.
+5. Die Flussvisualisierung füllt automatisch die Gründe für den vorherigen und nächsten Anruf. Ersetzen Sie den vorherigen Anrufgrund durch die Dimension der Web-Seite.
+6. Klicken Sie auf das Zahnradsymbol oben rechts in der Flussvisualisierung und ändern Sie den Fluss-Container in **[!UICONTROL Sitzung]**.
 
 ### Histogramm
 
-Wie viele Kunden haben einmal aufgerufen, zweimal angerufen oder mehr als sechs Mal angerufen? Einige dieser Personen besuchen die Website nie. Verwenden Sie die Histogrammvisualisierung, um zu bestimmen, wie viele Personen in die einzelnen Behälter fallen. Personen, die die Website nie besuchen, sehen, wie wir sie dazu ermutigen können, sich selbst zu bedienen.
+Wie viele Kunden haben einmal angerufen, zweimal angerufen oder mehr als sechs Mal angerufen? Einige dieser Personen besuchen die Website nie. Verwenden Sie die Histogrammvisualisierung, um zu bestimmen, wie viele Personen in die einzelnen Behälter fallen. Sehen Sie, wie Sie Personen, die die Website nie besuchen, zum Self-Service ermutigen können.
 
-1. Klicken Sie links auf die Registerkarte **[!UICONTROL Visualisierungen]** und ziehen Sie eine Histogrammvisualisierung auf die Arbeitsfläche des Arbeitsbereichs.
-2. Klicken Sie links auf die Registerkarte **[!UICONTROL Komponenten]** und ziehen Sie die Aufrufmetrik in die Histogrammvisualisierung.
+1. Klicken Sie auf das Symbol **[!UICONTROL Visualisierungen]** auf der linken Seite und ziehen Sie eine Histogrammvisualisierung in den Arbeitsbereich.
+2. Klicken Sie links auf die Registerkarte **[!UICONTROL Komponenten]** und ziehen Sie die Anrufmetrik in die Histogrammvisualisierung.
 3. Klicken Sie in der Mitte der Visualisierung auf **[!UICONTROL Erweiterte Einstellungen anzeigen]** und passen Sie die gewünschten Behälter an.
 4. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
