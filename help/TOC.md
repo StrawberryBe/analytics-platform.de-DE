@@ -11,8 +11,8 @@ user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Custo
 breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 89%
       + [Häufig gestellte Fragen zur kanalübergreifenden Analyse](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](data-views/data-views.md)
-   + [Datenansicht erstellen oder bearbeiten](data-views/create-dataview.md)
+   + [Erstellen oder Bearbeiten einer Datenansicht](data-views/create-dataview.md)
    + Komponenteneinstellungen {#component-settings}
       + [Übersicht über Komponenteneinstellungen](data-views/component-settings/overview.md)
       + [Attribution](data-views/component-settings/attribution.md)
@@ -174,7 +174,7 @@ ht-degree: 89%
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
-   + [Daten kanalübergreifend analysieren](use-cases/cross-channel.md)
+   + [Kanalübergreifendes Analysieren von Daten](use-cases/cross-channel.md)
    + [Callcenter- und Web-Daten importieren](use-cases/call-center.md)
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
    + [Marketing-Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)

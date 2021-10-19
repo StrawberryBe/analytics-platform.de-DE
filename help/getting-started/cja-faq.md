@@ -4,8 +4,8 @@ description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -87,13 +87,13 @@ In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet 
 
 ## 7. Überlegungen beim Zusammenführen von Report Suites in Customer Journey Analytics
 
-Wenn Sie planen, Adobe Analytics-Daten über den Quell-Connector [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) zu erfassen, sollten Sie diese Auswirkungen beim Zusammenführen von zwei oder mehr Adobe Analytics Report Suites berücksichtigen.
+Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) zu erfassen, sollten Sie diese Auswirkungen beim Zusammenführen von 2 oder mehr Adobe Analytics-Report Suites berücksichtigen.
 
 | Problem | Hinweis |
 | --- | --- |
 | Variablen | Variablen wie [!UICONTROL eVars] werden möglicherweise nicht in allen Report Suites angezeigt. Beispielsweise kann eVar 1 in Report Suite 1 auf **[!UICONTROL Seite]** verweisen. In Report Suite 2 kann eVar 1 auf **[!UICONTROL Interne Kampagne]** verweisen, was zu gemischten und ungenauen Berichten führt. |
-|  Sitzungen und   Personenkosten | Sie werden über Report Suites hinweg dedupliziert. Daher stimmen die Zahlen möglicherweise nicht überein. |
-| Deduplizierung der Metrik | Dedupliziert Instanzen einer Metrik (z. B. [!UICONTROL Bestellungen]), wenn mehrere Zeilen dieselbe Transaktions-ID aufweisen (z. B. [!UICONTROL Kauf-ID]). Dadurch wird verhindert, dass Schlüsselmetriken übergezählt werden. Daher werden Metriken wie [!UICONTROL Bestellungen] möglicherweise nicht für alle Report Suites addiert. |
+| Zahlen für [!UICONTROL Sitzungen] und [!UICONTROL Personen] | Sie werden über Report Suites hinweg dedupliziert. Daher stimmen die Zahlen möglicherweise nicht überein. |
+| Deduplizierung der Metrik | Dedupliziert Instanzen einer Metrik (z. B. [!UICONTROL Bestellungen]), wenn mehrere Zeilen dieselbe Transaktions-ID aufweisen (z. B. [!UICONTROL Kauf-ID]). Dadurch wird verhindert, dass Schlüsselmetriken zu häufig gezählt werden. Daher sind die Summen von Metriken wie [!UICONTROL Bestellungen] möglicherweise nicht über Report Suites hinweg korrekt. |
 | Währung | Die Währungsumrechnung wird in CJA noch nicht unterstützt. Wenn die Report Suites, die Sie zusammenführen möchten, unterschiedliche Basiswährungen verwenden, können Probleme auftreten. |
-| [!UICONTROL Persistenz] | [](../data-views/component-settings/persistence.md) Die Persistenz erstreckt sich über Report Suites hinweg, was sich auf  [!UICONTROL Filter],  [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
-| [!UICONTROL Klassifizierungen] |  Klassifizierungen werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Wenn Sie mehrere Klassifizierungsdateien in einem einzigen [!UICONTROL Lookup]-Datensatz kombinieren, können Probleme auftreten. |
+| [!UICONTROL Persistenz] | [Persistenz](../data-views/component-settings/persistence.md) erstreckt sich über Report Suites hinweg, was sich auf [!UICONTROL Filter], [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
+| [!UICONTROL Klassifizierungen] | [!UICONTROL Klassifizierungen] werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Wenn Sie mehrere Klassifizierungsdateien in einem einzigen [!UICONTROL Such]-Datensatz kombinieren, können Probleme auftreten. |

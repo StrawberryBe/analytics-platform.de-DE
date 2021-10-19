@@ -6,85 +6,85 @@ role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: 1334e1edb36583ba978936fecbff2657e63a94bf
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Schnellfilter
 
-Sie können innerhalb eines Projekts schnelle Filter erstellen, um die Komplexität des vollständigen [Filter Builder](/help/components/filters/create-filters.md) zu umgehen. Schnellfilter
+Sie können innerhalb eines Projekts Schnellfilter erstellen, um die Komplexität des vollständigen [Filtergenerators](/help/components/filters/create-filters.md) zu umgehen. Schnellfilter
 
-* Gilt nur für Projekte, in denen sie erstellt wurden (Sie können dies ändern).
-* Bis zu drei Regeln zulassen
-* Sie dürfen keine verschachtelten Container oder sequenziellen Regeln aufnehmen.
+* Nur anwendbar auf Projekte, in denen sie erstellt wurden (Sie können dies ändern).
+* Lassen bis zu 3 Regeln zu
+* Können keine verschachtelten Container oder sequenziellen Regeln aufnehmen
 
-Einen Vergleich der Möglichkeiten von Schnellfiltern mit vollständigen Komponentenlistenfiltern finden Sie unter [hier](/help/components/filters/filters-overview.md).
+Einen Vergleich der Möglichkeiten von Schnellfiltern mit vollständigen Komponentenlistenfiltern finden Sie [hier](/help/components/filters/filters-overview.md).
 
 >[!IMPORTANT]
 > Schnellfilter werden derzeit nur eingeschränkt getestet und sind noch nicht allgemein verfügbar.
 
 ## Voraussetzungen
 
-Jeder kann ein Schnellsegment erstellen. Sie benötigen jedoch die Berechtigung zum Erstellen von Segmenten in [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools), um in der Lage zu sein, schnelle Segmente zu speichern oder sie im Segmentaufbau zu öffnen.
+Jeder kann ein Schnellsegment erstellen. Sie benötigen jedoch die Berechtigung Segmenterstellung in [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=de), um die Schnellsegmente speichern oder in Segment Builder öffnen zu können.
 
-## Schnellfilter erstellen
+## Erstellen von Schnellfiltern
 
-Klicken Sie in einer Freiformtabelle auf das Symbol filter+ in der Bedienfeldüberschrift:
+Klicken Sie in einer Freiformtabelle auf das „+“-Symbol für den Filter im Kopf des Bedienfelds:
 
 ![Segmentfilter](assets/quick-seg1.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| Name | Der Standardname eines Filters ist eine Kombination der Regelnamen im Filter. Sie können den Filter in einen benutzerfreundlicheren Namen umbenennen. |
+| Name | Der Standardname eines Filters ist eine Kombination der Regelnamen im Filter. Sie können für den Filter einen benutzerfreundlicheren Namen wählen. |
 | Ein-/Ausschließen | Sie können Komponenten in Ihrer Filterdefinition entweder ein- oder ausschließen, aber nicht beides. |
-| Treffer-/Besuchs-/Besucherbehälter | Schnellfilter enthalten nur einen [Filter-Container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de#filter-containers) , mit dem Sie eine Dimension/Metrik/einen Datumsbereich in den Filter einbeziehen (oder ihn daraus ausschließen) können.  Besucher enthält übergreifende Daten, die für den Besucher über Besuche und Seitenansichten hinweg spezifisch sind. Mit einem [!UICONTROL Besuchsbehälter] können Sie Regeln festlegen, mit denen die Besucherdaten auf der Grundlage von Besuchen aufgeschlüsselt werden, und einen [!UICONTROL Trefferbehälter] , mit dem die Besucherinformationen auf der Grundlage einzelner Seitenansichten aufgeschlüsselt werden. Der Standardcontainer ist [!UICONTROL Hit]. |
-| Komponenten (Dimension/Metrik/Datumsbereich) | Definieren Sie bis zu 3 Regeln, indem Sie Komponenten (Dimensionen, Metriken, Datumsbereiche oder Dimensionswerte) hinzufügen. Es gibt 3 Möglichkeiten, die richtige Komponente zu finden:<ul><li>Beginnen Sie mit der Eingabe und der [!UICONTROL Schnellfilter]-Builder findet automatisch die entsprechende Komponente.</li><li>Verwenden Sie die Dropdownliste, um die Komponente zu finden.</li><li>Ziehen Sie Komponenten per Drag-and-Drop aus der linken Leiste.</li></ul> |
-| Operator | Verwenden Sie das Dropdown-Menü, um Standardoperatoren und [!UICONTROL Unique Count]-Operatoren zu finden. Siehe [Filteroperatoren](operators.md). |
-| Pluszeichen (+) | Eine weitere Regel hinzufügen |
-| UND/ODER-Kennzahlen | Sie können den Regeln &quot;AND&quot;- oder &quot;OR&quot;-Kennungen hinzufügen, aber &quot;AND&quot;- und &quot;OR&quot;-Werte können nicht in einer einzigen Filterdefinition gemischt werden. |
-| Übernehmen | Wenden Sie diesen Filter auf das Bedienfeld an. Wenn der Filter keine Daten enthält, werden Sie gefragt, ob Sie fortfahren möchten. |
-| Builder öffnen | Öffnet den Filtergenerator. Nachdem Sie den Filter im Filtergenerator gespeichert oder angewendet haben, wird er nicht mehr als &quot;Schnellfilter&quot;betrachtet. Sie wird Teil der Komponentenlisten-Filterbibliothek. |
-| Abbrechen | Abbrechen Sie diesen Schnellfilter - wenden Sie ihn nicht an. |
+| Treffer-/Besuchs-/Besucher-Container | Schnellfilter enthalten nur einen [Filter-Container](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=de), mit dem Sie eine Dimension/Metrik/einen Datumsbereich in den Filter einbeziehen (oder daraus ausschließen) können. [!UICONTROL Besucher] enthält übergreifende Daten, die für den Besucher über Besuche und Seitenansichten hinweg spezifisch sind. Mit einen Container [!UICONTROL Besuch] können Sie Regeln für die Aufschlüsselung der Besucherdaten auf der Grundlage der Besuche festlegen und mit einem Container [!UICONTROL Treffer] können Sie die Besucherinformationen auf der Grundlage der einzelnen Seitenaufrufe aufschlüsseln. Der Standard-Container ist [!UICONTROL Treffer]. |
+| Komponenten (Dimension/Metrik/Datumsbereich) | Definieren Sie bis zu 3 Regeln, indem Sie Komponenten (Dimensionen, Metriken, Datumsbereiche oder Dimensionswerte) hinzufügen. Es gibt 3 Möglichkeiten, die richtige Komponente zu finden:<ul><li>Beginnen Sie mit der Eingabe. Der [!UICONTROL Schnellfilter-Generator] findet automatisch die entsprechende Komponente.</li><li>Verwenden Sie die Dropdown-Liste, um die Komponente zu finden.</li><li>Per Drag-and-Drop aus der der linken Leiste ziehen.</li></ul> |
+| Operator | Dropdown-Menü verwenden, um Standardoperatoren und Operatoren des Typs [!UICONTROL Distinct Count] zu finden. Siehe [Filteroperatoren](operators.md). |
+| Plus (+)-Zeichen | Eine weitere Regel hinzufügen |
+| UND/ODER-Kriterien | Sie können den Regeln „UND“- oder „ODER“-Kriterien hinzufügen, aber „UND“- und „ODER“-Werte können nicht in einer Filterdefinition gemischt werden. |
+| Übernehmen | Diesen Filter auf das Bedienfeld an. Wenn der Filter keine Daten enthält, werden Sie gefragt, ob Sie fortfahren möchten. |
+| Builder öffnen | Zeigt den Filtergenerator an. Nachdem Sie den Filter im Filtergenerator gespeichert oder angewendet haben, wird er nicht mehr als &quot;Schnellfilter&quot;betrachtet. Er wird Teil der Komponentenlisten-Filterbibliothek. |
+| Abbrechen | Brechen Sie diesen Schnellfilter ab – wenden Sie ihn nicht an. |
 | Datumsbereich | Der Validator verwendet den Datumsbereich des Bedienfelds für die Datensuche. Jeder Datumsbereich, der in einem Schnellfilter angewendet wird, überschreibt jedoch den Datumsbereich des Bedienfelds oben im Bedienfeld. |
-| Vorschau (oben rechts) | Hiermit können Sie sehen, ob Sie über einen gültigen Filter verfügen und wie breit der Filter ist. Stellt die Aufschlüsselung des Datensatzes dar, den Sie bei Anwendung dieses Filters erwarten können. Möglicherweise wird ein Hinweis angezeigt, dass dieser Filter keine Daten enthält. In diesem Fall können Sie die Filterdefinition fortsetzen oder ändern. |
+| Vorschau (oben rechts) | Hiermit können Sie sehen, ob Sie über einen gültigen Filter verfügen und wie breit der Filter ist. Stellt eine Aufschlüsselung des Datensatzes dar, die Sie erwarten können, wenn Sie diesen Filter anwenden. Möglicherweise wird ein Hinweis angezeigt, dass dieser Filter keine Daten enthält. In diesem Fall können Sie die Filterdefinition fortsetzen oder ändern. |
 
 Im Folgenden finden Sie ein Beispiel für einen Filter, der Dimensionen und Metriken kombiniert:
 
 ![Beispiel für Filterdefinition](assets/quick-seg2.png)
 
-Der Filter wird oben angezeigt. Die Seitenleiste mit blauen Streifen ist im Gegensatz zur blauen Seitenleiste für Filter auf Komponentenebene in der Filterbibliothek auf der linken Seite sichtbar.
+Der Filter wird oben angezeigt. Beachten Sie die Seitenleiste mit blauen Streifen im Gegensatz zur blauen Seitenleiste für Filter auf Komponentenebene auf der linken Seite der Filterbibliothek.
 
 ![Filtern von Komponentenstandorten](assets/quick-seg3.png)
 
-## Schnellfilter bearbeiten
+## Bearbeiten von Schnellfiltern
 
 1. Bewegen Sie den Mauszeiger über den Schnellfilter und wählen Sie das Stiftsymbol aus.
 1. Bearbeiten Sie die Filterdefinition oder den Filternamen.
 
-## Schnellfilter speichern
+## Speichern von Schnellfiltern
 
-Sie können Schnellfilter entweder im [!UICONTROL Schnellfilteraufbau] oder im [!UICONTROL Filtergenerator] speichern.
+Sie können Schnellfilter entweder im [!UICONTROL Schnellfilter-Generator] oder im [!UICONTROL Filtergenerator] speichern.
 
 >[!IMPORTANT]
->Nachdem Sie den Filter gespeichert oder angewendet haben, können Sie ihn nicht mehr im Schnellfilteraufbau, sondern nur im regulären Filtergenerator bearbeiten.
+>Nachdem Sie den Filter gespeichert oder angewendet haben, können Sie ihn nicht mehr im Schnellfilter-Generator, sondern nur noch im regulären Filtergenerator bearbeiten.
 
-### Speichern im Schnellfilter-Builder
+### Speichern im Schnellfilter-Generator
 
-1. Sobald Sie den Schnellfilter angewendet haben, halten Sie den Mauszeiger darüber und wählen Sie das Infosymbol (&quot;i&quot;) aus.
-1. Klicken Sie auf **[!UICONTROL Verfügbar machen für alle Projekte und fügen Sie Ihrer Komponentenliste]** hinzu.
+1. Wenn Sie den Schnellfilter angewendet haben, halten Sie den Mauszeiger darüber und wählen Sie das Infosymbol („i“) aus.
+1. Klicken Sie auf **[!UICONTROL Für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]**.
 1. (Optional) Benennen Sie den Filter um.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Beachten Sie, dass sich die Seitenleiste des Filters von gestreiftem Blau in helleres Blau ändert. Er wird jetzt in der Komponentenliste in der linken Leiste angezeigt.
 
-### Im Filter Builder speichern
+### Im Filtergenerator speichern
 
-1. Bewegen Sie den Mauszeiger über den Schnellfilter und wählen Sie das Infosymbol (&quot;i&quot;) aus.
+1. Bewegen Sie den Mauszeiger über den Schnellfilter und wählen Sie das Infosymbol („i“) aus.
 1. Wählen Sie **[!UICONTROL Filter speichern]**
 1. Belassen Sie den Namen unverändert oder benennen Sie den Filter um.
 
-   Gehen Sie zurück zu Workspace und sehen Sie, wie der Filter jetzt eine hellblaue Seitenleiste aufweist. Dies bedeutet, dass sie nicht mehr im Schnellfilteraufbau bearbeitet/geöffnet werden kann. Und durch Speichern wird sie Teil der Komponentenliste.
+   Gehen Sie zurück zu Workspace und sehen Sie, wie der Filter jetzt eine hellblaue Seitenleiste aufweist. Dies bedeutet, dass er nicht mehr im Schnellfilter-Generator bearbeitet/geöffnet werden kann. Und durch Speichern wird er Teil der Komponentenliste.
 
    ![Komponentenliste filtern](assets/quick-seg4.png)
 
@@ -96,13 +96,13 @@ Nachdem Sie den Filter angewendet haben, können Sie ihn Ihrer Liste der Filterk
 
    ![Dialogfeld &quot;Filter&quot;](assets/project-only.png)
 
-1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Alle Projekte verfügbar machen und zur Komponentenliste hinzufügen.]**
+1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Alle Projekte verfügbar machen und der Komponentenliste hinzufügen]**.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Der Filter wird jetzt in der Liste der Filterkomponenten für alle Ihre Projekte angezeigt.
-1. Sie können auch [den Filter](/help/components/filters/manage-filters.md) für andere Personen in Ihrer Organisation freigeben.
+1. Sie können auch den Filter auch für andere Personen in Ihrer Organisation [freigeben](/help/components/filters/manage-filters.md).
 
 ## Was sind reine Projektfilter?
 
-Nur-Projekt-Filter sind entweder Schnellfilter oder Ad-hoc-Workspace-Projektfilter. Beim Bearbeiten/Öffnen in [!UICONTROL Filter Builder] wird das Feld &quot;Nur Projekt&quot;angezeigt.
+Reine Projektfilter sind entweder Schnellfilter oder Ad-hoc-Workspace-Projektfilter. Beim Bearbeiten/Öffnen im [!UICONTROL Filter Builder], wird das Feld &quot;Nur Projekt&quot;angezeigt.
 
-Wenn Sie im Builder einen Schnellfilter anwenden, aber nicht das Kontrollkästchen &quot;verfügbar machen&quot;aktivieren, ist dieser Filter weiterhin nur ein Projekt, kann jedoch nicht mehr im [!UICONTROL Schnellfilteraufbau] geöffnet werden. Wenn Sie das Kontrollkästchen aktivieren und auf **[!UICONTROL Speichern]** klicken, handelt es sich jetzt um einen Filter für die Komponentenliste.
+Wenn Sie einen Schnellfilter im Builder anwenden, aber nicht das Kontrollkästchen &quot;Verfügbar machen&quot;aktivieren, ist dieser Filter weiterhin nur Projekt, kann jedoch nicht mehr im [!UICONTROL Schnellfilteraufbau]. Wenn Sie das Kontrollkästchen aktivieren, klicken Sie auf **[!UICONTROL Speichern]**, ist es nun ein Komponentenlistenfilter.
