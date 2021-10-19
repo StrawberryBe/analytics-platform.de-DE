@@ -1,28 +1,28 @@
 ---
-title: Komponenteneinstellungen für WertBuffering
+title: Komponenteneinstellungen für Wert-Bucketing
 description: Kombinieren Sie numerische Werte in einer Dimension.
-source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
-workflow-type: tm+mt
+exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
+source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
+# Komponenteneinstellungen für [!UICONTROL Wert-Bucketing]
 
-# [!UICONTROL Einstellungen ] der Value Bucketingcomponent
+Beim Erstellen oder Bearbeiten einer Datenansicht können Sie mit Wert-Bucketing numerische Werte basierend auf einem Bereich kombinieren. Sie ist nur für Dimensionen verfügbar, die Schemadatentypen vom Typ „Ganzzahl“ oder „Doppelt“ verwenden.
 
-Beim Erstellen oder Bearbeiten einer Datenansicht können Sie mit der Wertaufschlüsselung numerische Werte basierend auf einem Bereich kombinieren. Sie ist nur für Dimensionen verfügbar, die Datentypen vom Typ Integer oder Doppeltes Schema verwenden.
-
-Die Wertesammlung ist nützlich, wenn Sie Bereiche gruppieren möchten, anstatt jede eindeutige Zahl als separate Dimensionselemente zu behandeln. Beispielsweise wird ein Bucket vom Typ &quot;Zwischen 5 und bis zu 10&quot;in Analysis Workspace als Zeileneintrag &quot;5 bis 10&quot;angezeigt.
+Wert-Bucketing ist nützlich, wenn Sie Bereiche gruppieren möchten, anstatt jede eindeutige Zahl als ein separates Dimensionselement zu behandeln. Ein Behälter von „zwischen 5 und 10“ wird beispielsweise in Analysis Workspace als ein Zeilenelement „5 bis 10“ angezeigt.
 
 ![Wert-Bucketing](../assets/value-bucketing.png)
 
-Wenn Sie die Flexibilität bei der Berichterstellung für eine zusammengefasste und nicht zusammengefasste Dimension wünschen, ziehen Sie zwei Kopien der Komponente in die Liste der verfügbaren Dimensionen. Aktivieren Sie die Zusammenfassung für eine Dimension und deaktivieren Sie sie für die andere.
+Wenn Sie die Flexibilität beim Reporting für eine Dimension mit und ohne Behälter Dimension wünschen, ziehen Sie zwei Kopien der Komponente in die Liste der verfügbaren Dimensionen. Aktivieren Sie Bucketing für eine Dimension und deaktivieren Sie es für die andere.
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL Bucket-Wert] | Ein Kontrollkästchen, mit dem Sie die Zusammenfassung aktivieren können. |
+| [!UICONTROL Bucket-Wert] | Ein Kontrollkästchen, mit dem Sie Bucketing aktivieren können. |
 | [!UICONTROL Kleiner als] | Die obere Grenze des ersten Dimensionsbehälters. |
-|  [!UICONTROL Einschließlich und weniger als] | Grenzen der nachfolgenden Behälter. |
+| [!UICONTROL Einschließlich] [!UICONTROL und weniger als] | Grenzen der nachfolgenden Behälter. |
 | [!UICONTROL Größer oder gleich] | Die untere Grenze des letzten Dimensionsbehälters. |
 | [!UICONTROL Bucket hinzufügen] | Ermöglicht das Hinzufügen eines weiteren Behälters zu numerischen Dimensionsbehältern. Sie können bis zu 20 Behälter in einer Dimension hinzufügen. |
