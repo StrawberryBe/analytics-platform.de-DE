@@ -2,10 +2,10 @@
 title: FAQ zu Customer Journey Analytics
 description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
+source-git-commit: d88502218cd94fbb430a0fc5a3af994e7edaa73c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1649'
+ht-degree: 93%
 
 ---
 
@@ -44,6 +44,7 @@ ht-degree: 0%
 | Wie integriere ich [!UICONTROL Adobe Analytics]-Daten in [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics]-Daten können über [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) mit Experience Platform verbunden werden. Die meisten [!UICONTROL Adobe Analytics]-Felder werden im XDM-Format übermittelt, andere Felder sind aber noch nicht verfügbar. |
 | Wie lange dauert es, bis Datensatzelemente in einer Datenansicht zusammengefasst werden? | Ein paar Stunden für eine erste Ansicht und ein paar Tage, um die Daten der letzten 13 Monate aufzustocken. |
 | Sind PII-Daten notwendig, um Verbindungen zwischen den Daten herzustellen? | Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer Kunden-ID, bei der es sich nicht um personenbezogene Daten handelt. |
+| Welche Beschränkungen gibt es für die Aufnahme vergangener oder künftiger Daten/Zeitstempel in CJA-Ereignis-Datensätzen? | <ul><li>Für vergangene Daten/Zeitstempel: Ereignisdaten bis 10 Jahre.</li><li>Für zukünftige Daten/Zeitstempel: Ereignisdaten (prädiktiv) bis zu einem Monat in der Zukunft.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
