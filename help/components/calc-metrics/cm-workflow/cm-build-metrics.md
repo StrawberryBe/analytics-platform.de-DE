@@ -1,9 +1,9 @@
 ---
 description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche zum Ziehen und Ablegen von Dimensionen, Metriken, Filtern und Funktionen, um benutzerdefinierte Metriken basierend auf Behälterhierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungstool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
 title: Metriken erstellen
-source-git-commit: 92d9c3bd7478af5fbd4aca20fd814e2c9f2d6ef4
+source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '930'
 ht-degree: 73%
 
 ---
@@ -38,6 +38,7 @@ Sie erreichen den Generator für berechnete Metriken auf verschiedene Arten:
 | Definition | Hier können Sie Metriken/berechnete Metriken, Filter und/oder Funktionen einfügen, um die berechnete Metrik zu erstellen. Wenn Sie eine berechnete Metrik hierhin ziehen, wird die zugehörige Metrikdefinition automatisch eingeblendet. Sie können Definitionen mit Containern verschachteln. Im Gegensatz zu Segmentcontainern funktionieren diese Container allerdings wie ein mathematischer Ausdruck und bestimmen die Reihenfolge der Vorgänge. |
 | Operator | [!UICONTROL Geteilt durch] ist der Standardoperator. Außerdem gibt es die Operatoren +, - und x. |
 | Vorschau | Ermöglicht einen schnellen Einblick in potenzielle Fehler. Die Vorschau deckt die letzten 90 Tage ab. So können Sie schnell einschätzen, ob Sie die richtigen Komponenten für die Metrik ausgewählt haben. Bei einem unerwarteten Ergebnis müssten Sie die Metrikdefinition noch einmal genauer prüfen. |
+| Produktkompatibilität | Über die Produktkompatibilität können Sie sehen, ob die Metrik mit vollständig verarbeiteten Daten kompatibel ist. |
 | Fügen Sie | Sie können Container und statische Nummern zu den Definitionen aller Arten berechneter Metriken hinzufügen. Für erweiterte berechnete Metriken können Sie auch Filter und Funktionen hinzufügen.<ul><li>Container funktionieren wie mathematische Ausdrücke und bestimmen die Reihenfolge der Vorgänge. Jedes Element in einem Container wird also vor dem nächsten Vorgang verarbeitet.</li><li>Wenn Sie ein Segment in einen Container ziehen, werden alle Elemente in diesem Container segmentiert. (Nur erweiterte berechnete Metriken)</li><li>Sie können mehrere Filter in einem Container stapeln.</li></ul> |
 | Zahnradsymbol (Metriktyp,  Attribution) | Wenn Sie das Zahnradsymbol neben einer Metrik auswählen, können Sie den Metriktyp und die Attributionsmodelle angeben. |
 | + Neu | Ermöglicht die Erstellung einer neuen Komponente, z. B. eines neuen Filters (der Sie zum Filtergenerator führt). |
