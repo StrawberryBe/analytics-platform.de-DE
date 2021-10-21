@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, der auf der Adobe Experience Platform basierenden Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
+source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 93%
 
 ---
 
@@ -159,8 +159,21 @@ ht-degree: 0%
       + [Operatoren](components/filters/operators.md)
    + Berechnete Metriken {#cja-calcmetrics}
       + [Übersicht über berechnete Metriken](components/calc-metrics/calc-metr-overview.md)
-      + [Berechnete Metrik erstellen](components/calc-metrics/create.md)
-      + [Berechnete Metriken verwalten](components/calc-metrics/manage.md)
+      + Workflow für berechnete Metriken {#cm-workflow}
+         + [Workflow bei berechneten Metriken](components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Metriken suchen](components/calc-metrics/cm-workflow/cm-finding.md)
+         + [Metriken erstellen](components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Metriktyp und Attribution](components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+         + [Einfache Metrik vom Typ „Seitenansichten pro Besuch“ erstellen](components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Gefilterte Metriken](components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [Segmente stapeln und ersetzen](components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Gefilterte und gewichtete Metriken](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+         + [Funktionen verwenden](components/calc-metrics/cm-workflow/cm-using-functions.md)
+         + [Beitragsmetrik](components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Berechnete Metriken taggen](components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [Berechnete Metriken genehmigen](components/calc-metrics/cm-workflow/cm-approving.md)
+         + [Berechnete Metriken freigeben](components/calc-metrics/cm-workflow/cm-sharing.md)
+         + [Manager für berechnete Metriken](components/calc-metrics/cm-workflow/cm-manager.md)
       + [Grundlegende Funktionen](components/calc-metrics/cm-functions.md)
       + [Erweiterte Funktionen](components/calc-metrics/cm-adv-functions.md)
    + Datumsbereiche {#cja-date-ranges}
