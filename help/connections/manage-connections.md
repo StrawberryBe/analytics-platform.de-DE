@@ -3,10 +3,10 @@ title: Verbindungen verwalten
 description: Beschreibt, wie Verbindungen zu Experience Platform-Datensätzen in Customer Journey Analytics (CJA) verwaltet werden.
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: 98a24900ba06c8f2a0103762a7c57c977a7f15c6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1683'
+ht-degree: 86%
 
 ---
 
@@ -109,25 +109,16 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | [!UICONTROL Datenansicht erstellen] | Erstellen Sie eine neue Datenansicht auf Grundlage dieser Verbindung. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
 | [!UICONTROL Name der Verbindung] | Zeigt den Anzeigenamen der Verbindung an. |
 | [!UICONTROL Beschreibung der Verbindung] | Zeigt eine detailliertere Beschreibung an, die idealerweise den Zweck dieser Verbindung beschreibt. |
-| [!UICONTROL Personen-ID] | Zeigt eine Identität an, die im Datensatzschema in Experience Platform definiert wurde. Das ist die [!UICONTROL Personen-ID], die Sie bei der Erstellung der Verbindung ausgewählt haben. Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies beim Reporting berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe [!UICONTROL Personen-ID] verwenden. |
 | [!UICONTROL Sandbox] | Die [Sandbox von Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en), aus der diese Verbindung ihre Datensätze abruft. Diese Sandbox wurde beim erstmaligen Erstellen der Verbindung ausgewählt. Sie kann nicht geändert werden. |
 | [!UICONTROL Verbindungs-ID] | Diese ID wird in Adobe Experience Platform vom System generiert. |
-| [!UICONTROL Kennung der IMS-Organisation] | Die [Organisations-ID](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de), die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Zuvor als „Unternehmensanmeldung“ bezeichnet. |
 | [!UICONTROL Datenaufrufe, die Verbindungen verwenden] | Listet alle Datenansichten auf, die diese Verbindung verwenden. |
-| [!UICONTROL Neue Daten importieren] | Gibt an, ob den historischen Daten (Aufstockung) neue Datenstapel hinzugefügt werden sollen oder nicht. |
-| **Rechte Leiste auf Datensatzebene** |  |
-| [!UICONTROL Beschreibung des Datensatzes] | Beschreibt die Parameter der einzelnen Datensätze in dieser Verbindung. |
-| [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-daten-in-customer-journey-analytics-einbringen) vorhanden. |
-| [!UICONTROL Hinzugefügte Datensätze] | Wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. **Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Übersprungene Datensätze] | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden. **Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Gelöschte Datensätze] | Anzahl der im ausgewählten Zeitraum gelöschten Datensätze. **Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Fehler bei übersprungenen Datensätzen] | Der Grund, warum Datensätze übersprungen wurden, wird hier angegeben. Gründe hierfür können fehlende Zeitstempel, fehlende Personen-ID usw. sein. |
-| [!UICONTROL Aufgenommene Batches] | Wie viele Datenstapel diesem Datensatz hinzugefügt wurden. |
-| [!UICONTROL Zuletzt hinzugefügt] | Der Zeitpunkt, zu dem der letzte Stapel hinzugefügt wurde. |
-| [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
-| [!UICONTROL Schema] | Das Adobe Experience Platform-Schema, auf dem dieser Datensatz basiert. |
-| [!UICONTROL Datensatz-ID] | Diese ID wird in Adobe Experience Platform vom System generiert. |
+| [!UICONTROL Neue Daten importieren] | (Ein/Aus) Gibt an, ob den historischen Daten (Aufstockung) neue Datenstapel hinzugefügt werden sollen oder nicht. |
 | [!UICONTROL Aufstockungsdaten] | Aufstockungsdaten (historische Daten) werden in drei Status verfolgt: [!UICONTROL In der Warteschlange], [!UICONTROL In Bearbeitung] (mit angegebenem Fortschrittsprozentsatz) und [!UICONTROL Abgeschlossen]. |
+| [!UICONTROL Erstellt von] | Name der Person, die die Verbindung erstellt. |
+| [!UICONTROL Zuletzt geändert] | Datum und Uhrzeit der letzten Änderung der Verbindung. |
+| [!UICONTROL Zuletzt geändert von] |
+
+| **Rechtsleiste auf Datensatzebene** | | | [!UICONTROL Personen-ID] | Zeigt eine Identität an, die im Datensatzschema in der Experience Platform definiert wurde. Das ist die Personen-ID, die Sie bei der Erstellung der Verbindung ausgewählt haben. Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies beim Reporting berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID für Datensätze verwenden. | | [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der für diesen Datensatz erfassten Zeilen für den ausgewählten Zeitraum im Kalender dar. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-daten-in-customer-journey-analytics-einbringen) vorhanden. | | [!UICONTROL Hinzugefügte Datensätze] | Wie viele Zeilen wurden im ausgewählten Zeitraum hinzugefügt. **Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. | | [!UICONTROL Gelöste Datensätze] | Anzahl der im ausgewählten Zeitraum gelöschten Datensätze. **Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. | | [!UICONTROL Hinzugefügte Batches] | Wie viele Daten-Batches wurden diesem Datensatz hinzugefügt.  | | [!UICONTROL Übersprungene Datensätze] | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden. **Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. | | [!UICONTROL Zuletzt hinzugefügt] | Zeitpunkt, zu dem der letzte Batch hinzugefügt wurde. | | [!UICONTROL Datensatztyp] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche]oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset)  | | [!UICONTROL Schema] | Das Adobe Experience Platform-Schema, auf dem dieser Datensatz basiert. | | [!UICONTROL Datensatz-ID] | Diese ID wird in Adobe Experience Platform generiert. |
 
 ### Verbindung bearbeiten
 
@@ -143,4 +134,4 @@ Ermöglicht es Administratoren, die Verbindung zu bearbeiten. Wählen Sie eine V
 >[!IMPORTANT]
 >Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer für Adoben, um diese Einstellung implementieren zu lassen. Sie ist noch nicht über die Benutzeroberfläche von CJA verfügbar.
 
-Mit dieser Einstellung können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (3 Monate, 6 Monate usw.) definieren, und zwar in einer [!UICONTROL connection] Ebene (nicht auf [!UICONTROL Datensatz] Ebene). Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignisdatensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenaufbewahrungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind. Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte erstellen, die anwendbar sind, sowie nützliche Daten und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko von Überlebenskosten zu reduzieren.
+Mit dieser Einstellung können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (3 Monate, 6 Monate usw.) definieren, und zwar in einer [!UICONTROL connection] Ebene (nicht auf [!UICONTROL Datensatz] Ebene). Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenaufbewahrungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind. Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
