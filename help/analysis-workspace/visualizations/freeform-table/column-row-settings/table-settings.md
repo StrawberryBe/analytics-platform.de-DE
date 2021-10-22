@@ -3,10 +3,10 @@ description: Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie
 title: Zeileneinstellungen
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 7abd4d08f02597aed1af27970b8497898a553a10
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 82%
+source-wordcount: '472'
+ht-degree: 81%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 82%
 >[!NOTE]
 >
 >Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+
+Sehen Sie sich hier ein Video zu Zeilen- und Spalteneinstellungen an:
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben. Um auf die Tabellenzeileneinstellungen zuzugreifen, klicken Sie auf die [!UICONTROL Einstellungen] neben einer Dimension, einem Filter, einer Metrik, einem Zeitraum oder einer Aufschlüsselung innerhalb dieser Elemente klicken:
 

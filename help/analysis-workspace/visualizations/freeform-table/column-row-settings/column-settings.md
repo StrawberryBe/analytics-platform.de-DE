@@ -1,18 +1,21 @@
 ---
 description: Mithilfe der Spalteneinstellungen können Sie die Spaltenformatierung konfigurieren. Einige davon sind bedingt.
 title: Spalteneinstellungen
-translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 98%
 
 ---
-
 
 # [!UICONTROL Spalteneinstellungen]
 
 Mithilfe der [!UICONTROL Spalteneinstellungen] können Sie die Spaltenformatierung konfigurieren. Einige davon sind bedingt.
+
+Sehen Sie sich hier ein Video zu Zeilen- und Spalteneinstellungen an:
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 ## [!UICONTROL Spalteneinstellungen] bearbeiten {#edit-column-settings}
 
@@ -61,5 +64,5 @@ Analysis Workspace unterstützt die [Attribution](/help/analysis-workspace/attri
 
 >[!MORELIKETHIS]
 >
->* [Data Sources verwalten](/help/analysis-workspace/visualizations/t-sync-visualization.md)
+>* [Datenquellen verwalten](/help/analysis-workspace/visualizations/t-sync-visualization.md)
 
