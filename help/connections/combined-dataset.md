@@ -2,11 +2,10 @@
 title: Kombinierte Ereignis-Datensätze
 description: Erfahren Sie, wie CJA durch Kombinieren von Datensätzen eine Verbindung herstellt.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
-translation-type: ht
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
-workflow-type: ht
-source-wordcount: '326'
-ht-degree: 100%
+source-git-commit: dd68a85b1398fa99e6ee5fff1c356a005ebb9482
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +17,7 @@ Wenn Sie eine Verbindung herstellen, kombiniert CJA alle Schemata und Datensätz
 * Schemata werden kombiniert. Doppelte Schemafelder werden zusammengeführt.
 * Die Spalte „Personen-ID“ jedes Datensatzes wird unabhängig von ihrem Namen in eine Spalte zusammengefasst. Diese Spalte bildet die Grundlage für die Identifizierung von Unique Visitors in CJA.
 * Zeilen werden anhand des Zeitstempels verarbeitet.
+* Ereignisse werden auf die Millisekunde-Ebene aufgelöst.
 
 ## Beispiel
 
