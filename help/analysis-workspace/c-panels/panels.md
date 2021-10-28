@@ -2,10 +2,10 @@
 description: Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 62%
+source-wordcount: '845'
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen.
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights]- und   Blankand-  Freiformbedienfelder eignen sich hervorragend als Ausgangspunkt für Ihre Analyse, während  [!UICONTROL Attribution ] IQ sich für erweiterte Analysen eignet. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
+[!UICONTROL Quick Insights], [!UICONTROL Leer] und [!UICONTROL Freiform] Bedienfelder eignen sich hervorragend als Ausgangspunkt für Ihre Analyse. [!UICONTROL Attribution IQ] bietet erweiterte Analysen. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
 
 Das standardmäßige Startbedienfeld ist das [!UICONTROL Freiform-]Bedienfeld. Sie können jedoch auch das [leere Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) als Standard festlegen.
 
@@ -33,6 +33,8 @@ Der Bedienfeldkalender steuert den Reporting-Bereich für Tabellen und Visualisi
 Hinweis: Wenn eine (violette) Datumsbereichskomponente in einer Tabelle, Visualisierung oder dem Ablagebereich eines Bedienfelds verwendet wird, wird der Bedienfeldkalender überschrieben.
 
 ![](assets/panel-calendar.png)
+
+Sie können einen Datumsbereich auf Minutenebene unter den erweiterten Einstellungen Ihres Bedienfeldkalenders anwenden. Wenn Sie Berichte zu einem Datumsbereich erstellen, der viele Tage umfasst, gilt die Startzeit für den ersten Tag und die Endzeit für den letzten Tag in Ihrem Bereich.
 
 ## Ablagebereich {#dropzone}
 
@@ -63,12 +65,12 @@ Dropdown-Filter können auch verwendet werden, um viele Projekte zu einem zusamm
 So erstellen Sie Dropdown-Filter:
 
 1. Wenn Sie einen Dropdown-Filter mit [!UICONTROL Dimensionselementen] erstellen möchten, z. B. Werte innerhalb der Dimension [!UICONTROL Marketing-Kanal], klicken Sie in der linken Leiste auf das Pfeilsymbol neben Ihrer Dimension. Dadurch werden alle verfügbaren Elemente angezeigt. Wählen Sie ein oder mehrere Komponentenelemente aus der linken Leiste aus und legen Sie sie im Ablagebereich des Bedienfelds ab, **während Sie die Umschalttaste** gedrückt halten. Dadurch werden die Komponenten in einen Dropdown-Filter und nicht in einen einzigen Filter umgewandelt.
-1. Wenn Sie einen Dropdown-Filter mit einer anderen Komponente wie Metriken, Filtern oder Datumsbereichen erstellen möchten, wählen Sie in der linken Leiste einen Komponententyp aus und legen Sie ihn im Dropzone des Bedienfelds ab, während Sie die Umschalttaste **gedrückt halten.**
+1. Um einen Dropdown-Filter mit einer anderen Komponente wie Metriken, Filtern oder Datumsbereichen zu erstellen, wählen Sie in der linken Leiste einen Komponententyp aus und legen Sie ihn im Ablagebereich des Bedienfelds ab **bei gedrückter Umschalttaste**.
 1. Wählen Sie eine der Optionen aus der Dropdown-Liste aus, um die Daten im Bedienfeld zu ändern. Sie können auch auf die Filterung von Bedienfelddaten verzichten, indem Sie **[!UICONTROL Kein Filter]** auswählen.
 
 ![](assets/create-dropdown.png)
 
-[Sehen Sie sich das Video an,](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) um mehr über das Hinzufügen von Dropdown-Filtern zu Ihrem Projekt zu erfahren.
+[Sehen Sie sich das Video an,](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=de) um mehr über das Hinzufügen von Dropdown-Filtern zu Ihrem Projekt zu erfahren.
 
 ## Rechtsklick auf Menü {#right-click}
 

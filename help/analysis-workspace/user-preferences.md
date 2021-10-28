@@ -2,10 +2,10 @@
 title: So legen Sie Benutzereinstellungen in Analysis Workspace fest
 description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen für Benutzer festlegen.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
-workflow-type: ht
-source-wordcount: '188'
-ht-degree: 100%
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 82%
 
 ---
 
@@ -38,3 +38,14 @@ Projekt-Voreinstellungen werden auf neue in Analysis Workspace erstellte Projekt
 |  | [Typ des Bedienfelds](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de) | <ul><li>Freiform (Standard)</li><li>Leer</li><li>Quick Insights</li></ul> |
 |  | Zahlenformat | <ul><li>1.000,00 (Standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-Trennzeichen | <ul><li>Komma (Standard)</li><li>Semikolon</li><li>Doppelpunkt</li><li>Verkettungszeichen</li><li>Zeitraum</li><li>Leerzeichen</li><li>Tab</li></ul> |
+
+## [!UICONTROL Dunkles Design]
+
+Wenn Sie einen dunklen Hintergrund für Ihre Customer Journey Analytics-Benutzeroberfläche bevorzugen, können Sie [!UICONTROL Dunkles Thema].
+
+1. Klicken Sie oben rechts auf das Experience Cloud-Benutzersymbol.
+
+   ![dark-theme](assets/dark-theme.png)
+
+1. Verschieben Sie die **[!UICONTROL Dunkles Thema]** nach rechts umschalten.
+
