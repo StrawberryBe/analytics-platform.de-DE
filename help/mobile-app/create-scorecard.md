@@ -5,42 +5,42 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 source-git-commit: 9a7fa68bd7b4b9a7164a80691ddfb7aedaf8e3e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 # Scorecard erstellen
 
-Die folgenden Informationen liefern Kuratoren von Adobe Analytics-Daten Informationen dazu, wie Dashboards für ausführende Benutzer konfiguriert und dargestellt werden. Beginnen Sie mit dem Video zum Adobe Analytics Dashboards Scorecard Builder :
+Die folgenden Informationen liefern Kuratoren von Adobe Analytics-Daten eine Anleitung dazu, wie Dashboards für ausführende Benutzer konfiguriert und dargestellt werden. Sehen Sie sich zunächst das Video zu Scorecard Builder von Adobe Analytics-Dashboards an:
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
 >[!NOTE]
->Scorecard-Screenshots für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus CJA. Die Benutzeroberfläche ist fast identisch.
+>Scorecard-Screenshots für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus Customer Journey Analytics. Die Benutzeroberflächen sind fast identisch.
 
-Eine Adobe Analytics-Scorecard zeigt wichtige Datenvisualisierungen für ausführende Benutzer in einem gekachelten Layout an, wie unten dargestellt:
+Eine Adobe Analytics Scorecard stellt wie nachfolgend gezeigt wichtige Datenvisualisierungen für ausführende Benutzer in einem gekachelten Layout bereit:
 
 ![Beispiel-Scorecard](assets/intro_scorecard.png)
 
-Als Kurator dieser Scorecard können Sie mit dem Scorecard Builder konfigurieren, welche Kacheln auf der Scorecard für Ihren ausführenden Verbraucher angezeigt werden. Sie können auch konfigurieren, wie die detaillierten Ansichten oder Aufschlüsselungen angepasst werden können, sobald auf die Kacheln getippt wird. Hier sehen Sie die Scorecard Builder-Oberfläche:
+Als Kurator dieser Scorecard können Sie mit dem Scorecard Builder festlegen, welche Kacheln auf der Scorecard für den ausführenden Benutzer angezeigt werden. Sie können auch konfigurieren, wie die detaillierten Ansichten bzw. Aufschlüsselungen angepasst werden können, nachdem auf die Kacheln getippt wird. Hier sehen Sie die Scorecard Builder-Oberfläche:
 
 ![Scorecard Builder](assets/scorecard_builder.png)
 
-Gehen Sie wie folgt vor, um die Scorecard zu erstellen:
+Zur Erstellung der Scorecard führen Sie folgende Schritte aus:
 
-1. Zugriff auf die Vorlage für [!UICONTROL leere mobile Scorecards].
+1. Öffnen Sie die Vorlage für [!UICONTROL leere mobile Scorecards].
 2. Konfigurieren Sie die Scorecard mit Daten und speichern Sie sie.
 
 ## Zugriff auf die Vorlage für [!UICONTROL leere mobile Scorecards]
 
-Sie können auf die Vorlage [!UICONTROL Leere mobile Scorecard] zugreifen, indem Sie entweder ein neues Projekt erstellen oder über das Menü Tools zugreifen.
+Sie können die Vorlage [!UICONTROL Leere mobile Scorecard] öffnen, indem Sie entweder ein neues Projekt erstellen oder über das Menü „Tools“ zugreifen.
 
 ### Neues Projekt erstellen
 
-1. Öffnen Sie Adobe Analytics und klicken Sie auf die Registerkarte **[!UICONTROL Workspace]**.
-1. Klicken Sie auf **[!UICONTROL Projekt]** erstellen und wählen Sie die Projektvorlage **[!UICONTROL Leere mobile Scorecard]** aus.
+1. Öffnen Sie Adobe Analytics und klicken Sie auf die Registerkarte **[!UICONTROL Arbeitsbereich]**.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Projekt erstellen]** und wählen Sie die Projektvorlage **[!UICONTROL Leere mobile Scorecard]** aus.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
 ![Scorecard-Vorlage](assets/new_template.png)
@@ -69,7 +69,7 @@ So implementieren Sie die Scorecard-Vorlage:
 
 Um einer Metrik eine verwandte Dimension hinzuzufügen, ziehen Sie eine Dimension aus dem linken Bereich und legen Sie sie auf einer Kachel ab.
 
-Sie können beispielsweise geeignete Dimensionen (wie **[!DNL Marketing Channel]** in diesem Beispiel) zur Metrik **[!UICONTROL Unique Visitors]** hinzufügen, indem Sie sie auf die Kachel ziehen und dort ablegen. Aufschlüsselungen von Dimensionen werden unter dem Abschnitt [!UICONTROL DrillINS] (Aufschlüsselung) des kachelspezifischen Abschnitts **[!UICONTROL Eigenschaften]** angezeigt. Sie können jeder Kachel mehrere Dimensionen hinzufügen.
+Sie können beispielsweise geeignete Dimensionen (wie **[!DNL Marketing Channel]** in diesem Beispiel) zur Metrik **[!UICONTROL Unique Visitors]** hinzufügen, indem Sie sie auf die Kachel ziehen und dort ablegen. Aufschlüsselungen von Dimensionen werden im Abschnitt [!UICONTROL Drill Ins] (Aufschlüsselung) der kachelspezifischen **[!UICONTROL Eigenschaften]** angezeigt. Sie können jeder Kachel mehrere Dimensionen hinzufügen.
 
 ![Dimensionen hinzufügen](assets/layer_dimensions.png)
 
@@ -107,15 +107,15 @@ Dadurch gelangen Sie zum Generator für den Datumsbereich, in dem Sie eine neue 
 
 ## Visualisierungen anwenden
 
-Analytics-Dashboards bieten vier Visualisierungen, die Ihnen einen umfassenden Einblick in Dimensionselemente und Metriken bieten. Wechseln Sie zu einer anderen Visualisierung, indem Sie den [!UICONTROL Diagrammtyp] der [!UICONTROL Eigenschaften] einer Kachel ändern. Wählen Sie einfach die rechte Kachel aus und ändern Sie dann den Diagrammtyp.
+Analytics-Dashboards bieten vier Visualisierungen, die Ihnen einen umfassenden Einblick in Dimensionselemente und Metriken bieten. Wenn Sie eine andere Visualisierung anwenden möchten, ändern Sie den [!UICONTROL Diagrammtyp] in den [!UICONTROL Eigenschaften] einer Kachel. Wählen Sie einfach die rechte Kachel aus und ändern Sie dann den Diagrammtyp.
 
 ![Kacheleigenschaften](assets/properties.png)
 
-Oder klicken Sie in der linken Leiste auf das Symbol [!UICONTROL Visualisierungen] und ziehen Sie die rechte Visualisierung auf die Kachel:
+Oder klicken Sie auf das Symbol für [!UICONTROL Visualisierungen] in der linken Leiste und ziehen Sie die rechte Visualisierung per Drag &amp; Drop auf die Kachel:
 
 ![Visualisierungen](assets/vizs.png)
 
-### [!UICONTROL Zusammenfassungsnummer]
+### [!UICONTROL Zusammenfassungszahl]
 
 Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl hervorzuheben, die in einem Projekt wichtig ist.
 
@@ -123,48 +123,48 @@ Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl
 
 ### [!UICONTROL Ringdiagramm]
 
-Ähnlich wie bei einem Tortendiagramm zeigt diese Visualisierung Daten als Teile oder Segmente eines Ganzen an. Verwenden Sie ein Ringdiagramm, wenn Sie Prozentsätze eines Gesamtwerts vergleichen. Nehmen wir beispielsweise an, Sie möchten sehen, welche Anzeigenplattform zur Gesamtzahl der Unique Visitors beigetragen hat:
+Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile oder Segmente eines Ganzen. Ein Ringdiagramm kann für den Vergleich der Teile eines Ganzen verwendet werden. Nehmen wir beispielsweise an, Sie möchten sehen, welche Anzeigenplattform zur Gesamtzahl der Unique Visitors beigetragen hat:
 
-![Donut-Visualisierung](assets/donut-viz.png)
+![Ringvisualisierung](assets/donut-viz.png)
 
 ### [!UICONTROL Linie]
 
-Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm zeigt Dimensionen im Zeitverlauf an, funktioniert aber bei jeder Visualisierung. In diesem Beispiel visualisieren Sie die Dimension &quot;Produktkategorie&quot;.
+Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm zeigt Dimensionen im Zeitverlauf an, funktioniert aber bei jeder Visualisierung. In diesem Beispiel visualisieren Sie die Dimension „Produktkategorie“.
 
 ![Linienvisualisierung](assets/line.png)
 
 ### [!UICONTROL Horizontalbalken]
 
-Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. Um beispielsweise Ihre wichtigsten Produkte einfach anzuzeigen, verwenden Sie [!UICONTROL Horizontalbalken] für Ihre bevorzugte Visualisierung.
+Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. Verwenden Sie zum Beispiel [!UICONTROL Horizontalbalken] als bevorzugte Visualisierung, um ganz leicht zu erkennen, welches Ihre Top-Produkte sind.
 
 ![Horizontalbalken](assets/horizontal.png)
 
-### Dimensionselement [!UICONTROL Nicht spezifiziert] entfernen
+### Dimensionselement des Typs [!UICONTROL Nicht angegeben] entfernen
 
-Wenn Sie [!UICONTROL Nicht angegebene] Dimensionselemente aus Ihren Daten entfernen möchten, gehen Sie wie folgt vor:
+Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Daten entfernen möchten, gehen Sie wie folgt vor:
 
 1. Wählen Sie die richtige Kachel aus.
-1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drillins]** den Pfeil nach rechts neben dem Dimensionselement aus, dessen **[!UICONTROL Nicht angegebene]** Elemente Sie entfernen möchten.
+1. Wählen Sie in der rechten Leiste unter **[!UICONTROL Drill-ins]** den Rechtspfeil neben dem Dimensionselement aus, für das Sie Elemente des Typs **[!UICONTROL Nicht angegeben]** entfernen möchten.
 
    ![nicht angegeben](assets/unspecified.png)
 
 1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
 
-## Anzeigen und Konfigurieren von Kacheleigenschaften
+## Kacheleigenschaften anzeigen und konfigurieren
 
-Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die dieser Kachel zugeordnet sind. In dieser Leiste können Sie einen neuen **[!UICONTROL Titel]** für die Kachel angeben und alternativ die Kachel konfigurieren, indem Sie Komponenten angeben, anstatt sie aus der linken Leiste zu ziehen und abzulegen.
+Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel verbunden sind. In dieser Leiste können Sie einen neuen **[!UICONTROL Titel]** für die Kachel angeben. Anstatt die Kachel aus der linken Leiste zu ziehen und abzulegen können Sie sie auch konfigurieren, indem Sie Komponenten angeben.
 
 ![Kachel „Eigenschaften“](assets/properties_tile.png)
 
-## Anzeigen von Drillins (Aufschlüsselungen)
+## Anzeigen von Drill-ins (Aufschlüsselungen)
 
-Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup angezeigt, wie die Ansicht &quot;Drill ins&quot;(Aufschlüsselung) für ausführende Benutzer in der App angezeigt wird. Sie können Dimensionen und Dimensionselemente aufschlüsseln, um Ihre Daten für Ihre spezifischen Anforderungen aufzuschlüsseln. Wenn keine Dimension auf die Kachel angewendet wurde, werden je nach Standarddatumsbereich entweder **Stunden** oder **Tage** als Aufschlüsselungsdimension verwendet.
+Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup angezeigt, wie die Aufschlüsselungsansicht für ausführende Benutzer in der App dargestellt wird. Sie können Dimensionen und Dimensionselemente aufschlüsseln, um Ihre Daten für Ihre spezifischen Anforderungen aufzuschlüsseln. Wenn keine Dimension auf die Kachel angewendet wurde, werden je nach Standarddatumsbereich entweder **Stunden** oder **Tage** als Aufschlüsselungsdimension verwendet.
 
-Aufschlüsselungen verfeinern Ihre Analyse, indem sie Dimensionen buchstäblich nach anderen Metriken und Dimensionen aufschlüsseln, wie in diesem Einzelhandelsbeispiel:
+Aufschlüsselungen verbessern Ihre Analyse, indem sie Metriken und Dimensionen nach anderen Metriken und Dimensionen aufschlüsseln wie z. B. in diesem Beispiel eines Einzelhändlers:
 
-* Metrik &quot;Unique Visitors&quot;aufgeschlüsselt nach Anzeigenplattform (AMO-ID)
+* Metrik „Unique Visitors“ aufgeschlüsselt nach Anzeigenplattform (AMO-ID)
 * Besuche aufgeschlüsselt nach Produktkategorie (Einzelhandel)
-* Gesamtumsatz, aufgeschlüsselt nach Produktnamen
+* Gesamtumsatz aufgeschlüsselt nach Produktnamen
 
 ![Aufschlüsselungsansicht](assets/break_view.png)
 
@@ -176,7 +176,7 @@ Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, 
 
 ![Komponenten entfernen](assets/new_remove.png)
 
-## Benennen einer Scorecard
+## Scorecard benennen
 
 Um die Scorecard zu benennen, klicken Sie auf den Namensbereich in der oberen linken Ecke des Bildschirms und geben Sie den neuen Namen ein.
 
@@ -190,15 +190,15 @@ So geben Sie die Scorecard für einen ausführenden Benutzer frei:
 
 1. Füllen Sie die Felder im Formular **[!UICONTROL Mobile Scorecard freigeben]** aus, indem Sie:
 
-   * Angeben des Namens der Scorecard
-   * Beschreibung der Scorecard
+   * den Namen der Scorecard angeben
+   * eine Beschreibung der Scorecard angeben
    * relevante Tags hinzufügen
-   * Empfänger für die Scorecard angeben
+   * die Empfänger der Scorecard angeben
 
 1. Klicken Sie auf **[!UICONTROL Freigabe]**.
 
 ![Scorecards freigeben](assets/new_share.png)
 
-Nachdem Sie eine Scorecard freigegeben haben, können Ihre Empfänger in ihren Analytics-Dashboards darauf zugreifen. Wenn Sie nachfolgende Änderungen an der Scorecard im Scorecard Builder vornehmen, werden diese automatisch in der freigegebenen Scorecard aktualisiert. Ausführende Benutzer sehen die Änderungen, nachdem sie die Scorecard in ihrer App aktualisiert haben.
+Nachdem Sie eine Scorecard freigegeben haben, können die Empfänger in den Analytics-Dashboards darauf zugreifen. Wenn Sie in Scorecard Builder nachträgliche Änderungen an der Scorecard vornehmen, werden diese automatisch in der freigegebenen Scorecard aktualisiert. Ausführende Benutzer sehen die Änderungen, nachdem sie die Scorecard in ihrer App aktualisiert haben.
 
-Wenn Sie die Scorecard durch Hinzufügen neuer Komponenten aktualisieren, sollten Sie die Scorecard erneut freigeben (und die Option **[!UICONTROL Freigeben eingebetteter Komponenten]** aktivieren), um sicherzustellen, dass Ihre ausführenden Benutzer Zugriff auf diese Änderungen haben.
+Wenn Sie die Scorecard durch Hinzufügen neuer Komponenten aktualisieren, sollten Sie die Scorecard erneut freigeben (und die Option zum **[!UICONTROL Freigeben eingebetteter Komponenten]** aktivieren), um sicherzustellen, dass die ausführenden Benutzer Zugriff auf diese Änderungen haben.
