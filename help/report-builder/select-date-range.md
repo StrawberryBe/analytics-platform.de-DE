@@ -1,20 +1,20 @@
 ---
-title: Auswählen eines Datenbereichs in Report Builder in CJA
-description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke in Report Builder für CJA
+title: Auswählen eines Datenbereichs in Report Builder in Customer Journey Analytics
+description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke in Report Builder für Cutomer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: b655813816b2a8e0d47b035eefa11926f106ee0e
-workflow-type: tm+mt
+exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
+source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-
 # Datumsbereich auswählen
 
-Um den Datumsbereich eines vorhandenen Datenblocks zu ändern, wählen Sie Datenblock bearbeiten oder verwenden Sie das Bedienfeld SCHNELLE BEARBEITUNG .
+Um den Datumsbereich eines vorhandenen Datenblocks zu ändern, wählen Sie „Datenblock bearbeiten“ aus oder verwenden Sie das Bedienfeld „Schnellbearbeitung“.
 
 Verwenden Sie die folgenden Optionen, um einen Datumsbereich für einen Datenblock zu ändern.
 
@@ -22,16 +22,16 @@ Verwenden Sie die folgenden Optionen, um einen Datumsbereich für einen Datenblo
 
 Mit dem Kalender können Sie statische oder rollierende Datumswerte mit den folgenden Optionen erstellen:
 
-- Datumsbereich-Feld
+- Feld „Datumsbereich“
 - Kalender
-- Dropdown-Menü &quot;Voreinstellung&quot;
-- Rollierender Datumsmodus
+- Dropdown-Menü „Voreinstellung“
+- Modus „Rollierendes Datum“
 - Ausdrücke anpassen
 
 
-**Aus Zelle**
+**Von Zelle**
 
-Mit der Option Von Zelle können Sie auf Daten verweisen, die in Zellen eines Arbeitsblatts eingegeben wurden.
+Mit der Option „Von Zelle“ können Sie auf Daten verweisen, die in Zellen eines Arbeitsblatts eingegeben wurden.
 
 Sie können den aktuellen Tag für einen beliebigen Datumsbereich ausschließen.
 
@@ -39,9 +39,9 @@ Sie können den aktuellen Tag für einen beliebigen Datumsbereich ausschließen.
 
 ## Verwenden des Kalenders
 
-Wenn Sie **Kalender** verwenden, zeigt das Datumsbereichsfeld den aktuellen Datumsbereich für die Datenblock-Anforderung an. Sie können Datumsangaben direkt in das Datumsbereichsfeld eingeben oder eine Datumsbereichsauswahloption verwenden.
+Wenn Sie den **Kalender** verwenden, zeigt das Datumsbereichsfeld den aktuellen Datumsbereich für die Datenblockanfrage an. Sie können Datumsangaben direkt in das Datumsbereichsfeld eingeben oder eine Datenbereichsauswahl-Option verwenden.
 
-### Datumsbereich-Feld
+### Feld „Datumsbereich“
 
 So geben Sie Daten direkt in das Datumsbereichsfeld ein
 
@@ -63,25 +63,25 @@ Um einen Datumsbereich rückwärts festzulegen, klicken Sie zuerst auf das Endda
 
 ![](./assets/image18.png)
 
-### Dropdown-Menü &quot;Voreinstellung&quot;
+### Dropdown-Menü „Voreinstellung“
 
-Das voreingestellte Dropdown-Menü enthält einen Standardsatz vordefinierter Datumsbereiche und Datumsbereichskomponenten für eine von Ihnen gespeicherte Datenansicht oder eine für Sie freigegebene Datenansicht.
+Das Dropdown-Menü „Voreinstellung“ enthält einen Standardsatz vordefinierter Datumsbereiche und Datumsbereichskomponenten für eine von Ihnen gespeicherte Datenansicht oder eine für Sie freigegebene Datenansicht.
 
 ### Rollierende Datumswerte
 
-Mit der Option Rollierende Datumswerte können Sie einen Datumsbereich mithilfe rollierender Datumswerte auswählen.
+Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mithilfe rollierender Datumswerte auswählen.
 
-1. Wählen Sie **Rollierende Datumswerte verwenden** aus.
+1. Wählen Sie die Option **Rollierende Datumswerte verwenden** aus.
 
 1. Wählen Sie einen rollierenden Ausdruck für Ihr Start- und Enddatum aus.
 
    ![](./assets/image19.png)
 
-   **Start von**  - Ermöglicht die Auswahl des Anfangs eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
+   **Beginn von** – Ermöglicht die Auswahl des Anfangs eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
 
-   **Ende von**  - Ermöglicht die Auswahl des Endes eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
+   **Ende von** – Ermöglicht die Auswahl des Endes eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
 
-   **Fester Tag**  - Ermöglicht die Festlegung eines Start- oder Enddatums, während das andere Datum rollierend ist.
+   **Fester Tag** – Ermöglicht das Festlegen eines Start- oder Enddatums, während das andere Datum rollierend ist.
 
 1. Wählen Sie als rollierenden Zeitraum Tag, Woche, Monat, Quartal oder Jahr aus.
 
@@ -91,7 +91,7 @@ Mit der Option Rollierende Datumswerte können Sie einen Datumsbereich mithilfe 
 
    ![](./assets/image21.png)
 
-1. Klicken Sie auf Weiter , um den Datenbereich zu definieren.
+1. Klicken Sie auf „Weiter“, um den Datenbereich zu definieren.
 
    Verwenden Sie die Datumsvorschau, um zu bestätigen, dass der resultierende Datumsbereich der gewünschte Bereich ist.
 
@@ -101,33 +101,33 @@ Mit der Option für benutzerdefinierte Ausdrücke können Sie den Datumsbereich 
 
 1. Wählen Sie **Rollierende Datumswerte verwenden** aus.
 
-1. Wählen Sie **Benutzerdefinierten Ausdruck verwenden** aus.
+1. Wählen Sie **Benutzerdefinierte Ausdrücke verwenden** aus.
 
-   Wenn Sie die Option **Benutzerdefinierten Ausdruck verwenden** auswählen, sind die standardmäßigen Steuerelemente für rollierende Datumsbereiche deaktiviert.
+   Wenn Sie die Option **Benutzerdefinierte Ausdrücke verwenden** auswählen, sind die standardmäßigen Steuerelemente für rollierende Datumsbereiche deaktiviert.
 
    ![](./assets/custom_expression.png)
 
 1. Geben Sie einen benutzerdefinierten Ausdruck ein.
 
-   Eine Beispielliste von benutzerdefinierten Ausdrücken finden Sie unter **Datumsausdrücke**.
+   Eine Beispielliste mit benutzerdefinierten Ausdrücken finden Sie unter **Datumsausdrücke**.
 
 1. Verwenden Sie die Datumsvorschau, um zu überprüfen, ob der resultierende Datumsbereich der gewünschte Bereich ist.
 
-#### Benutzerdefinierten Ausdruck erstellen
+#### Erstellen eines benutzerdefinierten Ausdrucks
 
 1. Geben Sie eine **Datumsreferenz** ein.
 
-1. Fügen Sie **Datumsoperatoren** hinzu, um das Datum in die Vergangenheit oder Zukunft zu verschieben.
+1. Fügen Sie **Datumsoperatoren** hinzu, um das Datum in die Vergangenheit oder in die Zukunft zu verschieben.
 
-Sie können einen benutzerdefinierten Datumsausdruck eingeben, der mehrere Operatoren enthält, z. B. ```tm-11m-1d```.
+Sie können einen benutzerdefinierten Datumsausdruck eingeben, der mehrere Operatoren enthält, z. B. ```tm-11m-1d```.
 
-#### Datumsangaben
+#### Datumsreferenzen
 
 In der folgenden Tabelle sind Beispiele für Datumsreferenzen aufgeführt.
 
 | Datumsreferenz | Typ | Beschreibung |
 |----------------|--------------|----------------------------|
-| 01.01.10 | Statisches Datum | Im ISO-Datumsformat eingegeben |
+| 1/1/10 | Statisches Datum | Im ISO-Datumsformat eingegeben |
 | td | Rollierendes Datum | Beginn des aktuellen Tages |
 | tw | Rollierendes Datum | Beginn der aktuellen Woche |
 | tm | Rollierendes Datum | Beginn des aktuellen Monats |
@@ -136,15 +136,15 @@ In der folgenden Tabelle sind Beispiele für Datumsreferenzen aufgeführt.
 
 #### Datumsoperatoren
 
-In der folgenden Tabelle sind Beispiele für den Datumsoperator aufgeführt.
+In der folgenden Tabelle sind Beispiele für Datumsoperatoren aufgeführt.
 
 | Datumsoperatoren | Einheit | Beschreibung |
 |----------------|---------|--------------------|
 | +6d | Tag | Hinzufügen von 6 Tagen zur Datumsreferenz |
-| +1w | Woche | Eine ganze Woche zur Datumsreferenz hinzufügen |
-| -2 m | Monat | 2 vollständige Monate bis zur Datumsreferenz abziehen |
-| -4q | Quartal | 4 Quartale zur Datumsreferenz abziehen |
-| -1y | Jahr | 1 Jahr bis Datumsreferenz abziehen |
+| +1w | Woche | Hinzufügen einer ganzen Woche zur Datumsreferenz |
+| -2m | Monat | Abziehen von 2 vollständigen Monaten von der Datumsreferenz |
+| -4q | Quartal | Abziehen von 4 Quartalen von der Datumsreferenz |
+| -1y | Jahr | Abziehen von 1 Jahr von der Datumsreferenz |
 
 #### Datumsausdrücke
 
@@ -154,21 +154,21 @@ In der folgenden Tabelle sind Beispiele für Datumsausdrücke aufgeführt.
 |-----------------|--------------------------------------|
 | td-1w | Erster Tag der letzten Woche |
 | tm-1d | Letzter Tag des vorherigen Monats |
-| td-52w | Am selben Tag, vor 52 Wochen |
+| td-52w | Derselbe Tag vor 52 Wochen |
 | tm-11m-1d | Letzter Tag des gleichen Monats im letzten Jahr |
-| &quot;2020-09-06&quot; | 9. Sept. 2020 |
+| „2020-09-06“ | 9. Sept. 2020 |
 
 ## Datumsbereich aus Zelle
 
-Der Datumsbereich kann in Zellen eines Arbeitsblatts angegeben werden. Verwenden Sie die Option **Datumsbereich von Zelle** , um das Start- und Enddatum des Datenblocks aus ausgewählten Zellen auszuwählen. Wenn Sie die Option **Von Zelle** auswählen, zeigt das Bedienfeld die Felder **Von** und **Bis** an, in die Sie einen Zellenspeicherort eingeben können.
+Der Datumsbereich kann in Zellen eines Arbeitsblatts angegeben werden. Verwenden Sie die Option **Datumsbereich aus Zelle**, um das Start- und Enddatum des Datenblocks aus ausgewählten Zellen auszuwählen. Wenn Sie die Option **Aus Zelle** auswählen, zeigt das Bedienfeld die Felder **Von** und **Bis** an, in die Sie eine Zellenposition eingeben können.
 
 ![](./assets/image23.png)
 
 ## Heute ausschließen
 
-Wählen Sie die Option **Heute ausschließen** aus, um den aktuellen Tag aus einem ausgewählten Datumsbereich auszuschließen. Wenn Sie sich dafür entscheiden, heute einzubeziehen, werden möglicherweise unvollständige Daten für heute abgerufen.
+Wählen Sie die Option **Heute ausschließen** aus, um den aktuellen Tag aus einem ausgewählten Datumsbereich auszuschließen. Wenn Sie sich dafür entscheiden, den heutigen Tag einzubeziehen, werden möglicherweise unvollständige Daten für heute abgerufen.
 
-Wenn diese Option aktiviert ist, schließt die Option **Heute ausschließen** den aktuellen Tag aus allen Datumsbereichsmodi aus, einschließlich Kalender, rollierenden Datumsangaben oder benutzerdefinierten Ausdrücken.
+Wenn die Option **Heute ausschließen** ausgewählt ist, wird der aktuelle Tag aus allen Datumsbereichsmodi ausgeschlossen, einschließlich Kalender, rollierenden Datumsangaben oder benutzerdefinierten Ausdrücken.
 
 ## Gültige Datumsbereiche
 
@@ -176,29 +176,29 @@ In der folgenden Liste werden die gültigen Datumsbereichsformate beschrieben.
 
 - Das Start- und das Enddatum müssen im folgenden Format angegeben werden: YYYY-MM-DD
 
-- Das Startdatum muss vor dem Enddatum liegen oder damit übereinstimmen. Beide Daten können auf die Zukunft eingestellt werden.
+- Das Startdatum muss vor dem Enddatum liegen oder damit übereinstimmen. Bei beiden Daten kann es sich um Daten in der Zukunft handeln.
 
-- Bei Verwendung rollierender Datumswerte muss das Startdatum heute oder in der Vergangenheit liegen. Sie muss in der Vergangenheit liegen, wenn die Option **Heute ausschließen** aktiviert ist.
+- Bei Verwendung rollierender Datumswerte muss das Startdatum heute oder in der Vergangenheit liegen. Wenn **Heute ausschließen** aktiviert ist, muss es sich um ein Datum in der Vergangenheit handeln.
 
-- Sie können einen statischen Datumsbereich für die Zukunft erstellen. Beispielsweise müssen Sie möglicherweise ein künftiges Datum für den Start einer Marketing-Kampagne in der nächsten Woche festlegen. Mit dieser Option wird eine Arbeitsmappen-Überwachung für eine Kampagne im Voraus erstellt.
+- Sie können einen statischen Datumsbereich für die Zukunft erstellen. Beispielsweise müssen Sie möglicherweise ein künftiges Datum für den Start einer Marketing-Kampagne in der nächsten Woche festlegen. Mit dieser Option wird ein Arbeitsmappen-Monitoring für eine Kampagne im Voraus erstellt.
 
 ## Datumsbereich ändern
 
-Sie können den Datumsbereich eines vorhandenen Datenblocks bearbeiten, indem Sie im Bedienfeld BEFEHLE die Option Datenblock bearbeiten auswählen oder indem Sie im Bedienfeld SCHNELLE BEARBEITUNG den Link Datumsbereich auswählen.
+Sie können den Datumsbereich eines vorhandenen Datenblocks bearbeiten, indem Sie im Bedienfeld „Befehle“ die Option „Datenblock bearbeiten“ auswählen oder indem Sie im Bedienfeld „Schnellbearbeitung“ den Datumsbereichs-Link auswählen.
 
-**Datenblock bearbeiten**  - Ermöglicht die Bearbeitung mehrerer Datenblock-Parameter (einschließlich Datumsbereich) für einen einzelnen Datenblock.
+**Datenblock bearbeiten** – Ermöglicht die Bearbeitung mehrerer Datenblock-Parameter, einschließlich Datumsbereich, für einen einzelnen Datenblock.
 
-**Schnellbearbeitung: Datumsbereich**  - Ermöglicht die Bearbeitung des Datumsbereichs eines oder mehrerer Datenblöcke.
+**Schnellbearbeitung: Datumsbereich** – Ermöglicht die Bearbeitung des Datumsbereichs eines oder mehrerer Datenblöcke.
 
-So bearbeiten Sie den Datumsbereich im Bedienfeld &quot;SCHNELLE BEARBEITUNG&quot;
+So bearbeiten Sie den Datumsbereich im Bedienfeld „Schnellbearbeitung“
 
 1. Wählen Sie Zellen in einem oder mehreren Datenblöcken in einem Arbeitsblatt aus.
 
-1. Klicken Sie auf den Link **Datumsbereich** im Bedienfeld SCHNELLANBEARBEITUNG .
+1. Klicken Sie auf den Link **Datumsbereich** im Bedienfeld „Schnellbearbeitung“.
 
 1. Wählen Sie den Datumsbereich mit einer der Datumsauswahloptionen aus.
 
-1. Klicken Sie auf **Übernehmen**.
+1. Klicken Sie auf **Anwenden**.
 
 
 Report Builder wendet den neuen Datumsbereich auf alle Datenblöcke in der Auswahl an.
