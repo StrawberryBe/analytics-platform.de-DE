@@ -3,9 +3,9 @@ title: Referenz – Erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: d6902af2d5e8a706e6b572c3daca2f60661dbbe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2944'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ So könnte die „Ungefähre Kunden“-Metrik für Berichte verwendet werden:
 
 ## Individuelle Werte überschritten
 
-Ebenso wie Count() und RowCount() unterliegt Ungefährer Distinct Count() [„Uniques überschritten“-Beschränkungen](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en). Wird für eine Dimension in einem bestimmten Monat die „Uniques überschritten“-Beschränkung erreicht, wird der Wert als 1 Dimensionselement gezählt.
+Ebenso wie Count() und RowCount() unterliegt Ungefährer Distinct Count() [„Uniques überschritten“-Beschränkungen](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=de). Wird für eine Dimension in einem bestimmten Monat die „Uniques überschritten“-Beschränkung erreicht, wird der Wert als 1 Dimensionselement gezählt.
 
 ## Vergleich von Count-Funktionen
 
@@ -102,7 +102,7 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkustangens (Zeile)
 
@@ -114,7 +114,7 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Exponentielle Regression: Vorhersage für Y (Zeile)
 
@@ -163,7 +163,7 @@ CEILING(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Kosinus (Zeile)
 
@@ -175,7 +175,7 @@ COS(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
 
 ## Kubikwurzel
 
@@ -187,7 +187,7 @@ CBRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
+| *metric* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
 
 ## Kumulativ
 
@@ -270,7 +270,7 @@ FLOOR(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Größer als
 
@@ -290,7 +290,7 @@ COSH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
 
 ## Hyperbelsinus (Zeile)
 
@@ -302,7 +302,7 @@ SINH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
 
 ## Hyperbeltangens (Zeile)
 
@@ -314,7 +314,7 @@ TANH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
 
 ## WENN (Zeile)
 
@@ -364,7 +364,7 @@ LOG10(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
+| *metric* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
 
 ## Logistische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -430,7 +430,7 @@ LN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
+| *metric* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
 
 ## NICHT
 
@@ -518,7 +518,7 @@ Berechnet die prognostizierten [!DNL y]-Werte ([!DNL metric_Y]) anhand der bekan
 
 ## Potenzregression: Steigung (Tabelle)
 
-Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = b*X]a zurück.
+Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = b*X] a zurück.
 
 ```
 SLOPE.POWER(metric_X, metric_Y)
@@ -557,7 +557,7 @@ INTERCEPT.POWER(metric_X, metric_Y)
 
 ## Quadratische Regression: Vorhersage für Y (Zeile)
 
-Berechnet die prognostizierten [!DNL y]-Werte (metric_Y) anhand der bekannten [!DNL x]-Werte (metric_X) mittels der Methode der kleinsten Quadrate für die Berechnung der Ausgleichsgeraden mit [!DNL Y=(a*X+b)]**** .
+Berechnet die prognostizierten [!DNL y]-Werte (metric_Y) anhand der bekannten [!DNL x]-Werte (metric_X) mittels der Methode der kleinsten Quadrate für die Berechnung der Ausgleichsgeraden mit [!DNL Y=(a*X+b)]****.
 
 ```
 ESTIMATE.QUADRATIC(metric_A, metric_B)
@@ -622,7 +622,7 @@ ESTIMATE.RECIPROCAL(metric_X, metric_Y)
 
 ## Reziproke Regression: Steigung (Tabelle)
 
-Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = a/X+b]a zurück.
+Gibt die Steigung *a* zwischen zwei Metrikspalten (*metric_X* und *metric_Y*) für [!DNL Y = a/X+b] a zurück.
 
 ```
 SLOPE.RECIPROCAL(metric_X, metric_Y)
@@ -643,7 +643,7 @@ SIN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
 
 ## t-Transformation
 
@@ -685,7 +685,7 @@ TAN (metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
 
 ## z-Transformation (Zeile)
 
@@ -699,7 +699,7 @@ wobei [!DNL x] der Rohwert, [!DNL μ] das arithmetische Mittel der Population un
 
 >[!NOTE]
 >
->[!DNL μ] (Mu) und[!DNL σ] (Sigma) werden automatisch aus der Metrik berechnet.
+>[!DNL μ] (Mu) und [!DNL σ] (Sigma) werden automatisch aus der Metrik berechnet.
 
 z-Transformation (Metrik)
 
@@ -712,7 +712,7 @@ z-Transformation (Metrik)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>Metrik</i> </td>
+   <td colname="col1"> <i>metric</i> </td>
    <td colname="col2"> <p> Gibt den Wert des ersten Arguments ungleich null zurück. </p> </td>
   </tr>
  </tbody>
