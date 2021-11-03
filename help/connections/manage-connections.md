@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -58,7 +58,7 @@ Nur Administratoren haben die Berechtigung, eine Verbindung zu löschen. Diese A
 Wenn Sie eine Verbindung in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die auf Folgendes hinweist:
 
 * Datenansichten, die basierend auf der gelöschten Verbindung erstellt wurden, funktionieren nicht mehr.
-* Ebenso funktionieren alle Workspace-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.
+* Ebenso funktionieren alle Arbeitsbereich-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.
 
 [Weitere Informationen](/help/getting-started/cja-deletion.md) zu den Auswirkungen von Löschungen.
 
@@ -138,9 +138,9 @@ Ermöglicht es Administratoren, die Verbindung zu bearbeiten. Wählen Sie eine V
 * Aktualisieren Sie die Datensätze.
 * Entfernen Sie Datensätze aus den Verbindungen.
 
-## Festlegen eines rollierenden Fensters für [!UICONTROL Verbindung] Datenaufbewahrung
+## Festlegen eines rollierenden Fensters für [!UICONTROL Verbindungs] daten-Aufbewahrung
 
 >[!IMPORTANT]
->Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer für Adoben, um diese Einstellung implementieren zu lassen. Sie ist noch nicht über die Benutzeroberfläche von CJA verfügbar.
+>Wenden Sie sich an die Kundenunterstützung oder Ihren Adobe Account Manager, um diese Einstellung implementieren zu lassen. Sie ist noch nicht über die UI von CJA verfügbar.
 
-Mit dieser Einstellung können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (3 Monate, 6 Monate usw.) definieren, und zwar in einer [!UICONTROL connection] Ebene (nicht auf [!UICONTROL Datensatz] Ebene). Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenaufbewahrungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind. Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
+Mit dieser Einstellung können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (3 Monate, 6 Monate usw.) definieren, und zwar auf [!UICONTROL Verbindungs]-Ebene (nicht auf [!UICONTROL Datensatz]-Ebene). Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenaufbewahrungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind. Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.

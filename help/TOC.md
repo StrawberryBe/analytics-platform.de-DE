@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
 workflow-type: tm+mt
 source-wordcount: '560'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 93%
       + [Wert-Bucketing](data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](data-views/component-reference.md)
    + [Anwendungsfälle von Datenansichten](data-views/data-views-usecases.md)
-+ Workspace-Projekte {#cja-workspace}
++ Arbeitsbereich-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](analysis-workspace/perform-basic-analysis.md)
    + [Erweiterte Analyse durchführen](analysis-workspace/perform-adv-analysis.md)
@@ -71,7 +71,7 @@ ht-degree: 93%
             + [Zeileneinstellungen](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamische im Vergleich zu statischen Elementen](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Paginierung, Filtern und Sortieren von Tabellen](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [Workspace-Summen](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Arbeitsbereich-Summen](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortentabelle {#cohort-table}
          + [Was ist eine Kohortenanalyse?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren eines Kohortenanalyseberichts](analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -125,7 +125,7 @@ ht-degree: 93%
          + [Anomalien in Analysis Workspace anzeigen](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [In der Anomalieerkennung verwendete statistische Verfahren](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Benutzerpräferenzen](analysis-workspace/user-preferences.md)
-   + Häufig gestellte Fragen zu Workspace {#workspace-faq}
+   + Häufig gestellte Fragen zu Arbeitsbereich {#workspace-faq}
       + [Häufig gestellte Fragen](analysis-workspace/workspace-faq/faq.md)
       + [Optimieren der Analysis Workspace-Leistung](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Fehlermeldungen](analysis-workspace/workspace-faq/error-messages.md)
@@ -135,8 +135,8 @@ ht-degree: 93%
       + [Long Tail in Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
    + [Übersicht über Report Builder](report-builder/report-buider-overview.md)
-   + [Einrichten von Report Buildern](report-builder/report-builder-setup.md)
-   + [Erstellen eines Datenblocks](report-builder/create-a-data-block.md)
+   + [Einrichten von Report Builder](report-builder/report-builder-setup.md)
+   + [Datenblock erstellen](report-builder/create-a-data-block.md)
    + [Report Builder-Hub](report-builder/report-builder-hub.md)
    + [Datumsbereich auswählen](report-builder/select-date-range.md)
    + [Arbeiten mit Filtern](report-builder/work-with-filters.md)
