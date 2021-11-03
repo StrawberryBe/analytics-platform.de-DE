@@ -6,43 +6,43 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Erstellen eines Datenblocks
+# Datenblock erstellen
 
-Ein *Datenblock* ist die Datentabelle, die von einer einzelnen Datenanforderung erstellt wird. Eine Report Builder-Arbeitsmappe kann mehrere Datenblöcke enthalten. Konfigurieren Sie bei der Erstellung eines Datenblocks zunächst den Datenblock und dann den Datenblock.
+Ein *Datenblock* ist die Datentabelle, die von einer einzelnen Datenanforderung erstellt wird. Eine Report Builder-Arbeitsmappe kann mehrere Datenblöcke enthalten. Wenn Sie einen Datenblock erstellen, konfigurieren Sie ihn zunächst und erstellen Sie dann den Build.
 
 ## Datenblock konfigurieren
 
-Konfigurieren Sie die anfänglichen Datenblockparameter für die Position der Datenblöcke, die Datenansichten und einen Datumsbereich.
+Konfigurieren Sie die anfänglichen Datenblockparameter für die Position des Datenblocks, die Datenansichten und einen Datumsbereich.
 
-1. Klicken Sie auf **Datenblock erstellen**.
+1. Klicken Sie auf **Datenblock erstellen**.
 
    ![](./assets/create_db.png)
 
-1. Legen Sie den Speicherort **Datenblock** fest.
+1. Legen Sie den **Speicherort des Datenblocks** fest.
 
-   Die Option &quot;Datenblock-Speicherort&quot;definiert den Speicherort des Arbeitsblatts, an dem ReportBuilder die Daten zu Ihrem Arbeitsblatt hinzufügt.
+   Die Option „Datenblock-Speicherort“ definiert den Speicherort des Arbeitsblatts, an dem Report Builder die Daten zu Ihrem Arbeitsblatt hinzufügt.
 
-   Um den Speicherort des Datenblocks anzugeben, wählen Sie eine einzelne Zelle im Arbeitsblatt aus oder geben Sie eine Zellenadresse ein, z. B. a3, \\\$a3, a\\$3 oder sheet1!a2. Die angegebene Zelle ist die obere linke Ecke des Datenblocks, wenn die Daten abgerufen werden.
+   Um den Speicherort des Datenblocks anzugeben, wählen Sie eine einzelne Zelle im Arbeitsblatt aus oder geben Sie eine Zellenadresse ein, z. B. a3, \\\$a3, a\\\$3 oder sheet1!a2. Die angegebene Zelle ist die obere linke Ecke des Datenblocks, wenn die Daten abgerufen werden.
 
-1. Wählen Sie **Datenansichten** aus.
+1. Wählen Sie die **Datenansichten** aus.
 
-   Mit der Option Datenansichten können Sie eine Datenansicht aus einem Dropdown-Menü auswählen oder auf eine Datenansicht aus einer Zellenposition verweisen.
+   Mit der Option „Datenansichten“ können Sie eine Datenansicht aus einem Dropdown-Menü auswählen oder auf eine Datenansicht aus einer Zellenposition verweisen.
 
 1. Legen Sie den **Datumsbereich** fest.
 
-   Mit der Option Datumsbereich können Sie einen Datumsbereich auswählen. Datumsbereiche können fest oder rollierend sein. Weitere Informationen zu den Datumsbereichsoptionen finden Sie unter [Einen Datumsbereich auswählen](select-date-range.md).
+   Mit der Option „Datumsbereich“ können Sie einen Datumsbereich auswählen. Datumsbereiche können fest oder rollierend sein. Weitere Informationen zu den Datumsbereichsoptionen finden Sie unter [Einen Datumsbereich auswählen](select-date-range.md).
 
-1. Klicken Sie auf **Next**.
+1. Klicken Sie auf **Weiter**.
 
    ![](./assets/choose_date_data_view3.png)
 
-   Nach der Konfiguration des Datenblocks können Sie Dimensionen, Metriken und Filter auswählen, um Ihren Datenblock zu erstellen. Die Registerkarten &quot;Dimensionen&quot;, &quot;Metriken&quot;und &quot;Filter&quot;werden über dem Bereich &quot;Tabellenaufbau&quot;angezeigt.
+   Nach der Konfiguration des Datenblocks können Sie Dimensionen, Metriken und Filter auswählen, um Ihren Datenblock zu erstellen. Die Registerkarten „Dimensionen“, „Metriken“ und „Filter“ werden über dem Bereich „Tabellen-Builder“ angezeigt.
 <!--
     ![](./assets/image9.png)
   -->
@@ -54,23 +54,23 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
 1. Fügen Sie Dimensionen, Metriken und Filter hinzu.
 
-   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld **search** , um Komponenten zu finden. Ziehen Sie Komponenten per Drag-and-Drop in den Tabellenbereich oder doppelklicken Sie auf einen Komponentennamen in der Liste, um die Komponente automatisch zum Tabellenbereich hinzuzufügen.
+   Scrollen Sie in den Komponentenlisten oder verwenden Sie das Feld **Suchen**, um Komponenten zu finden. Ziehen Sie Komponenten per Drag &amp; Drop in den Tabellenbereich oder doppelklicken Sie auf einen Komponentennamen in der Liste, um die Komponente automatisch zum Tabellenbereich hinzuzufügen.
 
    Doppelklicken Sie auf eine Komponente, um sie einem Standardabschnitt der Tabelle hinzuzufügen.
 
-   - Dimension-Komponenten werden zum Bereich Zeile oder zum Bereich Spalte hinzugefügt, wenn Sie bereits eine Dimension in den Spalten haben.
-   - Datumskomponenten werden dem Abschnitt Spalte hinzugefügt.
-   - Filterkomponenten werden dem Abschnitt Filter hinzugefügt.
+   - Dimensionskomponenten werden zum Bereich „Zeile“ oder zum Bereich „Spalte“ hinzugefügt, wenn bereits eine Dimension in den Spalten vorhanden ist.
+   - Datumskomponenten werden dem Abschnitt „Spalte“ hinzugefügt.
+   - Filterkomponenten werden dem Abschnitt „Filter“ hinzugefügt.
 
 1. Ordnen Sie die Elemente im Tabellenbereich an, um das Layout Ihres Datenblocks anzupassen.
 
-   Ziehen Sie Komponenten per Drag-and-Drop in den Tabellenbereich, um Komponenten neu anzuordnen, oder klicken Sie mit der rechten Maustaste auf einen Komponentennamen und wählen Sie im Optionsmenü die Option aus.
+   Ziehen Sie Komponenten per Drag &amp; Drop in den Tabellenbereich, um sie neu anzuordnen, oder klicken Sie mit der rechten Maustaste auf einen Komponentennamen und wählen Sie im Optionsmenü die Option aus.
 
-   Wenn Sie Komponenten zur Tabelle hinzufügen, wird eine Vorschau des Datenblocks an der Stelle des Datenblocks im Arbeitsblatt angezeigt. Das Layout der Datenblock-Vorschau wird automatisch aktualisiert, wenn Sie Elemente in der Tabelle hinzufügen, verschieben oder entfernen.
+   Wenn Sie Komponenten zur Tabelle hinzufügen, wird eine Vorschau des Datenblocks an der Stelle des Datenblocks im Arbeitsblatt angezeigt. Das Layout der Datenblock-Vorschau wird automatisch aktualisiert, wenn Sie in der Tabelle Elemente hinzufügen, verschieben oder entfernen.
 
    ![](./assets/image10.png)
 
-1. Klicken Sie auf **Finish**.
+1. Klicken Sie auf **Beenden**.
 
    Eine Verarbeitungsmeldung wird angezeigt, während die Analysedaten abgerufen werden.
 
