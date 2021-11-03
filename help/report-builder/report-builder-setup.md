@@ -1,20 +1,20 @@
 ---
 title: Einrichten von Report Builder in Customer Journey Analytics
-description: Beschreibt das Einrichten von Report Builder in CJA
+description: Beschreibt das Einrichten von Report Builder in Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: e76f6cbb8ecf2032a8211d1c6bd18a79c2a6f5d2
-workflow-type: tm+mt
+exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
+source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# Einrichten von Report Builder
 
-# Einrichten von Report Buildern
-
-Über das Excel-Add-in-Menü können Sie schnell auf den Report Builder zugreifen.
+Über das Excel-Add-in-Menü können Sie schnell auf Report Builder zugreifen.
 
 ## Voraussetzungen
 
@@ -27,65 +27,65 @@ Report Builder für Customer Journey Analytics wird von den folgenden Betriebssy
 
 ### Windows
 
-- Windows 10, Version 1904 oder höher
+- Windows 10 Version 1904 oder höher
 - Excel-Version 2106 oder höher
 
-   Alle Windows Desktop Excel-Benutzer müssen Microsoft Edge Webview2 installieren, um das Add-In verwenden zu können. So installieren Sie den Controller:
+   Alle Windows-Desktop-Excel-Benutzer müssen Microsoft Edge Webview2 installieren, um das Add-in verwenden zu können. So installieren Sie den Controller:
 
    1. Öffnen von <http://aka.ms/webview2installer>.
    1. Wählen Sie das Evergreen Standalone-Installationsprogramm aus und laden Sie es herunter.
-   1. Befolgen Sie die Installationsanweisungen.
+   1. Folgen Sie den Anweisungen bei der Installation.
 
-### Webbüro
+### Web Office
 
 - Unterstützt alle Browser und Versionen
 
 
 ## Report Builder Excel-Add-in
 
-Sie müssen das Excel-Add-in für Report Builder installieren, um Report Builder für Customer Journey Analytics verwenden zu können. Nachdem Sie das Excel-Add-in für Report Builder installiert haben, können Sie über eine geöffnete Excel-Arbeitsmappe auf den Report Builder zugreifen.
+Sie müssen das Excel-Add-in für Report Builder installieren, um Report Builder für Customer Journey Analytics verwenden zu können. Nachdem Sie das Excel-Add-in für Report Builder installiert haben, können Sie über eine geöffnete Excel-Arbeitsmappe auf Report Builder zugreifen.
 
-### Herunterladen und Installieren des Report Builder-Add-Ins
+### Herunterladen und Installieren des Report Builder-Add-ins
 
 So laden Sie das Report Builder-Add-in herunter und installieren es
 
 1. Starten Sie Excel und öffnen Sie eine neue Arbeitsmappe.
 
-1. Wählen Sie &quot;Einfügen&quot;> &quot;Add-Ins abrufen&quot;.
+1. Wählen Sie „Einfügen“ > „Add-ins abrufen“ aus.
 
-1. Wählen Sie im Dialogfeld Office-Add-Ins die Registerkarte Store aus.
+1. Wählen Sie im Dialogfeld „Office-Add-ins“ die Registerkarte „Store“ aus.
 
-1. Suchen Sie nach &quot;Report Builder&quot;und klicken Sie auf &quot;Hinzufügen&quot;.
+1. Suchen Sie nach „Report Builder“ und klicken Sie auf „Hinzufügen“.
 
-1. Klicken Sie im Dialogfeld Lizenzbedingungen und Datenschutzrichtlinien auf Weiter .
+1. Klicken Sie im Dialogfeld „Lizenzbedingungen“ und „Datenschutzrichtlinien“ auf „Weiter“.
 
-**Wenn die Registerkarte Store nicht angezeigt wird**
+**Wenn die Registerkarte „Store“ nicht angezeigt wird**
 
-1. Wählen Sie in Excel &quot;Datei&quot;> &quot;Konto&quot;> &quot;Einstellungen verwalten&quot;.
+1. Wählen Sie in Excel „Datei“ > „Konto“ > „Einstellungen verwalten“ aus.
 
-1. Aktivieren Sie das Kontrollkästchen neben &quot;Optionale verbundene Erlebnisse aktivieren&quot;.
+1. Aktivieren Sie das Kontrollkästchen neben „Optionale verbundene Erlebnisse aktivieren“
 
 1. Starten Sie Excel neu.
 
-**Wenn Ihr Unternehmen den Zugriff auf den Microsoft Store blockiert**
+**Wenn Ihre Organisation den Zugriff auf den Microsoft Store blockiert**
 
-Wenden Sie sich an Ihre IT- oder Sicherheitsabteilung, um eine Genehmigung für das Report Builder-Add-in anzufordern. Nachdem die Genehmigung erteilt wurde, wählen Sie im Dialogfeld Office-Add-Ins die Registerkarte Admin Managed aus.
+Wenden Sie sich an Ihre IT- oder Sicherheitsabteilung, um eine Genehmigung für das Report Builder-Add-in anzufordern. Nachdem die Genehmigung erteilt wurde, wählen Sie im Dialogfeld „Office-Add-Ins“ die Registerkarte „Admin Managed“ aus.
 
 ![](./assets/image1.png)
 
-Nach der Installation des Report Builder-Add-ins wird das Report Builder-Symbol im Excel-Band auf der Registerkarte Startseite angezeigt.
+Nach der Installation des Report Builder-Add-ins wird das Report Builder-Symbol im Excel-Band auf der Registerkarte „Start“ angezeigt.
 
 ![](./assets/rb_app_icon.png)
 
 ## Bei Report Builder anmelden
 
-Nachdem Sie das Report Builder for Excel-Add-in für Ihre Betriebssystem oder Ihren Browser installiert haben, führen Sie die folgenden Schritte aus, um sich bei Report Builder anzumelden.
+Nachdem Sie das Report Builder for Excel-Add-in für Ihr Betriebssystem oder Ihren Browser installiert haben, führen Sie die folgenden Schritte aus, um sich bei Report Builder anzumelden.
 
 1. Öffnen Sie eine Excel-Arbeitsmappe.
 
-1. Klicken Sie auf das Symbol Report Builder , um den Report Builder zu starten.
+1. Klicken Sie auf das Report Builder-Symbol, um Report Builder zu starten.
 
-1. Klicken Sie in der Adobe Report Builder-Symbolleiste auf **Anmelden**.
+1. Klicken Sie in der Adobe Report Builder-Symbolleiste auf **Anmelden**.
 
    ![](./assets/rb_login.png)
 
@@ -107,7 +107,7 @@ Bei der ersten Anmeldung werden Sie bei der Ihrem Profil zugewiesenen Standardor
 
 ## Abmelden
 
-Sie können sich vom Report Builder über das Benutzerprofil abmelden.
+Sie können sich über das Benutzerprofil von Report Builder abmelden.
 
 1. Speichern Sie die Änderungen in allen geöffneten Arbeitsmappen.
 
