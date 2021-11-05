@@ -3,10 +3,10 @@ title: Verbindungen verwalten
 description: Beschreibt, wie Verbindungen zu Experience Platform-Datensätzen in Customer Journey Analytics (CJA) verwaltet werden.
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
+source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 96%
+source-wordcount: '1701'
+ht-degree: 92%
 
 ---
 
@@ -114,19 +114,19 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | [!UICONTROL Datenaufrufe, die Verbindungen verwenden] | Listet alle Datenansichten auf, die diese Verbindung verwenden. |
 | [!UICONTROL Neue Daten importieren] | (Ein/Aus) Gibt an, ob den historischen Daten (Aufstockung) neue Datenstapel hinzugefügt werden sollen oder nicht. |
 | [!UICONTROL Aufstockungsdaten] | Aufstockungsdaten (historische Daten) werden in drei Status verfolgt: [!UICONTROL In der Warteschlange], [!UICONTROL In Bearbeitung] (mit angegebenem Fortschrittsprozentsatz) und [!UICONTROL Abgeschlossen]. |
-| [!UICONTROL Erstellt von] | Name der Person, die die Verbindung erstellt. |
-| [!UICONTROL Zuletzt geändert] | Datum und Uhrzeit der letzten Änderung der Verbindung. |
-| [!UICONTROL Zuletzt geändert von] | Person, die die Verbindung zuletzt geändert hat. |
+| [!UICONTROL Erstellt von] | Zeigt den Namen der Person an, die die Verbindung erstellt hat. |
+| [!UICONTROL Zuletzt geändert] | Zeigt das Datum und die Uhrzeit der letzten Änderung der Verbindung an. |
+| [!UICONTROL Zuletzt geändert von] | Zeigt die Person an, die die Verbindung zuletzt geändert hat. |
 | **Rechte Leiste auf Datensatzebene** |  |
 | [!UICONTROL Personen-ID] | Zeigt eine Identität an, die im Datensatzschema in Experience Platform definiert wurde. Das ist die Personen-ID, die Sie bei der Erstellung der Verbindung ausgewählt haben. Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies beim Reporting berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID für Datensätze verwenden. |
 | [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-daten-in-customer-journey-analytics-einbringen) vorhanden. |
-| [!UICONTROL Hinzugefügte Datensätze] | Wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. **Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Gelöschte Datensätze] | Anzahl der im ausgewählten Zeitraum gelöschten Datensätze. **Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Batches hinzugefügt] | Wie viele Datenstapel diesem Datensatz hinzugefügt wurden. |
-| [!UICONTROL Übersprungene Datensätze] | Wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden. **Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| [!UICONTROL Zuletzt hinzugefügt] | Der Zeitpunkt, zu dem der letzte Stapel hinzugefügt wurde. |
+| [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. **Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Datensätze im ausgewählten Zeitraum gelöscht wurden. **Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Batches hinzugefügt] | Gibt an, wie viele Daten-Batches zu diesem Datensatz hinzugefügt wurden. |
+| [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden. **Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Zuletzt hinzugefügt] | Gibt an, wann der letzte Batch hinzugefügt wurde. |
 | [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
-| [!UICONTROL Schema] | Das Adobe Experience Platform-Schema, auf dem dieser Datensatz basiert. |
+| [!UICONTROL Schema] | Zeigt das Adobe Experience Platform-Schema an, auf dem dieser Datensatz basiert. |
 | [!UICONTROL Datensatz-ID] | Diese ID wird in Adobe Experience Platform vom System generiert. |
 
 ### Verbindung bearbeiten

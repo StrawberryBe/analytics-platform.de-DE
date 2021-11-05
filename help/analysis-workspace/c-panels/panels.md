@@ -2,10 +2,10 @@
 description: Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 94b086c9eb0b148ebb176a37205030b862ac2678
+source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 60%
+source-wordcount: '851'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen.
 
 ## Bedienfeldtypen
 
-Die folgenden Bedienfeldtypen sind in Analysis Workspace verfügbar:
+Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Customer Journey Analytics]:
 
 | Name des Bedienfelds | Beschreibung |
 | --- | --- |
@@ -38,7 +38,7 @@ Hinweis: Wenn eine (violette) Datumsbereichskomponente in einer Tabelle, Visuali
 
 ![](assets/panel-calendar.png)
 
-Sie können einen Datumsbereich auf Minutenebene unter den erweiterten Einstellungen Ihres Bedienfeldkalenders anwenden. Wenn Sie Berichte zu einem Datumsbereich erstellen, der viele Tage umfasst, gilt die Startzeit für den ersten Tag und die Endzeit für den letzten Tag in Ihrem Bereich.
+Sie können einen Datumsbereich auf Minutenebene unter den erweiterten Einstellungen Ihres Bedienfeldkalenders anwenden. Wenn Sie Berichte zu einem Datumsbereich erstellen, der mehrere Tage umfasst, ist der Startzeitpunkt der erste Tag und der Endzeitpunkt der letzte Tag in Ihrem Bereich.
 
 ## Ablagebereich {#dropzone}
 
