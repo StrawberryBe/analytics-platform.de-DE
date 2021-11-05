@@ -3,10 +3,10 @@ title: Verbindungen verwalten
 description: Beschreibt, wie Verbindungen zu Experience Platform-Datensätzen in Customer Journey Analytics (CJA) verwaltet werden.
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
+source-git-commit: 236bba2e3ff851f6e7097c4c41a04f1b6221efa0
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 92%
+source-wordcount: '1787'
+ht-degree: 87%
 
 ---
 
@@ -94,7 +94,7 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | Widget [!UICONTROL Datensätze von Ereignisdaten verfügbar] | Stellt die Gesamtzahl der für das Reporting verfügbaren Ereignis-Datensätze **für die gesamte Verbindung** dar. Diese Anzahl ist unabhängig von Kalendereinstellungen. Sie ändert sich, wenn Sie einen Datensatz aus der Datensatzauswahl auswählen, oder durch die Auswahl eines Datensatzes in der Tabelle. (Beachten Sie, dass es eine Latenz von 1–2 Stunden gibt, bis die Daten nach dem Hinzufügen in Berichten angezeigt werden.) |
 | Widget [!UICONTROL Metriken] | Fasst die hinzugefügten/übersprungenen/gelöschten Ereignis-Datensätze sowie die Anzahl der hinzugefügten Stapel **für den ausgewählten Datensatz und den ausgewählten Datumsbereich** zusammen. |
 | Widget [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** hinzugefügt wurden. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| Widget [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: fehlende Zeitstempel, fehlende Personen-ID usw. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| Widget [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: Fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten.<p>Ungültige Personen-IDs (nicht definiert, alle Nullen) können keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehleranfälligen Aufnahme- und Berichtsprozessen. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwenden Sie die Zuordnung, um die nicht definierten oder Benutzer-IDs ohne gültige Benutzer-IDs zu füllen.</li> | <li>Leeren Sie die Benutzer-ID aus, die auch bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs oder Benutzer-IDs ohne Inhalt).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten erfassen.</li></ul> |
 | Widget [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** gelöscht wurden. Beispielsweise könnte jemand einen Datensatz in Experience Platform gelöscht haben. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
 | Datensatz-Suchfeld | Sie können nach Datensatznamen oder [!UICONTROL Datensatz-ID] suchen. |
 | [!UICONTROL Datensätze] | Zeigt die Datensätze an, die Teil der Verbindung sind. Sie können auf den Hyperlink klicken, um alle Datensätze in der Verbindung anzuzeigen. |
