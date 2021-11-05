@@ -3,10 +3,10 @@ title: Verbindungen verwalten
 description: Beschreibt, wie Verbindungen zu Experience Platform-Datensätzen in Customer Journey Analytics (CJA) verwaltet werden.
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
+source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 83%
+source-wordcount: '1942'
+ht-degree: 80%
 
 ---
 
@@ -33,6 +33,8 @@ Der Verbindungs-Manager ermöglicht Ihnen Folgendes:
 * Eine Datenschicht aus einer Verbindung erstellen.
 
 ![](assets/conn-manager.png)
+
+### Verbindungs-Manager-Einstellungen
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -87,6 +89,8 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 
 ![](assets/conn-details.png)
 
+### Verbindungsdetails-Einstellungen
+
 | Widget/Einstellung | Beschreibung |
 | --- | --- |
 | Datensatz-Auswahl | Ermöglicht die Auswahl eines Datensatzes oder aller Datensätze in der Verbindung. Datensätze können nicht mehrmals ausgewählt werden. Die Standardeinstellung ist [!UICONTROL Alle Datensätze]. |
@@ -94,7 +98,7 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | Widget [!UICONTROL Datensätze von Ereignisdaten verfügbar] | Stellt die Gesamtzahl der für das Reporting verfügbaren Ereignis-Datensätze **für die gesamte Verbindung** dar. Diese Anzahl ist unabhängig von Kalendereinstellungen. Sie ändert sich, wenn Sie einen Datensatz aus der Datensatzauswahl auswählen, oder durch die Auswahl eines Datensatzes in der Tabelle. (Beachten Sie, dass es eine Latenz von 1–2 Stunden gibt, bis die Daten nach dem Hinzufügen in Berichten angezeigt werden.) |
 | Widget [!UICONTROL Metriken] | Fasst die hinzugefügten/übersprungenen/gelöschten Ereignis-Datensätze sowie die Anzahl der hinzugefügten Stapel **für den ausgewählten Datensatz und den ausgewählten Datumsbereich** zusammen. |
 | Widget [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** hinzugefügt wurden. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
-| Widget [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: Fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (nicht definiert, alle Nullen) können keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehleranfälligen Aufnahme- und Berichtsprozessen. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwenden Sie die Zuordnung, um die nicht definierten oder Benutzer-IDs ohne gültige Benutzer-IDs zu füllen.</li><li>Leeren Sie die Benutzer-ID aus, die auch bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs oder Benutzer-IDs ohne Inhalt).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten erfassen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| Widget [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** übersprungen wurden. Gründe für das Überspringen von Datensätzen sind: Fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. &quot;undefiniert&quot;oder &quot;0000000&quot;oder eine beliebige Kombination von Zahlen und Buchstaben in einer [!UICONTROL Personen-ID] die in einem Ereignis auftreten, das mehr als eine Million Mal in einem bestimmten Monat auftritt), können keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehleranfälliger Erfassung und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwendung [Kanalübergreifende Analyse](/help/connections/cca/overview.md) , um die nicht definierten Benutzer-IDs oder Benutzer-IDs mit allen Identitäten mit gültigen Benutzer-IDs zu füllen.</li><li>Leeren Sie die Benutzer-ID aus, die auch bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs oder Benutzer-IDs ohne Inhalt).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten erfassen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
 | Widget [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum **für den ausgewählten Datensatz und Datumsbereich** gelöscht wurden. Beispielsweise könnte jemand einen Datensatz in Experience Platform gelöscht haben. Wird alle zehn Minuten aktualisiert. **Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
 | Datensatz-Suchfeld | Sie können nach Datensatznamen oder [!UICONTROL Datensatz-ID] suchen. |
 | [!UICONTROL Datensätze] | Zeigt die Datensätze an, die Teil der Verbindung sind. Sie können auf den Hyperlink klicken, um alle Datensätze in der Verbindung anzuzeigen. |
@@ -103,7 +107,11 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | [!UICONTROL Zuletzt hinzugefügt] | Zeigt den Zeitstempel für den zuletzt zu diesem Datensatz hinzugefügten Stapel an. |
 | [!UICONTROL Typ des Datensatzes] | Der Datensatztyp für diesen Datensatz kann [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil] sein. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#configure-dataset) |
 | Schema | Das Adobe Experience Platform-Schema, auf dem die Datensätze in dieser Verbindung basieren. |
-| **Rechte Leiste auf Verbindungsebene** |  |
+
+### Einstellungen für die rechte Leiste auf Verbindungsebene
+
+| Einstellung | Beschreibung |
+| --- | --- |
 | [!UICONTROL Aktualisieren] | Aktualisieren Sie die Verbindung, damit kürzlich hinzugefügte Datensätze angezeigt werden. |
 | [!UICONTROL Löschen] | Löschen Sie diese Verbindung. |
 | [!UICONTROL Datenansicht erstellen] | Erstellen Sie eine neue Datenansicht auf Grundlage dieser Verbindung. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
@@ -117,13 +125,17 @@ Im Folgenden werden Widgets und Einstellungen erläutert:
 | [!UICONTROL Erstellt von] | Zeigt den Namen der Person an, die die Verbindung erstellt hat. |
 | [!UICONTROL Zuletzt geändert] | Zeigt das Datum und die Uhrzeit der letzten Änderung der Verbindung an. |
 | [!UICONTROL Zuletzt geändert von] | Zeigt die Person an, die die Verbindung zuletzt geändert hat. |
-| **Rechte Leiste auf Datensatzebene** |  |
+
+### Einstellungen für die rechte Leiste auf Datensatzebene
+
+| Einstellung | Beschreibung |
+| --- | --- |
 | [!UICONTROL Personen-ID] | Zeigt eine Identität an, die im Datensatzschema in Experience Platform definiert wurde. Das ist die Personen-ID, die Sie bei der Erstellung der Verbindung ausgewählt haben. Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, wird dies beim Reporting berücksichtigt. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID für Datensätze verwenden. |
 | [!UICONTROL Verfügbare Datensätze] | Stellt die Gesamtzahl der Zeilen dar, die für diesen Datensatz in dem im Kalender ausgewählten Zeitraum aufgenommen wurden. Es gibt keine Latenz im Hinblick darauf, ab wann die Daten nach dem Hinzufügen in Berichten angezeigt werden. (Allerdings ist beim Erstellen einer brandneuen Verbindung eine [Latenz](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#3.-daten-in-customer-journey-analytics-einbringen) vorhanden. |
 | [!UICONTROL Hinzugefügte Datensätze] | Gibt an, wie viele Zeilen im ausgewählten Zeitraum hinzugefügt wurden. **Hinweis**: Daten für **[!UICONTROL hinzugefügte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
 | [!UICONTROL Gelöschte Datensätze] | Gibt an, wie viele Datensätze im ausgewählten Zeitraum gelöscht wurden. **Hinweis**: Daten für **[!UICONTROL gelöschte Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
 | [!UICONTROL Batches hinzugefügt] | Gibt an, wie viele Daten-Batches zu diesem Datensatz hinzugefügt wurden. |
-| [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden.<p>Ungültige Personen-IDs (nicht definiert, alle Nullen) können keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehleranfälligen Aufnahme- und Berichtsprozessen. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwenden Sie die Zuordnung, um die nicht definierten oder Benutzer-IDs ohne gültige Benutzer-IDs zu füllen.</li><li>Leeren Sie die Benutzer-ID aus, die auch bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs oder Benutzer-IDs ohne Inhalt).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten erfassen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
+| [!UICONTROL Übersprungene Datensätze] | Gibt an, wie viele Zeilen während der Aufnahme im ausgewählten Zeitraum übersprungen wurden.<p>Gründe für das Überspringen von Datensätzen sind: Fehlende Zeitstempel, fehlende oder ungültige Personen-ID usw. Wird alle zehn Minuten aktualisiert.<p>Ungültige Personen-IDs (z. B. &quot;undefiniert&quot;oder &quot;0000000&quot;oder eine beliebige Kombination von Zahlen und Buchstaben in einer [!UICONTROL Personen-ID] die in einem Ereignis auftreten, das mehr als eine Million Mal in einem bestimmten Monat auftritt), können keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden. Sie können nicht in das System aufgenommen werden und führen zu fehleranfälliger Erfassung und Berichterstellung. Um ungültige Personen-IDs zu beheben, haben Sie drei Möglichkeiten:<ul><li>Verwendung [Kanalübergreifende Analyse](/help/connections/cca/overview.md) , um die nicht definierten Benutzer-IDs oder Benutzer-IDs mit allen Identitäten mit gültigen Benutzer-IDs zu füllen.</li><li>Leeren Sie die Benutzer-ID aus, die auch bei der Erfassung übersprungen wird (vorzuziehen sind ungültige Benutzer-IDs oder Benutzer-IDs ohne Inhalt).</li><li>Korrigieren Sie alle ungültigen Benutzer-IDs in Ihrem System, bevor Sie die Daten erfassen.</li></ul><p>**Hinweis**: Daten für **[!UICONTROL übersprungene Datensätze]** umfassen derzeit nur Ereignisdaten, keine Profil- oder Suchdaten. |
 | [!UICONTROL Zuletzt hinzugefügt] | Gibt an, wann der letzte Batch hinzugefügt wurde. |
 | [!UICONTROL Typ des Datensatzes] | Entweder [!UICONTROL Ereignis], [!UICONTROL Suche] oder [!UICONTROL Profil]. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL Schema] | Zeigt das Adobe Experience Platform-Schema an, auf dem dieser Datensatz basiert. |
