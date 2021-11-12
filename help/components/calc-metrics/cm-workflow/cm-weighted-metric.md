@@ -2,7 +2,7 @@
 description: Enthält Beispiele für gefilterte und gewichtete Metriken.
 title: Gefilterte und gewichtete Metriken
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
 ht-degree: 100%
 
