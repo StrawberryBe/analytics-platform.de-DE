@@ -3,9 +3,9 @@ title: FAQ zu Customer Journey Analytics
 description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1649'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ ht-degree: 93%
 | Frage | Antwort |
 | --- | --- |
 | Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen? | Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine Lösung zum Zusammenfügen (Stitching) von Daten namens [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) (CCA). Damit können Sie die Personen-ID eines Datensatzes neu eingeben, was eine nahtlose Kombination mehrerer Datensätze ermöglicht. |
-| Wird das Zusammenfügen von anonymen Verhaltens- mit authentifizierten Verhaltensdaten unterstützt? | Ja. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen und generiert eine zusammengefügte ID. |
+| Wird das Zusammenfügen von anonymen Verhaltens- mit authentifizierten Verhaltensdaten unterstützt? | Ja. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen und generiert eine zusammengefügte ID. |
 | Wie funktioniert „Replay“ in CCA? | CCA gibt Daten basierend auf eindeutigen Kennungen wieder, die CCA gelernt hat. Bei einem Replay werden zu einer Verbindung neu hinzugefügte Geräte per Stitching zusammengefügt. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=de#schritt-1%3A-echtzeit-zuordnung) |
-| Wie funktioniert das Zusammenfügen historischer Daten (Aufstockung) in CCA? | Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de#aktivieren-der-kanal%C3%BCbergreifenden-analyse) |
+| Wie funktioniert das Zusammenfügen historischer Daten (Aufstockung) in CCA? | Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de#enable-cross-channel-analytics) |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -44,18 +44,18 @@ ht-degree: 93%
 | Wie integriere ich [!UICONTROL Adobe Analytics]-Daten in [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Adobe Analytics]-Daten können über [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) mit Experience Platform verbunden werden. Die meisten [!UICONTROL Adobe Analytics]-Felder werden im XDM-Format übermittelt, andere Felder sind aber noch nicht verfügbar. |
 | Wie lange dauert es, bis Datensatzelemente in einer Datenansicht zusammengefasst werden? | Ein paar Stunden für eine erste Ansicht und ein paar Tage, um die Daten der letzten 13 Monate aufzustocken. |
 | Sind PII-Daten notwendig, um Verbindungen zwischen den Daten herzustellen? | Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer Kunden-ID, bei der es sich nicht um personenbezogene Daten handelt. |
-| Welche Beschränkungen gibt es für die Aufnahme vergangener oder künftiger Daten/Zeitstempel in CJA-Ereignis-Datensätze? | <ul><li>Für vergangene Daten/Zeitstempel: Ereignisdaten bis 10 Jahre.</li><li>Für zukünftige Daten/Zeitstempel: Ereignisdaten (prädiktiv) bis zu einem Monat in der Zukunft.</li></ul> |
+| Welche Beschränkungen gibt es für die Aufnahme vergangener oder künftiger Daten/Zeitstempel in CJA-Ereignisdatensätze? | <ul><li>Für vergangene Daten/Zeitstempel: bis zu 10 Jahre alte Ereignisdaten.</li><li>Für zukünftige Daten/Zeitstempel: Ereignisdaten (prädiktiv) bis zu einem Monat in der Zukunft.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## 4. Latenzaspekte
 
 >[!NOTE]
->In CJA gibt es keine feste Datengröße und daher kann die Adobe nicht auf eine standardmäßige Erfassungszeit übertragen werden. Wir arbeiten aktiv daran, diese Latenzen durch neue Updates und Erfassungsoptimierung zu reduzieren.
+>In CJA gibt es keine feste Datengröße; daher kann die Adobe sich nicht auf eine standardmäßige Erfassungszeit festlegen. Wir arbeiten aktiv daran, diese Latenzen durch neue Updates und Aufnahmeoptimierung zu reduzieren.
 
 | Frage | Antwort |
 | --- | --- |
-| Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-Daten oder -Ereignisse: Wird innerhalb von 90 Minuten verarbeitet und erfasst, sobald Daten in AEP verfügbar sind.</li><li>Stapelgröße > 50 Millionen Zeilen: länger als 90 Minuten.</li><li>Kleine Backfilets - z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 24 Stunden<li>Große Rückstände - z. B. 500 Milliarden Zeilen: 30 Tage</li></ul> |
+| Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-Daten oder -Ereignisse: Werden innerhalb von 90 Minuten verarbeitet und aufgenommen, sobald Daten in AEP verfügbar sind.</li><li>Stapelgröße > 50 Millionen Zeilen: länger als 90 Minuten.</li><li>Kleine Aufstockungen – z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 24 Stunden<li>Große Aufstockungen – z. B. 500 Milliarden Zeilen: 30 Tage</li></ul> |
 
 
 ## 5. Herkömmliche [!UICONTROL Adobe Analytics]-Komponenten
@@ -73,7 +73,7 @@ ht-degree: 93%
 
 ## 6. Auswirkungen des Löschens von Datenkomponenten
 
-In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet werden: Sandbox, Schema, Datensatz, Verbindung, Datenansicht und Workspace-Projekte. Im Folgenden sind einige Szenarien für das Löschen der jeweiligen Komponenten aufgeführt:
+In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet werden: Sandbox, Schema, Datensatz, Verbindung, Datenansicht und Arbeitsbereich-Projekte. Im Folgenden sind einige Szenarien für das Löschen der jeweiligen Komponenten aufgeführt:
 
 | Aktion | Auswirkung |
 | --- | --- |
@@ -83,8 +83,8 @@ In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet 
 | Löschen eines Datensatzes in [!UICONTROL Customer Journey Analytics] | Derzeit ist es nicht möglich, einen Datensatz in einer gespeicherten Verbindung zu löschen. Dazu müssten Sie die gesamte Verbindung löschen und von Neuem beginnen. (Kunden, die die CJA-SKU erworben haben, können jedoch einen Datensatz in der Benutzeroberfläche von [!UICONTROL Adobe Experience Platform] löschen.) |
 | Löschen von einem Batch aus einem Datensatz (in [!UICONTROL Adobe Experience Platform]) | Wenn ein Batch in einem [!UICONTROL Adobe Experience Platform]-Datensatz gelöscht wird, wird er auch aus allen Customer Journey Analytics-Verbindungen entfernt, die diesen Batch enthalten. Customer Journey Analytics wird über das Löschen von Batches in [!UICONTROL Adobe Experience Platform] benachrichtigt. |
 | Löschen von einem Batch, **während er** in [!UICONTROL Customer Journey Analytics] aufgenommen wird | Wenn in dem Datensatz nur ein Batch vorhanden ist, erscheinen keine Daten oder nur teilweise Daten aus diesem Batch in [!UICONTROL Customer Journey Analytics]. Die Aufnahme wird zurückgesetzt. Wenn es in dem Datensatz beispielsweise 5 Batches gibt und 3 davon bereits aufgenommen wurden, als der Datensatz gelöscht wurde, erscheinen die Daten dieser 3 Batches in [!UICONTROL Customer Journey Analytics]. |
-| Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass<ul><li>für die gelöschte Verbindung erstellte Datenansichten nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Workspace-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul> |
-| Löschen einer Datenansicht in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass kein Workspace-Projekt mehr funktioniert, das von dieser gelöschten Datenansicht abhängt. |
+| Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass<ul><li>für die gelöschte Verbindung erstellte Datenansichten nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Arbeitsbereich-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul> |
+| Löschen einer Datenansicht in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass kein Arbeitsbereich-Projekt mehr funktioniert, das von dieser gelöschten Datenansicht abhängt. |
 
 ## 7. Überlegungen beim Zusammenführen von Report Suites in Customer Journey Analytics
 
