@@ -2,7 +2,7 @@
 description: Im Manager für berechnete Metriken können Sie einen Arbeitsablauf einrichten, zu dem die Genehmigung von Metriken für verschiedene Anwendungsebenen und spezielle Abteilungen oder Gruppen gehört.
 title: Berechnete Metriken genehmigen
 source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '144'
 ht-degree: 100%
 
