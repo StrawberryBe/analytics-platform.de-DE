@@ -5,13 +5,13 @@ exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 62%
+ht-degree: 98%
 
 ---
 
 # Übersicht über Bedienfelder
 
-Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen. Sie können auf Bedienfelder über das Symbol oben links in Workspace oder über ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) zugreifen. Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansichten oder Anwendungsfällen für Analysen organisieren möchten.
+Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen. Sie können auf Bedienfelder über das Symbol oben links in Arbeitsbereich oder über ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) zugreifen. Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Report Suites oder Anwendungsfällen für Analysen organisieren möchten.
 
 ## Bedienfeldtypen
 
@@ -26,7 +26,7 @@ Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Custom
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Leer] und [!UICONTROL Freiform] Bedienfelder eignen sich hervorragend als Ausgangspunkt für Ihre Analyse. [!UICONTROL Attribution IQ] bietet erweiterte Analysen. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
+Die Bedienfelder [!UICONTROL Quick Insights], [!UICONTROL Leer] und [!UICONTROL Freiform] eignen sich hervorragend als Ausgangspunkt für Ihre Analyse. [!UICONTROL Attribution IQ] bietet sich für erweiterte Analysen an. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
 
 Das standardmäßige Startbedienfeld ist das [!UICONTROL Freiform-]Bedienfeld. Sie können jedoch auch das [leere Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) als Standard festlegen.
 
@@ -38,38 +38,38 @@ Hinweis: Wenn eine (violette) Datumsbereichskomponente in einer Tabelle, Visuali
 
 ![](assets/panel-calendar.png)
 
-Sie können einen Datumsbereich auf Minutenebene unter den erweiterten Einstellungen Ihres Bedienfeldkalenders anwenden. Wenn Sie Berichte zu einem Datumsbereich erstellen, der mehrere Tage umfasst, ist der Startzeitpunkt der erste Tag und der Endzeitpunkt der letzte Tag in Ihrem Bereich.
+Sie können unter den erweiterten Einstellungen Ihres Bedienfeldkalenders einen Datumsbereich auf Minutenebene anwenden. Wenn Sie Berichte zu einem Datumsbereich erstellen, der viele Tage umfasst, gilt als Startzeit der erste Tag und als Endzeit der letzte Tag in Ihrem Bereich.
 
 ## Ablagebereich {#dropzone}
 
-Mit der Dropzone des Bedienfelds können Sie Filter und Dropdown-Filter auf alle Tabellen und Visualisierungen innerhalb eines Bedienfelds anwenden. Sie können einen oder mehrere Filter auf ein Bedienfeld anwenden. Der Titel über jedem Filter kann durch Klicken auf den Bearbeitungsstift geändert werden, oder Sie können mit der rechten Maustaste klicken, um ihn ganz zu entfernen.
+Mit dem Ablagebereich eines Bedienfelds können Sie Filter und Dropdown-Filter auf alle Tabellen und Visualisierungen innerhalb des Bedienfelds anwenden. Sie können einen oder mehrere Filter auf ein Bedienfeld anwenden. Der Titel über jedem Filter kann durch Klicken auf den Bearbeitungsstift geändert werden, oder Sie können mit der rechten Maustaste klicken, um ihn ganz zu entfernen.
 
 ### Filter
 
-Ziehen Sie beliebige Filter aus der linken Leiste in die Dropzone des Bedienfelds, um mit dem Filtern Ihres Bedienfelds zu beginnen.
+Ziehen Sie einen beliebigen Filter aus der linken Leiste in den Ablagebereich des Bedienfelds, um mit dem Filtern des Bedienfelds zu beginnen.
 
 ![](assets/segment-filter.png)
 
 ### Ad-hoc-Filter
 
-Nicht-Filterkomponenten können auch direkt in die Dropzone gezogen werden, um Ad-hoc-Filter zu erstellen. So sparen Sie Zeit und Mühe, zum Filtergenerator zu wechseln. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Sie können diese Definition ändern, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie im Filtergenerator bearbeiten.
+Komponenten, die keine Filter sind, können ebenfalls direkt in den Ablagebereich gezogen werden, um Ad-hoc-Filter zu erstellen, wodurch Sie sich das Aufrufen von Filter Builder ersparen. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Filter Builder bearbeiten.
 
-Ad-hoc-Filter sind für das Projekt lokal verfügbar und werden nicht in der linken Leiste angezeigt, es sei denn, Sie machen sie öffentlich.
+Ad-hoc-Filter sind projektgebunden und werden in Ihrer linken Leiste nicht angezeigt, es sei denn, Sie machen sie öffentlich.
 
 ![](assets/adhoc-segment-filter.png)
 
 ### Dropdown-Filter {#dropdown-filter}
 
-Zusätzlich zu Filtern können Sie mit Dropdown-Filtern auf kontrollierte Weise mit den Daten interagieren. Sie können beispielsweise einen Dropdown-Filter für Mobilgerätetypen hinzufügen, damit Sie den Bereich nach Tablet, Mobiltelefon oder Desktop filtern können.
+Zusätzlich zu den Filtern ermöglichen Ihnen Dropdown-Filter eine kontrollierte Interaktion mit den Daten. Sie können beispielsweise einen Dropdown-Filter für Typen von Mobilgeräten hinzufügen, damit Sie das Bedienfeld nach Tablet, Mobiltelefon oder Desktop filtern können.
 
-Dropdown-Filter können auch verwendet werden, um viele Projekte zu einem zusammenzufassen. Wenn Sie beispielsweise über viele Versionen desselben Projekts mit unterschiedlichen Länderfiltern verfügen, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdown-Filter &quot;Land&quot;hinzufügen.
+Dropdown-Filter können auch verwendet werden, um viele Projekte zu einem zusammenzufassen. Wenn Sie z. B. mehrere Versionen desselben Projekts mit unterschiedlichen Filtern je nach Land verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdown-Filter „Land“ hinzufügen.
 
 ![](assets/dropdown-filter-intro.png)
 
 So erstellen Sie Dropdown-Filter:
 
-1. Wenn Sie einen Dropdown-Filter mit [!UICONTROL Dimensionselementen] erstellen möchten, z. B. Werte innerhalb der Dimension [!UICONTROL Marketing-Kanal], klicken Sie in der linken Leiste auf das Pfeilsymbol neben Ihrer Dimension. Dadurch werden alle verfügbaren Elemente angezeigt. Wählen Sie ein oder mehrere Komponentenelemente aus der linken Leiste aus und legen Sie sie im Ablagebereich des Bedienfelds ab, **während Sie die Umschalttaste** gedrückt halten. Dadurch werden die Komponenten in einen Dropdown-Filter und nicht in einen einzigen Filter umgewandelt.
-1. Um einen Dropdown-Filter mit einer anderen Komponente wie Metriken, Filtern oder Datumsbereichen zu erstellen, wählen Sie in der linken Leiste einen Komponententyp aus und legen Sie ihn im Ablagebereich des Bedienfelds ab **bei gedrückter Umschalttaste**.
+1. Wenn Sie einen Dropdown-Filter mit [!UICONTROL Dimensionselementen] erstellen möchten, z. B. Werte innerhalb der Dimension [!UICONTROL Marketing-Kanal], klicken Sie in der linken Leiste auf das Pfeilsymbol neben Ihrer Dimension. Dadurch werden alle verfügbaren Elemente angezeigt. Wählen Sie ein oder mehrere Komponentenelemente aus der linken Leiste aus und legen Sie sie im Ablagebereich des Bedienfelds ab, **während Sie die Umschalttaste** gedrückt halten. Dadurch werden die Komponenten in einen Dropdown-Filter und nicht in einen einzelnen Filter umgewandelt.
+1. Wenn Sie einen Dropdown-Filter mit einer anderen Komponente wie z. B. Kennzahlen, Filter oder Datumsbereiche erstellen möchten, wählen Sie in der linken Leiste einen Komponententyp aus und legen Sie ihn im Ablagebereich des Bedienfelds ab, **während Sie die Umschalttaste gedrückt halten**.
 1. Wählen Sie eine der Optionen aus der Dropdown-Liste aus, um die Daten im Bedienfeld zu ändern. Sie können auch auf die Filterung von Bedienfelddaten verzichten, indem Sie **[!UICONTROL Kein Filter]** auswählen.
 
 ![](assets/create-dropdown.png)
