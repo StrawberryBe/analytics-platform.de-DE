@@ -1,25 +1,25 @@
 ---
-description: Zeigt, wie Filter im Generator für berechnete Metriken stapelt und ersetzt werden.
-title: Filter stapeln und ersetzen
+description: Hier wird erläutert, wie Sie Filter mit dem Generator für berechnete Metriken stapeln und ersetzen.
+title: Stapeln und Ersetzen von Filtern
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Filter stapeln und ersetzen
+# Stapeln und Ersetzen von Filtern
 
-Zeigt, wie Filter im Generator für berechnete Metriken stapelt und ersetzt werden.
+Hier wird erläutert, wie Sie Filter mit dem Generator für berechnete Metriken stapeln und ersetzen.
 
-## Filter stapeln {#stack-filter}
+## Stapeln von Filtern {#stack-filter}
 
-Ziehen Sie den neuen Filter einfach in die Arbeitsfläche &quot;Definition&quot;und legen Sie ihn neben dem vorhandenen Filter ab:
+Ziehen Sie den neuen Filter einfach in die Arbeitsfläche „Definition“ und legen Sie ihn neben dem vorhandenen Filter ab:
 
 ![](assets/cm_stack_seg.png)
 
-## Einen Filter durch einen anderen ersetzen {#replace-filter}
+## Ersetzen eines Filters durch einen anderen {#replace-filter}
 
-Ziehen Sie den neuen Filter einfach in die Arbeitsfläche &quot;Definition&quot;und legen Sie ihn auf den vorhandenen Filter:
+Ziehen Sie den neuen Filter einfach in die Arbeitsfläche „Definition“ und legen Sie ihn auf dem vorhandenen Filter ab:
 
 ![](assets/cm_replace_seg.png)
