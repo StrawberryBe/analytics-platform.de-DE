@@ -4,36 +4,36 @@ title: Segmentierte Metriken
 uuid: 88f9829b-76e4-4598-9494-084a91602bc1
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Gefilterte Metriken
 
-Im Generator für berechnete Metriken können Sie Filter innerhalb Ihrer Metrikdefinition anwenden. Dies ist hilfreich, wenn Sie neue Metriken für Ihre Analyse ableiten möchten. Beachten Sie, dass Filterdefinitionen über den Filter-Builder aktualisiert werden können. Wenn Änderungen vorgenommen werden, wird der Filter automatisch an allen Stellen aktualisiert, an denen er angewendet wird, auch wenn er Teil einer Definition für berechnete Metriken ist.
+Im Generator für berechnete Metriken können Sie Filter innerhalb Ihrer Metrikdefinition anwenden. Dies ist hilfreich, wenn Sie neue Metriken für Ihre Analyse ableiten möchten. Denken Sie daran, dass Filterdefinitionen über den Filter Builder aktualisiert werden können. Wenn Änderungen vorgenommen werden, wird der Filter automatisch überall dort aktualisiert, wo er angewendet wurde, auch wenn er Teil einer Definition für berechnete Metriken ist.
 
 ![](assets/german-visitors.png)
 
-## Gefilterte Metrik erstellen {#create}
+## Erstellen einer gefilterten Metrik {#create}
 
-Angenommen, Sie möchten verschiedene Aspekte eines Filters &quot;Deutsche Besucher&quot;mit denen eines Filters &quot;Internationale Besucher&quot;vergleichen. Dazu können Sie Metriken erstellen, die Einblick in Folgendes ermöglichen:
+Beispiel: Sie möchten verschiedene Aspekte des Filters „Deutsche Besucher“ mit denen des Filters „Internationale Besucher“ vergleichen. Dazu können Sie Metriken erstellen, die Einblick in Folgendes ermöglichen:
 
-* Wie sieht das Browsingverhalten im Vergleich zwischen den beiden Gruppen aus? (Ein weiteres Beispiel wäre: Wie unterscheidet sich die Konversionsrate zwischen den beiden Filtern?)
+* Wie sieht das Browsingverhalten im Vergleich zwischen den beiden Gruppen aus? (Ein weiteres Beispiel wäre: Wie sieht die Konversionsrate im Vergleich zwischen den beiden Filtern aus?)
 * Wie viele Besucher aus Deutschland navigieren im Vergleich mit internationalen Besuchern zu bestimmten Seiten (als Prozentsatz der Gesamtbesucher)?
-* Wo liegen die größten Unterschiede hinsichtlich des Zugriffs auf Inhalte durch diese verschiedenen Filter?
+* Wo liegen die größten Unterschiede in Bezug darauf, welcher Inhalt von den verschiedenen Filtern aufgerufen wird?
 
-1. Wenn Sie keinen vergleichbaren Filter haben, erstellen Sie direkt im Generator für berechnete Metriken ein Ad-hoc-Segment namens &quot;Deutsche Besucher&quot;, wobei &quot;Länder&quot;gleich &quot;Deutschland&quot;ist. Ziehen Sie die Dimension „Länder“ einfach in die Arbeitsfläche „Definition“ und wählen Sie als Wert „Deutschland“:
+1. Wenn kein vergleichbarer Filter vorhanden ist, erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens „Deutsche Besucher“, bei dem Sie für „Länder“ den Wert „Deutschland“ angeben. Ziehen Sie die Dimension „Länder“ einfach in die Arbeitsfläche „Definition“ und wählen Sie als Wert „Deutschland“:
 
    ![](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >Sie können dies auch im Abschnitt [Filter Builder](/help/components/filters/create-filters.md), aber wir haben den Workflow vereinfacht, indem wir Dimensionen im Generator für berechnete Metriken zur Verfügung gestellt haben. &quot;Ad Hoc&quot;bedeutet, dass das Segment nicht im **[!UICONTROL Filter]** in der linken Leiste. Sie können es aber auch veröffentlichen, indem Sie über das „i“ daneben fahren und auf **[!UICONTROL Als öffentlich einstellen klicken]**.
+   >Sie können diesen Vorgang auch im [Filter Builder](/help/components/filters/create-filters.md) durchführen, aber wir haben den Arbeitsablauf vereinfacht, indem Dimensionen jetzt auch im Generator für berechnete Metriken zur Verfügung stehen. „Ad hoc“ bedeutet, dass das Segment nicht in der Liste der **[!UICONTROL Filter]** in der linken Leiste angezeigt wird. Sie können es aber auch veröffentlichen, indem Sie über das „i“ daneben fahren und auf **[!UICONTROL Als öffentlich einstellen klicken]**.
 
-1. Wenn Sie keinen vergleichbaren Filter haben, erstellen Sie einen Filter namens &quot;Internationale Besucher&quot;, bei dem &quot;Länder&quot;nicht mit &quot;Deutschland&quot;übereinstimmt.
-1. Erstellen und speichern Sie eine Metrik namens &quot;Deutsche Besucher&quot;, indem Sie den Filter &quot;Deutschland&quot;in die Arbeitsfläche &quot;Definition&quot;ziehen und die Metrik &quot;Unique Visitors&quot;darin ziehen:
+1. Wenn kein vergleichbarer Filter vorhanden ist, erstellen Sie einen Filter namens „Internationale Besucher“, bei dem Sie für „Länder“ nicht „Deutschland“ angeben.
+1. Erstellen und speichern Sie eine Metrik namens „Deutsche Besucher“, indem Sie den Filter „Deutschland“ in die Arbeitsfläche „Definition“ ziehen und dann die Metrik „Unique Visitors“ darauf ziehen:
 
    ![](assets/german-visitors.png)
 
@@ -48,10 +48,10 @@ Im Folgenden finden Sie eine Videoübersicht:
 
 ## Prozent der Gesamtmetriken {#percent-total}
 
-Im obigen Beispiel können Sie den Filter mit der Gesamtpopulation vergleichen. Erstellen Sie dazu zwei neue Metriken: „% aller deutschen Besucher“ und „% der Gesamtzahl internationaler Besucher“:
+Sie können das obige Beispiel fortentwickeln, indem Sie Ihren Filter mit der Gesamtbevölkerung vergleichen. Erstellen Sie dazu zwei neue Metriken: „% aller deutschen Besucher“ und „% der Gesamtzahl internationaler Besucher“:
 
-1. Ziehen Sie den Filter Deutsche (oder Internationale) Besucher in die Arbeitsfläche.
-1. Ziehen Sie unten einen weiteren Filter für deutsche (oder internationale) Besucher in den Arbeitsbereich. Klicken Sie dieses Mal aber auf das zugehörige Konfigurationssymbol (Zahnrad), um den Metriktyp „Gesamt“ auszuwählen. Das Format sollte „Prozent“ lauten. Der Operator sollte „Geteilt durch“ lauten. Dadurch erhalten Sie die folgende Metrikdefinition:
+1. Ziehen Sie den Filter „Deutsche Besucher“ (oder „Internationale Besucher“) auf die Arbeitsfläche.
+1. Legen Sie darunter einen weiteren Filter „Deutsche Besucher“ (oder „Internationale Besucher“) ab. Klicken Sie dieses Mal aber auf das zugehörige Konfigurationssymbol (Zahnrad), um den Metriktyp „Gesamt“ auszuwählen. Das Format sollte „Prozent“ lauten. Der Operator sollte „Geteilt durch“ lauten. Dadurch erhalten Sie die folgende Metrikdefinition:
 
    ![](assets/cm_metric_total.png)
 
