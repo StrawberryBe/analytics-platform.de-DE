@@ -2,10 +2,10 @@
 title: Überblick über die kanalübergreifende Analyse
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '1124'
-ht-degree: 100%
+source-git-commit: a1b4ddc0799d741edb9a4624e22a800a0307e5eb
+workflow-type: tm+mt
+source-wordcount: '1127'
+ht-degree: 96%
 
 ---
 
@@ -57,13 +57,13 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen überblickt, können Sie die folgenden Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
 
 1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Siehe unter [Ein Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Daten aufnehmen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
-1. Wenden Sie sich an Ihren Adobe Account Manager, was Folgendes umfassen kann:
+1. Wenden Sie sich mit den folgenden Informationen an Ihren technischen Kundenbetreuer von Adobe:
    * Eine Anfrage zum Aktivieren der kanalübergreifenden Analyse
    * Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten
    * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Kennung, die in jeder Zeile erscheint)
    * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Verbindung der Personenkennung zwischen Datensätzen)
    * Ihre Voreinstellung für die Häufigkeit der [Wiederholungen](replay.md) und die Lookback-Länge. Zu den verfügbaren Optionen gehören eine Wiederholung pro Woche mit einem 7-tägigen Lookback-Fenster oder eine tägliche Wiederholung mit einem 1-tägigen Lookback-Fenster.
-1. Wenn Sie eine Anfrage nach Cross-Channel Analytics an den Adobe-Kundenbetreuer stellen, wird diese Funktion in Zusammenarbeit mit dem Engineering von Adobe aktiviert. Nach der Aktivierung wird in Adobe Experience Platform ein neuer umgeschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Ihr Adobe Account Manager kann die neue Datensatz-ID und den Namen der Person-ID-Spalte bereitstellen.
+1. Der Adobe Technical Account Manager arbeitet mit der Adobe Engineering zusammen, um die kanalübergreifende Analyse nach Erhalt Ihrer Anfrage zu aktivieren. Nach der Aktivierung wird in Adobe Experience Platform ein neuer umgeschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Ihr Adobe Technical Account Manager kann die neue Datensatz-ID und den Spaltennamen der Personen-ID angeben.
 1. Bei der erstmaligen Verwendung stellt Adobe eine Aufstockung der zugeordneten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zugewiesenen Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein.
 1. [Erstellen Sie eine Verbindung](../create-connection.md) in CJA mit dem neu erstellten Datensatz und beliebigen weiteren Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
