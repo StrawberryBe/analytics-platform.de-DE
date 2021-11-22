@@ -3,9 +3,9 @@ description: Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Ein [!UICONTROL Bedienfeld] ist eine Sammlung von Tabellen und Visualisierungen.
 
 ## Bedienfeldtypen
 
-Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Customer Journey Analytics]:
+Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Customer Journey Analytics] verfügbar:
 
 | Name des Bedienfelds | Beschreibung |
 | --- | --- |
