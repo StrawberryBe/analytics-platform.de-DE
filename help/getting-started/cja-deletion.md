@@ -1,8 +1,10 @@
 ---
 title: Auswirkungen des Löschens
 description: Das passiert, wenn Sie Verbindungen, Datensätze oder Stapel in Customer Journey Analytics oder Adobe Experience Platform löschen.
-source-git-commit: 3fa2c562abaf4aa1f18baa5de5ee66c7ad828f52
-workflow-type: ht
+exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
 
@@ -14,7 +16,7 @@ Beachten Sie Folgendes, bevor Sie Verbindungen, Datensätze oder Stapel in Custo
 
 | Wenn Sie... | Auswirkung |
 | --- | --- |
-| Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass<ul><li>für die gelöschte Verbindung erstellte Datenansichten nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Workspace-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul> |
+| Löschen einer Verbindung in [!UICONTROL Customer Journey Analytics] | Eine Fehlermeldung weist darauf hin, dass<ul><li>für die gelöschte Verbindung erstellte Datenansichten nicht mehr funktionieren.</li><li> Ebenso funktionieren alle Arbeitsbereich-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.</li></ul> |
 | Löschen eines Datensatzes in [!UICONTROL Adobe Experience Platform] (AEP) | Durch das Löschen eines Datensatzes in Adobe Experience Platform wird der Datenfluss von diesem Datensatz zu allen Verbindungen, die diesen Datensatz enthalten, angehalten. Daten aus diesem Datensatz werden nicht automatisch aus zugehörigen Customer Journey Analytics-Verbindungen gelöscht. |
 | Löschen eines Datensatzes in [!UICONTROL Customer Journey Analytics] | Derzeit ist es nicht möglich, einen Datensatz in einer gespeicherten Verbindung zu löschen. Dazu müssten Sie die gesamte Verbindung löschen und von Neuem beginnen. (In [!UICONTROL Adobe Experience Platform] können Sie jedoch einen Datensatz löschen.) |
 | Löschen von einem Batch aus einem Datensatz (in [!UICONTROL Adobe Experience Platform]) | Wenn ein Batch aus einem [!UICONTROL Adobe Experience Platform]-Datensatz gelöscht wird, wird derselbe Batch aus allen [!UICONTROL Customer Journey Analytics]-Verbindungen entfernt, die diesen Batch enthalten. [!UICONTROL Customer Journey Analytics] wird über Batches benachrichtigt, die in [!UICONTROL Adobe Experience Platform] gelöscht wurden. |

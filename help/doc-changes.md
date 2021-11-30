@@ -2,8 +2,9 @@
 title: Aktualisierungen der CJA-Dokumentation
 description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journey Analytics auf, die seit Dezember 2019 erfolgt sind.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 0a44d4c80caa0198938a8f9c57f492c2aaaf9539
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
 
@@ -22,7 +23,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Oktober 2021 | Dokument für rollierendes Fenster für [!UICONTROL Verbindung] – [Datenaufbewahrung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention).<p>**Hinweis: Wenden Sie sich an die Kundenunterstützung oder Ihren Adobe Account Manager, um diese Einstellung implementieren zu lassen. Sie ist noch nicht über die UI von CJA verfügbar.** |
 | September 2021 | [Metrikdeduplizierung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=de) doc |
 | September 2021 | [Unterstützung der Sommerzeit beim Reporting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) |
-| September 2021 | [Kundenkalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) – Dokumentation |
+| September 2021 | [Kundenkalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#calendar) – Dokumentation |
 | September 2021 | [Boolesche Felder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=de) – Dokumentation |
 | September 2021 | Aufschlüsselnung der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[[!UICONTROL Komponenteneinstellungen] - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL  Attribution] – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Verhalten] – Komponenteneinstellungen](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] – Komponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einschließen/ausschließen] – Komponenteneinstellungen](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metrik-Deduplizierung] – Komponenteneinstellungen](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Kein Wert] – Komponenteneinstellungen](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistenz] – Komponenteneinstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Wert-Bucketing] – Komponenteneinstellungen](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | September 2021 | Neuer Abschnitt über die [Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#6.-considerations-when-merging-report-suites-in-cja) in CJA. |

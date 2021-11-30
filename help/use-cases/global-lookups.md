@@ -2,7 +2,8 @@
 title: Globale Suchen zu Ihren Datensätzen hinzufügen
 description: Verwenden Sie globale Suchen, um die Berichte mit nützlichen Dimensionen in Customer Journey Analytics zu ergänzen.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
-source-git-commit: 26ee2b61fb80b55a7982d90941ec121547423cfc
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 100%
@@ -26,9 +27,9 @@ Globale Lookup-Datensätze werden zum Zeitpunkt des Berichts automatisch angewen
 * `browser_group`
    * `browser_group`, `id`
 * `os`
-   * `os`,  `group_id`,  `id`
+   * `os`, `group_id`, `id`
 * `os_group`
-   * `os_group`,  `id`
+   * `os_group`, `id`
 * `mobile_audio_support - multi`
 * `mobile_color_depth`
 * `mobile_cookie_support`
