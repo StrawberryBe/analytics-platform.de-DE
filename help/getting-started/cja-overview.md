@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 source-git-commit: 69ded6c9d08981810f6d9edef273cad95cb2c367
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 Customer Journey Analytics ist eine Analytics-Funktion, mit der Sie die Funktionen von Analysis Workspace mit Daten von Adobe Experience Platform nutzen können. Sie kann die Daten mehrerer Jahre aufschlüsseln, filtern, abfragen und visualisieren und wird mit der Fähigkeit von Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des **Erlebnis-Datenmodells (XDM)** können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Mit dem **Experience-Abfragedienst** können Sie SQL-kompatible Tools und Frameworks verwenden, um alle Ihre Daten abzufragen und zu bearbeiten.
 
-Die allgemeine CJA-Architektur wird hier gezeigt:
+Die allgemeine Architektur von Customer Journey Analytics wird hier gezeigt:
 
 ![Architektur](assets/cja-architecture.png)
 
@@ -42,9 +42,9 @@ Customer Journey Analytics unterstützt folgende Anwendungsfälle:
 * **Kunden im Journey-Kontext anzeigen**: Sie können Daten sequenziell über mehrere Kanal hinweg anzeigen und analysieren. Daten aus Ihrem Callcenter, aus PoS-Systemen und aus Online-Eigenschaften können zu einer Berichterstellungsansicht zusammengefasst werden.
 * **Einblicke für jedermann zugänglich machen**: Geben Sie allen Benutzern Datenzugriff, sodass mehr Benutzer datengestützte Geschäftsentscheidungen treffen können. Jeder in der Organisation, der für einen Aspekt des Kundenerlebnisses verantwortlich ist, kann auf der Grundlage vollständigerer Daten schneller echte Entscheidungen treffen.
 * **Möglichkeiten der Datenwissenschaft für Ihre Analysten nutzen**: Mit Customer Journey Analytics können normale Menschen mithilfe der Datenwissenschaft tiefe Einblicke und Analysen gewinnen.
-* **Datensätze visualisieren und mit ihnen mithilfe von Ad-hoc-Berichten interagieren**: Workspace kann jeden Datensatz aus Adobe Experience Platform verwenden, der einigen Grundregeln entspricht.
-* **Nicht-Webdaten anzeigen**: Workspace ist nicht mehr auf eine starre Definition eines „Treffers“ oder „Ereignisses“ beschränkt. Benutzerdefinierte Schemata ermöglichen die vollständige Kontrolle über Daten und Definitionen.
-* **Mehr Kontrolle über die Datenmanipulationen**: Ändern Sie hochgeladene Daten, erstellen Sie neue Datensätze und importieren Sie sie in Workspace. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Experience Cloud-Abfragedienst.
+* **Datensätze visualisieren und mit ihnen mithilfe von Ad-hoc-Berichten interagieren**: Arbeitsbereich kann jeden Datensatz aus Adobe Experience Platform verwenden, der einigen Grundregeln entspricht.
+* **Nicht-Webdaten anzeigen**: Arbeitsbereich ist nicht mehr auf eine starre Definition eines „Treffers“ oder „Ereignisses“ beschränkt. Benutzerdefinierte Schemata ermöglichen die vollständige Kontrolle über Daten und Definitionen.
+* **Mehr Kontrolle über die Datenmanipulationen**: Ändern Sie hochgeladene Daten, erstellen Sie neue Datensätze und importieren Sie sie in Arbeitsbereich. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Experience Cloud-Abfragedienst.
 
 ## Voraussetzungen
 
@@ -60,7 +60,7 @@ Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie
 * Um auf Customer Journey Analytics zugreifen oder eine Verbindung herstellen zu können, müssen Sie als Administrator dem **Customer Journey Analytics-Produkt** in [Admin Console](https://adminconsole.adobe.com/enterprise/) hinzugefügt werden. Produktadministratoren erhalten die folgenden Berechtigungen:
    * Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten
    * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken oder von durch andere Benutzer erstellten Filtern
-   * Freigeben eines Workspace-Projekts für alle Benutzer
+   * Freigeben eines Arbeitsbereich-Projekts für alle Benutzer
 * Allein als Produktadministrator innerhalb von Customer Journey Analytics zu fungieren reicht nicht aus, um eine Verbindung zu erstellen, zu aktualisieren oder zu löschen. Um eine Verbindung zu einem Experience Platform-Datensatz herzustellen, benötigen Sie auch Experience Platform-Berechtigungen. Insbesondere müssen Sie Teil eines **Experience Platform-Produktprofils** ein, das Ihnen die folgenden Berechtigungen gewährt:
    * Anzeigen von Schemata
    * Verwalten von Schemata
