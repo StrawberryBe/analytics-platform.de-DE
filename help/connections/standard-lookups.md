@@ -3,9 +3,9 @@ title: Standardsuchvorgänge zu Ihren Datensätzen hinzufügen
 description: Verwenden Sie Standardsuchvorgänge, um die Berichterstellung um nützliche Dimensionen in Customer Journey Analytics zu erweitern.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 067502a0d69bd0b085ecb5e6cbd3ae062f33daef
+source-git-commit: 4e31b02815e32695d97eab0f563c71725bc79c11
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '360'
 ht-degree: 28%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 28%
 # Standardsuchvorgänge zu Ihren Datensätzen hinzufügen
 
 >[!IMPORTANT]
->Standardsuchvorgänge sind nur für Analytics Data Connector-Datenquellen in CJA verfügbar. Sie können sie nur verwenden, wenn Sie die [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) oder den Datenerfassungs-APIs der Experience Platform.
+>Standardsuchvorgänge sind nur für Analytics Data Connector-Datenquellen in CJA verfügbar. Sie können sie nur mit standardmäßigen Adobe Analytics-Implementierungen oder der [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)oder den Datenerfassungs-APIs der Experience Platform.
 
 Standardsuchvorgänge (auch als von Adoben bereitgestellte Suchen bezeichnet) verbessern die Fähigkeit von Customer Journey Analytics, Berichte zu bestimmten Dimensionen/Attributen zu erstellen, die für sich allein nicht nützlich sind, aber bei der Verknüpfung mit anderen Daten nützlich sind. Dies können beispielsweise Attribute von Smartphones oder Tablets und Attribute von OS- und Browser-Dimensionen wie etwa die Versionsnummern von Browsern sein. Eine &quot;Standardsuche&quot;ähnelt einem Lookup-Datensatz. Standardsuchvorgänge können in allen Experience Cloud-Unternehmen durchgeführt werden. Sie werden automatisch auf alle Ereignis-Datensätze angewendet, die bestimmte XDM-Schema-Felder enthalten (die jeweiligen Felder finden Sie unten). Für jeden Schema-Speicherort, den die Adobe klassifiziert, gibt es einen standardmäßigen Lookup-Datensatz.
 
