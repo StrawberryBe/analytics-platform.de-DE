@@ -4,7 +4,7 @@ description: Häufig gestellte Fragen zur kanalübergreifenden Analyse
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '976'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwenden.
 
-1. Melden Sie sich bei [analytics.adobe.com](https://analytics.adobe.com) an und erstellen Sie ein leeres Workspace-Projekt.
+1. Melden Sie sich bei [analytics.adobe.com](https://analytics.adobe.com) an und erstellen Sie ein leeres Arbeitsbereich-Projekt.
 2. Klicken Sie auf der linken Seite auf die Registerkarte „Visualisierungen“ und ziehen Sie eine Flussvisualisierung in die Arbeitsfläche auf der rechten Seite.
 3. Klicken Sie auf den Tab „Komponenten“ auf der linken Seite und ziehen Sie die Dimension „Datensatz-ID“ an die mittlere Position mit der Bezeichnung „Dimension oder Element“.
 4. Dieser Flussbericht ist interaktiv. Klicken Sie auf einen der Werte, um den Fluss auf nachfolgende oder vorherige Seiten zu erweitern. Verwenden Sie das Kontextmenü, um Spalten zu erweitern oder zu reduzieren. Im selben Flussbericht können auch verschiedene Dimensionen verwendet werden.
@@ -45,7 +45,7 @@ Die Echtzeit-Zuordnung ist ca. 1 Woche, nachdem Adobe die kanalübergreifende An
 
 ## Wie handhabt die kanalübergreifende Analyse DSGVO- und CCPA-Anforderungen?
 
-Adobe handhabt DSGVO- und CCPA -Anforderungen gemäß den nationalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de-DE) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
+Adobe handhabt DSGVO- und CCPA -Anforderungen gemäß den nationalen und internationalen Gesetzen. Adobe bietet den [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=de) für Datenzugriffs- und Löschanfragen. Die Anfragen gelten sowohl für die ursprünglichen als auch die neu zugewiesenen Datensätze.
 
 ## Was passiert, wenn das Feld „Persistent ID“ in einem oder mehreren Ereignissen leer ist?
 
@@ -61,6 +61,6 @@ Bestimmte Metriken in CJA ähneln den Metriken in herkömmlichem Analytics, ande
 | ----- | ----- | ----- | ----- |
 | **Personen** = Anzahl der einzelnen `Person ID`s, für die `Stitched ID` als `Person ID` ausgewählt ist. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl der einzelnen `Person ID`s basierend auf der Spalte, die als `Person ID` ausgewählt wurde. Die Datensätze von **Personen** in Adobe Analytics Connector (ADC) ähneln denen von **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs. _experience. aaid.id` als `Person ID` in CJA ausgewählt ist. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. Beachten Sie, dass **Unique Visitors** möglicherweise nicht mit der Anzahl der eindeutigen **ECID** s übereinstimmt. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
 | **Sitzungen**: Wird anhand der in der CJA-Datenansicht angegebenen Sitzungseinstellungen definiert. Der Zuordnungsprozess kann einzelne Sitzungen von mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der CJA-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite der geräteübergreifenden Analyse](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=de) angegeben sind. |
-| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einem leeren `Persistent ID`. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in CJA. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten in AEP Data Lake ein leeres `Person ID` enthalten, in CJA abgelegt (nicht eingeschlossen) werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). |
+| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einem leeren `Persistent ID`. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in CJA. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten in AEP Data Lake ein leeres `Person ID` enthalten, in CJA abgelegt (nicht eingeschlossen) werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). |
 
 Andere Metriken können in CJA und im herkömmlichen Adobe Analytics ähnlich sein. Beispielsweise sollte im Allgemeinen die Gesamtanzahl für [benutzerdefinierte Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=de) in Adobe Analytics (Ereignisse 1-100) im herkömmlichen Adobe Analytics und CJA sehr nahe liegen (unabhängig davon, ob zugeordnet oder nicht zugeordnet). Beachten Sie jedoch, dass dies möglicherweise nicht immer zutrifft, da [die Funktionen unterschiedlich sind](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=de), z. B. die Deduplizierung von Ereignissen zwischen CJA und herkömmlichem Adobe Analytics.
