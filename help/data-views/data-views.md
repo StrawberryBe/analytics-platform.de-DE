@@ -4,7 +4,7 @@ description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journe
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container
 
 Sie können verschiedene Datenansichten für die gleiche Verbindung mit sehr unterschiedlichen Komponentensätzen (Dimensionen/Metriken) erstellen. Außerdem können Sie Datenansichten mit unterschiedlichen Einstellungen für Besuchs-Timeout, Zuordnung usw. erstellen. Beispielsweise könnten Sie eine Datenansicht haben, in der alle Dimensionen auf [!UICONTROL Letztkontakt] eingestellt sind, und gleichzeitig eine andere Datenansicht (basierend auf demselben Datensatz), in der alle Dimensionen auf [!UICONTROL Erstkontakt] eingestellt sind.
 
-Workspace-Projekte in Customer Journey Analytics basieren auf Datenansichten.
+Arbeitsbereich-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
 ## Datenansichten – Funktionen
 
@@ -33,13 +33,13 @@ Mit Datenansichten können Sie die Schema-Elementeinstellungen spontan ändern, 
 
 * **Sie können mehrere Metriken mit verschiedenen Zuordnungsmodellen oder mit unterschiedlichen Lookback-Fenstern** aus demselben Schemafeld erstellen.
 
-* **Sie können die ID einer Komponente bearbeiten**. Dies wird zur Kompatibilität zwischen verschiedenen Datenansichten verwendet. Die Komponenten-ID wird von der Reporting-API zur Identifizierung einer bestimmten Metrik oder Dimension verwendet. Da Sie beliebig viele Metriken oder Dimensionen aus einem XDM-Feld erstellen können, haben Sie die Möglichkeit, Ihre eigene Komponenten-ID zu definieren. Daher kann eine Metrik, die Sie in einem Workspace-Projekt verwenden, über Datenansichten (und die API) hinweg kompatibel sein, auch wenn sie auf völlig unterschiedlichen Feldern aus unterschiedlichen Verbindungen oder Datenansichten oder aus einem anderen XDM-Schema basiert.
+* **Sie können die ID einer Komponente bearbeiten**. Dies wird zur Kompatibilität zwischen verschiedenen Datenansichten verwendet. Die Komponenten-ID wird von der Reporting-API zur Identifizierung einer bestimmten Metrik oder Dimension verwendet. Da Sie beliebig viele Metriken oder Dimensionen aus einem XDM-Feld erstellen können, haben Sie die Möglichkeit, Ihre eigene Komponenten-ID zu definieren. Daher kann eine Metrik, die Sie in einem Arbeitsbereich-Projekt verwenden, über Datenansichten (und die API) hinweg kompatibel sein, auch wenn sie auf völlig unterschiedlichen Feldern aus unterschiedlichen Verbindungen oder Datenansichten oder aus einem anderen XDM-Schema basiert.
 
 * **Sie können den Anzeigenamen der Komponente festlegen, der in Analysis Workspace angezeigt wird**. Standardmäßig wird dieser Name vom Anzeigenamen des Schemas übernommen, Sie können ihn jetzt jedoch für diese spezifische Ansicht überschreiben.
 
 * **Sie können weitere Schema-bezogene Informationen zu Komponenten sehen**, beispielsweise von welchem Datensatztyp (Ereignis, Profil, Suche) sie stammen, von welchem Schema-Typ (String, Integer usw.) sie stammen und was der zugehörige Schema-Pfad ist (das XDM-Feld, auf dem sie basieren).
 
-* **Sie können eine Komponente taggen**, um die Suche nach ihr in Workspace zu erleichtern.
+* **Sie können eine Komponente taggen**, um die Suche nach ihr in Arbeitsbereich zu erleichtern.
 
 * **Sie können eine Komponente in Berichten ausblenden**. Für einige Metrik- und Dimensionseinstellungen ist eine zweite Metrik oder Dimension für die Konfiguration erforderlich (beispielsweise für metrische Deduplizierung oder Kauf-Deduplizierung). Auf diese Weise können Sie eine Metrik oder Dimension definieren, die in den Einstellungen einer anderen Metrik oder Dimension verwendet werden kann, ohne dass sie direkt in Berichten auftaucht (beispielsweise eine Kauf-ID).
 
@@ -49,14 +49,14 @@ Mit Datenansichten können Sie die Schema-Elementeinstellungen spontan ändern, 
 
 * Bei Dimensionen können Sie **automatisch nur bestimmte Werte in einem bestimmten Feld ein- oder ausschließen**. Wenn ein Entwickler beispielsweise einen falschen Wert von `dev mistake` in ein Feld gesendet hat, können Sie ihn mithilfe einer Ausschlussregel problemlos vom Bericht ausschließen und der Wert wird sich so verhalten, als ob er nie in den Daten vorhanden gewesen wäre.
 
-* Sie können **Ihre Container in einer Datenansicht umbenennen** und diese umbenannten Container in jedem Workspace-Projekt platzieren, das auf dieser Datenansicht basiert.
+* Sie können **Ihre Container in einer Datenansicht umbenennen** und diese umbenannten Container in jedem Arbeitsbereich-Projekt platzieren, das auf dieser Datenansicht basiert.
 
 ## Voraussetzungen für die Datenansicht
 
 * Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
-* Zum Erstellen oder Verwalten einer Datenansicht benötigen Sie einen [Berechtigungssatz in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de).
+* Zum Erstellen oder Verwalten einer Datenansicht benötigen Sie einen [Berechtigungssatz in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de#admin-access-permissions).
 
-## Einstellungen für die Datenansicht, die Sie in Workspace überschreiben können
+## Einstellungen für die Datenansicht, die Sie in Arbeitsbereich überschreiben können
 
 Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Projektebene überschrieben werden, andere nicht.
 
@@ -64,7 +64,7 @@ Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Pro
 * Attribution von Metriken
 * Ob Benutzer den Zeileneintrag [!UICONTROL Kein Wert] in einem Bericht sehen
 
-## Einstellungen für die Datenansicht, die Sie in Workspace nicht überschreiben können
+## Einstellungen für die Datenansicht, die Sie in Arbeitsbereich nicht überschreiben können
 
 * [!UICONTROL Typ der Komponente]
 * Formatierung von Metriken
@@ -73,7 +73,7 @@ Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Pro
 
 ## Löschen von Datenansichten
 
-Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle [!UICONTROL Workspace]-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
+Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle [!UICONTROL Arbeitsbereich]-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
 
 ## Nächste Schritte
 
