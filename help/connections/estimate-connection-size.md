@@ -4,9 +4,9 @@ description: Bericht zur aktuellen Nutzung von Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Möglicherweise müssen Sie die derzeitige Anzahl von Datenzeilen in [!UICONTROL
 Die Anzahl der tatsächlich in [!UICONTROL Customer Journey Analytics] aufgenommenen Ereignisse hängt von Ihrer Verbindungskonfiguration ab. Wenn Sie außerdem die falsche Personen-ID ausgewählt haben oder diese ID für einige Zeilen in den Datensätzen nicht verfügbar ist, werden diese Zeilen von [!UICONTROL Customer Journey Analytics] ignoriert. Gehen Sie wie folgt vor, um die tatsächlichen Zeilen der aufgenommenen Ereignisse zu ermitteln:
 
 1. Nachdem Sie die Verbindung gespeichert haben, erstellen Sie eine Datenansicht derselben Verbindung ohne Filter.
-1. Erstellen Sie ein Workspace-Projekt und wählen Sie die korrekte Datenansicht aus. Erstellen Sie eine Freiformtabelle und ziehen Sie die Metrik **[!UICONTROL Ereignisse]** mit der Dimension **[!UICONTROL Jahr]** per Drag und Drop. Wählen Sie einen ausreichend großen Datumsbereich in Ihrem Datumsauswahlkalender aus, um alle Daten in Ihrer Verbindung einzuschließen. Auf diese Weise können Sie die Anzahl der Ereignisse sehen, die in [!UICONTROL Customer Journey Analytics] aufgenommen werden.
+1. Erstellen Sie ein Arbeitsbereich-Projekt und wählen Sie die korrekte Datenansicht aus. Erstellen Sie eine Freiformtabelle und ziehen Sie die Metrik **[!UICONTROL Ereignisse]** mit der Dimension **[!UICONTROL Jahr]** per Drag und Drop. Wählen Sie einen ausreichend großen Datumsbereich in Ihrem Datumsauswahlkalender aus, um alle Daten in Ihrer Verbindung einzuschließen. Auf diese Weise können Sie die Anzahl der Ereignisse sehen, die in [!UICONTROL Customer Journey Analytics] aufgenommen werden.
 
    ![Arbeitsbereich-Projekt](assets/event-number.png)
 
@@ -54,4 +54,4 @@ In einigen Fällen kann es vorkommen, dass die Gesamtanzahl der von Ihrer Verbin
 
 1. Wenn wir uns dies in [!UICONTROL Adobe Experience Platform] anschauen, gibt es keinen Datensatz mit der ID „5f21c12b732044194bffc1d0“. Jemand hat also diesen Datensatz bei der Erstellung der ersten Verbindung aus [!UICONTROL Adobe Experience Platform] gelöscht. Später wurde er erneut zu [!UICONTROL Customer Journey Analytics] hinzugefügt, es wurde jedoch eine andere [!UICONTROL Platform-Datensatz-ID] von [!UICONTROL Adobe Experience Platform] generiert.
 
-Weitere Informationen über die [Implikationen beim Löschen von Datensätzen und Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de-DE#implications-of-deleting-data-components) erhalten Sie in [!UICONTROL Customer Journey Analytics] und [!UICONTROL Adobe Experience Platform].
+Weitere Informationen über die [Implikationen beim Löschen von Datensätzen und Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components) erhalten Sie in [!UICONTROL Customer Journey Analytics] und [!UICONTROL Adobe Experience Platform].
