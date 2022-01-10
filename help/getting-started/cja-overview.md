@@ -67,7 +67,7 @@ Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie
    * Anzeigen von Identitäts-Namespaces
    * Anzeigen von Datensätzen
 
-Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugangssteuerung in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
+Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://docs.adobe.com/content/help/de-DE/experience-platform/landing/home.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
 
 >[!NOTE]
 >
