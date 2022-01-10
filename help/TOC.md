@@ -10,9 +10,9 @@ user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, der auf der Adobe Experience Platform basierenden Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 99%
    + [Verbindungen verwalten](connections/manage-connections.md)
    + [Verbindungsgröße schätzen](connections/estimate-connection-size.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
-   + [Standardsuche](connections/standard-lookups.md)
+   + [Standardsuchen](connections/standard-lookups.md)
    + Kanalübergreifende Analyse {#cca}
       + [Überblick über die kanalübergreifende Analyse](connections/cca/overview.md)
       + [Funktionsweise der Wiederholung](connections/cca/replay.md)
@@ -55,7 +55,7 @@ ht-degree: 99%
 + Arbeitsbereich-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](analysis-workspace/perform-basic-analysis.md)
-   + [Erweiterte Analyse durchführen](analysis-workspace/perform-adv-analysis.md)
+   + [Durchführen einer erweiterten Analyse](analysis-workspace/perform-adv-analysis.md)
    + Projekte {#build-workspace-project}
       + [Übersicht über Projekte](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Projekte speichern](analysis-workspace/build-workspace-project/save-projects.md)
