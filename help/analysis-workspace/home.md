@@ -5,7 +5,7 @@ description: Überblick über die Funktionen von Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -25,13 +25,13 @@ Wenn Sie nur wenige Minuten Zeit haben, sehen Sie sich diese kurze Übersicht an
 
 ## Anmelden bei Customer Journey Analytics {#login}
 
-Um mit der Verwendung von Analysis Workspace zu beginnen, melden Sie sich unter [experience.adobe.com/analytics](https://experience.adobe.com/analytics) bei Customer Journey Analytics an. Sie landen auf der Homepage der Workspace-Projektliste, wenn noch kein bestimmtes Projekt für Sie ausgewählt wurde.
+Um mit der Verwendung von Analysis Workspace zu beginnen, melden Sie sich unter [experience.adobe.com/analytics](https://experience.adobe.com/analytics) bei Customer Journey Analytics an. Sie landen auf der Homepage der Arbeitsbereich-Projektliste, wenn noch kein bestimmtes Projekt für Sie ausgewählt wurde.
 
 ![](assets/login-analytics.png)
 
 ## Verwenden des Tutorials {#training-tutorial}
 
-Nach der Anmeldung sollten Sie als Erstes das Analysis Workspace-Tutorial besuchen, das Sie durch die gängige Terminologie und die Schritte zum Aufbau Ihrer ersten Analyse in Workspace führt. Um mit dem Tutorial zu beginnen, klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und wählen Sie dann **Tutorial** im neuen Projektmodell aus.
+Nach der Anmeldung sollten Sie als Erstes das Analysis Workspace-Tutorial besuchen, das Sie durch die gängige Terminologie und die Schritte zum Aufbau Ihrer ersten Analyse in Arbeitsbereich führt. Um mit dem Tutorial zu beginnen, klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und wählen Sie dann **Tutorial** im neuen Projektmodell aus.
 
 ![](assets/training-tutorial.png)
 
@@ -43,7 +43,7 @@ Nach Abschluss des Tutorials können Sie mit der Erstellung Ihres ersten Projekt
 
 ## Analyse erstellen {#analysis}
 
-In Ihrem Workspace-Projekt können Sie von der linken Leiste aus auf **Bereiche, Tabellen, Visualisierungen und Komponenten** zugreifen. Das sind Ihre Projektbausteine.
+In Ihrem Arbeitsbereich-Projekt können Sie von der linken Leiste aus auf **Bereiche, Tabellen, Visualisierungen und Komponenten** zugreifen. Das sind Ihre Projektbausteine.
 
 ### Komponenten
 
@@ -65,4 +65,4 @@ In Ihrem Workspace-Projekt können Sie von der linken Leiste aus auf **Bereiche,
 
 ## Zusätzliche Ressourcen {#resources}
 
-* Adobe bietet Hunderte von [Analytics-Video-Tutorials](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.html).
+* Adobe bietet Hunderte von [Analytics-Video-Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de).
