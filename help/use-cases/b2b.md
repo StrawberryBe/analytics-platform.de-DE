@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie in Customer Journey Analytics kontobasierte D
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Dieser Anwendungsfall für den B2B-Bereich zeigt auf, wie Sie festlegen können,
 
 Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/getting-started/cja-glossary.md)-Datensatz eintragen.
 
-Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Im nächsten Schritt erstellen Sie eine Verbindung in Customer Journey Analytics (CJA), die verschiedene Datensätze kombiniert, darunter auch den von Ihnen erstellen Lookup-Datensatz. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Workspace nutzen.
+Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Im nächsten Schritt erstellen Sie eine Verbindung in Customer Journey Analytics (CJA), die verschiedene Datensätze kombiniert, darunter auch den von Ihnen erstellen Lookup-Datensatz. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
 
 >[!NOTE]
 >
@@ -85,9 +85,9 @@ Befolgen Sie die Anweisungen zum [Erstellen von Datenansichten](/help/data-views
 
 * Fügen Sie alle Komponenten (d. h. Dimensionen und Metriken) hinzu, die sie aus den Datensätzen benötigen.
 
-## 6. Analysieren der Daten in Workspace
+## 6. Analysieren der Daten in Arbeitsbereich
 
-Sie können jetzt Workspace-Projekte auf Basis der Daten aus allen drei Datensätzen erstellen.
+Sie können jetzt Arbeitsbereich-Projekte auf Basis der Daten aus allen drei Datensätzen erstellen.
 
 Diese können Ihnen beispielsweise Aufschluss über die Fragen aus der Einführung erhalten.
 
