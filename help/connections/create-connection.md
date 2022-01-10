@@ -4,7 +4,7 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Verbindung herstellen
 
-Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in [!UICONTROL Workspace] integrieren. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Workspace] herstellen.
+Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in [!UICONTROL Arbeitsbereich] integrieren. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Arbeitsbereich] herstellen.
 
 Eine Videoübersicht finden Sie [hier](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=de).
 
@@ -121,7 +121,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
    | [!UICONTROL Verbindung benennen] | Geben Sie der Verbindung einen beschreibenden Namen. Die Verbindung kann nicht ohne Namen gespeichert werden. |
    | [!UICONTROL Beschreibung] | Fügen Sie weitere Details hinzu, um diese Verbindung von anderen zu unterscheiden. |
    | [!UICONTROL Datensätze] | Die in dieser Verbindung enthaltenen Datensätze. |
-   | [!UICONTROL Automatisch ab heute alle neuen Datensätze in dieser Verbindung importieren.] | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Workspace] ein. |
+   | [!UICONTROL Automatisch ab heute alle neuen Datensätze in dieser Verbindung importieren.] | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in [!UICONTROL Arbeitsbereich] ein. |
    | [!UICONTROL Alle vorhandenen Daten importieren] | Wenn Sie diese Option auswählen und die Verbindung speichern, werden alle vorhandenen (historischen) Daten von [!DNL Experience Platform] für alle Datensätze in dieser Verbindung importiert oder aufgestockt. In Zukunft werden für alle neuen Datensätze, die dieser gespeicherten Verbindung hinzugefügt werden, auch alle vorhandenen historischen Daten automatisch importiert. Siehe auch unten [historische Daten aufstocken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#backfill-historical-data).<br>**Beachten Sie, dass diese Einstellung nach dem Speichern dieser Verbindung nicht mehr geändert werden kann.** |
    | [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] | Sie müssen die durchschnittliche Anzahl der täglich zu importierenden Ereignisse (neue Daten **und** Aufstockungsdaten) für alle Datensätze in der Verbindung angeben. Wählen Sie eine Option aus dem Dropdown-Menü. Dadurch kann Adobe genügend Platz für diese Daten bereitstellen.<br>Wenn Sie nicht wissen, wie viele Ereignisse Ihre Firma im Durchschnitt importieren wird, können Sie eine einfache SQL-Abfrage in den [Adobe Experience Platform-Abfragediensten](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) durchführen, um es herauszufinden.<br>Siehe unten „Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen“. |
 
@@ -141,7 +141,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) und erstellen Sie eine neue Abfrage.
 
 1. Die Abfrage würde wie folgt aussehen: <br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
