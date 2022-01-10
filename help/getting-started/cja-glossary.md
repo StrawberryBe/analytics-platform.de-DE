@@ -4,7 +4,7 @@ description: Glossar zu Customer Journey Analytics.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 | Neuer Begriff in Customer Journey Analytics | Begriff in Adobe Analytics | Beschreibung |
 |---|---|---|
 | Lookup-Datensatz | Klassifizierung | Mit „Lookup“ können Sie den Wert eines bestimmten Datensatzes anhand eines Schlüssels/übereinstimmenden Schlüssels (in einem Ereignisdatensatz) abrufen, wenn eine Eins-zu-Eins-Beziehung vorliegt. So können Sie z. B. „tracking_code“ als den mit „tracking_code“ im Ereignis-Datensatz übereinstimmenden Schlüssel angeben. |
-| Profildatensatz | Kundenattribut | Wenn Sie Daten von Unternehmenskunden in einer CRM-Datenbank (CRM = Customer Relationship Management) erfassen, können Sie diese Daten in einen Profildatensatz in Adobe Experience Platform hochladen. Nachdem Sie eine Verbindung zu diesem Datensatz in Customer Journey Analytics hergestellt und eine Datenansicht erstellt haben, können Sie die Daten in Workspace nutzen. |
+| Profildatensatz | Kundenattribut | Wenn Sie Daten von Unternehmenskunden in einer CRM-Datenbank (CRM = Customer Relationship Management) erfassen, können Sie diese Daten in einen Profildatensatz in Adobe Experience Platform hochladen. Nachdem Sie eine Verbindung zu diesem Datensatz in Customer Journey Analytics hergestellt und eine Datenansicht erstellt haben, können Sie die Daten in Arbeitsbereich nutzen. |
 | Anmeldeunternehmen | Experience Cloud-Organisation | Siehe [Organisationen und Kontoverknüpfung](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | nicht angegeben | Report Suite | Report Suites im traditionellen Sinne von Adobe Analytics existieren nicht mehr. Stattdessen erstellen Sie (virtuelle) [Datenansichten](/help/data-views/create-dataview.md) aus den Platform-Datensätzen, mit denen Sie Verbindungen hergestellt haben. |
 | Filter | Segment | Segmente sind jetzt Filter. Filter in Customer Journey Analytics verhalten sich wie Segmente. Nur die Terminologie wurde geändert. |
