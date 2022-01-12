@@ -3,9 +3,9 @@ title: Persistenz-Komponenteneinstellungen
 description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen bleiben.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+source-git-commit: 3b00b8fe5dd4687bb8022d8e6e5e98ad2d535866
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 78%
 
 ---
@@ -64,12 +64,12 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 ## [!UICONTROL Binding-Dimension]
 
-Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Dropdown-Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
+A dropdown that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid dropdown options include other dimensions included in the data view.
 
-Diese Einstellung wird in der Regel in Objekt-Arrays verwendet und wird am häufigsten zur Messung von Elementen wie Produktsuchmethoden, internen Suchergebnissen, Impressionen von internen Promotions oder Inhalts- oder Produktempfehlungen verwendet. In früheren Versionen von Adobe Analytics wurde dieses Konzept als Merchandising für die Konversionssyntax bezeichnet.
+This setting is typically used in object arrays and is most commonly used for measuring things like product finding methods, internal search results, impressions of internal promotions, or content or product recommendations. In previous versions of Adobe Analytics, this concept is similar to conversion syntax merchandising.
 
 ## [!UICONTROL Binding-Metrik]
 
-Ein Dropdown-Menü, in dem Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Gültige Dropdown-Optionen sind Metriken, die in der Datenansicht enthalten sind.
+A dropdown that lets you choose a metric that acts as a binding trigger. Valid dropdown options include metrics included in the data view.
 
-Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Bindungsmetrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Bindungsdimension kopiert. In früheren Versionen von Adobe Analytics wird ein ähnliches, aber eingeschränkteres Konzept davon als Produktsyntax-Merchandising bezeichnet.
+This setting only appears when the Binding Dimension is lower in the object array than the component. When the binding metric is present in an event, dimension values are copied from the event-level dimension down to the lower schema level of the binding dimension. In previous versions of Adobe Analytics, a similar but more limited concept is known as product syntax merchandising.
