@@ -3,10 +3,10 @@ title: Persistenz-Komponenteneinstellungen
 description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen bleiben.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 3b00b8fe5dd4687bb8022d8e6e5e98ad2d535866
+source-git-commit: 25557196c9841489e2732dece2c3402ebaf6224e
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 78%
+source-wordcount: '837'
+ht-degree: 73%
 
 ---
 
@@ -53,6 +53,15 @@ Details zu den verfügbaren Zuordnungseinstellungen.
    | Datensatzwerte | A | B | C |  | A |
    | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
 
+* **[!UICONTROL Erste bekannte]** und **[!UICONTROL Zuletzt bekannt]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen &quot;Einstieg&quot;und &quot;Ausstieg&quot;. Sie nehmen den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) und wenden ihn auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
+
+| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+| --- | --- | --- | --- | --- | --- |
+| Zeitstempel (min.) | 1 | 2 | 3 | 6 | 7 |
+| Ausgangswerte |  | C | B |  | A |
+| Erste bekannte | C | C | C | C | C |
+| Zuletzt bekannt | A | A | A | A | A |
+
 ## [!UICONTROL Gültigkeits]-Einstellungen
 
 Details zu den verfügbaren Gültigkeitseinstellungen.
@@ -64,12 +73,12 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 ## [!UICONTROL Binding-Dimension]
 
-A dropdown that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid dropdown options include other dimensions included in the data view.
+Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Dropdown-Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
 
-This setting is typically used in object arrays and is most commonly used for measuring things like product finding methods, internal search results, impressions of internal promotions, or content or product recommendations. In previous versions of Adobe Analytics, this concept is similar to conversion syntax merchandising.
+Diese Einstellung wird in der Regel in Objekt-Arrays verwendet und wird am häufigsten zur Messung von Elementen wie Produktsuchmethoden, internen Suchergebnissen, Impressionen von internen Promotions oder Inhalts- oder Produktempfehlungen verwendet. In früheren Versionen von Adobe Analytics ähnelt dieses Konzept dem Merchandising der Konversionssyntax.
 
 ## [!UICONTROL Binding-Metrik]
 
-A dropdown that lets you choose a metric that acts as a binding trigger. Valid dropdown options include metrics included in the data view.
+Ein Dropdown-Menü, in dem Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Gültige Dropdown-Optionen sind Metriken, die in der Datenansicht enthalten sind.
 
-This setting only appears when the Binding Dimension is lower in the object array than the component. When the binding metric is present in an event, dimension values are copied from the event-level dimension down to the lower schema level of the binding dimension. In previous versions of Adobe Analytics, a similar but more limited concept is known as product syntax merchandising.
+Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Bindungsmetrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Bindungsdimension kopiert. In früheren Versionen von Adobe Analytics wird ein ähnliches, aber eingeschränkteres Konzept als Produktsyntax-Merchandising bezeichnet.
