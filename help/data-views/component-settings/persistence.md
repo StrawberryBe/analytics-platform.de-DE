@@ -3,7 +3,7 @@ title: Persistenz-Komponenteneinstellungen
 description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen bleiben.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 25557196c9841489e2732dece2c3402ebaf6224e
+source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 73%
@@ -55,12 +55,12 @@ Details zu den verfügbaren Zuordnungseinstellungen.
 
 * **[!UICONTROL Erste bekannte]** und **[!UICONTROL Zuletzt bekannt]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen &quot;Einstieg&quot;und &quot;Ausstieg&quot;. Sie nehmen den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) und wenden ihn auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
 
-| Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
-| --- | --- | --- | --- | --- | --- |
-| Zeitstempel (min.) | 1 | 2 | 3 | 6 | 7 |
-| Ausgangswerte |  | C | B |  | A |
-| Erste bekannte | C | C | C | C | C |
-| Zuletzt bekannt | A | A | A | A | A |
+   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+   | --- | --- | --- | --- | --- | --- |
+   | Zeitstempel (min.) | 1 | 2 | 3 | 6 | 7 |
+   | Ausgangswerte |  | C | B |  | A |
+   | Erste bekannte | C | C | C | C | C |
+   | Zuletzt bekannt | A | A | A | A | A |
 
 ## [!UICONTROL Gültigkeits]-Einstellungen
 
