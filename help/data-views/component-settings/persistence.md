@@ -3,10 +3,10 @@ title: Persistenz-Komponenteneinstellungen
 description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum nächsten bestehen bleiben.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '588'
-ht-degree: 100%
+source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 78%
 
 ---
 
@@ -61,3 +61,15 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 * **Person**: Läuft am Ende des Reporting-Fensters ab.
 * **Zeit**: Sie können den Wert der Dimension so einstellen, dass er nach einem bestimmten Zeitraum (bis zu 90 Tage) abläuft. Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
 * **Metrik**: Wenn diese Metrik in einem Treffer angezeigt wird, läuft der Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
+
+## [!UICONTROL Binding-Dimension]
+
+Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Dropdown-Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
+
+Diese Einstellung wird in der Regel in Objekt-Arrays verwendet und wird am häufigsten zur Messung von Elementen wie Produktsuchmethoden, internen Suchergebnissen, Impressionen von internen Promotions oder Inhalts- oder Produktempfehlungen verwendet. In früheren Versionen von Adobe Analytics wurde dieses Konzept als Merchandising für die Konversionssyntax bezeichnet.
+
+## [!UICONTROL Binding-Metrik]
+
+Ein Dropdown-Menü, in dem Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Gültige Dropdown-Optionen sind Metriken, die in der Datenansicht enthalten sind.
+
+Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Bindungsmetrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Bindungsdimension kopiert. In früheren Versionen von Adobe Analytics wird ein ähnliches, aber eingeschränkteres Konzept davon als Produktsyntax-Merchandising bezeichnet.
