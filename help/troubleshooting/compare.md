@@ -3,13 +3,13 @@ title: AA-Daten mit CJA-Daten vergleichen
 description: Erfahren Sie, wie Sie Ihre Adobe Analytics-Daten mit Daten in Customer Journey Analytics vergleichen.
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
-source-git-commit: b0d29964c67d8a6a847a05dbe113b8213b346f9b
+exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
+source-git-commit: 6f77dd9caef1ac8c838f825a48ace6cf533d28a9
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 4%
+source-wordcount: '699'
+ht-degree: 5%
 
 ---
-
 
 # Adobe Analytics-Daten mit CJA-Daten vergleichen
 
@@ -26,7 +26,6 @@ Im Folgenden finden Sie einige Schritte zum Vergleich Ihrer ursprünglichen Adob
 * Stellen Sie sicher, dass der Analytics-Datensatz in AEP Daten für den zu untersuchenden Datumsbereich enthält.
 
 * Stellen Sie sicher, dass die in Analytics ausgewählte Report Suite mit der in Adobe Experience Platform erfassten Report Suite übereinstimmt.
-
 
 ## Schritt 1: Metrik &quot;Vorfälle&quot;in Adobe Analytics ausführen
 
@@ -48,7 +47,7 @@ Datensätze insgesamt nach Zeitstempeln sollten mit Vorfällen übereinstimmen, 
 >
 >Dies funktioniert nur für normale Mid-Werte-Datensätze, nicht für zugeordnete Datensätze (über [Kanalübergreifende Analyse](/help/connections/cca/overview.md)). Beachten Sie, dass die Berücksichtigung der in CJA verwendeten Personen-ID für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist möglicherweise nicht immer einfach in AA zu replizieren, insbesondere wenn die kanalübergreifende Analyse aktiviert ist.
 
-1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)führen Sie die folgenden Datensätze insgesamt nach Zeitstempelabfrage aus:
+1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html)ausführen Sie Folgendes [!UICONTROL Datensätze insgesamt nach Zeitstempeln] Abfrage:
 
 ```
 SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
@@ -62,7 +61,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. In [Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de)anhand der Rohdaten erkennen, ob einige Zeilen vom Analytics-Quell-Connector möglicherweise gelöscht werden.
+1. In [Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de)anhand der Rohdaten erkennen, ob einige Zeilen möglicherweise vom Analytics Source Connector gelöscht wurden.
 
    Die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) kann beim Konvertieren in das XDM-Schema Zeilen löschen. Es kann mehrere Gründe dafür geben, dass die gesamte Zeile für die Umwandlung nicht geeignet ist. Wenn eines der folgenden Analytics-Felder diese Werte aufweist, wird die gesamte Zeile abgelegt.
 
@@ -75,20 +74,16 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    | Hit_source | 0,3,5,7,8,9,10 |
    | Page_event | 53,63 |
 
-1. Wenn der Connector Zeilen abgelegt hat, ziehen Sie diese Zeilen von der Metrik Vorfälle ab. Die resultierende Zahl sollte mit der Anzahl der Ereignisse in den AEP-Datensätzen übereinstimmen.
+1. Wenn der Connector Zeilen abgelegt hat, ziehen Sie diese Zeilen aus dem [!UICONTROL Vorfälle] Metrik. Die resultierende Zahl sollte mit der Anzahl der Ereignisse in den Adobe Experience Platform-Datensätzen übereinstimmen.
 
 ## Warum Datensätze während der Aufnahme aus AEP möglicherweise gelöscht oder übersprungen werden
 
-CJA [Verbindungen](/help/connections/create-connection.md) ermöglichen es Ihnen, mehrere Datensätze zusammenzuführen und miteinander zu verbinden, basierend auf einer gemeinsamen Personen-ID über die Datensätze hinweg. Im Backend wird Deduplizierung angewendet: vollständiger äußere Join oder Vereinigung für Ereignis-Datensätze basierend auf Zeitstempeln und dann innerer Join in Profil- und Lookup-Datensatz, basierend auf der Personen-ID.
+CJA [Verbindungen](/help/connections/create-connection.md) ermöglichen es Ihnen, mehrere Datensätze zusammenzuführen und miteinander zu verbinden, basierend auf einer gemeinsamen Personen-ID über die Datensätze hinweg. Im Backend wird Deduplizierung angewendet: vollständiger äußere Join oder Vereinigung für Ereignis-Datensätze basierend auf Zeitstempeln und dann innerer Join in Profil- und Lookup-Datensatz basierend auf der Personen-ID.
 
 Im Folgenden finden Sie einige Gründe, warum Datensätze bei der Aufnahme von Daten aus AEP übersprungen werden können.
 
-* **Fehlende Zeitstempel** - Wenn Zeitstempel in Ereignis-Datensätzen fehlen, werden diese Datensätze bei der Erfassung vollständig ignoriert oder übersprungen. weil sie eine Vereinigung des Datensatzes ermöglichen würden.
+* **Fehlende Zeitstempel** - Wenn Zeitstempel in Ereignis-Datensätzen fehlen, werden diese Datensätze bei der Erfassung vollständig ignoriert oder übersprungen.
 
 * **Fehlende Personen-IDs** - Fehlende Personen-IDs (aus dem Ereignis-Datensatz und/oder aus Profil-/Lookup-Datensatz) führen dazu, dass diese Datensätze ignoriert oder übersprungen werden. Der Grund dafür ist, dass es keine gemeinsamen IDs oder übereinstimmenden Schlüssel zum Verbinden der Datensätze gibt.
 
-* **Ungültige Personen-IDs** - Bei ungültigen IDs kann das System keine gültige gemeinsame ID unter den Datensätzen finden, die hinzugefügt werden sollen. In einigen Fällen weist die Spalte mit der Personen-ID ungültige Personen-IDs auf, z. B. &quot;undefiniert&quot;oder &quot;0000000&quot;.
-
-* **Große Personen-ID** - Eine Personen-ID mit einer beliebigen Kombination von Zahlen und Buchstaben, die in einem Ereignis angezeigt wird, das mehr als eine Million Mal pro Monat stattfindet, kann keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden. Sie wird als ungültig kategorisiert. Diese Datensätze können nicht in das System aufgenommen werden und führen zu fehleranfälliger Erfassung und Berichterstellung.
-
-
+* **Ungültige oder große Personen-IDs** - Bei ungültigen IDs kann das System keine gültige gemeinsame ID unter den Datensätzen finden, die hinzugefügt werden sollen. In einigen Fällen weist die Spalte mit der Personen-ID ungültige Personen-IDs auf, z. B. &quot;undefiniert&quot;oder &quot;0000000&quot;. Eine Personen-ID (mit beliebiger Kombination aus Zahlen und Buchstaben), die in einem Ereignis angezeigt wird, das mehr als eine Million Mal pro Monat stattfindet, kann keinem bestimmten Benutzer oder einer bestimmten Person zugeordnet werden. Sie wird als ungültig kategorisiert. Diese Datensätze können nicht in das System aufgenommen werden und führen zu fehleranfälliger Erfassung und Berichterstellung.
