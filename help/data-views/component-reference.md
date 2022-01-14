@@ -3,10 +3,10 @@ title: Standardkomponentenreferenz
 description: Details und Informationen zu allen Standardkomponenten, die Sie jeder Datenansicht hinzufügen können.
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '583'
-ht-degree: 100%
+source-git-commit: b4d2c564f9fc477212306dc022b4afc5ab92db97
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 92%
 
 ---
 
@@ -39,13 +39,23 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 
 Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!UICONTROL Datenansicht bearbeiten]** > Registerkarte **[!UICONTROL Komponenten]** > Registerkarte **[!UICONTROL Standardkomponenten]** verfügbar.
 
-| Name der Komponente | Dimension oder Metrik | Hinweise |
+| Name der Komponente | Dimension oder Metrik | Hinweise und -Werte |
 | --- | --- | --- |
+| [!UICONTROL Vormittag/Nachmittag] | Zeitunterteilungsdimension | Vormittag oder Nachmittag |
+| [!UICONTROL Batch-ID] | Dimension | Stellt den Experience Platform-Batch dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
+| [!UICONTROL Datensatz-ID] | Dimension | Stellt den Experience Platform-Datensatz dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
+| [!UICONTROL Tag des Monats] | Zeitunterteilungsdimension | 1–31 |
+| [!UICONTROL Wochentag] | Zeitunterteilungsdimension | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
+| [!UICONTROL Tag des Jahres] | Zeitunterteilungsdimension | 1–366 |
+| [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
+| [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar - Dezember |
+| [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Die [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von Unique Visitors in CJA. |
+| [!UICONTROL Personen-ID-Namespace] | Dimension | Welchen ID-Typ hat die [!UICONTROL Personen-ID] besteht aus . Beispiele: `email address`, `cookie ID`, `Analytics ID`, usw. |
+| [!UICONTROL Quartal des Jahres] | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Sitzung beginnt] | Metrik | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung gefiltert. |
 | [!UICONTROL Sitzung endet] | Metrik | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Filterdefinition verwendet werden, um bis zum letzten Ereignis jeder Sitzung zu filtern. |
 | [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension. |
 | [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | Sammelt die Metrik [!UICONTROL Verwendete Zeit] in Buckets des Typs [!UICONTROL Ereignis]. |
 | [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Sitzung] zusammen. |
 | [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Person] zusammen. |
-| [!UICONTROL Batch-ID] | Dimension | Stellt den Experience Platform-Batch dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
-| [!UICONTROL Datensatz-ID] | Dimension | Stellt den Experience Platform-Datensatz dar, zu dem ein [!UICONTROL Ereignis] gehört hat. |
+| [!UICONTROL Wochenende]/[!UICONTROL Wochentag] | Zeitunterteilungsdimension | Wochenende oder Wochentag |
