@@ -2,18 +2,18 @@
 description: Zeigt die 5 wichtigsten Werte für Nicht-Zeitdimensionen (und 15 für Zeitdimensionen) an.
 title: Anzeigen einer Vorschau von Dimensionen in CJA Workspace
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 89%
+source-wordcount: '231'
+ht-degree: 90%
 
 ---
 
-# Dimensionsvorschau
+# Vorschau von Dimensionen in Analysis Workspace
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Bewegen Sie den Cursor über das Informations-Symbol neben einer Dimension, um die obersten fünf Werte für nicht zeitabhängige Dimensionen (und 15 für zeitabhängige Dimensionen) anzuzeigen. Bisher waren diese Werte statisch (d. h. die fünf ausgewählten Werte blieben unverändert).
 

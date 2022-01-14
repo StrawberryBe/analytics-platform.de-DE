@@ -3,10 +3,10 @@ title: Erstellen oder Bearbeiten einer Datenansicht
 description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht zu erstellen oder zu bearbeiten.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 99%
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Das Erstellen einer Datenansicht umfasst entweder das Erstellen von Metriken und
 
 ![Neue Datenansicht](assets/new-data-view.png)
 
-### Einstellungen
+### Datenansichtseinstellungen
 
 Stellt übergreifende Einstellungen für die Datenansicht bereit.
 
@@ -29,7 +29,7 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 | --- | --- |
 | [!UICONTROL Verbindung] | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die einen oder mehrere Adobe Experience Platform-Datensätze enthält. |
 | [!UICONTROL Name] | Erforderlich. Der Name der Datenansicht. Dieser Wert wird in der Dropdown-Liste oben rechts in Analysis Workspace angezeigt. |
-| [!UICONTROL Beschreibung] | Optional. Adobe empfiehlt eine detaillierte Beschreibung, damit Benutzer verstehen, warum die Datenansicht vorhanden ist und für wen sie konzipiert ist. |
+| [!UICONTROL Beschreibung] | Optional. Adobe empfiehlt eine detaillierte Beschreibung, damit Benutzer verstehen können, warum die Datenansicht vorhanden ist und für wen sie konzipiert ist. |
 
 ### Behälter
 
