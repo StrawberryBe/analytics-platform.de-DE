@@ -3,10 +3,10 @@ title: Erstellen oder Bearbeiten einer Datenansicht
 description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht zu erstellen oder zu bearbeiten.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,21 +84,23 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen
    * [[!UICONTROL Persistenz]](component-settings/persistence.md)
    * [[!UICONTROL Wert-Bucketing]](component-settings/value-bucketing.md)
 
-Bei Bedarf können Sie die folgenden Funktionen verwenden:
+## Metriken oder Dimensionen duplizieren
 
-* **[!UICONTROL Duplizieren]**: Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spezifischer Einstellungen ist eine einfache Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen. Wählen Sie die Einstellung [!UICONTROL Duplizieren] unter dem Namen der Metrik oder Dimension oben rechts aus. Ändern Sie dann die neue Dimension oder Metrik und speichern Sie sie unter einem aussagekräftigeren Namen.
+Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spezifischer Einstellungen ist eine einfache Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen. Wählen Sie die Einstellung [!UICONTROL Duplizieren] unter dem Namen der Metrik oder Dimension oben rechts aus. Ändern Sie dann die neue Dimension oder Metrik und speichern Sie sie unter einem aussagekräftigeren Namen.
 
-   ![Duplizieren](assets/duplicate.png)
+![Duplizieren](assets/duplicate.png)
 
-* **[!UICONTROL Filtern]**: Sie können die Schemafelder in der linken Leiste nach folgenden Datentypen filtern:
+## Filtern von Schemafeldern oder Datensätzen
 
-   ![Felder filtern](assets/filter-fields.png)
+Sie können die Schemafelder in der linken Leiste nach folgenden Datentypen filtern:
 
-   Sie können auch nach Datensätzen filtern und danach, ob ein Schemafeld Daten enthält oder ob es sich um eine Identität handelt. Standardmäßig wendet Adobe den Filter **[!UICONTROL Enthält Daten]** zunächst auf alle Ansichten an.
+![Felder filtern](assets/filter-fields.png)
 
-   ![Andere filtern](assets/filter-other.png)
+Sie können auch nach Datensätzen filtern und danach, ob ein Schemafeld Daten enthält oder ob es sich um eine Identität handelt. Standardmäßig wendet Adobe den Filter **[!UICONTROL Enthält Daten]** zunächst auf alle Ansichten an.
 
-## Einstellungen
+![Andere filtern](assets/filter-other.png)
+
+## Einstellungen tab
 
 1. Melden Sie sich bei [Customer Journey Analytics](https://analytics.adobe.com) an und gehen Sie zur Registerkarte **[!UICONTROL Datenansichten]**.
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Datenansicht zu erstellen, oder klicken Sie auf eine vorhandene Datenansicht, um sie zu bearbeiten.
