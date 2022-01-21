@@ -4,9 +4,9 @@ description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum näch
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -53,14 +53,14 @@ Details zu den verfügbaren Zuordnungseinstellungen.
    | Datensatzwerte | A | B | C |  | A |
    | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
 
-* **[!UICONTROL Erste bekannte]** und **[!UICONTROL Zuletzt bekannt]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen &quot;Einstieg&quot;und &quot;Ausstieg&quot;. Sie nehmen den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) und wenden ihn auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
+* **[!UICONTROL Erster bekannter]** und **[!UICONTROL Letzter bekannter]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen „Einstieg“ und „Ausstieg“. Sie wenden den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
 
    | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
    | --- | --- | --- | --- | --- | --- |
-   | Zeitstempel (min.) | 1 | 2 | 3 | 6 | 7 |
+   | Zeitstempel (Min.) | 1 | 2 | 3 | 6 | 7 |
    | Ausgangswerte |  | C | B |  | A |
-   | Erste bekannte | C | C | C | C | C |
-   | Zuletzt bekannt | A | A | A | A | A |
+   | Erster bekannter | C | C | C | C | C |
+   | Letzter bekannter | A | A | A | A | A |
 
 ## [!UICONTROL Gültigkeits]-Einstellungen
 
@@ -75,10 +75,10 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Dropdown-Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Diese Einstellung wird in der Regel in Objekt-Arrays verwendet und wird am häufigsten zur Messung von Elementen wie Produktsuchmethoden, internen Suchergebnissen, Impressionen von internen Promotions oder Inhalts- oder Produktempfehlungen verwendet. In früheren Versionen von Adobe Analytics ähnelt dieses Konzept dem Merchandising der Konversionssyntax.
+Diese Einstellung wird in der Regel in Objekt-Arrays verwendet und wird am häufigsten zur Messung von Elementen wie Produktsuchmethoden, internen Suchergebnissen, Impressions von internen Promotions oder Inhalts- oder Produktempfehlungen verwendet. In früheren Versionen von Adobe Analytics ähnelt dieses Konzept dem Konversionssyntax-Merchandising.
 
 ## [!UICONTROL Binding-Metrik]
 
-Ein Dropdown-Menü, in dem Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Gültige Dropdown-Optionen sind Metriken, die in der Datenansicht enthalten sind.
+Ein Dropdown-Menü, in dem Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Zu den gültigen Dropdown-Optionen gehören die Metriken, die in der Datenansicht enthalten sind.
 
-Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Bindungsmetrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Bindungsdimension kopiert. In früheren Versionen von Adobe Analytics wird ein ähnliches, aber eingeschränkteres Konzept als Produktsyntax-Merchandising bezeichnet.
+Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Binding-Metrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Binding-Dimension kopiert. In früheren Versionen von Adobe Analytics gibt es ein ähnliches, aber eingeschränkteres Konzept, das als Produktsyntax-Merchandising bezeichnet wird.
