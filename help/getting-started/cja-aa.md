@@ -3,10 +3,10 @@ title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
+source-git-commit: d46779a30fd841194f8ba0e80ab17ea5714569db
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 93%
+source-wordcount: '1309'
+ht-degree: 92%
 
 ---
 
@@ -69,8 +69,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-| Bot-Filterung | Für Datensätze, die auf dem Analytics-Quell-Connector basieren, wird Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
-| Media Analytics | Mediendaten stehen als Teil von Analytics Data Connector zur Verfügung. |
+| Bot-Filterung | Für [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)-basierte Datensätze verwenden, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
+| Media Analytics | Mediendaten sind als Teil von Analytics Source Connector verfügbar. |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“, „Analytics for Target (A4T)“ und „Gleichzeitige Medienbesucher“ werden nicht unterstützt. |
 | Verarbeitungsregeln | Auf Analytics Data Connector-basierte Datensätze werden weiterhin Verarbeitungsregeln angewendet. [Datenvorbereitungsfunktionen in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform übermittelt werden. |
 
@@ -98,10 +98,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Unterstützung ist noch nicht geplant. |
-| Classification Rule Builder | Unterstützung ist noch nicht geplant. |
 | Währungsumrechnung | Unterstützung ist noch nicht geplant. |
 | Daten-Feeds | Unterstützung ist noch nicht geplant. |
-| Echtzeitberichte | Unterstützung ist noch nicht geplant. |
 | Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
 | Transaktions-ID-Data Sources | Unterstützung ist noch nicht geplant. |
 
