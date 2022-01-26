@@ -3,9 +3,9 @@ title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1309'
 ht-degree: 94%
 
 ---
@@ -79,17 +79,17 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
+| Classification Rule Builder | Funktioniert in CJA etwas anders, indem Zeichenfolgenmanipulationen zur Berichtszeit verwendet werden, anstatt Datensätze zu suchen. |
 | Beitragsanalyse | Unterstützung ist geplant. |
 | Data Warehouse-Berichte (100 % Zeilenexport) | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [[!UICONTROL Abfrage-Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) von Adobe Experience Platform bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
+| Berichte zu Steigerung und Konfidenz | Unterstützung ist geplant. |
+| Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle | Unterstützung ist geplant, funktioniert aber in der Abfragezeit und nicht während der Datenerfassung für flexiblere, rückwirkendere und zerstörungsfreie Datenmanipulationen. |
+| Projektvorlagen | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
 | Segmentveröffentlichung (Senden von Segmenten aus Arbeitsbereich an Experience Cloud) | Unterstützung ist geplant. Wird in CJA als &quot;Zielgruppenveröffentlichung&quot;bezeichnet. |
 | Neue und wiederholte Sitzungsberichte | Die Unterstützung ist mit einigen Einschränkungen geplant. |
-| Berichte zu Steigerung und Konfidenz | Unterstützung ist geplant. |
-| Classification Rule Builder | Funktioniert in Customer Journey Analytics etwas anders, indem Sie zur Berichtszeit On-the-Fly-String-Manipulationen verwenden, anstatt Datensätze zu suchen. |
-| Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle | Unterstützung ist geplant, funktioniert aber in der Abfragezeit und nicht während der Datenerfassung für flexiblere, rückwirkendere und zerstörungsfreie Datenmanipulationen. |
-| Projektvorlagen | Unterstützung ist geplant. |
 
 ## Unterstützung ist noch nicht geplant
 
