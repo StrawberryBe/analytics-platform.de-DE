@@ -3,10 +3,10 @@ title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: b72d84a0412ab774360bc2f9b4d9e656b54598f6
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | DSGVO-Löschung | Vollständige Unterstützung; beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] gehandhabt wird. CJA übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
 | Listenvariablen/Listen-Props | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
 | Persistenz von Merchandising-Variablen | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) (Januar 2022) |
-| Merchandising-eVars | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) (Januar 2022) |
+| Merchandising-eVars | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) (Januar 2022) |
 | Metriken | Vollständige Unterstützung; CJA nutzt das Experience-Datenmodell (XDM), unterstützt unbegrenzte Metriken und ist nicht an die benutzerspezifischen Erfolgsereignisse von traditionellem Analytics gebunden. Beachten Sie, dass einige Standardmetriken in traditionellem Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
 | Deduplizierung der Metrik | Vollständige Unterstützung. |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. |
@@ -84,7 +84,12 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
-| Segmentveröffentlichung (Senden von Segmenten aus Arbeitsbereich an Experience Cloud) | Unterstützung ist geplant. |
+| Segmentveröffentlichung (Senden von Segmenten aus Arbeitsbereich an Experience Cloud) | Unterstützung ist geplant. Wird in CJA als &quot;Zielgruppenveröffentlichung&quot;bezeichnet. |
+| Neue und wiederholte Sitzungsberichte | Die Unterstützung ist mit einigen Einschränkungen geplant. |
+| Berichte zu Steigerung und Konfidenz | Unterstützung ist geplant. |
+| Classification Rule Builder | Funktioniert in Customer Journey Analytics etwas anders, indem Sie zur Berichtszeit On-the-Fly-String-Manipulationen verwenden, anstatt Datensätze zu suchen. |
+| Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle | Unterstützung ist geplant, funktioniert aber in der Abfragezeit und nicht während der Datenerfassung für flexiblere, rückwirkendere und zerstörungsfreie Datenmanipulationen. |
+| Projektvorlagen | Unterstützung ist geplant. |
 
 ## Unterstützung ist noch nicht geplant
 
@@ -95,6 +100,9 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Classification Rule Builder | Unterstützung ist noch nicht geplant. |
 | Daten-Feeds | Unterstützung ist noch nicht geplant. |
 | Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
+| Transaktions-ID-Data Sources | Unterstützung ist noch nicht geplant. |
+| Währungsumrechnung | Unterstützung ist noch nicht geplant. |
+| Echtzeitberichte | Unterstützung ist noch nicht geplant. |
 
 ## Keine Unterstützung geplant
 
