@@ -3,10 +3,10 @@ title: Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform
 description: 'Erläutert, wie Sie Customer Journey Analytics (CJA) nutzen können, um Ihre Google Analytics-Daten in Adobe Experience Platform aufzunehmen. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 445317efa636024dbaf0ac34b6a74b52b92b9000
+workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ Sie können auch Live-Streaming-Ereignisse von Google Tag Manager direkt in Adob
 
 ### 1. Benutzerspezifische Variablen hinzufügen
 
-Nachdem Sie sich beim Google Tag-Manager-Konto angemeldet haben, müssen Sie einige benutzerdefinierte konstante Variablen in Bezug auf Adobe hinzufügen. Sie haben vermutlich bereits Variablen im Google Tag-Manager, die an Google Analytics gesendet werden, wie z. B. die E-Mail-Adresse des Kunden, der Kundenname, die Sprache und der Anmeldestatus des Kunden. Sie müssen fünf neue benutzerdefinierte Variablen definieren:
+Nachdem Sie sich beim Google Tag-Manager-Konto angemeldet haben, müssen Sie einige benutzerdefinierte konstante Variablen in Bezug auf Adobe hinzufügen. Wahrscheinlich verfügen Sie bereits über Variablen im Google Tag Manager, die an Google Analytics gesendet werden, z. B. die E-Mail-Adresse des Kunden, den Kundennamen, die Sprache und den Status des angemeldeten Kunden. Sie müssen fünf neue benutzerdefinierte Variablen definieren:
 
 * Organisations-ID für Adobe Experience Cloud
 * DCS Streaming-Endpunkt
