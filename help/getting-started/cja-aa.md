@@ -3,10 +3,10 @@ title: Customer Journey Analytics-Funktionen
 description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analytics-Funktionen.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
+source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 94%
+source-wordcount: '1313'
+ht-degree: 93%
 
 ---
 
@@ -79,6 +79,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
+| Kalenderereignisse | Wird in Workspace als &quot;Anmerkungen&quot;bezeichnet. |
 | Classification Rule Builder | Funktioniert in CJA etwas anders, indem Zeichenfolgenmanipulationen zur Berichtszeit verwendet werden, anstatt Datensätze zu suchen. |
 | Beitragsanalyse | Unterstützung ist geplant. |
 | Data Warehouse-Berichte (100 % Zeilenexport) | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [[!UICONTROL Abfrage-Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) von Adobe Experience Platform bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
@@ -98,11 +99,11 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Unterstützung ist noch nicht geplant. |
 | Classification Rule Builder | Unterstützung ist noch nicht geplant. |
+| Währungsumrechnung | Unterstützung ist noch nicht geplant. |
 | Daten-Feeds | Unterstützung ist noch nicht geplant. |
+| Echtzeitberichte | Unterstützung ist noch nicht geplant. |
 | Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
 | Transaktions-ID-Data Sources | Unterstützung ist noch nicht geplant. |
-| Währungsumrechnung | Unterstützung ist noch nicht geplant. |
-| Echtzeitberichte | Unterstützung ist noch nicht geplant. |
 
 ## Keine Unterstützung geplant
 
@@ -110,5 +111,4 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 * Reports &amp; Analytics-Dashboards
 * Reports &amp; Analytics-Lesezeichen
 * Reports &amp; Analytics-Zielgruppen
-* Reports &amp; Analytics-Kalenderereignisse
 * Mobile Services
