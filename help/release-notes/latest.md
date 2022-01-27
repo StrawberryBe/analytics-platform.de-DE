@@ -1,0 +1,23 @@
+---
+title: Aktuelle Customer Journey Analytics-Versionshinweise anzeigen
+description: Neueste CJA-Versionshinweise
+source-git-commit: 400b392b1b13e25f33970edddc3ae35e0153fbe6
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 89%
+
+---
+
+
+# Aktuelle Customer Journey Analytics-Versionshinweise
+
+| Funktion | Beschreibung | Zieldatum |
+| ----------- | ---------- | ----- |
+| [!UICONTROL Persistenz]-Optionen für Binding-Dimensionen und Binding-Metriken | Beim Erstellen oder Bearbeiten einer Datenansicht können Sie die Persistenz einer Dimension an eine andere Dimension oder Metrik binden. Dieses Konzept wird in Reports &amp; Analytics als _Merchandising_ bezeichnet und jetzt in Customer Journey Analytics unterstützt. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) | 19. Januar 2022 |
+| Die Zuordnungsmodelle [!UICONTROL Erster bekannter] und [!UICONTROL Letzter bekannter] | Diese beiden neuen Zuordnungsmodelle nehmen den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Rückblick). Anschließend wenden sie das Zuordnungsmodell auf alle Ereignisse im angegebenen Bereich an. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#allocation-settings) | 19. Januar 2022 |
+| [!UICONTROL PersonID] und [!UICONTROL PersonID-Namespace] als Dimensionen | Zeigt die `personID` (oder `customerID` bzw. die ID, die Sie zum Zusammenführen von Datensätzen in einer Verbindung verwenden) als Dimension in Datenansichten. Diese Verbesserung erleichtert Ihnen die Einbeziehung der `personID` als Dimension in Ihrer Datenansicht, indem Sie sie aus der Verbindung heranziehen. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional-standard-components) | 19. Januar 2022 |
+
+{style=&quot;table-layout:auto&quot;}
+
+>[!MORELIKETHIS]
+>[Aktualisierungen der Customer Journey Analytics-Dokumentation](/help/doc-changes.md)
