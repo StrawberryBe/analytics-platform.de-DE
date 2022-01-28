@@ -4,9 +4,9 @@ description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 source-git-commit: 0f348f1d2119c902716a5e096a859521a4b316b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1154'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Bevor Sie die kanalübergreifende Analyse verwenden, sollten Sie sicherstellen, 
 
 >[!IMPORTANT]
 >
->Beachten Sie, dass Änderungen am Schema des globalen Ereignis-Datensatzes auch im neuen Schema des zugeordneten Datensatzes angewendet werden müssen. Andernfalls wird der zugeordnete Datensatz beschädigt.
+>Beachten Sie, dass Änderungen am Datensatzschema des globalen Ereignisses auch im neuen Schema des zugeordneten Datensatzes angewendet werden müssen. Andernfalls wird der zugeordnete Datensatz beschädigt.
 
 Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, deren Verwendung jedoch gewissen Einschränkungen unterliegt.
 
@@ -62,14 +62,14 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen überblickt, können Sie die folgenden Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
 
 1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Siehe unter [Ein Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Daten aufnehmen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
-1. Wenden Sie sich mit den folgenden Informationen an den Support von Adobe:
+1. Wenden Sie sich mit den folgenden Informationen an den Adobe-Support:
    * Eine Anfrage zum Aktivieren der kanalübergreifenden Analyse
    * Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten
    * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Kennung, die in jeder Zeile erscheint)
    * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Verbindung der Personenkennung zwischen Datensätzen)
-   * Ihre Voreinstellung für die Häufigkeit der [Wiederholungen](replay.md) und die Lookback-Länge. Zu den verfügbaren Optionen gehören eine Wiederholung pro Woche mit einem 7-tägigen Lookback-Fenster oder eine tägliche Wiederholung mit einem 1-tägigen Lookback-Fenster
+   * Ihre Voreinstellung für die Häufigkeit der [Wiederholungen](replay.md) und die Lookback-Länge. Zu den verfügbaren Optionen gehören eine Wiederholung pro Woche mit einem 7-tägigen Lookback-Fenster oder eine tägliche Wiederholung mit einem 1-tägigen Lookback-Fenster.
    * Sandbox-Name.
-1. Der Adobe-Kundensupport arbeitet mit der Adobe-Engineering zusammen, um die kanalübergreifende Analyse nach Erhalt Ihrer Anfrage zu aktivieren. Nach der Aktivierung wird in Adobe Experience Platform ein neu verschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Der Adobe-Support kann die neue Datensatz-ID und den Spaltennamen der Personen-ID bereitstellen.
+1. Wenn Sie eine Anfrage bezüglich Cross-Channel Analytics an den Adobe-Support stellen, wird diese Funktion in Zusammenarbeit mit dem Engineering-Team von Adobe aktiviert. Nach der Aktivierung wird in Adobe Experience Platform ein neu verschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Der Adobe-Support stellt die neue Datensatz-ID und den Namen der Personen-ID-Spalte bereit.
 1. Bei der erstmaligen Verwendung stellt Adobe eine Aufstockung der zugeordneten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zugewiesenen Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein.
 1. [Erstellen Sie eine Verbindung](../create-connection.md) in CJA mit dem neu erstellten Datensatz und beliebigen weiteren Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
