@@ -4,13 +4,13 @@ keywords: Analysis Workspace
 title: Dimensionen aufschlüsseln
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 source-git-commit: 0176f10ffed85786b0bfa77204ca7a19d9c39ba7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
-# Aufschlüsseln von Dimensionen im Workspace
+# Aufschlüsseln von Dimensionen in Workspace
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ ht-degree: 53%
 
 Schlüsseln Sie Dimensionen und Dimensionselemente in Analysis Workspace auf.
 
-Aufschlüsseln Ihrer Daten auf unbegrenzte Weise für Ihre spezifischen Anforderungen; Abfragen mit relevanten Metriken, Dimensionen, Filtern, Zeitlinien und anderen Analyseaufschlüsselungswerten erstellen.
+Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlüsseln. Erstellen Sie Abfragen mithilfe relevanter Metriken, Dimensionen, Filter, Zeitachsen und anderer Aufschlüsselungswerte für die Analyse.
 
 1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle.
 1. Klicken Sie in der Datentabelle mit der rechten Maustaste auf einen Zeileneintrag und wählen Sie **[!UICONTROL Aufschlüsselung]** > *`<item>`* aus.
@@ -31,7 +31,7 @@ Aufschlüsseln Ihrer Daten auf unbegrenzte Weise für Ihre spezifischen Anforder
    >
    >Die Anzahl der in der Tabelle angezeigten Aufschlüsselungen ist auf 200 beschränkt. Für das Exportieren von Aufschlüsselungen ist diese Einschränkung höher.
 
-**Video: Dimensionen in Analysis Workspace**
+**Video: Dimensionen in Analysis Workspace**
 
 >[!VIDEO](https://video.tv.adobe.com/v/23971)
 
@@ -45,13 +45,13 @@ Auf jede Aufschlüsselung innerhalb einer Tabelle kann auch ein beliebiges Attri
 
 ![Aufschlüsselungseinstellungen](assets/breakdown_settings.png)
 
-Dies ist das erwartete Verhalten beim Anwenden von Attributionsmodellen auf Aufschlüsselungen oder deren Bearbeitung:
+Dies ist das erwartete Verhalten beim Anwenden von Attributionsmodellen auf Aufschlüsselungen oder bei deren Bearbeitung:
 
-* Wenn Sie eine Attribution anwenden, wenn keine anderen Attribute vorhanden sind, gilt die Attribution für die gesamte Spaltenstruktur.
+* Wenn Sie eine Attribution anwenden und keine anderen Attributionen vorhanden sind, gilt die Attribution für die gesamte Spaltenstruktur.
 
-* Wenn Sie eine Aufschlüsselung hinzufügen, nachdem eine Attribution angewendet wurde, wird für die hinzugefügte Aufschlüsselung der Standardwert verwendet (wenn diese Dimension einen Standardwert aufweist). Andernfalls wird die Aufschlüsselung aus der übergeordneten Spalte verwendet. Einige Dimensionen haben eine Standardzuordnung. Beispielsweise verwenden Zeitdimensionen und Referrer Same Touch. Die Dimension &quot;Produkt&quot;verwendet &quot;Letztkontakt&quot;. Andere Dimensionen haben keine Standardeinstellung und verwenden die Zuordnung der übergeordneten Spalte.
+* Wenn Sie eine Aufschlüsselung hinzufügen, nachdem eine Attribution angewendet wurde, wird für die hinzugefügte Aufschlüsselung der Standardwert verwendet (wenn diese Dimension einen Standardwert hat). Andernfalls wird die Aufschlüsselung aus der übergeordneten Spalte verwendet. Einige Dimensionen haben eine Standardzuordnung. Beispielsweise verwenden Zeitdimensionen und Referrer „Same Touch“. Die Dimension „Produkt“ verwendet „Last Touch“. Andere Dimensionen haben keine Standardeinstellung und verwenden die Zuordnung der übergeordneten Spalte.
 
-* Wenn sich bereits Attribute in der Spaltenstruktur befinden, wirkt sich eine Änderung der Attribution nur auf die Zuordnung aus, die Sie bearbeiten.
+* Wenn sich bereits Attributionen in der Spaltenstruktur befinden, wirkt sich eine Änderung der Attribution nur auf die Zuordnung aus, die Sie bearbeiten.
 
 ## Videos
 
