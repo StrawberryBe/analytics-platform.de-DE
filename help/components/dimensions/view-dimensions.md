@@ -1,11 +1,11 @@
 ---
-description: Zeigt die 5 wichtigsten Werte für Nicht-Zeitdimensionen (und 15 für Zeitdimensionen) an.
-title: Anzeigen einer Vorschau von Dimensionen in CJA Workspace
+description: 'Zeigt die obersten fünf Werte für nicht zeitabhängige Dimensionen (und 15 für zeitabhängige Dimensionen) an. '
+title: So sehen Sie eine Vorschau von Dimensionen in Customer Journey Analytics Workspace
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
