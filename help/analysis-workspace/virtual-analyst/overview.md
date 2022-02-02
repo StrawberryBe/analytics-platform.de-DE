@@ -1,11 +1,12 @@
 ---
 title: Virtual Analyst
 description: Erfahren Sie, welche Funktionen Virtual Analyst in Customer Journey Analytics bietet.
+feature: Anomaly Detection
 exl-id: 5fb6ac39-d09d-49f0-ae1f-13f223e20800
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 38%
+ht-degree: 43%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Virtual Analyst, ein Teil der Funktionen von Customer Journey Analytics, verwendet prädiktive Algorithmen und maschinelles Lernen, um Einblicke in Anomalien zu erhalten, die sich auf Ihr Unternehmen auswirken. Damit können Sie die am häufigsten verwendeten und kostspieligsten Datenwissenschaftsabläufe automatisieren, um die Ursachen für ungewöhnliche Verhaltensweisen in Ihren Daten zu ermitteln.
 

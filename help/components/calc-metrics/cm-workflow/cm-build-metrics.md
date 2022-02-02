@@ -1,8 +1,10 @@
 ---
 description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, in der Sie Dimensionen, Metriken, Filter und Funktionen per Drag-and-Drop verschieben können, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungstool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
 title: Metriken erstellen
-source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 100%
 
@@ -48,4 +50,3 @@ Sie erreichen den Generator für berechnete Metriken auf verschiedene Arten:
 | Liste von Filtern | (Nur erweiterte berechnete Metriken) Wenn Sie Administrator sind, zeigt Ihnen diese Liste alle in Ihrem Anmeldeunternehmen erstellten Filter an. Wenn Sie kein Administrator sind, zeigt diese Liste die Filter an, deren Eigentümer Sie sind, sowie die Filter, die für Sie freigegeben wurden. |
 | Liste von Funktionen | (Nur erweiterte berechnete Metriken) Funktionen werden in zwei Listen aufgeteilt: Einfach (am häufigsten verwendet) und Erweitert. |
 | Datenansicht-Auswahlhilfe | Mit diesem Selektor (oben rechts) können Sie zu einer anderen Datenansicht wechseln. |
-

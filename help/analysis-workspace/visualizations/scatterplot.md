@@ -1,11 +1,12 @@
 ---
 title: Streudiagramm
 description: Eine Visualisierung, die die Beziehung zwischen bis zu drei Metriken anzeigt.
+feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Die Streudiagramm-Visualisierung zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken an. Sie erfordert drei Komponenten und unterstützt die Visualisierung von bis zu vier Komponenten.
 

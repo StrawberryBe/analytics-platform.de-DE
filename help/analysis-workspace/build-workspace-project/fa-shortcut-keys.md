@@ -1,10 +1,10 @@
 ---
 description: Tastaturinteraktionen, Tastaturbefehle und Point-and-Click-Verhaltensweisen, die in Analysis Workspace verfügbar sind.
 keywords: Analysis Workspace
+feature: CJA Workspace Basics
 title: Hotkeys (Tastaturbefehle)
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
@@ -23,13 +23,13 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 |---|---|
 | Neues Projekt erstellen | STRG (oder Befehl) + UMSCHALT + P |
 | Vorhandenes Projekt öffnen | STRG (oder Befehl) + O |
-| Zum Fenster „Bereiche“ | ALT + UMSCHALT + 1 |
-| Zum Fenster „Visualisierungen“ | ALT + UMSCHALT + 2 |
-| Zum Fenster „Komponenten“ | ALT + UMSCHALT + 3 |
-| Alle Bedienfelder reduzieren/erweitern | ALT + m |
-| Aktives Bedienfeld reduzieren/erweitern | ALT + STRG + m |
-| Zum nächsten Bereich wechseln | ALT + Rechtstaste |
-| Zum vorherigen Bereich wechseln | ALT + Linkstaste |
+| Zum Fenster „Bedienfelder“ | Alt+Umsch+1 |
+| Zum Fenster „Visualisierungen“ | Alt+Umsch+2 |
+| Zum Fenster „Komponenten“ | Alt+Umsch+3 |
+| Alle Bedienfelder reduzieren/erweitern | Alt + M |
+| Aktives Bedienfeld reduzieren/erweitern | Alt+Strg+M |
+| Zum nächsten Bedienfeld wechseln | Alt+Rechtstaste |
+| Zum vorherigen Bedienfeld wechseln | Alt + Linkstaste |
 
 ## Analyseaktionen
 
@@ -40,25 +40,25 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Berechnete Metrik erstellen | STRG (oder Befehl) + UMSCHALT + C |
 | Datumsbereich erstellen | STRG (oder Befehl) + UMSCHALT + D |
 | Filter erstellen | STRG (oder Befehl) + UMSCHALT + E |
-| Alle löschen | ALT + W |
+| Alle löschen | Alt+W |
 | Kopieren | STRG (oder Befehl) + C |
 | Wiederherstellen | STRG (oder Befehl) + UMSCHALT + Z |
 | Rückgängig | STRG (oder Befehl) + Z |
-| Komponenten aktualisieren | ALT + UMSCHALT + R |
-| Projekt aktualisieren | ALT + R |
+| Komponenten aktualisieren | Alt+Umsch+R |
+| Projekt aktualisieren | Alt+R |
 | Als Landingpage festlegen | STRG (oder Befehl) + UMSCHALT + L |
 
 ## Aktionen zum Hinzufügen von Bedienfeldern und Visualisierungen
 
 | Aktion | Tastaturbefehl |
 |---|---|
-| Neuer Attributionsbereich | ALT + E |
-| Neues leeres Bedienfeld | ALT + B |
-| Neues Freiformfeld | ALT + A |
-| Neues Bedienfeld „Quick Insights“ | ALT + f |
-| Neue Freiformtabelle | ALT + 1 |
-| Neuer Kantengraph | ALT + 2 |
-| Neues Balkendiagramm | ALT + 3 |
+| Neuer Attributionsbereich | Alt+E |
+| Neues leeres Bedienfeld | Alt+B |
+| Neues Freiformfeld | Alt+A |
+| Neues Bedienfeld „Quick Insights“ | Alt+F |
+| Neue Freiformtabelle | Alt + 1 |
+| Neuer Kantengraph | Alt+2 |
+| Neues Balkendiagramm | Alt+3 |
 
 ## Demokratisierungaktionen
 
@@ -66,11 +66,11 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 |---|---|
 | Projekt speichern | STRG (oder Befehl) + S |
 | Projekt speichern unter | STRG (oder Befehl) + UMSCHALT + S |
-| Als Vorlage speichern | Alt + t |
+| Als Vorlage speichern | Alt+T |
 | Als CSV herunterladen | STRG (oder Befehl) + UMSCHALT + V |
 | Als PDF herunterladen | STRG (oder Befehl) + UMSCHALT + B |
 | Projekt kuratieren | STRG (oder Befehl) + UMSCHALT + G |
 | Projekt freigeben | STRG (oder Befehl) + G |
-| Projektverknüpfung abrufen | ALT + L |
-| Datei jetzt senden | ALT + S |
-| Datei planmäßig senden | UMSCHALT + ALT + S |
+| Projekt-Link abrufen | Alt + L |
+| Datei jetzt senden | Alt+S |
+| Datei planmäßig senden | Umsch+Alt+S |

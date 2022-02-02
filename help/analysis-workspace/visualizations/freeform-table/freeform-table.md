@@ -1,9 +1,10 @@
 ---
 title: Freiformtabelle
 description: Freiformtabellen sind die Grundlage für die Analyse von Daten in Workspace
+feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -50,6 +51,6 @@ Erfahren Sie mehr über die [Exportoptionen](https://experienceleague.adobe.com/
 * Klicken Sie mit der rechten Maustaste und **[!UICONTROL Daten als CSV-Datei herunterladen]** lädt die angezeigten Tabellendaten als CSV-Datei herunter. Wenn eine Tabellenauswahl vorgenommen wurde, lautet diese Option **[!UICONTROL Auswahl als CSV-Datei herunterladen]**.
 * Klicken Sie mit der rechten Maustaste und **[!UICONTROL Projekt > Elemente als CSV-Datei herunterladen]** exportiert bis zu 50.000 Dimensionselemente für die ausgewählte Dimension.
 
-Erfahren Sie mehr über die [Exportoptionen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=de) aller Daten für Analysis Workspace.
+Erfahren Sie mehr über die [Exportoptionen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) aller Daten für Analysis Workspace.
 
 ![](assets/export-options.png)

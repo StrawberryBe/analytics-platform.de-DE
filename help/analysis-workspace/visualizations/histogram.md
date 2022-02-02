@@ -1,11 +1,12 @@
 ---
 description: Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu Bereichen (Behältern) zusammen.
 title: Histogramm
+feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu Bereichen (Behältern) zusammen. Analytics automatisiert diese Zusammenfassung von Zahlen zu Bereichen, wobei Sie jedoch die Einstellungen unter [Erweiterte Einstellungen](#section_09D774C584864D4CA6B5672DC2927477) ändern können.
 
@@ -44,7 +45,7 @@ Wenn Sie die Einstellungen für Ihr Histogramm ändern möchten, klicken Sie auf
 | Startpaket | Bestimmt, mit welchem Paket das Histogramm beginnt. Die Standardeinstellung lautet 1. Sie können Startwerte von null bis unendlich festlegen, jedoch keine negativen Zahlen. |
 | Metrische Behälter | Hiermit können Sie die Anzahl der Datumsbereiche (Behälter) erhöhen/verringern. Maximal 50 Behälter sind möglich. |
 | Metrische Behältergröße | Hiermit können Sie die Größe der einzelnen Behälter festlegen. So könnten Sie zum Beispiel die Behältergröße von 1 Seitenansicht zu 2 Seitenansichten ändern. |
-| Zählmethode | Sie können [Besucher](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Besuch](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html) oder Treffertyp auswählen, z. B. Seitenansichten pro Besuch, Seitenansichten pro Besucher oder Seitenansichten pro Hit. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet. |
+| Zählmethode | Sie können [Besucher](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de), [Besuch](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de) oder Treffertyp auswählen, z. B. Seitenansichten pro Besuch, Seitenansichten pro Besucher oder Seitenansichten pro Hit. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -59,7 +60,7 @@ Wenn Sie die Datenquelle für das Histogramm-Diagramm anzeigen oder ändern möc
 
 ![](assets/manage-data-source.png)
 
-Vordefinierte Filter, die in der Tabelle angezeigt werden, sind interne Filter und werden nicht in der Filterauswahl angezeigt. Klicken Sie auf das Symbol &quot;i&quot;neben dem Filternamen und klicken Sie dann auf **[!UICONTROL Als öffentlich einstellen]**, um den Filter öffentlich zu machen.
+Vordefinierte Filter, die in der Tabelle angezeigt werden, sind interne Filter und werden nicht in der Filterauswahl angezeigt. Klicken Sie auf das Symbol &quot;i&quot;neben dem Filternamen und klicken Sie dann auf **[!UICONTROL Als öffentlich einstellen]** , um den Filter öffentlich zu machen.
 
 ![](assets/prebuilt_segments.png)
 

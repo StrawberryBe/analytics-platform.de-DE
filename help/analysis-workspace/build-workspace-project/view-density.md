@@ -1,19 +1,19 @@
 ---
-description: Erfahren Sie, wie Sie die Dichte der Ansicht in Analysis Workspace anpassen.
+description: Erfahren Sie, wie Sie die Anzeigedichte in Analysis Workspace anpassen.
 title: Dichte anzeigen
-translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+feature: CJA Workspace Basics
+exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 90%
 
 ---
 
-
 # Dichte anzeigen
 
 Durch die Anpassung der Anzeigedichte können Sie mehr Daten auf dem Bildschirm anzeigen, indem Sie den vertikalen Abstand der linken Schiene, Freiformtabellen und Kohortentabellen reduzieren.
-Sie haben beim Umstellen der Anzeigedichte über die Optionsfelder 3 Optionen:
+Zum Wechseln zwischen den Anzeigedichten gibt es drei Optionsschaltflächen:
 
 - **[!UICONTROL Kompakt]**: Dies ist die Version mit der am stärksten verdichteten Ansicht.
 - **[!UICONTROL Komfort]**: Bietet etwas mehr Abstand als die Kompaktversion.

@@ -2,11 +2,12 @@
 description: Durch Kuratierung können Sie die Komponenten einschränken, bevor Sie ein Projekt freigeben.
 keywords: Analysis Workspace-Kuratierung
 title: Kuratieren von Projekten
+feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 43%
 Durch Kuratierung können Sie die Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) vor der Freigabe eines Projekts einschränken. Wenn ein Empfänger das Projekt öffnet, wird ihm eine begrenzte Anzahl von Komponenten angezeigt, die Sie für ihn kuratiert haben. Die Kuratierung ist ein optionaler, aber empfehlenswerter Schritt, bevor Sie ein Projekt freigeben.
 
 >[!NOTE]
-> Produktprofile bestimmen als Hauptmechanismen, welche Komponenten ein Anwender sehen kann. Sie werden über die [Adobe Experience Cloud-Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) verwaltet. Kuratierung ist ein Sekundärfilter.
+> Produktprofile bestimmen als Hauptmechanismen, welche Komponenten ein Anwender sehen kann. Sie werden über die [Adobe Experience Cloud-Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de). Kuratierung ist ein Sekundärfilter.
 
 ## Anwenden der Projektkuratierung
 
@@ -44,7 +45,7 @@ So entfernen Sie die Projektkuratierung und stellen Sie den vollständigen Satz 
 
 ## Optionen zur Komponentenkuratierung
 
-In einem kuratierten Projekt wird dem Empfänger in der linken Leiste die Option für die Komponenten **[!UICONTROL Alle anzeigen]** angezeigt. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
+In einem kuratierten Projekt erhält der Empfänger die Möglichkeit, **[!UICONTROL Alle anzeigen]** Komponenten in der linken Leiste. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
 
 * Berechtigungsebene des Benutzers (Administrator oder Nicht-Administrator)
 * Projektrolle (Inhaber/Bearbeiter oder nicht)

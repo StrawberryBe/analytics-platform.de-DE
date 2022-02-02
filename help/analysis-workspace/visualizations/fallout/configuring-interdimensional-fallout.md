@@ -1,14 +1,14 @@
 ---
 description: Mithilfe der Fallout-Funktion in Analysis Workspace können Sie Dimensionen und Metriken als Touchpoints in Trichtern und Workflows kombinieren. Das gibt Ihnen mehr Flexibilität beim Definieren der Benutzerschritte, die Sie näher untersuchen möchten.
 title: Interdimensionaler Fallout
-translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+feature: Visualizations
+exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
-
 
 # Interdimensionaler Fallout
 
@@ -27,4 +27,3 @@ Dieser Kombination können auch Metriken hinzugefügt werden. In diesem Beispiel
 Außerdem können Sie auch unterschiedliche Dimensionen und Metriken in AND-Checkpoints kombinieren. Ziehen Sie dazu einfach eine weitere Dimension oder Metrik auf eine bereits vorhandene:
 
 ![](assets/interdimensional-fallout3.png)
-

@@ -1,8 +1,10 @@
 ---
 description: Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten pro Besuche erstellen.
 title: Einfache Metrik vom Typ „Seitenansichten pro Besuch“ erstellen
-source-git-commit: 50c56d718ae7a7f6e3d788b9f755831a7522337c
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 100%
 
@@ -12,7 +14,7 @@ ht-degree: 100%
 
 Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten pro Besuche erstellen.
 
-Eine ausführliche Beschreibung der Komponenten der Benutzeroberfläche finden Sie unter [Erstellen von Metriken](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+Eine ausführliche Beschreibung der Komponenten der Benutzeroberfläche finden Sie unter [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten pro Besuche erstellen.
 

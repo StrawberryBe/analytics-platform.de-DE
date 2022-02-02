@@ -3,7 +3,8 @@ title: Aktualisierungen der CJA-Dokumentation
 description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journey Analytics auf, die seit Dezember 2019 erfolgt sind.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
-source-git-commit: a1ddbf6a03611fce1ebb0587a2586f991c814d83
+feature: Release Notes
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 96%

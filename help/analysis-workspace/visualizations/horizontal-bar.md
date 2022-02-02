@@ -1,15 +1,14 @@
 ---
 description: Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 title: Horizontalbalken und Horizontalbalken gestapelt
-uuid: 3730929d-42e6-4543-b12a-d002f86ac82d
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 100%
 
 ---
-
 
 # Horizontalbalken und Horizontalbalken gestapelt
 
@@ -19,7 +18,7 @@ Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer od
 
 ![](assets/horizontal_bar.png)
 
-## Horizontalbalken gestapelt   {#section_50C08E9E20A94024A6553BC352ADB597}
+## Horizontalbalken gestapelt {#section_50C08E9E20A94024A6553BC352ADB597}
 
 Diese Visualisierung entspricht dem [!UICONTROL horizontalen Balkendiagramm], die Serien sind hier jedoch gestapelt.
 
@@ -28,4 +27,3 @@ Diese Visualisierung entspricht dem [!UICONTROL horizontalen Balkendiagramm], di
 Mit der neuen Einstellung [!UICONTROL Horizontalbalken gestapelt] erhalten Sie eine zu „100 % gestapelte“ Visualisierung.
 
 ![](assets/horizstacked100.png)
-

@@ -2,11 +2,12 @@
 description: Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter als Touchpoint hinzufügen und wichtige Workflows über verschiedene Filter hinweg vergleichen.
 keywords: Fallout und Filter;Filter in Fallout-Analyse;Filter in Fallout vergleichen
 title: Filter in Fallout-Analyse anwenden
+feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter als Touchpoint hinzufügen und wichtige Workflows über verschiedene Filter hinweg vergleichen.
 
@@ -28,7 +29,7 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 ## Erstellen eines Filters aus einem Touchpoint {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, der besonders für Sie von Interesse ist und der sich für andere Berichte nützlich sein kann. Klicken Sie dazu mit der rechten Maustaste auf den Touchpoint und wählen Sie **[!UICONTROL Filter aus Touchpoint erstellen]** aus.
+1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, der besonders für Sie von Interesse ist und der sich für andere Berichte nützlich sein kann. Klicken Sie dazu mit der rechten Maustaste auf den Touchpoint und wählen Sie **[!UICONTROL Filter aus Touchpoint erstellen]**.
 
    ![](assets/segment-from-touchpoint.png)
 
@@ -52,7 +53,7 @@ Alternativ können Sie einen AND-Touchpoint erstellen, indem Sie den Filter für
 
 Sie können eine unbegrenzte Anzahl von Filtern in der Fallout-Visualisierung vergleichen.
 
-1. Wählen Sie die zu vergleichenden Filter in der Leiste [!UICONTROL Filter] auf der linken Seite aus. In unserem Beispiel haben wir 2 Filter ausgewählt: US-Benutzer und Nicht-US-Benutzer.
+1. Wählen Sie die zu vergleichenden Filter aus der [!UICONTROL Filter] links. In unserem Beispiel haben wir 2 Filter ausgewählt: US-Benutzer und Nicht-US-Benutzer.
 1. Ziehen Sie sie in die Dropzone Filter oben.
 
    ![](assets/segment-drop.png)

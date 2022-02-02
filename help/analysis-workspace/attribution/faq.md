@@ -1,11 +1,12 @@
 ---
 title: Häufig gestellte Fragen zu Attribution
 description: Erhalten Sie Antworten auf häufig gestellte Fragen zur Attribution.
+feature: Attribution
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 **Was ist der Zeileneintrag „Keine“ bei Verwendung von Attribution?**
 
@@ -45,7 +46,7 @@ Das Attributionsbedienfeld unterstützt alle Dimensionen. Nicht unterstützte Me
 * Absprungrate
 * Einstiege
 * Ausstiege
-* Seiten nicht gefunden
+* Nicht gefundene Seiten
 * Suchvorgänge
 * Einzelseitenbesuche
 * Einzelzugriff

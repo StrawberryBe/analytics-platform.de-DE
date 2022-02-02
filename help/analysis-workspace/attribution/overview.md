@@ -1,11 +1,12 @@
 ---
 title: Übersicht über Attribution
 description: Das Konzept der Zuordnung eines Erfolgsereignisses zu mehreren Dimensionselementen.
+Feature: Attribution
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Mit Attribution können Analysten anpassen, wie Erfolgsereignisse Dimensionselementen zugeschrieben werden. Beispiel:
 
@@ -34,7 +35,7 @@ Customer Journey Analytics verbessert die Attribution, indem es Ihnen Folgendes 
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
 * Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann Customer Journey-Kontext erstellt und zur Laufzeit angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
-* Aufschlüsseln der Attribution nach Filtern: Vergleichen Sie einfach die Leistung Ihrer Marketing-Kanäle mit allen wichtigen Filtern (z. B. neue vs. wiederholte Kunden, Produkt X vs. Produkt Y, Treuestufe oder CLV).
+* Aufschlüsseln der Attribution nach Filtern: Vergleichen Sie einfach die Leistung Ihrer Marketing-Kanäle mit allen wichtigen Filtern (z. B. neue vs. wiederkehrende Kunden, Produkt X vs. Produkt Y, Treuestufe oder CLV).
 * Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
 * Wichtige Marketing-Sequenzen visuell analysieren: Erkunden Sie zur Konversion führende Pfade visuell mithilfe von mehrknotigen Fluss- und Fallout-Visualisierungen.
 * Berechnete Metriken erstellen: Verwenden Sie eine beliebige Anzahl an Attributionszuordnungsmethoden.

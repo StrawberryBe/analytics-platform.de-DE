@@ -1,12 +1,13 @@
 ---
 description: Im Kalender können Sie Daten und Datumsbereiche festlegen oder eine Voreinstellung auswählen.
 title: Übersicht über Kalender und Datumsbereiche
-uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
+feature: Calendar
+solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: b776478fa4fa77841c5cf0b2d082ff60055bf587
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 96%
 
 Im Kalender können Sie Daten und Datumsbereiche festlegen oder eine Voreinstellung auswählen.
 
-Wenn Sie im Kalender etwas auswählen, bezieht sich diese Auswahl auf das jeweilige Bedienfeld. Sie haben jedoch die Möglichkeit, die Auswahl auf sämtliche Bedienfelder anzuwenden. Wenn Sie in Workspace auf einen Datumsbereich klicken, zeigt die Benutzeroberfläche den aktuellen Kalendermonat und den vorherigen Kalendermonat an. Sie können diese beiden Kalender anpassen, indem Sie auf die Rechts- und Linkspfeile in den jeweiligen oberen Ecken klicken.
+Wenn Sie im Kalender etwas auswählen, bezieht sich diese Auswahl auf das jeweilige Panel. Sie haben jedoch die Möglichkeit, die Auswahl auf sämtliche Panels anzuwenden. Wenn Sie in Workspace auf einen Datumsbereich klicken, zeigt die Benutzeroberfläche den aktuellen Kalendermonat und den vorherigen Kalendermonat an. Sie können diese beiden Kalender anpassen, indem Sie auf die Rechts- und Linkspfeile in den jeweiligen oberen Ecken klicken.
 
 ![Kalender](assets/aw_calendar.png)
 
@@ -22,7 +23,7 @@ Beim ersten Klick auf einen Kalender wird die Auswahl eines Datumsbereichs begon
 
 Sie können Datums- (und Zeitdimensionen) mittels Drag-and-Drop in einem Workspace-Projekt ablegen. Sie können spezifische Tage, Wochen, Monate, Jahre oder ein rollierendes Datum auswählen.
 
-[Verwendung von Datumsbereichen und Kalender in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
+[Verwendung von Datumsbereichen und Kalender in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=de) (4:07)
 
 | Einstellung | Beschreibung |
 | --- | --- |

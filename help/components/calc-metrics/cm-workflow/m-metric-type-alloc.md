@@ -1,8 +1,10 @@
 ---
-description: 'Informationen '
+description: Informationen
 title: Metriktyp und Attribution
-source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 100%
 
@@ -25,4 +27,3 @@ Wenn Sie das Zahnradsymbol neben einer Metrik auswählen, können Sie den Metrik
 
 >[!IMPORTANT]
 >Eine vollständige Liste der nicht standardmäßigen Attributionsmodelle und unterstützten Lookback-Fenster finden Sie unter [Attributionsmodelle und Lookback-Fenster](/help/analysis-workspace/attribution/models.md).
-

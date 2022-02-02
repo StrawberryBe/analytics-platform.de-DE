@@ -2,8 +2,9 @@
 description: Darstellen Sie Ihre Daten in Analysis Workspace visuell dar.
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
+feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: fa0033202650f17acd275f1050565285c1464f53
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 92%
@@ -51,7 +52,7 @@ Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten könn
 | Visualisierungstyp | Ändern Sie den visuellen Typ, der zur Darstellung der Daten verwendet wird. |
 | Granularität | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste ändern. Diese Änderung gilt auch für die Datenquellentabelle. |
 | Prozentsatz | Zeigt Werte als Prozentzahlen an. |
-| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. Beispiel: ![Gestapelt 100 %](assets/stacked_100_percent.png) |
+| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. Beispiel: ![Gestapelt 100%](assets/stacked_100_percent.png) |
 | Legende sichtbar | Hiermit können Sie den erklärenden Text zu Details für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |
 | Grenzwert für max. Anzahl Elemente | Hiermit können Sie die Anzahl der Elemente begrenzen, die in einer Visualisierung angezeigt werden. |
 | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
@@ -75,7 +76,7 @@ So bearbeiten Sie eine Legendenbezeichnung:
 1. Geben Sie den neuen Beschriftungstext ein.
 1. Drücken Sie zum Speichern die **[!UICONTROL Eingabetaste]**.
 
-## Rechtsklick auf Menü {#right-click}
+## Rechtsklickmenü {#right-click}
 
 Zusätzliche Funktionen für eine Visualisierung sind verfügbar, indem Sie mit der rechten Maustaste auf die Visualisierungskopfzeile klicken. Die Einstellungen variieren je nach Visualisierung. Einige der verfügbaren Einstellungen sind:
 

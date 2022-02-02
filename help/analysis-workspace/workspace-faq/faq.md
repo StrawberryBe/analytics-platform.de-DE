@@ -1,11 +1,12 @@
 ---
 description: Häufig gestellte Fragen zu Workspace und Tipps zur Fehlerbehebung.
 title: Häufig gestellte Fragen
+feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Weitere Informationen...](/help/getting-started/cja-aa.md)
+>Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 | Frage | Antwort |
 |--- |--- |
@@ -35,4 +36,4 @@ Wenn Sie einen Workspace-Bericht erfolgreich erstellt haben, aber keine Daten vo
 
 * Wenn Sie in Ihrem Bericht einen Filter angewendet haben, stimmen die Filterkriterien möglicherweise nicht mit den Daten überein. Versuchen Sie, den Filter zu entfernen oder die Filterdefinition anzupassen.
 * Überprüfen Sie den Datumsbereich oben rechts und stellen Sie sicher, dass er auf einen erwarteten Wert eingestellt ist.
-* Navigieren Sie zu Ihrer Website und überprüfen Sie mit dem [Debugger](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html), ob Daten erfasst werden.
+* Navigieren Sie zu Ihrer Website und überprüfen Sie mit dem [Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=de), ob Daten erfasst werden.

@@ -1,17 +1,17 @@
 ---
 description: Beim Synchronisieren von Visualisierungen können Sie kontrollieren, welche Datentabelle oder Datenquelle zu einer Visualisierung gehört.
-keywords: Analysis Workspace;Synchronize visualization with data source
-title: Data Sources verwalten
-translation-type: tm+mt
-source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
+keywords: Analysis Workspace;Synchronisieren der Visualisierung mit der Datenquelle
+title: Datenquellen verwalten
+feature: Visualizations
+exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 100%
 
 ---
 
-
-# Data Sources verwalten
+# Datenquellen verwalten
 
 Beim Synchronisieren von Visualisierungen können Sie kontrollieren, welche Datentabelle oder Datenquelle zu einer Visualisierung gehört.
 
@@ -25,7 +25,7 @@ Beim Verwalten von Datenquellen können Sie die Datenquelle anzeigen oder die Au
 
    ![](assets/manage-data-source.png)
 
-   Beim Synchronisieren einer Visualisierung mit einer Datenzelle wird eine neue (verborgene) Tabelle erstellt und die synchronisierte Visualisierung wird farblich kodiert.
+   Beim Synchronisieren einer Visualisierung mit einer Tabellenzelle wird eine neue (ausgeblendete) Tabelle erstellt und die synchronisierte Visualisierung mit dieser Tabelle farblich codiert.
 
 | Element | Beschreibung |
 |--- |--- |

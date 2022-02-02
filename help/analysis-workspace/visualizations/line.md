@@ -1,15 +1,14 @@
 ---
 description: Linienvisualisierung zur Darstellung von (zeitbasierten) Trend-Datensätzen verwenden
 title: Linie
-uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
-translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+feature: Visualizations
+exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '511'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
-
 
 # Linie
 
@@ -31,21 +30,21 @@ In den [Visualisierungseinstellungen](freeform-analysis-visualizations.md) könn
 
 ## Min. oder Max. anzeigen
 
-Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Min/Max anzeigen]** können Sie eine Beschriftung für Minimal- und Maximalwerte überlagern, um die Spitzen und Täler schnell in einer Metrik hervorzuheben. Hinweis: Die Min/Max-Werte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.
+Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Min/Max anzeigen]** können Sie eine Beschriftung für Minimal- und Maximalwerte überlagern, um die Spitzen und Täler schnell in einer Metrik hervorzuheben. Hinweis: Die Minimal bzw. Maximalwerte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.
 
 ![Min./Max. anzeigen](assets/min-max-labels.png)
 
 ## Trendzeilenüberlagerung anzeigen
 
-Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Trendlinie anzeigen]** können Sie eine Regression oder Verschiebung der durchschnittlichen Trendlinie zu Ihrer Zeilenreihe hinzufügen. Trendlinien helfen, ein Muster in den Daten besser darzustellen.
+Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Trendlinie anzeigen]** können Sie Ihrer Linienserie eine Regressionstrendlinie hinzufügen oder die Durchschnittstrendlinie in Ihre Linienserie verschieben. Trendlinien helfen, ein Muster in den Daten besser darzustellen.
 
 >[!TIP]
 >
->Es wird empfohlen, Trendlinien auf Daten anzuwenden, die weder aktuelle (partielle Daten) noch zukünftige Daten enthalten, da diese die Trendlinie verfälschen. Wenn Sie jedoch zukünftige Daten einbeziehen müssen, entfernen Sie Nullen aus den Daten, um eine Verzerrung dieser Tage zu vermeiden. Gehen Sie dazu zur Datenquelle-Tabelle der Visualisierung, wählen Sie Ihre Metrikspalte und aktivieren Sie dann **[!UICONTROL Spalteneinstellungen]** > **[!UICONTROL Null als Wert]** interpretieren.
+>Es wird empfohlen, Trendlinien auf Daten anzuwenden, die weder das aktuelle Datum (partielle Daten) noch zukünftige Datumsangaben enthalten, da diese die Trendlinie verfälschen. Wenn Sie jedoch zukünftige Datumsangaben einbeziehen müssen, entfernen Sie Nullen aus den Daten, um eine Verfälschung für diese Tage zu vermeiden. Gehen Sie dazu zur Datenquellenabelle der Visualisierung, wählen Sie Ihre Metrikspalte aus und aktivieren Sie dann **[!UICONTROL Spalteneinstellungen]** > **[!UICONTROL Null als keinen Wert interpretieren]**.
 
 ![Lineare Trendlinie](assets/show-linear-trendline.png)
 
-Alle Trendlinien des Regressionsmodells passen mit den üblichen Minimalquadraten:
+Alle Trendlinien des Regressionsmodells werden über die reguläre Kleinstquadrat-Methode angepasst:
 
 | Modell | Beschreibung |
 | --- | --- |
@@ -54,4 +53,4 @@ Alle Trendlinien des Regressionsmodells passen mit den üblichen Minimalquadrate
 | Exponentiell | Erstellt eine gekrümmte Linie und ist nützlich, wenn Daten mit ständig steigenden Raten steigen oder fallen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a + e^(b * x)` |
 | Potenzfunktion | Erstellt eine gekrümmte Linie und ist nützlich für Datensätze, die Messungen vergleichen, die mit einer bestimmten Rate ansteigen. Diese Option sollte nicht verwendet werden, wenn Ihre Daten Null oder negative Werte enthalten. Gleichung: `y = a * x^b` |
 | Quadratisch | Findet die beste Anpassung für einen Datensatz in Form einer Parabel (konkav nach oben oder unten). Gleichung: `y = a + b * x + c * x^2` |
-| Gleitender Mittelwert | Erstellt eine glatte Trendlinie basierend auf einer Reihe von Durchschnittswerten. Auch als rollierender Durchschnitt bezeichnet, verwendet ein sich bewegender Durchschnitt eine bestimmte Anzahl von Datenpunkten (bestimmt durch die Auswahl der &quot;Zeiträume&quot;), verwendet Durchschnittswerte und verwendet den Durchschnitt als Punkt in der Zeile. Beispiele sind der Durchschnitt für 7 Tage oder der Durchschnitt für 4 Wochen. |
+| Gleitender Mittelwert | Erstellt eine glatte Trendlinie basierend auf einer Reihe von Durchschnittswerten. Ein gleitender Durchschnittswert, der auch als rollierender Durchschnitt bezeichnet wird, nutzt eine bestimmte Anzahl von Datenpunkten (bestimmt durch Auswahl eines Zeitraums), errechnet einen Durchschnittswert und verwendet den Durchschnittswert als Punkt auf der Linie. Beispiele sind der gleitende Durchschnitt für 7 Tage oder der gleitende Durchschnitt für 4 Wochen. |

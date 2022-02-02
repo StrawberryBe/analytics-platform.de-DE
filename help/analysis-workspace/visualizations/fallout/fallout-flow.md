@@ -1,11 +1,12 @@
 ---
 description: Fallout-Visualisierungen zeigen, wo Besucher eine vordefinierte Seitensequenz verlassen (ausgefallen) und durchlaufen (durchgefallen) haben.
 title: Fallout-Übersicht
+feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 84%
+ht-degree: 88%
 
 ---
 
@@ -31,5 +32,5 @@ Eine Fallout-Visualisierung ist zur Analyse der folgenden Punkte nützlich:
 * Allgemeiner, breiter gefasster Trafficfluss: Dieser Fluss zeigt, wie viele Personen, die sich die Homepage ansahen, anschließend eine Suche durchführten und dann ein bestimmtes Element anzeigten.
 * Korrelationen zwischen Ereignissen auf Ihrer Site. Korrelationen zeigen, welcher Prozentsatz von Personen, die die Datenschutzrichtlinien durchlasen, ein Produkt kauften.
 
-[Tutorial zur Fallout-Visualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) (4:15)
+[Tutorial zur Fallout-Visualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=de) (4:15)
 

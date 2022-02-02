@@ -1,12 +1,12 @@
 ---
 description: In Analysis Workspace gibt es zwei Möglichkeiten zur Verwendung von Metriken.
 title: Metriken
-uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
+feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Um das schnelle Erstellen berechneter Metriken zu vereinfachen, wurde dem Spalte
 
 ![](assets/calc_metrics.png)
 
-[Berechnete Metriken: implementierungslose Metriken](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+[Berechnete Metriken: implementierungslose Metriken](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=de) (3:42)
 
 ## Vergleichen von Metriken mit verschiedenen Attributionsmodellen
 

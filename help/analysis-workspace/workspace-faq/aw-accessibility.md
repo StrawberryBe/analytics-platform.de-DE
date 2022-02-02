@@ -1,8 +1,9 @@
 ---
 description: Unterstützende Funktionen für die Barrierefreiheit in Analysis Workspace
 title: Barrierefreiheit in Analysis Workspace
+feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 96%
@@ -11,7 +12,7 @@ ht-degree: 96%
 
 # Barrierefreiheit in Analysis Workspace
 
-Erfahren Sie mehr über die Unterstützung der Barrierefreiheit in [!UICONTROL Analysis Workspace], dem führenden Analyse-Tool für Customer Journey Analytics.
+Erfahren Sie mehr über die Unterstützung der Barrierefreiheit in [!UICONTROL Analysis Workspace], das führende Analysetool für Customer Journey Analytics.
 
 Barrierefreiheit bezieht sich darauf, Produkte für Menschen mit visuellen, akustischen, kognitiven, motorischen und anderen Behinderungen nutzbar zu machen. Beispiele für Barrierefreiheitsfunktionen für Software-Produkte sind die Bildschirmleserunterstützung, Textäquivalente für Grafiken, Tastaturkürzel, Änderung der Anzeigefarben auf hohen Kontrast usw.
 

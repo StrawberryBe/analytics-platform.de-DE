@@ -1,11 +1,12 @@
 ---
 title: Was ist eine Kohortenanalyse?
 description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
+feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 72%
+ht-degree: 74%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 72%
 
 Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die [!UICONTROL Kohortenanalyse] ist z. B. dann nützlich, wenn Sie wissen möchten, wie eine Kohorte mit einer Marke interagiert. Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. (Erläuterungen zur [!UICONTROL Kohortenanalyse] sind im Internet verfügbar, z. B. unter [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
-Nachdem Sie einen Kohortenbericht erstellt haben, können Sie seine Komponenten (spezifische Dimensionen, Metriken und Filter) kuratieren und den Kohortenbericht dann für andere freigeben. Siehe [Kuratieren und Freigeben](/help/analysis-workspace/curate-share/curate.md).
+Nachdem Sie einen Kohortenbericht erstellt haben, können Sie seine Komponenten (spezifische Dimensionen, Metriken und Filter) kuratieren und den Kohortenbericht dann für andere freigeben. Siehe [Kuratieren und freigeben](/help/analysis-workspace/curate-share/curate.md).
 
 Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 
@@ -23,9 +24,9 @@ Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 * Gewinnen Sie Ideen für A/B-Tests in Bereichen wie Preisstruktur, Upgrade-Pfad usw.
 * Zeigen Sie einen [!UICONTROL Kohortenanalysebericht] mit einem angeleiteten Analysebericht an.
 
-[!UICONTROL Die Kohortenanalyse ] steht allen Customer Journey Analytics mit Zugriffsrechten auf  [!UICONTROL Analysis Workspace] zur Verfügung.
+[!UICONTROL Kohortenanalyse] steht allen Customer Journey Analytics mit Zugriffsrechten auf [!UICONTROL Analysis Workspace].
 
-[Video-Tutorial zur Kohortenanalyse](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
+[Video-Tutorial zur Kohortenanalyse](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html?lang=de) (4:36)
 
 >[!IMPORTANT]
 >
@@ -64,8 +65,8 @@ Misst die Zeit, die vor und nach dem Aufnahmeereignis verstrichen ist. Ein hervo
 
 ### [!UICONTROL Angepasste Dimensionskohorte]
 
-Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder eine andere Dimension in Customer Journey Analytics, um anzuzeigen, wie sich die Bindung basierend auf den verschiedenen Werten dieser Dimensionen verändert.
+Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region]oder einer anderen Dimension in Customer Journey Analytics , um anzuzeigen, wie sich die Bindung basierend auf den verschiedenen Werten dieser Dimensionen ändert.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
-Anweisungen zum Einrichten und Durchführen eines Kohortenberichts finden Sie unter [Konfigurieren eines Kohortenanalyseberichts](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
+Anweisungen zum Einrichten und Durchführen eines Kohortenberichts finden Sie unter  [Konfigurieren eines Kohortenanalyseberichts](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

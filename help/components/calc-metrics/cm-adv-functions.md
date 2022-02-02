@@ -1,9 +1,10 @@
 ---
 title: Referenz – Erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
+feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: d6902af2d5e8a706e6b572c3daca2f60661dbbe9
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '2944'
 ht-degree: 100%
 
@@ -102,7 +103,7 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkustangens (Zeile)
 
@@ -114,7 +115,7 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Exponentielle Regression: Vorhersage für Y (Zeile)
 
@@ -163,7 +164,7 @@ CEILING(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, die gerundet werden soll. |
+| *Metrik* | Die Metrik, die gerundet werden soll. |
 
 ## Kosinus (Zeile)
 
@@ -175,7 +176,7 @@ COS(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
 
 ## Kubikwurzel
 
@@ -187,7 +188,7 @@ CBRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
+| *Metrik* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
 
 ## Kumulativ
 
@@ -270,7 +271,7 @@ FLOOR(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, die gerundet werden soll. |
+| *Metrik* | Die Metrik, die gerundet werden soll. |
 
 ## Größer als
 
@@ -290,7 +291,7 @@ COSH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
 
 ## Hyperbelsinus (Zeile)
 
@@ -302,7 +303,7 @@ SINH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
 
 ## Hyperbeltangens (Zeile)
 
@@ -314,7 +315,7 @@ TANH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
 
 ## WENN (Zeile)
 
@@ -364,7 +365,7 @@ LOG10(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
+| *Metrik* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
 
 ## Logistische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -430,7 +431,7 @@ LN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
+| *Metrik* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
 
 ## NICHT
 
@@ -643,7 +644,7 @@ SIN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
 
 ## t-Transformation
 
@@ -685,7 +686,7 @@ TAN (metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
 
 ## z-Transformation (Zeile)
 
@@ -712,7 +713,7 @@ z-Transformation (Metrik)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>metric</i> </td>
+   <td colname="col1"> <i>Metrik</i> </td>
    <td colname="col2"> <p> Gibt den Wert des ersten Arguments ungleich null zurück. </p> </td>
   </tr>
  </tbody>

@@ -1,13 +1,14 @@
 ---
 title: Best Practices für die Attribution
 description: Welche Best Practices bestehen für die Wahl eines Attributionsmodells?
-source-git-commit: 0e0d77425edeceb3ede6d2d7ca81846b30179607
-workflow-type: ht
+feature: Attribution
+exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 100%
 
 ---
-
 
 # Best Practices für die Attribution
 
