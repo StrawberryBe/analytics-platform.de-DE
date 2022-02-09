@@ -7,7 +7,7 @@ feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Sie können auch Live-Streaming-Ereignisse von Google Tag Manager direkt in Adob
 
 ### 1. Benutzerspezifische Variablen hinzufügen
 
-Nachdem Sie sich beim Google Tag-Manager-Konto angemeldet haben, müssen Sie einige benutzerdefinierte konstante Variablen in Bezug auf Adobe hinzufügen. Wahrscheinlich verfügen Sie bereits über Variablen im Google Tag Manager, die an Google Analytics gesendet werden, z. B. die E-Mail-Adresse des Kunden, den Kundennamen, die Sprache und den Status des angemeldeten Kunden. Sie müssen fünf neue benutzerdefinierte Variablen definieren:
+Nachdem Sie sich beim Google Tag-Manager-Konto angemeldet haben, müssen Sie einige benutzerdefinierte konstante Variablen in Bezug auf Adobe hinzufügen. Sie haben vermutlich bereits Variablen im Google Tag-Manager, die an Google Analytics gesendet werden, wie z. B. die E-Mail-Adresse des Kunden, der Kundenname, die Sprache und der Anmeldestatus des Kunden. Sie müssen fünf neue benutzerdefinierte Variablen definieren:
 
 * Organisations-ID für Adobe Experience Cloud
 * DCS Streaming-Endpunkt
@@ -155,4 +155,4 @@ Sobald Adobe Experience Platform mit dem Empfang der Live-Daten von Google Analy
 
 * Erstellen Sie eine [Datenansicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#cja-dataviews) basierend auf der Verbindung, die Google Analytics-Daten enthält.
 
-* Führen Sie eine äußerst aussagekräftige [Analyse in Workspace](/help/use-cases/ga-to-cja-reporting.md) durch.
+* Führen Sie eine äußerst aussagekräftige [Analyse in Arbeitsbereich](/help/use-cases/ga-to-cja-reporting.md) durch.

@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1309'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Anomalieerkennung | Vollständige Unterstützung. |
 | Attribution IQ | Vollständige Unterstützung. |
 | Berechnete Metriken | Vollständige Unterstützung; beachten Sie, dass vorhandene berechnete Metriken in herkömmlichem Analysis Workspace nicht in CJA portiert werden. |
-| Geräteübergreifende/kanalübergreifende Zuordnung | Vollständige Unterstützung; siehe [Cross-Channel-Analyse](/help/connections/cca/overview.md). |
+| Geräteübergreifende/kanalübergreifende Zuordnung | Vollständige Unterstützung; siehe [Kanalübergreifende Analyse](/help/connections/cca/overview.md). |
 | CSV-Download | Vollständige Unterstützung. |
 | Benutzerdefinierte Kalender | Vollständige Unterstützung. |
 | Datumsvergleiche | Vollständige Unterstützung. |
@@ -40,12 +40,12 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | PDF-Export | Vollständige Unterstützung. |
 | Projektkuration | Vollständige Unterstützung. |
 | Projektverknüpfung | Vollständige Unterstützung. |
-| Report Builder (Excel-Plug-in) | Vollständige Unterstützung |
+| Report Builder (Excel-Plug-in) | Vollständige Unterstützung. |
 | Berichtszeitverarbeitung | Vollständige Unterstützung; CJA basiert ausschließlich auf der Berichtszeitverarbeitung. |
 | Zugriff auf die Reporting-API | Vollständige Unterstützung; verfügbar über die [CJA-API](https://www.adobe.io/cja-apis/docs/). |
 | Terminierte Berichte/Projekte | Vollständige Unterstützung. |
 | Segmente | Vollständige Unterstützung; jetzt „Filter“ genannt. Beachten Sie, dass keine in traditionellem Analysis Workspace vorhandenen Segmente in CJA portiert werden. |
-| Benutzerberechtigungen/Datenzugangssteuerung | Vollständige Unterstützung; CJA unterscheidet zwischen Produktadministratoren von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de) und Anwendern. Nur Produktadministratoren können <ul><li>Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten</li><li>Projekte, Filter oder berechnete Metriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen</li><li>ein Arbeitsbereich-Projekt für alle Anwender freigeben</li></ul> |
+| Benutzerberechtigungen/Datenzugangssteuerung | Vollständige Unterstützung; CJA unterscheidet zwischen Produktadministratoren von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de) und Anwendern. Nur Produktadministratoren können <ul><li>Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten</li><li>Projekte, Filter oder berechnete Metriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen</li><li>ein Workspace-Projekt für alle Anwender freigeben</li></ul> |
 | Virtual Report Suites | Vollständige Unterstützung; jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
 | Kuratierung von VRS-Komponenten | Vollständige Unterstützung; jetzt Teil der Datenansichten. |
 
@@ -70,8 +70,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-| Bot-Filterung | Für [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)-basierte Datensätze verwenden, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
-| Media Analytics | Mediendaten sind als Teil von Analytics Source Connector verfügbar. |
+| Bot-Filterung | Bei Datensätzen, die auf dem [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) basieren, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
+| Media Analytics | Mediendaten stehen als Teil des Analytics-Quell-Connectors zur Verfügung. |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“, „Analytics for Target (A4T)“ und „Gleichzeitige Medienbesucher“ werden nicht unterstützt. |
 | Verarbeitungsregeln | Auf Analytics Data Connector-basierte Datensätze werden weiterhin Verarbeitungsregeln angewendet. [Datenvorbereitungsfunktionen in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform übermittelt werden. |
 
@@ -80,18 +80,18 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
-| Kalenderereignisse | Wird in Workspace als &quot;Anmerkungen&quot;bezeichnet. |
-| Classification Rule Builder | Funktioniert in CJA etwas anders, indem Zeichenfolgenmanipulationen zur Berichtszeit verwendet werden, anstatt Datensätze zu suchen. |
+| Kalenderereignisse | Wird in Workspace als „Anmerkungen“ bezeichnet. |
+| Classification Rule Builder | Funktioniert in CJA etwas anders, indem Zeichenfolge-Bearbeitungen zur Berichtszeit verwendet werden, statt dass Datensätze gesucht werden. |
 | Beitragsanalyse | Unterstützung ist geplant. |
 | Data Warehouse-Berichte (100 % Zeilenexport) | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [[!UICONTROL Abfrage-Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) von Adobe Experience Platform bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
-| Berichte zu Steigerung und Konfidenz | Unterstützung ist geplant. |
-| Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle | Unterstützung ist geplant, funktioniert aber in der Abfragezeit und nicht während der Datenerfassung für flexiblere, rückwirkendere und zerstörungsfreie Datenmanipulationen. |
+| Reporting über Steigerung und Konfidenz | Unterstützung ist geplant. |
+| Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle | Unterstützung ist geplant, funktioniert aber in der Abfragezeit und nicht während der Datenerfassung, um flexiblere, rückwirkendere und zerstörungsfreie Datenmanipulationen zu ermöglichen. |
 | Projektvorlagen | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
-| Segmentveröffentlichung (Senden von Segmenten aus Arbeitsbereich an Experience Cloud) | Unterstützung ist geplant. Wird in CJA als &quot;Zielgruppenveröffentlichung&quot;bezeichnet. |
-| Neue und wiederholte Sitzungsberichte | Die Unterstützung ist mit einigen Einschränkungen geplant. |
+| Segmentveröffentlichung (Senden von Segmenten aus Arbeitsbereich an Experience Cloud) | Unterstützung ist geplant. Wird in CJA als „Zielgruppenveröffentlichung“ bezeichnet. |
+| Reporting über neue und wiederholte Sitzungen | Die Unterstützung ist mit einigen Einschränkungen geplant. |
 
 ## Unterstützung ist noch nicht geplant
 
@@ -102,7 +102,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Währungsumrechnung | Unterstützung ist noch nicht geplant. |
 | Daten-Feeds | Unterstützung ist noch nicht geplant. |
 | Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
-| Transaktions-ID-Data Sources | Unterstützung ist noch nicht geplant. |
+| Transaktions-ID-Datenquellen | Unterstützung ist noch nicht geplant. |
 
 ## Keine Unterstützung geplant
 
