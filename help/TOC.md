@@ -10,9 +10,9 @@ user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, der auf der Adobe Experience Platform basierenden Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 6585e3b3f5a48edcf4357f710630ebbd36175e7d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '576'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,10 +33,10 @@ ht-degree: 99%
    + [Verbindungsgröße schätzen](connections/estimate-connection-size.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
    + [Standardsuchen](connections/standard-lookups.md)
-   + Cross-Channel-Analyse {#cca}
-      + [Überblick über die Cross-Channel-Analyse](connections/cca/overview.md)
+   + Kanalübergreifende Analyse {#cca}
+      + [Überblick über die Kanalübergreifende Analyse](connections/cca/overview.md)
       + [Funktionsweise der Wiederholung](connections/cca/replay.md)
-      + [Häufig gestellte Fragen zur Cross-Channel-Analyse](connections/cca/faq.md)
+      + [Häufig gestellte Fragen zur Kanalübergreifende Analyse](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](data-views/create-dataview.md)
@@ -52,7 +52,7 @@ ht-degree: 99%
       + [Wert-Bucketing](data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](data-views/component-reference.md)
    + [Anwendungsfälle von Datenansichten](data-views/data-views-usecases.md)
-+ Arbeitsbereich-Projekte {#cja-workspace}
++ Workspace-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](analysis-workspace/perform-basic-analysis.md)
    + [Durchführen einer erweiterten Analyse](analysis-workspace/perform-adv-analysis.md)
@@ -187,7 +187,7 @@ ht-degree: 99%
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
-   + [Bindungsdimensionen und Metriken verwenden](use-cases/binding-dimensions-metrics.md)
+   + [Verwenden von Bindungsdimensionen und Metriken](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
    + [Kanalübergreifendes Analysieren von Daten](use-cases/cross-channel.md)
    + [Callcenter- und Web-Daten importieren](use-cases/call-center.md)
@@ -208,6 +208,6 @@ ht-degree: 99%
 + [Aktualisierungen der CJA-Dokumentation](doc-changes.md)
 + Versionshinweise {#releases}
    + [Neueste Version](release-notes/latest.md)
-   + [Versionen 2021](release-notes/2021.md)
-   + [Versionen 2020](release-notes/2020.md)
+   + [Versionen von 2021](release-notes/2021.md)
+   + [Versionen von 2020](release-notes/2020.md)
 
