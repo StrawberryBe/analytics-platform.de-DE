@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: b9b6c411552e8be98547e834ce81ba45d28dda60
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 100%
+source-wordcount: '1646'
+ht-degree: 97%
 
 ---
 
@@ -57,15 +57,15 @@ ht-degree: 100%
 
 | Frage | Antwort |
 | --- | --- |
-| Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-Daten oder -Ereignisse: Werden innerhalb von 90 Minuten verarbeitet und aufgenommen, sobald Daten in AEP verfügbar sind.</li><li>Stapelgröße > 50 Millionen Zeilen: länger als 90 Minuten.</li><li>Kleine Aufstockungen – z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 24 Stunden<li>Große Aufstockungen – z. B. 500 Milliarden Zeilen: 30 Tage</li></ul> |
+| Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]? | <ul><li>Live-Daten oder -Ereignisse: Werden innerhalb von 90 Minuten verarbeitet und aufgenommen, sobald Daten in AEP verfügbar sind. (Stapelgröße > 50 Millionen Zeilen: länger als 90 Minuten.)</li><li>Kleine Aufstockungen – z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 24 Stunden<li>Große Aufstockungen – z. B. 500 Milliarden Zeilen: 30 Tage</li></ul> |
 
 
 ## 5. Herkömmliche [!UICONTROL Adobe Analytics]-Komponenten
 
 | Frage | Antwort |
 | --- | --- |
-| Kann ich Filter (Segmente) in Customer Journey Analytics für Experience Platform Unified Profile oder andere Experience Cloud-Programme freigeben/dort veröffentlichen? | Noch nicht, wir arbeiten aber aktuell daran, diese Funktion bereitstellen zu können. |
-| Was ist mit meiner alten eVar-Einstellung passiert? | eVars, Props und Ereignisse im Sinne vom herkömmlichen Adobe Analytics gibt es in [!UICONTROL Customer Journey Analytics] nicht mehr. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet. |
+| Kann ich freigeben/veröffentlichen? [!UICONTROL Filter] ([!UICONTROL Segmente]) von [!DNL Customer Journey Analytics] zur Experience Platform von Unified Profile oder anderen Experience Cloud-Anwendungen? | Noch nicht, wir arbeiten aber aktuell daran, diese Funktion bereitstellen zu können. |
+| Was ist mit meinem alten passiert? [!UICONTROL eVar] Einstellung? | [!UICONTROL eVars], [!UICONTROL props]und [!UICONTROL events] im traditionellen Adobe Analytics-Sinne gibt es in [!UICONTROL Customer Journey Analytics]. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet. |
 | Wo sind jetzt meine Einstellungen für die Sitzungs- und Variablenpersistenz? | [!UICONTROL Customer Journey Analytics] verwendet alle diese Einstellungen zur Berichtszeit. Diese Einstellungen sind jetzt in Datenansichten verfügbar. Änderungen an diesen Einstellungen sind jetzt rückwirkend. Jetzt sind mehrere Versionen verfügbar, indem Sie mehrere Datenansichten verwenden. |
 | Was passiert mit den bereits vorhandenen Segmenten/berechneten Metriken? | [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein AEP-Schema. Das bedeutet, dass keine der vorhandenen Segmente oder Berechnungsmetriken mit [!UICONTROL Customer Journey Analytics] kompatibel sind. |
 | Wie werden in [!UICONTROL Customer Journey Analytics] `Uniques Exceeded`-Einschränkungen behandelt? | [!UICONTROL In Customer Journey Analytics] gibt es keine Beschränkungen hinsichtlich eindeutiger Werte, sodass Sie sie nicht beachten müssen. |
