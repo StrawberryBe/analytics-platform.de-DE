@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: b9b6c411552e8be98547e834ce81ba45d28dda60
+source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
 workflow-type: tm+mt
 source-wordcount: '1646'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -79,8 +79,8 @@ In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet 
 
 | Aktion | Auswirkung |
 | --- | --- |
-| Löschen einer Sandbox in [!UICONTROL Adobe Experience Platform] | Durch das Löschen einer Sandbox wird der Datenfluss aller [!UICONTROL Customer Journey Analytics]-Verbindungen zu Datensätzen in dieser Sandbox angehalten. Derzeit werden Verbindungen in Customer Journey Analytics, die sich auf die gelöschte Sandbox beziehen, nicht automatisch gelöscht. |
-| Löschen eines Schemas in [!UICONTROL Adobe Experience Platform], aber nicht des Datensatzes, der diesem Schema zugeordnet ist | [!UICONTROL Adobe Experience Platform] ermöglicht nicht das Löschen von Schemata, denen ein oder mehrere Datensätze zugeordnet sind. Ein Administrator mit den entsprechenden Berechtigungen kann jedoch zuerst die Datensätze und dann das Schema löschen. |
+| Löschen einer Sandbox in [!UICONTROL Adobe Experience Platform] | Durch das Löschen einer Sandbox wird der Datenfluss aller [!UICONTROL Customer Journey Analytics]-Verbindungen zu Datensätzen in dieser Sandbox angehalten. Zurzeit [!UICONTROL Verbindungen] in CJA, die mit der gelöschten Sandbox verknüpft ist, wird nicht automatisch gelöscht. |
+| Löschen eines Schemas in [!UICONTROL Adobe Experience Platform], aber nicht des Datensatzes, der diesem Schema zugeordnet ist | [!UICONTROL Adobe Experience Platform][!UICONTROL  ermöglicht nicht das Löschen von Schemata, denen ein oder mehrere Datensätze zugeordnet sind. ] Ein Administrator mit den entsprechenden Berechtigungen kann jedoch zuerst die Datensätze und dann das Schema löschen. |
 | Löschen eines Datensatzes im Data Lake von [!UICONTROL Adobe Experience Platform] | Durch das Löschen eines Datensatzes im Data Lake von Adobe Experience Platform wird der Datenfluss von diesem Datensatz zu allen Customer Journey Analytics-Verbindungen, die diesen Datensatz enthalten, angehalten. Daten aus diesem Datensatz werden nicht automatisch aus zugehörigen Customer Journey Analytics-Verbindungen gelöscht. |
 | Löschen eines Datensatzes in [!UICONTROL Customer Journey Analytics] | Derzeit ist es nicht möglich, einen Datensatz in einer gespeicherten Verbindung zu löschen. Dazu müssten Sie die gesamte Verbindung löschen und von Neuem beginnen. (Kunden, die die CJA-SKU erworben haben, können jedoch einen Datensatz in der Benutzeroberfläche von [!UICONTROL Adobe Experience Platform] löschen.) |
 | Löschen von einem Batch aus einem Datensatz (in [!UICONTROL Adobe Experience Platform]) | Wenn ein Batch in einem [!UICONTROL Adobe Experience Platform]-Datensatz gelöscht wird, wird er auch aus allen Customer Journey Analytics-Verbindungen entfernt, die diesen Batch enthalten. Customer Journey Analytics wird über das Löschen von Batches in [!UICONTROL Adobe Experience Platform] benachrichtigt. |
