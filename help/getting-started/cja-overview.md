@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Works
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 100%
+source-wordcount: '1270'
+ht-degree: 94%
 
 ---
 
@@ -32,9 +32,9 @@ Die erste Version von Customer Journey Analytics enthält viele der in Analysis 
 
 ## Vergleich von CJA mit Geräteübergreifenden Analysen
 
-[Geräteübergreifende Analysen](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) lassen sich mit dem Adobe Experience Platform Identity Service integrieren und verwenden entweder das Kooperationsdiagramm oder das private Diagramm, um zu ermitteln, wie digitale Geräte Personen zugeordnet werden. Sie sind für Adobe Analytics Ultimate-Kunden verfügbar.
+[Geräteübergreifende Analyse](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) integriert mit [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en), wobei entweder das Co-op-Diagramm oder das private Diagramm verwendet wird, um zu ermitteln, wie digitale Geräte Personen zugeordnet sind. Sie sind für Adobe Analytics Ultimate-Kunden verfügbar.
 
-CJA lässt sich dagegen mit Adobe Experience Platform-Datensätzen integrieren und ermöglicht die kanalübergreifende Analyse in Analysis Workspace. Obwohl CJA noch nicht in die Kooperations- oder privaten Identitätsdiagramme integriert ist, können Sie „Ihre eigene ID mitbringen“, um Datensätze zusammenzuführen, und diese Datensätze können über digitale Daten hinausgehen und sowohl Online- als auch Offline-Touchpoints enthalten. Die Voraussetzungen für CJA werden nachfolgend ausführlicher behandelt.
+CJA lässt sich dagegen mit Adobe Experience Platform-Datensätzen integrieren und ermöglicht die kanalübergreifende Analyse in Analysis Workspace. Obwohl CJA noch nicht in die Co-op- oder privaten Identitätsdiagramme integriert ist, können Sie &quot;Ihre eigene ID mitbringen&quot;, um Datensätze zusammenzuführen. Diese Datensätze können über digitale Daten hinausgehen und sowohl Online- als auch Offline-Touchpoints enthalten. Die Voraussetzungen für CJA werden nachfolgend ausführlicher behandelt.
 
 ## Wichtige Anwendungsfälle
 

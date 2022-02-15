@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Adobe Analytics-Daten mit Daten in Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
-workflow-type: ht
-source-wordcount: '777'
-ht-degree: 100%
+source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Unterschieden kommen. Dies ist normal und kann aus verschiedenen Gründen auftreten. CJA soll es Ihnen ermöglichen, einige Einschränkungen bei Daten in AA zu verbessern. Es können jedoch unerwartete/unbeabsichtigte Diskrepanzen auftreten. Dieser Artikel soll Ihnen dabei helfen, diese Unterschiede zu diagnostizieren und zu beheben, damit Sie und Ihr Team CJA ohne Beeinträchtigung der Datenintegrität verwenden können.
 
-Nehmen wir an, Sie haben Adobe Analytics-Daten über den Analytics-Quell-Connector in AEP aufgenommen und dann eine CJA-Verbindung mit diesem Datensatz erstellt.
+Nehmen wir an, Sie haben Adobe Analytics-Daten über die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de)und dann eine CJA-Verbindung mit diesem Datensatz erstellt.
 
 ![Datenfluss](assets/compare.png)
 
