@@ -4,10 +4,10 @@ description: Schritte für die Migration von Adobe Analytics zu Customer Journey
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
+source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1234'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeil
 
 ### 2. Anpassen der Variablen
 
-Die einfachste Migration von Adobe Analytics-Daten in Customer Journey Analytics besteht darin, eine globale Report Suite mithilfe der [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in AEP zu, die wiederum einfach mit CJA verbunden werden können.
+Die einfachste Migration von Adobe Analytics-Daten in Customer Journey Analytics besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) in die Experience Platform mit [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in AEP zu, die wiederum einfach mit CJA verbunden werden können.
 
 Eine vollständige globale Report Suite ist möglicherweise nicht immer für eine Implementierung machbar. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu integrieren, müssen Sie vorab planen, die Variablen über diese Report Suites hinweg anzugleichen.
 
@@ -77,7 +77,7 @@ Die folgenden Adobe Analytics-Funktionen oder -Komponenten werden nicht unterst�
 
 ### Bequem mit der Berichtszeitverarbeitung
 
-Die Berichterstellung in Adobe Analytics beruht auf einer erheblichen Datenvorverarbeitung, um Ergebnisse wie die Persistenz zu erzielen, die in [!UICONTROL eVars]. Customer Journey Analytics führt diese Berechnungen zur Berichtslaufzeit aus.
+Die Berichterstellung in Adobe Analytics beruht auf einer erheblichen Datenvorverarbeitung, um Ergebnisse wie die Persistenz zu erzielen, die in [!UICONTROL eVars]. Im Gegensatz dazu führt Customer Journey Analytics diese Berechnungen zur Berichtslaufzeit aus.
 
 [!UICONTROL Berichtszeitverarbeitung] öffnet die Möglichkeit, rückwirkende Einstellungen anzuwenden und mehrere Versionen der Variablenpersistenz zu erstellen, ohne die Art der Erfassung der zugrunde liegenden Daten ändern zu müssen.
 
@@ -100,6 +100,14 @@ Hier sind einige Videos, die Sie führen:
 * [Verschieben von Adobe Analytics-Segmenten in Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Verschieben der berechneten Metriken von Adobe Analytics nach Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+### Weiter Überlegungen
+
+* Mithilfe der Vorteile von CJA-Datenansichten haben Sie bei der Definition von Metriken und Dimensionen in Customer Journey Analytics deutlich mehr Flexibilität. Sie können beispielsweise den Wert einer Dimension zur Definition einer Metrik verwenden. [Weitere Informationen](/help/data-views/data-views-usecases.md)
+
+* Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics definiert haben, verfügen Sie in Customer Journey Analytics über ähnliche Kalenderfunktionen. Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
+
+* In Customer Journey Analytics können Sie einen benutzerdefinierten Besuch-/Sitzungs-Timeout definieren sowie eine Metrik definieren, die eine neue Sitzung startet. Sie können Datenansichten mit verschiedenen Sitzungsdefinitionen erstellen, um Einblicke darüber und darüber hinaus zu erhalten, was in Adobe Analytics möglich war. Diese Funktion kann besonders für mobile Datensätze von Nutzen sein.
 
 ## Nächste Schritte
 
