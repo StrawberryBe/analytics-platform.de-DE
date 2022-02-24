@@ -4,9 +4,9 @@ title: Bekannte Einschränkungen in Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -17,21 +17,21 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 ## Tabellen
 
 * Datumsvergleichsspalten können nicht hinzugefügt werden, wenn Datumsbereiche oder Metriken als Tabellenzeilen verwendet werden.
-* Die Option Metrik aus Auswahl erstellen ist deaktiviert, wenn Filter als Zeilen einer Tabelle verwendet werden. Darüber hinaus sollte die Option „Metrik aus Auswahl erstellen“ nicht auf datumsorientierte Spalten angewendet werden.
+* „Metrik aus Auswahl erstellen“ ist deaktiviert, wenn Filter als Zeilen einer Tabelle verwendet werden. Darüber hinaus sollte die Option „Metrik aus Auswahl erstellen“ nicht auf datumsorientierte Spalten angewendet werden.
 * Bedingte Formatierung für Aufschlüsselungszeilen kann keine benutzerdefinierten Bereiche verwenden.
 * Tabellengesamtzeilen können nicht als Trend-Ansicht dargestellt werden, wenn die Einstellung für die Berechnung der Summen durch Addition der Zeilenwerte angewendet wird (üblicherweise bei statischen Zeilenelementen).
 * Die [!UICONTROL Beitragsanalyse] kann [!UICONTROL nur] mit der Granularität _Täglich_ ausgeführt werden. Sie kann nicht mit Daten des Typs [!UICONTROL Stündlich], [!UICONTROL Wöchentlich] usw. ausgeführt werden.
 
 ## Visualisierungen
 
-* Visualisierungen, die Filter nutzen, z. B. [!UICONTROL Fallout], [!UICONTROL Fluss], [!UICONTROL Kohorte]und [!UICONTROL Histogramm], können keine berechneten Metriken als Eingaben akzeptieren.
+* Visualisierungen, die Filter nutzen, wie [!UICONTROL Fallout], [!UICONTROL Fluss], [!UICONTROL Kohorte] und [!UICONTROL Histogramm], können keine berechneten Metriken als Eingabe akzeptieren.
 * [!UICONTROL Fluss]: Einstiegs-/Ausstiegsdimensionen, z. B. [!UICONTROL Entrypage], können nicht im Fluss verwendet werden.
 * [!UICONTROL Kohorte]: Nur Ganzzahlen können als Kohortenkriterien verwendet werden.
 
-## Komponenten > Filter
+## „Komponenten“ > „Filter“
 
-* Bestimmte Metriken und Dimensionen können nicht gefiltert werden, z. B. [!UICONTROL Vorfälle], [!UICONTROL Unique Visitors], usw.
-* Ad-hoc-Filter, die im [Bedienfeld-Dropzone](/help/analysis-workspace/c-panels/panels.md) wird nicht in der linken Leiste von Workspace oder im Komponenten-Manager für Filter angezeigt, es sei denn, sie werden veröffentlicht. Bearbeiten Sie dazu den Filter und wählen Sie **[!UICONTROL Filter öffentlich machen]**.
+* Bestimmte Metriken und Dimensionen können nicht gefiltert werden, wie [!UICONTROL Vorfälle], [!UICONTROL Unique Visitors] usw.
+* Ad-hoc-Filter, die in der [Bedienfeld-Dropzone](/help/analysis-workspace/c-panels/panels.md) erstellt wurden, werden nicht in der linken Leiste von Workspace oder im Filterkomponenten-Manager angezeigt, es sei denn, sie werden veröffentlicht. Dies ist möglich, indem Sie den Filter bearbeiten und **[!UICONTROL Diesen Filter veröffentlichen]** auswählen.
 
 ## Komponenten > Berechnete Metriken
 
