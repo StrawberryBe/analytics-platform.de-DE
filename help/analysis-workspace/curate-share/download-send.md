@@ -4,9 +4,9 @@ title: PDF- oder CSV-Dateien herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1016'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Beachten Sie beim Herunterladen von Projekten Folgendes:
 * PDF-Downloads werden als einzelne Seite ohne Seitenumbruch gerendert.
 * Bei der PDF-Ausgabe eines Projekts wird das gerendert, was sich auf der Seite befindet. Wenn ein Projekt Visualisierungen und Bedienfelder in benutzerdefinierter Größe enthält, müssen Sie diese so ändern, dass die Größe automatisch bestimmt wird (Schaltfläche in der oberen rechten Ecke), damit der Inhalt nicht abgeschnitten wird.
 
-## Daten in die Zwischenablage kopieren (Hotkey: Strg+C) {#copy-data}
+## Daten in die Zwischenablage kopieren (Hotkey: Strg + C) {#copy-data}
 
 Mit der Rechtsklick-Option **[!UICONTROL In Zwischenablage kopieren]** können Sie Daten schnell aus Workspace kopieren und an einer anderen Stelle einfügen.
 
@@ -53,7 +53,7 @@ Mit der Rechtsklick-Option **[!UICONTROL Daten als CSV herunterladen]** können 
 
 ## Objekte als CSV herunterladen {#download-items}
 
-Wenn Sie mehr als die 400 sichtbaren Zeilen mit Daten in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (Dimensionsname)**. Mit dieser Option werden bis zu 50.000 Dimensionselemente (basierend auf der Tabellensortierung) für die ausgewählte Dimension exportiert, wobei Filter und Filter angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in Freiformtabellen keine Beschränkungen gelten, wird empfohlen, die Option zum Herunterladen von Elementen in Tabellen mit weniger als 20 Spalten zu verwenden, um optimale Leistung sicherzustellen.
+Wenn Sie mehr als die 400 sichtbaren Zeilen mit Daten in einer Tabelle analysieren möchten, klicken Sie mit der rechten Maustaste auf die Tabellenkopfzeile oder eine beliebige Zeile und wählen Sie **Elemente als CSV herunterladen (Dimensionsname)**. Diese Option exportiert bis zu 50.000 Dimensionselemente (basierend auf der Tabellensortierung) für die ausgewählte Dimension, wobei Filter angewendet werden. Wenn Sie diese Option oben in der Tabelle auswählen, wird die erste Dimension in der Tabelle exportiert. Obwohl in Freiformtabellen keine Beschränkungen gelten, wird empfohlen, die Option zum Herunterladen von Elementen in Tabellen mit weniger als 20 Spalten zu verwenden, um optimale Leistung sicherzustellen.
 
 >[!TIP]
 >
@@ -67,11 +67,11 @@ Während eines Downloads können Sie mehrere Aufgaben im Projekt ausführen und 
 
 Die Eigenschaften der Tabelle werden wie folgt auf die heruntergeladene Datei angewendet:
 
-* Alle Bereichsfilter werden als Filter angewendet.
+* Alle Bedienfeldfilter werden als Filter angewendet.
 * Aufschlüsselungen **oberhalb** der ausgewählten Dimension in der Tabelle werden als Filter über jeder einzelnen Spalte angezeigt.
 * Aufschlüsselungen **unterhalb** der ausgewählten Dimension in der Tabelle werden entfernt.
 
-Im obigen Beispiel werden Seitenelemente mit dem Bereichsfilter (Kunden neuer Besucher) und den oben aufgeführten Komponenten (Marketing-Kanal = E-Mail) als Filter heruntergeladen und die folgenden Komponenten (Mobilgerätetyp) aus der heruntergeladenen CSV entfernt.
+Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldfilter („Neue Besucher-Kunden“) heruntergeladen und die darüber liegenden Komponenten („Marketing-Kanal = E-Mail“) als Filter angewendet, während die darunter liegenden Komponenten („Typ des Mobilgeräts“) aus der heruntergeladenen CSV-Datei entfernt werden.
 
 ![](assets/downloaded-file.png)
 
