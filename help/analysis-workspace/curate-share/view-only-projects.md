@@ -5,9 +5,9 @@ title: Schreibgeschützte Projekte
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 >
 >Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
-Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann gewünscht werden, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen weniger vertraut sind, aber dennoch Daten und Einblicke in einer sicheren Umgebung nutzen möchten.
+Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann wünschenswert sein, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen nicht so vertraut sind, aber dennoch Daten und Einblicke in einer sicheren Umgebung einsehen sollen.
 
 ![](assets/view-only-project.png)
 
@@ -30,7 +30,7 @@ Zu den deaktivierten Interaktionen in einem schreibgeschützten Projekt gehören
 * Freiformfilterung
 * Freiform – Anzahl der sichtbaren Zeilen
 * Freiformzeilen-, Spalten- oder Visualisierungseinstellungen
-* Bereichsfilter
+* Bedienfeldfilter
 * Menüs „Bearbeiten“, „Einfügen“ und „Komponenten“
 * Workspace-Tipps
 
