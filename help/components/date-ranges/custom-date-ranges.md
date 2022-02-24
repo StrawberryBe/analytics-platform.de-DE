@@ -1,17 +1,17 @@
 ---
 description: Erstellen Sie benutzerdefinierte Datumsbereiche in Analysis Workspace und speichern Sie sie als Zeitkomponenten.
 keywords: Analysis Workspace
-title: Benutzerdefinierte Datumsbereiche erstellen
+title: Erstellen von benutzerdefinierten Datumsbereichen
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '281'
 ht-degree: 100%
 
 ---
 
-# Benutzerdefinierte Datumsbereiche erstellen
+# Erstellen von benutzerdefinierten Datumsbereichen
 
 >[!NOTE]
 >
