@@ -4,7 +4,7 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2944'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Beispiel: Wenn Sie mit einer Umsatzmetrik arbeiten und dem Bericht dann eine Sei
 
 Wenn Sie allerdings an zwei Metriken interessiert sind, soll vielleicht nicht eine Metrik einen höheren Durchschnitt oder Mindestwert erhalten, weil einige seiner Zeilen Null waren. Daher würden Sie den Parameter zum Einbeziehen der Nullwerte nicht aktivieren.
 
-## UND
+## AND
 
 Gibt den Wert des zugehörigen Arguments zurück. Mit „NOT“ können Sie sicherstellen, dass ein Wert nicht mit einem bestimmten Wert übereinstimmt.
 
@@ -103,7 +103,7 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkustangens (Zeile)
 
@@ -115,7 +115,7 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Exponentielle Regression: Vorhersage für Y (Zeile)
 
@@ -156,7 +156,7 @@ cdf_z( -3 ) ? 0.0013499
 
 ## Nächsthöhere ganze Zahl (Ceiling) (Zeile)
 
-Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(*Umsatz*) den Umsatz bis zum nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar).
+Gibt die kleinste Ganzzahl zurück, die nicht kleiner als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel CEILING(*Revenue*) den Umsatz bis zum nächsten Dollar aufrunden (in diesem Fall 570 US-Dollar).
 
 ```
 CEILING(metric)
@@ -164,7 +164,7 @@ CEILING(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Kosinus (Zeile)
 
@@ -176,7 +176,7 @@ COS(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
 
 ## Kubikwurzel
 
@@ -188,7 +188,7 @@ CBRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
+| *metric* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
 
 ## Kumulativ
 
@@ -263,7 +263,7 @@ SLOPE.EXP(metric_X, metric_Y)
 
 ## Nächstniedrigere ganze Zahl (Floor) (Zeile)
 
-Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(*Umsatz*) den Umsatz bis zum nächsten Dollar abrunden (in diesem Fall 569 US-Dollar).
+Gibt die größte Ganzzahl zurück, die nicht größer als ein angegebener Wert ist. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel FLOOR(*Revenue*) den Umsatz bis zum nächsten Dollar abrunden (in diesem Fall 569 US-Dollar).
 
 ```
 FLOOR(metric)
@@ -271,7 +271,7 @@ FLOOR(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Größer als
 
@@ -291,7 +291,7 @@ COSH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
 
 ## Hyperbelsinus (Zeile)
 
@@ -303,7 +303,7 @@ SINH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
 
 ## Hyperbeltangens (Zeile)
 
@@ -315,9 +315,9 @@ TANH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
 
-## WENN (Zeile)
+## IF (Zeile)
 
 Die IF-Funktion gibt einen Wert zurück, wenn eine angegebene Bedingung TRUE ergibt, und einen anderen Wert, wenn diese Bedingung FALSE ergibt.
 
@@ -365,7 +365,7 @@ LOG10(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
+| *metric* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
 
 ## Logistische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -431,9 +431,9 @@ LN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
+| *metric* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
 
-## NICHT
+## NOT
 
 Gibt 1 zurück, wenn die Zahl 0 ist, oder gibt 0 zurück, wenn es eine andere Zahl ist.
 
@@ -644,7 +644,7 @@ SIN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
 
 ## t-Transformation
 
@@ -686,7 +686,7 @@ TAN (metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
 
 ## z-Transformation (Zeile)
 
@@ -713,7 +713,7 @@ z-Transformation (Metrik)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>Metrik</i> </td>
+   <td colname="col1"> <i>metric</i> </td>
    <td colname="col2"> <p> Gibt den Wert des ersten Arguments ungleich null zurück. </p> </td>
   </tr>
  </tbody>
