@@ -1,26 +1,26 @@
 ---
-description: Die Flussfunktion zeigt Kundenpfade durch Ihre Websites und Apps an.
+description: Die Flussfunktion zeigt Kundenpfade durch Ihre Websites und Programme an.
 title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Flussübersicht
 
-Die neue Flussfunktion zeigt Kundenpfade durch Ihre Websites und Apps an.
+Die Flussfunktion zeigt Kundenpfade durch Ihre Websites und Programme an.
 
 Damit können Sie:
 
 * Visualisieren der Kundenpfade in Ihrer Website oder Anwendung
 * Analysieren, wohin Kunden vor und nach festgelegten Checkpoints navigieren, wie zum Beispiel Einsteig, eine bestimmte Dimension oder Ausstieg
-* Erstellen von Filtern durch Angabe eines bestimmten Punkts in einem ausgewählten Pfad
+* Erstellen Sie Filter, indem Sie einen bestimmten Punkt in einem ausgewählten Pfad angeben
 
-[Tutorial zur Flussvisualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=de) (4:56)
+[Video-Tutorial zur Flussvisualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=de) (4:56)
 
 ## Interdimensionale Flüsse {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
