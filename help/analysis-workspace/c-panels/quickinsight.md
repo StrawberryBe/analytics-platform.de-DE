@@ -4,9 +4,9 @@ title: Bedienfeld „Quick Insights“
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insights]** -Bedienfeld wird derzeit nur eingeschränkt getestet. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=de)
+>Das Bedienfeld **[!UICONTROL Quick Insights]** wird derzeit eingeschränkt getestet. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=de)
 
 [!UICONTROL Quick Insights] bietet Nicht-Analytikern und neuen Benutzern von [!UICONTROL Analysis Workspace] die Möglichkeit, betriebliche Fragen schnell und einfach zu beantworten. Es ist auch ein großartiges Tool für fortgeschrittene Benutzer, die eine einfache Frage schnell beantworten möchten, ohne selbst eine Tabelle erstellen zu müssen.
 
-Wenn Sie diese Funktion zum ersten Mal verwenden [!UICONTROL Analysis Workspace]können Sie sich fragen, welche Visualisierungen am nützlichsten sind, welche Dimensionen und Metriken Einblicke ermöglichen, wo Elemente per Drag-and-Drop eingefügt werden können, wo ein Filter erstellt werden kann usw.
+Wenn Sie [!UICONTROL Analysis Workspace] zum ersten Mal verwenden, fragen Sie sich vielleicht, welche Visualisierungen am nützlichsten sind, welche Dimensionen und Metriken Einblicke ermöglichen, wo Elemente per Drag-and-Drop eingefügt werden können, wo ein Filter erstellt werden kann usw.
 
-Unterstützung dabei und basierend auf der Nutzung von Datenkomponenten durch Ihr eigenes Unternehmen in [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] verwendet einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Filter und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. Sie sehen Dimensionen, Metriken und Filter, die als [!UICONTROL Beliebt] in der Dropdown-Liste, wie hier dargestellt:
+Um Ihnen dabei zu helfen, und basierend auf der Nutzung der Datenkomponenten in [!UICONTROL Analysis Workspace] durch Ihr Unternehmen, verwendet [!UICONTROL Quick Insights] einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Filter und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. In der Dropdown-Liste werden Dimensionen, Metriken und Filter angezeigt, die als [!UICONTROL Beliebt] gekennzeichnet sind, wie im Folgenden gezeigt:
 
 ![](assets/popular-tag.png)
 
@@ -32,7 +32,7 @@ Unterstützung dabei und basierend auf der Nutzung von Datenkomponenten durch Ih
 
 * Ordnungsgemäßes Erstellen einer Datentabelle und einer zugehörigen Visualisierung in [!UICONTROL Analysis Workspace].
 * Vertrautmachen mit der Terminologie und dem Vokabular für grundlegende Komponenten und Bestandteile von [!UICONTROL Analysis Workspace].
-* Einfache Aufschlüsselungen von Dimensionen durchführen, mehrere Metriken hinzufügen oder Filter einfach innerhalb einer [!UICONTROL Freiformtabelle].
+* Ausführen einfacher Aufschlüsselungen von Dimensionen, Hinzufügen mehrerer Metriken oder Vergleichen von Filtern in einer [!UICONTROL Freiformtabelle].
 * Ändern oder Ausprobieren verschiedener Visualisierungstypen, um das Suchwerkzeug für Ihre Analyse schnell und intuitiv zu finden.
 
 ## Grundlegende Terminologie
@@ -46,11 +46,11 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
 | [!UICONTROL Metrik] | Metriken sind quantitative Informationen über Besucheraktivitäten wie Ansichten, Clickthroughs, Neuladungen, durchschnittliche Besuchszeit, Einheiten, Bestellungen, Umsatz usw. |
 | [!UICONTROL Visualisierung] | Workspace bietet [eine Reihe von Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), mit denen Sie visuelle Darstellungen Ihrer Daten erstellen können, wie beispielsweise Balkendiagramme, Donut-Diagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. |
 | [!UICONTROL Dimensionsaufschlüsselung] | Mit einer Dimensionsaufschlüsselung können Sie eine Dimension buchstäblich nach anderen Dimensionen aufschlüsseln. In unserem Beispiel könnten Sie die US-Bundesstaaten nach Mobilgeräten aufschlüsseln, um die Besuche der Mobilgeräte pro Bundesland zu erhalten, oder Sie könnten Mobilgeräte nach Mobilgerätetypen, Regionen, internen Kampagnen usw. aufschlüsseln. |
-| [!UICONTROL filter] | Mit Filtern können Sie Besucheruntergruppen anhand von Merkmalen oder Website-Interaktionen identifizieren. Sie können beispielsweise [!UICONTROL Besucher] Filter anhand von Attributen: Browsertyp, Gerät, Anzahl Besuche, Land, Geschlecht oder basierend auf Interaktionen: Kampagnen, Keyword-Suche, Suchmaschine oder basierend auf Ausstiegen und Einstiegen: Besucher aus Facebook, einer definierten Landingpage, einer verweisenden Domäne oder basierend auf benutzerdefinierten Variablen: Formularfeld, definierte Kategorien, Kunden-ID. |
+| [!UICONTROL Filter] | Mit Filtern können Besucheruntergruppen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Sie können beispielsweise [!UICONTROL Besucherfilter] basierend auf Attributen erstellen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht) oder auf der Grundlage von Interaktionen (Kampagnen, Keyword-Suche, Suchmaschinen) oder auf der Grundlage von Ausstiegen und Einstiegen (Besucher von Facebook, einer definierten Landingpage, einer Referrer Domain) oder auf der Grundlage von benutzerspezifischen Variablen (Formularfeld, definierte Kategorien, Kunden-ID). |
 
 ## Erste Schritte mit Quick Insights
 
-1. Melden Sie sich mit den angegebenen Anmeldeinformationen bei Customer Journey Analytics an.
+1. Melden Sie sich mit den Ihnen zur Verfügung gestellten Zugangsdaten bei Customer Journey Analytics an.
 1. Wechseln Sie zu [!UICONTROL Workspace] und klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL Quick Insights]**. (Sie können auf dieses Bedienfeld auch über das Menü **[!UICONTROL Bedienfeld]** in der linken Leiste zugreifen.)
 
    ![](assets/qibuilder.png)
@@ -58,7 +58,7 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
    ![](assets/qi-panel.png)
 
 1. Lesen Sie zunächst das kurze Tutorial, um sich mit einigen der Grundlagen des [!UICONTROL Bedienfelds „Quick Insights“] vertraut zu machen. Sie können auch auf **[!UICONTROL Tutorial überspringen]** klicken.
-1. Wählen Sie die Bausteine aus (auch als Komponenten bezeichnet): Dimensionen (orange), Metriken (grün), Filter (blau) oder Datumsbereiche (violett) Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit eine Tabelle automatisch erstellt wird.
+1. Wählen Sie die Bausteine (auch als Komponenten bezeichnet) aus: Dimensionen (orange), Metriken (grün), Filter (blau) oder Datumsbereiche (violett). Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit eine Tabelle automatisch erstellt wird.
 
    ![](assets/qibuilder2.png)
 
@@ -98,7 +98,7 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
    ![](assets/qibuilder6.png)
 
-* **Hinzufügen weiterer Filter**: Mithilfe der UND- oder ODER-Operatoren können Sie bis zu 2 weitere Filter hinzufügen. Sehen Sie sich an, was mit der Tabelle passiert, wenn Sie „Mobilbenutzer OR Treue Besucher“ hinzufügen. Sie finden sie nebeneinander über den Metriken. Wenn Sie &quot;Mobilbenutzer UND treue Besucher&quot;hinzufügen, werden die Ergebnisse beider Filter zusammen angezeigt und in der Tabelle übereinander gestapelt.
+* **Weitere Filter hinzufügen**: Mithilfe des AND- oder OR-Operators können Sie bis zu zwei weitere Filter zur Tabelle hinzufügen. Sehen Sie sich an, was mit der Tabelle passiert, wenn Sie „Mobilbenutzer OR Treue Besucher“ hinzufügen. Sie finden sie nebeneinander über den Metriken. Wenn Sie „Mobilbenutzer UND Treue Besucher“ hinzufügen, werden die Ergebnisse beider Segmente zusammen angezeigt und in der Tabelle übereinandergestapelt.
 
    ![](assets/qibuilder7.png)
 
