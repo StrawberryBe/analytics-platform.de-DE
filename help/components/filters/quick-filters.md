@@ -5,7 +5,7 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Klicken Sie in einer Freiformtabelle auf das „+“-Symbol für den Filter im K
 | Komponenten (Dimension/Metrik/Datumsbereich) | Definieren Sie bis zu 3 Regeln, indem Sie Komponenten (Dimensionen, Metriken, Datumsbereiche oder Dimensionswerte) hinzufügen. Es gibt 3 Möglichkeiten, die richtige Komponente zu finden:<ul><li>Beginnen Sie mit der Eingabe. Der [!UICONTROL Schnellfilter-Generator] findet automatisch die entsprechende Komponente.</li><li>Verwenden Sie die Dropdown-Liste, um die Komponente zu finden.</li><li>Per Drag-and-Drop aus der der linken Leiste ziehen.</li></ul> |
 | Operator | Dropdown-Menü verwenden, um Standardoperatoren und Operatoren des Typs [!UICONTROL Distinct Count] zu finden. Siehe [Filteroperatoren](operators.md). |
 | Plus (+)-Zeichen | Eine weitere Regel hinzufügen |
-| UND/ODER-Kriterien | Sie können den Regeln „UND“- oder „ODER“-Kriterien hinzufügen, aber „UND“- und „ODER“-Werte können nicht in einer Filterdefinition gemischt werden. |
+| AND/OR-Kriterien | Sie können den Regeln „AND“- oder „OR“-Kriterien hinzufügen, aber „AND“- und „OR“-Werte können nicht in einer Filterdefinition gemischt werden. |
 | Übernehmen | Diesen Filter auf das Bedienfeld an. Wenn der Filter keine Daten enthält, werden Sie gefragt, ob Sie fortfahren möchten. |
 | Builder öffnen | Zeigt den Filtergenerator an. Nachdem Sie den Filter im Filter-Builder gespeichert oder angewendet haben, wird er nicht mehr als „Schnellfilter“ betrachtet. Er wird Teil der Komponentenlisten-Filterbibliothek. |
 | Abbrechen | Brechen Sie diesen Schnellfilter ab – wenden Sie ihn nicht an. |
