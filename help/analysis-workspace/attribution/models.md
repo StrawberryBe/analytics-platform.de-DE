@@ -4,9 +4,9 @@ description: Die Art und Weise, wie verschiedene Arten von Attribution Gewichtun
 Feature: Attribution
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1516'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Das Attributionskonzept in Customer Journey Analytics erfordert zwei Komponenten
 
 Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend bei der Erfassung von Touchpoints berücksichtigt werden sollte. Attributionsmodelle, die der ersten Interaktion mehr Gewicht zuschreiben, sehen bei der Anzeige verschiedener Lookback-Fenster größere Unterschiede.
 
-* **Besuchs-Lookback-Fenster:** Sieht bis zum Beginn eines Besuchs zurück, bei dem eine Konversion stattgefunden hat. Besuchs-Lookback-Fenster sind klein, da sie nicht über den Besuch hinausblicken. Besuchs-Lookback-Fenster berücksichtigen die geänderte Besuchsdefinition in Datenansichten.
+* **Besuchs-Lookback-Fenster:** Sieht bis zum Beginn eines Besuchs zurück, bei dem eine Konversion stattgefunden hat. Besuchs-Lookback-Fenster sind klein, da sie nicht über den Besuch hinausblicken. Besuch-Lookback-Fenster berücksichtigen die geänderte Besuchsdefinition in den Datenansichten.
 
 * **Besucher-Lookback-Fenster:** Betrachtet alle Besuche bis zum 1. des Monats des aktuellen Datumsbereichs. Besucher-Lookback-Fenster sind groß, da sie viele Besuche umfassen können. Bei der Besucher-Lookback-Funktion werden alle Werte ab dem Monatsanfang des Datumsbereichs des Berichts berücksichtigt. Wenn der Datumsbereich des Berichts beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Besucher-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September.
 
