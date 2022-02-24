@@ -1,12 +1,12 @@
 ---
-description: So ändern Sie die Farbpalette der Visualisierung oder legen Sie eine eigene benutzerdefinierte Farbpalette fest.
+description: So ändern Sie die Farbpalette der Visualisierung oder legen eine eigene benutzerdefinierte Farbpalette fest.
 title: Visualisierungsfarbpalette
 feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können die in Workspace verwendete Visualisierungsfarbpalette ändern, inde
 
 Beachten Sie:
 
-* Es stehen fünf voreingestellte Farbpaletten zur Auswahl. Die Standardpalette und die unten stehende wurden für den Kontrast optimiert und sind für Farbenblindheit leichter zugänglich.
+* Es stehen fünf voreingestellte Farbpaletten zur Auswahl. Die Standardpalette und die unten stehende wurden für Kontrast optimiert und sind bei Farbenblindheit besser geeignet.
 * Die dritte bis fünfte Farbpalette unter den ersten beiden wurden auf Farbharmonie optimiert.
 
 ## So ändern Sie Ihre Farbpalette:
