@@ -5,9 +5,9 @@ title: Übersicht über Projekte
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 | Menüelement | Beschreibung |
 |---|---|
-| Projekt  | Umfasst allgemeine Aktionen für das Projekt-Management, einschließlich „Neu“, „Öffnen“, „Speichern“, „Speichern unter“ und Als Vorlage speichern. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](/help/analysis-workspace/curate-share/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinfo und Einstellungen** (siehe unten) bietet viele Optionen zum Verwalten Ihres Projekts. |
+| Projekt  | Beinhaltet allgemeine Aktionen für das Projekt-Management, einschließlich „Neu“, „Öffnen“, „Speichern“, „Speichern unter“ und „Als Vorlage speichern“. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](/help/analysis-workspace/curate-share/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinformation und Einstellungen** (siehe unten) bieten viele Optionen zum Verwalten Ihres Projekts. |
 | Vorlage | Rückgängigmachen oder Wiederholen der letzten Aktion. „Alles löschen“ setzt das Projekt auf den Ausgangspunkt zurück. |
 | Einfügen | Fügen Sie neue Bedienfelder oder Visualisierungen aus diesem Menü ein. Sie können auch neue Bedienfelder und Visualisierungen aus der linken Leiste einfügen. |
 | [Komponenten](/help/components/overview.md) | Erstellen Sie neue Filter, berechnete Metriken, Datumsbereiche oder Warnhinweiskomponenten aus Ihrem Projekt. Sie können auch über die linke Leiste neue Komponenten erstellen. Wenn sich Ihre Komponentendefinitionen kürzlich geändert haben, werden die neuesten Definitionen über „Komponenten aktualisieren“ abgerufen. |
-| [Freigeben](/help/analysis-workspace/curate-share/send-schedule-files.md) | Kuratieren, Freigeben und Planen von PDF/CSV-Projekten für Empfänger in Ihrer Organisation. |
+| [Freigeben](/help/analysis-workspace/curate-share/send-schedule-files.md) | Sie können PDF-/CSV-Projekte für Empfänger in Ihrem Unternehmen kuratieren, freigeben und planen. |
 | Hilfe | Rufen Sie die Hilfedokumentation, Videos und die Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de) auf. Verwalten Sie die Sichtbarkeit der Workspace-Tipps sowie von [Debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Finden Sie Details über Workspace und Faktoren, die sich auf die [Projektleistung](/help/analysis-workspace/workspace-faq/optimizing-performance.md) auswirken. |
 | Schaltfläche „Freigeben“ oder Inhaber | Wenn Sie im Projekt die Rolle „Inhaber“ oder „Bearbeiten“ innehaben, erhalten Sie über der Button „Freigeben“ oben rechts Zugriff auf die Verwaltung Ihrer Projektempfänger. Wenn Sie im Projekt die Rolle „Duplizieren“ oder „Anzeigen“ innehaben, wird der Name des Projektinhabers angezeigt. |
 
@@ -79,7 +79,7 @@ In einem Projekt erfolgt der Zugriff auf [Bedienfelder](/help/analysis-workspace
 
 Sie können auch über das [leere Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) auf Visualisierungen und Bedienfelder zugreifen.
 
-Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) in der linken Leiste beziehen sich auf die Datenansicht des aktiven Bedienfelds. Das aktive Bedienfeld hat einen blauen Rahmen, und die Ansicht der aktiven Daten wird oben in der Komponentenleiste angezeigt.
+Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) in der linken Leiste beziehen sich auf die Datenansicht des aktiven Bedienfelds. Das aktive Bedienfeld wird durch einen blauen Rand umgeben, und die aktive Datenansicht wird oben in der Komponentenleiste aufgeführt.
 
 ![](assets/left-rail.png)
 
@@ -87,7 +87,7 @@ Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) in der linken Leiste
 
 Auf der Arbeitsfläche des Projekts können Sie Bedienfelder, Tabellen, Visualisierungen und Komponenten zusammenführen, um Ihre Analyse zu erstellen. Ein Projekt kann viele Bedienfelder enthalten, und jedes Bedienfeld kann aus vielen Tabellen und Visualisierungen bestehen.
 
-Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Report Suites oder Anwendungsfällen für Analysen organisieren möchten. Das aktive Bedienfeld hat einen blauen Rand und bestimmt, welche Komponenten in der linken Leiste verfügbar sind.
+Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansichten oder Anwendungsfällen für Analysen organisieren möchten. Das aktive Bedienfeld hat einen blauen Rand und bestimmt, welche Komponenten in der linken Leiste verfügbar sind.
 
 Je nach Ausgangspunkt, den Sie für Ihre Projekte ausgewählt haben, befindet sich auf der Arbeitsfläche zu Beginn entweder eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md). Die schnellste Möglichkeit, eine Analyse zu starten, besteht darin, eine oder mehrere Komponenten auszuwählen und sie einfach in die Projektarbeitsfläche zu ziehen. Eine Datentabelle wird automatisch für Sie erstellt. [Erfahren Sie mehr](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) über die verschiedenen Optionen zum Erstellen einer Tabelle oder nutzen Sie unser [Tutorial](/help/analysis-workspace/home.md) für eine Anleitung zum Erstellen Ihres ersten Projekts.
 
@@ -105,7 +105,7 @@ Die folgenden Aktionen können im Projekt-Manager für ein oder mehrere Projekte
 
 | Aktion | Beschreibung |
 |---|---|
-| Fügen Sie | Erstellen Sie ein neues Projekt von Grund auf. |
+| Fügen Sie | Erstellen Sie ein ganz neues Projekt. |
 | Taggen oder genehmigen | Wählen Sie „Taggen“ oder „Genehmigen“, um Ihre Projekte zu organisieren und die Suche zu erleichtern. |
 | [Freigeben](/help/analysis-workspace/curate-share/share-projects.md) | Stellen Sie ein Projekt für andere Analysis Workspace-Benutzer in Ihrer Organisation zur Verfügung. |
 | Löschen | Löschen Sie Ihr Projekt. |
