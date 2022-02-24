@@ -1,19 +1,19 @@
 ---
-description: Darstellen Sie Ihre Daten in Analysis Workspace visuell dar.
+description: Stellen Sie Ihre Daten in Analysis Workspace visuell dar.
 keywords: Analysis Workspace
 title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Visualisierungsübersicht
 
-Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Die meisten Visualisierungstypen kennen Sie, wenn Sie Customer Journey Analytics verwenden. Analysis Workspace verfügt jedoch über Visualisierungseinstellungen sowie viele neue und einzigartige Visualisierungsarten mit interaktiven Funktionen.
+Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Die meisten Visualisierungstypen sind Ihnen schon bekannt, wenn Sie Customer Journey Analytics verwenden. Analysis Workspace verfügt jedoch über Visualisierungseinstellungen sowie viele neue und einzigartige Visualisierungsarten mit interaktiven Funktionen.
 
 Sie können auf Visualisierungen durch das Symbol oben links in Workspace, von einem [leeren Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) aus oder über das Kontextmenü in Ihrem Workflow zugreifen.
 
@@ -27,8 +27,8 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Balken](/help/analysis-workspace/visualizations/bar.md) | Zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Lineardiagramm](/help/analysis-workspace/visualizations/bullet-graph.md) | Zeigt, wie ein Wert, der Sie interessiert, im Vergleich zu anderen Leistungsbereichen (Zielen) liegt oder ausfällt. |
 | [Kohortentabelle](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die Kohortenanalyse ist nützlich für die Analyse von Verweildauer, Abwanderung oder Latenzzeiten. |
-| [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich wie bei einem Tortendiagramm zeigt diese Visualisierung Daten als Teile oder Filter eines Ganzen an. |
-| [Trichteranalyse](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). Kann auf mögliche oder exakte Sequenzen eingestellt werden |
+| [Ringdiagramm](/help/analysis-workspace/visualizations/donut.md) | Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile oder Filter eines Ganzen. |
+| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). Kann auf mögliche oder exakte Sequenzen eingestellt werden |
 | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Zeigt Kundenpfade durch Ihre Websites und Programme. |
 | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. Es bildet die Grundlage für die Analyse von Daten in Workspace. |
 | [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Ein Histogramm fasst Besucher, Besuche oder Treffer basierend auf einem Metrikvolumen in Behälter zusammen. |
@@ -39,7 +39,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Zusammenfassungsänderung](/help/analysis-workspace/visualizations/summary-number-change.md) | Zeigt die Änderung zwischen den ausgewählten Zellen als eine große Zahl/Prozentzahl an. |
 | [Text](/help/analysis-workspace/visualizations/text.md) | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md) | Verwendet Kreise zur Darstellung der Metriküberlappung von bis zu 3 Filtern. |
+| [Venn](/help/analysis-workspace/visualizations/venn.md) | Verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu drei Filtern. |
 
 ## Einstellungen {#settings}
 
@@ -78,7 +78,7 @@ So bearbeiten Sie eine Legendenbezeichnung:
 
 ## Rechtsklickmenü {#right-click}
 
-Zusätzliche Funktionen für eine Visualisierung sind verfügbar, indem Sie mit der rechten Maustaste auf die Visualisierungskopfzeile klicken. Die Einstellungen variieren je nach Visualisierung. Einige der verfügbaren Einstellungen sind:
+Weitere Funktionen für eine Visualisierung sind verfügbar, wenn Sie mit der rechten Maustaste auf die Kopfzeile der Visualisierung klicken. Die Einstellungen variieren je nach Visualisierung. Einige der verfügbaren Einstellungen sind:
 
 ![Rechtsklick](assets/right-click.png)
 
