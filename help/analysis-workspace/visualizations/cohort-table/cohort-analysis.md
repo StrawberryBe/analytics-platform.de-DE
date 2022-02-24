@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 74%
 
 Eine *`cohort`* ist eine Personengruppe mit gemeinsamen Merkmalen innerhalb eines vorgegebenen Zeitraums. Die [!UICONTROL Kohortenanalyse] ist z. B. dann nützlich, wenn Sie wissen möchten, wie eine Kohorte mit einer Marke interagiert. Sie können problemlos Trend-Änderungen offenlegen und entsprechend reagieren. (Erläuterungen zur [!UICONTROL Kohortenanalyse] sind im Internet verfügbar, z. B. unter [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
-Nachdem Sie einen Kohortenbericht erstellt haben, können Sie seine Komponenten (spezifische Dimensionen, Metriken und Filter) kuratieren und den Kohortenbericht dann für andere freigeben. Siehe [Kuratieren und freigeben](/help/analysis-workspace/curate-share/curate.md).
+Nachdem Sie einen Kohortenbericht erstellt haben, können Sie dessen Komponenten (bestimmte Dimensionen, Metriken und Filter) kuratieren und den Kohortenbericht dann für andere freigeben. Weitere Informationen finden Sie unter [Kuratieren und freigeben](/help/analysis-workspace/curate-share/curate.md).
 
 Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 
@@ -24,7 +24,7 @@ Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 * Gewinnen Sie Ideen für A/B-Tests in Bereichen wie Preisstruktur, Upgrade-Pfad usw.
 * Zeigen Sie einen [!UICONTROL Kohortenanalysebericht] mit einem angeleiteten Analysebericht an.
 
-[!UICONTROL Kohortenanalyse] steht allen Customer Journey Analytics mit Zugriffsrechten auf [!UICONTROL Analysis Workspace].
+Die [!UICONTROL Kohortenanalyse] steht allen Customer Journey Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace] zur Verfügung.
 
 [Video-Tutorial zur Kohortenanalyse](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html?lang=de) (4:36)
 
@@ -32,7 +32,7 @@ Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 >
 >[!UICONTROL Kohortenanalyse]
 >
->nicht filterbare Metriken (einschließlich berechneter Metriken), nicht ganzzahlige Metriken (z. B. Umsatz) oder Vorfälle werden nicht unterstützt. Nur Metriken, die in Filtern verwendet werden können, können in
+>unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. Nur Metriken, die in Filtern verwendet werden können, können in der
 >[!UICONTROL Kohortenanalyse] verwendet werden. Sie können jeweils nur um 1 inkrementiert werden.
 
 ## Funktionen der Kohortenanalyse
@@ -41,13 +41,13 @@ Die folgenden Fähigkeiten ermöglichen eine fein abgestimmte Kontrolle über di
 
 ### [!UICONTROL Bindungstabelle]
 
-Ein [!UICONTROL Bindungskohortenbericht] gibt Besucherdaten aus: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Besucher in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einbeziehen.
+Ein [!UICONTROL Bindungskohortenbericht] gibt Besucherdaten aus: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Besucher in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Abwanderungstabelle]
 
-Eine [!UICONTROL Abwanderungskohorte] ist die Umkehrung einer Bindungstabelle und zeigt Besucher, die abgewandert sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einbeziehen.
+Eine [!UICONTROL Abwanderungskohorte] ist die Umkehrung einer Bindungstabelle und zeigt Besucher, die abgewandert sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
 ![](assets/churn-report.png)
 
@@ -65,7 +65,7 @@ Misst die Zeit, die vor und nach dem Aufnahmeereignis verstrichen ist. Ein hervo
 
 ### [!UICONTROL Angepasste Dimensionskohorte]
 
-Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region]oder einer anderen Dimension in Customer Journey Analytics , um anzuzeigen, wie sich die Bindung basierend auf den verschiedenen Werten dieser Dimensionen ändert.
+Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder jede andere Dimension in Customer Journey Analytics, um zu zeigen, wie sich die Kundenbindung basierend auf den verschiedenen Werten dieser Dimensionen ändert.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
