@@ -1,12 +1,12 @@
 ---
-description: Fallout-Visualisierungen zeigen, wo Besucher eine vordefinierte Seitensequenz verlassen (ausgefallen) und durchlaufen (durchgefallen) haben.
+description: Fallout-Visualisierungen zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind).
 title: Fallout-Übersicht
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berich
 
 Mit Fallout-Visualisierungen können Sie:
 
-* Führen Sie einen parallelen Vergleich zweier verschiedener Filter im selben Bericht durch.
+* Eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.
 * Trichterschritte (Touchpoints) ziehen, ablegen und neu anordnen.
 * Werte aus unterschiedlichen Dimensionen und Metriken mischen und kombinieren
 * Einen multidimensionalen Fallout-Bericht erstellen
