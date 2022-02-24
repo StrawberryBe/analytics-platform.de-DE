@@ -4,7 +4,7 @@ description: Mit dem Generator für berechnete Metriken können Sie statistische
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ MAXV(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die Sie auswerten möchten. |
+| *metric* | Die Metrik, die Sie auswerten möchten. |
 
 ## Spaltenminimum
 
@@ -62,7 +62,7 @@ MINV(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die Sie auswerten möchten. |
+| *metric* | Die Metrik, die Sie auswerten möchten. |
 
 ## Spaltensumme
 
@@ -74,7 +74,7 @@ SUM(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie den Gesamtwert oder die Summe ermitteln möchten. |
+| *metric* | Die Metrik, für die Sie den Gesamtwert oder die Summe ermitteln möchten. |
 
 ## Anzahl (Tabelle)
 
@@ -86,7 +86,7 @@ COUNT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gezählt werden soll. |
+| *metric* | Die Metrik, die gezählt werden soll. |
 
 ## Exponent (Zeile)
 
@@ -98,7 +98,7 @@ EXP(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Exponent, der auf Basis *e* angewendet wird. |
+| *metric* | Der Exponent, der auf Basis *e* angewendet wird. |
 
 ## Potenzierung
 
@@ -118,7 +118,7 @@ MEAN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie den Durchschnitt ermitteln möchten. |
+| *metric* | Die Metrik, für die Sie den Durchschnitt ermitteln möchten. |
 
 ## Medianwert (Tabelle)
 
@@ -130,7 +130,7 @@ MEDIAN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie den Medianwert ermitteln möchten. |
+| *metric* | Die Metrik, für die Sie den Medianwert ermitteln möchten. |
 
 ## Modulo
 
@@ -173,7 +173,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>Metrik</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> Die Metrikspalte, die die relative Position definiert. </td> 
   </tr> 
   <tr> 
@@ -200,7 +200,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>Metrik</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> Die Metrik, für die Sie den Quartilwert abrufen möchten. </td> 
   </tr> 
   <tr> 
@@ -214,7 +214,7 @@ QUARTILE(metric,quart)
 
 ## Rund
 
-Gibt die nächste Ganzzahl für einen Wert zurück. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel Round(*Umsatz*) den Umsatz bis zum nächsten Dollar runden (in diesem Fall 569 US-Dollar). Ein Produkt mit einem Umsatz von 569,51 US-Dollar wird zum nächsten Dollarbetrag (570 US-Dollar) gerundet.
+Gibt die nächste Ganzzahl für einen Wert zurück. Beispiel: Wenn Sie keine Währungsdezimalzahlen für den Umsatz in Berichte aufnehmen möchten und ein Produkt einen Umsatz von 569,34 US-Dollar aufweist, können Sie mit der Formel Round(*Revenue*) den Umsatz bis zum nächsten Dollar runden (in diesem Fall 569 US-Dollar). Ein Produkt mit einem Umsatz von 569,51 US-Dollar wird zum nächsten Dollarbetrag (570 US-Dollar) gerundet.
 
 ```
 ROUND(metric)
@@ -304,7 +304,7 @@ VARIANCE(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie die Schwankung ermitteln möchten. |
+| *metric* | Die Metrik, für die Sie die Schwankung ermitteln möchten. |
 
 Zur Berechnung einer Varianz sehen Sie sich eine gesamte Spalte von Zahlen an. Aus dieser Liste von Zahlen berechnen Sie zunächst den Durchschnitt. Sobald Sie den Durchschnitt ermittelt haben, sehen Sie sich jeden Eintrag an und tun Folgendes:
 
