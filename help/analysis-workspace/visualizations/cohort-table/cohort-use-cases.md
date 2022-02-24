@@ -5,9 +5,9 @@ title: Anwendungsfälle für die Kohortenanalyse
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '961'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Einige Monate später erstellen Sie erneut einen Kohortenanalysebericht. Für Ko
 
 ## Anwendungsfall für komplexe Kohortenfilter
 
-Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten für die Zielgruppe zu identifizieren, sollen sehr spezifische Kohortengruppen gebildet werden. Verwenden der erweiterten [!UICONTROL Einbindung] und [!UICONTROL Rückgabe] Kriterien innerhalb [!UICONTROL Kohorte] Tabellen können genau die richtigen Kohortengruppierungen mit mehreren Metriken und Filtern definieren, um leistungsschwache Kundengruppen zu identifizieren und diese mit Promotions und Angeboten zur Steigerung der Buchungen anzusprechen.
+Eine große Hotelkette zielt auf mehrere Kundengruppen für Promotionen ab und verfolgt sie auf Grundlage der Leistung nach. Um die besten Gruppen von Benutzerkohorten für die Zielgruppe zu identifizieren, sollen sehr spezifische Kohortengruppen gebildet werden. Mithilfe der erweiterten [!UICONTROL Einschluss]- und [!UICONTROL Rückgabe]-Kriterien innerhalb der [!UICONTROL Kohortentabellen] sind sie in der Lage, genau die richtigen Kohortengruppierungen mit mehreren Metriken und Filtern zu definieren, um leistungsschwache Kundengruppen zu identifizieren und sie gezielt mit Werbeaktionen und Angeboten anzusprechen, um die Buchungen zu steigern.
 
 ## Anwendungsfall zur Annahme der App-Version
 
@@ -61,10 +61,10 @@ Bei einem großen Versicherungsunternehmen wird ein großer Teil der Kundeninter
 
 Ein internationales Medienunternehmen verwendet Zielgruppen-Kampagnen, um Benutzer auf die verschiedenen Plattformen zu leiten und so die Interaktion zu fördern. Die Werbeausgaben pro Plattform basieren auf der Kundeninteraktion und -bindung, daher sind erfolgreiche Kampagnen entscheidend für den Erfolg des Unternehmens. Unsere neue Funktion für die Kohorte [!UICONTROL Benutzerspezifische Dimension] in [!UICONTROL Kohortentabellen] wird verwendet, um verschiedene Kampagnen nebeneinander zu vergleichen und herauszufinden, welche Kampagnen am effektivsten sind, um Benutzer zu gewinnen und zu binden und so die Interaktion zu fördern. Anschließend kann festgestellt werden, welche Aspekte zum Erfolg einer Kampagne beitragen. Diese Erkenntnisse können dann auf andere Kampagnen angewendet werden, um die Interaktion auf den verschiedenen Plattformen zu fördern.
 
-## Anwendungsfall für Produktstart
+## Anwendungsfall einer Produkteinführung
 
-Ein großer Bekleidungshändler verfügt über viele spezifische Kundenfilter, die einen großen Teil des Umsatzes für sein Geschäft fördern. Für jeden Filter werden spezifische Produkte unter Berücksichtigung des Filters entwickelt und erstellt. Mit jedem Produkt-Launch soll identifiziert werden, wie das neue Produkt im Laufe der Zeit den Verkauf in verschiedenen Kohorten gefördert hat. Neue [!UICONTROL Latenztabelle] Einstellung in [!UICONTROL Kohortenanalyse], können sie das Verhalten und den Umsatz eines bestimmten Kundenfilters vor und nach dem Start analysieren. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei den Kunden weniger beliebt sind.
+Ein großer Kleidungseinzelhändler verfügt über viele spezifische Kundenfilter, durch die große Teile des Unternehmensumsatzes gefördert werden. Für jeden Filter werden spezifische Produkte unter Berücksichtigung des jeweiligen Filters entwickelt und hergestellt. Bei jeder Produkteinführung soll identifiziert werden, wie das neue Produkt die Verkäufe in den verschiedenen Kohorten im Laufe der Zeit gesteigert hat. Mit der neuen Einstellung [!UICONTROL Latenztabelle] in der [!UICONTROL Kohortenanalyse] können das Verhalten und der Umsatz eines bestimmten Kundenfilters vor und nach der Markteinführung analysiert werden. Anhand dieser Informationen kann festgestellt werden, durch welche Produkte neue Umsätze generiert werden und welche bei den Kunden weniger beliebt sind.
 
 ## Anwendungsfall für individuelle Treue – die meisten treuen Benutzer  
 
-Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Die neue [!UICONTROL Rollierende Berechnung] Einstellung in [!UICONTROL Kohortenanalyse], konnten sie die Filter für treue Kunden analysieren und herausfinden, welche Reisenden monatlich Wiederholungskäufer waren. So konnten diese Reisenden dann mit Vorteilen und Vergünstigungen für ihre Treue belohnt werden. Darüber hinaus konnten sie durch Umstellung des Kohortentyps von Bindung auf Abwanderung auch identifizieren, welche Kunden monatlich keine wiederkehrenden Käufer waren, und diese Filter mit Promotions ansprechen, um sie erneut anzusprechen und sicherzustellen, dass sie in Zukunft treue Kunden bleiben.
+Bei einer großen Fluggesellschaft hängt der Erfolg und Umsatz zu einem großen Teil von wiederkehrenden und treuen Kunden ab. In vielen Fällen machen treue Reisende den Großteil des Umsatzes aus und die Bindung dieser Kunden ist entscheidend für den langfristigen Erfolg. Oft kann es sich schwierig gestalten herauszufinden, welche die treuesten und beständigsten Kunden sind. Mithilfe der neuen Einstellung [!UICONTROL Rollierende Berechnung] in der [!UICONTROL Kohortenanalyse] konnte das Unternehmen jedoch Filter für treue Kunden analysieren und herausfinden, welche Reisenden Monat für Monat zu Wiederholungskäufern wurden. So konnten diese Reisenden dann mit Vorteilen und Vergünstigungen für ihre Treue belohnt werden. Darüber hinaus konnte durch die Umstellung des Kohortentyps von Bindung auf Abwanderung auch monatsweise festgestellt werden, welche Reisenden nicht erneut eingekauft hatten. Für diese Filter können dann Marketingaktionen durchgeführt werden, sodass erneut eine Verbindung mit diesen Kunden aufgebaut und sichergestellt werden kann, dass sie auch in Zukunft treue Kunden bleiben.
