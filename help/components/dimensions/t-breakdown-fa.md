@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Auf jede Aufschlüsselung innerhalb einer Tabelle kann auch ein beliebiges Attri
 
 ![Aufschlüsselungseinstellungen](assets/breakdown_settings.png)
 
-Dies ist das erwartete Verhalten beim Anwenden von Attributionsmodellen auf Aufschlüsselungen oder bei deren Bearbeitung:
+Dies ist das erwartete Verhalten, wenn Attributionsmodelle auf Aufschlüsselungen angewendet oder bearbeitet werden:
 
 * Wenn Sie eine Attribution anwenden und keine anderen Attributionen vorhanden sind, gilt die Attribution für die gesamte Spaltenstruktur.
 
