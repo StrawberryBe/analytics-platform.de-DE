@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -132,7 +132,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 **[!UICONTROL Durch das Importieren aller vorhandenen Daten]** können Sie historische Daten aufstocken. Beachten Sie:
 
-* Wir haben die Beschränkung für die Aufstockung (Import historischer Daten) entfernt. Bisher konnten Sie maximal 2,5 Milliarden Zeilen selbst aufstocken und benötigten ansonsten die Hilfe eines Ingenieurs. Jetzt können Sie Daten ohne Einschränkung selbst aufstocken.
+* Wir haben die Beschränkung für die Aufstockung (Import historischer Daten) entfernt. Bisher konnten Sie maximal 2,5 Milliarden Zeilen selbst aufstocken und benötigten ansonsten technische Unterstützung. Jetzt können Sie Daten ohne Einschränkung selbst aufstocken.
 * Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.
 * Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz wird durch die Anzahl der historischen Daten beeinflusst, kombiniert mit der von Ihnen ausgewählten Einstellung zur **[!UICONTROL durchschnittlichen Anzahl der täglichen Ereignisse]**. Wenn Sie zum Beispiel mehr als eine Milliarde Datenzeilen pro Tag und drei Jahre historischer Daten haben, könnte der Import mehrere Wochen dauern. Wenn Sie hingegen weniger als eine Million Zeilen pro Tag und eine Woche historischer Daten haben, würde das weniger als eine Stunde dauern.
 * Die Aufstockung gilt für die gesamte Verbindung, nicht für jeden einzelnen Datensatz.
@@ -142,7 +142,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werden.
 
-1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
+1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) und erstellen Sie eine neue Abfrage.
 
 1. Die Abfrage würde wie folgt aussehen: 
 
