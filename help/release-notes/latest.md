@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 3c2fb955531e09146a6620481243653014a7bd9c
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 23%
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 23%
 
 | Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Vorschaumodus für Mobile Scorecard-Projekte | Starten Sie eine Vorschau Ihrer mobilen Scorecard in der Analytics-Dashboards-App, direkt vom Scorecard-Builder aus. Im Vorschaumodus können Benutzer auf die gleiche Weise mit Filtern und Diagrammen wie in der App interagieren, sodass sie eine Vorschau des Erlebnisses anzeigen können, bevor sie die Scorecard speichern und freigeben. Benutzer können die Geräteauswahl auch im Vorschaumodus verwenden, um zu sehen, wie ihre Scorecard auf verschiedenen Geräten aussieht. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en#preview) | 16. Februar 2022 |
+| Vorschaumodus für Mobile Scorecard-Projekte | Starten Sie direkt vom Scorecard-Builder aus eine Vorschau Ihrer Mobile Scorecard in der Mobile App von Analytics-Dashboards. Im Vorschaumodus können Benutzer auf die gleiche Weise mit Filtern und Diagrammen interagieren wie in der Mobile App, sodass sie eine Vorschau des Erlebnisses anzeigen können, bevor sie die Scorecard speichern und freigeben. Benutzer können die Geräteauswahl auch im Vorschaumodus verwenden, um zu sehen, wie ihre Scorecard auf verschiedenen Geräten aussieht. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=en#preview) | 16. Februar 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 

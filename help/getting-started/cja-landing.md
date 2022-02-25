@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: 719b67049456be857431ee1a7ca97e9f0fd881ee
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 83%
+ht-degree: 86%
 
 ---
 
