@@ -4,10 +4,10 @@ description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum näch
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
+source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 98%
+source-wordcount: '806'
+ht-degree: 93%
 
 ---
 
@@ -76,10 +76,12 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Dropdown-Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Diese Einstellung wird in der Regel in Objekt-Arrays verwendet und wird am häufigsten zur Messung von Elementen wie Produktsuchmethoden, internen Suchergebnissen, Impressions von internen Promotions oder Inhalts- oder Produktempfehlungen verwendet. In früheren Versionen von Adobe Analytics ähnelt dieses Konzept dem Konversionssyntax-Merchandising.
+Siehe [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/binding-dimensions-metrics.md) Beispiele für die effektive Verwendung von Bindungsdimensionen.
 
 ## [!UICONTROL Binding-Metrik]
 
 Ein Dropdown-Menü, in dem Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Zu den gültigen Dropdown-Optionen gehören die Metriken, die in der Datenansicht enthalten sind.
 
-Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Binding-Metrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Binding-Dimension kopiert. In früheren Versionen von Adobe Analytics gibt es ein ähnliches, aber eingeschränkteres Konzept, das als Produktsyntax-Merchandising bezeichnet wird.
+Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Binding-Metrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Binding-Dimension kopiert.
+
+Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
