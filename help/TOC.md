@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Handbuch für Customer Journey Analytics
-user-guide-description: Dieser Leitfaden bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, der auf der Adobe Experience Platform basierenden Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
+user-guide-description: Dieses Handbuch unterstützt Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
+source-git-commit: 47c025bc8c84515cfb9ba3d357fe897bb018648a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 97%
+source-wordcount: '597'
+ht-degree: 94%
 
 ---
 
@@ -153,6 +153,11 @@ ht-degree: 97%
    + [Report Builder-Einstellungen](report-builder/report-builder-settings.md)
 + Komponenten {#cja-components}
    + [Komponentenübersicht](components/overview.md)
+   + Anmerkungen {#annotations}
+      + [Anmerkungen – Übersicht](components/annotations/overview.md)
+      + [Erstellen von Anmerkungen](components/annotations/create-annotations.md)
+      + [Verwalten von Anmerkungen](components/annotations/manage-annotations.md)
+      + [Anzeigen von Anmerkungen](components/annotations/view-annotations.md)
    + Dimensionen {#dimensions}
       + [Dimensionsvorschau](components/dimensions/view-dimensions.md)
       + [Dimensionen aufschlüsseln](components/dimensions/t-breakdown-fa.md)
