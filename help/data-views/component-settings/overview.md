@@ -4,10 +4,10 @@ description: Anzeigen der wichtigsten Einstellungen für eine Datenansichtskompo
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '360'
-ht-degree: 100%
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 97%
 
 ---
 
@@ -30,3 +30,7 @@ Wichtigste Einstellungen, die eine Datenansichtskomponente verwendet.
 | [!UICONTROL Komponenten-ID] | Erforderlich. Die [CJA-API](https://adobe.io/cja-apis/docs) verwendet dieses Feld, um auf die Komponente zu verweisen. Jede Komponente in einer Datenansicht muss eindeutig sein. Adobe generiert automatisch eine ID für jede Komponente. Sie können jedoch auf das Bearbeitungssymbol klicken und die Komponenten-ID ändern. Durch das Ändern der Komponenten-ID werden alle vorhandenen Arbeitsbereich-Projekte, die diese Komponente enthalten, beschädigt. Während jede Komponente eine eindeutige ID in einer Datenansicht benötigt, können Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden. Wenn Sie dieselbe Komponenten-ID in anderen Datenansichten verwenden, können Sie Arbeitsbereich-Projekte über Datenansichten hinweg kompatibel machen. |
 | [!UICONTROL Pfad des Schemas] | Erforderlich. Ein nicht bearbeitbares Feld, das den Schema-Pfad anzeigt, von dem die Komponente stammt. |
 | [!UICONTROL Komponente in Reports verbergen] | Ermöglicht das Kuratieren der Komponente aus der Datenansicht für Benutzer ohne Administratorrechte. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
+
+Hier finden Sie ein Video zu Komponenteneinstellungen in Datenansichten:
+
+>[!VIDEO](https://video.tv.adobe.com/v/333112/?quality=12)
