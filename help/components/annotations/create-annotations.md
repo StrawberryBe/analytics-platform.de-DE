@@ -4,9 +4,9 @@ description: Erstellen von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: dfd38a9f668dcb0434b107e947aa74b4f9b826a3
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '608'
 ht-degree: 63%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 63%
 
 | Erstellungsmethode | Details |
 | --- | --- |
-| **Navigieren Sie zu [!UICONTROL Analytics] > [!UICONTROL Komponenten] > [!UICONTROL Anmerkung].** | Die Seite „Anmerkungsverwaltung“ wird geöffnet. Klicken Sie auf [!UICONTROL Neue Anmerkung erstellen], und der Anmerkungsgenerator wird geöffnet. |
+| **Navigieren Sie zu [!UICONTROL Komponenten] > [!UICONTROL Anmerkung].** | Die Seite „Anmerkungsverwaltung“ wird geöffnet. Klicken Sie auf [!UICONTROL Neue Anmerkung erstellen], und der Anmerkungsgenerator wird geöffnet. |
 | **Klicken Sie mit der rechten Maustaste auf einen Punkt auf einer Tabelle.** | [!UICONTROL Der Anmerkungsgenerator wird geöffnet. ] Beachten Sie, dass die auf diese Weise erstellten Anmerkungen standardmäßig nur in dem Projekt sichtbar sind, in dem sie erstellt wurden. Sie können sie aber für alle Projekte verfügbar machen. Beachten Sie außerdem, dass die Daten und Metriken usw. bereits ausgefüllt wurden.<p>![](assets/annotate-table.png) |
 | **Rechtsklicken auf einen Punkt in einem [!UICONTROL Linie] Diagramm.** | Die [!UICONTROL Anmerkungs-Builder] geöffnet. Beachten Sie, dass die auf diese Weise erstellten Anmerkungen standardmäßig nur in dem Projekt sichtbar sind, in dem sie erstellt wurden. Sie können sie aber für alle Projekte verfügbar machen. Beachten Sie außerdem, dass die Daten und Metriken usw. bereits ausgefüllt wurden.<p>![](assets/annotate-line.png) |
 | **Wechseln Sie in Workspace zu [!UICONTROL Komponenten] > [!UICONTROL Anmerkung erstellen].** | Die [!UICONTROL Anmerkungs-Builder] geöffnet. |
