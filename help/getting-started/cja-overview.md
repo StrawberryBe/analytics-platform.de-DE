@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Works
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+source-git-commit: e397ff4de0f65ebb0264eac3813046452c572256
 workflow-type: tm+mt
-source-wordcount: '1266'
-ht-degree: 88%
+source-wordcount: '1271'
+ht-degree: 87%
 
 ---
 
@@ -19,11 +19,13 @@ Die allgemeine Architektur von Customer Journey Analytics wird hier gezeigt:
 
 ![Architektur](assets/cja-architecture.png)
 
-Für ein Video auf
+Im Folgenden finden Sie eine Videoübersicht zu Customer Journey Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
 ## Vergleich von CJA mit traditioneller Adobe Analytics
 
-Customer Journey Analytics erweitert den Umfang von Adobe Analytics, indem es benutzerfreundliche kanalübergreifende Funktionen anbietet und Einschränkungen in früheren Versionen von Adobe Analytics beseitigt. Einige wichtige Verbesserungen sind:
+Customer Journey Analytics expands the scope of Adobe Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Einige wichtige Verbesserungen sind:
 
 * **Unbegrenzte Variablen und Ereignisse**: Die Konzepte von eVars, Props und Ereignissen existieren nicht mehr. Die Daten werden in erster Linie in Dimensionen und Metriken betrachtet. Datensätze können eine unbegrenzte Anzahl an eindeutigen Dimensionen und Metriken aufweisen.
 * **Unbegrenzte Anzahl eindeutiger Werte**: Bei Adobe Experience Platform ist die Anzahl eindeutiger Werte nicht beschränkt.
