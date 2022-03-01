@@ -1,17 +1,17 @@
 ---
-title: Verwenden von Bindungsdimensionen und Metriken in CJA
+title: Bindungsdimensionen und Metriken in CJA verwenden
 description: Ordnen Sie den Objekt-Arrays Dimensionen für die komplexe Persistenzanalyse zu.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
+source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
 workflow-type: tm+mt
 source-wordcount: '1330'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
 
-# Verwenden von Bindungsdimensionen und Metriken in CJA
+# Bindungsdimensionen und Metriken in CJA verwenden
 
 Customer Journey Analytics bietet mehrere Möglichkeiten, Dimensionswerte über den Treffer hinaus beizubehalten, für den sie festgelegt wurden. Eine der Persistenzmethoden, die Adobe anbietet, wird als Bindung bezeichnet. In früheren Versionen von Adobe Analytics wurde dieses Konzept als Merchandising bezeichnet.
 
