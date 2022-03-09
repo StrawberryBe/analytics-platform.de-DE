@@ -6,7 +6,7 @@ feature: Use Cases
 source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
 workflow-type: tm+mt
 source-wordcount: '1330'
-ht-degree: 43%
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Sie können den Datenansichts-Manager aufrufen und die Produktfarbe an den Produ
 
 ![Bindungsdimension](assets/binding-dimension.png)
 
-Wenn Sie dieses Persistenzmodell festlegen, nimmt CJA den Produktnamen bei jedem Festlegen der Produktfarbe zur Kenntnis. Wenn bei einem nachfolgenden Ereignis für diesen Besucher derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
+Wenn Sie dieses Persistenzmodell wählen, erfasst CJA den Produktnamen bei jeder Einstellung der Produktfarbe. Wenn bei einem nachfolgenden Ereignis für diesen Besucher derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
 
 | product.color | Umsatz |
 | --- | --- |
@@ -93,7 +93,7 @@ Wenn Sie dieses Persistenzmodell festlegen, nimmt CJA den Produktnamen bei jedem
 
 Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, einen Suchbegriff an ein Produkt zu binden, sodass jeder Suchbegriff für das entsprechende Produkt angerechnet wird. Betrachten Sie die folgende Customer Journey:
 
-1. Ein Besucher gelangt zu Ihrer Site und sucht „Boxhandschuhe“. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
+1. Ein Besucher gelangt zu Ihrer Website und sucht „Boxhandschuhe“. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
 
    ```json
    {
@@ -170,7 +170,7 @@ Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, ei
    }
    ```
 
-5. Der Besucher sucht ein drittes Mal, diese Mal „Schuhe“. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
+5. Der Besucher sucht ein drittes Mal, dieses Mal „Schuhe“. Die Suchmetrik wird um 1 inkrementiert und die drei wichtigsten Suchergebnisse werden angezeigt.
 
    ```json
    {
@@ -237,13 +237,13 @@ Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, ei
    }
    ```
 
-Wenn Sie ein Zuordnungsmodell verwenden, das keine bindende Dimension mit dem Suchbegriff enthält, weisen alle drei Produkte den Umsatz nur einem einzigen Suchbegriff zu. Wenn Sie beispielsweise die ursprüngliche Zuordnung mit der Suchbegriffdimension verwendet haben:
+Wenn Sie ein Zuordnungsmodell verwenden, dessen Suchbegriffe keine Bindingsdimension enthalten, weisen alle drei Produkte den Umsatz nur einem einzigen Suchbegriff zu. Wenn Sie beispielsweise die erste Zuordnung mit der Suchbegriffdimension verwenden:
 
 | search_term | Umsatz |
 | --- | --- |
 | Boxhandschuhe | $ 204.97 |
 
-Wenn Sie die Zuordnung &quot;Zuletzt verwendet&quot;mit der Suchbegriffdimension verwendet haben, weisen alle drei Produkte weiterhin den Umsatz einem einzelnen Suchbegriff zu:
+Wenn Sie die letzte Zuordnung mit der Suchbegriffdimension verwenden, weisen alle drei Produkte weiterhin den Umsatz einem einzigen Suchbegriff zu:
 
 | search_term | Umsatz |
 | --- | --- |
@@ -251,7 +251,7 @@ Wenn Sie die Zuordnung &quot;Zuletzt verwendet&quot;mit der Suchbegriffdimension
 
 Bei diesem Beispiel geht es um nur einen Besucher. Viele Besucher, die nach verschiedenen Elementen suchen, können Suchbegriffe verschiedenen Produkten zuordnen, was es schwierig macht festzustellen, welche Suchergebnisse tatsächlich die besten sind.
 
-Sie können Suchbegriffe an den Produktnamen binden, sobald die Suchmetrik vorhanden ist, um Suchbegriffe korrekt dem Umsatz zuzuordnen.
+Sie können Suchbegriffe an den Produktnamen binden, wenn die Suchmetrik vorhanden ist, um Suchbegriffe korrekt dem Umsatz zuzuordnen.
 
 ![Bindungsmetrik](assets/binding-metric.png)
 
@@ -263,7 +263,7 @@ In Analysis Workspace würde der resultierende Bericht in etwa wie folgt aussehe
 | Tennisschläger | $34.99 |
 | Schuhe | $79.99 |
 
-CJA erkennt automatisch die Beziehung zwischen der ausgewählten Dimension und der Bindungsdimension. Wenn sich die Bindungsdimension in einem Objekt-Array befindet, während die ausgewählte Dimension auf einer höheren Ebene liegt, ist eine Bindungsmetrik erforderlich. Eine Bindungsmetrik dient als Trigger für eine Bindungsdimension, sodass sie sich nur an Ereignisse bindet, bei denen die Bindungsmetrik vorhanden ist. Im obigen Beispiel enthält die Suchergebnisseite immer eine Suchbegriffdimension und eine Suchmetrik.
+CJA erkennt automatisch die Beziehung zwischen der ausgewählten Dimension und der Bindungsdimension. Wenn sich die Bindungsdimension in einem Objekt-Array befindet, während die ausgewählte Dimension auf einer höheren Ebene liegt, ist eine Bindungsmetrik erforderlich. Eine Bindungsmetrik fungiert als Trigger für eine Bindungsdimension, sodass sie sich nur an Ereignisse bindet, bei denen die Bindungsmetrik vorhanden ist. Im Beispiel oben enthält die Suchergebnisseite immer eine Suchbegriffdimension und eine Suchmetrik.
 
 Wenn Sie die Suchbegriffdimension auf dieses Persistenzmodell festlegen, wird die folgende Logik ausgeführt:
 
@@ -271,14 +271,14 @@ Wenn Sie die Suchbegriffdimension auf dieses Persistenzmodell festlegen, wird di
 * Wenn der Produktname nicht vorhanden ist, führen Sie keine Aktionen aus.
 * Wenn der Produktname vorhanden ist, überprüfen Sie, ob die Suchmetrik vorhanden ist.
 * Wenn die Suchmetrik nicht vorhanden ist, führen Sie keine Aktionen aus.
-* Wenn die Suchmetrik vorhanden ist, binden Sie den Suchbegriff an alle Produktnamen in diesem Ereignis. Es kopiert sich selbst auf die gleiche Ebene wie der Produktname für dieses Ereignis. In diesem Beispiel wird er als product.search_term behandelt.
+* Wenn die Suchmetrik vorhanden ist, binden Sie den Suchbegriff an alle Produktnamen in diesem Ereignis. Er kopiert sich selbst auf die gleiche Ebene wie der Produktname für dieses Ereignis.   In diesem Beispiel ist er product.search_term.
 * Wenn derselbe Produktname in einem nachfolgenden Ereignis angezeigt wird, wird der gebundene Suchbegriff auch an dieses Ereignis weitergeleitet.
 
 ## Beispiel 3: Binden des Videosuchbegriffs an das Benutzerprofil
 
-Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz zwischen Profilen vollständig getrennt bleibt. Ihr Unternehmen führt beispielsweise einen Streaming-Dienst aus, bei dem ein übergeordnetes Konto mehrere Profile haben kann. Der Besucher hat ein untergeordnetes Profil und ein Profil für Erwachsene.
+Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz zwischen Profilen vollständig getrennt bleibt. Ihr Unternehmen führt beispielsweise einen Streaming-Service aus, bei dem ein übergeordnetes Konto mehrere Profile haben kann. Der Besucher besitzt ein Kinderprofil und ein Erwachsenenprofil.
 
-1. Das Konto meldet sich unter dem untergeordneten Profil an und sucht nach einer Kinderfernsehsendung. Beachten Sie Folgendes: `"ProfileID"` is `2` , um das untergeordnete Profil darzustellen.
+1. Der Besucher meldet sich unter dem Kinderprofil an und sucht nach einer Kinderfernsehsendung. Beachten Sie Folgendes: `"ProfileID"` ist `2` und stellt das Kinderprofil dar.
 
    ```json
    {
@@ -289,7 +289,7 @@ Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz
    }
    ```
 
-1. Sie finden die Show &quot;Orangey&quot; und spielen sie, damit ihr Kind sie sehen kann.
+1. Der Besucher findet die Sendung „Orangey“ und spielt sie für sein Kind ab.
 
    ```json
    {
@@ -300,7 +300,7 @@ Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz
    }
    ```
 
-1. Später an diesem Abend wechselt die übergeordnete Person zu ihrem Profil und sucht nach erwachsenen Inhalten, die sie sehen kann. Beachten Sie Folgendes: `"ProfileID"` is `1` um das Profil für Erwachsene zu repräsentieren. Beide Profile gehören zum selben Konto, das durch dasselbe repräsentiert wird. `"PersonID"`.
+1. Später wechselt der Besucher zu seinem eigenen Profil und sucht nach Inhalten für Erwachsene. Beachten Sie Folgendes: `"ProfileID"` ist `1` und stellt das Erwachsenen-Profil dar. Beide Profile gehören zum selben Konto, das durch dasselbe `"PersonID"` repräsentiert wird.
 
    ```json
    {
@@ -311,7 +311,7 @@ Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz
    }
    ```
 
-1. Die Show &quot;Analytics After Hours&quot; finden Sie und genießen Sie ihren Abend dabei.
+1. Die Person findet die Sendung „Analytics After Hours“ und sieht sie sich an.
 
    ```json
    {
@@ -322,7 +322,7 @@ Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz
    }
    ```
 
-1. Am nächsten Tag setzen sie die Show &quot;Orangey&quot; für ihr Kind fort. Sie müssen nicht suchen, da sie jetzt bereits über die Show informiert sind.
+1. Am nächsten Tag spielt sie wieder die Sendung „Orangey“ für ihr Kind ab. Die Person muss nicht danach suchen, da sie die Show jetzt bereits kennt.
 
    ```json
    {
@@ -333,27 +333,27 @@ Sie können einen Suchbegriff an ein Benutzerprofil binden, damit die Persistenz
    }
    ```
 
-Wenn Sie die Zuordnung &quot;Zuletzt verwendet&quot;mit &quot;Gültigkeit der Person&quot;verwenden, wird die `"grownup movie"` Suchbegriff wird der letzten Ansicht der Kindershow zugeordnet.
+Wenn Sie die Zuordnung „Zuletzt gesehen“ mit „Gültigkeit der Person“ verwenden, wird der Suchbegriff `"grownup movie"` dem letzten Abspielen der Kindersendung zugeordnet.
 
 | Suchbegriff | Videostarts |
 | --- | --- |
-| Grownup-Film | 2 |
-| Kindershow | 1 |
+| Film für Erwachsene | 2 |
+| Kindersendung | 1 |
 
-Wenn Sie jedoch `search_term` nach `ProfileID`, werden die Suchvorgänge jedes Profils in ihr eigenes Profil isoliert, das den korrekten Suchergebnissen zugeordnet wird.
+Wenn Sie jedoch `search_term` an `ProfileID` binden, werden die Suchvorgänge jedes Profils auf sein eigenes Profil beschränkt und den richtigen Sendungen zugewiesen, nach denen es sucht.
 
 ![Besucherbindung](assets/binding-visitor.png)
 
-Analysis Workspace ordnet die zweite Folge von Orangey korrekt dem Suchbegriff zu. `"kids show"` , ohne die Suche aus anderen Profilen zu berücksichtigen.
+Analysis Workspace ordnet die zweite Folge von Orangey korrekt dem Suchbegriff `"kids show"` zu, ohne die Suche anderer Profile zu berücksichtigen.
 
 | Suchbegriff | Videostarts |
 | --- | --- |
-| Kindershow | 2 |
-| Grownup-Film | 1 |
+| Kindersendung | 2 |
+| Film für Erwachsene | 1 |
 
-## Beispiel 4: Bewerten Sie das Browse- oder Suchverhalten in einer Einzelhandelseinstellung.
+## Beispiel 4: Bewertung des Browse- und Suchverhaltens in einer Einzelhandelsumgebung
 
-Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festgelegt wurden. Wenn Sie eine Variable mit einer Bindungsdimension festlegen, berücksichtigt CJA den beibehaltenen Wert. Wenn dieses Verhalten nicht gewünscht wird, können Sie die Persistenzeinstellungen der Bindungsdimension anpassen. Betrachten Sie das folgende Beispiel, in dem `product_finding_method` wird auf ein Ereignis gesetzt und dann beim folgenden Ereignis an die Metrik &quot;Hinzufügen zum Warenkorb&quot;gebunden.
+Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festgelegt wurden. Wenn Sie eine Variable mit einer Bindungsdimension festlegen, berücksichtigt CJA den beibehaltenen Wert. Wenn dieses Verhalten unerwünscht ist, können Sie die Persistenzeinstellungen der Bindungsdimension anpassen. Betrachten Sie das folgende Beispiel, bei dem `product_finding_method` für ein Ereignis festgelegt und dann für das folgende Ereignis an die Metrik „Hinzufügen zum Warenkorb“ gebunden wird.
 
 1. Ein Besucher sucht nach `"camera"`. Beachten Sie, dass auf dieser Seite keine Produkte festgelegt sind.
 
@@ -364,7 +364,7 @@ Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festg
    }
    ```
 
-1. Er klickt auf eine Kamera, die ihm gefällt, und fügt sie zum Warenkorb hinzu.
+1. Der Besucher klickt auf eine Kamera, die ihm gefällt, und legt sie in seinen Warenkorb.
 
    ```json
    {
@@ -377,7 +377,7 @@ Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festg
    }
    ```
 
-1. Der Besucher durchsucht dann die Gürtelkategorie für Männer, ohne eine Suche durchzuführen. Beachten Sie, dass auf dieser Seite keine Produkte festgelegt sind.
+1. Er browst dann zur Kategorie „Herrengürtel“, ohne eine Suche durchzuführen. Beachten Sie, dass auf dieser Seite keine Produkte festgelegt sind.
 
    ```json
    {
@@ -386,7 +386,7 @@ Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festg
    }
    ```
 
-1. Sie klicken auf einen Gürtel, den sie mögen, und fügen ihn ihrem Warenkorb hinzu.
+1. Er klickt auf einen Gürtel, der ihm gefällt, und legt ihn in den Warenkorb.
 
    ```json
    {
@@ -399,7 +399,7 @@ Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festg
    }
    ```
 
-1. Sie durchlaufen den Checkout-Prozess und kaufen diese beiden Artikel.
+1. Er durchläuft den Checkout-Prozess und kauft diese beiden Artikel.
 
    ```json
    {
@@ -417,21 +417,21 @@ Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festg
    }
    ```
 
-Wenn die Persistenz auf die neueste Zuordnung ohne bindende Dimension eingestellt ist, werden alle 419,98 USD des Umsatzes dem Wert `browse` Suchmethode.
+Wenn die Persistenz auf die letzte Zuordnung ohne Bindungsdimension eingestellt ist, werden alle 419,98 USD des Umsatzes der `browse`-Suchmethode zugerechnet.
 
-| Methode zur Produktsuche | Umsatz |
+| Produktsuchmethode | Umsatz |
 | --- | --- |
-| durchsuchen | 419,98 |
+| Browsen | 419,98 |
 
-Wenn die Persistenz mithilfe der ursprünglichen Zuordnung ohne bindende Dimension festgelegt wird, werden alle 419,98 USD des Umsatzes dem `search` Suchmethode.
+Wenn die Persistenz auf die letzte Zuordnung ohne Bindungsdimension eingestellt ist, werden alle 419,98 USD des Umsatzes der `search`-Suchmethode zugerechnet.
 
-| Methode zur Produktsuche | Umsatz |
+| Produktsuchmethode | Umsatz |
 | --- | --- |
 | Suche | 419,98 |
 
-Wenn Sie jedoch `product_finding_method` zur Metrik &quot;Zusatz zum Warenkorb&quot;hinzu, ordnet der resultierende Bericht jedes Produkt der korrekten Suchmethode zu.
+Wenn Sie jedoch `product_finding_method` an die Metrik „Hinzufügen zum Warenkorb“ binden, ordnet der resultierende Bericht jedes Produkt der richtigen Suchmethode zu.
 
-| Methode zur Produktsuche | Umsatz |
+| Produktsuchmethode | Umsatz |
 | --- | --- |
 | Suche | 399,99 |
-| durchsuchen | 19,99 |
+| Browsen | 19,99 |
