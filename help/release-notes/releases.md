@@ -1,16 +1,17 @@
 ---
-description: Erläuterung der kontinuierlichen Strategie zur Veröffentlichung von Funktionen für Customer Journey Analytics
-title: Customer Journey Analytics-Funktionsversionen
-source-git-commit: b740d3a18d1090b04cc50869d38600f016cf30d5
-workflow-type: tm+mt
+description: Erläutert die Strategie zur kontinuierlichen Veröffentlichung von Funktionen für Customer Journey Analytics
+title: Versionen von Customer Journey Analytics-Funktionen
+exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
+source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Customer Journey Analytics-Funktionsversionen
+# Versionen von Customer Journey Analytics-Funktionen
 
-Customer Journey Analytics-Versionen basieren auf einem kontinuierlichen Bereitstellungsmodell, das einen skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
+Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlichen Bereitstellung, das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht.
 
 ## Veröffentlichungsstrategie
 
@@ -38,5 +39,5 @@ Die stufenweise Veröffentlichung ermöglicht es Adobe, den Software-Implementie
 
 | Frage | Antwort |
 | --- | --- |
-| Kann ich frühzeitigen Zugriff auf eine Funktion anfordern? | Nein. Es wird kein frühzeitiger Zugriff gewährt.<br>Wenn Sie frühe Analytics-Konzepte testen möchten, empfehlen wir Ihnen, [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html) zu testen, um Feedback zu unseren branchenführenden Innovationen zu geben. |
+| Kann ich frühzeitigen Zugriff auf eine Funktion anfordern? | Nein. Es wird kein frühzeitiger Zugriff gewährt.<br>Wenn Sie frühe Analytics-Konzepte testen möchten, empfehlen wir Ihnen, [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=de) zu testen, um Feedback zu unseren branchenführenden Innovationen zu geben. |
 | Hat diese Veröffentlichungsstrategie Auswirkungen auf meinen Zugriff auf Funktionen? | Nein. Sobald eine Funktion GA erreicht hat, haben Sie Zugriff auf die Funktion, wenn sie in Ihrem Analytics-Paket enthalten ist. |
