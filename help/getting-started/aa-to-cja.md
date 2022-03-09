@@ -5,16 +5,16 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+source-git-commit: a47343628ace3063d23c6ba023f73dcbdc24dbcc
 workflow-type: tm+mt
 source-wordcount: '1242'
-ht-degree: 93%
+ht-degree: 88%
 
 ---
 
 # Entwicklung von Adobe Analytics zu Customer Journey Analytics
 
-Wenn sich Ihr Unternehmen weiterentwickelt, um Daten von Adobe Analytics nach Customer Journey Analytics zu übertragen, sollten Sie diese Schritte durchsuchen, um Ihre Daten vorzubereiten und sich der entscheidenden Unterschiede zwischen den beiden Technologien bewusst zu werden. Dieser Artikel richtet sich an eine Administrator-Zielgruppe.
+Wenn sich Ihr Unternehmen weiterentwickelt, Customer Journey Analytics zu verwenden, sollten Sie diese Schritte durchsuchen, um Ihre Daten vorzubereiten und sich der wichtigen Unterschiede zwischen den beiden Technologien bewusst zu werden. Dieser Artikel richtet sich an eine Administrator-Zielgruppe.
 
 ## Vorbereiten Ihrer Daten
 
@@ -34,7 +34,7 @@ In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeil
 
 ### 2. Variablen anpassen
 
-Die einfachste Migrationsmethode von Adobe Analytics-Daten nach Customer Journey Analytics besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) mithilfe des [Adobe Analytics-Quell-Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in Experience Platform aufzunehmen. Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in AEP zu, die wiederum einfach mit CJA verbunden werden können.
+Die einfachste Methode zur Umwandlung von Adobe Analytics-Daten in Customer Journey Analytics-Daten besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) in die Experience Platform mit [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in Experience Platform zu, die wiederum problemlos mit Customer Journey Analytics verbunden werden können.
 
 Eine vollständige globale Report Suite ist nicht in jedem Fall für eine Implementierung möglich. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu importieren, müssen Sie die Variablen in diesen Report Suites vorab angleichen.
 
