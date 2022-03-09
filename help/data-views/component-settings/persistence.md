@@ -5,9 +5,9 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -69,19 +69,19 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 * **Sitzung**: Läuft nach einer Sitzung ab. Standardgültigkeitsfenster.
 * **Person**: Läuft am Ende des Reporting-Fensters ab.
-* **Benutzerdefinierte Zeit**: Läuft nach einem bestimmten Zeitraum ab (bis zu 90 Tage). Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
+* **Benutzerdefinierte Zeit**: Läuft nach einer festgelegten Zeitspanne ab (bis zu 90 Tage). Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
 * **Metrik**: Wenn diese Metrik in einem Treffer angezeigt wird, läuft der Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
 
 ## [!UICONTROL Binding-Dimension]
 
 Ein Dropdown-Menü, mit dem Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Dropdown-Optionen umfassen andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Siehe [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/binding-dimensions-metrics.md) Beispiele für die effektive Verwendung von Bindungsdimensionen.
+Siehe Beispiele für die effektive Verwendung von Bindungsdimensionen in [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/binding-dimensions-metrics.md).
 
 ## [!UICONTROL Binding-Metrik]
 
 Ein Dropdown-Menü, in dem Sie eine Metrik auswählen können, die als bindender Trigger fungiert. Zu den gültigen Dropdown-Optionen gehören die Metriken, die in der Datenansicht enthalten sind.
 
-Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn die Binding-Metrik in einem Ereignis vorhanden ist, werden Dimensionswerte aus der Dimension auf Ereignisebene in die untere Schemaebene der Binding-Dimension kopiert.
+Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 
 Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
