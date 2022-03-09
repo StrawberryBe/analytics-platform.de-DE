@@ -6,13 +6,13 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Mobile-Scorecard erstellen
+# Erstellen einer Mobile-Scorecard
 
 Die folgenden Informationen liefern Kuratoren von Adobe Analytics-Daten eine Anleitung dazu, wie Dashboards für ausführende Benutzer konfiguriert und dargestellt werden. Sehen Sie sich zunächst das Video zu Scorecard Builder von Adobe Analytics-Dashboards an:
 
@@ -177,25 +177,25 @@ Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, 
 
 ![Komponenten entfernen](assets/new_remove.png)
 
-## Vorschau-Scorecard {#preview}
+## Vorschau der Scorecard {#preview}
 
 Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffentlichung in der Analytics-Dashboards-App aussieht und funktioniert.
 
-1. Klicken **[!UICONTROL Vorschau]** in der oberen rechten Ecke des Bildschirms.
+1. Klicken Sie auf **[!UICONTROL Vorschau]** in der oberen rechten Ecke des Bildschirms.
 
-   ![Vorschau_Scorecards](assets/preview.png)
+   ![Preview_scorecards](assets/preview.png)
 
-1. Um anzuzeigen, wie die Scorecard auf verschiedenen Geräten aussehen wird, wählen Sie ein Gerät aus der [!UICONTROL Gerätevorschau] Dropdown-Menü.
+1. Um anzuzeigen, wie die Scorecard auf verschiedenen Geräten aussehen wird, wählen Sie ein Gerät aus dem Dropdown-Menü [!UICONTROL Gerätevorschau].
 
    ![Device_preview](assets/device-preview.png)
 
 1. Um mit der Vorschau zu interagieren, haben Sie folgende Möglichkeiten:
 
-   * Klicken Sie mit der linken Maustaste, um das Tippen auf den Telefonbildschirm zu simulieren.
+   * Klicken Sie mit der linken Maustaste, um das Tippen auf dem Bildschirm des Smartphones zu simulieren.
 
    * Verwenden Sie die Bildlauffunktion Ihres Computers, um das Scrollen des Bildschirms mit Ihrem Finger zu simulieren.
 
-   * Klicken und halten Sie, um das Drücken und Halten des Fingers auf dem Telefonbildschirm zu simulieren. Dies ist für die Interaktion mit den Visualisierungen in der Detailansicht nützlich.
+   * Klicken und halten Sie, um das Drücken und Halten des Fingers auf dem Bildschirm des Smartphones zu simulieren. Dies ist für die Interaktion mit den Visualisierungen in der Detailansicht nützlich.
 
 ## Scorecard benennen {#name}
 
