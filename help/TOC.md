@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch unterstützt Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
+source-git-commit: a818fe294fcb0b480e7235af041d3fb5d8e60773
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 93%
+source-wordcount: '594'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 93%
 + [Handbuch für Customer Journey Analytics](getting-started/cja-landing.md)
 + Versionshinweise {#releases}
    + [Neueste Version](release-notes/latest.md)
-   + [Versionen von 2022](release-notes/2022.md)
+   + [Versionen 2022](release-notes/2022.md)
    + [Versionen von 2021](release-notes/2021.md)
    + [Versionen von 2020](release-notes/2020.md)
    + [CJA-Versionen](release-notes/releases.md)
@@ -31,7 +31,7 @@ ht-degree: 93%
    + [Überblick über Customer Journey Analytics](getting-started/cja-overview.md)
    + [Erste Schritte](getting-started/cja-getting-started.md)
    + [Häufig gestellte Fragen](getting-started/cja-faq.md)
-   + [Vorbereiten der Migration von Adobe Analytics zu Customer Journey Analytics](getting-started/aa-to-cja.md)
+   + [Entwicklung von Adobe Analytics zu Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Customer Journey Analytics-Funktionen](getting-started/cja-aa.md)
    + [Auswirkungen des Löschens](getting-started/cja-deletion.md)
    + [CJA-Glossar](getting-started/cja-glossary.md)
