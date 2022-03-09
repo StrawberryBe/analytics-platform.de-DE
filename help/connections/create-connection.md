@@ -4,7 +4,7 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 100%
@@ -146,11 +146,12 @@ Diese Berechnung muss für jeden Datensatz in der Verbindung durchgeführt werde
 
 1. Wechseln Sie zu [Adobe Experience Platform Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) und erstellen Sie eine neue Abfrage.
 
-1. Die Abfrage würde wie folgt aussehen: 
+   Die Abfrage würde wie folgt aussehen: 
 
    ```
    Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;
    ```
 
-* In diesem Beispiel ist „analytics_demo_data“ der Name des Datensatzes.
-* Führen Sie die `Show Tables`-Abfrage aus, um alle in Adobe Experience Platform vorhandenen Datensätze anzuzeigen.
+   In diesem Beispiel ist „analytics_demo_data“ der Name des Datensatzes.
+
+1. Führen Sie die `Show Tables`-Abfrage aus, um alle in Adobe Experience Platform vorhandenen Datensätze anzuzeigen.

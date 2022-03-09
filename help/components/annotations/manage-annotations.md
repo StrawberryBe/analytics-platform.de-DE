@@ -4,10 +4,10 @@ description: Verwalten von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 69%
 
 ---
 
@@ -47,6 +47,22 @@ Sie können eine Anmerkung bearbeiten, indem Sie Datumsbereiche, Farben oder den
 * Klicken Sie in der [!UICONTROL Anmerkungsverwaltung] auf den Titel der Anmerkung.
 
 Beide dieser Optionen bringen Sie zum Anmerkungsgenerator zurück. Dort können Sie die erforderlichen Anpassungen vornehmen und die neue Version speichern.
+
+## Freigeben von Anmerkungen
+
+Beachten Sie Folgendes beim Freigeben von Anmerkungen oder Arbeiten mit Anmerkungen, die für Sie freigegeben wurden:
+
+* Angenommen, Sie erstellen ein Projekt mit nur projektbezogenen Anmerkungen und geben das Projekt dann für einen anderen Benutzer frei. Diese Anmerkungen werden angezeigt, können jedoch von niemandem bearbeitet oder gelöscht werden, für den Sie das Projekt freigeben.
+
+* Wenn Sie eine Anmerkung speichern und sie direkt für einen Benutzer freigeben, kann dieser die Anmerkung nur bearbeiten/löschen, wenn er über Administratorrechte verfügt.
+
+* Wenn das Projekt für Sie freigegeben ist, wird es nur in diesem Projekt angezeigt. Wenn die Anmerkung direkt für Sie freigegeben ist, wird sie in allen Projekten angezeigt, in denen diese Anmerkung angezeigt werden kann.
+
+## Anmerkungen und Zeitzonen
+
+Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne &quot;Stunde&quot;- oder &quot;Zeitzone&quot;-Informationen. Zum Zeitpunkt des Berichts wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird am 25. Dezember eine für Weihnachten erstellte Anmerkung erstellt - unabhängig davon, in welcher Report Suite-Zeitzone Sie sich befinden.
+
+Ein weiteres Beispiel ist der Neujahrstag. Jede Stunde wird eine andere Zeitzone mit Feuerwerkskörper eingerichtet, wenn das neue Jahr beginnt. Um 22:00 Uhr US Mountain Time startet die US-Ostküste Feuerwerke, weil es bereits 12:00 Uhr Eastern Time ist.
 
 ## Sonstige Aktionen mit Anmerkungen
 
