@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Works
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e397ff4de0f65ebb0264eac3813046452c572256
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -25,7 +25,7 @@ Im Folgenden finden Sie eine Videoübersicht zu Customer Journey Analytics:
 
 ## Vergleich von CJA mit traditioneller Adobe Analytics
 
-Customer Journey Analytics expands the scope of Adobe Analytics by offering easy-to-use cross-channel capabilities and removing limitations in previous versions of Adobe Analytics. Einige wichtige Verbesserungen sind:
+Customer Journey Analytics erweitert den Umfang von Adobe Analytics, indem es benutzerfreundliche kanalübergreifende Funktionen anbietet und Einschränkungen in früheren Versionen von Adobe Analytics beseitigt. Einige wichtige Verbesserungen sind:
 
 * **Unbegrenzte Variablen und Ereignisse**: Die Konzepte von eVars, Props und Ereignissen existieren nicht mehr. Die Daten werden in erster Linie in Dimensionen und Metriken betrachtet. Datensätze können eine unbegrenzte Anzahl an eindeutigen Dimensionen und Metriken aufweisen.
 * **Unbegrenzte Anzahl eindeutiger Werte**: Bei Adobe Experience Platform ist die Anzahl eindeutiger Werte nicht beschränkt.
@@ -36,9 +36,9 @@ Die erste Version von Customer Journey Analytics enthält viele der in Analysis 
 
 ## Vergleich von CJA mit Geräteübergreifenden Analysen
 
-[Geräteübergreifende Analyse](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) integriert mit [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en), wobei entweder das Co-op-Diagramm oder das private Diagramm verwendet wird, um zu ermitteln, wie digitale Geräte Personen zugeordnet sind. Sie sind für Adobe Analytics Ultimate-Kunden verfügbar.
+[Geräteübergreifende Analysen](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) lassen sich mit dem [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) integrieren und verwenden entweder das Kooperationsdiagramm oder das private Diagramm, um zu ermitteln, wie digitale Geräte Personen zugeordnet werden. Sie sind für Adobe Analytics Ultimate-Kunden verfügbar.
 
-CJA lässt sich dagegen mit Adobe Experience Platform-Datensätzen integrieren und ermöglicht die kanalübergreifende Analyse in Analysis Workspace. Obwohl CJA noch nicht in die Co-op- oder privaten Identitätsdiagramme integriert ist, können Sie &quot;Ihre eigene ID mitbringen&quot;, um Datensätze zusammenzuführen. Diese Datensätze können über digitale Daten hinausgehen und sowohl Online- als auch Offline-Touchpoints enthalten. Die Voraussetzungen für CJA werden nachfolgend ausführlicher behandelt.
+CJA lässt sich dagegen mit Adobe Experience Platform-Datensätzen integrieren und ermöglicht die kanalübergreifende Analyse in Analysis Workspace. Obwohl CJA noch nicht in die Kooperations- oder privaten Identitätsdiagramme integriert ist, können Sie „Ihre eigene ID mitbringen“, um Datensätze zusammenzuführen. Diese Datensätze können abgesehen von digitalen Daten auch sowohl Online- als auch Offline-Touchpoints enthalten. Die Voraussetzungen für CJA werden nachfolgend ausführlicher behandelt.
 
 ## Wichtige Anwendungsfälle
 
@@ -72,7 +72,7 @@ Zum Erstellen von Verbindungen, Hinzufügen von Datensätzen usw. benötigen Sie
    * Anzeigen von Identitäts-Namespaces
    * Anzeigen von Datensätzen
 
-Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en).
+Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
 
 >[!NOTE]
 >
@@ -102,8 +102,8 @@ Mit Adobe Experience Platform können Sie Kundendaten und Inhalte aus beliebigen
 
 Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von Experience Platform für Customer Journey Analytics von zentraler Bedeutung und agieren in Verbindung damit:
 
-* [Abfragedienst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=en): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein serverloses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können, der in Berichten, Data Science Workspace oder zur Erfassung in den Profildienst verwendet werden kann. Mit dem Abfragedienst können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen umfassen beispielsweise POS-Systeme, Web-, mobile und CRM-Systeme usw.
-* [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=en):
+* [Abfragedienst](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein Tool ohne Server, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können, der in Berichten, Data Science Workspace oder zur Aufnahme in den Profildienst verwendet werden kann. Mit dem Abfragedienst können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen umfassen beispielsweise POS-Systeme, Web-, mobile und CRM-Systeme usw.
+* [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de):
 * [Identity-Dienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en):
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=en) in Entwicklermodus: Sie können vorgefertigte Modelle für künstliche Intelligenz (KI) und maschinelles Lernen in Adobe Experience Platform verwenden, um verschiedene Aspekte der Customer Journey zu beeinflussen. Durch das Aufspüren verborgener Erkenntnisse können Sie bessere Vorhersagen für die gesamte Customer Journey treffen, Empfehlungen für die besten nächsten Schritte geben oder umständliche Prozesse automatisieren.
 
