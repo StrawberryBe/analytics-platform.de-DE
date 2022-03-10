@@ -4,10 +4,10 @@ description: Bericht zur aktuellen Nutzung von Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 74934c8684198104c808284310bcdfd633085574
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 51%
+source-wordcount: '535'
+ht-degree: 50%
 
 ---
 
@@ -40,7 +40,7 @@ Möglicherweise müssen Sie die derzeitige Anzahl von Datenzeilen in [!UICONTROL
 
 Nutzungsbeschränkungen werden von der Adobe täglich streng überwacht und durchgesetzt. &quot;Datenzeilen&quot;sind die täglichen durchschnittlichen Datenzeilen, die innerhalb eines Customer Journey Analytics für die Analyse verfügbar sind.
 
-Nehmen wir einmal an, Ihre vertragliche Berechtigung begrenzt die Anzahl der Zeilen auf 1 Million. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics 2 Millionen Datenzeilen hoch. Am 2. Tag löschen Sie 1 Million Zeilen und behalten Ihre Nutzung bei der festgelegten Höchstgrenze bei. Für Tag 1 würden Sie immer noch zu hohe Nutzungsgebühren zahlen.
+Nehmen wir einmal an, Ihre vertragliche Berechtigung begrenzt die Anzahl der Zeilen auf 1 Million. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics 2 Millionen Datenzeilen hoch. Am 2. Tag löschen Sie 1 Million Zeilen und behalten Ihre Nutzung für den Rest Ihrer Lizenzdauer bei der festgelegten Höchstgrenze bei. Abhängig von Ihren Vertragsbedingungen können Sie für Tag 1 weiterhin anteilige Übernutzungsgebühren zahlen.
 
 ## Diskrepanzen diagnostizieren
 
