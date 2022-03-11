@@ -4,10 +4,10 @@ description: Bericht zur aktuellen Nutzung von Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 74934c8684198104c808284310bcdfd633085574
+source-git-commit: 966274d433d8495d32823d74c5f72107bb5f383a
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 50%
+source-wordcount: '549'
+ht-degree: 48%
 
 ---
 
@@ -38,9 +38,9 @@ Möglicherweise müssen Sie die derzeitige Anzahl von Datenzeilen in [!UICONTROL
 
 ## Über die Nutzung
 
-Nutzungsbeschränkungen werden von der Adobe täglich streng überwacht und durchgesetzt. &quot;Datenzeilen&quot;sind die täglichen durchschnittlichen Datenzeilen, die innerhalb eines Customer Journey Analytics für die Analyse verfügbar sind.
+Nutzungsbeschränkungen werden von Adobe regelmäßig überwacht und durchgesetzt. &quot;Datenzeilen&quot;sind die täglichen durchschnittlichen Datenzeilen, die innerhalb eines Customer Journey Analytics für die Analyse verfügbar sind.
 
-Nehmen wir einmal an, Ihre vertragliche Berechtigung begrenzt die Anzahl der Zeilen auf 1 Million. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics 2 Millionen Datenzeilen hoch. Am 2. Tag löschen Sie 1 Million Zeilen und behalten Ihre Nutzung für den Rest Ihrer Lizenzdauer bei der festgelegten Höchstgrenze bei. Abhängig von Ihren Vertragsbedingungen können Sie für Tag 1 weiterhin anteilige Übernutzungsgebühren zahlen.
+Nehmen wir beispielsweise an, Ihr Vertrag berechtigt Sie zu einer Million Datenzeilen. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics zwei Millionen Datenzeilen hoch. Am Tag 2 löschen Sie 1 Million Zeilen und behalten Ihre Nutzung für den Rest Ihrer Lizenzvereinbarung bei (d. h. maximal eine Million Datenzeilen). Abhängig von Ihren Vertragsbedingungen können Ihnen für Tag 1 weiterhin anteilige Übernutzungsgebühren entstehen, da Sie die Lizenzberechtigung für &quot;Datenzeilen&quot;überschritten haben.
 
 ## Diskrepanzen diagnostizieren
 
