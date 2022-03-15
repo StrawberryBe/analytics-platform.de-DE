@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Handbuch für Customer Journey Analytics
-user-guide-description: Dieses Handbuch unterstützt Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
+user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: a818fe294fcb0b480e7235af041d3fb5d8e60773
+source-git-commit: 93fc401bee7f08cb287062f0f4f27de21050fcc7
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 94%
+source-wordcount: '591'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 94%
 + Verbindungen {#cja-connections}
    + [Verbindung herstellen](connections/create-connection.md)
    + [Verbindungen verwalten](connections/manage-connections.md)
-   + [Verbindungsgröße schätzen](connections/estimate-connection-size.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
    + [Standardsuchen](connections/standard-lookups.md)
    + Kanalübergreifende Analyse {#cca}
