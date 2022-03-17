@@ -4,9 +4,9 @@ description: Was aus der Sicht eines Benutzers zu beachten ist, wenn Ihr Unterne
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 555e6cc3a987a0bbd396eaf322a7edb3a9f66680
+source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '630'
 ht-degree: 26%
 
 ---
@@ -14,9 +14,7 @@ ht-degree: 26%
 
 # CJA-Benutzerhandbuch für Adobe Analytics-Benutzer
 
-Herzlichen Glückwunsch! Ihr Unternehmen hat zumindest einige seiner Daten in den Customer Journey Analytics verschoben! Beim Arbeiten mit Customer Journey Analytics werden Sie einige große Unterschiede und einige Ähnlichkeiten bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede.
-
-Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
+Herzlichen Glückwunsch, Ihr Unternehmen beginnt, Customer Journey Analytics zu arbeiten! Als Anwender von Adobe Analytics haben Sie bereits einen tollen Vorsprung. Beim Arbeiten mit Customer Journey Analytics werden Sie einige große Unterschiede und Ähnlichkeiten bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede. Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
 
 ## Was sich nicht geändert hat
 
