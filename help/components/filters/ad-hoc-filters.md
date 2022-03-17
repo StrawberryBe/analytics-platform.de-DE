@@ -4,31 +4,32 @@ title: Ad-hoc-Projektfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
-workflow-type: ht
-source-wordcount: '370'
-ht-degree: 100%
+source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 54%
 
 ---
 
 # Ad-hoc-Projektfilter
 
+Mit Ad-hoc-Projektfiltern können Sie beliebige Komponenten direkt in die Ablagefläche des Bedienfelds ziehen, um einen Filter zu erstellen. Der Filter wird zu einem [Filter auf Projektebene](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?#what-are-project-only-segments) lokal auf das aktuelle Projekt verweist.
+
 Im Folgenden finden Sie ein Video zum Erstellen von Ad-hoc-Projektfiltern:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
-Sie können Ad-hoc-Projektfilter erstellen, wenn Sie schnell untersuchen möchten, wie sich ein Filter auf Ihr Projekt auswirken könnte, ohne den Segment Builder aufzurufen. Stellen Sie sich diese Filter als temporäre Filter auf Projektebene vor. Sie sind normalerweise nicht wie die Komponentenfilter in der linken Leiste Teil Ihrer Filter-„Bibliothek“. Sie können sie jedoch speichern, wie unten dargestellt.
 
-Einen Vergleich zwischen Ad-hoc-Projektfiltern und vollständigen Filtern auf Komponentenebene finden Sie [hier](/help/components/filters/filters-overview.md).
+1. 
+   1. Ziehen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Segment, Segmentvorlage, Datumsbereich) in die Filter-Dropzone am oberen Rand eines Bedienfelds. Komponententypen werden automatisch in Ad-hoc-Filter oder [Schnellfilter](/help/components/filters/quick-filters.md) wenn kompatibel.
 
-1. Legen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Filter, Filtervorlage, Datumsbereich) in die Ablagezone für Filter oben in einem Bedienfeld ab. Komponententypen werden automatisch in Filter umgewandelt.
-Im Folgenden finden Sie ein Beispiel für die Erstellung eines Filters für die Twitter-Referrer-Domain:
+   Im Folgenden finden Sie ein Beispiel für die Erstellung eines Filters für die Twitter-Referrer-Domain:
 
    ![](assets/ad-hoc1.png)
 
    In Ihrem Bedienfeld wird dieser Filter automatisch angewendet und Sie können die Ergebnisse sofort sehen.
 
-1. Sie können einem Bedienfeld eine unbegrenzte Anzahl von Komponenten hinzufügen.
+1. Sie können einem Bedienfeld eine unbegrenzte Anzahl von Filtern hinzufügen.
 1. Wenn Sie diesen Filter speichern möchten, lesen Sie den folgenden Abschnitt.
 
 Bitte beachten Sie:
@@ -37,19 +38,14 @@ Bitte beachten Sie:
 * Bei vollständigen Dimensionen und Ereignissen erstellt Analysis Workspace Hit-Filter mit „vorhanden“. Beispiele: `Hit where eVar1 exists` oder `Hit where event1 exists`.
 * Wenn „nicht angegeben“ oder „keine“ im Filterablagebereich abgelegt werden, werden sie automatisch in einen Filter mit „nicht vorhanden“ umgewandelt, damit sie beim Filtern korrekt behandelt werden.
 
->[!NOTE]
->
->Auf diese Weise erstellte Segmente sind interne Segmente des Projekts.
-
 ## Speichern von Ad-hoc-Projektfiltern {#ad-hoc-save}
 
 Sie können wie folgt vorgehen, um diese Filter zu speichern:
 
 1. Bewegen Sie den Mauszeiger auf den Filter in der Dropzone und klicken Sie auf das Symbol „i“.
-1. Klicken Sie im angezeigten Informationsfenster auf **[!UICONTROL Speichern]**.
+1. Klicken Sie auf den Stift zum Bearbeiten, um zum Filtergenerator zu wechseln.
+1. Überprüfen **[!UICONTROL Bereitstellen für alle Projekte und Hinzufügen zur Komponentenliste]**.
+1. Klicken **[!UICONTROL SPEICHERN]**.
 
-   ![](assets/segment-info.png)
+Nach dem Speichern ist der Filter in der Komponentenliste der linken Leiste verfügbar und kann über den Filter-Manager für andere Benutzer freigegeben werden.
 
-## Was sind reine Projektfilter?
-
-Reine Projektfilter sind entweder Schnellfilter oder Ad-hoc-Workspace-Projektfilter. Wenn Sie sie im Filtergenerator bearbeiten/öffnen, wird das Feld für reine Projektfilter angezeigt. Wenn sie einen Schnellfilter im Generator ANWENDEN, aber nicht Kontrollkästchen „Verfügbar machen“ nicht aktivieren, ist dieser Filter weiterhin ein reiner Projektfilter, kann jedoch nicht mehr im QS-Builder geöffnet werden. Wenn sie das Kontrollkästchen aktivieren und SPEICHERN, ist es jetzt ein Komponentenlistenfilter.
