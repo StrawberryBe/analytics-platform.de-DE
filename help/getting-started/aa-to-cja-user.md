@@ -4,21 +4,27 @@ description: Was aus der Sicht eines Benutzers zu beachten ist, wenn Ihr Unterne
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d5bdbfd0ac2a62ea5a55fbd381bf5453910ce0d1
+source-git-commit: 24a6319b1303eaef80ddf6142deae60e7f664ae4
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 26%
+source-wordcount: '642'
+ht-degree: 25%
 
 ---
 
 
 # CJA-Benutzerhandbuch für Adobe Analytics-Benutzer
 
+>[!NOTE]
+>
+>Diese Seite befindet sich im Aufbau.
+
 Herzlichen Glückwunsch, Ihr Unternehmen beginnt, Customer Journey Analytics zu arbeiten! Als Anwender von Adobe Analytics haben Sie bereits einen tollen Vorsprung. Beim Arbeiten mit Customer Journey Analytics werden Sie einige große Unterschiede und Ähnlichkeiten bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede. Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
 
 ## Was sich nicht geändert hat
 
-Vieles, was Sie auf der Berichtsseite kennen, hat sich nicht geändert. Sie können weiterhin die Leistungsfähigkeit von Analysis Workspace nutzen, um Ihre Daten sowie Adobe Analytics-Dashboards und eine neue Version von Report Builder zu analysieren. Workspace und Dashboards funktionieren im Wesentlichen genauso wie im herkömmlichen Adobe Analytics. Report Builder verfügt über eine neue Benutzeroberfläche und läuft jetzt auf PCs, Mac-Computern und der Webversion von Excel. Berichterstattungsorientiert ist es anders, dass Sie Zugriff auf viel mehr kanalübergreifende Daten haben, die analysiert werden können. Im Folgenden finden Sie ein Workspace-Beispiel für
+Vieles, was Sie auf der Berichtsseite kennen, hat sich nicht geändert. Sie können die Leistungsfähigkeit von Analysis Workspace weiterhin zur Analyse Ihrer Daten nutzen. Sie haben auch dieselbe Version von Adobe Analytics-Dashboards zur Verfügung. Workspace und Dashboards funktionieren im Wesentlichen genauso wie im herkömmlichen Adobe Analytics. Report Builder verfügt über eine neue Benutzeroberfläche und läuft jetzt auf PCs, Mac-Computern und der Webversion von Excel. Berichterstattungsorientiert ist es anders, dass Sie Zugriff auf viel mehr kanalübergreifende Daten haben, die analysiert werden können. Im Folgenden finden Sie ein Beispiel für einige mehrkanalige Visualisierungen:
+
+![Mehrkanal](assets/cross-channel.png)
 
 ## Neue Architektur
 
@@ -26,7 +32,7 @@ Customer Journey Analytics erhält seine Daten von Adobe Experience Platform. Mi
 
 Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
-Ihr CJA-Administrator stellt Verbindungen zu den Daten in Platform her und erstellt Datenansichten innerhalb dieser Verbindungen. Stellen Sie sich Datenansichten ähnlich wie Virtual Report Suites vor. Datenansichten sind die Grundlage für die Berichterstellung in Customer Journey Analytics.
+Ihr CJA-Administrator hat [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Platform. Sie haben dann [Datenansichten](/help/data-views/data-views.md) innerhalb dieser Verbindungen. Stellen Sie sich Datenansichten ähnlich wie Virtual Report Suites vor. Datenansichten sind die Grundlage für die Berichterstellung in Customer Journey Analytics.
 
 ## Neue Konzepte und Terminologie
 
