@@ -3,10 +3,11 @@ description: Erläutert die Funktionen der neuen Landingpage .
 title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
+exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
+source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 59%
+source-wordcount: '1081'
+ht-degree: 58%
 
 ---
 
@@ -63,7 +64,7 @@ Sie können
 | [!UICONTROL Eingeplant] | Legen Sie fest auf [!UICONTROL on] wenn ein Projekt geplant ist oder **[!UICONTROL Aus]** , wenn dies nicht der Fall ist. Klicken Sie auf **[!UICONTROL on]** -Link können Sie Informationen zum geplanten Projekt anzeigen. Sie können auch [den Projektplan bearbeiten](/help/analysis-workspace/curate-share/t-schedule-report.md) wenn Sie Projektinhaber sind. |
 | [!UICONTROL Projekt-ID] | Die Projekt-ID kann zum Debugging von Projekten verwendet werden. |
 | [!UICONTROL Längster Datumsbereich] | Längere Datumsbereiche erhöhen die Projektkomplexität und können die Verarbeitungs- und Ladezeiten erhöhen. |
-| [!UICONTROL Anzahl der Abfragen] | Eine höhere Anzahl von Projektabfragen erhöht die Projektkomplexität und kann die Verarbeitungs- und Ladezeiten erhöhen. |
+| [!UICONTROL Anzahl der Abfragen] | Die Gesamtzahl der Anfragen, die an Analytics beim Laden des Projekts gesendet wurden. Eine höhere Anzahl von Projektabfragen erhöht die Projektkomplexität und kann die Verarbeitungs- und Ladezeiten erhöhen. Diese Daten sind erst verfügbar, nachdem ein Projekt geladen oder ein geplantes Projekt gesendet wurde. |
 | Symbol &quot;Tabelle anpassen&quot; | (Oben rechts) Wenn Sie Spalten aus der Projektliste hinzufügen oder entfernen möchten, können Sie dies tun, indem Sie sie auswählen oder deaktivieren. |
 | &lt; (Schaltfläche „Zurück“) | Über diese Schaltfläche in einem Workspace-Projekt gelangen Sie zurück zu Ihrer letzten Landingpage-Konfiguration. Die Seitenkonfiguration, die Sie beim Verlassen der Landingpage hatten, bleibt auch bei der Rückkehr erhalten. |
 
