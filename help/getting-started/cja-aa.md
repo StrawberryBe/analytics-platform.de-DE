@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 2ebbee4ae7990bdb69f42cf25f8fcef3c20a26ee
-workflow-type: ht
-source-wordcount: '1325'
-ht-degree: 100%
+source-git-commit: 77b0783459cc6ddc3cc83c805f5da073eb1e8674
+workflow-type: tm+mt
+source-wordcount: '1330'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Anomalieerkennung | Vollständige Unterstützung. |
 | Attribution IQ | Vollständige Unterstützung. |
 | Berechnete Metriken | Vollständige Unterstützung; beachten Sie, dass vorhandene berechnete Metriken in herkömmlichem Analysis Workspace nicht in CJA portiert werden. |
+| Kalenderereignisse | Vollständige Unterstützung. Kalenderereignisse wurden implementiert als [Anmerkungen](/help/components/annotations/overview.md) in Workspace. |
 | Geräteübergreifende/kanalübergreifende Zuordnung | Vollständige Unterstützung; siehe [Kanalübergreifende Analyse](/help/connections/cca/overview.md). |
 | CSV-Download | Vollständige Unterstützung. |
 | Benutzerdefinierte Kalender | Vollständige Unterstützung. |
@@ -32,7 +33,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Löschung gemäß der DSGVO | Vollständige Unterstützung; beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] gehandhabt wird. CJA übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
 | Listenvariablen/Listen-Props | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
 | Persistenz von Merchandising-Variablen | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) (Januar 2022) |
-| Merchandising-eVars | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) (Januar 2022) |
+| Merchandising-eVars | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) (Januar 2022) |
 | Metriken | Vollständige Unterstützung; CJA nutzt das Experience-Datenmodell (XDM), unterstützt unbegrenzte Metriken und ist nicht an die benutzerspezifischen Erfolgsereignisse von traditionellem Analytics gebunden. Beachten Sie, dass einige Standardmetriken in traditionellem Analytics umbenannt wurden: Besucher = Personen, Besuche = Sitzungen, Treffer = Ereignisse. |
 | Deduplizierung der Metrik | Vollständige Unterstützung. |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. |
@@ -59,7 +60,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Dimensionen [!UICONTROL Gerät], [!UICONTROL Browser], [!UICONTROL Referrer], [!UICONTROL Technologie] | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schemafelder enthält und der XDM-Erlebnisereignis-Klasse entspricht. In unserer [Dokumentation erfahren Sie, welche Analytics-Variablen über den Analytics-Quell-Connector unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de). Für CJA-Kunden, die den Quell-Connector nicht zum Einfügen von Daten aus Adobe Analytics in CJA verwenden, sondern stattdessen Daten mit dem AEP-Web-SDK erfassen, werden [!UICONTROL Geräte] und Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Dies wird aber in naher Zukunft der Fall sein. |
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
-| GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) in CJA. Bei Implementierungen, die nicht den Analytics Quell-Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (Land und US-Bundesstaat werden unterstützt, Stadt und Postleitzahl dagegen nicht). Derzeit gibt es begrenzte oder gar keine Unterstützung für Staaten/Regionen außerhalb der USA. |
+| GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) in CJA. Bei Implementierungen, die nicht den Analytics Quell-Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (Land und US-Bundesstaat werden unterstützt, Stadt und Postleitzahl dagegen nicht). Derzeit gibt es begrenzte oder gar keine Unterstützung für Staaten/Regionen außerhalb der USA. |
 | Marketing-Kanäle | Daten von Marketing-Kanälen werden jetzt über Analytics Data Connector an Customer Journey Analytics weitergeleitet. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
 | Produktvariable | In Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem Datensatzschema verwenden, um die Anforderungen dieses Anwendungsfalls zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf eine einzelne Variable beschränkt. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
@@ -69,7 +70,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-| Bot-Filterung | Bei Datensätzen, die auf dem [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basieren, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
+| Bot-Filterung | Bei Datensätzen, die auf dem [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en) basieren, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
 | Media Analytics | Mediendaten stehen als Teil des Analytics-Quell-Connectors zur Verfügung. |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“, „Analytics for Target (A4T)“ und „Gleichzeitige Medienbesucher“ werden nicht unterstützt. |
 | Verarbeitungsregeln | Auf Analytics Data Connector-basierte Datensätze werden weiterhin Verarbeitungsregeln angewendet. [Datenvorbereitungsfunktionen in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform übermittelt werden. |
@@ -79,7 +80,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
-| Kalenderereignisse | Wird in Workspace als „Anmerkungen“ bezeichnet. |
 | Classification Rule Builder | Funktioniert in CJA etwas anders, indem Zeichenfolge-Bearbeitungen zur Berichtszeit verwendet werden, statt dass Datensätze gesucht werden. |
 | Beitragsanalyse | Unterstützung ist geplant. |
 | Data Warehouse-Berichte (100 % Zeilenexport) | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [[!UICONTROL Abfrage-Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) von Adobe Experience Platform bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
