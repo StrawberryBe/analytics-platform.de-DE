@@ -4,10 +4,10 @@ title: Schnellfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 82%
+source-wordcount: '1028'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 Sie können innerhalb eines Projekts Schnellfilter erstellen, um die Komplexität des vollständigen [Filtergenerators](/help/components/filters/create-filters.md) zu umgehen. Schnellfilter
 
-* Anwenden als [Nur-Projekt-Segmente](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?lang=en#what-are-project-only-filters).
+* Anwenden als [Nur-Projekt-Segmente](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html).
 * Lassen bis zu 3 Regeln zu
 * Können keine verschachtelten Container oder sequenziellen Regeln aufnehmen
 
@@ -99,7 +99,7 @@ Nachdem Sie den Filter angewendet haben, können Sie ihn Ihrer Liste der Filterk
 1. Der Filter wird jetzt in der Liste der Filterkomponenten für alle Ihre Projekte angezeigt.
 1. Sie können auch den Filter auch für andere Personen in Ihrer Organisation [freigeben](/help/components/filters/manage-filters.md).
 
-## Was sind reine Projektfilter?
+## Was sind reine Projektfilter? {#project-only}
 
 Schreibgeschützte Filter sind Filter, die nur auf das aktuelle Projekt angewendet werden, in dem sie erstellt wurden. Sie sind nicht in anderen Projekten verfügbar und können nicht für andere Benutzer freigegeben werden. Sie sind für die schnelle Untersuchung Ihrer Daten vorgesehen, ohne dass ein Filter in der linken Leiste erstellt und gespeichert werden muss. Schreibgeschützte Filter können in der Dropzone des Bedienfelds entweder mit Schnellfiltern oder [Ad-hoc-Filter](/help/components/filters/ad-hoc-filters.md).
 
