@@ -4,9 +4,9 @@ description: Was aus der Sicht eines Benutzers zu beachten ist, wenn Ihr Unterne
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d31f07d8b26ea4d60481c040a0ca1ba491d4ecf0
+source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '656'
 ht-degree: 25%
 
 ---
@@ -22,9 +22,15 @@ Herzlichen Glückwunsch, Ihr Unternehmen beginnt mit der Arbeit mit Customer Jou
 
 ## Was sich nicht geändert hat
 
-Vieles, was Sie auf der Berichtsseite kennen, hat sich nicht geändert. Sie können die Leistungsfähigkeit von Analysis Workspace weiterhin zur Analyse Ihrer Daten nutzen. Sie haben auch dieselbe Version von Adobe Analytics-Dashboards zur Verfügung. Workspace und Dashboards funktionieren im Wesentlichen genauso wie im herkömmlichen Adobe Analytics. Report Builder verfügt über eine neue Benutzeroberfläche und läuft jetzt auf PCs, Mac-Computern und der Webversion von Excel. Berichterstattungsorientiert ist es anders, dass Sie Zugriff auf viel mehr kanalübergreifende Daten haben, die analysiert werden können. Im Folgenden finden Sie ein Beispiel für einige mehrkanalige Visualisierungen:
+Vieles, was Sie auf der Berichtsseite kennen, hat sich nicht geändert.
 
-![Mehrkanal](assets/cross-channel.png)
+* Sie können weiterhin die [Analysis Workspace](/help/analysis-workspace/home.md) um Ihre Daten zu analysieren.
+* Sie haben auch dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) zur Verfügung. Workspace und Dashboards funktionieren genauso wie im herkömmlichen Adobe Analytics.
+* [Report Builder](/help/report-builder/report-buider-overview.md) hat eine neue Schnittstelle und läuft jetzt auf PCs, Macs und der Web-Version von Excel.
+
+Was die Berichterstellung angeht, ist, dass Sie Zugriff auf viel mehr kanalübergreifende Daten haben, die analysiert werden können. Im Folgenden finden Sie ein Beispiel für einige kanalübergreifende Visualisierungen, die eine Reihe kanalübergreifender Datenquellen enthalten:
+
+![Mehrkanal-Visualisierungen](assets/cross-channel.png)
 
 ## Neue Architektur
 
