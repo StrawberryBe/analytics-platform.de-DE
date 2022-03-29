@@ -4,10 +4,10 @@ description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht 
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 59d9fa8d4e4fa4aa3d297e70a619a7456527c5cd
+source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,14 +19,14 @@ Im Folgenden finden Sie ein Video zum Thema:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## Erstellen einer Datenansicht
+## Erstellen einer Datenansicht {#configure}
 
 1. Melden Sie sich bei [Customer Journey Analytics](https://analytics.adobe.com) an und gehen Sie zur Registerkarte **[!UICONTROL Datenansichten]**.
 2. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Datenansicht zu erstellen, oder klicken Sie auf eine vorhandene Datenansicht, um sie zu bearbeiten.
 
 ![Neue Datenansicht](assets/new-data-view.png)
 
-### Datenansichtseinstellungen
+### Datenansichtseinstellungen {#settings}
 
 Stellt übergreifende Einstellungen für die Datenansicht bereit.
 
@@ -36,9 +36,9 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 | [!UICONTROL Name] | Erforderlich. Der Name der Datenansicht. Dieser Wert wird in der Dropdown-Liste oben rechts in Analysis Workspace angezeigt. |
 | [!UICONTROL Beschreibung] | Optional. Adobe empfiehlt eine detaillierte Beschreibung, damit Benutzer verstehen, warum die Datenansicht vorhanden ist und für wen sie konzipiert ist. |
 
-### Behälter
+### Behälter {#containers}
 
-Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in [Filtern](/help/components/filters/filters-overview.md#Filter-containers) verwendet.
+Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in [Filter](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -46,7 +46,7 @@ Gibt den Namen der Container für die Datenansicht an. Container-Namen werden h�
 | [!UICONTROL Container-Name für Sitzung] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Container-Name für Ereignis] | [!UICONTROL Ereignis] (Standard). Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
 
-### Kalender
+### Kalender {#calendar}
 
 Gibt das Kalenderformat an, dem die Datenansicht folgen soll. Sie können mehrere Datenansichten basierend auf derselben [Verbindung](/help/connections/create-connection.md) haben und ihnen unterschiedliche Kalendertypen oder Zeitzonen zuweisen. Diese Datenansichten können es Teams, die verschiedene Kalendertypen verwenden, ermöglichen, ihre jeweiligen Anforderungen mit denselben zugrunde liegenden Daten zu erfüllen.
 
@@ -58,7 +58,7 @@ Gibt das Kalenderformat an, dem die Datenansicht folgen soll. Sie können mehrer
 | [!UICONTROL Erster Tag des aktuellen Jahres] | Für benutzerdefinierte Kalendertypen sichtbar. Geben Sie an, an welchem Tag des Jahres das aktuelle Jahr beginnen soll. Der Kalender formatiert automatisch den ersten Wochentag auf Grundlage dieses Werts. |
 | [!UICONTROL Jahr mit „zusätzlicher“ Woche] | Bei den meisten 364-tägigen Kalendern (52 Wochen von jeweils 7 Tagen) sammeln sich jedes Jahr verbleibende Tage, bis sie eine zusätzliche Woche bilden. Diese zusätzliche Woche wird dann zum letzten Monat des Jahres hinzugefügt. Geben Sie an, zu welchem Jahr die zusätzliche Woche hinzugefügt werden soll. |
 
-## Festlegen der Komponenten einer Datenansicht
+## Festlegen der Komponenten einer Datenansicht {#set-components}
 
 Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen. Sie können auch Standardkomponenten verwenden.
 
@@ -89,13 +89,13 @@ Als Nächstes können Sie Metriken und Dimensionen aus Schemaelementen erstellen
    * [[!UICONTROL Persistenz]](component-settings/persistence.md)
    * [[!UICONTROL Wert-Bucketing]](component-settings/value-bucketing.md)
 
-## Duplizieren von Metriken oder Dimensionen
+## Duplizieren von Metriken oder Dimensionen {#duplicate}
 
 Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spezifischer Einstellungen ist eine einfache Möglichkeit, mehrere Metriken oder Dimensionen aus einem einzelnen Schemafeld zu erstellen. Wählen Sie die Einstellung [!UICONTROL Duplizieren] unter dem Namen der Metrik oder Dimension oben rechts aus. Ändern Sie dann die neue Dimension oder Metrik und speichern Sie sie unter einem aussagekräftigeren Namen.
 
 ![Duplizieren](assets/duplicate.png)
 
-## Filtern von Schemafeldern oder Datensätzen
+## Filtern von Schemafeldern oder Datensätzen {#filter}
 
 Sie können die Schemafelder in der linken Leiste nach folgenden Datentypen filtern:
 
@@ -105,20 +105,18 @@ Sie können auch nach Datensätzen filtern und danach, ob ein Schemafeld Daten e
 
 ![Andere filtern](assets/filter-other.png)
 
-## Einstellungen Registerkarte
+## Einstellungen Registerkarte {#settings-tab}
 
 1. Melden Sie sich bei [Customer Journey Analytics](https://analytics.adobe.com) an und gehen Sie zur Registerkarte **[!UICONTROL Datenansichten]**.
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Datenansicht zu erstellen, oder klicken Sie auf eine vorhandene Datenansicht, um sie zu bearbeiten.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Erweiterungen]**.
 
-### Globaler Filter
+### Globaler Filter {#global-filter}
 
 Sie können Filter hinzufügen, die für die gesamte Datenansicht gelten. Dieser Filter wird auf alle Berichte angewendet, die Sie in Arbeitsbereich ausführen. Ziehen Sie einen Filter aus der Liste in das Feld [!UICONTROL Filter hinzufügen] in der linken Leiste.
 
-### Sitzungseinstellungen
+### Sitzungseinstellungen {#sessions}
 
-Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Sitzung abläuft und eine neue gestartet wird.
-
-Ein Zeitraum ist erforderlich. Sie können optional auch den Start einer neuen Sitzung erzwingen, wenn ein Ereignis eine bestimmte Metrik enthält.
+Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Sitzung abläuft und eine neue gestartet wird. Ein Zeitraum ist erforderlich. Sie können optional auch den Start einer neuen Sitzung erzwingen, wenn ein Ereignis eine bestimmte Metrik enthält.
 
 Nachdem alle gewünschten Einstellungen angegeben wurden, klicken Sie auf **[!UICONTROL Speichern und beenden]**.
