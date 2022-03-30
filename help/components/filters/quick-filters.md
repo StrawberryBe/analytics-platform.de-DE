@@ -4,10 +4,10 @@ title: Schnellfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 83%
+source-wordcount: '1050'
+ht-degree: 81%
 
 ---
 
@@ -20,6 +20,10 @@ Sie können innerhalb eines Projekts Schnellfilter erstellen, um die Komplexitä
 * Können keine verschachtelten Container oder sequenziellen Regeln aufnehmen
 
 Einen Vergleich der Möglichkeiten von Schnellfiltern mit vollständigen Komponentenlistenfiltern finden Sie [hier](/help/components/filters/filters-overview.md).
+
+Im Folgenden finden Sie ein Video zu Schnellfiltern (beachten Sie, dass stattdessen der Begriff &quot;Schnellsegmente&quot;verwendet wird.) Die Funktionalität ist jedoch identisch.
+
+>[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## Voraussetzungen {#prereqs}
 

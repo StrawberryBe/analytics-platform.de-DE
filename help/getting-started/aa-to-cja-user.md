@@ -4,10 +4,10 @@ description: Was aus der Sicht eines Benutzers zu beachten ist, wenn Ihr Unterne
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 19%
+source-wordcount: '994'
+ht-degree: 18%
 
 ---
 
@@ -24,8 +24,8 @@ Herzlichen Glückwunsch! Ihr Unternehmen beginnt mit der Beschäftigung von Cust
 
 Vieles, was Sie auf der Berichtsseite kennen, hat sich nicht geändert.
 
-* Sie können weiterhin die [Analysis Workspace](/help/analysis-workspace/home.md) um Ihre Daten zu analysieren.
-* Sie haben auch dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) zur Verfügung. Workspace und Dashboards funktionieren genauso wie im herkömmlichen Adobe Analytics.
+* Sie können weiterhin die [Analysis Workspace](/help/analysis-workspace/home.md) um Ihre Daten zu analysieren. Workspace funktioniert genauso wie im herkömmlichen Adobe Analytics.
+* Sie haben auch dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) zur Verfügung. Dashboards (auch Mobile App genannt) funktionieren genauso wie herkömmliche Adobe Analytics.
 * [Report Builder](/help/report-builder/report-buider-overview.md) hat eine neue Schnittstelle und läuft jetzt auf PCs, Macs und der Web-Version von Excel.
 
 Was die Berichterstellung angeht, ist, dass Sie Zugriff auf viel mehr kanalübergreifende Daten haben, die analysiert werden können. Im Folgenden finden Sie ein Beispiel für einige Visualisierungen, die kanalübergreifende Datenquellen enthalten:
@@ -78,10 +78,11 @@ Datenansichten nehmen das Konzept der Virtual Report Suites an, wie sie heute ex
 
 **Was Sie tun müssen**:
 
-* Machen Sie sich mit den vielen Anwendungsfällen rund um Datenansichten vertraut.
 * Beachten Sie, dass Sie in Workspace mit der Report Suite-Auswahl, die Sie jetzt verwenden, aus den Datenansichten wählen können, die Ihr Admin für Sie freigegeben hat:
 
    ![data-view-selector](assets/data-views.png)
+
+* Machen Sie sich mit den vielen [Anwendungsfälle für Datenansichten](/help/data-views/data-views-usecases.md).
 
 ### Report Suite-übergreifende Daten
 
