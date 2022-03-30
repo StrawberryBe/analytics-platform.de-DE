@@ -4,7 +4,7 @@ description: Was aus der Sicht eines Benutzers zu beachten ist, wenn Ihr Unterne
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
+source-git-commit: 48cde188fffd810f7bb292923fb0137fb476dcd4
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 18%
@@ -44,7 +44,7 @@ Ihr CJA-Administrator hat [Verbindungen](/help/connections/create-connection.md)
 
 Verschiedene Funktionen in CJA wurden im Vergleich zum herkömmlichen Adobe Analytics umbenannt und neu gestaltet, um sie an Branchenstandards anzupassen. Einige aktualisierte Begriffe umfassen Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Vertraute Konzepte wie eVars und Props existieren nicht mehr, zusammen mit den Einschränkungen, die sie auferlegten.
 
-### Keine eVars und Props mehr
+## Keine eVars und Props mehr
 
 [!UICONTROL eVars], [!UICONTROL Props] und [!UICONTROL Ereignisse] im herkömmlichen Sinne von Adobe Analytics existieren in [!UICONTROL Customer Journey Analytics] nicht mehr. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet.
 
@@ -52,7 +52,7 @@ Verschiedene Funktionen in CJA wurden im Vergleich zum herkömmlichen Adobe Anal
 
 * Machen Sie sich mit den vielen Möglichkeiten vertraut, die Sie
 
-### Segmente sind jetzt &quot;Filter&quot;
+## Segmente sind jetzt &quot;Filter&quot;
 
 [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein AEP-Schema. Das bedeutet, dass keines der vorhandenen Segmente mit [!UICONTROL Customer Journey Analytics]. Außerdem wurden &quot;Segmente&quot;in &quot;Filter&quot;umbenannt.
 
@@ -63,7 +63,7 @@ Derzeit können Sie keine Inhalte freigeben/veröffentlichen [!UICONTROL Filter]
 * Wenn Sie vorhandene Adobe Analytics-Segmente in Customer Journey Analytics verschieben möchten, zeigen Sie [dieses Video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=de).
 * Erstellen Sie andernfalls die Filter in Customer Journey Analytics neu.
 
-### Berechnete Metriken
+## Berechnete Metriken
 
 [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein AEP-Schema. Das bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics].
 
@@ -72,7 +72,7 @@ Derzeit können Sie keine Inhalte freigeben/veröffentlichen [!UICONTROL Filter]
 * Wenn Sie berechnete Adobe Analytics-Metriken in Customer Journey Analytics verschieben möchten, zeigen Sie [dieses Video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=de).
 * Andernfalls können Sie die berechneten Metriken in Customer Journey Analytics neu erstellen.
 
-### Virtual Report Suites sind jetzt &quot;Datenansichten&quot;.
+## Virtual Report Suites sind jetzt &quot;Datenansichten&quot;.
 
 Datenansichten nehmen das Konzept der Virtual Report Suites an, wie sie heute existieren, und erweitern es auf [zusätzliche Datenkontrollen aktivieren](/help/data-views/create-dataview.md) über Verbindungen zur Verfügung gestellt werden. Dadurch sind Zeitzonen- und Sitzungs-Timeout-Intervalle konfigurierbar. Sie können auch Attributions- und Ablaufeigenschaften für einzelne Dimensionen dynamisch anwenden. Beachten Sie, dass diese rückwirkend auf alle Daten angewendet werden.
 
@@ -84,26 +84,25 @@ Datenansichten nehmen das Konzept der Virtual Report Suites an, wie sie heute ex
 
 * Machen Sie sich mit den vielen [Anwendungsfälle für Datenansichten](/help/data-views/data-views-usecases.md).
 
-### Report Suite-übergreifende Daten
+## Report Suite-übergreifende Daten
 
 Vorhandene Implementierungen aus mehreren Datensätzen können in Experience Platform kombiniert werden. Die Verbindungen und Datenansichten, die auf diesen Datensätzen basieren, können Daten kombinieren, die zuvor in separaten Report Suites vorhanden waren.
 
 **Was Sie tun müssen**:
 
-
-### Sitzungs- und Variablenpersistenzeinstellungen
+## Sitzungs- und Variablenpersistenzeinstellungen
 
 [!UICONTROL Customer Journey Analytics] alle diese Einstellungen zur Berichtszeit anwenden, und diese Einstellungen sind jetzt live in [Datenansichten](help/data-views/component-settings/persistence.md). Änderungen an diesen Einstellungen sind jetzt rückwirkend. Sie können mehrere Versionen verwenden, indem Sie mehrere Datenansichten verwenden!
 
 **Was Sie tun müssen**:
 
 
-### Classifications sind jetzt &quot;Lookup-Datensätze&quot;
+## Classifications sind jetzt &quot;Lookup-Datensätze&quot;
 
-### Kundenattribute sind jetzt &quot;Profil-Datensätze&quot;.
+## Kundenattribute sind jetzt &quot;Profil-Datensätze&quot;.
 
 
-### Container wurden umbenannt in
+## Container wurden umbenannt in
 
 Sie legen einen Container für [jede von Ihnen erstellte Datenansicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
 * **Trefferbehälter sind jetzt &#39;Ereignis&#39;-Container**. Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Besucher innerhalb eines bestimmten Zeitraums.
@@ -115,6 +114,6 @@ Sie legen einen Container für [jede von Ihnen erstellte Datenansicht](https://e
 Sie haben die Möglichkeit, einen beliebigen Container umzubenennen, um ihn an die Anforderungen Ihres Unternehmens anzupassen.
 
 
-### `Uniques Exceeded`Einschränkungen
+## `Uniques Exceeded`Einschränkungen
 
 [!UICONTROL In Customer Journey Analytics] gibt es keine Beschränkungen hinsichtlich eindeutiger Werte, sodass Sie sie nicht beachten müssen.
