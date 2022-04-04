@@ -4,8 +4,8 @@ description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journe
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Sie können verschiedene Datenansichten für die gleiche Verbindung mit sehr unt
 
 Arbeitsbereich-Projekte in Customer Journey Analytics basieren auf Datenansichten.
 
-## Datenansichten – Funktionen
+## Datenansichten – Funktionen {#capabilities}
 
 Mit Datenansichten können Sie die Schema-Elementeinstellungen spontan ändern, ohne dass das Schema in Adobe Experience Platform geändert oder Ihre Customer Journey Analytics-Umgebung erneut implementiert werden muss.
 
@@ -52,12 +52,12 @@ Mit Datenansichten können Sie die Schema-Elementeinstellungen spontan ändern, 
 
 * Sie können **Ihre Container in einer Datenansicht umbenennen** und diese umbenannten Container in jedem Arbeitsbereich-Projekt platzieren, das auf dieser Datenansicht basiert.
 
-## Voraussetzungen für die Datenansicht
+## Voraussetzungen für die Datenansicht {#prerequisites}
 
 * Bevor Sie Datenansichten erstellen können, müssen Sie [eine oder mehrere Verbindungen zu Experience Platform-Datensätzen einrichten](/help/connections/create-connection.md).
 * Zum Erstellen oder Verwalten einer Datenansicht benötigen Sie einen [Berechtigungssatz in Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de#admin-access-permissions).
 
-## Einstellungen für die Datenansicht, die Sie in Arbeitsbereich überschreiben können
+## Einstellungen für die Datenansicht, die Sie in Arbeitsbereich überschreiben können {#settings-override}
 
 Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Projektebene überschrieben werden, andere nicht.
 
@@ -65,14 +65,14 @@ Einige Einstellungen für die Datenansicht können in Analysis Workspace auf Pro
 * Attribution von Metriken
 * Ob Benutzer den Zeileneintrag [!UICONTROL Kein Wert] in einem Bericht sehen
 
-## Einstellungen für die Datenansicht, die Sie in Arbeitsbereich nicht überschreiben können
+## Einstellungen für die Datenansicht, die Sie in Arbeitsbereich nicht überschreiben können {#settings-no-override}
 
 * [!UICONTROL Typ der Komponente]
 * Formatierung von Metriken
 * Name der Datenansicht
 * Zuweisung von Dimensionen
 
-## Löschen von Datenansichten
+## Löschen von Datenansichten {#delete}
 
 Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, wird eine Fehlermeldung angezeigt, die besagt, dass alle [!UICONTROL Arbeitsbereich]-Projekte, die von dieser gelöschten Datenansicht abhängig sind, nicht mehr funktionieren.
 

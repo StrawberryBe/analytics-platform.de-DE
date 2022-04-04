@@ -4,9 +4,9 @@ description: Was aus der Sicht eines Benutzers zu beachten ist, wenn Ihr Unterne
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 48cde188fffd810f7bb292923fb0137fb476dcd4
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1010'
 ht-degree: 18%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 18%
 >
 >Diese Seite befindet sich im Aufbau.
 
-Herzlichen Glückwunsch! Ihr Unternehmen beginnt mit der Beschäftigung von Customer Journey Analytics! Als Anwender, der mit Adobe Analytics vertraut ist, haben Sie bereits einen tollen Vorsprung. Beim Arbeiten mit Customer Journey Analytics werden Sie einige große Unterschiede und Ähnlichkeiten bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede. Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
+Ihr Unternehmen beginnt mit der Beschäftigung von Customer Journey Analytics. Als Anwender, der mit Adobe Analytics vertraut ist, haben Sie bereits einen tollen Vorsprung. Beim Arbeiten mit Customer Journey Analytics werden Sie einige große Unterschiede und Ähnlichkeiten bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede. Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
 
 ## Was sich nicht geändert hat
 
@@ -44,13 +44,25 @@ Ihr CJA-Administrator hat [Verbindungen](/help/connections/create-connection.md)
 
 Verschiedene Funktionen in CJA wurden im Vergleich zum herkömmlichen Adobe Analytics umbenannt und neu gestaltet, um sie an Branchenstandards anzupassen. Einige aktualisierte Begriffe umfassen Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Vertraute Konzepte wie eVars und Props existieren nicht mehr, zusammen mit den Einschränkungen, die sie auferlegten.
 
-## Keine eVars und Props mehr
+## (Virtual) Report Suites sind jetzt &quot;Datenansichten&quot;.
 
-[!UICONTROL eVars], [!UICONTROL Props] und [!UICONTROL Ereignisse] im herkömmlichen Sinne von Adobe Analytics existieren in [!UICONTROL Customer Journey Analytics] nicht mehr. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet.
+[!UICONTROL Datenansichten] Nehmen Sie das Konzept der Virtual Report Suites so auf, wie es heute existiert, und erweitern Sie es auf [zusätzliche Datenkontrollen aktivieren](/help/data-views/create-dataview.md) über Verbindungen zur Verfügung gestellt werden. Dadurch sind Zeitzonen- und Sitzungs-Timeout-Intervalle konfigurierbar. Sie können auch Attributions- und Ablaufeigenschaften für einzelne Dimensionen dynamisch anwenden. Beachten Sie, dass diese rückwirkend auf alle Daten angewendet werden.
 
 **Was Sie tun müssen**:
 
-* Machen Sie sich mit den vielen Möglichkeiten vertraut, die Sie
+* Beachten Sie, dass Sie in Workspace mit der Report Suite-Auswahl, die Sie jetzt verwenden, aus den Datenansichten wählen können, die Ihr Admin für Sie freigegeben hat:
+
+   ![data-view-selector](assets/data-views.png)
+
+* Machen Sie sich mit den vielen [Anwendungsfälle für Datenansichten](/help/data-views/data-views-usecases.md).
+
+## Keine eVars und Props mehr
+
+[!UICONTROL eVars], [!UICONTROL Props] und [!UICONTROL Ereignisse] im herkömmlichen Sinne von Adobe Analytics existieren in [!UICONTROL Customer Journey Analytics] nicht mehr. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet. Ihr CJA-Administrator hat Datenansichten erstellt.
+
+**Was Sie tun müssen**:
+
+* Machen Sie sich mit den vielen Möglichkeiten vertraut, mit denen diese Schemaelemente zum Drilldown in Ihre Daten verwendet werden können.
 
 ## Segmente sind jetzt &quot;Filter&quot;
 
@@ -72,17 +84,6 @@ Derzeit können Sie keine Inhalte freigeben/veröffentlichen [!UICONTROL Filter]
 * Wenn Sie berechnete Adobe Analytics-Metriken in Customer Journey Analytics verschieben möchten, zeigen Sie [dieses Video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=de).
 * Andernfalls können Sie die berechneten Metriken in Customer Journey Analytics neu erstellen.
 
-## Virtual Report Suites sind jetzt &quot;Datenansichten&quot;.
-
-Datenansichten nehmen das Konzept der Virtual Report Suites an, wie sie heute existieren, und erweitern es auf [zusätzliche Datenkontrollen aktivieren](/help/data-views/create-dataview.md) über Verbindungen zur Verfügung gestellt werden. Dadurch sind Zeitzonen- und Sitzungs-Timeout-Intervalle konfigurierbar. Sie können auch Attributions- und Ablaufeigenschaften für einzelne Dimensionen dynamisch anwenden. Beachten Sie, dass diese rückwirkend auf alle Daten angewendet werden.
-
-**Was Sie tun müssen**:
-
-* Beachten Sie, dass Sie in Workspace mit der Report Suite-Auswahl, die Sie jetzt verwenden, aus den Datenansichten wählen können, die Ihr Admin für Sie freigegeben hat:
-
-   ![data-view-selector](assets/data-views.png)
-
-* Machen Sie sich mit den vielen [Anwendungsfälle für Datenansichten](/help/data-views/data-views-usecases.md).
 
 ## Report Suite-übergreifende Daten
 
@@ -96,8 +97,9 @@ Vorhandene Implementierungen aus mehreren Datensätzen können in Experience Pla
 
 **Was Sie tun müssen**:
 
-
 ## Classifications sind jetzt &quot;Lookup-Datensätze&quot;
+
+
 
 ## Kundenattribute sind jetzt &quot;Profil-Datensätze&quot;.
 

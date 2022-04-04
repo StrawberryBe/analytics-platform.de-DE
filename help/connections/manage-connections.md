@@ -5,10 +5,10 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 5bee04bcb837552364f4852df09b1da2931f5dfe
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 100%
+source-wordcount: '1822'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,9 @@ Nachdem Benutzer mit Administratorenrechten [eine oder mehrere Verbindungen erst
 
 * Damit können Sie **alle Datendiskrepanzen identifizieren**, die aufgrund einer Fehlkonfiguration entstanden sind bzw. entstehen. Fehlen Zeilen? Wenn ja, welche Zeilen fehlen und warum? Haben Sie Verbindungen falsch konfiguriert und dadurch das Fehlen von Daten in Customer Journey Analytics verursacht?
 
->[!NOTE]
-> Diese Funktion ist ab dem 20. September 2021 allgemein verfügbar.
+Im Folgenden finden Sie ein Video zum neuen Connections Manager:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342097/?quality=12&learn=on)
 
 ## Verbindungs-Manager {#connections-manager}
 
