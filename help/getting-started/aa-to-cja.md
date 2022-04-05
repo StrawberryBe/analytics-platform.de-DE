@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 88%
+source-wordcount: '1316'
+ht-degree: 81%
 
 ---
 
@@ -36,9 +36,11 @@ In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeil
 
 Die einfachste Methode zur Umwandlung von Adobe Analytics-Daten in Customer Journey Analytics-Daten besteht darin, eine [globale Report Suite](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=de) in die Experience Platform mit [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). Dieser Connector ordnet Ihre Adobe Analytics-Variablen direkt einem XDM-Schema und -Datensatz in Experience Platform zu, die wiederum problemlos mit Customer Journey Analytics verbunden werden können.
 
-Eine vollständige globale Report Suite ist nicht in jedem Fall für eine Implementierung möglich. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu importieren, müssen Sie die Variablen in diesen Report Suites vorab angleichen.
+Eine vollständige globale Report Suite ist nicht in jedem Fall für eine Implementierung möglich. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu integrieren, haben Sie zwei Möglichkeiten:
 
-Beispielsweise kann eVar1 in Report Suite 1 auf [!UICONTROL Seite] verweisen. In Report Suite 2 kann eVar 1 auf [!UICONTROL Interne Kampagne] verweisen. Wenn diese Variablen in Customer Journey Analytics importiert werden, werden sie in einer gemeinsamen eVar1-Dimension vermischt, was zu möglicherweise verwirrenden und ungenauen Berichten führt.
+* Planen Sie im Voraus, Variablen über diese Report Suites hinweg in Einklang zu bringen. Beispielsweise kann eVar1 in Report Suite 1 auf [!UICONTROL Seite] verweisen. In Report Suite 2 kann eVar 1 auf [!UICONTROL Interne Kampagne] verweisen. Wenn diese Variablen in Customer Journey Analytics importiert werden, werden sie in einer gemeinsamen eVar1-Dimension vermischt, was zu möglicherweise verwirrenden und ungenauen Berichten führt.
+
+* Verwenden Sie die [Datumsvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html) Funktion zum Zuordnen von Variablen. Es wird zwar einfacher, alle Report Suites dasselbe gemeinsame Variablendesign zu verwenden, es ist jedoch nicht erforderlich, wenn Sie die neue Experience Platform verwenden [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en#mapping) Funktion. Damit können Sie auf eine Variable anhand ihres zugeordneten Werts verweisen, der sich auf der Ebene des Datastreams (oder der Eigenschaft) befindet.
 
 Wenn Sie den Wechsel zu einer globalen Report Suite aufgrund von Problemen mit [!UICONTROL Eindeutige Werte überschritten] oder [!UICONTROL Geringer Traffic] vermieden haben, beachten Sie, dass es in CJA keine [Kardinalitätsbeschränkungen für eine Dimension](/help/components/dimensions/high-cardinality.md) gibt. Dadurch können alle eindeutigen Werte angezeigt und gezählt werden.
 
