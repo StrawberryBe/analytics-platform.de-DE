@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 171b174624dbb48873024368884992766dcd0922
+source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 18%
 
 ---
@@ -30,7 +30,7 @@ In Bezug auf die Berichterstellung **Unterschiede** ist, dass Sie Zugriff auf vi
 
 ![Mehrkanal-Visualisierungen](assets/cross-channel.png)
 
-## Neue Architektur
+## Neue Architektur {#architecture}
 
 Customer Journey Analytics erhält seine Daten von Adobe Experience Platform. Mit Experience Platform können Sie Kundendaten und -inhalte aus beliebigen Systemen oder Kanälen zentralisieren und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern.
 
@@ -38,11 +38,11 @@ Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema
 
 Ihr CJA-Administrator hat [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Platform. Sie haben dann [Datenansichten](/help/data-views/data-views.md) innerhalb dieser Verbindungen. Stellen Sie sich Datenansichten ähnlich wie Virtual Report Suites vor. Datenansichten sind die Grundlage für die Berichterstellung in Customer Journey Analytics. Das Konzept einer Report Suite existiert nicht mehr.
 
-## Report Suites
+## Report Suites {#report-suites}
 
 Ihre Report Suite-Daten können über den Adobe Analytics Source Connector oder das Web SDK in Experience Platform gebracht werden, insbesondere wenn Ihr Unternehmen noch auf der Adobe Analytics-Plattform ist und CJA/AEP hinzugefügt wird. In der Regel werden Datensätze, die Report Suite-spezifisch sind, mithilfe des Analytics-Schemas Quelldatensätze verwendet.
 
-## (Virtual) Report Suites sind jetzt &quot;Datenansichten&quot;.
+## (Virtual) Report Suites sind jetzt &quot;Datenansichten&quot;. {#data-views}
 
 [!UICONTROL Datenansichten] Nehmen Sie das Konzept der Virtual Report Suites so auf, wie es heute existiert, und erweitern Sie es auf [zusätzliche Datenkontrollen aktivieren](/help/data-views/create-dataview.md) über Verbindungen zur Verfügung gestellt werden. Dadurch sind Zeitzonen- und Sitzungs-Timeout-Intervalle konfigurierbar. Sie können auch Attributions- und Ablaufeigenschaften für einzelne Dimensionen dynamisch anwenden. Beachten Sie, dass diese rückwirkend auf alle Daten angewendet werden.
 
@@ -54,7 +54,7 @@ Ihre Report Suite-Daten können über den Adobe Analytics Source Connector oder 
 
 * Machen Sie sich mit den vielen [Anwendungsfälle für Datenansichten](/help/data-views/data-views-usecases.md).
 
-## Keine eVars und Props mehr
+## eVars und Props
 
 [!UICONTROL eVars], [!UICONTROL Props] und [!UICONTROL Ereignisse] im herkömmlichen Sinne von Adobe Analytics existieren in [!UICONTROL Customer Journey Analytics] nicht mehr. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet. Ihr CJA-Administrator hat Datenansichten erstellt.
 
