@@ -4,10 +4,10 @@ description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1154'
-ht-degree: 100%
+source-git-commit: 16ebf5672099b0cd0c5e4dafd577f175370fa9b5
+workflow-type: tm+mt
+source-wordcount: '1196'
+ht-degree: 96%
 
 ---
 
@@ -43,6 +43,8 @@ Bevor Sie die kanalübergreifende Analyse verwenden, sollten Sie sicherstellen, 
 >[!IMPORTANT]
 >
 >Beachten Sie, dass Änderungen am Datensatzschema des globalen Ereignisses auch im neuen Schema des zugeordneten Datensatzes angewendet werden müssen. Andernfalls wird der zugeordnete Datensatz beschädigt.
+>
+>Wenn Sie den Quelldatensatz entfernen, stoppt der zugeordnete Datensatz die Verarbeitung und wird vom System entfernt.
 
 Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, deren Verwendung jedoch gewissen Einschränkungen unterliegt.
 
@@ -56,6 +58,7 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 * Das Feld für die vorübergehende ID sollte nur einen ID-Typ enthalten (also IDs aus einem einzigen Namespace). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
 * Wenn mehrere Ereignis mit demselben Zeitstempel für dieselbe permanente ID auftreten, jedoch unterschiedliche Werte im Feld für die vorübergehende ID vorliegen, wird die feldbasierte Zuordnung auf Grundlage der alphabetischen Reihenfolge gewählt. Wenn also eine permanente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignis „Bob“ und das andere „Ann“ angibt, wählt die feldbasierte Zuordnung „Ann“.
 * In Analytics werden alle beständigen ID-Werte für einen Zeitraum von 1 Jahr verfolgt (TTL = 1 Jahr). Wenn ein Gerät länger als ein Jahr keine Aktivität aufweist und danach erneut Aktivität verzeichnet, werden die neuen Ereignisse mit einer anonymen Person verknüpft, bis der Benutzer wieder identifiziert wird (z. B. über eine erneute Anmeldung).
+* Wenn ein Gerät von mehreren Personen gemeinsam genutzt wird und die Gesamtzahl der Übergänge zwischen Benutzern 50.000 überschreitet, stoppt die kanalübergreifende Analyse die Zuordnung von Daten für dieses Gerät.
 
 
 ## Aktivieren der kanalübergreifenden Analyse
