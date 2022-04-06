@@ -5,20 +5,18 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
+source-git-commit: 171b174624dbb48873024368884992766dcd0922
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1053'
 ht-degree: 18%
 
 ---
 
 # CJA-Benutzerhandbuch für Adobe Analytics-Benutzer
 
->[!NOTE]
->
->Diese Seite befindet sich im Aufbau.
+Ihr Unternehmen beginnt, Customer Journey Analytics einzusetzen. Als Anwender, der mit Adobe Analytics vertraut ist, haben Sie bereits einen tollen Vorsprung. Beim Arbeiten mit Customer Journey Analytics werden Sie einige Ähnlichkeiten und einige große Unterschiede bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede. Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
 
-Ihr Unternehmen beginnt, Customer Journey Analytics einzusetzen. Als Anwender, der mit Adobe Analytics vertraut ist, haben Sie bereits einen tollen Vorsprung. Beim Arbeiten mit Customer Journey Analytics werden Sie einige große Unterschiede und Ähnlichkeiten bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede. Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
+Verschiedene Funktionen in CJA wurden im Vergleich zum herkömmlichen Adobe Analytics umbenannt und neu gestaltet, um sie an Branchenstandards anzupassen. Einige aktualisierte Begriffe umfassen Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Vertraute Konzepte wie eVars und Props existieren nicht mehr, zusammen mit den Einschränkungen, die sie auferlegten.
 
 ## Was sich nicht geändert hat
 
@@ -40,9 +38,9 @@ Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema
 
 Ihr CJA-Administrator hat [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Platform. Sie haben dann [Datenansichten](/help/data-views/data-views.md) innerhalb dieser Verbindungen. Stellen Sie sich Datenansichten ähnlich wie Virtual Report Suites vor. Datenansichten sind die Grundlage für die Berichterstellung in Customer Journey Analytics. Das Konzept einer Report Suite existiert nicht mehr.
 
-## Neue Konzepte und Terminologie
+## Report Suites
 
-Verschiedene Funktionen in CJA wurden im Vergleich zum herkömmlichen Adobe Analytics umbenannt und neu gestaltet, um sie an Branchenstandards anzupassen. Einige aktualisierte Begriffe umfassen Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Vertraute Konzepte wie eVars und Props existieren nicht mehr, zusammen mit den Einschränkungen, die sie auferlegten.
+Ihre Report Suite-Daten können über den Adobe Analytics Source Connector oder das Web SDK in Experience Platform gebracht werden, insbesondere wenn Ihr Unternehmen noch auf der Adobe Analytics-Plattform ist und CJA/AEP hinzugefügt wird. In der Regel werden Datensätze, die Report Suite-spezifisch sind, mithilfe des Analytics-Schemas Quelldatensätze verwendet.
 
 ## (Virtual) Report Suites sind jetzt &quot;Datenansichten&quot;.
 
@@ -50,7 +48,7 @@ Verschiedene Funktionen in CJA wurden im Vergleich zum herkömmlichen Adobe Anal
 
 **Was Sie tun müssen**:
 
-* Beachten Sie, dass Sie in Workspace mit der Report Suite-Auswahl, die Sie jetzt verwenden, aus den Datenansichten wählen können, die Ihr Admin für Sie freigegeben hat:
+* Beachten Sie, dass Sie in Workspace mit der Report Suite-Auswahl, die Sie jetzt verwenden, aus den Datenansichten wählen können, die Ihr Administrator für Sie freigegeben hat:
 
    ![data-view-selector](assets/data-views.png)
 
