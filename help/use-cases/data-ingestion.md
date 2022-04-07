@@ -4,7 +4,7 @@ description: Hier erhalten Sie Informationen über die unterschiedlichen Arten d
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 06ef2da0f66b1f8fa1597a618d64974cb6c320ce
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 89%
@@ -19,7 +19,7 @@ Sie haben eine Reihe von Möglichkeiten, Daten in Customer Journey Analytics auf
 
 Dieser Workflow nutzt den Adobe Analytics Data Connector und variiert je nachdem, ob Sie DTM oder Launch als Tag-Manager verwenden.
 
-### Über Tags in Adobe Experience Platform (früher Launch genannt)
+### Über -Tags in Adobe Experience Platform (früher [!UICONTROL Launch])
 
 1. [Erstellen Sie eine Datenschicht](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=de), wenn Sie das noch nicht getan haben. Eine Datenschicht ist ein Framework von JavaScript-Objekten auf Ihrer Website, die alle in Ihrer Implementierung verwendeten Variablenwerte enthalten. Sie ermöglicht eine bessere Kontrolle und einfachere Wartung Ihrer Implementierung.
 1. Verwendung [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=de) , um Code für die Datenerfassung auf Ihrer Site zu implementieren, falls noch nicht geschehen. Mit dieser Tag-Management-Lösung können Sie Analytics-Code zusammen mit anderen Tagging-Anforderungen bereitstellen. Tags bieten Integrationen mit anderen Lösungen und Produkten und ermöglichen die Bereitstellung von benutzerdefiniertem Code. Alle diese Aufgaben können ausgeführt werden, ohne dass Entwicklerteams in Ihrer Organisation Code auf Ihrer Website aktualisieren müssen.
