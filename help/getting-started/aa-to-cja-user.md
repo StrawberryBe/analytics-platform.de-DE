@@ -5,127 +5,105 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
+source-git-commit: 30e02f8865daea5d0f6a669f84714abec25ecd76
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 21%
+source-wordcount: '1285'
+ht-degree: 8%
 
 ---
 
 # CJA-Benutzerhandbuch für Adobe Analytics-Benutzer
 
-Ihr Unternehmen beginnt, Customer Journey Analytics einzusetzen. Als Anwender, der mit Adobe Analytics vertraut ist, haben Sie bereits einen tollen Vorsprung. Beim Arbeiten mit Customer Journey Analytics werden Sie einige Ähnlichkeiten und einige große Unterschiede bemerken. Auf dieser Seite werden die Dinge erläutert, die sich nicht geändert haben, sowie einige der wichtigsten Unterschiede. Wir erklären Ihnen auch, wie Sie weitere Informationen zu neuen Konzepten erhalten und weitere Schritte unternehmen können, um IHRE Journey zu vereinfachen und erfolgreicher zu gestalten.
+Wenn Ihr Unternehmen beginnt, Customer Journey Analytics zu verwenden, werden Sie möglicherweise einige Ähnlichkeiten und Unterschiede zwischen herkömmlichem Analytics und CJA feststellen. Auf dieser Seite werden diese Unterschiede erläutert, um Ihr Unternehmen bei der Implementierung und dem Reporting-Workflow zu unterstützen. Auf dieser Seite finden Sie außerdem zusätzliche Ressourcen zu neuen Konzepten und weiteren Schritten, um Ihre Journey als Analytiker einfacher und erfolgreicher zu machen.
 
-Verschiedene Funktionen in CJA wurden im Vergleich zum herkömmlichen Adobe Analytics umbenannt und neu gestaltet, um sie an Branchenstandards anzupassen. Einige aktualisierte Begriffe umfassen Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Vertraute Konzepte wie eVars und Props existieren nicht mehr, zusammen mit den Einschränkungen, die sie auferlegten.
+Einige Funktionen in CJA werden umbenannt und entsprechend den Branchenstandards neu gestaltet. Einige aktualisierte Begriffe umfassen Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Die Einschränkungen von eVars und Props existieren nicht mehr zugunsten flexibler benutzerdefinierter Dimensionen und Metriken.
 
 ## Was sich nicht geändert hat
 
 Vieles, was Sie auf der Berichtsseite kennen, hat sich nicht geändert.
 
 * Sie können weiterhin die [Analysis Workspace](/help/analysis-workspace/home.md) um Ihre Daten zu analysieren. Workspace funktioniert genauso wie im herkömmlichen Adobe Analytics.
-* Sie haben auch dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) zur Verfügung. Dashboards (auch Mobile App genannt) funktionieren genauso wie herkömmliche Adobe Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) hat eine neue Schnittstelle und läuft jetzt auf PCs, Macs und der Web-Version von Excel.
+* Dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) ist verfügbar und funktioniert ähnlich zwischen CJA und herkömmlichem Analytics.
+* [Report Builder](/help/report-builder/report-buider-overview.md) hat eine neue Schnittstelle und läuft auf PC, Mac und der Web-Version von Excel.
 
-In Bezug auf die Berichterstellung **Unterschiede** ist, dass Sie Zugriff auf viel mehr kanalübergreifende Daten haben, die analysiert werden können. Im Folgenden finden Sie ein Beispiel für einige Visualisierungen, die kanalübergreifende Datenquellen enthalten:
+## Berichtsänderungen
+
+Sie haben Zugriff auf viel mehr kanalübergreifende Daten, die Sie analysieren können. Sie können beispielsweise ein Workspace-Projekt erstellen, das die Leistung mehrerer Kanäle analysiert
 
 ![Mehrkanal-Visualisierungen](assets/cross-channel.png)
 
-## Neue Architektur {#architecture}
+## Änderungen an der Datenarchitektur {#architecture}
 
 Customer Journey Analytics erhält seine Daten von Adobe Experience Platform. Mit Experience Platform können Sie Kundendaten und -inhalte aus beliebigen Systemen oder Kanälen zentralisieren und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern.
 
 Kundendaten in Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
-Ihr CJA-Administrator hat [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Platform. Sie haben dann [Datenansichten](/help/data-views/data-views.md) innerhalb dieser Verbindungen. Stellen Sie sich Datenansichten ähnlich wie Virtual Report Suites vor. Datenansichten sind die Grundlage für die Berichterstellung in Customer Journey Analytics. Das Konzept einer Report Suite existiert nicht mehr.
+Ihr CJA-Administrator richtet [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Platform. Anschließend erstellen sie [Datenansichten](/help/data-views/data-views.md) diese Verbindungen verwenden. Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in Customer Journey Analytics. Da Platform alle Daten für die Berichterstellung bereitstellt, sind Report Suites nicht mehr als Datencontainer vorhanden.
 
-## Verbindungen
+Mit einer Verbindung kann Ihr Analytics-Administrator Datensätze aus integrieren. [!DNL Adobe Experience Platform] in [!UICONTROL Customer Journey Analytics], im folgenden Video enthalten:
 
-Mit einer Verbindung kann Ihr Analytics-Administrator Datensätze aus integrieren. [!DNL Adobe Experience Platform] in [!UICONTROL Arbeitsbereich]. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Arbeitsbereich] herstellen.
+>[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Im Folgenden finden Sie eine Videoübersicht:
+Adobe bietet mehrere Möglichkeiten, Daten in Adobe Experience Platform zu importieren, einschließlich Report Suite-Daten über den Adobe Analytics Source Connector oder das Web SDK. Vorhandene Implementierungen aus mehreren Report Suites können in Platform kombiniert werden. Die Verbindungen und Datenansichten, die auf diesen Datensätzen basieren, können Daten kombinieren, die zuvor in separaten Report Suites vorhanden waren.
 
->[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12&learn=on)
+## Änderungen am Konzept von Virtual Report Suites {#data-views}
 
-## Report Suites {#report-suites}
+[!UICONTROL Datenansichten] Nehmen Sie das Konzept der Virtual Report Suites so auf, wie es heute existiert, und erweitern Sie es auf [zusätzliche Datenkontrollen aktivieren](/help/data-views/create-dataview.md) über Verbindungen zur Verfügung gestellt werden. Diese Änderungen machen allgemeine Einstellungen wie Zeitzonen- und Sitzungs-Timeout-Intervalle konfigurierbar und rückwirkend. Individuelle Variableneinstellungen wie Attribution und Ablauf können auch auf Berichts- oder Datenansichtsebene angepasst werden. Diese Einstellungen sind auch zerstörungsfrei und rückwirkend.
 
-Ihre Report Suite-Daten können über den Adobe Analytics Source Connector oder das Web SDK in Experience Platform gebracht werden, wenn Ihr Unternehmen noch auf der Adobe Analytics-Plattform ist und CJA/AEP hinzugefügt wird. In der Regel werden Datensätze, die Report Suite-spezifisch sind, mithilfe des Analytics-Schemas Quelldatensätze verwendet.
+Beachten Sie, dass Sie mit der Report Suite-Auswahl oben rechts jetzt aus den verfügbaren Datenansichten wählen können:
 
-Report Suites sind jedoch nicht mehr die Grundlage für die Berichterstellung in CJA - [Datenansichten](/help/data-views/data-views.md) sind. Weitere Informationen zu Datenansichten finden Sie im folgenden Abschnitt.
+![data-view-selector](assets/data-views.png)
 
-Vorhandene Implementierungen aus mehreren Datensätzen können in Experience Platform kombiniert werden. Die Verbindungen und Datenansichten, die auf diesen Datensätzen basieren, können Daten kombinieren, die zuvor in separaten Report Suites vorhanden waren.
+Siehe [Anwendungsbeispiele für Datenansichten](/help/data-views/data-views-usecases.md) für weitere Informationen zu diesem Konzept.
 
-## (Virtual) Report Suites sind jetzt &quot;Datenansichten&quot;. {#data-views}
+## Änderungen am Konzept von eVars und Props
 
-[!UICONTROL Datenansichten] Nehmen Sie das Konzept der Virtual Report Suites so auf, wie es heute existiert, und erweitern Sie es auf [zusätzliche Datenkontrollen aktivieren](/help/data-views/create-dataview.md) über Verbindungen zur Verfügung gestellt werden. Dadurch sind Zeitzonen- und Sitzungs-Timeout-Intervalle konfigurierbar. Sie können auch Attributions- und Ablaufeigenschaften für einzelne Dimensionen dynamisch anwenden. Beachten Sie, dass diese rückwirkend auf alle Daten angewendet werden.
+[!UICONTROL eVars], [!UICONTROL props]und [!UICONTROL events] im herkömmlichen Adobe Analytics nicht mehr in [!UICONTROL Customer Journey Analytics]. Es sind unbegrenzte Schemaelemente verfügbar, einschließlich Dimensionen, Metriken und Listenfeldern. Alle Attributionseinstellungen, die zuvor während des Datenerfassungsprozesses angewendet wurden, gelten jetzt zur Abfragezeit.
 
-**Was Sie tun müssen**:
+## Änderungen am Konzept von Segmenten
 
-* Beachten Sie, dass Sie in Workspace mit der Report Suite-Auswahl, die Sie jetzt verwenden, aus den Datenansichten wählen können, die Ihr Administrator für Sie freigegeben hat:
+Adobe hat die Komponente &quot;Segmente&quot;in &quot;Filter&quot;umbenannt, um sie besser an Branchenstandards anzupassen und Segmenten in Adobe Experience Platform besser zu unterscheiden.\
 
-   ![data-view-selector](assets/data-views.png)
+[!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein Platform-Schemaelement. Diese Änderung bedeutet, dass keines der vorhandenen Segmente mit [!UICONTROL Customer Journey Analytics]. Wenn Sie vorhandene Adobe Analytics-Segmente in Customer Journey Analytics verschieben möchten, sehen Sie sich das folgende Video an:
 
-* Machen Sie sich mit den vielen [Anwendungsfälle für Datenansichten](/help/data-views/data-views-usecases.md).
+>[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
-## eVars und Props
+Sie können zwar noch keine Freigabe oder Veröffentlichung vornehmen [!UICONTROL Filter] ([!UICONTROL Segmente]) von [!DNL Customer Journey Analytics] zur Experience Platform von Unified Profile, diese Funktion wird derzeit entwickelt.
 
-[!UICONTROL eVars], [!UICONTROL Props] und [!UICONTROL Ereignisse] im herkömmlichen Sinne von Adobe Analytics existieren in [!UICONTROL Customer Journey Analytics] nicht mehr. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet.
-
-**Was Sie tun müssen**:
-
-* Machen Sie sich mit den vielen Möglichkeiten vertraut, mit denen diese Schemaelemente zum Drilldown in Ihre Daten verwendet werden können.
-
-## Segmente sind jetzt &quot;Filter&quot;
-
-[!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein AEP-Schema. Das bedeutet, dass keines der vorhandenen Segmente mit [!UICONTROL Customer Journey Analytics]. Außerdem wurden &quot;Segmente&quot;in &quot;Filter&quot;umbenannt.
-
-Derzeit können Sie keine Inhalte freigeben/veröffentlichen [!UICONTROL Filter] ([!UICONTROL Segmente]) von [!DNL Customer Journey Analytics] zur Experience Platform von Unified Profile oder anderen Experience Cloud-Anwendungen. Diese Funktion wird derzeit entwickelt.
-
-**Was Sie tun müssen**:
-
-* Wenn Sie vorhandene Adobe Analytics-Segmente in Customer Journey Analytics verschieben möchten, zeigen Sie [dieses Video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=de).
-* Erstellen Sie andernfalls die Filter in Customer Journey Analytics neu.
-
-## Berechnete Metriken
-
-[!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein AEP-Schema. Das bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics].
-
-**Was Sie tun müssen**:
-
-* Wenn Sie berechnete Adobe Analytics-Metriken in Customer Journey Analytics verschieben möchten, zeigen Sie [dieses Video](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=de).
-* Andernfalls können Sie die berechneten Metriken in Customer Journey Analytics neu erstellen.
-
-## Sitzungs- und Variablenpersistenzeinstellungen
-
-[!UICONTROL Customer Journey Analytics] alle diese Einstellungen zur Berichtszeit anwenden, und diese Einstellungen sind jetzt live in [Datenansichten](/help/data-views/component-settings/persistence.md). Änderungen an diesen Einstellungen sind jetzt rückwirkend. Sie können mehrere Versionen verwenden, indem Sie mehrere Datenansichten verwenden!
-
-## Classifications sind jetzt &quot;Lookup-Datensätze&quot;
-
-Lookup-Datensätze werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. Siehe [diesen Verwendungsfall](/help/use-cases/b2b.md) für ein Beispiel.
-
-## Kundenattribute sind jetzt &quot;Profil-Datensätze&quot;.
-
-Profildatensätze enthalten Daten, die auf Ihre Besucher, Benutzer oder Kunden im [!UICONTROL Ereignis] Daten. So können Sie beispielsweise CRM-Daten zu Ihren Kunden hochladen. Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jeden in [!DNL Experience Platform] definierten Datensatz ist ein eigener Satz von einer oder mehreren definierten Personen-IDs definiert, z. B. Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.
-
-## Identitäten
-
-CJA erweitert die Identitätskonzepte über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Verwenden einer gemeinsamen Namespace-ID für mehrere Datensätze oder Verwenden von [Kanalübergreifende Analyse](/help/connections/cca/overview.md) hilft, Personen über verschiedene Datensätze hinweg miteinander zu verknüpfen. Benutzer, die ein Workspace-Projekt in CJA einrichten, müssen die in den Datensätzen verwendeten IDs verstehen.
-
-Im Folgenden finden Sie ein Video, in dem die Verwendung von Identitäten in Customer Journey Analytics hervorgehoben wird:
-
->[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
-
-## Container wurden umbenannt in
-
-Sie legen einen Container für [jede von Ihnen erstellte Datenansicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#containers).
+Neben dem Konzept der sich ändernden Segmente werden auch Segmentcontainer aktualisiert.
 
 * **Trefferbehälter sind jetzt &#39;Ereignis&#39;-Container**. Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Besucher innerhalb eines bestimmten Zeitraums.
 * **Besuchebehälter sind jetzt Sitzungs-Container**. Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden.
 * **Besuchercontainer sind jetzt [!UICONTROL Person] container**. Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Besucher innerhalb eines bestimmten Zeitraums.
 
-**Was Sie tun müssen**:
+## Änderungen am Konzept berechneter Metriken
 
-Sie haben die Möglichkeit, einen beliebigen Container umzubenennen, um ihn an die Anforderungen Ihres Unternehmens anzupassen.
+Berechnete Metriken werden auf ähnliche Weise zwischen herkömmlichem Analytics und CJA benannt. Allerdings [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr und verwendet stattdessen ein Platform-Schemaelement. Diese grundlegende Änderung bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics]. Wenn Sie berechnete Adobe Analytics-Metriken in Customer Journey Analytics verschieben möchten, sehen Sie sich das folgende Video an:
 
-## `Uniques Exceeded`Einschränkungen
+>[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
-[!UICONTROL In Customer Journey Analytics] gibt es keine Beschränkungen hinsichtlich eindeutiger Werte, sodass Sie sie nicht beachten müssen.
+## Änderungen an den Einstellungen für die Variablenzuordnung und -gültigkeit
+
+[!UICONTROL Customer Journey Analytics] wendet alle Variableneinstellungen, einschließlich Attribution und Gültigkeit, zum Zeitpunkt des Berichts an. Diese Einstellungen befinden sich jetzt in [Datenansichten](/help/data-views/component-settings/persistence.md)und einige Variableneinstellungen (wie Attribution) können in Workspace-Projekten geändert werden.
+
+Sie können mehrere Versionen derselben Variablen in derselben Datenansicht haben. Sie können beispielsweise eine Dimension &quot;Trackingcode&quot;verwenden, die nach 30 Tagen abläuft, eine andere Dimension, die am Ende einer Sitzung abläuft. Beide Dimensionen des Trackingcodes verwenden dieselben Quelldaten, verwenden jedoch unterschiedliche Attributionseinstellungen.
+
+Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basieren. Beispielsweise können Sie eine Datenansicht mit einem Sitzungs-Timeout von 30 Minuten und eine andere mit einem Sitzungs-Timeout von 15 Minuten haben. Beide Datenansichten werden in der oberen rechten Auswahl angezeigt, sodass Sie nahtlos zwischen ihnen wechseln können.
+
+## Änderungen am Konzept der Klassifizierungen
+
+&quot;Classifications&quot;werden jetzt als &quot;Lookup-Datensätze&quot;bezeichnet. Lookup-Datensätze werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. Siehe [Hinzufügen von Daten auf Kontoebene als Lookup-Datensatz](/help/use-cases/b2b.md) für einen Anwendungsfall.
+
+## Änderungen am Konzept der Kundenattribute
+
+&quot;Kundenattribute&quot;werden jetzt als &quot;Profildatensätze&quot;bezeichnet. Profildatensätze enthalten Daten, die auf Ihre Besucher, Benutzer oder Kunden im [!UICONTROL Ereignis] Daten. So können Sie beispielsweise CRM-Daten zu Ihren Kunden hochladen. Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Jeder Datensatz, der in [!DNL Experience Platform] verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs.
+
+## Änderungen bei der Besucheridentifizierung durch die Adobe
+
+CJA erweitert die Identitätskonzepte über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Verwenden einer gemeinsamen Namespace-ID für mehrere Datensätze oder Verwenden von [Kanalübergreifende Analyse](/help/connections/cca/overview.md) hilft, Personen über verschiedene Datensätze hinweg miteinander zu verknüpfen. Benutzer, die ein Workspace-Projekt in CJA einrichten, müssen die in den Datensätzen verwendeten IDs verstehen. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in Customer Journey Analytics hervorgehoben wird:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
+
+## Änderungen am Konzept des Dimensionselements &quot;Geringer Datenverkehr&quot;
+
+Im herkömmlichen Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter `Low-Traffic`. Customer Journey Analytics hat viele Einschränkungen für Felder mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur kann Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellen. Siehe [Long Tail](../analysis-workspace/workspace-faq/long-tail.md) Weitere Informationen dazu, wie CJA die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert.
