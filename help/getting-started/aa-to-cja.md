@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 59355c37d7bae28c1de52cd12ae63c37cdd09eb6
+source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 81%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -112,6 +112,8 @@ Hier sind einige Videos, die Ihnen dabei helfen:
 * Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics definiert haben, haben Sie ähnliche [benutzerdefinierte Kalenderfunktionen](/help/components/date-ranges/custom-date-ranges.md) innerhalb von CJA. Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
 
 * In Customer Journey Analytics können Sie eine benutzerdefinierte maximale Wartezeit für Besuche/Sitzungen definieren sowie eine Metrik festlegen, durch die eine neue Sitzung gestartet wird. Sie können Datenansichten mit verschiedenen Sitzungsdefinitionen erstellen, um Einblicke zu erhalten, die weit darüber hinausgehen, was in Adobe Analytics möglich war. Diese Funktion kann besonders für Datensätze im Mobile-Bereich von Nutzen sein.
+
+* Erwägen Sie die Bereitstellung eines Datenwörterbuchs für Ihre Benutzer - oder erweitern Sie das SDR, um den Feldnamen für Experience Platformen für Schemaelemente einzuschließen.
 
 ## Nächste Schritte
 
