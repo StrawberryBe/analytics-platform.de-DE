@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
+source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1398'
+ht-degree: 6%
 
 ---
 
@@ -60,6 +60,8 @@ Siehe [Anwendungsbeispiele für Datenansichten](/help/data-views/data-views-usec
 
 Die Konzepte von [!UICONTROL eVars], [!UICONTROL props]und [!UICONTROL events] im herkömmlichen Adobe Analytics nicht mehr in [!UICONTROL Customer Journey Analytics]. Es sind unbegrenzte Schemaelemente verfügbar, einschließlich Dimensionen, Metriken und Listenfeldern. Diese werden unbegrenzten Schemaelementen wie Dimensionen, Metriken und Listenfeldern in der Experience Platform zugeordnet. Alle Besuchs- und Attributionseinstellungen, die nach den Verarbeitungsregeln in Adobe Analytics angewendet werden, gelten jetzt zur Abfragezeit in Customer Journey Analytics.
 
+Mit dieser Flexibilität können Sie in Situationen geraten, in denen ein einzelnes Schemafeld sowohl als Dimension als auch als Metrik verwendet werden kann, um unterschiedliche Tracking-Anforderungen zu unterstützen.
+
 ## Änderungen am Segmentkonzept
 
 Adobe hat die Komponente &quot;Segmente&quot;in &quot;Filter&quot;umbenannt, um sie besser an Branchenstandards anzupassen und Segmenten in Adobe Experience Platform besser zu unterscheiden.
@@ -100,10 +102,10 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 
-CJA erweitert die Identitätskonzepte über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Verwenden einer gemeinsamen Namespace-ID für mehrere Datensätze oder Verwenden von [Kanalübergreifende Analyse](/help/connections/cca/overview.md) hilft, Personen über verschiedene Datensätze hinweg miteinander zu verknüpfen. Benutzer, die ein Workspace-Projekt in CJA einrichten, müssen die in den Datensätzen verwendeten IDs verstehen. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in Customer Journey Analytics hervorgehoben wird:
+CJA erweitert die Identitätskonzepte über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Verwenden einer gemeinsamen Namespace-ID für mehrere Datensätze oder Verwenden von [Kanalübergreifende Analyse](/help/connections/cca/overview.md) hilft, Personen über verschiedene Datensätze hinweg miteinander zu verknüpfen. Benutzer, die ein Workspace-Projekt in CJA einrichten, müssen die in den Datensätzen verwendeten IDs verstehen. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in CJA hervorgehoben wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Änderungen am Konzept des Dimensionselements &quot;Geringer Datenverkehr&quot;
 
-Im herkömmlichen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Geringer Traffic]. CJA hat viele Einschränkungen für Felder mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur kann Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellen. Siehe [Long Tail](../analysis-workspace/workspace-faq/long-tail.md) Weitere Informationen dazu, wie CJA die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert.
+Im herkömmlichen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Geringer Traffic]. CJA hat weniger Einschränkungen für Felder mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur kann Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellen. Siehe [Long Tail](../analysis-workspace/workspace-faq/long-tail.md) Weitere Informationen dazu, wie CJA die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert.
