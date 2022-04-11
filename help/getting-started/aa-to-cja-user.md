@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
+source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1460'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ Sie haben Zugriff auf viel mehr kanalübergreifende Daten, die Sie analysieren k
 
 CJA erhält seine Daten von Adobe Experience Platform. Mit Experience Platform können Sie Kundendaten und -inhalte aus beliebigen Systemen oder Kanälen zentralisieren und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern.
 
-Kundendaten in der Experience Platform werden als Datensätze gespeichert, die aus einem Schema und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Kundendaten in der Experience Platform werden als Datensätze gespeichert, die aus einer [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=de) und Datenstapeln. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
 Ihr CJA-Administrator richtet [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Experience Platform. Anschließend erstellen sie [Datenansichten](/help/data-views/data-views.md) diese Verbindungen verwenden. Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in CJA. Da Experience Platform alle Daten für die Berichterstellung bereitstellt, existieren Report Suites nicht mehr als Datencontainer.
 
@@ -58,7 +58,9 @@ Siehe [Anwendungsbeispiele für Datenansichten](/help/data-views/data-views-usec
 
 ## Änderungen am Konzept von eVars und Props
 
-Die Konzepte von [!UICONTROL eVars], [!UICONTROL props]und [!UICONTROL events] im herkömmlichen Adobe Analytics nicht mehr in [!UICONTROL Customer Journey Analytics]. Es sind unbegrenzte Schemaelemente verfügbar, einschließlich Dimensionen, Metriken und Listenfeldern. Diese werden unbegrenzten Schemaelementen wie Dimensionen, Metriken und Listenfeldern in der Experience Platform zugeordnet. Alle Besuchs- und Attributionseinstellungen, die nach den Verarbeitungsregeln in Adobe Analytics angewendet werden, gelten jetzt zur Abfragezeit in Customer Journey Analytics.
+Die Konzepte von [!UICONTROL eVars], [!UICONTROL props]und [!UICONTROL events] im herkömmlichen Adobe Analytics nicht mehr in [!UICONTROL Customer Journey Analytics]. In Adobe Analytics speichern eVars und Props Beschreibungen von Inhalten, Kunden, Kampagnen usw. und -Ereignisse zählen Dinge wie Umsatz, Abonnements oder generierte Leads. In Customer Journey Analytics bleiben beide Datentypen erhalten, und Sie können auf dieselbe Weise darauf zugreifen - von der linken Leiste in Analysis Workspace aus unter Dimensionen bzw. Metriken.
+
+In CJA sind unbegrenzte Schemaelemente verfügbar, einschließlich Dimensionen, Metriken und Listenfeldern. Diese werden unbegrenzten Schemaelementen wie Dimensionen, Metriken und Listenfeldern in der Experience Platform zugeordnet. Alle Besuchs- und Attributionseinstellungen, die nach den Verarbeitungsregeln in Adobe Analytics angewendet werden, gelten jetzt zur Abfragezeit in Customer Journey Analytics.
 
 Mit dieser Flexibilität können Sie in Situationen geraten, in denen ein einzelnes Schemafeld sowohl als Dimension als auch als Metrik verwendet werden kann, um unterschiedliche Tracking-Anforderungen zu unterstützen.
 

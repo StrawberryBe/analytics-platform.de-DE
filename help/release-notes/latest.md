@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 39869e6ab2da8b15cb5dde876fe5233fc7c35adf
+source-git-commit: f1f6fa889bad331378218dc1cee3356828fd847f
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 20%
@@ -12,7 +12,7 @@ ht-degree: 20%
 
 # Aktuelle Versionshinweise zu Customer Journey Analytics (März 2022)
 
-**Letzte Aktualisierung**: 23. März 2022
+**Letzte Aktualisierung**: 11. April 2022
 
 ## Wichtigste Funktionen
 
@@ -20,7 +20,7 @@ ht-degree: 20%
 | ----------- | ---------- | ----- |
 | Anmerkungen in Workspace | Mit Anmerkungen in Workspace können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv kommunizieren. [Weitere Informationen](/help/components/annotations/overview.md) | allmähliche Einführung beginnt am 23. März 2022 |
 | Landingpage für neue Customer Journey Analytics | Auf der Landingpage für Customer Journey Analytics finden Sie eine Startseite des Projektmanagers und einen Lernabschnitt, der Ihnen bei den ersten Schritten hilft. [Weitere Informationen](/help/getting-started/landing.md) | 1. April 2022 |
-| [!UICONTROL Nächstes Element] oder [!UICONTROL Vorheriges Element] Arbeitsbereich | Die [!UICONTROL Nächstes oder vorheriges Element] -Bedienfeld können Sie Elemente untersuchen, die einem Dimensionselement Ihrer Wahl folgen oder diesem vorausgehen. Verwenden Sie sie beispielsweise, wenn Sie die nächsten oder vorherigen Seiten zu einer bestimmten Produktseite, einem Marketingkanal oder sogar Gerätetyp anzeigen möchten. Dieses Bedienfeld geht über die alte nächste/vorherige Berichterstellung hinaus, da es Ihnen ermöglicht, eine beliebige Dimension anzuzeigen und keine neue Implementierung erforderlich ist, um Einblicke zu erhalten. | 1. April 2022 |
+| [!UICONTROL Nächstes Element] oder [!UICONTROL Vorheriges Element] Arbeitsbereich | Die [!UICONTROL Nächstes oder vorheriges Element] -Bedienfeld können Sie Elemente untersuchen, die einem Dimensionselement Ihrer Wahl folgen oder diesem vorausgehen. Verwenden Sie sie beispielsweise, wenn Sie die nächsten oder vorherigen Seiten zu einer bestimmten Produktseite, einem Marketingkanal oder sogar Gerätetyp anzeigen möchten. Dieses Bedienfeld geht über die alte nächste/vorherige Berichterstellung hinaus, da es Ihnen ermöglicht, eine beliebige Dimension anzuzeigen und keine neue Implementierung erforderlich ist, um Einblicke zu erhalten. | 20. April 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
