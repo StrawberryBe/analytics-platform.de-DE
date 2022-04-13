@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: f7f496d63dbf26cfa6ec12ac98a03bf91a4072a1
+source-git-commit: 02f64728cf9a55c3ecd1c003b0c71464ac0a534f
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '605'
 ht-degree: 96%
 
 ---
@@ -58,6 +58,7 @@ ht-degree: 96%
       + [Deduplizierung der Metrik](data-views/component-settings/metric-deduplication.md)
       + [Keine Wertoptionen](data-views/component-settings/no-value-options.md)
       + [Persistenz](data-views/component-settings/persistence.md)
+      + [Teilzeichenfolge](data-views/component-settings/substring.md)
       + [Wert-Bucketing](data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](data-views/component-reference.md)
    + [Anwendungsfälle von Datenansichten](data-views/data-views-usecases.md)
