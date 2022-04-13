@@ -4,10 +4,10 @@ description: Zeigt nützliche Berichte zu Google Analytics-Daten in Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Schauen wir uns nun an, welche Website-Seiten die eingehenden Anrufe im Callcent
 Wir tun dies durch:
 
 * Verwenden einer berechneten Metrik, um die Daten nur bezüglich Sitzungen zu filtern, die mit einem Callcenter-Aufruf endeten.
-* Verwenden des „Teilnahme“-Modells im [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=de#cja-workspace) von Customer Journey Analytics.
+* Verwenden des „Teilnahme“-Modells im [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace) von Customer Journey Analytics.
 
 Sie können leicht erkennen, welche Seiten am häufigsten an einer Sitzung teilnehmen, die zu einem Aufruf führt. Sie können sehen, dass die Seiten „Warenkorb“ und „Checkout-Informationen“ zu den meisten Anrufen führten. Da Sie auch die Daten der Mobile App „Firebase“ eingeschlossen haben, können Sie sogar Seitenfehler und App-Abstürze sehen, die die Anrufe generieren. Dies ist ein wirklich wichtiger Datenpunkt, wenn Sie großartige Erlebnisse im Web und in der Mobile App bereitstellen möchten.
 
