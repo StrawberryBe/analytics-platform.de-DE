@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -23,6 +23,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Attribution IQ | Vollständige Unterstützung. |
 | Berechnete Metriken | Vollständige Unterstützung; beachten Sie, dass vorhandene berechnete Metriken in herkömmlichem Analysis Workspace nicht in CJA portiert werden. |
 | Kalenderereignisse | Vollständige Unterstützung. Kalenderereignisse wurden implementiert als [Anmerkungen](/help/components/annotations/overview.md) in Workspace. |
+| Classification Rule Builder | Vollständige Unterstützung. aufgerufen [Teilzeichenfolgen](/help/data-views/component-settings/substring.md) in CJA. Verwendet Zeichenfolgenmanipulationen zur Berichtszeit anstelle von Lookup-Datensätzen. |
 | Geräteübergreifende/kanalübergreifende Zuordnung | Vollständige Unterstützung; siehe [Kanalübergreifende Analyse](/help/connections/cca/overview.md). |
 | CSV-Download | Vollständige Unterstützung. |
 | Benutzerdefinierte Kalender | Vollständige Unterstützung. |
@@ -80,7 +81,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
-| Classification Rule Builder | Funktioniert in CJA etwas anders, indem Zeichenfolge-Bearbeitungen zur Berichtszeit verwendet werden, statt dass Datensätze gesucht werden. |
 | Beitragsanalyse | Unterstützung ist geplant. |
 | Data Warehouse-Berichte (100 % Zeilenexport) | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [[!UICONTROL Abfrage-Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) von Adobe Experience Platform bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
