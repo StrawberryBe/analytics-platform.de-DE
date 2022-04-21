@@ -4,9 +4,9 @@ description: Erstellen von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 97cbe0d376892a86d35f38956bc11f3d43bf754a
+source-git-commit: 15faee32171a2beab7cf42b92b09358b5cb1acc3
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 92%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 92%
 | **Klicken Sie mit der rechten Maustaste auf einen Punkt in einem [!UICONTROL Linien] diagramm.** | Der [!UICONTROL Anmerkungsgenerator] wird geöffnet. Beachten Sie, dass die auf diese Weise erstellten Anmerkungen standardmäßig nur in dem Projekt sichtbar sind, in dem sie erstellt wurden. Sie können sie aber für alle Projekte verfügbar machen. Beachten Sie, dass das Datum und ggf. Metriken usw. bereits ausgefüllt sind.<p>![](assets/annotate-line.png) |
 | **Wechseln Sie in Workspace zu [!UICONTROL Komponenten] > [!UICONTROL Anmerkung erstellen].** | Der [!UICONTROL Anmerkungsgenerator] wird geöffnet. |
 | **Verwenden Sie dieses Tastenkürzel**, um den Anmerkungsgenerator zu öffnen: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Beachten Sie, dass Sie durch Verwendung des Tastenkürzels zur Erstellung einer Anmerkung eine eintägige Anmerkung für das aktuelle Datum ohne einen vorab ausgewählten Bereich (Kennzahlen oder Dimensionen) erstellen. |
-| **Verwenden Sie die [CJA-Anmerkungen-API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Mit den CJA-Anmerkungen-APIs können Sie Anmerkungen programmgesteuert über Adobe I/O erstellen, aktualisieren oder abrufen. Diese APIs verwenden dieselben Daten und Methoden, die Adobe innerhalb der Produktoberfläche verwendet. |
+| **Verwenden Sie die [CJA-Anmerkungen-API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Mit den CJA-Anmerkungen-APIs können Sie Anmerkungen programmgesteuert über Adobe Developer erstellen, aktualisieren oder abrufen. Diese APIs verwenden dieselben Daten und Methoden, die Adobe innerhalb der Produktoberfläche verwendet. |
 
 1. Füllen Sie die Elemente des [!UICONTROL Anmerkungsgenerators] aus.
 
