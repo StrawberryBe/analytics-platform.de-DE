@@ -3,15 +3,19 @@ title: Aufnehmen von AEP-Zielgruppen in Customer Journey Analytics
 description: Erläutert, wie AEP-Zielgruppen für weitere Analysen in Customer Journey Analytics aufgenommen werden.
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: cd1d639ad698c188c506881b2b17103b0a3559f2
+source-git-commit: ed01fd0899cac21fff156e0c31dc2b52ff7c8cca
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '600'
 ht-degree: 2%
 
 ---
 
 
 # Aufnehmen von AEP-Zielgruppen in Customer Journey Analytics (CJA)
+
+>[!NOTE]
+>
+>Dieses Thema befindet sich im Aufbau.
 
 (Brandon, fyi, &quot;Unified Profile&quot;ist ein veralteter Begriff für &quot;Echtzeit-Kundenprofil&quot;- laut AEP-Dokumentmanager. Im AEP-Dokumentensatz finden Sie keine Dokumente zu &quot;UP&quot;.)
 
@@ -61,7 +65,7 @@ Folgende Datenelemente müssen vorhanden sein:
 * `audienceMembershipIdList` Zeichenfolgenfeld: Die Zielgruppen-ID
 * Fügen Sie einen Anzeigenamen für die Zielgruppe hinzu (`audienceMembershipIdName`), z. B.
 
-   ![Anzeigename der Zielgruppe](assets/audience-name)
+   ![Anzeigename der Zielgruppe](assets/audience-name.png)
 
 ## Schritt 5: Erstellen einer Verbindung in CJA mit diesem Profildatensatz
 
