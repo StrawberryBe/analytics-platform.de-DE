@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: b63593aa96580c39490ab2ac5c1454773fc7bb68
+source-git-commit: 165a2f7cd33282a8aaf93aa074a370cec2cbd40e
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 94%
@@ -58,7 +58,7 @@ ht-degree: 94%
       + [Deduplizierung der Metrik](data-views/component-settings/metric-deduplication.md)
       + [Keine Wertoptionen](data-views/component-settings/no-value-options.md)
       + [Persistenz](data-views/component-settings/persistence.md)
-      + [Teilzeichenfolge](data-views/component-settings/substring.md)
+      + [Substring](data-views/component-settings/substring.md)
       + [Wert-Bucketing](data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](data-views/component-reference.md)
    + [Anwendungsfälle von Datenansichten](data-views/data-views-usecases.md)
@@ -205,7 +205,7 @@ ht-degree: 94%
    + [Bindungsdimensionen und Metriken verwenden](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
    + [Erfassen von Marketo Engage-Daten in AEP und Berichterstellung in CJA](use-cases/marketo.md)
-   + [AEM Zielgruppen in CJA erfassen](use-cases/ingest-aep-segments.md)
+   + [Aufnehmen von AEP-Zielgruppen in CJA](use-cases/ingest-aep-segments.md)
    + [Kanalübergreifendes Analysieren von Daten](use-cases/cross-channel.md)
    + [Callcenter- und Web-Daten importieren](use-cases/call-center.md)
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
