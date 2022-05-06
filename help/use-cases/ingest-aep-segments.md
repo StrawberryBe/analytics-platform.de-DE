@@ -4,40 +4,42 @@ description: Erläutert, wie AEP-Zielgruppen für weitere Analysen in Customer J
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 535095dc82680882d1a53076ea0655b1333b576b
+source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1042'
 ht-degree: 1%
 
 ---
 
 # Aufnehmen von AEP-Zielgruppen in Customer Journey Analytics (CJA)
 
->[!NOTE]
->
->Dieses Thema befindet sich im Aufbau.
-
 In diesem Anwendungsbeispiel wird eine vorläufige, manuelle Methode zur Einbindung von Adobe Experience Platform-Zielgruppen (AEP) in CJA untersucht. Diese Zielgruppen wurden möglicherweise im Segmentaufbau von AEP, Adobe Audience Manager oder anderen Tools erstellt und sind im Echtzeit-Kundenprofil (RTCP) gespeichert. Die Zielgruppen bestehen aus einer Reihe von Profil-IDs zusammen mit den entsprechenden Attributen/Ereignissen/etc. und wir möchten sie zur Analyse in CJA Workspace importieren.
 
 ## Voraussetzungen
 
-* Zugriff auf Adobe Experience Platform (AEP), insbesondere Echtzeit-Kundenprofil.  Zugriff auf das Erstellen/Verwalten von AEP-Schemas und -Datensätzen.
-* Zugriff auf den AEP-Abfragedienst (und die Möglichkeit, SQL zu schreiben) oder ein anderes Tool zur Durchführung einiger leichter Umwandlungen
-* Zugriff auf Customer Journey Analytics (muss ein CJA-Produktadministrator sein, um CJA-Verbindungen und Datenansichten erstellen/ändern zu können)
+* Zugriff auf Adobe Experience Platform (AEP), insbesondere Echtzeit-Kundenprofil.
+* Zugriff zum Erstellen/Verwalten von AEP-Schemas und -Datensätzen.
+* Zugriff auf AEP Query Service (und die Möglichkeit, SQL zu schreiben) oder ein anderes Tool, um einige leichte Umwandlungen durchzuführen.
+* Zugriff auf Customer Journey Analytics. Sie müssen ein CJA-Produktadministrator sein, um CJA-Verbindungen und Datenansichten erstellen/ändern zu können.
 * Möglichkeit zur Verwendung der Adobe-APIs (Segmentierung, optional andere)
 
 ## Schritt 1: Zielgruppe(n) im Echtzeit-Kundenprofil auswählen {#audience}
 
-Adobe Experience Platform [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCP) bietet Ihnen die Möglichkeit, eine ganzheitliche Sicht auf jeden einzelnen Kunden zu erhalten, indem Sie Daten aus verschiedenen Kanälen, einschließlich Online-, Offline-, CRM- und Drittanbieter-Kanälen, kombinieren. Wahrscheinlich haben Sie bereits Audiences in RTCP, die aus verschiedenen Quellen stammen könnten. Wählen Sie eine oder mehrere Zielgruppen für die Aufnahme in Customer Journey Analytics aus.
+Adobe Experience Platform [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCP) bietet Ihnen die Möglichkeit, eine ganzheitliche Sicht auf jeden einzelnen Kunden zu erhalten, indem Sie Daten aus verschiedenen Kanälen, einschließlich Online-, Offline-, CRM- und Drittanbieter-Kanälen, kombinieren.
+
+Wahrscheinlich haben Sie bereits Audiences in RTCP, die aus verschiedenen Quellen stammen könnten. Wählen Sie eine oder mehrere Zielgruppen für die Aufnahme in Customer Journey Analytics aus.
 
 ## Schritt 2: Erstellen eines Profilunionsdatensatzes für den Export
 
 Um die Zielgruppe in einen Datensatz zu exportieren, der schließlich zu einer Verbindung in CJA hinzugefügt werden kann, müssen Sie einen Datensatz erstellen, dessen Schema ein Profil ist [Vereinigungsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=en#understanding-union-schemas).
+
 Vereinigungsschemas bestehen aus mehreren Schemas, die dieselbe Klasse teilen und für Profile aktiviert wurden. Mit dem Vereinigungsschema können Sie eine Zusammenführung aller Felder sehen, die in Schemas enthalten sind, die dieselbe Klasse teilen. Das Echtzeit-Kundenprofil verwendet das Vereinigungsschema, um eine ganzheitliche Ansicht jedes einzelnen Kunden zu erstellen.
 
 ## Schritt 3: Exportieren einer Zielgruppe in den Datensatz der Profilunion über einen API-Aufruf {#export}
 
-Bevor Sie eine Zielgruppe in Customer Journey Analytics importieren können, müssen Sie sie in einen AEP-Datensatz exportieren. Dies kann nur mit der Segmentierungs-API und insbesondere mit dem [Export Job API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en). Sie können einen Exportauftrag mit der Zielgruppen-ID Ihrer Wahl erstellen und die Ergebnisse in den Datensatz mit dem Profil-Vereinigungs-AEP einfügen, den Sie in Schritt 2 erstellt haben.  Obwohl Sie verschiedene Attribute/Ereignisse für die Zielgruppe exportieren können, müssen Sie nur das spezifische Feld für die Profil-ID exportieren, das mit dem Feld für die Personen-ID übereinstimmt, das in der von Ihnen verwendeten CJA-Verbindung verwendet wird (siehe unten in Schritt 5).
+Bevor Sie eine Zielgruppe in Customer Journey Analytics importieren können, müssen Sie sie in einen AEP-Datensatz exportieren. Dies kann nur mit der Segmentierungs-API und insbesondere mit dem [Export Job API Endpoint](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=en).
+
+Sie können einen Exportauftrag mit der Zielgruppen-ID Ihrer Wahl erstellen und die Ergebnisse in den Datensatz mit dem Profil-Vereinigungs-AEP einfügen, den Sie in Schritt 2 erstellt haben. Obwohl Sie verschiedene Attribute/Ereignisse für die Zielgruppe exportieren können, müssen Sie nur das spezifische Feld für die Profil-ID exportieren, das mit dem Feld für die Personen-ID übereinstimmt, das in der von Ihnen verwendeten CJA-Verbindung verwendet wird (siehe unten in Schritt 5).
 
 ## Schritt 4: Exportausgabe bearbeiten
 
@@ -67,7 +69,9 @@ Folgende Datenelemente müssen vorhanden sein:
 
 * Fügen Sie bei Bedarf weitere Zielgruppen-Metadaten hinzu.
 
-## Schritt 5: Fügen Sie diesen Profildatensatz zu einer vorhandenen Verbindung in CJA (BG: Sie könnten eine neue erstellen, aber in 99 % der Zeit, die Kunden sie einer vorhandenen Verbindung hinzufügen möchten, in der sie bereits über ihre Daten verfügen. die Zielgruppen-IDs lediglich die vorhandenen Daten in CJA &quot;anreichern&quot;)
+## Schritt 5: Fügen Sie diesen Profildatensatz zu einer vorhandenen Verbindung in CJA hinzu.
+
+Sie können eine neue Verbindung erstellen, aber die meisten Kunden möchten sie einer vorhandenen Verbindung hinzufügen. Die Zielgruppen-IDs ergänzen die vorhandenen Daten in CJA.
 
 [Verbindung herstellen](/help/connections/create-connection.md)
 
