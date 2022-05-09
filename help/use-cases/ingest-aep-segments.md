@@ -4,10 +4,10 @@ description: Erläutert, wie AEP-Zielgruppen für weitere Analysen in Customer J
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
+source-git-commit: 9c4869bb632f3d69d8704009744246b975cb5c4a
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 1%
+source-wordcount: '1049'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,9 @@ Sie können einen Exportauftrag mit der Zielgruppen-ID Ihrer Wahl erstellen und 
 
 ## Schritt 4: Exportausgabe bearbeiten
 
-Die Ergebnisse des Exportauftrags müssen in einen separaten Profildatensatz umgewandelt werden, damit sie in CJA aufgenommen werden können.  Diese Umwandlung kann mit AEP Query Service oder einem anderen Konvertierungstool Ihrer Wahl durchgeführt werden.  Für die Berichterstellung in CJA benötigen wir nur die Profil-ID (die mit der Personen-ID in CJA übereinstimmt) und eine oder mehrere Zielgruppen-ID(s). Der standardmäßige Exportauftrag enthält jedoch mehr Daten. Daher müssen wir diese Ausgabe bearbeiten, um irrelevante Daten zu entfernen und einige Dinge zu verschieben.  Außerdem müssen Sie zuerst ein Schema/einen Datensatz erstellen, bevor Sie die umgewandelten Daten hinzufügen.
+Die Ergebnisse des Exportauftrags müssen in einen separaten Profildatensatz umgewandelt werden, damit sie in CJA aufgenommen werden können.  Diese Umwandlung kann mit [AEP Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de)oder ein anderes Transformationstool Ihrer Wahl. Für die Berichterstellung in CJA benötigen wir nur die Profil-ID (die mit der Personen-ID in CJA übereinstimmt) und eine oder mehrere Zielgruppen-ID(s).
+
+Der standardmäßige Exportauftrag enthält jedoch mehr Daten. Daher müssen wir diese Ausgabe bearbeiten, um irrelevante Daten zu entfernen und einige Dinge zu verschieben.  Außerdem müssen Sie zuerst ein Schema/einen Datensatz erstellen, bevor Sie die umgewandelten Daten hinzufügen.
 
 Im Folgenden finden Sie ein Beispiel für die Exportausgabe im Datensatz Profilunion . **before** beliebige Bearbeitung:
 
@@ -71,9 +73,7 @@ Folgende Datenelemente müssen vorhanden sein:
 
 ## Schritt 5: Fügen Sie diesen Profildatensatz zu einer vorhandenen Verbindung in CJA hinzu.
 
-Sie können eine neue Verbindung erstellen, aber die meisten Kunden möchten sie einer vorhandenen Verbindung hinzufügen. Die Zielgruppen-IDs ergänzen die vorhandenen Daten in CJA.
-
-[Verbindung herstellen](/help/connections/create-connection.md)
+Du könntest [eine neue Verbindung erstellen](/help/connections/create-connection.md), aber die meisten Kunden möchten den Profildatensatz zu einer vorhandenen Verbindung hinzufügen. Die Zielgruppen-IDs ergänzen die vorhandenen Daten in CJA.
 
 ## Schritt 6: Vorhandene (oder neue) CJA-Datenansicht ändern
 
