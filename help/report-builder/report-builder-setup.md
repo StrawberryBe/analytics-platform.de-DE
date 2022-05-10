@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Nach der Installation des Report Builder-Add-ins wird das Report Builder-Symbol 
 
 ![](./assets/rb_app_icon.png)
 
-## Bei Report Builder anmelden
+## Anmelden bei Report Builder
 
 Nachdem Sie das Report Builder for Excel-Add-in für Ihr Betriebssystem oder Ihren Browser installiert haben, führen Sie die folgenden Schritte aus, um sich bei Report Builder anzumelden.
 
