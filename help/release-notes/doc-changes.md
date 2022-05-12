@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5224c83b222997413a9fb70a0d1e219f82d1af17
+source-git-commit: fa36f46a352d786cbbab6a753d7cc0cb401cff9f
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 79%
+source-wordcount: '724'
+ht-degree: 78%
 
 ---
 
@@ -17,9 +17,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
+| Mai 2022 | Neuer Artikel zu [Erfassen von Adobe Experience Platform-Zielgruppen in CJA](/help/use-cases/ingest-aep-segments.md) |
 | April 2022 | Dokumentation zu [Dimensionszeichenfolgen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html). |
 | April 2022 | Neu [CJA-Benutzerhandbuch für Adobe Analytics-Benutzer](/help/getting-started/aa-to-cja-user.md). |
-| April 2022 | [Vergleichen von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](/help/troubleshooting/compare.md) |
 | März 2022 | Neu [Dokumentation zur CJA Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
 | März 2022 | Neue Dokumentation zu [Anmerkungen in Workspace](/help/components/annotations/overview.md). |
 | März 2022 | Wesentlich aktualisierte Inhalte in [Schätzung der Verbindungsgröße](/help/getting-started/cja-faq.md). |
