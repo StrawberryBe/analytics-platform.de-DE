@@ -4,9 +4,9 @@ description: Verwenden Sie eine Teilmenge einer Zeichenfolge als Dimensionseleme
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: e1d8cffac907e1043d18b1939585108ce95a0fda
+source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '911'
 ht-degree: 7%
 
 ---
@@ -114,6 +114,8 @@ Output-Platzhalter werden ebenfalls unterstützt. Sie können diese Sequenzen im
 | `$+` | Gibt aus, was mit dem letzten markierten Unterausdruck im regulären Ausdruck übereinstimmt. |
 | `$$` | Gibt das Zeichenfolgenzeichen aus `"$"`. |
 
-Im Folgenden finden Sie ein Video zum Thema Binden von Dimensionen:
+## Video zu Bindungsdimensionen
+
+Im Folgenden finden Sie ein Video zu Bindungsdimensionen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
