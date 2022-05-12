@@ -3,9 +3,10 @@ title: Einstellungen der Teilstring-Komponenten
 description: Verwenden Sie eine Teilmenge einer Zeichenfolge als Dimensionselemente.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a8bdb5b0c00a9dbca2f466452a5d18045b2e9971
+exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
+source-git-commit: e1d8cffac907e1043d18b1939585108ce95a0fda
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '907'
 ht-degree: 7%
 
 ---
@@ -42,7 +43,7 @@ Verwenden Sie diese Methode für Felder, die ein Trennzeichen verwenden, um mehr
 * **[!UICONTROL Trennzeichen]**: Das Trennzeichen, das vom Feld verwendet wird.
 * **[!UICONTROL Index]**: Nur vorhanden, wenn das Kriterium von links/rechts ist. Die Elementnummer, als ob sie sich in einem Array befände. Wenn die Zeichenfolgeneingabe beispielsweise `"Fox,Turtle,Rabbit,Wolf"` mit einem Index von 3 ist die Ausgabe `"Rabbit"`. Wenn der Index höher ist als die Anzahl der durch Trennzeichen getrennten Elemente, [Keine Wertoptionen](no-value-options.md) gelten.
 
-## URL-Parsen
+## URL-Analyse
 
 Zur Verwendung mit Feldern, die URLs enthalten. Verwenden der Beispiel-URL `https://example.com/store/index.html?cid=campaign#cart`, sind die folgenden Optionen verfügbar:
 
@@ -112,3 +113,7 @@ Output-Platzhalter werden ebenfalls unterstützt. Sie können diese Sequenzen im
 | ``$` `` | Gibt den Text zwischen dem Ende der letzten gefundenen Übereinstimmung (oder dem Anfang des Textes aus, wenn keine vorherige Übereinstimmung gefunden wurde) und dem Beginn der aktuellen Übereinstimmung aus. |
 | `$+` | Gibt aus, was mit dem letzten markierten Unterausdruck im regulären Ausdruck übereinstimmt. |
 | `$$` | Gibt das Zeichenfolgenzeichen aus `"$"`. |
+
+Im Folgenden finden Sie ein Video zum Thema Binden von Dimensionen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
