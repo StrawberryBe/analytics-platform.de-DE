@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fa36f46a352d786cbbab6a753d7cc0cb401cff9f
+source-git-commit: ed0a015e7198db8dd77ec73d9c9299d9a872370c
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '727'
 ht-degree: 78%
 
 ---
@@ -66,3 +66,5 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | 14. April 2020 | Aktualisierungen der neuesten Benutzeroberfläche im Thema [Verbindungen erstellen](/help/connections/create-connection.md). |
 | 27. Februar 2020 | Aktualisierungen der Seite [Funktionsunterstützung für Customer Journey Analytics](/help/getting-started/cja-aa.md). |
 | Dezember 2019 | Erster Entwurf der CJA-Dokumentation |
+
+{style=&quot;table-layout:auto&quot;}
