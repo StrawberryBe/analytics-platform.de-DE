@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 067d816b3e9ce6bf9cc36f270cdf050a847bbcc8
+source-git-commit: 72486c527fa48775395bc5a31e6dd98eb30cbdc1
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 20%
+source-wordcount: '148'
+ht-degree: 25%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 20%
 >
 >Diese Seite enthält Informationen zur Vorabversion, die geändert werden können.
 
-**Letzte Aktualisierung**: 10. Mai 2022
+**Letzte Aktualisierung**: 16. Mai 2022
 
 ## Wichtigste Funktionen
 
 | Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Neue Benutzeroberfläche zum Bearbeiten und Erstellen von Verbindungen | Mit diesem optimierten Erlebnis können Sie Daten auf Datensatzebene aufstocken, ein rollierendes Fenster zur Datenaufbewahrung aktivieren, Datensätze zu einer Verbindung hinzufügen und daraus entfernen. | 18. Mai 2022 |
-| Report Builder für CJA-Aktualisierungen | Enthält Funktionen wie Planung und Datenblock-Manager. | 18. Mai 2022 |
-| Customer AI-Integration | Ermöglicht Ihnen die Aufnahme von Customer AI-Modellwerten in CJA zur weiteren Analyse in CJA Analysis Workspace. | 25. Mai 2022 |
-| Attribution AI-Integration | Ermöglicht die Aufnahme der Attribution AI-Modellwerte in CJA zur weiteren Analyse in CJA Analysis Workspace. | 25. Mai 2022 |
+| Neue Benutzeroberfläche zum Bearbeiten und Erstellen von Verbindungen | Mit diesem optimierten Erlebnis können Sie Daten auf Datensatzebene aufstocken, ein rollierendes Fenster zur Datenaufbewahrung aktivieren, Datensätze zu einer Verbindung hinzufügen und daraus entfernen. [Weitere Informationen](/help/connections/create-connection.md) | 18. Mai 2022 |
+| Report Builder für CJA-Aktualisierungen | Enthält Funktionen wie Planung und Datenblock-Manager. [Weitere Informationen] | 18. Mai 2022 |
+| Customer AI-Integration | Ermöglicht Ihnen die Aufnahme von Customer AI-Modellwerten in CJA zur weiteren Analyse in CJA Analysis Workspace. [Weitere Informationen] | 25. Mai 2022 |
+| Attribution AI-Integration | Ermöglicht die Aufnahme der Attribution AI-Modellwerte in CJA zur weiteren Analyse in CJA Analysis Workspace. [Weitere Informationen] | 25. Mai 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
