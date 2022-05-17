@@ -3,10 +3,10 @@ description: Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+workflow-type: tm+mt
+source-wordcount: '854'
+ht-degree: 93%
 
 ---
 
@@ -53,9 +53,9 @@ Ziehen Sie einen beliebigen Filter aus der linken Leiste in den Ablagebereich de
 
 ### Ad-hoc-Filter
 
-Komponenten, die keine Filter sind, können ebenfalls direkt in den Ablagebereich gezogen werden, um Ad-hoc-Filter zu erstellen, wodurch Sie sich das Aufrufen von Filter Builder ersparen. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Filter Builder bearbeiten.
+Nicht-Filterkomponenten können auch direkt in die Dropzone gezogen werden, um Ad-hoc-Filter zu erstellen. So sparen Sie Zeit und Mühe, zum Filtergenerator zu wechseln. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Filter Builder bearbeiten.
 
-Ad-hoc-Filter sind projektgebunden und werden in Ihrer linken Leiste nicht angezeigt, es sei denn, Sie machen sie öffentlich.
+Ad-hoc-Filter sind für das Projekt lokal verfügbar und werden nicht in der linken Leiste angezeigt, es sei denn, Sie machen sie öffentlich.
 
 ![](assets/adhoc-segment-filter.png)
 

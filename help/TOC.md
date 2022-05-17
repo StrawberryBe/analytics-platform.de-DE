@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Handbuch für Customer Journey Analytics
-user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für kanalübergreifende Analysen.
+user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 93%
+source-wordcount: '623'
+ht-degree: 98%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 93%
    + [Erste Schritte](getting-started/cja-getting-started.md)
    + [Landingpage von Customer Journey Analytics](getting-started/landing.md)
    + [Häufig gestellte Fragen](getting-started/cja-faq.md)
-   + [Entwicklung von Adobe Analytics zu Customer Journey Analytics](getting-started/aa-to-cja.md)
-   + [Benutzerhandbuch für neue Customer Journey Analytics](getting-started/aa-to-cja-user.md)
+   + [Umstieg von Adobe Analytics auf Customer Journey Analytics](getting-started/aa-to-cja.md)
+   + [Benutzerhandbuch für neue Benutzer von Customer Journey Analytics](getting-started/aa-to-cja-user.md)
    + [Customer Journey Analytics-Funktionen](getting-started/cja-aa.md)
    + [Auswirkungen des Löschens](getting-started/cja-deletion.md)
    + [CJA-Glossar](getting-started/cja-glossary.md)
@@ -43,10 +43,10 @@ ht-degree: 93%
    + [Verbindungen verwalten](connections/manage-connections.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
    + [Standardsuchen](connections/standard-lookups.md)
-   + Kanalübergreifende Analyse {#cca}
-      + [Überblick über die Kanalübergreifende Analyse](connections/cca/overview.md)
+   + Cross-Channel Analytics {#cca}
+      + [Überblick über die Cross-Channel Analytics](connections/cca/overview.md)
       + [Funktionsweise der Wiederholung](connections/cca/replay.md)
-      + [Häufig gestellte Fragen zur Kanalübergreifende Analyse](connections/cca/faq.md)
+      + [Häufig gestellte Fragen zur Cross-Channel Analytics](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](data-views/create-dataview.md)
@@ -59,7 +59,7 @@ ht-degree: 93%
       + [Deduplizierung der Metrik](data-views/component-settings/metric-deduplication.md)
       + [Keine Wertoptionen](data-views/component-settings/no-value-options.md)
       + [Persistenz](data-views/component-settings/persistence.md)
-      + [Substring](data-views/component-settings/substring.md)
+      + [Teilzeichenfolge](data-views/component-settings/substring.md)
       + [Wert-Bucketing](data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](data-views/component-reference.md)
    + [Anwendungsfälle von Datenansichten](data-views/data-views-usecases.md)
@@ -203,9 +203,9 @@ ht-degree: 93%
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
-   + [Bindungsdimensionen und Metriken verwenden](use-cases/binding-dimensions-metrics.md)
+   + [Verwenden von Bindungsdimensionen und Metriken](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
-   + [Erfassen von Marketo Engage-Daten in AEP und Berichterstellung in CJA](use-cases/marketo.md)
+   + [Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA](use-cases/marketo.md)
    + [Aufnehmen von AEP-Zielgruppen in CJA](use-cases/ingest-aep-segments.md)
    + [Kanalübergreifendes Analysieren von Daten](use-cases/cross-channel.md)
    + [Callcenter- und Web-Daten importieren](use-cases/call-center.md)
