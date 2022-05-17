@@ -5,9 +5,9 @@ exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -24,21 +24,21 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Neue oder vorgestellte Funktionen</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html"> Entwicklung von Adobe Analytics zu Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html"> CJA-Benutzerhandbuch für Adobe Analytics-Benutzer </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html"> Verwenden von Bindungsdimensionen und Metriken in CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html"> Verwenden von Marketing-Kanal-Dimensionen in Adobe Experience Platform
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=de"> Umstieg von Adobe Analytics auf Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=de"> CJA-Benutzerhandbuch für Adobe Analytics-Benutzer </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html?lang=de"> Verwenden von Bindungsdimensionen und Metriken in CJA </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de"> Verwenden von Marketing-Kanal-Dimensionen in Adobe Experience Platform
  </a> </li>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#connection-detail"> Verwenden der erweiterten Funktionen zur Verbindungsverwaltung </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html#cja-dataviews"> Verwenden der erweiterten Funktionen für Datenansichten </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html#cja-usecases"> Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html#cja-usecases"> Analysieren von Daten aus Google Analytics in CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#cja-connections"> Cross-Channel-Analyse (Zuweisen von IDs in Customer Journey Analytics) </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#connection-detail"> Verwenden der erweiterten Funktionen zur Verbindungsverwaltung </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de#cja-dataviews"> Verwenden der erweiterten Funktionen für Datenansichten </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=de#cja-usecases"> Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=de#cja-usecases"> Analysieren von Daten aus Google Analytics in CJA </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de#cja-connections"> Cross-Channel Analytics (Zusammenfügen von IDs in Customer Journey Analytics) </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de"> Erste Schritte mit Customer Journey Analytics </a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de"> Häufig gestellte Fragen</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>Versionshinweise</b> </p> 
     <ul> 
-     <li>Neue Funktionen und Fehlerbehebungen finden Sie in den neuesten <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html" format="https" scope="external">Customer Journey Analytics-Versionshinweisen</a>. </li> 
+     <li>Neue Funktionen und Fehlerbehebungen finden Sie in den neuesten <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=de" format="https" scope="external">Customer Journey Analytics-Versionshinweisen</a>. </li> 
     </ul> <p class="head"> <b>Ressourcen zu Adobe Experience Platform</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/de/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
