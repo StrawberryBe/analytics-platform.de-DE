@@ -66,7 +66,7 @@ So implementieren Sie die Scorecard-Vorlage:
 
 1. Von jeder Kachel aus können Sie auf eine Detailansicht zugreifen, die zusätzliche Informationen über die Metrik anzeigt, wie z. B. die obersten Elemente in einer Liste verwandter Dimensionen.
 
-## Dimensionen oder Metriken hinzufügen (#dimsmetrics)
+## Dimensionen oder Metriken hinzufügen  (#dimsmetrics)
 
 Um einer Metrik eine verwandte Dimension hinzuzufügen, ziehen Sie eine Dimension aus dem linken Bereich und legen Sie sie auf einer Kachel ab.
 
@@ -181,7 +181,7 @@ Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, 
 
 Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffentlichung in der Analytics-Dashboards-App aussieht und funktioniert.
 
-1. Klicken Sie auf **[!UICONTROL Vorschau]** in der oberen rechten Ecke des Bildschirms.
+1. Klicken Sie auf **[!UICONTROL Vorschau]** in der rechten oberen Ecke des Bildschirms.
 
    ![Preview_scorecards](assets/preview.png)
 
@@ -191,9 +191,9 @@ Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffen
 
 1. Um mit der Vorschau zu interagieren, haben Sie folgende Möglichkeiten:
 
-   * Klicken Sie mit der linken Maustaste, um das Tippen auf dem Bildschirm des Smartphones zu simulieren.
+   * Klicken Sie mit der linken Maustaste, um das Tippen auf den Bildschirm des Smartphones zu simulieren.
 
-   * Verwenden Sie die Bildlauffunktion Ihres Computers, um das Scrollen des Bildschirms mit Ihrem Finger zu simulieren.
+   * Verwenden Sie die Bildlauffunktion Ihres Computers, um das Scrollen auf dem Bildschirm des Smartphones mit Ihrem Finger zu simulieren.
 
    * Klicken und halten Sie, um das Drücken und Halten des Fingers auf dem Bildschirm des Smartphones zu simulieren. Dies ist für die Interaktion mit den Visualisierungen in der Detailansicht nützlich.
 
