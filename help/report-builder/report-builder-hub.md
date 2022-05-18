@@ -6,20 +6,25 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 8544de42c643c729558f27a7d64b0e4a8af608d0
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 88%
 
 ---
 
 # Report Builder-Hub
 
-Verwenden Sie den Report Builder-Hub, um Datenblöcke zu erstellen, zu aktualisieren oder zu löschen.
+Verwenden Sie den Report Builder-Hub, um Datenblöcke zu erstellen, zu aktualisieren, zu löschen und zu verwalten.
 
-Der Report Builder-Hub enthält die Bedienfelder „Befehle“ und „Schnellbearbeitung“.
+Der Report Builder-Hub enthält die Schaltflächen Erstellen und Verwalten , die Liste BEFEHLE und die Bedienfelder SCHNELLE BEARBEITUNG .
 
-![](./assets/image13.png)
+<img src="./assets/hub51.png" width="50%"/>
+
+
+## Erstellen und Verwalten von Schaltflächen
+
+Verwenden Sie die Schaltflächen Erstellen oder Verwalten , um neue Datenblöcke zu erstellen oder vorhandene Datenblöcke zu verwalten.
 
 ## Bedienfeld „Befehle“
 
