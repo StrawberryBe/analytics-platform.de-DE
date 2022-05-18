@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 565a247da0e66953d84b70dfb2fa50555e36b27d
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 98%
+source-wordcount: '634'
+ht-degree: 96%
 
 ---
 
@@ -200,6 +200,15 @@ ht-degree: 98%
       + [Überblick über den Kalender](components/date-ranges/calendar.md)
       + [Benutzerdefinierte Datumsbereiche erstellen](components/date-ranges/custom-date-ranges.md)
       + [Datumsvergleich](components/date-ranges/time-comparison.md)
++ Analytics-Dashboards {#cja-dashboards}
+   + [Analytics-Dashboards – Übersicht](mobile-app/home.md)
+   + [Kuratoraufgaben](mobile-app/curator.md)
+   + [Scorecard erstellen](mobile-app/create-scorecard.md)
+   + [Einrichten von Führungskräften für die Verwendung von Dashboards](mobile-app/set-up-execs.md)
+   + [Schnellstarthandbuch für ausführende Benutzer](mobile-app/executive.md)
++ Integrationen {#integrations}
+   + [Attribution AI mit CJA integrieren](integrations/attribution-ai.md)
+   + [Integrieren von Customer AI mit CJA](integrations/customer-ai.md)
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
@@ -213,12 +222,6 @@ ht-degree: 98%
    + [Marketing-Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)
    + [Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](use-cases/ga-to-cja-reporting.md)
-+ Analytics-Dashboards {#cja-dashboards}
-   + [Analytics-Dashboards – Übersicht](mobile-app/home.md)
-   + [Kuratoraufgaben](mobile-app/curator.md)
-   + [Scorecard erstellen](mobile-app/create-scorecard.md)
-   + [Einrichten von Führungskräften für die Verwendung von Dashboards](mobile-app/set-up-execs.md)
-   + [Schnellstarthandbuch für ausführende Benutzer](mobile-app/executive.md)
 + Fehlerbehebung {#troubleshooting}
    + [Vergleichen von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](troubleshooting/compare.md)
 + Datenschutz {#cja-privacy}

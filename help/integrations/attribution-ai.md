@@ -3,14 +3,18 @@ description: Erfahren Sie, wie AEP Attribution AI in Workspace in CJA integriert
 title: Attribution AI mit CJA integrieren
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
+source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 5%
 
 ---
 
 # Attribution AI mit CJA integrieren
+
+>[!NOTE]
+>
+>Diese Seite befindet sich im Aufbau.
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)ist als Teil von Adobe Experience Platform Intelligent Services ein algorithmischer Attributionsdienst mit mehreren Kanälen, der den Einfluss und die inkrementelle Auswirkung von Kundeninteraktionen auf bestimmte Ergebnisse berechnet. Mit Attribution AI können Marketing-Experten die Ausgaben für Marketing und Werbung messen und optimieren, indem sie die Auswirkungen jeder einzelnen Kundeninteraktion in jeder Phase der Journey verstehen.
 
