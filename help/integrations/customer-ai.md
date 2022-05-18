@@ -3,9 +3,9 @@ description: Erfahren Sie, wie AEP Customer AI in Workspace in CJA integriert wi
 title: Integrieren von Customer AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
+source-git-commit: 0b095edc3ad8f5121818feafa6edb3f826bee84c
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '450'
 ht-degree: 9%
 
 ---
@@ -50,7 +50,7 @@ In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen 
 
 Jede Prognose, z. B. &quot;Wahrscheinlichkeit einer Aktualisierung des Kontos&quot;, entspricht einem Datensatz.
 
-Hier ist ein Beispiel für ein XDM-Schema, das CJA als Teil eines vorhandenen Datensatzes oder neuen Datensatzes einbringen würde:
+Hier ist ein Beispiel für ein XDM-Schema, das CJA als Teil eines vorhandenen oder neuen Datensatzes einbringen würde:
 
 ![CAI-Schema](assets/cai-schema.png)
 
@@ -58,4 +58,4 @@ Hier ist ein Beispiel für ein XDM-Schema, das CJA als Teil eines vorhandenen Da
 
 ### Schritt 5: Erstellen von Datenansichten basierend auf diesen Verbindungen
 
-In CJA können Sie jetzt Datenansichten mit den Dimensionen erstellen, die als
+In Customer Journey Analytics können Sie jetzt Datenansichten mit den Dimensionen erstellen, die als Teil der von Ihnen eingerichteten Verbindung hinzugefügt wurden.
