@@ -4,18 +4,14 @@ description: Anzeigen von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 43%
+source-wordcount: '244'
+ht-degree: 79%
 
 ---
 
 # Anzeigen von Anmerkungen
-
->[!NOTE]
->
->Diese Funktion wird derzeit eingeschränkt getestet.
 
 Anmerkungen werden je nachdem, ob sie sich über einen einzelnen Tag oder einen Datumsbereich erstrecken, etwas unterschiedlich angezeigt.
 
@@ -23,9 +19,9 @@ Anmerkungen werden je nachdem, ob sie sich über einen einzelnen Tag oder einen 
 
 | Datum | Erscheinungsbild |
 | --- | --- |
-| **Einzeltag** | ![](assets/single-day.png)<p>Wenn Sie den Mauszeiger über die Anmerkung bewegen, können Sie deren Details anzeigen, sie durch Auswahl des Stiftsymbols bearbeiten oder sie löschen:<p> ![](assets/hover.png) |
-| **Datumsbereich** | Das Symbol ändert sich, und wenn Sie den Mauszeiger darüber bewegen, wird der Datumsbereich angezeigt.<p>![](assets/multi-day.png)<p>Wenn Sie sie im Liniendiagramm auswählen, werden die Anmerkungsmetadaten angezeigt und Sie können sie bearbeiten oder löschen:![](assets/multi-hover.png)<p>In einer Tabelle wird an jedem Datum im Datumsbereich ein Symbol angezeigt.<p>![](assets/multi-day-table.png) |
-| **Überlappende Anmerkungen** | An Tagen mit mehr als einer Anmerkung wird das Symbol grau dargestellt.<p>![](assets/grey.png)<p>Wenn Sie den Mauszeiger über das graue Symbol bewegen, werden alle überlappenden Anmerkungen angezeigt:<p>![](assets/overlap.png) |
+| **Einzeltag** | ![](assets/single-day.png)<p>Wenn Sie den Mauszeiger über die Anmerkung bewegen, können Sie deren Details anzeigen, sie durch Auswahl des Stiftsymbols bearbeiten oder löschen:<p> ![](assets/hover.png) |
+| **Datumsbereich** | Das Symbol ändert sich, und wenn Sie den Mauszeiger darüber bewegen, wird der Datumsbereich angezeigt.<p>![](assets/multi-day.png)<p>Wenn Sie die Anmerkung im Liniendiagramm auswählen, werden ihre Metadaten angezeigt und Sie können sie bearbeiten oder löschen:![](assets/multi-hover.png)<p>In einer Tabelle wird an jedem Datum im Datumsbereich ein Symbol angezeigt.<p>![](assets/multi-day-table.png) |
+| **Überlappende Anmerkungen** | An Tagen, an denen es mehr als eine Anmerkung gibt, wird das Symbol grau dargestellt.<p>![](assets/grey.png)<p>Wenn Sie den Mauszeiger über das graue Symbol bewegen, werden alle sich überlappenden Anmerkungen angezeigt:<p>![](assets/overlap.png) |
 
 ## Anzeigen von Anmerkungen in einer PDF-Datei
 
@@ -35,7 +31,7 @@ Da Symbole in einer PDF-Datei nicht auf den Mauszeiger reagieren können, enthä
 
 ## Anzeigen von Anmerkungen mit Daten ohne Trendansicht
 
-Manchmal werden Anmerkungen mit Daten ohne Trendansicht angezeigt, die jedoch an eine bestimmte Dimension gebunden sind. In diesem Fall werden sie nur in einer Zusammenfassungsanmerkung in der rechten unteren Ecke angezeigt. Siehe folgendes Beispiel:
+Manchmal werden Anmerkungen mit Daten ohne Trendansicht angezeigt, die jedoch an eine bestimmte Dimension gebunden sind. In diesem Fall werden sie nur in einer zusammenfassenden Anmerkung in der rechten unteren Ecke angezeigt. Siehe folgendes Beispiel:
 
 ![](assets/non-date.png)
 

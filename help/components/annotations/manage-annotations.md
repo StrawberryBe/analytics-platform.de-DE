@@ -4,18 +4,14 @@ description: Verwalten von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '677'
 ht-degree: 69%
 
 ---
 
 # Verwalten von Anmerkungen
-
->[!NOTE]
->
->Diese Funktion wird derzeit eingeschränkt getestet.
 
 Die Anmerkungsverwaltung ([!UICONTROL Komponenten] > [!UICONTROL Anmerkungen]) bietet viele Möglichkeiten zum Verwalten von Anmerkungen, z. B. Freigeben, Filtern, Markieren, Genehmigen, Kopieren, Löschen und Markieren als Favorit.
 
