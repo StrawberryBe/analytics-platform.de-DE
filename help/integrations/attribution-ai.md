@@ -4,10 +4,10 @@ title: Attribution AI mit CJA integrieren
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
+source-git-commit: aa4559daa7156091d1a3c5d602dd7390f85aebd6
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 4%
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
@@ -19,13 +19,18 @@ ht-degree: 4%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)ist als Teil von Adobe Experience Platform Intelligent Services ein algorithmischer Attributionsdienst mit mehreren Kanälen, der den Einfluss und die inkrementelle Auswirkung von Kundeninteraktionen auf bestimmte Ergebnisse berechnet. Mit Attribution AI können Marketing-Experten die Ausgaben für Marketing und Werbung messen und optimieren, indem sie die Auswirkungen jeder einzelnen Kundeninteraktion in jeder Phase der Journey verstehen.
 
-Attribution AI unterstützt zwei Bewertungskategorien: algorithmisch und regelbasiert. Algorithmische Werte umfassen inkrementelle und beeinflusste Werte. Regelbasierte Werte umfassen Erstkontakt, Letztkontakt, Linear, U-förmig und Zeitverfall. Attribution AI unterstützt 3 Experience Platformen-Schemata: Erlebnisereignis, Adobe Analytics und Kundenerlebnisereignis.
+Attribution AI unterstützt zwei Bewertungskategorien: algorithmisch und regelbasiert. Algorithmische Werte umfassen inkrementelle und beeinflusste Werte.
+
+* **Beeinflusste Punktzahl** 100 % des Konversionsguthabens auf Marketingkanäle aufteilen.
+* **Inkrementelle Werte** berücksichtigen Sie zunächst eine Konversionsgrundlinie, die Sie auch ohne Marketing erreicht hätten. Diese Grundlinie hängt von KI-Beobachtungen von Mustern, Saisonabhängigkeit usw. ab, die aufgrund der bestehenden Markenerkennung, -loyalität und der Mundpropaganda erfolgen. Der verbleibende Anteil wird auf die Marketing-Kanäle aufgeteilt.
+
+Regelbasierte Werte umfassen [!UICONTROL Erstkontakt], [!UICONTROL Letztkontakt], [!UICONTROL Linear], [!UICONTROL U-förmig]und [!UICONTROL Zeitverfall]. Attribution AI unterstützt 3 Experience Platformen-Schemata: Erlebnisereignis, Adobe Analytics und Kundenerlebnisereignis.
 
 Attribution AI kann in Customer Journey Analytics (CJA) integriert werden, soweit Attribution AI Modelle für Daten ausführt. Anschließend importiert CJA die Ausgabe dieser Modelle als Datensatz, der dann in den Rest Ihrer CJA-Datensätze integriert werden kann. Attribution AI-fähige Datensätze können dann in Datenansichten und Berichten in CJA genutzt werden.
 
 ## Workflow
 
-Einige der Schritte werden in Adobe Experience Platform ausgeführt, bevor Sie mit der Ausgabe in CJA arbeiten.
+Einige der Schritte werden in Adobe Experience Platform ausgeführt, bevor Sie mit der Ausgabe in CJA arbeiten. Die Ausgabe besteht aus einem Datensatz mit einem angewendeten Attribution AI-Modell.
 
 ### Schritt 1: Attribution AI-Bewertungen herunterladen
 
@@ -41,13 +46,27 @@ In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen 
 
 ![AAI-Bewertungen](assets/aai-scores.png)
 
+>[!IMPORTANT]
+>
+>Sie können Profil- und Lookup-Datensätze sowie Callcenter- und CRM-Daten zur Verbindung hinzufügen. Es wird jedoch von Adobe nicht empfohlen, Adobe Analytics-Datensätze zu Datensätzen mit Attribution AI-Werten in derselben Verbindung hinzuzufügen.
+
+
 ### Schritt 4: Erstellen von Datenansichten basierend auf diesen Verbindungen
 
-In Customer Journey Analytics: [eine oder mehrere Datenansichten erstellen](/help/data-views/create-dataview.md) die die i-XDM-Felder enthalten. (Es wäre toll, einen Screenshot hier zu haben.)
+In Customer Journey Analytics: [eine oder mehrere Datenansichten erstellen](/help/data-views/create-dataview.md) die die Attribution AI-XDM-Felder enthalten. (Es wäre toll, einen Screenshot hier zu haben.)
 
 ### Schritt 5: Bericht zu AAI-Daten in CJA Workspace
 
-Hier ist ein Beispiel für ein Workspace-Projekt mit AAI-Daten, das ...
+In einem CJA Workspace-Projekt können Sie Metriken wie &quot;AAI-Bestellungen&quot;und Dimensionen wie &quot;AAI-Kampagnenname&quot;oder &quot;AAI-Marketingkanal&quot;abrufen.
+
+![AAI-Dimensionen](assets/aai-dims.png)
+
+Hier sehen wir ein Workspace-Projekt mit AAI-Daten, das Bestellungen mit beeinflussten und inkrementellen Werten anzeigt.
+
+![AAI-Projekt](assets/aai-project.png)
+
+![AAI-Projekt](assets/aai-project2.png)
+
 
 ## Unterschiede zwischen Attribution AI und Attribution IQ
 
