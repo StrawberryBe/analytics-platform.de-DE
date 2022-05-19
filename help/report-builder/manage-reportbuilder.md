@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 01a9ff4e03e002da723c10500de6dec4444f951e
+exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
+source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 2%
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
-
 
 # Verwalten von Datenblöcken in Report Builder
 
@@ -50,19 +50,17 @@ Sie können die Datenansicht, den Datumsbereich oder die auf einen oder mehrere 
 
 Sie können beispielsweise einen vorhandenen Filter in einem oder mehreren Datenblöcken durch einen neuen Filter ersetzen.
 
-1. Wählen Sie die zu aktualisierenden Datenblöcke aus.
+1. Wählen Sie die zu aktualisierenden Datenblöcke aus. Sie können das Kontrollkästchen auf der obersten Ebene aktivieren, um alle Datenblöcke auszuwählen, oder Sie können einzelne Datenblöcke auswählen.
 
-Sie können das Kontrollkästchen auf der obersten Ebene aktivieren, um alle Datenblöcke auszuwählen, oder Sie können einzelne Datenblöcke auswählen.
-
-![image](./assets/image56.png)
+   ![image](./assets/image56.png)
 
 1. Klicken Sie auf das Bearbeitungssymbol, um das Fenster Schnellbearbeitung anzuzeigen.
 
-![image](./assets/image58.png)
+   ![image](./assets/image58.png)
 
 1. Wählen Sie einen Filterlink aus, um Datenansichten, Datumsbereiche oder Filter zu aktualisieren.
 
-![image](./assets/image59.png)
+   ![image](./assets/image59.png)
 
 ## Datenblöcke aktualisieren
 
@@ -81,9 +79,9 @@ Klicken Sie auf das Papierkorbsymbol, um einen ausgewählten Datenblock zu lösc
 
 ## Gruppendatenblöcke
 
-Klicken Sie auf die Spaltentitel, um Datenblöcke zu gruppieren, oder wählen Sie einen Spaltennamen aus dem **Gruppieren nach** *Name* Liste.
+Sie können Datenblöcke mithilfe der **Gruppieren nach** oder Sie können auf einen Spaltentitel klicken. Um Datenblöcke nach Spalten zu sortieren, klicken Sie auf den Spaltentitel. Um Datenblöcke nach Gruppen zu gruppieren, wählen Sie einen Gruppennamen aus der **Gruppieren nach** Dropdown-Menü. Der folgende Screenshot zeigt beispielsweise nach Blatt gruppierte Datenblöcke. Es werden Datenblöcke angezeigt, die nach Blatt1 und Blatt2 gruppiert sind.  Dies ist beispielsweise im Anwendungsfall zum Ersetzen von Filtern nützlich. Wenn auf jeden Datenblock mehrere Filter angewendet werden, ist es hilfreich, eine Gruppe zu erstellen, die alle Datenblöcke enthält, die Sie ersetzen möchten. Dann können Sie sie einfach auswählen und alle gleichzeitig bearbeiten.
 
-![image](./assets/image514.png)
+![image](./assets/group-data-blocks.png)
 
 ## Ändern der Ansicht &quot;Datenblock-Manager&quot;
 
