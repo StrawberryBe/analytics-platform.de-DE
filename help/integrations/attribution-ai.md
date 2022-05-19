@@ -1,84 +1,75 @@
 ---
-description: Find out how AEP Attribution AI integrates with Workspace in CJA.
-title: Integrate Attribution AI with CJA
+description: Erfahren Sie, wie AEP Attribution AI in Workspace in CJA integriert wird.
+title: Attribution AI mit CJA integrieren
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 77b253390dafb27228995f339d138eb9f4fa2c56
+source-git-commit: 5d22437ec6514196146283af311b6661c1f2e45b
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '538'
 ht-degree: 3%
 
 ---
 
-# Integrate Attribution AI with CJA
+# Attribution AI mit CJA integrieren
 
 >[!NOTE]
 >
->This functionality will be released on May 25, 2022.
+>Diese Funktion wird am 25. Mai 2022 veröffentlicht.
 
-[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en) With Attribution AI, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customer journeys.
+[Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)ist als Teil von Adobe Experience Platform Intelligent Services ein algorithmischer Attributionsdienst mit mehreren Kanälen, der den Einfluss und die inkrementelle Auswirkung von Kundeninteraktionen auf bestimmte Ergebnisse berechnet. Mit Attribution AI können Marketing-Experten die Ausgaben für Marketing und Werbung messen und optimieren, indem sie die Auswirkungen jeder einzelnen Kundeninteraktion in jeder Phase der Journey verstehen.
 
-Attribution AI supports two categories of scores: algorithmic and rule-based. Algorithmic scores include incremental and influenced scores.
+Attribution AI unterstützt zwei Bewertungskategorien: algorithmisch und regelbasiert. Algorithmische Werte umfassen inkrementelle und beeinflusste Werte.
 
-* ****
-* **** This baseline depends on AI observations of patterns, seasonality, and so on, due to existing brand recognition, loyalty, and word of mouth. The remaining credit is divided among marketing channels.
+* **Beeinflusste Punktzahl** 100 % des Konversionsguthabens auf Marketingkanäle aufteilen.
+* **Inkrementelle Werte** berücksichtigen Sie zunächst eine Konversionsgrundlinie, die Sie auch ohne Marketing erreicht hätten. Diese Grundlinie hängt von KI-Beobachtungen von Mustern, Saisonabhängigkeit usw. ab, die aufgrund der bestehenden Markenerkennung, -loyalität und der Mundpropaganda erfolgen. Der verbleibende Anteil wird auf die Marketing-Kanäle aufgeteilt.
 
- Attribution AI supports 3 Experience Platform schemas: Experience Event, Adobe Analytics, and Consumer Experience Event.
+Regelbasierte Werte umfassen [!UICONTROL Erstkontakt], [!UICONTROL Letztkontakt], [!UICONTROL Linear], [!UICONTROL U-förmig]und [!UICONTROL Zeitverfall]. Attribution AI unterstützt 3 Experience Platformen-Schemata: Erlebnisereignis, Adobe Analytics und Kundenerlebnisereignis.
 
-Attribution AI integrates with Customer Journey Analytics (CJA) to the extent that Attribution AI runs models against data and then CJA imports the output of those models as a data set, which can then be integrated with the rest of your CJA data sets. Attribution AI-enabled datasets can be then be leveraged in data views and reporting in CJA.
+Attribution AI kann in Customer Journey Analytics (CJA) integriert werden, soweit Attribution AI Modelle für Daten ausführt. Anschließend importiert CJA die Ausgabe dieser Modelle als Datensatz, der dann in den Rest Ihrer CJA-Datensätze integriert werden kann. Attribution AI-fähige Datensätze können dann in Datenansichten und Berichten in CJA genutzt werden.
 
 ## Workflow
 
-Some of the steps are performed in Adobe Experience Platform prior to working with the output in CJA. The output consists of a dataset with an applied Attribution AI model.
+Einige der Schritte werden in Adobe Experience Platform ausgeführt, bevor Sie mit der Ausgabe in CJA arbeiten. Die Ausgabe besteht aus einem Datensatz mit einem angewendeten Attribution AI-Modell.
 
-### Step 1: Download Attribution AI scores
+### Schritt 1: Erstellen einer Attribution AI-Instanz
 
-[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/getting-started.html?lang=en#downloading-attribution-ai-scores)
+Erstellen Sie in Experience Platform eine Attribution AI-Instanz, indem Sie Daten auswählen und zuordnen, Ereignisse definieren und Ihre Daten trainieren, wie beschrieben [here](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html).
 
-### Step 2: Create an Attribution AI instance
+### Schritt 2: Einrichten einer CJA-Verbindung zu Attribution AI-Datensätzen
 
-[](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/user-guide.html)
+In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen erstellen](/help/connections/create-connection.md) zu Experience Platform-Datensätzen, die für Attribution AI instrumentiert wurden. Diese Datensätze werden mit dem Präfix &quot;Attribution AI Scores&quot;angezeigt, wie im folgenden Beispiel:
 
-### Step 3: Set up a CJA connection to Attribution AI datasets
+![AAI-Bewertungen](assets/aai-scores.png)
 
-[](/help/connections/create-connection.md) These datasets appears with the &quot;Attribution AI Scores&quot; prefix, as shown here:
+### Schritt 3: Erstellen von Datenansichten basierend auf diesen Verbindungen
 
-![](assets/aai-scores.png)
+In Customer Journey Analytics: [eine oder mehrere Datenansichten erstellen](/help/data-views/create-dataview.md) die die Attribution AI-XDM-Felder enthalten. (Es wäre toll, einen Screenshot hier zu haben.)
 
->[!IMPORTANT]
->
->You can add profile and lookup datasets, as well as call center and CRM data to the connection. However, Adobe does not recommend adding Adobe Analytics datasets to datasets with Attribution AI scores in the same connection.
+### Schritt 4: Bericht zu AAI-Daten in CJA Workspace
 
+In einem CJA Workspace-Projekt können Sie Metriken wie &quot;AAI-Bestellungen&quot;und Dimensionen wie &quot;AAI-Kampagnenname&quot;oder &quot;AAI-Marketingkanal&quot;abrufen.
 
-### Step 4: Create data views based on these connections
+![AAI-Dimensionen](assets/aai-dims.png)
 
-[](/help/data-views/create-dataview.md) (Would be great to have a screenshot here.)
+Hier sehen wir ein Workspace-Projekt mit AAI-Daten, das Bestellungen mit beeinflussten und inkrementellen Werten anzeigt.
 
-### Step 5: Report on AAI data in CJA Workspace
+![AAI-Projekt](assets/aai-project.png)
 
-In a CJA Workspace project, you can pull in metrics like &quot;AAI Orders&quot;, and dimensions like &quot;AAI Campaign Name&quot; or &quot;AAI Marketing Channel&quot;, for example.
-
-![](assets/aai-dims.png)
-
-Here we see a Workspace project with AAI data that shows orders with influenced and incremental scores.
-
-![](assets/aai-project.png)
-
-![](assets/aai-project2.png)
+![AAI-Projekt](assets/aai-project2.png)
 
 
-## Differences between Attribution AI and Attribution IQ
+## Unterschiede zwischen Attribution AI und Attribution IQ
 
-[](/help/analysis-workspace/attribution/overview.md) This table shows some of the differences in functionality:
+Wann sollten Sie also die Attribution AI-Daten im Vergleich zu [Attribution IQ](/help/analysis-workspace/attribution/overview.md), eine native CJA-Funktion? Die folgende Tabelle zeigt einige Funktionsunterschiede:
 
 | Funktionalität | Attributions-KI | Attribution IQ |
 | --- | --- | --- |
-| Does fractional attribution | Ja | Nein |
-| Allows users to adjust model | Nein | Ja |
-| Does attribution across channels (Note: AAI does not use the same stitched data that CJA does.) | Ja | Ja |
-| Includes incremental and influenced scores | Ja | Nein |
-| Does ML modeling | Ja | Ja |
-| Does ML modeling with predictions | Ja | Nein |
+| Teilzuordnung | Ja | Nein |
+| Ermöglicht Benutzern, das Modell anzupassen | Ja | Ja |
+| Funktioniert die Attribution über Kanäle (Hinweis: AAI verwendet nicht dieselben zugeordneten Daten wie CJA.) | Ja | Ja |
+| Umfasst inkrementelle und beeinflusste Ergebnisse | Ja | Nein |
+| HTML-Modellierung | Ja | Ja |
+| ML-Modellierung mit Prognosen | Ja | Nein |
 
 {style=&quot;table-layout:auto&quot;}
