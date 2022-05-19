@@ -3,10 +3,11 @@ description: Erfahren Sie, wie AEP Attribution AI in Workspace in CJA integriert
 title: Attribution AI mit CJA integrieren
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 5302d9213b66c327b59c3f4476fbf204f1078392
+exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
+source-git-commit: e0b5e91897ce6cdcaebfb2d6663e565dff850d74
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 5%
+source-wordcount: '457'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +43,11 @@ In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen 
 
 ### Schritt 4: Erstellen von Datenansichten basierend auf diesen Verbindungen
 
-In Customer Journey Analytics:
+In Customer Journey Analytics: [eine oder mehrere Datenansichten erstellen](/help/data-views/create-dataview.md) die die i-XDM-Felder enthalten. (Es wäre toll, einen Screenshot hier zu haben.)
+
+### Schritt 5: Bericht zu AAI-Daten in CJA Workspace
+
+Hier ist ein Beispiel für ein Workspace-Projekt mit AAI-Daten, das ...
 
 ## Unterschiede zwischen Attribution AI und Attribution IQ
 
