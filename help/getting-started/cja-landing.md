@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
-workflow-type: ht
-source-wordcount: '345'
-ht-degree: 100%
+source-git-commit: 7bd111c67f49fc56f93039269d9c1714bece311b
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 94%
 
 ---
 
@@ -24,11 +24,10 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Neue oder vorgestellte Funktionen</b> </p> <p> 
      <ul>
+       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/attribution-ai.html?lang=en"> Attribution AI mit CJA integrieren </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de">Integrieren von Customer AI mit CJA</a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=de"> Umstieg von Adobe Analytics auf Customer Journey Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=de"> CJA-Benutzerhandbuch für Adobe Analytics-Benutzer </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html?lang=de"> Verwenden von Bindungsdimensionen und Metriken in CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de"> Verwenden von Marketing-Kanal-Dimensionen in Adobe Experience Platform
- </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#connection-detail"> Verwenden der erweiterten Funktionen zur Verbindungsverwaltung </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de#cja-dataviews"> Verwenden der erweiterten Funktionen für Datenansichten </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=de#cja-usecases"> Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform </a> </li>
