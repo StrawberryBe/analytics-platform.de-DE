@@ -4,10 +4,10 @@ title: Attribution AI mit CJA integrieren
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 1ace9fcb67ec6d1460b5209e2987219ecec52ee2
+source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 3%
+source-wordcount: '908'
+ht-degree: 10%
 
 ---
 
@@ -19,14 +19,28 @@ ht-degree: 3%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en)ist als Teil von Adobe Experience Platform Intelligent Services ein algorithmischer Attributionsdienst mit mehreren Kanälen, der den Einfluss und die inkrementelle Auswirkung von Kundeninteraktionen auf bestimmte Ergebnisse berechnet. Mit Attribution AI können Marketing-Experten die Ausgaben für Marketing und Werbung messen und optimieren, indem sie die Auswirkungen jeder einzelnen Kundeninteraktion in jeder Phase der Journey verstehen.
 
-Attribution AI unterstützt zwei Bewertungskategorien: algorithmisch und regelbasiert. Algorithmische Werte umfassen inkrementelle und beeinflusste Werte.
-
-* **Beeinflusste Punktzahl** 100 % des Konversionsguthabens auf Marketingkanäle aufteilen.
-* **Inkrementelle Werte** berücksichtigen Sie zunächst eine Konversionsgrundlinie, die Sie auch ohne Marketing erreicht hätten. Diese Grundlinie hängt von KI-Beobachtungen von Mustern, Saisonabhängigkeit usw. ab, die aufgrund der bestehenden Markenerkennung, -loyalität und der Mundpropaganda erfolgen. Der verbleibende Anteil wird auf die Marketing-Kanäle aufgeteilt.
-
-Regelbasierte Werte umfassen [!UICONTROL Erstkontakt], [!UICONTROL Letztkontakt], [!UICONTROL Linear], [!UICONTROL U-förmig]und [!UICONTROL Zeitverfall]. Attribution AI unterstützt 3 Experience Platformen-Schemata: Erlebnisereignis, Adobe Analytics und Kundenerlebnisereignis.
-
 Attribution AI kann in Customer Journey Analytics (CJA) integriert werden, soweit Attribution AI Modelle für Daten ausführt. Anschließend importiert CJA die Ausgabe dieser Modelle als Datensatz, der dann in den Rest Ihrer CJA-Datensätze integriert werden kann. Attribution AI-fähige Datensätze können dann in Datenansichten und Berichten in CJA genutzt werden.
+
+Attribution AI unterstützt 3 Experience Platformen-Schemata: Erlebnisereignis, Adobe Analytics und Kundenerlebnisereignis.
+
+Attribution AI unterstützt zwei Bewertungskategorien: algorithmisch und regelbasiert.
+
+## Algorithmische Werte
+
+Algorithmische Werte umfassen inkrementelle und beeinflusste Werte.
+
+* **[!UICONTROL Beeinflusst] Bewertungen** 100 % des Konversionsguthabens auf Marketingkanäle aufteilen.
+* **[!UICONTROL Inkrementell] Bewertungen** berücksichtigen Sie zunächst eine Konversionsgrundlinie, die Sie auch ohne Marketing erreicht hätten. Diese Grundlinie hängt von KI-Beobachtungen von Mustern, Saisonabhängigkeit usw. ab, die aufgrund der bestehenden Markenerkennung, -loyalität und der Mundpropaganda erfolgen. Der verbleibende Anteil wird auf die Marketing-Kanäle aufgeteilt.
+
+## Regelbasierte Werte
+
+Regelbasierte Werte umfassen
+
+* **[!UICONTROL Erstkontakt]** 100 % werden dem Touchpoint zugeschrieben, der zuerst im Attributions-Lookback-Fenster angezeigt wird.
+* **[!UICONTROL Letztkontakt]** 100 % werden dem Touchpoint zugeschrieben, der zuletzt vor der Konvertierung aufgetreten ist.
+* **[!UICONTROL Linear]** gibt jedem Touchpoint, der zu einer Konversion geführt hat, die gleiche Gewichtung.
+* **[!UICONTROL U-förmig]** der ersten Interaktion 40 % zugeschrieben, der letzten Interaktion 40 % und den verbleibenden 20 % auf alle dazwischen liegenden Touchpoints aufgeteilt. Bei Konversionen mit einem einzigen Touchpoint werden diesem 100 % zugeschrieben. Bei Konversionen mit zwei Touchpoints werden jedem 50 % zugeschrieben.
+* **[!UICONTROL Zeitverfall]** folgt einem exponentiellen Abfall mit einem benutzerdefinierten Parameter für die Halbwertszeit, wobei der Standardwert 7 Tage beträgt. Die Gewichtung der einzelnen Kanäle hängt von der Zeit ab, die zwischen dem Beginn des Touchpoints und der letztendlichen Konversion verstrichen ist. Die Formel, die zur Bestimmung der Gewichtung verwendet wird, lautet `2^(-t/halflife)`, wobei `t` die Zeit zwischen einem Touchpoint und einer Konversion ist. Alle Touchpoints werden dann auf 100 % normalisiert.
 
 ## Workflow
 
@@ -60,9 +74,15 @@ Hier sehen wir ein Workspace-Projekt mit AAI-Daten, das Bestellungen mit beeinfl
 
 ![AAI-Projekt](assets/aai-project2.png)
 
+**Marketing-Performance**
+
+Vergleich und Kontrast der Touchpoint-Attribution zwischen verschiedenen Attributionsmodellen:
+
+![Vergleichen](assets/compare.png)
+
 **Kanalinteraktion**
 
-Verstehen Sie die Kanalinteraktion, um zu sehen, welcher Kanal am effektivsten mit anderen Kanälen verwendet werden kann:
+Verstehen Sie die Kanalinteraktion, um mithilfe eines Venn-Diagramms zu sehen, welcher Kanal am effektivsten mit anderen Kanälen verwendet werden kann:
 
 ![Marketingkanalüberschneidung](assets/mc-overlap.png)
 
