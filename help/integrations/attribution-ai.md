@@ -4,9 +4,9 @@ title: Attribution AI mit CJA integrieren
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: acfa4086c525ed78b52e430c110ec1daca9d20a5
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '728'
 ht-degree: 3%
 
 ---
@@ -52,12 +52,34 @@ In einem CJA Workspace-Projekt können Sie Metriken wie &quot;AAI-Bestellungen&q
 
 ![AAI-Dimensionen](assets/aai-dims.png)
 
-Hier sehen wir ein Workspace-Projekt mit AAI-Daten, das Bestellungen mit beeinflussten und inkrementellen Werten anzeigt.
+Hier sehen wir ein Workspace-Projekt mit AAI-Daten, das Bestellungen mit beeinflussten und inkrementellen Werten anzeigt. Führen Sie einen Drilldown zu einer beliebigen Dimension durch, um die Attribution zu verstehen, indem Sie: Kampagne, Produktgruppe, Benutzersegment, Geografie usw.
 
 ![AAI-Projekt](assets/aai-project.png)
 
 ![AAI-Projekt](assets/aai-project2.png)
 
+Verstehen Sie die Kanalinteraktion, um zu sehen, welcher Kanal am effektivsten mit anderen Kanälen verwendet werden kann:
+
+![Marketingkanalüberschneidung](assets/mc-overlap.png)
+
+Diese Tabelle zeigt die wichtigsten Konversionspfade (dedupliziert), die Sie bei der Erstellung und Optimierung von Touchpoints unterstützen:
+
+![Top-Kanäle](assets/top-channels.png)
+
+Hier sehen wir die Vorlaufzeit für die Konversion, wenn ein Touchpoint in der Mischung enthalten ist. Dies hilft bei der Optimierung der Vorlaufzeit:
+
+![Vorlaufzeit](assets/lead-time.png)
+
+## Neue CJA-Metriken
+
+| Metrik | Beschreibung |
+| --- | --- |
+| [!UICONTROL Akquise-Rate] | Für jeden Kanal ist unter den Konversionspfaden, die er berührt hat, der Prozentsatz des Kanals der Starter. |
+| [!UICONTROL Player-Rate] | Für jeden Kanal ist unter den Konversionspfaden, die er berührt hat, der Prozentsatz des Kanals ein Player. |
+| [!UICONTROL Höhere Rate] | Für jeden Kanal ist der Prozentsatz des Kanals unter den von ihm berührten Konversionspfaden der Closer. |
+| [!UICONTROL AAI AVG Days Away from Order] | Für jeden Kanal die durchschnittliche Anzahl der Tage seit der Bestellung. |
+| [!UICONTROL AAI AVG Total Days in Sales Process] | Für jeden Kanal die durchschnittlichen Gesamttage der Konversionspfade, die er berührt hat. |
+| [!UICONTROL AVG Touch Away From Order] | Für jeden Kanal ändert sich der Durchschnitt von der Bestellung ab. |
 
 ## Unterschiede zwischen Attribution AI und Attribution IQ
 
