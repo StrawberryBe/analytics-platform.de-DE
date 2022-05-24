@@ -4,9 +4,9 @@ description: Häufig gestellte Fragen zur kanalübergreifenden Analyse
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: de12bb7758904fb471a2da940d5281a5937f7d21
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '975'
 ht-degree: 97%
 
 ---
@@ -65,3 +65,7 @@ Bestimmte Metriken in CJA ähneln den Metriken in herkömmlichem Analytics, ande
 | **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einem leeren `Persistent ID`. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in CJA. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten in AEP Data Lake ein leeres `Person ID` enthalten, in CJA abgelegt (nicht eingeschlossen) werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
 Andere Metriken können in CJA und im herkömmlichen Adobe Analytics ähnlich sein. Beispielsweise sollte im Allgemeinen die Gesamtanzahl für [benutzerdefinierte Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) in Adobe Analytics (Ereignisse 1-100) im herkömmlichen Adobe Analytics und CJA sehr nahe liegen (unabhängig davon, ob zugeordnet oder nicht zugeordnet). Beachten Sie jedoch, dass dies möglicherweise nicht immer zutrifft, da [die Funktionen unterschiedlich sind](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=de), z. B. die Deduplizierung von Ereignissen zwischen CJA und herkömmlichem Adobe Analytics.
+
+## Kann die kanalübergreifende Analyse Identitätszuordnungsfelder verwenden?
+
+Nein, die kanalübergreifende Analyse kann derzeit keine identityMap-Felder verwenden.
