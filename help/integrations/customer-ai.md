@@ -4,18 +4,14 @@ title: Integrieren von Customer AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Integrieren von Customer AI mit CJA
-
->[!NOTE]
->
->Diese Funktion wird am 25. Mai 2022 veröffentlicht.
 
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en)bietet als Teil von Adobe Experience Platform Intelligent Services Marketing-Experten die Möglichkeit, Kundenprognosen auf individueller Ebene zu generieren.
 
@@ -41,7 +37,11 @@ Nachdem Sie Ihre Daten vorbereitet und alle Ihre Anmeldedaten und Schemata einge
 
 ### Schritt 2: Einrichten einer CJA-Verbindung zu Customer AI-Datensätzen
 
-In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen erstellen](/help/connections/create-connection.md) in Experience Platform von Datensätzen, die für Customer AI instrumentiert wurden. Jede Prognose, z. B. &quot;Wahrscheinlichkeit einer Aktualisierung des Kontos&quot;, entspricht einem Datensatz. Diese Datensätze werden mit dem Präfix &quot;Customer AI Scores&quot;angezeigt, wie im folgenden Beispiel:
+In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen erstellen](/help/connections/create-connection.md) in Experience Platform von Datensätzen, die für Customer AI instrumentiert wurden. Jede Prognose, z. B. &quot;Wahrscheinlichkeit einer Aktualisierung des Kontos&quot;, entspricht einem Datensatz. Diese Datensätze werden mit dem Präfix &quot;Customer AI Scores in EE Format - Name_der_Anwendung&quot;angezeigt.
+
+>[!IMPORTANT]
+>
+>Jede Customer AI-Instanz verfügt über zwei Ausgabedatensätze, wenn der Umschalter aktiviert ist, um während der Konfiguration in Schritt 1 Bewertungen für CJA zu aktivieren. Ein Ausgabedatensatz wird im Profil-XDM-Format und ein im Experience Event XDM-Format angezeigt.
 
 ![CAI-Werte](assets/cai-scores.png)
 
