@@ -4,10 +4,10 @@ title: Integrieren von Customer AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '873'
+ht-degree: 5%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 Mithilfe von Einflussfaktoren kann Customer AI vorhersagen, was ein Kunde wahrscheinlich tun wird und warum. Darüber hinaus können Marketing-Experten von Prognosen und Einblicken durch Customer AI profitieren, um Kundenerlebnisse durch Bereitstellung der am besten geeigneten Angebote und Botschaften zu personalisieren.
 
-Customer AI stützt sich bei der Tendenzauswertung auf individuelle Verhaltensdaten und Profildaten. Customer AI ist insofern flexibel, als es mehrere Datenquellen aufnehmen kann, einschließlich Adobe Analytics, Adobe Audience Manager, Kundenerlebnis-Ereignisdaten und Erlebnisereignisdaten. Wenn Sie den AEP-Data Connector verwenden, um Adobe Audience Manager- und Adobe Analytics-Daten einzubringen, übernimmt das Modell automatisch die standardmäßigen Ereignistypen, um das Modell zu trainieren und zu bewerten. Wenn Sie Ihren eigenen Erlebnisereignis-Datensatz ohne standardmäßige Ereignistypen einfügen, müssen alle relevanten Felder als benutzerdefinierte Ereignisse oder Profilattribute zugeordnet werden, wenn Sie ihn im Modell verwenden möchten. Dies kann im Konfigurationsschritt Customer AI erfolgen. &#x200B;
+Customer AI stützt sich bei der Tendenzauswertung auf individuelle Verhaltensdaten und Profildaten. Customer AI ist insofern flexibel, als es mehrere Datenquellen aufnehmen kann, einschließlich Adobe Analytics, Adobe Audience Manager, Kundenerlebnis-Ereignisdaten und Erlebnisereignisdaten. Wenn Sie den Quell-Connector der Experience Platform verwenden, um Adobe Audience Manager- und Adobe Analytics-Daten einzubringen, übernimmt das Modell automatisch die standardmäßigen Ereignistypen, um das Modell zu trainieren und zu bewerten. Wenn Sie Ihren eigenen Erlebnisereignis-Datensatz ohne standardmäßige Ereignistypen einfügen, müssen alle relevanten Felder als benutzerdefinierte Ereignisse oder Profilattribute zugeordnet werden, wenn Sie ihn im Modell verwenden möchten. Dies kann im Konfigurationsschritt Customer AI in Experience Platform durchgeführt werden. &#x200B;
 
 Customer AI kann in Customer Journey Analytics (CJA) integriert werden, soweit für Customer AI aktivierte Datensätze in Datenansichten und Berichten in CJA genutzt werden können. Mit dieser Integration können Sie
 
 * **Tendenzwerte für ein Segment von Benutzern im Zeitverlauf verfolgen**. Anwendungsbeispiel: Wie hoch ist die Wahrscheinlichkeit, dass ein Hotelkunde ein Showticket am Konzertplatz des Hotels kauft?
 * **Analysieren, welche Erfolgsereignisse oder Attribute mit Tendenzwerten verknüpft sind**. &#x200B;Anwendungsbeispiel: Ich möchte die Attribute oder Erfolgsereignisse verstehen, die mit Tendenzwerten verknüpft sind.
 * **Folgen Sie dem Einstiegsfluss für die Neigung von Kunden zu verschiedenen Scoring-Läufen.**. Anwendungsbeispiel: Ich möchte Menschen verstehen, die anfangs wenig Neigung hatten und im Laufe der Zeit zu Nutzern mit hoher Neigung wurden. &#x200B;
-* **Die Verteilung der Neigung**. Anwendungsfall: Ich möchte die Verteilung der Tendenzwerte auf meine Segmente verstehen. &#x200B;Beispiel: Ein Einzelhändler möchte eine spezifische Promotion für 50 US-Dollar pro Produkt durchführen.  Sie möchten möglicherweise nur eine sehr begrenzte Promotion durchführen, die auf Budget zurückzuführen ist, usw. Sie analysieren die Daten und entscheiden, nur die 80 %+ &#x200B; ihrer Kunden als Ziel festzulegen.
+* **Die Verteilung der Neigung**. Anwendungsfall: Ich möchte die Verteilung der Tendenzwerte auf meine Segmente verstehen. &#x200B;Beispiel: Ein Einzelhändler möchte eine spezifische Promotion für 50 US-Dollar pro Produkt durchführen. Sie möchten möglicherweise nur eine sehr begrenzte Promotion durchführen, z. B. aufgrund des Budgets. Sie analysieren die Daten und entscheiden, nur die 80 %+ &#x200B; ihrer Kunden als Ziel festzulegen.
 * **Betrachten Sie die Tendenz, im Laufe der Zeit eine Aktion für eine bestimmte Kohorte durchzuführen.**. Anwendungsfall: Ich möchte eine bestimmte Kohorte im Laufe der Zeit verfolgen. Dies ähnelt der ersten, Sie können jedoch eine bestimmte Kohorte im Laufe der Zeit verfolgen&#x200B; Beispiel für Gastgewerbe: Ein Marketingexperte kann seine Bronzestufe im Laufe der Zeit im Vergleich zu ihrer Silberstufe oder der Silberstufe im Vergleich zu ihrer Goldstufe nachverfolgen. Dann können sie die Neigung jeder Kohorte sehen, das Hotel im Laufe der Zeit zu buchen. &#x200B;
 
 ## Workflow
@@ -33,7 +33,7 @@ Einige der Schritte werden in Adobe Experience Platform ausgeführt, bevor Sie m
 
 ### Schritt 1: Konfigurieren einer Customer AI-Instanz
 
-Nachdem Sie Ihre Daten vorbereitet und alle Ihre Anmeldedaten und Schemata eingerichtet haben, führen Sie die folgenden Schritte aus: [Konfigurieren einer Customer AI-Instanz](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) Handbuch.
+Nachdem Sie Ihre Daten vorbereitet und alle Ihre Anmeldedaten und Schemata eingerichtet haben, führen Sie die folgenden Schritte aus: [Konfigurieren einer Customer AI-Instanz](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=en) Handbuch in Adobe Experience Platform.
 
 ### Schritt 2: Einrichten einer CJA-Verbindung zu Customer AI-Datensätzen
 
