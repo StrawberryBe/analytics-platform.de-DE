@@ -4,9 +4,9 @@ title: Integrieren von Customer AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '891'
 ht-degree: 5%
 
 ---
@@ -63,21 +63,31 @@ In Customer Journey Analytics können Sie jetzt mit [Datenansichten erstellen](/
 
 In CJA Workspace können Sie jetzt ein neues Projekt erstellen und Visualisierungen abrufen.
 
+**Trend-Tendenzwerte**
+
 Im Folgenden finden Sie ein Beispiel für ein Workspace-Projekt mit CAI-Daten, &#x200B; in einem gestapelten Balkendiagramm Trends für Tendenzwerte für ein Benutzersegment im Zeitverlauf:
 
 ![Score-Buckets](assets/workspace-scores.png)
+
+**Tabelle mit Begründungscodes**
 
 In der folgenden Tabelle finden Sie die Gründe für die Verwendung von &#x200B; für ein Segment mit hoher oder niedriger Neigung:
 
 ![Grund-Codes](assets/reason-codes.png)
 
+**Einstiegsfluss für die Kundenneigung**
+
 Dieses Flussdiagramm zeigt den Einstiegsfluss für die Neigung von Kunden zu verschiedenen Scoring-Läufen &#x200B;:
 
 ![Einstiegsfluss](assets/flow.png)
 
+**Verteilung der Tendenzwerte**
+
 Dieses Balkendiagramm zeigt die Verteilung der Tendenzwerte &#x200B;:
 
 ![Distribution](assets/distribution.png)
+
+**Tendenzüberschneidungen**
 
 Dieses Venn-Diagramm zeigt die Tendenzüberschneidungen bei verschiedenen Scoring-Läufen:
 

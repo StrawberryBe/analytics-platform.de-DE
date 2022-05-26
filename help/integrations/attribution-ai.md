@@ -4,9 +4,9 @@ title: Attribution AI mit CJA integrieren
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '859'
 ht-degree: 10%
 
 ---
@@ -54,7 +54,7 @@ In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen 
 
 ### Schritt 3: Erstellen von Datenansichten basierend auf diesen Verbindungen
 
-In Customer Journey Analytics: [eine oder mehrere Datenansichten erstellen](/help/data-views/create-dataview.md) die die Attribution AI-XDM-Felder enthalten. (Es wäre toll, einen Screenshot hier zu haben.)
+In Customer Journey Analytics: [eine oder mehrere Datenansichten erstellen](/help/data-views/create-dataview.md) die die Attribution AI-XDM-Felder enthalten.
 
 ### Schritt 4: Bericht zu AAI-Daten in CJA Workspace
 
@@ -64,7 +64,7 @@ In einem CJA Workspace-Projekt können Sie Metriken wie &quot;AAI-Bestellungen&q
 
 >[!IMPORTANT]
 >
->Diese Dimensionen und Metriken werden auf diese Weise nicht nativ benannt. Dies sind &quot;Anzeigenamen&quot;. Die [Namenskonvention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) folgt dem Schemapfad. Es wird empfohlen, die Namen der langen Schemapfade in AAI in kurze, benutzerfreundlichere Namen (Dimensionen/Metriken) in CJA umzubenennen. Sie können dies in **[!UICONTROL Datenansichten]** > **[!UICONTROL Datenansicht bearbeiten]** > **[!UICONTROL Komponenten]** tab > **[!UICONTROL Schemafelder]** -> Klicken Sie auf ein Schemafeld -> **[!UICONTROL Komponentenname]**.
+>Diese Dimensionen und Metriken werden auf diese Weise nicht nativ benannt. Dies sind &quot;Anzeigenamen&quot;. Die [Namenskonvention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) folgt dem Schemapfad. Es wird empfohlen, die langen AAI-Schemapfadnamen in kurze, benutzerfreundlichere Namen (Dimensionen/Metriken) in CJA umzubenennen. Sie können dies in **[!UICONTROL Datenansichten]** > **[!UICONTROL Datenansicht bearbeiten]** > **[!UICONTROL Komponenten]** tab > **[!UICONTROL Schemafelder]** -> Klicken Sie auf ein Schemafeld -> **[!UICONTROL Komponentenname]**.
 
 
 **Bestellungen mit beeinflussten und inkrementellen Ergebnissen**
