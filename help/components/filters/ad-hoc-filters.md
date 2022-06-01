@@ -4,7 +4,7 @@ title: Ad-hoc-Projektfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 6627c8e8f6e88fd93ffaad12b38e5e1dbbc844a8
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 47%
@@ -20,8 +20,7 @@ Im Folgenden finden Sie ein Video zum Erstellen von Ad-hoc-Projektfiltern:
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. 
-   1. Ziehen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Segment, Segmentvorlage, Datumsbereich) in die Filter-Dropzone am oberen Rand eines Bedienfelds. Komponententypen werden automatisch in Ad-hoc-Filter oder [Schnellfilter](/help/components/filters/quick-filters.md) wenn kompatibel.
+1. Ziehen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Segment, Segmentvorlage, Datumsbereich) in die Filter-Dropzone am oberen Rand eines Bedienfelds. Komponententypen werden automatisch in Ad-hoc-Filter oder [Schnellfilter](/help/components/filters/quick-filters.md) wenn kompatibel.
 
    Im Folgenden finden Sie ein Beispiel für die Erstellung eines Filters für die Twitter-Referrer-Domain:
 
