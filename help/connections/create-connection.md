@@ -4,16 +4,16 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 322961b416deb049010d9e4e3f2301300a116ee4
+source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 70%
+source-wordcount: '2319'
+ht-degree: 64%
 
 ---
 
 # Verbindung herstellen
 
-Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verbindungen gestartet. Im Folgenden finden Sie einen Überblick über die neuen Funktionen:
+Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verbindungen gestartet. Das neue Workflow-Erlebnis für die Erstellung und Bearbeitung von Verbindungen bringt alle Einstellungen für Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow in die Mitte des Bildschirms.  Wir haben eine detaillierte Auswahl, Konfiguration und Prüferfahrung für Datensätze mit kritischen Informationen wie Datensatztyp, Größe, Schema, Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr bereitgestellt, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die neuen Funktionen:
 
 * Sie können bei der Erstellung der Verbindung ein rollierendes Fenster zur Datenaufbewahrung aktivieren.
 * Sie können Datensätze zu einer Verbindung hinzufügen und daraus entfernen. (Wenn Sie einen Datensatz entfernen, wird er aus der Verbindung entfernt und wirkt sich auf alle zugehörigen Datenansichten und zugrunde liegenden Analysis Workspace-Projekte aus.)
@@ -47,7 +47,7 @@ Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verb
    | **[!UICONTROL Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Übereinstimmender Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Neue Daten importieren]** | Auf Ein oder Aus einstellen. |
-   | **[!UICONTROL Aufstockungsdaten]** |  |
+   | **[!UICONTROL Aufstockungsdaten]** | Sie können die Aufstockung der Daten in einem Datensatz basierend auf Ereignis-Zeitstempeln anfordern. Sie können beispielsweise anfordern, die Daten der letzten sieben Tage aufzustocken, die richtige Personen-ID zu konfigurieren und Ihre Verbindung auf korrekte Konfiguration zu testen. Wenn alles gut aussieht, können Sie alle verbleibenden Daten problemlos aufstocken.<p>Darüber hinaus können Sie den Import neuer Daten nach Datensatz aktivieren. Beispielsweise können Sie den Import neuer Daten nur für Suchdaten aktivieren. |
    | **[!UICONTROL Aufstockungsstatus]** | Gibt an, ob Aufstockungsdaten verarbeitet werden. |
 
    {style=&quot;table-layout:auto&quot;}
@@ -77,7 +77,7 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Experience Platform eine
    | **[!UICONTROL Schema]** | Dies ist das Schema, auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde. |
    | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. |
    | **[!UICONTROL Vorschau]**: `<dataset name>` | Vorschau des Datensatzes mit den Spalten Datum, Kennung und Kennung . |
-   | **[!UICONTROL Entfernen]** | Entfernen Sie diesen Datensatz aus der Verbindung. |
+   | **[!UICONTROL Entfernen]** | Sie können den Datensatz löschen oder entfernen und die Personen-ID ändern, ohne die gesamte Verbindung zu löschen. Dies reduziert die Kosten für die Datenerfassung und den aufwändigen Prozess der Neuerstellung der gesamten Verbindung und der zugehörigen Datenansichten. |
 
    {style=&quot;table-layout:auto&quot;}
 
