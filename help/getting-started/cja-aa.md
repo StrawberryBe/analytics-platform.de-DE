@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 146c8b9b4918c753391484dc1267e1cb90380525
+source-git-commit: e9f83a6169addc7d7df1ef7902466008f66ef66b
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 99%
+source-wordcount: '1416'
+ht-degree: 95%
 
 ---
 
@@ -30,6 +30,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Datumsvergleiche | Vollständige Unterstützung. |
 | Datumsbereiche | Alle Datumsbereichsfunktionen werden unterstützt. |
 | Sommerzeit | Vollständige Unterstützung. |
+| Geräte-, Browser-, Referrer-, Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schemafelder enthält und der XDM-Erlebnisereignis-Klasse entspricht. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). Für CJA-Kunden, die ADC nicht zum Ausfüllen von Daten aus Adobe Analytics in Customer Journey Analytics verwenden, sondern stattdessen die Datenerfassung des AEP Web SDK verwenden, werden derzeit das Gerät und die Dimensionen, die auf der Geräterücksicht basieren, nicht unterstützt, aber in naher Zukunft verfügbar sein. |
 | Dimensionen | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Dimensionen. CJA ist nicht an benutzerdefinierte eVars oder Props von herkömmlichem Adobe Analytics gebunden. |
 | Löschung gemäß der DSGVO | Vollständige Unterstützung; beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] gehandhabt wird. CJA übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
 | Listenvariablen/Listen-Props | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
@@ -57,7 +58,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | A4T | Unterstützung wird über Felder im [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. |
 | Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können in Experience Platform und Customer Journey Analytics mit dem Analytics Classifications Data Connector importiert werden. Lookup-Datensätze können auch direkt in Adobe Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
-| Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
+| Benutzerdefinierte Sitzungen | Unterstützung für alle benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundtreffern. |
 | Kundenattribute | Sie werden jetzt als „Profildatensätze“ bezeichnet und nicht automatisch aus Experience Cloud importiert, sondern müssen erst in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
 | Dimensionen [!UICONTROL Gerät], [!UICONTROL Browser], [!UICONTROL Referrer], [!UICONTROL Technologie] | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schemafelder enthält und der XDM-Erlebnisereignis-Klasse entspricht. In unserer [Dokumentation erfahren Sie, welche Analytics-Variablen über den Analytics-Quell-Connector unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de). Für CJA-Kunden, die den Quell-Connector nicht zum Einfügen von Daten aus Adobe Analytics in CJA verwenden, sondern stattdessen Daten mit dem AEP-Web-SDK erfassen, werden [!UICONTROL Geräte] und Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Dies wird aber in naher Zukunft der Fall sein. |
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
