@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ab60cb09e4578be0fda642a3669af7e4c796fd52
+source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 94%
+source-wordcount: '1432'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Datumsvergleiche | Vollständige Unterstützung. |
 | Datumsbereiche | Alle Datumsbereichsfunktionen werden unterstützt. |
 | Sommerzeit | Vollständige Unterstützung. |
-| Geräte-, Browser-, Referrer-, Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schemafelder enthält und der XDM-Erlebnisereignis-Klasse entspricht. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). Für CJA-Kunden, die ADC nicht zum Ausfüllen von Daten aus Adobe Analytics in Customer Journey Analytics verwenden, sondern stattdessen die Datenerfassung des AEP Web SDK verwenden, werden derzeit das Gerät und die Dimensionen, die auf der Geräterücksicht basieren, nicht unterstützt, aber in naher Zukunft verfügbar sein. |
+| Geräte-, Browser-, Referrer-, Technologie-Dimensionen | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schemafelder enthält und der XDM-Erlebnisereignis-Klasse entspricht. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de).<p>Wenn Sie Adobe Source Connector nicht zum Ausfüllen von Daten aus Adobe Analytics in Customer Journey Analytics verwenden, sondern stattdessen die Experience Platform Web SDK-Datenerfassung verwenden, werden das Gerät und die Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Sie werden in naher Zukunft unterstützt. |
 | Dimensionen | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Dimensionen. CJA ist nicht an benutzerdefinierte eVars oder Props von herkömmlichem Adobe Analytics gebunden. |
 | Löschung gemäß der DSGVO | Vollständige Unterstützung; beachten Sie, dass die DSGVO jetzt in Abstimmung mit [!UICONTROL Adobe Experience Platform] gehandhabt wird. CJA übernimmt alle Datenänderungen, die [!UICONTROL Experience Platform] an den zugrunde liegenden Datensätzen vornimmt. |
 | Listenvariablen/Listen-Props | Vollständige Unterstützung; CJA nutzt XDM und unterstützt unbegrenzte Zeichenfolgen-Arrays, die ähnlich wie listVars verwendet werden können. |
@@ -52,6 +52,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Virtual Report Suites | Vollständige Unterstützung; jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
 | Kuratierung von VRS-Komponenten | Vollständige Unterstützung; jetzt Teil der Datenansichten. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Mit Einschränkungen unterstützt
 
 | Funktion | Hinweise |
@@ -69,14 +71,18 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
 | Visualisierungen | Alle Visualisierungen mit Ausnahme der Zuordnungsvisualisierung werden unterstützt. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Teilweise Unterstützung
 
 | Funktion | Hinweise |
 | --- | --- |
 | Bot-Filterung | Bei Datensätzen, die auf dem [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) basieren, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
-| Media Analytics | Mediendaten stehen als Teil des Analytics-Quell-Connectors zur Verfügung. |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“, „Analytics for Target (A4T)“ und „Gleichzeitige Medienbesucher“ werden nicht unterstützt. |
 | Verarbeitungsregeln | Auf Analytics Data Connector-basierte Datensätze werden weiterhin Verarbeitungsregeln angewendet. [Datenvorbereitungsfunktionen in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform übermittelt werden. |
+| Streaming Media Analytics | Mediendaten sind als Teil der [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Derzeit nicht unterstützt, aber geplant
 
@@ -94,6 +100,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Segmentveröffentlichung (Senden von Segmenten aus Arbeitsbereich an Experience Cloud) | Unterstützung ist geplant. Wird in CJA als „Zielgruppenveröffentlichung“ bezeichnet. |
 | Reporting über neue und wiederholte Sitzungen | Die Unterstützung ist mit einigen Einschränkungen geplant. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Unterstützung ist noch nicht geplant
 
 | Funktion | Hinweise |
@@ -104,6 +112,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Daten-Feeds | Unterstützung ist noch nicht geplant. |
 | Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
 | Transaktions-ID-Datenquellen | Unterstützung ist noch nicht geplant. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Keine Unterstützung geplant
 
