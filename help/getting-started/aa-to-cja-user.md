@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '1456'
-ht-degree: 100%
+source-git-commit: c33176b695d5ea3417ff17fe3140589d803472ae
+workflow-type: tm+mt
+source-wordcount: '1457'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,9 @@ Sie können [!UICONTROL Filter] ([!UICONTROL Segmente]) von [!DNL Customer Journ
 
 Zusätzlich zum geänderten Konzept der Segmente wurden auch Segment-Container aktualisiert.
 
-* **Treffer-Container sind jetzt „Ereignis“-Container**. Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Besucher innerhalb eines bestimmten Zeitraums.
-* **Besucher-Container sind jetzt „Sitzungs“-Container**. Mit dem [!UICONTROL Sitzungs]-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden.
-* **Besucher-Container sind jetzt [!UICONTROL Person]-Container**. Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Besucher innerhalb eines bestimmten Zeitraums.
+* **Trefferbehälter sind jetzt [!UICONTROL Ereignis] container**. Die [!UICONTROL Ereignis] -Container können Sie die Besucherinformationen auf der Grundlage einzelner Seitenansichten/Treffer aufschlüsseln.
+* **Besuchebehälter sind jetzt [!UICONTROL Sitzung] container**. Mit dem [!UICONTROL Sitzungs]-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden.
+* **Besucher-Container sind jetzt [!UICONTROL Person]-Container**. Die [!UICONTROL Person] -Container enthält alle Sitzungen und Ereignisse für einen Besucher innerhalb des festgelegten Zeitraums.
 
 ## Änderungen am Konzept der berechneten Metriken
 
