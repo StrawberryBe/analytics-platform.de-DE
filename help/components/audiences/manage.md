@@ -1,9 +1,9 @@
 ---
 title: In Customer Journey Analytics erstellte Zielgruppen verwalten
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics verwalten
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '253'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ Die Verwaltung zuvor erstellter Audiences ermöglicht Ihnen Folgendes:
 
 * **Planung oder Aufhebung des Zeitplans** automatische Aktualisierung/Aktualisierung der Zielgruppe. Die maximale Gültigkeit des Zeitplans beträgt 1 Jahr.
 * **Audience-Aktualisierungszeitplan erneuern** wenn sie bald abläuft. Das Auslaufen von Zielgruppen wird ähnlich wie das Auslaufen geplanter Berichte behandelt - der Administrator erhält einen Monat vor Ablauf des Zeitplans eine E-Mail.
-* **Letzte Aktualisierung einer Zielgruppe anzeigen**
+* Anzeigen der **letzte Aktualisierung einer Zielgruppe**
 * Gewinnen Sie Einblicke in **Dauer der Erstellung einer Audience** von Customer Journey Analytics (CJA) aus und die Zeit, die benötigt wurde, um die Zielgruppe zur Aktivierung im Echtzeit-Kundenprofil erscheinen zu lassen.
 * Überprüfen Sie, ob die Zielgruppen in CJA **aktiv vom Echtzeit-Kundenprofil verwendet werden** oder (im Idealfall) alle Experience Platform Apps, die die von CJA erstellten Zielgruppen nutzen.
 
@@ -40,6 +40,8 @@ Screenshot
 ## Anzeigen und Verwenden von CJA-Zielgruppen in Experience Platform
 
 Sie können CJA-Zielgruppen in Platform anzeigen, indem Sie [!UICONTROL Segmente] > [!UICONTROL Segmente erstellen] > [!UICONTROL Zielgruppen] tab > [!UICONTROL CJA-Zielgruppen].
+
+Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 ![](assets/audiences-aep.png)
 

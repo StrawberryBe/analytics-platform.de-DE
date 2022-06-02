@@ -2,10 +2,10 @@
 title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: b907e62bfabd8cb42dc89d551d7b5285cb61298e
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '371'
+ht-degree: 88%
 
 ---
 
@@ -41,10 +41,10 @@ Sie können diese Filter wie folgt öffentlich (global) machen:
 Es gibt verschiedene weitere Methoden für das Anwenden von Filtern auf ein Projekt:
 
 | Aktion | Beschreibung |
-|--- |--- |
+| --- | --- |
 | Filter aus Auswahl erstellen | Erstellen Sie einen Inline-Filter. Dieser Filter gilt nur für das geöffnete Projekt und wird nicht als CJA-Filter gespeichert.<p> 1. Wählen Sie die Tabellenzeilen aus, die Teil des Filters sein sollen.  2. Rechtsklick auf die Auswahl.  3. Klick auf *Filter aus Auswahl erstellen*. |
-| Komponenten > Neuer Filter | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=de). |
+| Arbeitsbereich [!UICONTROL Komponenten] > [!UICONTROL Neuer Filter] | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=de). |
 | „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Kuratieren und freigeben](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=de#concept_4A9726927E7C44AFA260E2BB2721AFC6) werden Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar. |
-| Filter als Dimensionen verwenden | Video: Verwenden von Filtern als Dimensionen in Analysis Workspace. |
+| Filter als Dimensionen verwenden | Siehe Video unten: Verwenden von Filtern als Dimensionen in Analysis Workspace |
 
 >[!VIDEO](https://video.tv.adobe.com/v/23974)

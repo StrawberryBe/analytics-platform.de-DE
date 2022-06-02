@@ -1,9 +1,9 @@
 ---
 title: Veröffentlichung von CJA-Zielgruppen - Überblick
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '367'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ Das Veröffentlichen von Zielgruppen bietet eine klare Möglichkeit, um auf Einb
 * E-Mails an diese Audience senden
 * Push-Nachrichten an diese Zielgruppe senden
 * Verwenden der Zielgruppe für eine Journey in Adobe Journey Optimizer.
-* Exportieren der Zielgruppe in ein Drittanbieter über ein AEP-Ziel
+* Exportieren der Zielgruppe in ein Drittanbieter über ein Experience Platform-Ziel.
 
 ## Wichtige Terminologie
 
@@ -34,5 +34,7 @@ Administratoren erhalten automatisch die [!UICONTROL Zielgruppenveröffentlichun
 
 ## Nächste Schritte
 
+* [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md)
+* [Zielgruppen verwalten](/help/components/audiences/manage.md)
 
 
