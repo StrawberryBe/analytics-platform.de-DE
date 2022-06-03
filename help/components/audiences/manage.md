@@ -1,15 +1,19 @@
 ---
 title: In Customer Journey Analytics erstellte Zielgruppen verwalten
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics verwalten
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '260'
 ht-degree: 8%
 
 ---
 
 
 # In Customer Journey Analytics erstellte Zielgruppen verwalten
+
+>[!NOTE]
+>
+>Diese Funktion ist derzeit in [begrenzte Tests](/help/release-notes/releases.md).
 
 Die Verwaltung zuvor erstellter Audiences ermöglicht Ihnen Folgendes:
 

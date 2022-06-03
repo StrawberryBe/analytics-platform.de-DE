@@ -1,15 +1,19 @@
 ---
 title: Veröffentlichung von CJA-Zielgruppen - Überblick
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
+source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '374'
 ht-degree: 9%
 
 ---
 
 
 # Überblick über die Veröffentlichung von CJA-Zielgruppen
+
+>[!NOTE]
+>
+>Diese Funktion ist derzeit in [begrenzte Tests](/help/release-notes/releases.md).
 
 Sie können jetzt Zielgruppen veröffentlichen, die in Customer Journey Analytics (CJA) gefunden werden, in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung. Mit dem Echtzeit-Kundenprofil können Sie eine ganzheitliche Ansicht jedes einzelnen Kunden anzeigen, indem Sie Daten aus mehreren Kanälen, einschließlich Online, Offline, CRM und Drittanbieter, kombinieren. Mit dem Profil können Sie Ihre Kundendaten in einer zentralen Ansicht zusammenführen, die eine aussagekräftige Darstellung jeder Kundeninteraktion mit Zeitstempel bietet.
 
