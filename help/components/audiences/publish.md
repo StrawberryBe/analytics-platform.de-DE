@@ -1,9 +1,9 @@
 ---
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Audiences aus Customer Journey Analytics veröffentlichen
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '827'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 >
 >Diese Funktion ist derzeit in [begrenzte Tests](/help/release-notes/releases.md).
 
-In diesem Thema wird beschrieben, wie Sie in Customer Journey Analytics (CJA) gefundene Zielgruppen in veröffentlichen. [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung.
+In diesem Thema wird beschrieben, wie Sie Zielgruppen erstellen und veröffentlichen, die in Customer Journey Analytics (CJA) in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung.
 
 Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) sich mit dem Konzept der CJA-Zielgruppen vertraut zu machen.
 
@@ -47,7 +47,7 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Audience zurückgehen möchten. Die maximale ist 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
    | [!UICONTROL Filter] | Filter sind die Haupteingaben für die Zielgruppe. Sie können bis zu 20 Filter hinzufügen. Diese Filter können mit `And` oder `Or` Operatoren. |
-   | [!UICONTROL Beispiel-IDs anzeigen] | Beispiel für IDs in dieser Zielgruppe. Verwenden Sie die Suchleiste, um nach Beispiel-IDs zu suchen.<p>!![](assets/sample-ids.png |
+   | [!UICONTROL Beispiel-IDs anzeigen] | Beispiel für IDs in dieser Zielgruppe. Verwenden Sie die Suchleiste, um nach Beispiel-IDs zu suchen. |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -72,7 +72,23 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
 
 1. Wenn alles gut aussieht, klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
+   Wenn alles gut gelaufen ist, erhalten Sie eine Bestätigungsnachricht, dass die Zielgruppe veröffentlicht wurde.
+
+1. Klicken **[!UICONTROL Anzeigen der Zielgruppe in AEP]** innerhalb derselben Nachricht angezeigt werden, gelangen Sie zur Segmentoberfläche in Adobe Experience Platform. Weitere Informationen finden Sie unten.
+
+## Verwenden von CJA-Zielgruppen in Experience Platform
+
+Sie können CJA-Zielgruppen in Platform anzeigen, indem Sie **[!UICONTROL Segmente]** > **[!UICONTROL Segmente erstellen]** > **[!UICONTROL Zielgruppen]** tab > **[!UICONTROL CJA-Zielgruppen]**.
+
+Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
+
+![](assets/audiences-aep.png)
+
+Wenn Sie sich dafür entscheiden, diese Zielgruppe in den AEP Data Lake zu exportieren, wird sie als Datensatz angezeigt, der der XDM Individual Profile Schema Class entspricht:
+
+![](assets/aep-datalake.png)
+
+
 ## Nächste Schritte
 
 * Um diese Zielgruppe zu verwalten, navigieren Sie zum [Management-Benutzeroberfläche](/help/components/audiences/manage.md).
-* Um mit dieser Zielgruppe in Adobe Experience Platform zu arbeiten, gehen Sie hier.
