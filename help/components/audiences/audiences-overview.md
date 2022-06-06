@@ -1,13 +1,13 @@
 ---
 title: Veröffentlichung von CJA-Zielgruppen - Überblick
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 9%
+source-wordcount: '401'
+ht-degree: 8%
 
 ---
-
 
 # Überblick über die Veröffentlichung von CJA-Zielgruppen
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 >
 >Diese Funktion ist derzeit in [begrenzte Tests](/help/release-notes/releases.md).
 
-Sie können jetzt Zielgruppen erstellen und veröffentlichen, die in Customer Journey Analytics (CJA) in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung. Mit dem Echtzeit-Kundenprofil können Sie eine ganzheitliche Ansicht jedes einzelnen Kunden anzeigen, indem Sie Daten aus mehreren Kanälen, einschließlich Online, Offline, CRM und Drittanbieter, kombinieren. Mit dem Profil können Sie Ihre Kundendaten in einer zentralen Ansicht zusammenführen, die eine aussagekräftige Darstellung jeder Kundeninteraktion mit Zeitstempel bietet.
+Sie können jetzt Zielgruppen erstellen und veröffentlichen, die in Customer Journey Analytics (CJA) in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCP) in Adobe Experience Platform für Kundenansprache und -personalisierung. Mit dem Echtzeit-Kundenprofil können Sie eine ganzheitliche Ansicht jedes einzelnen Kunden anzeigen, indem Sie Daten aus mehreren Kanälen, einschließlich Online, Offline, CRM und Drittanbieter, kombinieren. Mit dem Profil können Sie Ihre Kundendaten in einer zentralen Ansicht zusammenführen, die eine aussagekräftige Darstellung jeder Kundeninteraktion mit Zeitstempel bietet.
 
 Das Veröffentlichen von Zielgruppen bietet eine klare Möglichkeit, um auf Einblicken in CJA zu reagieren. Diese Aktionen können Folgendes umfassen:
 
@@ -23,6 +23,7 @@ Das Veröffentlichen von Zielgruppen bietet eine klare Möglichkeit, um auf Einb
 * Push-Nachrichten an diese Zielgruppe senden
 * Verwenden der Zielgruppe für eine Journey in Adobe Journey Optimizer.
 * Exportieren der Zielgruppe in ein Drittanbieter über ein Experience Platform-Ziel.
+* Anreicherung des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in CJA abgeleitet wurden, ohne alle Ereignisdaten zu RTCP hinzufügen zu müssen.
 
 ## Wichtige Terminologie
 
@@ -40,5 +41,3 @@ Administratoren erhalten automatisch die [!UICONTROL Zielgruppenveröffentlichun
 
 * [Erstellen und Veröffentlichen von Zielgruppen](/help/components/audiences/publish.md)
 * [Zielgruppen verwalten](/help/components/audiences/manage.md)
-
-
