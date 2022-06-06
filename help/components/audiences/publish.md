@@ -1,13 +1,13 @@
 ---
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Audiences aus Customer Journey Analytics veröffentlichen
-source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
+exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
+source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 7%
+source-wordcount: '929'
+ht-degree: 8%
 
 ---
-
 
 # Erstellen und Veröffentlichen von Zielgruppen
 
@@ -65,18 +65,20 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
    | [!UICONTROL Geschätzte Zielgruppenrendite] | Diese Einstellung ist nützlich für das Retargeting von Kunden in dieser Zielgruppe, die zu Ihrer Site zurückkehren. (Mit anderen Worten, die werden in diesem Datensatz erneut angezeigt.) <p>Hier können Sie den Zeitraum (nächste 7 Tage, nächste 2 Wochen, nächsten Monat) für die geschätzte Anzahl der Kunden auswählen, die möglicherweise zurückkehren. |
    | [!UICONTROL Voraussichtliche Rückkehr] | Mit dieser Zahl erhalten Sie eine geschätzte Anzahl an wiederkehrenden Kunden über den von Ihnen aus der Dropdownliste ausgewählten Zeitraum. Wir sehen uns die historische Abwanderungsrate für diese Zielgruppe an, um diese Zahl vorherzusagen. |
    | [!UICONTROL Metriken in der Vorschau anzeigen] | Mit dieser Einstellung können Sie bestimmte Metriken betrachten, um zu sehen, ob diese Zielgruppe zu dieser Metrik einen unverhältnismäßig hohen Beitrag leistet, z. B.[!UICONTROL Umsatz]&#39; or &#39;[!UICONTROL Durchschnittliche Besuchszeit pro Site]&quot;. Es gibt Ihnen die aggregierte Anzahl der Metriken sowie den Prozentsatz der Gesamtanzahl, die sie darstellt. Sie können eine beliebige Metrik auswählen, die in Ihrer Datenansicht verfügbar ist. |
-   | Enthaltene Namespaces | Die spezifischen Namespaces, die mit den Personen in Ihrer Zielgruppe verknüpft sind. Beispiele sind ECID, CRM-ID, E-Mail-Adressen usw. |
-   | Sandbox | Die Experience Platformen-Sandbox, in der sich diese Zielgruppe befindet. Wenn Sie diese Zielgruppe in Platform veröffentlichen, können Sie sie nur innerhalb der Grenzen dieser Sandbox verwenden. |
+   | [!UICONTROL Enthaltene Namespaces] | Die spezifischen Namespaces, die mit den Personen in Ihrer Zielgruppe verknüpft sind. Beispiele sind ECID, CRM-ID, E-Mail-Adressen usw. |
+   | [!UICONTROL Sandbox] | Die [Experience Platformen-Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) in der sich diese Zielgruppe befindet. Wenn Sie diese Zielgruppe in Platform veröffentlichen, können Sie sie nur innerhalb der Grenzen dieser Sandbox verwenden. |
 
    {style=&quot;table-layout:auto&quot;}
 
-1. Wenn alles gut aussieht, klicken Sie auf **[!UICONTROL Veröffentlichen]**.
+1. Überprüfen Sie Ihre Zielgruppenkonfiguration und klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
    Wenn alles gut gelaufen ist, erhalten Sie eine Bestätigungsnachricht, dass die Zielgruppe veröffentlicht wurde.
 
-1. Klicken **[!UICONTROL Anzeigen der Zielgruppe in AEP]** innerhalb derselben Nachricht angezeigt werden, gelangen Sie zur Segmentoberfläche in Adobe Experience Platform. Weitere Informationen finden Sie unten.
+1. Klicken **[!UICONTROL Anzeigen der Zielgruppe in AEP]** innerhalb derselben Nachricht und Sie gelangen zum [Segmentbenutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=de) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform
+
+CJA nimmt jetzt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil. RTCP untersucht dann jede Namespace/ID-Kombination und sucht nach einem Profil, zu dem sie gehören kann. Wenn sie eine findet, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentmitgliedsattribut hinzugefügt. Jetzt kann beispielsweise &quot;user@adobe.com&quot;über alle seine Geräte und Kanäle hinweg als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
 Sie können CJA-Zielgruppen in Platform anzeigen, indem Sie **[!UICONTROL Segmente]** > **[!UICONTROL Segmente erstellen]** > **[!UICONTROL Zielgruppen]** tab > **[!UICONTROL CJA-Zielgruppen]**.
 
