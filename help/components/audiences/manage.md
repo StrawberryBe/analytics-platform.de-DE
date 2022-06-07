@@ -1,13 +1,13 @@
 ---
 title: In Customer Journey Analytics erstellte Zielgruppen verwalten
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics verwalten
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
+source-git-commit: 71f13c4f7d8ad5682ae0974bca9a0e8fc90acfe4
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 7%
 
 ---
-
 
 # In Customer Journey Analytics erstellte Zielgruppen verwalten
 
@@ -25,8 +25,6 @@ Die Verwaltung zuvor erstellter Audiences ermöglicht Ihnen Folgendes:
 
 ## Management-Benutzeroberfläche
 
-Screenshot
-
 | UI-Einstellung | Definition |
 | --- | --- |
 | Ausblenden/Anzeigen von Filtern | Hiermit können Sie die folgenden Filter in der linken Leiste ein- oder ausblenden: <ul><li>Datenansicht</li><li>Verantwortlicher</li><li>Häufigkeit der Aktualisierung</li><li>Tags</li></ul> |
@@ -40,4 +38,3 @@ Screenshot
 | [!UICONTROL Zuletzt geändert] | Zeitpunkt der letzten Bearbeitung oder Änderung der Audience. |
 
 {style=&quot;table-layout:auto&quot;}
-
