@@ -3,13 +3,13 @@ title: Übersicht über CJA-Verbindungen
 description: Erfahren Sie mehr über Verbindungen in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
+source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '104'
 ht-degree: 88%
 
 ---
-
 
 # Verbindungen - Übersicht
 
@@ -27,6 +27,7 @@ Adobe Experience Platform:
 * Datenmodellierung: Schemas anzeigen, Schemas verwalten
 * Daten-Management: Datensätze anzeigen, Datensätze verwalten
 * Datenaufnahme: Quellen verwalten
+* Anzeigen von Identitäts-Namespaces
 
 Customer Journey Analytics
 * Produktadministratorzugriff
@@ -34,4 +35,3 @@ Customer Journey Analytics
 >[!IMPORTANT]
 >
 >Sie können mehrere [!DNL Experience Platform]-Datensätze zu einer Verbindung zusammenfassen.
-
