@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Audiences aus Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: abeefebafb9ac246ab6a0c18b5554370a6776b38
+source-git-commit: 0108b07fd4fac33d026b8832931ffa3018b298e0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '946'
+ht-degree: 7%
 
 ---
 
@@ -42,7 +42,7 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
    | [!UICONTROL Name] | Der Name der Zielgruppe. |
    | [!UICONTROL Tags] | Alle Tags, die Sie der Zielgruppe für organisatorische Zwecke zuweisen möchten. Sie können ein bereits vorhandenes Tag verwenden oder ein neues eingeben. |
    | [!UICONTROL Beschreibung] | Fügen Sie eine gute Beschreibung der Zielgruppe hinzu, um sie von anderen zu unterscheiden. |
-   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen hilfreich sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für die 4-Stunden-Frequenz gibt es eine Beschränkung von 150 Zielgruppen, da diese Aktualisierungsrate sehr verarbeitungsintensiv ist. Für andere Intervalle gibt es keine maximale Anzahl von Zielgruppen.</li></ul> |
+   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen hilfreich sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Abhängig von Ihrer CJA-Berechtigung gibt es für die 4-Stunden-Frequenz eine Beschränkung von 75 oder 150 Zielgruppen. Für andere Intervalle gibt es keine maximale Anzahl von Zielgruppen.</li></ul> |
    | Ablaufdatum | Wann die Aktualisierung der Audience beendet wird. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Das Auslaufen von Zielgruppen wird ähnlich wie das Auslaufen geplanter Berichte behandelt - der Administrator erhält einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Audience zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
@@ -86,11 +86,6 @@ Sie können CJA-Zielgruppen in Platform anzeigen, indem Sie **[!UICONTROL Segmen
 Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 ![](assets/audiences-aep.png)
-
-Wenn Sie sich dafür entscheiden, diese Zielgruppe in den AEP Data Lake zu exportieren, wird sie als Datensatz angezeigt, der der XDM Individual Profile Schema Class entspricht:
-
-![](assets/aep-datalake.png)
-
 
 ## Nächste Schritte
 
