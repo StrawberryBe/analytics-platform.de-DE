@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 97%
@@ -95,7 +95,7 @@ ht-degree: 97%
          + [Filter in Fallout-Analyse anwenden](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Fluss {#flow}
          + [Flussübersicht](analysis-workspace/visualizations/c-flow/flow.md)
-         + [Flussvisualisierung konfigurieren](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
+         + [Flussvisualisierung konfigurieren](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Flusseinstellungen](analysis-workspace/visualizations/c-flow/flow-settings.md)
          + [Interdimensionale Flüsse](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Histogramm](analysis-workspace/visualizations/histogram.md)

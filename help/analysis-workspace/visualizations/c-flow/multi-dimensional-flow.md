@@ -3,18 +3,14 @@ description: Mithilfe eines interdimensionalen Flusses können Sie Benutzerpfade
 title: Interdimensionale Flüsse
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '338'
+source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
+workflow-type: tm+mt
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
 
 # Interdimensionale Flüsse
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Mithilfe eines interdimensionalen Flusses können Sie Benutzerpfade über verschiedene Dimensionen hinweg untersuchen.
 
