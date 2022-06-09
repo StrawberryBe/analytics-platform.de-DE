@@ -2,13 +2,13 @@
 title: Labs-Benutzerhandbuch
 description: Vorschau von Prototypprojekten für den Customer Journey Analytics anzeigen
 role: Admin
-source-git-commit: 2e1a97b6ed2bfd1f8c03399b635a6135c26bce55
+exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
+source-git-commit: 6a44f9fe73de2a6a9bf9397bd31a27607707061b
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 84%
+source-wordcount: '460'
+ht-degree: 78%
 
 ---
-
 
 # [!UICONTROL Labs]-Benutzerhandbuch
 
@@ -68,8 +68,12 @@ So starten und bewerten Sie einen Prototyp:
 
 1. Klicken Sie auf **[!UICONTROL Senden]**, um zum Hauptportal „Vorschau“ zurückzukehren.
 
+## CJA Labs-Prototypen
+
+* Ursprüngliche Spracheinblicke: Bietet eine natürliche Zusammenfassung aller Daten, die Sie in einer Freiformtabelle analysieren.
+* Visualisierungsempfehlung: Empfiehlt Visualisierungen, die sich gut mit Ihren Daten verbinden.
+
 ## Zusätzliche Informationen
 
 * Einige Prototypen in [!UICONTROL Labs] Customer Journey Analytics-Features werden, andere nicht. Ihr Feedback trägt zur Entscheidung bei. Prüfen Sie daher die Prototypen und teilen Sie Adobe mit, wie nützlich Sie sie finden.
 * Labs steht allen SKU-Berechtigungen zur Verfügung.
-
