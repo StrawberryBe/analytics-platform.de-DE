@@ -1,19 +1,19 @@
 ---
-title: Überblick über die kanalübergreifende Analyse
+title: Überblick über Cross-Channel Analytics
 description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 source-git-commit: 16ebf5672099b0cd0c5e4dafd577f175370fa9b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1196'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Überblick über die kanalübergreifende Analyse
+# Überblick über Cross-Channel Analytics
 
-**Journey IQ: Die kanalübergreifende Analyse** ist eine Funktion, mit der Sie die Personen-ID eines Datensatzes neu eingeben können. Dies ermöglicht eine nahtlose Kombination mehrerer Datensätze. Die kanalübergreifende Analyse untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugeordnete ID zu generieren. Mithilfe der kanalübergreifenden Analyse können Sie Fragen beantworten wie beispielsweise:
+**Journey IQ: Cross-Channel Analytics** ist eine Funktion, mit der Sie die Personen-ID eines Datensatzes neu eingeben können. Dies ermöglicht eine nahtlose Kombination mehrerer Datensätze. Die kanalübergreifende Analyse untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugeordnete ID zu generieren. Mithilfe Cross-Channel Analytics können Sie Fragen beantworten wie beispielsweise:
 
 * Wie viele Personen beginnen ihr Erlebnis auf einem Kanal und beenden es auf einem anderen?
 * Wie viele Menschen interagieren mit meiner Marke? Wie viele und welche Gerätetypen verwenden sie? Wie überschneiden sich diese?
@@ -22,7 +22,7 @@ ht-degree: 96%
 * Welche sind die häufigsten Pfade, die Benutzer beim Wechsel von einem Gerät zum anderen verwenden? Wo steigen sie aus? Wo schließen sie ihre Aktion erfolgreich ab?
 * Wie unterscheidet sich das Verhalten von Benutzern mit mehreren Geräten von Benutzern mit nur einem Gerät?
 
-Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attribution geräte- und kanalübergreifend übernommen. Beispiel: Ein Benutzer besucht Ihre Site zum ersten Mal über eine Werbeanzeige auf seinem Desktop. Dieser Benutzer stößt bei seiner Bestellung auf ein Problem und ruft dann Ihren Kundendienst an, um das Problem zu beheben. Mit der kanalübergreifenden Analyse können Sie Callcenter-Ereignisse der Anzeige zuordnen, auf die ursprünglich geklickt wurde.
+Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attribution geräte- und kanalübergreifend übernommen. Beispiel: Ein Benutzer besucht Ihre Site zum ersten Mal über eine Werbeanzeige auf seinem Desktop. Dieser Benutzer stößt bei seiner Bestellung auf ein Problem und ruft dann Ihren Kundendienst an, um das Problem zu beheben. Mit Cross-Channel Analytics können Sie Callcenter-Ereignisse der Anzeige zuordnen, auf die ursprünglich geklickt wurde.
 
 ## Voraussetzungen
 
@@ -30,7 +30,7 @@ Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attributi
 >
 >Werden nicht alle Voraussetzungen erfüllt, kann beim Kombinieren von Datensätzen unter Umständen keine Verbindung für die kanalübergreifende Analyse hergestellt werden oder die Ergebnisse fallen mangelhaft aus.
 
-Bevor Sie die kanalübergreifende Analyse verwenden, sollten Sie sicherstellen, dass Ihr Unternehmen folgende Voraussetzungen erfüllt:
+Bevor Sie Cross-Channel Analytics verwenden, sollten Sie sicherstellen, dass Ihr Unternehmen folgende Voraussetzungen erfüllt:
 
 * Ein Datensatz in Adobe Experience Platform muss über zwei Spalten verfügen, mit denen Besucher identifiziert werden können:
    * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde.
@@ -44,9 +44,9 @@ Bevor Sie die kanalübergreifende Analyse verwenden, sollten Sie sicherstellen, 
 >
 >Beachten Sie, dass Änderungen am Datensatzschema des globalen Ereignisses auch im neuen Schema des zugeordneten Datensatzes angewendet werden müssen. Andernfalls wird der zugeordnete Datensatz beschädigt.
 >
->Wenn Sie den Quelldatensatz entfernen, stoppt der zugeordnete Datensatz die Verarbeitung und wird vom System entfernt.
+>Wenn Sie den Quelldatensatz entfernen, wird der zugeordnete Datensatz nicht weiter verarbeitet und vom System entfernt.
 
-Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, deren Verwendung jedoch gewissen Einschränkungen unterliegt.
+Cross-Channel Analytics ist eine innovative und zuverlässige Funktion, deren Verwendung jedoch gewissen Einschränkungen unterliegt.
 
 * Die aktuellen Funktionen zur Neuzuweisung sind auf einen Schritt beschränkt (beständige ID auf vorübergehende ID). Eine mehrstufige Neuzuweisung wird nicht unterstützt, beispielsweise beständige ID zu vorübergehender ID und dann zu einer weiteren vorübergehenden ID.
 * Es werden nur Ereignis-Datensätze unterstützt. Andere Datensätze, wie beispielsweise Lookup-Datensätze, werden nicht unterstützt.
@@ -57,17 +57,17 @@ Die kanalübergreifende Analyse ist eine innovative und zuverlässige Funktion, 
 * Bei der feldbasierten Suche werden Felder nicht kombiniert oder verknüpft.
 * Das Feld für die vorübergehende ID sollte nur einen ID-Typ enthalten (also IDs aus einem einzigen Namespace). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
 * Wenn mehrere Ereignis mit demselben Zeitstempel für dieselbe permanente ID auftreten, jedoch unterschiedliche Werte im Feld für die vorübergehende ID vorliegen, wird die feldbasierte Zuordnung auf Grundlage der alphabetischen Reihenfolge gewählt. Wenn also eine permanente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignis „Bob“ und das andere „Ann“ angibt, wählt die feldbasierte Zuordnung „Ann“.
-* In Analytics werden alle beständigen ID-Werte für einen Zeitraum von 1 Jahr verfolgt (TTL = 1 Jahr). Wenn ein Gerät länger als ein Jahr keine Aktivität aufweist und danach erneut Aktivität verzeichnet, werden die neuen Ereignisse mit einer anonymen Person verknüpft, bis der Benutzer wieder identifiziert wird (z. B. über eine erneute Anmeldung).
-* Wenn ein Gerät von mehreren Personen gemeinsam genutzt wird und die Gesamtzahl der Übergänge zwischen Benutzern 50.000 überschreitet, stoppt die kanalübergreifende Analyse die Zuordnung von Daten für dieses Gerät.
+* In Cross-Channel Analytics werden alle beständigen ID-Werte für einen Zeitraum von 1 Jahr verfolgt (TTL = 1 Jahr). Wenn ein Gerät länger als ein Jahr keine Aktivität aufweist und danach erneut Aktivität verzeichnet, werden die neuen Ereignisse mit einer anonymen Person verknüpft, bis der Benutzer wieder identifiziert wird (z. B. über eine erneute Anmeldung).
+* Wenn ein Gerät von mehreren Personen gemeinsam genutzt wird und die Gesamtzahl der Transitionen aller Benutzer 50.000 überschreitet, stoppt die kanalübergreifende Analyse die Zuordnung von Daten für dieses Gerät.
 
 
-## Aktivieren der kanalübergreifenden Analyse
+## Aktivieren von Cross-Channel Analytics
 
 Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen überblickt, können Sie die folgenden Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
 
 1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Siehe unter [Ein Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Daten aufnehmen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
 1. Wenden Sie sich mit den folgenden Informationen an den Adobe-Support:
-   * Eine Anfrage zum Aktivieren der kanalübergreifenden Analyse
+   * Eine Anfrage zur Aktivierung von Cross-Channel Analytics
    * Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten
    * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Kennung, die in jeder Zeile erscheint)
    * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Verbindung der Personenkennung zwischen Datensätzen)
