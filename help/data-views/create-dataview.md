@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1224'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 
 ### Behälter {#containers}
 
-Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in [Filter](/help/components/filters/filters-overview.md#Filter-containers).
+Gibt den Namen der Container für die Datenansicht an. Container-Namen werden häufig in [Filtern](/help/components/filters/filters-overview.md#Filter-containers) verwendet.
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -105,7 +105,7 @@ Sie können auch nach Datensätzen filtern und danach, ob ein Schemafeld Daten e
 
 ![Andere filtern](assets/filter-other.png)
 
-## Einstellungen Registerkarte {#settings-tab}
+## Einstellungen  Registerkarte {#settings-tab}
 
 1. Melden Sie sich bei [Customer Journey Analytics](https://analytics.adobe.com) an und gehen Sie zur Registerkarte **[!UICONTROL Datenansichten]**.
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Datenansicht zu erstellen, oder klicken Sie auf eine vorhandene Datenansicht, um sie zu bearbeiten.
