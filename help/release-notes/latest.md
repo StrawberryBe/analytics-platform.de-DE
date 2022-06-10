@@ -3,31 +3,28 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 23258f85ae62375f498d7ac3a7ee24cc139a22a8
+source-git-commit: 74c93b9327b1c7081c461187d53b1b27a686cfdd
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 26%
+source-wordcount: '211'
+ht-degree: 16%
 
 ---
 
-# Aktuelle Customer Journey Analytics-Versionshinweise (CJA) (Mai 2022)
+# Aktuelle Customer Journey Analytics-Versionshinweise (CJA) (Juni 2022)
 
-**Letzte Aktualisierung**: 19. Mai 2022
+**Letzte Aktualisierung**: 10. Juni 2022
 
 ## Wichtigste Funktionen
 
 | Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Neue Benutzeroberfläche zum Bearbeiten und Erstellen von Verbindungen | Mit diesem optimierten Erlebnis können Sie Daten auf Datensatzebene aufstocken, ein rollierendes Fenster zur Datenaufbewahrung aktivieren, Datensätze zu einer Verbindung hinzufügen und daraus entfernen. [Weitere Informationen](/help/connections/create-connection.md) | 18. Mai 2022 |
-| Report Builder für CJA-Aktualisierungen | Enthält Funktionen wie Planung und Datenblock-Manager. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | 18. Mai 2022 |
-| Customer AI-Integration | Ermöglicht Ihnen die Aufnahme von Customer AI-Modellwerten in CJA zur weiteren Analyse in CJA Analysis Workspace. Weitere Informationen - in Kürze verfügbar | TBD |
-| Attribution AI-Integration | Ermöglicht die Aufnahme der Attribution AI-Modellwerte in CJA zur weiteren Analyse in CJA Analysis Workspace. Weitere Informationen - in Kürze verfügbar | TBD |
+| Zielgruppenveröffentlichung im Echtzeit-Kundenprofil | Ermöglicht die Veröffentlichung von in CJA gefundenen Zielgruppen in AEP/RTCDP, um Kunden-Targeting und -Personalisierung zu ermöglichen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | 15. Juni 2022 |
+| Neue Benutzeroberfläche für Flussvisualisierung | Bietet zusätzliche Funktionalität für unsere Flussvisualisierung, um sie leistungsfähiger und leistungsfähiger zu machen. Weitere Informationen (zu folgen) | 15. Juni 2022 |
+| Unterstützung für numerische Felder als Suchschlüssel und Suchwerte | Nützlich, wenn Sie Zeichenfolgenwerte mit einem numerischen Feld wie COGS oder Marge auf einer Produkt-SKU klassifizieren möchten. Wenn Sie Metriken aus der Suche zulassen, können Sie diese Datenpunkte in die Berichterstellung einfließen lassen. Weitere Informationen (zu folgen) | 15. Juni 2022 |
+| Analytics-Labs in CJA | Unterstützen Sie Labs in CJA, damit Sie Prototypen mit kanalübergreifenden Daten untersuchen können. [Weitere Informationen](/help/labs/labs.md) | 15. Juni 2022 |
+| Freigeben von Anmerkungen in mobilen Scorecards | Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Auf diese Weise können Sie kontextbezogene Datennuancen und Einblicke in Ihre Organisation und Kampagnen direkt in mobilen Scorecard-Projekten freigeben, die in der mobilen App der Analytics-Dashboards angezeigt werden. Weitere Informationen (zu folgen) | 15. Juni 2022 |
 
 {style=&quot;table-layout:auto&quot;}
-
-### CJA-Korrekturen
-
-AN-279234; AN-284839; AN-285417
 
 >[!MORELIKETHIS]
 >[Customer Journey Analytics – Aktualisierungen der Dokumentation](/help/release-notes/doc-changes.md)

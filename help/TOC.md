@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
+source-git-commit: 55be32601ebece4be6f384f4c7a58b3bb29567db
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '642'
 ht-degree: 97%
 
 ---
@@ -38,15 +38,15 @@ ht-degree: 97%
    + [Auswirkungen des Löschens](getting-started/cja-deletion.md)
    + [CJA-Glossar](getting-started/cja-glossary.md)
 + Verbindungen {#cja-connections}
-   + [Verbindungen - Übersicht](connections/overview.md)
+   + [Verbindungen – Übersicht](connections/overview.md)
    + [Verbindung herstellen](connections/create-connection.md)
    + [Verbindungen verwalten](connections/manage-connections.md)
    + [Kombinierte Ereignis-Datensätze](connections/combined-dataset.md)
    + [Standardsuchen](connections/standard-lookups.md)
    + Cross-Channel Analytics {#cca}
-      + [Überblick über die Cross-Channel Analytics](connections/cca/overview.md)
+      + [Überblick über Cross-Channel Analytics](connections/cca/overview.md)
       + [Funktionsweise der Wiederholung](connections/cca/replay.md)
-      + [Häufig gestellte Fragen zur Cross-Channel Analytics](connections/cca/faq.md)
+      + [Häufig gestellte Fragen zu Cross-Channel Analytics](connections/cca/faq.md)
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](data-views/create-dataview.md)
@@ -162,6 +162,7 @@ ht-degree: 97%
       + [Erstellen von Anmerkungen](components/annotations/create-annotations.md)
       + [Verwalten von Anmerkungen](components/annotations/manage-annotations.md)
       + [Anzeigen von Anmerkungen](components/annotations/view-annotations.md)
+      + [Anmerkungen zu mobilen Scorecards](components/annotations/mobile-annotations.md)
    + Zielgruppen {#audiences}
       + [Überblick über Zielgruppen](components/audiences/audiences-overview.md)
       + [Erstellen und Veröffentlichen von Zielgruppen](components/audiences/publish.md)
@@ -217,7 +218,7 @@ ht-degree: 97%
    + [Verwenden von Bindungsdimensionen und Metriken](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)
    + [Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA](use-cases/marketo.md)
-   + [Aufnehmen von AEP-Zielgruppen in CJA](use-cases/ingest-aep-segments.md)
+   + [Aufnahme von AEP-Zielgruppen in CJA](use-cases/ingest-aep-segments.md)
    + [Kanalübergreifendes Analysieren von Daten](use-cases/cross-channel.md)
    + [Callcenter- und Web-Daten importieren](use-cases/call-center.md)
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
