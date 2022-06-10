@@ -5,9 +5,9 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1170'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Anleitungen finden Sie in diesem Video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-Sie können die GA-Ereignisdaten einem vorhandenen Datensatz zuordnen, den Sie zuvor erstellt haben, oder einen neuen Datensatz erstellen, wobei Sie ein beliebiges XDM-Schema verwenden. Nachdem Sie das Schema ausgewählt haben, wendet Experience Platform maschinelles Lernen an, um jedes der Felder in den Daten von Google Analytics automatisch Ihrem [XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui) vor-zuzuordnen.
+Sie können die GA-Ereignisdaten einem vorhandenen Datensatz zuordnen, den Sie zuvor erstellt haben, oder einen neuen Datensatz erstellen, wobei Sie ein beliebiges XDM-Schema verwenden. Nachdem Sie das Schema ausgewählt haben, wendet Experience Platform maschinelles Lernen an, um jedes der Felder in den Daten von Google Analytics automatisch Ihrem [XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de#ui) vor-zuzuordnen.
 
 ![](assets/schema-map.png)
 
@@ -141,7 +141,7 @@ Nachdem Sie diese benutzerspezifischen Variablen definiert haben, können wir ei
 
 In diesem Beispiel wurde der Trigger „Kontoerstellung“ definiert, wobei `pageUrl equals account-creation` verwendet wird. Durch Hinzufügen von Informationen zu diesem Trigger können Sie sicherstellen, dass Daten sowohl an Google Analytics als auch an AEP gesendet werden, wenn der Benutzer sich erfolgreich authentifiziert und die Seite zur Kontoerstellung geladen hat.
 
-Sie können auch auf [Datenaufnahme und Google Tag-Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html#module9) zurückgreifen.
+Sie können auch auf [Datenaufnahme und Google Tag-Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=de#module9) zurückgreifen.
 
 Anleitungen finden Sie in diesem Video:
 
@@ -153,6 +153,6 @@ Sobald Adobe Experience Platform mit dem Empfang der Live-Daten von Google Analy
 
 ## Nächste Schritte
 
-* Erstellen Sie eine [Datenansicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#cja-dataviews) basierend auf der Verbindung, die Google Analytics-Daten enthält.
+* Erstellen Sie eine [Datenansicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#cja-dataviews) basierend auf der Verbindung, die Google Analytics-Daten enthält.
 
 * Führen Sie eine äußerst aussagekräftige [Analyse in Arbeitsbereich](/help/use-cases/ga-to-cja-reporting.md) durch.
