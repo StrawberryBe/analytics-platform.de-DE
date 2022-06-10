@@ -47,7 +47,7 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
 
 >[!NOTE]
 >
->Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über [Cross-Channel Analytics](/help/connections/cca/overview.md)). Beachten Sie, dass die Berücksichtigung der in CJA verwendeten Personen-ID für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist möglicherweise nicht immer einfach in AA zu replizieren, insbesondere wenn die Cross-Channel Analytics aktiviert ist.
+>Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über [Cross-Channel Analytics](/help/connections/cca/overview.md)). Beachten Sie, dass die Berücksichtigung der in CJA verwendeten Personen-ID für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist möglicherweise nicht immer einfach in AA zu replizieren, insbesondere wenn Cross-Channel Analytics aktiviert ist.
 
 1. Führen Sie in [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
 
