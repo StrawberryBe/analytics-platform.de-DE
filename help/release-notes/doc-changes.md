@@ -6,8 +6,8 @@ solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 17e89d7cfeddff831e34fc441ee17de8b1c3fe21
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Mai 2022 | Neuer Artikel zur Integration von CJA mit Attribution AI (Link zu folgen) in Adobe Experience Platform. |
 | Mai 2022 | Neuer Artikel zur Integration von CJA mit Customer AI in Adobe Experience Platform (Link zu folgen). |
 | Mai 2022 | Neuer Artikel zum Thema [Verwalten von Datenblöcken in CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
-| Mai 2022 | Neuer Artikel zu [Erfassen von Adobe Experience Platform-Zielgruppen in CJA](/help/use-cases/ingest-aep-segments.md) |
+| Mai 2022 | Neuer Artikel zu [Aufnahme von Adobe Experience Platform-Zielgruppen in CJA](/help/use-cases/ingest-aep-segments.md) |
 | April 2022 | Dokumentation zu [Dimensionszeichenfolgen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=de). |
 | April 2022 | Neu [CJA-Benutzerhandbuch für Adobe Analytics-Benutzer](/help/getting-started/aa-to-cja-user.md). |
 | März 2022 | Neu [Dokumentation zur CJA Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |

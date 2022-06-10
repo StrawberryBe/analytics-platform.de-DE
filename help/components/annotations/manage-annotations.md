@@ -6,8 +6,8 @@ feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
 source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,17 +50,17 @@ Beide dieser Optionen bringen Sie zum Anmerkungsgenerator zurück. Dort können 
 
 Beachten Sie Folgendes beim Freigeben von Anmerkungen oder Arbeiten mit Anmerkungen, die für Sie freigegeben wurden:
 
-* Angenommen, Sie erstellen ein Projekt mit projektbezogenen Anmerkungen und geben das Projekt dann für einen anderen Benutzer frei. Diese Anmerkungen werden angezeigt, können jedoch von niemandem bearbeitet oder gelöscht werden, für den Sie das Projekt freigeben.
+* Angenommen, Sie erstellen ein Projekt mit nur projektbezogenen Anmerkungen und geben das Projekt dann für einen anderen Benutzer frei. Diese Anmerkungen werden angezeigt, können jedoch von niemandem bearbeitet oder gelöscht werden, für den Sie das Projekt freigeben.
 
-* Wenn Sie eine Anmerkung speichern und sie direkt für einen Benutzer freigeben, kann dieser die Anmerkung nur bearbeiten/löschen, wenn er über Administratorrechte verfügt.
+* Wenn Sie eine Anmerkung speichern und direkt für einen Benutzer freigeben, kann dieser die Anmerkung nur bearbeiten/löschen, wenn er über Administratorrechte verfügt.
 
-* Wenn das Projekt für Sie freigegeben ist, wird die Anmerkung nur in diesem Projekt angezeigt. Wenn die Anmerkung direkt für Sie freigegeben ist, wird sie in allen Projekten angezeigt, in denen diese Anmerkung angezeigt werden kann.
+* Also: Wenn das Projekt für Sie freigegeben wurde, wird es nur in diesem Projekt angezeigt. Wenn die Anmerkung direkt für Sie freigegeben wird, wird sie in allen Projekten angezeigt, in denen diese Anmerkung angezeigt werden kann.
 
 ## Anmerkungen und Zeitzonen
 
-Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne &quot;Stunde&quot;- oder &quot;Zeitzone&quot;-Informationen. Zum Zeitpunkt des Berichts wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird am 25. Dezember eine für Weihnachten erstellte Anmerkung erstellt - unabhängig davon, in welcher Report Suite-Zeitzone Sie sich befinden.
+Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne Stunden- oder Zeitzoneninformationen. Zum Zeitpunkt der Berichterstellung wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird eine für den 1. Weihnachtsfeiertag erstellte Anmerkung am 25. Dezember erstellt, unabhängig davon, in welcher Report Suite-Zeitzone Sie sich befinden.
 
-Ein weiteres Beispiel ist der Neujahrstag. Jede Stunde wird eine andere Zeitzone mit Feuerwerk eingerichtet, wenn das neue Jahr beginnt. Um 22:00 Uhr US Mountain Time startet die US-Ostküste Feuerwerk, weil es bereits 00:00 Uhr Eastern Time ist.
+Ein weiteres Beispiel ist der Neujahrstag. Zu Beginn des neuen Jahres werden jede Stunde von einer anderen Zeitzone Feuerwerke ausgelöst. Um 22:00 Uhr US Mountain Time werden an der US-Ostküste Feuerwerke ausgelöst, weil es dort bereits 24:00 Uhr Eastern Time ist.
 
 ## Sonstige Aktionen mit Anmerkungen
 

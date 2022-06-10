@@ -6,8 +6,8 @@ solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
 workflow-type: tm+mt
-source-wordcount: '2319'
-ht-degree: 64%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,16 +17,16 @@ Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verb
 
 * Sie können bei der Erstellung der Verbindung ein rollierendes Fenster zur Datenaufbewahrung aktivieren.
 * Sie können Datensätze zu einer Verbindung hinzufügen und daraus entfernen. (Wenn Sie einen Datensatz entfernen, wird er aus der Verbindung entfernt und wirkt sich auf alle zugehörigen Datenansichten und zugrunde liegenden Analysis Workspace-Projekte aus.)
-* Sie können Aufstockungsdaten pro Datensatz aktivieren und anfordern.
+* Sie können für einzelne Datensätze Aufstockungsdaten aktivieren und anfordern.
 * Sie können Datensätze bearbeiten, z. B. um eine weitere Aufstockung anzufordern.
-* Sie können vorhandene Daten pro Datensatz importieren.
+* Sie können für einzelne Datensätze vorhandene Daten importieren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
-1. Klicken Sie in CJA auf die **[!UICONTROL Verbindungen]** Registerkarte.
-1. Klicken **[!UICONTROL Neue Verbindung erstellen]**.
+1. Klicken Sie in CJA auf die Registerkarte **[!UICONTROL Verbindungen]**.
+1. Klicken Sie auf **[!UICONTROL Neue Verbindung erstellen]**.
 
    ![Verbindungseinstellungen](assets/create-conn1.png)
 
@@ -36,17 +36,17 @@ Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verb
    | --- | --- |
    | **[!UICONTROL Name der Verbindung]** | Geben Sie einen eindeutigen Namen für die Verbindung ein. |
    | **[!UICONTROL Beschreibung der Verbindung]** | Beschreiben Sie den Zweck dieser Verbindung. |
-   | **[!UICONTROL Sandbox]** | Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.<p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sandboxes können sich als &quot;Datensilos&quot;mit Datensätzen vorstellen. Sandboxes dienen der Steuerung des Zugriffs auf Datensätze.<p>Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie abrufen können. |
-   | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn dieses Kontrollkästchen aktiviert ist, können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierende Datenfenstereinstellung, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Lookup-Datensätze enthält (neben einem oder mehreren Ereignis-Datensätzen), werden diese Daten für denselben Zeitraum beibehalten.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p>Wenn Sie die Standardeinstellung (deaktiviert) lassen, wird die Aufbewahrungsfrist durch die Adobe Experience Platform-Einstellung zur Datenaufbewahrung ersetzt. Wenn Daten aus 25 Monaten in Experience Platform sind, erhält CJA 25 Monate Daten durch Aufstockung. Wenn Sie 10 dieser Monate in Platform löschen, behält CJA die verbleibenden 15 Monate bei. |
+   | **[!UICONTROL Sandbox]** | Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.<p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sandboxes können als „Datensilos“ mit Datensätzen betrachtet werden. Sandboxes dienen der Zugriffsdteuerung auf Datensätze.<p>Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie Daten abrufen können. |
+   | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn dieses Kontrollkästchen aktiviert ist, können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Lookup-Datensätze enthält (neben einem oder mehreren Ereignis-Datensätzen), werden diese Daten über denselben Zeitraum aufbewahrt.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p>Wenn Sie die Standardeinstellung (deaktiviert) lassen, wird die Aufbewahrungsfrist durch die Adobe Experience Platform-Einstellung zur Datenaufbewahrung ersetzt. Wenn Daten aus 25 Monaten in Experience Platform sind, erhält CJA 25 Monate Daten durch Aufstockung. Wenn Sie 10 dieser Monate in Platform löschen, behält CJA die verbleibenden 15 Monate bei. |
    | **[!UICONTROL Hinzufügen von Datensätzen]** (siehe unten) | Fügen Sie Datensätze hinzu, wenn in Ihrer Datensatzliste keine Datensätze erscheinen. |
-   | **[!UICONTROL Datensatzname]** | Wählen Sie einen oder mehrere Datensätze aus, die Sie in Customer Journey Analytics abrufen möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.<p>(Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste Datensätze suchen über der Liste der Datensätze nach den richtigen suchen.) |
-   | **[!UICONTROL Letzte Aktualisierung]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in Experience Platform gesetzt. &quot;K. A.&quot;bedeutet, dass dieser Datensatz keine Daten enthält. |
+   | **[!UICONTROL Datensatzname]** | Wählen Sie einen oder mehrere Datensätze aus, die Sie nach Customer Journey Analytics übertragen möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.<p>(Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste Datensätze suchen über der Liste der Datensätze nach den richtigen suchen.) |
+   | **[!UICONTROL Zuletzt aktualisiert]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. „K. A.“ bedeutet, dass dieser Datensatz keine Daten enthält. |
    | **[!UICONTROL Schema]** | Dies ist das [Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=de), auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde. |
-   | **[!UICONTROL Typ des Datensatzes]** | Für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, legt Customer Journey Analytics den Datensatztyp automatisch anhand der eingehenden Daten fest. Es gibt 3 verschiedene Datensatztypen: Ereignis-, Profil- und Such-Daten. Eine Erläuterung der Datensatztypen finden Sie in der unten stehenden Tabelle. |
+   | **[!UICONTROL Typ des Datensatzes]** | Customer Journey Analytics legt für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, automatisch den Datensatztyp anhand der eingehenden Daten fest. Es gibt 3 verschiedene Datensatztypen: Ereignis-, Profil- und Such-Daten. Eine Erläuterung der Datensatztypen finden Sie in der unten stehenden Tabelle. |
    | **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Weitere Informationen zur Verwendung von Identity Map als Personen-ID finden Sie weiter unten.<p>WICHTIG: Wenn keine Personen-IDs zur Auswahl stehen, bedeutet das, dass eine oder mehrere Personen-IDs im Schema nicht definiert wurden. In [diesem Videos](https://www.youtube.com/watch?v=G_ttmGl_LRU) sehen Sie, wie Sie eine Identität in Experience Platform definieren. |
    | **[!UICONTROL Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
    | **[!UICONTROL Übereinstimmender Schlüssel]** | Nur für Lookup-Datensätze (z. B. _id). |
-   | **[!UICONTROL Neue Daten importieren]** | Auf Ein oder Aus einstellen. |
+   | **[!UICONTROL Neue Daten importieren]** | Auf „Ein“ oder „Aus“ einstellen. |
    | **[!UICONTROL Aufstockungsdaten]** | Sie können die Aufstockung der Daten in einem Datensatz basierend auf Ereignis-Zeitstempeln anfordern. Sie können beispielsweise anfordern, die Daten der letzten sieben Tage aufzustocken, die richtige Personen-ID zu konfigurieren und Ihre Verbindung auf korrekte Konfiguration zu testen. Wenn alles gut aussieht, können Sie alle verbleibenden Daten problemlos aufstocken.<p>Darüber hinaus können Sie den Import neuer Daten nach Datensatz aktivieren. Beispielsweise können Sie den Import neuer Daten nur für Suchdaten aktivieren. |
    | **[!UICONTROL Aufstockungsstatus]** | Gibt an, ob Aufstockungsdaten verarbeitet werden. |
 
@@ -54,10 +54,10 @@ Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verb
 
 ## Hinzufügen und Konfigurieren von Datensätzen {#add-dataset}
 
-Mit dem neuen Workflow können Sie beim Erstellen einer Experience Platform einen Verbindungsdatensatz hinzufügen.
+Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experience Platform-Datensatz hinzufügen.
 
-1. Klicken Sie im Dialogfeld Verbindungsparameter auf **[!UICONTROL Hinzufügen von Datensätzen]**.
-1. Wählen Sie einen oder mehrere Datensätze aus und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Klicken Sie im Dialogfeld „Verbindungseinstellungen“ auf **[!UICONTROL Datensätze hinzufügen]**.
+1. Wählen Sie einen oder mehrere Datensätze aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 
    Beachten Sie, dass mindestens ein Ereignis-Datensatz Teil der Verbindung sein muss.
 1. Konfigurieren Sie nun die Datensätze einzeln.
@@ -67,31 +67,31 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Experience Platform eine
    | Einstellung | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Personen-ID]** | Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Weitere Informationen zur Verwendung von Identity Map als Personen-ID finden Sie weiter unten.<p>Wenn keine Personen-IDs zur Auswahl stehen, bedeutet das, dass eine oder mehrere Personen-IDs im Schema nicht definiert wurden. In diesem Videos sehen Sie, wie Sie eine Identität in Experience Platform definieren. |
-   | **[!UICONTROL Zeitstempel]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in Experience Platform gesetzt. |
-   | **[!UICONTROL Neue Daten importieren]** | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in Arbeitsbereich ein. Kann auf Ein oder Aus eingestellt werden. |
-   | **[!UICONTROL Aufstockung des Datensatzes]** | Klicken **[!UICONTROL Aufstockung anfordern]** , um historische Daten aufzustocken.<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz wird durch die Anzahl der historischen Daten beeinflusst, die Sie haben.</li><li>Adobe Analytics Source Connector importiert Daten aus bis zu 13 Monaten unabhängig von ihrer Größe.</li></ul> |
-   | **[!UICONTROL Aufstockungsstatus]** | Mögliche Statusindikatoren sind:<ul><li>Erfolgreich</li><li>X Verarbeitung der Aufstockung(n)</li><li>Aus</li></ul> |
+   | **[!UICONTROL Zeitstempel]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. |
+   | **[!UICONTROL Neue Daten importieren]** | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in Workspace ein. Kann auf „Ein“ oder „Aus“ eingestellt werden. |
+   | **[!UICONTROL Aufstockung des Datensatzes]** | Klicken Sie auf **[!UICONTROL Aufstockung anfordern]**, um eine Aufstockung mit historischen Daten durchzuführen.<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz hängt von der Anzahl der historischen Daten ab, die Sie haben.</li><li>Adobe Analytics Source Connector importiert Daten aus bis zu 13 Monaten unabhängig von ihrer Größe.</li></ul> |
+   | **[!UICONTROL Aufstockungsstatus]** | Mögliche Statusindikatoren sind:<ul><li>Erfolgreich</li><li>X Aufstockung(en) werden verarbeitet</li><li>Aus</li></ul> |
    | **[!UICONTROL Datensatz-ID]** | Diese ID wird automatisch generiert. |
    | **[!UICONTROL Beschreibung]** | Die Beschreibung, die diesem Datensatz bei seiner Erstellung gegeben wurde. |
    | **[!UICONTROL Datensatzgröße]** | Die Größe des Datensatzes. |
    | **[!UICONTROL Schema]** | Dies ist das Schema, auf dessen Grundlage der Datensatz in Adobe Experience Platform erstellt wurde. |
    | **[!UICONTROL Datensatz]** | Der Name des Datensatzes. |
-   | **[!UICONTROL Vorschau]**: `<dataset name>` | Vorschau des Datensatzes mit den Spalten Datum, Kennung und Kennung . |
+   | **[!UICONTROL Vorschau]**: `<dataset name>` | Vorschau des Datensatzes mit Spalten für Datum, persönlicher ID und Kennung. |
    | **[!UICONTROL Entfernen]** | Sie können den Datensatz löschen oder entfernen und die Personen-ID ändern, ohne die gesamte Verbindung zu löschen. Dies reduziert die Kosten für die Datenerfassung und den aufwändigen Prozess der Neuerstellung der gesamten Verbindung und der zugehörigen Datenansichten. |
 
    {style=&quot;table-layout:auto&quot;}
 
 ## Verbindungsvorschau {#preview}
 
-Um die von Ihnen erstellte Verbindung in der Vorschau anzuzeigen, klicken Sie auf **[!UICONTROL Verbindungsvorschau]** im Dialogfeld Verbindungseinstellungen.
+Um die von Ihnen erstellte Verbindung in der Vorschau anzuzeigen, klicken Sie auf **[!UICONTROL Verbindungsvorschau]** im Dialogfeld „Verbindungseinstellungen“.
 
 ![Verbindungsvorschau](assets/create-conn4.png)
 
-Diese Vorschau enthält eine Reihe von Spalten, die die Verbindungskonfiguration auflisten. Welche Spaltentypen angezeigt werden, hängt von Ihren individuellen Datensätzen ab.
+Diese Vorschau enthält eine Reihe von Spalten mit der Verbindungskonfiguration. Welche Spaltentypen angezeigt werden, hängt von Ihren individuellen Datensätzen ab.
 
 ## Datensatztypen {#dataset-types}
 
-Für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, [!UICONTROL Customer Journey Analytics] legt den Datensatztyp anhand der eingehenden Daten automatisch fest.
+[!UICONTROL Customer Journey Analytics] legt für jeden Datensatz, den Sie dieser Verbindung hinzugefügt haben, automatisch den Datensatztyp anhand der eingehenden Daten fest.
 
 >[!IMPORTANT]
 >

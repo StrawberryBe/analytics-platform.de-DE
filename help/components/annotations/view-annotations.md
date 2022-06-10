@@ -6,8 +6,8 @@ feature: Components
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
 source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,12 +31,12 @@ Da Symbole in einer PDF-Datei nicht auf den Mauszeiger reagieren können, enthä
 
 ![](assets/ann-pdf.png)
 
-## Anzeigen von Anmerkungen mit Daten ohne Trend-Ansicht
+## Anzeigen von Anmerkungen mit Daten ohne Trendansicht
 
-Manchmal werden Anmerkungen mit Daten ohne Trend-Ansicht angezeigt, die jedoch an eine bestimmte Dimension gebunden sind. In diesem Fall werden sie nur in einer zusammenfassenden Anmerkung in der rechten unteren Ecke angezeigt. Siehe folgendes Beispiel:
+Manchmal werden Anmerkungen mit Daten ohne Trendansicht angezeigt, die jedoch an eine bestimmte Dimension gebunden sind. In diesem Fall werden sie nur in einer zusammenfassenden Anmerkung in der rechten unteren Ecke angezeigt. Siehe folgendes Beispiel:
 
 ![](assets/non-date.png)
 
-Das Zusammenfassungsdiagramm wird in allen Visualisierungstypen in der Ecke angezeigt, nicht nur in Freiformtabellen ohne Trend und Zusammenfassungsnummern. Es wird auch in Visualisierungen wie [!UICONTROL Ringdiagramm], [!UICONTROL Fluss], [!UICONTROL Fallout], [!UICONTROL Kohorte] usw. angezeigt.
+Das Zusammenfassungsdiagramm wird in allen Visualisierungstypen in der Ecke angezeigt, nicht nur in Freiformtabellen ohne Trendansicht und Zusammenfassungszahlen. Es wird auch in Visualisierungen wie dem [!UICONTROL Ringdiagramm], dem [!UICONTROL Fluss], dem [!UICONTROL Fallout], der [!UICONTROL Kohorte] usw. angezeigt.
 
 ![](assets/ann-summary.png)

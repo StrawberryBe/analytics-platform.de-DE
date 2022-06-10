@@ -6,21 +6,21 @@ role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
 source-git-commit: 6627c8e8f6e88fd93ffaad12b38e5e1dbbc844a8
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 47%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Ad-hoc-Projektfilter
 
-Mit Ad-hoc-Projektfiltern können Sie beliebige Komponenten direkt in die Ablagefläche des Bedienfelds ziehen, um einen Filter zu erstellen. Der Filter wird zu einem [Filter auf Projektebene](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=de) lokal auf das aktuelle Projekt verweist.
+Mit Ad-hoc-Projektfiltern können Sie beliebige Komponenten direkt in die Ablagefläche des Bedienfelds ziehen, um einen Filter zu erstellen. Der Filter wird zu einem [Filter auf Projektebene](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=de), der lokal im aktuellen Projekt verwendet werden kann.
 
 Im Folgenden finden Sie ein Video zum Erstellen von Ad-hoc-Projektfiltern:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. Ziehen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Segment, Segmentvorlage, Datumsbereich) in die Filter-Dropzone am oberen Rand eines Bedienfelds. Komponententypen werden automatisch in Ad-hoc-Filter oder [Schnellfilter](/help/components/filters/quick-filters.md) wenn kompatibel.
+1. Legen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Segment, Segmentvorlage, Datumsbereich) oben in einem Bedienfeld in der Ablagefläche für Filter ab. Komponententypen werden automatisch in Ad-hoc-Filter oder [Schnellfilter](/help/components/filters/quick-filters.md) wenn kompatibel.
 
    Im Folgenden finden Sie ein Beispiel für die Erstellung eines Filters für die Twitter-Referrer-Domain:
 
@@ -43,8 +43,8 @@ Sie können wie folgt vorgehen, um diese Filter zu speichern:
 
 1. Bewegen Sie den Mauszeiger auf den Filter in der Dropzone und klicken Sie auf das Symbol „i“.
 1. Klicken Sie auf den Stift zum Bearbeiten, um zum Filtergenerator zu wechseln.
-1. Überprüfen **[!UICONTROL Bereitstellen für alle Projekte und Hinzufügen zur Komponentenliste]**.
-1. Klicken **[!UICONTROL SPEICHERN]**.
+1. Aktivieren Sie die Option **[!UICONTROL Für alle Projekte verfügbar machen und der Komponentenliste hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Nach dem Speichern ist der Filter in der Komponentenliste der linken Leiste verfügbar und kann über den Filter-Manager für andere Benutzer freigegeben werden.
 
