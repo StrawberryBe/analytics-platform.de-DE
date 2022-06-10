@@ -4,9 +4,9 @@ description: Welche Best Practices bestehen für die Wahl eines Attributionsmode
 feature: Attribution
 exl-id: d612dc79-24e4-4d50-bccd-dfb58328bd4e
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Angenommen, Ihre Hypothese lautet: „Mein für den Erstkontakt verwendeter Kana
 
 **Beispiel 2**
 
-Ihre Hypothese könnte lauten: „In unserer Branche (z. B. der Reisebranche) liegt das Attributionsfenster nicht bei 30, sondern bei 60 oder 90 Tagen, da Kunden vor dem Produktkauf intensive Recherchen vornehmen“. In diesem Fall würden Sie das [Lookback-Fenster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#lookback-windows) entsprechend auf 90 Tage anpassen.
+Ihre Hypothese könnte lauten: „In unserer Branche (z. B. der Reisebranche) liegt das Attributionsfenster nicht bei 30, sondern bei 60 oder 90 Tagen, da Kunden vor dem Produktkauf intensive Recherchen vornehmen“. In diesem Fall würden Sie das [Lookback-Fenster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=de#lookback-windows) entsprechend auf 90 Tage anpassen.
 
 ## Schritt 3: Algorithmische Attribution verwenden
 
