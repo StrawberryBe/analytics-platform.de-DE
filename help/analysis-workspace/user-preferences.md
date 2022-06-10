@@ -5,7 +5,7 @@ feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Projekt-Voreinstellungen werden auf neue in Analysis Workspace erstellte Projekt
 |  | [Typ des Bedienfelds](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=de) | <ul><li>Freiform (Standard)</li><li>Leer</li><li>Quick Insights</li></ul> |
 |  | Zahlenformat | <ul><li>1.000,00 (Standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-Trennzeichen | <ul><li>Komma (Standard)</li><li>Semikolon</li><li>Doppelpunkt</li><li>Verkettungszeichen</li><li>Zeitraum</li><li>Leerzeichen</li><li>Tab</li></ul> |
-|  | Freiformtabelle | <ul><li>Anomalien zeigen </li><li>Sparklines zeigen</li><li>Anmerkungen anzeigen</li></ul> |
+|  | Freiformtabelle | <ul><li>Anomalien anzeigen </li><li>Sparklines anzeigen</li><li>Anmerkungen anzeigen</li></ul> |
 
 ## [!UICONTROL Dunkles Design]
 
