@@ -1,17 +1,17 @@
 ---
-title: Bindungsdimensionen und Metriken in CJA verwenden
+title: Verwenden von Bindungsdimensionen und Metriken in CJA
 description: Ordnen Sie den Objekt-Arrays Dimensionen für die komplexe Persistenzanalyse zu.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1330'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Bindungsdimensionen und Metriken in CJA verwenden
+# Verwenden von Bindungsdimensionen und Metriken in CJA
 
 Customer Journey Analytics bietet mehrere Möglichkeiten, Dimensionswerte über den Treffer hinaus beizubehalten, für den sie festgelegt wurden. Eine der Persistenzmethoden, die Adobe anbietet, wird als Bindung bezeichnet. In früheren Versionen von Adobe Analytics wurde dieses Konzept als Merchandising bezeichnet.
 
@@ -271,7 +271,7 @@ Wenn Sie die Suchbegriffdimension auf dieses Persistenzmodell festlegen, wird di
 * Wenn der Produktname nicht vorhanden ist, führen Sie keine Aktionen aus.
 * Wenn der Produktname vorhanden ist, überprüfen Sie, ob die Suchmetrik vorhanden ist.
 * Wenn die Suchmetrik nicht vorhanden ist, führen Sie keine Aktionen aus.
-* Wenn die Suchmetrik vorhanden ist, binden Sie den Suchbegriff an alle Produktnamen in diesem Ereignis. Er kopiert sich selbst auf die gleiche Ebene wie der Produktname für dieses Ereignis.   In diesem Beispiel ist er product.search_term.
+* Wenn die Suchmetrik vorhanden ist, binden Sie den Suchbegriff an alle Produktnamen in diesem Ereignis. Er kopiert sich selbst auf die gleiche Ebene wie der Produktname für dieses Ereignis.  In diesem Beispiel ist er product.search_term.
 * Wenn derselbe Produktname in einem nachfolgenden Ereignis angezeigt wird, wird der gebundene Suchbegriff auch an dieses Ereignis weitergeleitet.
 
 ## Beispiel 3: Binden des Videosuchbegriffs an das Benutzerprofil
