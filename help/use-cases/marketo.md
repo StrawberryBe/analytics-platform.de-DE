@@ -1,51 +1,51 @@
 ---
-title: Erfassen von Marketo Engage-Daten in AEP und Berichterstellung in CJA
+title: Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA
 description: Erfahren Sie, wie Sie Marketo Engage-Daten in Customer Journey Analytics importieren können.
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 source-git-commit: ad8e3c18dbb73a064662a4543cb0e553cd52cec3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '387'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Erfassen von Marketo Engage-Daten in AEP und Berichterstellung in CJA
+# Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA
 
-Sie können die neu verfügbaren Marketo Engage-Datensätze in Adobe Experience Platform (AEP) nutzen, um B2B-Marketern wertvolle Analyse- und Berichterstellungslösungen bereitzustellen. Erstellen Sie dann einen Bericht zu diesen Datensätzen in Customer Journey Analytics (CJA).
+Sie können die neu verfügbaren Marketo Engage-Datensätze in Adobe Experience Platform (AEP) nutzen, um B2B-Marketern nützliche Analyse- und Berichterstellungslösungen bereitzustellen. Danach können Sie einen Bericht zu diesen Datensätzen in Customer Journey Analytics (CJA) erstellen.
 
-## Schritt 1: Zuordnen von Marketo-Quelldatenfeldern zu ihren XDM-Zielen
+## Schritt 1: Ordnen Sie Marketo-Quelldatenfeldern ihren XDM-Zielen zu
 
-Ordnen Sie die [Personen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) und [Tätigkeiten](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) -Objekte zu ihren jeweiligen XDM-Schema-Zielfeldern hinzufügen.
+Ordnen Sie die Objekte [Personen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=de#persons) und [Aktivitäten](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=de#activities) den jeweiligen XDM-Schema-Zielfeldern zu.
 
-## Schritt 2: Marketo-Daten in AEP erfassen
+## Schritt 2: Nehmen Sie Marketo-Daten in AEP auf.
 
-Verwenden Sie die [Marketo Engage-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) , um Daten aus Marketo in die Experience Platform zu übertragen und mithilfe von Anwendungen, die mit Platform verbunden sind, auf dem neuesten Stand zu halten.
+Verwenden Sie den [Marketo Engage-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=de), um Daten aus Marketo in Experience Platform zu übertragen und mithilfe von Anwendungen, die mit Platform verbunden sind, auf dem neuesten Stand zu halten.
 
-## Schritt 3: Einrichten einer Verbindung zu diesem Datensatz in CJA
+## Schritt 3: Richten Sie eine Verbindung zu diesem Datensatz in CJA ein.
 
-Um über Experience Platform-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und CJA herstellen. Weitere Informationen finden Sie unter [Verbindung erstellen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de).
+Um Berichte über Experience Platform-Datensätze zu erstellen, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und CJA herstellen. Weitere Informationen finden Sie unter [Verbindung erstellen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de).
 
-## Schritt 4: Eine oder mehrere Datenansichten erstellen
+## Schritt 4: Erstellen Sie eine oder mehrere Datenansichten.
 
-A [Datenansicht](/help/data-views/data-views.md) ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Sie enthält alle in Analysis Workspace verfügbaren Dimensionen und Metriken - in diesem Fall Metriken und Dimensionen, die spezifisch für Marketo sind. Sie gibt auch an, aus welchen Spalten diese Dimensionen und Metriken ihre Daten beziehen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
+Eine [Datenansicht](/help/data-views/data-views.md) ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Sie enthält alle in Analysis Workspace verfügbaren Dimensionen und Metriken, in diesem Fall für Marketo spezifische Metriken und Dimensionen. Die Datenansicht gibt auch an, aus welchen Spalten diese Dimensionen und Metriken ihre Daten beziehen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
 
-## Schritt 5: Bericht in Analysis Workspace
+## Schritt 5: Erstellen Sie einen Bericht in Analysis Workspace.
 
-Ein Anwendungsfall, den Sie untersuchen können, ist: Wie viele Webseitenbesuche durch Leads hatten wir im April/Juni 2020?
+Ein möglicher Anwendungsfall ist: Wie viele Web-Seitenbesuche durch Leads hatten wir im April/Juni 2020?
 
-1. Öffnen [Analysis Workspace](/help/analysis-workspace/home.md) und erstellen Sie ein neues Projekt.
+1. Öffnen Sie [Analysis Workspace](/help/analysis-workspace/home.md) und erstellen Sie ein neues Projekt.
 Kunden mit B2B/B2P CDP können eine B2C-Analyse in CJA durchführen. B2B-Objekte sind noch nicht verfügbar.
 
-1. Erstellen Sie eine [filter](/help/components/filters/create-filters.md) für Webseitenansichten wie folgt - Ereignistyp = web.webpageDetails.pageViews :
+1. Erstellen Sie einen [Filter](/help/components/filters/create-filters.md) für Web-Seitenansichten wie folgt: Ereignistyp = web.webpagedetails.pageViews :
 
    ![](assets/marketo-filter.png)
 
-1. Ziehen Sie in die Freiformtabelle den von Ihnen erstellten Filter - Webseitenansichten und ziehen Sie dann in den Datumsbereich Monat . So erhalten Sie jeden Monat Webseitenbesuche nach Leads:
+1. Ziehen Sie den von Ihnen erstellten Filter (Web-Seitenansichten) und danach den Datumsbereich „Monat“ in die Freiformtabelle. So erhalten Sie die monatlichen Web-Seitenbesuche nach Leads:
 
    ![](assets/marketo-freeform.png)
 
-1. Oder ziehen Sie die folgenden Dimensionen ein: Personen-Schlüssel oder geschäftliche E-Mail-Adresse. Dadurch erhalten Sie die Webseitenbesuche jedes Leads:
+1. Oder ziehen Sie die folgenden Dimensionen in die Tabelle: Personen-Schlüssel oder geschäftliche E-Mail-Adresse. Dadurch erhalten Sie die Web-Seitenbesuche nach Lead:
 
    ![](assets/marketo-freeform2.png)
