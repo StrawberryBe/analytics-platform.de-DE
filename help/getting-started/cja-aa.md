@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
+source-git-commit: ab44c58a4089a5a48ad845579fb536f668d9f9f6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 93%
+source-wordcount: '1440'
+ht-degree: 91%
 
 ---
 
@@ -21,6 +21,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Anomalieerkennung | Vollständige Unterstützung. |
 | Attribution IQ | Vollständige Unterstützung. |
+| Zielgruppenorientiertes Veröffentlichen | Vollständige Unterstützung. In AA wurde Segment Publishing (Senden von Segmenten aus Workspace an das Experience Cloud) genannt. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an Echtzeit-Kundenprofil in Experience Platform. |
 | Berechnete Metriken | Vollständige Unterstützung; beachten Sie, dass vorhandene berechnete Metriken in herkömmlichem Analysis Workspace nicht in CJA portiert werden. |
 | Kalenderereignisse | Vollständige Unterstützung. Kalenderereignisse wurden bisher als [Anmerkungen](/help/components/annotations/overview.md) in Workspace implementiert. |
 | Classification Rule Builder | Vollständige Unterstützung. Aufgerufene [Teilzeichenfolgen](/help/data-views/component-settings/substring.md) in CJA. Verwendet zum Zeitpunkt der Berichtserstellung Zeichenfolgenmanipulationen anstelle von Lookup-Datensätzen. |
@@ -97,7 +98,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Projektvorlagen | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
-| Segmentveröffentlichung (Senden von Segmenten aus Arbeitsbereich an Experience Cloud) | Unterstützung ist geplant. Wird in CJA als „Zielgruppenveröffentlichung“ bezeichnet. |
 | Reporting über neue und wiederholte Sitzungen | Die Unterstützung ist mit einigen Einschränkungen geplant. |
 
 {style=&quot;table-layout:auto&quot;}
