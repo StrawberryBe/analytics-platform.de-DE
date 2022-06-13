@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: c33176b695d5ea3417ff17fe3140589d803472ae
+source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Vieles beim Reporting hat sich nicht geändert.
 
 * Sie können weiterhin die Funktionen von [Analysis Workspace](/help/analysis-workspace/home.md) verwenden, um Ihre Daten zu analysieren. Der Arbeitsbereich funktioniert genauso wie im herkömmlichen Adobe Analytics.
 * Dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) ist verfügbar und funktioniert ähnlich in CJA wie in herkömmlichem Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, iOS und der Web-Version von Excel. (Vor dieser Version von Report Builder konnten Sie Report Builder nicht auf Mac-Geräten verwenden, es sei denn, es wurde auf VMware ausgeführt.) Diese Version unterstützt die traditionelle AA-Datenanfrage noch nicht.
+* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, MacOS und der Webversion von Excel. (Vor dieser Version von Report Builder konnten Sie Report Builder nicht auf Mac-Geräten verwenden, es sei denn, es wurde auf VMware ausgeführt.) Diese Version unterstützt die traditionelle AA-Datenanfrage noch nicht.
 
 ## Änderungen beim Reporting
 
@@ -104,7 +104,7 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 
-CJA erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zusammengeführte ID, Benutzer-ID, Trackingcode usw. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Cross-Channel Analytics](/help/connections/cca/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzer, die in CJA ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in CJA erläutert wird:
+CJA erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zusammengeführte ID, Benutzer-ID, Trackingcode usw. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung von [Cross-Channel Analytics](/help/connections/cca/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzer, die in CJA ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in CJA erläutert wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 

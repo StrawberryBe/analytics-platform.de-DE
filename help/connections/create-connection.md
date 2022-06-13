@@ -4,10 +4,10 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
+source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2474'
+ht-degree: 81%
 
 ---
 
@@ -107,9 +107,21 @@ Es gibt 3 verschiedene Datensatztypen: [!UICONTROL Ereignis]-, [!UICONTROL Profi
 
 {style=&quot;table-layout:auto&quot;}
 
+## Numerische Felder als Suchschlüssel und Suchwerte verwenden {#numeric}
+
+Diese Funktion ist nützlich, wenn Sie Zeichenfolgenwerte mit einem numerischen Feld (z. B. COGS oder Marge) in einer Produkt-SKU klassifizieren möchten. Numerische Werte können als Schlüssel oder als Werte in die Suche einbezogen werden. In Ihrem Lookup-Schema können numerische Werte mit z. B. Ihren Produktnamen, COGS, Kampagnen-Marketingkosten oder Margen verknüpft sein. Im Folgenden finden Sie ein Beispiel für ein Lookup-Schema in Adobe Experience Platform:
+
+![Suchschema](assets/schema.png)
+
+Es wird jetzt unterstützt, diese Werte als Metriken oder Dimensionen in CJA-Berichte einzufügen. Wenn Sie Ihre Verbindung einrichten und Lookup-Datensätze abrufen, können Sie die Datensätze bearbeiten, um die [!UICONTROL Schlüssel] und [!UICONTROL Übereinstimmungsschlüssel]:
+
+![Datensatz bearbeiten](assets/lookup-dataset.png)
+
+Wenn Sie eine Datenansicht einrichten, die auf dieser Verbindung basiert, fügen Sie die numerischen Werte als Komponenten zur Datenansicht hinzu. Jedes Projekt, das auf dieser Datenansicht basiert, kann dann über diese numerischen Werte berichten.
+
 ## Identity Map als Personen-ID verwenden {#id-map}
 
-In Customer Journey Analytics kann jetzt Identity Map für Personen-ID verwendet werden. Identity Map ist eine Map-Datenstruktur, mit der Schlüssel-/Wert-Paare hochgeladen werden können. Die Schlüssel sind Identity-Namespaces und der Wert ist eine Struktur, die den Identitätswert enthält. Die Identity Map ist für jede hochgeladene Zeile/jedes hochgeladene Ereignis vorhanden und wird für jede Zeile entsprechend aufgefüllt.
+Customer Journey Analytics unterstützt die Möglichkeit, die Identity Map für die Personen-ID zu verwenden. Identity Map ist eine Map-Datenstruktur, mit der Sie Schlüssel-/Wert-Paare hochladen können. Die Schlüssel sind Identity-Namespaces und der Wert ist eine Struktur, die den Identitätswert enthält. Die Identity Map ist für jede hochgeladene Zeile/jedes hochgeladene Ereignis vorhanden und wird für jede Zeile entsprechend aufgefüllt.
 
 Die Identity Map ist für jeden Datensatz verfügbar, der ein auf der [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)-Klasse basierendes Schema verwendet. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identity Map auswählen:
 
