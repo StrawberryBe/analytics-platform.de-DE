@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 74c93b9327b1c7081c461187d53b1b27a686cfdd
+source-git-commit: 72fa66bfaec3340347b7ba6b8052eef960e2d29a
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 16%
+source-wordcount: '209'
+ht-degree: 17%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 16%
 | Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil | Ermöglicht die Veröffentlichung von in CJA gefundenen Zielgruppen in AEP/RTCDP, um Kunden-Targeting und -Personalisierung zu ermöglichen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | 15. Juni 2022 |
-| Neue Benutzeroberfläche für Flussvisualisierung | Bietet zusätzliche Funktionalität für unsere Flussvisualisierung, um sie leistungsfähiger und leistungsfähiger zu machen. Weitere Informationen (zu folgen) | 15. Juni 2022 |
+| Neue Benutzeroberfläche für Flussvisualisierung | Bietet zusätzliche Funktionalität für unsere Flussvisualisierung, um sie leistungsfähiger und leistungsfähiger zu machen. [Weitere Informationen](/help/analysis-workspace/visualizations/c-flow/create-flow.md) | 15. Juni 2022 |
 | Unterstützung für numerische Felder als Suchschlüssel und Suchwerte | Nützlich, wenn Sie Zeichenfolgenwerte mit einem numerischen Feld wie COGS oder Marge auf einer Produkt-SKU klassifizieren möchten. Wenn Sie Metriken aus der Suche zulassen, können Sie diese Datenpunkte in die Berichterstellung einfließen lassen. Weitere Informationen (zu folgen) | 15. Juni 2022 |
 | Analytics-Labs in CJA | Unterstützen Sie Labs in CJA, damit Sie Prototypen mit kanalübergreifenden Daten untersuchen können. [Weitere Informationen](/help/labs/labs.md) | 15. Juni 2022 |
 | Freigeben von Anmerkungen in mobilen Scorecards | Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Auf diese Weise können Sie kontextbezogene Datennuancen und Einblicke in Ihre Organisation und Kampagnen direkt in mobilen Scorecard-Projekten freigeben, die in der mobilen App der Analytics-Dashboards angezeigt werden. Weitere Informationen (zu folgen) | 15. Juni 2022 |
