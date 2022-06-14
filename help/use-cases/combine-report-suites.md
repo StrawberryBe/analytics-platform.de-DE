@@ -1,19 +1,19 @@
 ---
 title: Report Suites mit verschiedenen Schemata kombinieren
 description: Erfahren Sie, wie Sie mit der Datenvorbereitung Report Suites mit verschiedenen Schemata kombinieren
-source-git-commit: c602ee5567e7ba90d1d302f990cc1d8fc49e5adc
+source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 3%
+source-wordcount: '1308'
+ht-degree: 4%
 
 ---
 
 
-# Kombinieren von Report Suites mit verschiedenen Schemas
+# Report Suites mit verschiedenen Schemas kombinieren
 
-Die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) bietet eine Möglichkeit, Report Suite-Daten aus Adobe Analytics für die Verwendung durch AEP-Anwendungen wie Real-time Customer Data Platform und Customer Journey Analytics (CJA) in die Adobe Experience Platform zu übertragen. Jede Report Suite, die in AEP importiert wird, wird als Datenfluss der individuellen Quellverbindung konfiguriert und jeder Datenfluss wird als Datensatz im AEP-Data Lake landet. Der Analytics Source Connector erstellt einen Datensatz pro Report Suite.
+Die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) bringt Report Suite-Daten aus Adobe Analytics in Adobe Experience Platform (AEP) zur Verwendung durch AEP-Anwendungen wie Real-time Customer Data Platform und Customer Journey Analytics (CJA). Jede Report Suite, die in AEP importiert wird, wird als Datenfluss der individuellen Quellverbindung konfiguriert und jeder Datenfluss wird als Datensatz im AEP-Data Lake landet. Der Analytics Source Connector erstellt einen Datensatz pro Report Suite.
 
-CJA-Kunden verwenden [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de) , um Datensätze aus dem AEP Data Lake in die Analysis Workspace von CJA zu integrieren. Wenn Sie jedoch Report Suites innerhalb einer Verbindung kombinieren, müssen Schemaunterschiede zwischen Report Suites mithilfe der von [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) um sicherzustellen, dass Adobe Analytics-Variablen wie Props und eVars in CJA eine einheitliche Bedeutung haben.
+CJA-Kunden verwenden [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de) , um Datensätze aus dem AEP Data Lake in die Analysis Workspace von CJA zu integrieren. Wenn Sie jedoch Report Suites innerhalb einer Verbindung kombinieren, müssen Schemaunterschiede zwischen Report Suites mithilfe der von [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) Funktionalität. Damit soll sichergestellt werden, dass Adobe Analytics-Variablen wie Props und eVars in CJA eine einheitliche Bedeutung haben.
 
 ## Schemaunterschiede zwischen Report Suites sind problematisch
 
@@ -21,8 +21,8 @@ Angenommen, Ihr Unternehmen möchte Daten aus zwei verschiedenen Report Suites i
 
 | Report Suite A | Report Suite B |
 | --- | --- |
-| eVar1 => Suchbegriff | eVar1 => Geschäftseinheit |
-| eVar2 => Kundenkategorie | eVar2 => Suchbegriff |
+| eVar1 = Suchbegriff | eVar1 = Geschäftseinheit |
+| eVar2 = Kundenkategorie | eVar2 = Suchbegriff |
 
 Aus Gründen der Einfachheit sollten wir sagen, dass dies die einzigen definierten eVars für beide Report Suites sind.
 
@@ -30,8 +30,8 @@ Angenommen, Sie führen die folgenden Aktionen durch:
 
 - Erstellen einer Analytics-Quellverbindung (ohne Verwendung von Data Prep), die erfasst **Report Suite A** in den AEP Data Lake als **Datensatz A**.
 - Erstellen einer Analytics-Quellverbindung (ohne Verwendung von Data Prep), die erfasst **Report Suite B** in den AEP Data Lake als **Datensatz B**.
-- Erstellen Sie eine CJA-Verbindung mit dem Namen **Alle Report Suites** , der Datensatz A und Datensatz B kombiniert.
-- Erstellen Sie eine CJA-Datenansicht namens **Globale Ansicht** , der auf der Verbindung Alle Report Suites basiert.
+- Erstellen Sie eine [CJA-Verbindung](/help/connections/create-connection.md) aufgerufen **Alle Report Suites** , der Datensatz A und Datensatz B kombiniert.
+- Erstellen Sie eine [CJA-Datenansicht](/help/data-views/create-dataview.md) aufgerufen **Globale Ansicht** , der auf der Verbindung Alle Report Suites basiert.
 
 Ohne die Verwendung von Data Prep zur Auflösung der Schemaunterschiede zwischen Datensatz A und Datensatz B enthalten die eVars in der Datenansicht der globalen Ansicht eine Mischung aus Werten:
 
@@ -48,9 +48,9 @@ Dies führt zu sinnlosen Berichten für eVar1 und eVar2:
 
 ## AEP-Datenvorbereitung verwenden, um Schemaunterschiede zwischen Report Suites zu beheben
 
-Die Data Prep-Funktion von AEP ist in den Analytics Source Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Unterschiede beim Schema zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der CJA-Datenansicht. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
+Die Experience Platform Data Prep-Funktion ist in den Analytics Source Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Schemaunterschiede zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der CJA-Datenansicht. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
 
-1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen, erstellen Sie eine benutzerdefinierte Feldergruppe in AEP (wir nennen sie **Einheitliche Felder** in unserem Beispiel), das die folgenden Felder enthält:
+1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen, [Erstellen einer benutzerdefinierten Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) in AEP (nennen wir es **Einheitliche Felder** in unserem Beispiel), das die folgenden Felder enthält:
 
    | Benutzerdefinierte Feldergruppe &quot;Einheitliche Felder&quot;  |
    | --- |
@@ -58,7 +58,7 @@ Die Data Prep-Funktion von AEP ist in den Analytics Source Connector integriert 
    | Geschäftseinheit |
    | Kundenkategorie |
 
-1. Erstellen eines neuen Schemas in AEP (wir nennen es **Einheitliches Schema** in unserem Beispiel.) Fügen Sie dem Schema die folgenden Feldergruppen hinzu:
+1. [Neues Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in AEP (nennen wir es **Einheitliches Schema** in unserem Beispiel.) Fügen Sie dem Schema die folgenden Feldergruppen hinzu:
 
    | Feldergruppen für &quot;Einheitliches Schema&quot; |
    | --- |
@@ -106,9 +106,9 @@ Die Data Prep-Funktion von AEP ist in den Analytics Source Connector integriert 
 
    Sie haben nun die eVar 1 und eVar 2 aus den Quell-Report Suites drei neuen Feldern zugeordnet. Beachten Sie, dass ein weiterer Vorteil der Verwendung von Datenvorbereitung darin besteht, dass die Zielfelder jetzt auf semantisch aussagekräftigen Namen (Suchbegriff, Geschäftseinheit, Kundenkategorie) statt auf den weniger aussagekräftigen eVar (eVar1, eVar2) basieren.
 
->[!NOTE]
->
->Die benutzerdefinierte Feldergruppe &quot;Unified Fields&quot;und die zugehörigen Feldzuordnungen können vorhandenen Analytics Source Connector-Datenflüssen und -Datensätzen jederzeit hinzugefügt werden. Dies wirkt sich jedoch nur auf künftige Daten aus.
+   >[!NOTE]
+   >
+   >Die benutzerdefinierte Feldergruppe &quot;Unified Fields&quot;und die zugehörigen Feldzuordnungen können vorhandenen Analytics Source Connector-Datenflüssen und -Datensätzen jederzeit hinzugefügt werden. Dies wirkt sich jedoch nur auf künftige Daten aus.
 
 ## Mehr als nur Report Suites
 
