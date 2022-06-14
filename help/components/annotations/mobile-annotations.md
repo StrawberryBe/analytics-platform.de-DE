@@ -1,59 +1,57 @@
 ---
 title: 'Anmerkungen zu mobilen Scorecards    '
-description: Verwendung von Anmerkungen in mobilen Scorecards.
+description: Erfahren Sie, wie Sie Anmerkungen in mobilen Scorecards aufdecken.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 3387d72e68cccd4df54fbc4f29f03409db131206
+source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
 
+
 # Freigeben von Anmerkungen in mobilen Scorecards
 
-Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Auf diese Weise können Sie kontextbezogene Datennuancen und Einblicke direkt in Scorecards für Ihre Organisation und Kampagnen freigeben.
+>[!NOTE]
+>
+>Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
 
-Anmerkungen in mobilen Scorecards funktionieren ähnlich wie Workspace-Anmerkungen mit einigen zusätzlichen Funktionen. In Workspace können Sie beispielsweise Anmerkungen auf Tabellenebene für einen Datumsbereich erstellen. In mobilen Scorecards werden Anmerkungen auf Kategorieebene angezeigt. Dies bietet zusätzlichen Kontext für Benutzer mobiler Scorecards.
-__fügen Sie ein Beispiel hinzu - oder mehr Informationen, die den Unterschied beschreiben
+Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Auf diese Weise können Sie kontextbezogene Datennuancen und Einblicke in Ihre Organisation und Kampagnen direkt in mobilen Scorecard-Projekten freigeben, die in der mobilen App der Analytics-Dashboards angezeigt werden.
 
-?? Welche zusätzlichen Funktionen hat Mobile?
+## Anmerkungen in der Benutzeroberfläche in mobilen Scorecards
 
+Um Anmerkungen in mobilen Scorecards aufzudecken, erstellen Sie die Anmerkung zuerst aus Workspace-Projekten oder aus dem Menü &quot;Komponenten&quot;.
 
-## Hinzufügen von Anmerkungen zu mobilen Scorecards
-
-Anmerkungen, die in mobilen Scorecards angezeigt werden, werden in Workspace mithilfe der Methoden zur Erstellung von Anmerkungen in Workspace erstellt. Informationen zum Erstellen von Anmerkungen finden Sie unter [Anmerkungen erstellen](create-annotations.md).
-
+Informationen zum Erstellen von Anmerkungen finden Sie unter [Anmerkungen erstellen](create-annotations.md). Anmerkungen sind standardmäßig in mobilen Scorecards deaktiviert und müssen für jede Scorecard aktiviert sein, die Sie in mobilen Scorecards platzieren möchten.
 
 1. Aktivieren Sie Anmerkungen. Informationen zum Aktivieren von Anmerkungen finden Sie unter [Aktivieren oder Deaktivieren von Anmerkungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
 
-1. Erstellen Sie eine Anmerkung und weisen Sie sie _globalen Projekten zu. Informationen zum Erstellen einer Anmerkung in Workspace finden Sie unter [Anmerkungen erstellen](create-annotations.md).
+1. Erstellen Sie eine Anmerkung und stellen Sie sicher, dass sie für alle Ihre Projekte freigegeben ist. Informationen zum Erstellen einer Anmerkung in Workspace finden Sie unter [Anmerkungen erstellen](create-annotations.md).
 
 1. Auswählen **Anmerkungen anzeigen** , um die Anmerkung in mobilen Scorecards anzuzeigen.
 
-Um sicherzustellen, dass Anmerkungen anzeigen ausgewählt ist, gehen Sie zu **Projekt** > **Projektinformationen und Einstellungen**.
+![](assets/show-annotations.png)
+
+1. Bestätigen Sie, dass die Option Anmerkungen anzeigen ausgewählt ist, gehen Sie zu **Projekt** > **Projektinformationen und Einstellungen**.
+
+![](assets/project-info-settings.png)
 
 ## Anzeigen von Anmerkungen in mobilen Scorecards
 
-In Workspace können Sie Anmerkungen im Builder überprüfen. Sie können auch den Vorschaumodus verwenden, um die mobile Scorecard mit Anmerkungen anzuzeigen.
+Wenn Anmerkungen aktiviert sind, werden im Scorecard Builder Anmerkungssymbole angezeigt. Anmerkungen werden nur in Diagrammen und Tabellen in der Detailansicht angezeigt. Anmerkungen sind in der Ansicht der Hauptkachel der Scorecard nicht sichtbar.
 
-Um Anmerkungen auf einem Mobilgerät anzuzeigen, tippen Sie in mobilen Scorecards auf ein Anmerkungssymbol. Wischen Sie nach links oder rechts, um weitere Anmerkungen anzuzeigen. Auf diese Weise können Sie alle Anmerkungen schnell anzeigen.
+![](assets/view-annotations.png)
 
-![](assets/mobile-annotations2.png)
+Wenn Anmerkungssymbole sichtbar sind, können Sie Anmerkungen auf der Arbeitsfläche des Builders nicht vollständig anzeigen oder damit interagieren. Verwenden Sie den Vorschaumodus, um Anmerkungen so anzuzeigen und zu bearbeiten, wie sie in der App angezeigt werden. ![](assets/preview-icon.png)
 
-Beim Anzeigen eines __donut befindet sich eine Zusammenfassung der Anmerkungen, die auf eine Metrik angewendet werden, in der rechten unteren Ecke.
+Anmerkungsfarben werden ausgewählt, wenn die Anmerkung in Workspace erstellt wird. Graue Anmerkungen weisen auf das Vorhandensein von mehr als einer Anmerkung hin. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
 
-![](assets/ann-mobile-summary.png)
+## Anzeigen von Diagrammanmerkungen
 
-
-## Hinweise zu mobilen Scorecards
-
-* Wenn eine Anmerkung auf eine Kategorie angewendet wird und ein Benutzer von dieser Kategorieansicht aus wechselt, verschwindet die Anmerkung. Anmerkungen werden nur in einer zugehörigen Kategorie angezeigt.
-
-* Anmerkungen sind standardmäßig deaktiviert.
-
-
-## Anmerkungsfarben
-
-Wenn Sie eine Anmerkung erstellen, weisen Sie der in der Scorecard angezeigten Anmerkung eine bestimmte Farbe zu. Anmerkungen, die grau angezeigt werden, weisen darauf hin, dass mehrere Anmerkungen derselben Kategorie zugewiesen sind. Andernfalls wird die Anmerkung in der Farbe angezeigt, die in Workspace festgelegt wurde.
+| Datum | Erscheinungsbild |
+| --- | --- |
+| **Einzeltag** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **Datumsbereich** | ![](assets/date-range.png) |
+| **Überlappende Anmerkungen** | ![](assets/overlapping-annotations.png)<br></br>Um Anmerkungsdetails in der Analytics-Dashboards-App anzuzeigen, tippen Sie auf ein Anmerkungssymbol. <br></br>Wenn Sie eine Anmerkung in einem Diagramm anzeigen, können Sie nach links und rechts wischen, um durch alle im Diagramm vorhandenen Anmerkungen zu navigieren. Wischen Sie beim Anzeigen einer Anmerkung in der Tabelle nach links und rechts, um durch alle Anmerkungen zu navigieren, die mit diesem Zeilenelement in der Tabelle verknüpft sind. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>In Diagrammen ohne zeitbasierte *x-Achse*, wie z. B. Ringdiagramme oder horizontale Balkendiagramme, können Anmerkungen, die für das Diagramm gelten, durch Tippen auf das Symbol unten rechts angezeigt werden.<br></br> ![](assets/charts-without-timebase.png) |
