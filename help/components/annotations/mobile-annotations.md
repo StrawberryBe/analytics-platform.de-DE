@@ -1,22 +1,19 @@
 ---
-title: 'Anmerkungen zu mobilen Scorecards    '
+title: Anmerkungen zu mobilen Scorecards
 description: Erfahren Sie, wie Sie Anmerkungen in mobilen Scorecards aufdecken.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
+exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
+source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 2%
 
 ---
 
 
 # Freigeben von Anmerkungen in mobilen Scorecards
-
->[!NOTE]
->
->Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
 
 Sie können in Workspace erstellte Anmerkungen in mobilen Scorecards anzeigen. Auf diese Weise können Sie kontextbezogene Datennuancen und Einblicke in Ihre Organisation und Kampagnen direkt in mobilen Scorecard-Projekten freigeben, die in der mobilen App der Analytics-Dashboards angezeigt werden.
 
@@ -26,17 +23,17 @@ Um Anmerkungen in mobilen Scorecards aufzudecken, erstellen Sie die Anmerkung zu
 
 Informationen zum Erstellen von Anmerkungen finden Sie unter [Anmerkungen erstellen](create-annotations.md). Anmerkungen sind standardmäßig in mobilen Scorecards deaktiviert und müssen für jede Scorecard aktiviert sein, die Sie in mobilen Scorecards platzieren möchten.
 
-1. Aktivieren Sie Anmerkungen. Informationen zum Aktivieren von Anmerkungen finden Sie unter [Aktivieren oder Deaktivieren von Anmerkungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
+1. Aktivieren Sie Anmerkungen. Informationen zum Aktivieren von Anmerkungen finden Sie unter [Aktivieren oder Deaktivieren von Anmerkungen](overview.md#annotations-on-off).
 
 1. Erstellen Sie eine Anmerkung und stellen Sie sicher, dass sie für alle Ihre Projekte freigegeben ist. Informationen zum Erstellen einer Anmerkung in Workspace finden Sie unter [Anmerkungen erstellen](create-annotations.md).
 
 1. Auswählen **Anmerkungen anzeigen** , um die Anmerkung in mobilen Scorecards anzuzeigen.
 
-![](assets/show-annotations.png)
+   ![](assets/show-annotations.png)
 
 1. Bestätigen Sie, dass die Option Anmerkungen anzeigen ausgewählt ist, gehen Sie zu **Projekt** > **Projektinformationen und Einstellungen**.
 
-![](assets/project-info-settings.png)
+   ![](assets/project-info-settings.png)
 
 ## Anzeigen von Anmerkungen in mobilen Scorecards
 
