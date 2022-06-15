@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ab44c58a4089a5a48ad845579fb536f668d9f9f6
+source-git-commit: 7902c63b01a5c1fe9782c6b4d1a8014d3f1c6ec6
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 91%
+source-wordcount: '1427'
+ht-degree: 88%
 
 ---
 
@@ -66,7 +66,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Dimensionen [!UICONTROL Gerät], [!UICONTROL Browser], [!UICONTROL Referrer], [!UICONTROL Technologie] | Diese Dimensionen werden automatisch eingeschlossen, wenn ein AEP-Datensatz bestimmte XDM-Schemafelder enthält und der XDM-Erlebnisereignis-Klasse entspricht. In unserer [Dokumentation erfahren Sie, welche Analytics-Variablen über den Analytics-Quell-Connector unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de). Für CJA-Kunden, die den Quell-Connector nicht zum Einfügen von Daten aus Adobe Analytics in CJA verwenden, sondern stattdessen Daten mit dem AEP-Web-SDK erfassen, werden [!UICONTROL Geräte] und Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Dies wird aber in naher Zukunft der Fall sein. |
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
-| GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) in CJA. Bei Implementierungen, die nicht den Analytics Quell-Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (Land und US-Bundesstaat werden unterstützt, Stadt und Postleitzahl dagegen nicht). Derzeit gibt es begrenzte oder gar keine Unterstützung für Staaten/Regionen außerhalb der USA. |
+| GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) in CJA. Bei Implementierungen, die nicht den Analytics Source Connector verwenden, z. B. solche, die für die digitale Datenerfassung auf das AEP Web SDK angewiesen sind, wird nicht automatisch die gesamte Reihe geografischer Suchen durchgeführt: Land und Staat werden global unterstützt, Stadt und Postleitzahl nicht. |
 | Marketing-Kanäle | Daten von Marketing-Kanälen werden jetzt über Analytics Data Connector an Customer Journey Analytics weitergeleitet. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
 | Produktvariable | In Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem Datensatzschema verwenden, um die Anforderungen dieses Anwendungsfalls zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf eine einzelne Variable beschränkt. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
