@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 2%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -27,11 +27,11 @@ Informationen zum Erstellen von Anmerkungen finden Sie unter [Anmerkungen erstel
 
 1. Erstellen Sie eine Anmerkung und stellen Sie sicher, dass sie für alle Ihre Projekte freigegeben ist. Informationen zum Erstellen einer Anmerkung in Workspace finden Sie unter [Anmerkungen erstellen](create-annotations.md).
 
-1. Auswählen **Anmerkungen anzeigen** , um die Anmerkung in mobilen Scorecards anzuzeigen.
+1. Auswählen **[!UICONTROL Anmerkungen anzeigen]** , um die Anmerkung in mobilen Scorecards anzuzeigen.
 
    ![](assets/show-annotations.png)
 
-1. Bestätigen Sie, dass die Option Anmerkungen anzeigen ausgewählt ist, gehen Sie zu **Projekt** > **Projektinformationen und Einstellungen**.
+1. Bestätigen Sie, dass die Option Anmerkungen anzeigen ausgewählt ist, gehen Sie zu **[!UICONTROL Projekt]** > **[!UICONTROL Projektinformationen und Einstellungen]**.
 
    ![](assets/project-info-settings.png)
 
@@ -49,6 +49,6 @@ Anmerkungsfarben werden ausgewählt, wenn die Anmerkung in Workspace erstellt wi
 
 | Datum | Erscheinungsbild |
 | --- | --- |
-| **Einzeltag** | ![](assets/single-day-mobile-annotations.png)<br></br> |
-| **Datumsbereich** | ![](assets/date-range.png) |
-| **Überlappende Anmerkungen** | ![](assets/overlapping-annotations.png)<br></br>Um Anmerkungsdetails in der Analytics-Dashboards-App anzuzeigen, tippen Sie auf ein Anmerkungssymbol. <br></br>Wenn Sie eine Anmerkung in einem Diagramm anzeigen, können Sie nach links und rechts wischen, um durch alle im Diagramm vorhandenen Anmerkungen zu navigieren. Wischen Sie beim Anzeigen einer Anmerkung in der Tabelle nach links und rechts, um durch alle Anmerkungen zu navigieren, die mit diesem Zeilenelement in der Tabelle verknüpft sind. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>In Diagrammen ohne zeitbasierte *x-Achse*, wie z. B. Ringdiagramme oder horizontale Balkendiagramme, können Anmerkungen, die für das Diagramm gelten, durch Tippen auf das Symbol unten rechts angezeigt werden.<br></br> ![](assets/charts-without-timebase.png) |
+| **[!UICONTROL Einzelne Anzeige]y** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **[!UICONTROL Datumsbereich]** | ![](assets/date-range.png) |
+| **[!UICONTROL Überlappende Anmerkungen]** | ![](assets/overlapping-annotations.png)<br></br>Um Anmerkungsdetails in der Analytics-Dashboards-App anzuzeigen, tippen Sie auf ein Anmerkungssymbol. <br></br>Wenn Sie eine Anmerkung in einem Diagramm anzeigen, können Sie nach links und rechts wischen, um durch alle im Diagramm vorhandenen Anmerkungen zu navigieren. Wischen Sie beim Anzeigen einer Anmerkung in der Tabelle nach links und rechts, um durch alle Anmerkungen zu navigieren, die mit diesem Zeilenelement in der Tabelle verknüpft sind. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>In Diagrammen ohne zeitbasierte *x-Achse*, wie z. B. Ringdiagramme oder horizontale Balkendiagramme, können Anmerkungen, die für das Diagramm gelten, durch Tippen auf das Symbol unten rechts angezeigt werden.<br></br> ![](assets/charts-without-timebase.png) |

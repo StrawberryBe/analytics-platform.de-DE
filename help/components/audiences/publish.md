@@ -2,18 +2,14 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Audiences aus Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 0108b07fd4fac33d026b8832931ffa3018b298e0
+source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '939'
 ht-degree: 7%
 
 ---
 
 # Erstellen und Veröffentlichen von Zielgruppen
-
->[!NOTE]
->
->Diese Funktion ist derzeit in [begrenzte Tests](/help/release-notes/releases.md).
 
 In diesem Thema wird beschrieben, wie Sie in Customer Journey Analytics (CJA) identifizierte Zielgruppen erstellen und veröffentlichen. [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung.
 
@@ -60,8 +56,8 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
    | Vorschaueinstellung | Beschreibung |
    | --- | --- |
    | [!UICONTROL Datenvorschau] Fenster | Der Datumsbereich für die Zielgruppe. |
-   | [!UICONTROL Personen insgesamt] | Zusammenfassende Anzahl der Personen in dieser Zielgruppe. Es kann bis zu 100 Millionen Menschen umfassen. Wenn Ihre Zielgruppe mehr als 100 Millionen Benutzer umfasst, müssen Sie die Zielgruppengröße verringern, bevor Sie sie veröffentlichen können. |
-   | [!UICONTROL Zielgruppen-Limit] | Zeigt an, wie weit diese Zielgruppe von der Beschränkung von 100 Millionen entfernt ist. |
+   | [!UICONTROL Personen insgesamt] | Zusammenfassende Anzahl der Personen in dieser Zielgruppe. Es kann bis zu 200 Millionen Menschen erreichen. Wenn Ihre Zielgruppe mehr als 200 Millionen Benutzer umfasst, müssen Sie die Zielgruppengröße verringern, bevor Sie sie veröffentlichen können. |
+   | [!UICONTROL Zielgruppen-Limit] | Zeigt an, wie weit diese Zielgruppe von der 200-Millionen-Grenze entfernt ist. |
    | [!UICONTROL Geschätzte Zielgruppenrendite] | Diese Einstellung ist nützlich für das Retargeting von Kunden in dieser Zielgruppe, die zu Ihrer Site zurückkehren. (Mit anderen Worten, die werden in diesem Datensatz erneut angezeigt.) <p>Hier können Sie den Zeitraum (nächste 7 Tage, nächste 2 Wochen, nächsten Monat) für die geschätzte Anzahl der Kunden auswählen, die möglicherweise zurückkehren. |
    | [!UICONTROL Voraussichtliche Rückkehr] | Mit dieser Zahl erhalten Sie eine geschätzte Anzahl an wiederkehrenden Kunden über den von Ihnen aus der Dropdownliste ausgewählten Zeitraum. Wir sehen uns die historische Abwanderungsrate für diese Zielgruppe an, um diese Zahl vorherzusagen. |
    | [!UICONTROL Metriken in der Vorschau anzeigen] | Mit dieser Einstellung können Sie bestimmte Metriken betrachten, um zu sehen, ob diese Zielgruppe zu dieser Metrik einen unverhältnismäßig hohen Beitrag leistet, z. B.[!UICONTROL Umsatz]&#39; or &#39;[!UICONTROL Durchschnittliche Besuchszeit pro Site]&quot;. Es gibt Ihnen die aggregierte Anzahl der Metriken sowie den Prozentsatz der Gesamtanzahl, die sie darstellt. Sie können eine beliebige Metrik auswählen, die in Ihrer Datenansicht verfügbar ist. |

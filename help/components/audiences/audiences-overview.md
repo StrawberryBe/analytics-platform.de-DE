@@ -2,28 +2,22 @@
 title: Veröffentlichung von CJA-Zielgruppen - Überblick
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 1fd3bc1f0d62bedfbaebfe6ca84099ccbd9d3c5f
+source-git-commit: 1abc116892405772530e8c254299b40167613656
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 8%
+source-wordcount: '348'
+ht-degree: 3%
 
 ---
 
 # Überblick über die Veröffentlichung von CJA-Zielgruppen
 
->[!NOTE]
->
->Diese Funktion ist derzeit in [begrenzte Tests](/help/release-notes/releases.md).
-
-Sie können jetzt Zielgruppen erstellen und veröffentlichen, die in Customer Journey Analytics (CJA) in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCP) in Adobe Experience Platform für Kundenansprache und -personalisierung. Mit dem Echtzeit-Kundenprofil können Sie eine ganzheitliche Ansicht jedes einzelnen Kunden anzeigen, indem Sie Daten aus mehreren Kanälen, einschließlich Online, Offline, CRM und Drittanbieter, kombinieren. Mit dem Profil können Sie Ihre Kundendaten in einer zentralen Ansicht zusammenführen, die eine aussagekräftige Darstellung jeder Kundeninteraktion mit Zeitstempel bietet.
+Sie können jetzt Zielgruppen erstellen und veröffentlichen, die in Customer Journey Analytics (CJA) in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCP) in Adobe Experience Platform für Kundenansprache und -personalisierung.
 
 Das Veröffentlichen von Zielgruppen bietet eine klare Möglichkeit, innerhalb von CJA vorhandene Einblicke zu aktivieren und Maßnahmen zu ergreifen. Diese Aktionen können Folgendes umfassen:
 
-* E-Mails an diese Audience senden
-* Push-Nachrichten an diese Zielgruppe senden
 * Verwenden der Zielgruppe für eine Journey in Adobe Journey Optimizer.
 * Exportieren der Zielgruppe in ein Drittanbieter über ein Experience Platform-Ziel.
-* Anreicherung des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in CJA abgeleitet wurden, ohne alle Ereignisdaten zu RTCP hinzufügen zu müssen.
+* Anreicherung des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in CJA abgeleitet wurden.
 * Dies alles mit minimaler Latenz nach der Veröffentlichung der Audience (einige Minuten)
 * Veröffentlichen einmaliger oder wiederkehrender Zielgruppen
 
