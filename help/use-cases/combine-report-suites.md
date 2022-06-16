@@ -1,13 +1,13 @@
 ---
 title: Report Suites mit verschiedenen Schemata kombinieren
 description: Erfahren Sie, wie Sie mit der Datenvorbereitung Report Suites mit verschiedenen Schemata kombinieren
-source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
+exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
+source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1336'
 ht-degree: 4%
 
 ---
-
 
 # Report Suites mit verschiedenen Schemas kombinieren
 
@@ -50,7 +50,14 @@ Dies führt zu sinnlosen Berichten für eVar1 und eVar2:
 
 Die Experience Platform Data Prep-Funktion ist in den Analytics Source Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Schemaunterschiede zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der CJA-Datenansicht. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
 
-1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen, [Erstellen einer benutzerdefinierten Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) in AEP (nennen wir es **Einheitliche Felder** in unserem Beispiel), das die folgenden Felder enthält:
+1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen, [Neues Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in AEP (nennen wir es **Einheitliches Schema** in unserem Beispiel.) Fügen Sie dem Schema Folgendes hinzu:
+
+   | &quot;Einheitliches Schema&quot; |
+   | --- |
+   | **XDM ExperienceEvent** class |
+   | **Adobe Analytics ExperienceEvent-Vorlage** Feldergruppe |
+
+1. Hinzufügen einer weiteren Feldergruppe zum Schema oder [Erstellen einer benutzerdefinierten Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) und fügen Sie sie zum Schema hinzu. Wir erstellen eine neue Feldergruppe und nennen sie **Einheitliche Felder**. Anschließend fügen wir die folgenden Felder zur neuen Feldergruppe hinzu:
 
    | Benutzerdefinierte Feldergruppe &quot;Einheitliche Felder&quot;  |
    | --- |
@@ -58,17 +65,7 @@ Die Experience Platform Data Prep-Funktion ist in den Analytics Source Connector
    | Geschäftseinheit |
    | Kundenkategorie |
 
-1. [Neues Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in AEP (nennen wir es **Einheitliches Schema** in unserem Beispiel.) Fügen Sie dem Schema die folgenden Feldergruppen hinzu:
-
-   | Feldergruppen für &quot;Einheitliches Schema&quot; |
-   | --- |
-   | XDM-Erlebnisereignis |
-   | Adobe Analytics-Erlebnisereignisvorlage |
-   | Einheitliche Felder |
-
-   Beim Erstellen des Datenflusses für die Quellverbindung für **Report Suite A** auswählen **Einheitliches Schema** zur Verwendung im Datenfluss.
-
-1. Fügen Sie benutzerdefinierte Zuordnungen wie folgt hinzu:
+1. Erstellen Sie den Datenfluss der Quellverbindung für **Report Suite A** auswählen **Einheitliches Schema** zur Verwendung im Datenfluss. Fügen Sie dem Datenfluss benutzerdefinierte Zuordnungen wie folgt hinzu:
 
    | Report Suite A Quellfeld | Zielfeld aus der Feldergruppe &quot;Einheitliche Felder&quot; |
    | --- | --- |
@@ -77,11 +74,9 @@ Die Experience Platform Data Prep-Funktion ist in den Analytics Source Connector
 
    >[!NOTE]
    >
-   >Der XDM-Pfad für Ihre Zielfelder hängt davon ab, wie Sie Ihre benutzerdefinierte Feldergruppe einrichten.
+   >Der XDM-Pfad für Ihre Zielfelder hängt davon ab, wie Sie Ihre benutzerdefinierte Feldergruppe strukturieren.
 
-1. Beim Erstellen des Datenflusses für die Quellverbindung für **Report Suite B** erneut auswählen **Einheitliches Schema** zur Verwendung im Datenfluss.
-
-   Der Workflow zeigt an, dass zwei Felder einen Konflikt mit dem Deskriptornamen aufweisen. Der Grund dafür ist, dass sich die Deskriptoren für eVar 1 und eVar 2 in Report Suite B von denen in Report Suite A unterscheiden. Wir wissen dies jedoch bereits, sodass wir den Konflikt ignorieren und benutzerdefinierte Zuordnungen wie folgt verwenden können:
+1. Erstellen Sie den Datenfluss der Quellverbindung für **Report Suite B** erneut auswählen **Einheitliches Schema** zur Verwendung im Datenfluss. Der Workflow zeigt an, dass zwei Felder einen Konflikt mit dem Deskriptornamen aufweisen. Der Grund dafür ist, dass sich die Deskriptoren für eVar 1 und eVar 2 in Report Suite B von denen in Report Suite A unterscheiden. Wir wissen dies jedoch bereits, sodass wir den Konflikt ignorieren und benutzerdefinierte Zuordnungen wie folgt verwenden können:
 
    | Quellenfeld Report Suite B | Zielfeld aus der Feldergruppe &quot;Einheitliche Felder&quot; |
    |---|---|
@@ -90,11 +85,9 @@ Die Experience Platform Data Prep-Funktion ist in den Analytics Source Connector
 
 1. Erstellen Sie jetzt eine **Alle Report Suites** Verbindung für CJA verwenden, indem Datensatz A und Datensatz B kombiniert werden.
 
-1. Erstellen Sie eine **Globale Ansicht** Datenansicht in CJA.
+1. Erstellen Sie eine **Globale Ansicht** Datenansicht in CJA. Ignorieren Sie die ursprünglichen Felder und schließen Sie nur die eVar aus der Feldergruppe &quot;Einheitliche Felder&quot;ein.
 
-   Ignorieren Sie die ursprünglichen Felder und schließen Sie nur die eVar aus der Feldergruppe &quot;Einheitliche Felder&quot;ein.
-
-   Ansicht der globalen Daten in CJA:
+   **Globale Ansicht** Datenansicht in CJA:
 
    | Quellfeld | In Datenansicht einschließen? |
    | --- | --- | 
@@ -104,11 +97,11 @@ Die Experience Platform Data Prep-Funktion ist in den Analytics Source Connector
    | _\&lt;path>_.Customer_category  | Ja |
    | _\&lt;path>_.Business_unit | Ja |
 
-   Sie haben nun die eVar 1 und eVar 2 aus den Quell-Report Suites drei neuen Feldern zugeordnet. Beachten Sie, dass ein weiterer Vorteil der Verwendung von Datenvorbereitung darin besteht, dass die Zielfelder jetzt auf semantisch aussagekräftigen Namen (Suchbegriff, Geschäftseinheit, Kundenkategorie) statt auf den weniger aussagekräftigen eVar (eVar1, eVar2) basieren.
+Sie haben nun die eVar 1 und eVar 2 aus den Quell-Report Suites drei neuen Feldern zugeordnet. Beachten Sie, dass ein weiterer Vorteil der Verwendung von Datenvorbereitung darin besteht, dass die Zielfelder jetzt auf semantisch aussagekräftigen Namen (Suchbegriff, Geschäftseinheit, Kundenkategorie) statt auf den weniger aussagekräftigen eVar (eVar1, eVar2) basieren.
 
-   >[!NOTE]
-   >
-   >Die benutzerdefinierte Feldergruppe &quot;Unified Fields&quot;und die zugehörigen Feldzuordnungen können vorhandenen Analytics Source Connector-Datenflüssen und -Datensätzen jederzeit hinzugefügt werden. Dies wirkt sich jedoch nur auf künftige Daten aus.
+>[!NOTE]
+>
+>Die benutzerdefinierte Feldergruppe &quot;Unified Fields&quot;und die zugehörigen Feldzuordnungen können vorhandenen Analytics Source Connector-Datenflüssen und -Datensätzen jederzeit hinzugefügt werden. Dies wirkt sich jedoch nur auf künftige Daten aus.
 
 ## Mehr als nur Report Suites
 
@@ -124,37 +117,34 @@ Die Funktionen von Data Prep zum Kombinieren von Datensätzen mit verschiedenen 
 
 Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Analytics-Daten mit der Kundenkategorie in Some_field in den Callcenter-Daten kombinieren. Hier ist eine Möglichkeit, das zu tun. Auch hier kann die Namenskonvention Ihren Bedürfnissen entsprechend geändert werden.
 
-1. Erstellen Sie eine benutzerdefinierte Feldergruppe:
+1. Erstellen Sie ein Schema in AEP. Fügen Sie dem Schema Folgendes hinzu:
+
+   | &quot;Erweitertes Schema&quot; |
+   | --- | 
+   | **XDM-Erlebnisereignis** class |
+   | **Adobe Analytics-Erlebnisereignisvorlage** Feldergruppe |
+
+1. Erstellen Sie eine neue Feldergruppe und fügen Sie sie zum Schema hinzu. Fügen Sie der Feldergruppe Felder hinzu:
 
    | Benutzerdefinierte Feldergruppe &quot;Kundeninformationen&quot;  |
    | --- |
    | Customer_category |
 
-1. Erstellen Sie ein Schema in AEP. Fügen Sie dem Schema die folgenden Feldergruppen hinzu:
-
-   | Feldergruppen für &quot;Erweitertes Schema&quot; |
-   | --- | 
-   | XDM-Erlebnisereignis |
-   | Adobe Analytics-Erlebnisereignisvorlage |
-   | Kundeninformationen |
-
-1. Beim Erstellen des Datenflusses für **Datensatz A** auswählen **Erweitertes Schema** als Schema.
-
-1. Fügen Sie benutzerdefinierte Zuordnungen wie folgt hinzu:
+1. Erstellen Sie den Datenfluss für **Datensatz A** auswählen **Erweitertes Schema** als Schema. Fügen Sie dem Datenfluss benutzerdefinierte Zuordnungen wie folgt hinzu:
 
    | Datensatz Ein Quellfeld | Zielfeld aus der Feldergruppe &quot;Kundeninformationen&quot; |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Customer_category |
 
-1. Beim Erstellen des Datenflusses für **Datensatz B** erneut auswählen **Erweitertes Schema** als Schema.
-
-1. Fügen Sie benutzerdefinierte Zuordnungen wie folgt hinzu:
+1. Erstellen Sie den Datenfluss für **Datensatz B** erneut auswählen **Erweitertes Schema** als Schema. Fügen Sie dem Datenfluss benutzerdefinierte Zuordnungen wie folgt hinzu:
 
    | Quellfeld für Datensatz B | Zielfeld aus der Feldergruppe &quot;Kundeninformationen&quot; |
    | --- | --- |
    | _\&lt;path>_.Some_field | _\&lt;path>_.Customer_category |
 
-   Erstellen Sie eine CJA-Verbindung, die Datensatz A und Datensatz B kombiniert. Erstellen Sie eine Datenansicht in CJA mithilfe der soeben erstellten CJA-Verbindung. Ignorieren Sie die ursprünglichen eVar und schließen Sie nur die Felder aus der Feldergruppe Kundeninformationen ein.
+1. Erstellen Sie eine CJA-Verbindung, die Datensatz A und Datensatz B kombiniert.
+
+1. Erstellen Sie eine Datenansicht in CJA mithilfe der soeben erstellten CJA-Verbindung. Ignorieren Sie die ursprünglichen eVar und schließen Sie nur die Felder aus der Feldergruppe Kundeninformationen ein.
 
    Datenansicht in CJA:
 
@@ -169,4 +159,3 @@ Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Ana
 Wie oben beschrieben, können Sie mit der Datenvorbereitung verschiedene Felder über mehrere Adobe Analytics Report Suites hinweg zuordnen. Dies ist in CJA hilfreich, wenn Sie Daten aus mehreren Datensätzen in einer CJA-Verbindung kombinieren möchten. Wenn Sie die Report Suites jedoch in separaten CJA-Verbindungen belassen möchten, aber ein Berichtssatz für diese Verbindungen und Datenansichten verwenden möchten, bietet eine Änderung der zugrunde liegenden Komponenten-ID in CJA eine Möglichkeit, Berichte kompatibel zu machen, selbst wenn die Schemata unterschiedlich sind. Siehe [Komponenteneinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) für weitere Informationen.
 
 Das Ändern der Komponenten-ID ist eine Nur-CJA-Funktion und hat keine Auswirkungen auf Daten aus dem Analytics Source Connector, der an das Echtzeit-Kundenprofil und die RTCDP gesendet wird.
-
