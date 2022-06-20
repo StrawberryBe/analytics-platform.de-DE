@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 243dc9bfcb7dde08e58fa4f8a11c8ec8c1e49de1
+source-git-commit: a92a6e5825ae01fa2eac30d778293681eab9dd3e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -34,7 +34,10 @@ ht-degree: 0%
    + [Häufig gestellte Fragen](getting-started/cja-faq.md)
    + [Umstieg von Adobe Analytics auf Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Benutzerhandbuch für neue Benutzer von Customer Journey Analytics](getting-started/aa-to-cja-user.md)
-   + [Customer Journey Analytics-Funktionen](getting-started/cja-aa.md)
+   + Adobe Analytics und Customer Journey Analytics vergleichen {#compare-aa-cja}
+      + [Customer Journey Analytics-Funktionen](getting-started/aa-vs-cja/cja-aa.md)
+      + [Datenverarbeitung in Adobe Analytics und CJA vergleichen](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Virtual Reporting-Umgebungen und Sandbox-Umgebungen](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
    + [Auswirkungen des Löschens](getting-started/cja-deletion.md)
    + [CJA-Glossar](getting-started/cja-glossary.md)
 + Verbindungen {#cja-connections}
@@ -229,6 +232,5 @@ ht-degree: 0%
    + [Labs-Benutzerhandbuch](labs/labs.md)
 + Fehlerbehebung {#troubleshooting}
    + [Vergleichen von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](troubleshooting/compare.md)
-   + [Datenverarbeitung in Adobe Analytics und CJA vergleichen](troubleshooting/data-processing-comparisons.md)
 + Datenschutz {#cja-privacy}
    + [Übersicht über den Datenschutz](privacy/privacy-overview.md)
