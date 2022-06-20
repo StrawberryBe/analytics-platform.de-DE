@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d6b557e90c6f05efed77a77cd5d189241473c7b5
+source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 86%
+source-wordcount: '819'
+ht-degree: 85%
 
 ---
 
@@ -17,6 +17,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
+| Juni 2022 | Neuer Artikel zu [Report Suites mit verschiedenen Schemas kombinieren](/help/use-cases/combine-report-suites.md) |
 | Juni 2022 | Neuer Artikel zu [Freigeben von Anmerkungen in mobilen Scorecards](/help/components/annotations/mobile-annotations.md) |
 | Juni 2022 | Neuer Artikel zu [Analytics Labs in CJA](/help/labs/labs.md) |
 | Juni 2022 | Neuer Abschnitt zu [Unterstützung für numerische Felder als Lookup-Schlüssel und Lookup-Werte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
