@@ -4,18 +4,14 @@ keywords: Fallout und Filter;Filter in Fallout-Analyse;Filter in Fallout verglei
 title: Anwenden von Filtern in der Fallout-Analyse
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '438'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '405'
 ht-degree: 100%
 
 ---
 
 # Anwenden von Filtern in der Fallout-Analyse
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter als Touchpoints hinzufügen und wichtige Workflows über verschiedene Filter hinweg vergleichen.
 

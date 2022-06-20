@@ -3,18 +3,14 @@ description: Paginierung, Filtern und Sortieren von Tabellen in Workspace
 title: Paginierung, Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '233'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
 
 # Paginierung, Filtern und Sortieren von Tabellen
-
->[!NOTE]
->
->Dies ist die Dokumentation zu Analysis Workspace in Customer Journey Analytics. Seine Funktionen unterscheiden sich geringfügig von denen in [Analysis Workspace im herkömmlichen Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de). [Weitere Informationen...](/help/getting-started/cja-aa.md)
 
 Dieses Video-Tutorial bietet eine Übersicht über Paginierungs-, Filter- und Sortiertabellen in Analysis Workspace:
 
