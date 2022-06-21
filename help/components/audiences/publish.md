@@ -2,9 +2,9 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Audiences aus Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
+source-git-commit: 454d931b8c9f9e4e960a01401623bc9eda4e21d8
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '993'
 ht-degree: 7%
 
 ---
@@ -74,14 +74,19 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform
 
+CJA nimmt jetzt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). CJA sendet die Zielgruppe an die Experience Platform, wobei die primäre Identität auf die Personen-ID festgelegt ist, die bei der Verbindungskonfiguration ausgewählt wurde.
 
-CJA nimmt jetzt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). RTCP untersucht dann jede Namespace/ID-Kombination und sucht nach einem Profil, zu dem sie gehören kann. Ein Profil ist im Grunde ein Cluster verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentmitgliedsattribut hinzugefügt. Jetzt kann beispielsweise &quot;user@adobe.com&quot;über alle Geräte und Kanäle hinweg als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
+RTCP untersucht dann jede Namespace/ID-Kombination und sucht nach einem Profil, zu dem sie gehören kann. Ein Profil ist im Grunde ein Cluster verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentmitgliedsattribut hinzugefügt. Jetzt kann beispielsweise &quot;user@adobe.com&quot;über alle Geräte und Kanäle hinweg als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
 Sie können CJA-Zielgruppen in Platform anzeigen, indem Sie **[!UICONTROL Segmente]** > **[!UICONTROL Segmente erstellen]** > **[!UICONTROL Zielgruppen]** tab > **[!UICONTROL CJA-Zielgruppen]**.
 
 Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 ![](assets/audiences-aep.png)
+
+## Was passiert, wenn ein Benutzer in Customer Journey Analytics nicht mehr Mitglied einer Zielgruppe ist?
+
+In diesem Fall wird ein Exitereignis von Customer Journey Analytics an Experience Platform gesendet.
 
 ## Nächste Schritte
 
