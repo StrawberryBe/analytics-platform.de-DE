@@ -4,10 +4,10 @@ description: Das Konzept der „Wiederholung“ in der kanalübergreifenden Anal
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '548'
-ht-degree: 100%
+source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 92%
 
 ---
 
@@ -19,6 +19,8 @@ Die kanalübergreifende Analyse führt zwei Durchläufe der Daten für eine best
 * **Wiederholen**: Die kanalübergreifende Analyse wiederholt Daten basierend auf eindeutigen Kennungen, die es gelernt hat. In dieser Phase werden neue Geräte in der Verbindung zugeordnet. Adobe bietet zwei Wiederholungsintervalle:
    * Täglich: Die Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Besucher müssen sich jedoch an dem Tag authentifizieren, an dem sie Ihre Website besuchen.
    * Wöchentlich: Die Daten werden einmal pro Woche mit einem 7-Tage-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Daten, die weniger als eine Woche alt sind, werden jedoch nicht zugeordnet.
+
+Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich in einem bestimmten Lookback-Fenster authentifizieren, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
 
 ## Schritt 1: Echtzeit-Zuordnung
 
