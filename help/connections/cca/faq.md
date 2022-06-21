@@ -4,10 +4,10 @@ description: Häufig gestellte Fragen zu Cross-Channel Analytics
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: f181584603d62b09ebc8538759d47fb1e03b007a
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 93%
+source-wordcount: '966'
+ht-degree: 91%
 
 ---
 
@@ -60,7 +60,7 @@ Bestimmte Metriken in CJA ähneln den Metriken in herkömmlichem Analytics, ande
 
 | **Zugeordnete CJA-Daten** | **Nicht zugeordnete CJA-Daten** | **Traditionelles Adobe Analytics** | **Analytics Ultimate mit CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personen** = Anzahl der einzelnen `Person ID`s, für die `Stitched ID` als `Person ID` ausgewählt ist. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl der einzelnen `Person ID`s basierend auf der Spalte, die als `Person ID` ausgewählt wurde. Die Datensätze von **Personen** in Adobe Analytics Connector (ADC) ähneln denen von **Unique Visitors** im herkömmlichen Adobe Analytics, wenn `endUserIDs. _experience. aaid.id` als `Person ID` in CJA ausgewählt ist. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. Beachten Sie, dass **Unique Visitors** möglicherweise nicht mit der Anzahl der eindeutigen **ECID** s übereinstimmt. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
+| **Personen** = Anzahl der einzelnen `Person ID`s, für die `Stitched ID` als `Person ID` ausgewählt ist. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl der einzelnen `Person ID`s basierend auf der Spalte, die als `Person ID` ausgewählt wurde. **Personen** in Adobe Source Connector-Datensätzen ähnelt **Unique Visitors** im traditionellen Adobe Analytics `endUserIDs. _experience. aaid.id` ausgewählt wird als `Person ID` in CJA. | **Unique Visitors** = Anzahl unterschiedlicher Besucher-IDs. Beachten Sie, dass **Unique Visitors** möglicherweise nicht mit der Anzahl der eindeutigen **ECID** s übereinstimmt. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
 | **Sitzungen**: Wird anhand der in der CJA-Datenansicht angegebenen Sitzungseinstellungen definiert. Der Zuordnungsprozess kann einzelne Sitzungen von mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der CJA-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite der geräteübergreifenden Analyse](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=de) angegeben sind. |
 | **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einem leeren `Persistent ID`. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in CJA. Im Allgemeinen sollte diese Anzahl nahe bei der der **Vorfälle** im herkömmlichen Adobe Analytics liegen. Beachten Sie jedoch, dass Ereignisse, die in den nicht zugeordneten Daten in AEP Data Lake ein leeres `Person ID` enthalten, in CJA abgelegt (nicht eingeschlossen) werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
