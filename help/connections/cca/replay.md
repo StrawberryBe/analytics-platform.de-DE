@@ -4,10 +4,10 @@ description: Das Konzept der „Wiederholung“ in der kanalübergreifenden Anal
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 92%
+source-wordcount: '578'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Die kanalübergreifende Analyse führt zwei Durchläufe der Daten für eine best
    * Täglich: Die Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Besucher müssen sich jedoch an dem Tag authentifizieren, an dem sie Ihre Website besuchen.
    * Wöchentlich: Die Daten werden einmal pro Woche mit einem 7-Tage-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Daten, die weniger als eine Woche alt sind, werden jedoch nicht zugeordnet.
 
-Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich in einem bestimmten Lookback-Fenster authentifizieren, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
+Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich in einem gegebenen Lookback-Fenster authentifizieren, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
 
 ## Schritt 1: Echtzeit-Zuordnung
 
@@ -32,7 +32,7 @@ Die kanalübergreifende Analyse versucht bei der Erfassung, jedes Ereignis bekan
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | – | – | `246` | Bob besucht Ihre Website auf seinem Desktop und ist nicht authentifiziert. | `1` (246) |
 | `2` | `246` | `Bob` | – | `Bob` | Bob meldet sich auf seinem Desktop an. | `2` (246 und Bob) |
-| `3` | – | – | `Bob` | `Bob` | Bob ruft den Kundendienst an | `2` (246 und Bob) |
+| `3` | – | – | `Bob` | `Bob` | Bob ruft Kundendienst an | `2` (246 und Bob) |
 | `4` | `3579` | – | – | `3579` | Bob greift über sein Smartphone oder Tablet auf Ihre Website zu und ist nicht authentifiziert | `3` (246, Bob und 3579) |
 | `5` | `3579` | `Bob` | – | `Bob` | Bob meldet sich über ein Smartphone oder Tablet an | `3` (246, Bob und 3579) |
 | `6` | – | – | `Bob` | `Bob` | Bob ruft erneut den Kundendienst an | `3` (246, Bob und 3579) |
@@ -52,7 +52,7 @@ In regelmäßigen Abständen (einmal pro Woche oder einmal pro Tag, je nach ausg
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | – | – | `Bob` | Bob besucht Ihre Website auf seinem Desktop und ist nicht authentifiziert. | `1` (Bob) |
 | `2` | `246` | `Bob` | – | `Bob` | Bob meldet sich auf seinem Desktop an. | `1` (Bob) |
-| `3` | – | – | `Bob` | `Bob` | Bob ruft den Kundendienst an | `1` (Bob) |
+| `3` | – | – | `Bob` | `Bob` | Bob ruft Kundendienst an | `1` (Bob) |
 | `4` | `3579` | – | – | `Bob` | Bob greift über sein Smartphone oder Tablet auf Ihre Website zu und ist nicht authentifiziert | `1` (Bob) |
 | `5` | `3579` | `Bob` | – | `Bob` | Bob meldet sich über ein Smartphone oder Tablet an | `1` (Bob) |
 | `6` | – | – | `Bob` | `Bob` | Bob ruft erneut den Kundendienst an | `1` (Bob) |
