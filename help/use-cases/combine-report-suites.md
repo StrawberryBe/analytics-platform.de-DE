@@ -2,9 +2,9 @@
 title: Report Suites mit verschiedenen Schemata kombinieren
 description: Erfahren Sie, wie Sie mit der Datenvorbereitung Report Suites mit verschiedenen Schemata kombinieren
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
+source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1335'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,6 @@ Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Ana
 
 ## Datenvorbereitung vs. Komponenten-ID
 
-Wie oben beschrieben, können Sie mit der Datenvorbereitung verschiedene Felder über mehrere Adobe Analytics Report Suites hinweg zuordnen. Dies ist in CJA hilfreich, wenn Sie Daten aus mehreren Datensätzen in einer CJA-Verbindung kombinieren möchten. Wenn Sie die Report Suites jedoch in separaten CJA-Verbindungen belassen möchten, aber ein Berichtssatz für diese Verbindungen und Datenansichten verwenden möchten, bietet eine Änderung der zugrunde liegenden Komponenten-ID in CJA eine Möglichkeit, Berichte kompatibel zu machen, selbst wenn die Schemata unterschiedlich sind. Siehe [Komponenteneinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) für weitere Informationen.
+Wie oben beschrieben, können Sie mit der Datenvorbereitung verschiedene Felder über mehrere Adobe Analytics Report Suites hinweg zuordnen. Dies ist in CJA hilfreich, wenn Sie Daten aus mehreren Datensätzen in einer CJA-Verbindung kombinieren möchten. Wenn Sie die Report Suites jedoch in separaten CJA-Verbindungen belassen möchten, aber einen Berichtssatz für diese Verbindungen und Datenansichten verwenden möchten, bietet eine Änderung der zugrunde liegenden Komponenten-ID in CJA eine Möglichkeit, Berichte kompatibel zu machen, selbst wenn die Schemas unterschiedlich sind. Siehe [Komponenteneinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) für weitere Informationen.
 
 Das Ändern der Komponenten-ID ist eine Nur-CJA-Funktion und hat keine Auswirkungen auf Daten aus dem Analytics Source Connector, der an das Echtzeit-Kundenprofil und die RTCDP gesendet wird.
