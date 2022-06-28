@@ -2,7 +2,7 @@
 title: AAID, ECID, AACUSTOMID und der Analytics Source Connector
 description: Erfahren Sie, wie der Analytics Source Connector mit Adobe Analytics-Identitätsfeldern umgeht.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 20ebfb36e769f7d683ad44ec84b11aafb301a737
+source-git-commit: 89fb87653355ffe174d9ad7e19eb5979dd78eaaf
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 9%
@@ -17,7 +17,7 @@ Adobe Analytics-Daten enthalten mehrere Identitätsfelder. Drei wichtige Identit
 
 Die Adobe Analytics ID (AAID) ist die primäre Gerätekennung in Adobe Analytics und ist garantiert für jedes Ereignis, das über den Analytics Source Connector weitergeleitet wird. AAID wird manchmal als &quot;Legacy Analytics ID&quot;bezeichnet oder `s_vi` Cookie-ID. Eine AAID wird jedoch auch dann erstellt, wenn die `s_vi` -Cookie nicht vorhanden ist. AAID wird durch die `post_visid_high/post_visid_low` Spalten in [Adobe Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de#columns%2C-descriptions%2C-and-data-types).
 
-Im Analytics Source Connector wird AAID in `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. Das Feld &quot;AAID&quot;für ein bestimmtes Ereignis enthält eine einzelne Identität, die einer von mehreren verschiedenen Typen sein kann, wie unter [Reihenfolge der Vorgänge für Analytics-IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (Innerhalb einer gesamten Report Suite kann AAID eine Mischung aus Ereignistypen enthalten. Der Typ für jeden Treffer wird im `post _visid_type` in den Analytics-Daten-Feeds.) Siehe auch: [Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de).
+Im Analytics Source Connector wird AAID in `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. Das Feld &quot;AAID&quot;für ein bestimmtes Ereignis enthält eine einzelne Identität, die einer von mehreren verschiedenen Typen sein kann, wie unter [Reihenfolge der Vorgänge für Analytics-IDs](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=en%5B%5D). (Innerhalb einer gesamten Report Suite kann AAID eine Mischung aus Ereignistypen enthalten. Der Typ für jeden Treffer wird im `post_visid_type` in den Analytics-Daten-Feeds.) Siehe auch: [Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de).
 
 ## ECID
 
