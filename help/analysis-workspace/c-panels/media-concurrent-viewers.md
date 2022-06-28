@@ -4,16 +4,16 @@ description: Verwendung und Interpretation des Bedienfelds „Gleichzeitige Medi
 feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 100%
+source-wordcount: '1010'
+ht-degree: 96%
 
 ---
 
 # Bedienfeld „Gleichzeitige Medienbetrachter“
 
-Media Analytics-Kunden können gleichzeitige Betrachter analysieren, um zu verstehen, wo Spitzenzeiten mit gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam. So erhalten sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern, die bei der Fehlerbehebung, Planung von Volumen oder Skalierung helfen können.
+Sie können gleichzeitige Betrachter analysieren, um zu verstehen, wo Spitzenzeiten von gleichzeitigen Ansichten auftraten oder wo es zu Abbrüchen kam. So erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern, die Sie bei der Fehlerbehebung oder Planung von Volumen oder Größe unterstützen.
 
 In Analysis Workspace bezeichnet der Begriff „Gleichzeitige Betrachter“ die Anzahl der Unique Visitors, die sich Ihre Medien-Streams unabhängig von der Anzahl der Sitzungen zu einem bestimmten Zeitpunkt ansehen.
 

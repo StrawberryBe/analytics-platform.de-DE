@@ -4,16 +4,16 @@ description: Verwendung und Interpretation des Panels „verbrachten Zeit bei de
 feature: Panels
 role: User, Admin
 exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 84%
 
 ---
 
 # Panel „Verbrachte Zeit bei der Medienwiedergabe“
 
-Media Analytics-Kunden können die verbrachte Zeit bei der Medienwiedergabe analysieren, um zu verstehen, wo besonders viele gleichzeitige Aufrufe stattfanden oder wo es zu Abbrüchen kam. So erhalten sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion von Betrachtern, was bei der Fehlerbehebung und der Planung von Volumen oder Skalierung helfen kann.
+Sie können die Wiedergabedauer analysieren, um zu verstehen, wo Spitzenzeiten von gleichzeitigen Vorgängen aufgetreten sind oder wo es zu Abbrüchen kam. So erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und können bei der Fehlerbehebung oder Planung von Volumen oder Größe helfen.
 
 In Analysis Workspace bezeichnet die verbrachte Zeit bei der Medienwiedergabe die Zeit, die mit der Anzeige Ihrer Medien-Streams zu einem bestimmten Zeitpunkt verbracht wurde. Sie beinhaltet auch Pausen, die Pufferung und die Zeit bis zum Start.
 
