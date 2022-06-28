@@ -2,9 +2,9 @@
 title: AAID, ECID, AACUSTOMID und der Analytics Source Connector
 description: Erfahren Sie, wie der Analytics Source Connector mit Adobe Analytics-Identitätsfeldern umgeht.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 89fb87653355ffe174d9ad7e19eb5979dd78eaaf
+source-git-commit: 4c9d87b6c6b7859ffac4cd2d26e8c89d12fe1285
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '560'
 ht-degree: 9%
 
 ---
@@ -51,4 +51,6 @@ Innerhalb von identityMap:
 Andernfalls wird AAID als primäre Identität für das Ereignis markiert.
 * AACUSTOMID wird nie als Primäre ID für das Ereignis markiert. Wenn jedoch AACUSTOMID vorhanden ist, basiert AAID gemäß der obigen Diskussion auf AACUSTOMID.
 
-Für CJA ist die Definition der Primären ID nur dann wichtig, wenn der Endbenutzer die Primäre ID als Personen-ID verwendet. Dies ist jedoch nicht erforderlich. Der Benutzer kann eine andere Identitätsspalte als Personen-ID auswählen.
+## CJA und Primäre ID
+
+Für CJA ist die Definition der Primären ID nur dann wichtig, wenn Sie die Primäre ID als Personen-ID verwenden. Dies ist jedoch nicht erforderlich. Sie können eine andere Identitätsspalte als Personen-ID auswählen.
