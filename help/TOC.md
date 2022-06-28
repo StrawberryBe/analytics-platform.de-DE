@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 348f4e8596146f7ff4234535fa76a54f7be33171
+source-git-commit: d4b1d5f784a98c5e14d653d03aec4b811a34462a
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '702'
 ht-degree: 91%
 
 ---
@@ -120,6 +120,11 @@ ht-degree: 91%
       + [Leeres Bedienfeld](analysis-workspace/c-panels/blank-panel.md)
       + [Freiform-Bedienfeld](analysis-workspace/c-panels/freeform-panel.md)
       + [Bedienfeld „Quick Insights“](analysis-workspace/c-panels/quickinsight.md)
+      + [Bedienfeld „Gleichzeitige Medienbetrachter“](analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + Mit Medienwiedergabe verbrachte Zeit {#media-playback-timespent}
+         + [Überblick](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
+         + [Eingabe- und Ausgabeeinstellungen](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
+         + [Häufig gestellte Fragen (FAQ)](analysis-workspace/c-panels/media-playback-timespent/faqs.md)
    + Kuratieren, Freigeben und Planen von Projekten {#curate-share}
       + [Menü „Freigeben“](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratieren von Projekten](analysis-workspace/curate-share/curate.md)
