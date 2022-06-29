@@ -4,7 +4,7 @@ description: Verwenden und Interpretieren des Bedienfelds „Medien-Zielgruppend
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 100%
@@ -13,6 +13,8 @@ ht-degree: 100%
 
 
 # Bedienfeld „Zielgruppendurchschnitt pro Minute“
+
+<!-- THIS FEATURE IS SCHEDULED FOR 2023 -->
 
 Media Analytics-Kunden können das Bedienfeld für den Zielgruppendurchschnitt pro Minute verwenden, um die durchschnittliche Nutzung ihrer Inhalte besser zu verstehen. Der Zielgruppendurchschnitt pro Minute ermöglicht Vergleiche von Inhalten beliebiger Längen oder Genres. Darüber hinaus können Kunden diesen digitalen Zielgruppendurchschnitt pro Minute mit Metriken zum linearen TV-Durchschnitt pro Minute vergleichen oder ihn anhängen. Dieses Bedienfeld bietet mehr Flexibilität, um den Zielgruppendurchschnitt für benutzerdefinierte Zeiträume zu messen sowie für Fälle, bei denen die Klassifizierung der Dauer nachträglich aktualisiert wurde. Die aktuelle Metrik für den Zielgruppendurchschnitt pro Minute funktioniert nur, wenn die Dauer zur Verarbeitungszeit verfügbar ist.
 

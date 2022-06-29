@@ -3,14 +3,19 @@ title: Häufig gestellte Fragen zur mit Medienwiedergabe verbrachten Zeit
 description: Wie lauten die häufig gestellten Fragen zur mit Medienwiedergabe verbrachten Zeit?
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: be5d5557-ef5f-4a13-8d4c-0a64a8163412
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '255'
+ht-degree: 100%
 
 ---
 
 # Häufig gestellte Fragen zur mit Medienwiedergabe verbrachten Zeit
+
+>[!NOTE]
+>
+>Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
 
 
 | Frage | Antwort |

@@ -3,14 +3,20 @@ title: Eingaben und Ausgaben des Panels „Medienwiedergabe – Besuchszeit“
 description: Welche Einstellungen gibt es für die Ein- und Ausgabe für die mit Medienwiedergabe verbrachten Zeit?
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: 4c0380ff-f55c-48a7-a4b2-1a291511e4d9
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '552'
+ht-degree: 100%
 
 ---
 
 # Eingaben und Ausgaben des Panels „Medienwiedergabe – Besuchszeit“ {#Inputs-and-outputs}
+
+>[!NOTE]
+>
+>Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
+
 
 Sie können das Panel „Medienwiedergabe – Besuchszeit“ mit den folgenden Eingabe- und Ausgabeeinstellungen anpassen.
 
