@@ -7,87 +7,87 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
 source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Datenblöcken in Report Builder
 
-Mit dem Datenblock-Manager können Sie alle Datenblöcke einer Arbeitsmappe anzeigen und verwalten. Der Datenblock-Manager bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke schnell finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie die ausgewählten Datenblöcke bearbeiten, löschen oder aktualisieren.
+Mit dem Datenblock-Manager können Sie alle Datenblöcke einer Arbeitsmappe anzeigen und verwalten. Der Datenblock-Manager bietet Such-, Filter- und Sortierfunktionen, mit denen Sie bestimmte Datenblöcke schnell finden können. Nach Auswahl eines oder mehrerer Datenblöcke können Sie diese bearbeiten, löschen oder aktualisieren.
 
-![image](./assets/image52.png)
+![Bild](./assets/image52.png)
 
-## Datenblöcke anzeigen
+## Anzeigen von Datenblöcken
 
-Klicken **Verwalten** um eine Liste aller Datenblöcke in einer Arbeitsmappe anzuzeigen.
+Klicken Sie auf **Verwalten**, um eine Liste aller Datenblöcke in einer Arbeitsmappe anzuzeigen.
 
 
-![image](./assets/image53.png)
+![Bild](./assets/image53.png)
 
 Der Datenblock-Manager listet alle in einer Arbeitsmappe vorhandenen Datenblöcke auf. 
 
-![image](./assets/image52.png)
+![Bild](./assets/image52.png)
 
-## Sortieren der Liste der Datenblöcke
+## Sortieren der Datenblockliste
 
-Sie können die Blockierungsliste der Daten nach einer angezeigten Spalte sortieren. Sie können beispielsweise die Blockierungsliste der Daten nach Report Suites, Filtern, Datumsbereich und anderen Variablen sortieren.
+Sie können die Datenblockliste nach einer angezeigten Spalte sortieren. Sie können die Datenblockliste beispielsweise nach Report Suites, Filtern, Datumsbereich und anderen Variablen sortieren.
 
-Um die Blockierungsliste der Daten zu sortieren, klicken Sie auf eine Spaltenüberschrift.
+Um die Datenblockliste zu sortieren, klicken Sie auf eine Spaltenüberschrift.
 
-![image](./assets/image54.png)
+![Bild](./assets/image54.png)
 
-## Durchsuchen der Daten-Blockierungsliste
+## Durchsuchen der Datenblockliste
 
-Verwenden Sie das Feld Suchen , um etwas in der Datenblock-Tabelle zu suchen. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Report Suite enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Datumsbereich-, Datumsänderungs- oder Letztlaufdatumsspalten angezeigt werden.
+Verwenden Sie das Suchfeld, um in der Datenblocktabelle eine Suche durchzuführen. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Report Suite enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
 
-![image](./assets/image55.png)
+![Bild](./assets/image55.png)
 
-## Datenblöcke bearbeiten
+## Bearbeiten von Datenblöcken
 
 Sie können die Datenansicht, den Datumsbereich oder die auf einen oder mehrere Datenblöcke angewendeten Filter bearbeiten.
 
-Sie können beispielsweise einen vorhandenen Filter in einem oder mehreren Datenblöcken durch einen neuen Filter ersetzen.
+Beispielsweise können Sie einen vorhandenen Filter in einem oder mehreren Datenblöcken durch einen neuen Filter ersetzen.
 
-1. Wählen Sie die zu aktualisierenden Datenblöcke aus. Sie können das Kontrollkästchen auf der obersten Ebene aktivieren, um alle Datenblöcke auszuwählen, oder Sie können einzelne Datenblöcke auswählen.
+1. Wählen Sie die zu aktualisierenden Datenblöcke aus. Sie können das Kontrollkästchen auf der obersten Ebene aktivieren, um alle Datenblöcke auszuwählen. Sie können aber auch einzelne Datenblöcke auswählen.
 
-   ![image](./assets/image56.png)
+   ![Bild](./assets/image56.png)
 
-1. Klicken Sie auf das Bearbeitungssymbol, um das Fenster Schnellbearbeitung anzuzeigen.
+1. Klicken Sie auf das Bearbeitungssymbol, um das Fenster „Schnellbearbeitung“ anzuzeigen.
 
-   ![image](./assets/image58.png)
+   ![Bild](./assets/image58.png)
 
-1. Wählen Sie einen Filterlink aus, um Datenansichten, Datumsbereiche oder Filter zu aktualisieren.
+1. Wählen Sie einen Filter-Link aus, um Datenansichten, Datumsbereiche oder Filter zu aktualisieren.
 
-   ![image](./assets/image59.png)
+   ![Bild](./assets/image59.png)
 
-## Datenblöcke aktualisieren
+## Aktualisieren von Datenblöcken
 
 Klicken Sie auf das Aktualisierungssymbol, um die Datenblöcke in der Liste zu aktualisieren.
 
 <img src="./assets/refresh-icon.png" width="15%"/>
 
-Um zu überprüfen, ob ein Datenblock aktualisiert wurde, rufen Sie das Symbol Aktualisierungsstatus auf. Ein Häkchen in einem grünen Kreis <img src="./assets/refresh-success.png" width="5%"/> gibt an, dass die Aktualisierung des Datenblocks erfolgreich war. Bei einem Datenblock, der nicht aktualisiert werden konnte, wird ein Warnsymbol angezeigt <img src="./assets/refresh-failure.png" width="5%"/>.  Dadurch lässt sich leicht erkennen, ob Datenblöcke Fehler aufweisen.
+Um zu überprüfen, ob ein Datenblock aktualisiert wurde, rufen Sie das Aktualisierungsstatus-Symbol auf. Ein Häkchen in einem grünen Kreis <img src="./assets/refresh-success.png" width="5%"/> gibt an, dass die Aktualisierung des Datenblocks erfolgreich war. Bei einem Datenblock, der nicht aktualisiert werden konnte, wird das Warnsymbol <img src="./assets/refresh-failure.png" width="5%"/> angezeigt.  Dadurch lässt sich leicht erkennen, ob Datenblöcke Fehler aufweisen.
 
 
-![image](./assets/image512.png)
+![Bild](./assets/image512.png)
 
-## Datenblock löschen
+## Löschen von Datenblöcken
 
 Klicken Sie auf das Papierkorbsymbol, um einen ausgewählten Datenblock zu löschen.
 
-## Gruppendatenblöcke
+## Gruppieren von Datenblöcken
 
-Sie können Datenblöcke mithilfe der **Gruppieren nach** oder Sie können auf einen Spaltentitel klicken. Um Datenblöcke nach Spalten zu sortieren, klicken Sie auf den Spaltentitel. Um Datenblöcke nach Gruppen zu gruppieren, wählen Sie einen Gruppennamen aus der **Gruppieren nach** Dropdown-Menü. Der folgende Screenshot zeigt beispielsweise nach Blatt gruppierte Datenblöcke. Es werden Datenblöcke angezeigt, die nach Blatt1 und Blatt2 gruppiert sind.  Dies ist beispielsweise im Anwendungsfall zum Ersetzen von Filtern nützlich. Wenn auf jeden Datenblock mehrere Filter angewendet werden, ist es hilfreich, eine Gruppe zu erstellen, die alle Datenblöcke enthält, die Sie ersetzen möchten. Dann können Sie sie einfach auswählen und alle gleichzeitig bearbeiten.
+Sie können Datenblöcke mithilfe des Dropdown-Menüs **Gruppieren nach** gruppieren. Alternativ können Sie auch auf einen Spaltentitel klicken. Um Datenblöcke nach Spalten zu sortieren, klicken Sie auf den Spaltentitel. Um Datenblöcke nach Gruppen zu gruppieren, wählen Sie einen Gruppennamen aus dem Dropdown-Menü **Gruppieren nach** aus. Der folgende Screenshot zeigt ein Beispiel für nach Blatt gruppierte Datenblöcke. Darin sind Datenblöcke zu sehen, die nach Blatt 1 und Blatt 2 gruppiert sind.  Dies ist beispielsweise nützlich, wenn ein Anwendungsfall zum Ersetzen von Filtern ausgeführt werden soll. Wenn auf jeden Datenblock mehrere Filter angewendet werden, ist es hilfreich, eine Gruppe zu erstellen, die alle Datenblöcke enthält, die Sie ersetzen möchten. Dann können Sie sie einfach gemeinsam auswählen und alle gleichzeitig bearbeiten.
 
-![image](./assets/group-data-blocks.png)
+![Bild](./assets/group-data-blocks.png)
 
-## Ändern der Ansicht &quot;Datenblock-Manager&quot;
+## Ändern der Ansicht von Datenblock-Manager
 
-Sie können ändern, welche Spalten im Fenster Datenblock-Manager angezeigt werden.
+Sie können auswählen, welche Spalten im Fenster „Datenblock-Manager“ angezeigt werden sollen.
 
 
-Klicken Sie auf die Spaltenliste <img src="./assets/image515.png" width="3%"/> -Symbol, um auszuwählen, welche Spalten im Datenblock-Manager aufgeführt werden. Wählen Sie einen Spaltennamen aus, um die Spalte anzuzeigen. Heben Sie die Auswahl des Spaltennamens auf, um die Spalte aus der Ansicht zu entfernen.
+Klicken Sie auf das <img src="./assets/image515.png" width="3%"/>-Symbol der Spaltenliste, um auszuwählen, welche Spalten im Datenblock-Manager aufgeführt werden. Wählen Sie einen Spaltennamen aus, um die entsprechende Spalte anzuzeigen. Heben Sie die Auswahl des Spaltennamens auf, um die Spalte aus der Ansicht zu entfernen.
 
 ![Bild](./assets/image516.png)
