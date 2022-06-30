@@ -1,17 +1,17 @@
 ---
-title: Übersicht über CJA-Verbindungen
+title: CJA-Verbindungen – Übersicht
 description: Erfahren Sie mehr über Verbindungen in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Verbindungen - Übersicht
+# Verbindungen – Übersicht
 
 Mit einer Verbindung können Sie Datensätze von [!DNL Adobe Experience Platform] in [!UICONTROL Arbeitsbereich] integrieren. Um über [!DNL Experience Platform]-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in [!DNL Experience Platform] und [!UICONTROL Arbeitsbereich] herstellen.
 
@@ -27,7 +27,7 @@ Adobe Experience Platform:
 * Datenmodellierung: Schemas anzeigen, Schemas verwalten
 * Daten-Management: Datensätze anzeigen, Datensätze verwalten
 * Datenaufnahme: Quellen verwalten
-* Anzeigen von Identitäts-Namespaces
+* Anzeigen von Identity-Namespaces
 
 Customer Journey Analytics
 * Produktadministratorzugriff
