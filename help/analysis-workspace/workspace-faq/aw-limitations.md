@@ -4,9 +4,9 @@ title: Bekannte Einschränkungen in Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 ## „Komponenten“ > „Filter“
 
 * Bestimmte Metriken und Dimensionen können nicht gefiltert werden, wie [!UICONTROL Vorfälle], [!UICONTROL Unique Visitors] usw.
-* Ad-hoc-Filter, die im [Bedienfeld-Dropzone](/help/analysis-workspace/c-panels/panels.md) wird nicht in der linken Leiste von Workspace oder im Komponenten-Manager für Filter angezeigt, es sei denn, sie werden veröffentlicht. Dies ist möglich, indem Sie den Filter bearbeiten und **[!UICONTROL Diesen Filter veröffentlichen]** auswählen.
+* Ad-hoc-Filter, die im [Ablagebereich des Bedienfelds](/help/analysis-workspace/c-panels/panels.md) erstellt wurden, werden nicht in der linken Leiste von Workspace oder im Filterkomponenten-Manager angezeigt, es sei denn, sie werden veröffentlicht. Dies ist möglich, indem Sie den Filter bearbeiten und **[!UICONTROL Diesen Filter veröffentlichen]** auswählen.
 
 ## Komponenten > Berechnete Metriken
 
