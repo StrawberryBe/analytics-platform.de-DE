@@ -1,13 +1,13 @@
 ---
-description: Verwenden Sie Ad-hoc-Filter in Analysis Workspace.
+description: Verwenden von Ad-hoc-Filtern in Analysis Workspace.
 title: Ad-hoc-Projektfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
 source-git-commit: 6627c8e8f6e88fd93ffaad12b38e5e1dbbc844a8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '302'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Im Folgenden finden Sie ein Video zum Erstellen von Ad-hoc-Projektfiltern:
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. Legen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Segment, Segmentvorlage, Datumsbereich) oben in einem Bedienfeld in der Ablagefläche für Filter ab. Komponententypen werden automatisch in Ad-hoc-Filter oder [Schnellfilter](/help/components/filters/quick-filters.md) wenn kompatibel.
+1. Legen Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Segment, Segmentvorlage, Datumsbereich) oben in einem Bedienfeld in der Ablagefläche für Filter ab. Komponententypen werden, sofern kompatibel, automatisch in Ad-hoc-Filter oder [Schnellfilter](/help/components/filters/quick-filters.md) konvertiert.
 
    Im Folgenden finden Sie ein Beispiel für die Erstellung eines Filters für die Twitter-Referrer-Domain:
 
