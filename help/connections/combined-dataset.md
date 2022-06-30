@@ -5,16 +5,16 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Kombinierte Ereignis-Datensätze
 
-Wenn Sie eine Verbindung erstellen, kombiniert Customer Journey Analytics (CJA) alle Schemas und Datensätze zu einem Datensatz. Dieser „kombinierte Ereignis-Datensatz“ wird von CJA für das Reporting verwendet. Wenn Sie mehrere Schemata oder Datensätze in eine Verbindung einschließen:
+Wenn Sie eine Verbindung herstellen, fasst Customer Journey Analytics (CJA) alle Schemata und Datensätze zu einem einzigen Datensatz zusammen. Dieser „kombinierte Ereignis-Datensatz“ wird von CJA für das Reporting verwendet. Wenn Sie mehrere Schemata oder Datensätze in eine Verbindung einschließen:
 
 * Schemata werden kombiniert. Doppelte Schemafelder werden zusammengeführt.
 * Die Spalte „Personen-ID“ jedes Datensatzes wird unabhängig von ihrem Namen in eine Spalte zusammengefasst. Diese Spalte bildet die Grundlage für die Identifizierung von Unique Visitors in CJA.
