@@ -1,12 +1,12 @@
 ---
 title: Übersicht über berechnete Metriken
-description: Erfahren Sie mehr über gefilterte Metriken, die zur Berichtslaufzeit abgeleitet werden.
+description: Erfahren Sie mehr über gefilterte Metriken, die zum Zeitpunkt der Berichtserstellung abgeleitet werden.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 source-git-commit: e98b21824789600c7729cce99d7592011ad18577
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
