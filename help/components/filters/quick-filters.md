@@ -5,9 +5,9 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1048'
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Nachdem Sie den Filter angewendet haben, können Sie ihn Ihrer Liste der Filterk
 
 ## Was sind reine Projektfilter? {#project-only}
 
-Reine Projektfilter sind Filter, die nur auf das aktuelle Projekt angewendet werden, in dem sie erstellt wurden. Sie sind nicht in anderen Projekten verfügbar und können nicht für andere Benutzer freigegeben werden. Sie sind für die schnelle Untersuchung Ihrer Daten vorgesehen, ohne dass ein Filter in der linken Leiste erstellt und gespeichert werden muss. Schreibgeschützte Filter können in der Dropzone des Bedienfelds entweder mit Schnellfiltern oder [Ad-hoc-Filter](/help/components/filters/ad-hoc-filters.md).
+Reine Projektfilter sind Filter, die nur auf das aktuelle Projekt angewendet werden, in dem sie erstellt wurden. Sie sind nicht in anderen Projekten verfügbar und können nicht für andere Benutzer freigegeben werden. Sie sind für die schnelle Untersuchung Ihrer Daten vorgesehen, ohne dass ein Filter in der linken Leiste erstellt und gespeichert werden muss. Reine Projektfilter können in der Ablagefläche des Bedienfelds entweder mit Schnellfiltern oder [Ad-hoc-Filtern](/help/components/filters/ad-hoc-filters.md) erstellt werden.
 
 Wenn Sie einen reinen Projektfilter im [!UICONTROL Filter-Generator] öffnen, wird eine Benachrichtigung nur für Projekte angezeigt. Wenn Sie die Option „Diesen Filter verfügbar machen...“ nicht aktivieren und auf **[!UICONTROL ANWENDEN]** klicken, bleibt das Segment ein reiner Projektfilter.
 
