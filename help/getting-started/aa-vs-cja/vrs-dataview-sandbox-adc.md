@@ -2,9 +2,9 @@
 title: Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics Source Connector
 description: Erfahren Sie mehr über virtuelle Reporting-Umgebungen und Sandbox-Umgebungen.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
+source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '720'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ Adobe bietet eine Vielzahl von Möglichkeiten zum Erstellen virtueller Reporting
 
 Weitere Informationen finden Sie unter: [Virtual Report Suites - Übersicht](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=de).
 
-VRS:
+Eine Virtual Report Suite:
 
 * Kann auf Adobe Analytics-Segmenten basieren.
 * Können auf historische und neue Daten auf zerstörungsfreie Weise angewendet werden.
