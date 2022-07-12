@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 159e24bb2a0dc40463679a6a672af773e8ce101f
+source-git-commit: 70df0ae886508b703d0b87d3608b75f21d7952a6
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 79%
+source-wordcount: '863'
+ht-degree: 83%
 
 ---
 
@@ -26,9 +26,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Juni 2022 | Neuer Artikel zu [Analytics Labs in CJA](/help/labs/labs.md) |
 | Juni 2022 | Neuer Abschnitt zu [Unterstützung für numerische Felder als Lookup-Schlüssel und Lookup-Werte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
 | Juni 2022 | Aktualisierungen der [Workflow für Flussvisualisierung](/help/analysis-workspace/visualizations/c-flow/create-flow.md) |
-| Juni 2022 | Neue Dokumentation zu [Zielgruppenveröffentlichung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
-| Mai 2022 | Signifikant aktualisierter Artikel zu [Erstellen von Verbindungen](/help/connections/create-connection.md) in CJA. |
-| Mai 2022 | Neuer Artikel zum Thema [Verwalten von Datenblöcken in CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
+| Mai 2022 | Umfassend aktualisierter Artikel zum [Erstellen von Verbindungen](/help/connections/create-connection.md) in CJA. |
+| Mai 2022 | Neuer Artikel zum Thema [Verwalten von Datenblöcken in CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de) |
 | Mai 2022 | Neuer Artikel zu [Aufnahme von Adobe Experience Platform-Zielgruppen in CJA](/help/use-cases/ingest-aep-segments.md) |
 | April 2022 | Dokumentation zu [Dimensionszeichenfolgen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=de). |
 | April 2022 | Neu [CJA-Benutzerhandbuch für Adobe Analytics-Benutzer](/help/getting-started/aa-to-cja-user.md). |
