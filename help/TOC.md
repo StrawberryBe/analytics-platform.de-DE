@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: d4b1d5f784a98c5e14d653d03aec4b811a34462a
+source-git-commit: f6ad28f8ed766bd25986da48bfd7bd7e86df0861
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 91%
+source-wordcount: '693'
+ht-degree: 93%
 
 ---
 
@@ -162,7 +162,7 @@ ht-degree: 91%
    + [Datumsbereich auswählen](report-builder/select-date-range.md)
    + [Arbeiten mit Filtern](report-builder/work-with-filters.md)
    + [Dimensionen filtern](report-builder/filter-dimensions.md)
-   + [Datenblöcke verwalten](report-builder/manage-reportbuilder.md)
+   + [Verwalten von Datenblöcken](report-builder/manage-reportbuilder.md)
    + [Report Builder-Einstellungen](report-builder/report-builder-settings.md)
 + Komponenten {#cja-components}
    + [Komponentenübersicht](components/overview.md)
@@ -172,10 +172,6 @@ ht-degree: 91%
       + [Verwalten von Anmerkungen](components/annotations/manage-annotations.md)
       + [Anzeigen von Anmerkungen](components/annotations/view-annotations.md)
       + [Anmerkungen für Mobilgeräte](components/annotations/mobile-annotations.md)
-   + Zielgruppen {#audiences}
-      + [Überblick über Zielgruppen](components/audiences/audiences-overview.md)
-      + [Erstellen und Veröffentlichen von Zielgruppen](components/audiences/publish.md)
-      + [Zielgruppen verwalten](components/audiences/manage.md)
    + Dimensionen {#dimensions}
       + [Dimensionsvorschau](components/dimensions/view-dimensions.md)
       + [Dimensionen aufschlüsseln](components/dimensions/t-breakdown-fa.md)
