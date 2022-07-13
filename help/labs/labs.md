@@ -1,18 +1,18 @@
 ---
 title: Labs-Benutzerhandbuch
-description: Vorschau von Prototypprojekten für den Customer Journey Analytics anzeigen
+description: Vorschau von Prototypprojekten für Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # [!UICONTROL Labs]-Benutzerhandbuch
 
-[!UICONTROL Labs] ermöglicht eine schnellere Prototypisierung von Ideen in der Frühphase. Es handelt sich dabei um eine Kombination von Werkzeugen und Prozessen, die die Entwicklung transparent und kundenorientiert beschleunigt. Es ermöglicht es Benutzern, sich mit neuen Technologien zu beschäftigen, wertvolle Einblicke zu erhalten und die Entwicklung künftiger Funktionen und Prioritäten zu beeinflussen. Sie können Labs verwenden, um frühzeitigen Zugriff auf Customer Journey Analytics-Innovationen (CJA) zu erhalten und zukünftige Funktionen im Rahmen Ihrer eigenen geschäftlichen Anwendungsfälle und Daten zu bewerten.
+[!UICONTROL Labs] ermöglicht eine schnellere Prototypisierung von Ideen in der Frühphase. Es handelt sich dabei um eine Kombination von Werkzeugen und Prozessen, die die Entwicklung transparent und kundenorientiert beschleunigt. Es ermöglicht es Benutzern, sich mit neuen Technologien zu beschäftigen, wertvolle Einblicke zu erhalten und die Entwicklung künftiger Funktionen und Prioritäten zu beeinflussen. Sie können Labs verwenden, um frühzeitig auf Customer Journey Analytics-Innovationen (CJA) zugreifen zu können und zukünftige Funktionen im Rahmen Ihrer eigenen geschäftlichen Nutzungsszenarien und Daten zu bewerten.
 
 ## Voraussetzungen
 
@@ -26,7 +26,7 @@ So greifen Sie auf [!UICONTROL Labs] zu:
 
 1. Wenn Sie noch keinen Zugriff auf [!UICONTROL Workspace] und [!UICONTROL Labs] haben, bitten Sie Ihren Administrator um Berechtigungen.
 
-1. Klicken Sie in CJA auf die **[!UICONTROL Labs]** Registerkarte.
+1. Klicken Sie in CJA auf die Registerkarte **[!UICONTROL Labs]**.
 
 ## Prototyp bewerten
 
@@ -66,10 +66,10 @@ So starten und bewerten Sie einen Prototyp:
 
 ## CJA Labs-Prototypen
 
-* Ursprüngliche Spracheinblicke: Bietet eine natürliche Zusammenfassung aller Daten, die Sie in einer Freiformtabelle analysieren.
-* Visualisierungsempfehlung: Empfiehlt Visualisierungen, die sich gut mit Ihren Daten verbinden.
+* Natural-Language Insight Generator: Bietet eine Zusammenfassung aller von Ihnen analysierten Daten zu natürlicher Sprache in einer Freiformtabelle.
+* Visualization Recommender: Empfiehlt Visualisierungen, die gut zu Ihren Daten passen.
 
 ## Zusätzliche Informationen
 
-* Einige Prototypen in [!UICONTROL Labs] Customer Journey Analytics-Features werden, andere nicht. Ihr Feedback trägt zur Entscheidung bei. Prüfen Sie daher die Prototypen und teilen Sie Adobe mit, wie nützlich Sie sie finden.
+* Einige Prototypen in [!UICONTROL Labs] werden zu Customer Journey Analytics-Funktionen, andere nicht. Ihr Feedback trägt zur Entscheidung bei. Prüfen Sie daher die Prototypen und teilen Sie Adobe mit, wie nützlich Sie sie finden.
 * Labs steht allen SKU-Berechtigungen zur Verfügung.
