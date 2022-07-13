@@ -4,7 +4,7 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2909'
 ht-degree: 100%
 
@@ -99,7 +99,7 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkustangens (Zeile)
 
@@ -111,7 +111,7 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Exponentielle Regression: Vorhersage für Y (Zeile)
 
@@ -160,7 +160,7 @@ CEILING(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Kosinus (Zeile)
 
@@ -172,7 +172,7 @@ COS(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
 
 ## Kubikwurzel
 
@@ -184,7 +184,7 @@ CBRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
+| *metric* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
 
 ## Kumulativ
 
@@ -267,7 +267,7 @@ FLOOR(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Größer als
 
@@ -287,7 +287,7 @@ COSH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
 
 ## Hyperbelsinus (Zeile)
 
@@ -299,7 +299,7 @@ SINH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
 
 ## Hyperbeltangens (Zeile)
 
@@ -311,7 +311,7 @@ TANH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
 
 ## IF (Zeile)
 
@@ -361,7 +361,7 @@ LOG10(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
+| *metric* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
 
 ## Logistische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -427,7 +427,7 @@ LN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
+| *metric* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
 
 ## NOT
 
@@ -640,7 +640,7 @@ SIN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
 
 ## t-Transformation
 
@@ -682,7 +682,7 @@ TAN (metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
 
 ## z-Transformation (Zeile)
 
@@ -709,7 +709,7 @@ z-Transformation (Metrik)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>Metrik</i> </td>
+   <td colname="col1"> <i>metric</i> </td>
    <td colname="col2"> <p> Gibt den Wert des ersten Arguments ungleich null zurück. </p> </td>
   </tr>
  </tbody>
