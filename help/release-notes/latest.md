@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 0111cf5c9eaef92377a4d90b81e58c2a0432b074
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '217'
 ht-degree: 22%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 | Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Berichte zu ersten und wiederholten Sitzungen | Sie können jetzt feststellen, ob eine bestimmte Sitzung die erste Sitzung eines Benutzers war. [Weitere Informationen - zu folgen] | 20. Juli 2022 |
+| Berichte zu ersten und wiederholten Sitzungen | Sie können jetzt feststellen, ob eine bestimmte Sitzung die erste Sitzung eines Benutzers war. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 20. Juli 2022 |
 | Unterstützung für numerische Felder als Suchschlüssel und Suchwerte | Nützlich, wenn Sie Zeichenfolgenwerte mit einem numerischen Feld wie COGS oder Marge auf einer Produkt-SKU klassifizieren möchten. Wenn Sie Metriken aus der Suche zulassen, können Sie diese Datenpunkte in die Berichterstellung einfließen lassen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 20. Juli 2022 |
 
 ## Fehlerbehebungen

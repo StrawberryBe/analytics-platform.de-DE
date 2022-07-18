@@ -4,10 +4,10 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: f698b236ec37439b1edf7c28497baa8330b05015
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 78%
+source-wordcount: '1085'
+ht-degree: 69%
 
 ---
 
@@ -87,7 +87,7 @@ Vergessen Sie nicht, jeder Metrik einen neuen Namen zu geben, um die Unterschied
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
 
-## Neue und wiederholte Sitzungsberichte {#new-repeat}
+## 7. Neue und wiederholte Sitzungsberichte {#new-repeat}
 
 Sie können anhand des Berichtsfensters, das Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung für einen Benutzer ist oder nicht. Diese Berichterstellung ermöglicht Ihnen beispielsweise Folgendes:
 
@@ -97,9 +97,9 @@ Sie können anhand des Berichtsfensters, das Sie für diese Datenansicht definie
 
 Drei Komponenten erleichtern diese Berichterstellung:
 
-* 1 Dimension: Neue und wiederkehrende Sitzungen
+* 1 Dimension: [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Returning]. Die [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im [!UICONTROL Returning] Zeileneintrag (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich &quot;Nicht zutreffend&quot;für diese Dimension.
 
-* 2 Metriken: Neue Sitzungen, Rückkehrsitzungen
+* 2 Metriken: [Neue Sitzungen, Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Eine neue Sitzung wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert. Rückkehrsitzungen sind die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.
 
 So greifen Sie auf diese Komponenten zu:
 
@@ -109,7 +109,7 @@ So greifen Sie auf diese Komponenten zu:
 
 95 %-99 % der Zeit, werden neue Sitzungen korrekt berichtet. Die einzigen Ausnahmen sind:
 
-* Wenn eine Sitzung vor dem 13-monatigen Lookback-Fenster stattgefunden hat. Diese Sitzung wird ignoriert.
+* Wenn eine erste Sitzung vor dem 13-monatigen Lookback-Fenster stattgefunden hat. Diese Sitzung wird ignoriert.
 
 * Wenn eine Sitzung sowohl das Lookback-Fenster als auch das Berichtsfenster umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 enden sollte, werden alle Sitzungen im Berichtsfenster als wiederkehrende Sitzungen gezählt, da die Sitzung im Lookback-Fenster enthalten ist.
 

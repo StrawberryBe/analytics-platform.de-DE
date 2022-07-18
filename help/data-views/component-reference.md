@@ -4,7 +4,7 @@ description: Details und Informationen zu allen Standardkomponenten, die Sie jed
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 89%
@@ -48,9 +48,9 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | [!UICONTROL Tag des Monats] | Zeitunterteilungsdimension | 1–31 |
 | [!UICONTROL Wochentag] | Zeitunterteilungsdimension | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
 | [!UICONTROL Tag des Jahres] | Zeitunterteilungsdimension | 1–366 |
-| [!UICONTROL Erstmalige Sitzung] | Metrik | Die definierte erste Sitzung einer Person im Berichtsfenster |
 | [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
 | [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
+| [!UICONTROL Neue Sitzung] | Metrik | Die definierte erste Sitzung einer Person im Berichtsfenster |
 | [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Die Dimension [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von Unique Visitors in Customer Journey Analytics.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen eines Filters für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu filtern.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |
 | [!UICONTROL Personen-ID-Namespace] | Dimension | Aus welchem ID-Typ die [!UICONTROL Personen-ID] besteht. Beispiele: `email address`, `cookie ID`, `Analytics ID` usw. |
 | [!UICONTROL Quartal des Jahres] | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 |
