@@ -4,10 +4,10 @@ description: Details und Informationen zu allen Standardkomponenten, die Sie jed
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '774'
-ht-degree: 100%
+source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ Die meisten Dimensionen und Metriken in CJA basieren auf Schemaelementen aus Ihr
 
 ![Standard-Komponenten](assets/standard-components.png)
 
-## Erforderliche Standardkomponenten
+## Erforderliche Standardkomponenten {#required}
 
 Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei-Ansicht hinzugefügt. Sie sind von wesentlicher Bedeutung für die Reporting-Funktionen, die Customer Journey Analytics bietet.
 
@@ -36,7 +36,7 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 | [!UICONTROL Quartal] | Dimension | Das Quartal, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
 | [!UICONTROL Jahr] | Dimension | Das Jahr, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
 
-## Optionale Standardkomponenten
+## Optionale Standardkomponenten {#optional}
 
 Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!UICONTROL Datenansicht bearbeiten]** > Registerkarte **[!UICONTROL Komponenten]** > Registerkarte **[!UICONTROL Standardkomponenten]** verfügbar.
 
@@ -48,15 +48,19 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | [!UICONTROL Tag des Monats] | Zeitunterteilungsdimension | 1–31 |
 | [!UICONTROL Wochentag] | Zeitunterteilungsdimension | Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag |
 | [!UICONTROL Tag des Jahres] | Zeitunterteilungsdimension | 1–366 |
+| [!UICONTROL Erstmalige Sitzung] | Metrik | Die definierte erste Sitzung einer Person im Berichtsfenster |
 | [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
 | [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
 | [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Die Dimension [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von Unique Visitors in Customer Journey Analytics.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen eines Filters für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu filtern.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |
 | [!UICONTROL Personen-ID-Namespace] | Dimension | Aus welchem ID-Typ die [!UICONTROL Personen-ID] besteht. Beispiele: `email address`, `cookie ID`, `Analytics ID` usw. |
 | [!UICONTROL Quartal des Jahres] | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 |
+| [!UICONTROL Rückkehrsitzung] | Metrik | Die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren. |
 | [!UICONTROL Sitzung beginnt] | Metrik | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung gefiltert. |
 | [!UICONTROL Sitzung endet] | Metrik | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Filterdefinition verwendet werden, um bis zum letzten Ereignis jeder Sitzung zu filtern. |
+| [!UICONTROL Sitzungstyp] | Dimension | Diese Dimension hat zwei Werte: 1) [!UICONTROL Erstmaliges] und 2) Wiederkehrend. Die [!UICONTROL Erstmaliges] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im [!UICONTROL Returning] Zeileneintrag (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, würden sie in die Gruppe &quot;Nicht zutreffend&quot;für diese Dimension fallen. [Weitere Informationen](/help/data-views/data-views-usecases.md) |
 | [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension. |
 | [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | Sammelt die Metrik [!UICONTROL Verwendete Zeit] in Buckets des Typs [!UICONTROL Ereignis]. |
 | [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Sitzung] zusammen. |
 | [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Person] zusammen. |
 | [!UICONTROL Wochenende]/[!UICONTROL Wochentag] | Zeitunterteilungsdimension | Wochenende oder Wochentag |
+

@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 70df0ae886508b703d0b87d3608b75f21d7952a6
+source-git-commit: dcea640e4784cf7fc2609cf9f3d5852a5d0553f5
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '870'
 ht-degree: 83%
 
 ---
@@ -17,6 +17,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
+| Juli 2022 | Neue Dokumentation zu Sitzungsberichten im Vergleich zu Wiederholungsberichten. |
 | Juni 2022 | Neuer Artikel zu [AAID, ECID, AACUSTOMID und der Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html) |
 | Juni 2022 | Neuer Artikel zu [Adobe Analytics-Verarbeitungsregeln, VISTA und Classifications vs. Data Prep für den Analytics Source Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
 | Juni 2022 | Neuer Artikel zu [virtuelle Reporting-Umgebungen und Sandbox-Umgebungen](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
