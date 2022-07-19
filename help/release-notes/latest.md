@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
+source-git-commit: f95aadbaa9cff775f51ed3d1f8bf9fe54adfd795
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 22%
+source-wordcount: '345'
+ht-degree: 37%
 
 ---
 
@@ -23,7 +23,10 @@ ht-degree: 22%
 | Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Unterstützung für numerische Felder als Suchschlüssel und Suchwerte | Nützlich, wenn Sie Zeichenfolgenwerte mit einem numerischen Feld wie COGS oder Marge auf einer Produkt-SKU klassifizieren möchten. Wenn Sie Metriken aus der Suche zulassen, können Sie diese Datenpunkte in die Berichterstellung einfließen lassen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 20. Juli 2022 |
+| Bedienfeld „Gleichzeitige Medienbetrachter“ | Erkennen Sie, wo hohe Auslastungen auftraten oder wo es zu Einbrüchen kam. Erhalten Sie wertvolle Einblicke in die Qualität von Inhalten und die Interaktion mit Betrachtern und erhalten Sie Hilfe bei der Fehlerbehebung oder der Planung in Bezug auf Volumen und Skalierung. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) | 30. Juli 2022 |
+| Panel „Verbrachte Zeit bei der Medienwiedergabe“ | Die Besuchszeit für die Medienwiedergabe bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, tiefere, detailliertere Einblicke durch die minütige Benutzerinteraktion durch eine erweiterte Besuchszeitanalyse mit Tagesaufteilungsfunktionen zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten.  [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 30. Juli 2022 |
 | Berichte zu ersten und wiederholten Sitzungen | Sie können jetzt feststellen, ob eine bestimmte Sitzung die erste Sitzung eines Benutzers war. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 17. August 2022 |
+
 
 ## Fehlerbehebungen
 
