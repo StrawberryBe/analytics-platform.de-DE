@@ -4,19 +4,14 @@ description: Wie lauten die häufig gestellten Fragen zur mit Medienwiedergabe v
 feature: Panels
 role: User, Admin
 exl-id: be5d5557-ef5f-4a13-8d4c-0a64a8163412
-source-git-commit: 2321e59570cec9e34fc003a4011ded7906d11475
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '245'
 ht-degree: 94%
 
 ---
 
 # Häufig gestellte Fragen zur mit Medienwiedergabe verbrachten Zeit
-
->[!NOTE]
->
->Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
-
 
 | Frage | Antwort |
 |---|---|
