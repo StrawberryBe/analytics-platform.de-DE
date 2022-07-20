@@ -3,20 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f95aadbaa9cff775f51ed3d1f8bf9fe54adfd795
+source-git-commit: e1e147b63053f63c90d8e433d90e1bc5a4f1acd4
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 37%
+source-wordcount: '342'
+ht-degree: 35%
 
 ---
 
 # Aktuelle Customer Journey Analytics-Versionshinweise (CJA) (Juli 2022)
 
 **Letzte Aktualisierung**: 19. Juli 2022
-
->[!NOTE]
->
->Diese Seite enthält Informationen zur Vorabversion und kann geändert werden.
 
 ## Wichtigste Funktionen
 
@@ -27,6 +23,7 @@ ht-degree: 37%
 | Panel „Verbrachte Zeit bei der Medienwiedergabe“ | Die Besuchszeit für die Medienwiedergabe bietet wertvolle Einblicke in die Interaktion mit Betrachtern und ermöglicht es Medienunternehmen, tiefere, detailliertere Einblicke durch die minütige Benutzerinteraktion durch eine erweiterte Besuchszeitanalyse mit Tagesaufteilungsfunktionen zu gewinnen. Sie können feststellen, wie viel Zeit zu einem bestimmten Zeitpunkt mit der Anzeige Ihrer Medien-Streams verbracht wurde. Sie können die Wiedergabedauer nach verschiedenen Granularitäten unterteilen, einschließlich der neuen Granularitäten von 5, 15 und 30 Minuten.  [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 30. Juli 2022 |
 | Berichte zu ersten und wiederholten Sitzungen | Sie können jetzt feststellen, ob eine bestimmte Sitzung die erste Sitzung eines Benutzers war. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 17. August 2022 |
 
+{style=&quot;table-layout:auto&quot;}
 
 ## Fehlerbehebungen
 
@@ -34,9 +31,11 @@ AN-288455; AN-288828; AN-289323
 
 ## Wichtige Hinweise für CJA-Administratoren
 
-| Hinweis | Hinzugefügt oder aktualisiert | Beschreibung |
+| Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| Verbesserte Zuordnung von IP zu Geolocation | 11. Juli 2022 | Der Anbieter von IP-Suchen, Digital Element, von Adobe, aktualisiert auf einen neuen verbesserten Datensatz (NetActivity Pulse) für die IP-zu-Geolocation-Zuordnung. Adobe Analytics wird diesen neuen Datensatz im Oktober 2022 (Zeitrahmen) annehmen. Die neue Datenbank wird genauer sein als frühere Versionen. Einige IP-zu-Geo-Zuordnungen werden sich ändern/verbessern, wenn die neue Datenbank übernommen wird.<p> CJA-Daten, die über den Analytics Source Connector bereitgestellt werden, nutzen ebenfalls automatisch die neuen Zuordnungen. |
+| **Verbesserte Zuordnung von IP zu Geolocation** | 11. Juli 2022 | Der Anbieter von IP-Suchen, Digital Element, von Adobe, aktualisiert auf einen neuen verbesserten Datensatz (NetActivity Pulse) für die IP-zu-Geolocation-Zuordnung. Adobe Analytics übernimmt diesen neuen Datensatz im **Oktober 2022**, Zeitrahmen. Die neue Datenbank wird genauer sein als frühere Versionen. Einige IP-zu-Geo-Zuordnungen werden sich ändern/verbessern, wenn die neue Datenbank übernommen wird.<p> CJA-Daten, die über den Analytics Source Connector bereitgestellt werden, nutzen ebenfalls automatisch die neuen Zuordnungen. |
+
+{style=&quot;table-layout:auto&quot;}
 
 >[!MORELIKETHIS]
 >[Customer Journey Analytics – Aktualisierungen der Dokumentation](/help/release-notes/doc-changes.md)
