@@ -1,19 +1,20 @@
 ---
-description: Erläutert, welche Faktoren die Konsistenz von Metriken zwischen Real-time Customer Data Platform (Echtzeit-Kundendatenplattform) und CJA beeinflussen.
-title: Konsistenz der Metriken zwischen der Echtzeit-Kundendatenplattform und CJA
+description: Erläutert, welche Faktoren die Konsistenz von Metriken und die Anzahl der Zielgruppenzugehörigkeiten zwischen Real-time Customer Data Platform (Echtzeit-Kundendatenplattform) und CJA beeinflussen.
+title: Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen der Echtzeit-Kundendatenplattform und CJA
 role: Admin
 feature: CJA Basics
-source-git-commit: 2318b303c981ad556dc61a3419af4cce9fbbf92b
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
+source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
 
-# Konsistenz der Metriken zwischen der Echtzeit-Kundendatenplattform und CJA
+# Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen der Echtzeit-Kundendatenplattform und CJA
 
-In Echtzeit-Szenarien kann die Konsistenz von Metriken in Real-time Customer Data Platform (Echtzeit-Kundendatenplattform) und Customer Journey Analytics (CJA) nicht garantiert werden. In diesem Dokument wird erläutert, warum.
+In realen Szenarien kann die Konsistenz von Metriken und die Anzahl der Zielgruppenmitgliedschaften in Real-time Customer Data Platform (Echtzeit-Kundendatenplattform) und Customer Journey Analytics (CJA) nicht garantiert werden. In diesem Dokument wird erläutert, warum.
 
 ## CJA verwendet Identitätsdiagramm noch nicht
 
