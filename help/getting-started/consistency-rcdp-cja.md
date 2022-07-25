@@ -4,10 +4,10 @@ title: Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwisch
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
+source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 2%
+source-wordcount: '490'
+ht-degree: 0%
 
 ---
 
@@ -16,45 +16,22 @@ ht-degree: 2%
 
 In realen Szenarien kann die Konsistenz von Metriken und die Anzahl der Zielgruppenmitgliedschaften in Real-time Customer Data Platform (Echtzeit-Kundendatenplattform) und Customer Journey Analytics (CJA) nicht garantiert werden. In diesem Dokument wird erläutert, warum.
 
-## CJA verwendet Identitätsdiagramm noch nicht
+## Unterschiede in Identitätskonfigurationen
 
-Die Kundendatenplattform und die Customer Journey Analytics haben heute nicht die gleiche Definition wie eine Person. CJA verwendet noch nicht [Identitätsdiagramm](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) eine Person zu bestimmen. Die Echtzeit-Kundendatenplattform beruht vollständig auf den Informationen im Identitätsdiagramm, um ein zusammengeführtes Profil zu erstellen.
+Die Echtzeit-Kundendatenplattform und die Customer Journey Analytics verwenden heute nicht dieselbe Definition einer Person. Die Echtzeit-Kundendatenplattform beruht ausschließlich auf den Informationen im [Identitätsdiagramm](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) um ein zusammengeführtes Profil zu erstellen.
 
-CJA verwendet eine Methode namens [Feldbasiertes Stitching](/help/connections/cca/overview.md) , das IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen. In der Zwischenzeit wird CJA voraussichtlich beginnen, [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) Exporte in den Data Lake, sodass eine gemeinsame Identitätsvorstellung über die Echtzeit-Kundendatenplattform und CJA hinweg möglich ist.
+CJA kann für die Verwendung konfiguriert werden [Kanalübergreifende Analyse](/help/connections/cca/overview.md) , das IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
+Künftig kann CJA Identitätsdiagramme verwenden.
 
->[!IMPORTANT]
->
->Wenn der Adobe Experience Platform Identity-Dienst für alle Adobe Experience Platform-Anwendungen zur Identitätsquelle der Wahrheit wird, werden Metriken nicht automatisch anwendungsübergreifend konsistent. Lesen Sie weiter, um zu erfahren, warum.
+## Unterschiede bei der Datensatzkonfiguration
 
-## Flexibilität der Anwendungsdaten
+Sie können einige Daten in die Echtzeit-Kundendatenplattform aufnehmen und einige in Customer Journey Analytics verwenden. Kunden entscheiden sich häufig dafür, mehr historische Daten in Customer Journey Analytics einzufügen, als für die Echtzeit-Kundendatenplattform relevant ist. Andere Datensätze sind möglicherweise für die Echtzeit-Kundendatenplattform relevanter als für CJA.
 
-Experience Platform wendet keine strikte Durchsetzung an, um die Daten zwischen Echtzeit-Kundenprofil und Data Lake gleich zu halten. In einigen Anwendungsfällen werden Daten in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-overview.html?lang=en) (Aktivierung), während andere die [Datensee](https://business.adobe.com/blog/basics/data-lake) (Reporting- und Abfragedienst).
+## Unterschiede bei der Verarbeitungskonfiguration
 
-Kunden mit Echtzeit-Kundendatenplattform verfügen in der Regel nicht über 100 % der Daten im Adobe Experience Platform Data Lake, die in das Profil aufgenommen werden. Dies ist beabsichtigt - Kunden sollten speziell Daten im See für Profile aktivieren. Mit CJA können Datenanalysten aus dem Data Lake frei auswählen, welche Daten sie für die Analyse einbringen möchten, unabhängig davon, was für die Echtzeit-Kundendatenplattform aktiviert ist.
+CJA ermöglicht eine umfangreiche Datenmodifikation zum Zeitpunkt der Abfrage, z. B. die Kombination von Feldern, die Aufteilung von Feldern und andere Manipulationen wie Einschluss-/Ausschlüsse-, Unterzeichenfolgen, Wertdeduplizierung, Sitzungserstellung und Filterung auf Zeilenebene.
 
-## Anwendungsspezifische Modifikatoren
-
-CJA ermöglicht eine umfangreiche Datenmodifizierung zum Zeitpunkt der Abfrage, z. B. die Kombination von Feldern, die Aufteilung von Feldern und andere Manipulationen wie Währungskonversionen, Wertdeduplizierung, Sitzungserstellung und Filterung auf Zeilenebene. Diese Funktionen stehen der CDP nicht zur Verfügung.
-
-Ebenso gilt die Echtzeit-Kundendatenplattform [Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) um zu bestimmen, welche Daten priorisiert werden und welche Daten kombiniert werden, um eine einheitliche Sicht auf eine Person zu schaffen. Diese Konfigurationen befinden sich fest in der Logik der jeweiligen Anwendung und sind nicht freigegeben.
-
-## Lese- und Schreibzeitverhalten
-
-Die Echtzeit-Kundendatenplattform erfordert die Echtzeit-Profilzuordnung unter Verwendung des neuesten ID-Diagramms.
-
-* Die Echtzeit-Kundendatenplattform wurde entwickelt, um Profilinformationen in Echtzeit zur Aktivierung zusammenzuführen.
-
-* Er kann alle Änderungen an den festgelegten Kennungen für einen bestimmten Benutzer in Echtzeit berücksichtigen.
-
-* Das Lookback-Fenster wird durch die Segmentdefinition gesteuert.
-
-CJA erfordert, dass Daten zur Schreibzeit mithilfe von ID-Diagrammexporten zugeordnet werden.
-
-* CJA wendet komplexe Vorverarbeitungsschritte wie Indizierung, Freigabe und Gruppierung an, bevor die Daten zur Analyse bereit sind.
-
-* Die Personen-ID für einen bestimmten Benutzer ist ein kritischer Input für die Vorab-Bearbeitungsetappen. Die nachträgliche Änderung der Personenkennung hat erhebliche Verarbeitungskosten.
-
-* Das Lookback-Fenster wird auf Anwendungsebene gesteuert.
+Die Echtzeit-Kundendatenplattform bietet verschiedene Tools zur Datenbearbeitung. Es gilt [Zusammenführungsrichtlinien](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=en) um zu bestimmen, welche Daten priorisiert werden und welche Daten kombiniert werden, um eine einheitliche Sicht auf eine Person zu schaffen.
 
 ## Unterschiede bei TTL (Time to Live) und Datenerfassung
 
@@ -70,10 +47,6 @@ Selbst wenn die Datensätze in der Echtzeit-Kundendatenplattform und in CJA iden
 
 * Der Profilspeicher in der Echtzeit-Kundendatenplattform ermöglicht kundenkonfigurierbare TTLs. Kunden können diese TTL in die Werte ändern, die sie benötigen, um in ihren Lizenzberechtigungen zu bleiben.
 
-## Unterschiede bei der Verarbeitung von DSGVO (Datenschutz-Grundverordnung)
-
-Die Datenverarbeitungslogik für DSGVO und Datenhygiene in der Echtzeit-Kundendatenplattform und im Data Lake unterscheidet sich stark. Wir arbeiten an einem einheitlichen Ansatz.
-
 ## Unterschiede in der Datenerfassungslatenz
 
-Die CJA-Berichterstellung beinhaltet eine gewisse Latenz, bevor Daten für die Berichterstellung oder Zielgruppenerstellung verfügbar sind. Die Echtzeit-Kundendatenplattform verarbeitet Daten über verschiedene Systeme mit unterschiedlicher Latenz.
+CJa verfügt noch nicht über die Echtzeitfunktionen der Echtzeit-Kundendatenplattform. Daher beinhaltet die CJA-Berichterstellung eine gewisse Latenz, bevor Daten für die Berichterstellung oder Zielgruppenerstellung verfügbar sind. Die Echtzeit-Kundendatenplattform verarbeitet Daten über verschiedene Systeme mit unterschiedlicher Latenz.
