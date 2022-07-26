@@ -4,9 +4,9 @@ title: Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwisch
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
+source-git-commit: 769eef205df32865874753859ce79e573db40641
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,14 @@ ht-degree: 0%
 
 In realen Szenarien kann die Konsistenz von Metriken und die Anzahl der Zielgruppenmitgliedschaften in Real-time Customer Data Platform (Echtzeit-Kundendatenplattform) und Customer Journey Analytics (CJA) nicht garantiert werden. In diesem Dokument wird erläutert, warum.
 
+Beim Vergleich der Anzahl der Zielgruppenzugehörigkeiten zwischen der Echtzeit-Kundendatenplattform und CJA ist es wichtig, die verschiedenen Ziele dieser beiden Tools zu beachten. Die Echtzeit-Kundendatenplattform verwendet Kundenprofildaten, um digitale Erlebnisse auf einzelne Verbraucher auszurichten, während CJA Benutzern dabei hilft, Muster in wichtigen Geschäftsmetriken und Segmenten zu verstehen. Während die Veröffentlichung der Zielgruppe von CJA in der Echtzeit-Kundendatenplattform einem Benutzer dieser Tools ermöglicht, einen Einblick einfach und nativ zu &quot;aktivieren&quot;, indem er die in CJA gewonnenen Erkenntnisse nutzt, dienen diese Tools dennoch grundlegend anderen Zwecken.
+
 ## Unterschiede in Identitätskonfigurationen
 
 Die Echtzeit-Kundendatenplattform und die Customer Journey Analytics verwenden heute nicht dieselbe Definition einer Person. Die Echtzeit-Kundendatenplattform beruht ausschließlich auf den Informationen im [Identitätsdiagramm](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) um ein zusammengeführtes Profil zu erstellen.
 
 CJA kann für die Verwendung konfiguriert werden [Kanalübergreifende Analyse](/help/connections/cca/overview.md) , das IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
+
 Künftig kann CJA Identitätsdiagramme verwenden.
 
 ## Unterschiede bei der Datensatzkonfiguration
