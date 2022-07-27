@@ -4,9 +4,9 @@ title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Custom
 | [Attributionsbedienfeld](attribution.md) | Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen. |
 | [Freiform-Bedienfeld](freeform-panel.md) | Führen Sie unbegrenzte Vergleiche und Aufschlüsselungen durch und fügen Sie dann Visualisierungen hinzu, um eine ausführliche Story mit den Daten zu erzählen. |
 | [Bedienfeld „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md) | Analysieren Sie gleichzeitige Betrachter über einen längeren Zeitraum. Sie erhalten Details zum maximalen gleichzeitigen Zugriff und die Möglichkeit, aufzuschlüsseln und zu vergleichen. |
-| [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“](media-playback-timespent/media-playback-time-spent.md) | Analysieren Sie die Wiedergabedauer, um zu ermitteln, wo Spitzenzeiten bei gleichzeitigen Ansichten aufgetreten sind oder wo es zu Abbrüchen gekommen ist. |
+| [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“](media-playback-timespent/media-playback-time-spent.md) | Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei gleichzeitigen Ansichten aufgetreten sind oder wo es zu Abbrüchen gekommen ist. |
 
 ![](assets/panel-overview.png)
 
@@ -55,9 +55,9 @@ Ziehen Sie einen beliebigen Filter aus der linken Leiste in den Ablagebereich de
 
 ### Ad-hoc-Filter
 
-Nicht-Filterkomponenten können auch direkt in die Dropzone gezogen werden, um Ad-hoc-Filter zu erstellen. So sparen Sie Zeit und Mühe, zum Filtergenerator zu wechseln. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Filter Builder bearbeiten.
+Komponenten, die keine Filter sind, können ebenfalls direkt in den Ablagebereich gezogen werden, um Ad-hoc-Filter zu erstellen. Dadurch muss Filter Builder nicht aufgerufen werden. Auf diese Weise erstellte Filter werden automatisch als Filter auf Trefferebene definiert. Diese Definition kann geändert werden, indem Sie auf das Informationssymbol (i) neben dem Filter und dann auf das stiftförmige Bearbeitungssymbol klicken und sie in Filter Builder bearbeiten.
 
-Ad-hoc-Filter sind für das Projekt lokal verfügbar und werden nicht in der linken Leiste angezeigt, es sei denn, Sie machen sie öffentlich.
+Ad-hoc-Filter sind projektgebunden und werden in Ihrer linken Leiste nicht angezeigt, es sei denn, Sie machen sie öffentlich.
 
 ![](assets/adhoc-segment-filter.png)
 
