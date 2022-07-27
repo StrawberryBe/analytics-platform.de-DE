@@ -4,7 +4,7 @@ title: Paginierung, Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Paginierung, Filtern und Sortieren von Tabellen
 
-Dieses Video-Tutorial bietet eine Übersicht über Paginierungs-, Filter- und Sortiertabellen in Analysis Workspace:
+Dieses Video-Tutorial bietet eine Übersicht über Paginierung, Filtern und Sortieren von Tabellen in Analysis Workspace:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)
 
