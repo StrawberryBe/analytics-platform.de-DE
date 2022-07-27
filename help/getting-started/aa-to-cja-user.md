@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1457'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Vieles beim Reporting hat sich nicht geändert.
 
 * Sie können weiterhin die Funktionen von [Analysis Workspace](/help/analysis-workspace/home.md) verwenden, um Ihre Daten zu analysieren. Der Arbeitsbereich funktioniert genauso wie im herkömmlichen Adobe Analytics.
 * Dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) ist verfügbar und funktioniert ähnlich in CJA wie in herkömmlichem Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, MacOS und der Webversion von Excel. (Vor dieser Version von Report Builder konnten Sie Report Builder nicht auf Mac-Geräten verwenden, es sei denn, es wurde auf VMware ausgeführt.) Diese Version unterstützt die traditionelle AA-Datenanfrage noch nicht.
+* [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, macOS und der Web-Version von Excel. (Vor dieser Version von Report Builder konnten Sie Report Builder nicht auf Mac-Geräten verwenden, es sei denn, es wurde auf VMware ausgeführt.) Diese Version unterstützt die traditionelle AA-Datenanfrage noch nicht.
 
 ## Änderungen beim Reporting
 
@@ -76,9 +76,9 @@ Sie können [!UICONTROL Filter] ([!UICONTROL Segmente]) von [!DNL Customer Journ
 
 Zusätzlich zum geänderten Konzept der Segmente wurden auch Segment-Container aktualisiert.
 
-* **Trefferbehälter sind jetzt [!UICONTROL Ereignis] container**. Die [!UICONTROL Ereignis] -Container können Sie die Besucherinformationen auf der Grundlage einzelner Seitenansichten/Treffer aufschlüsseln.
-* **Besuchebehälter sind jetzt [!UICONTROL Sitzung] container**. Mit dem [!UICONTROL Sitzungs]-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden.
-* **Besucher-Container sind jetzt [!UICONTROL Person]-Container**. Die [!UICONTROL Person] -Container enthält alle Sitzungen und Ereignisse für einen Besucher innerhalb des festgelegten Zeitraums.
+* **Treffer-Container sind jetzt [!UICONTROL Ereignis]-Container**. Mit dem [!UICONTROL Ereignis]-Container können Sie die Besucherinformationen auf der Grundlage einzelner Seitenansichten/Treffer aufschlüsseln.
+* **Besucher-Container sind jetzt [!UICONTROL Sitzungs]-Container**. Mit dem [!UICONTROL Sitzungs]-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden.
+* **Besucher-Container sind jetzt [!UICONTROL Person]-Container**. Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für einen Besucher innerhalb eines bestimmten Zeitraums.
 
 ## Änderungen am Konzept der berechneten Metriken
 
