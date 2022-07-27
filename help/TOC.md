@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 8a23ed7ad39497ed3c9d86fac6cf5b38856b2088
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -36,12 +36,12 @@ ht-degree: 91%
    + [Häufig gestellte Fragen](getting-started/cja-faq.md)
    + [Umstieg von Adobe Analytics auf Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Benutzerhandbuch für neue Benutzer von Customer Journey Analytics](getting-started/aa-to-cja-user.md)
-   + Adobe Analytics und Customer Journey Analytics vergleichen {#compare-aa-cja}
+   + Vergleich von Adobe Analytics und Customer Journey Analytics {#compare-aa-cja}
       + [Customer Journey Analytics-Funktionen](getting-started/aa-vs-cja/cja-aa.md)
-      + [Datenverarbeitung in Adobe Analytics und CJA vergleichen](getting-started/aa-vs-cja/data-processing-comparisons.md)
-      + [Virtual Reporting-Umgebungen und Sandbox-Umgebungen](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Verarbeitungsregeln, VISTA und Classifications versus Datenvorbereitung](getting-started/aa-vs-cja/pr-vista-dataprep.md)
-      + [AAID, ECID, AACUSTOMID und der Analytics Source Connector](getting-started/aa-vs-cja/aaid-ecid-adc.md)
+      + [Vergleich der Datenverarbeitung zwischen Adobe Analytics und CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Virtuelle Reporting-Umgebungen und Sandbox-Umgebungen](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+      + [Verarbeitungsregeln, VISTA und Klassifizierungen versus Datenvorbereitung](getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector](getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Auswirkungen des Löschens](getting-started/cja-deletion.md)
    + [CJA-Glossar](getting-started/cja-glossary.md)
 + Verbindungen {#cja-connections}
@@ -221,7 +221,7 @@ ht-degree: 91%
    + [Schnellstarthandbuch für ausführende Benutzer](mobile-app/executive.md)
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
-   + [Report Suites mit verschiedenen Schemata kombinieren](use-cases/combine-report-suites.md)
+   + [Kombinieren von Report Suites mit verschiedenen Schemata](use-cases/combine-report-suites.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
    + [Verwenden von Bindungsdimensionen und Metriken](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](use-cases/b2b.md)

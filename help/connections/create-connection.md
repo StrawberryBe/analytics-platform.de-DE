@@ -7,7 +7,7 @@ feature: Connections
 source-git-commit: 3fa65dd46e807041cec1fee64e918aacaa5b7a1b
 workflow-type: tm+mt
 source-wordcount: '2471'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -107,13 +107,13 @@ Es gibt 3 verschiedene Datensatztypen: [!UICONTROL Ereignis]-, [!UICONTROL Profi
 
 {style=&quot;table-layout:auto&quot;}
 
-## Numerische Felder als Suchschlüssel und Suchwerte verwenden {#numeric}
+## Numerische Felder als Lookup-Schlüssel und Lookup-Werte verwenden {#numeric}
 
-Diese Funktion ist nützlich, wenn Sie ein numerisches Feld, z. B. Kosten oder Marge, zu einem zeichenfolgenbasierten Schlüsselfeld hinzufügen möchten. Numerische Werte können als Schlüssel oder als Werte in die Suche einbezogen werden. In Ihrem Lookup-Schema können numerische Werte mit z. B. Ihren Produktnamen, COGS, Kampagnen-Marketingkosten oder Margen verknüpft sein. Im Folgenden finden Sie ein Beispiel für ein Lookup-Schema in Adobe Experience Platform:
+Diese Funktion ist nützlich, wenn Sie ein numerisches Feld, z. B. Kosten oder Marge, zu einem zeichenfolgenbasierten Schlüsselfeld hinzufügen möchten. Numerische Werte können als Schlüssel oder als Werte in die Suche einbezogen werden. In Ihrem Lookup-Schema können numerische Werte mit z. B. Ihren Produktnamen, COGS, Kampagnen-Marketing-Kosten oder Margen verknüpft sein. Im Folgenden finden Sie ein Beispiel für ein Lookup-Schema in Adobe Experience Platform:
 
-![Suchschema](assets/schema.png)
+![Lookup-Schema](assets/schema.png)
 
-Es wird jetzt unterstützt, diese Werte als Metriken oder Dimensionen in CJA-Berichte einzufügen. Wenn Sie Ihre Verbindung einrichten und Lookup-Datensätze abrufen, können Sie die Datensätze bearbeiten, um die [!UICONTROL Schlüssel] und [!UICONTROL Übereinstimmungsschlüssel]:
+Es wird jetzt unterstützt, dass diese Werte als Metriken oder Dimensionen in CJA-Berichte eingefügt werden können. Wenn Sie Ihre Verbindung einrichten und Lookup-Datensätze abrufen, können Sie die Datensätze bearbeiten, um die [!UICONTROL Schlüssel] und [!UICONTROL Übereinstimmungsschlüssel] auszuwählen:
 
 ![Datensatz bearbeiten](assets/lookup-dataset.png)
 
@@ -121,7 +121,7 @@ Wenn Sie eine Datenansicht einrichten, die auf dieser Verbindung basiert, fügen
 
 ## Identity Map als Personen-ID verwenden {#id-map}
 
-Customer Journey Analytics unterstützt die Möglichkeit, die Identity Map für die Personen-ID zu verwenden. Identity Map ist eine Map-Datenstruktur, mit der Sie Schlüssel-/Wert-Paare hochladen können. Die Schlüssel sind Identity-Namespaces und der Wert ist eine Struktur, die den Identitätswert enthält. Die Identity Map ist für jede hochgeladene Zeile/jedes hochgeladene Ereignis vorhanden und wird für jede Zeile entsprechend aufgefüllt.
+In Customer Journey Analytics kann die Identity Map für ihre Personen-ID verwendet werden. Identity Map ist eine Zuordnungs-Datenstruktur, mit der Schlüssel-/Wert-Paare hochgeladen werden können. Die Schlüssel sind Identity-Namespaces und der Wert ist eine Struktur, die den Identitätswert enthält. Die Identity Map ist für jede hochgeladene Zeile/jedes hochgeladene Ereignis vorhanden und wird für jede Zeile entsprechend aufgefüllt.
 
 Die Identity Map ist für jeden Datensatz verfügbar, der ein auf der [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)-Klasse basierendes Schema verwendet. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identity Map auswählen:
 
