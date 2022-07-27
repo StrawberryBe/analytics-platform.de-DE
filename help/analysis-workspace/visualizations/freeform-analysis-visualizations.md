@@ -5,9 +5,9 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
