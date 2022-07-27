@@ -1,82 +1,82 @@
 ---
-title: Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics Source Connector
+title: Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics-Quell-Connector
 description: Erfahren Sie mehr über virtuelle Reporting-Umgebungen und Sandbox-Umgebungen.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics Source Connector
+# Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics-Quell-Connector
 
-Adobe bietet eine Vielzahl von Möglichkeiten zum Erstellen virtueller Reporting-Umgebungen und Sandbox-Umgebungen. Es ist nützlich, die Ähnlichkeiten und Unterschiede zwischen den folgenden Funktionen zu verstehen und zu verstehen, wie diese Funktionen mit dem [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de):
+Adobe bietet eine Vielzahl von Möglichkeiten zum Erstellen virtueller Reporting-Umgebungen und Sandbox-Umgebungen. Es ist nützlich, die Ähnlichkeiten und Unterschiede zwischen den folgenden Funktionen und deren Beziehung zum [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) zu verstehen:
 
-* Virtual Report Suites von Adobe Analytics
+* Virtual Report Suites in Adobe Analytics
 * CJA-Datenansichten
 * AEP-Sandboxes
 
-## Adobe Analytics Virtual Report Suites (VRS)
+## Virtual Report Suites (VRS) in Adobe Analytics
 
-Weitere Informationen finden Sie unter: [Virtual Report Suites - Übersicht](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=de).
+Weitere Informationen finden Sie unter [Virtual Report Suites – Übersicht](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=de).
 
 Eine Virtual Report Suite:
 
 * Kann auf Adobe Analytics-Segmenten basieren.
-* Können auf historische und neue Daten auf zerstörungsfreie Weise angewendet werden.
-* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten über eine Adobe Analytics Report Suite zur Verwendung durch verschiedene Geschäftsteams.
-* Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzer in Adobe Analytics zu steuern und diese zu kuratieren.
-* Bietet optional [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en) Funktionen für Adobe Analytics. In diesem Fall kann eine VRS verwendet werden, um eine benutzerdefinierte Definition für &quot;Besuch&quot;zu erstellen.
-* wird zur Berichtslaufzeit angewendet, ähnlich wie bei der Segmentauswertung. Dies ist _after_ die Daten in Adobe Analytics erfasst und gespeichert wurden.
-* Ist erforderlich für [Geräteübergreifende Analyse](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) in Adobe Analytics.
-* Hat dieselbe Anzahl von Variablen für die Verwendung als Standard-Analytics Report Suite (250 eVars, 250 Props, 1000 Ereignisse) zur Verfügung, obwohl die VRS-Kuratierung die Benutzerexponierung begrenzen kann.
+* Kann auf zerstörungsfreie Weise auf historische und neue Daten angewendet werden.
+* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten auf Basis einer Adobe Analytics-Report Suite zur Verwendung durch verschiedene Unternehmens-Teams.
+* Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzer in Adobe Analytics zu steuern und diese Daten zu kuratieren.
+* Bietet optional Funktionen für die [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) für Adobe Analytics. In diesem Fall kann eine VRS verwendet werden, um eine benutzerdefinierte Definition für „Besuch“ zu erstellen.
+* Wird zur Berichtslaufzeit angewendet, ähnlich wie die Segmentauswertung. Dies geschieht, _nachdem_ die Daten in Adobe Analytics erfasst und gespeichert wurden.
+* Ist für [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) in Adobe Analytics erforderlich.
+* Weist dieselbe Anzahl von Variablen für die Verwendung auf wie eine standardmäßige Analytics-Report Suite (250 eVars, 250 Eigenschaften, 1.000 Ereignisse), allerdings kann die VRS-Kuratierung begrenzen, welche Variablen für Benutzende verfügbar sind.
 * Unterstützt benutzerdefinierte Kalenderoptionen.
 
-Eine Virtual Report Suite ist nicht:
+Einschränkungen einer Virtual Report Suite:
 
-* Ein Mittel zur Kombination von Report Suites.
-* Verfügbar in der Adobe Analytics-Data Warehouse.
-* Verfügbar als Quelle für Datenflüsse in AEP über den Analytics Source Connector. Nur vollständige (nicht virtuelle) Report Suites sind für die Verwendung mit dem Analytics Source Connector verfügbar.
+* Sie ist kein Mittel zur Kombination von Report Suites.
+* Sie ist nicht in Adobe Analytics Data Warehouse verfügbar.
+* Sie ist nicht als Quelle für Datenflüsse in AEP über den Analytics-Quell-Connector verfügbar. Nur vollständige (nicht virtuelle) Report Suites sind für die Verwendung mit dem Analytics-Quell-Connector verfügbar.
 
 
 ## CJA-Datenansichten
 
-Weitere Informationen finden Sie unter: [Datenansichten - Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de).
+Weitere Informationen finden Sie unter [Datenansichten – Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de).
 
-Datenansicht:
+Eine Datenansicht:
 
 * Kann auf CJA-Filtern basieren.
-* Können auf historische und neue Daten auf zerstörungsfreie Weise angewendet werden.
-* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten über eine CJA-Verbindung, die von verschiedenen Geschäftsteams verwendet werden können.
-* Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzer in CJA zu steuern und diese zu kuratieren.
+* Kann auf zerstörungsfreie Weise auf historische und neue Daten angewendet werden.
+* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten auf Basis einer CJA-Verbindung, die von verschiedenen Unternehmens-Teams verwendet werden können.
+* Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzer in CJA zu steuern und diese Daten zu kuratieren.
 * Bietet leistungsstarke, zerstörungsfreie Optionen zum Transformieren und Verbessern von Daten, die über eine CJA-Verbindung in CJA eingehen.
-* basiert auf den Berichtszeitverarbeitungsfunktionen von CJA.
-* Ermöglicht Benutzern das Erstellen einer benutzerdefinierten Definition für &quot;Sitzung&quot;.
-* wird zur Berichtslaufzeit angewendet, ähnlich wie bei einer Filterauswertung. Dies ist _after_ der Quell-Connector (Adobe Analytics oder andere) Daten in einen Datensatz im AEP-Data Lake geschrieben hat und _after_ die Daten wurden über eine CJA-Verbindung in CJA erfasst.
-* Ermöglicht eine unbegrenzte Anzahl von Variablen, obwohl die Kuratierung einschränken kann, welche Variablen Benutzern angezeigt werden
-* Ermöglicht die benutzerdefinierte Benennung von Ereignis-, Sitzungs- und Personen-Containern.
+* Basiert auf den Funktionen für die Berichtszeitverarbeitung von CJA.
+* Ermöglicht Benutzern das Erstellen einer benutzerdefinierten Definition für „Sitzung“.
+* Wird zur Berichtslaufzeit angewendet, ähnlich wie eine Filterauswertung. Dies geschieht, _nachdem_ der Quell-Connector (Adobe Analytics oder ein anderer) Daten in einen Datensatz im AEP-Data Lake geschrieben hat und _nachdem_ die Daten über eine CJA-Verbindung in CJA erfasst wurden.
+* Ermöglicht eine unbegrenzte Anzahl von Variablen, allerdings kann die Kuratierung einschränken, welche Variablen für Benutzer verfügbar sind.
+* Ermöglicht die benutzerdefinierte Benennung von Containern für Ereignisse, Sitzungen und Personen.
 * Unterstützt benutzerdefinierte Kalenderoptionen.
 
-Eine Datenansicht ist nicht:
+Einschränkungen einer Datenansicht:
 
-* Stellen Sie direkt eine Möglichkeit bereit, Report Suites oder andere Datensätze zu kombinieren. Stattdessen werden Datensätze mit in einer CJA-Verbindung kombiniert. Die kombinierten Daten aus der CJA-Verbindung stehen in allen Datenansichten zur Verfügung, die auf dieser Verbindung basieren.
+* Sie stellt direkt keine Möglichkeit bereit, Report Suites oder andere Datensätze zu kombinieren. Stattdessen werden Datensätze in einer CJA-Verbindung kombiniert. Die kombinierten Daten aus der CJA-Verbindung können in allen Datenansichten verwendet werden, die auf dieser Verbindung basieren.
 
 ## AEP-Sandboxes
 
-Weitere Informationen finden Sie unter: [Sandbox-Übersicht](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de).
+Weitere Informationen finden Sie unter [Sandboxes – Übersicht](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de).
 
 Eine AEP-Sandbox:
 
-* Bietet eine Möglichkeit, eine einzelne AEP-Instanz in separate virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen. Unterstützung bei der Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse.
-* Kann als Container betrachtet werden, der alle Daten und Anwendungen für eine bestimmte Umgebung enthält.
+* Bietet eine Möglichkeit, eine einzelne AEP-Instanz in getrennte virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu unterstützen.
+* Kann als Container betrachtet werden, der alle Daten und Programme für eine bestimmte Umgebung enthält.
 
-Eine AEP-Sandbox:
+Einschränkungen einer AEP-Sandbox:
 
-* Stellen Sie ähnliche Funktionen wie Virtual Report Suites, CJA-Verbindungen oder Datenansichten bereit.
-* Report Suites selbst können mit oder ohne andere Datensätze kombiniert werden. Die Datensätze innerhalb einer Sandbox können jedoch innerhalb einer CJA-Verbindung kombiniert werden.
+* Bietet keine vergleichbaren Funktionen wie Virtual Report Suites, CJA-Verbindungen oder Datenansichten.
+* Report Suites können damit nicht mit oder ohne andere Datensätze kombiniert werden. Die Datensätze innerhalb einer Sandbox können jedoch innerhalb einer CJA-Verbindung kombiniert werden.
 
-Beachten Sie, dass:
+Beachten Sie Folgendes:
 
 * Daten aus verschiedenen Sandboxes können nicht in CJA kombiniert werden.
-* Der Analytics Source Connector sendet Report Suite-Daten _in_ eine bestimmte Sandbox. Jede Report Suite kann als Quelle für eine Sandbox konfiguriert werden. Siehe [Analytics Source Connector-Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) für weitere Details.
+* Der Analytics-Quell-Connector sendet Report Suite-Daten _in_ eine bestimmte Sandbox. Jede Report Suite kann als Quelle für eine einzelne Sandbox konfiguriert werden. Weitere Details finden Sie in der [Dokumentation zum Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).
