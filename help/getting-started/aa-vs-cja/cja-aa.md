@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9d928a68e9b2eb16ba14cd793857547432ba11b0
+source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 97%
+source-wordcount: '1493'
+ht-degree: 91%
 
 ---
 
@@ -67,6 +67,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
 | GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) in CJA. Bei Implementierungen, die nicht den Analytics-Quell-Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (so werden etwa Land und US-Bundesstaat unterstützt, Stadt und Postleitzahl dagegen nicht). |
+| IP-Verschleierung | Für CJA-Kunden, die Analytics Source Connector verwenden, um Daten aus Adobe Analytics in CJA zu füllen: Die in Adobe Analytics angewendeten IP-Verschleierungseinstellungen fließen durch Ihre CJA-Daten. Sie können diese Einstellungen nach Bedarf in Adobe Analytics steuern.<p>Für CJA-Kunden, die das Adobe Experience Platform Web SDK verwenden, um Daten direkt in Platform und CJA zu füllen: Sie können die Datenvorbereitung für die Datenerfassung in Platform verwenden, um Regeln zu konfigurieren, die die IP-Adresse basierend auf den Anforderungen Ihres Unternehmens verschleiern. |
 | Marketing-Kanäle | Daten von Marketing-Kanälen werden über den Analytics-Quell-Connector an CJA weitergeleitet. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
 | Reporting über neue und wiederholte Sitzungen | Unterstützt am 17. August 2022, [mit einem 13-monatigen Lookback-Fenster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
 | Produktvariable | In Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem Datensatzschema verwenden, um die Anforderungen dieses Anwendungsfalls zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf eine einzelne Variable beschränkt. |
