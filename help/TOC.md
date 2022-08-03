@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 8a23ed7ad39497ed3c9d86fac6cf5b38856b2088
+source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '711'
 ht-degree: 97%
 
 ---
@@ -104,18 +104,19 @@ ht-degree: 97%
          + [Flussübersicht](analysis-workspace/visualizations/c-flow/flow.md)
          + [Flussvisualisierung konfigurieren](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Interdimensionale Flüsse](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + [Histogramm](analysis-workspace/visualizations/histogram.md)
-      + [Venn](analysis-workspace/visualizations/venn.md)
       + [Bereich und Bereich gestapelt](analysis-workspace/visualizations/area.md)
       + [Balken und Balken gestapelt](analysis-workspace/visualizations/bar.md)
       + [Lineardiagramm](analysis-workspace/visualizations/bullet-graph.md)
       + [Ringdiagramm](analysis-workspace/visualizations/donut.md)
+      + [Histogramm](analysis-workspace/visualizations/histogram.md)
       + [Horizontalbalken und Horizontalbalken gestapelt](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Zusammenfassung einer Schlüsselmetrik](analysis-workspace/visualizations/key-metric.md)
       + [Linie](analysis-workspace/visualizations/line.md)
       + [Streudiagramm](analysis-workspace/visualizations/scatterplot.md)
       + [Sammelnummer und Sammeländerung](analysis-workspace/visualizations/summary-number-change.md)
       + [Text](analysis-workspace/visualizations/text.md)
       + [Baumdiagramm](analysis-workspace/visualizations/treemap.md)
+      + [Venn](analysis-workspace/visualizations/venn.md)
    + Bedienfelder {#panels}
       + [Übersicht über Bedienfelder](analysis-workspace/c-panels/panels.md)
       + [Attributionsbedienfeld](analysis-workspace/c-panels/attribution.md)
