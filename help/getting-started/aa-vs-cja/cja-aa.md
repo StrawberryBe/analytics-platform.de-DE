@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: 42b3b2e9a2ff8a46fd6c84e2425e19dcbb0d28f0
 workflow-type: tm+mt
 source-wordcount: '1493'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -48,8 +48,8 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Zugriff auf die Reporting-API | Vollständige Unterstützung; verfügbar über die [CJA-API](https://www.adobe.io/cja-apis/docs/). |
 | Terminierte Berichte/Projekte | Vollständige Unterstützung. |
 | Segmente | Vollständige Unterstützung; jetzt „Filter“ genannt. Beachten Sie, dass keine in traditionellem Analysis Workspace vorhandenen Segmente in CJA portiert werden. |
-| Streamen von Media Analytics | Mediendaten sind ab dem 30. Juli 2022 im Bereich &quot;Gleichzeitige Medienbetrachter&quot;und im Bereich &quot;Besuchszeit für Medienwiedergabe&quot;in Workspace verfügbar. |
-| Benutzerberechtigungen/Datenzugriffssteuerung | Vollständige Unterstützung; CJA unterscheidet zwischen Produktadministratoren von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de) und Anwendern. Nur Produktadministratoren können <ul><li>Erstellen/Aktualisieren/Löschen von Verbindungen oder Ansichten</li><li>Projekte, Filter oder berechnete Metriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen</li><li>ein Workspace-Projekt für alle Anwender freigeben</li></ul> |
+| Streamen von Media Analytics | Mediendaten sind ab dem 30. Juli 2022 im Bereich „Gleichzeitige Medienbetrachter“ und im Bereich „Bei Medienwiedergabe verbrachte Zeit“ in Workspace verfügbar. |
+| Benutzerberechtigungen/Datenzugriffssteuerung | Vollständige Unterstützung; CJA unterscheidet zwischen Produktadministratoren von [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de) und Anwendern. Nur Produktadministratoren können <ul><li>Erstellen/Aktualisieren/Löschen von Verbindungen oder Datenansichten</li><li>Projekte, Filter oder berechnete Metriken, die von anderen Benutzern erstellt wurden, aktualisieren/löschen</li><li>ein Workspace-Projekt für alle Anwender freigeben</li></ul> |
 | Virtual Report Suites | Vollständige Unterstützung; jetzt [Datenansichten](/help/data-views/create-dataview.md) genannt. |
 | Kuratierung von VRS-Komponenten | Vollständige Unterstützung; jetzt Teil der Datenansichten. |
 
@@ -69,7 +69,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) in CJA. Bei Implementierungen, die nicht den Analytics-Quell-Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (so werden etwa Land und US-Bundesstaat unterstützt, Stadt und Postleitzahl dagegen nicht). |
 | IP-Verschleierung | Für CJA-Kunden, die Analytics Source Connector verwenden, um Daten aus Adobe Analytics in CJA zu füllen: Die in Adobe Analytics angewendeten IP-Verschleierungseinstellungen fließen durch Ihre CJA-Daten. Sie können diese Einstellungen nach Bedarf in Adobe Analytics steuern.<p>Für CJA-Kunden, die das Adobe Experience Platform Web SDK verwenden, um Daten direkt in Platform und CJA zu füllen: Sie können die Datenvorbereitung für die Datenerfassung in Platform verwenden, um Regeln zu konfigurieren, die die IP-Adresse basierend auf den Anforderungen Ihres Unternehmens verschleiern. |
 | Marketing-Kanäle | Daten von Marketing-Kanälen werden über den Analytics-Quell-Connector an CJA weitergeleitet. Die Regeln für den Marketing-Kanal müssen weiterhin im herkömmlichen Adobe Analytics konfiguriert werden. Einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Customer Journey Analytics Marketing-Kanal-Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). |
-| Reporting über neue und wiederholte Sitzungen | Unterstützt am 17. August 2022, [mit einem 13-monatigen Lookback-Fenster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
+| Reporting über neue und wiederholte Sitzungen | Unterstützt ab 17. August 2022 [mit einem 13-monatigen Lookback-Fenster](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat). |
 | Produktvariable | In Experience Platform können Benutzer ein Array mit Objekttypfeldern in einem Datensatzschema verwenden, um die Anforderungen dieses Anwendungsfalls zu erfüllen. In Customer Journey Analytics können Kunden beliebige Produktvariablen verwenden und sind nicht wie in Adobe Analytics auf eine einzelne Variable beschränkt. |
 | Projektfreigabe | Die Projektfreigabe wird nur von zwischen CJA-Anwendern unterstützt. Es gibt keine Projektfreigabe zwischen CJA und dem traditionellen Analysis Workspace. |
 | Visualisierungen | Alle Visualisierungen mit Ausnahme der Zuordnungsvisualisierung werden unterstützt. |
