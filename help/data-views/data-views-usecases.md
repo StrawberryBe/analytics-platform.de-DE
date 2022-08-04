@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Diese Funktion gilt speziell für Array-basierte Felder. Die Einschluss-/Ausschl
 
 Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten, um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 Dollar generiert haben. Wenn Sie also eine Bestellung haben, die einen 50-Dollar-Produktkauf und einen 25-Dollar-Produktkauf beinhaltet, würden wir nur den 25-Dollar-Produktkauf entfernen, nicht die gesamte Bestellung.
 
-1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) der Datenansichten das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
+1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-component-settings) der Datenansichten das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 1. Wählen Sie die Metrik aus und konfigurieren Sie rechts Folgendes:
 a. Wählen Sie unter [!UICONTROL Format] die Option [!UICONTROL Währung] aus.
 b. Wählen Sie unter [!UICONTROL Währung] die Option „USD“ aus.
@@ -70,13 +70,13 @@ f. Geben Sie als Wert „50“ an.
 
 Mit diesen neuen Einstellungen können Sie nur Umsätze mit höheren Werten anzeigen und alles unter 50 Dollar herausfiltern.
 
-## 5. Verwenden Sie die Einstellung [!UICONTROL Keine Wertoptionen]. {#no-value}
+## 5. Verwenden Sie die Einstellung [!UICONTROL Keine Wertoptionen] {#no-value}
 
 Ihr Unternehmen hat vielleicht Zeit damit verbracht, Ihre Benutzer dahingehend zu schulen, dass sie in Berichten „Nicht angegeben“ erwarten. Der Standardwert in Datenansichten ist „Kein Wert“. Sie können in der Benutzeroberfläche für Datenansichten jetzt [„Kein Wert“ in „Nicht angegeben“ umbenennen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-no-value-options-settings).
 
 Ein weiteres Beispiel wäre eine Dimension für die Registrierung eines Abonnementprogramms. In diesem Fall können Sie „Kein Wert“ in „Keine Registrierung für ein Abonnementprogramm“ umbenennen.
 
-## 6. Erstellen Sie mehrere Metriken mit unterschiedlichen Einstellungen für die [!UICONTROL Attribution]. {#attribution}
+## 6. Erstellen Sie mehrere Metriken mit unterschiedlichen Einstellungen für die [!UICONTROL Attribution] {#attribution}
 
 Erstellen Sie dazu mithilfe der Funktion [!UICONTROL Duplizieren] oben rechts eine Reihe von Umsatzmetriken mit verschiedenen Attributionseinstellungen wie [!UICONTROL Erstkontakt], [!UICONTROL Letztkontakt] und [!UICONTROL Algorithmisch].
 
@@ -87,33 +87,33 @@ Vergessen Sie nicht, jeder Metrik einen neuen Namen zu geben, um die Unterschied
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
 
-## 7. Neue und wiederholte Sitzungsberichte {#new-repeat}
+## 7. Reporting über neue und wiederholte Sitzungen {#new-repeat}
 
 >[!NOTE]
 >
 >Diese Funktion wird derzeit eingeschränkt getestet.
 
-Sie können anhand des Berichtsfensters, das Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung für einen Benutzer ist oder nicht. Diese Berichterstellung ermöglicht Ihnen beispielsweise Folgendes:
+Sie können anhand des Berichtszeitraums, den Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung für einen Benutzer ist oder nicht. Diese Berichterstellung ermöglicht Ihnen beispielsweise, Folgendes zu bestimmen:
 
-* Welcher Prozentsatz Ihrer Bestellungen stammt aus neuen oder wiederholten Sitzungen?
+* Welcher Prozentsatz Ihrer Bestellungen stammt aus neuen bzw. wiederholten Sitzungen?
 
-* Targeting Sie für einen bestimmten Marketing-Kanal oder eine bestimmte Kampagne erstmalige oder wiederkehrende Benutzer? Wie haben diese Entscheidungen die Konversionsraten beeinflusst?
+* Richten Sie sich bei einem bestimmten Marketing-Kanal oder einer bestimmten Kampagne an Erstnutzende oder an Menschen, die wiedergekommen sind? Wie haben diese Entscheidungen die Konversionsraten beeinflusst?
 
 Drei Komponenten erleichtern diese Berichterstellung:
 
-* 1 Dimension: [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Returning]. Die [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im [!UICONTROL Returning] Zeileneintrag (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich &quot;Nicht zutreffend&quot;für diese Dimension.
+* 1 Dimension: [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) – Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Wiederkehrend]. Der Zeileneintrag [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bucket „Nicht zutreffend“ für diese Dimension.
 
-* 2 Metriken: [Neue Sitzungen, Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Eine neue Sitzung wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert. Rückkehrsitzungen sind die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.
+* 2 Metriken: [Neue Sitzungen, Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional). Eine neue Sitzung wird als die erste Sitzung einer Person im Berichtszeitraum definiert. Rückkehrsitzungen ist die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.
 
 So greifen Sie auf diese Komponenten zu:
 
 1. Wechseln Sie zum Datenansichts-Editor.
-1. Klicken Sie auf **[!UICONTROL Komponenten]** > **[!UICONTROL Optionale Standardkomponenten]** in der linken Leiste.
+1. Klicken Sie in der linken Leiste auf **[!UICONTROL Komponenten]** > **[!UICONTROL Optionale Standardkomponenten]**.
 1. Ziehen Sie sie in Ihre Datenansicht.
 
-95 %-99 % der Zeit, werden neue Sitzungen korrekt berichtet. Die einzigen Ausnahmen sind:
+In 95 % bis 99 % der Zeit, werden neue Sitzungen korrekt eingestuft. Die einzigen Ausnahmen sind:
 
 * Wenn eine erste Sitzung vor dem 13-monatigen Lookback-Fenster stattgefunden hat. Diese Sitzung wird ignoriert.
 
-* Wenn eine Sitzung sowohl das Lookback-Fenster als auch das Berichtsfenster umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 enden sollte, werden alle Sitzungen im Berichtsfenster als wiederkehrende Sitzungen gezählt, da die Sitzung im Lookback-Fenster enthalten ist.
+* Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 enden sollte, werden alle Sitzungen im Berichtszeitraum als wiederkehrende Sitzungen gezählt, da die Sitzung im Lookback-Fenster enthalten ist.
 
