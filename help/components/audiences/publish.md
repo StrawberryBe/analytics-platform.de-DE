@@ -2,18 +2,14 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: ht
-source-wordcount: '1000'
+source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
+workflow-type: tm+mt
+source-wordcount: '993'
 ht-degree: 100%
 
 ---
 
 # Erstellen und Veröffentlichen von Zielgruppen
-
->[!NOTE]
->
->Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
 
 In diesem Abschnitt wird beschrieben, wie Sie Zielgruppen, die in Customer Journey Analytics (CJA) identifiziert wurden, im [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform erstellen und veröffentlichen, um Targeting und Personalisierung durchzuführen.
 
