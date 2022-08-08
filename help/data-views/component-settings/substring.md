@@ -4,9 +4,9 @@ description: Verwenden Sie einen Teil einer Zeichenfolge als Dimensionselement.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
-workflow-type: ht
-source-wordcount: '911'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -113,6 +113,8 @@ Ausgabe-Platzhalter werden ebenfalls unterstützt. Sie können diese Sequenzen i
 | ``$` `` | Gibt den Text zwischen dem Ende der letzten gefundenen Übereinstimmung (oder dem Beginn des Textes aus, wenn keine vorherige Übereinstimmung gefunden wurde) und dem Beginn der aktuellen Übereinstimmung aus. |
 | `$+` | Gibt aus, was mit dem letzten markierten Unterausdruck im regulären Ausdruck übereinstimmt. |
 | `$$` | Gibt das Zeichenfolgenzeichen `"$"` aus. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Video zu Bindungsdimensionen
 

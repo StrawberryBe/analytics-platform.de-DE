@@ -4,9 +4,9 @@ description: Kombinieren Sie numerische Werte in einer Dimension.
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '188'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '191'
 ht-degree: 100%
 
 ---
@@ -28,3 +28,5 @@ Wenn Sie die Flexibilität beim Reporting für eine Dimension mit und ohne Behä
 | [!UICONTROL Einschließlich] [!UICONTROL und weniger als] | Grenzen der nachfolgenden Behälter. |
 | [!UICONTROL Größer oder gleich] | Die untere Grenze des letzten Dimensionsbehälters. |
 | [!UICONTROL Bucket hinzufügen] | Ermöglicht das Hinzufügen eines weiteren Behälters zu numerischen Dimensionsbehältern. Sie können bis zu 20 Behälter in einer Dimension hinzufügen. |
+
+{style=&quot;table-layout:auto&quot;}
