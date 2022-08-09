@@ -2,9 +2,9 @@
 title: CJA-Unterstützung für Adobe Experience Platform Data Governance
 description: Erfahren Sie, wie sich in AEP definierte Datenbezeichnungen und Richtlinien auf die Berichterstellung in CJA auswirken.
 mini-toc-levels: 3
-source-git-commit: 82060862c64aae10ea6dd375a8cd65d67ee21704
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -38,13 +38,12 @@ Richtlinien haben zwei Komponenten: die Datenbeschriftung und eine Marketing-Akt
 
 * Analytics: Verwendung von Daten zu Analysezwecken, z. B. zur Messung, Analyse und Berichterstellung zur Nutzung der Sites oder Apps Ihres Unternehmens durch die Verbraucher.
 
-* Exportieren von Daten an einen Drittanbieter, also aus der Adobe-Umgebung.
+* Exportieren von Daten - also aus der Adobe-Umgebung.
 
 Sie verknüpfen Beschriftungen und Marketing-Aktionen mit einer Richtlinie und aktivieren dann die Richtlinie. Die Richtlinie verwendet den Titel und die Marketing-Aktion und sagt: diese Einschränkung durchsetzen. In CJA werden zwei von Adoben definierte Richtlinien angezeigt, die sich auf die Berichterstellung und Download/Freigabe auswirken:
 
-* Analytics-Richtlinie durchsetzen
-* Download-Richtlinie durchsetzen
-
+* [!UICONTROL Analytics erzwingen] policy
+* [!UICONTROL Download durchsetzen] policy
 
 ### Anzeigen von Datenbeschriftungen in CJA-Datenansichten
 
@@ -93,7 +92,7 @@ Bei einzelnen Komponenten ähnelt die Nachricht Folgendem:
 
 ### Die [!UICONTROL Download durchsetzen] Richtlinien wirken sich auf Workspace-Projekte aus
 
-Wenn diese Richtlinie aktiviert ist, werden die sensiblen Felder durch jeden Download (z. B. E-Mail-Versand oder Freigabe-PDFs) von Workspace-Projekten gehasht. Sie können diese Felder weiterhin in Workspace analysieren. Wenn Sie jedoch versuchen, ein Projekt per E-Mail zu versenden oder auf andere Weise freizugeben, werden die blockierten Felder in der PDF-Datei als Hash-Elemente angezeigt.
+Wenn diese Richtlinie aktiviert ist, werden die sensiblen Felder durch Exporte oder Downloads (z. B. E-Mail-Versand oder Freigabe-PDFs) von Workspace-Projekten gehasht. Sie können diese Felder weiterhin in Workspace analysieren. Wenn Sie jedoch versuchen, ein Projekt per E-Mail zu versenden oder auf andere Weise freizugeben, werden die blockierten Felder in der PDF-Datei als Hash-Elemente angezeigt.
 
 Fügen Sie hier einen Screenshot hinzu.
 
