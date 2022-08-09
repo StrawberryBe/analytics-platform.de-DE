@@ -3,10 +3,10 @@ description: Sie können Daten von Analysis Workspace durch Kopieren oder in PDF
 title: PDF- oder CSV-Dateien herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '983'
-ht-degree: 100%
+source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ Während eines Downloads können Sie mehrere Aufgaben im Projekt ausführen und 
 
 ![](assets/download-items.png)
 
-### Datei mit heruntergeladenen Elementen
+### Datei mit heruntergeladenen Elementen {#items-file}
 
 Die Eigenschaften der Tabelle werden wie folgt auf die heruntergeladene Datei angewendet:
 
@@ -71,7 +71,7 @@ Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldfilter („Neue Besuc
 
 ![](assets/downloaded-file.png)
 
-### Download-Benachrichtigungen
+### Download-Benachrichtigungen {#notifications}
 
 Beim Herunterladen der Datei wird eine Benachrichtigung mit dem Fortschritt angezeigt. Sie können den Download jederzeit abbrechen, indem Sie auf **[!UICONTROL Download abbrechen]** klicken. Durch Schließen des Popups wird der Download **nicht** abgebrochen.
 
@@ -80,6 +80,10 @@ Sobald die Datei abgeschlossen ist, wird eine Benachrichtigung angezeigt und die
 Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachrichtigung, dass jeder weitere Download in die Warteschlange gestellt wird, bis der vorherige Download abgeschlossen ist.
 
 ![](assets/toast.png)
+
+## Herunterladen sensibler Daten {#sensitive}
+
+Wenn die Richtlinie zum Erzwingen des Herunterladens von Daten-Governance aktiviert ist, werden bei jedem Download (z. B. E-Mail-Versand oder Freigabe-PDFs) von Workspace-Projekten die als vertraulich gekennzeichneten Datenfelder gehasht. Sie können diese Felder weiterhin in Workspace analysieren. Wenn Sie jedoch versuchen, ein Projekt per E-Mail zu versenden oder auf andere Weise freizugeben, werden die blockierten Felder in der PDF-Datei als Hash-Elemente angezeigt.
 
 ## Häufig gestellte Fragen {#faq}
 
