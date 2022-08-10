@@ -1,12 +1,11 @@
 ---
-title: CJA-Unterstützung für Adobe Experience Platform Data Governance
-description: Erfahren Sie, wie sich in AEP definierte Datenbezeichnungen und Richtlinien auf die Berichterstellung in CJA auswirken.
-mini-toc-levels: 3
+title: Beschriftungen und Richtlinien
+description: Erfahren Sie, wie sich in AEP definierte Datenbezeichnungen und Richtlinien auf Datenansichten und Berichte in CJA auswirken.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: a28247e861e2f8853a6e2d2b81e7f6ed221caec0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 1%
+source-wordcount: '579'
+ht-degree: 2%
 
 ---
 
@@ -26,8 +25,8 @@ Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungsbezeichnungen e
 
 In CJA werden zwei von Adoben definierte Richtlinien angezeigt, die sich auf die Berichterstellung und Download/Freigabe auswirken:
 
-* [!UICONTROL Analytics erzwingen] policy
-* [!UICONTROL Download durchsetzen] policy
+* **[!UICONTROL Analytics erzwingen]** policy
+* **[!UICONTROL Download durchsetzen]** policy
 
 ## Anzeigen von Datenbeschriftungen in CJA-Datenansichten
 
@@ -35,9 +34,11 @@ Datenbeschriftungen, die in Experience Platform erstellt wurden, werden an drei 
 
 | Standort | Beschreibung |
 | --- | --- |
-| Info-Schaltfläche in einem Schemafeld | Wenn Sie auf diese Schaltfläche klicken, wird angezeigt, welche Datennutzungsbezeichnungen derzeit für ein Feld gelten:<p>![](assets/data-label-left.png) |
-| Rechte Leiste unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) | Sämtliche Datennutzungsbezeichnungen sind hier aufgeführt:<p>![](assets/data-label-right.png) |
-| Hinzufügen von Datenbeschriftungen als Spalte | Sie können Datenbezeichnungen als Spalte zu den Spalten Einbezogene Komponenten in Datenansichten hinzufügen. Klicken Sie einfach auf das Spaltenauswahlsymbol und wählen Sie Datennutzungsbezeichnungen aus:<p>![](assets/data-label-column.png) |
+| Info-Schaltfläche in einem Schemafeld | Durch Klicken auf diese Schaltfläche wird angegeben, [!UICONTROL Datennutzungsbezeichnungen] wird derzeit auf ein Feld angewendet:<p>![](assets/data-label-left.png) |
+| Rechte Leiste unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) | Alle [!UICONTROL Datennutzungsbezeichnungen] sind hier aufgeführt:<p>![](assets/data-label-right.png) |
+| Hinzufügen von Datenbeschriftungen als Spalte | Sie können [!UICONTROL Datenbeschriftungen] als Spalte zum [!UICONTROL Enthaltene Komponenten] Spalten in Datenansichten. Klicken Sie einfach auf das Symbol für die Spaltenauswahl und wählen Sie **[!UICONTROL Datennutzungsbezeichnungen]**:<p>![](assets/data-label-column.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Filtern nach Data Governance-Beschriftungen in Datenansichten
 
@@ -55,7 +56,7 @@ Klicken Sie erneut auf das Filtersymbol in der linken Leiste und unter Data Gove
 
 ![](assets/filter-policies.png)
 
-Klicken **[!UICONTROL Anwenden]** , um zu sehen, welche Richtlinien aktiviert sind _für diese Datenansicht?_
+Klicken **[!UICONTROL Anwenden]** , um zu sehen, welche Richtlinien aktiviert sind.
 
 ## Die [!UICONTROL Analytics erzwingen] Richtlinien wirken sich auf Workspace-Projekte aus
 
