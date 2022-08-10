@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 235f08b275fd2f5706024823005e732b61af1c07
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Zielgruppen, die in Customer Journ
 
 Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), um sich mit dem Konzept der CJA-Zielgruppen vertraut zu machen.
 
-## Zielgruppe erstellen
+## Zielgruppe erstellen {#create}
 
 1. Bei der Erstellung von Zielgruppen stehen Ihnen drei Möglichkeiten zur Verfügung:
 
@@ -56,8 +56,8 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | Vorschaueinstellung | Beschreibung |
    | --- | --- |
    | [!UICONTROL Datenvorschau]-Fenster | Der Datumsbereich für die Zielgruppe. |
-   | [!UICONTROL Personen insgesamt] | Die Gesamtzahl der Personen in dieser Zielgruppe. Sie kann bis zu 200 Millionen Personen umfassen. Wenn Ihre Zielgruppe mehr als 200 Millionen Personen umfasst, müssen Sie die Zielgruppengröße verringern, bevor Sie sie veröffentlichen können. |
-   | [!UICONTROL Zielgruppen-Limit] | Zeigt an, wie weit diese Zielgruppe vom Limit von 200 Millionen entfernt ist. |
+   | [!UICONTROL Personen insgesamt] | Die Gesamtzahl der Personen in dieser Zielgruppe. Sie kann bis zu 20 Millionen Personen umfassen. Wenn Ihre Zielgruppe mehr als 20 Millionen Personen umfasst, müssen Sie die Zielgruppengröße verringern, bevor Sie sie veröffentlichen können. |
+   | [!UICONTROL Zielgruppen-Limit] | Zeigt an, wie weit diese Zielgruppe vom Limit von 20 Millionen entfernt ist. |
    | [!UICONTROL Geschätzte Zielgruppenrendite] | Diese Einstellung ist nützlich für das Retargeting von Kunden in dieser Zielgruppe, die zu Ihrer Site zurückkehren. (Mit anderen Worten, werden diese in diesem Datensatz erneut angezeigt.) <p>Hier können Sie den Zeitraum (nächste 7 Tage, nächste 2 Wochen, nächsten Monat) für die geschätzte Anzahl der Kunden auswählen, die möglicherweise zurückkehren. |
    | [!UICONTROL Voraussichtliche Rückkehr] | Mit dieser Zahl erhalten Sie eine geschätzte Anzahl an wiederkehrenden Kunden über den von Ihnen aus der Dropdown-Liste ausgewählten Zeitraum. Für die Vorhersage dieser Zahl wird die historische Abwanderungsrate für diese Zielgruppe herangezogen. |
    | [!UICONTROL Metriken in der Vorschau anzeigen] | Mit dieser Einstellung können Sie bestimmte Metriken betrachten, um festzustellen, ob diese Zielgruppe in dieser Metrik unverhältnismäßig stark vertreten ist, z. B. in [!UICONTROL Umsatz] oder [!UICONTROL Durchschnittliche Besuchszeit pro Site]. Damit erhalten Sie eine aggregierte Zahl für die Metrik sowie den Prozentsatz der Gesamtzahl. Sie können eine beliebige Metrik auswählen, die in Ihrer Datenansicht verfügbar ist. |
@@ -72,7 +72,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
 
 1. Klicken Sie in derselben Nachricht auf **[!UICONTROL Zielgruppe in AEP anzeigen]**. Sie gelangen zur [Segment-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=de) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
 
-## Verwenden von CJA-Zielgruppen in Experience Platform
+## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 
 CJA nimmt jetzt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und überträgt sie in das Echtzeit-Kundenprofil. CJA sendet die Zielgruppe an Experience Platform, wobei die primäre Identität auf den Wert festgelegt ist, der bei der Verbindungskonfiguration als Personen-ID ausgewählt wurde.
 
@@ -84,9 +84,13 @@ Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 ![](assets/audiences-aep.png)
 
-## Was passiert, wenn eine benutzende Person nicht mehr Mitglied einer Zielgruppe in CJA ist?
+## Was passiert, wenn eine benutzende Person nicht mehr Mitglied einer Zielgruppe in CJA ist? {#no-member}
 
 In diesem Fall wird ein Exit-Ereignis von CJA an Experience Platform gesendet.
+
+## Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen? {#delete}
+
+Wenn eine CJA-Zielgruppe gelöscht wird, wird sie nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. In Platform werden jedoch keine mit dieser Zielgruppe verknüpften Profile gelöscht.
 
 ## Nächste Schritte
 
