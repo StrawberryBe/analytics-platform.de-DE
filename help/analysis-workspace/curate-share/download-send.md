@@ -3,10 +3,10 @@ description: Sie können Daten von Analysis Workspace durch Kopieren oder in PDF
 title: PDF- oder CSV-Dateien herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 93%
+source-wordcount: '1057'
+ht-degree: 92%
 
 ---
 
@@ -83,7 +83,7 @@ Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachricht
 
 ## Herunterladen sensibler Daten {#sensitive}
 
-Wenn die Richtlinie zum Erzwingen des Herunterladens von Daten-Governance aktiviert ist, werden bei jedem Download (z. B. E-Mail-Versand oder Freigabe-PDFs) von Workspace-Projekten die als vertraulich gekennzeichneten Datenfelder gehasht. Sie können diese Felder weiterhin in Workspace analysieren. Wenn Sie jedoch versuchen, ein Projekt per E-Mail zu versenden oder auf andere Weise freizugeben, werden die blockierten Felder in der PDF-Datei als Hash-Elemente angezeigt.
+Wenn die Variable **[!UICONTROL Download durchsetzen]** [Data Governance-Politik](/help/data-views/data-governance.md) in der Datenansicht aktiviert ist, über die Sie Berichte erstellen, werden bei jedem Download (z. B. E-Mail-Versand oder Freigabe-PDFs) von Workspace-Projekten die Datenfelder, die als vertraulich gekennzeichnet sind, gehasht. Sie können diese Felder weiterhin in Workspace analysieren. Wenn Sie jedoch versuchen, ein Projekt per E-Mail zu versenden oder auf andere Weise freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
 
 ## Häufig gestellte Fragen {#faq}
 

@@ -2,9 +2,9 @@
 title: Customer Journey Analytics und Data Governance
 description: Beschreibt, wie Data Governance in Customer Journey Analytics funktioniert.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 0d48c1ed8d0bf50939f8eda1f5656c95370ac0b7
+source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '372'
 ht-degree: 51%
 
 ---
@@ -22,6 +22,8 @@ Datenschutzbezeichnungen und Richtlinien, die für von Experience Platform genut
 Darüber hinaus werden beim Exportieren von Daten aus Customer Journey Analytics (über Reporting, Export, API usw.) Warnhinweise oder Beschriftungen hinzugefügt, die Benutzer darauf hinweisen, dass ein Bericht sensible Informationen enthält, die auf bestimmte Weise behandelt werden müssen.
 
 Durch diese Integration können Sie die Compliance einfacher verwalten. Data Stewards in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Daher können Ihre CJA-Benutzer Daten in dem Bewusstsein, dass sie den von Data Stewards definierten Richtlinien entsprechen, sicherer verwenden.
+
+[Weitere Informationen](/help/data-views/data-governance.md)
 
 ## DSGVO
 
