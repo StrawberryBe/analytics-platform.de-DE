@@ -4,10 +4,10 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
+source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 95%
+source-wordcount: '1194'
+ht-degree: 87%
 
 ---
 
@@ -89,10 +89,6 @@ Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übers
 
 ## 7. Reporting über neue und wiederholte Sitzungen {#new-repeat}
 
->[!NOTE]
->
->Diese Funktion wird derzeit eingeschränkt getestet.
-
 Sie können anhand des Berichtszeitraums, den Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung für einen Benutzer ist oder nicht. Diese Berichterstellung ermöglicht Ihnen beispielsweise, Folgendes zu bestimmen:
 
 * Welcher Prozentsatz Ihrer Bestellungen stammt aus neuen bzw. wiederholten Sitzungen?
@@ -116,3 +112,19 @@ So greifen Sie auf diese Komponenten zu:
 * Wenn eine erste Sitzung vor dem 13-monatigen Lookback-Fenster stattgefunden hat. Diese Sitzung wird ignoriert.
 
 * Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 enden sollte, werden alle Sitzungen im Berichtsfenster als Rückkehrsitzungen gezählt, da die Sitzung im Lookback-Fenster enthalten ist.
+
+## Verwenden der Funktion Datum und Uhrzeit {#date}
+
+>[!NOTE]
+>
+>Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
+
+Beispielhafte Anwendungsfälle:
+
+* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Sie möchten einen Bericht zum Vergleich der [!UICONTROL Wochentag] für alle Abreisedaten, um zu verstehen, welche am beliebtesten ist. Sie möchten dasselbe tun für [!UICONTROL Monat des Jahres].
+
+* Date-Time: Ein Einzelhandelsunternehmen sammelt die Zeit für jeden seiner Einkäufe an Verkaufsstellen im Geschäft (POS). Über einen bestimmten Monat hinweg möchten sie die geschäftigsten Einkaufszeiten nachvollziehen, indem sie [!UICONTROL Stunde des Tages].
+
+>[!MORELIKETHIS]
+>[Datum und Uhrzeit in der Komponenteneinstellung &quot;Format&quot;](/help/data-views/component-settings/format.md)
+
