@@ -4,7 +4,7 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b7a2921b30075b3c63136a989df3744256f810f4
+source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 81%
@@ -119,7 +119,7 @@ So greifen Sie auf diese Komponenten zu:
 >
 >Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
 
-Schemas in Adobe Experience Platform enthalten die Felder Datum und Uhrzeit. CJA-Datenansichten unterstützen diese Felder jetzt. Wenn Sie diese Felder in eine Datenansicht als Dimension ziehen, können Sie deren [format](/help/data-views/component-settings/format.md). Diese Formateinstellung bestimmt, wie die Felder in Berichten angezeigt werden. Beispiel:
+Schemas in Adobe Experience Platform enthalten [!UICONTROL Datum] und [!UICONTROL Datum/Uhrzeit] -Felder. CJA-Datenansichten unterstützen diese Felder jetzt. Wenn Sie diese Felder in eine Datenansicht als Dimension ziehen, können Sie deren [format](/help/data-views/component-settings/format.md). Diese Formateinstellung bestimmt, wie die Felder in Berichten angezeigt werden. Beispiel:
 
 * Wenn Sie für das Datumsformat **[!UICONTROL Tag]** mit dem Format **[!UICONTROL Monat, Tag, Jahr]**, könnte eine Beispielausgabe in Berichten wie folgt aussehen: 23. August 2022.
 
