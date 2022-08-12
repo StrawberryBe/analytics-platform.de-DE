@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 235f08b275fd2f5706024823005e732b61af1c07
+source-git-commit: c3e8e9260030829e38c4267659ab84dcb822e729
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | [!UICONTROL Name] | Der Name der Zielgruppe. |
    | [!UICONTROL Tags] | Alle Tags, die Sie der Zielgruppe aus organisatorischen Gründen zuweisen möchten. Sie können ein bereits vorhandenes Tag verwenden oder ein neues eingeben. |
    | [!UICONTROL Beschreibung] | Fügen Sie der Zielgruppe eine Beschreibung hinzu, um sie von anderen leicht unterscheiden zu können. |
-   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Abhängig von Ihrer CJA-Berechtigung gibt es für das 4-Stunden-Intervall ein Limit von 75 oder 150 Zielgruppen. Für die anderen Intervalle gibt es keine Obergrenze für die Zielgruppen.</li></ul> |
+   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für alle Aktualisierungsfrequenzen gilt je nach Ihrer CJA-Berechtigung eine Beschränkung von 75 oder 150 Zielgruppen. Für die anderen Intervalle gibt es keine Obergrenze für die Zielgruppen.</li></ul> |
    | Ablaufdatum | Wann die Aktualisierung der Zielgruppe beendet ist. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Zielgruppe zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
