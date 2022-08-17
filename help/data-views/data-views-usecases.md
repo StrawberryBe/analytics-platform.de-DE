@@ -4,9 +4,9 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1277'
 ht-degree: 81%
 
 ---
@@ -114,10 +114,6 @@ So greifen Sie auf diese Komponenten zu:
 * Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 enden sollte, werden alle Sitzungen im Berichtsfenster als Rückkehrsitzungen gezählt, da die Sitzung im Lookback-Fenster enthalten ist.
 
 ## Verwenden der Funktion Datum und Uhrzeit {#date}
-
->[!NOTE]
->
->Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
 
 Schemas in Adobe Experience Platform enthalten [!UICONTROL Datum] und [!UICONTROL Datum/Uhrzeit] -Felder. CJA-Datenansichten unterstützen diese Felder jetzt. Wenn Sie diese Felder in eine Datenansicht als Dimension ziehen, können Sie deren [format](/help/data-views/component-settings/format.md). Diese Formateinstellung bestimmt, wie die Felder in Berichten angezeigt werden. Beispiel:
 

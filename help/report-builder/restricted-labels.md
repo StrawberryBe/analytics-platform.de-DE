@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 0e626b4072c68a69ae94dbfdfb53169aa34ca8ac
+exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '311'
+ht-degree: 2%
 
 ---
-
 
 # Eingeschränkte Beschriftungen in Report Builder
 
@@ -27,10 +27,6 @@ Weitere Informationen finden Sie unter [Customer Journey Analytics und Data Gove
 
 ## Anzeigen eingeschränkter Daten in Report Builder
 
->[!NOTE]
->
->Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
-
 In Customer Journey Analytics werden zwei von Adoben definierte Richtlinien angezeigt, die sich auf das Reporting, Herunterladen und Freigeben auswirken:
 
 * Analytics-Richtlinie durchsetzen
@@ -40,7 +36,7 @@ Komponenten, die von diesen Richtlinien betroffen sind, sind grau ausgeblendet. 
 
 ![](assets/rb-restricted-label.png)
 
-## Aktualisieren von Berichten mit eingeschränkten Daten
+## Berichte mit eingeschränkten Daten aktualisieren
 
 Wenn ein Report Builder einen Bericht mit Datenelementen erstellt hat, die später eingeschränkt sind, wird bei der Aktualisierung des Berichts eine Fehlermeldung angezeigt.
 
