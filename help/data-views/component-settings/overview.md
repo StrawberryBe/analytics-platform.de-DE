@@ -4,10 +4,10 @@ description: Anzeigen der wichtigsten Einstellungen für eine Datenansichtskompo
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: 338cb8a4409c9b03461763d97ced6b8a10de2b7b
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 95%
+source-wordcount: '422'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,8 @@ Wichtigste Einstellungen, die eine Datenansichtskomponente verwendet.
 | [!UICONTROL Name der Komponente] | Erforderlich. Hier können Sie den benutzerfreundlichen Namen angeben, der in Analysis Workspace angezeigt wird. Sie können eine Komponente umbenennen, um ihr einen spezifischen Namen für die Datenansicht zu geben. |
 | [!UICONTROL Beschreibung] | Optional, jedoch empfohlen. Stellt Informationen über die Komponente für andere Benutzer bereit. |
 | [!UICONTROL Tags] | Optional. Ermöglicht das Taggen der Komponente mit benutzerdefinierten oder vordefinierten Tags zur einfacheren Suche/Filterung in der Analysis Workspace-Benutzeroberfläche. |
-| [!UICONTROL Feldname] | Der Name des Schemafelds. |
+| [!UICONTROL Kontextbeschriftungen] | Sie können bestimmte Dimensionen und/oder Metriken für bestimmte Anwendungsfälle in Berichten beschriften. Beispiele sind Medienbedienfelder für CJA, das neue Experiment-Bedienfeld sowie Berichtsvorlagen. |
+| [!UICONTROL Name des Schemafelds] | Der Name des Schemafelds. |
 | [!UICONTROL Typ des Datensatzes] | Erforderlich. Ein nicht bearbeitbares Feld, das anzeigt, von welchem Datensatztyp (Ereignis, Suche oder Profil) die Komponente stammt. |
 | [!UICONTROL Datensatz] | Ein nicht bearbeitbares Feld, das anzeigt, aus welchem Datensatz die Komponente stammt. Dieses Feld kann mehrere Datensätze enthalten. |
 | [!UICONTROL Schematyp] | Ein nicht bearbeitbares Feld, das den Datentyp der Komponente anzeigt.  Sie können zwar einen beliebigen unterstützten Schemafeldtyp in Platform verwenden, jedoch werden in CJA nicht alle Feldtypen unterstützt. Die folgenden Datentypen werden unterstützt: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` und `Boolean`. Derzeit ist in Such-Datensätzen nur der Schemadatentyp `String` zulässig. |
