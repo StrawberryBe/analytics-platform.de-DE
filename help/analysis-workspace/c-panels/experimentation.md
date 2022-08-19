@@ -2,13 +2,13 @@
 description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bereich CJA-Experimentierung analysieren können.
 title: Experimentationsbereich
 feature: Panels
-source-git-commit: 2c217c7d31819ac8eb27d2d1010e0df787601e21
+exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
+source-git-commit: 76ebaf5ae5bd6027f83945d5750ddc13533a7b47
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 4%
+source-wordcount: '686'
+ht-degree: 9%
 
 ---
-
 
 # Experimentationsbereich
 
@@ -24,19 +24,7 @@ Die **[!UICONTROL Experimentieren]** -Bedienfeld können Sie verschiedene Varian
 
 ## Zugriffssteuerung
 
-Das Experimentierungsfenster steht allen Customer Journey Analytics (CJA) zur Verfügung. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Für das Setup sind jedoch Beschriftungen in Datenansichten erforderlich, die nur Administratoren zuweisen können.
-
-## Terminologie
-
-* **Experiment**: Bei einem Experiment handelt es sich um eine Reihe von Varianten eines Erlebnisses, die Endbenutzern zur Verfügung gestellt wurden, um zu ermitteln, welche Erlebnisse am besten dauerhaft beibehalten werden sollten. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante betrachtet wird.
-
-* **Variante**: Eine von zwei oder mehr Änderungen am Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden, und nur eine Variante kann als Kontrollvariante betrachtet werden.
-
-* **Kontrolle**: Eine bestimmte Variante, die den Status quo oder den Standardstatus eines Benutzererlebnisses darstellt. Mit welchen anderen Varianten wird verglichen.
-
-* **Normalisierungsmetrik**: Die Basis (Sitzungen oder Personen), auf der ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen die Konversionsrate als Konversionen pro Sitzung oder Konversionen pro Person berechnet wird.
-
-* **Konversionsmetrik**: Die Metrik, mit der ein Benutzer Varianten vergleicht. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zum &quot;Gewinner&quot;eines Experiments erklärt.
+Das Experimentierfeld ist für alle Customer Journey Analytics (CJA) verfügbar. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Die Einrichtung (Schritte 1 und 2 unten) erfordert jedoch Aktionen, die nur Administratoren durchführen können.
 
 ## Schritt 1: Verbindung zu Testdatensätzen erstellen
 
@@ -53,7 +41,7 @@ Wählen Sie in Ihrer Datenansicht, die Experimentdaten enthält, zwei Dimensione
 
 ![Kontextbezeichnung](assets/context-label.png)
 
-Ohne diese Beschriftungen funktioniert das Experiment-Bedienfeld nicht.
+Ohne diese Beschriftungen funktioniert das Experiment-Bedienfeld nicht, da keine Experimente zum Arbeiten vorhanden sind.
 
 ## Schritt 3: Konfigurieren des Experimentfensters
 
@@ -61,6 +49,36 @@ Ohne diese Beschriftungen funktioniert das Experiment-Bedienfeld nicht.
 
 ![Experimentbereich](assets/experiment.png)
 
+>[!IMPORTANT]
+>Wenn die erforderliche Einrichtung in CJA-Datenansichten nicht abgeschlossen wurde, erhalten Sie eine entsprechende Nachricht, bevor Sie fortfahren können.
+
+1. Konfigurieren Sie die Einstellungen für die Bedienfeldeingabe.
+
+   | Einstellung | Definition |
+   | --- | --- |
+   | **[!UICONTROL Experiment]** | Eine Reihe von Varianten eines Erlebnisses, die Endbenutzern bereitgestellt wurden, um zu bestimmen, welches Erlebnis dauerhaft am besten beibehalten werden sollte. Ein Experiment besteht aus zwei oder mehr Varianten, von denen eine als Kontrollvariante gilt. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die mit dem  **[!UICONTROL Experiment]** und die Experimentdaten der letzten drei Monate. |
+   | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen am Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden, und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die mit dem  **[!UICONTROL Variante]** -Beschriftung in Datenansichten. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
+   | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), mit der/denen ein Benutzer Varianten vergleicht. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur &quot;primären Metrik&quot;eines Experiments deklariert. Sie können bis zu 5 Metriken hinzufügen. |
+   | **[!UICONTROL Normalisierungsmetrik]** | Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen]oder [!UICONTROL Veranstaltungen]), auf dem ein Test ausgeführt wird. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen **[!UICONTROL Konversionsrate]** berechnet als **[!UICONTROL Konversionen pro Sitzung]** oder **[!UICONTROL Konversionen pro Person]**. |
+
+1. Klicken Sie auf **[!UICONTROL Erstellen]**.
+
+## Schritt 4: Interpretieren der Bedienfeldausgabe
+
+Das Bedienfeld &quot;Experimentierung&quot;liefert umfangreiche Daten und Visualisierungen, die Ihnen helfen, die Leistung Ihrer Experimente besser zu verstehen. Oben im Bedienfeld wird eine Zusammenfassungszeile angezeigt, die Sie an die ausgewählten Bedienfeldeinstellungen erinnert. Sie können das Bedienfeld jederzeit bearbeiten, indem Sie oben rechts auf den Stift zum Bearbeiten klicken. Sie erhalten auch eine Textzusammenfassung, die anzeigt, ob das Experiment schlüssig ist oder nicht, und das Ergebnis zusammenfasst. Sie können auch Zusammenfassungszahlen für die Variante mit der höchsten Steigerung und Konfidenz anzeigen.
+
+![Experimentausgabe](assets/exp-output1.png)
+
+Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversionsraten-Trend angezeigt:
+
+![Experimentausgabe](assets/exp-output2.png)
+
+![Experimentausgabe](assets/exp-output3.png)
+
+
+## Statistische Methode hinter dem Experimentierbereich
+
+Zu folgen.
 
 
 
