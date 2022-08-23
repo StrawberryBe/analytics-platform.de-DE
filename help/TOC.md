@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 85c1b071d0a860cf9f42c09951039a14903529ca
+source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 97%
 
 ---
@@ -123,8 +123,7 @@ ht-degree: 97%
       + [Übersicht über Bedienfelder](analysis-workspace/c-panels/panels.md)
       + [Attributionsbedienfeld](analysis-workspace/c-panels/attribution.md)
       + [Leeres Bedienfeld](analysis-workspace/c-panels/blank-panel.md)
-      + Experimentieren {#experimentation}
-         + [Experimentationsbereich](analysis-workspace/c-panels/experimentation/experimentation.md)
+      + [Experimentationsbereich](analysis-workspace/c-panels/experimentation.md)
       + [Freiform-Bedienfeld](analysis-workspace/c-panels/freeform-panel.md)
       + [Bedienfeld „Quick Insights“](analysis-workspace/c-panels/quickinsight.md)
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](analysis-workspace/c-panels/media-concurrent-viewers.md)
