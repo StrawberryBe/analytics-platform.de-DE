@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: c3e8e9260030829e38c4267659ab84dcb822e729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '964'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | --- | --- |
 | August 2022 | Neuer Artikel zu [CJA-Unterstützung für Data Governance-Beschriftungen und -Richtlinien](/help/data-views/data-governance.md) |
 | August 2022 | Neuer Abschnitt zu [Unterstützung von Datumsfeldern in CJA](/help/data-views/data-views-usecases.md#date) |
-| August 2022 | Neuer Artikel zu [Vergleich der Terminologie für Analytics-Daten, die über den Analytics Source Connector übergeben werden](/help/getting-started/aa-vs-cja/terminology.md) |
-| August 2022 | Neue Dokumentation zu [Zielgruppenveröffentlichung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html) |
+| August 2022 | Neuer Artikel zu [Vergleich der Terminologie für Analytics-Daten, die durch den Analytics Source Connector übergeben werden](/help/getting-started/aa-vs-cja/terminology.md) |
+| August 2022 | Neue Dokumentation zu [Zielgruppenveröffentlichung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=de) |
 | Juli 2022 | Dokumentation zum [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=de). |
 | Juli 2022 | Dokumentation zum [Bedienfeld „Gleichzeitige Medienbetrachter“](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=de). |
-| Juli 2022 | [Erste und Wiederholte Sitzung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) Berichterstellungsdokumentation. |
+| Juli 2022 | [Erste vs. wiederholte Sitzung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) Reporting-Dokumentation. |
 | Juni 2022 | Neuer Artikel zu [AAID, ECID, AACUSTOMID und zum Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=de) |
 | Juni 2022 | Neuer Artikel zu [Adobe Analytics-Verarbeitungsregeln, VISTA und Klassifizierungen vs. Datenvorbereitung für den Analytics-Quell-Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
 | Juni 2022 | Neuer Artikel zu [virtuellen Reporting-Umgebungen und Sandbox-Umgebungen](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
@@ -52,11 +52,11 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Oktober 2021 | Dokument für rollierendes Fenster für [!UICONTROL Verbindung] – [Datenaufbewahrung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention). |
 | September 2021 | [Metrikdeduplizierung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication.html?lang=de) doc |
 | September 2021 | [Unterstützung der Sommerzeit beim Reporting](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) |
-| September 2021 | [Kundenkalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#calendar) – Dokumentation |
+| September 2021 | [Kundenkalender](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#calendar) – Dokumentation |
 | September 2021 | [Boolesche Felder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=de) – Dokumentation |
 | September 2021 | Aufschlüsselnung der Komponenteneinstellungen in Datenansichten in einzelne Dateien:<ul><li>[[!UICONTROL Komponenteneinstellungen] - Übersicht](/help/data-views/component-settings/overview.md)</li><li>[[!UICONTROL  Attribution] – Komponenteneinstellungen](/help/data-views/component-settings/attribution.md)</li><li>[[!UICONTROL Verhalten] – Komponenteneinstellungen](/help/data-views/component-settings/behavior.md)</li><li>[[!UICONTROL Format] – Komponenteneinstellungen](/help/data-views/component-settings/format.md)</li><li>[[!UICONTROL Einschließen/ausschließen] – Komponenteneinstellungen](/help/data-views/component-settings/include-exclude-values.md)</li><li>[[!UICONTROL Metrik-Deduplizierung] – Komponenteneinstellungen](/help/data-views/component-settings/metric-deduplication.md)</li><li>[[!UICONTROL Kein Wert] – Komponenteneinstellungen](/help/data-views/component-settings/no-value-options.md)</li><li>[[!UICONTROL Persistenz] – Komponenteneinstellungen](/help/data-views/component-settings/persistence.md)</li><li>[[!UICONTROL Wert-Bucketing] – Komponenteneinstellungen](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
 | September 2021 | Neuer Abschnitt über die [Auswirkungen der Zusammenführung von Report Suites](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#6-considerations-when-merging-report-suites-in-cja) in CJA. |
-| August 2021 | Neuer Abschnitt zum verbesserten Erlebnis mit [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html) in CJA. |
+| August 2021 | Neuer Abschnitt zum verbesserten Erlebnis mit [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) in CJA. |
 | August 2021 | Neuer Abschnitt zu [Groß-/Kleinschreibung in Datenansichtsdimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-behavior-settings). |
 | Juni 2021 | Neue Dokumentation zu [früheren Projektversionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=de#previous-version) in Arbeitsbereich. |
 | April 2021 | Neues Thema zu [Persistenz](/help/data-views/component-settings/persistence.md). |
