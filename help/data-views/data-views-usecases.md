@@ -5,9 +5,9 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1277'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Diese Funktion gilt speziell für Array-basierte Felder. Die Einschluss-/Ausschl
 
 Verwenden Sie beispielsweise die Ein-/Ausschlussfunktion in Datenansichten, um sich nur auf Produkte zu konzentrieren, die einen Umsatz von mehr als 50 Dollar generiert haben. Wenn Sie also eine Bestellung haben, die einen 50-Dollar-Produktkauf und einen 25-Dollar-Produktkauf beinhaltet, würden wir nur den 25-Dollar-Produktkauf entfernen, nicht die gesamte Bestellung.
 
-1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings) der Datenansichten das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
+1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-component-settings) der Datenansichten das Schema [!UICONTROL Umsatz] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 1. Wählen Sie die Metrik aus und konfigurieren Sie rechts Folgendes:
 a. Wählen Sie unter [!UICONTROL Format] die Option [!UICONTROL Währung] aus.
 b. Wählen Sie unter [!UICONTROL Währung] die Option „USD“ aus.
@@ -99,7 +99,7 @@ Drei Komponenten erleichtern diese Berichterstellung:
 
 * 1 Dimension: [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) – Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Wiederkehrend]. Der Zeileneintrag [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bucket „Nicht zutreffend“ für diese Dimension.
 
-* 2 Metriken: [Neue Sitzungen, Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Eine neue Sitzung wird als die erste Sitzung einer Person im Berichtszeitraum definiert. Rückkehrsitzungen ist die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.
+* 2 Metriken: [Neue Sitzungen, Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional). Eine neue Sitzung wird als die erste Sitzung einer Person im Berichtszeitraum definiert. Rückkehrsitzungen ist die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.
 
 So greifen Sie auf diese Komponenten zu:
 
@@ -107,26 +107,26 @@ So greifen Sie auf diese Komponenten zu:
 1. Klicken Sie in der linken Leiste auf **[!UICONTROL Komponenten]** > **[!UICONTROL Optionale Standardkomponenten]**.
 1. Ziehen Sie diese Komponenten in Ihre Datenansicht.
 
-95 % bis 99 % der Zeit, werden neue Sitzungen korrekt berichtet. Die einzigen Ausnahmen sind:
+In 95-99 % der Fälle werden neue Sitzungen korrekt gemeldet. Die einzigen Ausnahmen sind:
 
 * Wenn eine erste Sitzung vor dem 13-monatigen Lookback-Fenster stattgefunden hat. Diese Sitzung wird ignoriert.
 
-* Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 enden sollte, werden alle Sitzungen im Berichtsfenster als Rückkehrsitzungen gezählt, da die Sitzung im Lookback-Fenster enthalten ist.
+* Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 endet, werden alle Sitzungen im Berichtszeitraum als wiederkehrende Sitzungen gezählt, da die Sitzung im Rückschaufenster enthalten ist.
 
-## Verwenden der Funktion Datum und Uhrzeit {#date}
+## Verwenden der Datums- und Datumszeitfunktionen {#date}
 
-Schemas in Adobe Experience Platform enthalten [!UICONTROL Datum] und [!UICONTROL Datum/Uhrzeit] -Felder. CJA-Datenansichten unterstützen diese Felder jetzt. Wenn Sie diese Felder in eine Datenansicht als Dimension ziehen, können Sie deren [format](/help/data-views/component-settings/format.md). Diese Formateinstellung bestimmt, wie die Felder in Berichten angezeigt werden. Beispiel:
+Schemas in Adobe Experience Platform enthalten die Felder [!UICONTROL Datum] und [!UICONTROL Datum-Uhrzeit]. CJA-Datenansichten unterstützen diese Felder jetzt. Wenn Sie diese Felder als Dimension in eine Datenansicht ziehen, können Sie ihr [Format](/help/data-views/component-settings/format.md) angeben. Diese Formateinstellung legt fest, wie die Felder im Berichtswesen angezeigt werden. Beispiel:
 
-* Wenn Sie für das Datumsformat **[!UICONTROL Tag]** mit dem Format **[!UICONTROL Monat, Tag, Jahr]**, könnte eine Beispielausgabe in Berichten wie folgt aussehen: 23. August 2022.
+* Wenn Sie für das Datumsformat **[!UICONTROL Tag]** mit dem Format **[!UICONTROL Tag, Monat, Jahr]**, könnte eine Beispielausgabe in Berichten wie folgt aussehen: 23. August 2022.
 
-* Wenn Sie für das Format Datum/Uhrzeit die Option **[!UICONTROL Minute des Tages]** mit dem Format **[!UICONTROL Stunde:Minute]**, könnte Ihre Ausgabe wie folgt aussehen: 20:20.
+* Wenn Sie für das Datum-Zeit-Format **[!UICONTROL Tagesminute]** mit dem Format **[!UICONTROL Stunde:Minute]** wählen, könnte Ihre Ausgabe wie folgt aussehen: 20:20.
 
 ### Beispielhafte Anwendungsfälle:
 
-* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Sie möchten einen Bericht zum Vergleich der [!UICONTROL Wochentag] für alle Abreisedaten, um zu verstehen, welche am beliebtesten ist. Sie möchten dasselbe tun für [!UICONTROL Monat des Jahres].
+* Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Sie möchten einen Bericht, der den [!UICONTROL Wochentag] für alle gesammelten Abreisedaten vergleicht, um zu verstehen, welche am beliebtesten sind. Sie möchten dasselbe für [!UICONTROL Monat des Jahres] tun.
 
-* Date-Time: Ein Einzelhandelsunternehmen sammelt die Zeit für jeden seiner Einkäufe an Verkaufsstellen im Geschäft (POS). Über einen bestimmten Monat hinweg möchten sie die geschäftigsten Einkaufszeiten nachvollziehen, indem sie [!UICONTROL Stunde des Tages].
+* Datum-Uhrzeit: Ein Einzelhandelsunternehmen erfasst die Uhrzeit für jeden seiner Einkäufe am Verkaufsort (POS Point-Of-Sale) im Geschäft. Sie möchten wissen, zu welchen Zeiten in einem bestimmten Monat am meisten eingekauft wird, und zwar nach [!UICONTROL Tageszeit].
 
 >[!MORELIKETHIS]
->[Datum und Uhrzeit in der Komponenteneinstellung &quot;Format&quot;](/help/data-views/component-settings/format.md)
+>[Datum und Datum-Uhrzeit in den Format-Komponenteneinstellungen](/help/data-views/component-settings/format.md)
 
