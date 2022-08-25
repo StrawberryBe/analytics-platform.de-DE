@@ -3,73 +3,73 @@ title: Beschriftungen und Richtlinien
 description: Erfahren Sie, wie sich in AEP definierte Datenbezeichnungen und Richtlinien auf Datenansichten und Berichte in CJA auswirken.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Beschriftungen und Richtlinien
 
-Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) für einige oder alle Elemente im Datensatz. Bisher wurden diese Beschriftungen nicht in CJA verfügbar gemacht. Mit dieser Version können Sie diese Beschriftungen und Richtlinien in CJA anzeigen.
+Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=de) für einige oder alle Elemente im Datensatz erstellen. Bisher wurden diese Beschriftungen nicht in CJA veröffentlicht. Mit dieser Version können Sie diese Beschriftungen und Richtlinien in CJA anzeigen.
 
 Für CJA sind die folgenden Beschriftungen von besonderem Interesse:
 
-* Die `C8` label - **[!UICONTROL Keine Messung]**. Diese Bezeichnung bedeutet, dass Daten nicht für Analysen auf den Websites oder Apps Ihres Unternehmens verwendet werden können.
+* Die `C8` Bezeichnung – **[!UICONTROL Keine Messung]**. Diese Kennzeichnung bedeutet, dass Daten nicht für Analysen auf den Websites oder in Anwendungen Ihres Unternehmens verwendet werden können.
 
-* Die `C12` label - **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht aus CJA exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
+* Die `C12` Bezeichnung – **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht aus CJA exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
 
-Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungsbezeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie können Ihre Richtlinien mithilfe der Variablen [Policy Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=en) in der Experience Platform.
+Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungsbezeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie können Ihre Richtlinien mithilfe der Variablen [Richtlinien-Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in der Experience Platform erstellen.
 
-In CJA werden zwei von Adoben definierte Richtlinien angezeigt, die sich auf die Berichterstellung und Download/Freigabe auswirken:
+In CJA werden zwei von Adobe definierte Richtlinien angezeigt, die sich auf die Berichterstellung und Download/Freigabe auswirken:
 
-* **[!UICONTROL Analytics erzwingen]** policy
-* **[!UICONTROL Download durchsetzen]** policy
+* **[!UICONTROL Analytics erzwingen]**-Richtlinie
+* **[!UICONTROL Download erzwingen]**-Richtlinie
 
 ## Anzeigen von Datenbeschriftungen in CJA-Datenansichten
 
-Datenbeschriftungen, die in Experience Platform erstellt wurden, werden an drei Stellen in der Benutzeroberfläche &quot;Datenansichten&quot;angezeigt:
+Datenbeschriftungen, die in Experience Platform erstellt wurden, werden an drei Stellen in der Benutzeroberfläche der Datenansichten angezeigt:
 
 | Standort | Beschreibung |
 | --- | --- |
-| Info-Schaltfläche in einem Schemafeld | Durch Klicken auf diese Schaltfläche wird angegeben, [!UICONTROL Datennutzungsbezeichnungen] wird derzeit auf ein Feld angewendet:<p>![](assets/data-label-left.png) |
+| Informationsschaltfläche in einem Schemafeld | Durch Klicken auf diese Schaltfläche wird angegeben, welche [!UICONTROL Datennutzungsbezeichnungen] derzeit auf ein Feld angewendet werden:<p>![](assets/data-label-left.png) |
 | Rechte Leiste unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) | Alle [!UICONTROL Datennutzungsbezeichnungen] sind hier aufgeführt:<p>![](assets/data-label-right.png) |
-| Hinzufügen von Datenbeschriftungen als Spalte | Sie können [!UICONTROL Datennutzungsbezeichnungen] als Spalte zum [!UICONTROL Enthaltene Komponenten] Spalten in Datenansichten. Klicken Sie einfach auf das Symbol für die Spaltenauswahl und wählen Sie **[!UICONTROL Datennutzungsbezeichnungen]**:<p>![](assets/data-label-column.png) |
+| Hinzufügen von Datenbeschriftungen als Spalte | Sie können [!UICONTROL Datennutzungsbezeichnungen] als Spalte zu den [!UICONTROL Enthaltene Komponenten] Spalten in Datenansichten hinzufügen. Klicken Sie einfach auf das Symbol für die Spaltenauswahl und wählen Sie **[!UICONTROL Datennutzungsbezeichnungen]**:<p>![](assets/data-label-column.png) |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Filtern nach Data Governance-Beschriftungen in Datenansichten
 
-Klicken Sie im Datenansichtseditor auf das Filtersymbol im linken Bereich und filtern Sie die Datenansichtskomponenten nach **[!UICONTROL Data Governance]** und Art der **[!UICONTROL Titel]**:
+Klicken Sie im Editor für Datenansichten auf das Symbol „Filter“ in der linken Spur und filtern Sie die Komponenten der Datenansichten nach **[!UICONTROL Data Governance]** und dem Typ **[!UICONTROL Beschriftung]**:
 
 ![](assets/filter-labels.png)
 
-Klicken **[!UICONTROL Anwenden]** , um zu sehen, an welche Komponenten Beschriftungen angehängt sind.
+Klicken **[!UICONTROL Anwenden]**, um zu sehen, an welche Komponenten Beschriftungen angehängt sind.
 
 ## Filtern nach Data Governance-Richtlinien in Datenansichten
 
 Sie können überprüfen, ob eine Richtlinie aktiviert ist, die die Verwendung bestimmter CJA-Datenansichtselemente für Analyse- oder Exportzwecke blockiert.
 
-Klicken Sie erneut auf das Symbol Filter in der linken Leiste und unter **[!UICONTROL Data Governance]** klicken **[!UICONTROL Richtlinien]**:
+Klicken Sie erneut auf das Filtersymbol in der linken Leiste und klicken Sie unter **[!UICONTROL Data Governance]** auf **[!UICONTROL Richtlinien]**:
 
 ![](assets/filter-policies.png)
 
-Klicken **[!UICONTROL Anwenden]** , um zu sehen, welche Richtlinien aktiviert sind.
+Klicken Sie auf **[!UICONTROL Anwenden]**, um zu sehen, welche Richtlinien aktiviert sind.
 
-## Auswirkungen von aktivierten Richtlinien auf Datenansichten
+## Wie sich aktivierte Richtlinien auf Datenansichten auswirken
 
-Wenn die Variable **[!UICONTROL Analytics erzwingen]** oder **[!UICONTROL Download durchsetzen]** Richtlinien aktiviert sind, können Schemakomponenten, denen bestimmte Datenbezeichnungen (wie C8 oder C12) zugeordnet sind, nicht zu Datenansichten hinzugefügt werden.
+Wenn die Richtlinien **[!UICONTROL Analytics erzwingen]** oder **[!UICONTROL Download erzwingen]** aktiviert sind, können die Schemakomponenten, denen bestimmte Datenbeschriftungen (wie C8 oder C12) zugeordnet sind, nicht zu Datenansichten hinzugefügt werden.
 
-Diese Komponenten sind in der linken Leiste grau dargestellt [!UICONTROL Schemafelder] list:
+Diese Komponenten sind in der linken Liste [!UICONTROL Schemafelder]-Liste ausgegraut:
 
 ![](assets/component-greyed.png)
 
-Sie können auch keine Datenansicht speichern, in der Felder blockiert sind.
+Sie können auch keine Datensicht speichern, die gesperrte Felder enthält.
 
 >[!MORELIKETHIS]
 >[Herunterladen sensibler Daten](/help/analysis-workspace/curate-share/download-send.md)
 
 >[!MORELIKETHIS]
->[Was sind eingeschränkte Beschriftungen in Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=en)
+>[Was sind eingeschränkte Beschriftungen in Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=de)
 
 
