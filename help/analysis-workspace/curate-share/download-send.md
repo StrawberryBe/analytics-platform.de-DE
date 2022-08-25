@@ -4,9 +4,9 @@ title: PDF- oder CSV-Dateien herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachricht
 
 ## Herunterladen sensibler Daten {#sensitive}
 
-Wenn die Variable **[!UICONTROL Download durchsetzen]** [Data Governance-Politik](/help/data-views/data-governance.md) in der Datenansicht aktiviert ist, über die Sie Berichte erstellen, werden bei jedem Download (z. B. E-Mail-Versand oder Freigabe-PDFs) von Workspace-Projekten die Datenfelder, die als vertraulich gekennzeichnet sind, gehasht. Sie können diese Felder weiterhin in Workspace analysieren. Wenn Sie jedoch versuchen, ein Projekt per E-Mail zu versenden oder auf andere Weise freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
+Wenn die **[!UICONTROL Download erzwingen]**-[Data-Governance-Richtlinie](/help/data-views/data-governance.md) in der Datenansicht, über die Sie Bericht erstatten, aktiviert ist, werden beim Herunterladen (z. B. beim Versenden von E-Mails oder beim Austausch von PDF-Dateien) von Workspace-Projekten die als sensibel gekennzeichneten Datenfelder durchleuchtet. Sie können diese Felder in Workspace weiterhin analysieren, aber wenn Sie versuchen, ein Projekt per E-Mail zu versenden oder anderweitig freizugeben, werden die blockierten Felder in der .pdf- oder .csv-Datei als leer angezeigt.
 
 ## Häufig gestellte Fragen {#faq}
 
