@@ -3,25 +3,25 @@ title: Customer Journey Analytics und Data Governance
 description: Beschreibt, wie Data Governance in Customer Journey Analytics funktioniert.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Customer Journey Analytics und Data Governance
 
-Im Allgemeinen werden alle Data Governance-bezogenen Einstellungen in Customer Journey Analytics von Adobe Experience Platform übernommen.
+Im Allgemeinen werden alle Data-Governance-bezogenen Einstellungen in Customer Journey Analytics von Adobe Experience Platform übernommen.
 
 ## Data Governance
 
-Die Integration zwischen CJA und [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) ermöglicht die Kennzeichnung sensibler CJA-Daten und die Durchsetzung von Datenschutzrichtlinien.
+Die Integration zwischen CJA und [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=de) ermöglicht die Kennzeichnung sensibler CJA-Daten und die Durchsetzung von Datenschutzrichtlinien.
 
-Datenschutzbezeichnungen und Richtlinien, die für von Experience Platform genutzte Datensätze erstellt wurden, können im Arbeitsablauf für CJA-Datenansichten angezeigt werden. Diese Beschriftungen stoppen oder warnen Benutzer, die Metriken und/oder Dimensionen aus sensiblen Feldern erstellen.
+Datenschutzbeschriftungen und -richtlinien, die für von der Experience Platform genutzte Datensätze erstellt wurden, können im CJA-Datenansichts-Workflow angezeigt werden. Diese Beschriftungen stoppen oder warnen Benutzer, die Metriken und/oder Dimensionen aus sensiblen Feldern erstellen.
 
 Darüber hinaus werden beim Exportieren von Daten aus Customer Journey Analytics (über Reporting, Export, API usw.) Warnhinweise oder Beschriftungen hinzugefügt, die Benutzer darauf hinweisen, dass ein Bericht sensible Informationen enthält, die auf bestimmte Weise behandelt werden müssen.
 
-Durch diese Integration können Sie die Compliance einfacher verwalten. Data Stewards in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Daher können Ihre CJA-Benutzer Daten in dem Bewusstsein, dass sie den von Data Stewards definierten Richtlinien entsprechen, sicherer verwenden.
+Durch diese Integration können Sie die Compliance einfacher verwalten. Datenverantwortliche in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Dadurch können Ihre CJA-Benutzer die Daten sicherer nutzen, da sie wissen, dass sie mit den von den Datenverwaltern festgelegten Richtlinien übereinstimmen.
 
 [Weitere Informationen](/help/data-views/data-governance.md)
 
