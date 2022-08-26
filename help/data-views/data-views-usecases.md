@@ -4,10 +4,10 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
+source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 100%
+source-wordcount: '1254'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Zuvor wurden Ganzzahlen in Customer Journey Analytics automatisch als Metriken b
 
 ## 3. Verwenden Sie numerische Dimensionen als „Metriken“ in Flussdiagrammen {#numeric}
 
-Sie können eine numerische Dimension verwenden, um „Metriken“ in Ihre [!UICONTROL Fluss]-Visualisierung zu übertragen.
+Sie können eine numerische Dimension verwenden, um &quot;Metriken&quot;in Ihre [!UICONTROL  Fluss] Visualisierung.
 
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-component-settings) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Arbeitsbereich-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
@@ -87,19 +87,19 @@ Vergessen Sie nicht, jeder Metrik einen neuen Namen zu geben, um die Unterschied
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
 
-## 7. Reporting über neue und wiederholte Sitzungen {#new-repeat}
+## 7. Neue Sitzungsberichte {#new-repeat}
 
 Sie können anhand des Berichtszeitraums, den Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung für einen Benutzer ist oder nicht. Diese Berichterstellung ermöglicht Ihnen beispielsweise, Folgendes zu bestimmen:
 
-* Welcher Prozentsatz Ihrer Bestellungen stammt aus neuen bzw. wiederholten Sitzungen?
+* Welcher Prozentsatz Ihrer Bestellungen stammt aus neuen Sitzungen?
 
-* Richten Sie sich bei einem bestimmten Marketing-Kanal oder einer bestimmten Kampagne an Erstnutzende oder an Menschen, die wiedergekommen sind? Wie haben diese Entscheidungen die Konversionsraten beeinflusst?
+* Targeting Sie für einen bestimmten Marketingkanal oder eine bestimmte Kampagne erstmalige Benutzer? Wie beeinflusst diese Auswahl die Konversionsraten?
 
-Drei Komponenten erleichtern diese Berichterstellung:
+Zwei Komponenten erleichtern diese Berichterstellung:
 
-* 1 Dimension: [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) – Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Wiederkehrend]. Der Zeileneintrag [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bucket „Nicht zutreffend“ für diese Dimension.
+* 1 Dimension: [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) – Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Wiederkehrend]. Der Zeileneintrag [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in die Gruppe &quot;Nicht zutreffend&quot;für diese Dimension.
 
-* 2 Metriken: [Neue Sitzungen, Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Eine neue Sitzung wird als die erste Sitzung einer Person im Berichtszeitraum definiert. Rückkehrsitzungen ist die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.
+* 1 Metriken: [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Eine neue Sitzung wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert.
 
 So greifen Sie auf diese Komponenten zu:
 
