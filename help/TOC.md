@@ -10,9 +10,9 @@ user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ ht-degree: 99%
       + [Übersicht über Bedienfelder](analysis-workspace/c-panels/panels.md)
       + [Attributionsbedienfeld](analysis-workspace/c-panels/attribution.md)
       + [Leeres Bedienfeld](analysis-workspace/c-panels/blank-panel.md)
-      + [Experimentationsbereich](analysis-workspace/c-panels/experimentation.md)
+      + [Experimentier-Bedienfeld](analysis-workspace/c-panels/experimentation.md)
       + [Freiform-Bedienfeld](analysis-workspace/c-panels/freeform-panel.md)
       + [Bedienfeld „Quick Insights“](analysis-workspace/c-panels/quickinsight.md)
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](analysis-workspace/c-panels/media-concurrent-viewers.md)
@@ -152,7 +152,7 @@ ht-degree: 99%
          + [Anomalien in Analysis Workspace anzeigen](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [In der Anomalieerkennung verwendete statistische Verfahren](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Benutzerpräferenzen](analysis-workspace/user-preferences.md)
-   + Häufig gestellte Fragen zu Arbeitsbereich {#workspace-faq}
+   + Häufig gestellte Fragen zu Workspace {#workspace-faq}
       + [Häufig gestellte Fragen](analysis-workspace/workspace-faq/faq.md)
       + [Optimieren der Analysis Workspace-Leistung](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Fehlermeldungen](analysis-workspace/workspace-faq/error-messages.md)
