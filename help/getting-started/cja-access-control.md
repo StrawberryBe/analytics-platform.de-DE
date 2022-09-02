@@ -8,19 +8,19 @@ mini-toc-levels: 3
 source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 17%
+ht-degree: 29%
 
 ---
 
 # CJA-Zugriffssteuerung
 
-Customer Journey Analytics (CJA) wird durch drei Zugriffsebenen oder drei Benutzerrollen gesteuert: Produktadministratorrolle, Produktprofil-Administratorrolle und Benutzerzugriff. In diesem Thema werden diese Rollen ausführlicher erläutert.
+Customer Journey Analytics (CJA) wird durch drei Zugriffsebenen oder drei Rollen gesteuert: Produktadministrator, Produktprofil-Administrator und Anwenderzugriff. In diesem Thema werden diese Rollen ausführlicher erläutert.
 
 Darüber hinaus werden detailliertere Möglichkeiten zur Beschränkung des Zugriffs beschrieben, z. B. die Kuratierung von Workspace und die Zeilenebene sowie die Zugriffskontrolle auf Wertebene.
 
-## Produkt-Admin-Rolle
+## Produktadministrator-Rolle
 
-Produktadministratoren haben die Berechtigung, alle in Customer Journey Analytics erforderlichen Aufgaben auszuführen. Sie müssen als Produktadministrator zum **Customer Journey Analytics-Produktprofil** im [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Administratoren] tab > [!UICONTROL Admin hinzufügen]. Produktadmins erhalten die folgenden Berechtigungen:
+Produktadministratoren sind berechtigt, alle in Customer Journey Analytics erforderlichen Aufgaben auszuführen. Sie müssen als Produktadministrator zum **Customer Journey Analytics-Produktprofil** im [Admin Console](https://adminconsole.adobe.com/enterprise/) under [!UICONTROL Customer Journey Analytics] > [!UICONTROL Administratoren] tab > [!UICONTROL Admin hinzufügen]. Produktadmins erhalten die folgenden Berechtigungen:
 
 * Erstellen/Aktualisieren/Löschen von Verbindungen oder Datenansichten
 * Aktualisieren/Löschen von Projekten, Filtern, berechneten Metriken, Zielgruppen, Anmerkungen oder Filtern, die von anderen Benutzern erstellt wurden
@@ -35,7 +35,7 @@ Wenn Sie in Customer Journey Analytics Produktadministrator werden, reicht es ni
 
 Weitere Informationen zu Berechtigungen für Experience Platform finden Sie unter [Zugriffssteuerung in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=de).
 
-## Administratorrolle für Produktprofil
+## Produktprofil-Administratorrolle
 
 Ein Produktprofil ist ein Satz von Berechtigungen. Produktprofiladministratoren können
 
@@ -43,9 +43,9 @@ Ein Produktprofil ist ein Satz von Berechtigungen. Produktprofiladministratoren 
 
 * Bearbeiten Sie in CJA Datenansichten, die Teil eines von ihnen verwalteten Produktprofils sind. Sie können keine neuen Datenansichten erstellen.
 
-## Zugriff auf Benutzerebene
+## Zugriff auf Anwenderebene
 
-Benutzer in Customer Journey Analytics können keine Datenansichten oder -verbindungen erstellen, bearbeiten oder anzeigen. Benutzer können Filter, Projekte, Zielgruppen und berechnete Metriken mit speziellen Berechtigungen in der Admin Console erstellen.
+Benutzer in Customer Journey Analytics können keine Datenansichten oder -verbindungen erstellen, bearbeiten oder anzeigen. Anwender können in Admin Console Filter, Projekte, Zielgruppen und berechnete Metriken mit speziellen Berechtigungen erstellen.
 
 ## Workspace-Projektkuratierung
 
