@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '888'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ In CJA können Sie jetzt mit den Dimensionen (z. B. Score, Score-Datum, Wahrsche
 
 ### Schritt 4: Erstellen von Berichten zu CAI-Scores in Workspace
 
-Erstellen Sie in CJA Workspace ein neues Projekt und ziehen Sie Visualisierungen ein.
+Erstellen Sie ein neues Projekt in CJA Workspace und rufen Sie Visualisierungen ab.
 
 **Verlauf der Tendenz-Scores**
 
