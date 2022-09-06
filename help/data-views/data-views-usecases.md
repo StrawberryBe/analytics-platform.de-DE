@@ -4,10 +4,10 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
+source-git-commit: c7dd23b7cf0a624c98691646ba4c55d748bc0dcf
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 92%
+source-wordcount: '1280'
+ht-degree: 91%
 
 ---
 
@@ -95,11 +95,15 @@ Sie können anhand des Berichtszeitraums, den Sie für diese Datenansicht defini
 
 * Targeting Sie für einen bestimmten Marketingkanal oder eine bestimmte Kampagne erstmalige Benutzer? Wie beeinflusst diese Auswahl die Konversionsraten?
 
-Zwei Komponenten erleichtern diese Berichterstellung:
+Drei Komponenten erleichtern diese Berichterstellung:
 
 * 1 Dimension: [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) – Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Wiederkehrend]. Der Zeileneintrag [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in die Gruppe &quot;Nicht zutreffend&quot;für diese Dimension.
 
-* 1 Metriken: [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Eine neue Sitzung wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert.
+* 2 Metriken:
+
+   * [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Eine neue Sitzung wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert.
+
+   * [Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Rückkehrsitzungen sind die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.
 
 So greifen Sie auf diese Komponenten zu:
 
