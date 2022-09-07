@@ -3,9 +3,9 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bedienfeld �
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: ht
-source-wordcount: '1322'
+source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+workflow-type: tm+mt
+source-wordcount: '1324'
 ht-degree: 100%
 
 ---
@@ -34,8 +34,8 @@ Wenn Ihre Experimentierdaten in Adobe Experience Platform [erfasst](https://expe
 
 In den Einstellungen für Datenansichten in CJA können Administratoren [Kontextbeschriftungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik hinzufügen, und CJA-Services wie das Bedienfeld [!UICONTROL Experimentieren] können diese Beschriftungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
 
-* [!UICONTROL Experiment]
-* [!UICONTROL Variante]
+* [!UICONTROL Experimentierexperiment]
+* [!UICONTROL Experimentiervariante]
 
 Wählen Sie in Ihrer Datenansicht, die Experimentierdaten enthält, zwei Dimensionen aus: eine mit den Experimentierdaten und eine mit den Variantendaten. Geben Sie diesen Dimensionen dann die Beschriftungen **[!UICONTROL Experiment]** und **[!UICONTROL Variante]**.
 
