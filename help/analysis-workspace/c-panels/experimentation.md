@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bedienfeld �
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 100%
+source-wordcount: '1327'
+ht-degree: 87%
 
 ---
 
@@ -50,7 +50,7 @@ Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da
 ![Bedienfeld „Experimentieren“](assets/experiment.png)
 
 >[!IMPORTANT]
->Wenn die erforderliche Einrichtung in den Datenansichten in CJA nicht abgeschlossen wurde, erhalten Sie eine entsprechende Nachricht, bevor Sie fortfahren können.
+>Wenn die erforderliche Einrichtung in CJA-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: &quot;[!UICONTROL Konfigurieren Sie die Experiment- und Variantendimensionen in Datenansichten.]&quot;.
 
 1. Konfigurieren Sie die Einstellungen für die Bedienfeldeingabe.
 
@@ -64,7 +64,7 @@ Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-## Schritt 4: Interpretieren der Bedienfeldausgabe
+## Schritt 4: Anzeigen der Bedienfeldausgabe
 
 Das Bedienfeld „Experimentieren“ liefert umfangreiche Daten und Visualisierungen, die Ihnen helfen, die Performance Ihrer Experimente besser zu verstehen. Oben im Bedienfeld wird eine Zusammenfassungszeile angezeigt, die Sie an die ausgewählten Bedienfeldeinstellungen erinnert. Sie können das Bedienfeld jederzeit bearbeiten, indem Sie oben rechts auf den Stift zum Bearbeiten klicken.
 
@@ -76,27 +76,19 @@ Sie erhalten auch eine Textzusammenfassung, die anzeigt, ob das Experiment schl�
 
 ![Experimentausgabe](assets/exp-output1.png)
 
-Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversionsraten-Trend angezeigt:
-
-![Experimentausgabe](assets/exp-output2.png)
+Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversionsraten-Trend angezeigt.
 
 Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kontrolle] im Vergleich zur [!UICONTROL Kontrollvariante]:
 
-![Experimentausgabe](assets/exp-output3.png)
+![Experimentausgabe](assets/exp-output2.png)
 
 >[!NOTE]
 >
 >Die Analyse von A/A-Tests wird aktuell von diesem Bedienfeld nicht unterstützt.
 
-## Statistische Methodik von Adobe
+## Schritt 5: Interpretieren der Ergebnisse
 
-Um leicht verständliche und sichere statistische Rückschlüsse zu ermöglichen, hat Adobe eine statistische Methodik eingeführt, die auf [Immer gültige Konfidenzsequenzen](https://doi.org/10.48550/arXiv.2103.06476) basiert.
-
-Eine Konfidenzsequenz ist ein „sequenzielles“ Analogon eines Konfidenzintervalls. Um zu verstehen, was eine Konfidenzsequenz ist, stellen Sie sich vor, Ihre Experimente hundertmal zu wiederholen und für *jeden neue Anwender*, der zum Experiment hinzukommt, eine Schätzung der durchschnittlichen Geschäftsmetrik (z. B. Öffnungsrate einer E-Mail) und der zugehörigen 95-%-Konfidenzsequenz durchzuführen. Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausgeführt haben, den Wert „true“ der Geschäftsmetrik. (Ein Konfidenzintervall von 95 % kann nur einmal pro Experiment und nicht für jeden einzelnen neuen Anwender berechnet werden, um die gleiche 95-%-Garantie zu erhalten.) Konfidenzsequenzen ermöglichen es Ihnen daher, Experimente kontinuierlich zu überwachen, ohne die Falsch-Positiv-Fehlerrate zu erhöhen, d. h. sie ermöglichen einen Einblick in die Ergebnisse.
-
-### Interpretation der Ergebnisse
-
-1. **Experiment ist endgültig**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, analysiert Adobe die Daten, die bis zu diesem Zeitpunkt im Experiment gesammelt wurden, und deklariert einen Versuch als „endgültig“, wenn das jederzeit gültige Konfidenzniveau einen Schwellenwert von 95 % für *mindestens eine* der Varianten überschreitet (mit Bonferonni-Korrektur, wenn mehr als zwei Arme vorhanden sind, als Korrektur für mehrere Hypothesentests).
+1. **Experiment ist abgeschlossen**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, analysiert Adobe die Daten, die bis zu diesem Zeitpunkt im Experiment gesammelt wurden, und deklariert einen Versuch als &quot;Fazit&quot;, wenn das jederzeit gültige Konfidenzniveau einen Schwellenwert von 95 % für *mindestens* der Varianten (mit einer Bonferonni-Korrektur, wenn mehr als zwei Arme vorhanden sind, zur Korrektur für mehrere Hypothesentests).
 
 2. **Variante mit der besten Performance**: Wenn ein Experiment als endgültig deklariert wird, wird die Variante mit der höchsten Konversionsrate als „Variante mit der besten Performance“ gekennzeichnet. Beachten Sie, dass diese Variante entweder die Kontroll- bzw. Baseline-Variante sein muss oder eine der Varianten, die die 95-%-ige, immer gültige Konfidenzschwelle überschreiten (mit Bonferonni-Korrekturen).
 
@@ -106,4 +98,12 @@ Eine Konfidenzsequenz ist ein „sequenzielles“ Analogon eines Konfidenzinterv
 
 5. **Konfidenz**: Die angezeigte „immer gültige Konfidenz“ ist ein wahrscheinlicher Messwert dafür, wie viele Nachweise dafür vorliegen, dass eine bestimmte Variante der Kontrollvariante entspricht. Eine höhere Konfidenz deutet auf weniger Nachweise hin, die die Annahme stützen, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen. Genauer gesagt ist die angezeigte Konfidenz eine Wahrscheinlichkeit (ausgedrückt als Prozentsatz), dass wir einen kleineren Unterschied bei den Konversionsraten zwischen einer bestimmten Variante und der Kontrollvariante beobachtet hätten, wenn in Wirklichkeit kein Unterschied bei den zugrunde liegenden tatsächlichen Konversionsraten besteht. Im Hinblick auf *p*-Werte ist die angezeigte Konfidenz 1 - *p*-Wert.
 
-Beachten Sie jedoch, dass bei einer vollständigen Beschreibung der Ergebnisse alle verfügbaren Nachweise berücksichtigt werden sollten (d. h. Experimentaufbau, Stichprobengrößen, Konversionsraten, Konfidenz usw.) und nicht nur, ob das Experiment als endgültig deklariert ist oder nicht. Selbst wenn ein Ergebnis noch nicht „endgültig“ ist, können überzeugende Beweise dafür vorliegen, dass sich eine Variante von einer anderen unterscheidet (z. B. wenn sich Konfidenzintervalle nahezu nicht überlappen). Idealerweise sollte die Entscheidungsfindung unter Berücksichtigung aller statistischen Daten, die auf einem kontinuierlichen Spektrum interpretiert werden, erfolgen.
+>[!NOTE]
+>
+>Bei einer vollständigen Beschreibung der Ergebnisse sollten alle verfügbaren Beweise (d. h. Versuchsaufbau, Stichprobengrößen, Konversionsraten, Konfidenz usw.) berücksichtigt werden, und nicht nur die endgültige Erklärung. Selbst wenn ein Ergebnis noch nicht &quot;schlüssig&quot;ist, können überzeugende Beweise dafür vorliegen, dass sich eine Variante von einer anderen unterscheidet (Konfidenzintervalle sind beispielsweise nahezu nicht überlappend). Idealerweise sollte die Entscheidungsfindung unter Berücksichtigung aller statistischen Daten, die auf einem kontinuierlichen Spektrum interpretiert werden, erfolgen.
+
+## Statistische Methodik von Adobe
+
+Um leicht verständliche und sichere statistische Rückschlüsse zu ermöglichen, hat Adobe eine statistische Methodik eingeführt, die auf [Immer gültige Konfidenzsequenzen](https://doi.org/10.48550/arXiv.2103.06476) basiert.
+
+Eine Konfidenzsequenz ist ein „sequenzielles“ Analogon eines Konfidenzintervalls. Um zu verstehen, was eine Konfidenzsequenz ist, stellen Sie sich vor, Ihre Experimente hundertmal zu wiederholen und für *jeden neue Anwender*, der zum Experiment hinzukommt, eine Schätzung der durchschnittlichen Geschäftsmetrik (z. B. Öffnungsrate einer E-Mail) und der zugehörigen 95-%-Konfidenzsequenz durchzuführen. Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausgeführt haben, den Wert „true“ der Geschäftsmetrik. (Ein Konfidenzintervall von 95 % kann nur einmal pro Experiment und nicht für jeden einzelnen neuen Anwender berechnet werden, um die gleiche 95-%-Garantie zu erhalten.) Konfidenzsequenzen ermöglichen es Ihnen daher, Experimente kontinuierlich zu überwachen, ohne die Falsch-Positiv-Fehlerrate zu erhöhen, d. h. sie ermöglichen einen Einblick in die Ergebnisse.
