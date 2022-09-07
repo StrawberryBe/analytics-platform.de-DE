@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bedienfeld �
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
+source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Wählen Sie in Ihrer Datenansicht, die Experimentierdaten enthält, zwei Dimensi
 
 ![Kontextbeschriftung](assets/context-label.png)
 
-Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da keine Experimente vorhanden sind, mit denen gearbeitet werden kann.
+Ohne diese Beschriftungen funktioniert das Experiment-Bedienfeld nicht, da keine Experimente zum Arbeiten vorhanden sind.
 
 ## Schritt 3: Konfigurieren des Bedienfelds „Experiment“
 
@@ -70,13 +70,9 @@ Das Bedienfeld „Experimentieren“ liefert umfangreiche Daten und Visualisieru
 
 Sie erhalten auch eine Textzusammenfassung, die anzeigt, ob das Experiment schlüssig ist oder nicht, und die das Ergebnis zusammenfasst. Das Fazit beruht auf der statistischen Signifikanz. (Siehe unten unter „Statistische Methodik“.) Sie können Zusammenfassungszahlen für die Variante mit der besten Performance mit dem höchsten Anstieg und der höchsten Konfidenz anzeigen.
 
->[!NOTE]
->
->Anstieg und Konfidenz sind ebenfalls [erweiterte Funktionen für die berechnete Metrik](/help/components/calc-metrics/cm-adv-functions.md) in Customer Journey Analytics. Sie können also Ihre eigenen Metriken zu Anstieg und Konfidenz erstellen.
+Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversionsraten-Trend angezeigt.
 
 ![Experimentausgabe](assets/exp-output1.png)
-
-Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversionsraten-Trend angezeigt.
 
 Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kontrolle] im Vergleich zur [!UICONTROL Kontrollvariante]:
 
@@ -85,6 +81,10 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 >[!NOTE]
 >
 >Die Analyse von A/A-Tests wird aktuell von diesem Bedienfeld nicht unterstützt.
+
+>[!NOTE]
+>
+>Anstieg und Konfidenz sind ebenfalls [erweiterte Funktionen für die berechnete Metrik](/help/components/calc-metrics/cm-adv-functions.md) in Customer Journey Analytics. Sie können also Ihre eigenen Metriken zu Anstieg und Konfidenz erstellen.
 
 ## Schritt 5: Interpretieren der Ergebnisse
 
