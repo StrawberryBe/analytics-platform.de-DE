@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bedienfeld �
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
+source-git-commit: 31f29e9453d252f119a4fa7c26f96e9f01ed2abf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1401'
+ht-degree: 81%
 
 ---
 
@@ -27,6 +27,8 @@ Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Va
 Das Bedienfeld „Experimentieren“ kann von allen Anwendern von Customer Journey Analytics (CJA) genutzt werden. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Die Einrichtung (Schritte 1 und 2 unten) erfordert jedoch Aktionen, die nur Administratoren durchführen können.
 
 ## Schritt 1: Einrichten der Verbindung zu Experimentier-Datensätzen
+
+Das empfohlene Datenschema besteht darin, dass sich die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) , das die Experiment- und Variantendaten in zwei separaten Dimensionen enthält. Wenn sich Ihre Experimentdaten in einer einzigen Dimension mit Experiment- und Variantendaten in einer getrennten Zeichenfolge befinden, können Sie die [substring](/help/data-views/component-settings/substring.md) -Einstellung in Datenansichten, um sie zur Verwendung im Bereich in zwei aufzuteilen.
 
 Wenn Ihre Experimentierdaten in Adobe Experience Platform [erfasst](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) sind, können Sie zu einem oder mehreren Testdatensätzen [in CJA eine Verbindung einrichten](/help/connections/create-connection.md).
 
@@ -76,7 +78,7 @@ Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversio
 
 Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kontrolle] im Vergleich zur [!UICONTROL Kontrollvariante]:
 
-![Experimentausgabe](assets/exp-output2.png)
+![Kantengraph-Ausgabe](assets/exp-output2.png)
 
 >[!NOTE]
 >
