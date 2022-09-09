@@ -4,10 +4,10 @@ description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 96%
+source-wordcount: '1189'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ Bevor Sie Cross-Channel Analytics verwenden, sollten Sie sicherstellen, dass Ihr
 
 >[!IMPORTANT]
 >
->Beachten Sie, dass Änderungen am Datensatzschema des globalen Ereignisses auch im neuen Schema des zugeordneten Datensatzes angewendet werden müssen. Andernfalls wird der zugeordnete Datensatz beschädigt.
+>Jede Änderung am globalen Ereignis-Datensatzschema muss auch im neuen zugewiesenen Datensatzschema angewendet werden. Andernfalls wird der zugeordnete Datensatz beschädigt.
 >
 >Wenn Sie den Quelldatensatz entfernen, wird der zugeordnete Datensatz nicht weiter verarbeitet und vom System entfernt.
 
@@ -51,7 +51,7 @@ Cross-Channel Analytics ist eine innovative und zuverlässige Funktion, deren Ve
 * Die aktuellen Funktionen zur Neuzuweisung sind auf einen Schritt beschränkt (beständige ID auf vorübergehende ID). Eine mehrstufige Neuzuweisung wird nicht unterstützt, beispielsweise beständige ID zu vorübergehender ID und dann zu einer weiteren vorübergehenden ID.
 * Es werden nur Ereignis-Datensätze unterstützt. Andere Datensätze, wie beispielsweise Lookup-Datensätze, werden nicht unterstützt.
 * Benutzerdefinierte ID-Maps, die in Ihrem Unternehmen verwendet werden, werden nicht unterstützt.
-* Das Adobe Co-op-Diagramm und das Private-Diagramm werden nicht unterstützt.
+* Das geräteübergreifende private Diagramm wird nicht unterstützt.
 * Cross-Channel Analytics transformiert nicht das zum Verbinden verwendete Feld. Die feldbasierte Zuordnung verwendet den Wert im angegebenen Feld so, wie er im nicht zugewiesenen Datensatz innerhalb des Datensees vorhanden ist. Bei der Zuordnung wird zwischen Groß- und Kleinschreibung unterschieden. Wenn beispielsweise das Wort „Bob“ im Feld erscheint und manchmal das Wort „BOB“ angezeigt wird, werden diese als zwei separate Personen behandelt.
 * Bei der feldbasierten Zuordnung wird zwischen Groß- und Kleinschreibung unterschieden. Bei Analytics-Datensätzen, die über den Analytics Source Connector generiert werden, empfiehlt Adobe, alle VISTA-Regeln oder Verarbeitungsregeln zu überprüfen, die für das vorübergehende ID-Feld gelten, um sicherzustellen, dass keine dieser Regeln neue Formen derselben ID einführt. So sollten Sie beispielsweise sicherstellen, dass keine VISTA- oder Verarbeitungsregeln dafür sorgen, dass im Feld für die vorübergehende ID nur für einen Teil der Ereignisse Kleinschreibung verwendet wird.
 * Bei der feldbasierten Suche werden Felder nicht kombiniert oder verknüpft.

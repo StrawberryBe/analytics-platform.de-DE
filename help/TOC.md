@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 96%
 
 ---
 
@@ -230,6 +230,11 @@ ht-degree: 100%
    + [Einrichten von Führungskräften für die Verwendung von Dashboards](mobile-app/set-up-execs.md)
    + [Schnellstarthandbuch für ausführende Benutzer](mobile-app/executive.md)
 + Anwendungsfälle {#cja-usecases}
+   + Google Analytics-Daten {#ga}
+      + [Übersicht über die Migration von Daten von Google Analytics zu CJA](use-cases/ga/overview.md)
+      + [Erfassen von Google Analytics-Verlaufsdaten in Platform](use-cases/ga/backfill.md)
+      + [Streaming-Google Analytics-Daten in Platform konfigurieren](use-cases/ga/streaming.md)
+      + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](use-cases/ga/report.md)
    + [Anwendungsfälle für Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Kombinieren von Report Suites mit verschiedenen Schemata](use-cases/combine-report-suites.md)
    + [Verwenden von Objekt-Arrays](use-cases/object-arrays.md)
@@ -241,8 +246,6 @@ ht-degree: 100%
    + [Callcenter- und Web-Daten importieren](use-cases/call-center.md)
    + [Anwendungsfälle zur Datenaufnahme](use-cases/data-ingestion.md)
    + [Marketing-Kanal-Dimensionen verwenden](use-cases/marketing-channels.md)
-   + [Aufnehmen von Daten aus Google Analytics in Adobe Experience Platform](use-cases/ga-to-cja.md)
-   + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](use-cases/ga-to-cja-reporting.md)
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](labs/labs.md)
 + Fehlerbehebung {#troubleshooting}

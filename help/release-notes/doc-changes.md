@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 40256c151fbc5582a198cc17a63efad9189cb6c2
+source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 96%
+source-wordcount: '1024'
+ht-degree: 95%
 
 ---
 
@@ -19,6 +19,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
+| September 2022 | Neuer Anwendungsfall: [Migrieren von Google Analytics-Daten in CJA](/help/use-cases/ga/overview.md). |
 | September 2022 | Neues Thema zu [Combo-Diagramme](/help/analysis-workspace/visualizations/combo-charts.md) in Workspace. |
 | September 2022 | Neues Thema zu [Experimentationsbereich](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | August 2022 | Adobe Experience Platform-Artikel zu [Regionsübergreifende Unterstützung für Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). |
@@ -74,7 +75,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | April 2021 | Neues Thema zu [Persistenz](/help/data-views/component-settings/persistence.md). |
 | April 2021 | Neue Dokumentation zur Unterstützung geplanter Projekte in Arbeitsbereich. |
 | April 2021 | Neue Themen zum verbesserten Erlebnis mit [Datenansichten](/help/data-views/data-views.md). |
-| April 2021 | Neue Themen zum [Aufnehmen von Google Analytics-Daten](/help/use-cases/ga-to-cja.md) und [Analysieren dieser Daten](/help/use-cases/ga-to-cja-reporting.md). |
+| April 2021 | Neue Themen zum [Aufnehmen von Google Analytics-Daten](/help/use-cases/ga/overview.md) und [Analysieren dieser Daten](/help/use-cases/ga/report.md). |
 | April 2021 | Zusätzliches Thema zu [terminierten Berichten](/help/analysis-workspace/curate-share/t-schedule-report.md) in Arbeitsbereich. |
 | April 2021 | Neues Thema zu [Dimensionen mit hoher Kardinalität in CJA](/help/components/dimensions/high-cardinality.md). |
 | März 2021 | Zusätzliches Thema zur Unterstützung für [Analytics-Dashboards](/help/mobile-app/home.md) (Mobile App). |
