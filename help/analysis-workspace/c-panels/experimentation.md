@@ -3,9 +3,9 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bereich CJA-E
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 41cca39d73773af09981bde10c93c767ebdb77d4
+source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1379'
 ht-degree: 80%
 
 ---
@@ -83,10 +83,6 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 >[!NOTE]
 >
 >Die Analyse von A/A-Tests wird aktuell von diesem Bedienfeld nicht unterstützt.
-
->[!NOTE]
->
->Anstieg und Konfidenz sind ebenfalls [erweiterte Funktionen für die berechnete Metrik](/help/components/calc-metrics/cm-adv-functions.md) in Customer Journey Analytics. Sie können also Ihre eigenen Metriken zu Anstieg und Konfidenz erstellen.
 
 ## Schritt 5: Interpretieren der Ergebnisse
 
