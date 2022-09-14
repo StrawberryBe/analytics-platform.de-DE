@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
 workflow-type: tm+mt
 source-wordcount: '979'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Zuvor wurden Ganzzahlen in Customer Journey Analytics automatisch als Metriken b
 
 ## 3. Verwenden Sie numerische Dimensionen als „Metriken“ in Flussdiagrammen {#numeric}
 
-Sie können eine numerische Dimension verwenden, um &quot;Metriken&quot;in Ihre [!UICONTROL  Fluss] Visualisierung.
+Eine numerische Dimension kann verwendet werden, um „Metriken“ in Ihre [!UICONTROL Flussvisualisierung] zu übertragen.
 
 1. Ziehen Sie auf der Registerkarte [Komponenten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de#configure-component-settings) der Datenansichten das Schemafeld [!UICONTROL Marketing-Kanäle] in den Bereich [!UICONTROL Metriken] unter [!UICONTROL Eingeschlossene Komponenten].
 2. In Arbeitsbereich-Berichten zeigt dieser Fluss [!UICONTROL Marketing-Kanäle], die in [!UICONTROL Bestellungen] fließen:
@@ -87,19 +87,19 @@ Vergessen Sie nicht, jeder Metrik einen neuen Namen zu geben, um die Unterschied
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
 
-## 7. Neue Sitzungsberichte {#new-repeat}
+## 7. Berichte über neue Sitzungen {#new-repeat}
 
 Sie können anhand des Berichtszeitraums, den Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung für einen Benutzer ist oder nicht. Diese Berichterstellung ermöglicht Ihnen beispielsweise, Folgendes zu bestimmen:
 
 * Welcher Prozentsatz Ihrer Bestellungen stammt aus neuen Sitzungen?
 
-* Targeting Sie für einen bestimmten Marketingkanal oder eine bestimmte Kampagne erstmalige Benutzer? Wie beeinflusst diese Auswahl die Konversionsraten?
+* Richten Sie sich bei einem bestimmten Marketing-Kanal oder einer bestimmten Kampagne an Erstnutzende? Wie beeinflusst diese Auswahl die Konversionsraten?
 
 Eine Metrik erleichtert diese Berichterstellung:
 
 <!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
 
-* [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional). Eine neue Sitzung wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert.
+* [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional). Eine neue Sitzung wird als die erste Sitzung einer Person innerhalb des Berichtsfensters definiert.
 
    <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
 
@@ -113,7 +113,7 @@ In 95-99 % der Fälle werden neue Sitzungen korrekt gemeldet. Die einzigen Ausna
 
 * Wenn eine erste Sitzung vor dem 13-monatigen Lookback-Fenster stattgefunden hat. Diese Sitzung wird ignoriert.
 
-* Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, Sie führen einen Bericht vom 1. Juni bis zum 15. Juni 2022 durch. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 endet, werden alle Sitzungen im Berichtszeitraum als wiederkehrende Sitzungen gezählt, da die Sitzung im Rückschaufenster enthalten ist.
+* Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, ein Bericht wird vom 1. Juni bis zum 15. Juni 2022 erstellt. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 endet, werden alle Sitzungen im Berichtszeitraum als wiederkehrende Sitzungen gezählt, da die Sitzung im Rückschaufenster enthalten ist.
 
 <!--## Use the Date and Date-Time functionality {#date}
 
