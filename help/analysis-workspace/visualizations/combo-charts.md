@@ -4,30 +4,24 @@ title: Visualisierung von Combo-Diagrammen
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 34%
+source-wordcount: '768'
+ht-degree: 33%
 
 ---
 
 # Kombinationsdiagramm
 
->[!NOTE]
->
->Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
-
 Die [!UICONTROL Combo-Diagramm] Visualisierung erleichtert das schnelle Erstellen einer Vergleichsvisualisierung, ohne dass zunächst eine Tabelle erstellt werden muss. Sie können Trends in Ihren Daten einfach in einer Zeilen-/Balkenkombination anzeigen.
 
-Verwenden Sie eine [!UICONTROL Combo-Diagramm] nach
+Verwenden Sie eine [!UICONTROL Combo-Diagramm] an:
 
 * Vergleichen Sie die Bestellungen dieser Woche zur gleichen Zeit im letzten Monat (und im letzten Jahr) - alle mit wenigen Klicks.
-
 * Schnelles Analysieren und Vergleichen mehrerer Metriken (z. B. [!UICONTROL Unique Visitors] und [!UICONTROL Umsatz]) im selben Diagramm miteinander verglichen.
-
 * Eine Metrik mit einer Funktion analysieren (z. B. [!UICONTROL Kumulativer Durchschnitt]).
 
-Bedenken Sie, dass Sie
+Beachten Sie Folgendes:
 
 * Mehrere Vergleiche in einem einzigen [!UICONTROL Combo-Diagramm].
 * Wenn Sie einen oder mehrere Vergleiche hinzufügen, müssen diese vom gleichen Typ sein, z. B. [!UICONTROL Zeitvergleich].
@@ -38,7 +32,7 @@ Bedenken Sie, dass Sie
 
 1. Ziehen Sie aus der Dropdownliste Visualisierungen in der linken Leiste die [!UICONTROL Combo-Diagramm] Visualisierung in ein leeres Bedienfeld.
 
-   ![](assets/combo-chart-build.png)
+   ![Build](assets/combo-chart-build.png)
 
 1. Wählen Sie aus den Dropdownlisten eine Dimension für die X-Achse und eine Metrik für die Y-Achse aus.
 
@@ -46,9 +40,9 @@ Bedenken Sie, dass Sie
 
    | Kantenvergleichstyp | Definition |
    | --- | --- |
-   | **[!UICONTROL Zeitvergleich]** | Der häufigste Vergleichstyp - z. B. Vergleich dieses Zeitraums mit dem vor 4 Wochen. Wenn Sie [!UICONTROL Zeitvergleich], wählen Sie eine sekundäre Auswahl, um welchen Zeitraum Sie vergleichen möchten.<p>![](assets/combo-time-period.png) |
-   | **[!UICONTROL Funktion]** | Sie können eine Funktion wie [!UICONTROL Durchschnittlich] in den Vergleich ein. Eine Liste der unterstützten Funktionen finden Sie unten.<p>![](assets/combo-functions.png) |
-   | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise [!UICONTROL Umsatz] zu einer anderen Metrik hinzu.<p>![](assets/combo-2metrics.png) |
+   | **[!UICONTROL Zeitvergleich]** | Der häufigste Vergleichstyp - z. B. Vergleich dieses Zeitraums mit dem vor 4 Wochen. Wenn Sie [!UICONTROL Zeitvergleich], wählen Sie eine sekundäre Auswahl, um welchen Zeitraum Sie vergleichen möchten.<p>![Zeitraum](assets/combo-time-period.png) |
+   | **[!UICONTROL Funktion]** | Sie können eine Funktion wie [!UICONTROL Durchschnittlich] in den Vergleich ein. Eine Liste der unterstützten Funktionen finden Sie unten.<p>![Funktionen](assets/combo-functions.png) |
+   | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise [!UICONTROL Umsatz] zu einer anderen Metrik hinzu.<p>![Zwei Metriken](assets/combo-2metrics.png) |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -56,7 +50,7 @@ Bedenken Sie, dass Sie
 
    Die Ausgabe sieht in etwa so aus:
 
-   ![](assets/combo-output.png)
+   ![Ausgabe](assets/combo-output.png)
 
    Der aktuelle Zeitraum wird im Balkendiagramm angezeigt und der Vergleichszeitraum wird durch das Liniendiagramm dargestellt. Die Punkte im Liniendiagramm werden als &quot;Balkenglocken&quot;bezeichnet.
 
@@ -78,17 +72,17 @@ Wenn Sie **[!UICONTROL Funktion]** als [!UICONTROL Kantenvergleichstyp], wird ei
 
 Im Folgenden finden Sie ein Beispiel für den kumulativen Durchschnitt der Umsatzmetrik:
 
-![](assets/combo-cumul-avg.png)
+![Kumulativer Durchschnitt](assets/combo-cumul-avg.png)
 
 Im Folgenden finden Sie ein Beispiel für ein Kombinationsdiagramm mit den Funktionen &quot;Kumulativer Durchschnitt&quot;und &quot;Mittel&quot;:
 
-![](assets/combo-two-functions.png)
+![Zwei Funktionen](assets/combo-two-functions.png)
 
 ## Komprimierte Diagrammeinstellungen
 
 Klicken Sie auf das Zahnradsymbol oben rechts in einem Kombinationsdiagramm, um dessen Einstellungen zu ändern.
 
-![](assets/combo-settings.png)
+![Einstellungen](assets/combo-settings.png)
 
 | Einstellung | Definition |
 | --- | --- |
