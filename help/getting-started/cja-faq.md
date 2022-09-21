@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
-workflow-type: ht
-source-wordcount: '2377'
-ht-degree: 100%
+source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 100%
 
 | Frage | Antwort |
 | --- | --- |
-| Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen? | Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine Lösung zum Zusammenfügen (Stitching) von Daten namens [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) (CCA). Damit können Sie die Personen-ID eines Datensatzes neu eingeben, was eine nahtlose Kombination mehrerer Datensätze ermöglicht. |
-| Wird das Zusammenfügen von anonymen Verhaltens- mit authentifizierten Verhaltensdaten unterstützt? | Ja. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen und generiert eine zusammengefügte ID. |
-| Wie funktioniert „Replay“ in CCA? | CCA gibt Daten basierend auf eindeutigen Kennungen wieder, die CCA gelernt hat. Bei einem Replay werden zu einer Verbindung neu hinzugefügte Geräte per Stitching zusammengefügt. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=de#step-1%3A-live-stitching) |
+| Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen? | Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine Lösung zum Zusammenfügen (Stitching) von Daten namens [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) (CCA). Sie können damit die Personen-ID eines Datensatzes erneut verschlüsseln, was eine nahtlose Kombination mehrerer Datensätze ermöglicht. |
+| Wird das Zusammenfügen von anonymen Verhaltens- mit authentifizierten Verhaltensdaten unterstützt? | Ja. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen und generiert eine zusammengefügte ID. |
+| Wie funktioniert „Replay“ in CCA? | Die kanalübergreifende Analyse wiederholt Daten basierend auf eindeutigen Kennungen, die sie gelernt hat. Bei einem Replay werden zu einer Verbindung neu hinzugefügte Geräte per Stitching zusammengefügt. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=de#step-1%3A-live-stitching) |
 | Wie funktioniert das Zusammenfügen historischer Daten (Aufstockung) in CCA? | Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de#enable-cross-channel-analytics) |
 | Welches Verhalten wird bei nicht zugeordneten Profildatensätzen erwartet? | **Beispielszenario**: Sie können zwei Datensätze in eine CJA-Verbindung einbinden, indem Sie `CRMid` als Personen-ID verwenden. Einer ist ein Web-Ereignis-Datensatz mit `CRMid` in allen Datensätzen. Der andere Datensatz ist ein CRM-Profildatensatz. 40 % des CRM-Datensatzes verfügen über `CRMid`, das im Web-Ereignis-Datensatz vorhanden ist. Für die anderen 60 % ist es nicht im CRM-Datensatz vorhanden. Werden diese Datensätze im Reporting in Analysis Workspace angezeigt?<p> **Antwort**: Profilzeilen, für die keine Ereignisse verknüpft sind, werden in Customer Journey Analytics gespeichert. Sie können sie jedoch erst dann in Analysis Workspace sehen, wenn ein mit dieser ID verknüpftes Ereignis angezeigt wird. |
 
@@ -62,10 +62,7 @@ ht-degree: 100%
 
 ## 5. Festlegen eines rollierenden Fensters für die [!UICONTROL Verbindungs]-Datenspeicherung {#data-retention}
 
->[!IMPORTANT]
->Wenden Sie sich an die Kundenunterstützung oder Ihren Adobe Account Manager, um diese Einstellung implementieren zu lassen. Sie ist noch nicht über die UI von CJA verfügbar.
-
-Mit dieser Einstellung können Sie die CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (3 Monate, 6 Monate usw.) definieren, und zwar auf [!UICONTROL Verbindungs]-Ebene (nicht auf [!UICONTROL Datensatz]-Ebene). Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
+Die [**[!UICONTROL Rollierendes Datenfenster aktivieren ]**Einstellung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#create-connection) ermöglicht die Definition der Aufbewahrung von CJA-Daten als rollierendes Fenster in Monaten (3 Monate, 6 Monate usw.). Sie wird auf eine [!UICONTROL connection] Ebene, nicht auf [!UICONTROL Datensatz] Ebene. Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine Datenspeicherungseinstellung, da keine entsprechenden Zeitstempel vorhanden sind.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 
@@ -86,7 +83,7 @@ In Bezug auf das Löschen von Daten sollten folgende sechs Komponenten beachtet 
 
 ## 7. Überlegungen beim Zusammenführen von Report Suites in Customer Journey Analytics {#merge-reportsuite}
 
-Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) zu erfassen, sollten Sie diese Auswirkungen beim Zusammenführen von 2 oder mehr Adobe Analytics-Report Suites berücksichtigen.
+Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) zu erfassen, sollten Sie diese Auswirkungen beim Zusammenführen von 2 oder mehr Adobe Analytics-Report Suites berücksichtigen.
 
 | Problem | Hinweis |
 | --- | --- |
@@ -133,12 +130,12 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Datenzeile
 
    * Ändern Sie Ihre [Datenspeicherungseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention).
    * [Löschen Sie alle nicht verwendeten Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
-   * [Löschen Sie einen Datensatz in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
+   * [Löschen Sie einen Datensatz in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
    * Wenden Sie sich an Ihren Kundenbetreuer von Adobe, um eine Lizenz für eine zusätzliche Kapazität zu erwerben.
 
 ## 10. Über die Limits bei der Verwendung {#overage}
 
-Nutzungsbeschränkungen werden von Adobe regelmäßig überwacht und durchgesetzt. „Datenzeilen“ sind die täglichen durchschnittlichen Datenzeilen, die innerhalb von Customer Journey Analytics für die Analyse verfügbar sind.
+Nutzungsbeschränkungen werden von Adobe regelmäßig überwacht und durchgesetzt. &quot;Datenzeilen&quot;sind die täglichen durchschnittlichen Datenzeilen, die innerhalb eines Customer Journey Analytics für die Analyse verfügbar sind.
 
 Nehmen wir beispielsweise an, Ihr Vertrag berechtigt Sie zu einer Million Datenzeilen. Angenommen, Sie laden am 1. Tag der Verwendung von Customer Journey Analytics zwei Millionen Datenzeilen hoch. Am Tag 2 löschen Sie 1 Million Zeilen und behalten diese Nutzung für den Rest Ihrer Lizenzvereinbarung bei (d. h. maximal eine Million Datenzeilen). Abhängig von Ihren Vertragsbedingungen können Ihnen für Tag 1 anteilige zusätzliche Nutzungsgebühren entstehen, da Sie die Lizenzberechtigung für „Datenzeilen“ überschritten haben.
 
@@ -152,4 +149,4 @@ In einigen Fällen kann es vorkommen, dass die Gesamtanzahl der von Ihrer Verbin
 
 1. Wenn wir uns dies in [!UICONTROL Adobe Experience Platform] anschauen, gibt es keinen Datensatz mit der ID „5f21c12b732044194bffc1d0“. Jemand hat also diesen Datensatz bei der Erstellung der ersten Verbindung aus [!UICONTROL Adobe Experience Platform] gelöscht. Später wurde er erneut zu Customer Journey Analytics hinzugefügt, es wurde jedoch eine andere [!UICONTROL Platform-Datensatz-ID] von [!UICONTROL Adobe Experience Platform] generiert.
 
-Weitere Informationen über die [Implikationen beim Löschen von Datensätzen und Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components) erhalten Sie in [!UICONTROL Customer Journey Analytics] und [!UICONTROL Adobe Experience Platform].
+Weitere Informationen über die [Implikationen beim Löschen von Datensätzen und Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) erhalten Sie in [!UICONTROL Customer Journey Analytics] und [!UICONTROL Adobe Experience Platform].
