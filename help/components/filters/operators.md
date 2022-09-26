@@ -3,9 +3,9 @@ title: Filteroperatoren
 description: Bestimmen Sie, wie eine Komponente mit einem Wert in einem Filter interagiert.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 source-git-commit: a8b884148a197b081e321582f70a9188a1bdc51e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Mit dem Filter-Builder können Sie Werte mithilfe ausgewählter Operatoren vergl
 | --- | --- |
 | gleich | Gibt Elemente mit einer exakten Entsprechung für numerische oder Zeichenfolgenwerte wieder. Benutzen Sie bei Verwendung von Platzhalterzeichen den Operator „stimmt überein mit“. |
 | ist nicht gleich | Gibt alle Elemente zurück, die keine exakte Übereinstimmung mit dem eingegebenen Wert enthalten.  Benutzen Sie bei Verwendung von Platzhalterzeichen den Operator „stimmt nicht überein mit“. |
-| entspricht einem der folgenden Werte | Gibt alle Elemente zurück, die die Übereinstimmung mit den eingegebenen Teilzeichenfolgenwerten enthalten, getrennt durch ein Komma. |
+| entspricht einem der folgenden Werte | Gibt alle Elemente getrennt durch ein Komma zurück, die mit den eingegebenen Werten der Unterzeichenfolgen übereinstimmen. |
 | enthält | Gibt Elemente zurück, die mit den Unterzeichenfolgen der eingegebenen Werte vergleichbar sind. Wenn die Regel für eine Zeichenfolgendimension beispielsweise `"Search"` enthält, stimmt sie mit allen Seiten überein, die die Unterzeichenfolge `"Search"` enthalten, einschließlich `"Search Results"`, `"Search"` und `"Searching"`. Bei diesem Operator wird zwischen Groß- und Kleinschreibung unterschieden. |
 | „Enthält nicht“ | Alle Elemente, die dem eingegebenen Wert entsprechen, werden aus den Ergebnissen ausgeschlossen. Wenn beispielsweise die Regel für eine Zeichenfolgendimension `"Search"` nicht enthält, werden alle Seiten ausgeschlossen, die die Unterzeichenfolge `"Search"` enthalten, einschließlich `"Search Results"`, `"Search"` und `"Searching"`. |
 | enthält alle von | Gibt Elemente zurück, die alle Unterzeichenfolgen (durch ein Leerzeichen getrennt) in beliebiger Reihenfolge enthalten. Wenn Sie beispielsweise `"Search Results"` mit diesem Operator eingeben, stimmen `"Search Results"` und `"Results of Search"` überein, jedoch nicht `"Search"` oder `"Results"` unabhängig voneinander. Dieser Operator unterstützt bis zu 100 durch Leerzeichen getrennte Wörter. |
