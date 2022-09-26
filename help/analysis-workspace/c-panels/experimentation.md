@@ -1,12 +1,12 @@
 ---
-description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bereich CJA-Experimentierung analysieren können.
+description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier-Bedienfeld von CJA analysieren können.
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1379'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Das Bedienfeld „Experimentieren“ kann von allen Anwendern von Customer Journ
 
 ## Schritt 1: Einrichten der Verbindung zu Experimentier-Datensätzen
 
-Das empfohlene Datenschema besteht darin, dass sich die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) , das die Experiment- und Variantendaten in zwei separaten Dimensionen enthält. Wenn sich Ihre Experimentdaten in einer einzigen Dimension mit Experiment- und Variantendaten in einer getrennten Zeichenfolge befinden, können Sie die [substring](/help/data-views/component-settings/substring.md) -Einstellung in Datenansichten, um sie zur Verwendung im Bereich in zwei aufzuteilen.
+Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=de) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Wenn sich Ihre Experimentdaten in einer einzigen Dimension und die Experiment- und Variantendaten in einer begrenzten Zeichenfolge befinden, können Sie die Einstellung der [Teilzeichenfolge](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um sie zur Verwendung im Bedienfeld aufzuteilen.
 
 Wenn Ihre Experimentierdaten in Adobe Experience Platform [erfasst](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) sind, können Sie zu einem oder mehreren Testdatensätzen [in CJA eine Verbindung einrichten](/help/connections/create-connection.md).
 
@@ -43,7 +43,7 @@ Wählen Sie in Ihrer Datenansicht, die Experimentierdaten enthält, zwei Dimensi
 
 ![Kontextbeschriftung](assets/context-label.png)
 
-Ohne diese Beschriftungen funktioniert das Experiment-Bedienfeld nicht, da keine Experimente zum Arbeiten vorhanden sind.
+Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da keine Experimente vorhanden sind, mit denen gearbeitet werden kann.
 
 ## Schritt 3: Konfigurieren des Bedienfelds „Experiment“
 
@@ -52,7 +52,7 @@ Ohne diese Beschriftungen funktioniert das Experiment-Bedienfeld nicht, da keine
 ![Bedienfeld „Experimentieren“](assets/experiment.png)
 
 >[!IMPORTANT]
->Wenn die erforderliche Einrichtung in CJA-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: &quot;[!UICONTROL Konfigurieren Sie die Experiment- und Variantendimensionen in Datenansichten.]&quot;.
+>Wenn die erforderliche Einrichtung in CJA-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: „[!UICONTROL Konfigurieren Sie die Experiment- und Variantendimensionen in Datenansichten.]“.
 
 1. Konfigurieren Sie die Einstellungen für die Bedienfeldeingabe.
 
@@ -78,7 +78,7 @@ Für jede ausgewählte Erfolgsmetrik wird eine Freiformtabelle und ein Konversio
 
 Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kontrolle] im Vergleich zur [!UICONTROL Kontrollvariante]:
 
-![Kantengraph-Ausgabe](assets/exp-output2.png)
+![Liniendiagramm-Ausgabe](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 
 ## Schritt 5: Interpretieren der Ergebnisse
 
-1. **Experiment ist abgeschlossen**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, analysiert Adobe die Daten, die bis zu diesem Zeitpunkt im Experiment gesammelt wurden, und deklariert einen Versuch als &quot;Fazit&quot;, wenn das jederzeit gültige Konfidenzniveau einen Schwellenwert von 95 % für *mindestens* der Varianten (mit einer Bonferonni-Korrektur, wenn mehr als zwei Arme vorhanden sind, zur Korrektur für mehrere Hypothesentests).
+1. **Experiment ist schlüssig**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, analysiert Adobe die Daten, die bis zu diesem Zeitpunkt im Experiment gesammelt wurden, und erklärt ein Experiment als „schlüssig“, wenn die immer gültige Konfidenz einen Schwellenwert von 95 % für *mindestens eine* der Varianten überschreitet (mit Bonferonni-Korrektur, die bei mehr als zwei Varianten angewendet wird, um Mehrfach-Hypothesentests zu korrigieren).
 
 2. **Variante mit der besten Performance**: Wenn ein Experiment als endgültig deklariert wird, wird die Variante mit der höchsten Konversionsrate als „Variante mit der besten Performance“ gekennzeichnet. Beachten Sie, dass diese Variante entweder die Kontroll- bzw. Baseline-Variante sein muss oder eine der Varianten, die die 95-%-ige, immer gültige Konfidenzschwelle überschreiten (mit Bonferonni-Korrekturen).
 
@@ -98,7 +98,7 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 
 >[!NOTE]
 >
->Bei einer vollständigen Beschreibung der Ergebnisse sollten alle verfügbaren Beweise (d. h. Versuchsaufbau, Stichprobengrößen, Konversionsraten, Konfidenz usw.) berücksichtigt werden, und nicht nur die endgültige Erklärung. Selbst wenn ein Ergebnis noch nicht &quot;schlüssig&quot;ist, können überzeugende Beweise dafür vorliegen, dass sich eine Variante von einer anderen unterscheidet (Konfidenzintervalle sind beispielsweise nahezu nicht überlappend). Idealerweise sollte die Entscheidungsfindung unter Berücksichtigung aller statistischen Daten, die auf einem kontinuierlichen Spektrum interpretiert werden, erfolgen.
+>Beachten Sie jedoch, dass bei einer vollständigen Beschreibung der Ergebnisse alle verfügbaren Nachweise berücksichtigt werden sollten (d. h. Experimentaufbau, Stichprobengrößen, Konversionsraten, Konfidenz usw.) und nicht nur, ob das Experiment als schlüssig erachtet wird oder nicht. Selbst wenn ein Ergebnis noch nicht „schlüssig“ ist, können überzeugende Beweise dafür vorliegen, dass sich eine Variante von einer anderen unterscheidet (z. B. wenn sich Konfidenzintervalle kaum überlappen). Idealerweise sollte die Entscheidungsfindung unter Berücksichtigung aller statistischen Daten, die auf einem kontinuierlichen Spektrum interpretiert werden, erfolgen.
 
 ## Statistische Methodik von Adobe
 
