@@ -1,10 +1,10 @@
 ---
 title: Integrieren von Adobe Journey Optimizer mit Customer Journey Analytics
 description: Einbinden von AJO generierter Daten und Analysieren mit Analysis Workspace in CJA.
-source-git-commit: 28bc99a7f5ec7b280fd26a7a45dc076e67f652dc
+source-git-commit: b24ad572ca36bbafffcd242fe257a2113977392d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 3%
+source-wordcount: '664'
+ht-degree: 4%
 
 ---
 
@@ -41,6 +41,8 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Nachrichten wurden erfolgreich gesendet | Die Anzahl der erfolgreich gesendeten Nachrichten | Schema String-Element verwenden `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `sent` |
 | Synchronisierungsfehler | Die Gesamtzahl der Nachrichten, die nicht synchronisiert werden konnten | Schema String-Element verwenden `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `sync` |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Berechnete Metriken mit Journey Optimizer-Metriken konfigurieren
 
 Nachdem Sie die gewünschten Dimensionen und Metriken für den Journey Optimizer-Datensatz konfiguriert haben, können Sie auch [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) für weitere Einblicke in diese Daten. Diese berechneten Metriken basieren auf den oben genannten Metriken, die im Data View Manager erstellt wurden.
@@ -48,6 +50,8 @@ Nachdem Sie die gewünschten Dimensionen und Metriken für den Journey Optimizer
 | Berechnete Kennzahl | Beschreibung | Formel |
 | --- | --- | --- |
 | Gesamtzahl der gesendeten Nachrichten | Gesamtzahl der gesendeten, erfolgreichen oder fehlgeschlagenen Nachrichten | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Unterschiede bei der Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics
 
