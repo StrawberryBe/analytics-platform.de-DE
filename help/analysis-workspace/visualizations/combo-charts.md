@@ -4,10 +4,10 @@ title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
+source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 99%
+source-wordcount: '776'
+ht-degree: 96%
 
 ---
 
@@ -21,12 +21,13 @@ Sie können ein [!UICONTROL Kombinationsdiagramm] für Folgendes verwenden::
 * Schnelles Analysieren und Vergleichen mehrerer Metriken (z. B. [!UICONTROL Unique Visitors] und [!UICONTROL Umsatz]) im selben Diagramm.
 * Analysieren einer Metrik anhand einer Funktion (z. B. [!UICONTROL Kumulativer Durchschnitt]) in einem bestimmten Zeitrahmen.
 
-Beachten Sie Folgendes::
+Beachten Sie:
 
-* Sie können zu einem einzigen [!UICONTROL Kombinationsdiagramm] mehrere Vergleiche hinzufügen.
+* Sie können mehrere Vergleiche in einem [!UICONTROL Combo-Diagramm].
 * Wenn Sie einen oder mehrere Vergleiche hinzufügen, müssen diese vom gleichen Typ sein, z. B. [!UICONTROL ein Zeitvergleich].
 * Sie können bis zu 5 Vergleiche hinzufügen.
 * Sie können bis zu 3 Filter (Segmente) auf eine Metrik anwenden.
+* Berechnete Metriken werden in Combo-Diagrammen nicht unterstützt.
 
 ## Erstellen eines Kombinationsdiagramms
 
