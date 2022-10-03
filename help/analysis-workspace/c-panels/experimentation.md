@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
-workflow-type: ht
-source-wordcount: '1379'
-ht-degree: 100%
+source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+workflow-type: tm+mt
+source-wordcount: '1400'
+ht-degree: 98%
 
 ---
 
@@ -104,4 +104,10 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 
 Um leicht verständliche und sichere statistische Rückschlüsse zu ermöglichen, hat Adobe eine statistische Methodik eingeführt, die auf [Immer gültige Konfidenzsequenzen](https://doi.org/10.48550/arXiv.2103.06476) basiert.
 
-Eine Konfidenzsequenz ist ein „sequenzielles“ Analogon eines Konfidenzintervalls. Um zu verstehen, was eine Konfidenzsequenz ist, stellen Sie sich vor, Ihre Experimente hundertmal zu wiederholen und für *jeden neue Anwender*, der zum Experiment hinzukommt, eine Schätzung der durchschnittlichen Geschäftsmetrik (z. B. Öffnungsrate einer E-Mail) und der zugehörigen 95-%-Konfidenzsequenz durchzuführen. Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausgeführt haben, den Wert „true“ der Geschäftsmetrik. (Ein Konfidenzintervall von 95 % kann nur einmal pro Experiment und nicht für jeden einzelnen neuen Anwender berechnet werden, um die gleiche 95-%-Garantie zu erhalten.) Konfidenzsequenzen ermöglichen es Ihnen daher, Experimente kontinuierlich zu überwachen, ohne die Falsch-Positiv-Fehlerrate zu erhöhen, d. h. sie ermöglichen einen Einblick in die Ergebnisse.
+Eine Konfidenzsequenz ist ein „sequenzielles“ Analogon eines Konfidenzintervalls. Um zu verstehen, was eine Konfidenzsequenz ist, stellen Sie sich vor, Ihre Experimente hundertmal zu wiederholen und für *jeden neue Anwender*, der zum Experiment hinzukommt, eine Schätzung der durchschnittlichen Geschäftsmetrik (z. B. Öffnungsrate einer E-Mail) und der zugehörigen 95-%-Konfidenzsequenz durchzuführen.
+
+Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausgeführt haben, den Wert „true“ der Geschäftsmetrik. (Ein Konfidenzintervall von 95 % kann nur einmal pro Experiment und nicht für jeden einzelnen neuen Anwender berechnet werden, um die gleiche 95-%-Garantie zu erhalten.) Konfidenzsequenzen ermöglichen es Ihnen daher, Experimente kontinuierlich zu überwachen, ohne die Falsch-Positiv-Fehlerrate zu erhöhen, d. h. sie ermöglichen einen Einblick in die Ergebnisse.
+
+## Neue Funktionen in berechneten Metriken
+
+Zwei neue erweiterte Funktionen wurden hinzugefügt: [!UICONTROL Steigerung] und [!UICONTROL Konfidenz]. Weitere Informationen finden Sie unter [Referenz - Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md).

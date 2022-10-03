@@ -3,10 +3,10 @@ title: Referenz – Erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '2909'
-ht-degree: 100%
+source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+workflow-type: tm+mt
+source-wordcount: '3111'
+ht-degree: 96%
 
 ---
 
@@ -99,7 +99,7 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkustangens (Zeile)
 
@@ -111,7 +111,7 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Exponentielle Regression: Vorhersage für Y (Zeile)
 
@@ -160,7 +160,24 @@ CEILING(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, die gerundet werden soll. |
+| *Metrik* | Die Metrik, die gerundet werden soll. |
+
+## Konfidenz
+
+[!UICONTROL Konfidenz] ist ein probabilistischer Messwert dafür, wie viele Beweise dafür vorliegen, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Eine höhere Konfidenz deutet auf weniger Nachweise hin, die die Annahme stützen, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
+
+```
+fx Confidence (normalizing-container, success-metric, control, significance-threshold)
+```
+
+| Argument | Beschreibung |
+| --- | --- |
+| Normalisieren des Containers | Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
+| Erfolgsmetrik | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. |
+| Kontrolle | Die Variante, mit der alle anderen Varianten des Experiments verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
+| Signifikanzschwellenwert | Der Schwellenwert in dieser Funktion ist auf den Standardwert von 95 % eingestellt. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Kosinus (Zeile)
 
@@ -172,7 +189,7 @@ COS(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
 
 ## Kubikwurzel
 
@@ -184,7 +201,7 @@ CBRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
+| *Metrik* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
 
 ## Kumulativ
 
@@ -267,7 +284,7 @@ FLOOR(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die Metrik, die gerundet werden soll. |
+| *Metrik* | Die Metrik, die gerundet werden soll. |
 
 ## Größer als
 
@@ -287,7 +304,7 @@ COSH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
 
 ## Hyperbelsinus (Zeile)
 
@@ -299,7 +316,7 @@ SINH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
 
 ## Hyperbeltangens (Zeile)
 
@@ -311,7 +328,7 @@ TANH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
 
 ## IF (Zeile)
 
@@ -334,6 +351,22 @@ Gibt Elemente zurück, deren numerische Anzahl kleiner als der eingegebene Wert 
 ## Kleiner gleich
 
 Gibt Elemente zurück, deren numerische Anzahl kleiner als der eingegebene Wert ist oder damit übereinstimmt.
+
+## Steigerung
+
+Gibt die Steigerung zurück, die eine bestimmte Variante bei Konversionen über eine Kontrollvariante hatte. Dies ist der Leistungsunterschied zwischen einer bestimmten Variante und der Grundlinie, geteilt durch die Leistung der Grundlinie, in Prozent ausgedrückt.
+
+```
+fx Lift (normalizing-container, success-metric, control)
+```
+
+| Argument | Beschreibung |
+| --- | --- |
+| Normalisieren des Containers | Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
+| Erfolgsmetrik | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. |
+| Kontrolle | Die Variante, mit der alle anderen Varianten des Experiments verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Lineare Regression: Korrelationskoeffizient
 
@@ -361,7 +394,7 @@ LOG10(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
+| *Metrik* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
 
 ## Logistische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -427,7 +460,7 @@ LN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
+| *Metrik* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
 
 ## NOT
 
@@ -640,7 +673,7 @@ SIN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
 
 ## t-Transformation
 
@@ -682,7 +715,7 @@ TAN (metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *metric* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
+| *Metrik* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
 
 ## z-Transformation (Zeile)
 
@@ -709,7 +742,7 @@ z-Transformation (Metrik)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>metric</i> </td>
+   <td colname="col1"> <i>Metrik</i> </td>
    <td colname="col2"> <p> Gibt den Wert des ersten Arguments ungleich null zurück. </p> </td>
   </tr>
  </tbody>
