@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Dieses Handbuch bietet Hilfe zur Selbsthilfe für Customer Journey Analytics, die auf Adobe Experience Platform basierende Adobe-Lösung der nächsten Generation für Cross-Channel Analytics.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 19551e8c8f3b114b1851ed80c2b13ae29696f79d
+source-git-commit: d573ca8ddc6d9d31294a40f97417833217c81e5d
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '772'
 ht-degree: 98%
 
 ---
@@ -226,8 +226,8 @@ ht-degree: 98%
 + Analytics-Dashboards {#cja-dashboards}
    + [Analytics-Dashboards – Übersicht](mobile-app/home.md)
    + [Kuratoraufgaben](mobile-app/curator.md)
-   + [Scorecard erstellen](mobile-app/create-scorecard.md)
-   + [Einrichten von Führungskräften für die Verwendung von Dashboards](mobile-app/set-up-execs.md)
+   + [Mobile-Scorecard erstellen](mobile-app/create-scorecard.md)
+   + [Führungskräften die Nutzung von Dashboards ermöglichen](mobile-app/set-up-execs.md)
    + [Schnellstarthandbuch für ausführende Benutzer](mobile-app/executive.md)
 + Adobe-Integrationen {#integrations}
    + [Überblick über die Integration von Adobe-Lösungen in CJA](/help/integrations/overview.md)
