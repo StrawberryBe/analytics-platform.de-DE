@@ -1,13 +1,13 @@
 ---
-description: Erfahren Sie, wie AEP Customer AI in CJA mit Workspace integriert wird.
-title: Integrieren von Customer AI mit CJA
+description: Erfahren Sie, wie AEP Customer AI-Daten in Workspace in CJA integriert werden.
+title: Integrieren von Customer AI-Daten mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
+source-git-commit: 81e80058ea5004d77ba1d15b9cd90a16283daa7c
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 90%
+source-wordcount: '901'
+ht-degree: 88%
 
 ---
 
@@ -31,15 +31,13 @@ Customer AI kann in Customer Journey Analytics (CJA) integriert werden, sodass f
 * **Die Verteilung der Tendenz betrachten**. Anwendungsfall: Ich möchte die Verteilung der Tendenzwerte verstehen, um genauer mit meinen Segmenten umgehen zu können. &#x200B;Beispiel: Ein Einzelhändler möchte eine bestimmte Promotion mit einem Rabatt von 50 $ für ein Produkt durchführen. Da sein Budget begrenzt ist, möchte er nur eine sehr eingeschränkte Promotion durchführen. Der Einzelhändler analysiert die Daten und entscheidet, nur die lukrativsten 80 % seiner Kunden in die Promotion einzubeziehen.
 * **Die Konsumtendenz betrachten, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**. Anwendungsfall: Ich möchte eine bestimmte Kohorte im Laufe der Zeit verfolgen. Dieser Anwendungsfall ähnelt dem ersten, Sie können damit jedoch eine bestimmte Kohorte im Zeitverlauf beobachten. Beispiel für Gastgewerbe: Ein Marketer kann die Bronze-Stufe im Zeitverlauf im Vergleich zur Silber-Stufe oder die Silber-Stufe im Vergleich zur Gold-Stufe beobachten. Danach kann er die Tendenz jeder Kohorte im Zeitverlauf betrachten, im Hotel zu buchen. &#x200B;
 
-## Workflow
-
 Einige der Schritte werden in Adobe Experience Platform ausgeführt, bevor die Ausgabe in CJA verwendet wird.
 
-### Schritt 1: Konfigurieren einer Customer AI-Instanz
+## Schritt 1: Konfigurieren einer Customer AI-Instanz
 
 Nachdem Sie Ihre Daten vorbereitet und alle Ihre Anmeldedaten und Schemata eingerichtet haben, folgen Sie der Anleitung [Konfigurieren einer Customer AI-Instanz](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=de) in Adobe Experience Platform.
 
-### Schritt 2: Einrichten einer CJA-Verbindung mit Customer AI-Datensätzen
+## Schritt 2: Einrichten einer CJA-Verbindung mit Customer AI-Datensätzen
 
 In Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen](/help/connections/create-connection.md) mit Experience Platform-Datensätzen erstellen, die für Customer AI eingerichtet wurden. Jede Vorhersage, z. B. „Wahrscheinlichkeit für ein Konto-Upgrade“, entspricht einem Datensatz. Diese Datensätze werden mit dem Präfix „Customer AI Scores in EE Format – Name_der_Anwendung“ angezeigt.
 
@@ -57,13 +55,13 @@ Hier ist ein Beispiel für ein XDM-Schema, das als Teil eines vorhandenen oder n
 
 (Beachten Sie, dass das Beispiel ein Profildatensatz ist. Derselbe Satz von Schemaobjekten wäre Teil eines Erlebnisereignis-Datensatzes, der von CJA erfasst werden würde. Der Erlebnisereignis-Datensatz würde Zeitstempel als Score-Datum enthalten.) Jeder in diesem Modell bewertete Kunde hätte einen Score und ein mit ihm verknüpftes Score-Datum usw.
 
-### Schritt 3: Erstellen von Datenansichten basierend auf diesen Verbindungen
+## Schritt 3: Erstellen von Datenansichten basierend auf diesen Verbindungen
 
 In CJA können Sie jetzt mit den Dimensionen (z. B. Score, Score-Datum, Wahrscheinlichkeit usw.) und Metriken, die gemeinsam mit der von Ihnen eingerichteten Verbindung übermittelt wurden, [Datenansichten erstellen](/help/data-views/create-dataview.md).
 
 ![Datenansicht erstellen](assets/create-dataview.png)
 
-### Schritt 4: Erstellen von Berichten zu CAI-Scores in Workspace
+## Schritt 4: Erstellen von Berichten zu CAI-Scores in Workspace
 
 Erstellen Sie ein neues Projekt in CJA Workspace und rufen Sie Visualisierungen ab.
 
