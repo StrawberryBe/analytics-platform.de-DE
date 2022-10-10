@@ -4,14 +4,18 @@ title: Integrieren von Customer AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
-workflow-type: ht
-source-wordcount: '888'
-ht-degree: 100%
+source-git-commit: 317e45146d493f969176bc026590fa894b4d7fb1
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 90%
 
 ---
 
-# Integrieren von Customer AI mit CJA
+# Integrieren von Customer AI-Daten mit CJA
+
+>[!NOTE]
+>
+>Diese Funktion ist derzeit in [begrenzte Tests](/help/release-notes/releases.md) nicht allgemein verfügbar.
 
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=de) als Teil von Adobe Experience Platform Intelligent Services bietet Marketing-Experten die Möglichkeit, individuelle Kundenvorhersagen zu treffen.
 
@@ -21,11 +25,11 @@ Customer AI nutzt bei der Tendenzauswertung individuelle Verhaltensdaten und Pro
 
 Customer AI kann in Customer Journey Analytics (CJA) integriert werden, sodass für Customer AI aktivierte Datensätze in Datenansichten und Berichten in CJA genutzt werden können. Mit dieser Integration können Sie
 
-* **Tendenz-Scores für ein Segment von Benutzern im Zeitverlauf verfolgen**. Anwendungsbeispiel: Wie hoch ist die Wahrscheinlichkeit, dass ein Hotelkunde ein Ticket für den Konzertsaal des Hotels kauft?
+* **Tendenz-Scores für ein Segment von Benutzern im Zeitverlauf verfolgen**. Anwendungsbeispiel: Wie hoch ist die Wahrscheinlichkeit, dass ein Hotelkunde ein Showticket am Konzertplatz des Hotels kauft?
 * **Analysieren, welche Erfolgsereignisse oder Attribute mit Tendenz-Scores verknüpft sind**. &#x200B;Anwendungsbeispiel: Ich möchte die Attribute oder Erfolgsereignisse verstehen, die mit Tendenz-Scores verknüpft sind.
-* **Den Eintrittsfluss für die Kundentendenz über verschiedene Scoring-Durchgänge hinweg verfolgen.**. Anwendungsbeispiel: Ich möchte Personen verstehen, die anfangs wenig Tendenz hatten und im Laufe der Zeit zu Nutzern mit hoher Tendenz wurden. 
-* **Die Verteilung der Tendenz betrachten**. Anwendungsbeispiel: Ich möchte die Verteilung der Tendenz-Scores verstehen, damit ich meine Segmente präziser ansprechen kann.Beispiel: Ein Einzelhändler möchte eine bestimmte Promotion mit einem Rabatt von 50 $ für ein Produkt durchführen. Da sein Budget begrenzt ist, möchte er nur eine sehr eingeschränkte Promotion durchführen. Der Einzelhändler analysiert die Daten und entscheidet, nur die lukrativsten 80 % seiner Kunden in die Promotion einzubeziehen.
-* **Die Konsumtendenz betrachten, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**. Anwendungsfall: Ich möchte eine bestimmte Kohorte im Zeitverlauf verfolgen. Dieser Anwendungsfall ähnelt dem ersten, Sie können damit jedoch eine bestimmte Kohorte im Zeitverlauf beobachten. Beispiel für Gastgewerbe: Ein Marketer kann die Bronze-Stufe im Zeitverlauf im Vergleich zur Silber-Stufe oder die Silber-Stufe im Vergleich zur Gold-Stufe beobachten. Danach kann er die Tendenz jeder Kohorte im Zeitverlauf betrachten, im Hotel zu buchen. &#x200B;
+* **Den Eintrittsfluss für die Kundentendenz über verschiedene Scoring-Durchgänge hinweg verfolgen.**. Anwendungsbeispiel: Ich möchte Menschen verstehen, die anfangs wenig Neigung hatten und im Laufe der Zeit zu Nutzern mit hoher Neigung wurden. &#x200B;
+* **Die Verteilung der Tendenz betrachten**. Anwendungsfall: Ich möchte die Verteilung der Tendenzwerte verstehen, um genauer mit meinen Segmenten umgehen zu können. &#x200B;Beispiel: Ein Einzelhändler möchte eine bestimmte Promotion mit einem Rabatt von 50 $ für ein Produkt durchführen. Da sein Budget begrenzt ist, möchte er nur eine sehr eingeschränkte Promotion durchführen. Der Einzelhändler analysiert die Daten und entscheidet, nur die lukrativsten 80 % seiner Kunden in die Promotion einzubeziehen.
+* **Die Konsumtendenz betrachten, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**. Anwendungsfall: Ich möchte eine bestimmte Kohorte im Laufe der Zeit verfolgen. Dieser Anwendungsfall ähnelt dem ersten, Sie können damit jedoch eine bestimmte Kohorte im Zeitverlauf beobachten. Beispiel für Gastgewerbe: Ein Marketer kann die Bronze-Stufe im Zeitverlauf im Vergleich zur Silber-Stufe oder die Silber-Stufe im Vergleich zur Gold-Stufe beobachten. Danach kann er die Tendenz jeder Kohorte im Zeitverlauf betrachten, im Hotel zu buchen. &#x200B;
 
 ## Workflow
 
