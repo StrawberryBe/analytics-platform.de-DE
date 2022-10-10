@@ -4,7 +4,7 @@ title: Integrieren von Customer AI-Daten mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 81e80058ea5004d77ba1d15b9cd90a16283daa7c
+source-git-commit: 305bcd46df033f2f69a1161657d8d46793187225
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 88%
@@ -65,31 +65,31 @@ In CJA können Sie jetzt mit den Dimensionen (z. B. Score, Score-Datum, Wahrsche
 
 Erstellen Sie ein neues Projekt in CJA Workspace und rufen Sie Visualisierungen ab.
 
-**Verlauf der Tendenz-Scores**
+### Verlauf der Tendenz-Scores
 
 Im Folgenden finden Sie ein Beispiel für ein Workspace-Projekt mit CAI-Daten, in dem in einem gestapelten Balkendiagramm die Entwicklung von Tendenz-Scores für ein Benutzersegment im Zeitverlauf dargestellt wird:
 
 ![Score Buckets](assets/workspace-scores.png)
 
-**Tabelle mit Ursachen-Codes**
+### Tabelle mit Ursachen-Codes
 
 In der folgenden Tabelle finden Sie die Ursachen-Codes dafür, warum ein Segment eine hohe oder eine niedrige Tendenz hat:
 
 ![Ursachen-Codes](assets/reason-codes.png)
 
-**Eintrittsfluss für die Kundentendenz**
+### Eintrittsfluss für die Kundentendenz
 
 Dieses Flussdiagramm zeigt den Eintrittsfluss für die Kundentendenz in verschiedenen Scoring-Durchgängen:
 
 ![Eintrittsfluss](assets/flow.png)
 
-**Verteilung der Tendenz-Scores**
+### Verteilung der Tendenz-Scores
 
 Dieses Balkendiagramm zeigt die Verteilung der Tendenz-Scores:
 
 ![Verteilung](assets/distribution.png)
 
-**Tendenzüberschneidungen**
+### Tendenzüberschneidungen
 
 Dieses Venn-Diagramm zeigt die Tendenzüberschneidungen in verschiedenen Scoring-Durchgängen:
 
