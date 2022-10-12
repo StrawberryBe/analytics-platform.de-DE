@@ -5,9 +5,9 @@ feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Sie können ein [!UICONTROL Kombinationsdiagramm] für Folgendes verwenden::
 
 Beachten Sie:
 
-* Sie können mehrere Vergleiche in einem [!UICONTROL Combo-Diagramm].
+* Sie können einem einzigen [!UICONTROL Kombinationsdiagramm] mehrere Vergleiche hinzufügen.
 * Wenn Sie einen oder mehrere Vergleiche hinzufügen, müssen diese vom gleichen Typ sein, z. B. [!UICONTROL ein Zeitvergleich].
 * Sie können bis zu 5 Vergleiche hinzufügen.
 * Sie können bis zu 3 Filter (Segmente) auf eine Metrik anwenden.
-* Berechnete Metriken werden in Combo-Diagrammen nicht unterstützt.
+* Berechnete Metriken werden in Kombinationsdiagrammen nicht unterstützt.
 
 ## Erstellen eines Kombinationsdiagramms
 
@@ -75,7 +75,7 @@ Im Folgenden finden Sie ein Beispiel für den kumulativen Durchschnitt der Umsat
 
 ![Kumulativer Durchschnitt](assets/combo-cumul-avg.png)
 
-Im Folgenden finden Sie ein Beispiel für ein Kombinationsdiagramm mit den Funktionen „Kumulativer Durchschnitt“ und „Mittel“;:
+Im Folgenden finden Sie ein Beispiel für ein Kombinationsdiagramm mit den Funktionen „Kumulativer Durchschnitt“ und „Mittel“:
 
 ![Zwei Funktionen](assets/combo-two-functions.png)
 
