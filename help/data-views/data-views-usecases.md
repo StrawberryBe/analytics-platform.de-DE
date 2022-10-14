@@ -4,9 +4,9 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0113bd3157c147a3d39aead3fc686d114925f476
+source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1296'
 ht-degree: 91%
 
 ---
@@ -123,7 +123,7 @@ Schemas in Adobe Experience Platform enthalten die Felder [!UICONTROL Datum] und
 
 * Wenn Sie für das Datum-Zeit-Format **[!UICONTROL Tagesminute]** mit dem Format **[!UICONTROL Stunde:Minute]** wählen, könnte Ihre Ausgabe wie folgt aussehen: 20:20.
 
-### Beispielhafte Anwendungsfälle:
+### Anwendungsfälle für Datum und Uhrzeit
 
 * Datum: Ein Reiseunternehmen erfasst in seinen Daten das Abreisedatum für Reisen als Feld. Sie möchten einen Bericht, der den [!UICONTROL Wochentag] für alle gesammelten Abreisedaten vergleicht, um zu verstehen, welche am beliebtesten sind. Sie möchten dasselbe für [!UICONTROL Monat des Jahres] tun.
 
