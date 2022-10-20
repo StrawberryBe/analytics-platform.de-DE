@@ -4,9 +4,9 @@ description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-List
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3111'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ ASIN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Arkustangens (Zeile)
 
@@ -111,7 +111,7 @@ ATAN(metric)
 
 | Argument |  |
 |---|---|
-| *Metrik* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
+| *metric* | Der Kosinus des gewünschten Winkels von -1 bis 1. |
 
 ## Exponentielle Regression: Vorhersage für Y (Zeile)
 
@@ -160,11 +160,11 @@ CEILING(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Konfidenz
 
-[!UICONTROL Konfidenz] ist ein probabilistischer Messwert dafür, wie viele Beweise dafür vorliegen, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Eine höhere Konfidenz deutet auf weniger Nachweise hin, die die Annahme stützen, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
+[!UICONTROL Konfidenz] ist ein Maß dafür, wie hoch die Wahrscheinlichkeit ist, dass eine bestimmte Variante mit der Kontrollvariante identisch ist. Bei einer höheren Konfidenz deutet weniger darauf hin, dass die Annahme stimmt, dass die Kontroll- und Nicht-Kontrollvariante die gleiche Performance aufweisen.
 
 ```
 fx Confidence (normalizing-container, success-metric, control, significance-threshold)
@@ -172,10 +172,10 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 
 | Argument | Beschreibung |
 | --- | --- |
-| Normalisieren des Containers | Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
-| Erfolgsmetrik | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. |
-| Kontrolle | Die Variante, mit der alle anderen Varianten des Experiments verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
-| Signifikanzschwellenwert | Der Schwellenwert in dieser Funktion ist auf den Standardwert von 95 % eingestellt. |
+| Normalisierungs-Container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
+| Erfolgskennzahl | Die Kennzahl(en), die ein(e) Benutzende(r) verwendet, um Varianten zu vergleichen. |
+| Kontrollvariante | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
+| Signifikanzschwelle | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -189,7 +189,7 @@ COS(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Kosinus ermitteln möchten. |
 
 ## Kubikwurzel
 
@@ -201,7 +201,7 @@ CBRT(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
+| *metric* | Die Metrik, für die Sie die Kubikwurzel abrufen möchten. |
 
 ## Kumulativ
 
@@ -284,7 +284,7 @@ FLOOR(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die Metrik, die gerundet werden soll. |
+| *metric* | Die Metrik, die gerundet werden soll. |
 
 ## Größer als
 
@@ -304,7 +304,7 @@ COSH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelkosinus ermitteln möchten. |
 
 ## Hyperbelsinus (Zeile)
 
@@ -316,7 +316,7 @@ SINH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbelsinus ermitteln möchten. |
 
 ## Hyperbeltangens (Zeile)
 
@@ -328,7 +328,7 @@ TANH(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Hyperbeltangens ermitteln möchten. |
 
 ## IF (Zeile)
 
@@ -352,9 +352,9 @@ Gibt Elemente zurück, deren numerische Anzahl kleiner als der eingegebene Wert 
 
 Gibt Elemente zurück, deren numerische Anzahl kleiner als der eingegebene Wert ist oder damit übereinstimmt.
 
-## Steigerung
+## Anstieg
 
-Gibt die Steigerung zurück, die eine bestimmte Variante bei Konversionen über eine Kontrollvariante hatte. Dies ist der Leistungsunterschied zwischen einer bestimmten Variante und der Grundlinie, geteilt durch die Leistung der Grundlinie, in Prozent ausgedrückt.
+Gibt den Anstieg zurück, den eine bestimmte Variante bei Konversionen gegenüber einer Kontrollvariante verzeichnete. Dies ist der Performance-Unterschied zwischen einer bestimmten Variante und der Baseline, geteilt durch die Performance der Baseline und ausgedrückt in Prozent.
 
 ```
 fx Lift (normalizing-container, success-metric, control)
@@ -362,9 +362,9 @@ fx Lift (normalizing-container, success-metric, control)
 
 | Argument | Beschreibung |
 | --- | --- |
-| Normalisieren des Containers | Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
-| Erfolgsmetrik | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. |
-| Kontrolle | Die Variante, mit der alle anderen Varianten des Experiments verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
+| Normalisierungs-Container | Die Grundlage (Personen, Sitzungen oder Ereignisse) für die Ausführung eines Tests. |
+| Erfolgskennzahl | Die Kennzahl(en), die ein(e) Benutzende(r) verwendet, um Varianten zu vergleichen. |
+| Kontrollvariante | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -394,7 +394,7 @@ LOG10(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
+| *metric* | Die positive reale Zahl, dessen Logarithmus zur Basis 10 gewünscht ist. |
 
 ## Logistische Regression: Korrelationskoeffizient (Tabelle)
 
@@ -460,7 +460,7 @@ LN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
+| *metric* | Die positive reale Zahl, deren natürlicher Logarithmus gewünscht ist. |
 
 ## NOT
 
@@ -673,7 +673,7 @@ SIN(metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Sinus ermitteln möchten. |
 
 ## t-Transformation
 
@@ -715,7 +715,7 @@ TAN (metric)
 
 | Argument | Beschreibung |
 |---|---|
-| *Metrik* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
+| *metric* | Der Winkel in Radianten, für den Sie den Tangens ermitteln möchten. |
 
 ## z-Transformation (Zeile)
 
@@ -742,7 +742,7 @@ z-Transformation (Metrik)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>Metrik</i> </td>
+   <td colname="col1"> <i>metric</i> </td>
    <td colname="col2"> <p> Gibt den Wert des ersten Arguments ungleich null zurück. </p> </td>
   </tr>
  </tbody>
