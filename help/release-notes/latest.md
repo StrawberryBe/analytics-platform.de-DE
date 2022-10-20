@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 785ea95049135adef888c20a6d9fef9f31439a7d
+source-git-commit: a3d47318d74df161cf9054b849c9eb8ef09e60c4
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 71%
+source-wordcount: '517'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,6 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| **Ordner in Workspace-Projekten** | Ordner in Workspace-Projekten helfen Benutzern dabei, ihre Projekte mithilfe von Ordnern zu organisieren und zu kategorisieren, damit sie leichter abgerufen und darauf zugreifen können. Ein freigegebener Unternehmensordner ermöglicht es Administratoren, Inhalte einfach zu erstellen und für alle Workspace-Benutzer freizugeben [Weitere Infos](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) | 19. Oktober 2022 |
 | **Experimentierbereich** | Mit diesem neuen Arbeitsbereich-Bedienfeld können CJA-Anwender den Anstiegund die Konfidenz von A/B-Experimenten aus beliebigen Quellen bewerten – online, offline, aus Adobe-Lösungen, Adobe Journey Optimizer und sogar BYO-Daten. [Weitere Informationen](/help/analysis-workspace/c-panels/experimentation.md) | 5. Oktober 2022 |
 | Visualisierung der **[!UICONTROL Zusammenfassung einer Schlüsselmetrik]** | Durch die Visualisierung der [!UICONTROL Zusammenfassung einer Schlüsselmetrik] können Sie sehen, wie sich eine wichtige Metrik innerhalb eines einzigen Zeitraums entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. Weitere Informationen | Schrittweiser Rollout ab 5. Oktober 2022 |
 | **Unterstützung von Datumsfeldern in CJA** | Ermöglicht CJA die Berichterstellung über Datums- und Uhrzeitfelder. [Weitere Informationen](/help/data-views/data-views-usecases.md#date) | 5. Oktober 2022 |
