@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie Ordner in Workspace hinzufügen
 keywords: Analysis Workspace
 title: Hinzufügen von Ordnern in Workspace
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Sie können Projekte zu einem Ordner in der Tabellenansicht oder aus einem Ordne
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur in begrenztem Umfang verfügbar. Einige Bildschirme können sich ändern.
+>Diese Funktion ist derzeit als Betaversion verfügbar. Einige Bildschirme können sich ändern.
 
 ## In der Tabellenansicht
 

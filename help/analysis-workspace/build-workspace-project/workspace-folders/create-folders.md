@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie Ordner und Unterordner in Workspace erstellen
 keywords: Analysis Workspace
 title: Erstellen von Ordnern
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 11%
+source-wordcount: '152'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ Sie können der Liste der Projekte und Ordner auf Ihrer Workspace-Landingpage ei
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur in begrenztem Umfang verfügbar. Einige Bildschirme können sich ändern.
+>Diese Funktion ist derzeit als Betaversion verfügbar. Einige Bildschirme können sich ändern.
 
 ## Neuen Ordner erstellen
 

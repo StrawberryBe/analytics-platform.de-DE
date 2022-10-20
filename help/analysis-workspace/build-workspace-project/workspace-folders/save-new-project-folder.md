@@ -3,10 +3,10 @@ description: Informationen zum Speichern von Projekten in Ordnern in Workspace
 keywords: Analysis Workspace
 title: Speichern von Projekten in Ordnern
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 13%
+source-wordcount: '80'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,7 @@ Um ein neues Projekt in einem bestimmten Ordner zu speichern, wählen Sie den Or
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur in begrenztem Umfang verfügbar. Einige Bildschirme können sich ändern.
+>Diese Funktion ist derzeit als Betaversion verfügbar. Einige Bildschirme können sich ändern.
 
 1. Erstellen Sie in Workspace ein neues Projekt.
 

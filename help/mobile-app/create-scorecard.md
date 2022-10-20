@@ -5,8 +5,8 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
-workflow-type: ht
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
+workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 100%
 
@@ -169,11 +169,15 @@ Aufschlüsselungen verfeinern Ihre Analyse, indem sie Metriken wie die folgenden
 
 ![Aufschlüsselungsansicht](assets/break_view.png)
 
-Jede der Kachel hinzugefügte Dimension wird in einer Dropdown-Liste in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den in der Dropdown-Liste aufgelisteten Optionen auswählen.
+Jede der Kachel hinzugefügte Dimension wird in einer Dropdown-Liste in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den in der Dropdown-Liste aufgelisteten Optionen eine Auwahl treffen.
 
 ## Anpassen von Detailfolien {#customize-detail-slide}
 
-Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit noch zielgerichteteren Informationen anzusprechen. Sie können das Layout für jede Detailfolie ändern und Text hinzufügen, um Endbenutzenden zu helfen, die Daten besser zu verstehen. Sie können auch über das Dropdown-Menü den Diagrammtyp ändern.
+Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit noch zielgerichteteren Informationen anzusprechen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+Sie können das Layout für jede Detailfolie ändern und Text hinzufügen, um Endbenutzenden zu helfen, die Daten besser zu verstehen. Sie können auch über das Dropdown-Menü den Diagrammtyp ändern.
 
 ![Benutzerdefinierte Detailfolie](assets/custom-detail-slide.png)
 

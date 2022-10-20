@@ -3,10 +3,10 @@ description: Informationen zu Ordnern in Workspace
 keywords: Analysis Workspace
 title: Ordnerübersicht
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Ordner in Workspace-Projekten sind ein Ordnerverwaltungssystem auf der Workspace
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur in begrenztem Umfang verfügbar. Einige Bildschirme können sich ändern.
+>Diese Funktion ist derzeit als Betaversion verfügbar. Einige Bildschirme können sich ändern.
 
 Ordner in Workspace-Projekten helfen Benutzern dabei, ihre Projekte zu organisieren und zu kategorisieren, um den Abruf und den Zugriff zu verbessern. Darüber hinaus ermöglicht ein freigegebener Unternehmensordner Administratoren die einfache Erstellung und Freigabe von Inhalten für alle Workspace-Benutzer. 
 
