@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
-workflow-type: ht
-source-wordcount: '945'
-ht-degree: 100%
+source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | --- | --- |
 | **[!UICONTROL Datenansichten]** | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
 | **[!UICONTROL Reporting-Tools]**: |  |
-| **[!UICONTROL Zugriff auf Auditprotokolle]** | Zurzeit sind [Audit-Protokolle](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) nur über die API verfügbar. Diese Berechtigung erzwingt die Berechtigungsprüfung für die API und eine neue Benutzeroberfläche für Audit-Protokolle. |
+| **[!UICONTROL Zugriff auf Auditprotokolle]** | Diese Berechtigung erzwingt die Berechtigungsprüfung für die [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) und [Benutzeroberfläche für Prüfprotokolle](/help/privacy/audit-log.md). |
 | **[!UICONTROL Verwaltung der Reporting-Nutzung]** | Ermöglicht Benutzenden das Anzeigen und Löschen aller in ihrem Unternehmen laufenden Berichte. (Die Funktionalität zur Berichtsnutzung ist noch nicht veröffentlicht.) |
 | **[!UICONTROL Anzeige der Reporting-Nutzung]** | Ermöglicht Benutzenden die Anzeige aller gleichzeitigen Berichtsanfragen. (Die Funktionalität zur Berichtsnutzung ist noch nicht veröffentlicht.) |
 | **[!UICONTROL Erstellung berechneter Metriken]** | Ermöglicht Benutzenden die Erstellung von [berechneten Metriken](/help/components/calc-metrics/calc-metr-overview.md). |
