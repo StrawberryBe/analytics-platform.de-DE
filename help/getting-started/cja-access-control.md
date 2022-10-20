@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
+source-git-commit: ee3196b78e1cf613446840e8cde1fac565d0f2b7
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 98%
+source-wordcount: '936'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ Eine weitere Ebene der Zugriffskontrolle kann auf der Workspace-Berichtsebene ve
 
 ## Gewähren von Zugriff auf einzelne Metriken oder Dimensionen
 
-Sie können für einzelne Metriken oder Dimensionen in Customer Journey Analytics nicht wie im herkömmlichen Adobe Analytics Berechtigungen gewähren oder verweigern. Metriken und Dimensionen können in [Datenansichten](/help/data-views/data-views.md) geändert werden und unterliegen somit einer Änderung in CJA. Wenn sie geändert werden, ändert sich auch die Berichterstellung rückwirkend.
+Sie können in Customer Journey Analytics keine Berechtigungen für einzelne Metriken oder Dimensionen erteilen oder verweigern, wie Sie es im herkömmlichen Adobe Analytics tun können. Metriken und Dimensionen können in [Datenansichten](/help/data-views/data-views.md) geändert werden und unterliegen somit einer Änderung in CJA. Wenn sie geändert werden, ändert sich auch die Berichterstellung rückwirkend.
 
 ## Anwendungsbeispiele
 
@@ -88,7 +88,7 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | --- | --- |
 | **[!UICONTROL Datenansichten]** | Wenn **[!UICONTROL Auto-Include]** auf **[!UICONTROL Ein]** umgeschaltet wird, können Benutzende, die Teil dieses Produktprofils sind, alle vorhandenen und neu erstellten Datenansichten anzeigen. Wenn diese Einstellung auf **[!UICONTROL Aus]** gesetzt ist, können bestimmte Datenansichten ausgewählt werden, auf die Benutzende Zugriff haben. |
 | **[!UICONTROL Reporting-Tools]**: |  |
-| **[!UICONTROL Zugriff auf Auditprotokolle]** | Diese Berechtigung erzwingt die Berechtigungsprüfung für die [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) und [Benutzeroberfläche für Prüfprotokolle](/help/privacy/audit-log.md). |
+| **[!UICONTROL Zugriff auf Auditprotokolle]** | Diese Berechtigung erzwingt die Berechtigungsprüfung für die [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) und die bevorstehende Benutzeroberfläche für Auditprotokolle. |
 | **[!UICONTROL Verwaltung der Reporting-Nutzung]** | Ermöglicht Benutzenden das Anzeigen und Löschen aller in ihrem Unternehmen laufenden Berichte. (Die Funktionalität zur Berichtsnutzung ist noch nicht veröffentlicht.) |
 | **[!UICONTROL Anzeige der Reporting-Nutzung]** | Ermöglicht Benutzenden die Anzeige aller gleichzeitigen Berichtsanfragen. (Die Funktionalität zur Berichtsnutzung ist noch nicht veröffentlicht.) |
 | **[!UICONTROL Erstellung berechneter Metriken]** | Ermöglicht Benutzenden die Erstellung von [berechneten Metriken](/help/components/calc-metrics/calc-metr-overview.md). |
