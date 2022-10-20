@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1769'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Sie können die Vorlage [!UICONTROL Leere mobile Scorecard] öffnen, indem Sie e
 
 So implementieren Sie die Scorecard-Vorlage:
 
-1. Geben Sie unter **[!UICONTROL Eigenschaften]** (in der rechten Leiste) eine **[!UICONTROL Report Suite des Projekts]** an, aus der Sie Daten verwenden möchten. Report Suites sind Datenansichten in CJA.
+1. Geben Sie unter **[!UICONTROL Eigenschaften]** (in der rechten Leiste) eine **[!UICONTROL Projekt-Report-Suite]** an, deren Daten Sie verwenden möchten. Report Suites sind Datenansichten in CJA.
 
    ![Report Suite-Auswahl](assets/properties_save.png)
 
@@ -74,13 +74,13 @@ Sie können beispielsweise geeignete Dimensionen (wie **[!DNL Marketing Channel]
 
 ![Dimensionen hinzufügen](assets/layer_dimensions.png)
 
-## Filter anwenden {#filters}
+## Anwenden von Filtern {#filters}
 
-Um Filter auf einzelne Kacheln anzuwenden, ziehen Sie einen Filter (Segmente sind Filter in Customer Journey Analytics) aus dem linken Bereich und legen Sie ihn direkt über der Kachel ab.
+Um Filter auf einzelne Kacheln anzuwenden, ziehen Sie den Filter (Segmente sind Filter in CJA) aus dem linken Bedienfeld und legen Sie ihn direkt auf der Kachel ab.
 
 Wenn Sie den Filter auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel oben auf der Scorecard ab. Sie können auch Filter anwenden, indem Sie im Menü „Filter“ unterhalb der Datumsbereiche Filter auswählen. Sie [konfigurieren und wenden Filter für Ihre Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) genauso wie in Adobe Analytics Workspace an.
 
-![Filter erstellen](assets/segment_ui.png)
+![Erstellen von Filtern](assets/segment_ui.png)
 
 ## Datumsbereiche hinzufügen {#dates}
 
@@ -124,7 +124,7 @@ Verwenden Sie die Visualisierung der Zusammenfassungsnummer, um eine große Zahl
 
 ### [!UICONTROL Ringdiagramm]
 
-Ähnlich wie bei einem Tortendiagramm zeigt diese Visualisierung Daten als Teile eines Ganzen an. Verwenden Sie ein Ringdiagramm, wenn Sie Prozentsätze eines Gesamtwerts vergleichen. Nehmen wir beispielsweise an, Sie möchten sehen, welche Anzeigenplattform zur Gesamtzahl der Unique Visitors beigetragen hat:
+Ähnlich einem Tortendiagramm zeigt diese Visualisierung die Daten als Teile eines Ganzen. Ein Ringdiagramm kann für den Vergleich der prozentualen Anteile eines Ganzen verwendet werden. Nehmen wir beispielsweise an, Sie möchten sehen, welche Anzeigenplattform zur Gesamtzahl der Unique Visitors beigetragen hat:
 
 ![Ringvisualisierung](assets/donut-viz.png)
 
@@ -151,17 +151,17 @@ Wenn Sie Dimensionselemente des Typs [!UICONTROL Nicht angegeben] aus Ihren Date
 
 1. Klicken Sie auf das Symbol neben **[!UICONTROL Nicht angegeben]**, um nicht spezifizierte Daten aus Ihrem Reporting zu entfernen. (Sie können auch jedes andere Dimensionselement entfernen.)
 
-## Kacheleigenschaften anzeigen und konfigurieren {#tiles}
+## Anzeigen und Konfigurieren von Kacheleigenschaften {#tiles}
 
-Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Eigenschaften an, die dieser Kachel und der zugehörigen Detailfolie zugeordnet sind. In dieser Leiste können Sie eine neue **Titel** für die Kachel verwenden und alternativ die Kachel konfigurieren, indem Filter angewendet werden. Segmente sind Filter in CJA.
+Wenn Sie im Scorecard Builder auf eine Kachel klicken, zeigt die rechte Leiste die Eigenschaften und Merkmale an, die mit dieser Kachel und ihrer Detailfolie verbunden sind. In dieser Leiste können Sie einen neuen **Titel** für die Kachel eingeben und die Kachel konfigurieren, indem Sie Filter anwenden. Segmente sind Filter in CJA.
 
 ![Kachel „Eigenschaften“](assets/properties-tile-new.png)
 
-## Detailfolien anzeigen {#view-detail-slides}
+## Anzeigen von Detailfolien {#view-detail-slides}
 
-Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup-Fenster angezeigt, wie die Detailfolie für ausführende Benutzer in der App angezeigt wird. Sie können Dimensionen hinzufügen, um Ihre Daten für Ihre spezifischen Anforderungen aufzuschlüsseln. Wenn eine Dimension nicht angewendet wurde, wird die Aufschlüsselungsdimension **hour** oder **Tage**, abhängig vom Standarddatumsbereich.
+Wenn Sie auf Kacheln klicken, wird in einem dynamischen Popup-Fenster angezeigt, wie die Detailfolie für ausführende Benutzende in der Mobile App dargestellt wird. Sie können Dimensionen hinzufügen, um Ihre Daten für Ihre spezifischen Anforderungen aufzuschlüsseln. Wenn keine Dimension auf die Kachel angewendet wurde, werden je nach Standarddatumsbereich entweder **Stunden** oder **Tage** als Aufschlüsselungsdimension verwendet.
 
-Aufschlüsselungen verfeinern Ihre Analyse, indem sie Metriken nach Dimensionselementen aufschlüsseln, z. B.:
+Aufschlüsselungen verfeinern Ihre Analyse, indem sie Metriken wie die folgenden nach Dimensionselementen aufschlüsseln:
 
 * Metrik „Unique Visitors“ aufgeschlüsselt nach Anzeigenplattform (AMO-ID)
 * Besuche aufgeschlüsselt nach Produktkategorie (Einzelhandel)
@@ -171,35 +171,35 @@ Aufschlüsselungen verfeinern Ihre Analyse, indem sie Metriken nach Dimensionsel
 
 Jede der Kachel hinzugefügte Dimension wird in einer Dropdown-Liste in der Detailansicht der App angezeigt. Der ausführende Benutzer kann dann aus den in der Dropdown-Liste aufgelisteten Optionen auswählen.
 
-## Detailfolien anpassen {#customize-detail-slide}
+## Anpassen von Detailfolien {#customize-detail-slide}
 
-Mit benutzerspezifischen Detailfolien können Sie noch zielgerichteter festlegen, welche Informationen Sie für Ihre Audience freigeben. Sie können das Layout für jede Detailfolie ändern und Text hinzufügen, um besser zu erklären, was der Endbenutzer in den Daten sehen kann. Sie können den Diagrammtyp auch über das Dropdown-Menü ändern.
+Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Ihre Zielgruppe mit noch zielgerichteteren Informationen anzusprechen. Sie können das Layout für jede Detailfolie ändern und Text hinzufügen, um Endbenutzenden zu helfen, die Daten besser zu verstehen. Sie können auch über das Dropdown-Menü den Diagrammtyp ändern.
 
-![Eigene Detailschicht](assets/custom-detail-slide.png)
+![Benutzerdefinierte Detailfolie](assets/custom-detail-slide.png)
 
-### Layout der Folie ändern
+### Ändern des Folien-Layouts
 
-Ändern Sie das Dialayout, um sich auf die wichtigsten Informationen zu konzentrieren. Sie können beispielsweise das Layout ändern, um nur ein Diagramm oder nur eine Tabelle anzuzeigen. Um das Dialayout zu ändern, wählen Sie eines der vordefinierten Formate aus.
+Ändern Sie das Folien-Layout, um die Aufmerksamkeit der Betrachtenden zu fokussieren. Sie können beispielsweise das Layout so ändern, dass nur ein Diagramm oder nur eine Tabelle angezeigt wird. Um das Folien-Layout zu ändern, wählen Sie eines der vordefinierten Formate aus.
 
-![Reglerlayout](assets/layout.png)
+![Folien-Layout](assets/layout.png)
 
-Sie können das Dialayout auch ändern, indem Sie Visualisierungskomponenten aus der linken Leiste auf die Arbeitsfläche ziehen und dort ablegen. Jede Detailfolie darf nur zwei Visualisierungen gleichzeitig enthalten.
+Sie können das Folien-Layout auch ändern, indem Sie Visualisierungskomponenten aus der linken Leiste auf die Arbeitsfläche ziehen und dort ablegen. Jede Detailfolie darf nur zwei Visualisierungen gleichzeitig enthalten.
 
-![Änderung des Layouts der Folie](assets/slide-layout-change.png)
+![Ändern des Folien-Layouts](assets/slide-layout-change.png)
 
 ### Hinzufügen von beschreibendem Text zu einer Folie
 
-Sie können Text hinzufügen, um aussagekräftige Informationen darüber bereitzustellen, was in den Diagrammen oder Nuancen zu den Daten enthalten ist.
+Sie können Text hinzufügen, um aussagekräftige Informationen über den Inhalt der Diagramme oder die Bedeutung von Daten bereitzustellen.
 
-Um einer Detailfolie Text hinzuzufügen, wählen Sie ein Layout aus, das die `T` oder ziehen Sie die Komponente Textvisualisierung aus der linken Leiste herüber. Der Texteditor wird automatisch geöffnet, wenn eine neue Textvisualisierung hinzugefügt oder ein Dialayout mit Text ausgewählt wird. Der Texteditor bietet alle Standardoptionen zur Formatierung Ihres Textes. Sie können Textstile wie Absätze, Überschriften und Unterüberschriften anwenden und eine fett gedruckte und kursiv gedruckte Schriftart anwenden. Sie können Text ausrichten, Listen mit Aufzählungszeichen und Nummerierungen hinzufügen und Links hinzufügen. Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie auf die Schaltfläche &quot;Minimieren&quot; in der oberen rechten Ecke des Texteditors, um sie zu schließen. Um bereits hinzugefügten Text zu bearbeiten, wählen Sie das Stiftsymbol aus, um den Texteditor erneut zu öffnen.
+Um einer Detailfolie Text hinzuzufügen, wählen Sie ein Layout aus, für das das Symbol `T` angezeigt wird, oder ziehen Sie die Textvisualisierungskomponente aus der linken Leiste und legen Sie diese ab. Der Texteditor wird automatisch geöffnet, wenn eine neue Textvisualisierung hinzugefügt oder ein Folien-Layout mit Text ausgewählt wird. Der Texteditor bietet alle Standardoptionen zur Textformatierung, Sie können Textstile wie Absätze, Überschriften und Unterüberschriften anwenden und eine fett oder kursiv formatierte Schriftart auswählen. Sie können Text ausrichten sowie Listen mit Aufzählungszeichen, Nummerierungen und Links hinzufügen. Wenn Sie die Bearbeitung abgeschlossen haben, klicken Sie oben rechts im Texteditor auf die Schaltfläche „Minimieren“, um den Texteditor zu schließen. Um bereits hinzugefügten Text zu bearbeiten, wählen Sie zum erneuten Öffnen des Texteditors das Stiftsymbol aus.
 
-![Änderung des Layouts der Folie](assets/add-descriptive-text.png)
+![Ändern des Folien-Layouts](assets/add-descriptive-text.png)
 
-## Komponenten entfernen {#remove}
+## Entfernen von Komponenten {#remove}
 
-Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie auf eine beliebige Stelle außerhalb der Kacheln auf die Scorecard und entfernen Sie sie, indem Sie auf die **x** wird angezeigt, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die **Erstbesuche**:
+Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, klicken Sie außerhalb der Kacheln auf eine beliebige Stelle auf der Scorecard. Entfernen Sie die dann die Komponente, indem Sie auf das **x** klicken, das angezeigt wird, wenn Sie den Mauszeiger über die Komponente bewegen, wie unten für die **Erstbesuche** dargestellt:
 
-![Komponenten entfernen](assets/new_remove.png)
+![Entfernen von Komponenten](assets/new_remove.png)
 
 ## Vorschau der Scorecard {#preview}
 
