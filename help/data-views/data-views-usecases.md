@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -87,21 +87,21 @@ Vergessen Sie nicht, jeder Metrik einen neuen Namen zu geben, um die Unterschied
 Weitere Informationen zu anderen Datenansicht-Einstellungen finden Sie unter [Erstellen von Datenansichten](/help/data-views/create-dataview.md).
 Eine konzeptionelle Übersicht über die Datenansichten finden Sie unter [Übersicht über Datenansichten](/help/data-views/data-views.md).
 
-## 7. Neue Sitzungs- und Sitzungsberichte {#new-repeat}
+## 7. Berichte zu neuen und wiederkehrenden Sitzungen {#new-repeat}
 
-Sie können anhand des Berichtsfensters, das Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung für einen Benutzer oder eine Rückkehrsitzung ist. Diese Berichterstellung ermöglicht Ihnen beispielsweise, Folgendes zu bestimmen:
+Sie können anhand des Berichtszeitraums, den Sie für diese Datenansicht definiert haben, und eines 13-monatigen Lookback-Fensters bestimmen, ob eine Sitzung tatsächlich die erste Sitzung einer Person ist oder eine wiederkehrende Sitzung. Diese Reporting-Funktion ermöglicht Ihnen beispielsweise, Folgendes zu bestimmen:
 
-* Welcher Prozentsatz Ihrer Bestellungen stammt aus neuen oder rückkehrenden Sitzungen?
+* Welcher Prozentsatz von Bestellungen stammt aus neuen oder wiederkehrenden Sitzungen?
 
-* Richten Sie sich bei einem bestimmten Marketing-Kanal oder einer bestimmten Kampagne an Erstnutzende oder an Menschen, die wiedergekommen sind? Wie beeinflusst diese Auswahl die Konversionsraten?
+* Sprechen Sie auf einem bestimmten Marketing-Kanal oder bei einer bestimmten Kampagne Erstbenutzende an oder Personen, die wiedergekommen sind? Wie beeinflusst diese Auswahl die Konversionsraten?
 
-Eine Dimension und zwei Metriken erleichtern diese Berichterstellung:
+Eine Dimension und zwei Metriken ermöglichen diese Berichte:
 
 * [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) – Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Wiederkehrend]. Der Zeileneintrag [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
 
-* [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Die neue Sitzungsmetrik wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert.
+* [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Die Metrik „Neue Sitzungen“ ist definiert als die erste Sitzung einer Person innerhalb des Berichtsfensters.
 
-* [Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Die Metrik &quot;Rückkehrsitzungen&quot;ist die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren.—>
+* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die allererste Sitzung einer Person gehandelt hat.—>
 
 So greifen Sie auf diese Komponente zu:
 
@@ -115,7 +115,7 @@ In 95-99 % der Fälle werden neue Sitzungen korrekt gemeldet. Die einzigen Ausna
 
 * Wenn eine Sitzung sowohl das Lookback-Fenster als auch den Berichtszeitraum umfasst. Nehmen wir an, ein Bericht wird vom 1. Juni bis zum 15. Juni 2022 erstellt. Das Lookback-Fenster würde die Zeit vom 1. Mai 2021 bis zum 31. Mai 2022 umfassen. Wenn eine Sitzung am 30. Mai 2022 beginnen und am 1. Juni 2022 endet, werden alle Sitzungen im Berichtszeitraum als wiederkehrende Sitzungen gezählt, da die Sitzung im Rückschaufenster enthalten ist.
 
-## 8. Verwendung der Funktion Datum und Uhrzeit {#date}
+## 8. Verwenden der Funktionen „Datum“ und „Datum-Uhrzeit“ {#date}
 
 Schemas in Adobe Experience Platform enthalten die Felder [!UICONTROL Datum] und [!UICONTROL Datum-Uhrzeit]. CJA-Datenansichten unterstützen diese Felder jetzt. Wenn Sie diese Felder als Dimension in eine Datenansicht ziehen, können Sie ihr [Format](/help/data-views/component-settings/format.md) angeben. Diese Formateinstellung legt fest, wie die Felder im Berichtswesen angezeigt werden. Beispiel:
 
