@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3028024c97355cb43fb7a844acef5771d2f5cbcf
+source-git-commit: a7636909c0570655ee6d3638e56828916044d2bd
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '509'
 ht-degree: 68%
 
 ---
@@ -23,7 +23,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | Visualisierung der **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** | Mit der Visualisierung der [!UICONTROL Zusammenfassung der Schlüsselmetriken] können Sie sehen, wie sich eine wichtige Metrik innerhalb einer bestimmten Zeitspanne entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md) | 5. Oktober 2022 | 19. Oktober 2022 |
 | **Mehrwert-Variablen ohne Unterscheidung von Groß- und Kleinschreibung** | Bei Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird, werden die in `mvvar1` - `mvvar3` wird nicht mehr automatisch in Kleinbuchstaben geschrieben. Stattdessen spiegeln Daten, die über den Analytics Source Connector an Adobe Experience Platform und CJA übergeben werden, die ursprüngliche Groß-/Kleinschreibung wider, die von der Seite weitergegeben wurde. | Nicht angegeben | 24. Oktober 2022 |
 | **CJA-Auditprotokoll** | Mit Customer Journey Analytics (CJA) können Sie Benutzeraktivitäten auf verschiedene Dienste und Funktionen in Form von &quot;Auditprotokollen&quot;prüfen. Diese Protokolle bilden ein Audit-Protokoll, das Ihnen bei der Fehlerbehebung helfen und Ihrem Unternehmen helfen kann, die Richtlinien der Unternehmensdatenverwaltung und die gesetzlichen Anforderungen wie den Health Insurance Portability and Accounability Act (HIPAA) effektiv zu erfüllen. Diese Protokolle waren bisher nur über die Auditprotokolle-API verfügbar. [Dokumentation folgt] | Nicht angegeben | 26. Oktober 2022 |
-| **CJA HIPAA-Bereitschaft** | Zu befolgende Beschreibungen | Nicht angegeben | 26. Oktober 2022 |
+| **HIPAA-Bereitschaft** | Beschreibung zu folgen | Nicht angegeben | 7. November 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
