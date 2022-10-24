@@ -3,40 +3,37 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a3d47318d74df161cf9054b849c9eb8ef09e60c4
+source-git-commit: 3028024c97355cb43fb7a844acef5771d2f5cbcf
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 90%
+source-wordcount: '510'
+ht-degree: 68%
 
 ---
 
-# Versionshinweise zu Customer Journey Analytics (CJA) (Oktober 2022)
+# Customer Journey Analytics (CJA) - Versionshinweise (Oktober/November 2022)
 
-**Zuletzt aktualisiert**: 18. Oktober 2022
+**Letztes Update**: 19. Oktober 2022
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
-## Verwandte Ressourcen
-
-* [Frühere Versionshinweise von CJA für 2022](/help/release-notes/2022.md)
-
-* [Versionshinweise zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=de)
-
-* [Versionshinweise zu Media Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=de)
-
-* [Versionshinweise zu Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de)
-
 ## Wichtige Funktionen und Updates
 
-| Funktion | Beschreibung | [Zieldatum](/help/release-notes/releases.md) |
-| ----------- | ---------- | ----- |
-| **Experimentier-Bedienfeld** | Mit diesem neuen Workspace-Bedienfeld können CJA-Benutzende den Anstieg und die Konfidenz von A/B-Experimenten mit beliebigen Quellen bewerten – online, offline, Adobe-Lösungen, Adobe Journey Optimizer und sogar eigenen Daten. [Weitere Informationen](/help/analysis-workspace/c-panels/experimentation.md) | 5. Oktober 2022 |
-| Visualisierung der **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** | Mit der Visualisierung der [!UICONTROL Zusammenfassung der Schlüsselmetriken] können Sie sehen, wie sich eine wichtige Metrik innerhalb einer bestimmten Zeitspanne entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. Weitere Informationen | Schrittweiser Rollout ab 5. Oktober 2022 |
-| **Unterstützung von Datumsfeldern in CJA** | Ermöglicht CJA die Berichterstellung über Datums- und Uhrzeitfelder. [Weitere Informationen](/help/data-views/data-views-usecases.md#date) | 5. Oktober 2022 |
-| **Mobile App: Benutzerdefinierte Detailansichten** | Benutzerdefinierte Detailansichten ermöglichen es Ihnen, Informationen an Ihre Zielgruppe noch zielgerichteter auszuwählen, damit diese nicht abgelenkt wird. Sie können das Layout der Detailansicht jeder Scorecard-Kachel ändern, und Text hinzufügen, um Endbenutzenden zu helfen, die Daten besser zu verstehen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=de) | 5. Oktober 2022 |
-| **Bei Variablen mit mehreren Werten wird zwischen Groß- und Kleinschreibung unterschieden** | Bei Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird, werden die in `mvvar1` - `mvvar3` wird nicht mehr automatisch in Kleinbuchstaben geschrieben. Stattdessen spiegeln Daten, die über den Analytics Source Connector an Adobe Experience Platform und CJA übergeben werden, die ursprüngliche Groß-/Kleinschreibung wider, die von der Seite weitergegeben wurde. | 24. Oktober 2022 |
+| Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
+| ----------- | ---------- | ----- | --- |
+| Visualisierung der **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** | Mit der Visualisierung der [!UICONTROL Zusammenfassung der Schlüsselmetriken] können Sie sehen, wie sich eine wichtige Metrik innerhalb einer bestimmten Zeitspanne entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md) | 5. Oktober 2022 | 19. Oktober 2022 |
+| **Mehrwert-Variablen ohne Unterscheidung von Groß- und Kleinschreibung** | Bei Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird, werden die in `mvvar1` - `mvvar3` wird nicht mehr automatisch in Kleinbuchstaben geschrieben. Stattdessen spiegeln Daten, die über den Analytics Source Connector an Adobe Experience Platform und CJA übergeben werden, die ursprüngliche Groß-/Kleinschreibung wider, die von der Seite weitergegeben wurde. | Nicht angegeben | 24. Oktober 2022 |
+| **CJA-Auditprotokoll** | Mit Customer Journey Analytics (CJA) können Sie Benutzeraktivitäten auf verschiedene Dienste und Funktionen in Form von &quot;Auditprotokollen&quot;prüfen. Diese Protokolle bilden ein Audit-Protokoll, das Ihnen bei der Fehlerbehebung helfen und Ihrem Unternehmen helfen kann, die Richtlinien der Unternehmensdatenverwaltung und die gesetzlichen Anforderungen wie den Health Insurance Portability and Accounability Act (HIPAA) effektiv zu erfüllen. Diese Protokolle waren bisher nur über die Auditprotokolle-API verfügbar. [Dokumentation folgt] | Nicht angegeben | 26. Oktober 2022 |
+| **CJA HIPAA-Bereitschaft** | Zu befolgende Beschreibungen | Nicht angegeben | 26. Oktober 2022 |
 
 {style=&quot;table-layout:auto&quot;}
+
+## Fehlerbehebungen
+
+* Es wurde ein Problem behoben, bei dem aktuelle MacOS-Versionen fälschlicherweise als &quot;Macintosh&quot;bezeichnet wurden. Mit dieser Fehlerbehebung beginnt die Betriebssystemdimension mit der Nummerierung der MacOS-Version, beginnend mit MacOS 11. (AN-301834)
+
+### Weitere  Fehlerbehebungen
+
+AN-302367; AN-302562
 
 ## Wichtige Hinweise für CJA-Admins
 
@@ -48,5 +45,15 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 {style=&quot;table-layout:auto&quot;}
 
->[!MORELIKETHIS]
->[Customer Journey Analytics – Aktualisierungen der Dokumentation](/help/release-notes/doc-changes.md)
+
+## Verwandte Ressourcen
+
+* [Frühere Versionshinweise von CJA für 2022](/help/release-notes/2022.md)
+
+* [Versionshinweise zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=de)
+
+* [Versionshinweise zu Media Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=de)
+
+* [Versionshinweise zu Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de)
+
+* [Customer Journey Analytics – Aktualisierungen der Dokumentation](/help/release-notes/doc-changes.md)

@@ -2,10 +2,10 @@
 description: Erläutert die Strategie zur kontinuierlichen Veröffentlichung von Funktionen für Customer Journey Analytics
 title: Versionen von Customer Journey Analytics-Funktionen
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
-source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+source-git-commit: 44a140fdd5069cbe806f694377802215bcf50b31
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -17,9 +17,7 @@ Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlic
 
 [!UICONTROL Analysis Workspace] verwendet Funktionsmarkierungen (auch als „Umschalter“ bezeichnet), um die Sichtbarkeit neuer Funktionen zu steuern, sodass vor der Vollversion ein kontrollierter Skalierungstest durchgeführt werden kann. Diese Veröffentlichungsstrategie umfasst die folgenden Phasen:
 
-* **Freigabe für die Produktion (RTP)**: Der Code wird für die Produktion freigegeben, wobei die Sichtbarkeit der Funktionen in Analysis Workspace deaktiviert ist. Die Funktion ist manchmal in der CJA-API verfügbar.
-
-* **Eingeschränktes Testen**: Eine schrittweise Veröffentlichung beginnt mit Tests durch interne Adobe-Benutzer. Die Verfügbarkeit der Version wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Die schrittweise Einführung erfolgt auf der Organisationsebene in Experience Cloud, sodass alle Benutzer mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
+* **Start des Rollouts**: Das Rollout einer stufenweisen Veröffentlichung beginnt mit eingeschränkten Tests durch interne Anwender der Adobe. Die Version wird dann im Laufe einiger Monate von 0 % auf 100 % der Verfügbarkeit für Kunden skaliert. Die schrittweise Einführung erfolgt auf der Organisationsebene in Experience Cloud, sodass alle Benutzer mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
 
 * **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten Experience Cloud-Organisationen zur Verfügung und die Veröffentlichung der Funktion ist abgeschlossen.
 
