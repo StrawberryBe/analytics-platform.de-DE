@@ -2,10 +2,10 @@
 title: Veröffentlichung von CJA-Zielgruppen – Überblick
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 18306a5a2fc8873850eb62b7407acb55db4007ea
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 86%
 
 ---
 
@@ -36,6 +36,10 @@ Das Veröffentlichen von Zielgruppen bietet die Möglichkeit, die in CJA vorhand
 * Administratoren können diese Berechtigung für einzelne Benutzer erteilen.
 
 * Admins benötigen außerdem die Berechtigung **[!UICONTROL Profile verwalten]** in Adobe Experience Platform.
+
+## Data Governance und Einverständniserklärung
+
+Wenn Sie eine Zielgruppe in CJA veröffentlichen, werden die mit den in der Zielgruppe verwendeten Feldern verknüpften Data Governance-Beschriftungen und -Richtlinien aufgezeichnet.  Wenn die Zielgruppe in einer Adobe Experience App aktiviert wird, sind alle zugehörigen Data Governance-Beschriftungen und -Richtlinien für diese Zielgruppe verfügbar und es kann eine geeignete Durchsetzung angewendet werden.  [Weitere Informationen zur Zustimmung](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de#consent-policy)
 
 ## Nächste Schritte
 
