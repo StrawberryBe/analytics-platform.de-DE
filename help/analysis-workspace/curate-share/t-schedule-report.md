@@ -5,10 +5,10 @@ title: Planen von Projekten
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 63%
+source-wordcount: '723'
+ht-degree: 62%
 
 ---
 
@@ -95,6 +95,7 @@ Vor dem Zeitpunkt, zu dem ein Projekt geplant ist, erhält der Projekteigentüme
 
 ![email](assets/email-password.png)
 
+1. Melden Sie sich wieder bei Customer Journey Analytics an.
 1. Klicken **[!UICONTROL Geplantes Projekt anzeigen]**.
 1. Im **[!UICONTROL Geplantes Projekt bearbeiten]** eingeben und ein Kennwort erneut eingeben.
 1. Teilen Sie den Empfängern des geplanten Projekts (nur) dieses Kennwort mit.
