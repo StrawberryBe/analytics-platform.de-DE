@@ -3,11 +3,12 @@ description: Versenden Sie ein Projekt aus Analysis Workspace per E-Mail oder pl
 keywords: Analysis Workspace
 title: Planen von Projekten
 feature: Curate and Share
+mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '453'
-ht-degree: 100%
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 63%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 Über das Menü **Freigeben** in Workspace können Sie Analysis Workspace-Projekte per E-Mail an ausgewählte Empfänger senden. Dateien können im CSV- oder PDF-Format gesendet werden.
 
-## Datei jetzt senden
+## Datei jetzt senden {#now}
 
 So senden Sie eine Datei sofort per E-Mail an die Empfänger:
 
@@ -23,12 +24,13 @@ So senden Sie eine Datei sofort per E-Mail an die Empfänger:
 1. Geben Sie den Dateityp an (CSV oder PDF).
 1. (Optional) Fuegen Sie eine Beschreibung hinzu, die in der E-Mail enthalten sein wird, um die empfangene Datei zu erklären.
 1. Fügen Sie Empfänger oder Gruppen hinzu. E-Mail-Adressen können auch eingegeben werden.
+1. (Nur für Kunden von Health Care Shield) Geben Sie ein Kennwort an. Siehe Abschnitt Kennwortschutz für terminierte Berichte .
 1. Klicken Sie auf **Jetzt senden**.
 1. (Optional) Klicken Sie auf **Planungsoptionen anzeigen**, um einen Zeitplan für den Versand festzulegen.
 
 ![Datei jetzt senden](assets/send-file-no-scheduling-options.JPG)
 
-## Datei planmäßig senden
+## Datei planmäßig senden {#schedule}
 
 So senden Sie eine Datei basierend auf einem wiederkehrenden Zeitplan per E-Mail an die Empfänger:
 
@@ -36,13 +38,14 @@ So senden Sie eine Datei basierend auf einem wiederkehrenden Zeitplan per E-Mail
 1. Geben Sie den Dateityp an (CSV oder PDF).
 1. (Optional) Fuegen Sie eine Beschreibung hinzu, die in der E-Mail enthalten sein wird, um die empfangene Datei zu erklären.
 1. Fügen Sie Empfänger oder Gruppen hinzu. E-Mail-Adressen können auch eingegeben werden.
+1. (Nur für Kunden von Health Care Shield) Geben Sie ein Kennwort an. Siehe Abschnitt Kennwortschutz für terminierte Berichte .
 1. Geben Sie den Datumsbereich an, über den anhand des Zeitplans gesendet werden soll, indem Sie die Einstellungen „Start am“ und „Ende am“ ändern. Das Enddatum muss innerhalb eines Jahres ab dem Tag liegen, an dem der Zeitplan erstellt oder geändert wurde.
 1. Geben Sie die Versandhäufigkeit an. Jede Häufigkeit ermöglicht unterschiedliche Anpassungen.
 1. Klicken Sie auf **Planmäßig senden**.
 
 ![](assets/send-file.JPG)
 
-## Manager für geplante Projekte
+## Manager für geplante Projekte {#manager}
 
 Geplante Analysis Workspace-Projekte können unter **Analytics > Komponenten > Geplante Projekte** verwaltet werden.
 
@@ -60,3 +63,40 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 | **Zeitplan-ID anzeigen** | Navigieren Sie oben rechts zu den Spaltenoptionen und fügen Sie der Tabelle die Spalte „Zeitplan-ID“ hinzu. Die Zeitplan-ID ist oft zum Debugging nützlich. |
 
 Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert wird, werden alle geplanten Bereitstellungen gestoppt.
+
+## Kennwortschutz für ein geplantes Projekt {#password}
+
+>[!NOTE]
+>
+>Die Option zum Kennwortschutz für ein terminiertes Projekt wird nur für CJA-Kunden angezeigt, die die [Gesundheitsschild](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) Add-On-Produkt.
+
+Adobe verwendet das Kennwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
+
+Nachdem Ihr Unternehmen die SKU des Gesundheitsschilds erworben und dafür aktiviert hat, wird die Aufforderung zur Erstellung eines Kennworts für ein geplantes Projekt unter zwei Bedingungen angezeigt:
+
+* Wenn jemand ein neues geplantes Projekt erstellt.
+
+* Wenn ein vorhandenes terminiertes Projekt kurz vor dem Senden steht. Das aktuell geplante Projekt wird deaktiviert, bis der Kennwortschutz eingerichtet ist. Der Eigentümer des geplanten Projekts erhält zu diesem Zweck eine E-Mail.
+
+![Kennwortschutz](assets/password.png)
+
+### Passwortanforderungen
+
+Die Passwortanforderungen entsprechen dem Adobe-Standard und erfordern mindestens 8 Zeichen mit einer Nummer und einem Sonderzeichen.
+
+### Neues geplantes Projekt
+
+1. Nachdem Sie Ihr Projekt gespeichert haben, gehen Sie zu &quot;Freigeben&quot;> &quot;Datei jetzt senden&quot;oder zu &quot;Freigeben&quot;> &quot;Datei planmäßig senden&quot;.
+1. Befolgen Sie die Anweisungen oben unter Datei jetzt freigeben oder Datei planmäßig freigeben .
+
+### Vorhandenes terminiertes Projekt
+
+Vor dem Zeitpunkt, zu dem ein Projekt geplant ist, erhält der Projekteigentümer eine E-Mail wie die folgende:
+
+![email](assets/email-password.png)
+
+1. Klicken **[!UICONTROL Geplantes Projekt anzeigen]**.
+1. Im **[!UICONTROL Geplantes Projekt bearbeiten]** eingeben und ein Kennwort erneut eingeben.
+1. Teilen Sie den Empfängern des geplanten Projekts (nur) dieses Kennwort mit.
+
+

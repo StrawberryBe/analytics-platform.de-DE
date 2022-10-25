@@ -1,19 +1,17 @@
 ---
 title: Auditprotokolle
 description: Erfahren Sie, wie Sie CJA-Auditprotokolle anzeigen und verwalten.
-source-git-commit: a866dec61df93bf730529a2d7513b4d76bab6694
+hide: true
+hidefromtoc: true
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '848'
+ht-degree: 17%
 
 ---
 
 
 # Auditprotokolle
-
->[!NOTE]
->
->Diese Funktion wird derzeit [eingeschränkt getestet](/help/release-notes/releases.md).
 
 Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten zu erhöhen, können Sie mit Customer Journey Analytics (CJA) die Benutzeraktivität für verschiedene Dienste und Funktionen in Form von &quot;Auditprotokollen&quot;überprüfen. Diese Protokolle bilden ein Audit-Protokoll, das Ihnen bei der Fehlerbehebung helfen und Ihrem Unternehmen helfen kann, die Richtlinien der Unternehmensdatenverwaltung und die gesetzlichen Anforderungen wie den Health Insurance Portability and Accounability Act (HIPAA) effektiv zu erfüllen.
 
