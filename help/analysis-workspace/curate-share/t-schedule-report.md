@@ -5,10 +5,10 @@ title: Planen von Projekten
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
+source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 62%
+source-wordcount: '741'
+ht-degree: 61%
 
 ---
 
@@ -86,8 +86,8 @@ Die Passwortanforderungen entsprechen dem Adobe-Standard und erfordern mindesten
 
 ### Neues geplantes Projekt
 
-1. Nachdem Sie Ihr Projekt gespeichert haben, gehen Sie zu &quot;Freigeben&quot;> &quot;Datei jetzt senden&quot;oder zu &quot;Freigeben&quot;> &quot;Datei planmäßig senden&quot;.
-1. Befolgen Sie die Anweisungen oben unter Datei jetzt freigeben oder Datei planmäßig freigeben .
+1. Nachdem Sie Ihr Projekt gespeichert haben, gehen Sie zu **[!UICONTROL Freigeben]** > **[!UICONTROL Datei jetzt senden]** oder [!UICONTROL Freigeben] > **[!UICONTROL Datei planmäßig senden]**.
+1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Vorhandenes terminiertes Projekt
 
