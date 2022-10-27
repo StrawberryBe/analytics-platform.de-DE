@@ -6,13 +6,13 @@ feature: Release Notes
 source-git-commit: 07842c9f1e2f4708d0881dec75c067d93611626c
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 59%
+ht-degree: 73%
 
 ---
 
 # Customer Journey Analytics (CJA) - Versionshinweise (Oktober/November 2022)
 
-**Letztes Update**: 25. Oktober 2022
+**Zuletzt aktualisiert**: 25. Oktober 2022
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,9 +20,9 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| Visualisierung der **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** | Mit der Visualisierung der [!UICONTROL Zusammenfassung der Schlüsselmetriken] können Sie sehen, wie sich eine wichtige Metrik innerhalb einer bestimmten Zeitspanne entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md) | 5. Oktober 2022 | 19. Oktober 2022 |
-| **Mehrwert-Variablen ohne Unterscheidung von Groß- und Kleinschreibung** | Bei Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird, werden die in `mvvar1` - `mvvar3` wird nicht mehr automatisch in Kleinbuchstaben geschrieben. Stattdessen spiegeln Daten, die über den Analytics Source Connector an Adobe Experience Platform und CJA übergeben werden, die ursprüngliche Groß-/Kleinschreibung wider, die von der Seite weitergegeben wurde. | Nicht angegeben | 24. Oktober 2022 |
-| **CJA-Auditprotokoll** | Mit Customer Journey Analytics (CJA) können Sie Benutzeraktivitäten auf verschiedene Dienste und Funktionen in Form von &quot;Auditprotokollen&quot;prüfen. Diese Protokolle bilden ein Audit-Protokoll, das Ihnen bei der Fehlerbehebung helfen und Ihrem Unternehmen helfen kann, die Richtlinien der Unternehmensdatenverwaltung und die gesetzlichen Anforderungen wie den Health Insurance Portability and Accounability Act (HIPAA) effektiv zu erfüllen. Diese Protokolle waren bisher nur über die Auditprotokolle-API verfügbar. [Weitere Informationen](/help/privacy/audit-log.md) | Nicht angegeben | 26. Oktober 2022 |
+| Visualisierung der **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** | Mit der Visualisierung der [!UICONTROL Zusammenfassung der Schlüsselmetriken] können Sie sehen, wie sich eine wichtige Metrik innerhalb einer bestimmten Zeitspanne entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md) | 5. Oktober 2022 | 19. Oktober 2022 |
+| **Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird** | Bei Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird, werden die in `mvvar1` - `mvvar3` gespeicherten Werte nicht mehr automatisch in Kleinbuchstaben geschrieben. Stattdessen werden die Daten, die über den Analytics Source Connector an Adobe Experience Platform und CJA übergeben werden, die ursprüngliche Groß-/Kleinschreibung haben, die von der Seite weitergegeben wurde. | Nicht angegeben | 24. Oktober 2022 |
+| **CJA-Auditprotokoll** | Mit Customer Journey Analytics (CJA) können Sie Benutzeraktivitäten auf verschiedene Dienste und Funktionen in Form von &quot;Auditprotokollen&quot;prüfen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten. Diese Protokolle waren bisher nur über die Auditprotokolle-API verfügbar. [Weitere Informationen](/help/privacy/audit-log.md) | Nicht angegeben | 26. Oktober 2022 |
 | **HIPAA-Bereitschaft** | Adobe unterstützt jetzt nur noch den Empfang, die Verwendung, die Pflege oder die Übermittlung geschützter Gesundheitsinformationen in Customer Journey Analytics und anderen auf Experience Platform basierenden Anwendungen für den Gesundheitsschild. Der Gesundheitsschild richtet sich an Kunden im Gesundheitswesen, die entweder eine abgedeckte Organisation oder einen Geschäftsverband nur in den USA sind. [Weitere Infos](https://www.adobe.com/trust/compliance/hipaa-ready.html) | Nicht angegeben | 7. November 2022 |
 | **Kennwortschutz für geplante Projekte** | Diese Funktion ist Teil der HIPAA-Bereitschaft und gilt nur für Kunden des Gesundheitsschilds. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | Nicht angegeben/ | 7. November 2022. |
 

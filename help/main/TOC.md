@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 36667163792454a1793e48bc0c810615b51c1b7e
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 97%
       + Ordner in Workspace {#workspace-folders}
          + [Über Ordner in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Projekte hinzufügen](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Hinzufügen von Projekte](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Entfernen eines Projekts](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Speichern eines neuen Projekts](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [Hotkeys (Tastaturbefehle)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)

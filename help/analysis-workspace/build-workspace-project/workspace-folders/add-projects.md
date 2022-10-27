@@ -1,5 +1,5 @@
 ---
-description: Erfahren Sie, wie Sie Ordner in Workspace hinzufügen
+description: Erfahren Sie, wie Sie in Workspace Ordner hinzufügen
 keywords: Analysis Workspace
 title: Hinzufügen von Ordnern in Workspace
 feature: CJA Workspace Basics
@@ -8,18 +8,18 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 1%
+ht-degree: 97%
 
 ---
 
 
-# Projekte zu Ordnern hinzufügen
+# Hinzufügen von Projekten zu Ordnern
 
-Sie können Projekte zu einem Ordner in der Tabellenansicht oder aus einem Ordner hinzufügen.
+Sie können Projekte zu einem Ordner in der Tabellenansicht oder in einem Ordner hinzufügen.
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit als Betaversion verfügbar. Einige Bildschirme können sich ändern.
+>Diese Funktion ist derzeit als Betaversion verfügbar. Manche Bildschirme können sich ändern.
 
 ## In der Tabellenansicht
 
@@ -29,9 +29,9 @@ Fügen Sie in der Tabellenansicht auf der Startseite Projekte zu einem Ordner hi
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
 
-1. Auswählen **Verschieben nach**. Das Dialogfeld Ordner auswählen wird angezeigt.
+1. Wählen Sie **Verschieben nach** aus. Das Dialogfeld „Ordner auswählen“ wird angezeigt.
 
-1. Wählen Sie einen Ordnernamen aus dem Dropdown-Menü aus.
+1. Wählen Sie im Dropdown-Menü einen Ordnernamen aus.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
 
@@ -43,25 +43,25 @@ Fügen Sie in der Tabellenansicht auf der Startseite Projekte zu einem Ordner hi
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   Auf der Workspace -Landingpage wird nun der Ordner mit (3) Projekten angezeigt.
+   Auf der Workspace-Landingpage ist nun zu sehen, dass der Ordner 3 Projekte enthält.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## Von innerhalb eines Ordners
+## In einem Ordner
 
-Sie können auch Projekte aus einem Ordner hinzufügen, indem Sie den Link mit den Auslassungspunkten verwenden.
+Sie können auch Projekte direkt in einem Ordner hinzufügen, indem Sie den Link mit den Auslassungspunkten verwenden.
 
-1. Wählen Sie einen Ordner aus und öffnen Sie ihn in der Tabellenansicht.
+1. Wählen Sie in der Tabellenansicht einen Ordner aus und öffnen Sie ihn.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1. Klicken Sie auf **...** Symbol mit Auslassungspunkten oben rechts.
+1. Klicken Sie oben rechts auf das Symbol **...** (Auslassungspunkte).
 
    ![](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
    In einem Dropdown-Menü wird die Option zum Hinzufügen von Projekten zum Ordner angezeigt. Zusätzliche Optionen ermöglichen das Umbenennen, Verschieben oder Löschen des Ordners und das Verwalten von Ordnerberechtigungen.
 
-1. Auswählen **Projekte hinzufügen** und wählen Sie aus der Dropdown-Liste das Projekt aus, das Sie hinzufügen möchten.
+1. Wählen Sie **Projekte hinzufügen** und danach aus der Dropdown-Liste das Projekt aus, das Sie hinzufügen möchten.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
@@ -69,7 +69,7 @@ Sie können auch Projekte aus einem Ordner hinzufügen, indem Sie den Link mit d
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
-1. Klicken **Hinzufügen** , um die Projekte zum Ordner hinzuzufügen.
+1. Klicken Sie auf **Hinzufügen**, um die Projekte zum Ordner hinzuzufügen.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-Nur Administratoren können Projekte zum Unternehmensordner hinzufügen oder ein neues Projekt erstellen und im Unternehmensordner speichern
+Nur Administratoren bzw. Administratorinnen können Projekte zum Unternehmensordner hinzufügen oder ein neues Projekt erstellen und im Unternehmensordner speichern

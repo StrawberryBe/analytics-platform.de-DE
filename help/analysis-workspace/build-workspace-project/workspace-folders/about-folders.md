@@ -1,60 +1,60 @@
 ---
-description: Informationen zu Ordnern in Workspace
+description: Erfahren Sie mehr zur Funktion „Ordner“ in Workspace
 keywords: Analysis Workspace
-title: Ordnerübersicht
+title: Übersicht über die Funktion „Ordner“
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
 
-# Über Ordner in Workspace-Projekten
+# Über die Funktion „Ordner“ in Workspace-Projekten
 
-Ordner in Workspace-Projekten sind ein Ordnerverwaltungssystem auf der Workspace-Landingpage.
+Bei der Funktion „Ordner“ in Workspace-Projekten handelt es sich um ein System zur Ordnerverwaltung auf der Workspace-Landingpage.
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit als Betaversion verfügbar. Einige Bildschirme können sich ändern.
+>Diese Funktion ist derzeit als Betaversion verfügbar. Manche Bildschirme können sich ändern.
 
-Ordner in Workspace-Projekten helfen Benutzern dabei, ihre Projekte zu organisieren und zu kategorisieren, um den Abruf und den Zugriff zu verbessern. Darüber hinaus ermöglicht ein freigegebener Unternehmensordner Administratoren die einfache Erstellung und Freigabe von Inhalten für alle Workspace-Benutzer. 
+Die Funktion „Ordner“ in Workspace-Projekten hilft Benutzenden, ihre Projekte zu organisieren und zu kategorisieren, um das Auffinden von Inhalten zu erleichtern. Darüber hinaus ermöglicht ein gemeinsam genutzter Unternehmensordner Administratoren bzw. Administratorinnen die einfache Erstellung und Freigabe von Inhalten für alle Workspace-Benutzenden. 
 
-Wenn Sie über eine lange Liste von Projekten verfügen, hat die Navigation zu einem bestimmten Projekt seine Herausforderungen. Mit der Ordnerfunktion können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten. So können Sie Projekte bei Bedarf leichter finden. 
+Wenn Ihre Liste von Projekten lang ist, ist das Auffinden eines bestimmten Projekts oft schwierig. Mit der Ordnerfunktion können Sie Ordner und Unterordner erstellen, um Ihre Projekte zu verwalten und das Auffinden einzelner Projekte zu vereinfachen. 
 
-In Workspace gibt es zwei Arten von Ordnern: den Unternehmensordner und die persönlichen Ordner.
+In Workspace gibt es zwei Arten von Ordnern: den Unternehmensordner und persönliche Ordner.
 
-Wenn Sie sich bei Workspace anmelden, zeigt die Landingpage Projekte an, deren Inhaber Sie sind, oder Projekte, die für Sie freigegeben wurden. Außerdem werden der Ordner &quot;Unternehmen&quot;und alle von Ihnen erstellten persönlichen Ordner angezeigt.
+Wenn Sie sich bei Workspace anmelden, zeigt die Landingpage Projekte an, deren Inhaber Sie sind oder die für Sie freigegeben wurden. Außerdem werden der Unternehmensordner und alle von Ihnen erstellten persönlichen Ordner angezeigt.
 
 ![](/help/analysis-workspace/build-workspace-project/assets/landing-page.png)
 
-## Über den Ordner &quot;Unternehmen&quot;
+## Über den Unternehmensordner
 
-Als Administrator können Sie schnell Projekte für alle Benutzer freigeben und Projekte in Unterordnern für eine Benutzergruppe gruppieren. Wenn Sie beispielsweise über eine Reihe von Projekten verfügen, mit denen Ihre Marketing-Experten ihre Forschung starten sollen, können Sie einen Marketing-Ordner im Unternehmensordner erstellen und diese Projekte dann im Marketing-Ordner ablegen. Dies ermöglicht einen schnellen direkten Zugriff auf freigegebene Projekte und erleichtert dem Marketing-Team das Ermitteln, wo es beginnen soll.
+Als Administrator bzw. Administratorin können Sie Projekte für alle Benutzenden mühelos freigeben und für eine Benutzergruppe in Unterordnern ablegen. Wenn Sie beispielsweise möchten, dass Ihre Marketer an bestimmten Projekten arbeiten, können Sie im Unternehmensordner einen Marketing-Ordner erstellen und diese Projekte dann im Marketing-Ordner ablegen. Dies ermöglicht einen schnellen direkten Zugriff auf freigegebene Projekte und das Marketing-Team weiß sofort, wo es mit der Arbeit beginnen soll.
 
-Wenn sich ein Benutzer bei Workspace anmeldet, wird der Unternehmensordner automatisch zu seiner Projekt- und Ordnerliste hinzugefügt. Es gibt keine spezifischen Berechtigungen für Projekte, die im Unternehmensordner enthalten sind.
+Wenn sich ein(e) Benutzende(r) bei Workspace anmeldet, wird der Unternehmensordner automatisch zu seiner Projekt- und Ordnerliste hinzugefügt. Für Projekte, die im Unternehmensordner enthalten sind, sind keine spezifischen Berechtigungen erforderlich.
 
-### Admin-Optionen
+### Optionen für Administratoren bzw. Administratorinnen
 
-Administratoren verfügen über spezielle Berechtigungen, die dem Unternehmensordner zugewiesen sind. Beispielsweise können nur Administratoren Ordner oder Projekte im Unternehmensordner hinzufügen oder entfernen. Benutzer ohne Administratorzugriff können den Inhalt des Unternehmensordners anzeigen.
+Administratoren bzw. Administratorinnen verfügen über spezielle Berechtigungen in Bezug auf den Unternehmensordner. Beispielsweise können nur Administratoren bzw. Administratorinnen Ordner oder Projekte im Unternehmensordner hinzufügen oder entfernen. Benutzende ohne Administratorrechte können den Inhalt des Unternehmensordners anzeigen.
 
 ![](/help/analysis-workspace/build-workspace-project/assets/admin-access-co-folder.png)
 
-Nicht-Administratoren haben eingeschränkte Optionen.
+Die Optionen für Benutzende ohne Administratorrechte sind eingeschränkt.
 
 ![](/help/analysis-workspace/build-workspace-project/assets/non-admin-options.png)
 
-### Richtlinien für Unternehmensordner
+### Informationen zum Unternehmensordner
 
-- Administratoren können Projekte zum Unternehmensordner hinzufügen oder ein neues Projekt erstellen und im Unternehmensordner speichern. Nicht-Administratoren können dann Inhalte des Unternehmensordners anzeigen.
+- Administratoren bzw. Administratorinnen können Projekte zum Unternehmensordner hinzufügen oder ein neues Projekt erstellen und im Unternehmensordner speichern. Benutzende ohne Administratorrechte können dann die Inhalte im Unternehmensordner anzeigen.
 
-- Administratoren können im Unternehmensordner Unterordner erstellen.
+- Administratoren bzw. Administratorinnen können im Unternehmensordner Unterordner erstellen.
 
-- Administratoren können einen Ordner im Unternehmensordner löschen, den ein anderer Administrator erstellt hat. Administratoren müssen sich möglicherweise mit anderen Administratoren abstimmen, um die Konsistenz von Ordnern und Projektzugriff zu gewährleisten.
+- Administratoren bzw. Administratorinnen können im Unternehmensordner einen Ordner löschen, den ein anderer Administrator bzw. eine andere Administratorin erstellt hat. Administratoren bzw. Administratorinnen müssen sich möglicherweise mit anderen Administratoren bzw. Administratorinnen abstimmen, um die Konsistenz von Ordnern und Projektzugriffen zu gewährleisten.
 
-- Wenn ein Administrator ein Projekt in den Unternehmensordner verschiebt, wird das Projekt für alle freigegeben, selbst wenn die ursprünglichen freigegebenen Berechtigungen eingeschränkt waren.
+- Wenn ein Administrator bzw. eine Administratorin ein Projekt in den Unternehmensordner verschiebt, wird das Projekt für alle freigegeben, selbst wenn die ursprünglichen Freigabeberechtigungen eingeschränkt waren.
 
-- Wenn ein Administrator ein Projekt aus dem Unternehmensordner verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beachtet.
+- Wenn ein Administrator bzw. eine Administratorin ein Projekt aus dem Unternehmensordner verschiebt, werden die ursprünglichen oder vorherigen Freigabeberechtigungen beibehalten.
