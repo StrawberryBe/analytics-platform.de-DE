@@ -3,9 +3,9 @@ title: Customer Journey Analytics und Data Governance
 description: Beschreibt, wie Data Governance in Customer Journey Analytics funktioniert.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 source-git-commit: 5f69840fa19fbf7ba6ecac1cd198cfa4a7dd905d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,10 +27,10 @@ Durch diese Integration können Sie die Compliance einfacher verwalten. Datenver
 
 ## DSGVO
 
-Customer Journey Analytics wird nicht in den zentralen Service der Datenschutz-Grundverordnung (DSGVO) eingebunden, sondern übernimmt stattdessen alle in Experience Platform vorgenommenen Änderungen. Wir sind darauf angewiesen, dass Platform Data Lake DSGVO-Löschanfragen durchsetzt und uns benachrichtigt, wenn diese in der Pipeline abgeschlossen sind. Wir überwachen die Pipeline und synchronisieren alle Änderungen, die an betroffenen Batches in Customer Journey Analytics für Ereignis-Datensätze vorgenommen wurden. Profil- und Nachschlagedatensätze, die von DSGVO-Löschanfragen betroffen sind, werden nach jeder Löschanfrage vollständig neu erfasst. Wir garantieren, dass Löschanfragen innerhalb von sieben Tagen ab dem Löschvorgang in Data Lake ausgeführt werden.
+Customer Journey Analytics wird nicht in den zentralen Service der Datenschutz-Grundverordnung (DSGVO) eingebunden, sondern übernimmt stattdessen alle in Experience Platform vorgenommenen Änderungen. Wir sind darauf angewiesen, dass Platform Data Lake die DSGVO-Löschanfragen durchführt und uns benachrichtigt, wenn diese in der Pipeline abgeschlossen sind. Wir überwachen die Pipeline und synchronisieren alle Änderungen, die an betroffenen Batches in Customer Journey Analytics für Ereignis-Datensätze vorgenommen wurden. Profil- und Nachschlagedatensätze, die von DSGVO-Löschanfragen betroffen sind, werden nach jeder Löschanfrage vollständig neu erfasst. Wir garantieren, dass Löschanfragen innerhalb von sieben Tagen ab dem Löschvorgang in Data Lake ausgeführt werden.
 
 ## CCPA
 
 Der California Consumer Privacy Act (CCPA) erweitert die Datenschutzrechte und den Verbraucherschutz für Einwohner von Kalifornien, USA. Dieses Gesetz trat am 1. Januar 2020 in Kraft.
 Der CCPA bietet neue Datenschutzrechte, mit denen Verbraucher beispielsweise ihre personenbezogenen Daten einsehen und löschen oder herausfinden können, ob (und an wen) ihre Daten verkauft oder weitergegeben wurden. Zusätzlich können sie dem Verkauf ihrer personenbezogenen Daten widersprechen.
-In Übereinstimmung mit dem CCPA unterstützt der Privacy Service Anfragen zur Abmeldung vom Verkauf personenbezogener Daten.
+In Übereinstimmung mit dem CCPA unterstützt Privacy Service Anfragen zur Abmeldung vom Verkauf personenbezogener Daten.
