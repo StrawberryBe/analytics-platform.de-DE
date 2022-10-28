@@ -1,12 +1,10 @@
 ---
 title: Auditprotokolle
 description: Erfahren Sie, wie Sie CJA-Auditprotokolle anzeigen und verwalten können.
-hide: true
-hidefromtoc: true
-source-git-commit: 6cf2d5ccbeeea7baeea8a675f2b7e96e6203fe24
+source-git-commit: 37a23a4669c08c8f7d9c6595286998ebd7e60ac4
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
