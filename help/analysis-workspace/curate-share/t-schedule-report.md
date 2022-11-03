@@ -6,9 +6,9 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '741'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ So senden Sie eine Datei sofort per E-Mail an die Empfänger:
 1. Geben Sie den Dateityp an (CSV oder PDF).
 1. (Optional) Fuegen Sie eine Beschreibung hinzu, die in der E-Mail enthalten sein wird, um die empfangene Datei zu erklären.
 1. Fügen Sie Empfänger oder Gruppen hinzu. E-Mail-Adressen können auch eingegeben werden.
-1. (Nur für Kunden von Health Care Shield) Geben Sie ein Kennwort an. Siehe Abschnitt Kennwortschutz für terminierte Berichte .
+1. (Nur für Kunden von Health Care Shield) Geben Sie ein Passwort an. Siehe Abschnitt „Passwortschutz für terminierte Berichte“.
 1. Klicken Sie auf **Jetzt senden**.
 1. (Optional) Klicken Sie auf **Planungsoptionen anzeigen**, um einen Zeitplan für den Versand festzulegen.
 
@@ -38,7 +38,7 @@ So senden Sie eine Datei basierend auf einem wiederkehrenden Zeitplan per E-Mail
 1. Geben Sie den Dateityp an (CSV oder PDF).
 1. (Optional) Fuegen Sie eine Beschreibung hinzu, die in der E-Mail enthalten sein wird, um die empfangene Datei zu erklären.
 1. Fügen Sie Empfänger oder Gruppen hinzu. E-Mail-Adressen können auch eingegeben werden.
-1. (Nur für Kunden von Health Care Shield) Geben Sie ein Kennwort an. Siehe Abschnitt Kennwortschutz für terminierte Berichte .
+1. (Nur für Kunden von Health Care Shield) Geben Sie ein Passwort an. Siehe Abschnitt „Passwortschutz für terminierte Berichte“.
 1. Geben Sie den Datumsbereich an, über den anhand des Zeitplans gesendet werden soll, indem Sie die Einstellungen „Start am“ und „Ende am“ ändern. Das Enddatum muss innerhalb eines Jahres ab dem Tag liegen, an dem der Zeitplan erstellt oder geändert wurde.
 1. Geben Sie die Versandhäufigkeit an. Jede Häufigkeit ermöglicht unterschiedliche Anpassungen.
 1. Klicken Sie auf **Planmäßig senden**.
@@ -64,40 +64,40 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 
 Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert wird, werden alle geplanten Bereitstellungen gestoppt.
 
-## Kennwortschutz für ein geplantes Projekt {#password}
+## Passwortschutz für ein geplantes Projekt {#password}
 
 >[!NOTE]
 >
->Die Option zum Kennwortschutz für ein terminiertes Projekt wird nur für CJA-Kunden angezeigt, die die [Gesundheitsschild](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) Add-On-Produkt.
+>Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für CJA-Kunden angezeigt, die das [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den)-Add-on-Produkt gekauft haben.
 
-Adobe verwendet das Kennwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
+Adobe verwendet das Passwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
 
-Nachdem Ihr Unternehmen die SKU des Gesundheitsschilds erworben und dafür aktiviert hat, wird die Aufforderung zur Erstellung eines Kennworts für ein geplantes Projekt unter zwei Bedingungen angezeigt:
+Nachdem Ihr Unternehmen die Healthcare Shield-Produktnummer erworben und mit ihr verknüpft wurde, wird die Aufforderung zur Erstellung eines Passworts für ein geplantes Projekt unter zwei Bedingungen angezeigt:
 
 * Wenn jemand ein neues geplantes Projekt erstellt.
 
-* Wenn ein vorhandenes terminiertes Projekt kurz vor dem Senden steht. Das aktuell geplante Projekt wird deaktiviert, bis der Kennwortschutz eingerichtet ist. Der Eigentümer des geplanten Projekts erhält zu diesem Zweck eine E-Mail.
+* Wenn ein vorhandenes geplantes Projekt kurz vor dem Senden steht. Das aktuell geplante Projekt wird deaktiviert, bis der Passwortschutz eingerichtet ist. Der Eigentümer des geplanten Projekts erhält zu diesem Zweck eine E-Mail.
 
-![Kennwortschutz](assets/password.png)
+![Passwortschutz](assets/password.png)
 
 ### Passwortanforderungen
 
-Die Passwortanforderungen entsprechen dem Adobe-Standard und erfordern mindestens 8 Zeichen mit einer Nummer und einem Sonderzeichen.
+Die Passwortanforderungen entsprechen dem Adobe-Standard und schreiben mindestens acht Zeichen mit mindestens einer Zahl und einem Sonderzeichen vor.
 
 ### Neues geplantes Projekt
 
 1. Nachdem Sie Ihr Projekt gespeichert haben, gehen Sie zu **[!UICONTROL Freigeben]** > **[!UICONTROL Datei jetzt senden]** oder [!UICONTROL Freigeben] > **[!UICONTROL Datei planmäßig senden]**.
-1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
+1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#schedule).
 
-### Vorhandenes terminiertes Projekt
+### Vorhandenes geplantes Projekt
 
-Vor dem Zeitpunkt, zu dem ein Projekt geplant ist, erhält der Projekteigentümer eine E-Mail wie die folgende:
+Vor dem Zeitpunkt, für den ein Projekt geplant ist, erhält der Projekteigentümer eine E-Mail wie die folgende:
 
 ![email](assets/email-password.png)
 
 1. Melden Sie sich wieder bei Customer Journey Analytics an.
-1. Klicken **[!UICONTROL Geplantes Projekt anzeigen]**.
-1. Im **[!UICONTROL Geplantes Projekt bearbeiten]** eingeben und ein Kennwort erneut eingeben.
-1. Teilen Sie den Empfängern des geplanten Projekts (nur) dieses Kennwort mit.
+1. Klicken Sie auf **[!UICONTROL Geplantes Projekt anzeigen]**.
+1. Geben Sie in **[!UICONTROL Geplantes Projekt bearbeiten]** ein Passwort ein und bestätigen Sie es.
+1. Teilen Sie (nur) den Empfängern des geplanten Projekts dieses Passwort mit.
 
 
