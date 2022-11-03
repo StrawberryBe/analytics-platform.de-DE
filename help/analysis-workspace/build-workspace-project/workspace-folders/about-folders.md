@@ -6,9 +6,9 @@ feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Bei der Funktion „Ordner“ in Workspace-Projekten handelt es sich um ein Syst
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit als Betaversion verfügbar. Manche Bildschirme können sich ändern.
+>Diese Funktion befindet sich derzeit in der Betaversion. Manche Bildschirme können sich ändern.
 
 Die Funktion „Ordner“ in Workspace-Projekten hilft Benutzenden, ihre Projekte zu organisieren und zu kategorisieren, um das Auffinden von Inhalten zu erleichtern. Darüber hinaus ermöglicht ein gemeinsam genutzter Unternehmensordner Administratoren bzw. Administratorinnen die einfache Erstellung und Freigabe von Inhalten für alle Workspace-Benutzenden. 
 
