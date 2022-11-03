@@ -6,11 +6,11 @@ feature: Release Notes
 source-git-commit: fbfc7113aef8857e11ccfba5e5e557eed16c2465
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 
-# Customer Journey Analytics (CJA) - Versionshinweise (Oktober/November 2022)
+# Versionshinweise zu Customer Journey Analytics (CJA) (Oktober/November 2022)
 
 **Zuletzt aktualisiert**: 25. Oktober 2022
 
@@ -22,17 +22,17 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | ----------- | ---------- | ----- | --- |
 | Visualisierung der **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** | Mit der Visualisierung der [!UICONTROL Zusammenfassung der Schlüsselmetriken] können Sie sehen, wie sich eine wichtige Metrik innerhalb einer bestimmten Zeitspanne entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md) | 5. Oktober 2022 | 19. Oktober 2022 |
 | **Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird** | Bei Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird, werden die in `mvvar1` - `mvvar3` gespeicherten Werte nicht mehr automatisch in Kleinbuchstaben geschrieben. Stattdessen werden die Daten, die über den Analytics Source Connector an Adobe Experience Platform und CJA übergeben werden, die ursprüngliche Groß-/Kleinschreibung haben, die von der Seite weitergegeben wurde. ASC/CJA-Spalten `_experience.analytics.customDimensions.lists.list1.list[]` - `_experience.analytics.customDimensions.lists.list3.list[]` von dieser Änderung betroffen sind. | Nicht angegeben | 24. Oktober 2022 |
-| **CJA-Auditprotokoll** | Mit Customer Journey Analytics (CJA) können Sie Benutzeraktivitäten auf verschiedene Dienste und Funktionen in Form von &quot;Auditprotokollen&quot;prüfen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten. Diese Protokolle waren bisher nur über die Auditprotokolle-API verfügbar. [Weitere Informationen](/help/privacy/audit-log.md) | Nicht angegeben | 26. Oktober 2022 |
-| **HIPAA-Bereitschaft** | Adobe unterstützt jetzt nur noch den Empfang, die Verwendung, die Pflege oder die Übermittlung geschützter Gesundheitsinformationen in Customer Journey Analytics und anderen auf Experience Platform basierenden Anwendungen für den Gesundheitsschild. Der Gesundheitsschild richtet sich an Kunden im Gesundheitswesen, die entweder eine abgedeckte Organisation oder einen Geschäftsverband nur in den USA sind. [Weitere Infos](https://www.adobe.com/trust/compliance/hipaa-ready.html) | Nicht angegeben | 7. November 2022 |
-| **Kennwortschutz für geplante Projekte** | Diese Funktion ist Teil der HIPAA-Bereitschaft und gilt nur für Kunden des Gesundheitsschilds. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password) | Nicht angegeben/ | 7. November 2022. |
+| **CJA-Auditprotokoll** | Mit Customer Journey Analytics (CJA) können Sie Benutzeraktivitäten auf verschiedene Dienste und Funktionen in Form von „Auditprotokollen“ prüfen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten. Diese Protokolle waren bisher nur über die Auditprotokolle-API verfügbar. [Weitere Informationen](/help/privacy/audit-log.md) | Nicht angegeben | 26. Oktober 2022 |
+| **HIPAA-Bereitschaft** | Adobe unterstützt jetzt nur noch den Empfang, die Verwendung, die Pflege oder die Übermittlung geschützter Gesundheitsinformationen in Customer Journey Analytics und anderen auf Experience Platform basierenden Anwendungen für Healthcare Shield. Healthcare Shield richtet sich an Kundinnen und Kunden im Gesundheitswesen, die entweder eine abgedeckte Organisation oder ein Geschäftsverband nur in den USA sind. [Weitere Informationen](https://www.adobe.com/trust/compliance/hipaa-ready.html) | Nicht angegeben | 7. November 2022 |
+| **Passwortschutz für geplante Projekte** | Diese Funktion ist Teil der HIPAA-Bereitschaft und gilt nur für Healthcare Shield-Kunden. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#password) | Nicht angegeben | 7. November 2022. |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Fehlerbehebungen
 
-* Es wurde ein Problem behoben, bei dem aktuelle MacOS-Versionen fälschlicherweise als &quot;Macintosh&quot;bezeichnet wurden. Mit dieser Fehlerbehebung beginnt die Betriebssystemdimension mit der Nummerierung der MacOS-Version, beginnend mit MacOS 11. (AN-301834)
+* Es wurde ein Problem behoben, bei dem aktuelle MacOS-Versionen fälschlicherweise als „Macintosh“ bezeichnet wurden. Mit dieser Fehlerbehebung beginnt die Betriebssystemdimension mit der Nummerierung der MacOS-Version, beginnend mit MacOS 11. (AN-301834)
 
-### Weitere  Fehlerbehebungen
+### Weitere Fehlerbehebungen
 
 AN-302367; AN-302562; AN-304036
 

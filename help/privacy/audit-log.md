@@ -2,8 +2,8 @@
 title: Auditprotokolle
 description: Erfahren Sie, wie Sie CJA-Auditprotokolle anzeigen und verwalten können.
 source-git-commit: 37a23a4669c08c8f7d9c6595286998ebd7e60ac4
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '849'
 ht-degree: 100%
 
 ---
@@ -66,11 +66,11 @@ Die Benutzeroberfläche verfügt für Protokolle über folgende Filter:
 | Filter | Beschreibung |
 | --- | --- |
 | [!UICONTROL Datumsbereich] | Sie können nach einem Datumsbereich filtern, indem Sie ein Datum auswählen. Sie können einen Datumsbereich auswählen, indem Sie den Cursor über mehrere Daten ziehen. Standardmäßig sind das heutige und das gestrige Datum ausgewählt. |
-| [!UICONTROL Aktion] | Sie können nach einer oder mehreren der folgenden Aktionen filtern: <ul><li>API_Request</li><li>Genehmigen</li><li>Erstellen</li><li>Bearbeiten</li><li>Exportieren</li><li>Login_failed</li><li>Login_success</li><li>Abmelden</li><li>Org_change</li><li>Aktualisieren</li><li>Freigeben</li><li>Übertragen</li><li>Genehmigung aufheben</li><li>Freigabe aufheben</li></ul> |
+| [!UICONTROL Aktion] | Sie können nach einer oder mehreren der folgenden Aktionen filtern: <ul><li>API_Request</li><li>Genehmigen</li><li>Erstellen</li><li>Bearbeiten</li><li>Exportieren</li><li>Login_failed</li><li>Login_success</li><li>Abmelden</li><li>org_change</li><li>Aktualisieren</li><li>Freigeben</li><li>Übertragen</li><li>Genehmigung aufheben</li><li>Freigabe aufheben</li></ul> |
 | [!UICONTROL Benutzer-ID] | Filtern nach der Benutzer-ID eines/einer bestimmten Benutzenden. Die Benutzer-ID finden Sie, indem Sie auf die Info-Schaltfläche (i) neben einem Benutzernamen klicken. |
 | [!UICONTROL E-Mail] | Filtern nach der E-Mail-Adresse eines/einer bestimmten Benutzenden. Die E-Mail-Adresse finden Sie, indem Sie auf die Info-Schaltfläche (i) neben einem Benutzernamen klicken. |
 | [!UICONTROL Komponenten-ID] | Filtern nach einer bestimmten Komponenten-ID. Die Komponenten-ID finden Sie, indem Sie auf die Info-Schaltfläche (i) für die gewünschte Komponente klicken. |
-| [!UICONTROL Typ der Komponente] | Filtern nach einem oder mehreren Komponententypen: <ul><li>Anmerkung</li><li>Zielgruppe</li><li>Berechnete Metrik</li><li>Verbindung</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Projekt</li><li>Bericht</li><li>Scheduled_Project</li><li>Benutzer</li><li>User_Group</li></ul> |
+| [!UICONTROL Typ der Komponente] | Filtern nach einem oder mehreren Komponententypen: <ul><li>Anmerkung</li><li>Zielgruppe</li><li>Berechnete Metrik</li><li>Verbindung</li><li>Data_Group</li><li>data_view</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Projekt</li><li>Bericht</li><li>Scheduled_Project</li><li>Benutzer</li><li>User_Group</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
