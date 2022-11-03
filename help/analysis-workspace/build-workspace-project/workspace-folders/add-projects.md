@@ -6,9 +6,9 @@ feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '225'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Sie können Projekte zu einem Ordner in der Tabellenansicht oder in einem Ordner
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit als Betaversion verfügbar. Manche Bildschirme können sich ändern.
+>Diese Funktion befindet sich derzeit in der Betaversion. Manche Bildschirme können sich ändern.
 
 ## In der Tabellenansicht
 
