@@ -6,9 +6,9 @@ feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Um ein neues Projekt in einem bestimmten Ordner zu speichern, wählen Sie im Dia
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit als Betaversion verfügbar. Manche Bildschirme können sich ändern.
+>Diese Funktion befindet sich derzeit in der Betaversion. Manche Bildschirme können sich ändern.
 
 1. Erstellen Sie in Workspace ein neues Projekt.
 
