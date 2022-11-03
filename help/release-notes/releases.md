@@ -3,9 +3,9 @@ description: Erläutert die Strategie zur kontinuierlichen Veröffentlichung von
 title: Versionen von Customer Journey Analytics-Funktionen
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 source-git-commit: 44a140fdd5069cbe806f694377802215bcf50b31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlic
 
 [!UICONTROL Analysis Workspace] verwendet Funktionsmarkierungen (auch als „Umschalter“ bezeichnet), um die Sichtbarkeit neuer Funktionen zu steuern, sodass vor der Vollversion ein kontrollierter Skalierungstest durchgeführt werden kann. Diese Veröffentlichungsstrategie umfasst die folgenden Phasen:
 
-* **Start des Rollouts**: Das Rollout einer stufenweisen Veröffentlichung beginnt mit eingeschränkten Tests durch interne Anwender der Adobe. Die Version wird dann im Laufe einiger Monate von 0 % auf 100 % der Verfügbarkeit für Kunden skaliert. Die schrittweise Einführung erfolgt auf der Organisationsebene in Experience Cloud, sodass alle Benutzer mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
+* **Start des Rollouts**: Das Rollout einer stufenweisen Veröffentlichung beginnt mit eingeschränkten Tests durch interne Adobe-Benutzer. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Die schrittweise Einführung erfolgt auf der Organisationsebene in Experience Cloud, sodass alle Benutzer mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
 
 * **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten Experience Cloud-Organisationen zur Verfügung und die Veröffentlichung der Funktion ist abgeschlossen.
 
