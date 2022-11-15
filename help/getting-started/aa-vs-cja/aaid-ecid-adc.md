@@ -2,10 +2,10 @@
 title: AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector
 description: Erfahren Sie, wie der Analytics-Quell-Connector mit Adobe Analytics-Identitätsfeldern umgeht.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 4c9d87b6c6b7859ffac4cd2d26e8c89d12fe1285
-workflow-type: ht
-source-wordcount: '560'
-ht-degree: 100%
+source-git-commit: a8f8d14eb854029d6245932a321cf08dfb3cd7e3
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Diese Felder sind nicht als Identitäten markiert. Stattdessen werden dieselben 
 * `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
 * `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
 
-Die Elemente in Klammern
+Die Elemente in den Klammern &lt;> stellen Positionen dar, an denen tatsächliche Werte erscheinen würden.
 
 Innerhalb der identityMap:
 
