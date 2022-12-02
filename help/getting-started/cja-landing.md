@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9874626b52fd4e87bd6337b20ac03d837d8ad888
+source-git-commit: d976160ae5186e9c8b9890b3835a251cac518b02
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 100%
+source-wordcount: '427'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,8 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Neue oder vorgestellte Funktionen</b> </p> <p> 
      <ul>
-       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=de"> Kombinieren von Report Suites mit unterschiedlichen Schemata </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-data-in-cja.html?lang=en?lang=en">Verwenden von Adobe Analytics Report Suite-Daten in Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=de"> Kombinieren von Report Suites mit unterschiedlichen Schemata </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.htmll?lang=de"> Verarbeitungsregeln, VISTA und Klassifizierungen versus Datenvorbereitung </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=de"> Vergleich der Datenverarbeitung zwischen den Reporting-Funktionen von Adobe Analytics und CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=de"> Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics-Quell-Connector </a> </li>
@@ -48,7 +49,8 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
      <li><a href="https://www.adobe.com/de/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
      <li> <a href="https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=de" format="https" scope="external"> Tutorials zu Adobe Experience Platform</a> </li> 
      <li><a href="https://www.adobe.io/apis/experienceplatform/home/api-reference.html" format="https" scope="external"> API-Referenz</a> </li> 
-     <li><a href="https://www.adobe.com/de/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Dokumentation und Entwicklerressourcen</a> </li> 
+     <li><a href="https://www.adobe.com/de/experience-platform/documentation-and-developer-resources.html" format="https" scope="external"> Dokumentation und Entwicklerressourcen</a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de" format="https" scope="external"> Adobe Analytics-Quell-Connector für Report Suite-Daten</a> </li>
     </ul> </td> 
   </tr> 
  </tbody> 

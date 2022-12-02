@@ -4,10 +4,10 @@ description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
-workflow-type: ht
-source-wordcount: '1189'
-ht-degree: 100%
+source-git-commit: 143979330addce3fce045d1785ae969c75a78d28
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Cross-Channel Analytics ist eine innovative und zuverlässige Funktion, deren Ve
 
 Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen überblickt, können Sie die folgenden Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
 
-1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Siehe unter [Ein Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Daten aufnehmen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
+1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Informationen zu Adobe Analytics-Daten finden Sie unter [Verwenden von Adobe Analytics Report Suite-Daten in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). Weitere Datentypen finden Sie unter [Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Daten erfassen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
 1. Wenden Sie sich mit den folgenden Informationen an den Adobe-Support:
    * Eine Anfrage zur Aktivierung von Cross-Channel Analytics
    * Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten

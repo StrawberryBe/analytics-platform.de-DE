@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Adobe Analytics-Daten mit Daten in Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 90%
 
 ---
 
@@ -63,9 +63,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Stellen Sie in den [Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de) anhand der Rohdaten fest, ob einige Zeilen möglicherweise vom Analytics-Quell-Connector gelöscht wurden.
+1. In [Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de)anhand der Rohdaten erkennen, ob einige Zeilen möglicherweise vom Analytics-Quell-Connector herausgefiltert wurden.
 
-   Der [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) kann beim Konvertieren in das XDM-Schema Zeilen ignorieren. Es kann mehrere Gründe dafür geben, dass die gesamte Zeile nicht für eine Umwandlung geeignet ist. Wenn eines der folgenden Analytics-Felder diese Werte aufweist, wird die gesamte Zeile ignoriert.
+   Die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kann bestimmte Zeilen während der Konvertierung in das XDM-Schema filtern. Es kann mehrere Gründe dafür geben, dass die gesamte Zeile nicht für eine Umwandlung geeignet ist. Wenn eines der folgenden Analytics-Felder diese Werte aufweist, wird die gesamte Zeile herausgefiltert.
 
    | Analytics-Feld | Werte, die zum Ignorieren einer Zeile führen |
    | --- | --- |
@@ -78,9 +78,9 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
    Weitere Informationen zu „hit\_source“ finden Sie unter [Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de). Weitere Informationen zu „page\_event“ finden Sie unter [Seitenereignissuche](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=de).
 
-1. Wenn der Connector Zeilen ignoriert hat, ziehen Sie diese Zeilen von der Metrik [!UICONTROL Vorfälle] ab. Die resultierende Zahl sollte mit der Anzahl der Ereignisse in den Adobe Experience Platform-Datensätzen übereinstimmen.
+1. Wenn der Connector Zeilen gefiltert hat, ziehen Sie diese Zeilen aus der [!UICONTROL Vorfälle] Metrik. Die resultierende Zahl sollte mit der Anzahl der Ereignisse in den Adobe Experience Platform-Datensätzen übereinstimmen.
 
-## Warum Datensätze während der Aufnahme aus AEP möglicherweise ignoriert oder übersprungen werden
+## Gründe für das Filtern oder Überspringen von Datensätzen während der Aufnahme aus AEP
 
 [Verbindungen](/help/connections/create-connection.md) in CJA ermöglichen es Ihnen, mehrere Datensätze zusammenzuführen und miteinander zu verbinden, basierend auf einer gemeinsamen Personen-ID über die Datensätze hinweg. Im Backend wird Deduplizierung angewendet: ein vollständiger äußerer Join oder eine Vereinigung für Ereignis-Datensätze basierend auf Zeitstempeln und dann ein innerer Join in Profil- und Lookup-Datensatz basierend auf der Personen-ID.
 
