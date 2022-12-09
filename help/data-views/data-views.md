@@ -4,8 +4,8 @@ description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journe
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
+source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
+workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -79,4 +79,4 @@ Wenn Sie eine Datenansicht in [!UICONTROL Customer Journey Analytics] löschen, 
 ## Nächste Schritte
 
 * [Erstellen von Datenansichten](/help/data-views/create-dataview.md)
-* [Anwendungsfälle von Datenansichten](/help/data-views/data-views-usecases.md)
+* [Anwendungsfälle von Datenansichten](/help/use-cases/data-views/data-views-usecases.md)

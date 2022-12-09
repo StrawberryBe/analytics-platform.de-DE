@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 52593d05b10c872322236fb82c4ce5346ddcc9ac
+source-git-commit: 879350c645cf4c6e12361184dddfb065224d758c
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 98%
+source-wordcount: '826'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,6 @@ ht-degree: 98%
       + [Teilzeichenfolge](../data-views/component-settings/substring.md)
       + [Wert-Bucketing](../data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](../data-views/component-reference.md)
-   + [Anwendungsfälle von Datenansichten](../data-views/data-views-usecases.md)
    + [Beschriftungen und Richtlinien](../data-views/data-governance.md)
 + Workspace-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](../analysis-workspace/home.md)
@@ -248,16 +247,22 @@ ht-degree: 98%
       + [Aufnehmen von historischen Daten von Google Analytics in Platform](../use-cases/ga/backfill.md)
       + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Platform](../use-cases/ga/streaming.md)
       + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](../use-cases/ga/report.md)
-   + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/combine-report-suites.md)
+   + Datenerfassung {#data-ingestion}
+      + [Anwendungsfälle zur Datenaufnahme](../use-cases/data-ingestion/data-ingestion.md)
+      + [Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA](../use-cases/data-ingestion/marketo.md)
+      + [Aufnahme von AEP-Zielgruppen in CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + Datenansichten {#data-views}
+      + [Anwendungsfälle von Datenansichten](../use-cases/data-views/data-views-usecases.md)
+      + [Verwenden von Bindungsdimensionen und Metriken](../use-cases/data-views/binding-dimensions-metrics.md)
+   + B2B {#b2b}
+   + [Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](../use-cases/b2b/b2b.md)
+   + Kanalübergreifende Daten {#cross-channel}
+      + [Kanalübergreifendes Analysieren von Daten](../use-cases/cross-channel/cross-channel.md)
+      + [Callcenter- und Web-Daten importieren](../use-cases/cross-channel/call-center.md)
+   + Adobe Analytics-Daten {#aa-data}
+      + [Marketing-Kanal-Dimensionen verwenden](../use-cases/aa-data/marketing-channels.md)
+      + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
    + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
-   + [Verwenden von Bindungsdimensionen und Metriken](../use-cases/binding-dimensions-metrics.md)
-   + [(B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](../use-cases/b2b.md)
-   + [Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA](../use-cases/marketo.md)
-   + [Aufnahme von AEP-Zielgruppen in CJA](../use-cases/ingest-aep-segments.md)
-   + [Kanalübergreifendes Analysieren von Daten](../use-cases/cross-channel.md)
-   + [Callcenter- und Web-Daten importieren](../use-cases/call-center.md)
-   + [Anwendungsfälle zur Datenaufnahme](../use-cases/data-ingestion.md)
-   + [Marketing-Kanal-Dimensionen verwenden](../use-cases/marketing-channels.md)
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](../labs/labs.md)
 + Fehlerbehebung {#troubleshooting}

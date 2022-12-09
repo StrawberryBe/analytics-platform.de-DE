@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ea2c9e59a6dbae2bb06ef8c0d012b3f3ff972445
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 96%
@@ -46,7 +46,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Juni 2022 | Neuer Artikel zu [Adobe Analytics-Verarbeitungsregeln, VISTA und Klassifizierungen vs. Datenvorbereitung für den Analytics-Quell-Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Juni 2022 | Neuer Artikel zu [virtuellen Reporting-Umgebungen und Sandbox-Umgebungen](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | Juni 2022 | Neuer Artikel zum [Vergleich der Datenverarbeitung zwischen Adobe Analytics- und CJA-Reporting-Funktionen](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
-| Juni 2022 | Neuer Artikel zum [Kombinieren von Report Suites mit verschiedenen Schemas](/help/use-cases/combine-report-suites.md). |
+| Juni 2022 | Neuer Artikel zum [Kombinieren von Report Suites mit verschiedenen Schemas](/help/use-cases/aa-data/combine-report-suites.md). |
 | Juni 2022 | Neuer Artikel zum [Freigeben von Anmerkungen in mobilen Scorecards](/help/components/annotations/mobile-annotations.md). |
 | Juni 2022 | Neuer Artikel zu [Analytics Labs in CJA](/help/labs/labs.md). |
 | Juni 2022 | Neuer Abschnitt zur [Unterstützung für numerische Felder als Lookup-Schlüssel und Lookup-Werte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#numeric). |
@@ -54,7 +54,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | **Mai 2022** |  |
 | Mai 2022 | Umfassend aktualisierter Artikel zum [Erstellen von Verbindungen](/help/connections/create-connection.md) in CJA. |
 | Mai 2022 | Neuer Artikel zum Thema [Verwalten von Datenblöcken in CJA Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=de). |
-| Mai 2022 | Neuer Artikel zu [Aufnahme von Adobe Experience Platform-Zielgruppen in CJA](/help/use-cases/ingest-aep-segments.md). |
+| Mai 2022 | Neuer Artikel zu [Aufnahme von Adobe Experience Platform-Zielgruppen in CJA](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | **April 2022** |  |
 | April 2022 | Dokumentation zu [Dimensionszeichenfolgen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=de). |
 | April 2022 | Neu [CJA-Benutzerhandbuch für Adobe Analytics-Benutzer](/help/getting-started/aa-to-cja-user.md). |
@@ -65,7 +65,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | **Februar 2022** |  |
 | Februar 2022 | Ein neues Handbuch für Administratoren, die von Adobe Analytics zu CJA wechseln: [Entwicklung von Adobe Analytics zu Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=de) |
 | **Januar 2022** |  |
-| Januar 2022 | Neues Anwendungsbeispiel für [Verwenden von Bindungsdimensionen und Metriken in CJA](/help/use-cases/binding-dimensions-metrics.md) |
+| Januar 2022 | Neues Anwendungsbeispiel für [Verwenden von Bindungsdimensionen und Metriken in CJA](/help/use-cases/data-views/binding-dimensions-metrics.md) |
 | Januar 2022 | Es wurde eine neue Funktionsdokumentation zu [Binding-Dimensionen und -Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) und zu den neuen Zuordnungseinstellungen [[!UICONTROL Erster bekannter] und [!UICONTROL Letzter bekannter] hinzugefügt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#allocation-settings) |
 | Januar 2022 | Es wurde ein Artikel zum [Vergleichen Ihrer Adobe Analytics-Daten mit Analytics-Daten in CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=de) hinzugefügt |
 
@@ -105,7 +105,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | März 2021 | Zusätzliches Thema zur Unterstützung für [Analytics-Dashboards](/help/mobile-app/home.md) (Mobile App). |
 | März 2021 | Neues Thema zu [Benutzereinstellungen](/help/analysis-workspace/user-preferences.md) in Arbeitsbereich. |
 | **Februar 2021** |  |
-| Februar 2021 | Neues Thema zur Verwendung von [Marketing-Kanal-Dimensionen in Adobe Experience Platform](/help/use-cases/marketing-channels.md). |
+| Februar 2021 | Neues Thema zur Verwendung von [Marketing-Kanal-Dimensionen in Adobe Experience Platform](/help/use-cases/aa-data/marketing-channels.md). |
 | Februar 2021 | Veröffentlichung der neuen Dokumentation zur [CJA-API](https://www.adobe.io/cja-apis/docs/). |
 | **Januar 2021** |  |
 | Januar 2021 | Neues Thema zum [Hinzufügen von Standardsuchen zu Ihrem Datensatz](/help/connections/standard-lookups.md). |
@@ -117,14 +117,14 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
 | 13. November 2020 | Neue Themen zu [Cross-Channel Analytics](/help/connections/cca/overview.md), mit denen Sie die Personen-ID eines Datensatzes neu zuweisen und eine nahtlose Kombination mehrerer Datensätze ermöglichen. |
-| 13. November 2020 | Ein neues Anwendungsbeispiel für das [Importieren von Callcenter- und Web-Daten](/help/use-cases/call-center.md) wurde hinzugefügt. |
+| 13. November 2020 | Ein neues Anwendungsbeispiel für das [Importieren von Callcenter- und Web-Daten](/help/use-cases/cross-channel/call-center.md) wurde hinzugefügt. |
 | 10. November 2020 | Ein Abschnitt über die Auswirkungen des Löschens von Datenkomponenten wurde den [FAQ](/help/getting-started/cja-faq.md) hinzugefügt. |
 | 2. November 2020 | Aktualisierung der Seite [Funktions-Unterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | November 2020 | Es wurde Inhalt zu [Entfernen von Einschränkungen bei der Aufstockung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#backfill-historical-data) für Verbindungen hinzugefügt. |
 | 7. Oktober 2020 | Es wurde ein Thema zu [kombinierten Ereignis-Datensätzen](/help/connections/combined-dataset.md) hinzugefügt. |
-| 15. September 2020 | Es wurde ein Thema zu [Datenerfassung](/help/use-cases/data-ingestion.md) hinzugefügt. |
+| 15. September 2020 | Es wurde ein Thema zu [Datenerfassung](/help/use-cases/data-ingestion/data-ingestion.md) hinzugefügt. |
 | 2. September 2020 | Der Abschnitt zu [Benutzerberechtigungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de) wurde aktualisiert. |
-| 7. August 2020 | Neues Thema zu [B2B-Anwendungsfall - Such-Datensatz](/help/use-cases/b2b.md) hinzugefügt. |
+| 7. August 2020 | Neues Thema zu [B2B-Anwendungsfall - Such-Datensatz](/help/use-cases/b2b/b2b.md) hinzugefügt. |
 | Juli 2020 | Es wurden Informationen zur Option [Identitätszuordnung für Personen-ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de) hinzugefügt. |
 | Juli 2020 | Neues Thema zu [Objekt-Arrays](/help/use-cases/object-arrays.md) oder „Datenhierarchien“ hinzugefügt. |
 | 14. April 2020 | Aktualisierungen der neuesten Benutzeroberfläche im Thema [Verbindungen erstellen](/help/connections/create-connection.md). |
