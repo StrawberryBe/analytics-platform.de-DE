@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+workflow-type: tm+mt
+source-wordcount: '2157'
+ht-degree: 99%
 
 ---
 
@@ -110,28 +110,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 
 ## 9. Verbindungsgröße schätzen {#estimate-size}
 
-Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Datenzeilen in [!UICONTROL Customer Journey Analytics]. Gehen Sie **für jede der von Ihrem Unternehmen erstellten Verbindungen** wie folgt vor, um genaue Informationen zur Nutzung der Ereignisdatensätze (Datenzeilen) in Ihrem Unternehmen zu erhalten.
-
-1. Rufen Sie in [!UICONTROL Customer Journey Analytics] den Tab **[!UICONTROL Verbindungen]** auf.
-
-   Dadurch wird eine Liste aller Ihrer aktuellen Verbindungen angezeigt.
-
-1. Klicken Sie auf einen Verbindungsnamen, um zum Verbindungs-Manager zu gelangen.
-
-1. Fügen Sie für alle erstellten Verbindungen die **[!UICONTROL verfügbaren Ereignisdaten]** hinzu. (Je nach Größe Ihrer Verbindung kann es eine Weile dauern, bis die Anzahl angezeigt wird.)
-
-   ![Ereignisdaten](assets/event-data.png)
-
-1. Sobald Sie über die Summe aller Ereignisdatenzeilen verfügen, suchen Sie im Customer Journey Analytics-Vertrag, den Ihr Unternehmen mit Adobe unterzeichnet hat, nach der Berechtigung für „Datenzeilen“.
-
-   Dadurch erhalten Sie die maximale Anzahl von Datenzeilen, die im Kundenauftrag genehmigt wurden. Wenn die Anzahl der Datenzeilen, die sich aus Schritt 3 ergaben, größer ist als diese Zahl, besteht eine Überschreitung des Limits.
-
-1. Um dieses Problem zu beheben, haben Sie mehrere Möglichkeiten:
-
-   * Ändern Sie Ihre [Datenspeicherungseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention).
-   * [Löschen Sie alle nicht verwendeten Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
-   * [Löschen Sie einen Datensatz in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
-   * Wenden Sie sich an Ihren Kundenbetreuer von Adobe, um eine Lizenz für eine zusätzliche Kapazität zu erwerben.
+Siehe [Nutzung schätzen und verwalten](/help/getting-started/estimate-usage.md).
 
 ## 10. Über die Limits bei der Verwendung {#overage}
 
