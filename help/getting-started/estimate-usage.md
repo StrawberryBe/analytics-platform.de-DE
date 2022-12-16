@@ -4,9 +4,9 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zu 
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
+source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '809'
 ht-degree: 43%
 
 ---
@@ -58,9 +58,9 @@ Möglicherweise müssen Sie wissen, wie viele Zeilen von Ereignisdaten sich derz
 
 ## Workspace-Projekt mit allen Ereignisdaten erstellen {#workspace-event-data}
 
-1. Bevor Sie das Projekt in Workspace erstellen, [Datenansicht erstellen](/help/data-views/create-dataview.md) für jede Ihrer Verbindungen verwendet werden und keine Filter angewendet werden.
+1. Bevor Sie das Projekt in Workspace erstellen, [Datenansicht erstellen](/help/data-views/create-dataview.md) für jede Ihrer Verbindungen, ohne dass Filter angewendet werden.
 
-1. Erstellen Sie in Workspace ein neues Projekt und ziehen Sie alle Ereignisse (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
+1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
 
    ![Ereignisse](assets/events-usage.png)
 
