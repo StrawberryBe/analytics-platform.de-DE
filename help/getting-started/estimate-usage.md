@@ -4,9 +4,9 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zu 
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
+source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 43%
 
 ---
@@ -21,7 +21,7 @@ Um Ihre CJA-Nutzung zu verstehen, können Sie drei Methoden verwenden:
 
 So verwalten Sie Ihre CJA-Nutzung:
 
-* Definieren Sie ein rollierendes Datenfenster. (Siehe unten.)
+* Definieren Sie ein rollierendes Datenfenster. (Siehe **Definieren eines rollierenden Datenfensters** unten.)
 
 ## Verbindungsgröße schätzen {#estimate-size}
 
@@ -58,7 +58,7 @@ Möglicherweise müssen Sie wissen, wie viele Zeilen von Ereignisdaten sich derz
 
 ## Workspace-Projekt mit allen Ereignisdaten erstellen {#workspace-event-data}
 
-1. Bevor Sie das Projekt in Workspace erstellen, [Datenansicht erstellen](/help/data-views/create-dataview.md) , bei dem Daten von ALLEN Verbindungen abgerufen werden und keine Filter angewendet werden. Mit anderen Worten, es enthält alle Ihre Daten.
+1. Bevor Sie das Projekt in Workspace erstellen, [Datenansicht erstellen](/help/data-views/create-dataview.md) für jede Ihrer Verbindungen verwendet werden und keine Filter angewendet werden.
 
 1. Erstellen Sie in Workspace ein neues Projekt und ziehen Sie alle Ereignisse (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
 
