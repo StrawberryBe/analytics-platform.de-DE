@@ -3,24 +3,25 @@ title: Schätzen und Verwalten der CJA-Nutzung
 description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zu ihrer Verwaltung an.
 role: Admin
 feature: CJA Basics
-source-git-commit: 2bcf1f805a54581f13f7d08b9ef034535d7959b1
+exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
+source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 42%
+source-wordcount: '810'
+ht-degree: 43%
 
 ---
 
-
 # Schätzen und Verwalten der CJA-Nutzung
 
-Um Ihre CJA-Nutzung zu verstehen, können Sie zwei Methoden verwenden:
+Um Ihre CJA-Nutzung zu verstehen, können Sie drei Methoden verwenden:
 
-* Fügen Sie die Ereignisdatenzeilen für jede Verbindung hinzu. (Siehe **Geschätzte Verbindungsgröße** unten)
-* Verwenden Sie Analysis Workspace, um Berichte zu den Ereignissen des letzten Monats zu erstellen. (Siehe **Workspace-Projekt mit allen Ereignisdaten erstellen** unten.)
+* Fügen Sie die Ereignisdatenzeilen für jede Verbindung hinzu. (Siehe **Geschätzte Verbindungsgröße** unten) Dies ist eine einfache Möglichkeit, Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
+* Verwenden Sie Analysis Workspace, um Berichte zu den Ereignissen des letzten Monats zu erstellen. (Siehe **Workspace-Projekt mit allen Ereignisdaten erstellen** unten.) Auf diese Weise können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzung eingehend analysieren.
+* Verwenden Sie die CJA-API, um einen automatisierten Bericht zu erstellen. (Siehe **Erstellen eines Berichts in der CJA-API** unten.)
 
 So verwalten Sie Ihre CJA-Nutzung:
 
-* Verwenden Sie die CJA-API. (Siehe **Erstellen eines Berichts in der CJA-API** unten.)
+* Definieren Sie ein rollierendes Datenfenster. (Siehe unten.)
 
 ## Verbindungsgröße schätzen {#estimate-size}
 
@@ -59,12 +60,33 @@ Möglicherweise müssen Sie wissen, wie viele Zeilen von Ereignisdaten sich derz
 
 1. Bevor Sie das Projekt in Workspace erstellen, [Datenansicht erstellen](/help/data-views/create-dataview.md) , bei dem Daten von ALLEN Verbindungen abgerufen werden und keine Filter angewendet werden. Mit anderen Worten, es enthält alle Ihre Daten.
 
-1. Erstellen Sie in Workspace ein neues Projekt und ziehen Sie alle Ereignisse (aus dem **[!UICONTROL Metriken]** Dropdown) für den vorherigen Monat.
+1. Erstellen Sie in Workspace ein neues Projekt und ziehen Sie alle Ereignisse (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
 
    ![Ereignisse](assets/events-usage.png)
 
-1. tun
+   So erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht.
 
-## Erstellen eines Berichts in der CJA-API {#api-report}
+1. Je nach Bedarf können Sie einen Drilldown nach Datensatz durchführen usw.
 
-Verwenden Sie die [CJA-Reporting-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) , um einen Bericht zu allen Ereignisdaten auszuführen.
+
+## Erstellen eines automatisierten Berichts in der CJA-API {#api-report}
+
+1. Verwenden Sie die [CJA-Reporting-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) , um einen Bericht zu allen Ereignisdaten auszuführen, **für jede Verbindung**. Richten Sie dies so ein, dass der Bericht ausgeführt wird
+
+   * jeden dritten Freitag jeden Monats.
+   * zurück zum ersten Tag Ihres aktuellen CJA-Vertrags.
+
+   So erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht. Sie erhalten die Gesamtzahl der Zeilen für alle CJA-Verbindungen.
+
+1. Verwenden Sie Excel, um diesen Bericht weiter anzupassen.
+
+## Definieren eines rollierenden Datenfensters {#rolling}
+
+Um Ihre Nutzung zu verwalten, wird die [Verbindungs-Benutzeroberfläche](/help/connections/create-connection.md) ermöglicht die Definition der CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene.
+
+Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
+
+Wenn Sie die Standardeinstellung unverändert, d. h. deaktiviert, lassen, wird die Aufbewahrungsdauer durch die Datenaufbewahrungseinstellung von Adobe Experience Platform ersetzt. Wenn in Experience Platform Daten von einem Zeitraum von 25 Monaten enthalten sind, erhält CJA durch Aufstockung Daten von einem Zeitraum von 25 Monaten. Wenn Sie in Platform 10 dieser Monate löschen, werden in CJA die verbleibenden 15 Monate beibehalten.
+
+Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Lookup-Datensätze enthält (neben einem oder mehreren Ereignis-Datensätzen), werden diese Daten über denselben Zeitraum aufbewahrt.
+
