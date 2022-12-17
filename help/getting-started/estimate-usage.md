@@ -4,24 +4,26 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zu 
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
+source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 43%
+source-wordcount: '835'
+ht-degree: 42%
 
 ---
 
-# Schätzen und Verwalten der CJA-Nutzung
+# Anzeigen und Verwalten der CJA-Nutzung
 
-Um Ihre CJA-Nutzung zu verstehen, können Sie drei Methoden verwenden:
+Um Ihre CJA-Nutzung anzuzeigen, können Sie mehrere Methoden verwenden:
 
-* Fügen Sie die Ereignisdatenzeilen für jede Verbindung hinzu. (Siehe **Geschätzte Verbindungsgröße** unten) Dies ist eine einfache Möglichkeit, Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
-* Verwenden Sie Analysis Workspace, um Berichte zu den Ereignissen des letzten Monats zu erstellen. (Siehe **Workspace-Projekt mit allen Ereignisdaten erstellen** unten.) Auf diese Weise können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzung eingehend analysieren.
-* Verwenden Sie die CJA-API, um einen automatisierten Bericht zu erstellen. (Siehe **Erstellen eines Berichts in der CJA-API** unten.)
+* Fügen Sie die Ereignisdatenzeilen für jede Verbindung hinzu. Siehe [Geschätzte Verbindungsgröße](#estimated size) unten. Auf diese Weise können Sie Ihre Ereigniszeilendaten für jede Verbindung für einen bestimmten Zeitstempel anzeigen.
+* Zeigen Sie Ihre Nutzung auf drei Arten an, von denen jede im Folgenden ausführlicher beschrieben wird:
+   * Verwenden Sie Analysis Workspace, um Berichte zu den Ereignissen des letzten Monats zu erstellen.
+   * Verwenden Sie Report Builder , um Berichte zu den Ereignissen des letzten Monats zu erstellen.
+   * Verwenden Sie die CJA-API, um einen automatisierten Bericht zu erstellen.
 
 So verwalten Sie Ihre CJA-Nutzung:
 
-* Definieren Sie ein rollierendes Datenfenster. (Siehe **Definieren eines rollierenden Datenfensters** unten.)
+* Definieren Sie ein rollierendes Datenfenster.
 
 ## Verbindungsgröße schätzen {#estimate-size}
 
@@ -58,6 +60,8 @@ Möglicherweise müssen Sie wissen, wie viele Zeilen von Ereignisdaten sich derz
 
 ## Workspace-Projekt mit allen Ereignisdaten erstellen {#workspace-event-data}
 
+Mit dieser Methode können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzung eingehender analysieren.
+
 1. Bevor Sie das Projekt in Workspace erstellen, [Datenansicht erstellen](/help/data-views/create-dataview.md) für jede Ihrer Verbindungen, ohne dass Filter angewendet werden.
 
 1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
@@ -68,19 +72,22 @@ Möglicherweise müssen Sie wissen, wie viele Zeilen von Ereignisdaten sich derz
 
 1. Je nach Bedarf können Sie einen Drilldown nach Datensatz durchführen usw.
 
+## Erstellen eines Datenblocks in Report Builder {#arb}
+
+Im Report Builder [einen Datenblock erstellen](/help/report-builder/create-a-data-block.md) für jede Datenansicht und summieren Sie sie.
 
 ## Erstellen eines automatisierten Berichts in der CJA-API {#api-report}
 
 1. Verwenden Sie die [CJA-Reporting-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) , um einen Bericht zu allen Ereignisdaten auszuführen, **für jede Verbindung**. Richten Sie dies so ein, dass der Bericht ausgeführt wird
 
-   * jeden dritten Freitag jeden Monats.
+   * jeden ersten Freitag eines jeden Monats.
    * zurück zum ersten Tag Ihres aktuellen CJA-Vertrags.
 
    So erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht. Sie erhalten die Gesamtzahl der Zeilen für alle CJA-Verbindungen.
 
 1. Verwenden Sie Excel, um diesen Bericht weiter anzupassen.
 
-## Definieren eines rollierenden Datenfensters {#rolling}
+## Nutzung verwalten durch Definieren eines rollierenden Datenfensters {#rolling}
 
 Um Ihre Nutzung zu verwalten, wird die [Verbindungs-Benutzeroberfläche](/help/connections/create-connection.md) ermöglicht die Definition der CJA-Datenbeibehaltung als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene.
 
