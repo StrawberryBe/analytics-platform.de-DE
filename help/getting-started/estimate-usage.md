@@ -4,10 +4,10 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zu 
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: a69cb8a419d95e0cab666fceea9cb7ebf6daef73
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,6 +63,10 @@ Möglicherweise müssen Sie wissen, wie viele Zeilen von Ereignisdaten sich derz
 Mit dieser Methode können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzung eingehender analysieren.
 
 1. Bevor Sie das Projekt in Workspace erstellen, [Datenansicht erstellen](/help/data-views/create-dataview.md) für jede Ihrer Verbindungen, ohne dass Filter angewendet werden.
+
+>[!WARNING]
+>
+>    Erstellen Sie keine neue Verbindung, die alle Ihre Daten ausschließlich zur Nutzungsmessung umfasst, da dies Ihre Nutzung effektiv verdoppeln würde.
 
 1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
 
