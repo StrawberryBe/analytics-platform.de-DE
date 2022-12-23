@@ -3,9 +3,9 @@ description: Anleitung zur Verwendung der Dashboard-Scorecards.
 title: Handbuch zu Adobe Analytics-Dashboards
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
+source-git-commit: 2fac52abb2f970455846c46b28db88360cff2886
 workflow-type: ht
 source-wordcount: '1220'
 ht-degree: 100%
@@ -149,4 +149,3 @@ Tippen Sie auf die Option und geben Sie im obersten Feld Ihre E-Mail-Adresse und
 | Aufschlüsselung | Eine sekundäre Ansicht, die durch Tippen auf eine Kachel in der Scorecard zugänglich ist. Diese Ansicht erweitert die auf der Kachel dargestellte Metrik und zeigt optional Informationen über zusätzliche Aufschlüsselungsdimensionen an |
 | Datumsbereich | Der primäre Datumsbereich für die Berichterstellung über die Dashboards |
 | Vergleichsdatumsbereich | Der Datumsbereich, der mit dem primären Datumsbereich verglichen wird |
-
