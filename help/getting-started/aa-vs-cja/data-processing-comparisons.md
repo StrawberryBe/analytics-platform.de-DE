@@ -1,5 +1,5 @@
 ---
-title: Vergleich der Datenverarbeitung zwischen Adobe Analytics- und CJA-Reporting-Funktionen
+title: Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Vergleich der Datenverarbeitung zwischen Adobe Analytics- und CJA-Reporting-Funktionen
+# Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
 
 Das Verständnis der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen kann hilfreich sein, um zu verstehen, welche Metriken wo verfügbar sind und warum sie sich unterscheiden können.
 
