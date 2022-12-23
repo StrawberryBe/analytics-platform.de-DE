@@ -23,7 +23,7 @@ Allgemeine Voreinstellungen gelten für Ihr Customer Journey Analytics-Erlebnis 
 
 | Einstellung | Optionen |
 | --- | --- |
-| Landing page | <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Spezifisches Projekt</li></ul> |
+| Landingpage | <ul><li>Projektliste (Standard)</li><li>Leeres Projekt</li><li>Spezifisches Projekt</li></ul> |
 | Tipps | <ul><li>Aktiviert (Standard)</li><li>Deaktiviert</li></ul> |
 
 ## Projekteinstellungen
