@@ -26,10 +26,10 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Zum Fenster „Bedienfelder“ | Alt + Umsch + 1 |
 | Zum Fenster „Visualisierungen“ | Alt + Umsch + 2 |
 | Zum Fenster „Komponenten“ | Alt + Umsch + 3 |
-| Alle Bedienfelder reduzieren/erweitern | Alt + M |
+| Alle Bedienfelder reduzieren/erweitern | Alt+M |
 | Aktives Bedienfeld reduzieren/erweitern | Alt + Strg + M |
 | Zum nächsten Bedienfeld wechseln | Alt + Rechtstaste |
-| Zum vorherigen Bedienfeld wechseln | Alt + Linkstaste |
+| Zum vorherigen Bedienfeld wechseln | Alt+Linkstaste |
 
 ## Analyseaktionen
 
@@ -56,7 +56,7 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Neues leeres Bedienfeld | Alt + B |
 | Neues Freiformfeld | Alt + A |
 | Neues Bedienfeld „Quick Insights“ | Alt + F |
-| Neue Freiformtabelle | Alt + 1 |
+| Neue Freiformtabelle | Alt+1 |
 | Neuer Kantengraph | Alt + 2 |
 | Neues Balkendiagramm | Alt + 3 |
 
@@ -71,6 +71,6 @@ Hinweis: `CTRL` = Windows und `command` = Mac
 | Als PDF herunterladen | STRG (oder Befehl) + UMSCHALT + B |
 | Projekt kuratieren | STRG (oder Befehl) + UMSCHALT + G |
 | Projekt freigeben | STRG (oder Befehl) + G |
-| Projekt-Link abrufen | Alt + L |
+| Projekt-Link abrufen | Alt+L |
 | Datei jetzt senden | Alt + S |
 | Datei planmäßig senden | Umsch + Alt + S |
