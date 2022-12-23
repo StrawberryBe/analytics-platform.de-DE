@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 96%
    + [Häufig gestellte Fragen](../getting-started/cja-faq.md)
    + Vergleich von Adobe Analytics und Customer Journey Analytics {#compare-aa-cja}
       + [Verwenden von Adobe Analytics-Daten in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [Customer Journey Analytics-Funktionen](../getting-started/aa-vs-cja/cja-aa.md)
+      + [Unterstützung der Customer Journey Analytics-Funktion](../getting-started/aa-vs-cja/cja-aa.md)
       + [Vergleich der Terminologie für Analytics-Daten, die durch den Analytics Source Connector übergeben werden](../getting-started/aa-vs-cja/terminology.md)
       + [Vergleich der Datenverarbeitung zwischen Adobe Analytics und CJA](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Virtuelle Reporting-Umgebungen und Sandbox-Umgebungen](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
@@ -248,7 +248,7 @@ ht-degree: 96%
       + [Aufnehmen von historischen Daten von Google Analytics in Platform](../use-cases/ga/backfill.md)
       + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Platform](../use-cases/ga/streaming.md)
       + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](../use-cases/ga/report.md)
-   + Datenerfassung {#data-ingestion}
+   + Datenaufnahme {#data-ingestion}
       + [Anwendungsfälle zur Datenaufnahme](../use-cases/data-ingestion/data-ingestion.md)
       + [Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA](../use-cases/data-ingestion/marketo.md)
       + [Aufnahme von AEP-Zielgruppen in CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -259,9 +259,9 @@ ht-degree: 96%
    + [Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](../use-cases/b2b/b2b.md)
    + Kanalübergreifende Daten {#cross-channel}
       + [Kanalübergreifendes Analysieren von Daten](../use-cases/cross-channel/cross-channel.md)
-      + [Callcenter- und Web-Daten importieren](../use-cases/cross-channel/call-center.md)
+      + [Importieren von Callcenter- und Web-Daten](../use-cases/cross-channel/call-center.md)
    + Adobe Analytics-Daten {#aa-data}
-      + [Marketing-Kanal-Dimensionen verwenden](../use-cases/aa-data/marketing-channels.md)
+      + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
    + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
 + Labs {#labs}
