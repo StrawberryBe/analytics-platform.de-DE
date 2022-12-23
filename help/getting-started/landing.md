@@ -49,7 +49,7 @@ Sie können
 | Filtersymbol | Sie können nach Tags, Report Suites, Eigentümern, Typen und anderen Kriterien filtern (Meine, Für mich freigegeben, Favoriten und Genehmigt) |
 | Suchleiste | Die Suche umfasst nun alle Spalten in der Tabelle. |
 | Auswahlfeld | Wenn Sie neben einem oder mehreren Projekten auf dieses Kästchen klicken, werden die Projektverwaltungsaktionen angezeigt, die Sie ausführen können: Löschen, Taggen, Einfügen, Genehmigen, Freigeben, Umbenennen, Kopieren und Exportieren als CSV. Sie sind möglicherweise nicht berechtigt, alle diese Aktionen durchzuführen. |
-| [!UICONTROL Favoriten] | Beim Favorisieren eines Projekts wird es mit einem Stern als Favorit markiert, nach dem Sie später filtern können. |
+| [!UICONTROL Favoriten] | Beim Favorisieren eines Projekts wird es mit einem Stern als Favorit markiert, wonach Sie filtern können. |
 | [!UICONTROL Name] | Der Name des Projekts. |
 | Infosymbol (i) | Wenn Sie auf das Infosymbol klicken, werden die folgenden Informationen zu diesem Projekt angezeigt: Typ, Projektrolle, Eigentümer, Beschreibung und für wen es freigegeben ist. Es zeigt auch an, wer dieses Projekt [bearbeiten oder duplizieren](/help/analysis-workspace/curate-share/share-projects.md) kann. |
 | Auslassungspunkte (...) | Durch Klicken auf die Auslassungspunkte neben einem Projekt werden die Projektverwaltungsaktionen angezeigt, die Sie ausführen können: Löschen, Taggen, Einfügen, Genehmigen, Freigeben, Umbenennen, Kopieren und Exportieren als CSV. Beachten Sie, dass Sie möglicherweise nicht über die erforderlichen Berechtigungen für alle diese Aktionen verfügen. |
@@ -65,7 +65,7 @@ Sie können
 | [!UICONTROL Projekt-ID] | Die Projekt-ID kann zur Fehlerbehebung in Projekten verwendet werden. |
 | [!UICONTROL Längster Datumsbereich] | Längere Datumsbereiche erhöhen die Komplexität von Projekten und können die Verarbeitungs- und Ladezeiten erhöhen. |
 | [!UICONTROL Anzahl der Abfragen] | Die Gesamtzahl der Anfragen, die an Analytics beim Laden des Projekts gesendet wurden. Eine höhere Anzahl von Projektabfragen erhöht die Komplexität eines Projekts und somit auch die Verarbeitungs- und Ladezeiten. Diese Daten sind erst verfügbar, nachdem ein Projekt geladen oder ein geplantes Projekt gesendet wurde. |
-| Symbol „Tabelle anpassen“ | (Oben rechts) Wenn Sie Spalten zur Projektliste hinzufügen oder daraus entfernen möchten, können Sie dies tun, indem Sie sie auswählen oder abwählen. |
+| Symbol „Tabelle anpassen“ | (Oben rechts) Wenn Sie Spalten zur Projektliste hinzufügen oder daraus entfernen möchten, können Sie dies tun, indem Sie sie auswählen oder die Auswahl aufheben. |
 | &lt; (Schaltfläche „Zurück“) | Über diese Schaltfläche in einem Arbeitsbereich-Projekt gelangen Sie zurück zu Ihrer letzten Landingpage-Konfiguration. Die Seitenkonfiguration, die Sie beim Verlassen der Landingpage hatten, bleibt bis zur Rückkehr erhalten. |
 
 ## Navigieren Sie zur Registerkarte „Lernen“ {#navigate-learning}
@@ -81,4 +81,4 @@ Die Seite „Lernen“ enthält praktische Videoführungen und -Tutorials sowie 
 | Frage | Antwort |
 | --- | --- |
 | Gibt es eine maximale Anzahl von Projekten, die ich anheften kann? | Nein, es gibt keine Begrenzung für die Anzahl der Projekte, die Sie anheften können. |
-| Können Administratoren diese neue Landingpage für ihre Benutzer aktivieren? | Nein, Administratoren können die neue Landingpage nicht im Namen von Benutzern aktivieren. Die einzelnen Benutzer müssen den Umschalter selbst aktivieren. |
+| Können Administratoren diese neue Landingpage für ihre Benutzer festlegen? | Nein, Administratoren können die neue Landingpage nicht im Namen von Benutzern festlegen. Die einzelnen Benutzer müssen den Umschalter selbst aktivieren. |
