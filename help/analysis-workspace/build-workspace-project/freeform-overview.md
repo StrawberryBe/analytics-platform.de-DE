@@ -105,7 +105,7 @@ Die folgenden Aktionen können im Projekt-Manager für ein oder mehrere Projekte
 
 | Aktion | Beschreibung |
 |---|---|
-| Fügen Sie | Erstellen Sie ein ganz neues Projekt. |
+| Hinzufügen | Erstellen Sie ein ganz neues Projekt. |
 | Taggen oder genehmigen | Wählen Sie „Taggen“ oder „Genehmigen“, um Ihre Projekte zu organisieren und die Suche zu erleichtern. |
 | [Freigeben](/help/analysis-workspace/curate-share/share-projects.md) | Stellen Sie ein Projekt für andere Analysis Workspace-Benutzer in Ihrer Organisation zur Verfügung. |
 | Löschen | Löschen Sie Ihr Projekt. |
