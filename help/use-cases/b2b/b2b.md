@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Customer Journey Analytics kontobasierte D
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2b21d6e4e092c33947220b2d22a8a757407fabb
+source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '853'
 ht-degree: 93%
 
 ---
@@ -23,7 +23,7 @@ Dieser Anwendungsfall für den B2B-Bereich zeigt auf, wie Sie festlegen können,
 
 Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/getting-started/cja-glossary.md)-Datensatz eintragen.
 
-Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Im nächsten Schritt erstellen Sie eine Verbindung in Customer Journey Analytics (CJA), die verschiedene Datensätze kombiniert, darunter auch den von Ihnen erstellen Lookup-Datensatz. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
+Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Anschließend erstellen Sie eine Verbindung in Customer Journey Analytics (CJA), die verschiedene Datensätze kombiniert, einschließlich des von Ihnen erstellten Lookup-Datensatzes. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
 
 >[!NOTE]
 >
@@ -38,12 +38,6 @@ Durch die Erstellung eines eigenen Schemas für die [Lookup](/help/getting-start
 ## 2. Erstellen eines Lookup-Datensatzes (Experience Platform)
 
 Nachdem dem Erstellen des Schemas müssen Sie daraus in Experience Platform einen Lookup-Datensatz erstellen. Dieser Lookup-Datensatz enthält Marketing-Informationen auf Kontoebene wie etwa den Unternehmensnamen, die Gesamtzahl der Mitarbeiter, den Namen der Domain, die Branche, in der das Unternehmen tätig ist, den Jahresumsatz, ob es sich um aktuelle Kunden von Experience Platform handelt oder nicht, in welcher Phase des Verkaufszyklus sie sich befinden, welches Team in diesem Konto CJA nutzt usw.
-
->[!IMPORTANT]
->
->CJA unterstützt keine Ganzzahlen in Lookup-Datensätzen. Wenn Sie die Ganzzahlen-Felder in Ihrem XDM-Schema für Ihren Lookup-Datensatz hinzufügen, können Sie diese Ganzzahlen nicht als Metriken oder berechnete Metriken verwenden. Wenn beispielsweise annualRevenue oder totalEmployees als Ganzzahlen definiert sind, werden sie in der Berichterstellung in CJA als &quot;0&quot;angezeigt. Wenn Sie sie jedoch als Zeichenfolgen zuweisen, können Sie sie als Lookup-Informationen verwenden.
-
-So werden beispielsweise annualRevenue oder totalEmployees im folgenden Beispiel als Integer definiert - deshalb wird in CJA &quot;0&quot;angezeigt.
 
 1. Rufen Sie in Adobe Experience Platform **[!UICONTROL Daten-Management > Datensätze]** auf.
 1. Klicken Sie auf **[!UICONTROL + Datensatz erstellen]**.
@@ -96,4 +90,4 @@ Diese können Ihnen beispielsweise Aufschluss über die Fragen aus der Einführu
 * Welche Mitarbeiter einer bestimmten Konto-ID zugeordnet sind, können Sie ebenfalls herausfinden.
 * Oder auch, welcher Branche eine Konto-ID zugehörig ist?
 
-![](../assets/project-lookup.png)
+![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
