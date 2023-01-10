@@ -3,13 +3,11 @@ description: Erfahren Sie, wie Sie Ordner und Unterordner in Workspace erstellen
 keywords: Analysis Workspace
 title: Erstellen von Ordnern
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '152'
-ht-degree: 100%
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 93%
 
 ---
 
@@ -17,11 +15,7 @@ ht-degree: 100%
 
 Sie können zur Liste der Projekte und Ordner auf Ihrer Workspace-Landingpage einen neuen Ordner oder einen Unterordner hinzufügen.
 
->[!NOTE]
->
->Diese Funktion befindet sich derzeit in der Betaversion. Einige Bildschirme können sich ändern.
-
-## Erstellen eines neuen Ordners
+## Erstellen eines neuen Ordners {#create-new-folder}
 
 So erstellen Sie einen neuen Ordner:
 
@@ -29,7 +23,7 @@ So erstellen Sie einen neuen Ordner:
 
 1. Geben Sie einen Namen für den neuen Ordner ein.
 
-1. Wählen Sie Tags aus dem Dropdown-Menü aus.
+1. Wählen Sie Tags aus dem Dropdown-Menü aus oder fügen Sie neue Netto-Tags hinzu.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
@@ -41,7 +35,7 @@ So erstellen Sie einen neuen Ordner:
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
-## Erstellen eines Unterordners
+## Erstellen eines Unterordners {#create-subfolder}
 
 Mit Unterordnern können Sie zusätzliche Ebenen für Projekt-Management und -organisation bereitstellen.
 

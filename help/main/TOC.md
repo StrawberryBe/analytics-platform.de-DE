@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 99%
+source-wordcount: '835'
+ht-degree: 98%
 
 ---
 
@@ -83,6 +83,7 @@ ht-degree: 99%
       + Ordner in Workspace {#workspace-folders}
          + [Über Ordner in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Ordner löschen](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Hinzufügen von Projekten](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Entfernen eines Projekts](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Speichern eines neuen Projekts](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -177,6 +178,7 @@ ht-degree: 99%
    + [Arbeiten mit Filtern](../report-builder/work-with-filters.md)
    + [Dimensionen filtern](../report-builder/filter-dimensions.md)
    + [Verwalten von Datenblöcken](../report-builder/manage-reportbuilder.md)
+   + [Arbeitsmappen planen](../report-builder/schedule-reportbuilder.md)
    + [Eingeschränkte Beschriftungen](../report-builder/restricted-labels.md)
    + [Report Builder-Einstellungen](../report-builder/report-builder-settings.md)
 + Komponenten {#cja-components}

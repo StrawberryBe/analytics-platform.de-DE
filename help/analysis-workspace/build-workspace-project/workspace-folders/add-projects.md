@@ -3,12 +3,10 @@ description: Erfahren Sie, wie Sie Ordner in Workspace hinzufügen
 keywords: Analysis Workspace
 title: Hinzufügen von Ordnern in Workspace
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '225'
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
+workflow-type: tm+mt
+source-wordcount: '214'
 ht-degree: 100%
 
 ---
@@ -17,11 +15,7 @@ ht-degree: 100%
 
 Sie können Projekte zu einem Ordner in der Tabellenansicht oder innerhalb eines Ordners hinzufügen.
 
->[!NOTE]
->
->Diese Funktion befindet sich derzeit in der Betaversion. Einige Bildschirme können sich ändern.
-
-## Aus der Tabellenansicht
+## Aus der Tabellenansicht {#table-view}
 
 Fügen Sie auf der Startseite aus der Tabellenansicht Projekte zu einem Ordner hinzu.
 
@@ -47,7 +41,7 @@ Fügen Sie auf der Startseite aus der Tabellenansicht Projekte zu einem Ordner h
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## Aus dem Inneren eines Ordners
+## Aus dem Inneren eines Ordners {#inside-folder}
 
 Sie können auch Projekte aus dem Inneren eines Ordners hinzufügen, indem Sie den Link mit den Auslassungspunkten verwenden.
 
@@ -69,7 +63,11 @@ Sie können auch Projekte aus dem Inneren eines Ordners hinzufügen, indem Sie d
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
-1. Klicken Sie auf **Hinzufügen**, um die Projekte zum Ordner hinzuzufügen.
+1. Klicken Sie auf **Hinzufügen**, um die Projekte zu dem Ordner hinzuzufügen.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-Nur Administratoren bzw. Administratorinnen können Projekte zum Unternehmensordner hinzufügen oder ein neues Projekt erstellen und im Unternehmensordner speichern
+
+
+>[!NOTE]
+>
+>Nur Admins können dem Unternehmensordner Projekte hinzufügen oder ein neues Projekt erstellen und es im Unternehmensordner speichern.
