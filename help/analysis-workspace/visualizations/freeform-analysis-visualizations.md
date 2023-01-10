@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
+workflow-type: tm+mt
+source-wordcount: '1136'
+ht-degree: 91%
 
 ---
 
@@ -40,6 +40,24 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Text](/help/analysis-workspace/visualizations/text.md) | Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen. Hilfreich zum Hinzufügen zusätzlicher Kontexte zu Ihrer Analyse und zu Einblicken, zusätzlich zum Nutzen der Beschreibungen im Bedienfeld oder in Visualisierungen |
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu drei Filtern. |
+
+## Visualisierungseinstellungen anpassen
+
+Sie können Visualisierungseinstellungen für eine individuelle Visualisierung oder für alle von Ihnen erstellten Visualisierungen anpassen.
+
+### Visualisierungseinstellungen für eine einzelne Visualisierung anpassen
+
+So greifen Sie auf [!UICONTROL Visualisierungseinstellungen] für eine individuelle Visualisierung:
+
+1. Bewegen Sie in Analysis Workspace den Mauszeiger über die Visualisierung, deren Einstellungen Sie anpassen möchten.
+
+1. Klicken Sie auf das Zahnradsymbol.
+
+   Jeder Visualisierungstyp verfügt über eindeutige Einstellungen, die Sie anpassen können. Informationen zu den verfügbaren Einstellungen finden Sie unter [Einstellungen](#settings).
+
+### Visualisierungseinstellungen für alle erstellten Visualisierungen anpassen
+
+Sie können die Einstellungen für alle erstellten Visualisierungen anpassen. Weitere Informationen finden Sie unter [Benutzereinstellungen](/help/analysis-workspace/user-preferences.md).
 
 ## Einstellungen {#settings}
 
