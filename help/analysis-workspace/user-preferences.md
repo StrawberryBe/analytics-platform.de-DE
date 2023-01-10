@@ -4,10 +4,10 @@ description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 652ae043f504ff71e8ed469a33f2ef4ebf1c7d04
+source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 49%
+source-wordcount: '2439'
+ht-degree: 50%
 
 ---
 
@@ -155,11 +155,6 @@ Klicken Sie auf die entsprechenden Abschnittstitel, um weitere Informationen und
 | **[Histogramm](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Anzahl der Behälter | Wählen Sie die Anzahl der Datenbereiche (Behälter) in der Visualisierung aus. Maximal 50 Behälter sind möglich. <p>Weitere Informationen finden Sie unter [Histogramm](/help/analysis-workspace/visualizations/histogram.md).</p> |
 |  | Zählmethode | Wählen Sie aus den folgenden Optionen: <ul><li>Treffer</li><li>Besuch</li><li>Besucher.</li></ul> <p>Wenn Sie beispielsweise in Verbindung mit Seitenansichten verwenden, können Sie Seitenansichten pro Besucher, Seitenansichten für Besuche oder Seitenansichten pro Treffer auswählen. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet.</p> |
-| **Zuordnung** |  |  |
-|  | Plotting-Dimension | <ul><li>Mobiler Breitengrad/Längengrad</li><li>Geografische Dimension</li></ul> |
-|  | Zuordnungstyp | <ul><li>Blasen</li><li>Heatmap</li></ul> |
-|  | Farbschema | Wählen Sie Coral, Reds, Greens, Blues, Heatmap und Positive/Negative. |
-|  | Zuordnungsstil | Wählen Sie aus Basic, Streets, Hell, Hell, Dunkel und Satellit. |
 | **[Zusammenfassende Änderung](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Wert | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Prozentuale Änderung</li><li>Rohdifferenz</li></ul> |
 |  | Prozentsatz | Zeigt Werte in Prozentwerten für die Visualisierungen der Zusammenfassungsänderung an. |
