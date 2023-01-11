@@ -4,10 +4,10 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: acf55556e3f53e7f4e8f8de69044e456b931a80b
+source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 54%
+source-wordcount: '1279'
+ht-degree: 55%
 
 ---
 
@@ -26,7 +26,6 @@ Die Landingpage für Customer Journey Analytics-Highlights [!DNL Analysis Worksp
 | Fixierte Elemente neu anordnen | Um die fixierten Elemente nach oben und unten zu verschieben, klicken Sie auf das Auslassungszeichen neben dem fixierten Element und wählen Sie **[!UICONTROL Nach oben]** oder **[!UICONTROL Nach unten]**. | ![Verschieben von fixierten Elementen](assets/move-up-down.png) |
 | Neue Tabellenspalten | Klicken Sie auf [!UICONTROL Tabelle anpassen] rechts oben in der Tabelle. Die neuen Tabellenspalten umfassen: <ul><li>**[!UICONTROL Geplant]**: Legen Sie dies auf [!UICONTROL Ein] fest, wenn ein Projekt geplant ist, oder auf [!UICONTROL Aus], wenn dies nicht der Fall ist. Ein Klick auf den Link [!UICONTROL Ein] zeigt Informationen über das geplante Projekt an. Sie können auch [den Projektplan bearbeiten](../analysis-workspace/curate-share/t-schedule-report.md), wenn Sie Projektinhaber sind.</li><li>**[!UICONTROL Projekt-ID]**: Die Projekt-ID kann zum Debugging von Projekten verwendet werden.</li><li>**[!UICONTROL Längster Datumsbereich]**: Längere Datumsbereiche erhöhen die Projektkomplexität und können die Verarbeitungs- und Ladezeiten erhöhen. </li><li>**[!UICONTROL Anzahl der Abfragen]**: Die Gesamtzahl der Anfragen, die beim Laden des Projekts an Analytics gesendet wurden. Eine höhere Anzahl von Projektabfragen erhöht die Projektkomplexität und kann die Verarbeitungs- und Ladezeiten erhöhen. Diese Daten sind erst verfügbar, nachdem ein Projekt geladen oder ein geplantes Projekt gesendet wurde. </li></ul> | ![Neue Spalten](assets/new-columns.png) |
 | **[!UICONTROL Projekt erstellen]** modal is back | Wenn Sie auf **[!UICONTROL Projekt erstellen]** In Workspace haben Sie erneut die Wahl zwischen einem [!UICONTROL Leeres Projekt] und [!UICONTROL Leere mobile Scorecard]. Sie können auch aus beliebigen Vorlagen wählen, die Ihr Unternehmen erstellt hat. | ![Neu erstellen](assets/create-new.png) |
-| Auch in Customer Journey Analytics verfügbar | Diese Landingpage in geänderter Form ist auch in CJA verfügbar. |  |
 
 {style=&quot;table-layout:auto&quot;}
 

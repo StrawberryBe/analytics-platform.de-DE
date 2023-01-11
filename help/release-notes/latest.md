@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: fbfc7113aef8857e11ccfba5e5e557eed16c2465
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+source-git-commit: 9276b7ed4465c85703e942e02adde2d024cf43ca
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 43%
 
 ---
 
-# Versionshinweise zu Customer Journey Analytics (CJA) (Oktober/November 2022)
+# Aktuelle Customer Journey Analytics-Versionshinweise (CJA) (Januar 2023)
 
-**Zuletzt aktualisiert**: 25. Oktober 2022
+**Letzte Aktualisierung**: 5. Januar 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,29 +20,23 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| Visualisierung der **[!UICONTROL Zusammenfassung der Schlüsselmetriken]** | Mit der Visualisierung der [!UICONTROL Zusammenfassung der Schlüsselmetriken] können Sie sehen, wie sich eine wichtige Metrik innerhalb einer bestimmten Zeitspanne entwickelt. Außerdem können Sie damit die Leistung von Metriken über zwei Zeiträume hinweg vergleichen. [Weitere Informationen](/help/analysis-workspace/visualizations/key-metric.md) | 5. Oktober 2022 | 19. Oktober 2022 |
-| **Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird** | Bei Variablen mit mehreren Werten, bei denen nicht zwischen Groß- und Kleinschreibung unterschieden wird, werden die in `mvvar1` - `mvvar3` gespeicherten Werte nicht mehr automatisch in Kleinbuchstaben geschrieben. Stattdessen werden die Daten, die über den Analytics Source Connector an Adobe Experience Platform und CJA übergeben werden, die ursprüngliche Groß-/Kleinschreibung haben, die von der Seite weitergegeben wurde. ASC/CJA-Spalten `_experience.analytics.customDimensions.lists.list1.list[]` - `_experience.analytics.customDimensions.lists.list3.list[]` sind von dieser Änderung betroffen. | Nicht angegeben | 24. Oktober 2022 |
-| **CJA-Auditprotokoll** | Mit Customer Journey Analytics (CJA) können Sie Benutzeraktivitäten auf verschiedene Dienste und Funktionen in Form von „Auditprotokollen“ prüfen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten. Diese Protokolle waren bisher nur über die Auditprotokolle-API verfügbar. [Weitere Informationen](/help/privacy/audit-log.md) | Nicht angegeben | 26. Oktober 2022 |
-| **HIPAA-Bereitschaft** | Adobe unterstützt jetzt nur noch den Empfang, die Verwendung, die Pflege oder die Übermittlung geschützter Gesundheitsinformationen in Customer Journey Analytics und anderen auf Experience Platform basierenden Anwendungen für Healthcare Shield. Healthcare Shield richtet sich an Kundinnen und Kunden im Gesundheitswesen, die entweder eine abgedeckte Organisation oder ein Geschäftsverband nur in den USA sind. [Weitere Informationen](https://www.adobe.com/trust/compliance/hipaa-ready.html) | Nicht angegeben | 7. November 2022 |
-| **Passwortschutz für geplante Projekte** | Diese Funktion ist Teil der HIPAA-Bereitschaft und gilt nur für Healthcare Shield-Kunden. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#password) | Nicht angegeben | 7. November 2022. |
+| **Ordner in Workspace** | Mit Ordnern können Sie Ihre Projekte organisieren und kategorisieren, um den Abruf und den Zugriff zu verbessern. Darüber hinaus wird eine freigegebene **[!UICONTROL Firma]** -Ordner ermöglicht es Administratoren, mühelos Inhalte zu erstellen und für alle Workspace-Benutzer freizugeben. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | Nicht angegeben | 11. Januar 2023 |
+| **Standard-Landingpage** | Die [neue Landingpage](/help/getting-started/landing.md) die Anfang 2022 eingeführt wurde, wird zum Standarderlebnis für alle Benutzer auf **11. Januar 2023**. Die veraltete Landingpage wird nicht mehr unterstützt und alle müssen das neue Erlebnis verwenden. | Nicht angegeben | 11. Januar 2023 |
+| **Arbeitsmappen in Report Builder planen** | In Customer Journey Analytics können Sie Zeitpläne erstellen, um Arbeitsmappen in regelmäßigen Abständen zu senden. Jetzt können Empfänger regelmäßig die neuesten Aktualisierungen Ihrer Arbeitsmappen erhalten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | Nicht angegeben | 11. Januar 2023 |
+| **Automatisches Speichern neuer Projekte** | Analysis Workspace speichert jetzt automatisch neu erstellte Projekte. Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell speichern, ist jetzt eine Wiederherstellungsversion Ihres Projekts verfügbar. Zuvor wurden Projekte erst automatisch gespeichert, nachdem sie zuvor manuell gespeichert wurden. [Weitere Informationen](/help/analysis-workspace/build-workspace-project/save-projects.md) | Nicht angegeben | 11. Januar 2023 |
+| **Erweiterte Benutzereinstellungen** | Sie können jetzt zusätzliche Voreinstellungen auf Benutzerebene konfigurieren (in [!UICONTROL Komponenten] > [!UICONTROL Voreinstellungen]). Wenn Sie die Benutzereinstellungen festlegen, erstreckt sich Ihre Auswahl über Ihre Projekte, Tabellen und Visualisierungen. Die Seite Voreinstellungen enthält jetzt die folgenden neuen Registerkarten, von denen jede viele neue Konfigurationsoptionen enthält:<ul><li>Freiformtabelle</li><li>Visualisierungen >/li></ul>  Darüber hinaus sind jetzt weitere Voreinstellungen auf der **[!UICONTROL Allgemein]** und **[!UICONTROL Projekt]** Registerkarten.<p>Zuvor waren viele dieser Voreinstellungen nur für einzelne Projekte, Tabellen und Visualisierungen konfigurierbar. [Weitere Informationen](/help/analysis-workspace/user-preferences.md) | Nicht angegeben | 11. Januar 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Fehlerbehebungen
 
-* Es wurde ein Problem behoben, bei dem aktuelle MacOS-Versionen fälschlicherweise als „Macintosh“ bezeichnet wurden. Mit dieser Fehlerbehebung beginnt die Betriebssystemdimension mit der Nummerierung der MacOS-Version, beginnend mit MacOS 11. (AN-301834)
-
-### Weitere Fehlerbehebungen
-
-AN-302367; AN-302562; AN-304036
+AN-287349; AN-301684; AN-305491; AN-305769; AN-307912
 
 ## Wichtige Hinweise für CJA-Admins
 
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| **Standard-Landingpage** | 29. September 2023 | Die [neue Landingpage](/help/getting-started/landing.md) wurde Anfang dieses Jahres eingeführt und wird ab **Januar 2023** standardmäßig allen Benutzenden angezeigt. Die aktuelle Seite wird eingestellt, sodass nur mehr die neue Seite verwendet wird. |
-| **Verbessertes IP-Geolokalisierungs-Mapping** | 29. September 2022 | Der Anbieter von IP-Suchen für Adobe, Digital Element, aktualisiert auf einen neuen verbesserten Datensatz (NetAcuity Pulse) für die Geolokalisierung von IPs. Adobe Analytics hat die Einführung dieses neuen Datensatzes auf **Januar 2023** verschoben. Die neue Datenbank wird genauer sein als frühere Versionen. Einige Geolokalisierungen von IPs werden sich ändern/verbessern, wenn die neue Datenbank übernommen wird.<p> CJA-Daten, die über den [!UICONTROL Analytics Source Connector] bereitgestellt werden, nutzen ebenfalls automatisch die neuen Mappings. |
-| Bedingungen für die automatische Ausführung der **[!UICONTROL Anomalieerkennung]** | 29. September 2022 | Derzeit wird die [!UICONTROL Anomalieerkennung] automatisch für alle Spalten von Zeitreihen-Freiformtabellen ausgeführt. Um sicherzustellen, dass Daten für Analysen verfügbar sind und Projekte schneller geladen werden, nimmt Adobe Änderungen an der automatischen Ausführung der [!UICONTROL Anomalieerkennung] vor. Ab dem **26. Oktober 2022** wird die Anomalieerkennung nur für die erste Metrikspalte in einer Tabelle automatisch ausgeführt. Sie können die Spalteneinstellungen bei Bedarf so konfigurieren, dass die [!UICONTROL Anomalieerkennung] auch für andere Spalten ausgeführt wird. |
+| **Verbessertes IP-Geolokalisierungs-Mapping** | 29. September 2022 | Der Anbieter von IP-Suchen für Adobe, Digital Element, aktualisiert auf einen neuen verbesserten Datensatz (NetAcuity Pulse) für die Geolokalisierung von IPs. Adobe Analytics hat die Annahme dieses neuen Datensatzes auf **11. Januar 2023**. Die neue Datenbank wird genauer sein als frühere Versionen. Einige Geolokalisierungen von IPs werden sich ändern/verbessern, wenn die neue Datenbank übernommen wird.<p> CJA-Daten, die über den [!UICONTROL Analytics Source Connector] bereitgestellt werden, nutzen ebenfalls automatisch die neuen Mappings. |
 
 {style=&quot;table-layout:auto&quot;}
 
