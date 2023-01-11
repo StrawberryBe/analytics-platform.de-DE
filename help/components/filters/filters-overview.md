@@ -2,10 +2,10 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
-workflow-type: ht
-source-wordcount: '1112'
-ht-degree: 100%
+source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 98%
 
 ---
 
@@ -70,12 +70,12 @@ Personen-Container können Werte enthalten, die auf dem Gesamtverlauf eines Besu
 
 Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Sitzungs-Container ist der am häufigsten verwendete Container, da er die Verhaltensweisen der gesamten Besuchssitzung erfasst, sobald die Regel erfüllt wird, und Ihnen die Möglichkeit gibt, zu definieren, welche Sitzungen ein- oder ausgeschlossen werden sollen, indem Sie einen Filter erstellen und anwenden. Er kann Ihnen bei der Beantwortung dieser Fragen helfen:
 
-* Wie viele Besucher haben die Bereiche „Nachrichten“ und „Sport“ in derselben Sitzung angesehen?
+* Wie viele Sitzungen waren sowohl mit Web- als auch mit Callcenter-Datenquellen beschäftigt?
 * Welche Seiten haben zu einer erfolgreichen Konversion in einem Verkauf beigetragen?
 
 Sitzungs-Container enthalten Werte, die auf dem Auftreten pro Sitzung basieren:
 
-* Sitzungsnummer
+* Sitzungstyp
 * Einstiegsseite
 * Rückkehrhäufigkeit
 * Beitragsmetriken
