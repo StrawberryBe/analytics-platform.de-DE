@@ -4,16 +4,16 @@ description: Hier wird erklärt, wie CJA-Berichte Datenhierarchien darstellen.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 96%
 
 ---
 
 # Verwenden von Objekt-Arrays
 
-Manche Plattformschemas können Objekt-Arrays enthalten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
+Manche Plattformschemas können Objekt-Arrays enthalten. CJA unterstützt die Erfassung und Berichterstellung von Objekt-Arrays innerhalb von Ereignis-, Such- und Profildaten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
 
 In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. CJA erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien in einer Datenzeile. Diese Funktion war in keiner früheren Version von Adobe Analytics verfügbar.
 
