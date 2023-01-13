@@ -4,10 +4,10 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
+source-git-commit: 88f38de837a23f9b0833c5c6b534b3ed567207a6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 55%
+source-wordcount: '1424'
+ht-degree: 49%
 
 ---
 
@@ -67,6 +67,18 @@ Die Landingpage für Customer Journey Analytics-Highlights [!DNL Analysis Worksp
 | Symbol „Tabelle anpassen“ | Auswahl der Spalten, die in der Tabelle angezeigt werden sollen. Um Spalten aus der Projektliste hinzuzufügen oder daraus zu entfernen, klicken Sie auf das Spaltensymbol (![Landing all](assets/select-column.png) ) oben rechts klicken und dann Spaltentitel auswählen oder deaktivieren. |
 | SHOW: Ordner und Projekte oder Alle Projekte | Ändert die Anzeigeeinstellung auf der Tabelle, sodass Ordner und Projekte entsprechend Ihrer Ordnerorganisation angezeigt werden **oder** alle Projekte in einer unorganisierten Liste anzeigen. |
 | &lt; (Schaltfläche „Zurück“) | Gibt Sie zur neuesten Landingpage-Konfiguration in einem Workspace-Projekt zurück. Die Seitenkonfiguration, die Sie beim Verlassen der Landingpage vorgenommen haben, bleibt bestehen, wenn Sie zurückkehren. |
+
+### Veraltete Seite des Projekt-Managers {#deprecate-pm-page}
+
+Mit der Veröffentlichung der neuen Landingpage haben wir den Projekt-Manager eingestellt, der unter dem Komponenten-Manager aufgeführt ist. Die neue Landingpage verarbeitet alle Funktionen der alten Seite &quot;Projektmanager&quot;und mehr.
+
+Ein gängiger Anwendungsfall für die Seite &quot;Projektmanager&quot;war die Ansicht aller Ihrer Projekte. Um mithilfe der Filterleiste alle Ihre Projekte auf der neuen Landingpage anzuzeigen, wählen Sie **SONSTIGE FILTER** und wählen Sie **Alle anzeigen**.
+
+![Sonstige Filter](assets/other-filters.png)
+
+Wenn Sie sich in der Ansicht &quot;Ordner &amp; Projekte&quot;befinden, wird ein modales Popup angezeigt, in dem Sie gefragt werden, ob Sie zur Ansicht &quot;Alle Projekte&quot;wechseln möchten. Dies erleichtert die Anzeige aller Ihrer Projekte außerhalb der Ordner, in denen sie möglicherweise organisiert sind.   Auswählen **Zur Ansicht &quot;Alle Projekte&quot;wechseln** , um alle Projekte, auf die Sie Zugriff haben, besser anzuzeigen.
+
+![Alle Projekte wechseln](assets/switch-all-projects-view.png)
 
 ## Navigieren Sie zur Registerkarte „Lernen“ {#navigate-learning}
 
