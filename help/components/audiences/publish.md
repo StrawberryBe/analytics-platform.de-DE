@@ -2,9 +2,9 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 96e374440fda61665a45797483eadab930c48c10
+source-git-commit: 06e27fc2ecc2b54e30616bc69b44550af20af76f
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1181'
 ht-degree: 85%
 
 ---
@@ -38,7 +38,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | [!UICONTROL Name] | Der Name der Zielgruppe. |
    | [!UICONTROL Tags] | Alle Tags, die Sie der Zielgruppe aus organisatorischen Gründen zuweisen möchten. Sie können ein bereits vorhandenes Tag verwenden oder ein neues eingeben. |
    | [!UICONTROL Beschreibung] | Fügen Sie der Zielgruppe eine Beschreibung hinzu, um sie von anderen leicht unterscheiden zu können. |
-   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für alle Aktualisierungsfrequenzen gilt je nach Ihrer CJA-Berechtigung eine Beschränkung von 75 auf 150 Zielgruppen.</li></ul> |
+   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für die 4-Stunden-Aktualisierungshäufigkeit sind je nach Ihrer CJA-Berechtigung 75 bis 150 Aktualisierung der Zielgruppe zulässig.</li></ul> |
    | Ablaufdatum | Wann die Aktualisierung der Zielgruppe beendet ist. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Zielgruppe zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
@@ -84,7 +84,7 @@ Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 ![](assets/audiences-aep.png)
 
-## Häufig gestellte Fragen (FAQ)
+## Häufig gestellte Fragen (FAQ) {#faq}
 
 Häufig gestellte Fragen zur Publikation.
 
@@ -92,7 +92,7 @@ Häufig gestellte Fragen zur Publikation.
 
 In diesem Fall wird ein Exit-Ereignis von CJA an Experience Platform gesendet.
 
-### Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen? {#delete}
+### Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen?
 
 Wenn eine CJA-Zielgruppe gelöscht wird, wird sie nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Es werden jedoch keine Profile, die mit dieser Zielgruppe verknüpft sind, in Platform tatsächlich gelöscht.
 
