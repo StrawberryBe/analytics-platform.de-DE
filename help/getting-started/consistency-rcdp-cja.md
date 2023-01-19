@@ -4,8 +4,8 @@ title: Konsistenz der Metriken und Anzahl der Zielgruppenzugehörigkeiten zwisch
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 769eef205df32865874753859ce79e573db40641
-workflow-type: ht
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Beim Vergleich der Anzahl der Zielgruppenzugehörigkeiten zwischen der Real-Time
 
 Die Real-Time CDP und Customer Journey Analytics verwenden heutzutage nicht dieselbe Definition einer Person. Die Real-Time CDP beruht ausschließlich auf den Informationen im [Identitätsdiagramm](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=de) um ein zusammengeführtes Profil zu erstellen.
 
-CJA kann für die Verwendung der [Cross-Channel Analytics](/help/connections/cca/overview.md) konfiguriert werden, die IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
+CJA kann für die Verwendung der [Cross-Channel Analytics](/help/cca/overview.md) konfiguriert werden, die IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
 
 Künftig wird CJA Identitätsdiagramme verwenden können.
 

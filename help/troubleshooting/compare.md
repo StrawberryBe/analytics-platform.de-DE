@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie Ihre Adobe Analytics-Daten mit Daten in Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
 
 >[!NOTE]
 >
->Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über [Cross-Channel Analytics](/help/connections/cca/overview.md)). Beachten Sie, dass die Berücksichtigung der in CJA verwendeten Personen-ID für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist möglicherweise nicht immer einfach in AA zu replizieren, insbesondere wenn Cross-Channel Analytics aktiviert ist.
+>Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über [Cross-Channel Analytics](/help/cca/overview.md)). Beachten Sie, dass die Berücksichtigung der in CJA verwendeten Personen-ID für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist möglicherweise nicht immer einfach in AA zu replizieren, insbesondere wenn Cross-Channel Analytics aktiviert ist.
 
 1. Führen Sie in [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
 
@@ -65,7 +65,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 1. In [Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de)anhand der Rohdaten erkennen, ob einige Zeilen möglicherweise vom Analytics-Quell-Connector herausgefiltert wurden.
 
-   Die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kann bestimmte Zeilen während der Konvertierung in das XDM-Schema filtern. Es kann mehrere Gründe dafür geben, dass die gesamte Zeile nicht für eine Umwandlung geeignet ist. Wenn eines der folgenden Analytics-Felder diese Werte aufweist, wird die gesamte Zeile herausgefiltert.
+   Die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) kann bestimmte Zeilen während der Konvertierung in das XDM-Schema filtern. Es kann mehrere Gründe dafür geben, dass die gesamte Zeile nicht für eine Umwandlung geeignet ist. Wenn eines der folgenden Analytics-Felder diese Werte aufweist, wird die gesamte Zeile herausgefiltert.
 
    | Analytics-Feld | Werte, die zum Ignorieren einer Zeile führen |
    | --- | --- |
@@ -90,4 +90,4 @@ Im Folgenden finden Sie einige Gründe, warum Datensätze bei der Aufnahme von D
 
 * **Fehlende Personen-IDs** – Fehlende Personen-IDs (aus dem Ereignis-Datensatz und/oder aus dem Profil-/Lookup-Datensatz) führen dazu, dass diese Datensätze ignoriert oder übersprungen werden. Der Grund dafür ist, dass es keine gemeinsamen IDs oder übereinstimmenden Schlüssel zum Verbinden der Datensätze gibt.
 
-* **Ungültige oder zu große Personen-IDs** – Bei ungültigen IDs kann das System keine gültige gemeinsame ID unter den Datensätzen finden, die verbunden werden sollen. In einigen Fällen weist die Spalte mit der Personen-ID ungültige Personen-IDs auf, z. B. „undefiniert“ oder „00000000“. Eine Personen-ID (mit beliebiger Kombination aus Zahlen und Buchstaben), die in einem Ereignis angezeigt wird, das mehr als eine Million Mal pro Monat stattfindet, kann keinem bestimmten Benutzer bzw. keiner bestimmten Person zugeordnet werden. Sie wird als ungültig kategorisiert. Solche Datensätze können nicht in das System aufgenommen werden und würden zu Fehlern bei Datenaufnahme und Reporting führen.
+* **Ungültige oder zu große Personen-IDs** – Bei ungültigen IDs kann das System keine gültige gemeinsame ID unter den Datensätzen finden, die verbunden werden sollen. In einigen Fällen weist die Spalte mit der Personen-ID ungültige Personen-IDs auf, z. B. &quot;undefiniert&quot;oder &quot;0000000&quot;. Eine Personen-ID (mit beliebiger Kombination aus Zahlen und Buchstaben), die in einem Ereignis angezeigt wird, das mehr als eine Million Mal pro Monat stattfindet, kann keinem bestimmten Benutzer bzw. keiner bestimmten Person zugeordnet werden. Sie wird als ungültig kategorisiert. Solche Datensätze können nicht in das System aufgenommen werden und würden zu Fehlern bei Datenaufnahme und Reporting führen.

@@ -4,7 +4,7 @@ description: Analysieren und extrahieren Sie Einblicke aus Kundeninteraktionen �
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Verschaffen Sie sich einen zentralen Überblick über das Kundenverhalten über 
 1. [Erstellen Sie Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für aufzunehmende Daten.
 1. [Erstellen Sie Datensätze](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=de) für aufzunehmende Daten.
 1. [Erfassen von Daten in Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de).
-1. Verwenden Sie eine gemeinsame Namespace-ID für alle Datensätze oder verwenden Sie [Cross-Channel-Analyse](/help/connections/cca/overview.md), um Personen miteinander zu verknüpfen. Beachten Sie, dass Customer Journey Analytics derzeit für die Zuordnung weder das Experience Platform-Profil noch die Identitäts-Services verwendet.
+1. Verwenden Sie eine gemeinsame Namespace-ID für alle Datensätze oder verwenden Sie [Cross-Channel-Analyse](/help/cca/overview.md), um Personen miteinander zu verknüpfen. Beachten Sie, dass Customer Journey Analytics derzeit für die Zuordnung weder das Experience Platform-Profil noch die Identitäts-Services verwendet.
 1. Führen Sie eine benutzerdefinierte Datenvorbereitung durch, um sicherzustellen, dass ein gemeinsamer Schlüssel aus Zeitreihendaten in Customer Journey Analytics aufgenommen werden kann.
 1. Weisen Sie Suchdaten eine primäre ID zu, die mit einem Feld in den Ereignisdaten verknüpft werden kann. Zählt bei der Lizenzierung als Zeilen.
 1. Legen Sie dieselbe primäre ID für Profildaten als primäre ID der Ereignisdaten fest.
