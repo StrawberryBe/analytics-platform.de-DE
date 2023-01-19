@@ -3,13 +3,13 @@ title: Daten über Quell-Connectoren erfassen und verwenden
 description: Erläuterung der Datenerfassung und -verwendung mithilfe von Quell-Connectoren in Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 813d3213-86b3-431a-821c-174e5e36d032
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1955'
 ht-degree: 6%
 
 ---
-
 
 # Daten über Quell-Connectoren erfassen und verwenden.
 
@@ -17,7 +17,7 @@ In dieser Kurzanleitung wird erläutert, wie Sie Daten mithilfe eines Quell-Conn
 
 Gehen Sie dazu folgendermaßen vor:
 
-- **Schema und Datensatz einrichten** in Adobe Experience Platform das Modell (Schema) der Daten definieren, die Sie erfassen möchten, und wo die Daten (Datensatz) tatsächlich erfasst werden sollen.
+- **Einrichten eines Schemas und eines Datensatzes** in Adobe Experience Platform das Modell (Schema) der Daten definieren, die Sie erfassen möchten, und wo die Daten (Datensatz) tatsächlich erfasst werden sollen.
 
 - **Quell-Connector verwenden** in Adobe Experience Platform, um Ihre Daten in den konfigurierten Datensatz zu übertragen.
 
@@ -31,20 +31,20 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Dies ist eine vereinfachte Anleitung zur Aufnahme von Daten mithilfe eines Quell-Connectors in Adobe Experience Platform und zur Verwendung dieser Daten in Customer Journey Analytics.  Es wird dringend empfohlen, die zusätzlichen Informationen zu untersuchen, wenn darauf verwiesen wird.
+>Dies ist eine vereinfachte Anleitung zur Aufnahme von Daten mithilfe eines Quell-Connectors in Adobe Experience Platform und zur Verwendung dieser Daten in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Informationen zu untersuchen, wenn darauf verwiesen wird.
 
 
-## Schema und Datensatz einrichten
+## Einrichten eines Schemas und eines Datensatzes
 
-Um Daten in Adobe Experience Platform zu erfassen, müssen Sie zunächst definieren, welche Daten Sie erfassen möchten. Alle in Adobe Experience Platform erfassten Daten müssen einer standardmäßigen denormalisierten Struktur entsprechen, damit sie von nachgelagerten Funktionen erkannt und genutzt werden können. Experience-Datenmodell (XDM) ist das Standard-Framework, das diese Struktur in Form von Schemas bereitstellt.
+Um Daten in Adobe Experience Platform zu erfassen, müssen Sie zunächst definieren, welche Daten Sie erfassen möchten. Alle in Adobe Experience Platform erfassten Daten müssen einer standardmäßigen denormalisierten Struktur entsprechen, damit sie erkannt und von nachgelagerten Funktionen genutzt werden können. Experience-Datenmodell (XDM) ist das Standard-Framework, das diese Struktur in Form von Schemas bereitstellt.
 
 Nachdem Sie ein Schema definiert haben, verwenden Sie einen oder mehrere Datensätze, um die Datenerfassung zu speichern und zu verwalten. Ein Datensatz ist ein Konstrukt zur Datenspeicherung und -verwaltung, in dem Daten (in der Regel) in einer Tabelle erfasst werden, die ein Schema (Spalten) und Felder (Zeilen) beinhaltet.
 
 Alle Daten, die in Adobe Experience Platform erfasst werden, müssen einem vordefinierten Schema entsprechen, bevor es als Datensatz beibehalten werden kann.
 
-### Schema einrichten
+### Einrichten eines Schemas
 
-Für diesen Schnellstart gehen wir davon aus, dass Sie einige Treuedaten erfassen möchten, z. B. Loyalitäts-ID, Treuepunkte und Treuestatus.
+Für diesen Schnellstart möchten Sie einige Treuedaten erfassen, z. B. Treueprogramm-ID, Treuepunkte und Treuestatus.
 Dazu müssen Sie zunächst ein Schema definieren, das diese Daten modelliert.
 
 So richten Sie Ihr Schema ein:
@@ -173,13 +173,13 @@ So richten Sie einen Quell-Connector ein:
 
    - **[!UICONTROL Daten auswählen]**: Sie wählen die Quelldaten aus, die Sie erfassen möchten.
 
-   - **[!UICONTROL Datenfluss-Details]**: Sie geben zusätzliche Details zum Datenfluss an, d. h. den Namen und den zu verwendenden Datensatz.
+   - **[!UICONTROL Datenflussdetails]**: Sie geben zusätzliche Details zum Datenfluss an, d. h. den Namen und den zu verwendenden Datensatz.
 
    - **[!UICONTROL Zuordnung]**: Sie ordnen die eingehenden Quelldatenfelder Attributen im Schema zu, das mit dem ausgewählten Datensatz verknüpft ist.
 
    - **[!UICONTROL Planung]**: Sofern verfügbar, können Sie die Datenerfassung planen.
 
-   - **[!UICONTROL Überprüfen]**: Bevor Sie das Setup abschließen, überprüfen Sie die Definition des Quell-Connectors.
+   - **[!UICONTROL Überprüfen]**: Sie sehen eine Überprüfung der Definition des Quell-Connectors.
 
    Jeder Connector bietet eine detaillierte Dokumentation.
 
@@ -219,7 +219,7 @@ So erstellen Sie Ihre Verbindung:
 
    ![Verbindungseinstellungen](./assets/cja-connections-1.png)
 
-   Auswählen **[!UICONTROL Datensätze hinzufügen]**.
+   Auswählen **[!UICONTROL Hinzufügen von Datensätzen]**.
 
    Im [!UICONTROL Auswählen von Datensätzen] Schritt in [!UICONTROL Hinzufügen von Datensätzen]:
 
@@ -234,7 +234,7 @@ So erstellen Sie Ihre Verbindung:
 
       - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten, die in den Datensatzschemas in Adobe Experience Platform definiert sind.
 
-      - Wählen Sie die richtige Datenquelle aus der [!UICONTROL Datenquellentyp] Liste. Wenn Sie **[!UICONTROL Sonstiges]** Fügen Sie dann eine Beschreibung für Ihre Datenquelle hinzu.
+      - Wählen Sie die richtige Datenquelle aus der [!UICONTROL Datenquellentyp] Liste. Wenn Sie **[!UICONTROL Sonstiges]** und fügen Sie dann eine Beschreibung für Ihre Datenquelle hinzu.
 
       - Satz **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Aufstockung vorhandener Daten durch Datensätze]** entsprechend Ihren Vorlieben.
 
@@ -284,7 +284,7 @@ Siehe [Datenansichten - Übersicht](../data-views/data-views.md) Weitere Informa
 
 ## Einrichten eines Projekts
 
-Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und basierend auf Ihren Daten Erkenntnisse austauschen können. Sie verwenden Workspace-Projekte, um Datenkomponenten, Tabellen und Visualisierungen zu kombinieren, um Ihre Analyse zu erstellen und sie für andere in Ihrer Organisation freizugeben.
+Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und basierend auf Ihren Daten Erkenntnisse austauschen können. Sie verwenden Workspace-Projekte, um Datenkomponenten, Tabellen und Visualisierungen zu kombinieren, um Ihre Analyse zu gestalten und für andere in Ihrer Organisation freizugeben.
 
 So erstellen Sie Ihr Projekt:
 
@@ -304,12 +304,12 @@ So erstellen Sie Ihr Projekt:
 
    ![Ansicht &quot;Workspace Select Data&quot;](./assets/cja-projects-3.png).
 
-5. Ziehen und Ablegen von Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] um Ihren ersten Bericht zu erstellen. Ziehen Sie als Beispiel `Program Points Balance` und `Page View` als Metriken und `email` als Dimension zu erhalten, um einen schnellen Überblick über Profile zu erhalten, die Ihre Website besucht haben und auch Teil des Treueprogramms sind, das Treuepunkte sammelt.
+5. Ziehen und Ablegen von Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] um Ihren ersten Bericht zu erstellen. Ziehen Sie als Beispiel `Program Points Balance` und `Page View` als Metriken und `email` als Dimension zu erhalten, um einen schnellen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Teil des Treueprogramms sind, das Treuepunkte sammelt.
 
    ![Workspace - Erster Bericht](./assets/cja-projects-5.png)
 
-Siehe [Übersicht über Analysis Workspace](../analysis-workspace/home.md) Weitere Informationen zum Erstellen von Projekten und Erstellen Ihrer Analyse mithilfe von Komponenten, Visualisierungen und Bedienfeldern.
+Siehe [Übersicht über Analysis Workspace](../analysis-workspace/home.md) Weitere Informationen zum Erstellen von Projekten und zum Erstellen Ihrer Analyse mithilfe von Komponenten, Visualisierungen und Bedienfeldern.
 
 >[!SUCCESS]
 >
->Sie haben alle Schritte ausgeführt. Sie haben zunächst definiert, welche Treuedaten Sie erfassen möchten (Schema) und wo Sie sie (Datensatz) in Adobe Experience Platform speichern möchten, und den entsprechenden Quell-Connector konfiguriert, um Ihnen die Treuedaten bereitzustellen. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die erfassten Treuedaten und anderen Daten zu nutzen. Mit Ihrer Datenansichtsdefinition können Sie festlegen, welche Dimension und Metriken verwendet werden sollen, und schließlich Ihre erste Projektvisualisierung und -analyse erstellen.
+>Sie haben alle Schritte ausgeführt. Sie haben zunächst definiert, welche Treuedaten Sie erfassen möchten (Schema) und wo Sie sie (Datensatz) in Adobe Experience Platform speichern möchten, und den entsprechenden Quell-Connector konfiguriert, um Ihnen die Treuedaten bereitzustellen. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die erfassten Treuedaten und anderen Daten zu verwenden. Mit Ihrer Datenansichtsdefinition können Sie festlegen, welche Dimension und Metriken verwendet werden sollen, und schließlich Ihre erste Projektvisualisierung und -analyse erstellen.

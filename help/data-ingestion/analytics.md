@@ -3,13 +3,13 @@ title: Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden
 description: Erläuterung der Datenerfassung aus dem herkömmlichen Adobe Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 10%
+source-wordcount: '1146'
+ht-degree: 11%
 
 ---
-
 
 # Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden
 
@@ -39,7 +39,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Dies ist eine vereinfachte Anleitung zur Erfassung von Daten mithilfe des Adobe Analytics-Quell-Connectors und zur Verwendung dieser Daten in Customer Journey Analytics.  Es wird dringend empfohlen, die zusätzlichen Informationen zu untersuchen, wenn darauf verwiesen wird.
+>Dies ist eine vereinfachte Anleitung zur Erfassung von Daten mithilfe des Adobe Analytics-Quell-Connectors und zur Verwendung dieser Daten in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Informationen zu untersuchen, wenn darauf verwiesen wird.
 
 
 ## Einrichten eines Quell-Connectors für Adobe Analytics
@@ -48,7 +48,7 @@ Mit dem Adobe Analytics-Quell-Connector können Sie Adobe Analytics-Report Suite
 
 So erstellen Sie einen Adobe Analytics-Quell-Connector:
 
-1. Wählen Sie in der Platform-Benutzeroberfläche die Option **[!UICONTROL Quellen]** über die linke Leiste.
+1. Wählen Sie in der Platform-Benutzeroberfläche die Option **[!UICONTROL Quellen]** aus der linken Leiste.
 
 2. Auswählen **[!UICONTROL Adobe Apps]** aus der Liste der [!UICONTROL KATEGORIEN].
 
@@ -56,7 +56,7 @@ So erstellen Sie einen Adobe Analytics-Quell-Connector:
 
    ![Quellen](./assets/sources-overview.png)
 
-4. Auswählen **[!UICONTROL Report Suite]**. Wählen Sie aus der Liste der Report Suites die gewünschte aus.
+4. Auswählen **[!UICONTROL Report Suite]**. Wählen Sie in der Liste der Report Suites die gewünschte Report Suite aus.
 
    ![Report Suites](./assets/report-suites.png)
 
@@ -106,7 +106,7 @@ So erstellen Sie Ihre Verbindung:
 
    ![Verbindungseinstellungen](./assets/cja-connections-1.png)
 
-   Auswählen **[!UICONTROL Datensätze hinzufügen]**.
+   Auswählen **[!UICONTROL Hinzufügen von Datensätzen]**.
 
    Im [!UICONTROL Auswählen von Datensätzen] Schritt in [!UICONTROL Hinzufügen von Datensätzen]:
 
@@ -121,7 +121,7 @@ So erstellen Sie Ihre Verbindung:
 
       - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten, die in den Datensatzschemas in Adobe Experience Platform definiert sind.
 
-      - Wählen Sie die richtige Datenquelle aus der [!UICONTROL Datenquellentyp] Liste. Wenn Sie **[!UICONTROL Sonstiges]** Fügen Sie dann eine Beschreibung für Ihre Datenquelle hinzu.
+      - Wählen Sie die richtige Datenquelle aus der [!UICONTROL Datenquellentyp] Liste. Wenn Sie **[!UICONTROL Sonstiges]** und fügen Sie dann eine Beschreibung für Ihre Datenquelle hinzu.
 
       - Satz **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Aufstockung vorhandener Daten durch Datensätze]** entsprechend Ihren Vorlieben.
 
@@ -171,7 +171,7 @@ Siehe [Datenansichten - Übersicht](../data-views/data-views.md) Weitere Informa
 
 ## Einrichten eines Projekts
 
-Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und basierend auf Ihren Daten Erkenntnisse austauschen können. Sie verwenden Workspace-Projekte, um Datenkomponenten, Tabellen und Visualisierungen zu kombinieren, um Ihre Analyse zu erstellen und sie für andere in Ihrer Organisation freizugeben.
+Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und basierend auf Ihren Daten Erkenntnisse austauschen können. Sie verwenden Workspace-Projekte, um Datenkomponenten, Tabellen und Visualisierungen zu kombinieren, um Ihre Analyse zu gestalten und für andere in Ihrer Organisation freizugeben.
 
 So erstellen Sie Ihr Projekt:
 
@@ -191,20 +191,14 @@ So erstellen Sie Ihr Projekt:
 
    ![Ansicht &quot;Workspace Select Data&quot;](./assets/cja-projects-3.png).
 
-5. Ziehen und Ablegen von Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] um Ihren ersten Bericht zu erstellen. Ziehen Sie als Beispiel `Program Points Balance` und `Page View` als Metriken und `email` als Dimension zu erhalten, um einen schnellen Überblick über Profile zu erhalten, die Ihre Website besucht haben und auch Teil des Treueprogramms sind, das Treuepunkte sammelt.
+5. Ziehen und Ablegen von Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] um Ihren ersten Bericht zu erstellen. Ziehen Sie als Beispiel `Program Points Balance` und `Page View` als Metriken und `email` als Dimension zu erhalten, um einen schnellen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Teil des Treueprogramms sind, das Treuepunkte sammelt.
 
    ![Workspace - Erster Bericht](./assets/cja-projects-5.png)
 
-Siehe [Übersicht über Analysis Workspace](../analysis-workspace/home.md) Weitere Informationen zum Erstellen von Projekten und Erstellen Ihrer Analyse mithilfe von Komponenten, Visualisierungen und Bedienfeldern.
+Siehe [Übersicht über Analysis Workspace](../analysis-workspace/home.md) Weitere Informationen zum Erstellen von Projekten und zum Erstellen Ihrer Analyse mithilfe von Komponenten, Visualisierungen und Bedienfeldern.
 
 
 >[!SUCCESS]
 >
 >Sie haben alle Schritte ausgeführt. Beginnen Sie mit der Einrichtung des Adobe Analytics-Datenquellen-Connectors und der Konfiguration dieses Connectors für Ihre Report Suite, und Ihre Adobe Analytics-Daten werden automatisch in Adobe Experience Platform hochgeladen. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die erfassten Adobe Analytics-Daten und andere Daten zu nutzen. Mit Ihrer Datenansichtsdefinition können Sie festlegen, welche Dimension und Metriken verwendet werden sollen, und schließlich Ihre erste Projektvisualisierung und -analyse erstellen.
-
-
-
-
-
-
 
