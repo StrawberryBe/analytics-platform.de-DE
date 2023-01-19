@@ -4,16 +4,25 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+source-git-commit: 4488c87604db363ca4ddb0954216b195990c8bb1
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 99%
+source-wordcount: '1214'
+ht-degree: 96%
 
 ---
 
 # Customer Journey Analytics – Aktualisierungen der Dokumentation
 
 Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumentation vorgenommen.
+
+## 2023 {#23}
+
+| Funktion | Beschreibung |
+| --- | --- |
+| **Januar 2023** |  |
+| Ordner | Dedizierte Seiten für [Ordnerverwaltung](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Benutzerpräferenzen | Viele weitere Benutzereinstellungen sind jetzt in verfügbar. [Voreinstellungen](/help/analysis-workspace/user-preferences.md). |
+| Automatisches Speichern für Projekte | Der Inhalt wurde aktualisiert und enthält jetzt die Funktion zum automatischen Speichern in [Projekte speichern](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 
 ## 2022
 
