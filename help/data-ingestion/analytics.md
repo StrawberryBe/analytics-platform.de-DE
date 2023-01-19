@@ -4,7 +4,7 @@ description: Erläuterung der Datenerfassung aus dem herkömmlichen Adobe Analyt
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 11%
@@ -125,7 +125,7 @@ So erstellen Sie Ihre Verbindung:
 
       - Satz **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Aufstockung vorhandener Daten durch Datensätze]** entsprechend Ihren Vorlieben.
 
-      ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
+      ![Konfigurieren von Datensätzen](./assets/cja-connections-3a.png)
 
    - Auswählen **[!UICONTROL Hinzufügen von Datensätzen]**.
    Wählen Sie **[!UICONTROL Speichern]** aus.

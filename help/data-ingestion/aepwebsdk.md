@@ -4,7 +4,7 @@ description: Erläuterung der Datenerfassung in Customer Journey Analytics über
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 9%
@@ -523,7 +523,7 @@ So erstellen Sie Ihre Verbindung:
 
       - Satz **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Aufstockung vorhandener Daten durch Datensätze]** entsprechend Ihren Vorlieben.
 
-      ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
+      ![Konfigurieren von Datensätzen](./assets/cja-connections-3b.png)
 
    - Auswählen **[!UICONTROL Hinzufügen von Datensätzen]**.
    Wählen Sie **[!UICONTROL Speichern]** aus.
