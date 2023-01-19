@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 99%
@@ -124,7 +124,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | 2. November 2020 | Aktualisierung der Seite [Funktions-Unterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | November 2020 | Es wurde Inhalt zu [Entfernen von Einschränkungen bei der Aufstockung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#backfill-historical-data) für Verbindungen hinzugefügt. |
 | 7. Oktober 2020 | Es wurde ein Thema zu [kombinierten Ereignis-Datensätzen](/help/connections/combined-dataset.md) hinzugefügt. |
-| 15. September 2020 | Es wurde ein Thema zu [Datenerfassung](/help/use-cases/data-ingestion/data-ingestion.md) hinzugefügt. |
+| 15. September 2020 | Es wurde ein Thema zu [Datenerfassung](/help/data-ingestion/data-ingestion.md) hinzugefügt. |
 | 2. September 2020 | Der Abschnitt zu [Benutzerberechtigungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=de) wurde aktualisiert. |
 | 7. August 2020 | Neues Thema zu [B2B-Anwendungsfall - Such-Datensatz](/help/use-cases/b2b/b2b.md) hinzugefügt. |
 | Juli 2020 | Es wurden Informationen zur Option [Identitätszuordnung für Personen-ID](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de) hinzugefügt. |
