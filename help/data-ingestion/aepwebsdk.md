@@ -4,7 +4,7 @@ description: Erläuterung der Datenerfassung in Customer Journey Analytics über
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
+source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 9%
@@ -467,7 +467,7 @@ So rufen Sie den Code ab, der auf Ihr Tag verweist:
    Im [!UICONTROL Web-Installationsanweisungen] Wählen Sie die Schaltfläche &quot;Kopieren&quot;neben dem Skriptcode aus, der wie folgt gelesen werden soll:
 
    ```javascript
-   <script src="https://assets.adobedtm.com/2a518741ab24/806645a0b9bb/launch-716db315b4e2-development.min.js" async></script>
+   <script src="https://assets.adobedtm.com/2a518741ab24/.../launch-...-development.min.js" async></script>
    ```
 
    ![Umgebung](./assets/environment.png)
