@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: f45485d7e26827a85abe47168b1a3dbdbe150e53
+source-git-commit: 2cc4dc1472406314e9ba3a5ab17c08bb7696f6c0
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 79%
+source-wordcount: '1289'
+ht-degree: 75%
 
 ---
 
@@ -84,7 +84,7 @@ Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zi
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 
-CJA nimmt jetzt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und überträgt sie in das Echtzeit-Kundenprofil. CJA sendet die Zielgruppe an Experience Platform, wobei die primäre Identität auf den Wert festgelegt ist, der bei der Verbindungskonfiguration als Personen-ID ausgewählt wurde.
+CJA nutzt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). CJA sendet die Zielgruppe entsprechend der Auswahl als [!UICONTROL Personen-ID] wenn die Verbindung konfiguriert wurde.
 
 Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Jetzt kann beispielsweise „user@adobe.com“ auf allen Geräten und Kanälen als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
@@ -98,33 +98,47 @@ Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 Häufig gestellte Fragen zur Publikation.
 
-### Was passiert, wenn eine benutzende Person nicht mehr Mitglied einer Zielgruppe in CJA ist?
++++**Was passiert, wenn eine benutzende Person nicht mehr Mitglied einer Zielgruppe in CJA ist?**
 
 In diesem Fall wird ein Exit-Ereignis von CJA an Experience Platform gesendet.
 
-### Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen?
++++
+
++++**Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen?**
 
 Wenn eine CJA-Zielgruppe gelöscht wird, wird sie nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Es werden jedoch keine Profile, die mit dieser Zielgruppe verknüpft sind, in Platform tatsächlich gelöscht.
 
-### Wenn in der RTCDP kein entsprechendes Profil existiert, wird dann ein neues Profil erstellt?
++++
+
++++**Wenn in der RTCDP kein entsprechendes Profil existiert, wird dann ein neues Profil erstellt?**
 
 Ja, das wird es.
 
-### Sendet CJA die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?
++++
 
-Die Daten werden über die Pipeline in RTCP gestreamt, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
++++**Sendet CJA die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?**
 
-### Welche Identitäten sendet CJA?
+CJA streamt die Daten über die Pipeline in RTCP, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
-Die Identitäts-/Namespace-Paare, die bei der Verbindungseinrichtung verwendet wurden. Insbesondere der Schritt, in dem ein Benutzer das Feld auswählt, das er als &quot;Personen-ID&quot;verwenden möchte.
++++
 
-### Was wird als primäre Identität ausgewählt?
++++**Welche Identitäten sendet CJA?**
+
+Unabhängig davon, welche Identitäts-/Namespace-Paare im [Verbindungseinrichtung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection). Insbesondere der Schritt, in dem ein Benutzer das Feld auswählt, das er als &quot;Personen-ID&quot;verwenden möchte.
+
++++
+
++++**Welche ID wird als primäre Identität ausgewählt?**
 
 Siehe oben. Wir senden nur eine Identität pro CJA &quot;Person&quot;.
 
-### Verarbeitet RTCP auch die CJA-Nachrichten? Kann CJA einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?
++++
+
++++**Verarbeitet RTCP auch die CJA-Nachrichten? Kann CJA einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
 
 Nein. Wir senden nur eine Identität pro &quot;Person&quot;, sodass es keine Diagrammkanten gibt, die RTCP nutzen könnte.
+
++++
 
 ## Nächste Schritte
 
