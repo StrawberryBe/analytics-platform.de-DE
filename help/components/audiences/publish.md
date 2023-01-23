@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 2cc4dc1472406314e9ba3a5ab17c08bb7696f6c0
+source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 75%
+source-wordcount: '1192'
+ht-degree: 81%
 
 ---
 
@@ -71,16 +71,6 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    Nach erfolgreicher Veröffentlichung erhalten Sie eine Bestätigungsnachricht, dass die Zielgruppe veröffentlicht wurde. Es dauert nur ein bis zwei Minuten, bis diese Zielgruppe in Experience Platform angezeigt wird. (Selbst für Zielgruppen mit Millionen von Personen dauert es normalerweise weniger als 5 Minuten.)
 
 1. Klicken Sie in derselben Nachricht auf **[!UICONTROL Zielgruppe in AEP anzeigen]**. Sie gelangen zur [Segment-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=de) in Adobe Experience Platform. Weitere Informationen finden Sie unten.
-
-## Was geschieht nach der Erstellung einer Zielgruppe? {#after-audience-created}
-
-Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zielgruppe ein Experience Platformen-Streaming-Segment.
-
-* Das AEP-Segment gibt denselben Namen/dieselbe Beschreibung wie die CJA-Zielgruppe. Der Name wird jedoch mit der CJA-Zielgruppen-ID angehängt, um sicherzustellen, dass er eindeutig ist.
-
-* Wenn sich der CJA-Zielgruppenname/die Beschreibung ändert, spiegelt der Name/die Beschreibung des AEP-Segments diese Änderung ebenfalls wider.
-
-* Wenn eine CJA-Zielgruppe von einem Benutzer gelöscht wird, wird das AEP-Segment NICHT gelöscht. Der Grund dafür ist, dass die CJA-Zielgruppe später möglicherweise wieder aus dem Feld gestrichen wird.
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 

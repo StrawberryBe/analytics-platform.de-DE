@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
+source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 39%
+source-wordcount: '537'
+ht-degree: 41%
 
 ---
 
 # Aktuelle Customer Journey Analytics-Versionshinweise (CJA) (Januar 2023)
 
-**Letzte Aktualisierung**: 23. Januar 2023
+**Letzte Aktualisierung**: 13. Januar 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,7 +20,6 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Aktualisierung auf CJA-Zielgruppen** | Nachdem Sie eine Audience erstellt haben, [Adobe erstellt ein Experience Platformen-Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). | Nicht angegeben | 23. Januar 2023 |
 | **Ordner in Workspace** | Mit Ordnern können Sie Ihre Projekte organisieren und kategorisieren, um den Abruf und den Zugriff zu verbessern. Darüber hinaus wird eine freigegebene **[!UICONTROL Firma]** -Ordner ermöglicht es Administratoren, mühelos Inhalte zu erstellen und für alle Workspace-Benutzer freizugeben. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=de) | Nicht angegeben | 11. Januar 2023 |
 | **Standard-Landingpage** | Die [neue Landingpage](/help/getting-started/landing.md) die Anfang 2022 eingeführt wurde, wird zum Standarderlebnis für alle Benutzer auf **11. Januar 2023**. Die veraltete Landingpage wird nicht mehr unterstützt und alle müssen das neue Erlebnis verwenden. | Nicht angegeben | 11. Januar 2023 |
 | **Seite &quot;Projektmanager&quot;veraltet** | Mit der Veröffentlichung der neuen Landingpage wird die **[!UICONTROL Projektmanager]** gemäß **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Komponenten]**. Die neue Landingpage verfügt über alle Funktionen der alten Seite &quot;Projektmanager&quot;und mehr. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | Nicht angegeben | 11. Januar 2023 |

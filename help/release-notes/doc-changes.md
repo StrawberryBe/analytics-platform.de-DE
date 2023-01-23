@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
+source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 91%
+source-wordcount: '1255'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,6 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **Januar 2023** |  |
-| Aktualisierung von CJA-Zielgruppen doc | Neue Dokumentation zu [Was passiert, nachdem eine neue Zielgruppe erstellt wurde?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Schnellstartanleitungen zur Datenerfassung | Neuer Dokumentationsabschnitt zum Thema [Daten erfassen und verwenden](/help/data-ingestion/data-ingestion.md) in CJA. |
 | Workspace-Ordner | Dedizierte Seiten für [Ordnerverwaltung](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Benutzereinstellungen in Workspace | Viele weitere Benutzereinstellungen sind jetzt in verfügbar. [Voreinstellungen](/help/analysis-workspace/user-preferences.md). |
