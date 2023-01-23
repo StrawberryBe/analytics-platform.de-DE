@@ -2,10 +2,10 @@
 title: Auditprotokolle
 description: Erfahren Sie, wie Sie CJA-Auditprotokolle anzeigen und verwalten können.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Die folgenden Informationen werden angezeigt:
 | Aktionsname | Dies ist die Liste möglicher Aktionen: <ul><li>API_Request</li><li>Genehmigen</li><li>Erstellen</li><li>Bearbeiten</li><li>Exportieren</li><li>Login_failed</li><li>Login_success</li><li>Abmelden</li><li>Org_change</li><li>Aktualisieren</li><li>Freigeben</li><li>Übertragen</li><li>Genehmigung aufheben</li><li>Freigabe aufheben</li></ul> |
 | Beschreibung | Eine Zusammenfassung der Aktion, des Komponententyps (mit ID) und anderer Werte. |
 | Benutzername | Der Benutzer, der die Aktion durchführt. |
-| Typ der Komponente | Mögliche Komponententypen sind: <ul><li>Anmerkung</li><li>Zielgruppe</li><li>Berechnete Metrik</li><li>Verbindung</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Projekt</li><li>Bericht</li><li>Scheduled_Project</li><li>Benutzer</li><li>User_Group</li></ul> |
+| Typ der Komponente | Mögliche Komponententypen sind: <ul><li>Anmerkung</li><li>Zielgruppe</li><li>Berechnete Metrik</li><li>Verbindung</li><li>Data_Group</li><li>Data_View (dieser Komponententyp umfasst Dimensionen und Metriken)</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Projekt</li><li>Bericht</li><li>Scheduled_Project</li><li>Benutzer</li><li>User_Group</li></ul> |
 | Kennung der IMS-Organisation | Eine eindeutige ID, die Ihrer Instanz bei der ersten Anmeldung bei Adobe Experience Cloud zugewiesen wird. Sie sollte im folgenden Format vorliegen: xxx@AdobeOrg |
 | Benutzer-ID | Eine eindeutige ID, die den/die Benutzende repräsentiert, der/die diese Aktion ausgeführt hat. |
 | Erstellt am | Zeitpunkt, zu dem diese Aktion durchgeführt wurde. |
