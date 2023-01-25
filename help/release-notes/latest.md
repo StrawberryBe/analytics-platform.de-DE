@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 41%
+source-wordcount: '561'
+ht-degree: 40%
 
 ---
 
@@ -26,6 +26,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Arbeitsmappen in Report Builder planen** | In Customer Journey Analytics können Sie Zeitpläne erstellen, um Arbeitsmappen in regelmäßigen Abständen zu senden. Jetzt können Empfänger regelmäßig die neuesten Aktualisierungen Ihrer Arbeitsmappen erhalten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | Nicht angegeben | 11. Januar 2023 |
 | **Automatisches Speichern neuer Projekte** | Analysis Workspace speichert jetzt automatisch neu erstellte Projekte. Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell speichern, ist jetzt eine Wiederherstellungsversion Ihres Projekts verfügbar. Zuvor wurden Projekte erst automatisch gespeichert, nachdem sie zuvor manuell gespeichert wurden. [Weitere Informationen](/help/analysis-workspace/build-workspace-project/save-projects.md) | Nicht angegeben | 11. Januar 2023 |
 | **Erweiterte Benutzereinstellungen** | Sie können jetzt zusätzliche Voreinstellungen auf Benutzerebene konfigurieren (in [!UICONTROL Komponenten] > [!UICONTROL Voreinstellungen]). Wenn Sie die Benutzereinstellungen festlegen, erstreckt sich Ihre Auswahl über Ihre Projekte, Tabellen und Visualisierungen. Die Seite Voreinstellungen enthält jetzt die folgenden neuen Registerkarten, von denen jede viele neue Konfigurationsoptionen enthält:<ul><li>Freiformtabelle</li><li>Visualisierungen >/li></ul>  Darüber hinaus sind jetzt weitere Voreinstellungen auf der **[!UICONTROL Allgemein]** und **[!UICONTROL Projekt]** Registerkarten.<p>Zuvor waren viele dieser Voreinstellungen nur für einzelne Projekte, Tabellen und Visualisierungen konfigurierbar. [Weitere Informationen](/help/analysis-workspace/user-preferences.md) | Nicht angegeben | 11. Januar 2023 |
+| **Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze** | Profildatensätze und Lookup-Datensätze unterstützen jetzt Objekt-Arrays zur Verwendung in CJA. | Nicht angegeben | 11. Januar 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 

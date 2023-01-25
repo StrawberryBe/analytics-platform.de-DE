@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 93%
+source-wordcount: '1282'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Automatisches Speichern für Workspace-Projekte | Der Inhalt wurde aktualisiert und enthält jetzt die Funktion zum automatischen Speichern in [Projekte speichern](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Landingpage | Neue Landingpage-Updates [Landingpage](/help/getting-started/landing.md). |
 | Arbeitsmappen planen | Spezifische Seite, auf der beschrieben wird, wie [Arbeitsmappen planen](/help/report-builder/schedule-reportbuilder.md) in Report Builder. |
+| Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze | Aktualisiert [Verwenden von Objekt-Arrays](/help/use-cases/object-arrays.md) und [Aufnehmen von AEP-Zielgruppen](/help/use-cases/data-ingestion/ingest-aep-segments.md) , um die Objektarray-Unterstützung für Profil- und Lookup-Datensätze widerzuspiegeln. |
 
 ## 2022 {#22}
 
