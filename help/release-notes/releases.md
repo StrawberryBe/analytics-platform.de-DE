@@ -2,10 +2,10 @@
 description: Erläutert die Strategie zur kontinuierlichen Veröffentlichung von Funktionen für Customer Journey Analytics
 title: Versionen von Customer Journey Analytics-Funktionen
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
-source-git-commit: 44a140fdd5069cbe806f694377802215bcf50b31
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 40f145d20125c41f3399ab0690a673f01c1817e3
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,9 @@ Customer Journey Analytics-Versionen basieren auf einem Modell der kontinuierlic
 
 [!UICONTROL Analysis Workspace] verwendet Funktionsmarkierungen (auch als „Umschalter“ bezeichnet), um die Sichtbarkeit neuer Funktionen zu steuern, sodass vor der Vollversion ein kontrollierter Skalierungstest durchgeführt werden kann. Diese Veröffentlichungsstrategie umfasst die folgenden Phasen:
 
-* **Start des Rollouts**: Das Rollout einer stufenweisen Veröffentlichung beginnt mit eingeschränkten Tests durch interne Adobe-Benutzer. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Die schrittweise Einführung erfolgt auf der Organisationsebene in Experience Cloud, sodass alle Benutzer mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
+* **Eingeschränktes Testen**: Eine schrittweise Veröffentlichung beginnt mit Tests durch interne Adobe-Benutzer. Sie wird dann einer kleinen Gruppe von Kundenkonten zur Verfügung gestellt, um sicherzustellen, dass die Funktion den Kundenanforderungen und Erwartungen entspricht.
+
+* **Start des Rollouts**: Der Rollout einer stufenweisen Veröffentlichung beginnt mit der Phase des eingeschränkten Testens. Die Verfügbarkeit der Version für Kunden wird dann im Laufe einiger Monate von 0 % auf 100 % skaliert. Die schrittweise Einführung erfolgt auf der Organisationsebene in Experience Cloud, sodass alle Benutzer mit Berechtigung in einem Unternehmen dasselbe Erlebnis erhalten.
 
 * **Allgemeine Verfügbarkeit (GA)**: Die Funktion steht 100 % der berechtigten Experience Cloud-Organisationen zur Verfügung und die Veröffentlichung der Funktion ist abgeschlossen.
 
