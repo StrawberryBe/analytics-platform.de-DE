@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
+source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 91%
+source-wordcount: '1311'
+ht-degree: 89%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **Januar 2023** |  |
+| Tabellen filtern und sortieren | Aktualisierter Inhalt (einschließlich des Hinzufügens von Verfahren und der Erläuterung der verfügbaren Optionen) im [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) Artikel. Dieser Artikel wurde aus &quot;Paginierung, Filterung und Sortierung von Tabellen&quot;umbenannt. |
 | Schnellstartanleitungen zur Datenerfassung | Neuer Dokumentationsabschnitt zum Thema [Daten erfassen und verwenden](/help/data-ingestion/data-ingestion.md) in CJA. |
 | Workspace-Ordner | Dedizierte Seiten für [Ordnerverwaltung](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Benutzereinstellungen in Workspace | Viele weitere Benutzereinstellungen sind jetzt in verfügbar. [Voreinstellungen](/help/analysis-workspace/user-preferences.md). |
