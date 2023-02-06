@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ddba0cdee1956048ba1875b49e8f2b77085c46da
+source-git-commit: b633e3e70c24d9b00b1ab2f80954ad698b12ce29
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 40%
+source-wordcount: '611'
+ht-degree: 37%
 
 ---
 
 # Aktuelle Customer Journey Analytics-Versionshinweise (CJA) (Januar 2023)
 
-**Letzte Aktualisierung**: 24. Januar 2023
+**Letzte Aktualisierung**: 6. Februar 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,6 +20,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Aktualisierung auf CJA-Zielgruppen** | Nachdem Sie eine Audience erstellt haben, [Adobe erstellt ein Experience Platformen-Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). Ein AEP-Streaming-Segment wird nur erstellt, wenn die Organisation für Streaming-Segmentierung eingerichtet ist. | Nicht angegeben | 3. Februar 2023 |
 | **Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze** | Profildatensätze und Lookup-Datensätze unterstützen jetzt Objekt-Arrays zur Verwendung in CJA. | 11. Januar 2023 | 19. Januar 2023 |
 | **Ordner in Workspace** | Mit Ordnern können Sie Ihre Projekte organisieren und kategorisieren, um den Abruf und den Zugriff zu verbessern. Darüber hinaus wird eine freigegebene **[!UICONTROL Firma]** -Ordner ermöglicht es Administratoren, mühelos Inhalte zu erstellen und für alle Workspace-Benutzer freizugeben. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=de) | Nicht angegeben | 11. Januar 2023 |
 | **Standard-Landingpage** | Die [neue Landingpage](/help/getting-started/landing.md) die Anfang 2022 eingeführt wurde, wird zum Standarderlebnis für alle Benutzer auf **11. Januar 2023**. Die veraltete Landingpage wird nicht mehr unterstützt und alle müssen das neue Erlebnis verwenden. | Nicht angegeben | 11. Januar 2023 |
