@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: bacf1568b0d39d20f948c087d616881b66d96ca2
+source-git-commit: 72f59b140b2a907f8c0a125825cd4df6d7c38dbc
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 98%
+source-wordcount: '1810'
+ht-degree: 97%
 
 ---
 
@@ -106,13 +106,13 @@ Wenn der gewünschte Datumsbereich noch nicht erstellt wurde, können Sie durch 
 
 Dadurch gelangen Sie zum Generator für den Datumsbereich, in dem Sie eine neue Komponente für den Datumsbereich erstellen und speichern können.
 
-### Vergleichsdatumsbereiche anzeigen {#show-comparison-dates}
+### Vergleichsdatumsbereiche einblenden/ausblenden {#showo-comparison-dates}
 
 Um Vergleichsdatumsbereiche einzubeziehen, schalten Sie die **Vergleichsdaten einschließen** -Einstellung.
 
 ![Vergleichsdaten einschließen](assets/include-comparison-dates.png)
 
-Die Einstellung lautet *on* Standardmäßig. Deaktivieren Sie die Option, wenn Sie keine Vergleichsdaten anzeigen möchten.
+Die Einstellung lautet *on* Standardmäßig. Umschalten auf *off* , wenn Sie keine Vergleichsdaten anzeigen möchten.
 
 ![Nicht ausgewählte Vergleichsdatumseinstellung](assets/no-comparison-dates.png)
 
