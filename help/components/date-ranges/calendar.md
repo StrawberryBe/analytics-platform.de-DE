@@ -4,10 +4,10 @@ title: Übersicht über Kalender und Datumsbereiche
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: b776478fa4fa77841c5cf0b2d082ff60055bf587
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+source-git-commit: 969040538e12ef3c3d15881ae225af02bef1cba4
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 51%
 
 ---
 
@@ -17,7 +17,7 @@ Im Kalender können Sie Daten und Datumsbereiche festlegen oder eine Voreinstell
 
 Wenn Sie im Kalender etwas auswählen, bezieht sich diese Auswahl auf das jeweilige Panel. Sie haben jedoch die Möglichkeit, die Auswahl auf sämtliche Panels anzuwenden. Wenn Sie in Workspace auf einen Datumsbereich klicken, zeigt die Benutzeroberfläche den aktuellen Kalendermonat und den vorherigen Kalendermonat an. Sie können diese beiden Kalender anpassen, indem Sie auf die Rechts- und Linkspfeile in den jeweiligen oberen Ecken klicken.
 
-![Kalender](assets/aw_calendar.png)
+![Kalender](assets/aw_calendar2.png){width="60%"}
 
 Beim ersten Klick auf einen Kalender wird die Auswahl eines Datumsbereichs begonnen. Mit dem zweiten Klick wird die Auswahl des Datumsbereichs beendet und hervorgehoben. Wenn die `Shift` Taste gedrückt gehalten wird (oder ein Rechtsklick verwendet wird), wird der entsprechende Bereich an den derzeit ausgewählten Bereich angehängt.
 
@@ -32,3 +32,41 @@ Sie können Datums- (und Zeitdimensionen) mittels Drag-and-Drop in einem Workspa
 | Datumsbereich | Hier können Sie einen voreingestellten Datumsbereich auswählen. Der Standardwert lautet „Letzte 30 Tage“. **[!UICONTROL Diese Woche/Monat/Quartal/Jahr (außer heute)]** ermöglicht Ihnen, aus Datumsbereichen auszuwählen, die keine Daten von heute enthalten. |
 | In alle Bedienfelder übernehmen | Hiermit können Sie den ausgewählten Datumsbereich nicht nur für das aktuelle Bedienfeld, sondern für alle Bedienfelder des Projekts ändern. |
 | Übernehmen | Hiermit wird der Datumsbereich nur in diesem Bedienfeld übernommen. |
+
+## Über relative Bereichsdatumsbereiche {#relative-panel-dates}
+
+Wenn Sie in Workspace arbeiten, können Sie die Datumsbereichskomponenten relativ zum Bedienfeldkalender festlegen. Drei gängige Anwendungsfälle, in denen relative Bereichsdaten wirksam werden, sind Combo-Diagramme, Zusammenfassung der Schlüsselmetriken und Datumsbereiche der Freiformtabelle.
+
+So verwenden Sie relative Bereichsdatumsbereiche
+
+1. Wählen Sie die **Arbeitsbereich** Registerkarte.
+1. Auswählen **Leeres Projekt**.
+1. Fügen Sie Dimensionen, Metriken und Segmente über die linke Leiste hinzu.
+1. Klicken Sie auf das Feld für den Datumsbereich des Bedienfelds, um die Einstellung für den relativen Datumsbereich des Bedienfelds umzuschalten.
+1. Auswählen **Stellen Sie Datumsbereichskomponenten relativ zum Bedienfeldkalender her.**.
+   * Wählen Sie die Option aus, um die Komponenten für den Datumsbereich relativ zum Bedienfeldkalender zu gestalten.
+Wenn relative Datumswerte ausgewählt sind, basieren rollierende Datumswerte auf dem Startdatum des Bedienfeldkalenders und nicht auf dem heutigen Datum.
+   * Wenn diese Option nicht ausgewählt ist, basieren rollierende Datumswerte auf dem heutigen Datum.
+
+   ![relative Bereichsdaten](assets/relative-date-selected.png){width="60%"}
+
+1. Klicken Sie auf **Anwenden**.
+Die relativen Daten werden oben rechts angezeigt.
+
+   ![relative Daten in Freiform ](assets/relative-date-range1.png)
+
+## Richtlinien für relative Bereichsdatumsbereiche {#guidelines}
+
+Beachten Sie bei der Verwendung relativer Datumsbereiche des Bedienfelds die folgenden Richtlinien.
+
+### Formeln und relative Datumsbereiche {#formula-relative-dates}
+
+Wenn Sie relative Datumswerte ausgewählt haben, verwenden alle Datumsformeln das Startdatum des Bedienfelds als Ausgangspunkt.
+
+### Benutzerdefinierte Kalender und relative Datumsbereiche {#custom-calendar-formulas}
+
+Wenn Sie einen wöchentlichen benutzerspezifischen Kalender verwenden und Monate oder Jahre hinzufügen, berechnet die Formel den Versatz des Tages im angegebenen Zeitraum. Das tatsächliche Datum kann sich aufgrund des Versatzes unterscheiden. Die Formel wählt den Tag aus, der an derselben Stelle im benutzerdefinierten Kalender landet. Beispielsweise der dritte Freitag der dritten Woche in einem benutzerdefinierten Kalender.
+
+### Über Segmente, die rollierende Datumswerte und relative Datumsbereiche für Bedienfelder verwenden {#segments-relative-dates}
+
+Wenn Sie ein Segment erstellen oder ein Segment mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Segmentvorschau klicken, beginnt das rollierende Datum ab *Heute* anstelle des Startdatums des Bedienfelds. Daher stimmt die Vorschau für das Segment nicht überein, wenn Sie das Segment tatsächlich in der Tabelle verwenden. Die Vorschau ist betroffen, nicht das Segment selbst.
