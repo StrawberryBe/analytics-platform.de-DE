@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 218618fb6f5ad97da82ebb40e78f9a04f7d28343
+source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 74%
+source-wordcount: '1389'
+ht-degree: 70%
 
 ---
 
@@ -79,6 +79,19 @@ Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zi
 * Das AEP-Segment gibt denselben Namen/dieselbe Beschreibung wie die CJA-Zielgruppe. Der Name wird jedoch mit der CJA-Zielgruppen-ID angehängt, um sicherzustellen, dass er eindeutig ist.
 * Wenn sich der CJA-Zielgruppenname/die Beschreibung ändert, spiegelt der Name/die Beschreibung des AEP-Segments diese Änderung ebenfalls wider.
 * Wenn eine CJA-Zielgruppe von einem Benutzer gelöscht wird, wird das AEP-Segment NICHT gelöscht. Der Grund dafür ist, dass die CJA-Zielgruppe später möglicherweise wieder aus dem Feld gestrichen wird.
+
+## Latenzaspekte {#latency}
+
+An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgruppen können Latenzen auftreten. Im Folgenden finden Sie einen Überblick über mögliche Latenzen.
+
+![](assets/latency-diagram.png)
+
+| Latenzpunkt | Latenzzeit |
+| --- | --- |
+| Datenaufnahme in den Data Lake | Bis zu 30 Minuten |
+| Datenerfassung von Experience Platform in CJA | Bis zu 60 Minuten |
+| Zielgruppenveröffentlichung im Echtzeit-Kundenprofil | Weniger als 5 Minuten (je nach Zielgruppengröße) |
+| Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 
