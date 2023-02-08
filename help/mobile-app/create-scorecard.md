@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
-workflow-type: ht
-source-wordcount: '1769'
-ht-degree: 100%
+source-git-commit: bacf1568b0d39d20f948c087d616881b66d96ca2
+workflow-type: tm+mt
+source-wordcount: '1808'
+ht-degree: 98%
 
 ---
 
@@ -105,6 +105,16 @@ Wenn der gewünschte Datumsbereich noch nicht erstellt wurde, können Sie durch 
 ![Neue Scorecard5](assets/new_score_card5.png)
 
 Dadurch gelangen Sie zum Generator für den Datumsbereich, in dem Sie eine neue Komponente für den Datumsbereich erstellen und speichern können.
+
+### Vergleichsdatumsbereiche anzeigen {#show-comparison-dates}
+
+Um Vergleichsdatumsbereiche einzubeziehen, schalten Sie die **Vergleichsdaten einschließen** -Einstellung.
+
+![Vergleichsdaten einschließen](assets/include-comparison-dates.png)
+
+Die Einstellung lautet *on* Standardmäßig. Deaktivieren Sie die Option, wenn Sie keine Vergleichsdaten anzeigen möchten.
+
+![Nicht ausgewählte Vergleichsdatumseinstellung](assets/no-comparison-dates.png)
 
 ## Visualisierungen anwenden {#viz}
 
