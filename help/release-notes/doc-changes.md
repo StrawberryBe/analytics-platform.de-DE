@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
+source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 87%
+source-wordcount: '1390'
+ht-degree: 84%
 
 ---
 
@@ -21,6 +21,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | --- | --- |
 | **Februar 2023** |  |
 | Aktualisierung der Dokumentation zu Zielgruppen | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe eine Experience Platform [Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
+| Workspace-Kalender und Datumsbereiche | Der Inhalt wurde aktualisiert, um relative Datumsbereiche, Aktualisierungen der Formelberechnung und Änderungen an der Kalenderbenutzeroberfläche zu beschreiben. Siehe [Über relative Bereichsdatumsbereiche](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Mobile Scorecards | Neuer Dokumentationsabschnitt, in dem beschrieben wird, wie Sie Vergleichsdatumsbereiche anzeigen und ausblenden. Siehe [Vergleichsdatumsbereiche anzeigen](/help/mobile-app/create-scorecard.md#show-comparison-dates) in CJA. |
 | **Januar 2023** |  |
 | Tabellen filtern und sortieren | Aktualisierter Inhalt (einschließlich des Hinzufügens von Verfahren und der Erläuterung der verfügbaren Optionen) im [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) Artikel. Dieser Artikel wurde aus &quot;Paginierung, Filterung und Sortierung von Tabellen&quot;umbenannt. |
 | Schnellstartanleitungen zur Datenerfassung | Neuer Dokumentationsabschnitt zum Thema [Daten erfassen und verwenden](/help/data-ingestion/data-ingestion.md) in CJA. |
