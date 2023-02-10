@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können einen Exportvorgang mit der Zielgruppen-ID Ihrer Wahl erstellen und 
 
 ## Schritt 4: Bearbeiten Sie die Exportausgabe
 
-Die Ergebnisse des Exportvorgangs müssen in einen separaten Profildatensatz umgewandelt werden, damit sie in CJA aufgenommen werden können.  Diese Umwandlung kann mit [AEP Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) oder einem anderen Transformations-Tool Ihrer Wahl durchgeführt werden. Für die Berichterstellung in CJA benötigen wir nur die Profilkennung (die der Personen-ID in CJA entspricht) und eine oder mehrere Zielgruppen-ID(s).
+Die Ergebnisse des Exportvorgangs müssen in einen separaten Profildatensatz umgewandelt werden, damit sie in CJA aufgenommen werden können. Diese Umwandlung kann mit [AEP Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) oder einem anderen Transformations-Tool Ihrer Wahl durchgeführt werden. Für die Berichterstellung in CJA benötigen wir nur die Profilkennung (die der Personen-ID in CJA entspricht) und eine oder mehrere Zielgruppen-ID(s).
 
 Der standardmäßige Exportvorgang enthält jedoch zusätzliche Daten. Daher müssen Sie diese Ausgabe bearbeiten, um irrelevante Daten zu entfernen und einige Dinge umzustellen.  Außerdem müssen Sie zuerst ein Schema/einen Datensatz erstellen, bevor Sie die umgewandelten Daten hinzufügen.
 
@@ -64,7 +64,7 @@ Folgende Datenelemente müssen vorhanden sein:
 
 * Zeichenfolgenfeld `_aresprodvalidation`: Bezieht sich auf Ihre Organisations-ID. Ihre wird anders lauten.
 * Zeichenfolgenfeld `personID`: Dies ist das standardmäßige XDM-Schemafeld in Profildatensätzen, das die Person identifiziert. Verwenden Sie die Profil-ID vom Export.
-* Zeichenfolgenfeld `audienceMembershipId`: Die Zielgruppen-ID vom Export.  HINWEIS: Dieses Feld kann beliebig benannt werden (in Ihrem eigenen Schema).
+* Zeichenfolgenfeld `audienceMembershipId`: Die Zielgruppen-ID vom Export. HINWEIS: Dieses Feld kann beliebig benannt werden (in Ihrem eigenen Schema).
 * Fügen Sie einen Anzeigenamen für die Zielgruppe hinzu (`audienceMembershipIdName`), z. B.
 
    ![Anzeigename der Zielgruppe](../assets/audience-name.png)
@@ -88,6 +88,6 @@ Sie können jetzt Berichte zu `audienceMembershipId`, `audienceMembershipIdName`
 * Sie sollten diesen Prozess regelmäßig durchführen, damit die Zielgruppendaten in Customer Journey Analytics laufend aktualisiert werden.
 * Sie können mehrere Zielgruppen in eine einzige CJA-Verbindung importieren. Dies erhöht zwar die Komplexität des Prozesses, es ist jedoch möglich. Damit dies funktioniert, müssen Sie einige Änderungen am obigen Prozess vornehmen:
    1. Führen Sie diesen Prozess für jede gewünschte Zielgruppe in Ihrer Zielgruppensammlung innerhalb des Echtzeit-Kundenprofis aus.
-   1. CJA unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Verwenden eines [Array von Objekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) für audienceMembershipId oder audienceMembershipIdName ist die beste Option.
+   1. CJA unterstützt Arrays/Objekt-Arrays in Profildatensätzen. Es wird empfohlen, für audienceMembershipId oder audienceMembershipIdName ein [Array von Objekten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=de) zu verwenden.
    1. Erstellen Sie in Ihrer Datenansicht eine neue Dimension mithilfe der Teilzeichenfolgenumwandlung des `audienceMembershipId`-Felds, um die Zeichenfolge mit kommagetrennten Werten in ein Array zu konvertieren. HINWEIS: Derzeit besteht für das Array eine Beschränkung von 10 Werten.
    1. Jetzt können Sie in CJA Workspace Berichte zur neuen Dimension `audienceMembershipIds` erstellen.
