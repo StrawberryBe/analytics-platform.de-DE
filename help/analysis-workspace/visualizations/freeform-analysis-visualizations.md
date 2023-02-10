@@ -5,9 +5,9 @@ title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,23 +41,23 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu drei Filtern. |
 
-## Visualisierungseinstellungen anpassen
+## Anpassen der Visualisierungseinstellungen
 
-Sie können Visualisierungseinstellungen für eine individuelle Visualisierung oder für alle von Ihnen erstellten Visualisierungen anpassen.
+Sie können Visualisierungseinstellungen für eine einzelne Visualisierung oder für alle von Ihnen erstellten Visualisierungen anpassen.
 
-### Visualisierungseinstellungen für eine einzelne Visualisierung anpassen
+### Anpassen der Visualisierungseinstellungen für eine einzelne Visualisierung
 
-So greifen Sie auf [!UICONTROL Visualisierungseinstellungen] für eine individuelle Visualisierung:
+So öffnen Sie die [!UICONTROL Visualisierungseinstellungen] für eine einzelne Visualisierung:
 
 1. Bewegen Sie in Analysis Workspace den Mauszeiger über die Visualisierung, deren Einstellungen Sie anpassen möchten.
 
 1. Klicken Sie auf das Zahnradsymbol.
 
-   Jeder Visualisierungstyp verfügt über eindeutige Einstellungen, die Sie anpassen können. Informationen zu den verfügbaren Einstellungen finden Sie unter [Einstellungen](#settings).
+   Jeder Visualisierungstyp verfügt über individuelle Einstellungen, die Sie anpassen können. Informationen zu den verfügbaren Einstellungen finden Sie unter [Einstellungen](#settings).
 
-### Visualisierungseinstellungen für alle erstellten Visualisierungen anpassen
+### Anpassen der Visualisierungseinstellungen für alle von Ihnen erstellten Visualisierungen
 
-Sie können die Einstellungen für alle erstellten Visualisierungen anpassen. Weitere Informationen finden Sie unter [Benutzereinstellungen](/help/analysis-workspace/user-preferences.md).
+Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen anpassen. Weitere Informationen dazu finden Sie unter [Benutzereinstellungen](/help/analysis-workspace/user-preferences.md).
 
 ## Einstellungen {#settings}
 
@@ -72,7 +72,7 @@ Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten könn
 | Prozentsatz | Zeigt Werte als Prozentzahlen an. |
 | 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. Beispiel: ![Gestapelt 100%](assets/stacked_100_percent.png) |
 | Legende sichtbar | Hiermit können Sie den erklärenden Text zu Details für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |
-| Grenzwert für max. Anzahl Elemente | Hiermit können Sie die Anzahl der Elemente begrenzen, die in einer Visualisierung angezeigt werden. |
+| Grenzwert für max. Anzahl von Elementen | Hiermit können Sie die Anzahl der Elemente begrenzen, die in einer Visualisierung angezeigt werden. |
 | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
 | Normalisierung | Erzwingt Metriken für gleiche Anteile. Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 | Zwei Achsen anzeigen | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
