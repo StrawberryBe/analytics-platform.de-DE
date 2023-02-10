@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Works
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e808ac175092af659ac702bb43f94f82c0ff22f9
+source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 100%
+source-wordcount: '980'
+ht-degree: 96%
 
 ---
 
@@ -31,6 +31,11 @@ Customer Journey Analytics ergänzt den Umfang von Adobe Analytics durch benutze
 * **Unbegrenzte Anzahl eindeutiger Werte**: Bei Adobe Experience Platform ist die Anzahl eindeutiger Werte nicht beschränkt.
 * **Historische Daten ändern**: Mit Adobe Experience Platform können Daten entfernt oder korrigiert werden.
 * **Report Suite-übergreifende Daten**: Vorhandene Implementierungen aus mehreren Datensätzen können in Platform kombiniert werden.
+
+>[!TIP]
+>
+>Wenn Sie Adobe Analytics verwendet haben und Ihre Adobe Analytics-Daten in Customer Journey Analytics verwenden möchten, finden Sie weitere Informationen unter [Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden](../data-ingestion/analytics.md) Schnellstartanleitung als Teil der [Datenerfassung](../data-ingestion/data-ingestion.md) Abschnitt.
+
 
 Die erste Version von Customer Journey Analytics enthält viele der in Analysis Workspace enthaltenen Funktionen. Eine vollständige Liste finden Sie unter [Customer Journey Analytics-Funktionen](/help/getting-started/aa-vs-cja/cja-aa.md).
 
