@@ -6,9 +6,9 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem b
 
 >[!NOTE]
 >
->Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für CJA-Kunden angezeigt, die das [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den)-Add-on-Produkt gekauft haben.
+>Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für CJA-Kunden angezeigt, die das [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=de)-Add-on-Produkt gekauft haben.
 
 Adobe verwendet das Passwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
 
@@ -84,12 +84,12 @@ Nachdem Ihr Unternehmen die Healthcare Shield-Produktnummer erworben und mit ihr
 
 Die Passwortanforderungen entsprechen dem Adobe-Standard und schreiben mindestens acht Zeichen mit mindestens einer Zahl und einem Sonderzeichen vor.
 
-### Kennwortschutz für ein neues geplantes Projekt
+### Passwortschutz für ein neues geplantes Projekt
 
 1. Nachdem Sie Ihr Projekt gespeichert haben, gehen Sie zu **[!UICONTROL Freigeben]** > **[!UICONTROL Datei jetzt senden]** oder [!UICONTROL Freigeben] > **[!UICONTROL Datei planmäßig senden]**.
 1. Befolgen Sie die oben stehenden Anweisungen unter [Datei jetzt senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#now) oder [Datei planmäßig senden](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#schedule).
 
-### Kennwortschutz für ein vorhandenes geplantes Projekt
+### Passwortschutz für ein vorhandenes geplantes Projekt
 
 Vor dem Zeitpunkt, für den ein Projekt geplant ist, erhält der Projekteigentümer eine E-Mail wie die folgende:
 
