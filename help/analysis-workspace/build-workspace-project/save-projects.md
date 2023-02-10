@@ -5,9 +5,9 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '726'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ Projekte in Analysis Workspace werden automatisch alle zwei Minuten gespeichert.
 
 Sie können Projekte auch manuell speichern. Beim manuellen Speichern eines Projekts stehen zusätzliche Optionen wie das Hinzufügen von Tags oder Notizen zur Verfügung.
 
-## Projektoptionen speichern {#Save}
+## Speichern von Projektoptionen {#Save}
 
 Beim manuellen Speichern eines Projekts in Analysis Workspace stehen verschiedene Optionen zur Verfügung.
 
-So speichern Sie ein Projekt manuell:
+Gehen Sie folgendermaßen vor, um ein Projekt manuell zu speichern:
 
-1. Wenn Ihr Projekt in Analysis Workspace geöffnet ist, wählen Sie **[!UICONTROL Projekt]** und wählen Sie dann aus den folgenden Optionen aus:
+1. Wenn Ihr Projekt in Analysis Workspace geöffnet ist, wählen Sie **[!UICONTROL Projekt]** und dann eine der folgenden Optionen aus:
 
    | Aktion | Beschreibung |
    |---|---| 
@@ -34,52 +34,52 @@ So speichern Sie ein Projekt manuell:
 
 ## Automatisches Speichern {#Autosave}
 
-Alle Projekte in Analysis Workspace werden automatisch alle 2 Minuten auf Ihrem lokalen Computer gespeichert. Dazu gehören neu erstellte Projekte, die noch nicht manuell gespeichert wurden.
+Alle Projekte in Analysis Workspace werden automatisch alle 2 Minuten auf Ihrem lokalen Computer gespeichert. Dazu gehören auch neu erstellte Projekte, die noch nicht manuell gespeichert wurden.
 
-* **Neue Projekte:** Auch wenn neue Projekte automatisch gespeichert werden, müssen Sie jedes neue Projekt beim ersten Mal manuell speichern. Analysis Workspace fordert Sie auf, neue Projekte manuell zu speichern, wenn Sie zu einem anderen Projekt wechseln, die Browser-Registerkarte schließen usw.
+* **Neue Projekte:** Obwohl neue Projekte automatisch gespeichert werden, müssen Sie jedes neue Projekt beim ersten Mal manuell speichern. Analysis Workspace fordert Sie auf, neue Projekte manuell zu speichern, wenn Sie zu einem anderen Projekt wechseln, die Browser-Registerkarte schließen usw.
 
-   Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell speichern, wird eine Wiederherstellungsversion Ihres Projekts auf der Analysis Workspace-Landingpage in einem Ordner namens `Recovered Projects (Last 7 Days)`. Sie müssen das wiederhergestellte Projekt wiederherstellen und manuell an einem gewünschten Ort speichern.
+   Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell gespeichert haben, wird eine Wiederherstellungsversion Ihres Projekts auf der Analysis Workspace-Landingpage in einem Ordner namens `Recovered Projects (Last 7 Days)` gespeichert. Sie müssen das betroffene Projekt wiederherstellen und manuell an einem gewünschten Ort speichern.
 
-   So stellen Sie ein wiederhergestelltes Projekt wieder her:
+   Gehen Sie folgendermaßen vor, um ein Projekt wiederherzustellen:
 
-   1. Navigieren Sie zu [!UICONTROL **Wiederhergestellte Projekte**] auf der Landingpage von Analysis Workspace.
+   1. Gehen Sie zum Ordner [!UICONTROL **Wiederhergestellte Projekte**] auf der Landingpage von Analysis Workspace.
 
       ![](assets/recovered-folder.png)
 
    1. Öffnen Sie das Projekt und speichern Sie es an einem gewünschten Ort.
 
 
-* **Bestehende Projekte:** Wenn Sie ein Projekt mit noch nicht automatisch gespeicherten Änderungen aus irgendeinem Grund verlassen, fordert Sie Analysis Workspace entweder auf, Ihre Änderungen zu speichern, oder gibt eine Warnmeldung aus.
+* **Bestehende Projekte:** Wenn Sie aus irgendeinem Grund ein Projekt verlassen, das noch nicht automatisch gespeicherten Änderungen enthält, fordert Sie Analysis Workspace entweder auf, Ihre Änderungen zu speichern, oder gibt eine Warnmeldung aus.
 
    Im Folgenden finden Sie einige gängige Szenarien:
 
-### Ein anderes Projekt öffnen
+### Öffnen eines weiteres Projekts
 
-Wenn Sie ein zusätzliches Projekt öffnen, während Sie an einem Projekt arbeiten, das noch nicht automatisch gespeicherte Änderungen enthält, werden Sie von Analysis Workspace aufgefordert, das aktuelle Projekt zu speichern, bevor Sie es verlassen.
+Wenn Sie ein weiteres Projekt öffnen, während Sie an einem Projekt arbeiten, das noch nicht automatisch gespeicherte Änderungen enthält, werden Sie von Analysis Workspace aufgefordert, das aktuelle Projekt zu speichern, bevor Sie es verlassen.
 
 Die folgenden Optionen sind verfügbar:
 
-* **Speichern:** Ersetzt die neueste automatisch gespeicherte lokale Kopie Ihres Projekts durch Ihre neuesten Änderungen.
-* **Speichern unter:** Speichert Ihre neuesten Änderungen als neues Projekt. Das ursprüngliche Projekt wird nur mit den neuesten automatisch gespeicherten Änderungen gespeichert.
-* **Änderungen verwerfen:** Verwirft Ihre neuesten Änderungen. Das Projekt behält die neuesten automatisch gespeicherten Änderungen bei.
+* **Speichern:** Ersetzt die neueste automatisch gespeicherte lokale Kopie Ihres Projekts durch Ihre letzten Änderungen.
+* **Speichern unter:** Speichert Ihre letzten Änderungen als neues Projekt. Das ursprüngliche Projekt wird nur mit den letzten automatisch gespeicherten Änderungen gespeichert.
+* **Änderungen verwerfen:** Verwirft Ihre letzten Änderungen. Das Projekt behält die letzten automatisch gespeicherten Änderungen bei.
 
 ![](assets/existing-save.png)
 
 ### Verlassen oder Schließen einer Registerkarte
 
-Wenn Sie von der Seite weg navigieren oder die Browser-Registerkarte schließen, während Sie ein Projekt mit noch nicht automatisch gespeicherten Änderungen anzeigen, warnt der Browser, dass Ihre nicht gespeicherten Änderungen verloren gehen. Sie können entscheiden, ob Sie die Registerkarte verlassen oder abbrechen möchten.
+Wenn Sie eine Seite verlassen oder die Browser-Registerkarte schließen, während Sie ein Projekt mit noch nicht automatisch gespeicherten Änderungen betrachten, warnt Sie der Browser, dass Ihre nicht gespeicherten Änderungen verloren gehen. Sie können entscheiden, ob Sie die Registerkarte verlassen oder abbrechen möchten.
 
 ![](assets/browser-image.png)
 
 ### Browser-Abstürze oder Zeitüberschreitung der Sitzung
 
-Wenn Ihr Browser abstürzt oder die Sitzung abbricht, werden Sie beim nächsten Zugriff auf Analysis Workspace aufgefordert, alle Änderungen am Projekt wiederherzustellen, die noch nicht automatisch gespeichert wurden.
+Wenn Ihr Browser abstürzt oder Ihre Sitzung durch eine Zeitüberschreitung beendet wird, werden Sie beim nächsten Zugriff auf Analysis Workspace aufgefordert, alle Änderungen am Projekt wiederherzustellen, die noch nicht automatisch gespeichert wurden.
 
-Im Folgenden finden Sie das Dialogfeld Projektwiederherstellung , das beim ersten Zugriff auf Analysis Workspace nach einem Absturz oder einer Zeitüberschreitung angezeigt wird.
+Im Folgenden finden Sie das Dialogfeld „Projektwiederherstellung“, das beim ersten Zugriff auf Analysis Workspace nach einem Absturz oder einer Zeitüberschreitung angezeigt wird.
 
-Auswählen **Ja** , um das Projekt von der letzten automatisch gespeicherten Kopie wiederherzustellen.
+Wählen Sie **Ja**, um das Projekt auf der Basis der letzten automatisch gespeicherten Kopie wiederherzustellen.
 
-Auswählen **Nein** , um die automatisch gespeicherte Kopie zu löschen und die letzte vom Benutzer gespeicherte Version des Projekts zu öffnen.
+Wählen Sie **Nein**, um die automatisch gespeicherte Kopie zu löschen und die letzte vom Benutzer bzw. der Benutzerin gespeicherte Version des Projekts zu öffnen.
 
 ![](assets/project-recovery.png)
 
