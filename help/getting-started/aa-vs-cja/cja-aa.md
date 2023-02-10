@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1537'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Funktion | Hinweise |
 | --- | --- |
 | Marketing-Kanäle | Daten von Marketing-Kanälen werden über den Analytics-Quell-Connector an CJA weitergeleitet. Marketing-Kanalregeln müssen weiterhin im herkömmlichen Adobe Analytics-Tool konfiguriert werden, und einige Regeln werden nicht unterstützt. Weitere Informationen finden Sie in der [Dokumentation zu Marketing-Kanälen von Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de#cja-usecases). Darüber hinaus stehen für WebSDK-Implementierungen Plug-ins zur Client-seitigen Definition von Marketing-Kanälen zur Verfügung. Zukünftig sollen auch berichtszeitbezogene Verarbeitungsregeln für Marketing-Kanäle unterstützt werden. |
-| Geräteübergreifendes/kanalübergreifendes Stitching | Wird für Datensätze unterstützt, die direkt Identitätsinformationen enthalten (auch als &quot;feldbasiertes&quot;Stitching bezeichnet). Graph-basiertes Stitching wird noch nicht unterstützt, aber geplant. Siehe [Cross-Channel Analytics](/help/cca/overview.md). |
+| Geräteübergreifendes/kanalübergreifendes Stitching | Unterstützt bei Datensätzen, die direkt Identitätsinformationen enthalten (auch als „feldbasiertes“ Stitching bezeichnet). Diagrammbasiertes Stitching wird noch nicht unterstützt, ist aber in Planung. Siehe die [Cross-Channel-Analyse](/help/cca/overview.md). |
 | Bot-Filterung | Bei Datensätzen, die auf dem [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basieren, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird weder von [!UICONTROL Experience Platform] noch von CJA ausgeführt. |
 | Dimensionen Gerät, Browser, Referrer, Technologie | Unterstützt für [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de)-basierte Datensätze. Bitte lesen Sie in unserer [Dokumentation, welche Analytics-Variablen über ADC unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de).<p>Wenn Sie Adobe Source Connector nicht zum Übertragen von Daten von Adobe Analytics nach Customer Journey Analytics verwenden, sondern stattdessen die Experience Platform Web SDK-Datenerfassung nutzen, werden das Gerät und die Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Eine künftige Unterstützung ist geplant. |
 | GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) in CJA. Bei Implementierungen, die nicht den Analytics-Quell-Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (so werden etwa Land und US-Bundesstaat unterstützt, Stadt und Postleitzahl dagegen nicht). |
