@@ -4,7 +4,7 @@ description: Landingpage von Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
+source-git-commit: 6e90688d72ddf7791ad8c4c12d5293070d987e39
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 82%
@@ -31,7 +31,7 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=en"> Vergleich der Datenverarbeitung zwischen den Reporting-Funktionen von Adobe Analytics und CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=en"> Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics-Quell-Connector </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html"> Umstieg von Adobe Analytics auf Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.htm"> CJA-Benutzerhandbuch für Adobe Analytics-Benutzer </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html"> CJA-Benutzerhandbuch für Adobe Analytics-Benutzer </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#connection-detail"> Verwenden der erweiterten Funktionen zur Verbindungsverwaltung </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de#cja-dataviews"> Verwenden der erweiterten Funktionen für Datenansichten </a> </li>
    <td colname="col2" valign="top"><p class="head"> <b>Erste Schritte</b> </p> 
