@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: d343436f5b72e30b420088f9e9a3a8fb9b97becb
+source-git-commit: 04dd36d9157da852aea7d488cbcc2617162d9324
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 68%
+source-wordcount: '1411'
+ht-degree: 77%
 
 ---
 
@@ -38,7 +38,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | [!UICONTROL Name] | Der Name der Zielgruppe. |
    | [!UICONTROL Tags] | Alle Tags, die Sie der Zielgruppe aus organisatorischen Gründen zuweisen möchten. Sie können ein bereits vorhandenes Tag verwenden oder ein neues eingeben. |
    | [!UICONTROL Beschreibung] | Fügen Sie der Zielgruppe eine Beschreibung hinzu, um sie von anderen leicht unterscheiden zu können. |
-   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für die 4-Stunden-Aktualisierungshäufigkeit sind je nach Ihrer CJA-Berechtigung 75 bis 150 Aktualisierung der Zielgruppe zulässig.</li></ul> |
+   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Abhängig von Ihrer CJA-Berechtigung gibt es für das 4-Stunden-Aktualisierungsintervall ein Limit von 75 bis 150 Zielgruppen-Aktualisierungen.</li></ul> |
    | Ablaufdatum | Wann die Aktualisierung der Zielgruppe beendet ist. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Zielgruppe zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
@@ -90,7 +90,7 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 | Datenerfassung von Experience Platform in CJA | Bis zu 60 Minuten |
 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
-| Erstellen eines Ziels in AEP: Aktivieren des neuen Segments in Adobe Target | Derzeit kann dies je nach Aktualisierungsintervall der Zielgruppe und Auswertungstyp für Segmente bis zu 24 Stunden dauern |
+| Erstellen eines Ziels in AEP: Aktivieren des neuen Segments | 1–2 Stunden |
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 
@@ -106,7 +106,7 @@ Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 
-Häufig gestellte Fragen zur Publikation.
+Häufig gestellte Fragen zur Veröffentlichung von Zielgruppen.
 
 +++**Was passiert, wenn eine benutzende Person nicht mehr Mitglied einer Zielgruppe in CJA ist?**
 
@@ -120,9 +120,9 @@ Wenn eine CJA-Zielgruppe gelöscht wird, wird sie nicht mehr in der Experience P
 
 +++
 
-+++**Wenn in der RTCDP kein entsprechendes Profil existiert, wird dann ein neues Profil erstellt?**
++++**Wenn in RTCDP kein entsprechendes Profil existiert, wird dann ein neues Profil erstellt?**
 
-Ja, das wird es.
+Ja.
 
 +++
 
@@ -140,13 +140,13 @@ Unabhängig davon, welche Identitäts-/Namespace-Paare im [Verbindungseinrichtun
 
 +++**Welche ID wird als primäre Identität ausgewählt?**
 
-Siehe oben. Wir senden nur eine Identität pro CJA &quot;Person&quot;.
+Siehe oben. Wir senden nur eine Identität pro „Person“ in CJA.
 
 +++
 
 +++**Verarbeitet RTCP auch die CJA-Nachrichten? Kann CJA einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
 
-Nein. Wir senden nur eine Identität pro &quot;Person&quot;, sodass es keine Diagrammkanten gibt, die RTCP nutzen könnte.
+Nein. Wir senden nur eine Identität pro „Person“, sodass es keine Diagramme gibt, die RTCP nutzen könnte.
 
 +++
 
