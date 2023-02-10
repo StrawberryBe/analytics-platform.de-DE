@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
 workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -104,10 +104,10 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 
-CJA erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zusammengeführte ID, Benutzer-ID, Trackingcode usw. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung von [Cross-Channel Analytics](/help/cca/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzer, die in CJA ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in CJA erläutert wird:
+CJA erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zusammengeführte ID, Benutzer-ID, Trackingcode usw. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Cross-Channel-Analyse](/help/cca/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzer, die in CJA ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in CJA erläutert wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Änderungen am Konzept des Dimensionselements „Low Traffic“
 
-Im traditionellen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Low Traffic] zusammenzufassen. CJA hat weniger Einschränkungen für Felder mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur kann Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellen. Weitere Informationen dazu, wie CJA die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert, finden Sie unter [Long Tail](../analysis-workspace/workspace-faq/long-tail.md).
+Im traditionellen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Low Traffic] zusammenzufassen. CJA hat weniger Einschränkungen bei Feldern mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur können in Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellt werden. Weitere Informationen dazu, wie in CJA die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert ist, finden Sie unter [Longtail](../analysis-workspace/workspace-faq/long-tail.md).
