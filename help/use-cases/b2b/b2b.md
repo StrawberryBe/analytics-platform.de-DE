@@ -5,9 +5,9 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Dieser Anwendungsfall für den B2B-Bereich zeigt auf, wie Sie festlegen können,
 
 Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/getting-started/cja-glossary.md)-Datensatz eintragen.
 
-Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Anschließend erstellen Sie eine Verbindung in Customer Journey Analytics (CJA), die verschiedene Datensätze kombiniert, einschließlich des von Ihnen erstellten Lookup-Datensatzes. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
+Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann durch Aufnahme CSV-basierter Kontodaten einen Datensatz vom Typ „Lookup-Tabelle“. Im nächsten Schritt erstellen Sie eine Verbindung in Customer Journey Analytics (CJA), die verschiedene Datensätze kombiniert, darunter auch den von Ihnen erstellen Lookup-Datensatz. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Erstellen Sie zunächst in Adobe Experience Platform ein Lookup-Schema und dann 
 
 ## 1. Erstellen eines Lookup-Schemas (Experience Platform)
 
-Durch die Erstellung eines eigenen Schemas für die [Lookup](/help/getting-started/cja-glossary.md)-Tabelle stellen Sie sicher, dass der verwendete Datensatz in CJA korrekt eingerichtet ist (d. h. den Typ „Datensatz“ aufweist). Best Practice: [Erstellen einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) &quot;Lookup&quot;, leer von jedem Element, das für alle Lookup-Tabellen wiederverwendet werden kann.
+Durch die Erstellung eines eigenen Schemas für die [Lookup](/help/getting-started/cja-glossary.md)-Tabelle stellen Sie sicher, dass der verwendete Datensatz in CJA korrekt eingerichtet ist (d. h. den Typ „Datensatz“ aufweist). Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
 
 ![](../assets/create-new-class.png)
 
@@ -41,7 +41,7 @@ Nachdem dem Erstellen des Schemas müssen Sie daraus in Experience Platform eine
 
 1. Rufen Sie in Adobe Experience Platform **[!UICONTROL Daten-Management > Datensätze]** auf.
 1. Klicken Sie auf **[!UICONTROL + Datensatz erstellen]**.
-1. Klicken Sie auf **[!UICONTROL Datensatz aus Schema erstellen]**.
+1. Klicken Sie auf **[!UICONTROL Erstellen eines Datensatzes aus einem Schema]**.
 1. Wählen Sie die von Ihnen erstellte Lookup-Schemaklasse aus.
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Namen für den Datensatz (in unserem Beispiel „B2B Info“) sowie eine Beschreibung ein.
