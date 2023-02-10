@@ -5,9 +5,9 @@ title: Erstellen von Ordnern
 feature: CJA Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '146'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ So erstellen Sie einen neuen Ordner:
 
 1. Geben Sie einen Namen für den neuen Ordner ein.
 
-1. Wählen Sie Tags aus dem Dropdown-Menü aus oder fügen Sie neue Netto-Tags hinzu.
+1. Wählen Sie Tags aus dem Dropdown-Menü aus oder fügen Sie neue Tags hinzu.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
