@@ -4,8 +4,8 @@ description: Hier erfahren Sie, wie Sie Customer Journey Analytics (CJA) nutzen 
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: f65f13d696ad2045f58ccb5c9ef7fed45eb9d68c
-workflow-type: ht
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Um diese Aufgaben ausführen zu können, benötigen Sie die folgenden Zugriffsre
 
 * Zugriff auf Adobe Experience Platform
 * Zugriff auf Google Analytics (GA Standard oder GA 360)
-* [Admin-Zugriff](/help/getting-started/cja-access-control.md) auf Customer Journey Analytics
+* [Admin-Zugriff](/help/admin/cja-access-control.md) auf Customer Journey Analytics
 
 ## Einrichten eines BigQuery-Exports
 

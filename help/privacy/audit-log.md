@@ -2,7 +2,7 @@
 title: Auditprotokolle
 description: Erfahren Sie, wie Sie CJA-Auditprotokolle anzeigen und verwalten können.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 99%
@@ -21,7 +21,7 @@ In diesem Artikel werden Auditprotokolle in CJA behandelt, einschließlich der F
 
 Wenn diese Funktion für Ihr Unternehmen aktiviert ist, werden bei Aktivitäten automatisch Auditprotokolle aufgezeichnet. Sie müssen die Datenerfassung in Auditprotokollen nicht manuell aktivieren.
 
-Um Auditprotokolle anzeigen und exportieren zu können, benötigen Sie in der Adobe-Konsole die Zugriffsberechtigung **[!UICONTROL Zugriff auf Auditprotokolle]**. Informationen zum Verwalten individueller Berechtigungen für CJA-Funktionen finden Sie in der [Dokumentation zur Zugriffssteuerung](/help/getting-started/cja-access-control.md).
+Um Auditprotokolle anzeigen und exportieren zu können, benötigen Sie in der Adobe-Konsole die Zugriffsberechtigung **[!UICONTROL Zugriff auf Auditprotokolle]**. Informationen zum Verwalten individueller Berechtigungen für CJA-Funktionen finden Sie in der [Dokumentation zur Zugriffssteuerung](../admin/cja-access-control.md).
 
 ## Administratorprotokoll in der Benutzeroberfläche anzeigen
 

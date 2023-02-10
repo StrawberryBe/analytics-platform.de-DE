@@ -5,8 +5,8 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Wenn Sie eine Verbindung in [!UICONTROL Customer Journey Analytics] löschen, wi
 * Datenansichten, die basierend auf der gelöschten Verbindung erstellt wurden, funktionieren nicht mehr.
 * Ebenso funktionieren alle Arbeitsbereich-Projekte nicht mehr, die von den Datenansichten der gelöschten Verbindung abhängig sind.
 
-[Weitere Informationen](/help/getting-started/cja-deletion.md) zu den Auswirkungen von Löschungen.
+[Weitere Informationen](/help/admin/cja-deletion.md) zu den Auswirkungen von Löschungen.
 
 ### Suchen nach einer Verbindung oder einem Datensatz
 

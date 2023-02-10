@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 84%
@@ -38,7 +38,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
 | **Dezember 2022** |  |
-| 16. Dezember 2022 | Neues Thema zu [Messen und Verwalten der CJA-Datennutzung](/help/getting-started/estimate-usage.md). |
+| 16. Dezember 2022 | Neues Thema zu [Messen und Verwalten der CJA-Datennutzung](/help/admin/estimate-usage.md). |
 | **Oktober 2022** |  |
 | Oktober 2022 | Neuer Artikel zum [Passwortschutz geplanter Projekte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#password). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Neuer Artikel zu [kundenverwalteten Schlüsseln](/help/privacy/cmk.md). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -53,7 +53,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | September 2022 | Neues Thema zu [Experimentationsbereich](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** |  |
 | August 2022 | Adobe Experience Platform-Artikel zum Thema [Regionsübergreifende Unterstützung für Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). |
-| August 2022 | Wesentlich aktualisierter Artikel über die [CJA-Zugriffskontrolle](/help/getting-started/cja-access-control.md). |
+| August 2022 | Wesentlich aktualisierter Artikel über die [CJA-Zugriffskontrolle](/help/admin/cja-access-control.md). |
 | August 2022 | Neuer Artikel zu [CJA-Unterstützung für Data Governance-Beschriftungen und -Richtlinien](/help/data-views/data-governance.md). |
 | August 2022 | Neuer Artikel zu [Vergleich der Terminologie für Analytics-Daten, die durch den Analytics Source Connector übergeben werden](/help/getting-started/aa-vs-cja/terminology.md). |
 | August 2022 | Neue Dokumentation zu [Zielgruppenveröffentlichung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=de). |

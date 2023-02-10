@@ -4,10 +4,10 @@ description: Machen Sie sich mit den Voraussetzungen und dem Workflow vertraut, 
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
+source-git-commit: 5d0f012505d254406e106939234d4e1d103168db
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 98%
+source-wordcount: '428'
+ht-degree: 85%
 
 ---
 
@@ -27,8 +27,12 @@ Customer Journey Analytics ist für Kunden verfügbar, die
 
 | Aufgabe | Details |
 | --- | --- |
-| **Schritt 1: Wenn Sie von Adobe Analytics zu CJA migrieren, informieren Sie sich über den Ablauf der Migration.** | Siehe [Verwenden von Daten aus Report Suites von Adobe Analytics in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). |
-| **Schritt 2: Importien von weiteren Daten in Adobe Experience Platform** | Dieser Schritt, der in Adobe Experience Platform ausgeführt wird, umfasst mehrere Unterschritte:<ul><li>**Schritt 2a: Bereiten Sie Ihr Datenschema vor**: Verwenden Sie das [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de), um Kundenerlebnisdaten zu [standardisieren und um Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für das Customer Experience Management zu definieren.</li><li>**Schritt 2b: Erstellen Sie einen Datensatz basierend auf dem Schema**: Daten in Platform bestehen aus Datensätzen wie E-Mail-Datensätzen, CRM-Datensätzen, POS-Datensätzen, dem Adobe Analytics-Datensatz usw. Jeder Datensatz besteht aus einem Schema und Datenstapeln. Sie können [einen Datensatz in Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=de) erstellen.</li><li>**Schritt 2c: Nehmen Sie Daten in Experience Platform auf**: Hier haben Sie mehrere Möglichkeiten. Ansicht [Datenerfassung - Übersicht](/help/data-ingestion/data-ingestion.md) für weitere Informationen. |
+| **Schritt 1: Wenn Sie von Adobe Analytics zu CJA migrieren, informieren Sie sich über den Ablauf der Migration.** | Siehe [Verwenden von Adobe Analytics Report Suite-Daten in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md) und [Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden](../data-ingestion/analytics.md). |
+| **Schritt 2: Importien von weiteren Daten in Adobe Experience Platform** | Dieser Schritt, der in Adobe Experience Platform ausgeführt wird, umfasst mehrere Unterschritte:<ul><li>**Schritt 2a: Bereiten Sie Ihr Datenschema vor**: Verwenden Sie das [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de), um Kundenerlebnisdaten zu [standardisieren und um Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für das Customer Experience Management zu definieren.</li><li>**Schritt 2b: Erstellen Sie einen Datensatz basierend auf dem Schema**: Daten in Platform bestehen aus Datensätzen wie E-Mail-Datensätzen, CRM-Datensätzen, POS-Datensätzen, dem Adobe Analytics-Datensatz usw. Jeder Datensatz besteht aus einem Schema und Datenstapeln. Sie können [einen Datensatz in Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=de) erstellen.</li><li>**Schritt 2c: Nehmen Sie Daten in Experience Platform auf**: Hier haben Sie mehrere Möglichkeiten.</li></ul> |
 | **Schritt 3: Erstellen Sie Verbindungen zwischen Platform-Datensätzen und Customer Journey Analytics** | Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Arbeitsbereich integrieren. Um über Experience Platform-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und Arbeitsbereich herstellen.<br>Siehe [Verbindung erstellen](/help/connections/create-connection.md). |
 | **Schritt 4: Erstellen Sie Datenansichten** | Eine Datenansicht ist eine „gefilterte“ Ansicht der Daten. Sie können verschiedene Datenansichten für dieselbe Verbindung mit unterschiedlichen Einstellungen für Besuchs-Timeout, Attribution usw. erstellen. Sie können für einen Datensatz mehrere Datenansichten erstellen.<br>Siehe [Datenansicht erstellen](/help/data-views/create-dataview.md). |
 | **Schritt 5: Erstellen Sie Berichte über kanalübergreifende Daten im Arbeitsbereich** | Nachdem Sie Verbindungen und Datenansichten erstellt haben, nutzen Sie die leistungsstarken und flexiblen Funktionen von Analysis Workspace, um Ihre erfassten Daten zu analysieren.<br>Siehe [Einfache Analyse durchführen](/help/analysis-workspace/perform-basic-analysis.md) und [Erweiterte Analyse durchführen](/help/analysis-workspace/perform-adv-analysis.md). |
+
+## Schnellstartanleitungen
+
+Die [Datenerfassung](../data-ingestion/data-ingestion.md) enthält Schnellstartanleitungen zum obigen Workflow. Diese Schnellstartanleitungen veranschaulichen, wie Daten aus verschiedenen Quellen (einschließlich Adobe Analytics) in Adobe Experience Platform erfasst und dann in Customer Journey Analytics verwendet werden.
