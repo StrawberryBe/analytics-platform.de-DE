@@ -1,204 +1,204 @@
 ---
-title: Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden
-description: Erläuterung der Datenerfassung aus dem herkömmlichen Adobe Analytics
+title: Aufnehmen und Verwenden von Daten aus Adobe Analytics
+description: Erläuterung der Datenaufnahme aus Adobe Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-# Daten aus dem herkömmlichen Adobe Analytics erfassen und verwenden
+# Aufnehmen und Verwenden von Daten aus Adobe Analytics
 
-In dieser Kurzanleitung wird erläutert, wie Sie die von Adobe Analytics in Customer Journey Analytics erfassten Daten verwenden können.
+In dieser Kurzanleitung wird erläutert, wie Sie die von Adobe Analytics erfassten Daten in Customer Journey Analytics verwenden können.
 
 >[!PREREQUISITES]
 >
->Adobe Analytics ist auf einer oder mehreren Ihrer Websites lizenziert und bereitgestellt. Verwenden Sie dazu eine der dokumentierten Implementierungsmethoden:
+>Sie besitzen eine Lizenz für Adobe Analytics auf einer oder mehreren Ihrer Websites und Adobe Analytics ist dort mithilfe einer der dokumentierten Methoden implementiert:
 >
->- [Implementieren von Analytics unter Verwendung von Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=de)
+>- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=de)
 >
->- [Analytics mithilfe der Adobe Analytics-Erweiterung implementieren](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=de)
+>- [Implementierung von Analytics mithilfe der Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=de)
 >
->- [Analytics mit JavaScript implementieren](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [Implementierung von Analytics mithilfe von JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de)
 
 
 Gehen Sie dazu folgendermaßen vor:
 
-- **Einrichten eines Quell-Connectors für Adobe Analytics** in Adobe Experience Platform. Dadurch werden Ihre aktuellen Adobe Analytics-Daten in einen Datensatz in Adobe Experience Platform aufgenommen.
+- **Richten Sie in Adobe Experience Platform einen Adobe Analytics-Quell-Connector ein**. Dadurch werden Ihre aktuellen Adobe Analytics-Daten in einen Datensatz in Adobe Experience Platform aufgenommen.
 
-- **Verbindung einrichten** in Customer Journey Analytics. Diese Verbindung sollte (zumindest) Ihren Adobe Experience Platform-Datensatz enthalten.
+- **Richten Sie in Customer Journey Analytics eine Verbindung ein**. Diese Verbindung sollte (zumindest) Ihren Adobe Experience Platform-Datensatz enthalten.
 
-- **Datenansicht einrichten** in Customer Journey Analytics , um Metriken und Dimensionen zu definieren, die Sie in Analysis Workspace verwenden möchten.
+- **Richten Sie in Customer Journey Analytics eine Datenansicht ein**, um Metriken und Dimensionen zu definieren, die Sie in Analysis Workspace verwenden möchten.
 
-- **Einrichten eines Projekts** in Customer Journey Analytics , um Ihre Berichte und Visualisierungen zu erstellen.
+- **Richten Sie in Customer Journey Analytics ein Projekt ein**, um Berichte und Visualisierungen zu erstellen.
 
 
 >[!NOTE]
 >
->Dies ist eine vereinfachte Anleitung zur Erfassung von Daten mithilfe des Adobe Analytics-Quell-Connectors und zur Verwendung dieser Daten in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Informationen zu untersuchen, wenn darauf verwiesen wird.
+>Dies ist eine vereinfachte Anleitung zur Aufnahme von Daten mithilfe des Adobe Analytics-Quell-Connectors und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
-## Einrichten eines Quell-Connectors für Adobe Analytics
+## Einrichten eines Adobe Analytics-Quell-Connectors
 
-Mit dem Adobe Analytics-Quell-Connector können Sie Adobe Analytics-Report Suite-Daten in Adobe Experience Platform importieren.
+Mit dem Adobe Analytics-Quell-Connector können Sie Daten von Adobe Analytics-Report-Suites in Adobe Experience Platform importieren.
 
-So erstellen Sie einen Adobe Analytics-Quell-Connector:
+Gehen Sie folgendermaßen vor, um einen Adobe Analytics-Quell-Connector zu erstellen:
 
-1. Wählen Sie in der Platform-Benutzeroberfläche die Option **[!UICONTROL Quellen]** aus der linken Leiste.
+1. Wählen Sie in der Platform-Benutzeroberfläche die Option **[!UICONTROL Quellen]** in der linken Leiste aus.
 
-2. Auswählen **[!UICONTROL Adobe Apps]** aus der Liste der [!UICONTROL KATEGORIEN].
+2. Wählen Sie **[!UICONTROL Adobe-Anwendungen]** aus der Liste der [!UICONTROL KATEGORIEN] aus.
 
-3. Auswählen **[!UICONTROL Einrichten]** oder **[!UICONTROL Daten hinzufügen]** in der Adobe Analytics-Kachel.
+3. Wählen Sie in der Adobe Analytics-Kachel **[!UICONTROL Einrichten]** oder **[!UICONTROL Daten hinzufügen]** aus.
 
    ![Quellen](./assets/sources-overview.png)
 
-4. Auswählen **[!UICONTROL Report Suite]**. Wählen Sie in der Liste der Report Suites die gewünschte Report Suite aus.
+4. Wählen Sie **[!UICONTROL Report Suite]** aus. Wählen Sie in der Liste der Report Suites die gewünschte Report Suite aus.
 
    ![Report Suites](./assets/report-suites.png)
 
    Klicken Sie auf **[!UICONTROL Weiter]**.
 
-5. Auswählen **[!UICONTROL Standardschema]** als [!UICONTROL Zielschema]. Adobe Experience Platform erstellt automatisch das Schema und den entsprechenden Datensatz, um alle Standardfelder aus der ausgewählten Adobe Analytics Report Suite zuzuordnen.
+5. Wählen Sie **[!UICONTROL Standardschema]** als [!UICONTROL Zielschema] aus. Adobe Experience Platform erstellt automatisch das Schema und den entsprechenden Datensatz, um alle Standardfelder aus der ausgewählten Adobe Analytics-Report-Suite zuzuordnen.
 
    ![Standardschema](./assets/default-schema.png)
 
-   Klicken Sie auf **[!UICONTROL Weiter]**.
+   Wählen Sie **[!UICONTROL Weiter]** aus.
 
 6. Benennen Sie den Datenfluss und geben Sie (optional) eine Beschreibung ein.
 
    ![Datenflussdetails](./assets/dataflow-detail.png)
 
-   Klicken Sie auf **[!UICONTROL Weiter]**.
+   Wählen Sie **[!UICONTROL Weiter]** aus.
 
 7. Überprüfen Sie die Verbindung und wählen Sie **[!UICONTROL Beenden]**.
 
    ![Überprüfung](./assets/review.png)
 
 
-Nach der Erstellung der Verbindung wird der Datenfluss automatisch erstellt, um einen Datensatz mit den Adobe Analytics-Daten aus Ihrer Report Suite zu füllen, einschließlich der Erfassung von bis zu 13 Monaten historischen Daten.
+Nach der Einrichtung der Verbindung wird der Datenfluss automatisch erstellt, um einen Datensatz mit den Adobe Analytics-Daten aus Ihrer Report Suite zu füllen. Dabei werden auch bis zu 13 Monate historischer Daten aufgenommen.
 
-Wenn die erste Aufnahme abgeschlossen ist, können Ihre Adobe Analytics Report Suite-Daten vom Customer Journey Analytics verwendet werden.
+Wenn die erste Aufnahme abgeschlossen ist, können Ihre Adobe Analytics-Report-Suite-Daten von Customer Journey Analytics verwendet werden.
 
-Siehe [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) für ein viel umfassenderes Tutorial.
+Ein umfassendes Tutorial finden Sie unter [Erstellen eines Adobe Analytics-Quell-Connectors in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).
 
 
-## Verbindung einrichten
+## Einrichten einer Verbindung
 
-Um die Adobe Experience Platform-Daten in Customer Journey Analytics zu verwenden, erstellen Sie eine Verbindung, die die Daten enthält, die sich aus der Einrichtung Ihres Schemas, Datensatzes und Workflows ergeben.
+Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Arbeitsbereich integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um von diesen Datensätzen Berichte erstellen zu können, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und Analysis Workspace herstellen.
 
-So erstellen Sie Ihre Verbindung:
+Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigation.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigationsleiste aus.
 
-2. Auswählen **[!UICONTROL Neue Verbindung erstellen]**.
+2. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
-3. Im [!UICONTROL Verbindung ohne Titel] screen:
+3. Im Bildschirm [!UICONTROL Nicht benannte Verbindung]:
 
-   Benennen und beschreiben Sie Ihre Verbindung in [!UICONTROL Verbindungseinstellungen].
+   Benennen und beschreiben Sie Ihre Verbindung in den [!UICONTROL Verbindungseinstellungen].
 
-   Wählen Sie die richtige Sandbox aus der [!UICONTROL Sandbox] Liste in [!UICONTROL Dateneinstellungen] und wählen Sie die Anzahl der täglichen Ereignisse aus der [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] Liste.
+   Wählen Sie die entsprechende Sandbox in der Liste [!UICONTROL Sandbox] in [!UICONTROL Dateneinstellungen] sowie die Anzahl der täglichen Ereignisse in der Liste [!UICONTROL Durchschnittliche Anzahl der täglichen Ereignisse] aus.
 
    ![Verbindungseinstellungen](./assets/cja-connections-1.png)
 
-   Auswählen **[!UICONTROL Hinzufügen von Datensätzen]**.
+   Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
 
-   Im [!UICONTROL Auswählen von Datensätzen] Schritt in [!UICONTROL Hinzufügen von Datensätzen]:
+   Im Schritt [!UICONTROL Auswählen von Datensätzen] in [!UICONTROL Datensätze hinzufügen]:
 
-   - Wählen Sie den Datensatz aus, der automatisch vom Adobe Analytics-Quell-Connector erstellt wurde, sowie jeden anderen Datensatz, den Sie in Ihre Verbindung aufnehmen möchten.
+   - Wählen Sie den automatisch vom Adobe Analytics-Quell-Connector erstellten Datensatz sowie alle anderen Datensätze aus, die in Ihre Verbindung eingeschlossen werden sollen.
 
       ![Hinzufügen von Datensätzen](./assets/cja-connections-2a.png)
 
    - Klicken Sie auf **[!UICONTROL Weiter]**.
-   Im [!UICONTROL Datensatzeinstellungen] Schritt in [!UICONTROL Hinzufügen von Datensätzen]:
+   Im Schritt [!UICONTROL Datensatzeinstellungen] in [!UICONTROL Datensätze hinzufügen]:
 
    - Für jeden Datensatz:
 
-      - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten, die in den Datensatzschemas in Adobe Experience Platform definiert sind.
+      - Wählen Sie eine [!UICONTROL Personen-ID] aus den verfügbaren Identitäten aus, die im Datensatzschema in Experience Platform definiert sind.
 
-      - Wählen Sie die richtige Datenquelle aus der [!UICONTROL Datenquellentyp] Liste. Wenn Sie **[!UICONTROL Sonstiges]** und fügen Sie dann eine Beschreibung für Ihre Datenquelle hinzu.
+      - Wählen Sie die richtige Datenquelle in der Liste [!UICONTROL Datenquellentyp] aus. Wenn Sie **[!UICONTROL Sonstige]** angeben, fügen Sie eine Beschreibung für Ihre Datenquelle hinzu.
 
-      - Satz **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Aufstockung vorhandener Daten durch Datensätze]** entsprechend Ihren Vorlieben.
+      - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
       ![Konfigurieren von Datensätzen](./assets/cja-connections-3a.png)
 
-   - Auswählen **[!UICONTROL Hinzufügen von Datensätzen]**.
+   - Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
-Siehe [Verbindungen - Übersicht](../connections/overview.md) Weitere Informationen zum Erstellen und Verwalten einer Verbindung und zum Auswählen und Kombinieren von Datensätzen.
+Weitere Informationen zum Erstellen und Verwalten einer Verbindung und zum Auswählen und Kombinieren von Datensätzen finden Sie unter [Verbindungen – Überblick](../connections/overview.md).
 
-## Datenansicht einrichten
+## Einrichten einer Datenansicht
 
-Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Es werden alle in Analysis Workspace verfügbaren Dimensionen und Metriken sowie die Spalten angegeben, aus denen diese Dimensionen und Metriken ihre Daten abrufen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
+Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container, mit dem Sie bestimmen können, wie die aus einer Verbindung stammenden Daten interpretiert werden sollen. Darin werden alle in Analysis Workspace verfügbaren Dimensionen und Metriken sowie die Spalten angegeben, aus denen diese Dimensionen und Metriken ihre Daten abrufen. Datenansichten werden in Vorbereitung auf das Reporting in Analysis Workspace definiert.
 
-So erstellen Sie Ihre Datenansicht:
+Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigation.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigationsleiste aus.
 
-2. Auswählen **[!UICONTROL Neue Datenansicht erstellen]**.
+2. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]** aus.
 
-3. Im [!UICONTROL Konfigurieren] step:
+3. Im Schritt [!UICONTROL Konfigurieren]:
 
-   Wählen Sie Ihre Verbindung aus der [!UICONTROL Verbindung] Liste.
+   Wählen Sie Ihre Verbindung in der Liste [!UICONTROL Verbindung] aus.
 
-   Geben Sie einen Namen ein und beschreiben Sie (optional) Ihre Verbindung.
+   Geben Sie einen Namen und (optional) eine Beschreibung für Ihre Verbindung ein.
 
    ![Konfiguration der Datenansicht](./assets/cja-dataview-1.png)
 
-   Auswählen **[!UICONTROL Speichern und fortfahren]**.
+   Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus.
 
-4. Im [!UICONTROL Komponenten] step:
+4. Im Schritt [!UICONTROL Komponenten]:
 
-   Fügen Sie jedes Schemafeld und/oder jede Standardkomponente hinzu, die Sie in die [!UICONTROL METRIKEN] oder [!UICONTROL Dimensionen] Komponentenfelder.
+   Fügen Sie alle Schemafelder und/oder Standardkomponenten hinzu, die Sie in die Komponentenfelder [!UICONTROL METRIKEN] oder [!UICONTROL DIMENSIONEN] einbeziehen möchten.
 
    ![Datenansichtskomponenten](./assets/cja-dataview-2.png)
 
-   Auswählen **[!UICONTROL Speichern und fortfahren]**.
+   Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus.
 
-5. Im [!UICONTROL Einstellungen] step:
+5. Im Schritt [!UICONTROL Einstellungen]:
 
    ![Datenansichtseinstellungen](./assets/cja-dataview-3.png)
 
    Behalten Sie die Einstellungen bei und wählen Sie **[!UICONTROL Speichern und beenden]**.
 
-Siehe [Datenansichten - Übersicht](../data-views/data-views.md) Weitere Informationen zum Erstellen und Bearbeiten einer Datenansicht, dazu, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Filter- und Sitzungseinstellungen verwendet werden.
+Weitere Informationen dazu, wie Sie eine Datenansicht erstellen und bearbeiten, welche Komponenten in Ihrer Datenansicht verfügbar sind und wie Filter- und Sitzungseinstellungen verwendet werden, finden Sie in [Datenansichten – Überblick](../data-views/data-views.md).
 
 
 ## Einrichten eines Projekts
 
-Analysis Workspace ist ein flexibles Browser-Tool, mit dem Sie schnell Analysen erstellen und basierend auf Ihren Daten Erkenntnisse austauschen können. Sie verwenden Workspace-Projekte, um Datenkomponenten, Tabellen und Visualisierungen zu kombinieren, um Ihre Analyse zu gestalten und für andere in Ihrer Organisation freizugeben.
+Analysis Workspace ist ein flexibles Browsertool, mit dem Sie schnell Analysen erstellen und Erkenntnisse anderen Team-Mitgliedern zur Verfügung stellen können. Mit Analysis Workspace-Projekten können Sie Datenkomponenten, Tabellen und Visualisierungen kombinieren, um eine Analyse zu erstellen, und diese für andere Personen in Ihrem Unternehmen freigeben.
 
-So erstellen Sie Ihr Projekt:
+Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigation.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigationsleiste aus.
 
-2. Auswählen **[!UICONTROL Projekte]** in der linken Navigation.
+2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigationsleiste aus.
 
-3. Auswählen **[!UICONTROL Projekt erstellen]**.
+3. Wählen Sie **[!UICONTROL Projekt erstellen]** aus.
 
-   ![Workspace-Projekt](./assets/cja-projects-1.png)
+   ![Analysis Workspace-Projekt](./assets/cja-projects-1.png)
 
-   Auswählen **[!UICONTROL Leeres Projekt]**.
+   Wählen Sie **[!UICONTROL Leeres Projekt]** aus.
 
-   ![Workspace - Leeres Projekt](./assets/cja-projects-2.png)
+   ![Analysis Workspace – Leeres Projekt](./assets/cja-projects-2.png)
 
 4. Wählen Sie Ihre Datenansicht aus der Liste aus.
 
-   ![Ansicht &quot;Workspace Select Data&quot;](./assets/cja-projects-3.png).
+   ![Workspace – Datenansicht auswählen](./assets/cja-projects-3.png).
 
-5. Ziehen und Ablegen von Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] um Ihren ersten Bericht zu erstellen. Ziehen Sie als Beispiel `Program Points Balance` und `Page View` als Metriken und `email` als Dimension zu erhalten, um einen schnellen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Teil des Treueprogramms sind, das Treuepunkte sammelt.
+5. Ziehen Sie per Drag-and-Drop Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld], um Ihren ersten Bericht zu erstellen. Ziehen Sie beispielsweise `Program Points Balance` und `Page View` als Metriken sowie `email` als Dimension auf die Tabelle, um einen kurzen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Mitglieder des Treueprogramms sind, mit dem Treuepunkte gesammelt werden.
 
-   ![Workspace - Erster Bericht](./assets/cja-projects-5.png)
+   ![Analysis Workspace – erster Bericht](./assets/cja-projects-5.png)
 
-Siehe [Übersicht über Analysis Workspace](../analysis-workspace/home.md) Weitere Informationen zum Erstellen von Projekten und zum Erstellen Ihrer Analyse mithilfe von Komponenten, Visualisierungen und Bedienfeldern.
+Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Analyse mithilfe von Komponenten, Visualisierungen und Bedienfeldern finden Sie unter [Analysis Workspace – Überblick](../analysis-workspace/home.md).
 
 
 >[!SUCCESS]
 >
->Sie haben alle Schritte ausgeführt. Beginnen Sie mit der Einrichtung des Adobe Analytics-Datenquellen-Connectors und der Konfiguration dieses Connectors für Ihre Report Suite, und Ihre Adobe Analytics-Daten werden automatisch in Adobe Experience Platform hochgeladen. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die erfassten Adobe Analytics-Daten und andere Daten zu nutzen. Mit Ihrer Datenansichtsdefinition können Sie festlegen, welche Dimension und Metriken verwendet werden sollen, und schließlich Ihre erste Projektvisualisierung und -analyse erstellen.
+>Sie haben jetzt alle Schritte ausgeführt. Nach der Einrichtung des Adobe Analytics-Datenquellen-Connectors und der Konfiguration dieses Connectors für Ihre Report Suite werden Ihre Adobe Analytics-Daten automatisch in Adobe Experience Platform hochgeladen. Sie haben eine Verbindung in Customer Journey Analytics definiert und können jetzt die aufgenommenen Adobe Analytics-Daten und andere Daten verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.
 
