@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie in Customer Journey Analytics kontobasierte D
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
-workflow-type: ht
-source-wordcount: '853'
+source-git-commit: 1a18ddbab09e272189a25041396570d127bb81c3
+workflow-type: tm+mt
+source-wordcount: '841'
 ht-degree: 100%
 
 ---
@@ -90,4 +90,4 @@ Diese können Ihnen beispielsweise Aufschluss über die Fragen aus der Einführu
 * Welche Mitarbeiter einer bestimmten Konto-ID zugeordnet sind, können Sie ebenfalls herausfinden.
 * Oder auch, welcher Branche eine Konto-ID zugehörig ist?
 
-![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
+![project-lookup2](assets/analyze.png)
