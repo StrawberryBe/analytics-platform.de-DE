@@ -5,10 +5,10 @@ title: Planen von Projekten
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
-workflow-type: ht
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem b
 
 >[!NOTE]
 >
->Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für CJA-Kunden angezeigt, die das [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=de)-Add-on-Produkt gekauft haben.
+>Die Option, ein geplantes Projekt mit einem Passwort zu schützen, wird nur für CJA-Kunden angezeigt, die das [Healthcare Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en)-Add-on-Produkt gekauft haben.
 
 Adobe verwendet das Passwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
 
