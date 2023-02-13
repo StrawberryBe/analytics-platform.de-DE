@@ -2,9 +2,9 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 04dd36d9157da852aea7d488cbcc2617162d9324
+source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1419'
 ht-degree: 77%
 
 ---
@@ -84,13 +84,17 @@ Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zi
 
 An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgruppen können Latenzen auftreten. Im Folgenden finden Sie einen Überblick über mögliche Latenzen.
 
-| Latenzpunkt | Latenzzeit |
-| --- | --- |
-| Datenaufnahme in den Data Lake | Bis zu 30 Minuten |
-| Datenerfassung von Experience Platform in CJA | Bis zu 60 Minuten |
-| Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
-| Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
-| Erstellen eines Ziels in AEP: Aktivieren des neuen Segments | 1–2 Stunden |
+![](assets/latency-diagram.png)
+
+| # | Latenzpunkt | Latenzzeit |
+| --- | --- | --- |
+| 1 | Datenaufnahme in den Data Lake | Bis zu 30 Minuten |
+| 2 | Datenerfassung von Experience Platform in CJA | Bis zu 60 Minuten |
+| 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
+| 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
+| 5 | Erstellen eines Ziels in AEP: Aktivieren des neuen Segments | 1–2 Stunden |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 

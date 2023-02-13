@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 84%
+source-wordcount: '1410'
+ht-degree: 86%
 
 ---
 
@@ -20,17 +20,18 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **Februar 2023** |  |
+| Aktualisierung der Dokumentation zu Zielgruppen | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Aktualisierung der Dokumentation zu Zielgruppen | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe eine Experience Platform [Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Workspace-Kalender und Datumsbereiche | Der Inhalt wurde aktualisiert, um relative Datumsbereiche, Aktualisierungen der Formelberechnung und Änderungen an der Kalenderbenutzeroberfläche zu beschreiben. Siehe [Über relative Bereichsdatumsbereiche](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Mobile Scorecards | Neuer Dokumentationsabschnitt, in dem beschrieben wird, wie Sie Vergleichsdatumsbereiche anzeigen und ausblenden. Siehe [Vergleichsdatumsbereiche anzeigen](/help/mobile-app/create-scorecard.md#show-comparison-dates) in CJA. |
 | **Januar 2023** |  |
 | Tabellen filtern und sortieren | Aktualisierter Inhalt (einschließlich des Hinzufügens von Verfahren und der Erläuterung der verfügbaren Optionen) im [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) Artikel. Dieser Artikel wurde aus &quot;Paginierung, Filterung und Sortierung von Tabellen&quot;umbenannt. |
 | Schnellstartanleitungen zur Datenerfassung | Neuer Dokumentationsabschnitt zum Thema [Daten erfassen und verwenden](/help/data-ingestion/data-ingestion.md) in CJA. |
-| Workspace-Ordner | Dedizierte Seiten für [Ordnerverwaltung](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Benutzereinstellungen in Workspace | Viele weitere Benutzereinstellungen sind jetzt in verfügbar. [Voreinstellungen](/help/analysis-workspace/user-preferences.md). |
-| Automatisches Speichern für Workspace-Projekte | Der Inhalt wurde aktualisiert und enthält jetzt die Funktion zum automatischen Speichern in [Projekte speichern](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Workspace-Ordner | Eigene Seiten für [Ordnerverwaltung](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Benutzereinstellungen in Workspace | In [Voreinstellungen](/help/analysis-workspace/user-preferences.md) sind jetzt viele weitere Benutzereinstellungen verfügbar. |
+| Automatisches Speichern für Workspace-Projekte | Der Inhalt wurde aktualisiert und enthält jetzt in [Projekte speichern](/help/analysis-workspace/build-workspace-project/save-projects.md) eine Funktion zum automatischen Speichern. |
 | Landingpage | Neue Landingpage-Updates [Landingpage](/help/getting-started/landing.md). |
-| Arbeitsmappen planen | Spezifische Seite, auf der beschrieben wird, wie [Arbeitsmappen planen](/help/report-builder/schedule-reportbuilder.md) in Report Builder. |
+| Erstellen von Zeitplänen für Arbeitsmappen | Spezifische Seite, auf der beschrieben wird, wie [Arbeitsmappen planen](/help/report-builder/schedule-reportbuilder.md) in Report Builder. |
 | Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze | Aktualisiert [Verwenden von Objekt-Arrays](/help/use-cases/object-arrays.md) und [Aufnehmen von AEP-Zielgruppen](/help/use-cases/data-ingestion/ingest-aep-segments.md) , um die Objektarray-Unterstützung für Profil- und Lookup-Datensätze widerzuspiegeln. |
 
 ## 2022 {#22}
@@ -38,7 +39,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
 | **Dezember 2022** |  |
-| 16. Dezember 2022 | Neues Thema zu [Messen und Verwalten der CJA-Datennutzung](/help/admin/estimate-usage.md). |
+| 16. Dezember 2022 | Neuer Artikel zum [Messen und Verwalten der CJA-Datennutzung](/help/admin/estimate-usage.md). |
 | **Oktober 2022** |  |
 | Oktober 2022 | Neuer Artikel zum [Passwortschutz geplanter Projekte](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=de#password). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Oktober 2022 | Neuer Artikel zu [kundenverwalteten Schlüsseln](/help/privacy/cmk.md). Diese Funktion dient zur Unterstützung der [HIPAA-Bereitschaft](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
@@ -136,7 +137,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Datum | Beschreibung der Aktualisierung |
 | --- | --- |
-| 13. November 2020 | Neue Themen zu [Cross-Channel Analytics](/help/cca/overview.md), mit denen Sie die Personen-ID eines Datensatzes neu zuweisen und eine nahtlose Kombination mehrerer Datensätze ermöglichen. |
+| 13. November 2020 | Neue Themen zur [Cross-Channel-Analyse](/help/cca/overview.md), mit denen Sie die Personen-ID eines Datensatzes neu zuweisen und eine nahtlose Kombination mehrerer Datensätze ermöglichen. |
 | 13. November 2020 | Ein neues Anwendungsbeispiel für das [Importieren von Callcenter- und Web-Daten](/help/use-cases/cross-channel/call-center.md) wurde hinzugefügt. |
 | 10. November 2020 | Ein Abschnitt über die Auswirkungen des Löschens von Datenkomponenten wurde den [FAQ](/help/getting-started/cja-faq.md) hinzugefügt. |
 | 2. November 2020 | Aktualisierung der Seite [Funktions-Unterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
