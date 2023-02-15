@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '1537'
-ht-degree: 100%
+source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+workflow-type: tm+mt
+source-wordcount: '1527'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten Daten zu GeoSegmentation/Geografie fließen über den [Analytics Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) in CJA. Bei Implementierungen, die nicht den Analytics-Quell-Connector verwenden, z. B. solche, die für die digitale Datenerfassung das AEP-Web-SDK nutzen, werden nicht alle geografischen Suchvorgänge automatisch durchgeführt (so werden etwa Land und US-Bundesstaat unterstützt, Stadt und Postleitzahl dagegen nicht). |
 | Bedienfelder | Leeres Bedienfeld, Attributions-Bedienfeld, Freiform-Bedienfeld und Quick Insights werden vollständig unterstützt. Die Bedienfelder „Segmentvergleich“ und „Analytics for Target“ (A4T) werden nicht unterstützt. |
 | Verarbeitungsregeln | Auf Datensätze, die auf dem Analytics-Quell-Connector basieren, werden weiterhin Verarbeitungsregeln angewendet. [Datenvorbereitungsfunktionen in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform übermittelt werden. |
-| A4T | Teilweise Unterstützung wird über Felder im [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. Unterstützung für A4T-Anzeigenamen für Target-Aktivitäten und -Erlebnisse ist geplant. |
+| A4T | Teilweise Unterstützung wird über Felder im [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. Unterstützung für A4T-freundliche Namen für Target-Aktivitäten und -Erlebnisse ist geplant. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -112,7 +112,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Unterstützung ist noch nicht geplant. |
-| Zusammenfassungs-Data Sources | Unterstützung ist noch nicht geplant. |
 
 {style=&quot;table-layout:auto&quot;}
 
