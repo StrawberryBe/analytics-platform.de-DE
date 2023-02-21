@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 45c6e6db751f5a73bb9d44d3a6641c7369d6252f
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '861'
+ht-degree: 96%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 0%
    + [Schnellstartanleitung](../getting-started/cja-getting-started.md)
    + [Landingpage](../getting-started/landing.md)
    + [Häufig gestellte Fragen](../getting-started/cja-faq.md)
+   + [Vergleichen von CJA mit BI-Lösungen](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics und Adobe Analytics {#compare-aa-cja}
    + [Entwicklung von Adobe Analytics ](../getting-started/aa-to-cja.md)
@@ -49,8 +50,8 @@ ht-degree: 0%
       + [AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
 
 + Datenaufnahme {#cja-data-ingestion}
-   + [Datenerfassung – Übersicht](../data-ingestion/data-ingestion.md)
-   + Schnellstartanleitungen erfassen und verwenden{#ingest-use-guides}
+   + [Datenaufnahme – Übersicht](../data-ingestion/data-ingestion.md)
+   + Kurzanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [Adobe Experience Platform Web SDK und Edge Network](../data-ingestion/aepwebsdk.md)
       + [Batch-Daten](../data-ingestion/batch.md)
@@ -63,7 +64,7 @@ ht-degree: 0%
    + [Verbindungen verwalten](../connections/manage-connections.md)
    + [Kombinierte Ereignis-Datensätze](../connections/combined-dataset.md)
    + [Standardsuchen](../connections/standard-lookups.md)
-   + [Cross-Channel Analytics](../connections/cca.md)
+   + [Cross-Channel-Analyse](../connections/cca.md)
 
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](../data-views/data-views.md)
@@ -74,7 +75,7 @@ ht-degree: 0%
       + [Verhalten](../data-views/component-settings/behavior.md)
       + [Format](../data-views/component-settings/format.md)
       + [Werte einschließen/ausschließen](../data-views/component-settings/include-exclude-values.md)
-      + [Deduplizierung der Metrik](../data-views/component-settings/metric-deduplication.md)
+      + [Deduplizierung von Metriken](../data-views/component-settings/metric-deduplication.md)
       + [Keine Wertoptionen](../data-views/component-settings/no-value-options.md)
       + [Persistenz](../data-views/component-settings/persistence.md)
       + [Teilzeichenfolge](../data-views/component-settings/substring.md)
@@ -91,10 +92,10 @@ ht-degree: 0%
    + Projekte {#build-workspace-project}
       + [Übersicht über Projekte](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Projekte speichern](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Ordner in Workspace {#workspace-folders}
-         + [Über Ordner in Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+      + Ordner in Analysis Workspace {#workspace-folders}
+         + [Über Ordner in Analysis Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Erstellen von Ordnern und Unterordnern](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Ordner löschen](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
+         + [Löschen von Ordnern](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Hinzufügen von Projekten](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Entfernen eines Projekts](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Speichern eines neuen Projekts](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -174,7 +175,7 @@ ht-degree: 0%
          + [Übersicht über die Anomalieerkennung](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [Anomalien in Analysis Workspace anzeigen](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [In der Anomalieerkennung verwendete statistische Verfahren](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
-   + [Benutzerpräferenzen](../analysis-workspace/user-preferences.md)
+   + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
 
    + Häufig gestellte Fragen zu Workspace {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
@@ -264,14 +265,14 @@ ht-degree: 0%
    + [Arbeiten mit Filtern](../report-builder/work-with-filters.md)
    + [Dimensionen filtern](../report-builder/filter-dimensions.md)
    + [Verwalten von Datenblöcken](../report-builder/manage-reportbuilder.md)
-   + [Arbeitsmappen planen](../report-builder/schedule-reportbuilder.md)
+   + [Erstellen von Zeitplänen für Arbeitsmappen](../report-builder/schedule-reportbuilder.md)
    + [Eingeschränkte Beschriftungen](../report-builder/restricted-labels.md)
    + [Report Builder-Einstellungen](../report-builder/report-builder-settings.md)
 
-+ Cross-Channel Analytics {#cca}
-   + [Überblick über Cross-Channel Analytics](../cca/overview.md)
++ Cross-Channel-Analyse {#cca}
+   + [Überblick über die Cross-Channel-Analyse](../cca/overview.md)
    + [Funktionsweise der Wiederholung](../cca/replay.md)
-   + [Häufig gestellte Fragen zu Cross-Channel Analytics](../cca/faq.md)
+   + [Häufig gestellte Fragen zur Cross-Channel-Analyse](../cca/faq.md)
 
 + Adobe-Integrationen {#integrations}
    + [Überblick über die Integration von Adobe-Lösungen in CJA](/help/integrations/overview.md)

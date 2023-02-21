@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 84%
+source-wordcount: '1430'
+ht-degree: 83%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **Februar 2023** |  |
+| Vergleichen von CJA mit BI-Lösungen | Neues Dokument zu einem [Vergleich](../getting-started/cja-vs-bi.md) Customer Journey Analytics zu typischen BI-Lösungen. |
 | Aktualisierung der Dokumentation zu Zielgruppen | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Aktualisierung der Dokumentation zu Zielgruppen | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe eine Experience Platform [Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Workspace-Kalender und Datumsbereiche | Der Inhalt wurde aktualisiert, um relative Datumsbereiche, Aktualisierungen der Formelberechnung und Änderungen an der Kalenderbenutzeroberfläche zu beschreiben. Siehe [Über relative Bereichsdatumsbereiche](/help/components/date-ranges/calendar.md#relative-panel-dates). |
