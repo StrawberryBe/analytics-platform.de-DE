@@ -4,10 +4,10 @@ title: Integrieren von Attribution AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,15 @@ In einem CJA Workspace-Projekt können Sie Metriken wie „AAI-Bestellungen“ u
 
 ![AAI-Dimensionen](assets/aai-dims.png)
 
+Die Rohwertausgabe in AAI verfügt über ein verschachteltes Schema, bei dem der Pfad zu Feldern lang genug sein kann, um die meisten Leerzeichen in Tabellen oder Visualisierungen aufzunehmen. Zur Verkürzung [!UICONTROL Anzeigename] wird in Customer Journey Analytics automatisch generiert und gemäß den folgenden Regeln genutzt:
 
+* Alle Felder haben das Präfix &quot;AAI&quot;
+* Für Touchpoint-Felder:
+   * Für Felder, die Teil des Punktwerts XDM sind, werden sie in CJA als `AAI T {field name}`
+   * Für Felder, die als passThrough-Spalte enthalten sind, werden sie in Customer Journey Analytics als `AAI T PT {field name}`
+* Für Konversionsfelder:
+   * Für Felder, die Teil des Punktwerts XDM sind, werden sie in CJA als `AAI C {field name}`
+   * Für Felder, die als passThrough-Spalte enthalten sind, werden sie in Customer Journey Analytics als `AAI C PT {field name}`
 
 **Bestellungen mit beeinflussten und inkrementellen Scores**
 
