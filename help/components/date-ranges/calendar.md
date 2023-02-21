@@ -4,10 +4,10 @@ title: Übersicht über Kalender und Datumsbereiche
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 969040538e12ef3c3d15881ae225af02bef1cba4
+source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 51%
+source-wordcount: '822'
+ht-degree: 45%
 
 ---
 
@@ -40,7 +40,7 @@ Wenn Sie in Workspace arbeiten, können Sie die Datumsbereichskomponenten relati
 So verwenden Sie relative Bereichsdatumsbereiche
 
 1. Wählen Sie die **Arbeitsbereich** Registerkarte.
-1. Auswählen **Leeres Projekt**.
+1. Wählen Sie **Leeres Projekt** aus.
 1. Fügen Sie Dimensionen, Metriken und Segmente über die linke Leiste hinzu.
 1. Klicken Sie auf das Feld für den Datumsbereich des Bedienfelds, um die Einstellung für den relativen Datumsbereich des Bedienfelds umzuschalten.
 1. Auswählen **Stellen Sie Datumsbereichskomponenten relativ zum Bedienfeldkalender her.**.
@@ -70,3 +70,10 @@ Wenn Sie einen wöchentlichen benutzerspezifischen Kalender verwenden und Monate
 ### Über Segmente, die rollierende Datumswerte und relative Datumsbereiche für Bedienfelder verwenden {#segments-relative-dates}
 
 Wenn Sie ein Segment erstellen oder ein Segment mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Segmentvorschau klicken, beginnt das rollierende Datum ab *Heute* anstelle des Startdatums des Bedienfelds. Daher stimmt die Vorschau für das Segment nicht überein, wenn Sie das Segment tatsächlich in der Tabelle verwenden. Die Vorschau ist betroffen, nicht das Segment selbst.
+
+## Richtlinien für Bereichsdatumsbereiche und -vorschauen {#guidelines-panel-dates}
+
+* Ab der Februar-Version basieren die Komponenten- und Datenvorschau auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen.
+* Alle in der linken Leiste aufgelisteten Komponenten sind basierend auf dem Datumsbereich des Bedienfelds verfügbar.
+* Alle Datumsvorschauen im Segment und in den Generator für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds (sofern nicht von den Komponentenmanagern zugegriffen wird, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen).
+* Bei jeder Datenvorschau werden Daten oder Komponenten basierend auf dem Datumsbereich des Bedienfelds angezeigt.
