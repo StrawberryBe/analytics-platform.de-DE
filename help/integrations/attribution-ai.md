@@ -4,9 +4,9 @@ title: Integrieren von Attribution AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 195a89588d83e27eceb58fec8c66c098f1971250
-workflow-type: ht
-source-wordcount: '889'
+source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+workflow-type: tm+mt
+source-wordcount: '812'
 ht-degree: 100%
 
 ---
@@ -74,11 +74,7 @@ In einem CJA Workspace-Projekt können Sie Metriken wie „AAI-Bestellungen“ u
 
 ![AAI-Dimensionen](assets/aai-dims.png)
 
->[!IMPORTANT]
->
->Diese Dimensionen und Metriken tragen nicht ursprünglich diese Bezeichnungen. Hierbei handelt es sich um „Anzeigenamen“. Die [Namenskonvention in Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=de#attribution-ai-output-data) folgt dem Schemapfad. Es wird empfohlen, die langen AAI-Schemapfadnamen in CJA in kurze, benutzerfreundlichere Namen (Dimensionen/Metriken) umzubenennen. Gehen Sie dazu in **[!UICONTROL Datenansichten]** > **[!UICONTROL Datenansicht bearbeiten]** > die Registerkarte **[!UICONTROL Komponenten]** > **[!UICONTROL Schemafelder]** > Klicken Sie auf ein Schemafeld > **[!UICONTROL Komponentenname]**.
 
-![Dimensionsnamen ändern](assets/change-name.png)
 
 **Bestellungen mit beeinflussten und inkrementellen Scores**
 
