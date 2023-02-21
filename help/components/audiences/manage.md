@@ -2,10 +2,10 @@
 title: Verwalten von in Customer Journey Analytics erstellten Zielgruppen
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics verwalten
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: ht
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
+workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 100%
 Die Verwaltung zuvor erstellter Zielgruppen ermöglicht Ihnen Folgendes:
 
 * **Erstellen eines Zeitplans bzw. Aufhebung des Zeitplans** für die automatische Aktualisierung der Zielgruppe. Die maximale Gültigkeit des Zeitplans beträgt 1 Jahr.
-* **Verlängern eines Zeitplans für die Aktualisierung der Zielgruppe**, bevor er abläuft. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf des Zeitplans eine E-Mail.
-* Anzeigen des **Aktualisierungsintervalls** und der **letzten Aktualisierung einer Zielgruppe**
+* **Zeitplan für Audience-Aktualisierung erneuern** wenn sie bald abläuft. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf des Zeitplans eine E-Mail.
+* Anzeigen der **Aktualisierungsintervall** und **letzte Aktualisierung einer Audience**
 * Informationen zur **Erstellungsdauer einer Zielgruppe** in Customer Journey Analytics (CJA) und die Dauer, bis die Zielgruppe zur Aktivierung im Echtzeit-Kundenprofil angezeigt wird.
 * Überprüfen, ob die Zielgruppen in CJA **aktiv vom Echtzeit-Kundenprofil** oder (im Idealfall) von Experience Platform-Anwendungen verwendet werden, die die von CJA erstellten Zielgruppen nutzen.
 

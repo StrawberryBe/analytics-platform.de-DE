@@ -4,9 +4,9 @@ description: Customer Journey Analytics mit BI-Lösungen vergleichen
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 91cfd3ccfe1864b6a2a50a8881e73bd778a7848e
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Mit dem aktuellen Fokus auf Kundenerlebnisse benötigen Marken fortschrittliche Lösungen, um die ganzheitliche Journey der Kunden besser zu verstehen. Wenn Sie diese vollständige Journey verstehen, können Sie wertvolle Einblicke in die Interaktion von Online- und Offline-Kanälen mit Kunden gewinnen und so Konversionen, Kundenbindung und Loyalität steigern. Eine Journey in diesem Zusammenhang kann die einfache Online-Bestellung einer Mahlzeit in einer Sushi-Nahrungskette sein. Oder der Kauf eines neuen Autos, bei dem der Kunde Online-Recherchen mit Besuchen im Händlerraum und einem endgültigen persönlichen Kauf kombiniert.
 
-Viele Unternehmen haben ihre Omnichannel-Daten in einem Data Lake oder Data Warehouse konsolidiert. Business Intelligence (BI)-Tools werden auf diesen Datenspeichern verwendet, um Berichte, Visualisierungen und Einblicke bereitzustellen, die das Unternehmen benötigt, um die Journey zu verstehen. Häufig ist diese Kombination von Lösungen und Tools von Natur aus ein allgemeiner Zweck und nicht explizit auf den Kunden ausgerichtet. Customer Journey Analytics (CJA) konzentriert sich auf die Stärkung der Verantwortlichen für das Kundenerlebnis, z. B. Marketingexperten, Datenanalysten und Datenwissenschaftler. Das Tool ermöglicht es ihnen, die Journey in Echtzeit im vollen Kontext über alle Kanäle hinweg zu visualisieren, ohne Einschränkungen zu haben, die viele andere BI-Tools haben.
+Viele Unternehmen haben ihre kanalübergreifenden Daten in einem Data Lake oder Data Warehouse konsolidiert. Business Intelligence (BI)-Tools werden auf diesen Datenspeichern verwendet, um Berichte, Visualisierungen und Einblicke bereitzustellen, die das Unternehmen benötigt, um die Journey zu verstehen. Häufig ist diese Kombination von Lösungen und Tools von Natur aus ein allgemeiner Zweck und nicht explizit auf den Kunden ausgerichtet. Customer Journey Analytics (CJA) konzentriert sich auf die Stärkung der Verantwortlichen für das Kundenerlebnis, z. B. Marketingexperten, Datenanalysten und Datenwissenschaftler. Das Tool ermöglicht es ihnen, die Journey in Echtzeit im vollen Kontext über alle Kanäle hinweg zu visualisieren, ohne Einschränkungen zu haben, die viele andere BI-Tools haben.
 
 In diesem Abschnitt der Dokumentation werden die grundlegenden Unterschiede zwischen CJA und häufig verwendeten BI-Tools erläutert. Zunächst wird der allgemeine Workflow zur Erreichung des oben genannten Ziels untersucht: diese Journey verstehen. Anschließend werden weitere Details dazu bereitgestellt, wie Daten zwischen CJA- und BI-Tools unterschiedlich gespeichert, erfasst und abgefragt werden. Schließlich werden die Unterschiede bei den Visualisierungsfunktionen erklärt.
 
@@ -32,11 +32,11 @@ Jeder dieser Schritte kann Stunden, Tage oder sogar Wochen dauern. Wenn Folgefra
 
 ## CJA: Demokratisierter Workflow für Online- und Offline-Daten
 
-CJA bietet eine Umgebung, in der kanalübergreifende Online- und Offline-Daten auf übergeordneter Kundenebene miteinander verbunden werden können, um nur die Journey des Kunden zu verstehen. Es erfordert keine Ersteinrichtung, um Ansichten mit den Daten zu verbinden und zu definieren, die Sie als relevant qualifizieren. Nach Abschluss dieser Daten stehen diese Daten jedoch jederzeit für die laufende Analyse und Untersuchung zur Verfügung, sodass nach und nach Einblicke in die Journey und Erkenntnisse der Kunden gewonnen werden. Durch die Demokratisierung kombinierter Online- und Offline-Daten können Sie Journey-bezogene Fragen von Kunden in Sekundenschnelle beantworten.
+CJA bietet eine Umgebung, in der kanalübergreifende Online- und Offline-Daten auf übergeordneter Kundenebene miteinander verbunden werden können, um nur die Journey des Kunden zu verstehen. Es ist eine Ersteinrichtung erforderlich, um [connect](/help/connections/overview.md) und [Ansichten definieren](/help/data-views/data-views.md) zu den Daten hinzu, die Sie als relevant qualifizieren. Nach Abschluss dieser Daten stehen diese Daten jedoch jederzeit für die laufende Analyse und Untersuchung zur Verfügung. Sie können schrittweise Einblicke in die Journey gewinnen und diese verstehen. Durch die Demokratisierung von kombinierten Online- und Offline-Daten können Sie kundenbezogene Journey-Fragen in Sekundenschnelle beantworten.
 
 ![CJA-Workflow](./assets/cjaworkflow.png)
 
-Sie können CJA verwenden, um mithilfe der visuellen Analysis Workspace-Umgebung Fragen zu stellen und fast sofort Einblicke zu erhalten. Die kanalübergreifenden Daten und Berichte sind sofort verfügbar, ohne dass SQL-Code erforderlich ist. Zusätzliche Abfragen und Analysen können mit einem einfachen Drag &amp; Drop in der Benutzeroberfläche und vollständig korrelierten Daten durchgeführt werden. Sie können weiterhin Fragen stellen und nach Bedarf weitere Details erkunden. Sie können dann sofort auf die Einblicke reagieren, die Sie entdecken, z. B. durch die Freigabe von Zielgruppen für die Aktivierung und Orchestrierung.
+Sie können CJA verwenden, um Fragen mithilfe der visuellen Analysis Workspace-Umgebung zu stellen und fast sofort Einblicke zu erhalten. Kanalübergreifende Daten und Berichte sind sofort verfügbar, ohne dass SQL-Code erforderlich ist. Zusätzliche Abfragen und Analysen können mit einem einfachen Drag &amp; Drop in der Benutzeroberfläche und vollständig korrelierten Daten durchgeführt werden. Sie können weiterhin Fragen stellen und nach Bedarf weitere Details erkunden. Sie können dann sofort auf die Einblicke reagieren, die Sie entdecken, z. B. durch die Freigabe von Zielgruppen für die Aktivierung und Orchestrierung.
 
 ## Die leistungsstarke Reporting-Engine von CJA
 
@@ -50,13 +50,13 @@ CJA verwendet eine leistungsstarke proprietäre Architektur, die die Analyse auf
 
 * **Entwickelt für die schnelle Beantwortung großer Abfragen**: Die Reporting-Engine ist nicht so allgemein wie herkömmliche Big-Data-Systeme. Sie wurde jedoch speziell für die Beantwortung von Abfragen entwickelt, die Millionen oder sogar Milliarden von Datensätzen (Ereignisdaten/Erlebnisereignisse) umfassen, im Allgemeinen in weniger als einer Sekunde. Im Gegensatz zu anderen Big-Data-Systemen erfolgt dies nicht durch Stichproben der Daten oder durch Vorberechnung der Antworten auf alle Fragen, die sie stellen könnten. Stattdessen können die Antworten schnell genug berechnet werden, um die interaktive Abfrage von Anwendungsfällen zu unterstützen. Diese spezielle Gestaltung der Reporting-Engine von CJA erleichtert die schnelle Verfügbarkeit und schnelle Datenanalyse und ermöglicht es Ihnen so, schrittweise Einblicke in die Journey der Kunden zu gewinnen.
 
-* **Handeln als Headless BI-Lösung**: Sie definieren Ihre Dimensionen, Metriken und Filter an einem Ort, und dann kann jeder CJA-Client (einschließlich unserer öffentlichen CJA-API) auf diese Komponenten zugreifen. Dadurch werden komplexe Abfragen von Endbenutzern abstrahiert und sichergestellt, dass die Ergebnisse unabhängig vom verwendeten Berichts- oder Visualisierungsclient identisch sind.
+* **Funktioniert als Headless BI-Lösung**: Sie definieren Ihre Dimensionen, Metriken und Filter an einem Ort, und dann kann jeder CJA-Client (einschließlich unserer öffentlichen CJA-API) auf diese Komponenten zugreifen. Dadurch werden komplexe Abfragen von Endbenutzern abstrahiert und sichergestellt, dass die Ergebnisse unabhängig vom verwendeten Berichts- oder Visualisierungsclient identisch sind.
 
 ## Die einzigartigen Visualisierungsfunktionen von CJA
 
 Die Reporting-Engine ist von grundlegender Bedeutung für CJA, damit Sie schrittweise mit allen Journey-Daten der Kunden innerhalb dieser Reporting-Engine interagieren und darauf reagieren können. CJA verfügt über einen umfangreichen Satz an Komponenten, mit denen Sie dies visuell und durch Drag &amp; Drop erreichen können. Mit BI-Visualisierungs-Tools können Sie innerhalb der Grenzen von SQL-vorbereiteten Daten (wie von IT definiert) erkunden. Mit CJA können Sie beliebig viele Teile zerlegen und auseinanderschneiden, ohne zur IT zurückkehren zu müssen, um eine weitere SQL-Ansicht zu erstellen.
 
-&quot;Progressiv&quot;ist hier ein Schlüsselkonzept: Im Gegensatz zu den meisten Visualisierungen in BI-Tools können Sie mit der visuellen Drag &amp; Drop-Benutzeroberfläche in CJA Ihre Daten kontinuierlich für Ihre spezifischen Anforderungen aufschlüsseln: interaktive Erstellung von Abfragen, die visuell relevante Metriken, Dimensionen, Filter (Segmente), Berechnungen, Zeitlinien, Anmerkungen und andere Analysewerte verwenden.
+&quot;Progressiv&quot;ist hier ein Schlüsselkonzept: Im Gegensatz zu den meisten Visualisierungen in BI-Tools können Sie mit der visuellen Drag &amp; Drop-Benutzeroberfläche in CJA Ihre Daten kontinuierlich für Ihre spezifischen Anforderungen aufschlüsseln: Sie können visuelle Abfragen interaktiv mit relevanten Metriken, Dimensionen, Filtern (Segmenten), Berechnungen, Zeitlinien, Anmerkungen und anderen Analysewerten erstellen.
 
 In diese Visualisierungskomponenten integriert sind intelligente Funktionen wie:
 
@@ -66,9 +66,9 @@ In diese Visualisierungskomponenten integriert sind intelligente Funktionen wie:
 
    * [Kundenbindungsanalyse über Kohorten-/Latenztabellen](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), wo Sie einfach Metriken/Dimensionen per Drag-and-Drop in einem Builder ablegen und in weniger als 30 Sekunden fertig sind,
 
-   * [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [Fluss](/help/analysis-workspace/visualizations/c-flow/create-flow.md) Visualisierungen. in weniger als einer Minute einrichten
+   * [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md) / [Fluss](/help/analysis-workspace/visualizations/c-flow/create-flow.md) Visualisierungen. In weniger als einer Minute einrichten.
 
-   * [Attributionsmodelle](/help/analysis-workspace/attribution/algorithmic.md) zum Beispiel Erstkontakt, Letztkontakt, Teilnahme, Zeitverfall, selbst benutzerspezifische Einstellungen, die einige Klicks für die Einrichtung erfordern,
+   * [Attributionsmodelle](/help/analysis-workspace/attribution/algorithmic.md) zum Beispiel Erstkontakt, Letztkontakt, Teilnahme, Zeitverfall, selbst benutzerspezifische Einstellungen, für deren Einrichtung einige Klicks erforderlich sind.
 
 * **Segmentierungsfunktion in jedem Schritt Ihrer progressiven Exploration**: wann immer Sie dies für sinnvoll halten, können Sie Ihre Zielgruppe wieder in Experience Platform veröffentlichen und von dort an einem der unterstützten Ziele veröffentlichen.
 
@@ -85,5 +85,5 @@ Der Vergleich der Visualisierungsfunktionen von CJA mit den von BI-Tools angebot
 
 ## Zusammenfassung
 
-CJA unterscheidet sich von BI-Tools insofern, als es eine hochoptimierte kundenorientierte Berichterstellungsmodul nahtlos mit benutzerfreundlichen Tools und Komponenten integriert, um Analysen durchzuführen und Berichte und erweiterte Visualisierungen zu erstellen. Alles aus einer einzigen Benutzeroberfläche, ohne dass Sie als Benutzer zwischen der Abfragemaschine und der Visualisierungsumgebung hin- und herwechseln müssen.
+CJA unterscheidet sich von BI-Tools insofern, als es eine hochoptimierte kundenorientierte Berichterstellungsmodul nahtlos mit benutzerfreundlichen Tools und Komponenten integriert, um Analysen durchzuführen und Berichte und erweiterte Visualisierungen zu erstellen. Alles aus einer einzigen Benutzeroberfläche, ohne dass Sie zwischen der Abfragemaschine und der Visualisierungsumgebung hin- und herwechseln müssen.
 
