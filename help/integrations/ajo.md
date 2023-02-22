@@ -1,13 +1,13 @@
 ---
-title: Integrieren von Adobe Journey Optimizer in Customer Journey Analytics
+title: Integrieren von Adobe Journey Optimizer (AJO) mit Customer Journey Analytics (CJA)
 description: Binden Sie die von AJO generierten Daten ein und analysieren Sie diese mit Analysis Workspace in CJA.
-source-git-commit: b24ad572ca36bbafffcd242fe257a2113977392d
-workflow-type: ht
-source-wordcount: '664'
-ht-degree: 100%
+exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
+source-git-commit: 3a4dbe9a87f8e195a4daf78423d29d73f2be0f83
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 53%
 
 ---
-
 
 # Integrieren von Adobe Journey Optimizer in Customer Journey Analytics
 
@@ -27,35 +27,56 @@ Sobald sich Journey Optimizer-Daten in Adobe Experience Platform befinden, könn
 
 Sobald eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansichten](/help/data-views/create-dataview.md) erstellen, um die gewünschten Dimensionen und Metriken zu konfigurieren, die in Customer Journey Analytics verfügbar sind.
 
-Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine ungefähre Übereinstimmung mit ähnlichen Metriken in Journey Optimizer zu erreichen. Einzelheiten zur Anpassung von Dimensionen und Metriken finden Sie unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) im Datenansichts-Manager.
+>!![NOTE]
+Datendiskrepanzen zwischen AJO und CJA liegen in der Regel unter 1-2 %. Größere Diskrepanzen sind bei Daten möglich, die innerhalb der letzten zwei Stunden erfasst wurden. Verwenden Sie Datumsbereiche, die den heutigen Tag ausschließen, um Abweichungen wegen der Verarbeitungszeit zu vermeiden.
 
-| Metrik | Beschreibung | Datenansichtseinstellungen |
+### Konfigurieren von Dimensionen in der Datenansicht
+
+Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine ungefähre Parität mit ähnlichen Dimensionen in Journey Optimizer zu erreichen. Siehe [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) im Data View Manager finden Sie Details zu den Dimensionsanpassungsoptionen.
+
+| Dimension | Schemaelement | Einstellungen der Komponente |
 | --- | --- | --- |
-| Bounces | Die Anzahl der Nachrichten, die zurückgeschickt wurden | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Wenn ein Kriterium erfüllt ist<br>Gleich: `bounce`<br>Gleich: `denylist` |
-| Fehler | Die Anzahl der fehlerhaften Nachrichten | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `error` |
-| Ausschlüsse | Die Anzahl der ausgeschlossenen Nachrichten | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `exclude` |
-| Abonnementkündigungen | Anzahl der Abmeldungen | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageInteraction.interactionType` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `unsubscribe` |
-| Klicks | Anzahl der Klicks in Nachrichten | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageInteraction.interactionType` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `click` |
-| Öffnungen | Anzahl geöffneter Nachrichten | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageInteraction.interactionType` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `open` |
-| Spam-Beschwerden | Anzahl der Beschwerden wegen Spam | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageInteraction.interactionType` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `spam_complaint` |
-| Erfolgreich gesendete Nachrichten | Die Anzahl der erfolgreich gesendeten Nachrichten | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `sent` |
-| Synchronisierungsfehler | Die Gesamtzahl der Nachrichten, die nicht synchronisiert werden konnten | Verwenden Sie das Schema-Zeichenfolgenelement `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` mit den folgenden Einstellungen:<br>Komponententyp: Metrik<br>Werte einschließen/ausschließen: Gleich `sync` |
+| Journey-Name | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponententyp: Dimension |
+| Journey Name und Version | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Komponententyp: Dimension |
+| Journey-Knotenname | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Komponententyp: Dimension |
+| Journey-Knotentyp | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Komponententyp: Dimension |
+| Kampagnenname | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Komponententyp: Dimension |
+| Kanal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Komponententyp: Dimension |
+| Push-Titel | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Komponententyp: Dimension |
+| E-Mail-Betreff | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Komponententyp: Dimension |
+| Link-Bezeichnung | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Komponententyp: Dimension |
+| Experimentname | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | Komponententyp: Dimension<br>Kontextbezeichnungen: Experimentierexperiment |
+| Name der Behandlung | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Komponententyp: Dimension<br>Kontextbezeichnungen: Experimentvariante |
+| Grund für fehlgeschlagenen E-Mail-Versand | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Komponententyp: Dimension |
+| Ausschlussgrund für E-Mail-Versand | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Komponententyp: Dimension |
 
 {style=&quot;table-layout:auto&quot;}
 
-## Konfigurieren von berechneten Metriken mit Journey Optimizer-Metriken
+### Konfigurieren von Metriken in der Datenansicht
+
+Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine ungefähre Übereinstimmung mit ähnlichen Metriken in Journey Optimizer zu erreichen. Siehe [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) im Datenansichtsmanager für weitere Informationen zu den Anpassungsoptionen von Metriken.
+
+| Metrik | Beschreibung | Schemaelement | Einstellungen der Komponente |
+| --- | --- | --- | --- |
+| Bounces | Die Anzahl der Nachrichten, die zurückgeschickt wurden, einschließlich sowohl sofortiger Bounces als auch Bounces nach dem Versand. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Wenn ein Kriterium erfüllt ist<br>Gleich: `bounce`, Gleich: `denylist` |
+| Bounces nach der Bereitstellung | Einige E-Mail-Dienste melden zugestellte E-Mails und Bounce ihnen dann später. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `async` |
+| E-Mail-Klicks | Anzahl der Klicks in Nachrichten. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `click` |
+| E-Mail wird geöffnet | Anzahl geöffneter Nachrichten. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `open` |
+| Fehler | Die Anzahl der fehlerhaften Nachrichten. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `error` |
+| Ausgeschlossen sind  | Die Anzahl der ausgeschlossenen Nachrichten. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `exclude` |
+| Sendungen | Die Anzahl der Nachrichten, die von E-Mail-Anbietern akzeptiert wurden. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `sent` |
+| Spam-Beschwerden | Anzahl der Beschwerden wegen Spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `spam_complaint` |
+| Abonnementkündigungen | Anzahl der Abmeldungen. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `unsubscribe` |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Berechnete Metriken in Analysis Workspace konfigurieren
 
 Nachdem Sie die gewünschten Dimensionen und Metriken für den Journey Optimizer-Datensatz konfiguriert haben, können Sie auch [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) für weitere Einblicke in diese Daten konfigurieren. Diese berechneten Metriken basieren auf den oben genannten Metriken, die im Datenansichts-Manager erstellt wurden.
 
 | Berechnete Metrik | Beschreibung | Formel |
 | --- | --- | --- |
-| Gesamtzahl der gesendeten Nachrichten | Gesamtzahl der (erfolgreich oder nicht erfolgreich) gesendeten Nachrichten | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+| Gesendete Nachrichten | Die Gesamtzahl der gesendeten Nachrichten. Enthält erfolgreiche oder fehlgeschlagene Nachrichten. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
+| Zugestellte Nachrichten | Die Anzahl der an Kunden gesendeten E-Mails. | `[Sends] - [Bounces After Delivery]` |
 
 {style=&quot;table-layout:auto&quot;}
-
-## Unterschiede bei der Berichterstellung zwischen Journey Optimizer und Customer Journey Analytics
-
-Datendiskrepanzen zwischen Produkten liegen in der Regel zwischen 1 und 2 %. Größere Diskrepanzen zwischen Produkten lassen sich möglicherweise auf Folgendes zurückführen:
-
-* Die Verarbeitungszeit für eingehende Daten kann sich von Produkt zu Produkt leicht unterscheiden, insbesondere bei Daten, die innerhalb der letzten zwei Stunden erfasst wurden. Verwenden Sie Datumsbereiche, die den heutigen Tag ausschließen, um Abweichungen wegen der Verarbeitungszeit zu vermeiden.
-* Die berechnete Metrik „Gesamtzahl der gesendeten Nachrichten“ enthält nicht die Metrik „Weitere Zustellversuche“. Die Daten für die Metrik „Weitere Zustellversuche“ sind nicht im Datensatz enthalten, wodurch die Zahlen in den CJA-Berichten möglicherweise niedriger sind als in den AJO-Berichten. Die Daten für weitere Zustellversuche werden jedoch in die Metrik „Erfolgreich gesendete Nachrichten“ oder „Bounces“ einbezogen. Verwenden Sie Datumsbereiche, die eine Woche oder älter sind, um die Diskrepanzen zwischen den Produkten bei der Metrik „Gesamtzahl der gesendeten Nachrichten“ zu minimieren.
