@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 14bcb1364e59ee02073829050daa068c6203a93c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -108,13 +108,13 @@ Dadurch gelangen Sie zum Generator für den Datumsbereich, in dem Sie eine neue 
 
 ### Vergleichsdatumsbereiche anzeigen oder ausblenden {#show-comparison-dates}
 
-Um Vergleichsdatumsbereiche einzubeziehen, schalten Sie die **Vergleichsdaten einschließen** -Einstellung.
+Um Vergleichsdatumsbereiche einzubeziehen, schalten Sie die Einstellung **Vergleichsdaten einschließen** um.
 
 ![Vergleichsdaten einschließen](assets/include-comparison-dates.png)
 
-Die Einstellung lautet *on* Standardmäßig. Umschalten auf *off* , wenn Sie keine Vergleichsdaten anzeigen möchten.
+Die Einstellung ist standardmäßig *an*. Schalten Sie sie *aus*, wenn Sie keine Vergleichsdaten anzeigen möchten.
 
-![Nicht ausgewählte Vergleichsdatumseinstellung](assets/no-comparison-dates.png)
+![Vergleichsdatumseinstellung abgewählt](assets/no-comparison-dates.png)
 
 ## Visualisierungen anwenden {#viz}
 
