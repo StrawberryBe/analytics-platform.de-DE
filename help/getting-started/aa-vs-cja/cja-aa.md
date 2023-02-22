@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 99%
+source-wordcount: '1525'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | --- | --- |
 | Warnhinweise | Unterstützung ist geplant. |
 | Beitragsanalyse | Unterstützung ist geplant. |
-| Data Warehouse-Berichte (100 % Zeilenexport) | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [[!UICONTROL Abfrage-Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) von Adobe Experience Platform bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
+| Data Warehouse Reporting | Die Unterstützung über die Analysis Workspace-Oberfläche ist geplant. Der [[!UICONTROL Abfrage-Service]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) von Adobe Experience Platform bietet auch eine Schnittstelle für diese Anwendungsfälle in CJA. |
 | ID-Zuordnung über Gerätediagramm | Unterstützung ist geplant. |
 | Projektvorlagen | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |

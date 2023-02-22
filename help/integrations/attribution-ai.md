@@ -4,10 +4,11 @@ title: Integrieren von Attribution AI mit CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
+mini-toc-levels: 3
+source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 87%
+source-wordcount: '929'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 87%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=de) ist Teil von Adobe Experience Platform Intelligent Services und bietet einen mehrere Kanäle umfassenden algorithmischen Attributions-Service, der den Einfluss und die inkrementelle Auswirkung von Kundeninteraktionen auf bestimmte Ergebnisse berechnet. Mit Attribution AI können Marketing-Experten die Ausgaben für Marketing und Werbung messen und optimieren, indem sie die Auswirkungen einzelner Kundeninteraktionen in einzelnen Phasen der Customer Journey untersuchen.
 
-Attribution AI kann mit Customer Journey Analytics (CJA) integriert werden, sodass mit Attribution AI Modelle anhand von Marketing-Touchpoints und Konversionsdatenquellen von Kunden ausgeführt werden können. CJA importiert dann das Ergebnis dieser Modelle als Datensatz. Das Ergebnis kann auch mit dem Rest Ihrer CJA-Datensätze integriert werden. Attribution AI-Datensätze können dann in Datenansichten und Berichten in CJA genutzt werden.
+Attribution AI kann mit Customer Journey Analytics (CJA) integriert werden, sodass mit Attribution AI Modelle anhand von Marketing-Touchpoints und Konversionsdatenquellen von Kunden ausgeführt werden können. CJA importiert dann das Ergebnis dieser Modelle als Datensatz. Das Ergebnis kann auch mit dem Rest Ihrer CJA-Datensätze integriert werden. Attribution AI-aktivierte Datensätze können dann in Datenansichten und Berichten in CJA genutzt werden.
 
 Attribution AI unterstützt 3 Experience Platform-Schemas: Erlebnisereignis, Adobe Analytics und Kundenerlebnisereignis.
 
