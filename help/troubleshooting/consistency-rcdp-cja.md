@@ -5,9 +5,9 @@ role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Beim Vergleich der Anzahl der Zielgruppenzugehörigkeiten zwischen der Real-Time
 
 Die Real-Time CDP und Customer Journey Analytics verwenden heutzutage nicht dieselbe Definition einer Person. Die Real-Time CDP beruht ausschließlich auf den Informationen im [Identitätsdiagramm](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=de) um ein zusammengeführtes Profil zu erstellen.
 
-CJA kann für die Verwendung der [Cross-Channel Analytics](/help/cca/overview.md) konfiguriert werden, die IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
+CJA kann für die Verwendung der [Cross-Channel-Analyse](/help/cca/overview.md) konfiguriert werden, die IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
 
 Künftig wird CJA Identitätsdiagramme verwenden können.
 
@@ -52,4 +52,4 @@ Selbst wenn die Datensätze in der Real-Time CDP und in CJA identisch sind, beh�
 
 ## Unterschiede in der Datenaufnahmelatenz
 
-CJA verfügt noch nicht über die Echtzeitfunktionen der Echtzeit-Kundendatenplattform. Daher beinhaltet die CJA-Berichterstellung eine gewisse Latenz, bevor Daten für die Berichterstellung oder Zielgruppenerstellung verfügbar sind. Die Real-Time CDP verarbeitet Daten über verschiedene Systeme mit unterschiedlichen Latenzzeiten.
+CJA verfügt noch nicht über die Echtzeitfunktionen von Real-Time CDP. Daher unterliegt die CJA-Berichterstellung einer gewissen Latenz, bevor Daten für die Berichterstellung oder Zielgruppenerstellung verfügbar sind. Real-Time CDP verarbeitet Daten über verschiedene Systeme mit unterschiedlichen Latenzzeiten.
