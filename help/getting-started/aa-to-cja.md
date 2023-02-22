@@ -1,18 +1,18 @@
 ---
-title: Entwicklung von Adobe Analytics
+title: Weiterentwicklung von Adobe Analytics
 description: Schritte zum Umwandeln von Adobe Analytics-Daten in Customer Journey Analytics-Daten
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1436'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Entwicklung von Adobe Analytics
+# Weiterentwicklung von Adobe Analytics
 
 Wenn sich Ihr Unternehmen entschließt, Customer Journey Analytics zu verwenden, sollten Sie sich mit diesen Schritten vertraut machen, um Ihre Daten vorzubereiten, und über die wichtigen Unterschiede zwischen den beiden Technologien Bescheid wissen. Dieser Artikel richtet sich an Administratoren.
 
@@ -30,7 +30,7 @@ Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede I
 * Die ID enthält keine persönlich identifizierbare Informationen. Wenden Sie Hashing auf alle sensiblen Elemente an.
 * Die ID verwendet dasselbe Format für alle Quellen (gleiche Länge, gleiche Hashing-Methode usw.)
 
-In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann Cross-Channel Analytics (früher als „feldbasierte Zuordnung“ bezeichnet) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden). [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de)
+In Datensätzen wie Adobe Analytics ist möglicherweise nicht in jeder Datenzeile eine Identität vorhanden, aber eine sekundäre Identität schon. In diesem Fall kann Cross-Channel-Analyse (früher als „feldbasierte Zuordnung“ bezeichnet) verwendet werden, um die Lücke zwischen Zeilen zu schließen, wenn ein Kunde nur durch seine ECID identifiziert wird und wenn eine Identität erfasst wird (z. B. bei der Authentifizierung eines Kunden). [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de)
 
 ### 2. Variablen anpassen {#variables}
 
@@ -58,7 +58,7 @@ Adobe hat [aktualisierte Best Practices für die Implementierung von Marketing-K
 
 ### 4. Entscheidung zwischen Analytics-Quell-Connector und Experience Platform SDKs {#connector-vs-sdk}
 
-Adobe Analytics-Kunden können mit dem Analytics-Quell-Connector ihre Report Suites einfach in Adobe Experience Platform und Customer Journey Analytics nutzen. Informationen zur Verwendung des Analytics Source Connectors finden Sie in der Schnellstartanleitung zum [Daten aus Adobe Analytics erfassen und in CJA verwenden](../data-ingestion/analytics.md). Siehe auch [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) für weitere Informationen.
+Adobe Analytics-Kunden können mit dem Analytics-Quell-Connector ihre Report Suites einfach in Adobe Experience Platform und Customer Journey Analytics nutzen. Informationen zur Verwendung von Analytics Source Connector finden Sie in der Schnellstartanleitung [Daten aus Adobe Analytics aufnehmen und in CJA verwenden](../data-ingestion/analytics.md). Siehe auch [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de), um weitere Informationen zu erhalten.
 
 Im Zuge der Weiterentwicklung der [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de)-Datenerfassung werden Sie wahrscheinlich entweder auf das [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=de) oder das [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=de) mit dem Adobe Experience Platform Edge Network migrieren. Während eine typische Implementierung der SDKs Daten an Adobe Analytics sendet, gibt es eine neue Möglichkeit, Daten direkt an Adobe Experience Platform zu senden. Diese Daten können dann in Customer Journey Analytics aufgenommen werden, während gleichzeitig die an Adobe Analytics gesendeten Daten beibehalten werden.
 
@@ -78,8 +78,8 @@ Die folgenden Adobe Analytics-Funktionen oder -Komponenten werden nicht unterst�
 
 * Bot-Filterung
 * Geo-, Domain-, Gerätesuche
-* Streaming-Medienmessung
-* Livestream- oder Livestream-Trigger
+* Messung von Streaming-Medien
+* Livestream oder Livestream-Trigger
 
 ## Einige wichtige Unterschiede
 
@@ -89,7 +89,6 @@ Das Reporting in Adobe Analytics beruht auf einer erheblichen Datenvorverarbeitu
 
 [!UICONTROL Berichtszeitverarbeitung] eröffnet die Möglichkeit, rückwirkende Einstellungen anzuwenden und mehrere Versionen der Variablenpersistenz zu erstellen, ohne die Art der Erfassung der zugrunde liegenden Daten ändern zu müssen.
 
-
 Diese Änderung führt zu gewissen Unterschieden in der Verwendung von Daten zur Berichtserstellung, insbesondere bei Variablen, die länger gültig sind. Sie können beurteilen, wie sich die Verarbeitung zur Berichtslaufzeit auf Ihr Reporting auswirken kann, indem Sie eine [Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) verwenden.
 
 ### Identifizieren Sie wichtige Segmente und berechnete Metriken {#segments-calcmetrics}
@@ -98,7 +97,7 @@ Adobe Analytics-Segmente (in CJA als [!UICONTROL Filter] bezeichnet) und berechn
 
 Um den Wechsel zwischen den Systemen für Benutzer so reibungslos wie möglich zu gestalten, führen Sie folgende Maßnahmen aus:
 
-1. Identifizieren Sie die wichtigsten dieser Komponenten
+1. Identifizieren Sie die wichtigsten dieser Komponenten.
 
 2. Dokumentieren Sie ihre Definitionen
 
