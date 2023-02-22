@@ -1,13 +1,13 @@
 ---
 title: FAQ zu Customer Journey Analytics
-description: Customer Journey Analytics – häufig gestellte Fragen
+description: Customer Journey Analytics – häufig gestellte Fragen.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2135'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,18 +38,18 @@ Customer Journey Analytics enthält Funktionen zur [Datenvorbereitung](https://e
 +++
 
 
-## 2. Daten zusammenfügen (Cross-Channel Analytics) {#stitching}
+## 2. Daten zusammenfügen (Cross-Channel-Analyse) {#stitching}
 
 +++**Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen?**
 
-Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine Lösung zum Zusammenfügen (Stitching) von Daten namens [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) (CCA). Damit können Sie die Personen-ID eines Datensatzes neu eingeben, was eine nahtlose Kombination mehrerer Datensätze ermöglicht.
+Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine Lösung zum Zusammenfügen (Stitching) von Daten namens [Cross-Channel-Analyse](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) (CCA). Damit können Sie die Personen-ID eines Datensatzes neu eingeben, was eine nahtlose Kombination mehrerer Datensätze ermöglicht.
 
 +++
 
 
 +++**Wird das Zusammenfügen von anonymen Verhaltens- mit authentifizierten Verhaltensdaten unterstützt?**
 
-Ja. [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen und generiert eine zusammengefügte ID.
+Ja. Die [Cross-Channel-Analyse](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen und generiert eine zusammengefügte ID.
 
 +++
 
@@ -92,7 +92,7 @@ Solange die Personen-ID zwischen Datensätzen übereinstimmt, kann [!UICONTROL C
 
 +++**Wie integriere ich meine Offline-Daten in [!UICONTROL Customer Journey Analytics]?**
 
-Mit Ihrer Berechtigung zur Nutzung von Customer Journey Analytics können Sie Daten in Experience Platform aufnehmen. Sie können dann zu diesen Daten und Datenansichten in [!UICONTROL Customer Journey Analytics] Verbindungen herstellen, um in Analysis Workspace Berichte zu generieren. Das Datenerfassungs-Team der Experience Platform bietet bei Bedarf Empfehlungen oder eine Beratung für Sie an.
+Mit Ihrer Berechtigung zur Nutzung von Customer Journey Analytics können Sie Daten in Experience Platform aufnehmen. Sie können dann zu diesen Daten und Datenansichten in [!UICONTROL Customer Journey Analytics] Verbindungen herstellen, um in Analysis Workspace Berichte zu generieren. Das Datenerfassungs-Team von Experience Platform bietet bei Bedarf Empfehlungen oder eine Beratung für Sie an.
 
 +++
 
@@ -104,7 +104,7 @@ Mit Ihrer Berechtigung zur Nutzung von Customer Journey Analytics können Sie Da
 +++
 
 
-+++**Wie lange dauert es, bis Datensatzelemente in einer Datenansicht zusammengefasst werden?**
++++**Wie lange dauert es, bis Datensatzelemente in einer Datenansicht zusammengefasst sind?**
 
 Ein paar Stunden für eine erste Ansicht und ein paar Tage, um die Daten der letzten 13 Monate aufzustocken.
 
@@ -165,7 +165,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 | --- | --- |
 | Variablen | Variablen wie [!UICONTROL eVars] werden möglicherweise nicht in allen Report Suites angezeigt. Beispielsweise kann eVar1 in Report Suite 1 auf **[!UICONTROL Seite]** verweisen. In Report Suite 2 kann eVar1 auf **[!UICONTROL Interne Kampagne]** verweisen, was zu gemischten und ungenauen Berichten führt. |
 | Zahlen für [!UICONTROL Sitzungen] und [!UICONTROL Personen] | Sie werden über Report Suites hinweg dedupliziert. Daher stimmen die Zahlen möglicherweise nicht überein. |
-| Deduplizierung der Metrik | Dedupliziert Instanzen einer Metrik (z. B. [!UICONTROL Bestellungen]), wenn mehrere Zeilen dieselbe Transaktions-ID aufweisen (z. B. [!UICONTROL Kauf-ID]). Dadurch wird verhindert, dass Schlüsselmetriken zu häufig gezählt werden. Daher sind die Summen von Metriken wie [!UICONTROL Bestellungen] möglicherweise nicht über Report Suites hinweg korrekt. |
+| Deduplizierung von Metriken | Dedupliziert Instanzen einer Metrik (z. B. [!UICONTROL Bestellungen]), wenn mehrere Zeilen dieselbe Transaktions-ID aufweisen (z. B. [!UICONTROL Kauf-ID]). Dadurch wird verhindert, dass Schlüsselmetriken zu häufig gezählt werden. Daher sind die Summen von Metriken wie [!UICONTROL Bestellungen] möglicherweise nicht über Report Suites hinweg korrekt. |
 | Währung | Die Währungsumrechnung wird in CJA noch nicht unterstützt. Wenn die Report Suites, die Sie zusammenführen möchten, unterschiedliche Basiswährungen verwenden, können Probleme auftreten. |
 | [!UICONTROL Persistenz] | [Persistenz](../data-views/component-settings/persistence.md) erstreckt sich über Report Suites hinweg, was sich auf [!UICONTROL Filter], [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
 | [!UICONTROL Klassifizierungen] | [!UICONTROL Klassifizierungen] werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Wenn Sie mehrere Klassifizierungsdateien in einem einzigen [!UICONTROL Such]-Datensatz kombinieren, können Probleme auftreten. |
@@ -204,7 +204,7 @@ Noch nicht, wir arbeiten aber aktuell daran, diese Funktion bald bereitstellen z
 
 +++**Wie werden in [!UICONTROL Customer Journey Analytics] `Uniques Exceeded`-Einschränkungen behandelt?**
 
-[!UICONTROL In Customer Journey Analytics] gibt es keine Beschränkungen hinsichtlich eindeutiger Werte, sodass Sie sie nicht beachten müssen.
+In [!UICONTROL Customer Journey Analytics] gibt es keine Beschränkungen hinsichtlich eindeutiger Werte, sodass Sie sie nicht beachten müssen.
 
 +++
 
@@ -217,7 +217,7 @@ Das hängt von Ihrem Anwendungsfall ab. Bitte wenden Sie sich an Ihr Adobe Accou
 
 ## 9. Verbindungsgröße schätzen {#estimate-size}
 
-Siehe [Nutzung schätzen und verwalten](/help/admin/estimate-usage.md).
+Siehe [Schätzen und Verwalten der Nutzung](/help/admin/estimate-usage.md).
 
 ## 10. Über die Limits bei der Verwendung {#overage}
 
