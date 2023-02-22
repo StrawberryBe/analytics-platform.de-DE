@@ -12,7 +12,7 @@ breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 96%
    + [Vergleichen von CJA mit BI-Lösungen](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics und Adobe Analytics {#compare-aa-cja}
-   + [Entwicklung von Adobe Analytics ](../getting-started/aa-to-cja.md)
-   + [Benutzerhandbuch für Adobe Analytics-Benutzer](../getting-started/aa-to-cja-user.md)
+   + [Weiterentwicklung von Adobe Analytics ](../getting-started/aa-to-cja.md)
+   + [Benutzerhandbuch für Adobe Analytics-Benutzende](../getting-started/aa-to-cja-user.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Verwenden von Adobe Analytics-Daten in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Unterstützung der Customer Journey Analytics-Funktion](../getting-started/aa-vs-cja/cja-aa.md)
@@ -51,7 +51,7 @@ ht-degree: 96%
 
 + Datenaufnahme {#cja-data-ingestion}
    + [Datenaufnahme – Übersicht](../data-ingestion/data-ingestion.md)
-   + Kurzanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
+   + Kurzanleitungen zur Aufnahme und Verwendung von Daten {#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [Adobe Experience Platform Web SDK und Edge Network](../data-ingestion/aepwebsdk.md)
       + [Batch-Daten](../data-ingestion/batch.md)
@@ -311,7 +311,7 @@ ht-degree: 96%
 
 + Administration {#cja-admin}
    + [Zugriffssteuerung](../admin/cja-access-control.md)
-   + [Nutzung anzeigen und verwalten](../admin/estimate-usage.md)
+   + [Anzeigen und Verwalten der Nutzung](../admin/estimate-usage.md)
    + [Auswirkungen des Löschens](../admin/cja-deletion.md)
 
 + Labs {#labs}
@@ -323,4 +323,4 @@ ht-degree: 96%
 
 + [CJA-Glossar](../getting-started/cja-glossary.md)
 
-+ [Customer Journey Analytics-API](https://developer.adobe.com/cja-apis/docs/)
++ [CJA-API](https://developer.adobe.com/cja-apis/docs/)

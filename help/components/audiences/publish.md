@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -74,11 +74,11 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
 
 ## Was passiert, nachdem eine Zielgruppe erstellt wurde? {#after-audience-created}
 
-Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zielgruppe ein Experience Platformen-Streaming-Segment. Ein AEP-Streaming-Segment wird nur erstellt, wenn Ihre Organisation für Streaming-Segmentierung eingerichtet ist.
+Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zielgruppe ein Experience Platform-Streaming-Segment. Ein AEP-Streaming-Segment wird nur erstellt, wenn die Streaming-Segmentierung für Ihre Organisation eingerichtet ist.
 
-* Das AEP-Segment gibt denselben Namen/dieselbe Beschreibung wie die CJA-Zielgruppe. Der Name wird jedoch mit der CJA-Zielgruppen-ID angehängt, um sicherzustellen, dass er eindeutig ist.
-* Wenn sich der CJA-Zielgruppenname/die Beschreibung ändert, spiegelt der Name/die Beschreibung des AEP-Segments diese Änderung ebenfalls wider.
-* Wenn eine CJA-Zielgruppe von einem Benutzer gelöscht wird, wird das AEP-Segment NICHT gelöscht. Der Grund dafür ist, dass die CJA-Zielgruppe später möglicherweise wieder aus dem Feld gestrichen wird.
+* Das AEP-Segment gibt denselben Namen bzw. dieselbe Beschreibung wie die CJA-Zielgruppe weiter. Dem Namen wird jedoch die CJA-Zielgruppen-ID angehängt, um sicherzustellen, dass er eindeutig ist.
+* Wenn sich der Name bzw. die Beschreibung der CJA-Zielgruppe ändert, spiegelt der Name bzw. die Beschreibung des AEP-Segments diese Änderung ebenfalls wider.
+* Wenn eine CJA-Zielgruppe von einem Benutzer gelöscht wird, wird das AEP-Segment NICHT gelöscht. Der Grund dafür ist, dass die Löschung der CJA-Zielgruppe später möglicherweise wieder aufgehoben wird.
 
 ## Latenzaspekte {#latency}
 
@@ -86,19 +86,19 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 
 ![](assets/latency-diagram.png)
 
-| # | Latenzpunkt | Latenzzeit |
+| # | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
 | 1 | Datenaufnahme in den Data Lake | Bis zu 30 Minuten |
-| 2 | Datenerfassung von Experience Platform in CJA | Bis zu 60 Minuten |
+| 2 | Datenaufnahme von Experience Platform in CJA | Bis zu 60 Minuten |
 | 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
-| 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisieren Sie alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
+| 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
 | 5 | Erstellen eines Ziels in AEP: Aktivieren des neuen Segments | 1–2 Stunden |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 
-CJA nutzt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). CJA sendet die Zielgruppe entsprechend der Auswahl als [!UICONTROL Personen-ID] wenn die Verbindung konfiguriert wurde.
+CJA nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und überträgt sie in das Echtzeit-Kundenprofil (RTCP). CJA sendet die Zielgruppe an Experience Platform, wobei die primäre Identität auf den Wert festgelegt ist, der bei der Verbindungskonfiguration als [!UICONTROL Personen-ID] ausgewählt wurde.
 
 Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Jetzt kann beispielsweise „user@adobe.com“ auf allen Geräten und Kanälen als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
@@ -118,7 +118,7 @@ In diesem Fall wird ein Exit-Ereignis von CJA an Experience Platform gesendet.
 
 +++
 
-+++**Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen?**
++++**Was passiert, wenn eine Zielgruppe in CJA gelöscht wird?**
 
 Wenn eine CJA-Zielgruppe gelöscht wird, wird sie nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Es werden jedoch keine Profile, die mit dieser Zielgruppe verknüpft sind, in Platform tatsächlich gelöscht.
 
@@ -130,15 +130,15 @@ Ja.
 
 +++
 
-+++**Sendet CJA die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?**
++++**Sendet CJA die Zielgruppendaten als Pipeline-Ereignisse oder als Einfachdatei, die auch an den Data Lake gesendet wird?**
 
-CJA streamt die Daten über die Pipeline in RTCP, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
+Die Daten werden von CJA über die Pipeline in das RTCP gestreamt, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
 +++
 
 +++**Welche Identitäten sendet CJA?**
 
-Unabhängig davon, welche Identitäts-/Namespace-Paare im [Verbindungseinrichtung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection). Insbesondere der Schritt, in dem ein Benutzer das Feld auswählt, das er als &quot;Personen-ID&quot;verwenden möchte.
+Die Identitäts-/Namespace-Paare, die bei der [Einrichtung der Verbindung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) verwendet wurden. Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
 
 +++
 

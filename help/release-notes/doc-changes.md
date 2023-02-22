@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -21,19 +21,19 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | --- | --- |
 | **Februar 2023** |  |
 | Vergleichen von CJA mit BI-Lösungen | Neues Dokument zu einem [Vergleich](../getting-started/cja-vs-bi.md) Customer Journey Analytics zu typischen BI-Lösungen. |
-| Aktualisierung der Dokumentation zu Zielgruppen | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
-| Aktualisierung der Dokumentation zu Zielgruppen | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe eine Experience Platform [Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
-| Workspace-Kalender und Datumsbereiche | Der Inhalt wurde aktualisiert, um relative Datumsbereiche, Aktualisierungen der Formelberechnung und Änderungen an der Kalenderbenutzeroberfläche zu beschreiben. Siehe [Über relative Bereichsdatumsbereiche](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Aktualisierung der Audiences-Dokumentation | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Aktualisierung der Audiences-Dokumentation | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe ein Experience Platform-[Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#after-audience-created). |
+| Arbeitsbereichskalender und Datumsbereiche | Der Inhalt wurde aktualisiert, um relative Datumsbereiche, Aktualisierungen der Formelberechnung und Änderungen an der Kalenderbenutzeroberfläche zu beschreiben. Siehe [Über relative Bedienfelddatumsbereiche](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Mobile Scorecards | Neuer Dokumentationsabschnitt, in dem beschrieben wird, wie Sie Vergleichsdatumsbereiche anzeigen und ausblenden. Siehe [Vergleichsdatumsbereiche anzeigen](/help/mobile-app/create-scorecard.md#show-comparison-dates) in CJA. |
 | **Januar 2023** |  |
-| Tabellen filtern und sortieren | Aktualisierter Inhalt (einschließlich des Hinzufügens von Verfahren und der Erläuterung der verfügbaren Optionen) im [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) Artikel. Dieser Artikel wurde aus &quot;Paginierung, Filterung und Sortierung von Tabellen&quot;umbenannt. |
-| Schnellstartanleitungen zur Datenerfassung | Neuer Dokumentationsabschnitt zum Thema [Daten erfassen und verwenden](/help/data-ingestion/data-ingestion.md) in CJA. |
-| Workspace-Ordner | Eigene Seiten für [Ordnerverwaltung](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Benutzereinstellungen in Workspace | In [Voreinstellungen](/help/analysis-workspace/user-preferences.md) sind jetzt viele weitere Benutzereinstellungen verfügbar. |
+| Tabellen filtern und sortieren | Aktualisierter Inhalt (einschließlich des Hinzufügens von Verfahren und der Erläuterung der verfügbaren Optionen) im Artikel [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Dieser Artikel wurde von „Paginierung, Filterung und Sortierung von Tabellen“ umbenannt. |
+| Schnellstartanleitungen zur Datenaufnahme | Neuer Dokumentationsabschnitt zum Thema [Aufnahme und Verwendung von Daten](/help/data-ingestion/data-ingestion.md) in CJA. |
+| Workspace-Ordner | Eigene Seiten für die [Ordnerverwaltung](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Benutzereinstellungen in Workspace | In den [Voreinstellungen](/help/analysis-workspace/user-preferences.md) sind jetzt viele weitere Benutzereinstellungen verfügbar. |
 | Automatisches Speichern für Workspace-Projekte | Der Inhalt wurde aktualisiert und enthält jetzt in [Projekte speichern](/help/analysis-workspace/build-workspace-project/save-projects.md) eine Funktion zum automatischen Speichern. |
 | Landingpage | Neue Landingpage-Updates [Landingpage](/help/getting-started/landing.md). |
-| Erstellen von Zeitplänen für Arbeitsmappen | Spezifische Seite, auf der beschrieben wird, wie [Arbeitsmappen planen](/help/report-builder/schedule-reportbuilder.md) in Report Builder. |
-| Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze | Aktualisiert [Verwenden von Objekt-Arrays](/help/use-cases/object-arrays.md) und [Aufnehmen von AEP-Zielgruppen](/help/use-cases/data-ingestion/ingest-aep-segments.md) , um die Objektarray-Unterstützung für Profil- und Lookup-Datensätze widerzuspiegeln. |
+| Erstellen von Zeitplänen für Arbeitsmappen | Spezifische Seite, auf der das [Planen von Arbeitsmappen](/help/report-builder/schedule-reportbuilder.md) in Report Builder beschrieben wird. |
+| Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze | Aktualisierung von [Verwenden von Objekt-Arrays](/help/use-cases/object-arrays.md) und [Aufnehmen von AEP-Zielgruppen](/help/use-cases/data-ingestion/ingest-aep-segments.md), um die Objekt-Array-Unterstützung für Profil- und Lookup-Datensätze widerzuspiegeln. |
 
 ## 2022 {#22}
 
@@ -100,7 +100,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | **November 2021** |  |
 | November 2021 | Die Dokumentation zu [[!UICONTROL übersprungene Datensätze]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de) auf der Seite „Verbindungsdetails“ wurde aktualisiert. |
 | **Oktober 2021** |  |
-| Oktober 2021 | Dokumentation für [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html?lang=de) in CJA. |
+| Oktober 2021 | Dokumentation für [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html?lang=de#) in CJA. |
 | Oktober 2021 | Customer Journey Analytics: [Administratorprotokoll](https://adobe.io/cja-apis/docs/endpoints/auditlogs/)-API-Dokumentation |
 | Oktober 2021 | Dokumentierte [Visualisierungen für Analytics-Dashboards](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=de#apply-visualizations) |
 | Oktober 2021 | Dokument für rollierendes Fenster für [!UICONTROL Verbindung] – [Datenaufbewahrung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention). |
