@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 98%
+source-wordcount: '1595'
+ht-degree: 94%
 
 ---
 
@@ -58,6 +58,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobiler Hintergrundtreffer. |
 | Persistenz von Merchandising-Variablen | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) |
 | Kundenattribute | Sie werden jetzt als „Profildatensätze“ bezeichnet und nicht automatisch aus Experience Cloud importiert, sondern müssen erst in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
+| Daten-Feeds | Der Datenexport der ersten Generation von Datensätzen ist über das [AEP Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) und [AEP-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Diese Optionen bieten den Export aller erfassten oder in den AEP Data Lake erfassten Daten auf Treffer-/Zeilenebene. Nachbearbeitungs-Datenspalten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über Berichte verfügbar. |
 | Deduplizierung von Metriken | Nun für Metriken in Datenansichten konfiguriert. Die Metrik-Deduplizierung erfolgt auf Personen- oder Sitzungsebene und nicht auf Datensatz-, Datenansichts- oder Verbindungsebene. |
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
@@ -99,7 +100,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
 | Währungsumrechnung | Unterstützung ist geplant. |
-| Daten-Feeds | Unterstützung ist über AEP-Ziele geplant. |
 | Transaktions-ID-Datenquellen | Unterstützung ist geplant. |
 | Migrieren von Projekten/Filtern/berechneten Metriken von AA zu CJA | Unterstützung ist geplant. |
 | Datenquellen auf Zusammenfassungsebene | Unterstützung ist geplant. |
