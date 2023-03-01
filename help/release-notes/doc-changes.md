@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 96%
+source-wordcount: '1454'
+ht-degree: 94%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **März 2023** |  |
+| Funktionsunterstützung | Aktualisiert [Unterstützung von Customer Journey Analytics-Funktionen](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle der Funktionen, die in CJA verfügbar, aber in AA nicht verfügbar oder unterstützt sind. |
 | **Februar 2023** |  |
 | Vergleichen von CJA mit BI-Lösungen | Neues Dokument zu einem [Vergleich](../getting-started/cja-vs-bi.md) Customer Journey Analytics zu typischen BI-Lösungen. |
 | Aktualisierung der Audiences-Dokumentation | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
