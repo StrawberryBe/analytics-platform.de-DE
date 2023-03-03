@@ -8,7 +8,7 @@ mini-toc-levels: 3
 source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -75,15 +75,15 @@ In einem CJA Workspace-Projekt können Sie Metriken wie „AAI-Bestellungen“ u
 
 ![AAI-Dimensionen](assets/aai-dims.png)
 
-Die Rohwertausgabe in AAI verfügt über ein verschachteltes Schema, bei dem der Pfad zu Feldern lang genug sein kann, um die meisten Leerzeichen in Tabellen oder Visualisierungen aufzunehmen. Zur Verkürzung [!UICONTROL Anzeigename] wird in Customer Journey Analytics automatisch generiert und gemäß den folgenden Regeln genutzt:
+Die Rohwertausgabe in AAI hat ein verschachteltes Schema, bei dem der Pfad zu den Feldern so lang sein kann, dass er den größten Teil des Platzes in Tabellen oder Visualisierungen einnimmt. Zur Verkürzung wird der [!UICONTROL Anzeigename] in Customer Journey Analytics automatisch generiert und gemäß den folgenden Regeln genutzt:
 
-* Alle Felder haben das Präfix &quot;AAI&quot;
+* Alle Felder haben das Präfix „AAI“
 * Für Touchpoint-Felder:
-   * Für Felder, die Teil des Punktwerts XDM sind, werden sie in CJA als `AAI T {field name}`
-   * Für Felder, die als passThrough-Spalte enthalten sind, werden sie in Customer Journey Analytics als `AAI T PT {field name}`
+   * Felder, die Teil des XDM-Punktwerts sind, werden in CJA als `AAI T {field name}` angezeigt.
+   * Felder, die als Passthrough-Spalte enthalten sind, werden in CJA als `AAI T PT {field name}` angezeigt.
 * Für Konversionsfelder:
-   * Für Felder, die Teil des Punktwerts XDM sind, werden sie in CJA als `AAI C {field name}`
-   * Für Felder, die als passThrough-Spalte enthalten sind, werden sie in Customer Journey Analytics als `AAI C PT {field name}`
+   * Felder, die Teil des XDM-Punktwerts sind, werden in CJA als `AAI C {field name}` angezeigt.
+   * Felder, die als Passthrough-Spalte enthalten sind, werden in CJA als `AAI C PT {field name}` angezeigt.
 
 **Bestellungen mit beeinflussten und inkrementellen Scores**
 

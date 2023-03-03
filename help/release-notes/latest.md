@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: b73404d9594b0915cea64f4016c9c7b36c3aaf01
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 80%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Aktualisierung für CJA-Zielgruppen** | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zielgruppe ein Experience Platform-Streaming-Segment. Ein Streaming-Segment wird nur dann erstellt, wenn für Ihre Organisation Streaming-Segmentierung eingerichtet ist. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#after-audience-created) | Nicht angegeben | 3. Februar 2023 |
 | **Ausblenden von Datumsbereichen für den Vergleich in mobilen Scorecards** | Bei mobilen Scorecards können Sie jetzt Vergleichsdatumsbereiche ausblenden. | Nicht angegeben | 8. Februar 2023 |
 | **Kalenderaktualisierungen in Workspace** | <ul><li>Ankerbedienfielddaten: Sie können die Datumsbereichskomponenten im Verhältnis zum Bedienfeldkalender festlegen. [Weitere Informationen](/help/components/date-ranges/calendar.md)</li><li>Aktualisierungen des Kalenderstils: Die Kalenderstile in der gesamten Benutzeroberfläche wurden aktualisiert, um einen konsistenteren und benutzerfreundlicheren Workflow zu bieten.</li><li>Aktualisierungen der Kalenderformel: Wenn Sie relative Daten verwenden, spiegeln alle Kalenderformeln den Beginn des Bedienfelddatumsbereichs wider. [Weitere Informationen](/help/components/date-ranges/calendar.md)</li></ul> | Nicht angegeben | 8. Februar 2023 |
-| **Aktualisierungen des Datumsbereichs des Bedienfelds** | In Workspace wurden die folgenden Verbesserungen hinzugefügt:<ul><li>Ab der Februar-Version basieren die Komponenten- und Datenvorschau auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen. </li><li>Alle angezeigten Dimensionselemente sind basierend auf dem Datumsbereich des Bedienfelds verfügbar.</li><li>Alle Datumsvorschauen im Segment und in den Generator für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds (sofern nicht von den Komponentenmanagern zugegriffen wird, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen).</li><li>Bei jeder Datenvorschau werden Daten oder Komponenten basierend auf dem Datumsbereich des Bedienfelds angezeigt.</li></ul> | Nicht angegeben | 8. Februar 2023 |
+| **Aktualisierungen des Datumsbereichs des Bedienfelds** | In Workspace wurden die folgenden Verbesserungen hinzugefügt:<ul><li>Ab der Februarversion basieren die Komponenten- und Datenvorschauen auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen. </li><li>Alle angezeigten Dimensionselemente sind basierend auf dem Datumsbereich des Bedienfelds verfügbar.</li><li>Alle Datumsvorschauen im Segment und Generatoren für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds (sofern nicht von den Komponenten-Managern darauf zugegriffen wird, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen).</li><li>Bei jeder Datenvorschau werden Daten oder Komponenten basierend auf dem Datumsbereich des Bedienfelds angezeigt.</li></ul> | Nicht angegeben | 8. Februar 2023 |
 | **Zeilen-/Spaltenfilter für Adobe Analytics Source Connector-Streaming** | Analytics Source Connector in Adobe Experience Platform ermöglicht jetzt das Filtern von Analytics-Daten, mit denen Profile im [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) vorausgefüllt werden.<p>Die Filterung auf Zeilenebene hilft, die Anzahl der mit Profilen verknüpften Ereignisse zu reduzieren. Die Filterung auf Spaltenebene hilft, die Vielfalt der Ereignisse selbst zu reduzieren, und ermöglicht es Ihnen so, die Nutzung von Profilberechtigungen zu optimieren. Diese Filterung gilt nur für Daten, die an das Echtzeit-Kundenprofil und den [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) gesendet werden.<p>**Die Filterung wirkt sich nicht auf die Daten aus, die zur Verwendung in Anwendungen wie Customer Journey Analytics an Data Lake gesendet werden**. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de#filtering-for-profile) | Nicht angegeben | Geplant für den 29. März 2023 |
 
 {style=&quot;table-layout:auto&quot;}
@@ -36,7 +36,7 @@ AN-309106
 
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| Keine aktuellen Hinweise | nicht angegeben | Nicht angegeben |
+| Keine aktuellen Hinweise | Nicht angegeben | Nicht angegeben |
 
 {style=&quot;table-layout:auto&quot;}
 

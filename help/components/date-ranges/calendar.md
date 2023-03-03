@@ -7,7 +7,7 @@ exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
 source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -37,18 +37,18 @@ Sie können Datums- (und Zeitdimensionen) mittels Drag-and-Drop in einem Workspa
 
 Wenn Sie in Workspace arbeiten, können Sie die Datumsbereichskomponenten relativ zum Bedienfeldkalender festlegen. Drei gängige Anwendungsfälle, in denen relative Bedienfelddaten wirksam werden, sind Kombinationsdiagramme, Zusammenfassung der Schlüsselmetriken und Datumsbereiche der Freiformtabelle.
 
-Verwenden relativer Bedienfelddatumsbereiche
+So verwenden Sie relative Datumsbereiche im Bedienfeld
 
 1. Wählen Sie die Registerkarte **Arbeitsbereich** aus.
 1. Wählen Sie **Leeres Projekt** aus.
 1. Fügen Sie Dimensionen, Metriken und Segmente über die linke Leiste hinzu.
 1. Klicken Sie auf das Feld für den Datumsbereich des Bedienfelds, um in die Einstellung für den relativen Datumsbereich des Bedienfelds umzuschalten.
 1. Wählen Sie **Erstellen von Datumsbereichskomponenten relativ zum Bedienfeldkalender** aus.
-   * Wählen Sie die Option aus, um die Komponenten für den Datumsbereich relativ zum Bedienfeldkalender zu gestalten.
+   * Wählen Sie die Option aus, damit sich die Komponenten für den Datumsbereich relativ zum Bedienfeldkalender verhalten.
 Wenn relative Datumswerte ausgewählt sind, basieren rollierende Datumswerte auf dem Startdatum des Bedienfeldkalenders und nicht auf dem heutigen Datum.
-   * Wenn diese Option nicht ausgewählt ist, basieren rollierende Datumswerte auf dem heutigen Datum.
+   * Ist diese Option nicht ausgewählt, basieren rollierende Datumswerte auf dem heutigen Datum.
 
-   ![relative Bedienfelddaten](assets/relative-date-selected.png){width="60%"}
+   ![relative Bedienfeld-Datumsangaben](assets/relative-date-selected.png){width="60%"}
 
 1. Klicken Sie auf **Anwenden**.
 Die relativen Daten werden oben rechts angezeigt.
@@ -61,19 +61,19 @@ Beachten Sie bei der Verwendung relativer Bedienfelddatumsbereiche die folgenden
 
 ### Formeln und relative Datumsbereiche {#formula-relative-dates}
 
-Wenn Sie relative Datumswerte ausgewählt haben, verwenden alle Datumsformeln das Startdatum des Bedienfelds als Ausgangspunkt.
+Wenn Sie relative Datumsangaben ausgewählt haben, verwenden alle Datumsformeln das Startdatum des Bedienfelds als Ausgangspunkt.
 
 ### Benutzerdefinierte Kalender und relative Datumsbereiche {#custom-calendar-formulas}
 
-Wenn Sie einen wöchentlichen benutzerspezifischen Kalender verwenden und Monate oder Jahre hinzufügen, berechnet die Formel den Versatz des Tages im angegebenen Zeitraum. Das tatsächliche Datum kann sich aufgrund des Versatzes unterscheiden. Durch die Formel wird der Tag ausgewählt, der an derselben Stelle im benutzerdefinierten Kalender landet. Beispielsweise der dritte Freitag der dritten Woche in einem benutzerdefinierten Kalender.
+Wenn Sie einen wöchentlichen benutzerspezifischen Kalender verwenden und Monate oder Jahre hinzufügen, berechnet die Formel den Versatz des Tages im angegebenen Zeitraum. Das tatsächliche Datum kann sich aufgrund des Versatzes unterscheiden. Durch die Formel wird der Tag ausgewählt, der an derselben Stelle im benutzerdefinierten Kalender liegt, beispielsweise der dritte Freitag der dritten Woche in einem benutzerdefinierten Kalender.
 
-### Über Segmente, die rollierende Datumswerte und relative Datumsbereiche für Bedienfelder verwenden {#segments-relative-dates}
+### Über Segmente, die rollierende Datumsangaben und relative Bedienfeld-Datumsbereiche verwenden {#segments-relative-dates}
 
-Wenn Sie ein Segment erstellen oder ein Segment mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Segmentvorschau klicken, beginnt das rollierende Datum ab *Heute* anstelle des Startdatums des Bedienfelds. Daher stimmt die Vorschau für das Segment nicht überein, wenn Sie das Segment in der Tabelle verwenden. Die Vorschau ist betroffen, nicht das Segment selbst.
+Wenn Sie ein Segment erstellen oder ein Segment mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Segmentvorschau klicken, beginnt das rollierende Datum ab *Heute* anstelle des Startdatums des Bedienfelds. Daher stimmt die Vorschau für das Segment nicht, wenn Sie das Segment in der Tabelle verwenden. Die Vorschau ist zwar falsch, nicht aber das Segment selbst.
 
-## Richtlinien für Bereichsdatumsbereiche und -vorschauen {#guidelines-panel-dates}
+## Richtlinien für Panel-Datumsbereiche und Vorschauen {#guidelines-panel-dates}
 
-* Ab der Februar-Version basieren die Komponenten- und Datenvorschau auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen.
+* Ab der Februarversion basieren die Komponenten- und Datenvorschauen auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen.
 * Alle in der linken Leiste aufgelisteten Komponenten sind basierend auf dem Datumsbereich des Bedienfelds verfügbar.
-* Alle Datumsvorschauen im Segment und in den Generator für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds (sofern nicht von den Komponentenmanagern zugegriffen wird, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen).
+* Alle Datumsvorschauen im Segment und Generatoren für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds (sofern nicht von den Komponenten-Managern darauf zugegriffen wird, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen).
 * Bei jeder Datenvorschau werden Daten oder Komponenten basierend auf dem Datumsbereich des Bedienfelds angezeigt.
