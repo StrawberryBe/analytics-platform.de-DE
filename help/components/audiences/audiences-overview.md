@@ -3,9 +3,9 @@ title: Veröffentlichung von CJA-Zielgruppen – Überblick
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Das Veröffentlichen von Zielgruppen bietet die Möglichkeit, die in CJA vorhand
 * Verwenden der Zielgruppe für eine Journey in Adobe Journey Optimizer.
 * Exportieren der Zielgruppe zu einem Drittanbieter über ein Experience Platform-Ziel.
 * Anreichern des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in CJA abgeleitet wurden.
-* Dies alles mit minimaler Latenz nach der Publikation. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency)
+* Dies alles geschieht mit minimaler Latenz nach der Publikation der Zielgruppe. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#latency)
 * Veröffentlichen einmaliger oder wiederkehrender Zielgruppen.
 
 ## Wichtige Terminologie
