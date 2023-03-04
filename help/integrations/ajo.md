@@ -2,10 +2,10 @@
 title: Integrieren von Adobe Journey Optimizer (AJO) in Customer Journey Analytics (CJA)
 description: Binden Sie die von AJO generierten Daten ein und analysieren Sie diese mit Analysis Workspace in CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 9aed4e724c564272071b96c037f4eb0e82572e6f
+source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 89%
 
 ---
 
@@ -22,6 +22,14 @@ Adobe Experience Platform dient als zentrale Datenquelle und Bindeglied zwischen
 ## Erstellen einer Verbindung in Customer Journey Analytics
 
 Sobald sich Journey Optimizer-Daten in Adobe Experience Platform befinden, können Sie eine [Verbindung erstellen](/help/connections/create-connection.md), die auf Ihrem Journey Optimizer-Datensatz basiert. Wählen Sie den Datensatz aus, den Sie an Platform gesendet haben.
+
+| Datensatz | Typ des Datensatzes | Verbindungseinstellungen | Beschreibung |
+| --- | --- | --- | --- |
+| Datensatz mit AJO-Nachrichten-Feedback-Ereignissen | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Ereignisse zum Nachrichtenversand, z. B.[!UICONTROL Sendungen]&#39; und &#39;[!UICONTROL Bounces]&quot;. |
+| AJO-E-Mail-Tracking-Erlebnisdatensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Ereignisse wie &quot;[!UICONTROL Öffnungen]&#39;, &#39;[!UICONTROL Klicks]&quot;, und &quot;[!UICONTROL Abmeldungen]&quot;. |
+| AJO Push Tracking Experience Event Datensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse wie &quot;[!UICONTROL App-Starts]&quot;. |
+| Journey-Schrittereignisse | Ereignis-   | Personen-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Enthält Ereignisse, die zeigen, welche Profile an den einzelnen Knoten der Journey beteiligt waren. |
+| AJO-Entitätsdatensatz | Datensatz | Schlüssel: `_id`<br>Übereinstimmungsschlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Classifications, die Journey- und Campaign-Metadaten mit allen AJO-Ereignisdaten verknüpfen. |
 
 ## Konfigurieren der Datenansicht für Journey Optimizer-Dimensionen und -Metriken
 

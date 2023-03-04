@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Works
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Customer Journey Analytics unterstützt folgende Anwendungsfälle:
 
 Bevor Sie Customer Journey Analytics verwenden können, müssen die folgenden Voraussetzungen erfüllt sein:
 
-* Ihr Unternehmen hat einen aktiven Vertrag mit Adobe Analytics für Select, Prime oder Ultimate mit dem Add-on Customer Journey Analytics. Wenn Sie sich nicht sicher sind, welche Art von Vertrag Sie haben oder ob Sie über das Add-on CJA verfügen, wenden Sie sich an den Account Manager Ihres Unternehmens.
+* Ihr Unternehmen hat einen aktiven Vertrag mit Adobe Analytics für Select, Prime oder Ultimate mit dem Add-on Customer Journey Analytics. Wenn Sie sich nicht sicher sind, welche Art von Vertrag Sie haben, oder nicht sicher sind, ob Sie über das CJA-Add-on verfügen, wenden Sie sich an Ihr Adobe Account Team.
 * Ihr Unternehmen wurde für Adobe Experience Platform bereitgestellt.
 * Sie können Customer Journey Analytics auch als eigenständiges Produkt erwerben, ohne dass Adobe Analytics erforderlich ist.
 

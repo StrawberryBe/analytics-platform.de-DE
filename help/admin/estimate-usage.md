@@ -4,10 +4,10 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zur
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 9f2d0d00872ad18c73bf67184e44f687a0b156a3
-workflow-type: ht
+source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisda
    * Ändern Sie Ihre [Datenspeicherungseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention).
    * [Löschen Sie alle nicht verwendeten Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
    * [Löschen Sie einen Datensatz in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
-   * Wenden Sie sich an Ihren Kundenbetreuer von Adobe, um eine Lizenz für eine zusätzliche Kapazität zu erwerben.
+   * Wenden Sie sich an Ihr Adobe Account Team, um zusätzliche Kapazitäten zu lizenzieren.
 
 ## Erstellen eines Analysis Workspace-Projekts mit allen Ereignisdaten {#workspace-event-data}
 
