@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 14bcb1364e59ee02073829050daa068c6203a93c
-workflow-type: ht
-source-wordcount: '1811'
-ht-degree: 100%
+source-git-commit: 05cc4410d78e69919447356ea343543c3415afd7
+workflow-type: tm+mt
+source-wordcount: '2370'
+ht-degree: 76%
 
 ---
 
@@ -215,7 +215,68 @@ Um eine Komponente zu entfernen, die auf die gesamte Scorecard angewendet wird, 
 
 ![Entfernen von Komponenten](assets/new_remove.png)
 
-## Vorschau der Scorecard {#preview}
+## Erstellen von Datenspeichern {#create-data-story}
+
+Eine Datengeschichte ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren.
+
+Wenn Sie sich beispielsweise auf den Web-Traffic konzentrieren, kann es sich bei Ihrer wichtigsten Metrik um Besuche handeln, Sie können aber auch an neuen Besuchern oder Unique Visitors interessiert sein und Sie möchten möglicherweise Daten sehen, die nach Web-Seite oder Gerätetyp aufgeschlüsselt sind, von dem der Traffic stammt. Datengeschichten in mobilen Scorecard-Projekten ermöglichen es Ihnen, die wichtigsten Metriken in den Vordergrund zu stellen und gleichzeitig die gesamte Geschichte mit mehreren Detailfolien hinter den Metriken zu erzählen.
+
+Sehen Sie sich das Video an, um mehr über das Erstellen von Datenmeldungen in mobilen Scorecard-Projekten in Analysis Workspace zu erfahren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+**So erstellen Sie einen Datenverlauf**
+
+Erstellen Sie Ihren Datenverlauf, indem Sie einer Kachel mehrere Detailfolien hinzufügen.
+
+1. Beginnen Sie mit einem mobilen Scorecard-Projekt.
+1. Wählen Sie eine Kachel aus, aus der Sie eine Geschichte erstellen möchten.
+   ![Erstellen eines Datenverlaufs](assets/data-story1.png)
+   ![Erstellen von Datenverlaufssymbolen](assets/create-data-story.png){width=".50%"}
+1. Fügen Sie Folien hinzu, um Ihre Datenstory zu erstellen. Die erste Folie wird standardmäßig generiert.
+Um neue Folien hinzuzufügen, halten Sie den Mauszeiger über eine Folie oder klicken Sie auf sie. Wählen Sie dann aus den verfügbaren Optionen aus:
+   * Tippen Sie auf das Pluszeichen (+), um eine neue Folie zu erstellen.
+   * Tippen Sie auf das Symbol Duplizieren , um die vorhandene Folie zu duplizieren.
+1. Wenn Sie eine leere Folie erstellen, ziehen Sie Komponenten aus der linken Leiste oder wählen Sie ein Layout aus, um die Folie automatisch mit den Daten aus der Kachel zu füllen.
+   ![Erstellen eines Datenverlaufs](assets/data-story2.png)
+Um eine Folie zu löschen, tippen Sie auf das Papierkorbsymbol.
+
+### Anpassen einer Datengeschichte {#customize-data-story}
+
+Mit Datengeschichten können Sie alles anpassen, sodass Sie Informationen, die Sie freigeben möchten, freigeben und alles ausschließen können, was Sie nicht benötigen. Sie können Kacheln und einzelne Folien anpassen, um Filter hinzuzufügen, Aufschlüsselungen anzuzeigen, das Layout zu ändern und die Visualisierungen zu ändern.
+
+**Anpassen von Kacheln**
+
+1. Tippen Sie auf eine Kachel. Die ausgewählte Kachel wird blau dargestellt und im rechten Bereich werden die Kacheleigenschaften angezeigt.
+1. Ändern Sie den Titel, den Diagrammtyp und andere Optionen für Kacheln.
+1. Ziehen Sie eine Komponente auf die Kachel.
+   ![Erstellen eines Datenverlaufs](assets/data-story3.png)
+Wenn Sie eine Komponente, z. B. eine Visualisierung, auf eine Kachel ziehen, wird die Komponente auf alle Datenverlauf-Folien angewendet.
+1. Um nur eine Änderung des Titels vorzunehmen, halten Sie die Umschalttaste gedrückt, um die Änderung anzuwenden.
+   ![Erstellen eines Datenverlaufs](assets/data-story4.png)
+
+>[!NOTE]
+>Folien übernehmen Komponenten von der Kachel, Kacheln übernehmen jedoch keine Komponenten von Folien.
+
+**So passen Sie einzelne Folien an**
+
+Sie können die Visualisierung für einzelne Folien in einem Datenverlauf ändern. Sie können beispielsweise einen horizontalen Balken für eine bestimmte Folie in einen Zweitausendgraphen ändern. Sie können auch das Layout ändern. Siehe [Detailfolien anpassen](#customize-detail-slide).
+
+### Vorschau eines Datenverlaufs {#preview-data-story}
+
+Nachdem Sie einen Datenverlauf erstellt haben, verwenden Sie die **Vorschau** -Schaltfläche, um einen Datenverlauf so anzuzeigen und mit ihm zu interagieren, als wären Sie ein App-Benutzer. Informationen zur Vorschau Ihrer Datengeschichte finden Sie unter [Vorschau einer Scorecard anzeigen](#preview)
+
+### Zwischen Kacheln und Folien navigieren {#navigate-tiles-slides}
+
+In der Navigationsleiste werden Symbole angezeigt, die den Inhalt der einzelnen Folien darstellen. Die Navigationsleiste erleichtert die Navigation zu einer bestimmten Folie, wenn Sie viele Folien haben.
+
+Um zwischen der Kachel und den Folien zu wechseln, tippen Sie auf die Navigationsleiste.
+![Erstellen eines Datenverlaufs](assets/data-story5.png)
+![Erstellen eines Datenverlaufs](assets/data-story-nav.png){width="45%"}
+
+Sie können auch mit den Pfeilen auf der Tastatur hin- und hernavigieren oder eine Komponente auswählen und zum Bildlauf links oder rechts auf dem Bildschirm gedrückt halten.
+
+## Scorecards in der Vorschau anzeigen {#preview}
 
 Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffentlichung in der Analytics-Dashboards-App aussieht und funktioniert.
 
@@ -235,13 +296,13 @@ Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffen
 
    * Klicken und halten Sie, um das Drücken und Halten des Fingers auf dem Bildschirm des Smartphones zu simulieren. Dies ist für die Interaktion mit den Visualisierungen in der Detailansicht nützlich.
 
-## Scorecard benennen {#name}
+## Benennen von Scorecards {#name}
 
 Um die Scorecard zu benennen, klicken Sie auf den Namensbereich in der oberen linken Ecke des Bildschirms und geben Sie den neuen Namen ein.
 
 ![Scorecards benennen](assets/new_name.png)
 
-## Scorecard freigeben {#share}
+## Scorecards freigeben {#share}
 
 So geben Sie die Scorecard für einen ausführenden Benutzer frei:
 
