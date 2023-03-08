@@ -5,10 +5,10 @@ title: Planen von Projekten
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 5adf47139a3a083f90007dfab3bc63fd187ddcff
+source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 89%
+source-wordcount: '886'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ Im Manager für geplante Projekte können wiederkehrende Projektzeitpläne bearb
 | [!UICONTROL Inhaber] | Die Person, die das Projekt erstellt hat und dafür verantwortlich ist. |
 | [!UICONTROL Tags] | (Optional) Mit Tagging können Projekte praktisch organisiert werden. Alle Benutzer können Tags erstellen und eines oder mehrere Tags auf ein Projekt anwenden. Sie sehen Tags jedoch nur für die Projekte, deren Verantwortlicher Sie sind oder die für Sie freigegeben wurden. |
 | [!UICONTROL Gesendet an] | Der/die Empfänger dieses geplanten Projekts. |
-| [!UICONTROL Ablaufdatum] | Das standardmäßige Ablaufdatum hängt von der Häufigkeit des Zeitplans ab. Siehe &quot;Ablaufdaten für geplante Projekte&quot;unten. |
+| [!UICONTROL Ablaufdatum] | Sie können das Ablaufdatum auf bis zu ein Jahr festlegen, unabhängig von der Häufigkeit des Zeitplans. |
 | [!UICONTROL Häufigkeit] | Wie oft Sie dieses geplante Projekt an den/die Empfänger senden möchten. |
 | [!UICONTROL Durchführungszeit] | Zu welcher Tageszeit dieses geplante Projekt gesendet wird.  |
 | [!UICONTROL Anzahl der Abfragen] | Die Anzahl der Abfragen für dieses Projekt. |
@@ -76,15 +76,6 @@ Die folgenden Aktionen werden im Manager für geplante Projekte häufig ausgefü
 | **[!UICONTROL Zeitplan-ID anzeigen]** | Navigieren Sie oben rechts zu den Spaltenoptionen und fügen Sie der Tabelle die Spalte „Zeitplan-ID“ hinzu. Die Zeitplan-ID ist oft zum Debugging nützlich. |
 
 Im Manager für geplante Projekte werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Wenn das Benutzerkonto in der Anwendung deaktiviert wird, werden alle geplanten Bereitstellungen gestoppt.
-
-## Ablaufdaten für geplante Projekte {#expiration}
-
-Die Ablaufdaten für geplante Projekte hängen von der geplanten Versandhäufigkeit ab:
-
-* Stündliche Sendungen laufen in einer Woche ab.
-* Die täglichen Sendungen laufen in einem Monat ab.
-* Wöchentliche Sendungen laufen in 6 Monaten ab.
-* Die monatlichen/jährlichen Sendungen laufen in einem Jahr ab.
 
 ## Passwortschutz für ein geplantes Projekt {#password}
 
