@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 05cc4410d78e69919447356ea343543c3415afd7
+source-git-commit: 7065215f89f964e7504f3e95996b352410b89779
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 76%
@@ -225,7 +225,7 @@ Sehen Sie sich das Video an, um mehr über das Erstellen von Datenmeldungen in m
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
 
-**So erstellen Sie einen Datenverlauf**
+**So erstellen Sie einen Datenverlauf** {#data-story-create}
 
 Erstellen Sie Ihren Datenverlauf, indem Sie einer Kachel mehrere Detailfolien hinzufügen.
 
