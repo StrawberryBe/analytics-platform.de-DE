@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c4dc2f66e80644ef6f1b68bed4d16593785764b2
+source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 40%
+source-wordcount: '345'
+ht-degree: 41%
 
 ---
 
@@ -20,10 +20,10 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Datenwörterbuch in Analysis Workspace** | Das Datenwörterbuch hilft Benutzern und Administratoren, die Komponenten (Dimensionen, Metriken) in ihrer CJA-Umgebung zu verfolgen und besser zu verstehen. Weitere Informationen | 8. März 2023 | 22. März 2023 |
+| **Datenwörterbuch in Analysis Workspace** | Das Datenwörterbuch hilft Benutzern und Administratoren, die Komponenten (Dimensionen, Metriken) in ihrer CJA-Umgebung zu verfolgen und besser zu verstehen. [Weitere Informationen](/help/components/data-dictionary/data-dictionary-overview.md) | 8. März 2023 | 22. März 2023 |
 | **Datenmeldungen in mobilen Dashboards** | Mit Datenspeicher können Sie mehrere anpassbare Detailansichten zu Kacheln in mobilen Scorecard-Projekten hinzufügen. Verwenden Sie Datengeschichten, um tiefer in wichtige Treiber, zugehörige Metriken und verschiedene Schritte entlang der Journey zu tauchen. Sie können diese Ansichten einfach durchwischen, um die gesamte Geschichte hinter Ihren Schlüsselmetriken zu verstehen. [Weitere Informationen](/help/mobile-app/create-scorecard.md#create-data-story) | Nicht angegeben | 8. März 2023 |
 | **Ablaufdaten für geplante Projekte** | Sie können die maximalen Ablaufdaten für geplante Projekte auf bis zu ein Jahr festlegen, unabhängig von der Häufigkeit des Zeitplans. [Weitere Informationen](/help/analysis-workspace/curate-share/t-schedule-report.md) | Nicht angegeben | 8. März 2023 |
-| **Linkfreigabe für Projekte (keine Anmeldung erforderlich) - Nur privater Beta-Zugriff** | Sie können jetzt schreibgeschützte Links zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf CJA haben. Sie können Projektlinks für Personen außerhalb Ihres Unternehmens oder für Mitarbeiter innerhalb Ihres Unternehmens freigeben, die nicht für Customer Journey Analytics bereitgestellt sind. Weitere Informationen (zu folgen)<p>Wenden Sie sich an Ihr Adobe Account Team, um an die private Betaversion teilzunehmen. | 15. März 2023 (private Beta-Version) | April 2023 |
+| **Linkfreigabe für Projekte (keine Anmeldung erforderlich) - Nur privater Beta-Zugriff** | Sie können jetzt schreibgeschützte Links zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf CJA haben. Sie können Projektlinks für Personen außerhalb Ihres Unternehmens oder für Mitarbeiter innerhalb Ihres Unternehmens freigeben, die nicht für Customer Journey Analytics bereitgestellt sind. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md)<p>Wenden Sie sich an Ihr Adobe Account Team, um an die private Betaversion teilzunehmen. | 15. März 2023 (private Beta-Version) | April 2023 |
 
 {style="table-layout:auto"}
 

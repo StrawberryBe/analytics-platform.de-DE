@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie freigebbare Links zu Projekten oder Visualisi
 keywords: Analysis Workspace-Freigabe
 title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '294'
-ht-degree: 100%
+source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 81%
 
 ---
 
 # Erstellen von freigebbaren Links
 
-Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Benutzer, die einen Link erhalten, müssen sich bei Customer Journey Analytics anmelden, bevor sie zum Projekt gelangen können.
+Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Linktypen muss sich der Empfänger bei Adobe Analytics anmelden, bevor er auf das Projekt zugreift, bei anderen dagegen nicht.
 
 ## Projekt-Link abrufen {#project-link}
 
@@ -20,9 +20,17 @@ Um einen Link zum vollständigen Projekt freizugeben, klicken Sie auf **[!UICONT
 
 ![](assets/get-project-link.png)
 
+## Öffentlichen Link abrufen
+
+{{release-limited-testing-section}}
+
+Sie können einen schreibgeschützten Link zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf Adobe Analytics haben.
+
+Weitere Informationen finden Sie unter &quot;Teilen eines öffentlichen Links für andere (keine Anmeldung erforderlich)&quot;im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
+
 ## Bedienfeld- oder Visualisierungs-Link abrufen {#panel-link}
 
-Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. einem Bedienfeld oder einer individuellen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzer auf wichtige Erkenntnisse im Projekt zu lenken.
+Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. einem Bedienfeld oder einer individuellen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzerinnen und Benutzer auf wichtige Erkenntnisse im Projekt zu lenken.
 
 * Klicken Sie in der Kopfzeile eines Bedienfelds mit der rechten Maustaste auf **[!UICONTROL Bedienfeld-Link abrufen]**.
 * Klicken Sie in einer Tabellen- oder Visualisierungskopfzeile mit der rechten Maustaste auf **[!UICONTROL Visualisierungs-Link abrufen]**.
