@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b73404d9594b0915cea64f4016c9c7b36c3aaf01
+source-git-commit: c6714b375c8e74f12018fe54d80eb411e55e7097
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 96%
+source-wordcount: '276'
+ht-degree: 49%
 
 ---
 
-# Aktuelle Versionshinweise zu Customer Journey Analytics (CJA) (Februar 2023)
+# Aktuelle Customer Journey Analytics-Versionshinweise (CJA) (März 2023)
 
-**Letzte Aktualisierung**: 23. Februar 2023
+**Zuletzt aktualisiert**: 8. März 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,25 +20,23 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Aktualisierung für CJA-Zielgruppen** | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zielgruppe ein Experience Platform-Streaming-Segment. Ein Streaming-Segment wird nur dann erstellt, wenn für Ihre Organisation Streaming-Segmentierung eingerichtet ist. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#after-audience-created) | Nicht angegeben | 3. Februar 2023 |
-| **Ausblenden von Datumsbereichen für den Vergleich in mobilen Scorecards** | Bei mobilen Scorecards können Sie jetzt Vergleichsdatumsbereiche ausblenden. | Nicht angegeben | 8. Februar 2023 |
-| **Kalenderaktualisierungen in Workspace** | <ul><li>Ankerbedienfielddaten: Sie können die Datumsbereichskomponenten im Verhältnis zum Bedienfeldkalender festlegen. [Weitere Informationen](/help/components/date-ranges/calendar.md)</li><li>Aktualisierungen des Kalenderstils: Die Kalenderstile in der gesamten Benutzeroberfläche wurden aktualisiert, um einen konsistenteren und benutzerfreundlicheren Workflow zu bieten.</li><li>Aktualisierungen der Kalenderformel: Wenn Sie relative Daten verwenden, spiegeln alle Kalenderformeln den Beginn des Bedienfelddatumsbereichs wider. [Weitere Informationen](/help/components/date-ranges/calendar.md)</li></ul> | Nicht angegeben | 8. Februar 2023 |
-| **Aktualisierungen des Datumsbereichs des Bedienfelds** | In Workspace wurden die folgenden Verbesserungen hinzugefügt:<ul><li>Ab der Februarversion basieren die Komponenten- und Datenvorschauen auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen. </li><li>Alle angezeigten Dimensionselemente sind basierend auf dem Datumsbereich des Bedienfelds verfügbar.</li><li>Alle Datumsvorschauen im Segment und Generatoren für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds (sofern nicht von den Komponenten-Managern darauf zugegriffen wird, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen).</li><li>Bei jeder Datenvorschau werden Daten oder Komponenten basierend auf dem Datumsbereich des Bedienfelds angezeigt.</li></ul> | Nicht angegeben | 8. Februar 2023 |
-| **Zeilen-/Spaltenfilter für Adobe Analytics Source Connector-Streaming** | Analytics Source Connector in Adobe Experience Platform ermöglicht jetzt das Filtern von Analytics-Daten, mit denen Profile im [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) vorausgefüllt werden.<p>Die Filterung auf Zeilenebene hilft, die Anzahl der mit Profilen verknüpften Ereignisse zu reduzieren. Die Filterung auf Spaltenebene hilft, die Vielfalt der Ereignisse selbst zu reduzieren, und ermöglicht es Ihnen so, die Nutzung von Profilberechtigungen zu optimieren. Diese Filterung gilt nur für Daten, die an das Echtzeit-Kundenprofil und den [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) gesendet werden.<p>**Die Filterung wirkt sich nicht auf die Daten aus, die zur Verwendung in Anwendungen wie Customer Journey Analytics an Data Lake gesendet werden**. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de#filtering-for-profile) | Nicht angegeben | Geplant für den 29. März 2023 |
+| **Datenwörterbuch in Analysis Workspace** | Das Datenwörterbuch hilft Benutzern und Administratoren, die Komponenten (Dimensionen, Metriken) in ihrer CJA-Umgebung zu verfolgen und besser zu verstehen. Weitere Informationen | 8. März 2023 | 22. März 2023 |
+| **Datenmeldungen in mobilen Dashboards** | Mit Datenspeicher können Sie mehrere anpassbare Detailansichten zu Kacheln in mobilen Scorecard-Projekten hinzufügen. Verwenden Sie Datengeschichten, um tiefer in wichtige Treiber, zugehörige Metriken und verschiedene Schritte entlang der Journey zu tauchen. Sie können diese Ansichten einfach durchwischen, um die gesamte Geschichte hinter Ihren Schlüsselmetriken zu verstehen. Weitere Informationen | Nicht angegeben | 8. März 2023 |
+| **Ablaufdaten für geplante Projekte** | Sie können die maximalen Ablaufdaten für geplante Projekte auf bis zu ein Jahr festlegen, unabhängig von der Häufigkeit des Zeitplans. | Nicht angegeben | 8. März 2023 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-AN-309106
+AN-309729; AN-309975; AN-311779; AN-313095;
 
 ## Wichtige Hinweise für CJA-Admins
 
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| Keine aktuellen Hinweise | Nicht angegeben | Nicht angegeben |
+| Verfügbarkeit von Analytics Source Connector | 15. Februar 2023 | Am 28. Februar 2023 wurde der Analytics Source Connector im neuen Adobe Experience Platform-Rechenzentrum in Kanada zur Verfügung gestellt. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verwandte Ressourcen
 
