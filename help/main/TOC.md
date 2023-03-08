@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 99%
 
 ---
 
@@ -199,6 +199,7 @@ ht-degree: 100%
 
 + Komponenten {#cja-components}
    + [Komponentenübersicht](../components/overview.md)
+   + [Komponentenbeschreibungen hinzufügen](../components/add-component-descriptions.md)
    + Anmerkungen {#annotations}
       + [Anmerkungen – Übersicht](../components/annotations/overview.md)
       + [Erstellen von Anmerkungen](../components/annotations/create-annotations.md)
@@ -239,6 +240,7 @@ ht-degree: 100%
          + [Berechnete Metriken genehmigen](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Berechnete Metriken freigeben](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Manager für berechnete Metriken](../components/calc-metrics/cm-workflow/cm-manager.md)
+      + [Standardberechnete Metriken](../components/calc-metrics/default-calcmetrics.md)
       + [Grundlegende Funktionen](../components/calc-metrics/cm-functions.md)
       + [Erweiterte Funktionen](../components/calc-metrics/cm-adv-functions.md)
    + Datumsbereiche {#cja-date-ranges}
@@ -248,7 +250,11 @@ ht-degree: 100%
       + [Überblick über den Kalender](../components/date-ranges/calendar.md)
       + [Benutzerdefinierte Datumsbereiche erstellen](../components/date-ranges/custom-date-ranges.md)
       + [Datumsvergleich](../components/date-ranges/time-comparison.md)
-
+   + Datenwörterbuch {#data-dictionary}
+      + [Datenwörterbuch – Überblick](../components/data-dictionary/data-dictionary-overview.md)
+      + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
+      + [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](../components/data-dictionary/edit-entries-data-dictionary.md)
+      + [Überwachen des Zustands des Datenwörterbuchs](../components/data-dictionary/monitor-data-dictionary-health.md)
 + Analytics-Dashboards {#cja-dashboards}
    + [Analytics-Dashboards – Übersicht](../mobile-app/home.md)
    + [Kuratoraufgaben](../mobile-app/curator.md)
