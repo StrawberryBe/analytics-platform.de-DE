@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
+source-git-commit: 116000f3dd0212896ca96d7e45e4d4cfc5cdd357
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 74%
+source-wordcount: '2004'
+ht-degree: 75%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 
 In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics (AA) in Customer Journey Analytics (CJA) unterstützt, teilweise unterstützt oder nicht unterstützt werden und welche Funktionen von CJA in AA nicht unterstützt oder verfügbar sind. Diese Listen ändern sich im Laufe der Zeit, wenn CJA Funktionen hinzugefügt werden.
 
-## Vollständig unterstützte Funktionen/Komponenten
+## Vollständig unterstützte Funktionen/Komponenten {#full-support}
 
 | Adobe Analytics-Funktion | Hinweise zur Unterstützung |
 | --- | --- |
@@ -46,9 +46,9 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Kuratierung von VRS-Komponenten | Vollständige Unterstützung; jetzt Teil der Datenansichten. |
 | Streamen von Media Analytics | Mediendaten sind über den Analytics Data Connector als Teil des Bedienfelds „Gleichzeitige Medienbetrachter“ und des Bedienfelds „Bei Medienwiedergabe verbrachte Zeit“ in Workspace verfügbar. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Auf neue Art unterstützt
+## Auf neue Art unterstützt {#new-support}
 
 | Funktion | Hinweise |
 | --- | --- |
@@ -58,7 +58,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobiler Hintergrundtreffer. |
 | Persistenz von Merchandising-Variablen | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) |
 | Kundenattribute | Sie werden jetzt als „Profildatensätze“ bezeichnet und nicht automatisch aus Experience Cloud importiert, sondern müssen erst in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
-| Daten-Feeds | Der Datenexport der ersten Generation von Datensätzen ist über das [AEP Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) und [AEP-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Diese Optionen bieten den Export aller erfassten oder in den AEP Data Lake erfassten Daten auf Treffer-/Zeilenebene. Nachbearbeitungs-Datenspalten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über Berichte verfügbar. |
+| Daten-Feeds | Der Datenexport der ersten Generation von Datensätzen ist über das [AEP Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) und [AEP-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de). Diese Optionen bieten den Export aller erfassten oder in den AEP Data Lake erfassten Daten auf Treffer-/Zeilenebene. Nachbearbeitungs-Datenspalten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über Berichte verfügbar. |
 | Deduplizierung von Metriken | Nun für Metriken in Datenansichten konfiguriert. Die Metrik-Deduplizierung erfolgt auf Personen- oder Sitzungsebene und nicht auf Datensatz-, Datenansichts- oder Verbindungsebene. |
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |
@@ -71,9 +71,9 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Benutzerberechtigungen/Datenzugriffssteuerung | CJA unterscheidet zwischen [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de)-Produktadministrierenden, -Produktprofiladministrierenden und -Benutzenden. Nur Produktadministrierende können von anderen Benutzenden erstellte Verbindungen, Projekte, Filter oder berechnete Metriken erstellen/aktualisieren/löschen, während Produktadministrierende und Produktprofiladministrierende Datenansichten bearbeiten können. Zusätzliche Benutzerberechtigungen sind für Vorgänge wie das Erstellen von berechneten Metriken, Filtern oder Anmerkungen verfügbar. |
 | Verarbeitungsregeln, VISTA-Regeln, Verarbeitungsregeln für Marketing-Kanäle | Wird sowohl für WebSDK-basierte Datensätze als auch für Daten vom Analytics Data Connector über die Adobe Experience Platform-Datenvorbereitungsfunktion unterstützt. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Teilweise Unterstützung
+## Teilweise Unterstützung {#partial}
 
 | Funktion | Hinweise |
 | --- | --- |
@@ -86,9 +86,9 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Verarbeitungsregeln | Auf Datensätze, die auf dem Analytics-Quell-Connector basieren, werden weiterhin Verarbeitungsregeln angewendet. [Datenvorbereitungsfunktionen in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) können auch als Ersatz für Verarbeitungsregeln für Daten verwendet werden, die direkt an Platform übermittelt werden. |
 | A4T | Teilweise Unterstützung wird über Felder im [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) bereitgestellt. Die Unterstützung von A4T-gerechten Namen für die Zielgruppenaktivitäten und -erfahrungen ist geplant. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Derzeit nicht unterstützt, aber geplant
+## Derzeit nicht unterstützt, aber geplant {#planned}
 
 | Funktion | Hinweise |
 | --- | --- |
@@ -104,26 +104,25 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Migrieren von Projekten/Filtern/berechneten Metriken von AA zu CJA | Unterstützung ist geplant. |
 | Datenquellen auf Zusammenfassungsebene | Unterstützung ist geplant. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Unterstützung ist noch nicht geplant
+## Unterstützung ist noch nicht geplant {#not-planned}
 
 | Funktion | Hinweise |
 | --- | --- |
 | Activity Map | Unterstützung ist noch nicht geplant. |
 | Advertising Cloud | Unterstützung ist noch nicht geplant. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Keine Unterstützung geplant
+## Keine Unterstützung geplant {#never}
 
 * Benutzermetriken mit Cross-Device Coop
 * Reports &amp; Analytics-Dashboards
 * Reports &amp; Analytics-Lesezeichen
 * Reports &amp; Analytics-Zielgruppen
-* Mobile Services
 
-## Nicht in Adobe Analytics verfügbare CJA-Funktionen
+## Nicht in Adobe Analytics verfügbare CJA-Funktionen {#cja-not-aa}
 
 In der folgenden Tabelle sind die Funktionen aufgeführt, die in Customer Journey Analytics (CJA) verfügbar sind, in Adobe Analytics (AA) jedoch nicht unterstützt werden.
 
@@ -138,4 +137,4 @@ In der folgenden Tabelle sind die Funktionen aufgeführt, die in Customer Journe
 | SQL-Zugriff | Mit der Option Data Distiller kann CJA die Einschränkungen von Daten beseitigen, die bei der Backend-Verarbeitung der Adobe erfasst wurden. Sie können Ihre Daten mit SQL ändern, neue Werte und Datensätze erstellen, die für Ihr Unternehmen spezifisch sind, und weiter untersuchen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
 | Verbesserte Sicherheits- und Datenschutzoptionen - HIPAA-Bereitschaft | CJA ist HIPAA-fähig und bietet zusätzliche Sicherheitsoptionen für die Einhaltung von Vorschriften. Adobe Analytics ist nicht bereit für HIPAA. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
