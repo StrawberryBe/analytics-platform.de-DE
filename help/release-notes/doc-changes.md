@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
+source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 92%
+source-wordcount: '1566'
+ht-degree: 90%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **März 2023** |  |
+| Erstellen von Datengeschichten in mobilen Scorecards | A [Datenverlauf](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |
 | Funktionsunterstützung | Aktualisiert [Unterstützung von Customer Journey Analytics-Funktionen](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle der Funktionen, die in CJA verfügbar, aber in AA nicht verfügbar oder unterstützt sind. |
 | Standardberechnete Metriken | Es wurden Inhalte hinzugefügt, die die [von Adobe bereitgestellte standardmäßige berechnete Metriken](/help/components/calc-metrics/default-calcmetrics.md). |
 | Datenwörterbuch | <p>Eine neue Dokumentation für das Datenwörterbuch wurde hinzugefügt, einschließlich einer [Übersicht](/help/components/data-dictionary/data-dictionary-overview.md), [Anzeigen](/help/components/data-dictionary/view-data-dictionary.md), [Bearbeiten](/help/components/data-dictionary/edit-entries-data-dictionary.md)und [Überwachung](/help/components/data-dictionary/monitor-data-dictionary-health.md) das Datenwörterbuch.</p><p>Informationen in [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md) wurde aktualisiert, um die Datenwörterbuchfunktionalität zu berücksichtigen.</p> |
