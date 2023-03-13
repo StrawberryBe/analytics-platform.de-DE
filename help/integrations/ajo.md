@@ -2,9 +2,9 @@
 title: Integrieren von Adobe Journey Optimizer (AJO) in Customer Journey Analytics (CJA)
 description: Binden Sie die von AJO generierten Daten ein und analysieren Sie diese mit Analysis Workspace in CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
+source-git-commit: 750e96bdf6f020e0f5c0fbaf95cdd10c42b95e55
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '735'
 ht-degree: 89%
 
 ---
@@ -35,8 +35,10 @@ Sobald sich Journey Optimizer-Daten in Adobe Experience Platform befinden, könn
 
 Sobald eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansichten](/help/data-views/create-dataview.md) erstellen, um die gewünschten Dimensionen und Metriken zu konfigurieren, die in Customer Journey Analytics verfügbar sind.
 
->!![NOTE]
-Die Datenabweichungen zwischen AJO und CJA betragen in der Regel weniger als 1-2 %. Größere Abweichungen sind bei Daten möglich, die innerhalb der letzten zwei Stunden erfasst wurden. Verwenden Sie Datumsbereiche, die den heutigen Tag ausschließen, um Abweichungen aufgrund der Verarbeitungszeit zu vermeiden.
+>[!NOTE]
+>
+>Die Datenabweichungen zwischen AJO und CJA betragen in der Regel weniger als 1-2 %. Größere Abweichungen sind bei Daten möglich, die innerhalb der letzten zwei Stunden erfasst wurden. Verwenden Sie Datumsbereiche, die den heutigen Tag ausschließen, um Abweichungen aufgrund der Verarbeitungszeit zu vermeiden.
+
 
 ### Konfigurieren der Dimensionen in der Datenansicht
 
@@ -58,7 +60,7 @@ Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine u
 | Grund für fehlgeschlagenen E-Mail-Versand | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Komponententyp: Dimension |
 | Grund für Ausschluss vom E-Mail-Versand | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Komponententyp: Dimension |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Konfigurieren von Metriken in der Datenansicht
 
@@ -76,7 +78,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Spam-Beschwerden | Anzahl der Beschwerden wegen Spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `spam_complaint` |
 | Abonnementkündigungen | Anzahl der Abmeldungen. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `unsubscribe` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Konfigurieren von berechneten Metriken in Analysis Workspace
 
@@ -87,4 +89,4 @@ Nachdem Sie die gewünschten Dimensionen und Metriken für den Journey Optimizer
 | Gesendete Nachrichten | Die Gesamtzahl der gesendeten Nachrichten. Enthält erfolgreiche oder fehlgeschlagene Nachrichten. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
 | Zugestellte Nachrichten | Die Anzahl der an Kundinnen und Kunden gesendeten E-Mails. | `[Sends] - [Bounces After Delivery]` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
