@@ -2,22 +2,26 @@
 title: Beschriftungen und Richtlinien
 description: Erfahren Sie, wie sich in AEP definierte Datenbezeichnungen und Richtlinien auf Datenansichten und Berichte in CJA auswirken.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
+source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '470'
+ht-degree: 79%
 
 ---
 
 # Beschriftungen und Richtlinien
 
-Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=de) für einige oder alle Elemente im Datensatz erstellen. Bisher wurden diese Beschriftungen nicht in CJA veröffentlicht. Mit dieser Version können Sie diese Beschriftungen und Richtlinien in CJA anzeigen.
+Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=de) für einige oder alle Elemente im Datensatz erstellen. Sie können diese Beschriftungen und Richtlinien in CJA anzeigen.
 
-Für CJA sind die folgenden Beschriftungen von besonderem Interesse:
+Die folgenden Beschriftungen sind für CJA von besonderem Interesse:
 
-* Die `C8` Bezeichnung – **[!UICONTROL Keine Messung]**. Diese Kennzeichnung bedeutet, dass Daten nicht für Analysen auf den Websites oder in Anwendungen Ihres Unternehmens verwendet werden können.
+* Die `C8` Bezeichnung – **[!UICONTROL Keine Messung]**. Diese Bezeichnung bedeutet, dass Daten nicht für Analysen auf den Websites oder Apps Ihres Unternehmens verwendet werden können.
 
 * Die `C12` Bezeichnung – **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht aus CJA exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
+
+>[!NOTE]
+>
+>Datennutzungsbezeichnungen werden nicht automatisch in zugeordnete Datensätze übertragen. Sie können jedoch manuell hinzugefügt werden.
 
 Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungsbezeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie können Ihre Richtlinien mithilfe der Variablen [Richtlinien-Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in der Experience Platform erstellen.
 
@@ -36,11 +40,11 @@ Datenbeschriftungen, die in Experience Platform erstellt wurden, werden an drei 
 | Rechte Leiste unter [Komponenteneinstellungen](/help/data-views/component-settings/overview.md) | Alle [!UICONTROL Datennutzungsbezeichnungen] sind hier aufgeführt:<p>![](assets/data-label-right.png) |
 | Hinzufügen von Datenbeschriftungen als Spalte | Sie können [!UICONTROL Datennutzungsbezeichnungen] als Spalte zu den [!UICONTROL Enthaltene Komponenten] Spalten in Datenansichten hinzufügen. Klicken Sie einfach auf das Symbol für die Spaltenauswahl und wählen Sie **[!UICONTROL Datennutzungsbezeichnungen]**:<p>![](assets/data-label-column.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Filtern nach Data Governance-Beschriftungen in Datenansichten
 
-Klicken Sie im Editor für Datenansichten auf das Symbol „Filter“ in der linken Spur und filtern Sie die Komponenten der Datenansichten nach **[!UICONTROL Data Governance]** und dem Typ **[!UICONTROL Beschriftung]**:
+Klicken Sie im Datenansichtseditor auf die [!UICONTROL filter] Symbol im linken Pfad und Filtern Sie die Datenansichtskomponenten nach **[!UICONTROL Data Governance]** und Art der **[!UICONTROL Titel]**:
 
 ![](assets/filter-labels.png)
 
@@ -50,7 +54,7 @@ Klicken **[!UICONTROL Anwenden]**, um zu sehen, an welche Komponenten Beschriftu
 
 Sie können überprüfen, ob eine Richtlinie aktiviert ist, die die Verwendung bestimmter CJA-Datenansichtselemente für Analyse- oder Exportzwecke blockiert.
 
-Klicken Sie erneut auf das Filtersymbol in der linken Leiste und klicken Sie unter **[!UICONTROL Data Governance]** auf **[!UICONTROL Richtlinien]**:
+Klicken Sie erneut auf die [!UICONTROL filter] Symbol in der linken Leiste und unter **[!UICONTROL Data Governance]** klicken **[!UICONTROL Richtlinien]**:
 
 ![](assets/filter-policies.png)
 
