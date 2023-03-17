@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | Über eine Freiformtabelle: | Klicken Sie mit der rechten Maustaste auf ein Element in einer Freiformtabelle und wählen Sie **[!UICONTROL Zielgruppe aus einer Auswahl erstellen]** aus. Mit dieser Methode wird der Filter vorab mit der Dimension oder dem Dimensionselement ausgefüllt, die bzw. das Sie in der Tabelle ausgewählt haben. |
    | Über die Benutzeroberfläche zur Erstellung/Bearbeitung von Filtern: | Markieren Sie das Kästchen **[!UICONTROL Zielgruppe über diesen Filter erstellen]**. Mit dieser Methode wird der Filter vorab ausgefüllt. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Erstellen Sie die Zielgruppe.
 
@@ -45,7 +45,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | [!UICONTROL Filter] | Filter sind die Hauptauswahloptionen für die Zielgruppe. Sie können bis zu 20 Filter hinzufügen. Diese Filter können mit `And`- oder `Or`-Operatoren verbunden werden. |
    | [!UICONTROL Beispiel-IDs anzeigen] | Beispiel für IDs in dieser Zielgruppe. Verwenden Sie die Suchleiste, um nach Beispiel-IDs zu suchen. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Interpretieren Sie die Datenvorschau.
 
@@ -64,7 +64,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | [!UICONTROL Enthaltene Namespaces] | Die spezifischen Namespaces, die mit den Personen in Ihrer Zielgruppe verknüpft sind. Beispiele sind ECID, CRM-ID, E-Mail-Adressen usw. |
    | [!UICONTROL Sandbox] | Die [Experience Platform-Sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de), in der sich diese Zielgruppe befindet. Wenn Sie diese Zielgruppe in Platform veröffentlichen, können Sie sie nur innerhalb dieser Sandbox verwenden. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Überprüfen Sie Ihre Zielgruppenkonfiguration und klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
@@ -84,17 +84,18 @@ Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zi
 
 An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgruppen können Latenzen auftreten. Im Folgenden finden Sie einen Überblick über mögliche Latenzen.
 
-![](assets/latency-diagram.png)
+![Latenz von AEP zu CJA](assets/latency-diagram.png)
 
 | # | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
-| 1 | Datenaufnahme in den Data Lake | Bis zu 30 Minuten |
-| 2 | Datenaufnahme von Experience Platform in CJA | Bis zu 60 Minuten |
+| Nicht angezeigt | Adobe Analytics to Analytics Source Connector (A4T) | Bis zu 30 Minuten |
+| 1 | Datenerfassung in den Data Lake (von Analytics Source Connector oder anderen Quellen) | Bis zu 90 Minuten |
+| 2 | Datenerfassung vom Experience Platform Data Lake in CJA | Bis zu 90 Minuten |
 | 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
 | 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
 | 5 | Erstellen eines Ziels in AEP: Aktivieren des neuen Segments | 1–2 Stunden |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
 
@@ -130,7 +131,7 @@ Ja.
 
 +++
 
-+++**Sendet CJA die Zielgruppendaten als Pipeline-Ereignisse oder als Einfachdatei, die auch an den Data Lake gesendet wird?**
++++**Sendet CJA die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?**
 
 Die Daten werden von CJA über die Pipeline in das RTCP gestreamt, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
@@ -138,7 +139,7 @@ Die Daten werden von CJA über die Pipeline in das RTCP gestreamt, und diese Dat
 
 +++**Welche Identitäten sendet CJA?**
 
-Die Identitäts-/Namespace-Paare, die bei der [Einrichtung der Verbindung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection) verwendet wurden. Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
+Die Identitäts-/Namespace-Paare, die im [Verbindungseinrichtung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection). Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
 
 +++
 
