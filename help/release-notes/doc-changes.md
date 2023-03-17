@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
 workflow-type: tm+mt
 source-wordcount: '1566'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -21,14 +21,14 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | --- | --- |
 | **März 2023** |  |
 | Erstellen von Datengeschichten in mobilen Scorecards | A [Datenverlauf](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |
-| Funktionsunterstützung | Aktualisiert [Unterstützung von Customer Journey Analytics-Funktionen](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle der Funktionen, die in CJA verfügbar, aber in AA nicht verfügbar oder unterstützt sind. |
-| Standardberechnete Metriken | Es wurden Inhalte hinzugefügt, die die [von Adobe bereitgestellte standardmäßige berechnete Metriken](/help/components/calc-metrics/default-calcmetrics.md). |
+| Funktionsunterstützung | Aktualisierte [Funktionsunterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle von Funktionen, die in CJA, aber nicht in AA verfügbar sind oder unterstützt werden. |
+| Standardmäßig berechnete Metriken | Inhalt zur Erläuterung der [von Adobe bereitgestellten standardmäßigen berechneten Metriken](/help/components/calc-metrics/default-calcmetrics.md) hinzugefügt. |
 | Datenwörterbuch | <p>Eine neue Dokumentation für das Datenwörterbuch wurde hinzugefügt, einschließlich einer [Übersicht](/help/components/data-dictionary/data-dictionary-overview.md), [Anzeigen](/help/components/data-dictionary/view-data-dictionary.md), [Bearbeiten](/help/components/data-dictionary/edit-entries-data-dictionary.md)und [Überwachung](/help/components/data-dictionary/monitor-data-dictionary-health.md) das Datenwörterbuch.</p><p>Informationen in [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md) wurde aktualisiert, um die Datenwörterbuchfunktionalität zu berücksichtigen.</p> |
 | Linkfreigabe für Projekte (keine Anmeldung erforderlich) | <p>Die vorhandene Dokumentation wurde aktualisiert, um zu erklären, wie ein schreibgeschützter Link eines Projekts für Personen freigegeben werden kann, die keinen Zugriff auf Analysis Workspace haben.</p> <p>Aktualisierte Benutzerdokumentation enthält [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) und [Erstellen von freigebbaren Links](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Optionen für Administratoren wurden hinzugefügt zu [Voreinstellungen](/help/analysis-workspace/user-preferences.md).</p> |
 | **Februar 2023** |  |
 | Vergleichen von CJA mit BI-Lösungen | Neues Dokument über einen [Vergleich](../getting-started/cja-vs-bi.md) von Customer Journey Analytics mit typischen BI-Lösungen. |
-| Aktualisierung der Zielgruppen-Dokumentation | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#latency). |
-| Aktualisierung der Zielgruppen-Dokumentation | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe ein Experience Platform-[Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#after-audience-created). |
+| Aktualisierung der Audiences-Dokumentation | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#latency). |
+| Aktualisierung der Audiences-Dokumentation | Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe ein Experience Platform-[Streaming-Segment für jede neue CJA-Zielgruppe](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#after-audience-created). |
 | Arbeitsbereichskalender und Datumsbereiche | Inhalt aktualisiert, um relative Datumsbereiche, Aktualisierungen der Formelberechnung und Änderungen an der Kalenderbenutzeroberfläche zu beschreiben. Siehe [Über relative Bedienfelddatumsbereiche](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Mobile Scorecards | Neuer Dokumentationsabschnitt, um zu beschreiben, wie Sie Vergleichsdatumsbereiche ein- und ausblenden. Siehe [Vergleichsdatumsbereiche anzeigen](/help/mobile-app/create-scorecard.md#show-comparison-dates) in CJA. |
 | **Januar 2023** |  |
