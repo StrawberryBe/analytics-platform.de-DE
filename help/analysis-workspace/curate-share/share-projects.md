@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 64%
+source-wordcount: '1576'
+ht-degree: 63%
 
 ---
 
@@ -58,7 +58,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer Organisation frei:
 
-1. Wechseln Sie zu dem Projekt, das Sie freigeben möchten, und klicken Sie dann auf **[!UICONTROL Freigeben]** > **[!UICONTROL Projekt freigeben]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. Wechseln Sie zu dem Projekt, das Sie freigeben möchten, und klicken Sie dann auf **[!UICONTROL Freigeben]** > **[!UICONTROL Freigeben für Workspace-Benutzer]**.
 Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 
    ![](assets/share-proj-modal.png)
@@ -95,7 +95,7 @@ Beachten Sie bei der Freigabe eines Links, wie in diesem Abschnitt beschrieben, 
 
 So geben Sie den Projekt-Link für Benutzende in Ihrer Organisation frei:
 
-1. Klicken Sie auf **[!UICONTROL Freigeben]** > **[!UICONTROL Projekt freigeben]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+1. Klicken **[!UICONTROL Freigeben]** > **[!UICONTROL Freigeben für Workspace-Benutzer]**.
 Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 
    ![](assets/share-proj-modal.png)
@@ -104,7 +104,7 @@ Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projek
 
 1. Geben Sie den Link für Benutzende in Ihrer Organisation frei. Sie können ihn beispielsweise in eine E-Mail oder eine interne Website usw. einfügen.
 
-## Öffentlichen Link für alle freigeben (keine Anmeldung erforderlich) {#share-public-link}
+## Projekt für andere freigeben (keine Anmeldung erforderlich) {#share-public-link}
 
 {{release-limited-testing-section}}
 
@@ -116,44 +116,44 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 
 >[!NOTE]
 >
->Beachten Sie beim Freigeben eines öffentlichen Links Folgendes:
+>Beachten Sie Folgendes bei der Freigabe eines Analysis Workspace-Projekts für Personen, die keinen Zugriff auf CJA haben:
 >
->* Die Möglichkeit, einen öffentlichen Zugriffslink freizugeben, kann vom CJA-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Wenn Sie einen öffentlichen Link nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr CJA-Administrator diese Funktion deaktiviert.
+>* Die Möglichkeit, ein Projekt auf diese Weise freizugeben, kann vom CJA-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Wenn Sie ein Projekt nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr CJA-Administrator diese Funktion deaktiviert.
 >
->* Projekte mit mehr als 14 erweiterten Visualisierungen können nicht über einen öffentlichen Zugriffslink freigegeben werden.
+>* Projekte mit mehr als 14 erweiterten Visualisierungen können nicht für Personen freigegeben werden, die keinen Zugriff auf CJA haben.
 
 
 So geben Sie einen öffentlichen Link zu einem Analysis Workspace-Projekt frei:
 
 1. Öffnen Sie das Analysis Workspace-Projekt, das Sie freigeben möchten.
 
-1. Klicken **[!UICONTROL Freigeben]** > **[!UICONTROL Öffentlichen Link freigeben]**.
+1. Klicken **[!UICONTROL Freigeben]** > **[!UICONTROL Für alle freigeben]**.
 
    Wenn nicht gespeicherte Änderungen vorhanden sind, werden Sie aufgefordert, Ihr Projekt zu speichern.
 
    <!-- Add screen shot of new modal -->
 
-1. Aktivieren Sie die **[!UICONTROL Link-aktiv]** -Option, wenn sie noch nicht aktiviert ist.
+1. Aktivieren Sie die **[!UICONTROL Link ist aktiv]** -Option, wenn sie noch nicht aktiviert ist.
 
 1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihrem CJA-Administrator gesteuert werden):
 
-   * **[!UICONTROL Experience Cloud-Authentifizierung erforderlich]:**
+   * **[!UICONTROL Experience Cloud-Authentifizierung erfordern]:**
 
-      Personen mit dem Link müssen sich über SSO authentifizieren, bevor sie Zugriff auf das freigegebene Projekt erhalten. Wählen Sie diese Option aus, wenn das Projekt nur für Benutzer in Ihrer Organisation zugänglich sein soll.
+      Wenn diese Option aktiviert ist, können nur Benutzer, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde, auf das Projekt zugreifen.
 
-      CJA-Administratoren können diese Voreinstellung für das Unternehmen festlegen, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie der Administrator diese Option konfiguriert hat, können die folgenden Szenarien auftreten:
+      CJA-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie der Administrator diese Option konfiguriert hat, können die folgenden Szenarien auftreten:
 
       * Wenn diese Option nicht angezeigt wird, hat Ihr CJA-Administrator diese Funktion nicht aktiviert.
 
-      * Wenn diese Option aktiviert und abgeblendet ist, benötigt Ihr CJA-Administrator eine Experience Cloud-Authentifizierung, um auf alle öffentlichen Links zugreifen zu können.
+      * Wenn diese Option aktiviert und abgeblendet ist, benötigt Ihr CJA-Administrator eine Experience Cloud-Authentifizierung für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen.
 
-1. Neben dem **[!UICONTROL Mit anderen teilen (keine Anmeldung erforderlich)]** und klicken Sie auf das **Link kopieren** -Symbol, um den Link in die Zwischenablage Ihres Systems zu kopieren.
+1. Neben dem **[!UICONTROL Mit anderen teilen (keine Anmeldung erforderlich)]** und klicken Sie auf das **Link kopieren** icon ![Symbol &quot;Link kopieren&quot;](assets/copy-link-icon.png) , um den Link in die Zwischenablage Ihres Systems zu kopieren.
 
 1. Geben Sie den Link für die Personen frei, die Zugriff auf das Projekt haben möchten. Sie können beispielsweise den Link in eine E-Mail einfügen.
 
-   Alle Personen, für die Sie den Link freigeben, können das Analysis Workspace-Projekt anzeigen. Wenn Sie sich dafür entschieden haben, ein Passwort zu benötigen, müssen Sie das Passwort auch für alle freigeben, die auf den Link zugreifen möchten.
+   Alle Personen, für die Sie den Link freigeben, können das Analysis Workspace-Projekt anzeigen.
 
-1. Auswählen **[!UICONTROL Schließen]** , um das Dialogfeld &quot;Freigeben&quot;zu schließen. Ihre Änderungen werden automatisch gespeichert. <!-- True? -->
+1. Auswählen **[!UICONTROL Schließen]** , um das Dialogfeld &quot;Freigeben&quot;zu schließen. Ihre Änderungen werden automatisch gespeichert.
 
 ## Freigeben von Projekten im Projekt-Manager {#Manager}
 

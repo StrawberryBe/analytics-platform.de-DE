@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie freigebbare Links zu Projekten oder Visualisi
 keywords: Analysis Workspace-Freigabe
 title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 81%
+source-wordcount: '338'
+ht-degree: 80%
 
 ---
 
@@ -20,13 +20,13 @@ Um einen Link zum vollständigen Projekt freizugeben, klicken Sie auf **[!UICONT
 
 ![](assets/get-project-link.png)
 
-## Öffentlichen Link abrufen
+## Einen schreibgeschützten Link zur Freigabe für alle abrufen
 
 {{release-limited-testing-section}}
 
-Sie können einen schreibgeschützten Link zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf Adobe Analytics haben.
+Sie können einen schreibgeschützten Link zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf Customer Journey Analytics haben.
 
-Weitere Informationen finden Sie unter &quot;Teilen eines öffentlichen Links für andere (keine Anmeldung erforderlich)&quot;im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
+Weitere Informationen finden Sie unter &quot;Freigeben eines Projekts für andere (keine Anmeldung erforderlich)&quot;im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Bedienfeld- oder Visualisierungs-Link abrufen {#panel-link}
 
