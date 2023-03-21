@@ -4,9 +4,9 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1574'
 ht-degree: 63%
 
 ---
@@ -123,7 +123,7 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 >* Projekte mit mehr als 14 erweiterten Visualisierungen können nicht für Personen freigegeben werden, die keinen Zugriff auf CJA haben.
 
 
-So geben Sie einen öffentlichen Link zu einem Analysis Workspace-Projekt frei:
+So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
 1. Öffnen Sie das Analysis Workspace-Projekt, das Sie freigeben möchten.
 

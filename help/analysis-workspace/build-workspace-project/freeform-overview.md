@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Übersicht über Projekte
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1165'
-ht-degree: 100%
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+workflow-type: tm+mt
+source-wordcount: '1427'
+ht-degree: 81%
 
 ---
 
@@ -21,22 +21,40 @@ Wenn Sie **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** erstmalig aufru
 
 ![](assets/sample-project.png)
 
-Die Workspace -Seite mit Projektliste umfasst die folgenden Informationen:
+Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
+
+>[!NOTE]
+>
+>Einige Spalten werden nicht standardmäßig angezeigt. Um die angezeigten Spalten anzupassen, klicken Sie auf die Schaltfläche **Tabelle anpassen** icon ![Tabelle anpassen](assets/projects-page-customize-columns-icon.png).
+
 
 | Element | Beschreibung |
 |---|---|
-| [Neues Projekt erstellen](/help/analysis-workspace/home.md) | Klicken Sie auf diesen Link, um ein neues Projekt von Grund auf zu erstellen. |
-| Projekte verwalten | Wenn Sie auf diesen Link klicken, wird der Projektkomponentenmanager aufgerufen (**[!UICONTROL Analytics]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Projekte]**). Dort sind all Ihre Projekte aufgeführt und Sie können Projekte taggen, freigeben, löschen, umbenennen, genehmigen, kopieren und in CSV exportieren. |
-| Als Landingpage festlegen | Wandelt diese Seite in Ihre Workspace-Landingpage um. |
-| [Tutorials anzeigen](/help/analysis-workspace/home.md) | Sie gelangen zu den Analysis Workspace-Tutorials. |
+| [Voreinstellungen bearbeiten](/help/analysis-workspace/user-preferences.md) | Verwalten Sie Einstellungen für Analysis Workspace und die zugehörigen Komponenten für alle neuen Projekte oder Bereiche, die Sie erstellen. |
+| [Ordner erstellen](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Fügen Sie der Liste der Projekte und Ordner einen neuen Ordner oder Unterordner hinzu. |
+| [Projekt erstellen](/help/analysis-workspace/home.md) | Ein neues Projekt von Grund auf neu starten oder von einem [template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=de#analysis-workspace). |
+| Projekte verwalten <!--I don't see this option--> | Wenn Sie auf diesen Link klicken, wird der Projektkomponentenmanager aufgerufen (**[!UICONTROL Analytics]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Projekte]**). Dort sind all Ihre Projekte aufgeführt und Sie können Projekte taggen, freigeben, löschen, umbenennen, genehmigen, kopieren und in CSV exportieren. |
+| Als Landingpage festlegen <!--I don't see this option--> | Wandelt diese Seite in Ihre Workspace-Landingpage um. |
+| Mehr zeigen | Zeigt Optionen zum Erstellen eines leeren Projekts oder einer mobilen Scorecard an, [Anzeigen von Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=de)oder [Versionshinweise anzeigen](/help/release-notes/latest.md). |
+| Ordner und Projekte anzeigen | Wählen Sie aus, ob die Ordnerstruktur der Projekte angezeigt werden soll. Weitere Informationen finden Sie unter [Über Ordner in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Tabelle anpassen (Symbol) | Ermöglicht die Anpassung der Informationen, die für jedes Projekt auf der Seite &quot;Projekte&quot;angezeigt werden. |
 | Name | Name des Workspace-Projekts. |
-| Verantwortlicher | Die Person, die dieses Projekt erstellt hat (entweder Sie oder eine Person, die das Projekt für Sie freigegeben hat). |
-| Typ | Gibt an, ob es sich um ein Workspace-Projekt oder eine [mobile Scorecard](/help/mobile-app/home.md) handelt. |
-| [Projektrolle](/help/analysis-workspace/curate-share/share-projects.md) | Zeigt Ihre Rolle für das Projekt an – Inhaber, bearbeiten, duplizieren, anzeigen. |
+| Typ | Gibt an, ob es sich um ein Workspace-Projekt, einen Ordner oder ein [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=de). |
 | Tags | Tags, die auf das Projekt angewendet wurden. |
+| Eingeplant | Gibt an, ob die E-Mail-Versendung von Projekten an Empfänger planmäßig geplant ist. Siehe [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md). |
+| Freigegebener Link (jeder) | Projekte können für jeden freigegeben werden - auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Diese Spalte zeigt, ob Projekte auf diese Weise freigegeben wurden. Siehe [Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) für weitere Informationen. |
+| Report Suite | Die Report Suite, mit der das Projekt verknüpft ist. |
+| [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de) | Zeigt Ihre Rolle für das Projekt an – Inhaber, bearbeiten, duplizieren, anzeigen. |
+| Verantwortlicher | Die Person, die dieses Projekt erstellt hat (entweder Sie oder eine Person, die das Projekt für Sie freigegeben hat). |
+| Freigegeben für | Benutzer, für die das Projekt freigegeben wurde. |
 | Zuletzt geändert | Datum und Zeitpunkt der letzten Änderung des Projekts. |
-| Meine Favoriten | Um ein Projekt als Favoriten zu markieren, öffnen Sie das Projekt und klicken Sie auf den Stern neben seinem Namen. Wenn Sie Workspace das nächste Mal öffnen, wird das Projekt in dieser Liste angezeigt. |
-| Häufig angesehene Projekte | Listet alle häufig geöffneten Projekte auf, um den Zugriff zu erleichtern. |
+| Zuletzt geöffnet | Datum und Uhrzeit des letzten Öffnens des Projekts. |
+| Projekt-ID | Die ID des Projekts. |
+| Längster Datumsbereich | Der längste Datumsbereich des Projekts. |
+| Anzahl der Abfragen | Die Gesamtzahl der im Projekt enthaltenen Abfragen. |
+| Standort | Der Ordner, in dem sich das Projekt befindet. |
+| Meine Favoriten <!--I don't see this option--> | Um ein Projekt als Favoriten zu markieren, öffnen Sie das Projekt und klicken Sie auf den Stern neben seinem Namen. Wenn Sie Workspace das nächste Mal öffnen, wird das Projekt in dieser Liste angezeigt. |
+| Häufig angesehene Projekte <!--I don't see this option--> | Listet alle häufig geöffneten Projekte auf, um den Zugriff zu erleichtern. |
 
 ## Menüleiste {#menu-bar}
 
@@ -46,7 +64,7 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 | Menüelement | Beschreibung |
 |---|---|
-| Projekt  | Beinhaltet allgemeine Aktionen für das Projekt-Management, einschließlich „Neu“, „Öffnen“, „Speichern“, „Speichern unter“ und „Als Vorlage speichern“. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](/help/analysis-workspace/curate-share/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinformation und Einstellungen** (siehe unten) bieten viele Optionen zum Verwalten Ihres Projekts. |
+| Projekt   | Beinhaltet allgemeine Aktionen für das Projekt-Management, einschließlich „Neu“, „Öffnen“, „Speichern“, „Speichern unter“ und „Als Vorlage speichern“. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](/help/analysis-workspace/curate-share/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinformation und Einstellungen** (siehe unten) bieten viele Optionen zum Verwalten Ihres Projekts. |
 | Vorlage | Rückgängigmachen oder Wiederholen der letzten Aktion. „Alles löschen“ setzt das Projekt auf den Ausgangspunkt zurück. |
 | Einfügen | Fügen Sie neue Bedienfelder oder Visualisierungen aus diesem Menü ein. Sie können auch neue Bedienfelder und Visualisierungen aus der linken Leiste einfügen. |
 | [Komponenten](/help/components/overview.md) | Erstellen Sie neue Filter, berechnete Metriken, Datumsbereiche oder Warnhinweiskomponenten aus Ihrem Projekt. Sie können auch über die linke Leiste neue Komponenten erstellen. Wenn sich Ihre Komponentendefinitionen kürzlich geändert haben, werden die neuesten Definitionen über „Komponenten aktualisieren“ abgerufen. |
@@ -56,7 +74,7 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 ### Projektinfo und Einstellungen {#info-settings}
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**  enthält Informationen auf Projektebene zum derzeit aktiven Projekt.
+**[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**   enthält Informationen auf Projektebene zum derzeit aktiven Projekt.
 
 ![](assets/projectinfo.png)
 
@@ -64,7 +82,7 @@ Zu den Einstellungen gehören:
 
 | Einstellung | Beschreibung |
 |---|---|
-| Projekt  Name | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
+| Projekt   Name | Der Name des Projekts. Sie können auf den Namen doppelklicken, um ihn zu bearbeiten. |
 | Erstellt von | Name des Projektinhabers. |
 | Zuletzt geändert | Das Datum, an dem die letzte Änderung an dem Projekt vorgenommen wurde. |
 | Tags | Zeigt eine Liste aller Tags an, die auf ein Projekt angewendet wurden, um die Kategorisierung zu vereinfachen. |
@@ -106,7 +124,7 @@ Die folgenden Aktionen können im Projekt-Manager für ein oder mehrere Projekte
 | Aktion | Beschreibung |
 |---|---|
 | Hinzufügen | Erstellen Sie ein ganz neues Projekt. |
-| Taggen oder genehmigen | Wählen Sie „Taggen“ oder „Genehmigen“, um Ihre Projekte zu organisieren und die Suche zu erleichtern. |
+| Taggen oder genehmigen | Wählen Sie &quot;Taggen&quot;oder &quot;Genehmigen&quot;, um Ihre Projekte zu organisieren und die Suche zu vereinfachen. |
 | [Freigeben](/help/analysis-workspace/curate-share/share-projects.md) | Stellen Sie ein Projekt für andere Analysis Workspace-Benutzer in Ihrer Organisation zur Verfügung. |
 | Löschen | Löschen Sie Ihr Projekt. |
 | Umbenennen | Bearbeiten Sie den Namen Ihres Projekts. |
