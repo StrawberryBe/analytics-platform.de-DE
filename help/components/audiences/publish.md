@@ -2,10 +2,10 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 94%
+source-wordcount: '1502'
+ht-degree: 90%
 
 ---
 
@@ -154,6 +154,19 @@ Siehe oben. Wir senden nur eine Identität pro „Person“ in CJA.
 Nein. Wir senden nur eine Identität pro „Person“, sodass es keine Diagramme gibt, die RTCP nutzen könnte.
 
 +++
+
++++**Zu welcher Tageszeit werden tägliche, wöchentliche und monatliche Aktualisierungen vorgenommen? An welchem Wochentag werden wöchentliche Aktualisierungen vorgenommen?**
+
+Der Zeitpunkt der Aktualisierung hängt davon ab, wann die ursprüngliche Zielgruppe veröffentlicht wurde, und verankert diese Tageszeit (und Wochentag oder Monat).
+
++++
+
++++**Können die täglichen, wöchentlichen und monatlichen Aktualisierungszeiten von Benutzern konfiguriert werden?**
+
+Nein, sie können nicht von Benutzern konfiguriert werden.
+
++++
+
 
 ## Nächste Schritte
 
