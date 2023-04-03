@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
-workflow-type: ht
-source-wordcount: '1393'
-ht-degree: 100%
+source-git-commit: 54d8cf211a5a4bc3ffde5e24c29089125fc35362
+workflow-type: tm+mt
+source-wordcount: '1833'
+ht-degree: 75%
 
 ---
 
@@ -18,17 +18,21 @@ Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Va
 >
 >Aktuell können Daten aus [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) (A4T), die über Analytics Source Connector in Adobe Experience Platform importiert wurden, **nicht** im Bedienfeld [!UICONTROL Experimentieren] analysiert werden. Wir erwarten, dass dieses Problem 2023 gelöst wird.
 
-## Zugriffssteuerung
+## Zugriffssteuerung {#access}
 
 Das Bedienfeld „Experimentieren“ kann von allen Anwendern von Customer Journey Analytics (CJA) genutzt werden. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Die Einrichtung (Schritte 1 und 2 unten) erfordert jedoch Aktionen, die nur Administratoren durchführen können.
 
-## Schritt 1: Einrichten der Verbindung zu Experimentier-Datensätzen
+## Neue Funktionen in berechneten Metriken {#functions}
+
+Zwei neue erweiterte Funktionen wurden hinzugefügt: [!UICONTROL Anstieg] und [!UICONTROL Konfidenz]. Weitere Informationen finden Sie unter [Referenz – Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md).
+
+## Schritt 1: Einrichten der Verbindung zu Experimentier-Datensätzen {#connection}
 
 Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=de) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Wenn sich Ihre Experimentdaten in einer einzigen Dimension und die Experiment- und Variantendaten in einer begrenzten Zeichenfolge befinden, können Sie die Einstellung der [Teilzeichenfolge](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um sie zur Verwendung im Bedienfeld aufzuteilen.
 
 Wenn Ihre Experimentierdaten in Adobe Experience Platform [erfasst](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) sind, können Sie zu einem oder mehreren Testdatensätzen [in CJA eine Verbindung einrichten](/help/connections/create-connection.md).
 
-## Schritt 2: Hinzufügen von Kontextbezeichnungen in Datenansichten
+## Schritt 2: Hinzufügen von Kontextbezeichnungen in Datenansichten {#contect-labels}
 
 In den Einstellungen für Datenansichten in CJA können Administratoren [Kontextbeschriftungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik hinzufügen, und CJA-Services wie das Bedienfeld [!UICONTROL Experimentieren] können diese Beschriftungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
 
@@ -41,7 +45,7 @@ Wählen Sie in Ihrer Datenansicht, die Experimentierdaten enthält, zwei Dimensi
 
 Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da keine Experimente vorhanden sind, mit denen gearbeitet werden kann.
 
-## Schritt 3: Konfigurieren des Bedienfelds „Experiment“
+## Schritt 3: Konfigurieren des Bedienfelds „Experiment“ {#configure}
 
 1. Ziehen Sie in CJA Workspace das Bedienfeld „Experimentieren“ in ein Projekt.
 
@@ -62,7 +66,7 @@ Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-## Schritt 4: Anzeigen der Bedienfeldausgabe
+## Schritt 4: Anzeigen der Bedienfeldausgabe {#view}
 
 Das Bedienfeld „Experimentieren“ liefert umfangreiche Daten und Visualisierungen, die Ihnen helfen, die Performance Ihrer Experimente besser zu verstehen. Oben im Bedienfeld wird eine Zusammenfassungszeile angezeigt, die Sie an die ausgewählten Bedienfeldeinstellungen erinnert. Sie können das Bedienfeld jederzeit bearbeiten, indem Sie oben rechts auf den Stift zum Bearbeiten klicken.
 
@@ -80,7 +84,7 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 >
 >Die Analyse von A/A-Tests wird aktuell von diesem Bedienfeld nicht unterstützt.
 
-## Schritt 5: Interpretieren der Ergebnisse
+## Schritt 5: Interpretieren der Ergebnisse {#interpret}
 
 1. **Experiment ist schlüssig**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, analysiert Adobe die Daten, die bis zu diesem Zeitpunkt im Experiment gesammelt wurden, und erklärt ein Experiment als „schlüssig“, wenn die immer gültige Konfidenz einen Schwellenwert von 95 % für *mindestens eine* der Varianten überschreitet (mit Bonferonni-Korrektur, die bei mehr als zwei Varianten angewendet wird, um Mehrfach-Hypothesentests zu korrigieren).
 
@@ -96,7 +100,7 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 >
 >Beachten Sie jedoch, dass bei einer vollständigen Beschreibung der Ergebnisse alle verfügbaren Nachweise berücksichtigt werden sollten (d. h. Experimentaufbau, Stichprobengrößen, Konversionsraten, Konfidenz usw.) und nicht nur, ob das Experiment als schlüssig erachtet wird oder nicht. Selbst wenn ein Ergebnis noch nicht „schlüssig“ ist, können überzeugende Beweise dafür vorliegen, dass sich eine Variante von einer anderen unterscheidet (z. B. wenn sich Konfidenzintervalle kaum überlappen). Idealerweise sollte die Entscheidungsfindung unter Berücksichtigung aller statistischen Daten, die auf einem kontinuierlichen Spektrum interpretiert werden, erfolgen.
 
-## Statistische Methodik von Adobe
+## Statistische Methodik von Adobe {#statistics}
 
 Um leicht verständliche und sichere statistische Rückschlüsse zu ermöglichen, hat Adobe eine statistische Methodik eingeführt, die auf [Immer gültige Konfidenzsequenzen](https://doi.org/10.48550/arXiv.2103.06476) basiert.
 
@@ -104,6 +108,20 @@ Eine Konfidenzsequenz ist ein „sequenzielles“ Analogon eines Konfidenzinterv
 
 Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausgeführt haben, den Wert „true“ der Geschäftsmetrik. (Ein Konfidenzintervall von 95 % kann nur einmal pro Experiment und nicht für jeden einzelnen neuen Anwender berechnet werden, um die gleiche 95-%-Garantie zu erhalten.) Konfidenzsequenzen ermöglichen es Ihnen daher, Experimente kontinuierlich zu überwachen, ohne die Falsch-Positiv-Fehlerrate zu erhöhen, d. h. sie ermöglichen einen Einblick in die Ergebnisse.
 
-## Neue Funktionen in berechneten Metriken
+## Nicht randomisierte Dimensionen interpretieren {#non-randomized}
 
-Zwei neue erweiterte Funktionen wurden hinzugefügt: [!UICONTROL Anstieg] und [!UICONTROL Konfidenz]. Weitere Informationen finden Sie unter [Referenz – Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md).
+Mit CJA können Analysten jede Dimension als &quot;Experiment&quot;auswählen. Wie interpretieren Sie jedoch eine Analyse, bei der die als Experiment ausgewählte Dimension nicht diejenige ist, für die Besucher randomisiert werden?
+
+Betrachten Sie beispielsweise eine Anzeige, die ein Besucher sieht. Sie können an der Messung der Veränderung in einer Metrik interessiert sein (z. B. dem durchschnittlichen Umsatz), wenn Sie sich dafür entscheiden, Besucher &quot;Anzeige B&quot;anstelle von &quot;Anzeige A&quot;anzuzeigen. Der kausale Effekt, dass anstelle von Anzeige A Anzeige B angezeigt wird, ist für die Marketing-Entscheidung von zentraler Bedeutung. Dieser kausale Effekt kann als durchschnittlicher Umsatz über die gesamte Population gemessen werden, wenn wir den Status quo der Anzeige von Anzeige A durch die alternative Strategie der Anzeige B ersetzen.
+
+A/B-Tests sind der Goldstandard innerhalb der Branche zur objektiven Messung der Auswirkungen solcher Interventionen. Der entscheidende Grund, warum ein A/B-Test zu einer kausalen Schätzung führt, liegt in der Randomisierung der Besucher, eine der möglichen Varianten zu erhalten.
+
+Betrachten wir nun eine Dimension, die nicht durch eine Randomisierung erreicht wird, z. B. den US-Bundesstaat des Besuchers. Nehmen wir an, unsere Besucher kommen hauptsächlich aus zwei Staaten, New York und Kalifornien. Der durchschnittliche Umsatz der Verkäufe einer Winterbekleidungsmarke kann in den beiden Bundesstaaten aufgrund der unterschiedlichen regionalen Wetterbedingungen unterschiedlich sein. In einer solchen Situation kann das Wetter der wahre ursächliche Faktor für den Verkauf von Winterkleidung sein, und nicht die Tatsache, dass die geografischen Status der Besucher unterschiedlich sind.
+
+Im Experimentierungsbereich in Customer Journey Analytics können Sie Daten anhand der Besucherstatus als durchschnittliche Umsatzdifferenz analysieren. In einem solchen Fall hat die Ausgabe keine kausale Interpretation. Eine solche Analyse kann jedoch dennoch von Interesse sein. Er enthält eine Schätzung (zusammen mit Messungen der Unsicherheit) des Unterschieds des durchschnittlichen Umsatzes nach Bundesstaaten der Besucher. Dies wird auch als &quot;Testen statistischer Hypothesen&quot;bezeichnet. Die Ergebnisse dieser Analyse können interessant sein, aber nicht unbedingt umsetzbar, da wir Besucher nicht auf einen der möglichen Werte der Dimension zuordnen konnten und manchmal auch nicht zuordnen können.
+
+Die folgende Abbildung widerspricht diesen Situationen:
+
+![randomisiertes Experiment](assets/randomize.png)
+
+Wenn Sie die Wirkung von Intervention X auf das Ergebnis Y messen möchten, ist es möglich, dass die wahre Ursache beider der verwirrende Faktor C ist. Wenn die Daten nicht durch zufällige Besucher auf X erreicht werden, ist die Auswirkung schwieriger zu messen, und die Analyse berücksichtigt ausdrücklich C. Die Randomisierung unterbricht die Abhängigkeit von X auf C, sodass wir die Wirkung von X auf Y messen können, ohne sich um andere Variablen kümmern zu müssen.
