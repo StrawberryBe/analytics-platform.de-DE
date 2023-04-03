@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie freigebbare Links zu Projekten oder Visualisi
 keywords: Analysis Workspace-Freigabe
 title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 80%
+source-wordcount: '375'
+ht-degree: 62%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 80%
 
 Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer freizugeben, einschließlich der Möglichkeit, einen Link zu einem Projekt oder einem bestimmten Teil eines Projekts absurufen. Bei einigen Linktypen muss sich der Empfänger bei Adobe Analytics anmelden, bevor er auf das Projekt zugreift, bei anderen dagegen nicht.
 
-## Projekt-Link abrufen {#project-link}
+## Projekt-Link zur Freigabe für andere Workspace-Benutzer abrufen {#project-link}
 
-Um einen Link zum vollständigen Projekt freizugeben, klicken Sie auf **[!UICONTROL Freigeben > Projekt-Link abrufen]**. Wenn dem Empfänger des Links keine [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de) zugewiesen wurde, erhalten Administratoren **[!UICONTROL Kann bearbeiten]**- und Nicht-Administratoren erhalten **[!UICONTROL Kann duplizieren]**-Erlebnisse.
+Um einen Link zu einem Projekt freizugeben, gehen Sie zu dem Projekt, das Sie freigeben möchten, und wählen Sie dann Navigieren Sie zu [!UICONTROL **Freigeben**] > [!UICONTROL **Projekt-Link abrufen**] (oder **Freigeben**] > [!UICONTROL **Freigeben für Workspace-Benutzer**] > [!UICONTROL **Über Link freigeben**). Benutzer, für die Sie den Link freigeben, müssen sich anmelden.
 
-![](assets/get-project-link.png)
+Wenn dem Empfänger des Links kein [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de), erhalten Administratoren **[!UICONTROL Kann bearbeiten]** und Nicht-Administratoren erhalten **[!UICONTROL Kann duplizieren]** Erlebnisse.
 
 ## Einen schreibgeschützten Link zur Freigabe für alle abrufen
 

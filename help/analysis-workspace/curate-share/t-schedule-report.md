@@ -5,10 +5,10 @@ title: Planen von Projekten
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 93%
+source-wordcount: '884'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ Aus dem Arbeitsbereich **[!UICONTROL Freigeben]** können Sie Analysis Workspace
 
 So senden Sie eine Datei sofort per E-Mail an die Empfänger:
 
-1. Klicken **[!UICONTROL Freigeben] > [!UICONTROL Datei jetzt senden]**.
+1. Klicken **[!UICONTROL Freigeben] > [!UICONTROL Datei exportieren]**.
 1. Geben Sie den Dateityp an (CSV oder PDF).
 1. (Optional) Fuegen Sie eine Beschreibung hinzu, die in der E-Mail enthalten sein wird, um die empfangene Datei zu erklären.
 1. Fügen Sie Empfänger oder Gruppen hinzu. E-Mail-Adressen können auch eingegeben werden.
@@ -34,7 +34,7 @@ So senden Sie eine Datei sofort per E-Mail an die Empfänger:
 
 So senden Sie eine Datei basierend auf einem wiederkehrenden Zeitplan per E-Mail an die Empfänger:
 
-1. Klicken **[!UICONTROL Freigeben] > [!UICONTROL Datei planmäßig senden]**.
+1. Klicken **[!UICONTROL Freigeben] > [!UICONTROL Dateiexport planen]**.
 1. Geben Sie den Dateityp an (CSV oder PDF).
 1. (Optional) Fuegen Sie eine Beschreibung hinzu, die in der E-Mail enthalten sein wird, um die empfangene Datei zu erklären.
 1. Fügen Sie Empfänger oder Gruppen hinzu. E-Mail-Adressen können auch eingegeben werden.
