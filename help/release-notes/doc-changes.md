@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
+source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 93%
+source-wordcount: '1584'
+ht-degree: 92%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **März 2023** |  |
+| Integrieren von Entscheidungsverwaltungsdaten | Es wurden Inhalte hinzugefügt, die erklären, wie [Adobe Journey Optimizer-Entscheidungsverwaltungsdaten in CJA integrieren](/help/integrations/ajo-od.md). |
 | Erstellen von Datengeschichten in mobilen Scorecards | A [Datenverlauf](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |
 | Funktionsunterstützung | Aktualisierte [Funktionsunterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle von Funktionen, die in CJA, aber nicht in AA verfügbar sind oder unterstützt werden. |
 | Standardmäßig berechnete Metriken | Inhalt zur Erläuterung der [von Adobe bereitgestellten standardmäßigen berechneten Metriken](/help/components/calc-metrics/default-calcmetrics.md) hinzugefügt. |

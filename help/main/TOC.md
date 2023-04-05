@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 99%
 
 ---
@@ -240,7 +240,7 @@ ht-degree: 99%
          + [Berechnete Metriken genehmigen](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Berechnete Metriken freigeben](../components/calc-metrics/cm-workflow/cm-sharing.md)
          + [Manager für berechnete Metriken](../components/calc-metrics/cm-workflow/cm-manager.md)
-      + [Standardberechnete Metriken](../components/calc-metrics/default-calcmetrics.md)
+      + [Standardmäßig berechnete Metriken](../components/calc-metrics/default-calcmetrics.md)
       + [Grundlegende Funktionen](../components/calc-metrics/cm-functions.md)
       + [Erweiterte Funktionen](../components/calc-metrics/cm-adv-functions.md)
    + Datumsbereiche {#cja-date-ranges}
@@ -284,6 +284,7 @@ ht-degree: 99%
    + [Überblick über die Integration von Adobe-Lösungen in CJA](/help/integrations/overview.md)
    + [Integrieren von Adobe Analytics mit Customer Journey Analytics](/help/integrations/aa.md)
    + [Integrieren von Journey Optimizer-Daten mit CJA](/help/integrations/ajo.md)
+   + [Integrieren von Entscheidungsverwaltungsdaten mit CJA](/help/integrations/ajo-od.md)
    + [Integrieren von Kunden-KI-Daten in CJA](/help/integrations/customer-ai.md)
 
 + Data Governance {#cja-privacy}
