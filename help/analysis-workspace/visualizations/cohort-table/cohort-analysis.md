@@ -3,10 +3,10 @@ title: Was ist eine Kohortenanalyse?
 description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 91%
 
 ---
 
@@ -30,10 +30,7 @@ Die [!UICONTROL Kohortenanalyse] steht allen Customer Journey Analytics-Kunden m
 
 >[!IMPORTANT]
 >
->[!UICONTROL Kohortenanalyse]
->
->unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. Nur Metriken, die in Filtern verwendet werden können, können in der
->[!UICONTROL Kohortenanalyse] verwendet werden. Sie können jeweils nur um 1 inkrementiert werden.
+>[!UICONTROL Kohortenanalyse] nicht filterbare Metriken (einschließlich berechneter Metriken), nicht ganzzahlige Metriken (z. B. Umsatz) oder Vorfälle werden nicht unterstützt. Nur Metriken, die in Filtern verwendet werden können, können in [!UICONTROL Kohortenanalyse]und sie können jeweils nur um 1 inkrementiert werden.
 
 ## Funktionen der Kohortenanalyse
 

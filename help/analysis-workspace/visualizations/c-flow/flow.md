@@ -3,10 +3,10 @@ description: Die Flussfunktion zeigt Kundenpfade durch Ihre Websites und Program
 title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '185'
-ht-degree: 100%
+source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 93%
 
 ---
 
@@ -27,6 +27,10 @@ Damit können Sie:
 Sie können den [Fluss zwischen Dimensionen](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md) anzeigen. So können Sie beispielsweise in einem Diagramm Seiten mit Abteilungen kombinieren. In diesem Fall würde der Fluss von der Startseite zur Seite „Männer“ und dann zur Abteilung „Schuhe“ verlaufen.
 
 Jede Spalte könnte eine andere Dimension anzeigen. Ziehen Sie einen Dimension per Drag-and-Drop in eine Dropzone, um diese Dimension zum Diagramm hinzuzufügen.
+
+## Flussvisualisierung konfigurieren
+
+Informationen zum Konfigurieren einer Flussvisualisierung finden Sie unter [Flussvisualisierung konfigurieren](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## Flussdiagramme als Teil von Projekt-CSV-Dateien exportieren {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
