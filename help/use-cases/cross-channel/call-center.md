@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie einen Datensatz erstellen, mit dem Sie Callce
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Diese Freiformtabelle zeigt die wichtigsten Seiten, die zum Aufruf von Callcente
 1. Ziehen Sie die Dimension, die die Namen Ihrer Web-Seiten beinhaltet, in eine Freiformtabellen-Visualisierung.
 1. Ersetzen Sie die Metrik durch die gewünschte Callcenter-Metrik, die Sie messen möchten.
 1. Klicken Sie auf das Zahnradsymbol neben der Metrikkopfzeile. Klicken Sie auf **[!UICONTROL Nicht-standardmäßiges Attributionsmodell verwenden]**.
-1. Legen Sie das gewünschte [Attributionsmodell](/help/analysis-workspace/attribution/models.md) fest. Beispiel: ein Modell für einen Zeitverfall mit einer Halbwertszeit von 15 Minuten und einem Lookback-Fenster für die Sitzung. Dieses Attributionsmodell schreibt den Seiten gut, die zu dem Anruf in Ihrem Callcenter führen.
+1. Legen Sie das gewünschte [Attributionsmodell](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) fest. Beispiel: ein Modell für einen Zeitverfall mit einer Halbwertszeit von 15 Minuten und einem Lookback-Fenster für die Sitzung. Dieses Attributionsmodell schreibt den Seiten gut, die zu dem Anruf in Ihrem Callcenter führen.
 
 Der resultierende Bericht zeigt die wichtigsten Seiten an, die Anufe an Ihr Callcenter leiten. <!-- use case behind what we use these pages for -->
 

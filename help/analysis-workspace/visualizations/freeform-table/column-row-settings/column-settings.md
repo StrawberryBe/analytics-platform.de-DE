@@ -3,10 +3,10 @@ description: Mithilfe der Spalteneinstellungen können Sie die Spaltenformatieru
 title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 46873cc66461c40d7f44c8aac91ddc3ccf15ee21
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 98%
 
 ---
 
@@ -40,27 +40,27 @@ Sie können Einstellungen **für mehrere Spalten gleichzeitig** bearbeiten. Wäh
 
 ## Bedingte Formatierung {#conditional-formatting}
 
-Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, die Sie definieren. Das Anwenden bedingter Formatierung (Farben etc.) in Freiformtabellen ist bei Aufschlüsselungen auch automatisch aktiviert, wenn keine benutzerdefinierten Beschränkungen ausgewählt sind.
+Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, die Sie definieren können. Das Anwenden bedingter Formatierung (Farben etc.) in Freiformtabellen ist bei Aufschlüsselungen auch automatisch aktiviert, wenn keine benutzerdefinierten Beschränkungen ausgewählt sind.
 
 ![](assets/conditional-formatting.png)
 
 | Element | Beschreibung |
 | --- | --- |
-| Bedingte Formatierung | Wendet einen vorkonfigurierten Farbsatz Ihrer Wahl auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden hohen, mittleren und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Wenn Sie eine Dimension in der Tabelle ersetzen, werden die Grenzwerte für die bedingte Formatierung zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der X-Achse und eine Dimension auf der Y-Achse dargestellt). |
+| Bedingte Formatierung | Wendet einen von Ihnen ausgewählten vorkonfigurierten Farbsatz auf Zellen an. Je nachdem, welches der vier ausgewählten Farbschemata verwendet wird, werden den hohen Werten, Mittelwerten und niedrigen Werten unterschiedliche Farben zugewiesen. <br> Wenn Sie eine Dimension in der Tabelle ersetzen, werden die Grenzwerte für die bedingte Formatierung zurückgesetzt. Wenn Sie eine Metrik ersetzen, werden die Grenzwerte für diese Spalte zurückgesetzt (dabei wird eine Metrik auf der X-Achse und eine Dimension auf der Y-Achse dargestellt). |
 | Prozentbegrenzungen verwenden | Ändern Sie das Limit, das auf Prozentsätzen basieren soll anstatt auf absoluten Werten. Diese Einstellung funktioniert mit Metriken, die rein prozentbasiert sind (beispielweise Absprungrate) oder eine Anzahl und einen Prozentsatz aufweisen (beispielsweise Seitenansichten). |
 | Automatisch generiert | Obere/mittlere/untere Limits automatisch auf Basis der Daten berechnen. Die Obergrenze entspricht dem höchsten Wert in dieser Spalte. Die Untergrenze entspricht dem niedrigsten Wert und der Mittelpunkt ist der Durchschnittswert der Ober- und der Untergrenze. |
 | Anpassen | Obere/mittlere/untere Limits manuell zuweisen. So können Sie flexibel bestimmen, ob der Wert einer Spalte gut, durchschnittlich oder schlecht ist. |
-| Bedingte Formatierungspalette | Wählen Sie aus, welches der vier verfügbaren Farbschemata für Ihre bedingte Formatierung verwendet werden soll. |
+| Bedingte Formatierungspalette | Wählen Sie aus, welches der vier verfügbaren Farbschemata für die bedingte Formatierung verwendet werden soll. |
 
 ## Nicht standardmäßiges Attributionsmodell verwenden {#attribution}
 
-Analysis Workspace unterstützt die [Attribution](/help/analysis-workspace/attribution/overview.md) für nahezu jede Metrik.
+Ermöglicht es Ihnen, den standardmäßigen Attributionsmodellsatz in [Datenansichten](/help/data-views/component-settings/attribution.md).
 
 1. Klicken Sie auf das Zahnradsymbol „Einstellungen“ in einer Freiformtabellenspalte.
 
    ![Kontrollkästchen „Attribution“](assets/attribution-checkbox.png)
 
-1. Aktivieren Sie unter **[!UICONTROL Dateneinstellungen]** die Option **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]**. Weitere Informationen zu den unterschiedlichen Attributionsmodellen finden Sie unter [Attributionsmodelle](/help/analysis-workspace/attribution/models.md).
+2. Aktivieren Sie unter **[!UICONTROL Dateneinstellungen]** die Option **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]**. Weitere Informationen zu den unterschiedlichen Attributionsmodellen finden Sie unter [Attributionsmodelle](/help/data-views/component-settings/attribution.md).
 
    ![Attributionsmodell auswählen](assets/attribution-select.png)
 

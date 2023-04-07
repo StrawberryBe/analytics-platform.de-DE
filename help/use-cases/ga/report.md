@@ -4,10 +4,10 @@ description: Zeigt nützliche Berichte zu Google Analytics-Daten in Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können sehen, welche Produkte die meisten Aufrufe an Ihr Callcenter verursa
 
 Bei Anwendung der Dimensionsaufschlüsselung „Anrufgrund“ zeigt das Beispiel eine Dimensionsposition „Beschädigtes Produkt“. Der nächste Schritt besteht darin, sich mit der Abteilung der Qualitätskontrolle in Verbindung zu setzen und herauszufinden, warum die Kunden beschädigte T-Shirts erhalten haben.
 
-Man kann sich ansehen, welche Website-Seiten zu Anrufen im Callcenter geführt haben. Mit diesem Bericht kann man feststellen, wo auf der Website weniger optimale Erfahrungen gemacht wurden, und den Produktmanagern helfen, diese Herausforderungen zu lösen. Im folgenden Beispiel wird eine berechnete Kennzahl verwendet, um die Daten auf die Sitzungen zu beschränken, die mit einem Anruf im Callcenter endeten. Es verwendet ebenfalls das „Teilnahme“-Modell im [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=de#cja-workspace) von CJA.
+Man kann sich ansehen, welche Website-Seiten zu Anrufen im Callcenter geführt haben. Mit diesem Bericht kann man feststellen, wo auf der Website weniger optimale Erfahrungen gemacht wurden, und den Produktmanagern helfen, diese Herausforderungen zu lösen. Im folgenden Beispiel wird eine berechnete Metrik mit einem Beitragsattributionsmodell verwendet, um die Daten auf nur Sitzungen zu filtern, die mit einem Callcenter-Aufruf endeten.
 
 Das folgende Beispiel zeigt, dass die Seiten „Warenkorb“ und „Checkout-Informationen“ die meisten Anrufe verursachen.
 

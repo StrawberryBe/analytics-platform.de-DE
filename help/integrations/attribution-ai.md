@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 98%
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -117,11 +117,11 @@ Hier finden Sie die Vorlaufzeit für die Konversion, wenn ein Touchpoint im Mix 
 
 ![Vorlaufzeit](assets/lead-time.png)
 
-## Unterschiede zwischen Attribution AI und Attribution IQ
+## Unterschiede zwischen den Attributionsfunktionen von Attribution AI und CJA
 
-Wann sollten Sie also Attribution AI-Daten anstatt [Attribution IQ](/help/analysis-workspace/attribution/overview.md), eine native CJA-Funktion, verwenden? Die folgende Tabelle zeigt einige Funktionsunterschiede:
+Die folgende Tabelle zeigt einige Funktionsunterschiede:
 
-| Funktionalität | Attribution AI | Attribution IQ |
+| Funktionalität | Attribution AI | CJA-Attribution |
 | --- | --- | --- |
 | Führt inkrementelle Attribution durch | Ja | Nein |
 | Ermöglicht Benutzern, das Modell anzupassen | Ja | Ja |
@@ -131,4 +131,4 @@ Wann sollten Sie also Attribution AI-Daten anstatt [Attribution IQ](/help/analys
 | Regionale Attributionsmodelle | Ja | Ja |
 | Kann Marketing-Touchpoints in einem Modell konfigurieren | Ja | Nein |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

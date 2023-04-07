@@ -4,13 +4,13 @@ description: Vergleichen von Customer Journey Analytics mit BI-Lösungen
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: ht
-source-wordcount: '1609'
-ht-degree: 100%
+exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 98%
 
 ---
-
 
 # Vergleichen von CJA mit BI-Lösungen
 
@@ -62,13 +62,11 @@ In diese Visualisierungskomponenten integriert sind intelligente Funktionen wie:
 
 * **Virtual Analyst-Funktionen** wie [Anomalieerkennung](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md), die prädiktive Algorithmen und maschinelles Lernen nutzen, um Einblicke in ungewöhnliche Verhaltensweisen in Ihren Daten zu liefern.
 
-* **Erweiterte Analysefunktionen**, die sich speziell auf Einblicke in die Customer Journey konzentrieren, wie [Flussdiagramme](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attribution IQ](/help/analysis-workspace/attribution/overview.md), [Fallout-Diagramme](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) und [Dimensionsaufschlüsselungen](/help/components/dimensions/t-breakdown-fa.md). Beispiele für sofort einsatzbereite Visualisierungen sind:
+* **Erweiterte Analysefunktionen** , die sich speziell auf Journey-Einblicke von Kunden konzentrieren, z. B. [Flussdiagramme](/help/analysis-workspace/visualizations/c-flow/flow.md), [Attributionsbedienfeld](/help/analysis-workspace/c-panels/attribution.md), [Fallout-Diagramme](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)und [Dimensionsaufschlüsselungen](/help/components/dimensions/t-breakdown-fa.md). Beispiele für sofort einsatzbereite Visualisierungen sind:
 
    * [Kundenbindungsanalyse über Kohorten-/Latenztabellen](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), bei der Sie Metriken/Dimensionen einfach per Drag-und-Drop in einen Builder ziehen und in weniger als 30 Sekunden fertig sind,
 
    * [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/[Fluss](/help/analysis-workspace/visualizations/c-flow/create-flow.md)-Visualisierungen. Einrichtung in weniger als einer Minute.
-
-   * [Attributionsmodelle](/help/analysis-workspace/attribution/algorithmic.md) wie Erstkontakt, Letztkontakt, Teilnahme, Zeitverfall, sogar benutzerdefinierte Modelle, die mit ein paar Klicks eingerichtet werden können.
 
 * **Segmentierungsfunktion in jedem Schritt Ihrer progressiven Exploration**: wann immer Sie dies für sinnvoll halten, können Sie Ihre Zielgruppe wieder in Experience Platform veröffentlichen und von dort an einem der unterstützten Ziele veröffentlichen.
 
@@ -86,4 +84,3 @@ Ein Vergleich der Visualisierungsfunktionen von CJA mit den Möglichkeiten von B
 ## Zusammenfassung
 
 CJA unterscheidet sich von BI-Tools durch die nahtlose Integration einer hochgradig optimierten, auf die Customer Journey ausgerichteten Reporting-Engine mit benutzerfreundlichen Tools und Komponenten zur Durchführung von Analysen und zur Erstellung von Berichten und erweiterten Visualisierungen. Und das alles von einer einzigen Benutzeroberfläche aus, ohne dass Sie zwischen Abfrage-Engine und Visualisierungsumgebung hin und her wechseln müssen.
-
