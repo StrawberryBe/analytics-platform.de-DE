@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 5b4aac81ad2ef5829b1140334fa2e2286a529436
+source-git-commit: c8b2133a55b73757c7a74e9309ff8b74df818e34
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 71%
+source-wordcount: '505'
+ht-degree: 76%
 
 ---
 
-# Aktuelle Versionshinweise zu Customer Journey Analytics (CJA) (März 2023)
+# Aktuelle Versionshinweise zu Customer Journey Analytics (CJA) (April 2023)
 
-**Zuletzt aktualisiert**: 10. März 2023
+**Letzte Aktualisierung**: 12. April 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,23 +20,22 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 
 | Funktion | Beschreibung | [Start des Rollouts](/help/release-notes/releases.md) | [Allgemeine Verfügbarkeit](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Zeilen-/Spaltenfilter für Analytics-Source-Connector-Streaming** | Der Analytics-Source-Connector in Adobe Experience Platform ermöglicht jetzt das Filtern von Analytics-Daten, mit denen Profile in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) gefüllt werden. Die Filterung auf Zeilenebene hilft, die Anzahl der mit Profilen verknüpften Ereignisse zu reduzieren. Die Filterung auf Spaltenebene hilft, die Vielfalt der Ereignisse selbst zu reduzieren, und ermöglicht es Ihnen so, die Nutzung von Profilberechtigungen zu optimieren. Diese Filterung gilt nur für Daten, die an das Echtzeit-Kundenprofil und an [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de) gesendet werden. **Die Filterung wirkt sich nicht auf die Daten aus, die zur Verwendung in Anwendungen wie Customer Journey Analytics an Data Lake gesendet werden**. [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de#filtering-for-profile) | Nicht angegeben | 29. März 2023 |
 | **Datenwörterbuch in Analysis Workspace** | Das Datenwörterbuch hilft Benutzenden und Admins, die Komponenten (Dimensionen, Metriken) in ihrer CJA-Umgebung zu verfolgen, zu verwalten und besser zu verstehen. [Weitere Informationen](/help/components/data-dictionary/data-dictionary-overview.md) | 8. März 2023 | 29. März 2023 |
-| **Daten-Storys in mobilen Dashboards** | Mit Daten-Storys können Sie mehrere anpassbare Detailansichten zu Kacheln in mobilen Scorecard-Projekten hinzufügen. Verwenden Sie Daten-Storys, um tiefer in wichtige Treiber, zugehörige Metriken und verschiedene Schritte während der Customer Journey einzutauchen. Sie können einfach durch diese Ansichten wischen, um die ganze Story hinter Ihren Schlüsselmetriken zu verstehen. [Weitere Informationen](/help/mobile-app/create-scorecard.md#create-data-story) | Nicht angegeben | 8. März 2023 |
-| **Ablaufdaten für geplante Projekte** | Sie können die maximalen Ablaufdaten für geplante Projekte auf bis zu ein Jahr festlegen, unabhängig von der Häufigkeit des Zeitplans. [Weitere Informationen](/help/analysis-workspace/curate-share/t-schedule-report.md) | Nicht angegeben | 8. März 2023 |
-| **Link-Ffreigabe für Projekte (keine Anmeldung erforderlich) – Nur privater Beta-Zugriff** | Sie können jetzt schreibgeschützte Links zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf CJA haben. Sie können Projekt-Links für Personen außerhalb Ihrer Organisation oder für Personen innerhalb Ihrer Organisation freigeben, die nicht für CJA vorgesehen sind. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md) | 26. April 2023 | Juni 2023 |
-| **Aktualisierungen des Datumsbereichs des Bedienfelds** | In Workspace wurden die folgenden Verbesserungen hinzugefügt:<ul><li>Ab der Februar-Version basieren Dimensionselemente und Datenvorschauen auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen. </li><li>Alle aufgelisteten Dimensionselemente basieren auf Daten innerhalb des Datumsbereichs des Bedienfelds. Wenn ein Dimensionselement Daten außerhalb des Datumsbereichs enthält, können Sie zusätzliche Daten über den Datumsbereich hinaus am unteren Rand der Liste anzeigen.</li><li>Dimensionen ohne Daten können in der linken Leiste angezeigt werden. Klicken Sie auf die Optionen Weitere Optionen anzeigen , um Dimensionselemente mit Daten außerhalb des Datumsbereichs des Bedienfelds anzuzeigen.</li><li>Die Datenvorschau im Segment und die Generator für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds, es sei denn, der Zugriff erfolgt über die Komponentenmanager, die kein Bedienfeld haben und weiterhin auf den letzten 90 Tagen basieren.</li><li>Datenvorschau zeigt Daten oder Komponenten basierend auf dem Datumsbereich des Bedienfelds an.</li></ul> | Nicht angegeben | 8. Februar 2023 |
+| **Link-Ffreigabe für Projekte (keine Anmeldung erforderlich) – Nur privater Beta-Zugriff** | Sie können jetzt schreibgeschützte Links zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf CJA haben. Sie können Projekt-Links für Personen außerhalb Ihrer Organisation oder für Personen innerhalb Ihrer Organisation freigeben, die nicht für CJA vorgesehen sind. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md)<p>Um an der privaten Beta-Version teilzunehmen, wenden Sie sich an Ihr Adobe Account Team. | 26. April 2023 | Juni 2023 |
+| **Adobe Product Analytics - Nur privater Beta-Zugriff** | Am 21. März 2023 kündigte Adobe die Adobe Product Analytics an, eine neue Methode zur Interaktion mit kanalübergreifenden Daten und Einblicken in Customer Journey Analytics. Diese neuen Funktionen ermöglichen es Produktteams, Daten und Einblicke in ihr Produkterlebnis mithilfe geführter Analyse-Workflows &#x200B; selbst bereitzustellen. Teams können:<ul><li>Verstehen Sie Muster der Benutzerinteraktion im Zeitverlauf &#x200B;</li><li>Analysieren des Wachstums der &#x200B;</li><li>Identifizieren Sie Reibungspunkte in einer Sequenz von Schritten&#x200B;</li><li>Auswirkungen der Versionen von Funktionen messen&#x200B;</li><li>Entdecken Sie aussagekräftige Segmente, um während des gesamten Lebenszyklus des Journey mit dem Produkt zu interagieren und zu pflegen &#x200B;</li><li>Öffnen Sie in Analysis Workspace für eine tiefere Analyse und Zusammenarbeit mit Analysten und vieles mehr! &#x200B;</li></ul>Wenn Sie CJA-Kunde sind und an der privaten Beta-Phase teilnehmen möchten, wenden Sie sich an Ihr Adobe Account Team. [Weitere Informationen](https://business.adobe.com/products/product-analytics/adobe-product-analytics.html) | Nicht angegeben | 17. Juli 2023 |
 
 {style="table-layout:auto"}
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-AN-309729; AN-309975; AN-311779; AN-313095
+AN-313118; AN-313390; AN-314135; AN-316381; AN-316811
 
 ## Wichtige Hinweise für CJA-Admins
 
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| Verfügbarkeit von Analytics Source Connector | 15. Februar 2023 | Am 28. Februar 2023 wurde der Analytics Source Connector im neuen Adobe Experience Platform-Rechenzentrum in Kanada bereitgestellt. |
+| Nicht angegeben | nicht angegeben | Nicht angegeben |
 
 {style="table-layout:auto"}
 
