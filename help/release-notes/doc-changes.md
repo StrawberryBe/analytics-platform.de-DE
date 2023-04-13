@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 8360a7d98510973061e76748ec520711eb3ebaf6
 workflow-type: tm+mt
-source-wordcount: '1584'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +19,15 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **April 2023** |  |
+| Aktualisierung der Dokumentation zum Experimentfenster | Es wurde ein Abschnitt zu [Interpretieren nicht-randomisierter Dimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | **März 2023** |  |
 | Integrieren von Entscheidungsverwaltungsdaten | Es wurden Inhalte hinzugefügt, die erklären, wie [Adobe Journey Optimizer-Entscheidungsverwaltungsdaten in CJA integrieren](/help/integrations/ajo-od.md). |
-| Erstellen von Datengeschichten in mobilen Scorecards | A [Datenverlauf](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |
-| Funktionsunterstützung | Aktualisierte [Funktionsunterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle von Funktionen, die in CJA, aber nicht in AA verfügbar sind oder unterstützt werden. |
+| Erstellen von Daten-Storys in Mobile Scorecards | Eine [Daten-Story](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |
+| Aktualisierte Funktionsunterstützung | Aktualisierte [Funktionsunterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle von Funktionen, die in CJA, aber nicht in AA verfügbar sind oder unterstützt werden. |
 | Standardmäßig berechnete Metriken | Inhalt zur Erläuterung der [von Adobe bereitgestellten standardmäßigen berechneten Metriken](/help/components/calc-metrics/default-calcmetrics.md) hinzugefügt. |
-| Datenwörterbuch | <p>Eine neue Dokumentation für das Datenwörterbuch wurde hinzugefügt, einschließlich einer [Übersicht](/help/components/data-dictionary/data-dictionary-overview.md), [Anzeigen](/help/components/data-dictionary/view-data-dictionary.md), [Bearbeiten](/help/components/data-dictionary/edit-entries-data-dictionary.md)und [Überwachung](/help/components/data-dictionary/monitor-data-dictionary-health.md) das Datenwörterbuch.</p><p>Informationen in [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md) wurde aktualisiert, um die Datenwörterbuchfunktionalität zu berücksichtigen.</p> |
-| Linkfreigabe für Projekte (keine Anmeldung erforderlich) | <p>Die vorhandene Dokumentation wurde aktualisiert, um zu erklären, wie ein schreibgeschützter Link eines Projekts für Personen freigegeben werden kann, die keinen Zugriff auf Analysis Workspace haben.</p> <p>Aktualisierte Benutzerdokumentation enthält [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) und [Erstellen von freigebbaren Links](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Optionen für Administratoren wurden hinzugefügt zu [Voreinstellungen](/help/analysis-workspace/user-preferences.md).</p> |
+| Datenwörterbuch | <p>Eine neue Dokumentation für das Datenwörterbuch wurde hinzugefügt, einschließlich Informationen zur [Übersicht](/help/components/data-dictionary/data-dictionary-overview.md), [Anzeige](/help/components/data-dictionary/view-data-dictionary.md), [Bearbeitung](/help/components/data-dictionary/edit-entries-data-dictionary.md) und [Überwachung](/help/components/data-dictionary/monitor-data-dictionary-health.md) des Datenwörterbuchs.</p><p>Die Informationen unter [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md) wurden im Hinblick auf die Datenwörterbuchfunktionalität aktualisiert.</p> |
+| Link-Freigabe für Projekte (keine Anmeldung erforderlich) | <p>Die vorhandene Dokumentation wurde aktualisiert, um zu erklären, wie ein schreibgeschützter Link eines Projekts für Personen freigegeben werden kann, die keinen Zugriff auf Analysis Workspace haben.</p> <p>Die aktualisierte Benutzerdokumentation enthält die Themen [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) und [Erstellen von freigabefähigen Links](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>Es wurden Optionen für Admins zu den [Voreinstellungen](/help/analysis-workspace/user-preferences.md) hinzugefügt.</p> |
 | **Februar 2023** |  |
 | Vergleichen von CJA mit BI-Lösungen | Neues Dokument über einen [Vergleich](../getting-started/cja-vs-bi.md) von Customer Journey Analytics mit typischen BI-Lösungen. |
 | Aktualisierung der Audiences-Dokumentation | Neuer Abschnitt zu [Latenzüberlegungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#latency). |
