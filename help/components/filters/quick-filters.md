@@ -4,10 +4,10 @@ title: Schnellfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: cb1654cef651c5143667302c3fc592ba503dfe0a
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 45%
+source-wordcount: '1167'
+ht-degree: 44%
 
 ---
 
@@ -94,7 +94,7 @@ Sie können Schnellfilter als Komponentenlistenfilter speichern. Vorteile von Ko
 * Verfügbarkeit aller Workspace-Projekte
 * Unterstützung komplexerer Filter sowie sequenzieller Filter
 
-Sie können Filter entweder im Schnellfilteraufbau oder im [!UICONTROL Filter Builder].
+Sie können Filter entweder aus dem Schnellfilter-Builder oder aus dem [!UICONTROL Filter Builder].
 
 ### Speichern im Schnellfilter-Builder {#save2}
 
@@ -119,13 +119,17 @@ Nachdem Sie den Filter angewendet haben, können Sie ihn Ihrer Liste der Filterk
 
 1. Bewegen Sie den Mauszeiger über den gespeicherten Filter und wählen Sie das Stiftsymbol aus.
 
+1. Auswählen [!UICONTROL **Open Builder**].
+
 1. Beachten Sie dieses Dialogfeld oben im Filtergenerator:
 
-   ![Dialog „Filter“](assets/project-only.png)
+   ![Dialog „Filter“](assets/project-only-filter-dialog.png)
 
-1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Alle Projekte verfügbar machen und der Komponentenliste hinzufügen]**.
+1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Machen Sie diesen Filter für alle Projekte verfügbar und fügen Sie ihn zu Ihrer Komponentenliste hinzu.]**
+
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
-Der Filter wird jetzt in der Liste der Filterkomponenten für alle Ihre Projekte angezeigt.
+
+   Der Filter wird jetzt in der Liste der Filterkomponenten für alle Ihre Projekte angezeigt.
 Sie können auch den Filter auch für andere Personen in Ihrer Organisation [freigeben](/help/components/filters/manage-filters.md).
 
 ## Schnellfilterbeispiel
