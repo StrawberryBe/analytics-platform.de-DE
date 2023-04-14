@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8360a7d98510973061e76748ec520711eb3ebaf6
+source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1642'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | --- | --- |
 | **April 2023** |  |
 | Aktualisierung der Dokumentation zum Experimentfenster | Es wurde ein Abschnitt zu [Interpretieren nicht-randomisierter Dimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
+| Projektfilter (Ad-hoc- und Schnellfilter) | Die Dokumentation zu Projektfiltern wurde optimiert und duplizierte Informationen wurden entfernt. Die Schritte zum Erstellen von Ad-hoc-Filtern werden jetzt mit den Schritten für [Erstellen von Schnellfiltern](/help/components/filters/quick-filters.md). |
 | **März 2023** |  |
 | Integrieren von Entscheidungsverwaltungsdaten | Es wurden Inhalte hinzugefügt, die erklären, wie [Adobe Journey Optimizer-Entscheidungsverwaltungsdaten in CJA integrieren](/help/integrations/ajo-od.md). |
 | Erstellen von Daten-Storys in Mobile Scorecards | Eine [Daten-Story](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |
