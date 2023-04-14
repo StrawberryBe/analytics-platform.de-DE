@@ -3,15 +3,19 @@ title: Erstellen von Anmerkungen
 description: Erstellen von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
-exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
-workflow-type: ht
-source-wordcount: '646'
+exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
+source-git-commit: 2569ee4e958f2d647b62cbce72ebb2b7b98096ab
+workflow-type: tm+mt
+source-wordcount: '695'
 ht-degree: 100%
 
 ---
 
 # Erstellen von Anmerkungen
+
+Standardmäßig können nur Administratoren Anmerkungen erstellen. Benutzer haben die Berechtigung, Anmerkungen anzuzeigen, wie dies bei anderen Analytics-Komponenten der Fall ist (z. B. Segmente, berechnete Metriken usw.).
+
+Administratoren können jedoch über die [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=de) Benutzern die Berechtigung zur [!UICONTROL Erstellung von Anmerkungen] (Analytics-Tools) erteilen.
 
 1. Um Anmerkungen zu erstellen, haben Sie verschiedene Möglichkeiten zur Verfügung:
 
@@ -39,6 +43,6 @@ ht-degree: 100%
    | [!UICONTROL Auf alle Report Suites anwenden] | Standardmäßig gilt die Anmerkung für die ursprüngliche Report Suite. Wenn Sie dieses Kontrollkästchen aktivieren, können Sie die Anmerkung für alle Report Suites im Unternehmen gelten lassen. |
    | [!UICONTROL Auf alle Projekte anwenden] | Standardmäßig gilt die Anmerkung für das aktuelle Projekt. Wenn Sie dieses Kontrollkästchen aktivieren, können Sie die Anmerkung auf alle Projekte anwenden, deren Inhaber Sie sind. Beachten Sie, dass dieses Kontrollkästchen nur angezeigt wird, wenn Sie den Anmerkungsgenerator aus dem Anmerkungsgenerator starten? |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
