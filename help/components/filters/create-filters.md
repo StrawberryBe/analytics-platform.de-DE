@@ -2,49 +2,31 @@
 title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
-workflow-type: ht
-source-wordcount: '371'
-ht-degree: 100%
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 60%
 
 ---
 
 # Filter erstellen
 
-Der Filtergenerator bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metriken, Dimensionen, Filtern und Ereignissen für das Filtern von Besuchern anhand von Container-Hierarchielogik, Regeln und Operatoren. Mit diesem integrierten Entwicklungstool können Sie einfache oder komplexe Filter erstellen und speichern, mit deren Hilfe Besucherattribute und Aktionen bei Besuchen und Seitenaufrufen identifiziert werden.
+Sie können verschiedene Filtertypen in Workspace erstellen, je nachdem, wie komplex sie sein müssen, ob sie nur auf das aktuelle Projekt oder auf alle Projekte angewendet werden sollen usw.
 
-Sie können unmittelbar Filter erstellen, indem Sie einen beliebigen Komponententyp (Dimension, Dimensionselement, Ereignis, Metrik, Filter, Filtervorlage, Datumsbereich) in die Ablagezone für Filter oben in einem Bedienfeld ablegen.
+Im Folgenden finden Sie eine Zusammenfassung der verfügbaren Filtertypen mit Links zu Informationen zur Erstellung:
 
-Komponententypen werden automatisch in Filter umgewandelt. Alternativ können Sie auf das „+“-Symbol im Ablagefeld **[!UICONTROL Filter hinzufügen]** klicken.
+| Filtertyp | Wo erstellt? | Wird wo angewendet? | Verwendungsbereiche |
+| --- | --- | --- | --- |
+| Komponentenlistenfilter | Klicken Sie auf „+“, wodurch Sie zum [Filtergenerator](/help/components/filters/filter-builder.md) gelangen. | Alle Workspace-Projekte | Für komplexere Filter, sequenzielle Filter |
+| Schnellfilter | [Schnellfilter-Generator](/help/components/filters/quick-filters.md) | Nur im Projekt, Speichern und Hinzufügen zur Segmentliste möglich. | Kann für Ad-hoc-Filter mit einzelnen Regeln (per Drag &amp; Drop) oder zum Hinzufügen/Bearbeiten mehrerer Regeln verwendet werden (durch Klicken auf das Symbol Filter ) |
+| Filter in Fallout-Analyse | [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | Für individuelle Fallout-Visualisierungen | Erstellen von Filtern von einem Touchpoint aus, Hinzufügen von Filtern als Touchpoint und Vergleichen wichtiger Workflows über verschiedene Filter hinweg. |
+| Auf berechneten Metriken basierende Filter | [Generator für berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | Für einzelne berechnete Metriken | Anwenden von Filtern innerhalb Ihrer Metrikdefinition |
 
-Bedenken Sie Folgendes:
-
-* Folgende Komponenten können Sie **nicht** im Filterbereich ablegen: berechnete Metriken und Dimensionen/Metriken, aus denen Sie keine Filter erstellen können.
-* Bei vollständigen Dimensionen und Ereignissen erstellt Analysis Workspace Hit-Filter mit „vorhanden“. Beispiele: „Hit, wenn eVar1 vorhanden ist“ oder „Hit, wenn event1 vorhanden ist“.
-* Wenn „nicht angegeben“ oder „keine“ im Filterablagebereich abgelegt werden, werden sie automatisch in einen Filter mit „nicht vorhanden“ umgewandelt, damit sie korrekt behandelt werden.
-
-![](assets/segment-dropzone.png)
-
->[!NOTE]
->
->Auf diese Weise erstellte Filter sind interne Filter des Projekts.
-
-Sie können diese Filter wie folgt öffentlich (global) machen:
-
-1. Bewegen Sie den Mauszeiger auf den Filter in der Dropzone und klicken Sie auf das Symbol „i“.
-1. Klicken Sie dann im angezeigten Informationsfeld auf **[!UICONTROL Als öffentlich einstellen]**.
-
-   ![](assets/segment-info.png)
-
-## Andere Methoden, um Filter anzuwenden
-
-Es gibt verschiedene weitere Methoden für das Anwenden von Filtern auf ein Projekt:
+Wenn Sie Filter auf ein Freiformprojekt anwenden, stehen auch mehrere andere Methoden zur Verfügung:
 
 | Aktion | Beschreibung |
 | --- | --- |
 | Filter aus Auswahl erstellen | Erstellen Sie einen Inline-Filter. Dieser Filter wird nur auf das geöffnete Projekt angewendet und nicht als CJA-Filter gespeichert.<p> 1. Die Tabellenzeilen auswählen, die Teil des Filters sein sollen. 2. Rechtsklick auf die Auswahl.  3. Klick auf *Filter aus Auswahl erstellen*. |
-| Arbeitsbereich [!UICONTROL Komponenten] > [!UICONTROL Neuer Filter] | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=de). |
-| „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Kuratieren und freigeben](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=de#concept_4A9726927E7C44AFA260E2BB2721AFC6) werden Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar. |
-| Filter als Dimensionen verwenden | Siehe das Video unten: Verwenden von Filtern als Dimensionen in Analysis Workspace. |
-
->[!VIDEO](https://video.tv.adobe.com/v/23974)
+| Arbeitsbereich [!UICONTROL Komponenten] > [!UICONTROL Neuer Filter] | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](/help/components/filters/filter-builder.md). |
+| „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) oder [Kuratieren von Projekten](/help/analysis-workspace/curate-share/curate.md), erfahren Sie, wie Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar sind. |
+| Filter als Dimensionen verwenden | Das folgende Video zeigt, wie Filter als Dimensionen verwendet werden: (**Hinweis:** In diesem Video wird der Begriff &quot;Segmente&quot;anstelle von &quot;Filter&quot;verwendet. Die Funktionalität ist jedoch dieselbe.) <p>[Verwenden von Segmenten als Dimensionen in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=de)</p> |

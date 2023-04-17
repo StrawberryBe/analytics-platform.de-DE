@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3b4acdd3e0f5f47957abf6d11eab8bbf65c4bf08
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 95%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **April 2023** |  |
+| Dokumentation filtern | Es wurde ein Artikel zur Verwendung der [Filter Builder](/help/components/filters/filter-builder.md). <p>Optimierte Dokumentation in [Filter erstellen](/help/components/filters/create-filters.md) und [Filterübersicht](/help/components/filters/filters-overview.md).</p> |
 | Aktualisierung der Dokumentation zum Experimentfenster | Es wurde ein Abschnitt zu [Interpretieren nicht-randomisierter Dimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | Projektfilter (Ad-hoc- und Schnellfilter) | Die Dokumentation zu Projektfiltern wurde optimiert und duplizierte Informationen wurden entfernt. Die Schritte zum Erstellen von Ad-hoc-Filtern werden jetzt mit den Schritten für [Erstellen von Schnellfiltern](/help/components/filters/quick-filters.md). |
 | **März 2023** |  |

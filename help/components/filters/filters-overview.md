@@ -2,9 +2,9 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '956'
 ht-degree: 98%
 
 ---
@@ -18,20 +18,13 @@ Filter können auf Attributen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Ge
 
 Sie können Filter im Filtergenerator erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter zusammen als gestapelte Filter verwendet werden.
 
-Die Filterung umfasst den [Filtergenerator](/help/components/filters/create-filters.md) zum Aufbau von Filtern und zur Ausführung eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zur Erfassung, Kennzeichnung, Freigabe, Sicherheitseinstellung und Weitergabe von Filtern in Ihrer Organisation.
+Die Filterung umfasst den [Filtergenerator](/help/components/filters/filter-builder.md) zum Aufbau von Filtern und zur Ausführung eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zur Erfassung, Kennzeichnung, Freigabe, Sicherheitseinstellung und Weitergabe von Filtern in Ihrer Organisation.
 
 Die maximale Anzahl von Filtern, die Sie pro IMS-Organisation erstellen können, beträgt 50.000.
 
 ## Filtertypen {#types}
 
-Sie können verschiedene Filtertypen in Workspace und im Filtergenerator erstellen, je nachdem, wie komplex sie sein müssen, ob sie nur für dieses Projekt gelten sollen usw. Im Folgenden finden Sie eine Zusammenfassung der Filtertypen:
-
-| Filtertyp | Wo erstellt? | Wird wo angewendet? | Verwendungsbereiche |
-| --- | --- | --- | --- |
-| Komponentenlistenfilter | Klicken Sie auf „+“, wodurch Sie zum [Filtergenerator](/help/components/filters/create-filters.md) gelangen. | Alle Workspace-Projekte | Für komplexere Filter, sequenzielle Filter |
-| Schnellfilter | [Schnellfilter-Generator](/help/components/filters/quick-filters.md) | Nur im Projekt, Speichern und Hinzufügen zur Segmentliste möglich. | Kann für Ad-hoc-Filter mit einzelnen Regeln (per Drag &amp; Drop) oder zum Hinzufügen/Bearbeiten mehrerer Regeln verwendet werden (durch Klicken auf das Symbol Filter ) |
-| Filter in Fallout-Analyse | [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | Für individuelle Fallout-Visualisierungen | Erstellen von Filtern von einem Touchpoint aus, Hinzufügen von Filtern als Touchpoint und Vergleichen wichtiger Workflows über verschiedene Filter hinweg. |
-| Auf berechneten Metriken basierende Filter | [Generator für berechnete Metriken](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=de) | Für einzelne berechnete Metriken | Anwenden von Filtern innerhalb Ihrer Metrikdefinition |
+Informationen zu den verfügbaren Filtertypen und deren Erstellung finden Sie unter [Filter erstellen](/help/components/filters/create-filters.md).
 
 ## Sequenzielle Filter {#sequential}
 
