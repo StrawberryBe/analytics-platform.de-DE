@@ -3,9 +3,9 @@ title: Was ist eine Kohortenanalyse?
 description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 76840d025d1ace28abce5557d66d104795818167
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '457'
 ht-degree: 91%
 
 ---
@@ -22,7 +22,6 @@ Beispiele für die Nutzung einer [!UICONTROL Kohortenanalyse]:
 * Erhöhen Sie das Marketingbudget genau zum richtigen Zeitpunkt im Kundenlebenszyklus.
 * Erkennen Sie, wann eine Testphase oder ein Angebot beendet werden sollte, um den Wert zu maximieren.
 * Gewinnen Sie Ideen für A/B-Tests in Bereichen wie Preisstruktur, Upgrade-Pfad usw.
-* Zeigen Sie einen [!UICONTROL Kohortenanalysebericht] mit einem angeleiteten Analysebericht an.
 
 Die [!UICONTROL Kohortenanalyse] steht allen Customer Journey Analytics-Kunden mit Zugriffsrechten auf [!UICONTROL Analysis Workspace] zur Verfügung.
 
