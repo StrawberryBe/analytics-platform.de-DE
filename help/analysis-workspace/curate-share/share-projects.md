@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
+source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 56%
+source-wordcount: '1753'
+ht-degree: 53%
 
 ---
 
@@ -137,6 +137,10 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
    <!-- Add screen shot of new modal -->
 
 1. Aktivieren Sie die **[!UICONTROL Link ist aktiv]** -Option, wenn sie noch nicht aktiviert ist.
+
+   Wenn Sie diese Option auswählen, wird ein Link zum Projekt erstellt, der für alle freigegeben werden kann. Sie können den Zugriff auf das Projekt jederzeit deaktivieren, indem Sie diese Option deaktivieren.
+
+   Der Eigentümer des Projekts ist auch Eigentümer dieses Links. Das Linkeigentum kann nur dann an einen anderen Benutzer übertragen werden, wenn das Projekteigentum übertragen wird, wie unter [Übertragen von Benutzer-Assets oder Festlegen des Kontoablaufs](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) im Analytics Admin-Handbuch.
 
 1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihrem CJA-Administrator gesteuert werden):
 
