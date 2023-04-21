@@ -4,10 +4,10 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 98%
+source-wordcount: '2501'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experie
    | **[!UICONTROL Zeitstempel]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. |
    | **[!UICONTROL Datenquellentyp]** | Zu den Datenquellen gehören: [!UICONTROL Webdaten], [!UICONTROL App-Daten], [!UICONTROL POS-Daten], [!UICONTROL CRM-Daten], [!UICONTROL Umfragedaten], [!UICONTROL Callcenter-Daten], [!UICONTROL Produktdaten], [!UICONTROL Kontodaten], [!UICONTROL Transaktionsdaten], [!UICONTROL Feedback-Daten des Kunden]und [!UICONTROL Sonstiges]. |
    | **[!UICONTROL Neue Daten importieren]** | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in Workspace ein. Kann auf [!UICONTROL on] oder [!UICONTROL Aus]. |
-   | **[!UICONTROL Aufstockung des Datensatzes]** | Klicken Sie auf **[!UICONTROL Aufstockung anfordern]**, um eine Aufstockung mit historischen Daten durchzuführen.<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz hängt von der Anzahl der historischen Daten ab, die Sie haben.</li><li>Adobe Analytics Source Connector importiert Daten aus bis zu 13 Monaten unabhängig von ihrer Größe.</li></ul> |
+   | **[!UICONTROL Aufstockung des Datensatzes]** | Klicken Sie auf **[!UICONTROL Aufstockung anfordern]**, um eine Aufstockung mit historischen Daten durchzuführen.<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz hängt von der Anzahl der historischen Daten ab, die Sie haben.</li><li>Der Adobe Analytics Source Connector importiert bis zu 13 Monate Daten (unabhängig von der Größe) für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist auf 3 Monate beschränkt.</li></ul> |
    | **[!UICONTROL Aufstockungsstatus]** | Mögliche Statusindikatoren sind:<ul><li>Erfolgreich</li><li>X Aufstockung(en) werden verarbeitet</li><li>Aus</li></ul> |
    | **[!UICONTROL Datensatz-ID]** | Diese ID wird automatisch generiert. |
    | **[!UICONTROL Beschreibung]** | Die Beschreibung, die diesem Datensatz bei seiner Erstellung gegeben wurde. |
