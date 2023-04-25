@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
-workflow-type: ht
-source-wordcount: '1136'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 99%
 
 ---
 
@@ -43,23 +43,23 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
 ## Anpassen der Visualisierungseinstellungen
 
-Sie können Visualisierungseinstellungen für eine einzelne Visualisierung oder für alle von Ihnen erstellten Visualisierungen anpassen.
+Sie können die Einstellungen für eine einzelne oder für alle von Ihnen erstellten Visualisierungen anpassen.
 
-### Anpassen der Visualisierungseinstellungen für eine einzelne Visualisierung
+### Anpassen der Einstellungen für eine einzelne Visualisierung
 
-So öffnen Sie die [!UICONTROL Visualisierungseinstellungen] für eine einzelne Visualisierung:
+So greifen Sie auf die [!UICONTROL Einstellungen] für eine einzelne Visualisierung zu:
 
 1. Bewegen Sie in Analysis Workspace den Mauszeiger über die Visualisierung, deren Einstellungen Sie anpassen möchten.
 
 1. Klicken Sie auf das Zahnradsymbol.
 
-   Jeder Visualisierungstyp verfügt über individuelle Einstellungen, die Sie anpassen können. Informationen zu den verfügbaren Einstellungen finden Sie unter [Einstellungen](#settings).
+   Jeder Visualisierungstyp verfügt über eigene Einstellungen, die Sie anpassen können. Informationen zu den verfügbaren Einstellungen finden Sie unter [Einstellungen](#settings).
 
-### Anpassen der Visualisierungseinstellungen für alle von Ihnen erstellten Visualisierungen
+### Anpassen der Einstellungen für alle von Ihnen erstellten Visualisierungen
 
-Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen anpassen. Weitere Informationen dazu finden Sie unter [Benutzereinstellungen](/help/analysis-workspace/user-preferences.md).
+Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen anpassen. Weitere Informationen finden Sie unter [Benutzervoreinstellungen](/help/analysis-workspace/user-preferences.md).
 
-## Einstellungen {#settings}
+## Einstellungen  {#settings}
 
 Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Um auf [!UICONTROL Visualisierungseinstellungen] zuzugreifen, klicken Sie auf das Zahnradsymbol [!UICONTROL Visualisierungseinstellungen].
 
@@ -68,7 +68,7 @@ Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten könn
 | Einstellung | Beschreibung |
 | --- | --- |
 | Visualisierungstyp | Ändern Sie den visuellen Typ, der zur Darstellung der Daten verwendet wird. |
-| Granularität | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste ändern. Diese Änderung gilt auch für die Datenquellentabelle. |
+| Granularität | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste aus. Diese Änderung gilt auch für die Datenquellentabelle. |
 | Prozentsatz | Zeigt Werte als Prozentzahlen an. |
 | 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. Beispiel: ![Gestapelt 100%](assets/stacked_100_percent.png) |
 | Legende sichtbar | Hiermit können Sie den erklärenden Text zu Details für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |

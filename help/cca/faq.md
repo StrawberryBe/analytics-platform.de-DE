@@ -4,10 +4,10 @@ description: Häufig gestellte Fragen zu Cross-Channel Analytics
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 97%
+source-wordcount: '1067'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ Die Anzahl der beständigen IDs ist für die vorübergehende ID irrelevant. Ein 
 
 ## Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar wird, nachdem ich mein Adobe-Kontoteam mit den gewünschten Informationen kontaktiert habe?
 
-Die Echtzeit-Zuordnung ist etwa eine Woche nach der Aktivierung von Cross-Channel Analytics durch Adobe verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Bei kleinen Datensätzen (weniger als 1 Million Ereignisse pro Tag) dauert es in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger benötigen können.
+Die Echtzeit-Zuordnung ist etwa eine Woche nach der Aktivierung von Cross-Channel Analytics durch Adobe verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Kleine Datensätze (weniger als 1 Million Ereignisse pro Tag) dauern in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger dauern können.
 
 ## Was ist der Unterschied zwischen Cross-Device Analytics (eine Funktion im herkömmlichen Analytics) und Cross-Channel Analytics?
 

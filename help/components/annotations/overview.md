@@ -4,11 +4,11 @@ description: Verwenden von Anmerkungen in Workspace.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
-workflow-type: ht
-source-wordcount: '296'
-ht-degree: 100%
+exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden. Sie können etwa ein Datum oder einen Datumsbereich mit bekannten Datenproblemen, öffentlichen Feiertagen, Kampagnenstarts usw. kommentieren. Sie können dann Ereignisse grafisch darstellen und sehen, ob sich Kampagnen oder andere Ereignisse auf den Traffic Ihrer Site, den Umsatz oder andere Metriken ausgewirkt haben.
 
-Angenommen, Sie geben Projekte für Ihr Unternehmen frei. Wenn der Traffic aufgrund einer Marketing-Kampagne stark angestiegen ist, können Sie die Anmerkung „Start der Kampagne“ erstellen und diese auf Ihre gesamte Report Suite anwenden. Wenn Ihre Benutzer Datensätze betrachten, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten gemeinsam mit ihren Daten.
+Angenommen, Sie geben Projekte für Ihr Unternehmen frei. Wenn der Traffic aufgrund einer Marketing-Kampagne stark angestiegen ist, können Sie die Anmerkung „Start der Kampagne“ erstellen und diese auf Ihre gesamte Report Suite anwenden. Wenn Ihre Benutzer Datensätze anzeigen, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten neben den Daten.
 
 ![](assets/multi-day.png)
 

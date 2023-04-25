@@ -3,10 +3,10 @@ description: Unterstützende Funktionen für die Barrierefreiheit in Analysis Wo
 title: Barrierefreiheit in Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 99%
 
 ---
 
@@ -53,34 +53,34 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 #### Navigation
 
 | Tastaturbefehl | Aktion |
-|---|---|
-| Alt + Umschalt + 1/2/3 | Zu verschiedenen Leisten wechseln: [!UICONTROL Bedienfelder], [!UICONTROL Visualisierungen] oder [!UICONTROL Komponenten] |
-| Alt + Links-/Rechtspfeil | Zwischen Bedienfeldern navigieren |
-| Alt + M | Alle Bedienfelder reduzieren/erweitern |
-| Alt + Strg + M | Aktives Bedienfeld reduzieren/erweitern |
-| Strg + / | Linke Leiste durchsuchen |
+| --- | --- |
+| `[Alt + Shift + 1 / 2 / 3]` | Zu verschiedenen Leisten wechseln: [!UICONTROL Bedienfelder], [!UICONTROL Visualisierungen] oder [!UICONTROL Komponenten] |
+| `[Alt + Left / Right]` | Zwischen Bedienfeldern navigieren |
+| `[Alt + M]` | Alle Bedienfelder reduzieren/erweitern |
+| `[Alt + Ctrl + M]` | Aktives Bedienfeld reduzieren/erweitern |
+| `[Ctrl + /]` | Linke Leiste durchsuchen |
 
 #### Erstellung von Analysen
 
 | Tastaturbefehl | Aktion |
-|---|---|
-| Alt + 1 | Neue Freiformtabelle |
-| Strg + Umschalt + C | Neue berechnete Metrik |
-| Strg + Umschalt + D | Neuer Datumsbereich |
-| Strg + Umschalt + E | Neuer Filter |
-| Strg + Z | Rückgängig |
-| Umschalttaste gedrückt halten (in der Dropzone des Bedienfeldfilters) | Einen [Dropdown-Filter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) erstellen |
+| --- | --- |
+| `[Alt + 1]` | Neue Freiformtabelle |
+| `[Ctrl + Shift + C]` | Neue berechnete Metrik |
+| `[Ctrl + Shift + D]` | Neuer Datumsbereich |
+| `[Ctrl + Shift + E]` | Neues Segment |
+| `[Ctrl + Z]` | Rückgängig |
+| `[Component drag + Shift]` | Einen Dropdown-Filter erstellen |
 
 #### Demokratisierung
 
 | Tastaturbefehl | Aktion |
-|---|---|
-| Strg + S | Speichern |
-| Strg + Umschalt + G | Kuratieren |
-| Strg + G | Freigeben |
-| Alt + Umschalt + S | Zeitplan |
-| Alt + L | Link zum Projekt abrufen |
-| Strg + Umschalt + B | PDF herunterladen |
+| --- | --- |
+| `[Ctrl + S]` | Speichern |
+| `[Ctrl + Shift + G]` | Kuratieren |
+| `[Ctrl + G]` | Freigeben |
+| `[Alt + Shift + S]` | Zeitplan |
+| `[Alt + L]` | Link zum Projekt abrufen |
+| `[Ctrl + Shift + B]` | PDF herunterladen |
 
 ## Unterstützung für Bildschirmlesehilfen und Vergrößerungs-Software
 

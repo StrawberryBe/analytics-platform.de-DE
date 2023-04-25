@@ -4,10 +4,10 @@ description: Anzeigen der wichtigsten Einstellungen für eine Datenansichtskompo
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: baee2ccf6eec040972726b9651ffe565d50307a9
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Wichtigste Einstellungen, die eine Datenansichtskomponente verwendet.
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
-| [!UICONTROL Typ der Komponente] | Erforderlich. Ermöglicht es Ihnen, eine Komponente von Metrik in Dimension zu ändern oder umgekehrt. Durch Änderung dieses Dropdown-Menüs wird die Komponente in den entsprechenden eingeschlossenen Komponentenbereich verschoben. |
+| [!UICONTROL Typ der Komponente] | Erforderlich. Ermöglicht es Ihnen, eine Komponente von Metrik in Dimension zu ändern oder umgekehrt. Wenn Sie diese Dropdown-Auswahl ändern, wird die Komponente in den entsprechenden eingeschlossenen Komponentenbereich verschoben. |
 | [!UICONTROL Name der Komponente] | Erforderlich. Hier können Sie den benutzerfreundlichen Namen angeben, der in Analysis Workspace angezeigt wird. Sie können eine Komponente umbenennen, um ihr einen spezifischen Namen für die Datenansicht zu geben. |
 | [!UICONTROL Beschreibung] | Optional, jedoch empfohlen. Stellt Informationen über die Komponente für andere Benutzer bereit. |
 | [!UICONTROL Tags] | Optional. Ermöglicht das Taggen der Komponente mit benutzerdefinierten oder vordefinierten Tags zur einfacheren Suche/Filterung in der Analysis Workspace-Benutzeroberfläche. |
@@ -33,7 +33,7 @@ Wichtigste Einstellungen, die eine Datenansichtskomponente verwendet.
 | [!UICONTROL Beschriftungen zur Datennutzung] | Alle Datennutzungsbezeichnungen, die dieser Komponente in Adobe Experience Platform zugewiesen wurden. [Weitere Informationen](/help/data-views/data-governance.md) |
 | [!UICONTROL Komponente in Reports verbergen] | Ermöglicht das Kuratieren der Komponente aus der Datenansicht für Benutzer ohne Administratorrechte. Administratoren können weiterhin darauf zugreifen, indem sie in einem Analysis Workspace-Projekt auf [!UICONTROL Alle Komponenten anzeigen] klicken. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Hier finden Sie ein Video zu Komponenteneinstellungen in Datenansichten:
 

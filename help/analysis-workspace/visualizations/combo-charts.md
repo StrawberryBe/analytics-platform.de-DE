@@ -3,11 +3,11 @@ description: Ermöglicht die einfache Visualisierung von Vergleichsdaten in Anal
 title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
 role: User, Admin
-exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
-workflow-type: ht
-source-wordcount: '776'
-ht-degree: 100%
+exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Beachten Sie:
    | **[!UICONTROL Funktion]** | Sie können zum Vergleich eine Funktion wie [!UICONTROL Durchschnitt] hinzufügen. Eine Liste der unterstützten Funktionen finden Sie unten.<p>![Funktionen](assets/combo-functions.png) |
    | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise den [!UICONTROL Umsatz] mit einer anderen Metrik vergleichen.<p>![Zwei Metriken](assets/combo-2metrics.png) |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -69,7 +69,7 @@ Wenn Sie **[!UICONTROL Funktion]** als [!UICONTROL Linienvergleichstyp] auswähl
 | **[!UICONTROL Mittel]** | Gibt das arithmetische Mittel (bzw. den Durchschnitt) einer Metrik zurück. |
 | **[!UICONTROL Spaltenminimum]** | Gibt den kleinsten Wert in einem Satz aus Dimensionselementen für eine Metrikspalte zurück. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Im Folgenden finden Sie ein Beispiel für den kumulativen Durchschnitt der Umsatzmetrik:
 
@@ -88,11 +88,11 @@ Klicken Sie in einem Kombinationsdiagramm oben rechts auf das Zahnradsymbol, um 
 | Einstellung | Definition |
 | --- | --- |
 | **[!UICONTROL Visualisierungstyp]** | Hiermit können Sie zu einem anderen Visualisierungstyp wechseln. |
-| **[!UICONTROL Granularität]** | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste ändern. |
+| **[!UICONTROL Granularität]** | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste aus. |
 | **[!UICONTROL Allgemein]** |  |
 | **[!UICONTROL Prozentsätze]** | Zeigt Werte als Prozentzahlen an. |
 | **[!UICONTROL Legende eingeblendet]** | Ermöglicht das Ausblenden des detaillierten Legendentextes für die Kombinationsdiagramm-Visualisierung. |
-| **[!UICONTROL Grenzwert für max. Anzahl von Elementen]** | Reduziert die Anzahl der Elemente auf der X-Achse. Wenn Sie einen großen Datensatz haben, können Sie nur die ersten 10 Elemente anzeigen (oder den entsprechenden von Ihnen angegebenen Wert). |
+| **[!UICONTROL Grenzwert für max. Anzahl von Elementen]** | Reduziert die Anzahl der Elemente auf der X-Achse. Wenn Sie einen großen Datensatz haben, zeigen Sie möglicherweise nur die ersten 10 Elemente (oder einen beliebigen Wert) an. |
 | **[!UICONTROL Überlagerungen]** | Ein- oder Ausblenden von Datenpunkten auf Linien. |
 | **[!UICONTROL Achse]** |  |
 | **[!UICONTROL Zwei Achsen anzeigen]** | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. Die Farbe der Doppelachse entspricht der Farbe der Tabelle, es sei denn, es gibt mehrere Vergleiche. In diesem Fall ist die Farbe für alle Vergleiche grau. |
@@ -101,4 +101,4 @@ Klicken Sie in einem Kombinationsdiagramm oben rechts auf das Zahnradsymbol, um 
 | **[!UICONTROL y-Achse anzeigen]** | Zeigen Sie die Y-Achse an oder blenden Sie sie aus. |
 | **[!UICONTROL Y-Achse bei null verankern]** | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

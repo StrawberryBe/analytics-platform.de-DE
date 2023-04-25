@@ -4,10 +4,10 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zur
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 98%
+source-wordcount: '869'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Mit dieser Methode können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzun
 >
 >    Erstellen Sie keine neue Verbindung mit all Ihren Daten ausschließlich zum Zweck der Nutzungsmessung, da dadurch Ihre Nutzungswerte tatsächlich verdoppelt werden würden.
 
-1. Erstellen Sie in Analysis Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie (aus der Dropdown-Liste **[!UICONTROL Metriken]**) alle Ereignisse bis zum ersten Freitag des Monats ab, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
+1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
 
    ![Ereignisse](./assets/events-usage.png)
 

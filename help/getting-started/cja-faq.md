@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 98%
+source-wordcount: '2130'
+ht-degree: 96%
 
 ---
 
@@ -68,9 +68,9 @@ Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefüg
 +++
 
 
-+++**Welches Verhalten wird bei nicht zugeordneten Profildatensätzen erwartet?**
++++**Welches Verhalten wird für nicht zugeordnete Profil-Datensatzdatensätze erwartet?**
 
-**Beispielszenario**: Sie können zwei Datensätze in eine CJA-Verbindung einbinden, indem Sie `CRMid` als Personen-ID verwenden. Einer ist ein Web-Ereignis-Datensatz mit `CRMid` in allen Datensätzen. Der andere Datensatz ist ein CRM-Profildatensatz. 40 % des CRM-Datensatzes verfügen über `CRMid`, das im Web-Ereignis-Datensatz vorhanden ist. Für die anderen 60 % ist es nicht im CRM-Datensatz vorhanden. Werden diese Datensätze im Reporting in Analysis Workspace angezeigt?<p> **Antwort**: Profilzeilen, für die keine Ereignisse verknüpft sind, werden in Customer Journey Analytics gespeichert. Sie können sie jedoch erst dann in Analysis Workspace sehen, wenn ein mit dieser ID verknüpftes Ereignis angezeigt wird.
+**Beispielszenario**: Sie können zwei Datensätze in eine CJA-Verbindung einbinden, indem Sie `CRMid` als Personen-ID verwenden. Einer ist ein Web-Ereignis-Datensatz mit `CRMid` in allen Datensätzen. Der andere Datensatz ist ein CRM-Profildatensatz. 40 % des CRM-Datensatzes verfügen über `CRMid` im Webereignis-Datensatz vorhanden. Für die anderen 60 % ist es nicht im CRM-Datensatz vorhanden. Werden diese Datensätze im Reporting in Analysis Workspace angezeigt?<p> **Antwort**: Profilzeilen, für die keine Ereignisse verknüpft sind, werden in Customer Journey Analytics gespeichert. Sie können sie jedoch erst dann in Analysis Workspace sehen, wenn ein mit dieser ID verknüpftes Ereignis angezeigt wird.
 
 +++
 
@@ -168,7 +168,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 | Deduplizierung von Metriken | Dedupliziert Instanzen einer Metrik (z. B. [!UICONTROL Bestellungen]), wenn mehrere Zeilen dieselbe Transaktions-ID aufweisen (z. B. [!UICONTROL Kauf-ID]). Dadurch wird verhindert, dass Schlüsselmetriken zu häufig gezählt werden. Daher sind die Summen von Metriken wie [!UICONTROL Bestellungen] möglicherweise nicht über Report Suites hinweg korrekt. |
 | Währung | Die Währungsumrechnung wird in CJA noch nicht unterstützt. Wenn die Report Suites, die Sie zusammenführen möchten, unterschiedliche Basiswährungen verwenden, können Probleme auftreten. |
 | [!UICONTROL Persistenz] | [Persistenz](../data-views/component-settings/persistence.md) erstreckt sich über Report Suites hinweg, was sich auf [!UICONTROL Filter], [!UICONTROL Attribution] usw. auswirkt. Zahlen werden möglicherweise nicht richtig addiert. |
-| [!UICONTROL Klassifizierungen] | [!UICONTROL Klassifizierungen] werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Wenn Sie mehrere Klassifizierungsdateien in einem einzigen [!UICONTROL Such]-Datensatz kombinieren, können Probleme auftreten. |
+| [!UICONTROL Klassifizierungen] | [!UICONTROL Klassifizierungen] werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Beim Kombinieren mehrerer Klassifizierungsdateien zu einer [!UICONTROL Nachschlagen] -Datensatz, können Probleme auftreten. |
 
 
 ## 8. Herkömmliche [!UICONTROL Adobe Analytics]-Komponenten

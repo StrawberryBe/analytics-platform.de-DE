@@ -4,10 +4,10 @@ title: Schnellfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: cb1654cef651c5143667302c3fc592ba503dfe0a
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 44%
+source-wordcount: '1166'
+ht-degree: 42%
 
 ---
 
@@ -65,7 +65,7 @@ So erstellen Sie einen Schnellfilter:
    | [!UICONTROL Builder öffnen] | Zeigt den Filtergenerator an. Nachdem Sie den Filter im Filtergenerator gespeichert oder angewendet haben, wird er nicht mehr als &quot;Schnellfilter&quot;betrachtet. Er wird Teil der Komponentenlisten-Filterbibliothek. <p>Um die Komponente für alle Projekte und in der linken Leiste verfügbar zu machen, wählen Sie die Option [!UICONTROL **Machen Sie diesen Filter für alle Projekte verfügbar und fügen Sie ihn Ihrer Komponentenliste hinzu.**].</p><p>Weitere Informationen finden Sie im Abschnitt . [Schnellfilter als Komponentenlistenfilter speichern](#save-a-quick-filter-as-a-component-list-filter) in diesem Artikel.</p><p>**Hinweis:** Nur Benutzer mit der Berechtigung &quot;Filtererstellung&quot;im [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=de#analytics-tools) kann den Filtergenerator öffnen.</p> |
    | [!UICONTROL Abbrechen] | Abbrechen dieses Schnellfilters (wenden Sie ihn nicht an). |
    | [!UICONTROL Datumsbereich] | Der Validator verwendet den Datumsbereich des Bedienfelds für die Datensuche. Jeder Datumsbereich, der in einem Schnellfilter angewendet wird, überschreibt jedoch den Datumsbereich des Bedienfelds oben im Bedienfeld. |
-   | Vorschau (oben rechts) | Hiermit können Sie sehen, ob Sie über einen gültigen Filter verfügen und wie breit der Filter ist. Stellt eine Aufschlüsselung des Datensatzes dar, die Sie erwarten können, wenn Sie diesen Filter anwenden. Sie erhalten möglicherweise einen Hinweis, der anzeigt, dass dieser Filter keine Daten enthält. In diesem Fall können Sie weiterarbeiten oder aber die Filterdefinition ändern. |
+   | Vorschau (oben rechts) | Hiermit können Sie sehen, ob Sie über einen gültigen Filter verfügen und wie breit der Filter ist. Stellt die Aufschlüsselung des Datensatzes dar, den Sie bei Anwendung dieses Filters erwarten können. Sie erhalten möglicherweise einen Hinweis, der anzeigt, dass dieser Filter keine Daten enthält. In diesem Fall können Sie weiterarbeiten oder aber die Filterdefinition ändern. |
 
 1. Auswählen [!UICONTROL **Anwenden**] , um Ihre Änderungen zu speichern.
 

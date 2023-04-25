@@ -4,10 +4,10 @@ description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 64a774d9151c40ea9eadb1fb80c07db168ac8667
+source-git-commit: 7f657820e01696aa5d9b466ea2eaa6bc417ee6cf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3146'
+ht-degree: 77%
 
 ---
 
@@ -107,7 +107,7 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 | **Allgemeine Standardeinstellungen** |  |  |
 |  | Prozentsatz | Zeigt für alle Visualisierungen Werte in Prozentsätzen an. |
 |  | Legende sichtbar | Ermöglicht für alle Visualisierungen das Ausblenden des detaillierten Legendentextes. |
-|  | Grenzwert für max. Anzahl von Elementen | Reduziert für alle Visualisierungen die Anzahl der Elemente auf der X-Achse. Dies kann bei großen Datensätzen nützlich sein. |
+|  | Grenzwert für max. Anzahl von Elementen | Reduziert für alle Visualisierungen die Anzahl der Elemente auf der X-Achse. Dies kann nützlich sein, wenn Sie einen großen Datensatz haben. |
 |  | Zwei Achsen anzeigen (falls anwendbar) | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 |  | Normalisierung (falls anwendbar) | Erzwingt Metriken für gleiche Anteile. Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 |  | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
@@ -115,7 +115,7 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 | **[Linie](/help/analysis-workspace/visualizations/line.md)** |  |  |
 |  | Prozentsatz | Zeigt in Linienvisualisierungen Werte in Prozentsätzen an. |
 |  | Legende sichtbar | Ermöglicht das Ausblenden des detaillierten Legendentextes für die Linienvisualisierung. |
-|  | Grenzwert für max. Anzahl von Elementen | Verringert die Anzahl der Elemente auf der X-Achse in der Linienvisualisierung. Dies kann bei großen Datensätzen nützlich sein. |
+|  | Grenzwert für max. Anzahl von Elementen | Verringert die Anzahl der Elemente auf der X-Achse in der Linienvisualisierung. Dies kann nützlich sein, wenn Sie einen großen Datensatz haben. |
 |  | Zwei Achsen anzeigen (falls anwendbar) | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 |  | Normalisierung (falls anwendbar) | Erzwingt Metriken für gleiche Anteile. Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 |  | X-Achse anzeigen | Zeigt die X-Achse im Liniendiagramm an. |
@@ -166,13 +166,13 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 |  | Wert abkürzen | Im Abschnitt [!UICONTROL **Zusammenfassungszahl**] |
 | **[Treemap](/help/analysis-workspace/visualizations/treemap.md)** |  |  |
 |  | Prozentsatz | Zeigt für die Treemap-Visualisierungen Werte in Prozentsätzen an. |
-|  | Grenzwert für max. Anzahl von Elementen | Verringert die Anzahl der Elemente auf der X-Achse in der Treemap-Visualisierung. Dies kann bei großen Datensätzen nützlich sein. |
+|  | Grenzwert für max. Anzahl von Elementen | Verringert die Anzahl der Elemente auf der X-Achse in der Treemap-Visualisierung. Dies kann nützlich sein, wenn Sie einen großen Datensatz haben. |
 | **[Venn](/help/analysis-workspace/visualizations/venn.md)** |  |  |
 |  | Legende sichtbar | Ermöglicht das Ausblenden des detaillierten Legendentextes für die Venn-Visualisierung. |
 | **[Streuung](/help/analysis-workspace/visualizations/scatterplot.md)** |  |  |
 |  | Prozentsatz | Zeigt Werte in Prozent für die Streuvisualisierungen an. |
 |  | Legende sichtbar | Ermöglicht das Ausblenden des detaillierten Legendentextes für die Streuvisualisierung. |
-|  | Grenzwert für max. Anzahl von Elementen | Verringert die Anzahl der Elemente auf der X-Achse in der Streuvisualisierung. Dies kann bei großen Datensätzen nützlich sein. |
+|  | Grenzwert für max. Anzahl von Elementen | Verringert die Anzahl der Elemente auf der X-Achse in der Streuvisualisierung. Dies kann nützlich sein, wenn Sie einen großen Datensatz haben. |
 |  | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
 
 ## Unternehmenseinstellungen

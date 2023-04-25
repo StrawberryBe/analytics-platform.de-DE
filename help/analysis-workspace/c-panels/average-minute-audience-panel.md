@@ -4,10 +4,10 @@ description: Verwenden und Interpretieren des Bedienfelds „Medien-Zielgruppend
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
-workflow-type: ht
-source-wordcount: '1313'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '1315'
+ht-degree: 91%
 
 ---
 
@@ -44,9 +44,9 @@ Sie können das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ mithi
 |---------|------------|
 | Berichtsdimensionen | Wenn Sie einen bestimmten Inhalt auswählen, können Sie für die Berichtsausgabe entweder das Feld für den Videonamen oder die Inhalts-ID verwenden, um den Inhalt und den zugehörigen Zielgruppendurchschnitt pro Minute für den ausgewählten Zeitraum anzuzeigen. |
 | Inhalte filtern nach (optional) | Sie können den spezifischen Inhalt nach der gewünschten Ansicht oder der Struktur Ihrer Daten filtern. |
-| Sendung, Staffel, Folge | Wenn Sie „Sendung, Staffel, Folge“ auswählen, werden Ihre verfügbaren Sendungen im Dropdown-Menü angezeigt, die Sie mithilfe einer Suche filtern können (oder indem Sie den Namen der Sendung per Drag-and-drop aus der linken Spalte ziehen). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an. |
+| Sendung, Staffel, Folge | Wenn Sie &quot;Anzeigen, Staffel, Folge&quot;auswählen, werden Ihre verfügbaren Sendungen in der Dropdown-Liste angezeigt, die Sie mithilfe einer Suche filtern können (oder indem Sie den Anzeigennamen aus der linken Spalte ziehen und ablegen). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an. |
 | Benutzerdefinierte Dimension | Wenn sich der Name Ihrer Sendung unter einer benutzerdefinierten Dimension befindet, können Sie ihn entweder über die Suche im Dropdown-Menü der Dimension (optional) oder über die Suche in der linken Spalte finden. Das Dimensionselement wird basierend auf dieser Auswahl automatisch ausgefüllt und als Folge behandelt. |
-| Keine | Sie können *Keine* wählen, um alle Videonamen anzuzeigen, für die Daten über den Zielgruppendurchschnitt pro Minute für die von Ihnen gewählte Auswahl vorliegen. |
+| Keine | Sie können *Keines* um alle Videonamen anzuzeigen, die durchschnittliche Minutenzielgruppendaten für die ausgewählte Auswahl enthalten. |
 
 ### Erweiterte Einstellungen für spezifischen Inhalt
 
@@ -61,9 +61,9 @@ Sie können das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ mithi
 |---------|------------|
 | Granularität | Die Standardgranularität beträgt 5 Minuten. Sie können jedoch eine beliebige andere Granularität auswählen, die als Nenner für die Zeitreihe innerhalb Ihrer allgemeinen Zeitraumauswahl in der Kalenderauswahl verwendet wird. Wenn Sie beispielsweise 12:00 Uhr bis 12:30 Uhr mit einer Granularität von 5 Minuten auswählen, erhalten Sie den Zielgruppendurchschnitt pro Minute über die gesamte halbe Stunde sowie sechs Zeilen mit dem Zielgruppendurchschnitt pro Minute für jeden 5-minütigen Zeitraum. Diese Zeilen werden als Datenpunkte für das Zeitreihendiagramm verwendet. |
 | Inhalte filtern nach (optional) | Sie können den spezifischen Inhalt nach der gewünschten Ansicht oder der Struktur Ihrer Daten filtern. |
-| Sendung, Staffel, Folge | Wenn Sie *Sendung, Staffel, Folge* auswählen, werden Ihre verfügbaren Sendungen in der Dropdown-Liste angezeigt, die Sie per Suche filtern können (oder indem Sie den Sendungsnamen aus der linken Spalte ziehen und ablegen). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an. |
+| Sendung, Staffel, Folge | Auswählen *Einblenden, Staffel, Folge* zeigt Ihre verfügbaren Anzeigen in der Dropdown-Liste an, die Sie per Suche filtern können (oder indem Sie den Anzeigennamen aus der linken Spalte ziehen und ablegen). Sie können Ihre Auswahl hier beenden, um alle Staffeln Ihrer Sendung zu sehen, oder Sie können nach einzelnen Staffeln und dann nach einzelnen Folgen filtern. Diese Einstellung zeigt die Daten für diese Sendungen, Staffeln oder Folgen für den ausgewählten Zeitraum an. |
 | Benutzerdefinierte Dimension | Wenn sich der Name Ihrer Sendung unter einer benutzerdefinierten Dimension befindet, können Sie ihn entweder über die Suche im Dropdown-Menü der Dimension (optional) oder über die Suche in der linken Spalte finden. Das Dimensionselement wird basierend auf dieser Auswahl automatisch ausgefüllt und als Folge behandelt. |
-| Keine | Sie können *Keine* auswählen, um alle Videonamen über den ausgewählten Zeitraum anzuzeigen. |
+| Keine | Sie können *Keines* um alle Videonamen über den ausgewählten Zeitraum anzuzeigen. |
 
 ### Erweiterte Einstellungen für benutzerdefinierte Zeiträume
 

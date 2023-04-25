@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 100%
+source-wordcount: '1452'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ CJA erhält seine Daten von Adobe Experience Platform. Mit Experience Platform k
 
 Kundendaten in Experience Platform werden als Datensätze gespeichert, die aus einem [Schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=de) und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=de).
 
-Ihr CJA-Administrator richtet [Verbindungen](/help/connections/create-connection.md) zu Datensätzen in Experience Platform ein. Anschließend erstellen sie mithilfe dieser Verbindungen [Datenansichten](/help/data-views/data-views.md). Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in CJA. Da Experience Platform alle Daten für die Berichterstellung bereitstellt, fungieren Report Suites nicht mehr als Daten-Container.
+Ihr CJA-Administrator richtet [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Experience Platform. Anschließend erstellen sie mithilfe dieser Verbindungen [Datenansichten](/help/data-views/data-views.md). Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in CJA. Da Experience Platform alle Daten für die Berichterstellung bereitstellt, fungieren Report Suites nicht mehr als Daten-Container.
 
 Mit einer Verbindung kann Ihr Analytics-Administrator Datensätze von Adobe Experience Platform in Customer Journey Analytics integrieren, wie im folgenden Video gezeigt wird:
 

@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 96%
+source-wordcount: '911'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=de) ist Teil von Adobe Experience Platform Intelligent Services und bietet einen mehrere Kanäle umfassenden algorithmischen Attributions-Service, der den Einfluss und die inkrementelle Auswirkung von Kundeninteraktionen auf bestimmte Ergebnisse berechnet. Mit Attribution AI können Marketing-Experten die Ausgaben für Marketing und Werbung messen und optimieren, indem sie die Auswirkungen einzelner Kundeninteraktionen in einzelnen Phasen der Customer Journey untersuchen.
 
-Attribution AI kann mit Customer Journey Analytics (CJA) integriert werden, sodass mit Attribution AI Modelle anhand von Marketing-Touchpoints und Konversionsdatenquellen von Kunden ausgeführt werden können. CJA importiert dann das Ergebnis dieser Modelle als Datensatz. Das Ergebnis kann auch mit dem Rest Ihrer CJA-Datensätze integriert werden. Attribution AI-aktivierte Datensätze können dann in Datenansichten und Berichten in CJA genutzt werden.
+Attribution AI kann mit Customer Journey Analytics (CJA) integriert werden, sodass mit Attribution AI Modelle anhand von Marketing-Touchpoints und Konversionsdatenquellen von Kunden ausgeführt werden können. CJA importiert dann die Ausgabe dieser Modelle als Datensatz oder kann in den Rest Ihrer CJA-Datensätze integriert werden. Attribution AI-aktivierte Datensätze können dann in Datenansichten und Berichten in CJA genutzt werden.
 
 Attribution AI unterstützt 3 Experience Platform-Schemas: Erlebnisereignis, Adobe Analytics und Kundenerlebnisereignis.
 

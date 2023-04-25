@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Works
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 97%
+source-wordcount: '978'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ Im Folgenden finden Sie eine Videoübersicht zu Customer Journey Analytics:
 
 Customer Journey Analytics ergänzt den Umfang von Adobe Analytics durch benutzerfreundliche kanalübergreifende Funktionen. Außerdem werden die Einschränkungen, die es in früheren Versionen von Adobe Analytics gibt, aufgehoben. Einige wichtige Verbesserungen sind:
 
-* **Unbegrenzte Variablen und Ereignisse**: Die Konzepte von eVars, Props und Ereignissen existieren nicht mehr. Die Daten werden in erster Linie in Dimensionen und Metriken betrachtet. Datensätze können eine unbegrenzte Anzahl an eindeutigen Dimensionen und Metriken aufweisen.
+* **Unbegrenzte Variablen und Ereignisse**: Die Konzepte von eVars, Props und Ereignissen existieren nicht mehr. Die Daten werden in erster Linie in Dimensionen und Metriken betrachtet. Datensätze können eine unbegrenzte Anzahl eindeutiger Dimensionen und Metriken aufweisen.
 * **Unbegrenzte Anzahl eindeutiger Werte**: Bei Adobe Experience Platform ist die Anzahl eindeutiger Werte nicht beschränkt.
 * **Historische Daten ändern**: Mit Adobe Experience Platform können Daten entfernt oder korrigiert werden.
 * **Report Suite-übergreifende Daten**: Vorhandene Implementierungen aus mehreren Datensätzen können in Platform kombiniert werden.

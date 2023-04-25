@@ -3,10 +3,10 @@ title: Datumsbereich erstellen
 description: Datumsbereich zur Verwendung in Berichten erstellen.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '403'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ Wenn Sie im modalen Fenster auf den Datumsbereich klicken, haben Sie mehrere Opt
 
 * **Kalender**: Wählen Sie das Anfangs- und das Enddatum aus.
 * **Rollierende Datumswerte verwenden**: Aktivieren Sie dieses Kontrollkästchen, wenn Sie möchten, dass sich der Datumsbereich im Zeitverlauf ändert. Aktivieren Sie dieses Kontrollkästchen nicht, wenn Ihr Datumsbereich statisch bleiben soll.
-* **Voreinstellung auswählen**: Verwenden Sie dieses Dropdown-Menü, wenn Sie einen benutzerdefinierten Datumsbereich benötigen, der auf einem von Adobe standardmäßig angebotenen Bereich basiert. Wenn Sie eine Voreinstellung auswählen, können Sie den Datumsbereich entsprechend Ihren Anforderungen weiter anpassen. Die von Adobe angebotenen Voreinstellungen werden dadurch nicht beeinflusst.
+* **Vorgabe auswählen**: Verwenden Sie diese Dropdownauswahl, wenn Sie einen benutzerdefinierten Datumsbereich wünschen, der auf einem von Adobe standardmäßig angebotenen Bereich basiert. Wenn Sie eine Voreinstellung auswählen, können Sie den Datumsbereich entsprechend Ihren Anforderungen weiter anpassen. Die von Adobe angebotenen Voreinstellungen werden dadurch nicht beeinflusst.
 
 ## Rollierende Datumsbereiche
 

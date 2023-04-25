@@ -4,16 +4,16 @@ keywords: Schreibgeschützte Projekte
 title: Schreibgeschützte Projekte
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
 # Schreibgeschützte Projekte
 
-Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann wünschenswert sein, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen nicht so vertraut sind, aber dennoch Daten und Einblicke in einer sicheren Umgebung einsehen sollen.
+Sie können Projekte über den [Projektfreigabe-Workflow](/help/analysis-workspace/curate-share/share-projects.md) für Empfänger als „schreibgeschützt“ freigeben. Empfänger mit der Rolle „Kann anzeigen“ erhalten ein eingeschränkteres Projekterlebnis. Dies kann gewünscht werden, wenn Sie ein Projekt für Benutzer freigeben, die mit der Datenstruktur Ihres Unternehmens, Analysis Workspace oder Customer Journey Analytics im Allgemeinen weniger vertraut sind, aber dennoch Daten und Einblicke in einer sicheren Umgebung nutzen möchten.
 
 ![](assets/view-only-project.png)
 
