@@ -4,7 +4,7 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
+source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 53%
@@ -119,7 +119,7 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 >
 >* Die Möglichkeit, ein Projekt auf diese Weise freizugeben, kann vom CJA-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Wenn Sie ein Projekt nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr CJA-Administrator diese Funktion deaktiviert.
 >
->* Projekte mit mehr als 14 erweiterten Visualisierungen können nicht für Personen freigegeben werden, die keinen Zugriff auf CJA haben.
+>* Projekte mit mehr als 50 erweiterten Visualisierungen können nicht für Personen freigegeben werden, die keinen Zugriff auf CJA haben.
 >
 >* Benutzer, für die Sie freigeben, können alle Filter anzeigen, die auf das Projekt während der [Kuratierung](curate.md).
 > 
