@@ -2,10 +2,10 @@
 title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 60%
+source-wordcount: '309'
+ht-degree: 56%
 
 ---
 
@@ -29,4 +29,4 @@ Wenn Sie Filter auf ein Freiformprojekt anwenden, stehen auch mehrere andere Met
 | Filter aus Auswahl erstellen | Erstellen Sie einen Inline-Filter. Dieser Filter wird nur auf das geöffnete Projekt angewendet und nicht als CJA-Filter gespeichert.<p> 1. Die Tabellenzeilen auswählen, die Teil des Filters sein sollen. 2. Rechtsklick auf die Auswahl.  3. Klick auf *Filter aus Auswahl erstellen*. |
 | Arbeitsbereich [!UICONTROL Komponenten] > [!UICONTROL Neuer Filter] | Zeigt den Filter Builder an. Weitere Informationen zur Filterung finden Sie unter [Filter Builder](/help/components/filters/filter-builder.md). |
 | „Freigeben“ > „Projekt freigeben“ oder „Freigeben“ > „Projektdaten kuratieren“ | In [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) oder [Kuratieren von Projekten](/help/analysis-workspace/curate-share/curate.md), erfahren Sie, wie Filter, die Sie auf das Projekt anwenden, in freigegebenen Analysen für den Empfänger verfügbar sind. |
-| Filter als Dimensionen verwenden | Das folgende Video zeigt, wie Filter als Dimensionen verwendet werden: (**Hinweis:** In diesem Video wird der Begriff &quot;Segmente&quot;anstelle von &quot;Filter&quot;verwendet. Die Funktionalität ist jedoch dieselbe.) <p>[Verwenden von Segmenten als Dimensionen in Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=de)</p> |
+| Filter als Dimensionen verwenden | Das folgende Video zeigt, wie Filter als Dimensionen verwendet werden:  <p>[Filter als Dimensionen in Analysis Workspace verwenden](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
