@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
+source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3062'
 ht-degree: 9%
 
 ---
@@ -15,18 +15,19 @@ ht-degree: 9%
 
 # Abgeleitete Felder
 
+{{release-limited-testing}}
+
 Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten (benutzerdefinierten) Feld können Sie mithilfe eines anpassbaren Regel-Builders (Regel-Builder) spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder weiter als Komponente in definieren [Datenansicht](../data-views.md).
 
 Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Standorten außerhalb von CJA. z. B. [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
 
-Abgeleitete Felder werden als benutzerdefinierte Felder in [Datenansichten](../data-views.md), basieren auf einer Reihe von Funktionen und werden auf verfügbare Standard- und/oder Schemafelder angewendet.
+Abgeleitete Felder werden als benutzerdefinierte Felder in [Datenansichten](../data-views.md), basieren auf einem Satz von Funktionen, die als Regeln definiert und auf verfügbare Standard- und/oder Schemafelder angewendet werden.
 
 Anwendungsbeispiele sind:
 
 - Definieren Sie ein benutzerdefiniertes Feld für den Seitennamen, das falsche erfasste Seitennamenwerte korrigiert, um die Seitennamenwerte zu korrigieren.
 
 - Definieren Sie ein benutzerdefiniertes Marketing-Kanal -Feld, das den korrekten Marketing-Kanal anhand einer oder mehrerer Bedingungen bestimmt (z. B. URL-Parameter, Seiten-URL, Seitenname).
-
 
 ## Benutzeroberfläche für benutzerdefinierte Felder
 
@@ -37,7 +38,7 @@ Wenn Sie ein benutzerdefiniertes Feld erstellen oder bearbeiten, verwenden Sie d
 
 |  | Name | Beschreibung |
 |---------|----------|--------|
-| 1 | **Selektor** | Sie verwenden den Auswahlbereich, um Ihre ![Funktion](assets/Smock_Function_18_N.svg) Funktion,![Symbol für Funktionsvorlage](assets/Smock_FileTemplate_18_N.svg) Funktionsvorlage,![Symbol für Schemafeld](assets/Smock_Folder_18_N.svg) Schemafeld oder![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg)Standardfeld auf zum Regel-Builder. <br/>Verwenden Sie das Dropdown-Menü, um zwischen [!UICONTROL Funktionen], [!UICONTROL Funktionsvorlagen], [!UICONTROL Schemafelder]und [!UICONTROL Standardfelder].<br/>Mithilfe des Suchfelds können Sie nach Funktionen, Funktionsvorlagen, Schemas und Standardfeldern suchen. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) Filter und Filter im [!UICONTROL Filtern von Feldern nach] angezeigt. Sie können Filter einfach mit ![Symbol &quot;Schließen&quot;](assets/CrossSize75.svg) für jeden Filter. |
+| 1 | **Selektor** | Sie verwenden den Auswahlbereich, um Ihre ![Funktion](assets/Smock_Function_18_N.svg) Funktion,![Symbol für Funktionsvorlage](assets/Smock_FileTemplate_18_N.svg) Funktionsvorlage,![Symbol für Schemafeld](assets/Smock_Folder_18_N.svg) Schemafeld oder![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg)Standardfeld auf zum Regel-Builder. <br/>Verwenden Sie das Dropdown-Menü, um zwischen [!UICONTROL Funktionen], [!UICONTROL Funktionsvorlagen], [!UICONTROL Schemafelder]und [!UICONTROL Standardfelder].<br/>Sie können mithilfe der Variablen ![Suchsymbol](assets/Smock_Search_18_N.svg) Suchfeld. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) Filter und Filter im [!UICONTROL Filtern von Feldern nach] angezeigt. Sie können Filter einfach mit ![Symbol &quot;Schließen&quot;](assets/CrossSize75.svg) für jeden Filter. |
 | 2 | **Regel-Builder** | Sie erstellen Ihr benutzerdefiniertes Feld sequenziell mithilfe einer oder mehrerer Regeln. Eine Regel ist eine spezifische Implementierung einer Funktion und ist daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Rule Builder ziehen. Der Funktionstyp bestimmt die Schnittstelle der Regel.<br/>Siehe [Regelschnittstelle](#rule-interface) für weitere Informationen. <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Rule Builder bestimmt die endgültige Ausgabe des benutzerdefinierten Felds. |
 | 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr benutzerdefiniertes Feld benennen und beschreiben und den Feldtyp überprüfen. |
 | 4 | **[!UICONTROL ** Endausgabe **]** | In diesem Bereich wird eine direkt aktualisierte Vorschau der Ausgabewerte angezeigt, die auf den Daten der letzten 30 Tage und den Änderungen basiert, die Sie am benutzerdefinierten Feld im Regel-Builder vornehmen. |
