@@ -2,14 +2,32 @@
 title: Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: ht
-source-wordcount: '991'
-ht-degree: 100%
+source-git-commit: 80d0b95f3bc3d785d9ca7e4b50aa1bd8440373c2
+workflow-type: tm+mt
+source-wordcount: '1012'
+ht-degree: 91%
 
 ---
 
-# Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
+# Vergleichen Sie die Datenverarbeitung in Adobe Analytics und Customer Journey Analytics.
+
+<!--
+
+You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
+
+In Adobe Analytics most of that processing of data occurs immediately after collecting the data. Functionalties like VISTA Rules, Processing Rules, Marketing Channels Processing Rules are available to support this **collection-time processing**. 
+The data is then stored and at report time you can apply additional processing. For example, break down dimensions, apply segmentation, or  select a different attribution model. This **report-time processing** happens on the fly. 
+
+In Adobe Analytics, report-time processing commonly represents a smaller amount of processing  than what happens at collection-time.
+
+![Adobe Analytics collection-time processing](../assets/aa-processing.png)
+
+In contrast, Customer Journey Analytics (CJA) is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of CJA is more designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of components in your Data Views. 
+
+![CJA report-time processing](../assets/cja-processing.png)
+
+-->
+
 
 Das Verständnis der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen kann hilfreich sein, um zu verstehen, welche Metriken wo verfügbar sind und warum sie sich unterscheiden können.
 
@@ -23,24 +41,26 @@ In der folgenden Tabelle wird die Terminologie für die verschiedenen Arten von 
 
 | Begriff | Definition | Hinweise |
 | --- | --- | --- |
-| Verarbeitungszeitlogik | Logik, die ausgeführt wird, wenn Daten verarbeitet werden, bevor sie zu Reporting- und Analysezwecken gespeichert werden. | Diese Logik wird in historische Daten aufgenommen und kann im Allgemeinen nicht einfach geändert werden. |
-| Berichtszeitlogik | Logik, die zum Zeitpunkt der Berichtsausführung ausgeführt wird. | Diese Logik kann zur Berichtslaufzeit auf zerstörungsfreie Weise auf zukünftige und historische Daten angewendet werden. |
+| Verarbeitung der Sammlungszeit | Logik, die ausgeführt wird, wenn Daten erfasst und verarbeitet werden, bevor sie zu Berichts- und Analysezwecken gespeichert werden. | Diese Logik wird in historische Daten aufgenommen und kann im Allgemeinen nicht einfach geändert werden. |
+| Berichtszeitverarbeitung | Logik, die zum Zeitpunkt der Berichtsausführung ausgeführt wird. | Diese Logik kann zur Berichtslaufzeit auf zerstörungsfreie Weise auf zukünftige und historische Daten angewendet werden. |
 | Logik auf Trefferebene | Logik, die Zeile für Zeile angewendet wird. | Beispiele: Verarbeitungsregeln, VISTA, bestimmte Regeln von Marketing-Kanälen. |
 | Logik auf Besuchsebene | Logik, die auf Besuchsebene angewendet wird. | Beispiele: Besuchs- und Sitzungsdefinition. |
 | Logik auf Besucherebene | Logik, die auf Besucherebene angewendet wird. | Beispiel: Geräteübergreifende/kanalübergreifende Besucherzuordnung. |
 | Segmentlogik (Filterlogik) | Auswertung der Segmentregeln (Filterregeln) für Treffer/Besuch/Besucher (Ereignis/Sitzung/Person). | Beispiel: Personen, die rote Schuhe gekauft haben. |
 | Berechnete Metriken | Auswertung benutzerdefinierter Metriken, die von Kunden erstellt wurden und auf komplexen Formeln, einschließlich Segmenten und Filtern, basieren können. | Beispiel: Anzahl der Personen, die rote Schuhe gekauft haben. |
 | Attributionslogik | Logik zur Berechnung der Attribution. | Beispiel: eVar-Persistenz. |
+| Komponenteneinstellungen | Anwenden von Anpassungen auf Metriken oder Dimensionen, wie Attribution, Verhalten, Format und andere | Beispiel: Wertesammlung zum Kombinieren numerischer Werte basierend auf einem Bereich |
+| Benutzerdefinierte Felder | Logik gilt für Schema- oder Standardfelder bei der Definition von Komponenten in einer Datenansicht. | Beispiel: Erstellen einer neuen Marketing-Kanal-Dimension |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Im Laufe der Zeit wurde die Flexibilität von Adobe Analytics und jetzt Customer Journey Analytics verbessert, indem die Ausführung der Logik für Daten auf Besuchs- und Besucherebene zur Berichtslaufzeit ermöglicht wurde.
 
 ## Typen von Datenverarbeitung {#types}
 
-Die für Adobe Analytics und CJA durchgeführten Datenverarbeitungsschritte und der Zeitpunkt dieser Schritte sind je nach Analytics-Funktion unterschiedlich. Die nachstehende Tabelle bietet eine Zusammenfassung der Typen von Datenverarbeitung für jede Analytics-Funktion und gibt an, wann die Datenverarbeitung angewendet wird.
+Die für Adobe und CJA durchgeführten Datenverarbeitungsschritte und der Zeitpunkt dieser Schritte sind je nach Analytics-Funktion unterschiedlich. Die nachstehende Tabelle bietet eine Zusammenfassung der Typen von Datenverarbeitung für jede Analytics-Funktion und gibt an, wann die Datenverarbeitung angewendet wird.
 
-| Analytics-Funktion | Zur Verarbeitungszeit angewendet | Zur Berichtszeit angewendet | Nicht verfügbar | Hinweise |
+| Funktion | Zur Verarbeitungszeit angewendet | Zur Berichtszeit angewendet | Nicht verfügbar | Hinweise |
 | --- | --- | --- | --- | --- |
 | [Core AA](https://experienceleague.adobe.com/docs/analytics.html?lang=de)-Reporting<br/>(ohne Attribution IQ oder Virtual Report Suites mit Verarbeitung zur Berichtszeit) | <ul><li>[Verarbeitungsregeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=de)</li><li>[VISTA-Regeln](https://experienceleague.adobe.com/docs/analytics/technotes/terms.html?lang=de)</li><li>Trefferebene [Regeln von Marketing-Kanälen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=de)</li><li>Regeln von Marketing-Kanälen auf Besuchsebene (siehe Hinweis)</li><li>Besuchsdefinition</li><li>Attributionslogik</li></ul> | <ul><li>Segmentlogik</li><li>Berechnete Metriken</li></ul> | <ul><li>Cross-Device Analytics (siehe Hinweis)</li></ul> | <ul><li>CDA erfordert die Verwendung von Virtual Report Suites mit Berichtszeitverarbeitung.</li><li>Die „Regeln für Marketing-Kanäle auf Besuchsebene“ umfassen Folgendes: **Ist erste Seite des Besuchs**, **Last Touch-Kanal überschreiben** und **Marketing-Kanalgültigkeit**. (Siehe die [Dokumentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de).)</li></ul> |
 | Core AA [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse.html?lang=de) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Regeln für Marketing-Kanäle auf Besuchsebene</li><li>Besuchsdefinition</li><li>Attributionslogik</li></ul> | <ul><li>Segmentlogik</li></ul> | <ul><li>Berechnete Metriken</li><li>Cross-Device Analytics</li></ul> |  |
@@ -49,6 +69,6 @@ Die für Adobe Analytics und CJA durchgeführten Datenverarbeitungsschritte und 
 | Core AA [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=de) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Besuchsdefinition (siehe Hinweis)</li><li>Cross-Device Analytics (siehe Hinweis)</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Trefferebene (siehe Hinweis)</li><li>Regeln für Marketing-Kanäle auf Besuchsebene (siehe Hinweis) Attributionslogik</li><li>Segmentlogik</li><li>Berechnete Metriken</li></ul> |  | <ul><li>CDA erfordert die Verwendung von Virtual Report Suites mit Berichtszeitverarbeitung.</li><li>Attribution IQ in Core Analytics verwendet Marketing-Kanäle, die vollständig zur Berichtszeit abgeleitet wurden (d. h. abgeleitete Mittelwerte).</li><li>Attribution IQ verwendet eine Besuchsdefinition für Verarbeitungszeiten, es sei denn, diese wird in einer VRS zur Berichtszeitverarbeitung verwendet.</li></ul> |
 | Core AA Virtual Report Suites mit [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) (VRS RTP) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de)</li></ul> | <ul><li>Besuchsdefinition</li><li>Attributionslogik</li><li>Segmentlogik</li><li>Berechnete Metriken</li><li>Andere VRS-RTP-Einstellungen</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Siehe VRS-RTP-[Dokumentation](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de).</li></ul> |
 | Auf dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basierender Datensatz im Data Lake von AEP | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Feldbasierte Zuordnung (siehe Hinweis)</li></ul> |  | <ul><li>[Regeln für Marketing-Kanäle auf Besuchsebene](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de)</li><li>Besuchslogik</li><li>Attributionslogik</li><li>Filterlogik</li></ul> | <ul><li>Muss Ihre eigene Filterlogik und berechnete Metriken anwenden</li><li>Bei der feldbasierten Zuordnung wird zusätzlich zu dem vom Analytics-Quell-Connector erstellten Datensatz ein separater zugeordneter Datensatz erstellt.</li></ul> |
-| Reporting in [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>[Regeln für Marketing-Kanäle](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de) auf Trefferebene</li><li>[Verbindungseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de)</li><li>Feldbasierte Zuordnung (siehe Hinweis)</li></ul> | <ul><li>Sitzungsdefinition</li><li>[Datenansichtseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de)</li><li>Attributionslogik</li><li>Berechnete Metriken</li><li>Filterlogik</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Muss einen zugeordneten Datensatz verwenden, um die feldbasierte Zuordnung nutzen zu können.</li></ul> |
+| Reporting in [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de) | <ul><li>Implementiert als Teil der Adobe Experience Platform-Datenerfassung</li></ul> | <ul><li>Sitzungsdefinition</li><li>[Datenansichtseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de)<li>Attributionslogik</li><li>Berechnete Metriken</li><li>Filterlogik</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Muss einen zugeordneten Datensatz verwenden, um die feldbasierte Zuordnung nutzen zu können.</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
