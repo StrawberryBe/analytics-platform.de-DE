@@ -5,13 +5,13 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
+exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
+source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3225'
 ht-degree: 9%
 
 ---
-
 
 # Abgeleitete Felder
 
@@ -153,14 +153,21 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 ## Funktionsreferenz
 
-Für jede unterstützte Funktion finden Sie im Folgenden Details:
+Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
-- Input, Operatoren und Ausgaben
+- Spezifikationen:
+   - Eingabedatentyp: Art der unterstützten Daten,
+   - input: mögliche Eingabewerte,
+   - enthaltene Operatoren: für diese Funktion unterstützte Operatoren (falls vorhanden),
+   - limit: maximale Anzahl von Regeln mit dieser Funktion, die Sie in einem abgeleiteten Feld verwenden können,
+   - Ausgabe.
 
 - Anwendungsbeispiele, darunter:
    - Daten vor der Definition des benutzerdefinierten Felds
    - Definieren des benutzerdefinierten Felds
    - Daten nach der Definition des benutzerdefinierten Felds
+
+- dependencies (optional)
 
 
 <!-- Concatenate -->
@@ -171,11 +178,11 @@ Kombiniert zwei oder mehr Felder, benutzerdefinierte Felder oder vom Benutzer ei
 
 +++ Details
 
-## Eingaben/Operatoren/Ausgaben {#concatenate-io}
+## Spezifikationen {#concatenate-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Ausgabe |
-|---|---|---|---|
-| <p>Zeichenfolge</p> | <ul><li>Zwei oder mehr Werte zu kombinieren<ul><li>Felder</li><li>Abgeleiteter Wert aus einer vorherigen Regel</li><li>Vom Benutzer eingegebener Wert</li></ul></li><li>Trennzeichen<ul><li>Eingabe oder Auswahl eines Trennzeichens für jeden Wert</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|:--:|---|
+| <p>Zeichenfolge</p> | <ul><li>Zwei oder mehr Werte zu kombinieren<ul><li>Felder</li><li>Abgeleiteter Wert aus einer vorherigen Regel</li><li>Vom Benutzer eingegebener Wert</li></ul></li><li>Trennzeichen<ul><li>Eingabe oder Auswahl eines Trennzeichens für jeden Wert</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2</p> | <p>Neues benutzerdefiniertes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -200,7 +207,7 @@ Stellen Sie sich die folgenden Buchungen vor:
 Der gewünschte Bericht sollte wie folgt aussehen:
 
 | Ursprung/Ziel | Buchungen |
-|---|---|
+|----|---:|
 | SLC-MCO | 2 |
 | SLC-LAX | 1 |
 | SLC-SEA | 1 |
@@ -212,7 +219,7 @@ Der gewünschte Bericht sollte wie folgt aussehen:
 ### Daten vor {#concatenate-uc-databefore}
 
 | Herkunft | Ziel |
-|----|----|
+|----|---:|
 | SLC | MCO |
 | SLC | LAX |
 | SLC | SEA |
@@ -249,11 +256,11 @@ Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Fel
 
 +++ Details
 
-## Eingaben/Operatoren/Ausgaben {#casewhen-io}
+## Spezifikationen {#casewhen-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Ausgabe |
-|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum/Datum/Uhrzeit</li></ul> | <ul><li>Eingabefelder</li><li>Kriterien</li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Ist gleich keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt nicht mit einem Begriff</li><li>Endet nicht mit</li><li>endet nicht mit einem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Numerisch</u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Größer als</li><li>Größer als oder gleich</li><li>Kleiner als</li><li>Kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Daten </u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist später als</li><li>Ist später als oder gleich</li><li>Is before</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <p>Neues benutzerdefiniertes Feld</p> |
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|:---:|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum/Datum/Uhrzeit</li></ul> | <ul><li>Eingabefelder</li><li>Kriterien</li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Ist gleich keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt nicht mit einem Begriff</li><li>Endet nicht mit</li><li>endet nicht mit einem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Numerisch</u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Größer als</li><li>Größer als oder gleich</li><li>Kleiner als</li><li>Kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Daten </u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist später als</li><li>Ist später als oder gleich</li><li>Is before</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -273,7 +280,7 @@ Sie möchten Regeln definieren, um verschiedene Marketing-Kanäle zu identifizie
 Falls Ihre Site die folgenden Beispielereignisse erhält, die Referrer und Seiten-URL enthalten, sollten diese Ereignisse wie folgt identifiziert werden:
 
 | Ereignis-   | Referrer | Seiten-URL | Marketing-Kanal |
-|:----:|----|----|----|
+|:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | Natürliche Social |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Anzeigen |
 | 3 |  | `https://site.com/?cid=em_12345678` | E-Mail |
@@ -425,8 +432,6 @@ Ihr gewünschter Bericht sollte wie folgt aussehen:
 | 21 |
 | 8 |
 
-{style="table-layout:auto"}
-
 ### Benutzerdefiniertes Feld {#casewhen-uc3-customfield}
 
 Sie definieren eine `Trip Duration (bucketed)` benutzerdefiniertes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte **[!UICONTROL ** Reisedauer **]** -Feldwerte in drei Werte: `short trip`, `medium  trip`und `long trip`.
@@ -451,6 +456,32 @@ Sie definieren eine `Trip Duration (bucketed)` benutzerdefiniertes Feld. Sie ers
 | Langreise |
 | Langreise |
 
+
+## Abhängigkeiten
+
+Die folgenden Abhängigkeiten gelten beim Auswählen und Festlegen von Werten.
+
+
+|  | Datensatzabhängigkeiten |
+|:---:|----|
+| <span style='color: red'>A </span> | Werte _select_ innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]), muss aus demselben Datensatz stammen. |
+| <span style='color: red'>B</span> | Alle Werte, die Sie _set_ innerhalb von -Konstrukten und über die Regel hinweg müssen aus demselben Datensatz stammen. |
+| <span style='color: blue'>C </span> | Die Werte, die Sie _select_ quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe _not_ müssen aus demselben Datensatz stammen. |
+
+{style="table-layout:auto"}
+
+![Groß-/Kleinschreibung bei Datensatzabhängigkeiten](assets/case-when-datasets.png)
+
+
+|  | Typabhängigkeiten |
+|:---:|----|
+| <span style='color: red'>D</span> | Die Werttypen, die Sie _set_ -Regel muss identisch sein. |
+| <span style='color: blue'>E</span> | Die Werttypen, die Sie _select_ innerhalb eines Konstrukts oder über Konstrukte hinweg in einer Regel kann von beliebigem Typ sein (Zeichenfolge, numerisch, Datum). |
+
+{style="table-layout:auto"}
+
+![Groß-/Kleinschreibung bei Typabhängigkeiten](assets/case-when-types.png)
+
 +++
 
 
@@ -462,11 +493,11 @@ Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen
 
 +++ Details
 
-## Eingaben/Operatoren/Ausgaben {#findreplace-io}
+## Spezifikationen {#findreplace-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Ausgabe |
-|---|---|---|---|
-| <p>Zeichenfolge</p> | <ul><li><span>Feldkriterien für den Zeitpunkt der Ersetzung</span></li><li><span>Feldwert &quot;Ersetzen durch&quot;</span><ul><li><span>Benutzereingabe</span></li><li><span>Separates Feld</span></li></ul></li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Alle suchen und Alle ersetzen</li></ul> | <p>Neues benutzerdefiniertes Feld</p> |
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|:---:|---|
+| <p>Zeichenfolge</p> | <ul><li><span>Feldkriterien für den Zeitpunkt der Ersetzung</span></li><li><span>Feldwert &quot;Ersetzen durch&quot;</span><ul><li><span>Benutzereingabe</span></li><li><span>Separates Feld</span></li></ul></li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Alle suchen und Alle ersetzen</li></ul> | <p>1</p> | <p>Neues benutzerdefiniertes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -478,16 +509,16 @@ Sie haben einige falsch formatierte Werte für Ihren externen Marketingkanalberi
 **Originalbericht**
 
 | Externe Marketingkanäle | Sitzungen |
-|---|---|
+|---|--:|
 | E-Mail-Marketing | 500 |
-| email%20marketing | 24 |
+| email %20marketing | 24 |
 
 {style="table-layout:auto"}
 
 **Bevorzugter Bericht**
 
 | Externe Marketingkanäle | Sitzungen |
-|---|---|
+|---|--:|
 | E-Mail-Marketing | 524 |
 
 
@@ -533,11 +564,11 @@ Definiert einen Satz von Lookup-Werten, die durch entsprechende Werte ersetzt we
 +++ Details
 
 
-## Eingaben/Operatoren/Ausgaben {#lookup-io}
+## Spezifikationen {#lookup-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Ausgabe |
-|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Sing-Feld</li><li>Suchdatei<ul><li>Schlüsselspalte</li><li>Neue Feldspalte</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|:---:|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Sing-Feld</li><li>Suchdatei<ul><li>Schlüsselspalte</li><li>Neue Feldspalte</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -652,11 +683,11 @@ Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad
 
 +++ Details
 
-## Eingaben/Operatoren/Ausgaben {#urlparse-io}
+## Spezifikationen {#urlparse-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Ausgabe |
-|---|---|---|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>Sing-Feld</li><li>Parsing-Option<ul><li>Protokoll abrufen</li><li>Host abrufen</li><li> Pfad abrufen</li><li>Wert der Abfrage abrufen<ul><li>Abfrageparameter</li></ul></li><li>Hash-Wert abrufen</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|:---:|---|
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>Sing-Feld</li><li>Parsing-Option<ul><li>Protokoll abrufen</li><li>Host abrufen</li><li> Pfad abrufen</li><li>Wert der Abfrage abrufen<ul><li>Abfrageparameter</li></ul></li><li>Hash-Wert abrufen</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
 
 {style="table-layout:auto"}
 
