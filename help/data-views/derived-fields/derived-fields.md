@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
+source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
 workflow-type: tm+mt
-source-wordcount: '3225'
+source-wordcount: '3221'
 ht-degree: 9%
 
 ---
@@ -461,11 +461,10 @@ Sie definieren eine `Trip Duration (bucketed)` benutzerdefiniertes Feld. Sie ers
 
 Die folgenden Abhängigkeiten gelten beim Auswählen und Festlegen von Werten.
 
-
 |  | Datensatzabhängigkeiten |
 |:---:|----|
 | <span style='color: red'>A </span> | Werte _select_ innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]), muss aus demselben Datensatz stammen. |
-| <span style='color: red'>B</span> | Alle Werte, die Sie _set_ innerhalb von -Konstrukten und über die Regel hinweg müssen aus demselben Datensatz stammen. |
+| <span style='color: red'>B</span> | Alle Werte, die Sie _set_ in einer Regel muss aus demselben Datensatz stammen. |
 | <span style='color: blue'>C </span> | Die Werte, die Sie _select_ quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe _not_ müssen aus demselben Datensatz stammen. |
 
 {style="table-layout:auto"}
@@ -475,7 +474,7 @@ Die folgenden Abhängigkeiten gelten beim Auswählen und Festlegen von Werten.
 
 |  | Typabhängigkeiten |
 |:---:|----|
-| <span style='color: red'>D</span> | Die Werttypen, die Sie _set_ -Regel muss identisch sein. |
+| <span style='color: red'>D</span> | Die Werttypen, die Sie _set_ muss für eine Regel gleich sein. |
 | <span style='color: blue'>E</span> | Die Werttypen, die Sie _select_ innerhalb eines Konstrukts oder über Konstrukte hinweg in einer Regel kann von beliebigem Typ sein (Zeichenfolge, numerisch, Datum). |
 
 {style="table-layout:auto"}
