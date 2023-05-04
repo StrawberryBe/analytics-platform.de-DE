@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
+source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
 workflow-type: tm+mt
-source-wordcount: '3260'
+source-wordcount: '3281'
 ht-degree: 9%
 
 ---
@@ -459,7 +459,7 @@ Sie definieren eine `Trip Duration (bucketed)` benutzerdefiniertes Feld. Sie ers
 
 ## Begrenzungen
 
-CJA verwendet ein verschachteltes Behältermodell für seine Funktionalität. Dieses verschachtelte Behältermodell bestimmt die Einschränkungen bei der Verwendung des Regel-Builders. Das standardmäßige verschachtelte Behältermodell, das CJA verwendet, ist wie unten dargestellt strukturiert:
+CJA verwendet eine flexible verschachtelte Behälterstruktur, die nach dem Modell von Adobe Experience Platform modelliert wurde [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf. Das standardmäßige verschachtelte Behältermodell, das CJA verwendet, ist wie unten dargestellt strukturiert:
 
 <p align="center">
 <img src="./assets/containers.png" width="70%" valign="middle">
