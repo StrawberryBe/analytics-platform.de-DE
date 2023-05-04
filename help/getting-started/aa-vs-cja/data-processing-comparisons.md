@@ -2,32 +2,27 @@
 title: Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 80d0b95f3bc3d785d9ca7e4b50aa1bd8440373c2
+source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 91%
+source-wordcount: '1202'
+ht-degree: 75%
 
 ---
 
 # Vergleichen Sie die Datenverarbeitung in Adobe Analytics und Customer Journey Analytics.
 
-<!--
+Sie benötigen häufig die Möglichkeit, Daten zu verarbeiten, bevor sie für die Berichterstellung nützlich sind. Sie können diese Daten in verschiedenen Phasen der Journey verarbeiten, von der Datenerfassung bis zur Erstellung Ihres Berichts oder Ihrer Visualisierung.
 
-You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
+In Adobe Analytics erfolgt der Großteil dieser Datenverarbeitung unmittelbar nach der Datenerfassung. Funktionen wie VISTA-Regeln, Verarbeitungsregeln und Verarbeitungsregeln für Marketing-Kanäle stehen zur Unterstützung dieser Funktion zur Verfügung **Sammlungszeitverarbeitung**.
+Die Daten werden dann gespeichert und zum Zeitpunkt des Berichts können Sie eine zusätzliche Verarbeitung vornehmen. Beispielsweise können Sie Dimensionen aufschlüsseln, eine Segmentierung anwenden oder ein anderes Attributionsmodell auswählen. Diese **Berichtszeitverarbeitung** passiert von vorn.
 
-In Adobe Analytics most of that processing of data occurs immediately after collecting the data. Functionalties like VISTA Rules, Processing Rules, Marketing Channels Processing Rules are available to support this **collection-time processing**. 
-The data is then stored and at report time you can apply additional processing. For example, break down dimensions, apply segmentation, or  select a different attribution model. This **report-time processing** happens on the fly. 
+In Adobe Analytics ist die Berichtszeitverarbeitung normalerweise kleiner als die Verarbeitung zur Erfassungszeit.
 
-In Adobe Analytics, report-time processing commonly represents a smaller amount of processing  than what happens at collection-time.
+![Verarbeitung der Erfassungszeit von Adobe Analytics](../assets/aa-processing.png)
 
-![Adobe Analytics collection-time processing](../assets/aa-processing.png)
+Im Gegensatz dazu ist Customer Journey Analytics (CJA) so konzipiert, dass eine minimale Vorabverarbeitung während der Erfassung erforderlich ist, bevor Daten organisiert und gespeichert werden. Die zugrunde liegende Architektur von CJA wurde für die Arbeit mit den gespeicherten Daten zur Berichtszeit konzipiert und bietet seine leistungsstarke Berichtszeitverarbeitungsfunktion nicht nur in Workspace, sondern auch, noch wichtiger, durch die Definition von [Komponenten](/help/data-views/component-settings/overview.md) und [abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) in Ihren Datenansichten.
 
-In contrast, Customer Journey Analytics (CJA) is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of CJA is more designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of components in your Data Views. 
-
-![CJA report-time processing](../assets/cja-processing.png)
-
--->
-
+![CJA-Berichtszeitverarbeitung](../assets/cja-processing.png)
 
 Das Verständnis der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen kann hilfreich sein, um zu verstehen, welche Metriken wo verfügbar sind und warum sie sich unterscheiden können.
 
@@ -69,6 +64,6 @@ Die für Adobe und CJA durchgeführten Datenverarbeitungsschritte und der Zeitpu
 | Core AA [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=de) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Besuchsdefinition (siehe Hinweis)</li><li>Cross-Device Analytics (siehe Hinweis)</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Trefferebene (siehe Hinweis)</li><li>Regeln für Marketing-Kanäle auf Besuchsebene (siehe Hinweis) Attributionslogik</li><li>Segmentlogik</li><li>Berechnete Metriken</li></ul> |  | <ul><li>CDA erfordert die Verwendung von Virtual Report Suites mit Berichtszeitverarbeitung.</li><li>Attribution IQ in Core Analytics verwendet Marketing-Kanäle, die vollständig zur Berichtszeit abgeleitet wurden (d. h. abgeleitete Mittelwerte).</li><li>Attribution IQ verwendet eine Besuchsdefinition für Verarbeitungszeiten, es sei denn, diese wird in einer VRS zur Berichtszeitverarbeitung verwendet.</li></ul> |
 | Core AA Virtual Report Suites mit [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) (VRS RTP) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de)</li></ul> | <ul><li>Besuchsdefinition</li><li>Attributionslogik</li><li>Segmentlogik</li><li>Berechnete Metriken</li><li>Andere VRS-RTP-Einstellungen</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Siehe VRS-RTP-[Dokumentation](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de).</li></ul> |
 | Auf dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basierender Datensatz im Data Lake von AEP | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Feldbasierte Zuordnung (siehe Hinweis)</li></ul> |  | <ul><li>[Regeln für Marketing-Kanäle auf Besuchsebene](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de)</li><li>Besuchslogik</li><li>Attributionslogik</li><li>Filterlogik</li></ul> | <ul><li>Muss Ihre eigene Filterlogik und berechnete Metriken anwenden</li><li>Bei der feldbasierten Zuordnung wird zusätzlich zu dem vom Analytics-Quell-Connector erstellten Datensatz ein separater zugeordneter Datensatz erstellt.</li></ul> |
-| Reporting in [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de) | <ul><li>Implementiert als Teil der Adobe Experience Platform-Datenerfassung</li></ul> | <ul><li>Sitzungsdefinition</li><li>[Datenansichtseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de)<li>Attributionslogik</li><li>Berechnete Metriken</li><li>Filterlogik</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Muss einen zugeordneten Datensatz verwenden, um die feldbasierte Zuordnung nutzen zu können.</li></ul> |
+| Reporting in [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de) | <ul><li>Implementiert als Teil der Adobe Experience Platform-Datenerfassung</li></ul> | <ul><li>Sitzungsdefinition</li><li>[Datenansichtseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de)<li>Attributionslogik</li><li>Berechnete Metriken</li><li>Filterlogik</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Muss zugeordnete Datensätze verwenden, um kanalübergreifende Analysen nutzen zu können.</li></ul> |
 
 {style="table-layout:auto"}

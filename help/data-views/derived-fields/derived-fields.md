@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
+source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3260'
 ht-degree: 9%
 
 ---
@@ -39,7 +39,7 @@ Wenn Sie ein benutzerdefiniertes Feld erstellen oder bearbeiten, verwenden Sie d
 |  | Name | Beschreibung |
 |---------|----------|--------|
 | 1 | **Selektor** | Sie verwenden den Auswahlbereich, um Ihre ![Funktion](assets/Smock_Function_18_N.svg) Funktion,![Symbol für Funktionsvorlage](assets/Smock_FileTemplate_18_N.svg) Funktionsvorlage,![Symbol für Schemafeld](assets/Smock_Folder_18_N.svg) Schemafeld oder![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg)Standardfeld auf zum Regel-Builder. <br/>Verwenden Sie das Dropdown-Menü, um zwischen [!UICONTROL Funktionen], [!UICONTROL Funktionsvorlagen], [!UICONTROL Schemafelder]und [!UICONTROL Standardfelder].<br/>Sie können mithilfe der Variablen ![Suchsymbol](assets/Smock_Search_18_N.svg) Suchfeld. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) Filter und Filter im [!UICONTROL Filtern von Feldern nach] angezeigt. Sie können Filter einfach mit ![Symbol &quot;Schließen&quot;](assets/CrossSize75.svg) für jeden Filter. |
-| 2 | **Regel-Builder** | Sie erstellen Ihr benutzerdefiniertes Feld sequenziell mithilfe einer oder mehrerer Regeln. Eine Regel ist eine spezifische Implementierung einer Funktion und ist daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Rule Builder ziehen. Der Funktionstyp bestimmt die Schnittstelle der Regel.<br/>Siehe [Regelschnittstelle](#rule-interface) für weitere Informationen. <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Rule Builder bestimmt die endgültige Ausgabe des benutzerdefinierten Felds. |
+| 2 | **Regel-Builder** | Sie erstellen Ihr benutzerdefiniertes Feld sequenziell mithilfe einer oder mehrerer Regeln. Eine Regel ist eine spezifische Implementierung einer Funktion und ist daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Schnittstelle der Regel.<br/>Siehe [Regelschnittstelle](#rule-interface) für weitere Informationen. <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Rule Builder bestimmt die endgültige Ausgabe des benutzerdefinierten Felds. |
 | 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr benutzerdefiniertes Feld benennen und beschreiben und den Feldtyp überprüfen. |
 | 4 | **[!UICONTROL ** Endausgabe **]** | In diesem Bereich wird eine direkt aktualisierte Vorschau der Ausgabewerte angezeigt, die auf den Daten der letzten 30 Tage und den Änderungen basiert, die Sie am benutzerdefinierten Feld im Regel-Builder vornehmen. |
 
@@ -167,7 +167,7 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
    - Definieren des benutzerdefinierten Felds
    - Daten nach der Definition des benutzerdefinierten Felds
 
-- dependencies (optional)
+- Einschränkungen (optional)
 
 
 <!-- Concatenate -->
@@ -361,7 +361,7 @@ Ihre Site erfasst die folgenden Werte für Ihre Dimension &quot;Produktsuchmetho
 
 ### Benutzerdefiniertes Feld {#casewhen-uc2-customfield}
 
-Sie definieren eine `Product Finding Methods (new)` benutzerdefiniertes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regeln in Rule Builder. Diese Regeln gelten für die Logik für alle möglichen Varianten der alten **[!UICONTROL ** Methoden zur Produktsuche **]** Feldwerte für `search` und `browse` mithilfe der **[!UICONTROL Enthält die Wortgruppe]** Kriterium.
+Sie definieren eine `Product Finding Methods (new)` benutzerdefiniertes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regeln im Regel-Builder. Diese Regeln gelten für die Logik für alle möglichen Varianten der alten **[!UICONTROL ** Methoden zur Produktsuche **]** Feldwerte für `search` und `browse` mithilfe der **[!UICONTROL Enthält die Wortgruppe]** Kriterium.
 
 ![[!DNL Case When] Regel 2](assets/case-when-2.png)
 
@@ -457,29 +457,25 @@ Sie definieren eine `Trip Duration (bucketed)` benutzerdefiniertes Feld. Sie ers
 | Langreise |
 
 
-## Abhängigkeiten
+## Begrenzungen
 
-Die folgenden Abhängigkeiten gelten beim Auswählen und Festlegen von Werten.
+CJA verwendet ein verschachteltes Behältermodell für seine Funktionalität. Dieses verschachtelte Behältermodell bestimmt die Einschränkungen bei der Verwendung des Regel-Builders. Das standardmäßige verschachtelte Behältermodell, das CJA verwendet, ist wie unten dargestellt strukturiert:
 
-|  | Datensatzabhängigkeiten |
+<p align="center">
+<img src="./assets/containers.png" width="70%" valign="middle">
+</p>
+
+Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen.
+
+Die folgenden Containerbeschränkungen gelten und werden erzwungen, wenn _Auswählen_ und _Einstellung_ -Werte.
+
+|  | Begrenzungen |
 |:---:|----|
-| <span style='color: red'>A </span> | Werte _select_ innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]), muss aus demselben Datensatz stammen. |
-| <span style='color: red'>B</span> | Alle Werte, die Sie _set_ in einer Regel muss aus demselben Datensatz stammen. |
-| <span style='color: blue'>C </span> | Die Werte, die Sie _select_ quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe _not_ müssen aus demselben Datensatz stammen. |
+| **<span style='color: red'>A</span>** | Werte _select_ innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Abhängigkeit A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Alle Werte, die Sie _set_ in einer Regel muss sich aus demselben Container befinden und denselben Typ oder einen benutzerdefinierten Wert desselben Typs aufweisen. <br/> ![Abhängigkeit B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Die Werte, die Sie _select_ quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe _not_ müssen aus demselben Container stammen und tun _not_ müssen vom gleichen Typ sein. <br/> ![Abhängigkeit C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
-
-![Groß-/Kleinschreibung bei Datensatzabhängigkeiten](assets/case-when-datasets.png)
-
-
-|  | Typabhängigkeiten |
-|:---:|----|
-| <span style='color: red'>D</span> | Die Werttypen, die Sie _set_ muss für eine Regel gleich sein. |
-| <span style='color: blue'>E</span> | Die Werttypen, die Sie _select_ innerhalb eines Konstrukts oder über Konstrukte hinweg in einer Regel kann von beliebigem Typ sein (Zeichenfolge, numerisch, Datum). |
-
-{style="table-layout:auto"}
-
-![Groß-/Kleinschreibung bei Typabhängigkeiten](assets/case-when-types.png)
 
 +++
 
@@ -567,7 +563,7 @@ Definiert einen Satz von Lookup-Werten, die durch entsprechende Werte ersetzt we
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|:---:|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Sing-Feld</li><li>Suchdatei<ul><li>Schlüsselspalte</li><li>Neue Feldspalte</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Einzelnes Feld</li><li>Suchdatei<ul><li>Schlüsselspalte</li><li>Neue Feldspalte</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -686,7 +682,7 @@ Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|:---:|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>Sing-Feld</li><li>Parsing-Option<ul><li>Protokoll abrufen</li><li>Host abrufen</li><li> Pfad abrufen</li><li>Wert der Abfrage abrufen<ul><li>Abfrageparameter</li></ul></li><li>Hash-Wert abrufen</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>Einzelnes Feld</li><li>Parsing-Option<ul><li>Protokoll abrufen</li><li>Host abrufen</li><li> Pfad abrufen</li><li>Wert der Abfrage abrufen<ul><li>Abfrageparameter</li></ul></li><li>Hash-Wert abrufen</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
 
 {style="table-layout:auto"}
 
