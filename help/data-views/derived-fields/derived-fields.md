@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
+source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3265'
 ht-degree: 9%
 
 ---
@@ -17,42 +17,42 @@ ht-degree: 9%
 
 {{release-limited-testing}}
 
-Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten (benutzerdefinierten) Feld können Sie mithilfe eines anpassbaren Regel-Builders (Regel-Builder) spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder weiter als Komponente in definieren [Datenansicht](../data-views.md).
+Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders (Regel-Builder) spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder weiter als Komponente in definieren [Datenansicht](../data-views.md).
 
 Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Standorten außerhalb von CJA. z. B. [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
 
-Abgeleitete Felder werden als benutzerdefinierte Felder in [Datenansichten](../data-views.md), basieren auf einem Satz von Funktionen, die als Regeln definiert und auf verfügbare Standard- und/oder Schemafelder angewendet werden.
+Abgeleitete Felder werden in [Datenansichten](../data-views.md), basieren auf einem Satz von Funktionen, die als Regeln definiert und auf verfügbare Standard- und/oder Schemafelder angewendet werden.
 
 Anwendungsbeispiele sind:
 
-- Definieren Sie ein benutzerdefiniertes Feld für den Seitennamen, das falsche erfasste Seitennamenwerte korrigiert, um die Seitennamenwerte zu korrigieren.
+- Definieren Sie ein abgeleitetes Feld für den Seitennamen, das falsche erfasste Seitennamenwerte korrigiert, um die Seitennamenwerte zu korrigieren.
 
-- Definieren Sie ein benutzerdefiniertes Marketing-Kanal -Feld, das den korrekten Marketing-Kanal anhand einer oder mehrerer Bedingungen bestimmt (z. B. URL-Parameter, Seiten-URL, Seitenname).
+- Definieren Sie ein abgeleitetes Marketing-Kanal -Feld, das den korrekten Marketing-Kanal anhand einer oder mehrerer Bedingungen bestimmt (z. B. URL-Parameter, Seiten-URL, Seitenname).
 
-## Benutzeroberfläche für benutzerdefinierte Felder
+## Abgeleitete Feldoberfläche
 
-Wenn Sie ein benutzerdefiniertes Feld erstellen oder bearbeiten, verwenden Sie die Benutzeroberfläche für benutzerdefinierte Felder.
+Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abgeleitete Feldoberfläche.
 
-![Dialogfeld &quot;Benutzerdefiniertes Feld&quot;](assets/custom-field-dialog.png)
+![Dialogfeld &quot;Abgeleitetes Feld&quot;](assets/derived-field-dialog.png)
 
 
 |  | Name | Beschreibung |
 |---------|----------|--------|
 | 1 | **Selektor** | Sie verwenden den Auswahlbereich, um Ihre ![Funktion](assets/Smock_Function_18_N.svg) Funktion,![Symbol für Funktionsvorlage](assets/Smock_FileTemplate_18_N.svg) Funktionsvorlage,![Symbol für Schemafeld](assets/Smock_Folder_18_N.svg) Schemafeld oder![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg)Standardfeld auf zum Regel-Builder. <br/>Verwenden Sie das Dropdown-Menü, um zwischen [!UICONTROL Funktionen], [!UICONTROL Funktionsvorlagen], [!UICONTROL Schemafelder]und [!UICONTROL Standardfelder].<br/>Sie können mithilfe der Variablen ![Suchsymbol](assets/Smock_Search_18_N.svg) Suchfeld. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) Filter und Filter im [!UICONTROL Filtern von Feldern nach] angezeigt. Sie können Filter einfach mit ![Symbol &quot;Schließen&quot;](assets/CrossSize75.svg) für jeden Filter. |
-| 2 | **Regel-Builder** | Sie erstellen Ihr benutzerdefiniertes Feld sequenziell mithilfe einer oder mehrerer Regeln. Eine Regel ist eine spezifische Implementierung einer Funktion und ist daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Schnittstelle der Regel.<br/>Siehe [Regelschnittstelle](#rule-interface) für weitere Informationen. <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Rule Builder bestimmt die endgültige Ausgabe des benutzerdefinierten Felds. |
-| 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr benutzerdefiniertes Feld benennen und beschreiben und den Feldtyp überprüfen. |
-| 4 | **[!UICONTROL ** Endausgabe **]** | In diesem Bereich wird eine direkt aktualisierte Vorschau der Ausgabewerte angezeigt, die auf den Daten der letzten 30 Tage und den Änderungen basiert, die Sie am benutzerdefinierten Feld im Regel-Builder vornehmen. |
+| 2 | **Regel-Builder** | Sie erstellen Ihr abgeleitetes Feld sequenziell mithilfe einer oder mehrerer Regeln. Eine Regel ist eine spezifische Implementierung einer Funktion und ist daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Schnittstelle der Regel.<br/>Siehe [Regelschnittstelle](#rule-interface) für weitere Informationen. <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Rule Builder bestimmt die endgültige Ausgabe des abgeleiteten Felds. |
+| 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr abgeleitetes Feld benennen und beschreiben und dessen Feldtyp überprüfen. |
+| 4 | **[!UICONTROL ** Endausgabe **]** | Dieser Bereich zeigt eine direkt aktualisierte Vorschau der Ausgabewerte basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie am abgeleiteten Feld im Regel-Builder vornehmen. |
 
 {style="table-layout:auto"}
 
-Wenn Sie zum ersten Mal auf die Benutzeroberfläche für benutzerdefinierte Felder zugreifen, wird die [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
+## Assistent für Feldvorlagen
 
-![Dialogfeld für benutzerdefinierte Feldvorlagen](assets/field-template-dialog.png)
+Wenn Sie zum ersten Mal auf die Oberfläche für abgeleitete Felder zugreifen, wird die [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
 
 1. Wählen Sie die Vorlage aus, die den Typ des zu erstellenden Felds am besten beschreibt.
 2. Wählen Sie die **[!UICONTROL ** Auswählen **]** zum Fortfahren.
 
-Das Dialogfeld &quot;Benutzerdefiniertes Feld&quot;enthält Regeln (und Funktionen), die für den von Ihnen ausgewählten Feldtyp erforderlich oder nützlich sind. Siehe [Funktionsvorlagen](#function-templates) für weitere Informationen zu den verfügbaren Vorlagen.
+Das Dialogfeld Abgeleitetes Feld enthält Regeln (und Funktionen), die für den von Ihnen ausgewählten Feldtyp erforderlich oder nützlich sind. Siehe [Funktionsvorlagen](#function-templates) für weitere Informationen zu den verfügbaren Vorlagen.
 
 ## Regelschnittstelle
 
@@ -69,22 +69,22 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 {style="table-layout:auto"}
 
-## Benutzerdefiniertes Feld erstellen
+## abgeleitetes Feld erstellen
 
 1. Wählen Sie eine Datenansicht aus oder erstellen Sie eine Datenansicht. Siehe [Datenansichten](../data-views.md) für weitere Informationen.
 
 2. Wählen Sie die **[!UICONTROL ** Komponenten **]** in der Datenansicht.
 
-3. Auswählen **[!UICONTROL ** Benutzerdefiniertes Feld erstellen **]** über die linke Leiste.
+3. Auswählen **[!UICONTROL ** abgeleitetes Feld erstellen **]** über die linke Leiste.
 
-4. Um Ihr benutzerdefiniertes Feld zu definieren, verwenden Sie die [!UICONTROL Benutzerdefiniertes Feld erstellen] -Schnittstelle. Siehe [Benutzeroberfläche für benutzerdefinierte Felder](#custom-field-interface).
+4. Um Ihr abgeleitetes Feld zu definieren, verwenden Sie die [!UICONTROL abgeleitetes Feld erstellen] -Schnittstelle. Siehe [Abgeleitete Feldoberfläche](#derived-field-interface).
 
-   Um Ihr neues benutzerdefiniertes Feld zu speichern, wählen Sie **[!UICONTROL ** Speichern **]**.
+   Um Ihr neues abgeleitetes Feld zu speichern, wählen Sie **[!UICONTROL ** Speichern **]**.
 
-5. Ihr neues benutzerdefiniertes Feld wird zum **[!UICONTROL ** Benutzerdefinierte Felder >**]** Container, als Teil von **[!UICONTROL ** Schemafelder **]** in der linken Leiste Ihrer Datenansicht.
+5. Ihr neues abgeleitetes Feld wird zum **[!UICONTROL ** Abgeleitete Felder >**]** Container, als Teil von **[!UICONTROL ** Schemafelder **]** in der linken Leiste Ihrer Datenansicht.
 
 
-## Benutzerdefiniertes Feld bearbeiten
+## abgeleitetes Feld bearbeiten
 
 1. Wählen Sie eine Datenansicht aus. Siehe [Datenansichten](../data-views.md) für weitere Informationen.
 
@@ -92,19 +92,19 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 3. Auswählen **[!UICONTROL ** Schemafelder **]** im [!UICONTROL Verbindung] auf der linken Seite.
 
-4. Auswählen **[!UICONTROL ** Benutzerdefinierte Felder >**]** Container.
+4. Auswählen **[!UICONTROL ** Abgeleitete Felder >**]** Container.
 
-5. Bewegen Sie den Mauszeiger über das benutzerdefinierte Feld, das Sie bearbeiten möchten, und wählen Sie ![Symbol Bearbeiten](assets/Smock_Edit_18_N.svg).
+5. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie bearbeiten möchten, und wählen Sie ![Symbol Bearbeiten](assets/Smock_Edit_18_N.svg).
 
-6. Um Ihr benutzerdefiniertes Feld zu bearbeiten, verwenden Sie die [!UICONTROL Benutzerdefiniertes Feld bearbeiten] -Schnittstelle. Siehe [Benutzeroberfläche für benutzerdefinierte Felder](#custom-field-interface).
+6. Um Ihr abgeleitetes Feld zu bearbeiten, verwenden Sie die [!UICONTROL abgeleitetes Feld bearbeiten] -Schnittstelle. Siehe [Abgeleitete Feldoberfläche](#derived-field-interface).
 
-   - Auswählen **[!UICONTROL ** Speichern **]** , um Ihr aktualisiertes benutzerdefiniertes Feld zu speichern.
+   - Auswählen **[!UICONTROL ** Speichern **]** , um Ihr aktualisiertes abgeleitetes Feld zu speichern.
 
-   - Auswählen **[!UICONTROL ** Abbrechen **]** , um alle Änderungen abzubrechen, die Sie am benutzerdefinierten Feld vorgenommen haben.
+   - Auswählen **[!UICONTROL ** Abbrechen **]** , um alle Änderungen abzubrechen, die Sie am abgeleiteten Feld vorgenommen haben.
 
-   - Auswählen **[!UICONTROL ** Speichern unter **]** , um das benutzerdefinierte Feld als neues benutzerdefiniertes Feld zu speichern. Das neue benutzerdefinierte Feld hat denselben Namen wie das ursprünglich bearbeitete benutzerdefinierte Feld mit `(copy)` hinzugefügt.
+   - Auswählen **[!UICONTROL ** Speichern unter **]** , um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld mit `(copy)` hinzugefügt.
 
-## Benutzerdefiniertes Feld löschen
+## abgeleitetes Feld löschen
 
 1. Wählen Sie eine Datenansicht aus. Siehe [Datenansichten](../data-views.md) für weitere Informationen.
 
@@ -112,20 +112,20 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 3. Auswählen **[!UICONTROL ** Schemafelder **]** Registerkarte in [!UICONTROL Verbindung] -Bereich.
 
-4. Auswählen **[!UICONTROL ** Benutzerdefinierte Felder >**]** Container.
+4. Auswählen **[!UICONTROL ** Abgeleitete Felder >**]** Container.
 
-5. Bewegen Sie den Mauszeiger über das benutzerdefinierte Feld, das Sie löschen möchten, und wählen Sie ![Symbol Bearbeiten](assets/Smock_Edit_18_N.svg).
+5. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie löschen möchten, und wählen Sie ![Symbol Bearbeiten](assets/Smock_Edit_18_N.svg).
 
-6. In der Verwendung **[!UICONTROL ** Benutzerdefiniertes Feld bearbeiten **]** -Benutzeroberfläche verwenden, wählen Sie Löschen aus.
+6. In der Verwendung **[!UICONTROL ** abgeleitetes Feld bearbeiten **]** -Benutzeroberfläche verwenden, wählen Sie Löschen aus.
 
-   A [!UICONTROL Komponente löschen] werden Sie aufgefordert, den Löschvorgang zu bestätigen. Betrachten Sie alle externen Verweise, die außerhalb der Datenansicht auf das benutzerdefinierte Feld vorhanden sein können.
+   A [!UICONTROL Komponente löschen] werden Sie aufgefordert, den Löschvorgang zu bestätigen. Betrachten Sie alle externen Verweise, die außerhalb der Datenansicht auf das abgeleitete Feld vorhanden sein könnten.
 
-   - Auswählen **[!UICONTROL ** Weiter **]** , um das benutzerdefinierte Feld zu löschen.
+   - Auswählen **[!UICONTROL ** Weiter **]** , um das abgeleitete Feld zu löschen.
 
 
 ## Funktionsvorlagen
 
-Um schnell ein benutzerdefiniertes Feld für bestimmte Anwendungsfälle zu erstellen, sind Funktionsvorlagen verfügbar. Auf diese Funktionsvorlagen kann über den Bereich Selektor in der Benutzeroberfläche Benutzerdefiniertes Feld zugegriffen werden oder sie werden bei der ersten Verwendung in der [!UICONTROL Mit einer Feldvorlage beginnen] Assistent.
+Um schnell ein abgeleitetes Feld für bestimmte Anwendungsfälle zu erstellen, sind Funktionsvorlagen verfügbar. Auf diese Funktionsvorlagen kann über den Bereich Selektor in der Benutzeroberfläche für abgeleitete Felder zugegriffen werden oder sie werden bei der ersten Verwendung in der [!UICONTROL Mit einer Feldvorlage beginnen] Assistent.
 
 
 ### Marketing-Kanäle
@@ -163,9 +163,9 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
    - Ausgabe.
 
 - Anwendungsbeispiele, darunter:
-   - Daten vor der Definition des benutzerdefinierten Felds
-   - Definieren des benutzerdefinierten Felds
-   - Daten nach der Definition des benutzerdefinierten Felds
+   - Daten vor der Definition des abgeleiteten Felds
+   - Definieren des abgeleiteten Felds
+   - Daten nach der Definition des abgeleiteten Felds
 
 - Einschränkungen (optional)
 
@@ -174,7 +174,7 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
 ### [!DNL Concatenate]
 
-Kombiniert zwei oder mehr Felder, benutzerdefinierte Felder oder vom Benutzer eingegebene Werte in einem Feld mit definierten Trennzeichen.
+Kombiniert zwei oder mehr Felder, abgeleitete Felder oder vom Benutzer eingegebene Werte in einem Feld mit definierten Trennzeichen.
 
 +++ Details
 
@@ -182,7 +182,7 @@ Kombiniert zwei oder mehr Felder, benutzerdefinierte Felder oder vom Benutzer ei
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|:--:|---|
-| <p>Zeichenfolge</p> | <ul><li>Zwei oder mehr Werte zu kombinieren<ul><li>Felder</li><li>Abgeleiteter Wert aus einer vorherigen Regel</li><li>Vom Benutzer eingegebener Wert</li></ul></li><li>Trennzeichen<ul><li>Eingabe oder Auswahl eines Trennzeichens für jeden Wert</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| <p>Zeichenfolge</p> | <ul><li>Zwei oder mehr Werte zu kombinieren<ul><li>Felder</li><li>Abgeleiteter Wert aus einer vorherigen Regel</li><li>Vom Benutzer eingegebener Wert</li></ul></li><li>Trennzeichen<ul><li>Eingabe oder Auswahl eines Trennzeichens für jeden Wert</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -228,15 +228,15 @@ Der gewünschte Bericht sollte wie folgt aussehen:
 
 {style="table-layout:auto"}
 
-### Benutzerdefiniertes Feld {#concatenate-customfield}
+### Abgeleitetes Feld {#concatenate-derivedfield}
 
-Sie definieren eine neue **[!UICONTROL ** Origin - Ziel **]** benutzerdefiniertes Feld. Sie verwenden die **[!UICONTROL CONCATENATE]** -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
+Sie definieren eine neue **[!UICONTROL ** Origin - Ziel **]** abgeleitetes Feld. Sie verwenden die **[!UICONTROL CONCATENATE]** -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
 
 ![[!DNL Concatenate] Regel](assets/concatenate.png)
 
 ### Daten nach {#concatenate-dataafter}
 
-| Origin - Ziel<br/>(benutzerdefiniertes Feld) |
+| Origin - Ziel<br/>(abgeleitetes Feld) |
 |---|
 | SLC-MCO |
 | SLC-LAX |
@@ -252,7 +252,7 @@ Sie definieren eine neue **[!UICONTROL ** Origin - Ziel **]** benutzerdefinierte
 
 ### [!DNL Case When]
 
-Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Feldern basieren. Diese Kriterien werden dann verwendet, um die Werte in einem neuen benutzerdefinierten Feld basierend auf der Reihenfolge der Bedingungen zu definieren.
+Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Feldern basieren. Diese Kriterien werden dann verwendet, um die Werte in einem neuen abgeleiteten Feld basierend auf der Reihenfolge der Bedingungen zu definieren.
 
 +++ Details
 
@@ -260,7 +260,7 @@ Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Fel
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|:---:|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum/Datum/Uhrzeit</li></ul> | <ul><li>Eingabefelder</li><li>Kriterien</li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Ist gleich keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt nicht mit einem Begriff</li><li>Endet nicht mit</li><li>endet nicht mit einem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Numerisch</u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Größer als</li><li>Größer als oder gleich</li><li>Kleiner als</li><li>Kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Daten </u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist später als</li><li>Ist später als oder gleich</li><li>Is before</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum/Datum/Uhrzeit</li></ul> | <ul><li>Eingabefelder</li><li>Kriterien</li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Ist gleich keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt nicht mit einem Begriff</li><li>Endet nicht mit</li><li>endet nicht mit einem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Numerisch</u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Größer als</li><li>Größer als oder gleich</li><li>Kleiner als</li><li>Kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p><u>Daten </u></p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist später als</li><li>Ist später als oder gleich</li><li>Is before</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <p>5</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -303,9 +303,9 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die Referrer und Seite
 
 {style="table-layout:auto"}
 
-### Benutzerdefiniertes Feld {#casewhen-uc1-customfield}
+### Abgeleitetes Feld {#casewhen-uc1-derivedfield}
 
-Sie definieren eine neue `Marketing Channel` benutzerdefiniertes Feld. Sie verwenden die **[!UICONTROL WENN]** Funktionen zum Definieren von Regeln, die Werte für die basierend auf vorhandenen Werten für `Page URL` und `Referring URL` -Feld.
+Sie definieren eine neue `Marketing Channel` abgeleitetes Feld. Sie verwenden die **[!UICONTROL WENN]** Funktionen zum Definieren von Regeln, die Werte für die basierend auf vorhandenen Werten für `Page URL` und `Referring URL` -Feld.
 
 Beachten Sie die Verwendung der Funktion . **[!UICONTROL ** URL PARSE **]** zum Definieren von Regeln zum Abrufen der Werte für `Page Url` und `Referring Url` vor **[!UICONTROL ** WENN **]** -Regeln angewendet werden.
 
@@ -359,9 +359,9 @@ Ihre Site erfasst die folgenden Werte für Ihre Dimension &quot;Produktsuchmetho
 
 {style="table-layout:auto"}
 
-### Benutzerdefiniertes Feld {#casewhen-uc2-customfield}
+### Abgeleitetes Feld {#casewhen-uc2-derivedfield}
 
-Sie definieren eine `Product Finding Methods (new)` benutzerdefiniertes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regeln im Regel-Builder. Diese Regeln gelten für die Logik für alle möglichen Varianten der alten **[!UICONTROL ** Methoden zur Produktsuche **]** Feldwerte für `search` und `browse` mithilfe der **[!UICONTROL Enthält die Wortgruppe]** Kriterium.
+Sie definieren eine `Product Finding Methods (new)` abgeleitetes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regeln im Regel-Builder. Diese Regeln gelten für die Logik für alle möglichen Varianten der alten **[!UICONTROL ** Methoden zur Produktsuche **]** Feldwerte für `search` und `browse` mithilfe der **[!UICONTROL Enthält die Wortgruppe]** Kriterium.
 
 ![[!DNL Case When] Regel 2](assets/case-when-2.png)
 
@@ -432,9 +432,9 @@ Ihr gewünschter Bericht sollte wie folgt aussehen:
 | 21 |
 | 8 |
 
-### Benutzerdefiniertes Feld {#casewhen-uc3-customfield}
+### Abgeleitetes Feld {#casewhen-uc3-derivedfield}
 
-Sie definieren eine `Trip Duration (bucketed)` benutzerdefiniertes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte **[!UICONTROL ** Reisedauer **]** -Feldwerte in drei Werte: `short trip`, `medium  trip`und `long trip`.
+Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte **[!UICONTROL ** Reisedauer **]** -Feldwerte in drei Werte: `short trip`, `medium  trip`und `long trip`.
 
 ![[!DNL Case When] Regel 3](assets/case-when-3.png)
 
@@ -459,20 +459,22 @@ Sie definieren eine `Trip Duration (bucketed)` benutzerdefiniertes Feld. Sie ers
 
 ## Begrenzungen
 
-CJA verwendet eine flexible verschachtelte Behälterstruktur, die nach dem Modell von Adobe Experience Platform modelliert wurde [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf. Das standardmäßige verschachtelte Behältermodell, das CJA verwendet, ist wie unten dargestellt strukturiert:
+CJA verwendet eine verschachtelte Container-Struktur, die nach dem Modell von Adobe Experience Platform modelliert ist [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen. Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf.
+
+CJA verwendet das folgende standardmäßige Containermodell:
 
 <p align="center">
-<img src="./assets/containers.png" width="70%" valign="middle">
+<img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen.
 
-Die folgenden Containerbeschränkungen gelten und werden erzwungen, wenn _Auswählen_ und _Einstellung_ -Werte.
+
+Die folgenden Einschränkungen gelten und werden erzwungen, wenn _Auswählen_ und _Einstellung_ -Werte.
 
 |  | Begrenzungen |
 |:---:|----|
 | **<span style='color: red'>A</span>** | Werte _select_ innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Abhängigkeit A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Alle Werte, die Sie _set_ in einer Regel muss sich aus demselben Container befinden und denselben Typ oder einen benutzerdefinierten Wert desselben Typs aufweisen. <br/> ![Abhängigkeit B](assets/dependency-b.png) |
+| **<span style='color: red'>B</span>** | Alle Werte, die Sie _set_ in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Abhängigkeit B](assets/dependency-b.png) |
 | **<span style='color: blue'>C</span>** | Die Werte, die Sie _select_ quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe _not_ müssen aus demselben Container stammen und tun _not_ müssen vom gleichen Typ sein. <br/> ![Abhängigkeit C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
@@ -484,7 +486,7 @@ Die folgenden Containerbeschränkungen gelten und werden erzwungen, wenn _Auswä
 
 ### [!DNL Find and Replace]
 
-Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen anderen Wert in einem neuen benutzerdefinierten Feld.
+Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen anderen Wert in einem neuen abgeleiteten Feld.
 
 +++ Details
 
@@ -492,7 +494,7 @@ Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|:---:|---|
-| <p>Zeichenfolge</p> | <ul><li><span>Feldkriterien für den Zeitpunkt der Ersetzung</span></li><li><span>Feldwert &quot;Ersetzen durch&quot;</span><ul><li><span>Benutzereingabe</span></li><li><span>Separates Feld</span></li></ul></li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Alle suchen und Alle ersetzen</li></ul> | <p>1</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| <p>Zeichenfolge</p> | <ul><li><span>Feldkriterien für den Zeitpunkt der Ersetzung</span></li><li><span>Feldwert &quot;Ersetzen durch&quot;</span><ul><li><span>Benutzereingabe</span></li><li><span>Separates Feld</span></li></ul></li></ul> | <p><u>Zeichenfolgen</u></p><ul><li>Alle suchen und Alle ersetzen</li></ul> | <p>1</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -529,15 +531,15 @@ Sie haben einige falsch formatierte Werte für Ihren externen Marketingkanalberi
 
 {style="table-layout:auto"}
 
-### Benutzerdefiniertes Feld {#findreplace-uc-customfield}
+### Abgeleitetes Feld {#findreplace-uc-derivedfield}
 
-Sie definieren eine `Email Marketing (updated)` benutzerdefiniertes Feld. Sie verwenden die **[!UICONTROL SUCHEN UND ERSETZEN]** -Funktion zum Definieren einer Regel zum Suchen und Ersetzen aller Vorkommen von `email%20marketing` mit `email marketing`.
+Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden die **[!UICONTROL SUCHEN UND ERSETZEN]** -Funktion zum Definieren einer Regel zum Suchen und Ersetzen aller Vorkommen von `email%20marketing` mit `email marketing`.
 
 ![[!DNL Find and Replace] Regel](assets/find-and-replace.png)
 
 ### Daten nach {#findreplace-uc-dataafter}
 
-| Externes Marketing<br/>(benutzerdefiniertes Feld) |
+| Externes Marketing<br/>(abgeleitetes Feld) |
 |----|
 | E-Mail-Marketing |
 | E-Mail-Marketing |
@@ -563,7 +565,7 @@ Definiert einen Satz von Lookup-Werten, die durch entsprechende Werte ersetzt we
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|:---:|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Einzelnes Feld</li><li>Suchdatei<ul><li>Schlüsselspalte</li><li>Neue Feldspalte</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Einzelnes Feld</li><li>Suchdatei<ul><li>Schlüsselspalte</li><li>Neue Feldspalte</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -615,9 +617,9 @@ Sie erfassen die Hotel-ID in einer Dimension, möchten jedoch eine aus der `hote
 {style="table-layout:auto"}
 
 
-### Benutzerdefiniertes Feld {#lookup-uc1-customfield}
+### Abgeleitetes Feld {#lookup-uc1-derivedfield}
 
-Sie definieren eine `Hotel Name` benutzerdefiniertes Feld. Sie verwenden die **[!UICONTROL ** SUCHEN **]** -Funktion, um eine Regel zu definieren, mit der Sie die Werte der **[!UICONTROL ** Hotel-ID **]** und durch neue Werte ersetzen.
+Sie definieren eine `Hotel Name` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** SUCHEN **]** -Funktion, um eine Regel zu definieren, mit der Sie die Werte der **[!UICONTROL ** Hotel-ID **]** und durch neue Werte ersetzen.
 
 ![[!DNL Lookup] Regel 1](assets/lookup-1.png)
 
@@ -650,9 +652,9 @@ Sie haben URLs anstelle des benutzerfreundlichen Seitennamens für mehrere Seite
 
 {style="table-layout:auto"}
 
-### Benutzerdefiniertes Feld {#lookup-uc2-customfield}
+### Abgeleitetes Feld {#lookup-uc2-derivedfield}
 
-Sie definieren eine `Page Name (updated)` benutzerdefiniertes Feld. Sie verwenden die **[!UICONTROL ** SUCHEN **]** -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen **[!UICONTROL ** Seitenname **]** und ersetzen Sie sie durch die aktualisierten richtigen Werte.
+Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** SUCHEN **]** -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen **[!UICONTROL ** Seitenname **]** und ersetzen Sie sie durch die aktualisierten richtigen Werte.
 
 ![[!DNL Lookup] Regel 2](assets/lookup-2.png)
 
@@ -682,7 +684,7 @@ Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|:---:|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>Einzelnes Feld</li><li>Parsing-Option<ul><li>Protokoll abrufen</li><li>Host abrufen</li><li> Pfad abrufen</li><li>Wert der Abfrage abrufen<ul><li>Abfrageparameter</li></ul></li><li>Hash-Wert abrufen</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues benutzerdefiniertes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>Einzelnes Feld</li><li>Parsing-Option<ul><li>Protokoll abrufen</li><li>Host abrufen</li><li> Pfad abrufen</li><li>Wert der Abfrage abrufen<ul><li>Abfrageparameter</li></ul></li><li>Hash-Wert abrufen</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -702,9 +704,9 @@ Sie möchten die Referrer-Domäne aus der Referrer-URL nur als Teil des Regelsat
 
 {style="table-layout:auto"}
 
-### Benutzerdefiniertes Feld {#urlparse-uc1-customfield}
+### Abgeleitetes Feld {#urlparse-uc1-derivedfield}
 
-Sie definieren eine  `Referring Domain` benutzerdefiniertes Feld. Sie verwenden die **[!UICONTROL ** URL PARSE **]** -Funktion, um eine Regel zum Abrufen des Hosts aus dem **Verweisende URL** und speichern Sie sie im neuen benutzerdefinierten Feld.
+Sie definieren eine  `Referring Domain` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** URL PARSE **]** -Funktion, um eine Regel zum Abrufen des Hosts aus dem **Verweisende URL** und speichern Sie es im neuen abgeleiteten Feld.
 
 ![[!DNL Url Parse] Regel 1](assets/url-parse-1.png)
 
@@ -734,9 +736,9 @@ Sie möchten den Wert der `cid` -Parameter einer Abfragezeichenfolge in einer Se
 
 {style="table-layout:auto"}
 
-### Benutzerdefiniertes Feld {#urlparse-uc2-customfield}
+### Abgeleitetes Feld {#urlparse-uc2-derivedfield}
 
-Sie definieren eine `Query String CID` benutzerdefiniertes Feld. Sie verwenden die **[!UICONTROL ** URL PARSE **]** -Funktion, um eine Regel zum Abrufen des Werts des Abfragezeichenfolgenparameters in der Seiten-URL zu definieren, wobei `cid` als Abfrageparameter. Der Ausgabewert wird im neuen benutzerdefinierten Feld gespeichert.
+Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** URL PARSE **]** -Funktion, um eine Regel zum Abrufen des Werts des Abfragezeichenfolgenparameters in der Seiten-URL zu definieren, wobei `cid` als Abfrageparameter. Der Ausgabewert wird im neuen abgeleiteten Feld gespeichert.
 
 ![[!DNL Url Parse] Regel 2](assets/url-parse-2.png)
 
