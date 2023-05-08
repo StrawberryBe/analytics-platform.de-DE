@@ -4,9 +4,9 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
+source-git-commit: cc475afebba5bd1cfcaf3b1471ce6d1316126a9d
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1770'
 ht-degree: 53%
 
 ---
@@ -124,6 +124,8 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 >* Benutzer, für die Sie freigeben, können alle Filter anzeigen, die auf das Projekt während der [Kuratierung](curate.md).
 > 
 >* Benutzer, für die Sie freigeben, können den Projektdatumsbereich ändern. Der Datumsbereich, den Sie für das Projekt festgelegt haben, wird standardmäßig angezeigt.
+>
+>* Ein Projekt kann nicht mehr zugänglich sein, wenn zu viele Benutzer versuchen, gleichzeitig darauf zuzugreifen.
 
 
 So geben Sie ein Analysis Workspace-Projekt für andere frei:
