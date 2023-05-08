@@ -3,11 +3,11 @@ description: Verwenden Sie die Visualisierung der Schlüsselmetrik-Zusammenfassu
 title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 role: User, Admin
-exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
+source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
 
 1. Konfigurieren Sie die Visualisierung, indem Sie eine Metrik, einen primären Datumsbereich, einen Vergleichsdatumsbereich und ein Segment (falls gewünscht) auswählen:
 
-   ![](assets/key-metric-config.png)
+   ![Schlüsselmetrikkonfiguration](assets/key-metric-config.png)
 
    | Konfigurationseinstellungen | Definition |
    | --- | --- |
@@ -46,7 +46,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
    | **[!UICONTROL Vergleichsdatumsbereich]** | Der Datumsbereich, mit dem Sie den primären Datumsbereich vergleichen möchten. |
    | **[!UICONTROL Segment (optional)]** | Jedes Segment, an dem Sie für diese Zusammenfassung interessiert sind. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -62,7 +62,7 @@ Bitte beachten Sie:
 
 * Von hier aus können Sie mit dem Mauszeiger über die Liniendiagramme fahren, um die Statistiken für einzelne Tage zu sehen:
 
-![](assets/key-metric-output2.png)
+![statistics](assets/key-metric-output2.png)
 
 ## Visualisierungseinstellungen
 
@@ -89,7 +89,7 @@ Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfigurati
 
 1. Klicken Sie oben rechts in der Visualisierung auf das Stiftsymbol (neben dem Zahnradsymbol für Einstellungen).
 
-   ![](assets/edit-icon.png)
+   ![edit](assets/edit-icon.png)
 
    Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
 

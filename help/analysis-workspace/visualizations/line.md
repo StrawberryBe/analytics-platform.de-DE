@@ -3,14 +3,18 @@ description: Verwenden Sie die Linienvisualisierung, um Trend-Datensätze (zeitb
 title: Linie
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 87%
+source-wordcount: '515'
+ht-degree: 86%
 
 ---
 
 # Linie
+
+>[!NOTE]
+>
+>Die Linienvisualisierung wird in Kürze verfügbar sein [intelligente Beschriftungen](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 Die Linienvisualisierung stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm kann nur verwendet werden, wenn die Zeit als Dimension verwendet wird.
 
