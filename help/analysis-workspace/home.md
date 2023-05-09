@@ -5,7 +5,7 @@ description: Überblick über die Funktionen von Analysis Workspace
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: d2828173e802baf5dc598cef0383075e1203442a
+source-git-commit: e3c9db595b26b96c2079a770ede1bdd609f6de14
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 26%
@@ -31,7 +31,7 @@ Das folgende Bild und die zugehörige Tabelle erläutern einige der Hauptbereich
 | A  | **Entfernte linke Leiste:** Enthält Registerkarten zum Hinzufügen von Bedienfeldern, Visualisierungen und Komponenten zu Analysis Workspace. Enthält außerdem das Datenwörterbuchsymbol, mit dem das Datenwörterbuch geöffnet wird. |
 | B | **Linke Leiste:** Je nachdem, welche Registerkarte in der linken Leiste ausgewählt ist, enthält dieser Bereich einzelne Bedienfelder, Visualisierungen oder Komponenten. |
 | C  | **Arbeitsfläche:** Dies ist der Hauptbereich, in den Sie Inhalte aus den linken Leisten ziehen, um Ihr Projekt zu erstellen. Das Projekt wird dynamisch aktualisiert, wenn Sie Bereiche, Visualisierungen und Komponenten zur Arbeitsfläche hinzufügen. |
-| D | **Dropdown-Menü für Report Suites:** Für jedes Bedienfeld in Analysis Workspace können Sie im Dropdown-Menü der Report Suite die Report Suite auswählen, die Sie als Datenquelle verwenden möchten. |
+| D | **Dropdown-Menü &quot;Datenansicht&quot;:** Für jedes Bedienfeld in Analysis Workspace können Sie über das Dropdown-Menü &quot;Datenansicht&quot;die Datenansicht auswählen, die Sie als Datenquelle verwenden möchten. |
 
 ## Funktionen in Analysis Workspace {#analysis}
 
