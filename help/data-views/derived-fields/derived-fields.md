@@ -6,18 +6,25 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
+badgeDerivedFields: label="New Feature" type="Positive"
+source-git-commit: 1aece0ac0873e2cf68bfe8b24725072ddf18ad30
 workflow-type: tm+mt
-source-wordcount: '3265'
-ht-degree: 9%
+source-wordcount: '3003'
+ht-degree: 8%
 
 ---
+
 
 # Abgeleitete Felder
 
 {{release-limited-testing}}
 
-Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders (Regel-Builder) spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder weiter als Komponente in definieren [Datenansicht](../data-views.md).
+>[!WARNING]
+>
+>In Erwartung endgültiger Aktualisierungen wird [!UICONTROL Benutzerdefiniertes Feld] anstelle von [!UICONTROL Abgeleitetes Feld] über die Benutzeroberfläche.
+
+
+Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders (Regel-Builder) spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
 
 Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Standorten außerhalb von CJA. z. B. [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
 
@@ -47,12 +54,12 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abge
 
 ## Assistent für Feldvorlagen
 
-Wenn Sie zum ersten Mal auf die Oberfläche für abgeleitete Felder zugreifen, wird die [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
+Wenn Sie zum ersten Mal auf die abgeleitete Feldoberfläche zugreifen, wird die [!UICONTROL Mit einer Feldvorlage beginnen] angezeigt.
 
 1. Wählen Sie die Vorlage aus, die den Typ des zu erstellenden Felds am besten beschreibt.
 2. Wählen Sie die **[!UICONTROL ** Auswählen **]** zum Fortfahren.
 
-Das Dialogfeld Abgeleitetes Feld enthält Regeln (und Funktionen), die für den von Ihnen ausgewählten Feldtyp erforderlich oder nützlich sind. Siehe [Funktionsvorlagen](#function-templates) für weitere Informationen zu den verfügbaren Vorlagen.
+Ihr abgeleitetes Felddialogfeld enthält Regeln (und Funktionen), die für den von Ihnen ausgewählten Feldtyp erforderlich oder nützlich sind. Siehe [Funktionsvorlagen](#function-templates) für weitere Informationen zu den verfügbaren Vorlagen.
 
 ## Regelschnittstelle
 
@@ -63,7 +70,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 |  | Name | Beschreibung |
 |---------|----------|--------|
 | A  | **Regelname** | Standardmäßig lautet der Regelname **Regel X** (X bezieht sich auf eine Sequenznummer). Um den Namen einer Regel zu bearbeiten, wählen Sie deren Namen aus und geben Sie den neuen Namen ein, z. B. `Query Parameter`. |
-| B | **Name der Funktion** | Der ausgewählte Funktionsname für die Regel, z. B. [!DNL URL PARSE]. Wenn die Funktion der letzte in der Funktionssequenz ist und die endgültigen Ausgabewerte bestimmt, wird dem Funktionsnamen gefolgt von [!DNL FINAL OUTPUT]beispielsweise [!DNL URL PARSE - FINAL OUTPUT]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Name der Funktion** | Der ausgewählte Funktionsname für die Regel, z. B. [!DNL URL PARSE]. Wenn die Funktion der letzte in der Funktionssequenz ist und die endgültigen Ausgabewerte bestimmt, wird dem Funktionsnamen gefolgt von [!DNL - FINAL OUTPUT]beispielsweise [!DNL URL PARSE - FINAL OUTPUT]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg). |
 | C  | **Regelbeschreibung** | Sie können optional einer Regel eine Beschreibung hinzufügen.<br/>Auswählen ![Weitere Symbole](assets/More.svg), wählen Sie **[!UICONTROL ** Beschreibung hinzufügen **]** , um eine Beschreibung hinzuzufügen, oder **[!UICONTROL ** Beschreibung bearbeiten **]** , um eine vorhandene Beschreibung zu bearbeiten.<br/>Geben Sie im Editor eine Beschreibung ein. Sie können die Symbolleiste verwenden, um den Text zu formatieren (mithilfe der Stilauswahl, fett, kursiv, unterstrichen, rechts, links, zentriert, Farbe, Nummernliste, Aufzählungsliste) und Links zu externen Informationen hinzuzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie außerhalb des Editors auf . |
 | D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Benutzeroberfläche hängt vom Funktionstyp ab. Siehe [Funktionsreferenz](#function-reference) Detaillierte Informationen zu den einzelnen unterstützten Funktionen. |
 
@@ -81,7 +88,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
    Um Ihr neues abgeleitetes Feld zu speichern, wählen Sie **[!UICONTROL ** Speichern **]**.
 
-5. Ihr neues abgeleitetes Feld wird zum **[!UICONTROL ** Abgeleitete Felder >**]** Container, als Teil von **[!UICONTROL ** Schemafelder **]** in der linken Leiste Ihrer Datenansicht.
+5. Ihr neues abgeleitetes Feld wird zum [!UICONTROL Abgeleitete Felder >] Container, als Teil von **[!UICONTROL ** Schemafelder **]** in der linken Leiste Ihrer Datenansicht.
 
 
 ## abgeleitetes Feld bearbeiten
@@ -125,7 +132,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 ## Funktionsvorlagen
 
-Um schnell ein abgeleitetes Feld für bestimmte Anwendungsfälle zu erstellen, sind Funktionsvorlagen verfügbar. Auf diese Funktionsvorlagen kann über den Bereich Selektor in der Benutzeroberfläche für abgeleitete Felder zugegriffen werden oder sie werden bei der ersten Verwendung in der [!UICONTROL Mit einer Feldvorlage beginnen] Assistent.
+Um schnell ein abgeleitetes Feld für bestimmte Anwendungsfälle zu erstellen, sind Funktionsvorlagen verfügbar. Auf diese Funktionsvorlagen kann über den Auswahlbereich in der abgeleiteten Feldoberfläche zugegriffen werden oder sie werden bei der ersten Verwendung in der [!UICONTROL Mit einer Feldvorlage beginnen] Assistent.
 
 
 ### Marketing-Kanäle
@@ -158,16 +165,16 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 - Spezifikationen:
    - Eingabedatentyp: Art der unterstützten Daten,
    - input: mögliche Eingabewerte,
-   - enthaltene Operatoren: für diese Funktion unterstützte Operatoren (falls vorhanden),
-   - limit: maximale Anzahl von Regeln mit dieser Funktion, die Sie in einem abgeleiteten Feld verwenden können,
+   - enthaltene Operatoren: für diese Funktion unterstützte Operatoren (sofern vorhanden),
+   - limit: die maximale Anzahl von Regeln (mit dieser Funktion), die Sie in einem abgeleiteten Feld verwenden können,
    - Ausgabe.
 
 - Anwendungsbeispiele, darunter:
-   - Daten vor der Definition des abgeleiteten Felds
-   - Definieren des abgeleiteten Felds
-   - Daten nach der Definition des abgeleiteten Felds
+   - Daten vor der Definition des abgeleiteten Felds,
+   - wie das abgeleitete Feld definiert wird,
+   - Daten nach der Definition des abgeleiteten Felds.
 
-- Einschränkungen (optional)
+- Einschränkungen (falls zutreffend).
 
 
 <!-- Concatenate -->
@@ -230,7 +237,7 @@ Der gewünschte Bericht sollte wie folgt aussehen:
 
 ### Abgeleitetes Feld {#concatenate-derivedfield}
 
-Sie definieren eine neue **[!UICONTROL ** Origin - Ziel **]** abgeleitetes Feld. Sie verwenden die **[!UICONTROL CONCATENATE]** -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
+Sie definieren eine neue [!UICONTROL Origin - Ziel] abgeleitetes Feld. Sie verwenden die [!UICONTROL CONCATENATE] -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
 
 ![[!DNL Concatenate] Regel](assets/concatenate.png)
 
@@ -269,30 +276,30 @@ Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Fel
 
 Sie möchten Regeln definieren, um verschiedene Marketing-Kanäle zu identifizieren, indem Sie eine kaskadierende Logik anwenden, um ein Marketing-Kanal-Feld auf den richtigen Wert festzulegen:
 
-- Wenn der Referrer aus einer Suchmaschine stammt und die Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `ps_`sollte der Marketing-Kanal als **Gebührenpflichtige Suche**.
-- Wenn der Referrer aus einer Suchmaschine stammt und die Seite nicht über die Abfragezeichenfolge verfügt `cid`sollte der Marketing-Kanal als **Kostenlose Suche**.
-- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `em_`sollte der Marketing-Kanal als **Email**.
-- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `ds_`sollte der Marketing-Kanal als **Display Ad**.
-- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `so_`sollte der Marketing-Kanal als **Paid Social**.
-- Wenn der Referrer aus einer Referrer-Domäne von twitter.com, facebook.com, linkedin.com oder tiktok.com stammt, sollte der Marketing-Kanal als **Natürliche Social**.
-- Wenn keine der oben genannten Regeln übereinstimmt, sollte der Marketing-Kanal als **Andere verweisende Stelle**.
+- Wenn der Referrer aus einer Suchmaschine stammt und die Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `ps_`sollte der Marketing-Kanal als [!DNL *Gebührenpflichtige Suche*].
+- Wenn der Referrer aus einer Suchmaschine stammt und die Seite nicht über die Abfragezeichenfolge verfügt `cid`sollte der Marketing-Kanal als [!DNL *Kostenlose Suche*].
+- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `em_`sollte der Marketing-Kanal als [!DNL *Email*].
+- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `ds_`sollte der Marketing-Kanal als [!DNL *Display Ad*].
+- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `so_`sollte der Marketing-Kanal als [!DNL *Paid Social*].
+- Wenn der Referrer aus einer Referrer-Domäne von [!DNL twitter.com], [!DNL facebook.com], [!DNL linkedin.com]oder [!DNL tiktok.com]sollte der Marketing-Kanal als [!DNL *Natürliche Social*].
+- Wenn keine der oben genannten Regeln übereinstimmt, sollte der Marketing-Kanal als [!DNL *Andere verweisende Stelle*].
 
-Falls Ihre Site die folgenden Beispielereignisse erhält, die Referrer und Seiten-URL enthalten, sollten diese Ereignisse wie folgt identifiziert werden:
+Falls Ihre Site die folgenden Beispielereignisse erhält, die [!UICONTROL Referrer] und [!UICONTROL Seiten-URL]sollten diese Ereignisse wie folgt identifiziert werden:
 
-| Ereignis-   | Referrer | Seiten-URL | Marketing-Kanal |
+| [!DNL Event] | [!DNL Referrer] | [!DNL Page URL] | [!DNL Marketing Channel] |
 |:--:|----|----|----|
-| 1 | `https://facebook.com` | `https://site.com/home` | Natürliche Social |
-| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Anzeigen |
-| 3 |  | `https://site.com/?cid=em_12345678` | E-Mail |
-| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | Paid Search |
-| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | E-Mail |
-| 6 | `https://google.com` |  | Kostenlose Suche  |
+| 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
+| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
+| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
+| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
+| 6 | `https://google.com` |  | [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 ### Daten vor {#casewhen-uc1-databefore}
 
-| Referrer | Seiten-URL |
+| [!UICONTROL Referrer] | [!DNL Page URL] |
 |----|----|
 | `https://facebook.com` | `https://site.com/home` |
 | `https://abc.com` | `https://site.com/?cid=ds_12345678` |
@@ -305,79 +312,79 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die Referrer und Seite
 
 ### Abgeleitetes Feld {#casewhen-uc1-derivedfield}
 
-Sie definieren eine neue `Marketing Channel` abgeleitetes Feld. Sie verwenden die **[!UICONTROL WENN]** Funktionen zum Definieren von Regeln, die Werte für die basierend auf vorhandenen Werten für `Page URL` und `Referring URL` -Feld.
+Sie definieren eine neue `Marketing Channel` abgeleitetes Feld. Sie verwenden die [!UICONTROL WENN] Funktionen zum Definieren von Regeln, die Werte für die basierend auf vorhandenen Werten für `Page URL` und `Referring URL` -Feld.
 
-Beachten Sie die Verwendung der Funktion . **[!UICONTROL ** URL PARSE **]** zum Definieren von Regeln zum Abrufen der Werte für `Page Url` und `Referring Url` vor **[!UICONTROL ** WENN **]** -Regeln angewendet werden.
+Beachten Sie die Verwendung der Funktion . [!UICONTROL URL PARSE] zum Definieren von Regeln zum Abrufen der Werte für `Page Url` und `Referring Url` vor [!UICONTROL WENN] -Regeln angewendet werden.
 
 ![[!DNL Case when] Regel 1](assets/case-when-1.png)
 
 ### Daten nach {#casewhen-uc1-dataafter}
 
-| Marketing-Kanal |
+| [!DNL Marketing Channel] |
 |----|
-| Natürliche Social |
-| Anzeigen |
-| E-Mail |
-| Paid Search |
-| E-Mail |
-| Kostenlose Suche  |
+| [!DNL Natural Social] |
+| [!DNL Display] |
+| [!DNL Email] |
+| [!DNL Paid Search] |
+| [!DNL Email] |
+| [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 
 ## Anwendungsfall 2 {#casewhen-uc2}
 
-Sie haben mehrere verschiedene Varianten der Suche in Ihrer Dimension &quot;Produktsuchmethoden&quot;erfasst. Um die Gesamtleistung der Suche im Vergleich zum Durchsuchen zu verstehen, müssen Sie viel Zeit damit verbringen, die Ergebnisse manuell zu kombinieren.
+Sie haben mehrere verschiedene Suchvarianten in Ihrer [!DNL Product Finding Methods] Dimension. Um die Gesamtleistung der Suche im Vergleich zum Durchsuchen zu verstehen, müssen Sie viel Zeit damit verbringen, die Ergebnisse manuell zu kombinieren.
 
-Ihre Site erfasst die folgenden Werte für Ihre Dimension &quot;Produktsuchmethoden&quot;. Letztlich weisen alle diese Werte auf eine Suche hin.
+Ihre Site erfasst die folgenden Werte für Ihre [!DNL Product Finding Methods] Dimension. Letztlich weisen alle diese Werte auf eine Suche hin.
 
 | Erfasster Wert | Tatsächlicher Wert |
 |---|---|
-| search p13n_no | Suche |
-| search p13n_yes | Suche |
-| search refine p13n_no | Suche |
-| search refine p13n_yes | Suche |
-| Suchumleitung p13n_yes | Suche |
-| search-redirect | Suche |
+| [!DNL search p13n_no] | [!DNL search] |
+| [!DNL search p13n_yes] | [!DNL search] |
+| [!DNL search refine p13n_no] | [!DNL search] |
+| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search redirect p13n_yes] | [!DNL search] |
+| [!DNL search-redirect] | [!DNL search] |
 
 {style="table-layout:auto"}
 
 
 ### Daten vor {#casewhen-uc2-databefore}
 
-| Methoden zur Produktsuche |
+| [!DNL Product Finding Methods] |
 |----|
-| search p13_no |
-| search p13_yes |
-| Browsen |
-| search refine p13_no |
-| search refine p13_yes |
-| Browsen |
-| Suchumleitung p13_yes |
-| search-redirect |
-| Browsen |
+| [!DNL search p13_no] |
+| [!DNL search p13_yes] |
+| [!DNL browse] |
+| [!DNL search refine p13_no] |
+| [!DNL search refine p13_yes] |
+| [!DNL browse] |
+| [!DNL search redirect p13_yes] |
+| [!DNL search-redirect] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
 ### Abgeleitetes Feld {#casewhen-uc2-derivedfield}
 
-Sie definieren eine `Product Finding Methods (new)` abgeleitetes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regeln im Regel-Builder. Diese Regeln gelten für die Logik für alle möglichen Varianten der alten **[!UICONTROL ** Methoden zur Produktsuche **]** Feldwerte für `search` und `browse` mithilfe der **[!UICONTROL Enthält die Wortgruppe]** Kriterium.
+Sie definieren eine `Product Finding Methods (new)` abgeleitetes Feld. Sie erstellen Folgendes [!UICONTROL WENN] Regeln im Regel-Builder. Diese Regeln gelten für die Logik für alle möglichen Varianten der alten [!UICONTROL Methoden zur Produktsuche] Feldwerte für `search` und `browse` mithilfe der [!UICONTROL Enthält die Wortgruppe] Kriterium.
 
 ![[!DNL Case When] Regel 2](assets/case-when-2.png)
 
 ### Daten nach {#casewhen-uc2-dataafter}
 
-| Methoden zur Produktsuche (neu) |
+| [!DNL Product Finding Methods (new)] |
 |----|
-| Suche |
-| Suche |
-| Browsen |
-| Suche |
-| Suche |
-| Browsen |
-| Suche |
-| Suche |
-| Browsen |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
@@ -389,9 +396,9 @@ Als Reiseunternehmen möchten Sie die Reisedauer für gebuchte Reisen buchen, da
 Annahmen:
 
 - Die Organisation erfasst die Reisedauer in ein numerisches Feld.
-- Sie möchten 1-3 Tage Dauer in einen Eimer mit der Bezeichnung &quot;Kurzreise&quot; einpacken.
-- Sie möchten 4 bis 7 Tage lang in einen Eimer mit der Bezeichnung &quot;Mittelreise&quot; einpacken.
-- Sie möchten 8-Tage-Dauern in einen Eimer mit der Bezeichnung &quot;Langreise&quot; einpacken.
+- Sie möchten 1-3 Tage Dauer in einen Eimer mit der Bezeichnung &#39;[!DNL short trip]&#39;
+- Sie möchten 4 bis 7 Tage lang in einen Eimer mit der Bezeichnung &#39;[!DNL medium trip]&#39;
+- Sie möchten 8-Tage-Dauern in einen Behälter mit der Bezeichnung &#39;[!DNL long trip]&#39;
 - 132 Reisen wurden für eine Dauer von 1 Tag gebucht
 - 110 Ausflüge wurden für eine Dauer von 2 Tagen gebucht
 - 105 Ausflüge wurden für eine Dauer von 3 Tagen gebucht
@@ -407,17 +414,17 @@ Annahmen:
 
 Ihr gewünschter Bericht sollte wie folgt aussehen:
 
-| Art der Reisedauer | Buchungen |
+| [!DNL Trip Duration Type] | [!DNL Bookings] |
 |----|---:|
-| Mittelreise | 358 |
-| Kurzreise | 347 |
-| Langreise | 241 |
+| [!DNL medium trip] | 358 |
+| [!DNL short trip] | 347 |
+| [!DNL long trip] | 241 |
 
 {style="table-layout:auto"}
 
 ### Daten vor {#casewhen-uc3-databefore}
 
-| Reisedauer |
+| [!DNL Trip Duration] |
 |---:|
 | 1 |
 | 12 |
@@ -434,27 +441,27 @@ Ihr gewünschter Bericht sollte wie folgt aussehen:
 
 ### Abgeleitetes Feld {#casewhen-uc3-derivedfield}
 
-Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen Folgendes **[!UICONTROL ** WENN **]** Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte **[!UICONTROL ** Reisedauer **]** -Feldwerte in drei Werte: `short trip`, `medium  trip`und `long trip`.
+Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen Folgendes [!UICONTROL WENN] Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte [!UICONTROL Reisedauer] -Feldwerte in drei Werte: `short trip`, `medium  trip`und `long trip`.
 
 ![[!DNL Case When] Regel 3](assets/case-when-3.png)
 
 
 ### Daten nach {#casewhen-uc3-dataafter}
 
-| Reisedauer (zusammengefasst) |
+| [!DNL Trip Duration (bucketed)] |
 |---|
-| Kurzreise |
-| Langreise |
-| Kurzreise |
-| Mittelreise |
-| Mittelreise |
-| Langreise |
-| Mittelreise |
-| Kurzreise |
-| Kurzreise |
-| Kurzreise |
-| Langreise |
-| Langreise |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL short trip] |
+| [!DNL medium trip] |
+| [!DNL medium trip] |
+| [!DNL long trip] |
+| [!DNL medium trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL long trip] |
 
 
 ## Begrenzungen
@@ -469,13 +476,13 @@ CJA verwendet das folgende standardmäßige Containermodell:
 
 
 
-Die folgenden Einschränkungen gelten und werden erzwungen, wenn _Auswählen_ und _Einstellung_ -Werte.
+Die folgenden Einschränkungen gelten und werden erzwungen, wenn *Auswählen* und *Einstellung* -Werte.
 
 |  | Begrenzungen |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Werte _select_ innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Abhängigkeit A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Alle Werte, die Sie _set_ in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Abhängigkeit B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Die Werte, die Sie _select_ quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe _not_ müssen aus demselben Container stammen und tun _not_ müssen vom gleichen Typ sein. <br/> ![Abhängigkeit C](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | Werte *select* innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Abhängigkeit A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Alle Werte, die Sie *set* in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Abhängigkeit B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Die Werte, die Sie *select* quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe *not* müssen aus demselben Container stammen und tun *not* müssen vom gleichen Typ sein. <br/> ![Abhängigkeit C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -505,47 +512,47 @@ Sie haben einige falsch formatierte Werte für Ihren externen Marketingkanalberi
 
 **Originalbericht**
 
-| Externe Marketingkanäle | Sitzungen |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| E-Mail-Marketing | 500 |
-| email %20marketing | 24 |
+| [!DNL email marketing] | 500 |
+| [!DNL email %20marketing] | 24 |
 
 {style="table-layout:auto"}
 
 **Bevorzugter Bericht**
 
-| Externe Marketingkanäle | Sitzungen |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| E-Mail-Marketing | 524 |
+| [!DNL email marketing] | 524 |
 
 
 ### Daten vor {#findreplace-uc-databefore}
 
-| Externes Marketing |
+| [!DNL External Marketing] |
 |----|
-| E-Mail-Marketing |
-| email%20marketing |
-| E-Mail-Marketing |
-| E-Mail-Marketing |
-| email%20marketing |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
 
 {style="table-layout:auto"}
 
 ### Abgeleitetes Feld {#findreplace-uc-derivedfield}
 
-Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden die **[!UICONTROL SUCHEN UND ERSETZEN]** -Funktion zum Definieren einer Regel zum Suchen und Ersetzen aller Vorkommen von `email%20marketing` mit `email marketing`.
+Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN UND ERSETZEN] -Funktion zum Definieren einer Regel zum Suchen und Ersetzen aller Vorkommen von `email%20marketing` mit `email marketing`.
 
 ![[!DNL Find and Replace] Regel](assets/find-and-replace.png)
 
 ### Daten nach {#findreplace-uc-dataafter}
 
-| Externes Marketing<br/>(abgeleitetes Feld) |
+| [!DNL External Marketing (updated)] |
 |----|
-| E-Mail-Marketing |
-| E-Mail-Marketing |
-| E-Mail-Marketing |
-| E-Mail-Marketing |
-| E-Mail-Marketing |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
 
 {style="table-layout:auto"}
 
@@ -573,63 +580,63 @@ Definiert einen Satz von Lookup-Werten, die durch entsprechende Werte ersetzt we
 ## Anwendungsfall 1 {#lookup-uc1}
 
 Sie verfügen über eine CSV-Datei, die eine Schlüsselspalte für `hotelID` und eine oder mehrere zusätzliche Spalten, die mit dem `hotelID`: `city`, `rooms`, `hotel name`.
-Sie erfassen die Hotel-ID in einer Dimension, möchten jedoch eine aus der `hotelID` in der CSV-Datei.
+Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus der `hotelID` in der CSV-Datei.
 
 **Struktur und Inhalt von CSV-Dateien**
 
-| hotelID | city | Zimmer | Hotelname |
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
 |---|---|---:|---|
-| SLC123 | Salt Lake City | 40 | SLC-Innenstadt |
-| LAX342 | Los Angels | 60 | LA Airport |
-| SFO456 | San Francisco | 75 | Market Street |
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
 **Aktueller Bericht**
 
-| Hotel-ID | Produktansichten |
+| [!DNL Hotel ID] | Produktansichten |
 |---|---:|
-| SLC123 | 200 |
-| LX342 | 198 |
-| SFO456 | 190 |
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
 
 {style="table-layout:auto"}
 
 
 **Gewünschter Bericht**
 
-| Hotelname | Produktansichten |
+| [!DNL Hotel Name] | Produktansichten |
 |----|----:|
-| SLC-Innenstadt | 200 |
-| LA Airport | 198 |
-| Market Street | 190 |
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
 
 {style="table-layout:auto"}
 
 ### Daten vor {#lookup-uc1-databefore}
 
-| Hotel-ID |
+| [!DNL Hotel ID] |
 |----|
-| SLC123 |
-| LAX342 |
-| SFO456 |
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
 
 {style="table-layout:auto"}
 
 
 ### Abgeleitetes Feld {#lookup-uc1-derivedfield}
 
-Sie definieren eine `Hotel Name` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** SUCHEN **]** -Funktion, um eine Regel zu definieren, mit der Sie die Werte der **[!UICONTROL ** Hotel-ID **]** und durch neue Werte ersetzen.
+Sie definieren eine `Hotel Name` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN] -Funktion, um eine Regel zu definieren, mit der Sie die Werte der [!UICONTROL Hotel-ID] und durch neue Werte ersetzen.
 
 ![[!DNL Lookup] Regel 1](assets/lookup-1.png)
 
 ### Daten nach {#lookup-uc1-dataafter}
 
-| Hotelname |
+| [!DNL Hotel Name] |
 |----|
-| SLC-Innenstadt |
-| LA Airport |
-| Market Street |
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
@@ -640,13 +647,13 @@ Sie haben URLs anstelle des benutzerfreundlichen Seitennamens für mehrere Seite
 
 ### Daten vor {#lookup-uc2-databefore}
 
-| Seitenname |
+| [!DNL Page Name] |
 |---|
-| Startseite |
-| Flugsuche |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
 | `http://www.adobetravel.ca/Hotel-Search` |
 | `https://www.adobetravel.com/Package-Search` |
-| Angebote und Angebote |
+| [!DNL Deals & Offers] |
 | `http://www.adobetravel.ca/user/reviews` |
 | `https://www.adobetravel.com.br/Generate-Quote/preview` |
 
@@ -654,21 +661,21 @@ Sie haben URLs anstelle des benutzerfreundlichen Seitennamens für mehrere Seite
 
 ### Abgeleitetes Feld {#lookup-uc2-derivedfield}
 
-Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** SUCHEN **]** -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen **[!UICONTROL ** Seitenname **]** und ersetzen Sie sie durch die aktualisierten richtigen Werte.
+Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN] -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen [!UICONTROL Seitenname] und ersetzen Sie sie durch die aktualisierten richtigen Werte.
 
 ![[!DNL Lookup] Regel 2](assets/lookup-2.png)
 
 ### Daten nach {#lookup-uc2-dataafter}
 
-| Seitenname (aktualisiert) |
+| [!DNL Page Name (updated)] |
 |---|
-| Startseite |
-| Flugsuche |
-| Hotelsuche |
-| Paketsuche |
-| Angebote und Angebote |
-| Überprüfungen |
-| Anführungszeichen erstellen |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
 
 +++
 
@@ -695,7 +702,7 @@ Sie möchten die Referrer-Domäne aus der Referrer-URL nur als Teil des Regelsat
 
 ### Daten vor {#urlparse-uc1-databefore}
 
-| Verweisende URL |
+| [!DNL Referring URL] |
 |----|
 | `https://www.google.com/` |
 | `https://duckduckgo.com/` |
@@ -706,29 +713,29 @@ Sie möchten die Referrer-Domäne aus der Referrer-URL nur als Teil des Regelsat
 
 ### Abgeleitetes Feld {#urlparse-uc1-derivedfield}
 
-Sie definieren eine  `Referring Domain` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** URL PARSE **]** -Funktion, um eine Regel zum Abrufen des Hosts aus dem **Verweisende URL** und speichern Sie es im neuen abgeleiteten Feld.
+Sie definieren eine  `Referring Domain` abgeleitetes Feld. Sie verwenden die [!UICONTROL URL PARSE] -Funktion, um eine Regel zum Abrufen des Hosts aus dem [!UICONTROL Verweisende URL] und speichern Sie es im neuen abgeleiteten Feld.
 
 ![[!DNL Url Parse] Regel 1](assets/url-parse-1.png)
 
 ### Daten nach {#urlparse-uc1-dataafter}
 
-| Referrer Domain |
+| [!DNL Referrer Domain] |
 |----|
-| www.google.com |
-| duckduckgo.com |
-| t.co |
-| l.facebook.com |
+| [!DNL www.google.com] |
+| [!DNL duckduckgo.com] |
+| [!DNL t.co] |
+| [!DNL l.facebook.com] |
 
 {style="table-layout:auto"}
 
 
 ## Anwendungsfall 2 {#urlparse-uc2}
 
-Sie möchten den Wert der `cid` -Parameter einer Abfragezeichenfolge in einer Seiten-URL als Teil der Ausgabe eines abgeleiteten Trackingcode-Berichts.
+Sie möchten den Wert der `cid` -Parameter einer Abfragezeichenfolge in einer [!DNL Page URL] als Teil der Ausgabe eines abgeleiteten Trackingcode-Berichts.
 
 ### Daten vor {#urlparse-uc2-databefore}
 
-| Seiten-URL |
+| [!DNL Page URL] |
 |----|
 | `https://www.adobe.com/?cid=abc123` |
 | `https://www.adobe.com/?em=email1234&cid=def123` |
@@ -738,17 +745,17 @@ Sie möchten den Wert der `cid` -Parameter einer Abfragezeichenfolge in einer Se
 
 ### Abgeleitetes Feld {#urlparse-uc2-derivedfield}
 
-Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die **[!UICONTROL ** URL PARSE **]** -Funktion, um eine Regel zum Abrufen des Werts des Abfragezeichenfolgenparameters in der Seiten-URL zu definieren, wobei `cid` als Abfrageparameter. Der Ausgabewert wird im neuen abgeleiteten Feld gespeichert.
+Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die [!UICONTROL URL PARSE] -Funktion, um eine Regel zum Abrufen des Werts des Abfragezeichenfolgenparameters im [!UICONTROL Seiten-URL] -Feld angeben `cid` als Abfrageparameter. Der Ausgabewert wird im neuen abgeleiteten Feld gespeichert.
 
 ![[!DNL Url Parse] Regel 2](assets/url-parse-2.png)
 
 ### Daten nach {#urlparse-uc2-dataafter}
 
-| Abfragezeichenfolgen-CID |
+| [!DNL Query String CID] |
 |----|
-| abc123 |
-| def123 |
-| xyz123 |
+| [!DNL abc123] |
+| [!DNL def123] |
+| [!DNL xyz123] |
 
 {style="table-layout:auto"}
 
