@@ -4,10 +4,10 @@ title: Datenwörterbuch anzeigen
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 60%
+source-wordcount: '302'
+ht-degree: 55%
 
 ---
 
@@ -34,6 +34,10 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
    Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](assets/dimension-icon.png) orange sind, **Segmente** ![Segmentsymbol](assets/segment-icon.png) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](assets/date-range-icon.png) violett sind und **Metriken** ![Metriksymbol](assets/default-metric-icon.png) sind grün. Das Symbol Adobe ![Symbol &quot;Adobe&quot;](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an und das Symbol für den Rechner ![Symbol &quot;Rechner&quot;](assets/calculated-metric-icon-created.png) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
 
 {{dd-filter-criteria}}
+
+1. (Optional) Wählen Sie die **Sortieren** icon ![Symbol &quot;Komponenten sortieren&quot;](assets/component-sort-icon.png)und wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu sortieren:
+
+   {{components-sort-options}}
 
 1. Wählen Sie aus der Komponentenliste die Komponente aus, die Sie anzeigen möchten.
 

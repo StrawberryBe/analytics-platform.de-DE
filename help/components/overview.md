@@ -4,10 +4,10 @@ description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 434695e87a0b342da9c17c94b93e0253cf1e621e
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 62%
 
 ---
 
@@ -55,6 +55,82 @@ Sie können Komponenten (separat oder mehrere gleichzeitig) auf verschiedene Wei
 Sehen Sie sich das Video zum Erstellen von Metriken, Filtern und Daten an:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23979)
+
+## Komponenten verwalten {#actions}
+
+Sie können Komponenten direkt in der linken Leiste verwalten.
+
+1. Klicken Sie mit der rechten Maustaste auf eine Komponente.
+
+   Oder
+
+   Wählen Sie eine Komponente aus und wählen Sie dann die **Aktion** (3-Punkt) oben in der Komponentenliste.
+
+   >[!TIP]
+   >
+   >   Sie können mehrere Komponenten auswählen, indem Sie die Umschalttaste gedrückt halten oder die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt halten.
+
+
+   ![](assets/component-actions.png)
+
+   | Komponentenaktion | Beschreibung |
+   |--- |--- |
+   | [!UICONTROL **Tag**] | Organisieren oder verwalten Sie Komponenten, indem Sie Tags darauf anwenden. Sie können dann in der linken Leiste nach Tags suchen, indem Sie auf den Filter klicken oder „#“ eingeben. Tags fungieren auch als Filter in den Komponenten-Managern. |
+   | [!UICONTROL **Favorit**] | Fügen Sie die Komponente Ihrer Favoritenliste hinzu. Genauso wie nach Tags können Sie in der linken Leiste auch nach Favoriten suchen und diese in den Komponenten-Managern als Filter verwenden. |
+   | [!UICONTROL **Genehmigen**] | Markieren Sie Komponenten als „Genehmigt“, um Ihren Benutzern zu signalisieren, dass die Komponente vom Unternehmen genehmigt ist. Genauso wie nach Tags können Sie in der linken Leiste nach dem Status „Genehmigt“ suchen und diesen in den Komponenten-Managern als Filter verwenden. |
+   | [!UICONTROL **Freigeben**] | Freigeben von Komponenten für Benutzer in Ihrer Organisation. Diese Option ist nur für benutzerdefinierte Komponenten verfügbar, z. B. Filter oder berechnete Metriken. |
+   | [!UICONTROL **Löschen**] | Löschen Sie Komponenten, die Sie nicht mehr benötigen. Diese Option ist nur für benutzerdefinierte Komponenten verfügbar, z. B. Filter oder berechnete Metriken. |
+
+Benutzerdefinierte Komponenten können auch über ihre jeweiligen Komponenten-Manager verwaltet werden. Beispiel: die [Filter verwalten](/help/components/filters/manage-filters.md).
+
+## Suchen, Filtern und Sortieren der Komponentenliste
+
+Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suchen, filtern und sortieren, um eine bestimmte Komponente schnell zu finden.
+
+### Durchsuchen der Komponentenliste
+
+1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](assets/components-icon.png) in der linken Leiste.
+
+1. Geben Sie im Suchfeld den Namen der Komponente ein, die Sie in Ihrem Projekt verwenden möchten.
+
+   Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](assets/dimension-icon.png) orange sind, **Filter** ![Filtersymbol](assets/segment-icon.png) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](assets/date-range-icon.png) violett sind und **Metriken** ![Metriksymbol](assets/default-metric-icon.png) sind grün. Das Symbol Adobe ![Symbol &quot;Adobe&quot;](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an und das Symbol für den Taschenrechner ![Symbol &quot;Rechner&quot;](assets/calculated-metric-icon-created.png) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
+
+1. Wählen Sie die Komponente aus, wenn sie in der Dropdown-Liste angezeigt wird.
+
+### Filtern der Komponentenliste
+
+1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](assets/components-icon.png) in der linken Leiste.
+
+1. Wählen Sie die **Filter** icon ![Symbol &quot;Datenwörterbuchfilter&quot;](assets/components-filter-icon.png).
+
+   Oder
+
+   Geben Sie das Rautenzeichen (#) in das Suchfeld ein.
+
+1. Wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu filtern:
+
+   | Option | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Genehmigt**] | Nur Komponenten anzeigen, die von Admins als genehmigt markiert wurden. |
+   | [!UICONTROL **Favoriten**] | Nur Komponenten anzeigen, die sich in Ihrer Favoritenliste befinden. Informationen zum Hinzufügen von Komponenten zur Favoritenliste finden Sie unter [Komponenten verwalten](#manage-components). |
+   | [!UICONTROL **Dimensionen**] | Nur Komponenten anzeigen, die Dimensionen sind. |
+   | [!UICONTROL **Metriken**] | Nur Komponenten anzeigen, die Metriken sind. |
+   | [!UICONTROL **Filter**] | Nur Komponenten anzeigen, die Filter sind. |
+   | [!UICONTROL **Datumsbereiche**] | Zeigt nur Komponenten an, die Datumsbereiche sind. |
+   | [!UICONTROL **Alle anzeigen**] | Alle Komponenten anzeigen. Diese Option steht nur Admins zur Verfügung. |
+   | [!UICONTROL **Nicht genehmigt**] | Nur Komponenten anzeigen, die von Admins noch nicht als genehmigt markiert wurden. Für Admins beim Identifizieren von Komponenten hilfreich, die überprüft und genehmigt werden müssen. Diese Option steht nur Admins zur Verfügung. |
+
+1. (Optional) Um die Liste weiter zu verfeinern, können Sie die Komponentenliste sortieren, wie hier beschrieben: [Sortieren der Komponentenliste](#sort-the-component-list).
+
+### Sortieren der Komponentenliste
+
+1. (Optional) Wenden Sie alle Filter auf die Komponentenliste an, wie unter [Filtern der Komponentenliste](#filter-the-component-list).
+
+1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](assets/components-icon.png) in der linken Leiste.
+
+1. Wählen Sie die **Sortieren** icon ![Symbol &quot;Komponenten sortieren&quot;](assets/component-sort-icon.png)und wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu sortieren:
+
+   {{components-sort-options}}
 
 ## Berechtigungen für Komponentenzugriff
 

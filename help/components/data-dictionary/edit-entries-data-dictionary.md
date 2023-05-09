@@ -4,10 +4,10 @@ title: Einträge im Datenwörterbuch bearbeiten
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 58%
+source-wordcount: '315'
+ht-degree: 53%
 
 ---
 
@@ -32,6 +32,10 @@ Bearbeiten einer Komponente im Datenwörterbuch:
    Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](assets/dimension-icon.png) orange sind, **Segmente** ![Segmentsymbol](assets/segment-icon.png) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](assets/date-range-icon.png) violett sind und **Metriken** ![Metriksymbol](assets/default-metric-icon.png) sind grün. Das Symbol Adobe ![Symbol &quot;Adobe&quot;](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Segmentvorlage an und das Symbol für den Rechner ![Symbol &quot;Rechner&quot;](assets/calculated-metric-icon-created.png) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
 
 {{dd-filter-criteria}}
+
+1. (Optional) Wählen Sie die **Sortieren** icon ![Symbol &quot;Komponenten sortieren&quot;](assets/component-sort-icon.png)und wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu sortieren:
+
+   {{components-sort-options}}
 
 1. Wählen Sie aus der Komponentenliste die Komponente aus, die Sie bearbeiten möchten.
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 72%
+source-wordcount: '950'
+ht-degree: 68%
 
 ---
 # Snippets
@@ -56,3 +56,14 @@ ht-degree: 72%
 | [!UICONTROL **Datum der letzten Änderung**] | Zeigt den Tag an, an dem die Komponente zuletzt geändert wurde. Dieser Abschnitt wird beim Anzeigen von Filtern, Metriken, berechneten Metriken und Datumsbereichen angezeigt. |
 
 {style="table-layout:auto"}
+
+## Sortieroptionen von Komponenten {#components-sort-options}
+
+| Option | Funktion |
+|---------|----------|
+| [!UICONTROL **Empfohlen**] | Sortiert Komponenten nach den empfohlenen Komponenten oben in der Liste. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
+| [!UICONTROL **Alphabetisch**] | Sortiert Komponenten alphabetisch. |
+| [!UICONTROL **Kategorisch**] | Sortiert Komponenten nach Komponententyp (Dimension, Metrik, Segment, Datumsbereich). |
+
+{style="table-layout:auto"}
+
