@@ -3,16 +3,17 @@ description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzend
 title: Einträge im Datenwörterbuch bearbeiten
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 70%
+ht-degree: 58%
 
 ---
 
 # Bearbeiten von Komponenteneinträgen im Datenwörterbuch
 
-Customer Journey Analytics-Administratoren können Komponenteneinträge im Datenwörterbuch für eine bestimmte Report Suite bearbeiten. Alle vorgenommenen Änderungen sind für alle Benutzenden der Report Suite sichtbar.
+Customer Journey Analytics-Administratoren können Komponenteneinträge im Datenwörterbuch für eine bestimmte Datenansicht bearbeiten. Alle vorgenommenen Änderungen sind für alle Benutzer der Datenansicht sichtbar.
 
 Bearbeiten einer Komponente im Datenwörterbuch:
 
@@ -22,9 +23,9 @@ Bearbeiten einer Komponente im Datenwörterbuch:
 
    Das Fenster „Datenwörterbuch“ wird angezeigt.
 
-   ![Adminansicht des Datenwörterbuchs](assets/data-dictionary-admin.png)
+   ![Administratoransicht des Datenwörterbuchs](assets/data-dictionary-admin.png)
 
-1. Stellen Sie sicher, dass im Dropdown-Menü die richtige Report Suite ausgewählt ist. Standardmäßig wird die Report Suite angezeigt, in der Sie sich bereits befinden.
+1. Stellen Sie sicher, dass im Dropdown-Menü die richtige Datenansicht ausgewählt ist. Standardmäßig wird die Datenansicht angezeigt, in der Sie sich bereits befinden.
 
 1. (Optional) Geben Sie im Suchfeld den Namen der Komponente ein, die Sie bearbeiten möchten.
 

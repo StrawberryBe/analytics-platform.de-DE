@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 88%
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden. Sie können etwa ein Datum oder einen Datumsbereich mit bekannten Datenproblemen, öffentlichen Feiertagen, Kampagnenstarts usw. kommentieren. Sie können dann Ereignisse grafisch darstellen und sehen, ob sich Kampagnen oder andere Ereignisse auf den Traffic Ihrer Site, den Umsatz oder andere Metriken ausgewirkt haben.
 
-Angenommen, Sie geben Projekte für Ihr Unternehmen frei. Wenn der Traffic aufgrund einer Marketing-Kampagne stark angestiegen ist, können Sie die Anmerkung „Start der Kampagne“ erstellen und diese auf Ihre gesamte Report Suite anwenden. Wenn Ihre Benutzer Datensätze anzeigen, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten neben den Daten.
+Angenommen, Sie geben Projekte für Ihr Unternehmen frei. Wenn der Traffic aufgrund einer Marketing-Kampagne stark angestiegen ist, können Sie die Anmerkung &quot;Kampagnenstartdatum&quot;erstellen und sie auf die gesamte Datenansicht eingrenzen. Wenn Ihre Benutzer Datensätze anzeigen, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten neben den Daten.
 
 ![](assets/multi-day.png)
 
@@ -28,7 +28,7 @@ Beachten Sie:
 
 * Sie können auf das Projekt angewendet werden, in dem sie erstellt wurden (Standard), oder auf alle Projekte.
 
-* Sie können auf die Report Suite angewendet werden, in der sie erstellt wurden (Standard), oder auf alle Report Suites.
+* Sie können auf die Datenansicht angewendet werden, in der sie erstellt wurden (Standard), oder auf alle Datenansichten.
 
 ## Zugriffsberechtigungen
 

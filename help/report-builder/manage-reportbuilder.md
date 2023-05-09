@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
-workflow-type: ht
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Der Datenblock-Manager listet alle in einer Arbeitsmappe vorhandenen Datenblöck
 
 ## Sortieren der Datenblockliste
 
-Sie können die Datenblockliste nach einer angezeigten Spalte sortieren. Sie können die Datenblockliste beispielsweise nach Report Suites, Filtern, Datumsbereich und anderen Variablen sortieren.
+Sie können die Datenblockliste nach einer angezeigten Spalte sortieren. Beispielsweise können Sie die Blockierungsliste der Daten nach Datenansichten, Filtern, Datumsbereich und anderen Variablen sortieren.
 
 Um die Datenblockliste zu sortieren, klicken Sie auf eine Spaltenüberschrift.
 
@@ -40,7 +40,7 @@ Um die Datenblockliste zu sortieren, klicken Sie auf eine Spaltenüberschrift.
 
 ## Durchsuchen der Datenblockliste
 
-Verwenden Sie das Suchfeld, um in der Datenblocktabelle eine Suche durchzuführen. Sie können beispielsweise nach Metriken suchen, die in den Datenblöcken oder in der Report Suite enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
+Verwenden Sie das Suchfeld, um in der Datenblocktabelle eine Suche durchzuführen. Sie können beispielsweise nach Metriken suchen, die in Datenblöcken oder in der Datenansicht enthalten sind. Sie können auch nach Datumsangaben suchen, die in den Spalten „Datumsbereich“, „Änderungsdatum“ oder „Datum des letzten Durchgang“ angezeigt werden.
 
 ![Bild](./assets/image55.png)
 

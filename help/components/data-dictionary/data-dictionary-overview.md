@@ -3,10 +3,11 @@ description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzend
 title: Datenwörterbuch – Überblick
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 77%
+ht-degree: 67%
 
 ---
 
@@ -44,11 +45,11 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Analytics-Administrierende da
 
 * Identifizierung von Komponenten, die noch nicht genehmigt sind.
 
-* Aktualisierung der Komponentenbeschreibungen direkt in Analysis Workspace. Alle Aktualisierungen an Komponentenbeschreibungen im Datenwörterbuch werden in der Report Suite übernommen.
+* Aktualisierung der Komponentenbeschreibungen direkt in Analysis Workspace. Alle Aktualisierungen, die an Komponentenbeschreibungen im Datenwörterbuch vorgenommen werden, werden in der Datenansicht angezeigt.
 
-   Ebenso werden alle Aktualisierungen an Komponentenbeschreibungen in der Report Suite in Analysis Workspace übernommen.
+   Ebenso spiegeln sich alle Aktualisierungen, die an Komponentenbeschreibungen in der Datenansicht vorgenommen wurden, in Analysis Workspace wider.
 
-   Weitere Informationen zum Hinzufügen von Komponentenbeschreibungen in Analysis Workspace oder einer Report Suite finden Sie unter [Hinzufügen von Komponentenbeschreibungen](/help/components/add-component-descriptions.md).
+   Weitere Informationen zum Hinzufügen von Komponentenbeschreibungen in Analysis Workspace oder in einer Datenansicht finden Sie unter [Komponentenbeschreibungen hinzufügen](/help/components/add-component-descriptions.md).
 
 ## Zugriff auf das Datenwörterbuch
 

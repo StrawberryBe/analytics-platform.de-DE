@@ -4,10 +4,10 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 88f38de837a23f9b0833c5c6b534b3ed567207a6
-workflow-type: ht
-source-wordcount: '1424'
-ht-degree: 100%
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+workflow-type: tm+mt
+source-wordcount: '1421'
+ht-degree: 96%
 
 ---
 
@@ -27,11 +27,11 @@ Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Wo
 | Neue Tabellenspalten | Klicken Sie auf [!UICONTROL Tabelle anpassen] rechts oben in der Tabelle. Die neuen Tabellenspalten umfassen: <ul><li>**[!UICONTROL Geplant]**: Legen Sie dies auf [!UICONTROL Ein] fest, wenn ein Projekt geplant ist, oder auf [!UICONTROL Aus], wenn dies nicht der Fall ist. Ein Klick auf den Link [!UICONTROL Ein] zeigt Informationen über das geplante Projekt an. Sie können auch [den Projektplan bearbeiten](../analysis-workspace/curate-share/t-schedule-report.md), wenn Sie Projektinhaber sind.</li><li>**[!UICONTROL Projekt-ID]**: Die Projekt-ID kann zum Debugging von Projekten verwendet werden.</li><li>**[!UICONTROL Längster Datumsbereich]**: Längere Datumsbereiche erhöhen die Projektkomplexität und können die Verarbeitungs- und Ladezeiten erhöhen. </li><li>**[!UICONTROL Anzahl der Abfragen]**: Die Gesamtzahl der Anfragen, die beim Laden des Projekts an Analytics gesendet wurden. Eine höhere Anzahl von Projektabfragen erhöht die Projektkomplexität und kann die Verarbeitungs- und Ladezeiten erhöhen. Diese Daten sind erst verfügbar, nachdem ein Projekt geladen oder ein geplantes Projekt gesendet wurde. </li></ul> | ![Neue Spalten](assets/new-columns.png) |
 | Die Option **[!UICONTROL Projekt erstellen]** ist zurück | Wenn Sie in Analysis Workspace auf **[!UICONTROL Projekt erstellen]** klicken, haben Sie erneut die Wahl zwischen einem [!UICONTROL leeren Projekt] und einer [!UICONTROL leeren mobilen Scorecard]. Sie können auch aus beliebigen Vorlagen wählen, die Ihr Unternehmen erstellt hat. | ![Neu erstellen](assets/create-new.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Navigieren Sie zur Registerkarte [!UICONTROL Projekte] {#navigate-projects}
 
-[!UICONTROL Projekte] fungieren als Startseite von [!UICONTROL Arbeitsbereich]. Auf der Registerkarte „Projekte“ werden der Unternehmensordner, alle von Ihnen erstellten Ordner, Ihre Projekte und mobile Scorecards angezeigt. Auf dieser Seite können Sie Ordner, Projekte und mobile Scorecards anzeigen, erstellen und ändern. Weitere Informationen finden Sie unter [Über Ordner in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
+[!UICONTROL Projekte] fungieren als Startseite von [!UICONTROL Arbeitsbereich]. Auf der Registerkarte „Projekte“ werden der Unternehmensordner, alle von Ihnen erstellten persönlichen Ordner sowie Ihre Projekte und mobilen Scorecards angezeigt. Auf dieser Seite können Sie Ordner, Projekte und mobile Scorecards anzeigen, erstellen und ändern. Weitere Informationen finden Sie unter [Über Ordner in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md).
 
 ![Landing (alle)](assets/landing-all2.png)
 
@@ -39,44 +39,44 @@ Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Wo
 
 >[!NOTE]
 >
->Einige der folgenden Einstellungen bleiben während der aktuellen und den nachfolgenden Sitzungen bestehen. Hierzu zählen beispielsweise die ausgewählte Registerkarte, die ausgewählten Filter, die ausgewählten Spalten und die Sortierrichtung der Spalte. Suchergebnisse sind nicht persistent.
+>Einige der folgenden Einstellungen bleiben während der aktuellen und den nachfolgenden Sitzungen bestehen. Hierzu zählen die Registerkarte, die Filter und die Spalten, die ausgewählt wurden, sowie die Sortierrichtung der Spalte. Suchergebnisse sind nicht persistent.
 
 | UI-Element | Definition |
 | --- | --- |
-| Bearbeiten von Voreinstellungen | Ermöglicht es Ihnen, [!UICONTROL Tutorials anzuzeigen] und [Benutzereinstellungen zu bearbeiten](/help/analysis-workspace/user-preferences.md). |
+| Voreinstellungen bearbeiten | Ermöglicht es Ihnen, [!UICONTROL Tutorials anzuzeigen] und [Benutzereinstellungen zu bearbeiten](/help/analysis-workspace/user-preferences.md). |
 | [!UICONTROL Neu erstellen] | Öffnet das Projekt-Modal, in dem Sie ein Analysis Workspace-Projekt oder eine mobile Scorecard erstellen oder eine Unternehmensvorlage öffnen können. |
 | [!UICONTROL Weniger anzeigen<br> Mehr anzeigen] | Blendet das Banner ein oder aus: ![Oberes Banner](assets/top-banner.png) |
-| [!UICONTROL Analysis Workspace-Projekt] | Erstellt ein leeres [Analysis Workspace-Projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de), das Sie bearbeiten können. |
-| [!UICONTROL Mobile Scorecard] | Erstellt eine leere [mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=de), die Sie bearbeiten können. |
-| [!UICONTROL Schulungs-Tutorial öffnen] | Öffnet das Analysis Workspace-Tutorial, das Sie Schritt für Schritt durch den Erstellungsvorgang eines neuen Projekts führt. |
+| [!UICONTROL Analysis Workspace-Projekt] | Erstellt ein leeres [Analysis Workspace-Projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=de), das Sie anpassen und weiterverwenden können. |
+| [!UICONTROL Mobile Scorecard] | Erstellt eine leere [mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=de), die Sie anpassen und weiterverwenden können. |
+| [!UICONTROL Schulungs-Tutorial öffnen] | Öffnet das Analysis Workspace-Tutorial, das Sie Schritt für Schritt durch die Erstellung eines neuen Projekts führt. |
 | [!UICONTROL Versionshinweise öffnen] | Öffnet den Abschnitt „Adobe Analytics“ der neuesten Versionshinweise zu Adobe Experience Cloud. |
-| Filtersymbol | Filtert nach Tags, Report Suites, Eigentümern, Typen und anderen Kriterien (Meine, Für mich freigegeben, Favoriten und Genehmigt) |
+| Filtersymbol | Filter nach Tags, Datenansichten, Inhabern, Typen und anderen Filtern (Meine, Für mich freigegeben, Favoriten und Genehmigt) |
 | Suchleiste | Durchsucht alle Spalten in der Tabelle. |
-| Auswahlfeld | Wählt ein oder mehrere Projekte aus, um die Projektverwaltungsaktionen anzuzeigen, die Sie ausführen können: **Löschen**, **Freigeben**, **Umbenennen**, **Kopieren**, **Loslösen**, **Nach oben**, **Nach unten**, **Tag**, **Genehmigen**, **CSV exportieren** und **Verschieben nach**. Sie sind möglicherweise nicht berechtigt, alle aufgelisteten Aktionen durchzuführen. |
-| [!UICONTROL Favoriten] | Fügt neben einem favorisierten Projekt oder Ordner einen Stern hinzu, der als Filter verwendet werden kann. |
+| Auswahlfeld | Wählt ein oder mehrere Projekte aus, um die Projektverwaltungsaktionen anzuzeigen, die Sie ausführen können: **Löschen**, **Freigeben**, **Umbenennen**, **Kopieren**, **Loslösen**, **Nach oben**, **Nach unten**, **Taggen**, **Genehmigen**, **CSV exportieren** und **Verschieben nach**. Sie sind möglicherweise nicht berechtigt, alle aufgeführten Aktionen durchzuführen. |
+| [!UICONTROL Favoriten] | Fügt neben einem Projekt oder Ordner einen Stern hinzu, der als Filter verwendet werden kann. |
 | [!UICONTROL Name] | Der Name des Projekts. |
-| Anheften-Symbol | Heftet Elemente an, sodass sie immer oben in der Liste angezeigt werden. Sie können die Reihenfolge aber anpassen, indem Sie sie Elemente nach oben oder unten verschieben. Im Optionsmenü mit den Auslassungspunkten können Sie **Nach oben** oder **Nach unten** auswählen. |
+| Anheften-Symbol | Fixiert Elemente so, dass sie immer oben in der Liste angezeigt werden. Sie können die Reihenfolge aber anpassen, indem Sie Elemente nach oben oder unten verschieben. Verwenden Sie das Optionsmenü mit den Auslassungspunkten und wählen Sie in der Liste **Nach oben** oder **Nach unten** aus. |
 | Infosymbol (i) | Zeigt die folgenden Informationen zu einem Projekt an: Typ, Projektrolle, Eigentümer, Beschreibung und für wen es freigegeben ist. Es zeigt auch an, wer dieses Projekt [bearbeiten oder duplizieren](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de) kann. |
-| Auslassungspunkte (...) | Zeigt die Projektverwaltungsaktionen an, die Sie ausführen können: **Löschen**, **Freigeben**, **Umbenennen**, **Kopieren**, **Loslösen**, **Nach oben**, **Nach unten**, **Tag**, **Genehmigen**, **CSV exportieren** und **Verschieben nach**. Sie sind möglicherweise nicht berechtigt, alle aufgelisteten Aktionen durchzuführen. |
+| Auslassungspunkte (...) | Zeigt die Projektverwaltungsaktionen an, die Sie ausführen können: **Löschen**, **Freigeben**, **Umbenennen**, **Kopieren**, **Loslösen**, **Nach oben**, **Nach unten**, **Taggen**, **Genehmigen**, **CSV exportieren** und **Verschieben nach**. Sie sind möglicherweise nicht berechtigt, alle aufgeführten Aktionen durchzuführen. |
 | [!UICONTROL Typ] | Gibt an, ob es sich bei diesem Typ um ein Analysis Workspace-Projekt, eine mobile Scorecard oder einen Ordner handelt. |
-| [!UICONTROL Tags] | Taggt Projekte, um sie in Gruppen zusammenzufassen. |
-| [!UICONTROL Projektrolle] | Bezeichnet die Projektrollen und gibt an, ob Sie Projekteigentümer sind und ob Sie berechtigt sind, das Projekt zu bearbeiten oder zu duplizieren. |
-| [!UICONTROL Report Suite] | Nennt die Report Suites, die mit dem Projekt verknüpft sind.<br>Tabellen und Visualisierungen innerhalb eines Bedienfelds leiten Daten von der Report Suite ab, die oben rechts im Bedienfeld ausgewählt wurde. Von der Report Suite hängt auch ab, welche Komponenten in der linken Leiste verfügbar sind. In einem Projekt können Sie je nach Anwendungsfällen Ihrer Analyse eine oder viele Report Suites verwenden. Die Liste der Report Suites ist nach Relevanz sortiert. Adobe definiert die Relevanz anhand der Häufigkeit der kürzlichen Verwendung der Suite durch den aktuellen Benutzer und der Häufigkeit der Verwendung der Suite innerhalb des Unternehmens. |
-| [!UICONTROL Inhaber] | Nennt die Person, die das Projekt erstellt hat. |
+| [!UICONTROL Tags] | Taggt Projekte, um sie in Gruppen einzuteilen. |
+| [!UICONTROL Projektrolle] | Gibt die Projektrollen an: ob Sie Projekteigentümer sind und ob Sie berechtigt sind, das Projekt zu bearbeiten oder zu duplizieren. |
+| [!UICONTROL Datenansicht] | Identifiziert die Datenansichten, die mit dem Projekt verknüpft sind.<br>Tabellen und Visualisierungen innerhalb eines Bedienfelds leiten Daten von der Datenansicht ab, die oben rechts im Bedienfeld ausgewählt wurde. Von der Datenansicht hängt auch ab, welche Komponenten in der linken Leiste verfügbar sind. In einem Projekt können Sie je nach Anwendungsfällen Ihrer Analyse eine oder mehrere Datenansichten verwenden. Die Liste der Datenansichten ist nach Relevanz sortiert. Adobe definiert die Relevanz anhand der Häufigkeit der kürzlichen Verwendung der Suite durch den aktuellen Benutzer und der Häufigkeit der Verwendung der Suite innerhalb des Unternehmens. |
+| [!UICONTROL Inhaber] | Die Person, die das Projekt erstellt hat. |
 | [!UICONTROL Zuletzt geöffnet] | Gibt das Datum an, an dem Sie das Projekt zuletzt geöffnet haben. |
-| Symbol „Tabelle anpassen“ | Ermöglicht die Auswahl der Spalten, die in der Tabelle angezeigt werden sollen. Um Spalten von der Projektliste hinzuzufügen oder daraus zu entfernen, klicken Sie oben rechts auf das Spaltensymbol (![Landing (alle)](assets/select-column.png)) und wählen Sie dann Spaltentitel aus oder ab. |
-| ANZEIGEN: Ordner und Projekte oder alle Projekte | Ändert die Anzeigeeinstellung der Tabelle, sodass Ordner und Projekte entsprechend Ihrer Ordnerstruktur angezeigt werden **oder** alle Ihre Projekte in einer ungeordneten Liste angezeigt werden. |
+| Symbol „Tabelle anpassen“ | Ermöglicht die Auswahl der Spalten, die in der Tabelle angezeigt werden sollen. Um Spalten zur Projektliste hinzuzufügen oder daraus zu entfernen, klicken Sie oben rechts auf das Spaltensymbol (![Landing (alle)](assets/select-column.png)) und wählen Sie dann Spaltentitel aus bzw. entfernen Sie die Auswahl. |
+| ANZEIGEN: Ordner und Projekte oder alle Projekte | Ändert die Anzeigeeinstellung der Tabelle, sodass Ordner und Projekte entsprechend Ihrer Ordnerorganisation **oder** alle Projekte in einer ungeordneten Liste angezeigt werden. |
 | &lt; (Schaltfläche „Zurück“) | Hiermit kehren Sie zur letzten Landingpage-Konfiguration in einem Analysis Workspace-Projekt zurück. Die Seitenkonfiguration, die Sie beim Verlassen der Landingpage hatten, bleibt bis zur Rückkehr erhalten. |
 
-### Entfernung der Projekt-Manager-Seite {#deprecate-pm-page}
+### Entfernen der Projekt-Manager-Seite {#deprecate-pm-page}
 
-Mit der Veröffentlichung der neuen Landingpage haben wir die Seite „Projekt-Manager“ unter „Komponenten-Manager“ entfernt. Die neue Landingpage enthält sämtliche Funktionen der alten Projekt-Manager-Seite und noch viel mehr.
+Mit der Veröffentlichung der neuen Landingpage haben wir die Seite „Projekt-Manager“ unter dem Komponenten-Manager entfernt. Die neue Landingpage enthält sämtliche Funktionen der alten Projekt-Manager-Seite und noch viel mehr.
 
 Ein gängiger Anwendungsfall für die Seite „Projekt-Manager“ war die Ansicht aller Ihrer Projekte. Um mithilfe der Filterleiste alle Ihre Projekte auf der neuen Landingpage anzuzeigen, wählen Sie **SONSTIGE FILTER** und danach **Alle anzeigen**.
 
 ![Sonstige Filter](assets/other-filters.png)
 
-Wenn Sie sich in der Ansicht „Ordner und Projekte“ befinden, erscheint ein Popup, in dem Sie gefragt werden, ob Sie zur Ansicht „Alle Projekte“ wechseln möchten. Dies erleichtert die Anzeige aller Ihrer Projekte außerhalb etwaiger Ordner, in denen sie gruppiert sind.   Wählen Sie **Zur Ansicht „Alle Projekte“ wechseln**, um alle Projekte, auf die Sie Zugriff haben, anzuzeigen.
+Wenn Sie sich in der Ansicht „Ordner und Projekte“ befinden, erscheint ein Popup, in dem Sie gefragt werden, ob Sie zur Ansicht „Alle Projekte“ wechseln möchten. Dies erleichtert die Anzeige aller Ihrer Projekte außerhalb etwaiger Ordner, in denen sie gruppiert sind.   Wählen Sie **Zur Ansicht „Alle Projekte“ wechseln** aus, um eine bessere Ansicht aller Projekte zu erhalten, auf die Sie Zugriff haben.
 
 ![Wechseln zur Ansicht „Alle Projekte“](assets/switch-all-projects-view.png)
 

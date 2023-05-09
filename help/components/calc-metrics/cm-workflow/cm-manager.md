@@ -3,10 +3,10 @@ description: Der Manager für berechnete Metriken bietet verschiedene Möglichke
 title: Manager für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Der Manager für berechnete Metriken zeigt Ihnen alle Segmente, die sich in Ihre
 | Funktion der Benutzeroberfläche | Beschreibung |
 | --- | --- |
 | Werkzeugleiste für die Verwaltung berechneter Metriken | Diese Werkzeugleiste wird angezeigt, sobald Sie eine Metrik aktivieren. Über diese Werkzeugleiste können die meisten Verwaltungsaufgaben erledigt werden. |
-| Filter anzeigen/Filter ausblenden | Wenn Sie auf „Filter anzeigen“ klicken, wird das Filtermenü angezeigt. Sie können nach Tags, Report Suites, Inhabern, „Alle anzeigen“ (nur Admin), „Für mich freigegeben“, „Meine“, „Favoriten“ und „Genehmigt“ filtern. |
+| Filter anzeigen/Filter ausblenden | Wenn Sie auf „Filter anzeigen“ klicken, wird das Filtermenü angezeigt. Sie können nach Tags, Datenansichten, Inhabern, Alle anzeigen (nur Administrator), Für mich freigegeben, Meine, Favoriten und Genehmigt filtern. |
 | Kontrollkästchen | Aktivieren Sie eine benutzerdefinierte Metrik, um sie zu verwalten. |
 | Favoriten | Wenn Sie auf den Stern neben einer Metrik klicken, wird der Stern gelb angezeigt und kennzeichnet die Metrik als Favorit. |
 | Titel und Beschreibungen von Filtern | Werden im Generator für berechnete Metriken angegeben. Klicken Sie auf den Titellink, um den Titel und die Beschreibung zu bearbeiten. Dadurch gelangen Sie zurück zum Generator für berechnete Metriken. |

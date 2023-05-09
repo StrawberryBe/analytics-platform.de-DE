@@ -1,12 +1,13 @@
 ---
-description: Administratoren können mithilfe der Report Suite Beschreibungen für Komponenten hinzufügen.
+description: Administratoren können über die Datenansicht Beschreibungen für Komponenten hinzufügen.
 title: Komponentenbeschreibungen hinzufügen
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 17%
+source-wordcount: '168'
+ht-degree: 3%
 
 ---
 
@@ -14,11 +15,11 @@ ht-degree: 17%
 
 Mithilfe von Beschreibungen können Benutzer wissen, wie die verschiedenen Komponenten beim Erstellen von Projekten in Analysis Workspace oder beim Anzeigen von Berichten am besten verwendet werden.
 
-Customer Journey Analytics-Administratoren können Beschreibungen für Komponenten (Dimensionen, Metriken, Filter und Datumsbereiche) entweder innerhalb der Report Suite oder über das Datenwörterbuch direkt in Analysis Workspace hinzufügen.
+Customer Journey Analytics-Administratoren können Beschreibungen für Komponenten (Dimensionen, Metriken, Filter und Datumsbereiche) entweder in der Datenansicht oder über das Datenwörterbuch direkt in Analysis Workspace hinzufügen.
 
-## Hinzufügen von Beschreibungen zu Komponenten in einer Report Suite
+## Hinzufügen von Beschreibungen zu Komponenten in einer Datenansicht
 
-Im folgenden Video wird beschrieben, wie Sie in einer Report Suite Dimensions- und Metrikbeschreibungen hinzufügen:
+Im folgenden Video wird beschrieben, wie Sie in einer Datenansicht Dimensions- und Metrikbeschreibungen hinzufügen:
 
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 

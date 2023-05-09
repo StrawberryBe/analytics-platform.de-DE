@@ -3,11 +3,11 @@ title: Verwalten von Anmerkungen
 description: Verwalten von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
-exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
-workflow-type: ht
-source-wordcount: '683'
-ht-degree: 100%
+exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 87%
 
 ---
 
@@ -28,17 +28,17 @@ Die [!UICONTROL Anmerkungsverwaltung] zeigt Ihnen alle Anmerkungen an, die Ihnen
 | UI-Element | Beschreibung |
 | --- | --- | 
 | [!UICONTROL Titel und Beschreibung] | Werden durch den Anmerkungsgenerator bereitgestellt. Klicken Sie auf den Titel-Link, um den Titel und die Beschreibung zu bearbeiten. Dadurch gelangen Sie zurück zum Anmerkungsgenerator. |
-| [!UICONTROL Report Suite] | Die Report Suite(s), für die diese Anmerkung gilt. |
+| [!UICONTROL Datenansicht] | Die Datenansichten, für die diese Anmerkung gilt. |
 | [!UICONTROL Inhaber] | Zeigt an, wer Inhaber der Anmerkung ist. Wenn Sie kein Administrator sind, können Sie nur Anmerkungen sehen, deren Inhaber Sie sind, sowie Anmerkungen, die für Sie freigegeben wurden. |
 | [!UICONTROL Angewendeter Datumsbereich] | Das Datum oder der Datumsbereich, für das bzw. den diese Anmerkung gilt. |
 | [!UICONTROL Freigegeben für] | Listet auf, für wie viele Einzelpersonen oder Gruppen Sie die Anmerkung freigegeben haben. Klicken Sie hier, um weitere Details anzuzeigen. |
 | [!UICONTROL Änderungsdatum] | Zeigt das Datum und die Uhrzeit der letzten Änderung der Anmerkung an. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Bearbeiten von Anmerkungen
 
-Sie können eine Anmerkung bearbeiten, indem Sie Datumsbereiche, Farben oder den Umfang anpassen. Sie können ebenfalls festlegen, ob die Anmerkung für alle Report Suites oder Projekte gilt oder nicht. Anmerkungen können auf zwei Arten bearbeitet werden:
+Das Bearbeiten einer Anmerkung bedeutet, dass Sie Datumsbereiche, Farben, Umfang oder nicht alle Datenansichten oder Projekte anpassen können. Anmerkungen können auf zwei Arten bearbeitet werden:
 
 * Bewegen Sie in einem Liniendiagramm den Mauszeiger über die Anmerkung und klicken Sie im Popover auf das Stiftsymbol.
 
@@ -58,7 +58,7 @@ Beachten Sie Folgendes beim Freigeben von Anmerkungen oder Arbeiten mit Anmerkun
 
 ## Anmerkungen und Zeitzonen
 
-Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne Stunden- oder Zeitzoneninformationen. Zum Zeitpunkt der Berichterstellung wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird eine für den 1. Weihnachtsfeiertag erstellte Anmerkung am 25. Dezember erstellt, unabhängig davon, in welcher Report Suite-Zeitzone Sie sich befinden.
+Alle Anmerkungen werden mit einem Zeitstempel erstellt, jedoch ohne Stunden- oder Zeitzoneninformationen. Zum Zeitpunkt des Berichts wird immer die Zeitzone der Datenansicht des Bedienfelds angewendet. Daher wird am 25. Dezember eine Anmerkung für Weihnachten erstellt - unabhängig davon, in welcher Zeitzone der Datenansicht Sie sich befinden.
 
 Ein weiteres Beispiel ist der Neujahrstag. Zu Beginn des neuen Jahres werden jede Stunde von einer anderen Zeitzone Feuerwerke ausgelöst. Um 22:00 Uhr US Mountain Time werden an der US-Ostküste Feuerwerke ausgelöst, weil es dort bereits 24:00 Uhr Eastern Time ist.
 
@@ -76,6 +76,6 @@ Wählen Sie einfach eine oder mehrere der Anmerkungen aus, und die Task-Leiste w
 | Umbenennen | Beim Umbenennen einer Anmerkung wird sie in allen Projekten, auf die sie angewendet wurde, umbenannt. |
 | Kopieren | Erstellt eine eigenständige Kopie mit einer eigenen neuen Anmerkungs-ID, jedoch mit demselben Namen und derselben Definition. |
 | In CSV exportieren | Exportiert die Anmerkungsdefinition in eine CSV-Datei. |
-| Filter (linke Leiste) | Filtern Sie nach Tags, Report Suite, Inhabern und anderen Filtern („Meine“, „Genehmigt“, „Favoriten“, „Für mich freigegeben“ und „Alle anzeigen“). |
+| Filter (linke Leiste) | Filtern Sie nach Tags, Datenansicht, Inhabern und anderen Filtern (Meine, Genehmigt, Favoriten, Für mich freigegeben und Alle anzeigen). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

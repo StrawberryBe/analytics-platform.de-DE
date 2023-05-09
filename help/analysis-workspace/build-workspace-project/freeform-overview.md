@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Übersicht über Projekte
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 80%
@@ -40,8 +40,8 @@ Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
 | Typ | Gibt an, ob es sich um ein Workspace-Projekt, einen Ordner oder ein [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=de). |
 | Tags | Tags, die auf das Projekt angewendet wurden. |
 | Eingeplant | Gibt an, ob die E-Mail-Versendung von Projekten an Empfänger planmäßig geplant ist. Siehe [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md). |
-| Freigegebener Link (jeder) | Projekte können für jeden freigegeben werden - auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Diese Spalte zeigt, ob Projekte auf diese Weise freigegeben wurden. Siehe [Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) für weitere Informationen. |
-| Report Suite | Die Report Suite, mit der das Projekt verknüpft ist. |
+| Freigegebener Link (alle) | Projekte können für jeden freigegeben werden - auch für Personen, die keinen Zugriff auf Analysis Workspace haben. Diese Spalte zeigt, ob Projekte auf diese Weise freigegeben wurden. Siehe [Projekt für andere freigeben (keine Anmeldung erforderlich)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md) für weitere Informationen. |
+| Datenansicht | Die Datenansicht, mit der das Projekt verknüpft ist. |
 | [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de) | Zeigt Ihre Rolle für das Projekt an – Inhaber, bearbeiten, duplizieren, anzeigen. |
 | Verantwortlicher | Die Person, die dieses Projekt erstellt hat (entweder Sie oder eine Person, die das Projekt für Sie freigegeben hat). |
 | Freigegeben für | Benutzer, für die das Projekt freigegeben wurde. |

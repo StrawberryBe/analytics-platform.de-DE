@@ -3,10 +3,11 @@ description: Das Datenwörterbuch in Analysis Workspace ermöglicht es Benutzend
 title: Datenwörterbuch anzeigen
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 71%
+ht-degree: 60%
 
 ---
 
@@ -26,7 +27,7 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
-1. Vergewissern Sie sich, dass die Report Suite, die die Komponente enthält, die Sie ansehen möchten, im Dropdown-Menü ausgewählt ist. Standardmäßig wird die Report Suite angezeigt, in der Sie sich bereits befinden.
+1. Stellen Sie sicher, dass die Datenansicht mit der Komponente, die Sie anzeigen möchten, im Dropdown-Menü ausgewählt ist. Standardmäßig wird die Datenansicht angezeigt, in der Sie sich bereits befinden.
 
 1. (Optional) Geben Sie im Suchfeld den Namen der Komponente ein, die Sie anzeigen möchten.
 

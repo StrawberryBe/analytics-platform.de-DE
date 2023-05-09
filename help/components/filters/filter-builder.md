@@ -3,7 +3,7 @@ description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablege
 title: Erstellen von Filtern
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '2054'
 ht-degree: 37%
@@ -70,7 +70,7 @@ Sie können Regeldefinitionen und Container hinzufügen, um Ihre Filter zu defin
 1. **[!UICONTROL Dimensionen]** (Liste): Klicken Sie auf die Kopfzeile zum Erweitern.
 1. **[!UICONTROL Metriken]**: Klicken Sie auf die Kopfzeile zum Erweitern.
 1. **[!UICONTROL Filter]**: Klicken Sie auf die Kopfzeile zum Erweitern.
-1. **[!UICONTROL Report Suite-Auswahl]**: Hier können Sie die Report Suite auswählen, unter der dieser Filter gespeichert wird. Sie können den Filter weiterhin in allen Report Suites verwenden.
+1. **[!UICONTROL Datenansichtsauswahl]**: Hier können Sie die Report Suite auswählen, unter der dieser Filter gespeichert wird. Sie können den Filter weiterhin in allen Datenansichten verwenden.
 1. **[!UICONTROL Filtervorschau]**: Ermöglicht die Vorschau der Schlüsselmetriken, um festzustellen, ob ein gültiger Filter vorhanden ist und wie breit der Filter ist. Stellt die Aufschlüsselung des Datensatzes dar, den Sie erwarten können, wenn Sie diesen Filter anwenden. Zeigt 3 konzentrische Kreise und eine Liste mit der Anzahl und dem Prozentsatz der Übereinstimmungen für [!UICONTROL Ereignis], [!UICONTROL Person]und [!UICONTROL Sitzung] für einen Filter, der mit einem Datensatz ausgeführt wird. Dieses Diagramm wird sofort aktualisiert, nachdem Sie Ihre Filterdefinition erstellt oder geändert haben.
 1. **[!UICONTROL Produktkompatibilität]**: Enthält eine Liste der Adobe Analytics-Produkte (Analysis Workspace, [!UICONTROL Reports &amp; Analytics], Data Warehouse), mit dem der von Ihnen erstellte Filter kompatibel ist. Die meisten Filter sind mit allen Produkten kompatibel. Es sind jedoch nicht alle Operatoren und Dimensionen mit allen Analytics-Produkten kompatibel. Dies betrifft insbesondere  [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). Dieses Diagramm wird sofort aktualisiert, nachdem Sie Ihre Filterdefinition geändert haben.
 1. **[!UICONTROL Speichern]** oder **[!UICONTROL Abbrechen]**: Speichert oder bricht den Filter ab. Nach dem Klicken **[!UICONTROL Speichern]**, gelangen Sie zum Filter-Manager, in dem Sie den Filter verwalten können.

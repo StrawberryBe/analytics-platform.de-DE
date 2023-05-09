@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Bedienfelds „Gleichzeitige Medi
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
-source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Sie können gleichzeitig Betrachtende analysieren, um zu verstehen, wo Spitzenze
 
 In Analysis Workspace bezeichnet der Begriff „Gleichzeitige Betrachter“ die Anzahl der Unique Visitors, die sich Ihre Medien-Streams unabhängig von der Anzahl der Sitzungen zu einem bestimmten Zeitpunkt ansehen.
 
-Das Bedienfeld „Gleichzeitige Medienbetrachter“ ermöglicht die Analyse von gleichzeitigen Betrachtern im Zeitverlauf mit Details zu Spitzenzeiten des gleichzeitigen Betrachtens und der Möglichkeit, Unterteilungen und Vergleiche vorzunehmen. Um auf das Bedienfeld „Gleichzeitige Medienbetrachter“ zuzugreifen, navigieren Sie zu einer Report Suite mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Panel-Symbol ganz links und ziehen Sie das Panel in Ihr Analysis Workspace-Projekt.
+Das Bedienfeld „Gleichzeitige Medienbetrachter“ ermöglicht die Analyse von gleichzeitigen Betrachtern im Zeitverlauf mit Details zu Spitzenzeiten des gleichzeitigen Betrachtens und der Möglichkeit, Unterteilungen und Vergleiche vorzunehmen. Um auf das Bedienfeld &quot;Gleichzeitige Medienbetrachter&quot;zuzugreifen, navigieren Sie zu einer Datenansicht mit aktivierten Media Analytics-Komponenten. Klicken Sie dann auf das Panel-Symbol ganz links und ziehen Sie das Panel in Ihr Analysis Workspace-Projekt.
 
 Im Folgenden finden Sie eine Videoübersicht zu diesem Panel:
 
@@ -59,7 +59,7 @@ Die einzige Metrik, die in diesem Bedienfeld verwendet werden kann, ist „Gleic
 
 | Metrik | Beschreibung |
 |---|---|
-| Gleichzeitige Betrachter | Anzahl der Unique Visitors, die Ihre(n) Medien-Stream(s) zu einem bestimmten Zeitpunkt angesehen haben, unabhängig von der Anzahl der Sitzungen.<br><br>Dies unterscheidet sich vom Bericht „Gleichzeitige Betrachter“ im Bereich „Berichte“, wo die gleichzeitigen aktiven Sitzungen zugrunde gelegt werden.  Durch die Verwendung der Unique Visitors werden unerwünschte „Spitzen“ in den Anzeige-Grenzbereichen (wo die Sitzungen gleichzeitig enden und beginnen) entfernt. |
+| Gleichzeitige Betrachter | Anzahl der Unique Visitors, die Ihre(n) Medien-Stream(s) zu einem bestimmten Zeitpunkt angesehen haben, unabhängig von der Anzahl der Sitzungen.<br><br>Dies unterscheidet sich vom Bericht „Gleichzeitige Betrachter“ im Bereich „Berichte“, wo die gleichzeitigen aktiven Sitzungen zugrunde gelegt werden.  Die Verwendung von Unique Visitors ermöglicht das Entfernen unerwünschter &quot;Spitzen&quot;an den Grenzen der Show (wo Sitzungen gleichzeitig enden und beginnen). |
 
 Eine Freiformtabelle ist in dieser Ansicht nicht verfügbar.  Zur Ansicht der Datenquelle können Sie mit der rechten Maustaste auf das Liniendiagramm klicken und es als csv-Datei herunterladen.  Serienaufschlüsselungen werden einbezogen.
 
