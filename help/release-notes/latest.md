@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1c00f3974293c9022365e69d6c1b38d79f52d872
+source-git-commit: b313600ff215dea5a869e5a6125120a64f50235b
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 28%
+ht-degree: 27%
 
 ---
 
@@ -27,7 +27,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Report Builder für CJA - Datenansicht aus Zelle auswählen** | Mit dieser Funktion können Benutzer die Datenansicht für einen Datenblock aus einer Zelle auswählen. Dies ist hilfreich, wenn Sie eine Arbeitsmappe erstellen und mehrere Datenansichten haben, die eine ähnliche Datenerstellung aufweisen, und eine Arbeitsmappe mehrmals mit verschiedenen Datenansichten wiederverwenden möchten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html) | Nicht angegeben | 24. Mai 2023 |
 | **Komponenten in Analysis Workspace sortieren** | <p>Bei der Anzeige von Komponenten in der linken Leiste oder im Datenwörterbuch in Analysis Workspace ist jetzt eine neue Sortieroption verfügbar. Sie können Komponenten nach Empfohlen (am häufigsten verwendete), Alphabetisch oder Kategorisch (Typ) sortieren.</p><p>Zuvor war es nur möglich, Komponenten zu suchen oder zu filtern. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=en)</p> | Nicht angegeben | 10. Mai 2023 |
 | **Löschen von Zeilen, die dynamische Dimensionen enthalten, aus einer Freiformtabelle** | In einer Freiformtabelle in Analysis Workspace können Sie jetzt mithilfe des x-Symbols schnell bestimmte Zeilen löschen, die dynamische Dimensionen enthalten. Dabei wird automatisch die Filterregel &quot;Ist nicht gleich&quot;angewendet.<p>Zuvor bestand die einzige Möglichkeit zum Löschen von Zeilen, die dynamische Dimensionen enthielten, darin, manuell eine Regel im Dialogfeld Filter zu erstellen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html?lang=en)</p> | Nicht angegeben | 10. Mai 2023 |
-| **Neue Schaltfläche zum Hinzufügen einer Visualisierung in einem Bedienfeld** | Unten in jedem Bedienfeld in Analysis Workspace ist jetzt eine neue Schaltfläche verfügbar, mit der Sie schnell eine Visualisierung hinzufügen können. <p>Zuvor bestand die einzige Methode zum Hinzufügen einer Visualisierung zu einem Bedienfeld darin, eine Visualisierung aus der linken Leiste zu ziehen, eine vorhandene Visualisierung zu duplizieren oder zu kopieren oder ein leeres Bedienfeld zu erstellen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#quick-viz)</p> | Nicht angegeben | 10. Mai 2023 |
+| **Neue Schaltfläche zum Hinzufügen einer Visualisierung in einem Bedienfeld** | Unten in jedem Bedienfeld in Analysis Workspace ist jetzt eine neue Schaltfläche verfügbar, mit der Sie schnell eine Visualisierung hinzufügen können. <p>Zuvor bestand die einzige Methode zum Hinzufügen einer Visualisierung zu einem Bedienfeld darin, eine Visualisierung aus der linken Leiste zu ziehen, eine vorhandene Visualisierung zu duplizieren oder zu kopieren oder ein leeres Bedienfeld zu erstellen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#quick-viz)</p> | Nicht angegeben | 17. Mai 2023 |
 | **Deep-Linking (mobile App)** | Ermöglicht Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. Dies erleichtert die Freigabe von Projekten und die Interaktion von weniger technischen Zielgruppen. | Nicht angegeben | 17. Mai 2023 |
 | **Intelligente Beschriftungen** | Reichern Sie das Geschichtenerzählen für Benutzer mit natürlichen Sprachzusammenfassungen einer Linienvisualisierung an. | 17. Mai 2023 | 1. Juni 2023 |
 
