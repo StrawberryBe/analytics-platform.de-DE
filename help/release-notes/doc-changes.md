@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e3c85daebd996eced70ff0aaba7f381783b7fe2
+source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 90%
+source-wordcount: '1854'
+ht-degree: 84%
 
 ---
 
@@ -22,6 +22,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | **Mai 2023** |  |
 | Analysis Workspace – Übersicht | Aktualisiert [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md) um allgemeinere Übersichtsinformationen und Links zu relevanten Inhalten einzuschließen. |
 | Erstellen von Projekten | Es wurde ein neuer Artikel erstellt, in dem ausführlich erläutert wird, wie [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace. |
+| Komponenten in der linken Leiste sortieren | Es wurden Informationen zum Sortieren der Komponentenliste in der linken Leiste hinzugefügt. Siehe Abschnitt &quot;Suche, Filtern und Sortieren der Komponentenliste&quot;in [Komponentenübersicht](/help/components/overview.md). |
+| Löschen von Zeilen, die dynamische Dimensionen enthalten, aus einer Freiformtabelle | Es wurden Informationen zum schnellen Löschen bestimmter Zeilen mit dynamischen Dimensionen mithilfe des x-Symbols hinzugefügt. Siehe Abschnitt &quot;Schnelles Ausschließen bestimmter Zeilen aus einer Tabelle&quot;in [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| Schaltfläche zum Hinzufügen einer Visualisierung in einem Bedienfeld | Es wurden Informationen zu einer neuen Schaltfläche am unteren Rand jedes Bedienfelds in Analysis Workspace hinzugefügt, mit der Sie schnell eine Visualisierung hinzufügen können. Siehe Abschnitt &quot;Visualisierungen zu einem Bedienfeld hinzufügen&quot;in [Visualisierungen - Übersicht](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | **April 2023** |  |
 | Video zur Verwendung von Filtern als Dimensionen | Video zur Verwendung von Filtern als Dimension aktualisiert. <p>Dieses Video ist über die [Filter erstellen](/help/components/filters/create-filters.md) Seite.</p> <p>Im Folgenden finden Sie einen direkten Link zum Video: [Filter als Dimensionen in Analysis Workspace verwenden](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Dokumentation filtern | Es wurde ein Artikel zur Verwendung der [Filter Builder](/help/components/filters/filter-builder.md). <p>Optimierte Dokumentation in [Filter erstellen](/help/components/filters/create-filters.md) und [Filterübersicht](/help/components/filters/filters-overview.md).</p> |
