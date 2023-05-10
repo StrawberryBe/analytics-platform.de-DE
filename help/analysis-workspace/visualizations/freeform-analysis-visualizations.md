@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 99%
+source-wordcount: '1245'
+ht-degree: 90%
 
 ---
 
@@ -15,9 +15,7 @@ ht-degree: 99%
 
 Workspace bietet eine Reihe von Visualisierungen, mit denen Sie visuelle Darstellungen Ihrer Daten generieren können, wie beispielsweise Balkendiagramme, Donutdiagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. Die meisten Visualisierungstypen sind Ihnen schon bekannt, wenn Sie Customer Journey Analytics verwenden. Analysis Workspace verfügt jedoch über Visualisierungseinstellungen sowie viele neue und einzigartige Visualisierungsarten mit interaktiven Funktionen.
 
-Sie können auf Visualisierungen durch das Symbol oben links in Workspace, von einem [leeren Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md) aus oder über das Kontextmenü in Ihrem Workflow zugreifen.
-
-![Visualisierungsleiste](assets/viz-rail.png)
+## Arten von Visualisierungen
 
 Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
@@ -41,7 +39,27 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | Zeigt hierarchische Daten (Baumstruktur) als Gruppe verschachtelter Rechtecke an. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Verwendet Kreise zur Darstellung der Metriküberschneidung von bis zu drei Filtern. |
 
-## Anpassen der Visualisierungseinstellungen
+## Visualisierungen zu einem Bedienfeld hinzufügen
+
+1. Öffnen Sie das Analysis Workspace-Projekt, dem Sie eine Visualisierung hinzufügen möchten.
+
+1. Verwenden Sie eine der folgenden Methoden, um die Visualisierung hinzuzufügen:
+
+   * Wählen Sie in der linken Leiste die **Visualisierungen** icon <!-- add icon -->, und ziehen Sie eine Visualisierung in den Bereich, dem Sie sie hinzufügen möchten.
+
+      ![](assets/viz-rail.png)
+
+   * Wählen Sie im Bereich, in dem Sie die Visualisierung hinzufügen möchten, die **Plus** und wählen Sie dann das Symbol aus, das die Visualisierung darstellt, die Sie hinzufügen möchten. Bewegen Sie den Mauszeiger über das Symbol für jede Visualisierung, um den Namen anzuzeigen.
+
+      ![Schaltfläche zum Hinzufügen einer Visualisierung](assets/visualization-add-to-panel.png)
+
+   * Hinzufügen einer [leeres Bedienfeld](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=de)und wählen Sie dann die Visualisierung aus, die Sie hinzufügen möchten.
+
+      ![Leeres Bedienfeld](assets/blank_panel.png)
+
+   * Klicken Sie mit der rechten Maustaste auf ein vorhandenes Bedienfeld in Ihrem Analysis Workspace-Projekt und wählen Sie [!UICONTROL **Visualisierung duplizieren**] oder [!UICONTROL **Visualisierung kopieren**].
+
+## Anpassen von Visualisierungseinstellungen
 
 Sie können die Einstellungen für eine einzelne oder für alle von Ihnen erstellten Visualisierungen anpassen.
 
