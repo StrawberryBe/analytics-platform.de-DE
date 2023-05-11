@@ -3,9 +3,9 @@ description: Erfahren Sie, wie Sie ein Projekt in Analysis Workspace erstellen
 title: Erstellen von Projekten
 feature: CJA Workspace Basics
 role: User, Admin
-source-git-commit: 1c5f0a618e2e95df68ba5598948488b16c9532e6
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
@@ -22,30 +22,14 @@ In den folgenden Abschnitten wird beschrieben, wie Sie ein Projekt erstellen und
 
 1. Wählen Sie in Adobe Analytics [!UICONTROL **Arbeitsbereich**].
 
-1. Wählen Sie aus, ob ein leeres Projekt oder ein Projekt aus einer Vorlage erstellt werden soll:
+1. Im [!UICONTROL **Arbeitsbereich**] auswählen, wählen Sie die [!UICONTROL **Projekte**] auf der linken Seite der Seite ein und wählen Sie [!UICONTROL **Projekt erstellen**].
 
-   +++Leeres Projekt erstellen
+1. Legen Sie fest, ob ein leeres Projekt oder eine leere mobile Scorecard erstellt werden soll.
 
-   1. Im [!UICONTROL **Arbeitsbereich**] auswählen, wählen Sie die [!UICONTROL **Projekte**] auf der linken Seite der Seite ein und wählen Sie [!UICONTROL **Projekt erstellen**].
+   * **Leeres Projekt** , wenn Sie Ihre Analyse über den Browser freigeben möchten
+   * [**Leere mobile Scorecard**](/help/mobile-app/curator.md) , wenn Sie Ihre Analyse über die mobile Adobe Analytics-Dashboards-App freigeben möchten.
 
-   1. Legen Sie fest, ob ein leeres Projekt oder eine leere mobile Scorecard erstellt werden soll.
-
-      * **Leeres Projekt** , wenn Sie Ihre Analyse über den Browser freigeben möchten
-      * [**Leere mobile Scorecard**](/help/mobile-app/curator.md) , wenn Sie Ihre Analyse über die mobile Adobe Analytics-Dashboards-App freigeben möchten.
-   1. Wählen Sie [!UICONTROL **Erstellen**].
-
-+++
-
-   +++Projekt aus einer Vorlage erstellen
-
-   1. Im [!UICONTROL **Arbeitsbereich**] auswählen, wählen Sie die [!UICONTROL **Berichte**] auf der linken Seite der Seite.
-
-   1. Suchen oder navigieren Sie zur Vorlage, die Sie verwenden möchten, und wählen Sie sie aus, wenn sie angezeigt wird.
-
-      Eine Reihe von Standardvorlagen ist standardmäßig verfügbar. Darüber hinaus hat Ihr Unternehmen möglicherweise benutzerdefinierte Vorlagen erstellt, aus denen Sie auswählen können.
-
-      <!-- (I don't know if you can create a project from a template in CJA... Might need to delete this section. Also update table in "Projects overview") For more information, see [Get started with Reports & Analytics](/help/analyze/reports-analytics/getting-started.md). -->
-+++
+1. Wählen Sie [!UICONTROL **Erstellen**].
 
 1. Als Nächstes müssen Sie Ihrem Projekt Bedienfelder, Visualisierungen und Komponenten hinzufügen. Fügen Sie zunächst Bedienfelder zu Ihrem Projekt in Analysis Workspace hinzu, wie unter [Hinzufügen von Bedienfeldern zum Projekt](#add-panels-to-the-project). Sie können dann allen Bedienfeldern Visualisierungen hinzufügen. Schließlich können Sie allen Bedienfeldern oder Visualisierungen Komponenten hinzufügen.
 

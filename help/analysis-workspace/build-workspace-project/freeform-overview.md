@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Übersicht über Projekte
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 80%
+source-wordcount: '1317'
+ht-degree: 79%
 
 ---
 
@@ -27,12 +27,11 @@ Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
 >
 >Einige Spalten werden nicht standardmäßig angezeigt. Um die angezeigten Spalten anzupassen, klicken Sie auf die Schaltfläche **Tabelle anpassen** icon ![Tabelle anpassen](assets/projects-page-customize-columns-icon.png).
 
-
 | Element | Beschreibung |
 |---|---|
 | [Voreinstellungen bearbeiten](/help/analysis-workspace/user-preferences.md) | Verwalten Sie Einstellungen für Analysis Workspace und die zugehörigen Komponenten für alle neuen Projekte oder Bereiche, die Sie erstellen. |
 | [Ordner erstellen](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Fügen Sie der Liste der Projekte und Ordner einen neuen Ordner oder Unterordner hinzu. |
-| [Projekt erstellen](/help/analysis-workspace/home.md) | Ein neues Projekt von Grund auf neu starten oder von einem [template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=de#analysis-workspace). |
+| [Projekt erstellen](/help/analysis-workspace/build-workspace-project/create-projects.md) | Beginnen Sie ein neues Projekt von Grund auf. |
 | Mehr zeigen | Zeigt Optionen zum Erstellen eines leeren Projekts oder einer mobilen Scorecard an, [Anzeigen von Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=de)oder [Versionshinweise anzeigen](/help/release-notes/latest.md). |
 | Ordner und Projekte anzeigen | Wählen Sie aus, ob die Ordnerstruktur der Projekte angezeigt werden soll. Weitere Informationen finden Sie unter [Über Ordner in Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Tabelle anpassen (Symbol) | Ermöglicht die Anpassung der Informationen, die für jedes Projekt auf der Seite &quot;Projekte&quot;angezeigt werden. |
@@ -60,7 +59,7 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 | Menüelement | Beschreibung |
 |---|---|
-| Projekt   | Beinhaltet allgemeine Aktionen für das Projekt-Management, einschließlich „Neu“, „Öffnen“, „Speichern“, „Speichern unter“ und „Als Vorlage speichern“. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](/help/analysis-workspace/curate-share/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinformation und Einstellungen** (siehe unten) bieten viele Optionen zum Verwalten Ihres Projekts. |
+| Projekt   | Enthält allgemeine Aktionen für das Projektmanagement, einschließlich Neu, Öffnen, Speichern und Speichern unter. Sie können auch das gesamte Projekt aktualisieren, um die neuesten Daten und Definitionen abzurufen, indem Sie auf „Projekt aktualisieren“ klicken. Mithilfe der Optionen [CSV und PDF herunterladen](/help/analysis-workspace/curate-share/download-send.md) können Sie Daten aus Workspace exportieren. **Projektinformation und Einstellungen** (siehe unten) bieten viele Optionen zum Verwalten Ihres Projekts. |
 | Vorlage | Rückgängigmachen oder Wiederholen der letzten Aktion. „Alles löschen“ setzt das Projekt auf den Ausgangspunkt zurück. |
 | Einfügen | Fügen Sie neue Bedienfelder oder Visualisierungen aus diesem Menü ein. Sie können auch neue Bedienfelder und Visualisierungen aus der linken Leiste einfügen. |
 | [Komponenten](/help/components/overview.md) | Erstellen Sie neue Filter, berechnete Metriken, Datumsbereiche oder Warnhinweiskomponenten aus Ihrem Projekt. Sie können auch über die linke Leiste neue Komponenten erstellen. Wenn sich Ihre Komponentendefinitionen kürzlich geändert haben, werden die neuesten Definitionen über „Komponenten aktualisieren“ abgerufen. |
