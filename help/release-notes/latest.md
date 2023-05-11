@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: 76130aeaee4447a83c2f8feea95371dc2e38bd67
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 29%
+source-wordcount: '850'
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Löschen von Zeilen, die dynamische Dimensionen enthalten, aus einer Freiformtabelle** | In einer Freiformtabelle in Analysis Workspace können Sie jetzt mithilfe des x-Symbols schnell bestimmte Zeilen löschen, die dynamische Dimensionen enthalten. Dabei wird automatisch die Filterregel &quot;Ist nicht gleich&quot;angewendet.<p>Zuvor bestand die einzige Möglichkeit zum Löschen von Zeilen, die dynamische Dimensionen enthielten, darin, manuell eine Regel im Dialogfeld Filter zu erstellen. [Weitere Informationen](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | Nicht angegeben | 10. Mai 2023 |
 | **Neue Schaltfläche zum Hinzufügen einer Visualisierung in einem Bedienfeld** | Unten in jedem Bedienfeld in Analysis Workspace ist jetzt eine neue Schaltfläche verfügbar, mit der Sie schnell eine Visualisierung hinzufügen können. <p>Zuvor bestand die einzige Methode zum Hinzufügen einer Visualisierung zu einem Bedienfeld darin, eine Visualisierung aus der linken Leiste zu ziehen, eine vorhandene Visualisierung zu duplizieren oder zu kopieren oder ein leeres Bedienfeld zu erstellen. [Weitere Informationen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | Nicht angegeben | 17. Mai 2023 |
 | **Deep-Linking (mobile App)** | Ermöglicht Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. Dies erleichtert die Freigabe von Projekten und die Interaktion von weniger technischen Zielgruppen. | Nicht angegeben | 17. Mai 2023 |
-| **Intelligente Beschriftungen** | Reichern Sie das Geschichtenerzählen für Benutzer mit natürlichen Sprachzusammenfassungen einer Linienvisualisierung an. | 17. Mai 2023 | 1. Juni 2023 |
+| **Intelligente Beschriftungen** | Anreicherung des Geschichtenerzählens für Benutzer mit natürlichen Sprachzusammenfassungen eines [!UICONTROL Linie] Visualisierung. | 17. Mai 2023 | 1. Juni 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,12 @@ AN-316412; AN-317105; AN-318122; AN-317353
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
 | Nicht angegeben | nicht angegeben | Nicht angegeben |
+
+## Mitteilungen über das Ende der Nutzungsdauer (EOL) {#eol}
+
+| Ende der Nutzungsdauer eines Produkts oder einer Funktion | Datum hinzugefügt oder aktualisiert | Beschreibung |
+| --- | --- | --- |
+| **Migration zu Adobe IO OAuth Server-zu-Server-Anmeldeinformationen** | 11. Mai 2023 | Adobe Analytics-API-, CJA-API- und Livestream-Kunden, die Adobe IO JWT-Anmeldeinformationen verwenden, müssen mithilfe von **1. Januar 2025**. Adobe IO lässt die Erstellung neuer JWT-Anmeldeinformationen ab dem 1. Mai 2024 nicht zu. Kunden, die JWT verwenden, müssen eine neue OAuth-Server-zu-Server-Berechtigung erstellen oder ihre vorhandenen JWT-Anmeldedaten in eine OAuth-Server-zu-Server-Berechtigung migrieren. Kunden müssen außerdem ihre Clientanwendungen aktualisieren, um die neuen OAuth Server-to-Server-Anmeldeinformationen zu verwenden. <ul><li>[Migration von JWT-Anmeldedaten (Service Account)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Verwenden der neuen OAuth-Server-zu-Server-Anmeldeinformationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Häufig gestellte Fragen (FAQ)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul>![](assets/jwt.png) |
 
 {style="table-layout:auto"}
 
