@@ -3,10 +3,10 @@ description: Verwenden Sie intelligente Beschriftungen, um Einblicke in natürli
 title: Intelligente Beschriftungen
 feature: Visualizations
 role: User, Admin
-source-git-commit: 1474d438e9deafc9d303bff3560ef3ff3aff0ec0
+source-git-commit: c613c313ae2c9c6786370c46fa0a86134014e754
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
@@ -17,12 +17,10 @@ ht-degree: 2%
 
 Intelligente Beschriftungen verwenden Datenwissenschaft, um wertvolle Einblicke in natürliche Sprachen für Workspace-Visualisierungen bereitzustellen. Die erste Version bietet automatisch generierte Einblicke für die [Linie](line.md) Visualisierung. (Es folgen weitere Visualisierungen.)
 
-Analysten benötigen diese Einblicke, um Benutzern, für die sie möglicherweise ihre Projekte freigeben, Kontext bieten zu können.
-
 Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 
+* Analysten, die Geschichten benötigen, um sie für andere Benutzer freizugeben. Analysten benötigen diese Einblicke, um ihren Benutzern Kontext bieten zu können.
 * Geschäftsbenutzer, die schnell allgemeine Schnellzugriffe entdecken möchten.
-* Analysten, die Geschichten benötigen, um sie für andere Benutzer freizugeben.
 
 Untertitel sind für alle CJA-Benutzer verfügbar und erfordern keine speziellen Berechtigungen.
 
@@ -34,12 +32,13 @@ Um automatisch generierte Beschriftungen für eine Linienvisualisierung zu start
 
 Einblicke in natürliche Sprachen werden jetzt generiert.
 
+Wenn Sie das Projekt zu diesem Zeitpunkt speichern und es später erneut laden, werden die Beschriftungen automatisch mit neuen Daten aktualisiert. Dasselbe gilt für geplante Projekte und PDF-Dateien, die aus diesem Projekt exportiert werden.
+
 ## Anzeigen und Interpretieren von Untertiteln {#view}
 
 Im Folgenden finden Sie ein Beispiel dafür, wie die Beschriftungen aussehen könnten:
 
 ![Untertitel](assets/captions.png)
-
 
 ## In Zwischenablage kopieren {#copy}
 
@@ -55,7 +54,18 @@ Sie können die Beschriftungen bearbeiten, z. B. eine bestimmte Kategorie von Ei
 
 1. Klicken Sie auf **[!UICONTROL Anwenden]**.
 
+Verwenden Sie denselben Prozess, um Beschriftungen wieder einzublenden.
+
 ## Exportieren von Untertiteln {#export}
 
 Sie können **Untertitel über PDF exportieren**, solange das Projekt mit den generierten Untertiteln gespeichert wird.
 
+## Beschriftungen deaktivieren {#toggle}
+
+Wenn Sie keine intelligenten Untertitel erstellen möchten, können Sie diese Funktion deaktivieren, indem Sie die Voreinstellungen für die Visualisierung aufrufen und die Option deaktivieren **[!UICONTROL Intelligente Beschriftungen anzeigen]**.
+
+![Beschriftungseinstellungen](assets/toggle-captions.png)
+
+## Beschriftungen neu anordnen {#reorder}
+
+Sie können die Anzeige der Beschriftungen neu anordnen, indem Sie eine Beschriftung an eine neue Position ziehen.
