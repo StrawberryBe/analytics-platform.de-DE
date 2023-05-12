@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: cb63cd52a1618f2e1048f2779c4e6c0317e94f64
+source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
 workflow-type: tm+mt
-source-wordcount: '3003'
+source-wordcount: '2987'
 ht-degree: 8%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 8%
 # Abgeleitete Felder
 
 {{release-limited-testing}}
-
->[!NOTE]
->
->In Erwartung endgültiger Aktualisierungen wird [!UICONTROL Benutzerdefiniertes Feld] anstelle von [!UICONTROL Abgeleitetes Feld] über die Benutzeroberfläche.
-
 
 Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders (Regel-Builder) spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
 
