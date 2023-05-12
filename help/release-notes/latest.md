@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 306c1432163841034c8e7a34f8e112a5cc734da4
+source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 26%
 
 ---
@@ -29,7 +29,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Löschen von Zeilen, die dynamische Dimensionen enthalten, aus einer Freiformtabelle** | In einer Freiformtabelle in Analysis Workspace können Sie jetzt mithilfe des x-Symbols schnell bestimmte Zeilen löschen, die dynamische Dimensionen enthalten. Dabei wird automatisch die Filterregel &quot;Ist nicht gleich&quot;angewendet.<p>Zuvor bestand die einzige Möglichkeit zum Löschen von Zeilen, die dynamische Dimensionen enthielten, darin, manuell eine Regel im Dialogfeld Filter zu erstellen. [Weitere Informationen](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | Nicht angegeben | 17. Mai 2023 |
 | **Neue Schaltfläche zum Hinzufügen einer Visualisierung in einem Bedienfeld** | Unten in jedem Bedienfeld in Analysis Workspace ist jetzt eine neue Schaltfläche verfügbar, mit der Sie schnell eine Visualisierung hinzufügen können. <p>Zuvor bestand die einzige Methode zum Hinzufügen einer Visualisierung zu einem Bedienfeld darin, eine Visualisierung aus der linken Leiste zu ziehen, eine vorhandene Visualisierung zu duplizieren oder zu kopieren oder ein leeres Bedienfeld zu erstellen. [Weitere Informationen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | Nicht angegeben | 17. Mai 2023 |
 | **Deep-Linking (mobile App)** | Ermöglicht Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. Dies erleichtert die Freigabe von Projekten und die Interaktion von weniger technischen Zielgruppen. | Nicht angegeben | 17. Mai 2023 |
-| **Intelligente Beschriftungen** | Anreicherung des Geschichtenerzählens für Benutzer mit natürlichen Sprachzusammenfassungen eines [!UICONTROL Linie] Visualisierung. | 17. Mai 2023 | 1. Juni 2023 |
+| **Intelligente Beschriftungen** | Anreicherung des Geschichtenerzählens für Benutzer mit natürlichen Sprachzusammenfassungen eines [!UICONTROL Linie] Visualisierung. [Weitere Informationen](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17. Mai 2023 | 1. Juni 2023 |
 
 {style="table-layout:auto"}
 
