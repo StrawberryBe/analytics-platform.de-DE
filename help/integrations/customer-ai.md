@@ -4,11 +4,9 @@ title: Integrieren von Kunden-KI-Daten in CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-hide: true
-hide-from-toc: true
-source-git-commit: adfc2500cfc3811e7ef2798c3a0ee3e9b3425208
+source-git-commit: b56dd36d85cd34179166ad9a6bc45f3f641e9697
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '955'
 ht-degree: 72%
 
 ---
@@ -26,19 +24,19 @@ Customer AI nutzt bei der Tendenzauswertung individuelle Verhaltensdaten und Pro
 Customer AI kann in Customer Journey Analytics (CJA) integriert werden, soweit für Customer AI aktivierte Datensätze in Datenansichten und Berichten in CJA genutzt werden können. Sie können:
 
 * **Tendenz-Scores für ein Segment von Benutzern im Zeitverlauf verfolgen**.
-   * Anwendungsfall: die Wahrscheinlichkeit verstehen, dass Kunden in einem bestimmten Segment konvertiert werden.
+   * Anwendungsfall: Verstehen Sie die Wahrscheinlichkeit, dass Kunden in einem bestimmten Segment konvertieren.
    * Beispiel: Ein Marketer in einer Hotelkette möchte wissen, wie wahrscheinlich es ist, dass ein Hotelkunde ein Showticket am Konzertplatz des Hotels kauft.
 * **Analysieren, welche Erfolgsereignisse oder Attribute mit Tendenz-Scores verknüpft sind**.
-   * Anwendungsfall: die Attribute oder Erfolgsereignisse verstehen, die mit Tendenzwerten verknüpft sind.
+   * Anwendungsfall: Machen Sie sich mit den Attributen oder Erfolgsereignissen im Zusammenhang mit Tendenzwerten vertraut.
    * Beispiel: Ein Marketer in einer Hotelkette möchte verstehen, wie die Käufe von Show-Tickets in einem Konzerthaus eines Hotels mit Tendenzwerten verbunden sind.
 * **Den Eintrittsfluss für die Kundentendenz über verschiedene Scoring-Durchgänge hinweg verfolgen.**. 
-   * Anwendungsfall: Menschen zu verstehen, die anfangs wenig Neigung hatten und im Laufe der Zeit zu Nutzern mit hoher Tendenz wurden.
+   * Anwendungsfall: Verstehen Sie Menschen, die anfangs wenig Neigung hatten und im Laufe der Zeit zu Nutzern mit hoher Tendenz wurden.
    * Beispiel: Ein Marketer in einer Hotelkette möchte wissen, welche Hotelkunden ursprünglich als Kunden identifiziert wurden, die nur mit geringer Tendenz ein Showticket zu erwerben hatten, aber mit der Zeit zu Kunden wurden, die eine hohe Tendenz hatten, ein Showticket zu kaufen.
 * **Die Verteilung der Tendenz betrachten**.
-   * Anwendungsfall: die Verteilung der Tendenzwerte zu verstehen, um bei der Definition von Segmenten präziser zu sein.
+   * Anwendungsfall: Machen Sie sich mit der Verteilung der Tendenzwerte vertraut, um bei der Definition von Segmenten präziser zu sein.
    * Beispiel: Ein Einzelhändler möchte eine spezifische Promotion für 50 US-Dollar pro Produkt durchführen. Da sein Budget begrenzt ist, möchte er nur eine sehr eingeschränkte Promotion durchführen. Sie analysieren die Daten und entscheiden, nur die 80 %+ der Kunden als Ziel festzulegen.
 * **Die Konsumtendenz betrachten, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**.
-   * Anwendungsfall: eine bestimmte Kohorte im Zeitverlauf verfolgen.
+   * Anwendungsfall: Verfolgen Sie eine bestimmte Kohorte im Zeitverlauf.
    * Beispiel: Ein Marketer in einer Hotelkette möchte ihre Bronzestufe im Laufe der Zeit im Vergleich zu ihrer Silberstufe oder Silberstufe im Vergleich zu ihrer Goldstufe nachverfolgen. So können sie die Neigung jeder Kohorte sehen, das Hotel im Laufe der Zeit zu buchen.
 
 Gehen Sie wie folgt vor, um Customer AI-Daten in CJA zu integrieren:
