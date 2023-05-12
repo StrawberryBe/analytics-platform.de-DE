@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 4205995fdc54e4d7626f17de79573751a5c63d26
+source-git-commit: 5b84c2c908f947b1abed621f68aa1a324faeecde
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2890'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,9 @@ Benutzer müssen Zugriff auf:
    - CJA Workspace-Projekte und
    - CJA-Datenansichten, die sie verwenden möchten.
 
-- Verwenden Sie das Ablaufdatum für nicht ablaufende Anmeldeinformationen, um BI-Tools mit dem CJA SQL Connector zu verbinden. Siehe [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) für weitere Informationen zum Festlegen ablaufender oder nicht ablaufender Anmeldeinformationen.
+- Verwenden Sie das Ablaufdatum für nicht ablaufende Anmeldeinformationen, um BI-Tools mit dem CJA SQL Connector zu verbinden. Thr [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) enthält weitere Informationen zum Festlegen ablaufender oder nicht ablaufender Anmeldeinformationen.
+
+Siehe [Zugriffssteuerung](../admin/cja-access-control.md) im Abschnitt CJA-Administration weitere Informationen.
 
 
 ## Nutzung
