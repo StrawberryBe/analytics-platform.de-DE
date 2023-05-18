@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: a546c52d2a686c38f7a9a23e0c541568c2918495
 workflow-type: tm+mt
 source-wordcount: '1868'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -20,19 +20,19 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **Mai 2023** |  |
-| Analysis Workspace – Übersicht | Aktualisiert [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md) um allgemeinere Übersichtsinformationen und Links zu relevanten Inhalten einzuschließen. |
-| Erstellen von Projekten | Es wurde ein neuer Artikel erstellt, in dem ausführlich erläutert wird, wie [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace. |
+| Analysis Workspace – Übersicht | Die [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md) wurde aktualisiert, um allgemeinere Übersichtsinformationen und Links zu relevanten Inhalten einzuschließen. |
+| Erstellen von Projekten | Es wurde ein neuer Artikel erstellt, in dem das [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace ausführlich erklärt wird. |
 | Komponenten in der linken Leiste sortieren | Es wurden Informationen zum Sortieren der Komponentenliste in der linken Leiste hinzugefügt. Siehe Abschnitt &quot;Suche, Filtern und Sortieren der Komponentenliste&quot;in [Komponentenübersicht](/help/components/overview.md). |
 | Löschen von Zeilen, die dynamische Dimensionen enthalten, aus einer Freiformtabelle | Es wurden Informationen zum schnellen Löschen bestimmter Zeilen mit dynamischen Dimensionen mithilfe des x-Symbols hinzugefügt. Siehe Abschnitt &quot;Schnelles Ausschließen bestimmter Zeilen aus einer Tabelle&quot;in [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | Schaltfläche zum Hinzufügen einer Visualisierung in einem Bedienfeld | Es wurden Informationen zu einer neuen Schaltfläche am unteren Rand jedes Bedienfelds in Analysis Workspace hinzugefügt, mit der Sie schnell eine Visualisierung hinzufügen können. Siehe Abschnitt &quot;Visualisierungen zu einem Bedienfeld hinzufügen&quot;in [Visualisierungen - Übersicht](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | Dokumentation zu intelligenten Untertiteln | Reichern Sie das Geschichtenerzählen für Benutzer mit [Zusammenfassungen in natürlicher Sprache](/help/analysis-workspace/visualizations/intelligent-captions.md) einer Linienvisualisierung. |
 | **April 2023** |  |
-| Video zur Verwendung von Filtern als Dimensionen | Video zur Verwendung von Filtern als Dimension aktualisiert. <p>Dieses Video ist über die [Filter erstellen](/help/components/filters/create-filters.md) Seite.</p> <p>Im Folgenden finden Sie einen direkten Link zum Video: [Filter als Dimensionen in Analysis Workspace verwenden](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
-| Dokumentation filtern | Es wurde ein Artikel zur Verwendung der [Filter Builder](/help/components/filters/filter-builder.md). <p>Optimierte Dokumentation in [Filter erstellen](/help/components/filters/create-filters.md) und [Filterübersicht](/help/components/filters/filters-overview.md).</p> |
-| Aktualisierung der Dokumentation zum Experimentfenster | Es wurde ein Abschnitt zu [Interpretieren nicht-randomisierter Dimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
-| Projektfilter (Ad-hoc- und Schnellfilter) | Die Dokumentation zu Projektfiltern wurde optimiert und duplizierte Informationen wurden entfernt. Die Schritte zum Erstellen von Ad-hoc-Filtern werden jetzt mit den Schritten für [Erstellen von Schnellfiltern](/help/components/filters/quick-filters.md). |
+| Video zur Verwendung von Filtern als Dimensionen | Das Video über die Verwendung von Filtern als Dimensionen wurde aktualisiert. <p>Dieses Video ist von der Seite [Filter erstellen](/help/components/filters/create-filters.md) verlinkt.</p> <p>Im Folgenden finden Sie einen direkten Link zum Video: [Verwenden von Filtern als Dimensionen in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=de).</p> |
+| Filterdokumenation | Es wurde ein Artikel zur Verwendung des [Filter Builders](/help/components/filters/filter-builder.md) hinzugefügt. <p>Die Dokumentation in [Filter erstellen](/help/components/filters/create-filters.md) und [Filterübersicht](/help/components/filters/filters-overview.md) wurde vereinheitlicht.</p> |
+| Aktualisierung der Dokumentation zum Experimentier-Bedienfeld | Es wurde ein Abschnitt zu [Interpretieren nicht-randomisierter Dimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=de#non-randomized) hinzugefügt. |
+| Projektfilter (Ad-hoc- und Schnellfilter) | Die Dokumentation zu Projektsegmenten wurde vereinheitlicht und duplizierte Informationen wurden entfernt. Die Schritte zum Erstellen von Ad-hoc-Filtern sind jetzt mit den Schritten zum [Erstellen von Schnellfiltern](/help/components/filters/quick-filters.md) kombiniert. |
 | **März 2023** |  |
-| Integrieren von Entscheidungsverwaltungsdaten | Es wurden Inhalte hinzugefügt, die erklären, wie [Adobe Journey Optimizer-Entscheidungsverwaltungsdaten in CJA integrieren](/help/integrations/ajo-od.md). |
+| Integrieren von Entscheidungs-Management-Daten | Es wurden Inhalte hinzugefügt, die eine Erklärung der [Integration von Entscheidungs-Managament-Daten von Adobe Journey Optimizer in CJA](/help/integrations/ajo-od.md) liefern. |
 | Erstellen von Daten-Storys in Mobile Scorecards | Eine [Daten-Story](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |
 | Aktualisierte Funktionsunterstützung | Aktualisierte [Funktionsunterstützung für Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) mit einer Tabelle von Funktionen, die in CJA, aber nicht in AA verfügbar sind oder unterstützt werden. |
 | Standardmäßig berechnete Metriken | Inhalt zur Erläuterung der [von Adobe bereitgestellten standardmäßigen berechneten Metriken](/help/components/calc-metrics/default-calcmetrics.md) hinzugefügt. |
