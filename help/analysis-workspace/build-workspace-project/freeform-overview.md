@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Übersicht über Projekte
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
+source-git-commit: 7086224bdbdfe3ae05fce95a13491f430e79b8c6
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 79%
@@ -64,7 +64,7 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 | Einfügen | Fügen Sie neue Bedienfelder oder Visualisierungen aus diesem Menü ein. Sie können auch neue Bedienfelder und Visualisierungen aus der linken Leiste einfügen. |
 | [Komponenten](/help/components/overview.md) | Erstellen Sie neue Filter, berechnete Metriken, Datumsbereiche oder Warnhinweiskomponenten aus Ihrem Projekt. Sie können auch über die linke Leiste neue Komponenten erstellen. Wenn sich Ihre Komponentendefinitionen kürzlich geändert haben, werden die neuesten Definitionen über „Komponenten aktualisieren“ abgerufen. |
 | [Freigeben](/help/analysis-workspace/curate-share/send-schedule-files.md) | Sie können PDF-/CSV-Projekte für Empfänger in Ihrem Unternehmen kuratieren, freigeben und planen. |
-| Hilfe | Rufen Sie die Hilfedokumentation, Videos und die Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de) auf. Verwalten Sie die Sichtbarkeit der Workspace-Tipps sowie von [Debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Finden Sie Details über Workspace und Faktoren, die sich auf die [Projektleistung](/help/analysis-workspace/workspace-faq/optimizing-performance.md) auswirken. |
+| Hilfe | Rufen Sie die Hilfedokumentation, Videos und die Analytics [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=de) auf. Verwalten Sie die Sichtbarkeit der Workspace-Tipps sowie von [Debugger](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Finden Sie Details über Workspace und Faktoren, die sich auf die [Projektleistung](/help/admin/optimizing-performance.md) auswirken. |
 | Schaltfläche „Freigeben“ oder Inhaber | Wenn Sie im Projekt die Rolle „Inhaber“ oder „Bearbeiten“ innehaben, erhalten Sie über der Button „Freigeben“ oben rechts Zugriff auf die Verwaltung Ihrer Projektempfänger. Wenn Sie im Projekt die Rolle „Duplizieren“ oder „Anzeigen“ innehaben, wird der Name des Projektinhabers angezeigt. |
 
 ### Projektinfo und Einstellungen {#info-settings}

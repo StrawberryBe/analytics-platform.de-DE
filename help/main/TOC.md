@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
+source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 97%
+source-wordcount: '888'
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,6 @@ ht-degree: 97%
 
    + Häufig gestellte Fragen zu Workspace {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
-      + [Optimieren der Analysis Workspace-Leistung](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Fehlermeldungen](../analysis-workspace/workspace-faq/error-messages.md)
       + [Analysis Workspace-Beschränkungen](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationsanforderungen](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
@@ -197,6 +196,7 @@ ht-degree: 97%
 + Komponenten {#cja-components}
    + [Komponentenübersicht](../components/overview.md)
    + [Komponentenbeschreibungen hinzufügen](../components/add-component-descriptions.md)
+
    + Anmerkungen {#annotations}
       + [Anmerkungen – Übersicht](../components/annotations/overview.md)
       + [Erstellen von Anmerkungen](../components/annotations/create-annotations.md)
@@ -213,6 +213,7 @@ ht-degree: 97%
       + [Dimensionen für die Zeitunterteilung](../components/dimensions/time-parting-dimensions.md)
       + [Dimensionen mit sehr hoher Kardinalität](../components/dimensions/high-cardinality.md)
    + [Metriken](../components/apply-create-metrics.md)
+
    + Filter {#cja-filters}
       + [Filterübersicht](../components/filters/filters-overview.md)
       + [Filter erstellen](../components/filters/create-filters.md)
@@ -252,12 +253,20 @@ ht-degree: 97%
       + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
       + [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Überwachen des Zustands des Datenwörterbuchs](../components/data-dictionary/monitor-data-dictionary-health.md)
+
+
+
+
+
+
+
 + Analytics-Dashboards {#cja-dashboards}
    + [Analytics-Dashboards – Übersicht](../mobile-app/home.md)
    + [Kuratoraufgaben](../mobile-app/curator.md)
    + [Mobile-Scorecard erstellen](../mobile-app/create-scorecard.md)
    + [Führungskräften die Nutzung von Dashboards ermöglichen](../mobile-app/set-up-execs.md)
    + [Schnellstarthandbuch für ausführende Benutzer](../mobile-app/executive.md)
+
 + Report Builder {#cja-reportbuilder}
    + [Übersicht über Report Builder](../report-builder/report-buider-overview.md)
    + [Einrichten von Report Builder](../report-builder/report-builder-setup.md)
@@ -291,6 +300,7 @@ ht-degree: 97%
 
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](../use-cases/cja-usecases.md)
+
    + Google Analytics-Daten {#ga}
       + [Übersicht über die Migration von Daten von Google Analytics zu CJA](../use-cases/ga/overview.md)
       + [Aufnehmen von historischen Daten von Google Analytics in Platform](../use-cases/ga/backfill.md)
@@ -313,11 +323,16 @@ ht-degree: 97%
    + Komplexe Daten {#complex-data}
       + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
 
+
+
+
+
+
 + Administration {#cja-admin}
    + [Zugriffssteuerung](../admin/cja-access-control.md)
    + [Anzeigen und Verwalten der Nutzung](../admin/estimate-usage.md)
    + [Auswirkungen des Löschens](../admin/cja-deletion.md)
-   + [CJA-Leistung optimieren](../admin/cja-performance.md)
+   + [CJA-Leistung optimieren](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](../labs/labs.md)
