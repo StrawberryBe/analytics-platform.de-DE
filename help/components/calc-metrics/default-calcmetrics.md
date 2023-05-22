@@ -3,10 +3,10 @@ description: Adobe bietet verschiedene berechnete Metriken, die Sie verwenden k�
 title: Standardmäßig berechnete Metriken
 feature: Calculated Metrics
 exl-id: 08d11cce-170e-42a2-806f-e0a28b70a2dc
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 66%
+ht-degree: 60%
 
 ---
 
@@ -28,7 +28,7 @@ Im Folgenden finden Sie eine Liste aller berechneten Metriken, die von Adobe ber
 
 | Name der berechneten Metrik | Funktion | Formel |
 |---------|----------|---------|
-| Absprungrate | Das Verhältnis der Besuche, die genau einen Treffer enthielten, im Vergleich zur Anzahl der Besuche auf dieser Seite. Auf diese Weise lässt sich erkennen, welche Dimensionselemente die höchste Absprungrate aufweisen, oder es kann eine aggregierte Gesamtabsprungrate einer Website im Zeitverlauf angezeigt werden. | `[Bounces] / [Entries]` |
+| Absprungrate | Das Verhältnis der Besuche, die genau ein Ereignis enthielten, zur Anzahl der Besuche auf dieser Seite. Auf diese Weise können Sie erkennen, welche Dimensionselemente die höchste Absprungrate aufweisen, oder eine aggregierte Gesamtabsprungrate Ihrer Site im Zeitverlauf anzeigen. | `[Bounces] / [Entries]` |
 | Umsatz/Besucher | Der durchschnittliche Umsatz, der von jeder einzelnen Besucherin und jedem einzelnen Besucher der Website generiert wird. | `[Revenue] / [Unique Visitors]` |
 | Bestellungen/Besucher | Die durchschnittliche Anzahl der Bestellungen oder Transaktionen, die von jeder einzelnen Besucherin bzw. jedem einzelnen Besucher der Website generiert wurden | `[Orders] / [Unique Visitors]` |
 | Umsatz/Besuche | Die durchschnittliche Umsatzmenge, die durch einen einzelnen Besuch der Website generiert wird. | `[Revenue] / [Visits]` |

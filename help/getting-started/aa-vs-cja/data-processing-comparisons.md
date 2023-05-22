@@ -2,10 +2,10 @@
 title: Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -41,7 +41,7 @@ In der folgenden Tabelle wird die Terminologie für die verschiedenen Arten von 
 | Logik auf Trefferebene | Logik, die Zeile für Zeile angewendet wird. | Beispiele: Verarbeitungsregeln, VISTA, bestimmte Regeln von Marketing-Kanälen. |
 | Logik auf Besuchsebene | Logik, die auf Besuchsebene angewendet wird. | Beispiele: Besuchs- und Sitzungsdefinition. |
 | Logik auf Besucherebene | Logik, die auf Besucherebene angewendet wird. | Beispiel: Geräteübergreifende/kanalübergreifende Besucherzuordnung. |
-| Segmentlogik (Filterlogik) | Auswertung der Segmentregeln (Filterregeln) für Treffer/Besuch/Besucher (Ereignis/Sitzung/Person). | Beispiel: Personen, die rote Schuhe gekauft haben. |
+| Segmentlogik (Filterlogik) | Auswertung der Segmentregeln für Ereignis/Besuch/Besucher (Ereignis/Sitzung/Person) (Filter). | Beispiel: Personen, die rote Schuhe gekauft haben. |
 | Berechnete Metriken | Auswertung benutzerdefinierter Metriken, die von Kunden erstellt wurden und auf komplexen Formeln, einschließlich Segmenten und Filtern, basieren können. | Beispiel: Anzahl der Personen, die rote Schuhe gekauft haben. |
 | Attributionslogik | Logik zur Berechnung der Attribution. | Beispiel: eVar-Persistenz. |
 | Komponenteneinstellungen | Anwenden von Anpassungen auf Metriken oder Dimensionen, wie Attribution, Verhalten, Format und andere | Beispiel: Wertesammlung zum Kombinieren numerischer Werte basierend auf einem Bereich |

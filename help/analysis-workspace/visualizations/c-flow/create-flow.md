@@ -4,10 +4,10 @@ title: Flussvisualisierung konfigurieren
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -112,10 +112,10 @@ Beachten Sie bei Verwendung dieser Option Folgendes:
 * **[!UICONTROL Auf das erste/letzte Vorkommen beschränken]** zählt nur das erste/letzte Vorkommen in der Reihe. Alle anderen Vorkommen der Kriterien **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** werden verworfen.
 * Bei Verwendung mit einem Fluss des Typs **[!UICONTROL Beginnt mit]** wird nur das erste Vorkommen einbezogen, das den Startkriterien entspricht.
 * Bei Verwendung mit einem Fluss des Typs **[!UICONTROL Endet mit]** wird nur das letzte Vorkommen einbezogen, das den Endkriterien entspricht.
-* Die verwendete Reihe unterscheidet sich je nach Container. Bei Verwendung des Containers **[!UICONTROL Besuch]** wird die Trefferreihe die Sitzung sein. Bei Verwendung des Containers **[!UICONTROL Besucher]** besteht die Trefferreihe aus allen Treffern einer bestimmten benutzenden Person im bereitgestellten Datumsbereich.
+* Die verwendete Reihe unterscheidet sich je nach Container. Wenn Sie **[!UICONTROL Besuch]** -Container, wird die Ereignisreihe die Sitzung sein. Wenn Sie **[!UICONTROL Besucher]** -Container enthalten, sind alle Ereignisse aus der Ereignisreihe für einen bestimmten Benutzer im angegebenen Datumsbereich.
 * Die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** kann in den erweiterten Einstellungen konfiguriert werden, wenn ein Metrik- oder Dimensionselement in den Feldern „Beginnt mit“ oder „Endet mit“ verwendet wird.
 
-Beispielreihe von Treffern:
+Beispielserie von Ereignissen:
 
 Startseite > Produkte > Zum Warenkorb hinzufügen > Produkte > Zum Warenkorb hinzufügen > Rechnungsstellung > Bestellbestätigung
 
@@ -125,7 +125,7 @@ Startseite > Produkte > Zum Warenkorb hinzufügen > Produkte > Zum Warenkorb hin
 * Pfaddimension [!UICONTROL Seite]
 * Container [!UICONTROL Besuch]
 
-Wenn &quot;Auf das erste/letzte Vorkommen beschränken&quot;deaktiviert ist, würde diese einzelne Trefferreihe zwei Vorkommen von &quot;Zum Warenkorb hinzufügen&quot;zählen.
+Wenn &quot;Auf das erste/letzte Vorkommen beschränken&quot;deaktiviert ist, würde diese einzelne Ereignisreihe zwei Vorkommen von &quot;Zum Warenkorb hinzufügen&quot;zählen.
 Erwartete Flussausgabe: 
 „Zum Warenkorb hinzufügen“ (2) —> „Produkte“ (1)
 -> „Rechnungsstellung“ (1)
@@ -134,13 +134,13 @@ Wenn jedoch &quot;Auf das erste/letzte Vorkommen begrenzen&quot;aktiviert ist, w
 Erwartete Flussausgabe:
 „Zum Warenkorb hinzufügen“ (1) —> „Produkte“ (1)
 
-### Betrachten Sie die gleiche Reihe von Treffern, jedoch unter Verwendung der folgenden Einstellungen:
+### Betrachten Sie die gleiche Reihe von Ereignissen mit den folgenden Einstellungen:
 
 * Endet mit [!UICONTROL Zum Warenkorb hinzufügen] (Dimensionselement)
 * Pfaddimension [!UICONTROL Seite]
 * Container [!UICONTROL Besuch]
 
-Wenn die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** *deaktiviert* ist, zählt diese einzelne Trefferreihe als zwei Vorkommnisse von „Zum Warenkorb hinzufügen“.
+Wenn **[!UICONTROL Auf das erste/letzte Vorkommen beschränken]** is *disabled*, würde diese einzelne Ereignisreihe zwei Vorkommen von &quot;Zum Warenkorb hinzufügen&quot;zählen.
 Erwartete Flussausgabe: 
 „Produkte“ (2) &lt;— „Zum Warenkorb hinzufügen“ (2)
 

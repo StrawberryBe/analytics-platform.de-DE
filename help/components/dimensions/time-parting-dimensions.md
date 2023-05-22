@@ -1,18 +1,18 @@
 ---
-description: Bei einer Zeitunterteilung wird der Zeitstempel erfasster Hits in aussagekräftigere Dimensionen wie „Stunde des Tages“ oder „Tag der Woche“ unterteilt.
+description: Bei der Zeitunterteilung wird der Zeitstempel der erfassten Ereignisse in aussagekräftigere Dimensionen wie "Stunde des Tages"oder "Tag der Woche"unterteilt.
 title: Dimensionen für die Zeitunterteilung
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
-# Dimensionen für die Zeitunterteilung in Analysis Workspace
+# Zeitunterteilungsdimensionen in Analysis Workspace
 
-Bei einer Zeitunterteilung wird der Zeitstempel erfasster Hits in aussagekräftigere Dimensionen wie „Stunde des Tages“ oder „Tag der Woche“ unterteilt.
+Bei der Zeitunterteilung wird der Zeitstempel der erfassten Ereignisse in aussagekräftigere Dimensionen wie &quot;Stunde des Tages&quot;oder &quot;Tag der Woche&quot;unterteilt.
 
 Die Dimensionen für die Zeitunterteilung basieren auf der Zeitzone der Datenansicht. Diese Dimensionen sind in Analysis Workspace verfügbar und können bei der Beantwortung der folgenden Fragen hilfreich sein:
 

@@ -4,10 +4,10 @@ title: Schnellfilter
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 42%
+ht-degree: 41%
 
 ---
 
@@ -41,7 +41,7 @@ So erstellen Sie einen Schnellfilter:
       >
       > Beachten Sie Folgendes beim Erstellen eines Schnellfilters Ad-hoc (Drag &amp; Drop):
       > * Die folgenden Komponententypen werden nicht unterstützt: berechnete Metriken und Dimensionen sowie Metriken, aus denen Sie keine Filter erstellen können.
-      > * Bei vollständigen Dimensionen und Ereignissen erstellt Analysis Workspace Hit-Filter mit „vorhanden“. Beispiele: `Hit where eVar1 exists` oder `Hit where event1 exists`.
+      > * Für vollständige Dimensionen und Ereignisse erstellt Analysis Workspace Ereignisfilter &quot;vorhanden&quot;. Beispiele: `Hit where eVar1 exists` oder `Hit where event1 exists`.
       > * Wenn „nicht angegeben“ oder „keine“ im Filterablagebereich abgelegt werden, werden sie automatisch in einen Filter mit „nicht vorhanden“ umgewandelt, damit sie beim Filtern korrekt behandelt werden.
 
 

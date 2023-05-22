@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1245'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind). Kann auf mögliche oder exakte Sequenzen eingestellt werden |
 | [Fluss](/help/analysis-workspace/visualizations/c-flow/flow.md) | Zeigt Kundenpfade durch Ihre Websites und Programme. |
 | [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Eine Freiformtabelle ist nicht nur eine Datentabelle, sondern auch eine interaktive Visualisierung. Es bildet die Grundlage für die Analyse von Daten in Workspace. |
-| [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Ein Histogramm fasst Besucher, Besuche oder Treffer basierend auf einem Metrikvolumen in Behälter zusammen. |
+| [Histogramm](/help/analysis-workspace/visualizations/histogram.md) | Ein Histogramm fasst Besucher, Besuche oder Ereignisse basierend auf einem Metrikvolumen in Behälter zusammen. |
 | [Horizontalbalken](/help/analysis-workspace/visualizations/horizontal-bar.md) | Zeigt horizontale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen. |
 | [Linie](/help/analysis-workspace/visualizations/line.md) | Stellt Metriken anhand einer Linie dar, die den Wertverlauf über einen bestimmten Zeitraum hinweg zeigt. Ein Liniendiagramm verwendet die Zeit entlang der X-Achse. |
 | [Streudiagramm](/help/analysis-workspace/visualizations/scatterplot.md) | Zeigt die Beziehung zwischen Dimensionselementen und bis zu drei Metriken. |

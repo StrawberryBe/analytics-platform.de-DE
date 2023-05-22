@@ -2,10 +2,10 @@
 title: Verarbeitungsregeln, VISTA und Klassifizierungen vs. Datenvorbereitung für den Analytics-Quell-Connector
 description: Erfahren Sie mehr über die Datenumwandlung mithilfe von Verarbeitungsregeln und VISTA statt mithilfe der Datenvorbereitung.
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-source-git-commit: 6b7b8e8f1c1e88644961dd5e1b3d2ff7ec07951e
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -27,6 +27,6 @@ Daten, die erfasst und in Adobe Analytics gespeichert werden, können durch Vera
 
 Die Datenvorbereitung hat in bestimmten Situationen Überscheidungen mit [Klassifizierungen](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=de).
 
-Beispielsweise können Sie in einem durch Trennzeichen getrennten Feld mithilfe der Datenvorbereitung dieses Feld in mehrere einzelne Felder aufteilen, ohne Klassifizierungen zu verwenden. Im Allgemeinen bieten Klassifizierungen die Möglichkeit, einem Feld Metadaten hinzuzufügen, indem eine Suchdatei hochgeladen wird, die außerhalb des Streams eingehender Analytics-Treffer bereitgestellt wird.
+Beispielsweise können Sie in einem durch Trennzeichen getrennten Feld mithilfe der Datenvorbereitung dieses Feld in mehrere einzelne Felder aufteilen, ohne Klassifizierungen zu verwenden. Im Allgemeinen bieten Klassifizierungen die Möglichkeit, einem Feld Metadaten hinzuzufügen, indem eine Lookup-Datei hochgeladen wird, die außerhalb des Streams eingehender Analytics-Ereignisse bereitgestellt wird.
 
 Sie können beispielsweise eine Klassifizierungsdatei hochladen, in der SKUs nach „Größe“, „Marke“, „Farbe“ usw. gruppiert sind. Ein weiterer Unterschied zwischen Klassifizierungen und der Datenvorbereitung besteht darin, dass Klassifizierungen für _historische und zukünftige_ Daten gelten. Zuordnungen der Datenvorbereitung werden hingegen auf Daten angewendet, die _nach_ dem Zeitpunkt liegen, zu dem die Zuordnung erstellt wurde.

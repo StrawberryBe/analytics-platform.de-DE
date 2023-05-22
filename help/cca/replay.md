@@ -4,10 +4,10 @@ description: Das Konzept der „Wiederholung“ in Cross-Channel Analytics
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Cross-Channel Analytics führt zwei Durchläufe der Daten für eine bestimmte Verbindung durch:
 
-* **Echtzeit-Zuordnung**: Die CCA versucht, jeden ankommenden Treffer zuzuordnen. Neue Geräte im Datensatz, die noch nie angemeldet wurden, werden in der Regel nicht auf dieser Ebene zugeordnet. Bereits erkannte Geräte werden sofort zugeordnet.
+* **Live-Stitching**: Die kanalübergreifende Analyse versucht, jedes Ereignis beim Eintreten zuzuordnen. Neue Geräte im Datensatz, die noch nie angemeldet wurden, werden in der Regel nicht auf dieser Ebene zugeordnet. Bereits erkannte Geräte werden sofort zugeordnet.
 * **Wiederholen**: CCA wiederholt Daten basierend auf eindeutigen Kennungen, die es gelernt hat. In dieser Phase werden neue Geräte in der Verbindung zugeordnet. Adobe bietet zwei Wiederholungsintervalle:
    * Täglich: Die Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Besucher müssen sich jedoch an dem Tag authentifizieren, an dem sie Ihre Website besuchen.
    * Wöchentlich: Die Daten werden einmal pro Woche mit einem 7-Tage-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Daten, die weniger als eine Woche alt sind, werden jedoch nicht zugeordnet.
@@ -28,7 +28,7 @@ Die CCA versucht bei der Erfassung, jedes Ereignis bekannten Geräten und Kanäl
 
 *Daten, wie sie am Tag der Erfassung erscheinen:*
 
-| Zeitstempel | Beständige Web-Datensatz-ID | Vorübergehende Web-Datensatz-ID | Callcenter-Mitarbeiter-ID | Verwendete Benutzer-ID | Erläuterung des Treffers | Metrik „Personen“ (kumulativ) |
+| Zeitstempel | Beständige Web-Datensatz-ID | Vorübergehende Web-Datensatz-ID | Callcenter-Mitarbeiter-ID | Verwendete Benutzer-ID | Erläuterung des Ereignisses | Metrik „Personen“ (kumulativ) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | – | – | `246` | Bob besucht Ihre Website auf seinem Desktop und ist nicht authentifiziert. | `1` (246) |
 | `2` | `246` | `Bob` | – | `Bob` | Bob meldet sich auf seinem Desktop an. | `2` (246 und Bob) |
@@ -48,7 +48,7 @@ In regelmäßigen Abständen (einmal pro Woche oder einmal pro Tag, je nach ausg
 
 *Dieselben Daten nach der Wiederholung:*
 
-| Zeitstempel | Beständige Web-Datensatz-ID | Vorübergehende Web-Datensatz-ID | Callcenter-Mitarbeiter-ID | Verwendete Benutzer-ID | Erläuterung des Treffers | Metrik „Personen“ (kumulativ) |
+| Zeitstempel | Beständige Web-Datensatz-ID | Vorübergehende Web-Datensatz-ID | Callcenter-Mitarbeiter-ID | Verwendete Benutzer-ID | Erläuterung des Ereignisses | Metrik „Personen“ (kumulativ) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | – | – | `Bob` | Bob besucht Ihre Website auf seinem Desktop und ist nicht authentifiziert. | `1` (Bob) |
 | `2` | `246` | `Bob` | – | `Bob` | Bob meldet sich auf seinem Desktop an. | `1` (Bob) |

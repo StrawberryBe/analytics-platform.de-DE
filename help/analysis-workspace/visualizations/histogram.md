@@ -3,10 +3,10 @@ description: Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu
 title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -39,9 +39,9 @@ Wenn Sie die Einstellungen für Ihr Histogramm ändern möchten, klicken Sie auf
 | Histogramm-Einstellungen | Dient dem folgenden Zweck |
 |---|---|
 | Startpaket | Bestimmt, mit welchem Paket das Histogramm beginnt. Die Standardeinstellung lautet 1. Sie können Startwerte von null bis unendlich festlegen, jedoch keine negativen Zahlen. |
-| Metrische Behälter | Hiermit können Sie die Anzahl der Datumsbereiche (Behälter) erhöhen/verringern. Maximal 50 Behälter sind möglich. |
+| Metrische Behälter | Hiermit können Sie die Anzahl der Datumsbereiche (Behälter) erhöhen/verringern. Maximal 50 Buckets sind möglich. |
 | Metrische Behältergröße | Hiermit können Sie die Größe der einzelnen Behälter festlegen. So könnten Sie zum Beispiel die Behältergröße von 1 Seitenansicht zu 2 Seitenansichten ändern. |
-| Zählmethode | Sie können als Typ [Besucher](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de), [Besuch](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de) oder „Treffer“ auswählen, z. B. Seitenansichten pro Besuch, Seitenansichten pro Besucher oder Seitenansichten pro Hit. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet. |
+| Zählmethode | Sie können als Typ [Besucher](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de), [Besuch](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de) oder „Treffer“ auswählen, Zum Beispiel Seitenansichten pro Besuch oder Seitenansichten pro Besucher oder Seitenansichten pro Ereignis. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 

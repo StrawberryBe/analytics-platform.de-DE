@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Touchpoints angeben, um eine mehrdimensio
 title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Vielleicht mö
 
 Bezüglich der Anzahl der Schritte, die hinzugefügt, oder der Dimensionen, die verwendet werden können, gibt es keine Einschränkungen.
 
-Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) (Variablen, die mehrere Werte pro Hit haben können, wie Produkte, listVars, Merchandising-eVars und Listen-Props). Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe, Shirt“ und auf der nächsten Seite nach „Schuhe, Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
+Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) (Variablen, die mehrere Werte pro Ereignis aufweisen können, z. B. Produkte, listVars, Merchandising-eVars und Listen-Props). Beispiel: Angenommen, jemand sucht auf der einen Seite nach „Schuhe, Shirt“ und auf der nächsten Seite nach „Schuhe, Socken“. Der nächste Produktflussbericht von Schuhe wird „Shirt und Socken“ lauten, NICHT „Shirt“.
 
 1. Ziehen Sie eine [!UICONTROL Fallout]-Visualisierung aus dem Dropdownfeld „Visualisierung“ in eine [!UICONTROL Freiformtabelle].
 
@@ -42,7 +42,7 @@ Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listV
 
    ![](assets/multiple_obj_touchpoint.png)
 
-1. Einzelne Touchpoints können nun auch **auf den nächsten Hit** (statt am Ende) im Pfad eingegrenzt werden. Jedem Touchpoint unterliegen die Auswahlmöglichkeiten „Pfad am Ende“ und „Nächster Hit“:
+1. Sie können auch **einzelne Touchpoints auf das nächste Ereignis beschränken** (im Gegensatz zu &quot;schließlich&quot;) innerhalb des Pfads. Jedem Touchpoint unterliegen die Auswahlmöglichkeiten „Pfad am Ende“ und „Nächster Hit“:
 
    ![](assets/next-hit-eventually.png)
 
@@ -50,11 +50,11 @@ Sie können Pathing an eVars vornehmen, inklusive Merchandising-eVars und [listV
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Pfad am Ende </p> <p>(Standard) </p> </td> 
-   <td colname="col2"> <p>Die Besucher, die „am Ende“ auf der nächsten Seite im Pfad, aber nicht notwendigerweise beim nächsten Hit landen, werden gezählt. </p> </td> 
+   <td colname="col2"> <p>Besucher werden gezählt, die "am Ende"auf der nächsten Seite im Pfad landen, aber nicht notwendigerweise beim nächsten Ereignis. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Nächster Hit </p> </td> 
-   <td colname="col2"> <p>Die Besucher, die auf der nächsten Seite im Pfad, genau beim nächsten Hit landen, werden gezählt. </p> </td> 
+   <td colname="col1"> <p>Nächster Treffer </p> </td> 
+   <td colname="col2"> <p>Besucher werden gezählt, die auf der nächsten Seite im Pfad des nächsten Ereignisses landen. </p> </td> 
   </tr> 
  </tbody> 
 </table>

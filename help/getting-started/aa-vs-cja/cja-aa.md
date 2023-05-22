@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '2003'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -55,10 +55,10 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Zielgruppenveröffentlichung (Segment-Publishing) | Wird unterstützt, sofern diese Funktion mit den Adobe-Produkten Customer Data Platform oder Journey Optimizer lizenziert wurde. [Zielgruppenveröffentlichung](/help/components/audiences/audiences-overview.md) sendet Zielgruppen an das Echtzeit-Kundenprofil in Experience Platform. |
 | Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Klassifizierungen können mit dem Analytics Classifications Source Connector in Experience Platform und Customer Journey Analytics importiert werden. Lookup-Datensätze können auch direkt in Adobe Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
 | Classification Rule Builder | Unterstützt mit [Teilzeichenfolgen](/help/data-views/component-settings/substring.md) in CJA. Verwendet zum Zeitpunkt der Berichtserstellung Zeichenfolgenmanipulationen anstelle von Lookup-Datensätzen. |
-| Benutzerdefinierte Sitzungen | Unterstützung aller benutzerdefinierten Sitzungsfunktionen außer mobiler Hintergrundtreffer. |
+| Benutzerdefinierte Sitzungen | Unterstützung für alle benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundereignissen. |
 | Persistenz von Merchandising-Variablen | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) |
 | Kundenattribute | Sie werden jetzt als „Profildatensätze“ bezeichnet und nicht automatisch aus Experience Cloud importiert, sondern müssen erst in AEP hochgeladen werden, bevor sie in CJA verfügbar sind. |
-| Daten-Feeds | Der Datenexport der ersten Generation von Datensätzen ist über das [AEP Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) und [AEP-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de). Diese Optionen bieten den Export aller erfassten oder in den AEP Data Lake erfassten Daten auf Treffer-/Zeilenebene. Nachbearbeitungs-Datenspalten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über Berichte verfügbar. |
+| Daten-Feeds | Der Datenexport der ersten Generation von Datensätzen ist über das [AEP Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) und [AEP-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de). Diese Optionen bieten den Export aller erfassten oder in den AEP Data Lake erfassten Daten auf Ereignis-/Zeilenebene. Nachbearbeitungs-Datenspalten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über Berichte verfügbar. |
 | Deduplizierung von Metriken | Nun für Metriken in Datenansichten konfiguriert. Die Metrik-Deduplizierung erfolgt auf Personen- oder Sitzungsebene und nicht auf Datensatz-, Datenansichts- oder Verbindungsebene. |
 | Dimensionen und Metriken zu Eintritten, Austritten und aufgewendeter Zeit | Unterstützt (Eintritte und Austritte werden jetzt als Sitzungsanfang und Sitzungsende bezeichnet) und etwas anders berechnet. |
 | eVar-Persistenzeinstellungen | eVars sind nicht mehr Teil von CJA. Die Persistenzeinstellungen sind jetzt jedoch Teil der Datenansichten und für alle Dimensionen verfügbar. Beachten Sie, dass die Persistenz auf der Berichtszeitverarbeitung und nicht auf der Datenerfassungsverarbeitung basiert. Dimensionen, die innerhalb von Datenansichten festgelegt werden, sind auf eine maximale Persistenz von 90 Tagen beschränkt und unterstützen keine unbegrenzte Persistenz. |

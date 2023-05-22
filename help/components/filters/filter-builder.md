@@ -1,18 +1,18 @@
 ---
-description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metrik-Dimensionen, Filtern und Ereignissen, um Besucher anhand von Behälterhierarchielogik, Regeln und Operatoren zu filtern. Mit diesem integrierten Entwicklungstool können Sie einfache oder komplexe Filter erstellen und speichern, mit deren Hilfe Besucherattribute und Aktionen bei Besuchen und Seitenaufrufen identifiziert werden.
+description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metrik-Dimensionen, Filtern und Ereignissen, um Besucher anhand von Behälterhierarchielogik, Regeln und Operatoren zu filtern. Mit diesem integrierten Entwicklungstool können Sie einfache oder komplexe Filter erstellen und speichern, mit denen Besucherattribute und Aktionen bei Besuchen und Ereignissen identifiziert werden.
 title: Erstellen von Filtern
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 37%
+source-wordcount: '2052'
+ht-degree: 36%
 
 ---
 
 # Filter Builder
 
-Die [!UICONTROL Filter Builder] ermöglicht Ihnen die Erstellung einfacher oder komplexer Filter, mit denen Besucherattribute und -aktionen über Besuche und Seitentreffer hinweg identifiziert werden. Es bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metrikdimensionen, Ereignissen oder anderen Filtern, um Besucher basierend auf Hierarchielogik, Regeln und Operatoren zu filtern.
+Die [!UICONTROL Filter Builder] ermöglicht Ihnen die Erstellung einfacher oder komplexer Filter, mit denen Besucherattribute und -aktionen über Besuche und Ereignisse hinweg identifiziert werden. Es bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metrikdimensionen, Ereignissen oder anderen Filtern, um Besucher basierend auf Hierarchielogik, Regeln und Operatoren zu filtern.
 
 Informationen zum Erstellen von Schnellfiltern, die nur für das Projekt gelten, in dem sie erstellt werden, finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
 

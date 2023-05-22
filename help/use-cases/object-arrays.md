@@ -4,10 +4,10 @@ description: Hier wird erklärt, wie CJA-Berichte Datenhierarchien darstellen.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: afc4dfd808b12be869edbd5e93a4069b93488739
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,9 +17,9 @@ Manche Plattformschemas können Objekt-Arrays enthalten. CJA unterstützt die Au
 
 In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. CJA erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien in einer Datenzeile. Diese Funktion war in keiner früheren Version von Adobe Analytics verfügbar.
 
-## Beispiel für gleiche Hits
+## Beispiel für dasselbe Ereignis
 
-Der folgende Hit ist ein JSON-Objekt, das den Kauf eines Kunden einer Waschmaschine und eines Trockners darstellt.
+Das folgende Ereignis ist ein JSON-Objekt, das einen Kauf eines Kunden aus einer Waschmaschine und einem Trockner darstellt.
 
 ```json
 {
@@ -81,9 +81,9 @@ Beim Erstellen einer Datenansicht sind die folgenden Dimensionen und Metriken ve
    * Produkt: Garantie
    * Produkt: Garantie: Umsatz
 
-### Beispiele für gleiche Hits (Berichtsverhalten)
+### Beispiele für dieselben Ereignisse (Reporting-Verhalten)
 
-Unter Verwendung des obigen Hits zeigen die folgenden Tabellen Arbeitsbereich-Berichte mit einigen Dimensions- und Metrikkombinationen.
+Unter Verwendung des obigen Ereignisses zeigen die folgenden Tabellen Workspace-Berichte mit einigen Dimensions- und Metrikkombinationen.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ Wenn Sie nur über Garantieumsätze berichten möchten, sieht Ihr Projekt in etw
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA zieht für die Erstellung des Berichts diese Teile des Hits heran:
+CJA untersucht diese Teile des Ereignisses, um den Bericht zu generieren:
 
 ```diff
 {

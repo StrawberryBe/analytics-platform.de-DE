@@ -4,10 +4,10 @@ description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum näch
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -72,7 +72,7 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 * **Sitzung**: Läuft nach einer Sitzung ab. Standardgültigkeitsfenster.
 * **Person**: Läuft am Ende des Reporting-Fensters ab.
 * **Benutzerdefinierte Zeit**: Läuft nach einer festgelegten Zeitspanne ab (bis zu 90 Tage). Diese Ablaufoption ist nur für die Zuordnungsmodelle „Original“ und „Zuletzt verwendet“ verfügbar. Bei Verwendung der zeitbasierten Gültigkeitsdauer werden auch Werte vor dem Beginn des Reporting-Fensters (bis zu 90 Tage) berücksichtigt.
-* **Metrik**: Wenn diese Metrik in einem Treffer angezeigt wird, läuft der Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
+* **Metrik**: Wenn diese Metrik in einem Ereignis angezeigt wird, laufen Sie den beibehaltenen Wert in der Dimension sofort ab. Sie können jede beliebige Metrik als Gültigkeitsende für diese Dimension verwenden. Diese Gültigkeitsoption ist nur für die Zuordnungseinstellungen „Original“ und „Zuletzt verwendet“ verfügbar.
 
 ## [!UICONTROL Binding-Dimension]
 
