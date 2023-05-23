@@ -4,7 +4,7 @@ description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
+source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 62%
@@ -123,6 +123,8 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
 1. (Optional) Um die Liste weiter zu verfeinern, können Sie die Komponentenliste sortieren, wie hier beschrieben: [Sortieren der Komponentenliste](#sort-the-component-list).
 
 ### Sortieren der Komponentenliste
+
+{{release-limited-testing-section}}
 
 1. (Optional) Wenden Sie alle Filter auf die Komponentenliste an, wie unter [Filtern der Komponentenliste](#filter-the-component-list).
 
