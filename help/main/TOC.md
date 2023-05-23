@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
+source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 98%
+source-wordcount: '899'
+ht-degree: 97%
 
 ---
 
@@ -192,6 +192,21 @@ ht-degree: 98%
 
 
 
++ Analytics-Dashboards {#cja-dashboards}
+   + [Analytics-Dashboards – Übersicht](../mobile-app/home.md)
+   + [Kuratoraufgaben](../mobile-app/curator.md)
+   + [Mobile-Scorecard erstellen](../mobile-app/create-scorecard.md)
+   + [Führungskräften die Nutzung von Dashboards ermöglichen](../mobile-app/set-up-execs.md)
+   + [Schnellstarthandbuch für ausführende Benutzer](../mobile-app/executive.md)
+
++ Geführte Analyse {#guided-analysis}
+   + [Überblick](../guided-analysis/overview.md)
+   + [Benutzeroberfläche](../guided-analysis/interface.md)
+   + Analysetypen {#analysis-types}
+      + [Überblick](../guided-analysis/analysis-types/overview.md)
+      + [Trichter](../guided-analysis/analysis-types/funnel.md)
+      + [Trends](../guided-analysis/analysis-types/trends.md)
+      + [Benutzerwachstum](../guided-analysis/analysis-types/user-growth.md)
 
 + Komponenten {#cja-components}
    + [Komponentenübersicht](../components/overview.md)
@@ -259,13 +274,6 @@ ht-degree: 98%
 
 
 
-
-+ Analytics-Dashboards {#cja-dashboards}
-   + [Analytics-Dashboards – Übersicht](../mobile-app/home.md)
-   + [Kuratoraufgaben](../mobile-app/curator.md)
-   + [Mobile-Scorecard erstellen](../mobile-app/create-scorecard.md)
-   + [Führungskräften die Nutzung von Dashboards ermöglichen](../mobile-app/set-up-execs.md)
-   + [Schnellstarthandbuch für ausführende Benutzer](../mobile-app/executive.md)
 
 + Report Builder {#cja-reportbuilder}
    + [Übersicht über Report Builder](../report-builder/report-buider-overview.md)
