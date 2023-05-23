@@ -4,10 +4,10 @@ description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für 
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
+source-git-commit: 3b98047d7ac04b370dc9c03300f75b7313e79e5a
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 62%
+source-wordcount: '1035'
+ht-degree: 57%
 
 ---
 
@@ -89,25 +89,25 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
 
 ### Durchsuchen der Komponentenliste
 
-1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](assets/components-icon.png) in der linken Leiste.
+1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste.
 
-1. Geben Sie im Suchfeld den Namen der Komponente ein, die Sie in Ihrem Projekt verwenden möchten.
+2. Geben Sie im Suchfeld den Namen der Komponente ein, die Sie in Ihrem Projekt verwenden möchten.
 
-   Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](assets/dimension-icon.png) orange sind, **Filter** ![Filtersymbol](assets/segment-icon.png) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](assets/date-range-icon.png) violett sind und **Metriken** ![Metriksymbol](assets/default-metric-icon.png) sind grün. Das Symbol Adobe ![Symbol &quot;Adobe&quot;](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an und das Symbol für den Taschenrechner ![Symbol &quot;Rechner&quot;](assets/calculated-metric-icon-created.png) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
+   Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) orange sind, **Filter** ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) violett sind und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün. Das Symbol Adobe ![Symbol &quot;Adobe&quot;](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an und das Symbol für den Taschenrechner ![Symbol &quot;Rechner&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
 
-1. Wählen Sie die Komponente aus, wenn sie in der Dropdown-Liste angezeigt wird.
+3. Wählen Sie die Komponente aus, wenn sie in der Dropdown-Liste angezeigt wird.
 
 ### Filtern der Komponentenliste
 
-1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](assets/components-icon.png) in der linken Leiste.
+1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste.
 
-1. Wählen Sie die **Filter** icon ![Symbol &quot;Datenwörterbuchfilter&quot;](assets/components-filter-icon.png).
+2. Wählen Sie die **Filter** icon ![Symbol &quot;Datenwörterbuchfilter&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
    Oder
 
    Geben Sie das Rautenzeichen (#) in das Suchfeld ein.
 
-1. Wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu filtern:
+3. Wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu filtern:
 
    | Option | Funktion |
    |---------|----------|
@@ -120,7 +120,7 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
    | [!UICONTROL **Alle anzeigen**] | Alle Komponenten anzeigen. Diese Option steht nur Admins zur Verfügung. |
    | [!UICONTROL **Nicht genehmigt**] | Nur Komponenten anzeigen, die von Admins noch nicht als genehmigt markiert wurden. Für Admins beim Identifizieren von Komponenten hilfreich, die überprüft und genehmigt werden müssen. Diese Option steht nur Admins zur Verfügung. |
 
-1. (Optional) Um die Liste weiter zu verfeinern, können Sie die Komponentenliste sortieren, wie hier beschrieben: [Sortieren der Komponentenliste](#sort-the-component-list).
+4. (Optional) Um die Liste weiter zu verfeinern, können Sie die Komponentenliste sortieren, wie hier beschrieben: [Sortieren der Komponentenliste](#sort-the-component-list).
 
 ### Sortieren der Komponentenliste
 
@@ -128,9 +128,9 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
 
 1. (Optional) Wenden Sie alle Filter auf die Komponentenliste an, wie unter [Filtern der Komponentenliste](#filter-the-component-list).
 
-1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](assets/components-icon.png) in der linken Leiste.
+2. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste.
 
-1. Wählen Sie die **Sortieren** icon ![Symbol &quot;Komponenten sortieren&quot;](assets/component-sort-icon.png)und wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu sortieren:
+3. Wählen Sie die **Sortieren** icon ![Symbol &quot;Komponenten sortieren&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)und wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu sortieren:
 
    {{components-sort-options}}
 

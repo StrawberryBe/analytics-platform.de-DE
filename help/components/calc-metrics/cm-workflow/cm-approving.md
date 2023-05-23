@@ -3,10 +3,10 @@ description: Im Manager für berechnete Metriken können Sie einen Arbeitsablauf
 title: Berechnete Metriken genehmigen
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '144'
-ht-degree: 100%
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,6 @@ So wird eine berechnete Metrik als genehmigt gekennzeichnet:
 1. Klicken Sie oben in der Verwaltungsaufgabe auf **[!UICONTROL Genehmigen]**.
 1. Entscheiden Sie, ob Sie die genehmigten berechneten Metriken für Ihre Organisation freigeben möchten.
 1. Klicken Sie auf **[!UICONTROL OK]**.
-1. Beachten Sie, dass in der Liste neben der berechneten Metrik ein Genehmigungssymbol angezeigt wird:  ![](assets/cm_approve_icon.png)
-
+1. Beachten Sie, dass in der Liste neben der berechneten Metrik ein Genehmigungssymbol angezeigt wird:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 1. Sie können auch auf **[!UICONTROL Nicht genehmigen]** klicken, um diese Metrik aus der Liste der genehmigten Metriken zu entfernen.
 1. Außerdem können Sie genehmigte Metriken herausfiltern, indem Sie auf **[!UICONTROL Filter anzeigen]** > **[!UICONTROL Weitere Filter]** > **[!UICONTROL Genehmigt]** klicken.

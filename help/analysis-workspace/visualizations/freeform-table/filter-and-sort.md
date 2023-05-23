@@ -3,10 +3,10 @@ description: Dokumentation, in der beschrieben wird, wie Tabellen in Analysis Wo
 title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 79%
+source-wordcount: '878'
+ht-degree: 78%
 
 ---
 
@@ -70,13 +70,13 @@ So filtern Sie Daten in Freiformtabellen:
 
 1. Wählen Sie [!UICONTROL **Anwenden**] aus, um die Daten zu filtern.
 
-   Das **Filtersymbol** ![Blaues Filtersymbol zur Filterung der Tabelle](assets/table-filter-blue-icon.png) wird angezeigt, wenn ein Filter auf die Tabelle angewendet wird.
+   Das **Filtersymbol** ![Blaues Filtersymbol zur Filterung der Tabelle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) wird angezeigt, wenn ein Filter auf die Tabelle angewendet wird.
 
 ## Tabellen sortieren
 
 Sie können die Daten einer Freiformtabelle nach jeder Spalte in Analysis Workspace sortieren, die entweder eine Dimension oder eine Metrik ist.
 
-Ein Pfeil-nach-unten-Symbol ![Pfeil nach unten zur Sortierung einer Tabellenspalte](assets/table-sort-arrow-icon.png) ist in der Kopfzeile der Spalte sichtbar, nach der die Daten derzeit sortiert sind.
+Ein Pfeil-nach-unten-Symbol ![Pfeil nach unten zur Sortierung einer Tabellenspalte](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) ist in der Kopfzeile der Spalte sichtbar, nach der die Daten derzeit sortiert sind.
 
 1. Klicken Sie in einer beliebigen Freiformtabelle in Analysis Workspace auf den Pfeil neben dem Namen der Dimension oder der Metrik.
 

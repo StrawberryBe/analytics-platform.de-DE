@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 68%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
 # Snippets
@@ -21,7 +21,7 @@ ht-degree: 68%
 
 ## Filterkriterien für Datenwörterbuch {#dd-filter-criteria}
 
-1. (Optional) Wählen Sie das Symbol **Filter** ![Datenwörterbuchfilter-Symbol](/help/components/data-dictionary/assets/data-dictionary-filter-icon.png) und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu filtern:
+1. (Optional) Wählen Sie das Symbol **Filter** ![Datenwörterbuchfilter-Symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu filtern:
 
    | Option | Funktion |
    |---------|----------|

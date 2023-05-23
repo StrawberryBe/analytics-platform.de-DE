@@ -2,10 +2,10 @@
 title: Filter verwalten
 description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalten.
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
-workflow-type: ht
-source-wordcount: '1094'
-ht-degree: 100%
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 99%
 
 ---
 
@@ -125,7 +125,7 @@ Freigeben eines Filters:
 
 1. Klicken Sie in der Toolbar für die Filterverwaltung auf **[!UICONTROL Freigeben]**.
 
-1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Freigabe]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](assets/share_icon.png)
+1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Freigabe]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. Sie können nach für Sie freigegebenen Filtern filtern, indem Sie „Filter“ > „Weitere Filter“ > „Für mich freigegeben“ verwenden.
 

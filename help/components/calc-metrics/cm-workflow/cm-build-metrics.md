@@ -3,16 +3,16 @@ description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, 
 title: Metriken erstellen
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '930'
-ht-degree: 100%
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 99%
 
 ---
 
 # Metriken erstellen
 
-Der Generator für berechnete Metriken bietet eine Arbeitsfläche, in der Sie Dimensionen, Metriken, Filter und Funktionen per Drag-and-Drop verschieben können, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungstool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
+Der Generator für berechnete Metriken bietet eine Arbeitsfläche, in der Sie Dimensionen, Metriken, Filter und Funktionen per Drag-and-Drop verschieben können, um benutzerdefinierte Metriken basierend auf Container-Hierarchielogik, Regeln und Operatoren zu erstellen. Mit diesem integrierten Entwicklungs-Tool können Sie einfache berechnete Metriken oder komplexe, erweiterte berechnete Metriken erstellen und speichern.
 
 Sie erreichen den Generator für berechnete Metriken auf verschiedene Arten:
 
@@ -21,7 +21,7 @@ Sie erreichen den Generator für berechnete Metriken auf verschiedene Arten:
 
 * Klicken Sie oben im [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) auf **[!UICONTROL + Hinzufügen]** oder
 
-* gehen Sie zu **[!UICONTROL Analytics]** > **[!UICONTROL Berichte]**, öffnen Sie einen beliebigen Bericht und klicken Sie auf das Metrikensymbol ![](assets/metrics_icon.png), um die Metrikenleiste aufzurufen. Klicken Sie dann auf **[!UICONTROL Hinzufügen]**.
+* gehen Sie zu **[!UICONTROL Analytics]** > **[!UICONTROL Berichte]**, öffnen Sie einen beliebigen Bericht und klicken Sie auf das Metrikensymbol ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg), um die Metrikenleiste aufzurufen. Klicken Sie dann auf **[!UICONTROL Hinzufügen]**.
 
 ![](assets/cm_builder_ui.png)
 
