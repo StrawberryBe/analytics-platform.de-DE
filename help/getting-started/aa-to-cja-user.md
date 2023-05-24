@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1450'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -76,9 +76,9 @@ Sie können [!UICONTROL Filter] ([!UICONTROL Segmente]) von [!DNL Customer Journ
 
 Zusätzlich zum geänderten Konzept der Segmente wurden auch Segment-Container aktualisiert.
 
-* **Treffer-Container sind jetzt [!UICONTROL Ereignis]-Container**. Die [!UICONTROL Ereignis] -Container können Sie die Besucherinformationen auf der Grundlage einzelner Ereignisse aufschlüsseln.
+* **Treffer-Container sind jetzt [!UICONTROL Ereignis]-Container**. Die [!UICONTROL Ereignis] -Container können Sie Personeninformationen auf der Grundlage einzelner Ereignisse aufschlüsseln.
 * **Besucher-Container sind jetzt [!UICONTROL Sitzungs]-Container**. Mit dem [!UICONTROL Sitzungs]-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden.
-* **Besucher-Container sind jetzt [!UICONTROL Person]-Container**. Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für einen Besucher innerhalb eines bestimmten Zeitraums.
+* **Besucher-Container sind jetzt [!UICONTROL Person]-Container**. Die [!UICONTROL Person] -Container enthält alle Sitzungen und Ereignisse für eine Person innerhalb des angegebenen Zeitraums.
 
 ## Änderungen am Konzept der berechneten Metriken
 
@@ -100,7 +100,7 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen am Konzept der Kundenattribute
 
-„Kundenattribute“ werden jetzt als „Profildatensätze“ bezeichnet. Profildatensätze enthalten Daten, die auf Ihre Besucher, Benutzer oder Kunden in den [!UICONTROL Ereignisdaten] angewendet werden. So können Sie beispielsweise CRM-Daten über Ihren Kunden hochladen. Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Jeder Datensatz, der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs.
+„Kundenattribute“ werden jetzt als „Profildatensätze“ bezeichnet. Profildatensätze enthalten Daten, die auf Ihre Personen, Benutzer oder Kunden im [!UICONTROL Ereignis] Daten. So können Sie beispielsweise CRM-Daten über Ihren Kunden hochladen. Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Jeder Datensatz, der in [!DNL Experience Platform] definiert ist, verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs.
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 

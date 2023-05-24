@@ -4,10 +4,10 @@ description: Erläuterung der Datenaufnahme in Customer Journey Analytics über 
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3587'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Identifizierungsobjekt](./assets/identification-field.png)
 
-   Dadurch erhält Ihr Schema Identifizierungsfähigkeiten. In Ihrem Fall möchten Sie Profile, die Ihre Website besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Daneben stehen auch noch viele weitere Attribute zum Tracken der Besucheridentifizierung zur Verfügung (z. B. Kunden-ID, Treueprogramm-ID).
+   Dadurch erhält Ihr Schema Identifizierungsfähigkeiten. In Ihrem Fall möchten Sie Profile, die Ihre Website besuchen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Es gibt viele weitere Attribute, mit denen Sie die Identifizierung Ihrer Person verfolgen können (z. B. Kunden-ID, Treueprogramm-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -265,7 +265,7 @@ Gehen Sie folgendermaßen vor, um die Adobe Experience Platform Web SDK-Erweiter
 
 Weitere Informationen finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=de).
 
-Richten Sie auch die Experience Cloud ID Service-Erweiterung ein, damit Sie die Experience Cloud-ID einfach verwenden können. Experience Cloud ID Service identifiziert Besucher und Besucherinnen in allen Adobe Experience Cloud-Lösungen.
+Richten Sie auch die Experience Cloud ID Service-Erweiterung ein, damit Sie die Experience Cloud-ID einfach verwenden können. Der Experience Cloud-ID-Dienst identifiziert Personen in allen Adobe Experience Cloud-Lösungen.
 
 Gehen Sie folgendermaßen vor, um die Experience Cloud ID Service-Erweiterung zu erstellen und zu konfigurieren:
 
@@ -285,7 +285,7 @@ Gehen Sie folgendermaßen vor, um die Experience Cloud ID Service-Erweiterung zu
 
 Datenelemente sind die Bausteine Ihres Datenwörterbuchs (oder Ihrer Data Map). Verwenden Sie Datenelemente zum Erfassen, Organisieren und Bereitstellen von Daten in Marketing- und Werbe-Tools. Datenelemente richten Sie in Ihren Tags ein, die aus Ihrer Datenschicht lesen und zur Bereitstellung von Daten in Adobe Experience Platform verwendet werden können.
 
-Es gibt verschiedene Arten von Datenelementen. Sie richten zunächst ein Datenelement ein, um den Namen der Seite zu erfassen, die sich Besucher und Besucherinnen auf Ihrer Website ansehen.
+Es gibt verschiedene Arten von Datenelementen. Sie richten zunächst ein Datenelement ein, um den Seitennamen zu erfassen, den Personen auf Ihrer Site anzeigen.
 
 Gehen Sie folgendermaßen vor, um ein Datenelement für den Seitennamen zu definieren:
 
@@ -449,7 +449,7 @@ Gehen Sie folgendermaßen vor, um Ihr Tag zu erstellen und zu veröffentlichen:
 
    ![Veröffentlichen – Bibliothek erstellen](./assets/build-library.png)
 
-Adobe Experience Platform-Tags unterstützen einfache bis komplexe Veröffentlichungs-Workflows, die auch Ihre Implementierung des Adobe Experience Platform Web SDK umfassen.
+Adobe Experience Platform-Tags unterstützen einfache bis komplexe Veröffentlichungs-Workflows, die auch Ihre Bereitstellung des Adobe Experience Platform Web SDK umfassen.
 
 Weitere Informationen finden Sie unter [Veröffentlichung – Überblick](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=de).
 

@@ -4,10 +4,10 @@ description: Details und Informationen zu allen Standardkomponenten, die Sie jed
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
-workflow-type: ht
-source-wordcount: '915'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ Diese erforderlichen Standardkomponenten werden standardmäßig jeder Datendatei
 | [!UICONTROL Quartal] | Dimension | Das Quartal, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Quartal im Datumsbereich und das letzte Dimensionselement das letzte Quartal im Datumsbereich. |
 | [!UICONTROL Jahr] | Dimension | Das Jahr, in dem ein bestimmtes Ereignis aufgetreten ist. Das erste Dimensionselement ist das erste Jahr im Datumsbereich und das letzte Dimensionselement das letzte Jahr im Datumsbereich. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Optionale Standardkomponenten {#optional}
 
@@ -53,7 +53,7 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
 | [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
 | [!UICONTROL Neue Sitzung] | Metrik | Die definierte erste Sitzung einer Person im Reporting-Zeitraum. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
-| [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Die Dimension [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von Unique Visitors in Customer Journey Analytics.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen eines Filters für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu filtern.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |
+| [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Die [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von Einzelpersonen in CJA.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen eines Filters für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu filtern.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |
 | [!UICONTROL Personen-ID-Namespace] | Dimension | Aus welchem ID-Typ die [!UICONTROL Personen-ID] besteht. Beispiele: `email address`, `cookie ID`, `Analytics ID` usw. |
 | [!UICONTROL Quartal des Jahres] | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Sitzung wiederholen] | Metrik | Die Anzahl der Sitzungen, die nicht die allererste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
@@ -66,4 +66,4 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Person] zusammen. |
 | [!UICONTROL Wochenende]/[!UICONTROL Wochentag] | Zeitunterteilungsdimension | Wochenende oder Wochentag |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

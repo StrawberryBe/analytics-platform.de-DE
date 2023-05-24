@@ -3,10 +3,10 @@ title: Dynamische und statische Dimensionselemente in Freiformtabellen im Vergle
 description: Interaktion mit dynamischen und statischen Dimensionselementen in Tabellen
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -52,5 +52,5 @@ Dimensionselemente aus verschiedenen Dimensionen können derselben Tabelle hinzu
 
 Dynamische und statische Zeilen verhalten sich in der Freiform-Gesamtzeile unterschiedlich. Standardmäßig:
 
-* Dynamische Zeilen werden Server-seitig summiert und deduplizieren Metriken wie „Besuche“ oder „Besucher“.
+* Dynamische Zeilen werden serverseitig summiert und deduplizieren Metriken wie Besuche oder Personen
 * Statische Zeilen werden Client-seitig summiert und deduplizieren **keine** Metriken. Um die Gesamtzeile Server-seitig zu berechnen, ändern Sie die Zeileneinstellung auf **Gesamtsumme anzeigen**. [Weitere Infos](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=de)

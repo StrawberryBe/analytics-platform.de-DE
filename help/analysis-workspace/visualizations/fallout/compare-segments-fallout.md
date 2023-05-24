@@ -4,10 +4,10 @@ keywords: Fallout und Filter;Filter in Fallout-Analyse;Filter in Fallout verglei
 title: Anwenden von Filtern in der Fallout-Analyse
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -17,10 +17,10 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 >[!IMPORTANT]
 >
->Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einem Besucherkontext-Fallout müssen Filter, die als Checkpoints verwendet werden, besuchs- oder ereignisbasierte Filter sein. Bei einem besuchskontextbezogenen Fallout müssen Filter, die als Checkpoint verwendet werden, ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnmeldung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, z. B.:
+>Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer personenbezogenen Fallout-Funktion müssen Filter, die als Checkpoints verwendet werden, besuchs- oder ereignisbasierte Filter sein. Bei einem besuchskontextbezogenen Fallout müssen Filter, die als Checkpoint verwendet werden, ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnmeldung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, z. B.:
 
-* Verwenden eines besucherbasierten Filters als Touchpoint innerhalb einer auf den Besucherkontext bezogenen Fallout-Visualisierung
-* Verwenden eines besucherbasierten Filters als Touchpoint innerhalb einer auf den Besuchskontext bezogenen Fallout-Visualisierung
+* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Personen
+* Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Besuche
 * Verwenden eines besuchsbasierten Filters als Touchpoint innerhalb einer auf den Besuchskontext bezogenen Fallout-Visualisierung
 
 ## Erstellen eines Filters aus einem Touchpoint {#section_915E8FBF35CD4F34828F860C1CCC2272}

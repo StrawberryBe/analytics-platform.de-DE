@@ -4,10 +4,10 @@ description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3150'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -160,7 +160,7 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 |  | Vergleich anzeigen | Anzeigen von Vergleichsdaten. Wenn diese Option ausgeblendet ist, werden sowohl das Vergleichszeilendiagramm als auch die Objekte der Zusammenfassungsänderung ausgeblendet. |
 |  | Zahlenwert-Optionen | Im Abschnitt [!UICONTROL **Zusammenfassung der Schlüsselmetriken**] <ul><li>Prozentuale Veränderung anzeigen</li><li>Rohdifferenz anzeigen</li>Rohdifferenz zwischen dem Gesamtwert der Metrik im primären Datumsbereich und im sekundären Datumsbereich</ul> |
 | **[Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** |  |  |
-|  | Container | Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Die Standardeinstellung lautet „Besucher“. Mithilfe dieser Einstellungen können Sie Einblicke in Besucheraktivitäten auf der Besucherebene (besuchsübergreifend) erhalten oder die Analyse auf einen einzelnen Besuch einschränken. <p>Die folgenden Optionen sind verfügbar:</p> <ul><li>Besuch</li><li>Besucher</li></ul> |
+|  | Container | Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Die Standardeinstellung lautet „Besucher“. Diese Einstellungen helfen Ihnen dabei, die Interaktion der Person auf der Ebene der Person (sitzungsübergreifend) zu verstehen oder die Analyse auf eine einzelne Sitzung zu beschränken. <p>Die folgenden Optionen sind verfügbar:</p> <ul><li>Besuch</li><li>Besucher</li></ul> |
 | **[Fluss](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** |  |  |
 |  | Container | Im Abschnitt [!UICONTROL **Fluss**] <ul><li>Besuch</li><li>Besucher</li></ul> |
 |  | Beschriftungen umbrechen | Die Beschriftungen der Flusselemente werden üblicherweise aus Platzgründen auf dem Bildschirm abgeschnitten. Aktivieren Sie dieses Kontrollkästchen, um die gesamte Beschriftung anzuzeigen. Standard = deaktiviert. |
@@ -172,7 +172,7 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 |  | 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. <p>Weitere Informationen finden Sie unter [Balken und Balken gestapelt](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histogramm](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Anzahl der Buckets | Wählen Sie die Anzahl der Datenbereiche (Buckets) in der Visualisierung aus. Maximal 50 Buckets sind möglich. <p>Weitere Informationen finden Sie unter [Histogramm](/help/analysis-workspace/visualizations/histogram.md).</p> |
-|  | Zählmethode | Wählen Sie aus den folgenden Optionen: <ul><li>Treffer</li><li>Besuch</li><li>Besucher</li></ul> <p>Wenn Sie beispielsweise in Verbindung mit Seitenansichten verwenden, können Sie Seitenansichten pro Besucher, Seitenansichten für Besuche oder Seitenansichten pro Ereignis auswählen. Für Treffer wird in einer Freiformtabelle „Vorkommen“ als Metrik der Y-Achse verwendet.</p> |
+|  | Zählmethode | Wählen Sie aus den folgenden Optionen: <ul><li>Treffer</li><li>Besuch</li><li>Besucher</li></ul> <p>Wenn Sie beispielsweise in Verbindung mit Seitenansichten verwenden, können Sie Seitenansichten pro Person, Seitenansichten für Besuche oder Seitenansichten pro Ereignis auswählen. Für Treffer wird in einer Freiformtabelle „Vorkommen“ als Metrik der Y-Achse verwendet.</p> |
 | **[Änderung der Zusammenfassung](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Wert | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Prozentuale Veränderung</li><li>Rohdifferenz</li></ul> |
 |  | Prozentsatz | Zeigt Werte in Prozent für die Visualisierungen der Zusammenfassungsänderung an. |

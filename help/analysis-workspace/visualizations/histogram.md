@@ -3,10 +3,10 @@ description: Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu
 title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ So erstellen Sie ein Histogramm:
 >
 >Histogramme unterstützen nur Standardmetriken, keine berechneten Metriken.
 
-Hier haben wir die Metrik „Seitenansichten pro Unique Visitors“ verwendet. Das erste Paket (links) bezieht sich auf 1 Seitenansicht pro Unique Visitor, das zweite auf 2 Seitenansichten usw.
+Hier haben wir die Metrik „Seitenansichten pro Unique Visitors“ verwendet. Der erste (linke) Behälter entspricht 1 Seitenansicht pro Einzelperson, der zweite Behälter zwei Seitenansichten usw.
 
 ![](assets/histogram2.png)
 
@@ -41,7 +41,7 @@ Wenn Sie die Einstellungen für Ihr Histogramm ändern möchten, klicken Sie auf
 | Startpaket | Bestimmt, mit welchem Paket das Histogramm beginnt. Die Standardeinstellung lautet 1. Sie können Startwerte von null bis unendlich festlegen, jedoch keine negativen Zahlen. |
 | Metrische Behälter | Hiermit können Sie die Anzahl der Datumsbereiche (Behälter) erhöhen/verringern. Maximal 50 Buckets sind möglich. |
 | Metrische Behältergröße | Hiermit können Sie die Größe der einzelnen Behälter festlegen. So könnten Sie zum Beispiel die Behältergröße von 1 Seitenansicht zu 2 Seitenansichten ändern. |
-| Zählmethode | Sie können als Typ [Besucher](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de), [Besuch](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de) oder „Treffer“ auswählen, Zum Beispiel Seitenansichten pro Besuch oder Seitenansichten pro Besucher oder Seitenansichten pro Ereignis. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet. |
+| Zählmethode | Sie können als Typ [Besucher](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de), [Besuch](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de) oder „Treffer“ auswählen, Zum Beispiel Seitenansichten pro Besuch oder Seitenansichten pro Person oder Seitenansichten pro Ereignis. Für Hits wird „Vorkommen“ in der Freiformtabelle als Metrik der Y-Achse verwendet. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 

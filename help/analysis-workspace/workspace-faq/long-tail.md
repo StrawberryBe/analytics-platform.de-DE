@@ -3,7 +3,7 @@ title: Dimensionselement „Longtail“
 description: Erläutert das Dimensionselement „Longtail“ und warum es in Berichten angezeigt wird.
 feature: FAQ
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-source-git-commit: 8618690187a0cc35fd59cc8bef9ad1147cadf8b0
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 31%
@@ -20,7 +20,7 @@ CJA verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombin
 
 Wenn ein einzelner Server eine Ergebnismenge aggregiert, die über einem Größenschwellenwert liegt, werden die Ergebnisse abgeschnitten, bevor sie zurückgesendet werden. Dadurch bleiben der Netzwerk-Traffic und die Aggregation innerhalb von Grenzen, um eine schnelle Berichterstellung zu ermöglichen.  Da die Ergebnisse nur mit der Ansicht der eigenen Daten abgeschnitten werden, ist es möglich (auch wenn es unwahrscheinlich ist), dass die in Analysis Workspace angezeigten Elemente falsche Metrikwerte aufweisen.
 
-Der Server wählt basierend auf der für die Sortierung verwendeten Metrik aus, welche Elemente verworfen werden sollen.  Wenn es sich um eine berechnete Metrik handelt, ist es möglicherweise nicht offensichtlich, wie sie sortiert wird. Daher sind die Ergebnisse möglicherweise weniger genau.  Beispielsweise werden bei der Berechnung von &quot;Umsatz pro Besucher&quot;der Gesamtumsatz und die Gesamtanzahl der Besucher zurückgegeben und aggregiert, bevor die Division durchgeführt wird. Daher wählt jeder Knoten häufig, welche Elemente entfernt werden sollen, ohne wirklich zu wissen, wie sich ihre Ergebnisse auf die Gesamtsortierung auswirken.
+Der Server wählt basierend auf der für die Sortierung verwendeten Metrik aus, welche Elemente verworfen werden sollen.  Wenn es sich um eine berechnete Metrik handelt, ist es möglicherweise nicht offensichtlich, wie sie sortiert wird. Daher sind die Ergebnisse möglicherweise weniger genau.  Beispielsweise werden bei der Berechnung von &quot;Umsatz pro Person&quot;der Gesamtbetrag der Einnahmen und die Gesamtzahl der Personen zurückgegeben und aggregiert, bevor die Division durchgeführt wird. Daher wählt jeder Knoten häufig, welche Elemente entfernt werden sollen, ohne wirklich zu wissen, wie sich ihre Ergebnisse auf die Gesamtsortierung auswirken.
 
 ## Unterschiede zwischen „Longtail“ und „Low-Traffic“
 

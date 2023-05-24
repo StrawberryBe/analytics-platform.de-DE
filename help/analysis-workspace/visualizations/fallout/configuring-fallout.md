@@ -3,16 +3,16 @@ description: Erfahren Sie, wie Sie die Touchpoints angeben, um eine mehrdimensio
 title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 87%
+ht-degree: 71%
 
 ---
 
 # Fallout-Visualisierung konfigurieren
 
-Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Ein Touchpoint ist im Allgemeinen eine Seite auf Ihrer Website. Touchpoints sind jedoch nicht auf Webseiten eingeschränkt. So können Sie zum Beispiel Ereignisse (z. B. Einheiten) sowie Unique Visitors und erneute Besuche hinzufügen. Auch Dimensionen können Sie hinzufügen (wie Kategorie, Browsertyp oder interner Suchbegriff).
+Sie können die Touchpoints angeben, um eine mehrdimensionale Fallout-Sequenz zu erstellen. Ein Touchpoint ist im Allgemeinen eine Seite auf Ihrer Website. Touchpoints sind jedoch nicht auf Webseiten eingeschränkt. Sie können beispielsweise Ereignisse wie Einheiten sowie Unique Users und Wiederkehrbesuche hinzufügen. Auch Dimensionen können Sie hinzufügen (wie Kategorie, Browsertyp oder interner Suchbegriff).
 
 Sie können sogar Filter innerhalb eines Touchpoints hinzufügen. Vielleicht möchten Sie zum Beispiel Filter vergleichen, etwa iOS- und Android-Benutzer. Wenn Sie die gewünschten Filter per Drag-and-Drop an den oberen Rand des Fallouts ziehen, werden Informationen über diese Filter zum Fallout-Bericht hinzugefügt. Wenn Sie möchten, dass nur diese Filter angezeigt werden, können Sie die Grundlinie „Alle Besuche“ entfernen.
 
@@ -26,7 +26,7 @@ Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und 
 
    ![](assets/fallout1.png)
 
-   Wenn Sie den Mauszeiger über einen Touchpoint halten, werden der Fallout und andere Informationen zu dieser Ebene (wie der Name des Touchpoints, die Anzahl der Besucher an diesem Punkt) sowie die Erfolgsrate für diesen Touchpoint angezeigt (und Sie können die Erfolgsrate mit anderen Touchpoints vergleichen).
+   Bewegen Sie den Mauszeiger über einen Touchpoint, um den Fallout und andere Informationen zu dieser Ebene anzuzeigen, z. B. den Namen des Touchpoints, die Anzahl der Personen an diesem Punkt und die Erfolgsrate für diesen Touchpoint (sowie den Vergleich der Erfolgsrate mit anderen Touchpoints).
 
    Die umkreisten Zahlen im grauen Abschnitt der Leiste zeigen den Fallout zwischen Touchpoints an (nicht den gesamten Fallout bis zu diesem Punkt). Der Touchpoint-Prozentsatz zeigt den erfolgreichen Fall-through vom vorherigen Schritt zum aktuellen Schritt im Fallout-Bericht an.
 
@@ -63,7 +63,7 @@ Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und 
 
 | Einstellung | Beschreibung |
 |--- |--- |
-| Fallout-Container <ul><li>Besuch</li><li>Besucher.</li></ul> | Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Die Standardeinstellung lautet „Besucher“.  Mithilfe dieser Einstellungen können Sie Einblicke in Besucheraktivitäten auf der Besucherebene (besuchsübergreifend) erhalten oder die Analyse auf einen einzelnen Besuch einschränken. |
+| Fallout-Container <ul><li>Besuch</li><li>Besucher</li></ul> | Ermöglicht Ihnen den Wechsel zwischen Besuch und Besucher zur Analyse der Personenpfade. Die Standardeinstellung lautet „Besucher“.  Mithilfe dieser Einstellungen können Sie die Interaktion der Person auf der Personenebene (besuchsübergreifend) nachvollziehen oder die Analyse auf einen einzelnen Besuch beschränken. |
 
 Wenn Sie **mit der rechten Maustaste auf einen Touchpoint klicken**, werden die folgenden Optionen angezeigt:
 
@@ -72,6 +72,6 @@ Wenn Sie **mit der rechten Maustaste auf einen Touchpoint klicken**, werden die 
 | Trend-Touchpoint | Zeigt Trenddaten für einen Touchpoint in einem Kantengraphen mit einigen vorab definierten Anomalieerkennungsdaten an. |
 | Trend-Touchpoint (%) | Trends für den gesamten Fallout-Prozentsatz. |
 | Trenderstellung aller Touchpoints (%) | Trends für alle Touchpoint-Prozentsätze im Fallout (außer „Alle Besuche“, falls vorhanden) im selben Diagramm. |
-| Aufschlüsselung des Fallthrough an diesem Touchpoint | Zeigt an, was Besucher zwischen zwei Touchpoints (diesem und dem nächsten Touchpoint) getan haben, wenn sie sich zum nächsten Touchpoint fortbewegt haben. Diese Option erstellt eine Freiformtabelle, die Ihre Dimensionen enthält. Dimensionen und andere Elemente der Tabelle können Sie austauschen. |
+| Aufschlüsselung des Fallthrough an diesem Touchpoint | Sehen Sie sich an, welche Personen zwischen zwei Touchpoints (diesem Touchpoint und dem nächsten Touchpoint) ausgeführt haben, wenn sie zum nächsten Touchpoint übergegangen sind. Diese Option erstellt eine Freiformtabelle, die Ihre Dimensionen enthält. Dimensionen und andere Elemente der Tabelle können Sie austauschen. |
 | Aufschlüsselung des Fallout an diesem Touchpoint | Zeigt an, was Besucher, die nicht im Trichter verblieben sind, unmittelbar nach dem ausgewählten Schritt getan haben. |
 | Erstellen eines Filters aus einem Touchpoint | Erstellen Sie einen neuen Filter aus dem ausgewählten Touchpoint. |

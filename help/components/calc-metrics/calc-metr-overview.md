@@ -3,10 +3,10 @@ title: Übersicht über berechnete Metriken
 description: Erfahren Sie mehr über gefilterte Metriken, die zum Zeitpunkt der Berichtserstellung abgeleitet werden.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: e98b21824789600c7729cce99d7592011ad18577
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Berechnete und erweiterte berechnete (abgeleitete) Metriken sind benutzerdefinie
 Sie können
 
 * gefilterte Metriken erstellen, die zur Berichtslaufzeit abgeleitet werden, ohne die Implementierung ändern zu müssen. Diese Metriken können historisch angezeigt werden, da sie auf Filtern basieren.
-* (Nur erweiterte berechnete Metriken) nach Metriken filtern. Sie können beispielsweise eine Metrik für „Neue Besucher“ erstellen, mit der die Personen gezählt werden, für die dies die erste Sitzung ist.
+* (Nur erweiterte berechnete Metriken) nach Metriken filtern. Sie können beispielsweise eine Metrik für &quot;Neue Personen&quot;mit einer Anzahl von Personen erstellen, für die dies die erste Sitzung ist.
 * (Nur erweiterte berechnete Metriken) Statistische Funktionen miteinbeziehen, um Daten besser beschreiben zu können. Sie könnten beispielsweise die Elemente in einem Bericht zählen oder die Anzahl der Standardabweichungen für jedes Element addieren.
 
 ## Vergleich zwischen berechneten Metriken und erweiterten berechneten Metriken
@@ -38,7 +38,7 @@ Hier sehen Sie einen Vergleich zwischen den jeweiligen Möglichkeiten, die berec
 
 | Tool | Funktionen |
 |--- |--- |
-| Generator für berechnete Metriken | <ul><li>Erstellen Sie einfache berechnete Metriken oder erweiterte berechnete Metriken mit erweiterten Zuordnungsmodellen.</li><li>Filter inline zu Metrik-Formeln hinzufügen.</li><li>Filter in einem Bericht vergleichen. (beispielsweise lokale Besucher mit internationalen Besuchern vergleichen.)</li><li>Statistische Funktionen verwenden.</li><li> Detaillierte Metrikbeschreibungen angeben (was die Metrik macht, wo sie verwendet werden sollte, wo sie NICHT verwendet werden sollte.)</li><li>Definitionen in neue Metriken kopieren.</li><li>Eine Inline-Metrikvorschau bereitstellen.</li><li>Die Metrikpolarität festlegen, die angibt, ob es gut oder schlecht ist, wenn ein bestimmtes benutzerspezifisches Ereignis (eine Metrik) steigt.</li><li>Metriken taggen.</li></ul> |
+| Generator für berechnete Metriken | <ul><li>Erstellen Sie einfache berechnete Metriken oder erweiterte berechnete Metriken mit erweiterten Zuordnungsmodellen.</li><li>Filter inline zu Metrik-Formeln hinzufügen.</li><li>Filter in einem Bericht vergleichen. Vergleichen Sie beispielsweise lokale und internationale Personen.</li><li>Statistische Funktionen verwenden.</li><li> Detaillierte Metrikbeschreibungen angeben (was die Metrik macht, wo sie verwendet werden sollte, wo sie NICHT verwendet werden sollte.)</li><li>Definitionen in neue Metriken kopieren.</li><li>Eine Inline-Metrikvorschau bereitstellen.</li><li>Die Metrikpolarität festlegen, die angibt, ob es gut oder schlecht ist, wenn ein bestimmtes benutzerspezifisches Ereignis (eine Metrik) steigt.</li><li>Metriken taggen.</li></ul> |
 | Manager für berechnete Metriken | <ul><li>Metriken für andere freigeben.</li><li>Metriken genehmigen und kuratieren.</li><li>Metriken organisieren (taggen), damit sie von Benutzern gefunden werden können.</li><li>Metriken löschen.</li><li>Metriken umbenennen.</li></ul> |
 | API für berechnete Metriken | Teil des Customer Journey Analytics-API-Satzes. |
 

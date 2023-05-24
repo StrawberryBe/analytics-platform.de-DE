@@ -4,10 +4,10 @@ description: Das Konzept der „Wiederholung“ in Cross-Channel Analytics
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 89%
 
 ---
 
@@ -17,10 +17,10 @@ Cross-Channel Analytics führt zwei Durchläufe der Daten für eine bestimmte Ve
 
 * **Live-Stitching**: Die kanalübergreifende Analyse versucht, jedes Ereignis beim Eintreten zuzuordnen. Neue Geräte im Datensatz, die noch nie angemeldet wurden, werden in der Regel nicht auf dieser Ebene zugeordnet. Bereits erkannte Geräte werden sofort zugeordnet.
 * **Wiederholen**: CCA wiederholt Daten basierend auf eindeutigen Kennungen, die es gelernt hat. In dieser Phase werden neue Geräte in der Verbindung zugeordnet. Adobe bietet zwei Wiederholungsintervalle:
-   * Täglich: Die Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Besucher müssen sich jedoch an dem Tag authentifizieren, an dem sie Ihre Website besuchen.
+   * Täglich: Die Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Personen müssen sich jedoch am Tag authentifizieren, an dem sie Ihre Site besuchen.
    * Wöchentlich: Die Daten werden einmal pro Woche mit einem 7-Tage-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Daten, die weniger als eine Woche alt sind, werden jedoch nicht zugeordnet.
 
-Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich innerhalb eines gegebenen Lookback-Fensters authentifiziert haben, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
+Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Eine Person muss sich in einem gegebenen Lookback-Fenster authentifizieren, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
 
 ## Schritt 1: Echtzeit-Zuordnung
 

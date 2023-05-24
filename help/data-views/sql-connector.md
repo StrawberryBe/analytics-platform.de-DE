@@ -6,7 +6,7 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 829f7556c731ce55ccf1e03e2dea69b12e4501e4
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '2890'
 ht-degree: 6%
@@ -267,7 +267,7 @@ Sie können:
 
 #### Zählung von Unterschieden
 
-Aufgrund der Art und Weise, wie CJA funktioniert, können Sie als einzige Dimension eine exakte eindeutige Anzahl erhalten, ist die `adobe_personid` Dimension. Die folgenden SQL-Anweisungen `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` gibt den Wert der Standard-Besuchermetrik zurück, die der Anzahl der unterschiedlichen Personen entspricht. Bei anderen Dimensionen wird eine ungefähre eindeutige Anzahl zurückgegeben.
+Aufgrund der Art und Weise, wie CJA funktioniert, können Sie als einzige Dimension eine exakte eindeutige Anzahl erhalten, ist die `adobe_personid` Dimension. Die folgenden SQL-Anweisungen `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` gibt den Wert der Standard-Personenmetrik zurück, die der Anzahl unterschiedlicher Personen entspricht. Bei anderen Dimensionen wird eine ungefähre eindeutige Anzahl zurückgegeben.
 
 #### Bedingte Metriken
 

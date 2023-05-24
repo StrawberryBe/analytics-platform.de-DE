@@ -2,10 +2,10 @@
 title: Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 74%
+ht-degree: 71%
 
 ---
 
@@ -40,8 +40,8 @@ In der folgenden Tabelle wird die Terminologie für die verschiedenen Arten von 
 | Berichtszeitverarbeitung | Logik, die zum Zeitpunkt der Berichtsausführung ausgeführt wird. | Diese Logik kann zur Berichtslaufzeit auf zerstörungsfreie Weise auf zukünftige und historische Daten angewendet werden. |
 | Logik auf Trefferebene | Logik, die Zeile für Zeile angewendet wird. | Beispiele: Verarbeitungsregeln, VISTA, bestimmte Regeln von Marketing-Kanälen. |
 | Logik auf Besuchsebene | Logik, die auf Besuchsebene angewendet wird. | Beispiele: Besuchs- und Sitzungsdefinition. |
-| Logik auf Besucherebene | Logik, die auf Besucherebene angewendet wird. | Beispiel: Geräteübergreifende/kanalübergreifende Besucherzuordnung. |
-| Segmentlogik (Filterlogik) | Auswertung der Segmentregeln für Ereignis/Besuch/Besucher (Ereignis/Sitzung/Person) (Filter). | Beispiel: Personen, die rote Schuhe gekauft haben. |
+| Logik auf Besucherebene | Logik, die auf der Personenebene angewendet wird. | Beispiel: Geräteübergreifende/kanalübergreifende Personenzuordnung. |
+| Segmentlogik (Filterlogik) | Auswertung der Segmentregeln für Ereignis/Besuch/Person (Ereignis/Sitzung/Person) (Filter). | Beispiel: Personen, die rote Schuhe gekauft haben. |
 | Berechnete Metriken | Auswertung benutzerdefinierter Metriken, die von Kunden erstellt wurden und auf komplexen Formeln, einschließlich Segmenten und Filtern, basieren können. | Beispiel: Anzahl der Personen, die rote Schuhe gekauft haben. |
 | Attributionslogik | Logik zur Berechnung der Attribution. | Beispiel: eVar-Persistenz. |
 | Komponenteneinstellungen | Anwenden von Anpassungen auf Metriken oder Dimensionen, wie Attribution, Verhalten, Format und andere | Beispiel: Wertesammlung zum Kombinieren numerischer Werte basierend auf einem Bereich |
@@ -49,7 +49,7 @@ In der folgenden Tabelle wird die Terminologie für die verschiedenen Arten von 
 
 {style="table-layout:auto"}
 
-Im Laufe der Zeit wurde die Flexibilität von Adobe Analytics und jetzt Customer Journey Analytics verbessert, indem die Ausführung der Logik für Daten auf Besuchs- und Besucherebene zur Berichtslaufzeit ermöglicht wurde.
+Im Laufe der Zeit haben Adobe Analytics und jetzt Customer Journey Analytics ihre Flexibilität verbessert, indem sie die Ausführung der Datendlogik auf Besuchs- und Personenebene zur Berichtslaufzeit ermöglichen.
 
 ## Typen von Datenverarbeitung {#types}
 

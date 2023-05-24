@@ -4,10 +4,10 @@ title: Flussvisualisierung konfigurieren
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 89%
+ht-degree: 86%
 
 ---
 
@@ -54,7 +54,7 @@ Mit Flussvisualisierungen können Sie die Journey nachvollziehen, die von einem 
    | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf jene, die mit dem ersten/letzten Vorkommen einer Dimension/eines Elements/einer Metrik beginnen/enden. Eine ausführlichere Erläuterung finden Sie im folgenden Abschnitt unter dem Titel „Beispielszenario für die Beschränkung auf das erste/letzte Auftreten“. |
    | **[!UICONTROL Anzahl der Spalten]** | Gibt an, wie viele Spalten Sie in Ihrem Flussdiagramm anzeigen möchten. |
    | **[!UICONTROL Erweiterte Elemente pro Spalte]** | Wie viele Elemente Sie in jeder Spalte anzeigen möchten. |
-   | **[!UICONTROL Fluss-Container]** | <ul><li>Besuch</li><li>Besucher.</li></ul> Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Mithilfe dieser Einstellungen können Sie Einblicke in Besucheraktivitäten auf der Besucherebene (besuchsübergreifend) erhalten oder die Analyse auf einen einzelnen Besuch einschränken. |
+   | **[!UICONTROL Fluss-Container]** | <ul><li>Besuch</li><li>Besucher</li></ul> Ermöglicht Ihnen den Wechsel zwischen Besuch und Besucher zur Analyse der Personenpfade. Mithilfe dieser Einstellungen können Sie die Interaktion der Person auf der Personenebene (besuchsübergreifend) nachvollziehen oder die Analyse auf einen einzelnen Besuch beschränken. |
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 

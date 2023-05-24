@@ -1,13 +1,13 @@
 ---
 title: Überblick über die Cross-Channel-Analyse
-description: Schlüssel für Besucher-IDs aus mehreren Datensätzen zum Zuordnen von Besuchern erneut verwenden.
+description: Schlüssel von Personen-IDs aus mehreren Datensätzen neu eingeben, um Personen zuzuordnen.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -32,9 +32,9 @@ Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attributi
 
 Bevor Sie die Cross-Channel-Analyse verwenden, sollten Sie sicherstellen, dass Ihr Unternehmen folgende Voraussetzungen erfüllt:
 
-* Ein Datensatz in Adobe Experience Platform muss über zwei Spalten verfügen, mit denen Besucher identifiziert werden können:
-   * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde.
-   * Eine **vorübergehende ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispiel: ein/e gehashte/r Benutzername oder E-Mail-Adresse, wenn sich ein Besucher authentifiziert. Sie können praktisch jede beliebige Kennung verwenden, sofern sie mindestens einmal für dasselbe Ereignis als beständige ID vorkommt.
+* Ein Datensatz in Adobe Experience Platform muss über zwei Spalten verfügen, mit denen Personen identifiziert werden können:
+   * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Personen-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde.
+   * Eine **vorübergehende ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispiel: ein Hash-Benutzername oder eine E-Mail-Adresse, sobald sich eine Person authentifiziert. Sie können praktisch jede beliebige Kennung verwenden, sofern sie mindestens einmal für dasselbe Ereignis als beständige ID vorkommt.
 * Ein anderer Datensatz, beispielsweise Callcenter-Daten, der in jeder Zeile eine vorübergehende ID enthält. Diese Personen-ID muss ähnlich wie die vorübergehende ID in dem anderen Datensatz formatiert sein.
 * Mit dieser Funktion können Sie Datensätze zuordnen und somit beispielsweise authentifizierte und nicht authentifizierte Benutzerdaten zusammenführen. Vergewissern Sie sich vor dem Zusammenführen von Datensätzen, dass Sie die geltenden Gesetze und Vorschriften einhalten, wie etwa das Einholen der erforderlichen Berechtigungen der Endanwender.
 

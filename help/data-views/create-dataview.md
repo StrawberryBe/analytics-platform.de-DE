@@ -4,10 +4,10 @@ description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht 
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Gibt den Namen der Container für die Datenansicht an. Container-Namen werden h�
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL Container-Name für Person] | [!UICONTROL Person] (Standard). Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Besucher innerhalb eines bestimmten Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
+| [!UICONTROL Container-Name für Person] | [!UICONTROL Person] (Standard). Die [!UICONTROL Person] enthält alle Sitzungen und Ereignisse für Personen innerhalb des festgelegten Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
 | [!UICONTROL Container-Name für Sitzung] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Container-Name für Ereignis] | [!UICONTROL Ereignis] (Standard). Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
 

@@ -4,10 +4,10 @@ description: Verwenden Sie Analytics Source Connector, um Verarbeitungsregeln f�
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ Die Marketing-Kanal-Einstellungen funktionieren bei Platform-Daten und Report Su
 
    ![Last Touch-Kanal überschreiben](../assets/override-last-touch-channel.png)
 
-* **Ablauf des Marketing-Kanals**: Mit dieser Einstellung für den Interaktionszeitraum wird der Zeitraum der Inaktivität festgelegt, bevor ein Besucher einen neuen First Touch-Kanal in den Report Suite-Daten abrufen kann. Platform verwendet eigene Attributionseinstellungen, sodass diese Einstellung in Customer Journey Analytics vollständig ignoriert wird.
+* **Marketing-Kanalablauf**: Diese Einstellung für den Interaktionszeitraum bestimmt den Zeitraum der Inaktivität, bevor eine Person einen neuen Erstkontakt-Kanal in den Report Suite-Daten erhalten kann. Platform verwendet eigene Attributionseinstellungen, sodass diese Einstellung in Customer Journey Analytics vollständig ignoriert wird.
 
    ![Marketing-Kanalablauf](../assets/marketing-channel-expiration.png)
 
@@ -71,4 +71,4 @@ Da sich die Architektur von Adobe Experience Platform von einer herkömmlichen A
 * Überprüfen Sie, ob für Ihre Verbindung dieselbe Report Suite wie für herkömmliches Analytics verwendet wird. Wenn Ihre Customer Journey Analytics-Verbindung mehrere Report Suites mit eigenen Verarbeitungsregeln für Marketing-Kanäle enthält, ist es nicht einfach, diese mit herkömmlichem Analytics zu vergleichen. Sie müssten dann für jede Report Suite eine separate Verbindung für den Datenvergleich erstellen.
 * Vergewissern Sie sich, dass Sie die gleichen Datumsbereiche vergleichen und dass die Zeitzoneneinstellung in Ihrer Datenansicht mit der Zeitzone der Report Suite übereinstimmt.
 * Verwenden Sie beim Anzeigen von Report Suite-Daten ein benutzerspezifisches Attributionsmodell. Verwenden Sie beispielsweise die Dimension [Marketing-Kanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=de) für Metriken mit nicht standardmäßigem Attributionsmodell. Adobe rät davon ab, die Standarddimensionen [First Touch-Kanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=de) oder [Last Touch-Kanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=de) zu vergleichen, da sie auf Attributionen beruhen, die in der Report Suite erfasst wurden. Customer Journey Analytics stützt sich nicht auf die Attributionsdaten einer Report Suite. Stattdessen werden diese berechnet, wenn ein Customer Journey Analytics-Bericht ausgeführt wird.
-* Einige Metriken bieten aufgrund von Architektur-Unterschieden zwischen Report Suite-Daten und Platform-Daten keinen angemessenen Vergleich. Dies könnte beispielsweise Besuche/Sitzungen, Besucher/Personen und Instanzen/Ereignisse betreffen.
+* Einige Metriken bieten aufgrund von Architektur-Unterschieden zwischen Report Suite-Daten und Platform-Daten keinen angemessenen Vergleich. Beispiele sind Besuche/Sitzungen, Personen/Personen und Ereignisse/Ereignisse.

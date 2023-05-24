@@ -1,18 +1,18 @@
 ---
-description: Fallout-Visualisierungen zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind).
+description: Fallout-Visualisierungen zeigen, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und durchlaufen (durchgefallen) haben.
 title: Fallout-Übersicht
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
 # Fallout-Übersicht
 
-Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Fallout-Berichte zeigen, wo Besucher eine Site verlassen haben und wo sie eine vorab definierte Folge von Seiten passiert haben (d. h., wo sie verblieben sind).
+Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Fallout-Berichte zeigen an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgefallen) haben.
 
 Mit Fallout-Visualisierungen können Sie:
 
@@ -24,7 +24,7 @@ Mit Fallout-Visualisierungen können Sie:
 
 Die Fallout-Funktion zeigt Konversions- und Fallout-Raten zwischen den einzelnen Schritten oder Touchpoints in einer Sequenz an.
 
-So können Sie beispielsweise die Fallout-Punkte eines Besuchers während eines Kaufprozesses nachverfolgen. Wählen Sie einfach einen Start-Touchpoint und einen End-Touchpoint aus und fügen Sie Zwischen-Touchpoints hinzu, um einen Website-Navigationspfad zu erstellen. Sie können aber auch multidimensionale Fallouts vornehmen.
+Sie können beispielsweise die Fallout-Punkte einer Person während eines Kaufprozesses verfolgen. Wählen Sie einfach einen Start-Touchpoint und einen End-Touchpoint aus und fügen Sie Zwischen-Touchpoints hinzu, um einen Website-Navigationspfad zu erstellen. Sie können aber auch multidimensionale Fallouts vornehmen.
 
 Eine Fallout-Visualisierung ist zur Analyse der folgenden Punkte nützlich:
 

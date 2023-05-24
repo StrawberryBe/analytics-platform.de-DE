@@ -3,10 +3,10 @@ description: Berechnung der Gesamtsummen in Workspace.
 title: Workspace-Summen
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 91%
+ht-degree: 81%
 
 ---
 
@@ -29,8 +29,8 @@ Unter **[!UICONTROL Spalteneinstellungen]** finden Sie die Optionen **[!UICONTRO
 
 Die Gesamtwerte für [statische Zeilen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) verhalten sich anders und werden unter **[!UICONTROL Zeileneinstellungen]** gesteuert.
 
-* **[!UICONTROL Summe der aktuellen Zeilen als Gesamtsumme anzeigen]**: Zeigt eine clientseitige Summe der Zeilen in der Tabelle, was bedeutet, dass die Gesamtsumme die Metriken wie Besuche oder Besucher **nicht** dedupliziert.
-* **[!UICONTROL Gesamtsumme anzeigen]**: Zeigt eine serverseitig Summe an, d. h. die Gesamtsumme dedupliziert Metriken wie Besuche oder Besucher.
+* **[!UICONTROL Summe der aktuellen Zeilen als Gesamtsumme anzeigen]** - Zeigt eine clientseitige Summe der Zeilen in der Tabelle an, was bedeutet, dass die Summe **not** Duplizieren Sie Metriken wie Besuche oder Personen.
+* **[!UICONTROL Gesamtsumme anzeigen]** - Zeigt eine Server-seitige Summe an, d. h. die Gesamtsumme dedupliziert Metriken wie Besuche oder Personen.
 
 ![](assets/static-rows.png)
 

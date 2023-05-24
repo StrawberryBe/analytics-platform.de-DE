@@ -3,7 +3,7 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 75%
@@ -110,18 +110,18 @@ Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausge
 
 ## Nicht randomisierte Dimensionen interpretieren {#non-randomized}
 
-Mit CJA können Analysten jede Dimension als &quot;Experiment&quot;auswählen. Wie interpretieren Sie jedoch eine Analyse, bei der die als Experiment ausgewählte Dimension nicht diejenige ist, für die Besucher randomisiert werden?
+Mit CJA können Analysten jede Dimension als &quot;Experiment&quot;auswählen. Aber wie interpretieren Sie eine Analyse, bei der die als Experiment gewählte Dimension nicht diejenige ist, für die Personen randomisiert werden?
 
-Betrachten Sie beispielsweise eine Anzeige, die ein Besucher sieht. Sie können an der Messung der Veränderung in einer Metrik interessiert sein (z. B. dem durchschnittlichen Umsatz), wenn Sie sich dafür entscheiden, Besucher &quot;Anzeige B&quot;anstelle von &quot;Anzeige A&quot;anzuzeigen. Der kausale Effekt, dass anstelle von Anzeige A Anzeige B angezeigt wird, ist für die Marketing-Entscheidung von zentraler Bedeutung. Dieser kausale Effekt kann als durchschnittlicher Umsatz über die gesamte Population gemessen werden, wenn wir den Status quo der Anzeige von Anzeige A durch die alternative Strategie der Anzeige B ersetzen.
+Betrachten Sie beispielsweise eine Anzeige, die eine Person sieht. Sie können an der Messung der Veränderung in einer Metrik interessiert sein (z. B. der durchschnittliche Umsatz), wenn Sie Personen &quot;Anzeige B&quot;anstelle von &quot;Anzeige A&quot;anzeigen. Der kausale Effekt, dass anstelle von Anzeige A Anzeige B angezeigt wird, ist für die Marketing-Entscheidung von zentraler Bedeutung. Dieser kausale Effekt kann als durchschnittlicher Umsatz über die gesamte Population gemessen werden, wenn wir den Status quo der Anzeige von Anzeige A durch die alternative Strategie der Anzeige B ersetzen.
 
-A/B-Tests sind der Goldstandard innerhalb der Branche zur objektiven Messung der Auswirkungen solcher Interventionen. Der entscheidende Grund, warum ein A/B-Test zu einer kausalen Schätzung führt, liegt in der Randomisierung der Besucher, eine der möglichen Varianten zu erhalten.
+A/B-Tests sind der Goldstandard innerhalb der Branche zur objektiven Messung der Auswirkungen solcher Interventionen. Der entscheidende Grund, warum ein A/B-Test zu einer kausalen Schätzung führt, liegt in der Randomisierung der Personen, eine der möglichen Varianten zu erhalten.
 
-Betrachten wir nun eine Dimension, die nicht durch eine Randomisierung erreicht wird, z. B. den US-Bundesstaat des Besuchers. Nehmen wir an, unsere Besucher kommen hauptsächlich aus zwei Staaten, New York und Kalifornien. Der durchschnittliche Umsatz der Verkäufe einer Winterbekleidungsmarke kann in den beiden Bundesstaaten aufgrund der unterschiedlichen regionalen Wetterbedingungen unterschiedlich sein. In einer solchen Situation kann das Wetter der wahre ursächliche Faktor für den Verkauf von Winterkleidung sein, und nicht die Tatsache, dass die geografischen Status der Besucher unterschiedlich sind.
+Betrachten wir nun eine Dimension, die nicht durch Randomisierung erreicht wird, z. B. den US-Bundesstaat der Person. Nehmen wir an, unsere Personen kommen hauptsächlich aus zwei Staaten, New York und Kalifornien. Der durchschnittliche Umsatz der Verkäufe einer Winterbekleidungsmarke kann in den beiden Bundesstaaten aufgrund der unterschiedlichen regionalen Wetterbedingungen unterschiedlich sein. In einer solchen Situation kann das Wetter der wahre ursächliche Faktor für den Verkauf von Winterkleidung sein, und nicht die Tatsache, dass die geografischen Status der Personen unterschiedlich sind.
 
-Im Experimentierungsbereich in Customer Journey Analytics können Sie Daten anhand der Besucherstatus als durchschnittliche Umsatzdifferenz analysieren. In einem solchen Fall hat die Ausgabe keine kausale Interpretation. Eine solche Analyse kann jedoch dennoch von Interesse sein. Er enthält eine Schätzung (zusammen mit Messungen der Unsicherheit) des Unterschieds des durchschnittlichen Umsatzes nach Bundesstaaten der Besucher. Dies wird auch als &quot;Testen statistischer Hypothesen&quot;bezeichnet. Die Ergebnisse dieser Analyse können interessant sein, aber nicht unbedingt umsetzbar, da wir Besucher nicht auf einen der möglichen Werte der Dimension zuordnen konnten und manchmal auch nicht zuordnen können.
+Im Experimentierungsfenster in Customer Journey Analytics können Sie Daten als durchschnittliche Umsatzdifferenz nach Personenstand analysieren. In einem solchen Fall hat die Ausgabe keine kausale Interpretation. Eine solche Analyse kann jedoch dennoch von Interesse sein. Er enthält eine Schätzung (zusammen mit Unsicherheitsmessungen) der Differenz der durchschnittlichen Einnahmen nach Staaten der Personen. Dies wird auch als &quot;Testen statistischer Hypothesen&quot;bezeichnet. Die Ergebnisse dieser Analyse sind vielleicht interessant, aber nicht unbedingt umsetzbar, da wir Personen nicht zufällig auf einen der möglichen Werte der Dimension verweisen und manchmal auch nicht zuordnen können.
 
 Die folgende Abbildung widerspricht diesen Situationen:
 
 ![randomisiertes Experiment](assets/randomize.png)
 
-Wenn Sie die Wirkung von Intervention X auf das Ergebnis Y messen möchten, ist es möglich, dass die wahre Ursache beider der verwirrende Faktor C ist. Wenn die Daten nicht durch zufällige Besucher auf X erreicht werden, ist die Auswirkung schwieriger zu messen, und die Analyse berücksichtigt ausdrücklich C. Die Randomisierung unterbricht die Abhängigkeit von X auf C, sodass wir die Wirkung von X auf Y messen können, ohne sich um andere Variablen kümmern zu müssen.
+Wenn Sie die Wirkung von Intervention X auf das Ergebnis Y messen möchten, ist es möglich, dass die wahre Ursache beider der verwirrende Faktor C ist. Wenn die Daten nicht durch zufällige Personen auf X erreicht werden, ist die Auswirkung schwieriger zu messen, und die Analyse berücksichtigt ausdrücklich C. Die Randomisierung unterbricht die Abhängigkeit von X auf C, sodass wir die Wirkung von X auf Y messen können, ohne sich um andere Variablen kümmern zu müssen.

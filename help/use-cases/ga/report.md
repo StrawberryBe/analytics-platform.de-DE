@@ -4,10 +4,10 @@ description: Zeigt nützliche Berichte zu Google Analytics-Daten in Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Es kann ein Trend für die im Callcenter verbrachte Zeit über die letzten zwei 
 
 ![Anrufvolumen](../assets/call-volume.png)
 
-Die Verwendung der Dimension „Anrufgrund“ kann Hinweise darauf geben, wie das Web-Erlebnis verbessert werden kann, damit Besucher gar nicht erst anrufen. Das obige Beispiel zeigt, dass das Thema „Beschädigtes Produkt“ eine durchschnittliche Anrufzeit von fast 3 Minuten pro Anruf hat. Dies gibt Ihrem Unternehmen eine präzise Möglichkeit, das Kundenerlebnis zu verbessern und die Kosten für das Callcenter zu senken.
+Die Verwendung der Dimension &quot;Anrufgrund&quot;kann Hinweise zur Verbesserung des Web-Erlebnisses geben und verhindern, dass Personen überhaupt anrufen. Das obige Beispiel zeigt, dass das Thema „Beschädigtes Produkt“ eine durchschnittliche Anrufzeit von fast 3 Minuten pro Anruf hat. Dies gibt Ihrem Unternehmen eine präzise Möglichkeit, das Kundenerlebnis zu verbessern und die Kosten für das Callcenter zu senken.
 
 Sie können sehen, welche Produkte die meisten Aufrufe an Ihr Callcenter verursachen und wie viele Kunden diese Aufrufe getätigt haben. Das Blasendiagramm zeigt, dass 20.000 Personen anriefen, mehr als 4 Stunden und 30 Minuten damit verbrachten, 33 Stück des Produkts „Herren T-Shirt mit kurzen Ärmeln“ zurückzugeben.
 

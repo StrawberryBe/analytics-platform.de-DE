@@ -3,10 +3,10 @@ title: Referenz – Erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
-workflow-type: ht
-source-wordcount: '3111'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '3105'
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,7 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 | Kontrollvariante | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
 | Signifikanzschwelle | Der Schwellenwert in dieser Funktion ist auf den Standardwert 95 % eingestellt. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kosinus (Zeile)
 
@@ -225,10 +225,10 @@ Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. Da die Anordnung na
 
 >[!NOTE]
 >
->Mit Quotenmetriken, wie Umsatz/Besucher, funktioniert dies nicht so, wie Sie es vielleicht erwarten: Es wird der Quotendurchschnitt ermittelt, anstatt dass der Umsatz über die letzten N und die Besucher über die letzten N summiert und anschließend geteilt werden. Verwenden Sie stattdessen
+>Mit Quotenmetriken wie Umsatz/Person funktioniert dies nicht wie erwartet: es berechnet den Durchschnittswert der Raten, anstatt den Umsatz über die letzten N und die Personen über die letzten N zusammenzufassen und sie dann zu teilen. Verwenden Sie stattdessen
 
 ```
-cumul(revenue)/cumul(visitor)
+cumul(revenue)/cumul(person)
 ```
 
 ## Gleich
@@ -366,7 +366,7 @@ fx Lift (normalizing-container, success-metric, control)
 | Erfolgskennzahl | Die Kennzahl(en), die ein(e) Benutzende(r) verwendet, um Varianten zu vergleichen. |
 | Kontrollvariante | Die Variante, mit der alle anderen Varianten im Experiment verglichen werden. Geben Sie den Namen des Dimensionselements der Kontrollvariante ein. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Lineare Regression: Korrelationskoeffizient
 

@@ -3,10 +3,10 @@ title: Was ist eine Kohortenanalyse?
 description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 76840d025d1ace28abce5557d66d104795818167
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 78%
 
 ---
 
@@ -37,13 +37,13 @@ Die folgenden Fähigkeiten ermöglichen eine fein abgestimmte Kontrolle über di
 
 ### [!UICONTROL Bindungstabelle]
 
-Ein [!UICONTROL Bindungskohortenbericht] gibt Besucherdaten aus: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Besucher in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
+A [!UICONTROL Treue] Der Kohortenbericht gibt Personen zurück: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Personen in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Abwanderungstabelle]
 
-Eine [!UICONTROL Abwanderungskohorte] ist die Umkehrung einer Bindungstabelle und zeigt Besucher, die abgewandert sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
+A [!UICONTROL Abwanderung] Die Kohorte ist die Umkehrung einer Bindungstabelle und zeigt die Personen an, die abgestürzt sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
 ![](assets/churn-report.png)
 

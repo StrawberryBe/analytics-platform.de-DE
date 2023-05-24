@@ -3,10 +3,10 @@ description: Bei der Zeitunterteilung wird der Zeitstempel der erfassten Ereigni
 title: Dimensionen für die Zeitunterteilung
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 72%
+ht-degree: 61%
 
 ---
 
@@ -16,7 +16,7 @@ Bei der Zeitunterteilung wird der Zeitstempel der erfassten Ereignisse in aussag
 
 Die Dimensionen für die Zeitunterteilung basieren auf der Zeitzone der Datenansicht. Diese Dimensionen sind in Analysis Workspace verfügbar und können bei der Beantwortung der folgenden Fragen hilfreich sein:
 
-* Welches ist in einem umfangreichen Datumsbereich die bevorzugte Tageszeit, zu der Besucher meine Site oder Anwendung aufrufen?
+* Welches ist in einem großen Datumsbereich die beliebteste Tageszeit, zu der Personen auf meine Site oder App zugreifen können?
 * Gibt es Wochentage oder Zeiten, an bzw. zu denen auf meiner Site oder in meiner Anwendung mehr Konversionen erfolgen?
 * Wie verhalten sich Verkäufe am Wochenende in Bezug auf Verkäufe während der Woche?
 * Führt eine bestimmte Marketing-Kampagne eher am Morgen oder am Nachmittag zu einer höheren Konversionsrate?

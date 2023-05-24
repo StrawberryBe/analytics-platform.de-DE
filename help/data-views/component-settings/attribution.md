@@ -4,10 +4,10 @@ description: Hier können Sie die Standardattribution für eine Metrik festlegen
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 Mit Attribution können Sie anpassen, wie Erfolgsereignisse Dimensionselementen zugeschrieben werden. Zum Beispiel:
 
-1. Ein Besucher Ihrer Site klickt auf einen Paid-Search-Link zu einer Ihrer Produktseiten. Das Produkt wird zum Warenkorb hinzugefügt, aber nicht gekauft.
+1. Eine Person auf Ihrer Site klickt auf einen Paid Search-Link zu einer Ihrer Produktseiten. Das Produkt wird zum Warenkorb hinzugefügt, aber nicht gekauft.
 2. Am nächsten Tag sehen sie einen Social-Media-Beitrag von einem ihrer Freunde. Er klickt auf den Link und schließt dann den Kauf ab.
 
 In einigen Berichten möchten Sie die Bestellung eventuell Paid Search zuordnen. In anderen Berichten möchten Sie die Bestellung eventuell Social Media zuordnen. Mithilfe von Attribution können Sie diesen Aspekt der Berichterstattung steuern.
@@ -58,15 +58,15 @@ Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend be
 * **60 Tage**: Blickt bis zu 60 Tage nach der Konvertierung zurück.
 * **90 Tage**: Blickt bis zu 90 Tage nach der Konvertierung zurück.
 * **Sitzung**: Blickt bis zum Anfang der Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen die geänderte [Sitzungs-Timeout](../create-dataview.md#session-settings).
-* **Person (Berichtsfenster)**: Betrachtet alle Besuche bis zum ersten des Monats des aktuellen Datumsbereichs. Wenn der Datumsbereich des Berichts beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Besucher-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Berichtsfensters zugeordnet werden.
+* **Person (Berichtsfenster)**: Betrachtet alle Besuche bis zum ersten des Monats des aktuellen Datumsbereichs. Wenn der Berichtszeitraum beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Personen-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Berichtsfensters zugeordnet werden.
 * **Benutzerdefinierte Zeit:** Ermöglicht Ihnen das Festlegen eines benutzerdefinierten Lookback-Fensters ab dem Zeitpunkt der Konvertierung. Sie können die Anzahl der Minuten, Stunden, Tage, Wochen, Monate oder Quartale festlegen. Wenn beispielsweise am 20. Februar eine Konversion stattfand, würde ein Lookback-Fenster von fünf Tagen alle Dimensionskontaktpunkte vom 15. Februar bis 20. Februar im Attributionsmodell auswerten.
 
 ## Beispiel
 
 Siehe folgendes Beispiel:
 
-1. Am 15. September gelangt ein Besucher über Paid Search zu Ihrer Site und verlässt sie dann.
-2. Am 18. September gelangt der Besucher erneut über einen Link in sozialen Medien zu Ihrer Site, den er von einem Freund erhalten hat. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
+1. Am 15. September gelangt eine Person über eine gebührenpflichtige Suchanzeige zu Ihrer Site und verlässt sie dann.
+2. Am 18. September gelangt die Person erneut über einen Link in sozialen Medien zu Ihrer Site, den sie von einem Freund erhalten hat. Er fügt mehrere Artikel zum Warenkorb hinzu, erwirbt aber nichts.
 3. Am 24. September sendet Ihr Marketing-Team eine E-Mail mit einem Coupon für einige der Artikel im Warenkorb. Der Coupon wird angewendet, der Besucher ruft aber mehrere andere Websites auf, um zu sehen, ob andere Coupons verfügbar sind. Er findet einen weiteren über eine Display-Anzeige und kauft dann letztendlich für 50 Euro ein.
 
 Je nach Lookback-Fenster und Attributionsmodell erhalten Kanäle eine unterschiedliche Gewichtung. Im Folgenden finden Sie einige interessante Beispiele:

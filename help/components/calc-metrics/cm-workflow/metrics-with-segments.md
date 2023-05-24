@@ -1,12 +1,12 @@
 ---
-description: 'Durch die Segmentierung einzelner Metriken können Sie Metriken innerhalb eines Berichts vergleichen. '
+description: Durch die Segmentierung einzelner Metriken können Sie Metriken innerhalb eines Berichts vergleichen.
 title: Segmentierte Metriken
 feature: Calculated Metrics
-exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Im Generator für berechnete Metriken können Sie Filter innerhalb Ihrer Metrikd
 Beispiel: Sie möchten verschiedene Aspekte des Filters „Deutsche Besucher“ mit denen des Filters „Internationale Besucher“ vergleichen. Dazu können Sie Metriken erstellen, die Einblick in Folgendes ermöglichen:
 
 * Wie sieht das Browsingverhalten im Vergleich zwischen den beiden Gruppen aus? (Ein weiteres Beispiel wäre: Wie sieht die Konversionsrate im Vergleich zwischen den beiden Filtern aus?)
-* Wie viele Besucher aus Deutschland navigieren im Vergleich mit internationalen Besuchern zu bestimmten Seiten (als Prozentsatz der Gesamtbesucher)?
+* Wie viele deutsche Personen durchsuchen bestimmte Seiten im Vergleich zu internationalen Personen in Prozent?
 * Wo liegen die größten Unterschiede in Bezug darauf, welcher Inhalt von den verschiedenen Filtern aufgerufen wird?
 
 1. Wenn kein vergleichbarer Filter vorhanden ist, erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens „Deutsche Besucher“, bei dem Sie für „Länder“ den Wert „Deutschland“ angeben. Ziehen Sie die Dimension „Länder“ einfach in die Arbeitsfläche „Definition“ und wählen Sie als Wert „Deutschland“:
