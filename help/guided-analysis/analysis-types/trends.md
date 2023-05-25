@@ -1,9 +1,9 @@
 ---
 title: Trends
 description: Finden Sie Muster und Änderungen in der Benutzerinteraktion im Zeitverlauf.
-source-git-commit: c47c4364cbf027c24a355bb306ee786c3e2446a9
+source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,8 @@ Die **Trends** [Analysetyp](overview.md) bietet wertvolle Einblicke in die Leist
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **Veranstaltungen**: Legt die Ereignisse fest, die Sie in Ihrem Bericht messen möchten. Jedes hier ausgewählte Ereignis wird je nach Diagrammtyp als farbige Linie oder Balkensatz dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Trendereignis darstellt. Es werden bis zu fünf Ereignisse unterstützt.
-* **Personen**: Legt die Segmente fest, die Sie in Ihrem Bericht messen möchten. Jedes hier ausgewählte Segment verdoppelt die Anzahl der Zeilen im Diagramm und Zeilen in der Tabelle. Jeder Satz von Ereignissen wird für jedes Segment dargestellt. Es werden bis zu fünf Segmente unterstützt.
+* **Veranstaltungen**: Die Ereignisse, die Sie in Ihrem Bericht messen möchten. Jedes hier ausgewählte Ereignis wird je nach Diagrammtyp als farbige Linie oder Balkensatz dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Trendereignis darstellt. Sie können bis zu fünf Ereignisse einbeziehen.
+* **Personen**: Die Segmente, die Sie in Ihrem Bericht messen möchten. Jedes hier ausgewählte Segment verdoppelt die Anzahl der Zeilen im Diagramm und Zeilen in der Tabelle. Jeder Satz von Ereignissen wird für jedes Segment dargestellt. Sie können bis zu fünf Segmente einbeziehen.
 
 ## Typen anzeigen
 
@@ -38,8 +38,8 @@ Trends bieten die folgenden Ansichtstypen. Sie können den Ansichtstyp über das
 
 Trends bieten die folgenden Diagrammeinstellungen. Sie können die Diagrammeinstellungen über das Menü zwischen dem Ansichtstyp und der Kalenderauswahl anpassen.
 
-* **Metrik**: Legt die Metrik fest, die Sie messen möchten. Zu den Optionen gehören Ereignisse, Sitzungen, Benutzer, Ereignisse pro Sitzung und Ereignisse pro Benutzer.
-* **Diagrammtyp**: Legt den Visualisierungstyp fest, den Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;, &quot;Balken&quot;, &quot;Gestapelte Leiste&quot;und &quot;Gestapelter Bereich&quot;.
+* **Metrik**: Die Metrik, die Sie messen möchten. Zu den Optionen gehören Ereignisse, Sitzungen, Benutzer, Ereignisse pro Sitzung und Ereignisse pro Benutzer.
+* **Diagrammtyp**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;, &quot;Balken&quot;, &quot;Gestapelte Leiste&quot;und &quot;Gestapelter Bereich&quot;.
 
 ## Zeitvergleich anwenden
 
@@ -51,5 +51,5 @@ Zu den verfügbaren Zeitvergleichsoptionen gehören der vorherige Zeitraum, 13 W
 
 Legt den gewünschten Datumsbereich fest. Diese Einstellung umfasst zwei wichtige Komponenten:
 
-* **Intervall**: Die Datumsgranularität, in der Sie Daten anzeigen möchten. Gültige Optionen sind &quot;Stündlich&quot;, &quot;Täglich&quot;, &quot;Wöchentlich&quot;, &quot;Monatlich&quot;und &quot;Quartal&quot;. Derselbe Datumsbereich kann unterschiedliche Intervalle haben, die sich auf die Anzahl der Datenpunkte im Diagramm und die Anzahl der Spalten in der Tabelle auswirken. Wenn Sie beispielsweise einen Bericht anzeigen, der sich auf drei Tage mit täglicher Granularität erstreckt, werden nur drei Datenpunkte angezeigt, während ein Bericht, der sich auf drei Tage mit stündlicher Granularität erstreckt, 72 Datenpunkte anzeigt.
-* **Datum**: Das Start- und Enddatum des Projekts. Die Vorgaben für Datumsbereiche stehen Ihnen zur Verfügung oder Sie können mit der Kalenderauswahl das exakte gewünschte Datum festlegen.
+* **Intervall**: Die Datumsgranularität, in der Sie Daten anzeigen möchten. Gültige Optionen sind &quot;Stündlich&quot;, &quot;Täglich&quot;, &quot;Wöchentlich&quot;, &quot;Monatlich&quot;und &quot;Quartal&quot;. Derselbe Datumsbereich kann unterschiedliche Intervalle haben, die sich auf die Anzahl der Datenpunkte im Diagramm und die Anzahl der Spalten in der Tabelle auswirken. Wenn Sie beispielsweise eine Analyse betrachten, die sich auf drei Tage mit täglicher Granularität erstreckt, werden nur drei Datenpunkte angezeigt, während eine Analyse, die drei Tage mit stündlicher Granularität umfasst, 72 Datenpunkte anzeigen würde.
+* **Datum**: Das Start- und Enddatum. Die Vorgaben für Datumsbereiche stehen Ihnen zur Verfügung oder Sie können mit der Kalenderauswahl das exakte gewünschte Datum festlegen.
