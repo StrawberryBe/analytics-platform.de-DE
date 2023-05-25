@@ -3,10 +3,10 @@ title: Verwenden von Bindungsdimensionen und Metriken in CJA
 description: Ordnen Sie den Objekt-Arrays Dimensionen für die komplexe Persistenzanalyse zu.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '1330'
-ht-degree: 100%
+source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
+workflow-type: tm+mt
+source-wordcount: '1331'
+ht-degree: 91%
 
 ---
 
@@ -78,11 +78,11 @@ Wenn Sie den Umsatz nach Farbe ohne eine gebundene Dimension betrachten wollten,
 | --- | --- |
 | Neonorange | 2099 |
 
-Sie können den Datenansichts-Manager aufrufen und die Produktfarbe an den Produktnamen binden:
+Sie können den Datenansichtsmanager aufrufen und die Produktfarbe an den Produktnamen binden:
 
 ![Bindungsdimension](../assets/binding-dimension.png)
 
-Wenn Sie dieses Persistenzmodell wählen, erfasst CJA den Produktnamen bei jeder Einstellung der Produktfarbe. Wenn bei einem nachfolgenden Ereignis für diesen Besucher derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
+Wenn Sie dieses Persistenzmodell wählen, erfasst CJA den Produktnamen bei jeder Einstellung der Produktfarbe. Wenn bei einem nachfolgenden Ereignis für diese Person derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
 
 | product.color | Umsatz |
 | --- | --- |
@@ -237,19 +237,19 @@ Eine der gängigsten Merchandising-Methoden in Adobe Analytics besteht darin, ei
    }
    ```
 
-Wenn Sie ein Zuordnungsmodell verwenden, dessen Suchbegriffe keine Bindingsdimension enthalten, weisen alle drei Produkte den Umsatz nur einem einzigen Suchbegriff zu. Wenn Sie beispielsweise die erste Zuordnung mit der Suchbegriffdimension verwenden:
+Wenn Sie ein Zuordnungsmodell verwenden, dessen Suchbegriffe keine Bindingsdimension enthalten, weisen alle drei Produkte den Umsatz nur einem einzigen Suchbegriff zu. Wenn Sie beispielsweise [!UICONTROL Original] Zuordnung mit der Suchbegriffdimension:
 
 | search_term | Umsatz |
 | --- | --- |
 | Boxhandschuhe | $ 204.97 |
 
-Wenn Sie die letzte Zuordnung mit der Suchbegriffdimension verwenden, weisen alle drei Produkte weiterhin den Umsatz einem einzigen Suchbegriff zu:
+Wenn Sie [!UICONTROL Zuletzt verwendet] -Zuordnung mit der Suchbegriffdimension zuordnen, weisen alle drei Produkte weiterhin den Umsatz einem einzelnen Suchbegriff zu:
 
 | search_term | Umsatz |
 | --- | --- |
 | Schuhe | $ 204.97 |
 
-Bei diesem Beispiel geht es um nur einen Besucher. Viele Besucher, die nach verschiedenen Elementen suchen, können Suchbegriffe verschiedenen Produkten zuordnen, was es schwierig macht festzustellen, welche Suchergebnisse tatsächlich die besten sind.
+Während dieses Beispiel nur eine Person umfasst, können viele Personen, die nach verschiedenen Elementen suchen, Suchbegriffe verschiedenen Produkten zuordnen, was es schwierig macht festzustellen, welche die besten Suchergebnisse tatsächlich sind.
 
 Sie können Suchbegriffe an den Produktnamen binden, wenn die Suchmetrik vorhanden ist, um Suchbegriffe korrekt dem Umsatz zuzuordnen.
 
