@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+source-git-commit: 29ceba37422ab2cb432bbe000dee6379a63d5a8f
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 52%
+source-wordcount: '1899'
+ht-degree: 49%
 
 ---
 
@@ -111,7 +111,7 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 
 * Personen außerhalb Ihrer Organisation
 
-* Personen in Ihrer Organisation, die keinen Customer Journey Analytics erhalten
+* Personen in Ihrer Organisation, die keinen Zugriff auf Customer Journey Analytics haben
 
 >[!NOTE]
 >
@@ -126,6 +126,8 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 >* Benutzer, für die Sie freigeben, können den Projektdatumsbereich ändern. Der Datumsbereich, den Sie für das Projekt festgelegt haben, wird standardmäßig angezeigt.
 >
 >* Ein Projekt kann nicht mehr zugänglich sein, wenn viele Benutzer versuchen, gleichzeitig auf einen bestimmten Link zuzugreifen. Standardmäßig können alle 5 Minuten mehr als 190 Personen auf einen einzelnen Link zugreifen. Wenn Ihr Unternehmen diese Grenze erreicht, warten Sie 5 Minuten und versuchen Sie dann erneut, auf den Link zuzugreifen.
+>
+>* Wenn Ihr Unternehmen eine Lizenz für den Gesundheitsfürsorgeschild besitzt, können Sie Projekte nur für Benutzer freigeben, die sich entweder durch Single Sign On (SSO) oder Adobe ID authentifiziert haben. Sie können keine Projekte für nicht authentifizierte Benutzer freigeben. Es liegt in Ihrer Verantwortung, diese Funktion gemäß den internen Richtlinien Ihres Unternehmens zur Datenverwaltung zu verwenden und nur Projektlinks mit personenbezogenen Gesundheitsdaten (PHI) für Benutzer mit den entsprechenden Berechtigungen freizugeben.
 
 
 So geben Sie ein Analysis Workspace-Projekt für andere frei:
@@ -154,7 +156,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
       * Wenn diese Option nicht angezeigt wird, hat Ihr CJA-Administrator diese Funktion nicht aktiviert.
 
-      * Wenn diese Option aktiviert und abgeblendet ist, benötigt Ihr CJA-Administrator eine Experience Cloud-Authentifizierung für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen.
+      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, bedeutet dies, dass Ihr CJA-Administrator für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen, eine Experience Cloud-Authentifizierung erfordert. Dies gilt immer für Organisationen, die Gesundheitsschild bestellen.
 
 1. Neben dem **[!UICONTROL Mit anderen teilen (keine Anmeldung erforderlich)]** und klicken Sie auf das **Link kopieren** icon ![Symbol &quot;Link kopieren&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)), um den Link in die Zwischenablage Ihres Systems zu kopieren.
 
