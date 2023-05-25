@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
+source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 97%
@@ -201,12 +201,12 @@ ht-degree: 97%
 
 + Geführte Analyse {#guided-analysis}
    + [Überblick](../guided-analysis/overview.md)
-   + [Benutzeroberfläche](../guided-analysis/interface.md)
    + Analysetypen {#analysis-types}
       + [Überblick](../guided-analysis/analysis-types/overview.md)
       + [Trichter](../guided-analysis/analysis-types/funnel.md)
       + [Trends](../guided-analysis/analysis-types/trends.md)
       + [Benutzerwachstum](../guided-analysis/analysis-types/user-growth.md)
+   + [Häufig gestellte Fragen](../guided-analysis/faq.md)
 
 + Komponenten {#cja-components}
    + [Komponentenübersicht](../components/overview.md)

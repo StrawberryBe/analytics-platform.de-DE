@@ -1,10 +1,10 @@
 ---
 title: Häufig gestellte Fragen zur geführten Analyse
 description: Häufig gestellte Fragen zur geführten Analyse.
-source-git-commit: 1d10e4cdc70f9f527506b07e7a38070f67ab583d
+source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 0%
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
@@ -22,6 +22,21 @@ Nein; Geführte Analyse ist ein kostenpflichtiges Add-on zu CJA. Wenden Sie sich
 
 +++**Welche Implementierungsänderungen sind erforderlich, um die geführte Analyse zu verwenden?**
 
-Wenn Sie Analysis Workspace bereits in CJA verwenden, sind keine zusätzlichen Implementierungsänderungen erforderlich. Geführte Analyseberichte verwenden dieselben Datenansichten und Verbindungen wie Workspace-Berichte. Der Prozess zum Einbinden und Verwenden eines beliebigen Projekttyps ist für alle CJA identisch, einschließlich der geführten Analyse.
+Wenn Sie Analysis Workspace bereits in CJA verwenden, sind keine zusätzlichen Implementierungsänderungen erforderlich. Geführte Analysen verwenden dieselben Datenansichten und Verbindungen wie Analysis Workspace. Der Prozess zum Einbinden und Verwenden eines beliebigen Projekttyps ist für alle CJA identisch, einschließlich der geführten Analyse.
+
++++
+
++++**Wie stehen Begriffe innerhalb und außerhalb der geführten Analyse zueinander in Beziehung?**
+
+Geführte Analyse verwendet Begriffe, die in der Produktanalysebranche häufiger verwendet werden. Sie können diese Tabelle referenzieren, wenn Sie zwischen der geführten Analyse und Analysis Workspace wechseln.
+
+| Geführter Analysebegriff | Analysis Workspace-Begriff |
+| --- | --- |
+| Ereignis-   | Metrik |
+| Eigenschaft | Dimension |
+| Wert | Dimensionselement |
+| Segment | Filter |
+
+{style="table-layout:auto"}
 
 +++
