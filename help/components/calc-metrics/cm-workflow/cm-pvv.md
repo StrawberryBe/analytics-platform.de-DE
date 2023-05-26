@@ -3,14 +3,14 @@ description: Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten p
 title: Einfache Metrik vom Typ „Seitenansichten pro Besuch“ erstellen
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 83%
 
 ---
 
-# Einfache Metrik vom Typ „Seitenansichten pro Besuch“ erstellen
+# Metrik &quot;Seitenansichten pro Besuche&quot;erstellen
 
 Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten pro Besuche erstellen.
 
@@ -18,7 +18,7 @@ Eine ausführliche Beschreibung der Komponenten der Benutzeroberfläche finden S
 
 Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten pro Besuche erstellen.
 
-1. Navigieren Sie zum Generator für berechnete Metriken.
+1. Beginnen Sie mit der Erstellung einer Metrik, wie unter [Metriken erstellen](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 1. Geben Sie der Metrik einen Namen wie „Seitenansichten pro Besuche“.
 1. Geben Sie ihr eine benutzerfreundliche **[!UICONTROL Beschreibung]**, um den Zweck der Metrik anzugeben.
 1. Wählen Sie das richtige **[!UICONTROL Format]** (in diesem Fall „Dezimal“).
@@ -28,6 +28,8 @@ Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten pro Besuche er
 1. Ziehen Sie für diese Metrik zunächst „Seitenansichten“ in die Arbeitsfläche und dann „Besuche“ darunter (warten Sie, bis die blaue Linie erscheint, bevor Sie die Metrik ablegen).
 1. Wählen Sie den Operator für Teilung. (Dies ist der Standardoperator.)
 1. Sie können jetzt oben rechts eine **[!UICONTROL Vorschau]** dieser Metrik sehen, während Sie sie erstellen.
-1. Klicken Sie auf **[!UICONTROL Speichern]**.
-1. Beachten Sie, dass die Formel unter **[!UICONTROL Zusammenfassung]** jedes Mal, wenn Sie die Metrikdefinition ändern, aktualisiert wird.
-1. Sie gelangen jetzt automatisch zum [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md), der dem Filter-Manager ähnelt. Damit können Sie Metriken freigeben, genehmigen, (erneut) taggen, umbenennen oder löschen.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+
+   Beachten Sie, dass die Formel unter **[!UICONTROL Zusammenfassung]** jedes Mal, wenn Sie die Metrikdefinition ändern, aktualisiert wird.
+
+1. (Optional) Um eine Metrik freizugeben, zu genehmigen, (erneut) zu taggen, umzubenennen oder zu löschen, können Sie zum [Seite &quot;Berechnete Metriken&quot;](/help/components/calc-metrics/cm-workflow/cm-manager.md).

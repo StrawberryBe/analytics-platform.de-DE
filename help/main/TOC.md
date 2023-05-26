@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 97%
+source-wordcount: '900'
+ht-degree: 96%
 
 ---
 
@@ -243,12 +243,12 @@ ht-degree: 97%
          + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Metriken erstellen](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Einfache Metrik vom Typ „Seitenansichten pro Besuch“ erstellen](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Metrik &quot;Seitenansichten pro Besuche&quot;erstellen](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Metrik &quot;Beitrag&quot;erstellen](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Gefilterte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Segmente stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Gefilterte und gewichtete Metriken](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Funktionen verwenden](../components/calc-metrics/cm-workflow/cm-using-functions.md)
-         + [Beitragsmetrik](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Berechnete Metriken taggen](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Berechnete Metriken genehmigen](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Berechnete Metriken freigeben](../components/calc-metrics/cm-workflow/cm-sharing.md)
