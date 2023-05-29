@@ -2,7 +2,7 @@
 title: Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe Analytics und CJA
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a38e2afac7645e9249e42e0b4830f5249a69b522
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 71%
@@ -45,7 +45,7 @@ In der folgenden Tabelle wird die Terminologie für die verschiedenen Arten von 
 | Berechnete Metriken | Auswertung benutzerdefinierter Metriken, die von Kunden erstellt wurden und auf komplexen Formeln, einschließlich Segmenten und Filtern, basieren können. | Beispiel: Anzahl der Personen, die rote Schuhe gekauft haben. |
 | Attributionslogik | Logik zur Berechnung der Attribution. | Beispiel: eVar-Persistenz. |
 | Komponenteneinstellungen | Anwenden von Anpassungen auf Metriken oder Dimensionen, wie Attribution, Verhalten, Format und andere | Beispiel: Wertesammlung zum Kombinieren numerischer Werte basierend auf einem Bereich |
-| Benutzerdefinierte Felder | Logik gilt für Schema- oder Standardfelder bei der Definition von Komponenten in einer Datenansicht. | Beispiel: Erstellen einer neuen Marketing-Kanal-Dimension |
+| Abgeleitete Felder | Logik gilt für Schema- oder Standardfelder bei der Definition von Komponenten in einer Datenansicht. | Beispiel: Erstellen einer neuen Marketing-Kanal-Dimension |
 
 {style="table-layout:auto"}
 
