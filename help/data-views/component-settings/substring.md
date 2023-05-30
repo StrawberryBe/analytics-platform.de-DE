@@ -4,7 +4,7 @@ description: Verwenden Sie einen Teil einer Zeichenfolge als Dimensionselement.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 95%
@@ -15,9 +15,9 @@ ht-degree: 95%
 
 Mit Einstellungen der [!UICONTROL Teilzeichenfolge]-Komponente können Sie mehrere Methoden zur Zeichenfolgenmanipulation verwenden, um die gewünschten Dimensionselemente in Berichten zu erhalten.
 
-[!UICONTROL Teilzeichenfolge] ist nur für Dimensionen verfügbar und gilt rückwirkend für die Daten, auf die sie angewendet wird. Es handelt sich um eine sofortige Datenumwandlung, die vor der Anwendung von Filtern oder anderen Analysevorgängen erfolgt.
-
 ![Einstellungen für Teilzeichenfolgen](../assets/substring-settings.png)
+
+[!UICONTROL Teilzeichenfolge] ist nur für Dimensionen verfügbar und gilt rückwirkend für die Daten, auf die sie angewendet wird. Es handelt sich um eine sofortige Datenumwandlung, die vor der Anwendung von Filtern oder anderen Analysevorgängen erfolgt.
 
 ## Von links/rechts
 

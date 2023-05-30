@@ -4,7 +4,7 @@ description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum näch
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 91%
@@ -16,12 +16,12 @@ ht-degree: 91%
 
 [!UICONTROL Persistenz] ist die Fähigkeit, dass ein bestimmter Dimensionswert sich über das Ereignis hinaus auf eine Metrik beziehen kann. Dafür wird eine Kombination aus Zuordnung und Gültigkeit verwendet.
 
+![Persistenz](../assets/persistence.png)
+
 * Mit **Zuordnung** können Sie festlegen, welcher Wert beibehalten wird, wenn mehrere Dimensionselemente gleichzeitig in einer Spalte beibehalten werden können.
 * Mit **Gültigkeit** können Sie festlegen, wie lange ein Dimensionselement über das Ereignis hinaus bestehen bleibt, für das es festgelegt ist.
 
 [!UICONTROL Persistenz] ist nur für Dimensionen verfügbar und rückwirkend für die Daten, auf die sie angewendet wird. Es handelt sich um eine sofortige Datenumwandlung, die vor der Anwendung von Filtern oder anderen Analysevorgängen erfolgt.
-
-![Persistenz](../assets/persistence.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |

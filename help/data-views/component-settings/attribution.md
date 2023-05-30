@@ -4,16 +4,20 @@ description: Hier können Sie die Standardattribution für eine Metrik festlegen
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1781'
 ht-degree: 38%
 
 ---
 
 # Attributions-Komponenteneinstellungen
 
-Mit Attribution können Sie anpassen, wie Erfolgsereignisse Dimensionselementen zugeschrieben werden. Zum Beispiel:
+Mit Attribution können Sie anpassen, wie Erfolgsereignisse Dimensionselementen zugeschrieben werden.
+
+![](../assets/attribution-settings.png)
+
+Zum Beispiel:
 
 1. Eine Person auf Ihrer Site klickt auf einen Paid Search-Link zu einer Ihrer Produktseiten. Das Produkt wird zum Warenkorb hinzugefügt, aber nicht gekauft.
 2. Am nächsten Tag sehen sie einen Social-Media-Beitrag von einem ihrer Freunde. Er klickt auf den Link und schließt dann den Kauf ab.
@@ -22,7 +26,7 @@ In einigen Berichten möchten Sie die Bestellung eventuell Paid Search zuordnen.
 
 Mit dieser Komponenteneinstellung für die Datenansicht können Sie ein standardmäßiges Attributionsmodell für eine Metrik festlegen. Sie können das Attributionsmodell einer bestimmten Metrik überschreiben, während Sie in Analysis Workspace arbeiten.
 
-![Attribution](../assets/attribution-settings.png)
+
 
 Wenn Ihre Organisation erfordert, dass eine Metrik über mehrere Attributionseinstellungen verfügt, können Sie eine der folgenden Aktionen durchführen:
 
