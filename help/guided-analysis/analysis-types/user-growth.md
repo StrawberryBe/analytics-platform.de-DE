@@ -1,9 +1,10 @@
 ---
 title: Benutzerwachstum
 description: Verfolgen Sie das Wachstum des Benutzerkreises Ihres Produkts.
-source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
+exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
+source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
@@ -25,7 +26,7 @@ Anwendungsbeispiele für diesen Analysetyp sind:
 
 * **Leistungsbewertung**: Mit der Benutzerentwicklung können Sie die Gesamtleistung Ihres Produkts im Hinblick auf die Akquise neuer Benutzer bewerten. Durch die Verfolgung von Wachstumstrends können Sie besser nachvollziehen, ob Ihr Produkt Benutzer in einem gewünschten Tempo anzieht und bindet.
 * **Benutzerbindung und -abwanderung:** Das Benutzerwachstum bietet eine klare Visualisierung für Zeiträume hoher oder niedriger Benutzerbindung. Die Erkennung dieser Zeiträume mit hoher oder niedriger Aufbewahrung kann Ihnen dabei helfen, Produktentscheidungen zu treffen, um eine hohe Beibehaltung zu fördern oder Abwanderung zu minimieren.
-* **Kampagnenbewertung**: Die Anzeige des Benutzerwachstums, das für eine bestimmte Kampagne spezifisch ist, kann Ihnen dabei helfen, nicht nur zu verstehen, wie viel Traffic sie generiert hat, sondern auch, wie gut die Kampagne den Benutzern geholfen hat, ihre Interaktion fortzusetzen.
+* **Kampagnenbewertung**: Wenn Sie das Benutzerwachstum auf einer bestimmten Kampagne betrachten, können Sie nicht nur nachvollziehen, wie viel Traffic durch die Kampagne generiert wurde, sondern auch, wie gut die Kampagne den Benutzern geholfen hat, weiter aktiv zu bleiben.
 
 [Screenshot des Benutzerwachstums]
 
@@ -33,8 +34,8 @@ Anwendungsbeispiele für diesen Analysetyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **Veranstaltungen**: Das Ereignis, das Sie messen möchten. Da dieser Analysetyp benutzerbasiert ist, kann ein Benutzer das Ereignis innerhalb der festgelegten Datumsgranularität einmal berühren, damit es als aktiver Benutzer gezählt wird. Sie können nur ein Ereignis einschließen.
-* **Personen**: Das Segment, das Sie messen möchten. Sie können nur ein Segment einschließen.
+* **Veranstaltungen**: Das Ereignis, das Sie messen möchten. Da dieser Analysetyp benutzerbasiert ist, kann ein Benutzer das Ereignis innerhalb der festgelegten Datumsgranularität einmal berühren, damit es als aktiver Benutzer gezählt wird. Sie können nur ein Ereignis in eine Abfrage einschließen.
+* **Personen**: Das Segment, das Sie messen möchten. Sie können nur ein Segment in eine Abfrage einschließen.
 
 ## Typen anzeigen
 
