@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a546c52d2a686c38f7a9a23e0c541568c2918495
+source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 93%
+source-wordcount: '2060'
+ht-degree: 91%
 
 ---
 
@@ -20,6 +20,10 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **Mai 2023** |  |
+| Dokumentation zu Deep-Linking (Mobile App) | Ermöglicht Benutzerinnen und Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. Dies erleichtert die Freigabe von Projekten und eine stärkere Interaktion mit weniger technischen Zielgruppen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
+| Doc on &quot;Select data view from cell&quot;in Report Builder | Mit dieser Funktion können Benutzerinnen oder Benutzer die Datenansicht für einen Datenblock aus einer Zelle auswählen. Dies ist hilfreich, wenn Sie eine Arbeitsmappe erstellen und mehrere Datenansichten haben, die eine ähnliche Datenerstellung aufweisen, und eine Arbeitsmappe mehrmals mit verschiedenen Datenansichten wiederverwenden möchten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=de) |
+| Dokumentation für den aktualisierten Startbildschirm der Analytics-Dashboards-App (Mobile App) | Mit dem neuen aktualisierten Startbildschirm können Sie alle Ihre Scorecards in einer konsolidierten Scorecard-Liste anzeigen.  Wenn Sie unter einer Anmeldung Zugriff auf mehr als eine Organisation haben, stehen alle Scorecards Ihrer Organisation in einer einzigen Liste zur Verfügung. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
+| Optimierungsaktualisierung | Aktualisierter Artikel zu [Optimierung der CJA-Leistung](/help/admin/optimizing-performance.md) |
 | Analysis Workspace – Übersicht | Die [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md) wurde aktualisiert, um allgemeinere Übersichtsinformationen und Links zu relevanten Inhalten einzuschließen. |
 | Erstellen von Projekten | Es wurde ein neuer Artikel erstellt, in dem das [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace ausführlich erklärt wird. |
 | Komponenten in der linken Leiste sortieren | Es wurden Informationen zum Sortieren der Komponentenliste in der linken Leiste hinzugefügt. Siehe Abschnitt &quot;Suche, Filtern und Sortieren der Komponentenliste&quot;in [Komponentenübersicht](/help/components/overview.md). |
