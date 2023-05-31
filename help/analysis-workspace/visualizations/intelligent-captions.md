@@ -3,17 +3,15 @@ description: Verwenden Sie intelligente Beschriftungen, um Einblicke in natürli
 title: Intelligente Beschriftungen
 feature: Visualizations
 role: User, Admin
-source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
+exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
+source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
 
-
 # Intelligente Beschriftungen
-
-{{release-limited-testing}}
 
 Intelligente Untertitel verwenden fortschrittliches maschinelles Lernen und generative KI, um wertvolle Einblicke in natürliche Sprachen für Workspace-Visualisierungen bereitzustellen. Die erste Version bietet automatisch generierte Einblicke für die [Linie](line.md) Visualisierung. (Es folgen weitere Visualisierungen.)
 
@@ -30,9 +28,13 @@ Um automatisch generierte Beschriftungen für eine Linienvisualisierung zu start
 
 ![intelligente Beschriftungen starten](assets/intell-caps-1.png)
 
-Einblicke in natürliche Sprachen werden jetzt generiert. Beschriftungen werden jedes Mal generiert, wenn sich die zugrunde liegenden ausgewählten Daten in der Tabelle, die die Visualisierung ermöglicht, ändern. Wenn die Tabelle mehrere Metriken enthält, werden Beschriftungen nur für die erste Metrik oder die aktuell vom Benutzer ausgewählte Metrik generiert.
+Einblicke in natürliche Sprachen werden jetzt generiert.
 
-Wenn Sie das Projekt zu diesem Zeitpunkt speichern und es später erneut laden, werden die Beschriftungen automatisch mit neuen Daten aktualisiert. Dasselbe gilt für geplante Projekte und PDF-Dateien, die aus diesem Projekt exportiert werden.
+* Beschriftungen werden jedes Mal generiert, wenn sich die zugrunde liegenden ausgewählten Daten in der Tabelle ändern, die die Visualisierung ermöglicht.
+
+* Wenn die Tabelle mehrere Metriken enthält, werden Untertitel nur für die erste Metrik oder die Metrik generiert, die aktuell vom Benutzer ausgewählt wird.
+
+* Wenn Sie das Projekt zu diesem Zeitpunkt speichern und es später erneut laden, werden die Beschriftungen automatisch mit neuen Daten aktualisiert. Dasselbe gilt für geplante Projekte und PDF-Dateien, die aus diesem Projekt exportiert werden.
 
 ## Anzeigen und Interpretieren von Untertiteln {#view}
 
