@@ -4,10 +4,10 @@ description: Details und Informationen zu allen Standardkomponenten, die Sie jed
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 98%
+source-wordcount: '1012'
+ht-degree: 88%
 
 ---
 
@@ -52,15 +52,16 @@ Optionale Standardkomponenten sind unter **[!UICONTROL Datenansichten]** > **[!U
 | [!UICONTROL Tag des Jahres] | Zeitunterteilungsdimension | 1–366 |
 | [!UICONTROL Stunde des Tages] | Zeitunterteilungsdimension | 0–23 |
 | [!UICONTROL  Monat des Jahres] | Zeitunterteilungsdimension | Januar–Dezember |
-| [!UICONTROL Neue Sitzung] | Metrik | Die definierte erste Sitzung einer Person im Reporting-Zeitraum. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
+| [!UICONTROL Erstmalige Sitzungen] | Metrik | Die definierte erste Sitzung einer Person im Reporting-Zeitraum. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
+| [!UICONTROL Rückkehrende Sitzungen] | Metrik | Die Anzahl der Sitzungen, die nicht die erste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
 | [!UICONTROL Personen-ID] | Dimension | Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Optionen kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Die [!UICONTROL Personen-ID] ist die Grundlage für die Kombination von Datensätzen und die Identifizierung von Einzelpersonen in CJA.<p>Mögliche Anwendungsfälle sind:<ul><li>Erstellen eines Filters für einen bestimmten Personen-ID-Wert, um alles nach dem Verhalten dieses Benutzers zu filtern.</li><li>Debugging: Prüfen, ob die Daten für eine bestimmte Cookie-ID (oder eine bestimmte Kunden-ID) vorhanden sind.</li><li>Identifizieren der Benutzer, die bei einem Callcenter angerufen haben.</li></ul> |
 | [!UICONTROL Personen-ID-Namespace] | Dimension | Aus welchem ID-Typ die [!UICONTROL Personen-ID] besteht. Beispiele: `email address`, `cookie ID`, `Analytics ID` usw. |
 | [!UICONTROL Quartal des Jahres] | Zeitunterteilungsdimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Sitzung wiederholen] | Metrik | Die Anzahl der Sitzungen, die nicht die allererste Sitzung einer Person waren. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
-| [!UICONTROL Sitzung beginnt] | Metrik | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung gefiltert. |
-| [!UICONTROL Sitzung endet] | Metrik | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Filterdefinition verwendet werden, um bis zum letzten Ereignis jeder Sitzung zu filtern. |
-| [!UICONTROL Sitzungstyp] | Dimension | Diese Dimension hat zwei Werte: 1) [!UICONTROL Erstmalig] und 2) Wiederkehrend. Der Zeileneintrag [!UICONTROL Erstmalig] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, würden sie in den Bucket „Nicht zutreffend“ für diese Dimension fallen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
-| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension. |
+| [!UICONTROL Sitzung beginnt] | Metrik | Die Anzahl der Ereignisse, die das erste Ereignis einer Sitzung waren. Bei Verwendung in einer Filterdefinition (wie beispielsweise „[!UICONTROL Sitzung beginnt] existiert“) wird nur das erste Ereignis jeder Sitzung gefiltert.<p>Diese Komponente muss in Ihrer Datenansicht enthalten sein, damit Folgendes ausgeführt werden kann: [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) in Workspace verfügbar sein: <ul><li>Startrate der Sitzung</li></p> |
+| [!UICONTROL Sitzung endet] | Metrik | Die Anzahl der Ereignisse, die das letzte Ereignis einer Sitzung waren. Ähnlich wie [!UICONTROL Sitzung beginnt] kann dies auch in einer Filterdefinition verwendet werden, um bis zum letzten Ereignis jeder Sitzung zu filtern.<p>Diese Komponente muss in Ihrer Datenansicht enthalten sein, damit Folgendes ausgeführt werden kann: [berechnete Metrik](/help/components/calc-metrics/default-calcmetrics.md) in Workspace verfügbar sein: <ul><li>Endrate der Sitzung</li></p> |
+| [!UICONTROL Sitzungstyp] | Dimension | Diese Dimension hat zwei Werte: 1) [!UICONTROL Erstmalig] und 2) Wiederkehrend. Der Zeileneintrag [!UICONTROL Erstmalig] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) in einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, werden sie in den Bereich &quot;Nicht zutreffend&quot;für diese Dimension aufgenommen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) |
+| [!UICONTROL Aufgewendete Zeit (Sekunden)] | Metrik | Addiert die Zeit zwischen zwei verschiedenen Werten für eine Dimension.<p>Diese Komponente muss in Ihrer Datenansicht enthalten sein, damit Folgendes ausgeführt werden kann: [berechnete Metriken](/help/components/calc-metrics/default-calcmetrics.md) in Workspace verfügbar sein: <ul><li>Besuchszeit pro Person</li><li>Aufgewendete Zeit pro Sitzung</li></p> |
 | [!UICONTROL Aufgewendete Zeit pro Ereignis] | Dimension | Sammelt die Metrik [!UICONTROL Verwendete Zeit] in Buckets des Typs [!UICONTROL Ereignis]. |
 | [!UICONTROL Aufgewendete Zeit pro Sitzung] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Sitzung] zusammen. |
 | [!UICONTROL Aufgewendete Zeit pro Person] | Dimension | Fasst die Metrik [!UICONTROL Aufgewendete Zeit] in Behältern des Typs [!UICONTROL Person] zusammen. |

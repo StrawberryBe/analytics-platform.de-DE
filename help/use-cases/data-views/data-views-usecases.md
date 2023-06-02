@@ -4,10 +4,10 @@ description: Mehrere Anwendungsfälle, die die Flexibilität und Leistungsfähig
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
-workflow-type: ht
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -99,9 +99,9 @@ Eine Dimension und zwei Metriken ermöglichen diese Berichte:
 
 * [Sitzungstyp](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) – Diese Dimension hat zwei Werte: 1) [!UICONTROL Neu] und 2) [!UICONTROL Wiederkehrend]. Der Zeileneintrag [!UICONTROL Neu] enthält das gesamte Verhalten (d. h. die Metriken für diese Dimension) einer Sitzung, die als erste Sitzung einer Person definiert wurde. Alles andere ist im Zeileneintrag [!UICONTROL Wiederkehrend] enthalten (vorausgesetzt, dass alles zu einer Sitzung gehört). Wenn Metriken nicht Teil einer Sitzung sind, fallen sie in den Bereich „Nicht zutreffend“ für diese Dimension.
 
-* [Neue Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional). Die Metrik „Neue Sitzungen“ ist definiert als die erste Sitzung einer Person innerhalb des Berichtsfensters.
+* [Erstmalige Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional). Die Metrik Erstmalige Sitzungen wird als die definierte erste Sitzung einer Person im Berichtsfenster definiert.
 
-* [Wiederkehrende Sitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) Die Metrik „Wiederkehrende Sitzungen“ bezeichnet die Anzahl der Sitzungen, bei denen es sich nicht um die allererste Sitzung einer Person gehandelt hat.—>
+* [Rückkehrsitzungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=de#optional) Die Metrik &quot;Rückkehrsitzungen&quot;ist die Anzahl der Sitzungen, die keine Erstsitzung einer Person waren.—>
 
 So greifen Sie auf diese Komponente zu:
 
