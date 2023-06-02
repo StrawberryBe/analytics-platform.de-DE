@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 49%
+source-wordcount: '1934'
+ht-degree: 48%
 
 ---
 
@@ -130,6 +130,10 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 >* Wenn Ihr Unternehmen eine Lizenz für den Gesundheitsfürsorgeschild besitzt, können Sie Projekte nur für Benutzer freigeben, die sich entweder durch Single Sign On (SSO) oder Adobe ID authentifiziert haben. Sie können keine Projekte für nicht authentifizierte Benutzer freigeben. Es liegt in Ihrer Verantwortung, diese Funktion gemäß den internen Richtlinien Ihres Unternehmens zur Datenverwaltung zu verwenden und nur Projektlinks mit personenbezogenen Gesundheitsdaten (PHI) für Benutzer mit den entsprechenden Berechtigungen freizugeben.
 
 
+Die folgende Videodemonstration und die zugehörige Dokumentation beschreiben die Optionen im Zusammenhang mit der Freigabe eines Links für andere:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
 1. Öffnen Sie das Analysis Workspace-Projekt, das Sie freigeben möchten.
@@ -150,7 +154,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
    * **[!UICONTROL Experience Cloud-Authentifizierung verlangen]:**
 
-      Wenn diese Option aktiviert ist, können nur Benutzer, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde, auf das Projekt zugreifen.
+      Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzer, für die Sie freigeben, ist jedoch kein Zugriff auf Adobe Analytics erforderlich.
 
       CJA-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie der Administrator diese Option konfiguriert hat, können die folgenden Szenarien auftreten:
 
