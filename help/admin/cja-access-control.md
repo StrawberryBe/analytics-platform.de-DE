@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
-workflow-type: ht
-source-wordcount: '925'
-ht-degree: 100%
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Benutzende in Customer Journey Analytics können keine Datenansichten oder Verbi
 
 ## Workspace-Projektkuratierung
 
-Eine weitere Ebene der Zugriffskontrolle kann auf der Workspace-Berichtsebene verwendet werden. Der Zugriff auf bestimmte Komponenten kann für bestimmte Benutzende eingeschränkt werden. Weitere Informationen dazu, wie Sie Komponenten (Dimensionen, Metriken, Segmente, Datumsbereiche) auf Workspace-Projektebene einschränken und wie die Kuratierung mit Datenansichten verknüpft ist, finden Sie unter [Kuratieren von Projekten](/help/analysis-workspace/curate-share/curate.md).
+Eine weitere Ebene der Zugriffskontrolle kann auf der Workspace-Berichtsebene verwendet werden. Der Zugriff auf bestimmte Komponenten kann für bestimmte Benutzende eingeschränkt werden. Weitere Informationen dazu, wie Sie Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) auf Workspace-Projektebene einschränken und wie die Kuratierung mit Datenansichten verknüpft ist, finden Sie unter [Kuratieren von Projekten](/help/analysis-workspace/curate-share/curate.md).
 
 ## Gewähren von Zugriff auf einzelne Metriken oder Dimensionen
 
@@ -98,4 +98,4 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | **[!UICONTROL Zielgruppenerstellung]** | Ermöglicht Benutzenden das Erstellen von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Zielgruppenansicht]** | Ermöglicht Benutzenden die Ansicht von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

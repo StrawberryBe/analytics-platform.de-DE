@@ -3,7 +3,7 @@ description: Unterstützende Funktionen für die Barrierefreiheit in Analysis Wo
 title: Barrierefreiheit in Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 99%
@@ -67,7 +67,7 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 | `[Alt + 1]` | Neue Freiformtabelle |
 | `[Ctrl + Shift + C]` | Neue berechnete Metrik |
 | `[Ctrl + Shift + D]` | Neuer Datumsbereich |
-| `[Ctrl + Shift + E]` | Neues Segment |
+| `[Ctrl + Shift + E]` | Neuer Filter |
 | `[Ctrl + Z]` | Rückgängig |
 | `[Component drag + Shift]` | Einen Dropdown-Filter erstellen |
 

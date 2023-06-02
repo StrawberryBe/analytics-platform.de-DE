@@ -1,12 +1,12 @@
 ---
-description: Durch die Segmentierung einzelner Metriken können Sie Metriken innerhalb eines Berichts vergleichen.
-title: Segmentierte Metriken
+description: Durch Filterung einzelner Metriken können Sie Metrikvergleiche innerhalb desselben Berichts vornehmen.
+title: Gefilterte Metriken
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 96%
+source-wordcount: '473'
+ht-degree: 59%
 
 ---
 
@@ -24,20 +24,30 @@ Beispiel: Sie möchten verschiedene Aspekte des Filters „Deutsche Besucher“ 
 * Wie viele deutsche Personen durchsuchen bestimmte Seiten im Vergleich zu internationalen Personen in Prozent?
 * Wo liegen die größten Unterschiede in Bezug darauf, welcher Inhalt von den verschiedenen Filtern aufgerufen wird?
 
-1. Wenn kein vergleichbarer Filter vorhanden ist, erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens „Deutsche Besucher“, bei dem Sie für „Länder“ den Wert „Deutschland“ angeben. Ziehen Sie die Dimension „Länder“ einfach in die Arbeitsfläche „Definition“ und wählen Sie als Wert „Deutschland“:
+Erstellen und speichern Sie eine Metrik namens &quot;Deutsche Besucher&quot;und eine Metrik namens &quot;Internationale Besucher&quot;:
+
+1. Erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens &quot;Deutsche Besucher&quot;, bei dem &quot;Länder&quot;gleich &quot;Deutschland&quot;ist. Ziehen Sie die Dimension Länder in die Arbeitsfläche Definition und wählen Sie [!UICONTROL **Deutschland**] als Wert:
 
    ![](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >Sie können diesen Vorgang auch im [Filter Builder](/help/components/filters/create-filters.md) durchführen, aber wir haben den Arbeitsablauf vereinfacht, indem Dimensionen jetzt auch im Generator für berechnete Metriken zur Verfügung stehen. „Ad hoc“ bedeutet, dass das Segment nicht in der Liste der **[!UICONTROL Filter]** in der linken Leiste angezeigt wird. Sie können es aber auch veröffentlichen, indem Sie über das „i“ daneben fahren und auf **[!UICONTROL Als öffentlich einstellen klicken]**.
+   >Sie können dies auch im Abschnitt [Filter Builder](/help/components/filters/create-filters.md), aber wir haben den Workflow vereinfacht, indem wir Dimensionen im Generator für berechnete Metriken verfügbar gemacht haben. &quot;Ad Hoc&quot;bedeutet, dass der Filter im **[!UICONTROL Filter]** in der linken Leiste. Sie können es aber auch veröffentlichen, indem Sie über das „i“ daneben fahren und auf **[!UICONTROL Als öffentlich einstellen klicken]**.
 
-1. Wenn kein vergleichbarer Filter vorhanden ist, erstellen Sie einen Filter namens „Internationale Besucher“, bei dem Sie für „Länder“ nicht „Deutschland“ angeben.
-1. Erstellen und speichern Sie eine Metrik namens „Deutsche Besucher“, indem Sie den Filter „Deutschland“ in die Arbeitsfläche „Definition“ ziehen und dann die Metrik „Unique Visitors“ darauf ziehen:
+1. Ziehen Sie den Filter Deutschland in die Arbeitsfläche Definition und ziehen Sie die Metrik Unique Visitors darin:
 
    ![](assets/german-visitors.png)
 
-1. Wiederholen Sie Schritt 3 mit dem Segment „Internationale Besucher“ und der Metrik „Unique Visitors“, um die Metrik „Internationale Besucher“ zu erstellen.
+1. Auswählen [!UICONTROL **Speichern**] , um die berechnete Metrik zu speichern.
+
+1. Erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens &quot;internationale Besucher&quot;, bei dem &quot;Länder&quot;nicht mit &quot;Deutschland&quot;übereinstimmt.
+
+   Ziehen Sie die Dimension Länder in die Arbeitsfläche Definition und wählen Sie [!UICONTROL **Deutschland**] als Wert angeben, und wählen Sie dann [!UICONTROL **ist nicht gleich**] als Operator.
+
+1. Ziehen Sie die Metrik Unique Visitors hinzu.
+
+1. Auswählen [!UICONTROL **Speichern**] , um die berechnete Metrik zu speichern.
+
 1. Ziehen Sie in Analysis Workspace die Dimension **[!UICONTROL Seite]** in eine Freiform-Tabelle und dann die zwei neuen berechneten Metriken nebeneinander oben in die Tabelle:
 
    ![](assets/workspace-pages.png)

@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: a7a03fa6e0f71d473b4713bd9817e1b97dab383e
 workflow-type: tm+mt
-source-wordcount: '2060'
-ht-degree: 91%
+source-wordcount: '2094'
+ht-degree: 90%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Juni 2023** |  |
+| Aktualisierungen an berechneten Metriken | An verschiedenen Artikeln, die sich auf berechnete Metriken beziehen, wurden Aktualisierungen vorgenommen, einschließlich Aktualisierung von Screenshots und Verfahrensschritten. Diese Änderungen wurden vorgenommen, um die Dokumentation mit der aktuellen CJA-Funktion in Einklang zu bringen. |
 | **Mai 2023** |  |
 | Dokumentation zu Deep-Linking (Mobile App) | Ermöglicht Benutzerinnen und Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. Dies erleichtert die Freigabe von Projekten und eine stärkere Interaktion mit weniger technischen Zielgruppen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Doc on &quot;Select data view from cell&quot;in Report Builder | Mit dieser Funktion können Benutzerinnen oder Benutzer die Datenansicht für einen Datenblock aus einer Zelle auswählen. Dies ist hilfreich, wenn Sie eine Arbeitsmappe erstellen und mehrere Datenansichten haben, die eine ähnliche Datenerstellung aufweisen, und eine Arbeitsmappe mehrmals mit verschiedenen Datenansichten wiederverwenden möchten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=de) |

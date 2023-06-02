@@ -4,10 +4,10 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
 
 1. Ziehen Sie die Visualisierung **[!UICONTROL Zusammenfassung einer Schlüsselmetrik]** aus dem Menü **[!UICONTROL Visualisierungen]** in der linken Leiste in ein Bedienfeld.
 
-1. Konfigurieren Sie die Visualisierung, indem Sie eine Metrik, einen primären Datumsbereich, einen Vergleichsdatumsbereich und ein Segment (falls gewünscht) auswählen:
+1. Konfigurieren Sie die Visualisierung, indem Sie eine Metrik, einen primären Datumsbereich, einen Vergleichsdatumsbereich und einen Filter auswählen (falls gewünscht):
 
    ![Schlüsselmetrikkonfiguration](assets/key-metric-config.png)
 
@@ -44,7 +44,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
    | **[!UICONTROL Metrik]** | Wählen Sie die Metrik aus, die Sie überprüfen möchten. Alle Metriken werden unterstützt. |
    | **[!UICONTROL Primärer Datumsbereich]** | Der aktuelle Datumsbereich für die Freiformtabelle. |
    | **[!UICONTROL Vergleichsdatumsbereich]** | Der Datumsbereich, mit dem Sie den primären Datumsbereich vergleichen möchten. |
-   | **[!UICONTROL Segment (optional)]** | Jedes Segment, an dem Sie für diese Zusammenfassung interessiert sind. |
+   | **[!UICONTROL Filter (optional)]** | Alle Filter, die Sie speziell für diese Zusammenfassung interessieren. |
 
    {style="table-layout:auto"}
 
@@ -93,4 +93,4 @@ Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfigurati
 
    Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
 
-1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichsdatumsbereich oder das Segment nach Belieben.
+1. Ändern Sie die Metrik, den primären Datumsbereich, den Vergleichsdatumsbereich oder den Filter wie gewünscht.

@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 72%
+ht-degree: 65%
 
 ---
 
@@ -24,7 +24,7 @@ Beachten Sie:
 
 * Anmerkungen können an ein einzelnes Datum oder einen Datumsbereich gebunden werden.
 
-* Sie können auf Ihren gesamten Datensatz oder auf bestimmte Metriken, Dimensionen oder Segmente angewendet werden.
+* Sie können auf Ihren gesamten Datensatz oder auf bestimmte Metriken, Dimensionen oder Filter angewendet werden.
 
 * Sie können auf das Projekt angewendet werden, in dem sie erstellt wurden (Standard), oder auf alle Projekte.
 
@@ -32,7 +32,7 @@ Beachten Sie:
 
 ## Zugriffsberechtigungen
 
-Standardmäßig können nur Administratoren Anmerkungen erstellen. Benutzer haben die Berechtigung, Anmerkungen anzuzeigen, wie dies bei anderen Analytics-Komponenten der Fall ist (z. B. Segmente, berechnete Metriken usw.).
+Standardmäßig können nur Administratoren Anmerkungen erstellen. Benutzer haben die Berechtigung, Anmerkungen anzuzeigen, wie dies bei anderen Analytics-Komponenten der Fall ist (z. B. Filter, berechnete Metriken usw.).
 
 Administratoren können jedoch über die [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=de) Benutzern die Berechtigung zur [!UICONTROL Erstellung von Anmerkungen] (Analytics-Tools) erteilen.
 

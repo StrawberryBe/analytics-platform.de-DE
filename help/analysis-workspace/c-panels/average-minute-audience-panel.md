@@ -4,10 +4,10 @@ description: Verwenden und Interpretieren des Bedienfelds „Medien-Zielgruppend
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ mithi
 | Einstellung | Beschreibung |
 |---------|------------|
 | Datumsbereich der Bedienfelder | Der Datumsbereich des Panels ist standardmäßig „Heute“. Sie können es so verändern, dass Sie einen einzelnen Tag oder mehrere Monate auf einmal betrachten können. <br></br> Diese Visualisierung ist auf 1.440 Datenzeilen beschränkt (z. B. 24 Stunden bei einer Granularität auf Minutenebene). Wenn eine Kombination aus Datumsbereich und Granularität mehr als 1.440 Zeilen zur Folge hat, wird die Granularität automatisch aktualisiert, um den vollständigen Datumsbereich anzuzeigen. |
-| Ziehen Sie ein Segment (oder beliebige andere Komponenten) hierher | Wie andere Bedienfelder filtert diese Einstellung Ihre Auswahl anhand von Segmenten, die Sie erstellt haben. Dies ist eine hervorragende Möglichkeit, bestimmte Plattformen, Live-Streams oder andere gängige Mediensegmente anzusehen. |
+| Filter hierher ziehen (oder eine beliebige andere Komponente) | Wie andere Bedienfelder filtert diese Einstellung Ihre Auswahl anhand der von Ihnen erstellten Filter. Dies ist eine hervorragende Möglichkeit, bestimmte Plattformen, Live-Streams oder andere gängige Mediensegmente anzusehen. |
 | Metrik berechnen für | Mit dieser Einstellung können Sie wählen, ob Sie den Zielgruppendurchschnitt pro Minute für einen bestimmten Inhalt anzeigen möchten, indem Sie *Spezifischer Inhalt* wählen, oder ob Sie den Zielgruppendurchschnitt pro Minute für einen bestimmten Zeitraum anzeigen möchten, indem Sie *Benutzerdefinierter Zeitraum* wählen. <br></br>Die Option für bestimmte Inhalte funktioniert nur, wenn die Dauer mithilfe von Klassifizierungen aktualisiert wurde. Wenn die Dauer nicht verfügbar ist oder Sie den Zielgruppendurchschnitt pro Minute für eine Zeitreihe mit mehreren Inhalten oder Inhalten ohne bestimmte Dauer anzeigen möchten (z. B. während eines Live-Streams oder -Ereignisses), sollten Sie einen benutzerdefinierten Zeitraum auswählen. Diese Einstellung ändert den Workflow und die Berichtsausgabe. |
 
 ### Bestimmter Inhalt

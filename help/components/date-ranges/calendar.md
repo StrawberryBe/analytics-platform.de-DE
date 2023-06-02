@@ -4,10 +4,10 @@ title: Übersicht über Kalender und Datumsbereiche
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -41,7 +41,7 @@ So verwenden Sie relative Datumsbereiche im Bedienfeld
 
 1. Wählen Sie die Registerkarte **Arbeitsbereich** aus.
 1. Wählen Sie **Leeres Projekt** aus.
-1. Fügen Sie Dimensionen, Metriken und Segmente über die linke Leiste hinzu.
+1. Fügen Sie Dimensionen, Metriken und Filter aus der linken Leiste hinzu.
 1. Klicken Sie auf das Feld für den Datumsbereich des Bedienfelds, um in die Einstellung für den relativen Datumsbereich des Bedienfelds umzuschalten.
 1. Wählen Sie **Erstellen von Datumsbereichskomponenten relativ zum Bedienfeldkalender** aus.
    * Wählen Sie die Option aus, damit sich die Komponenten für den Datumsbereich relativ zum Bedienfeldkalender verhalten.
@@ -61,19 +61,19 @@ Beachten Sie bei der Verwendung relativer Bedienfelddatumsbereiche die folgenden
 
 ### Formeln und relative Datumsbereiche {#formula-relative-dates}
 
-Wenn Sie relative Datumsangaben ausgewählt haben, verwenden alle Datumsformeln das Startdatum des Bedienfelds als Ausgangspunkt.
+Wenn Sie relative Daten ausgewählt haben, verwenden alle Datumsformeln das Startdatum des Bedienfelds als Ausgangspunkt.
 
 ### Benutzerdefinierte Kalender und relative Datumsbereiche {#custom-calendar-formulas}
 
 Wenn Sie einen wöchentlichen benutzerspezifischen Kalender verwenden und Monate oder Jahre hinzufügen, berechnet die Formel den Versatz des Tages im angegebenen Zeitraum. Das tatsächliche Datum kann sich aufgrund des Versatzes unterscheiden. Durch die Formel wird der Tag ausgewählt, der an derselben Stelle im benutzerdefinierten Kalender liegt, beispielsweise der dritte Freitag der dritten Woche in einem benutzerdefinierten Kalender.
 
-### Über Segmente, die rollierende Datumsangaben und relative Bedienfeld-Datumsbereiche verwenden {#segments-relative-dates}
+### Über Filter, die rollierende Datumswerte und relative Datumsbereiche für Bedienfelder verwenden {#segments-relative-dates}
 
-Wenn Sie ein Segment erstellen oder ein Segment mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Segmentvorschau klicken, beginnt das rollierende Datum ab *Heute* anstelle des Startdatums des Bedienfelds. Daher stimmt die Vorschau für das Segment nicht, wenn Sie das Segment in der Tabelle verwenden. Die Vorschau ist zwar falsch, nicht aber das Segment selbst.
+Wenn Sie einen Filter erstellen oder einen Filter mit einem rollierenden Datum verwenden, z. B. die letzten 7 Tage oder die letzten 2 Wochen, und Sie auf die Filtervorschau klicken, beginnt das rollierende Datum ab *Heute* anstelle des Startdatums des Bedienfelds. Daher stimmt die Vorschau für den Filter nicht überein, wenn Sie den Filter tatsächlich in der Tabelle verwenden. Die Vorschau ist betroffen, nicht der Filter selbst.
 
 ## Richtlinien für Panel-Datumsbereiche und Vorschauen {#guidelines-panel-dates}
 
 * Ab der Februarversion basieren die Komponenten- und Datenvorschauen auf dem Datumsbereich des Bedienfelds und nicht auf den letzten 90 Tagen.
 * Alle in der linken Leiste aufgelisteten Komponenten sind basierend auf dem Datumsbereich des Bedienfelds verfügbar.
-* Alle Datumsvorschauen im Segment und Generatoren für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds (sofern nicht von den Komponenten-Managern darauf zugegriffen wird, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen).
+* Alle Datumsvorschauen im Filter und Generator für berechnete Metriken basieren auf dem Datumsbereich des Bedienfelds. (Sofern der Zugriff nicht über die Komponentenmanager erfolgt, die über kein verknüpftes Bedienfeld verfügen, basieren sie weiterhin auf den letzten 90 Tagen.)
 * Bei jeder Datenvorschau werden Daten oder Komponenten basierend auf dem Datumsbereich des Bedienfelds angezeigt.

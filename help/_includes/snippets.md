@@ -1,5 +1,5 @@
 ---
-source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 67%
@@ -63,7 +63,7 @@ ht-degree: 67%
 |---------|----------|
 | [!UICONTROL **Empfohlen**] | Sortiert Komponenten nach den empfohlenen Komponenten oben in der Liste. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
 | [!UICONTROL **Alphabetisch**] | Sortiert Komponenten alphabetisch. |
-| [!UICONTROL **Kategorisch**] | Sortiert Komponenten nach Komponententyp (Dimension, Metrik, Segment, Datumsbereich). |
+| [!UICONTROL **Kategorisch**] | Sortiert Komponenten nach Komponententyp (Dimension, Metrik, Filter, Datumsbereich). |
 
 {style="table-layout:auto"}
 

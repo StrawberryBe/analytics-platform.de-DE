@@ -4,10 +4,10 @@ title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 97%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Beachten Sie:
 * Sie können einem einzigen [!UICONTROL Kombinationsdiagramm] mehrere Vergleiche hinzufügen.
 * Wenn Sie einen oder mehrere Vergleiche hinzufügen, müssen diese vom gleichen Typ sein, z. B. [!UICONTROL ein Zeitvergleich].
 * Sie können bis zu 5 Vergleiche hinzufügen.
-* Sie können bis zu 3 Filter (Segmente) auf eine Metrik anwenden.
+* Sie können bis zu 3 Filter auf eine Metrik anwenden.
 * Berechnete Metriken werden in Kombinationsdiagrammen nicht unterstützt.
 
 ## Erstellen eines Kombinationsdiagramms

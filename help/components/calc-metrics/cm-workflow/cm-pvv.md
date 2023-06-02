@@ -3,10 +3,10 @@ description: Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten p
 title: Einfache Metrik vom Typ „Seitenansichten pro Besuch“ erstellen
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 83%
+source-wordcount: '214'
+ht-degree: 85%
 
 ---
 
@@ -32,4 +32,4 @@ Hier sehen Sie, wie Sie eine einfache Metrik für Seitenansichten pro Besuche er
 
    Beachten Sie, dass die Formel unter **[!UICONTROL Zusammenfassung]** jedes Mal, wenn Sie die Metrikdefinition ändern, aktualisiert wird.
 
-1. (Optional) Um eine Metrik freizugeben, zu genehmigen, (erneut) zu taggen, umzubenennen oder zu löschen, können Sie zum [Seite &quot;Berechnete Metriken&quot;](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+1. (Optional) Geben Sie die Metrik für andere Benutzer in Ihrer Organisation frei, wie hier beschrieben: [Berechnete Metriken freigeben](/help/components/calc-metrics/cm-workflow/cm-sharing.md).
