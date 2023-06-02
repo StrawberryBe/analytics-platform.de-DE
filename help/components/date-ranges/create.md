@@ -3,16 +3,16 @@ title: Datumsbereich erstellen
 description: Datumsbereich zur Verwendung in Berichten erstellen.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 94%
+source-wordcount: '403'
+ht-degree: 91%
 
 ---
 
 # Datumsbereich erstellen
 
-Sie können einen benutzerdefinierten Datumsbereich mit einer der beiden folgenden Methoden erstellen:
+Sie können einen Datumsbereich mit einer der beiden folgenden Methoden erstellen:
 
 * Direkt in einem Workspace-Projekt durch Klicken auf die Schaltfläche ‚`+`‘ neben der Liste der Datumsbereichskomponenten auf der linken Seite
 * Innerhalb des Datumsbereichsmanagers
