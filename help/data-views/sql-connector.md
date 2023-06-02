@@ -6,9 +6,10 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
+source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2900'
 ht-degree: 6%
 
 ---
@@ -33,7 +34,7 @@ Die wichtigsten Vorteile sind:
 
 Um diese Funktion verwenden zu können, müssen Sie
 
-- Aktivieren Sie die [!UICONTROL CJA SQL Connector] in Ihrer Experience Platform.
+<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
 
 - Konfigurieren Sie die Funktionalität für die relevanten Produktprofile, Benutzergruppen und/oder einzelnen Benutzer.<br/>
 Benutzer müssen Zugriff auf:
@@ -88,7 +89,7 @@ Siehe [Anleitung zur Benutzeroberfläche des Abfrage-Editors](https://experience
 
 ### BI-Tools
 
-Derzeit wird der CJA SQL Connector für Power BI und Tableau unterstützt.
+Derzeit wird CJA SQL Connector nur für Power BI und Tableau unterstützt und getestet. Andere BI-Tools, die die PSQL-Oberfläche verwenden, funktionieren möglicherweise ebenfalls, werden aber noch nicht offiziell unterstützt.
 
 +++ Power BI
 
@@ -219,9 +220,9 @@ Standardmäßig verwendet das Schema Ihrer Datenansichten verschachtelte Struktu
 
 Siehe [SQL-Referenz für Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) für die vollständige Referenz darüber, welcher SQL-Typ unterstützt wird.
 
-Eine Übersicht über Muster und Beispiele finden Sie in der Tabelle &quot;Muster&quot;unten.
+Beispiele für SQL, die Sie verwenden können, finden Sie in der folgenden Tabelle.
 
-+++Muster
++++ Beispiele
 
 | Muster | Beispiel |
 |---|---|
@@ -390,4 +391,3 @@ Diese Funktionen können für Dimensionen im `SELECT`, `WHERE` -Klausel oder in 
 | [DATE_TRUNC(Granularität, Datum oder Datum/Uhrzeit)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generieren Sie eine dynamische Dimensionsidentität für das übergebene Feld.<br/>Unterstützte Zeichenfolgengranularitäten sind: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&quot;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`oder `'MINUTE'`. |
 
 {style="table-layout:auto"}
-
