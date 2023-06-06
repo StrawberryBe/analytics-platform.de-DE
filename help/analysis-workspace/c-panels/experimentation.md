@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 75%
+source-wordcount: '1861'
+ht-degree: 73%
 
 ---
 
@@ -125,3 +125,7 @@ Die folgende Abbildung widerspricht diesen Situationen:
 ![randomisiertes Experiment](assets/randomize.png)
 
 Wenn Sie die Wirkung von Intervention X auf das Ergebnis Y messen möchten, ist es möglich, dass die wahre Ursache beider der verwirrende Faktor C ist. Wenn die Daten nicht durch zufällige Personen auf X erreicht werden, ist die Auswirkung schwieriger zu messen, und die Analyse berücksichtigt ausdrücklich C. Die Randomisierung unterbricht die Abhängigkeit von X auf C, sodass wir die Wirkung von X auf Y messen können, ohne sich um andere Variablen kümmern zu müssen.
+
+## Berechnete Metriken im Experimentierungsbereich verwenden
+
+Weitere Informationen finden Sie in diesem Blogpost . [Verwendung abgeleiteter Metriken im Experimentierungsbereich](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).

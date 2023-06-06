@@ -3,10 +3,10 @@ description: Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu
 title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 90%
+source-wordcount: '411'
+ht-degree: 85%
 
 ---
 
@@ -61,3 +61,7 @@ Vorkonfigurierte Filter, die in der Tabelle angezeigt werden, sind interne Filte
 ![](assets/prebuilt_segments.png)
 
 Weitere Möglichkeiten zum Verwalten von Freiform-Datentabellen und anderen Visualisierungen (wie zum Beispiel Datenaufschlüsselungen) finden Sie [hier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=de).
+
+## Blogpost
+
+In diesem Blogpost finden Sie Informationen zu [Verwendung von Histogrammen zur Identifizierung unerwarteter Datenwerte](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-histograms-to-identify-unexpected-data-values/ba-p/596168).
