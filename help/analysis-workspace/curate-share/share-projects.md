@@ -4,7 +4,7 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 48%
@@ -104,8 +104,6 @@ So geben Sie den Projekt-Link für Benutzende in Ihrer Organisation frei:
 1. Geben Sie den Link für Benutzende in Ihrer Organisation frei. Sie können ihn beispielsweise in eine E-Mail oder eine interne Website usw. einfügen.
 
 ## Projekt für andere freigeben (keine Anmeldung erforderlich) {#share-public-link}
-
-{{release-limited-testing-section}}
 
 Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/view-only-projects.md) für Analysis Workspace-Projekte für Personen, die keinen Zugriff auf Customer Journey Analytics haben. Dies kann Folgendes umfassen:
 

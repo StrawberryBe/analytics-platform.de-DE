@@ -4,10 +4,10 @@ description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 29ceba37422ab2cb432bbe000dee6379a63d5a8f
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3099'
+ht-degree: 75%
 
 ---
 
@@ -44,10 +44,6 @@ Allgemeine Voreinstellungen gelten für Ihr Customer Journey Analytics-Erlebnis 
 | Komponenten, die in Gruppen auf der linken Leiste angezeigt werden | Wählen Sie aus, wie viele Komponenten im Komponentenmenü in der linken Leiste angezeigt werden sollen. <p>Wenn Sie „0“ auswählen, kann die Komponente nicht mehr über die linke Leiste Ihrer Arbeitsbereiche aufgerufen werden.</p><p>Standardmäßig werden für jede der folgenden Objekte fünf Komponenten angezeigt:</p> <ul><li>Dimensionen</li><li>Metriken</li><li>Filter</li><li>Datumsbereiche</li></ul> <p>Weitere Informationen zu Komponenten in Analysis Workspace finden Sie unter [Komponentenübersicht](/help/components/overview.md).</p> |
 
 ## IMS-Organisationsvoreinstellungen
-
->[!AVAILABILITY]
->
->Die in diesem Abschnitt beschriebene Funktion für öffentliche Zugriffslinks befindet sich in der Phase der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Analytics-Veröffentlichungsprozess finden Sie unter [Veröffentlichung von Funktionen für Customer Journey Analytics](/help/release-notes/releases.md).
 
 Sie können Unternehmenspräferenzen aktualisieren, die für alle Benutzer und Projekte in Ihrer Organisation gelten. Informationen zum Zugriff auf diese Voreinstellungen finden Sie unter [Aktualisieren von Voreinstellungen](#update-preferences).
 

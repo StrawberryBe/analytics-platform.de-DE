@@ -3,10 +3,10 @@ description: Sie können PDF/CSV-Projekte für Empfänger in Ihrer Organisation 
 title: Menü „Freigeben“
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 60%
+source-wordcount: '202'
+ht-degree: 66%
 
 ---
 
@@ -20,9 +20,8 @@ Sie können PDF-/CSV-Projekte für Empfänger in Ihrer Organisation im **Menü �
 
 | Menüoption | Beschreibung |
 |---|---|
-| Freigabe Projekt<!--remove this when Share with anyone goes to GA--> | Stellen Sie ein Projekt für andere Analysis Workspace-Benutzer in Ihrer Organisation zur Verfügung. Geben Sie Inhalte für bestimmte Benutzer frei oder erstellen Sie einen freigebbaren Link, über den Sie schnell auf ein Projekt zugreifen können. Benutzer müssen sich anmelden. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md) |
 | Mit Workspace-Benutzern teilen (in begrenztem Test verfügbar) | Stellen Sie ein Projekt für andere Analysis Workspace-Benutzer in Ihrer Organisation zur Verfügung. Geben Sie Inhalte für bestimmte Benutzer frei oder erstellen Sie einen freigebbaren Link, über den Sie schnell auf ein Projekt zugreifen können. Benutzer müssen sich anmelden. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md) |
-| Mit allen teilen (in begrenztem Test verfügbar) | Gewähren Sie Benutzern ohne Zugriff auf Adobe Analytics schreibgeschützten Zugriff auf Analysis Workspace-Projekte. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md) |
+| Für alle freigeben | Gewähren Sie Benutzern ohne Zugriff auf Adobe Analytics schreibgeschützten Zugriff auf Analysis Workspace-Projekte. [Weitere Informationen](/help/analysis-workspace/curate-share/share-projects.md) |
 | Datei exportieren | Senden Sie ein Projekt als CSV- oder PDF-Datei sofort an bestimmte Empfänger. [Weitere Informationen](/help/analysis-workspace/curate-share/t-schedule-report.md) |
 | Dateiexport planen | Senden Sie ein Projekt als CSV- oder PDF-Datei planmäßig an bestimmte Empfänger. [Weitere Infos](/help/analysis-workspace/curate-share/t-schedule-report.md) |
 | Projekt kuratieren | Beschränken Sie die in einem Projekt verfügbaren Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche). [Weitere Informationen](/help/analysis-workspace/curate-share/curate.md) |
