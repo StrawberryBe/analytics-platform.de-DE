@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
+source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 48%
+source-wordcount: '1944'
+ht-degree: 47%
 
 ---
 
@@ -17,15 +17,15 @@ Sie können ein Analysis Workspace-Projekt für die folgenden Personentypen frei
 
 * Benutzer und Gruppen in Ihrem Unternehmen, die Zugriff auf Adobe Customer Journey Analytics haben
 
-   Sie können den Zugriff &quot;Bearbeiten&quot;, &quot;Duplizieren&quot;oder &quot;Anzeigen&quot;freigeben
+  Sie können den Zugriff &quot;Bearbeiten&quot;, &quot;Duplizieren&quot;oder &quot;Anzeigen&quot;freigeben
 
 * Benutzer und Gruppen in Ihrer Organisation, die keinen Zugriff auf Customer Journey Analytics haben
 
-   Empfänger haben schreibgeschützten Zugriff
+  Empfänger haben schreibgeschützten Zugriff
 
 * Personen außerhalb Ihrer Organisation
 
-   Empfänger haben schreibgeschützten Zugriff
+  Empfänger haben schreibgeschützten Zugriff
 
 Alle [Kuratierung](curate.md) Sie vor der Freigabe beantragen, wird beim Öffnen des Projekts durch die Empfänger angezeigt.
 
@@ -54,7 +54,7 @@ Beachten Sie beim Freigeben einer bestimmten Projektrolle für Benutzende und Gr
 
 * Benutzende, denen mehrere Rollen zugewiesen sind, erhalten immer die maximale Berechtigung. Dies kann vorkommen, wenn Benutzende sowohl als Einzelpersonen als auch als Gruppenmitglieder hinzugefügt werden. Wenn Benutzenden beispielsweise die Rolle **[!UICONTROL Kann bearbeiten]** als Einzelpersonen und die Rolle **[!UICONTROL Kann anzeigen]** als Gruppenmitgliedern zugewiesen wird, erhalten sie die Projektberechtigung **[!UICONTROL Kann bearbeiten]**.
 
-* Administrierende, die die Rolle **[!UICONTROL Kann duplizieren]** oder **[!UICONTROL Kann anzeigen]** erhalten, verfügen über diese eingeschränkte Berechtigungen, wenn sie ein Projekt öffnen. Falls gewünscht, kann ein Administrator bzw. eine Administratorin seine/ihre Rolle jederzeit auf **[!UICONTROL Kann bearbeiten]** erhöhen, indem er/sie **[!UICONTROL Komponenten] > [!UICONTROL Projekte]** wählt.
+* Administrierende, die die Rolle **[!UICONTROL Kann duplizieren]** oder **[!UICONTROL Kann anzeigen]** erhalten, verfügen über diese eingeschränkte Berechtigungen, wenn sie ein Projekt öffnen. Ein Administrator kann seine Rolle in **[!UICONTROL Kann bearbeiten]** indem Sie das Projekt für sich selbst freigeben und die Rolle &quot;Bearbeiten&quot;zuweisen, wie im folgenden Verfahren beschrieben.
 
 So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer Organisation frei:
 
@@ -127,7 +127,6 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 >
 >* Wenn Ihr Unternehmen eine Lizenz für den Gesundheitsfürsorgeschild besitzt, können Sie Projekte nur für Benutzer freigeben, die sich entweder durch Single Sign On (SSO) oder Adobe ID authentifiziert haben. Sie können keine Projekte für nicht authentifizierte Benutzer freigeben. Es liegt in Ihrer Verantwortung, diese Funktion gemäß den internen Richtlinien Ihres Unternehmens zur Datenverwaltung zu verwenden und nur Projektlinks mit personenbezogenen Gesundheitsdaten (PHI) für Benutzer mit den entsprechenden Berechtigungen freizugeben.
 
-
 Die folgende Videodemonstration und die zugehörige Dokumentation beschreiben die Optionen im Zusammenhang mit der Freigabe eines Links für andere:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
@@ -152,9 +151,9 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
    * **[!UICONTROL Experience Cloud-Authentifizierung verlangen]:**
 
-      Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzer, für die Sie freigeben, ist jedoch kein Zugriff auf Adobe Analytics erforderlich.
+     Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzer, für die Sie freigeben, ist jedoch kein Zugriff auf Adobe Analytics erforderlich.
 
-      CJA-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie der Administrator diese Option konfiguriert hat, können die folgenden Szenarien auftreten:
+     CJA-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie der Administrator diese Option konfiguriert hat, können die folgenden Szenarien auftreten:
 
       * Wenn diese Option nicht angezeigt wird, hat Ihr CJA-Administrator diese Funktion nicht aktiviert.
 
