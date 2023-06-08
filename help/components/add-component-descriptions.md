@@ -4,7 +4,7 @@ title: Komponentenbeschreibungen hinzufügen
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 767d112d13b7312aa8685cc132916f2e27896422
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 3%
@@ -24,8 +24,6 @@ Im folgenden Video wird beschrieben, wie Sie in einer Datenansicht Dimensions- u
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 
 ## Hinzufügen von Beschreibungen zu Komponenten in Analysis Workspace (mithilfe des Datenwörterbuchs) {#add-descriptions}
-
-{{release-limited-testing-section}}
 
 Das Datenwörterbuch in Analysis Workspace hilft Benutzern und Administratoren, die Komponenten in ihrer CJA-Umgebung zu verfolgen und besser zu verstehen. Dies ermöglicht es CJA-Administratoren, Komponentenbeschreibungen direkt in Analysis Workspace hinzuzufügen.
 
