@@ -2,10 +2,10 @@
 title: Auditprotokolle
 description: Erfahren Sie, wie Sie CJA-Auditprotokolle anzeigen und verwalten können.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 79%
 
 ---
 
@@ -41,19 +41,49 @@ Doppelklicken Sie auf die Info-Schaltfläche (i) neben einer Beschreibung.
 
 Die folgenden Informationen werden angezeigt:
 
-| Element | Beschreibung |
-| --- | --- |
-| Aktionsname | Dies ist die Liste möglicher Aktionen: <ul><li>API_Request</li><li>Genehmigen</li><li>Erstellen</li><li>Bearbeiten</li><li>Exportieren</li><li>Login_failed</li><li>Login_success</li><li>Abmelden</li><li>Org_change</li><li>Aktualisieren</li><li>Freigeben</li><li>Übertragen</li><li>Genehmigung aufheben</li><li>Freigabe aufheben</li></ul> |
-| Beschreibung | Eine Zusammenfassung der Aktion, des Komponententyps (mit ID) und anderer Werte. |
-| Benutzername | Der Benutzer, der die Aktion durchführt. |
-| Typ der Komponente | Mögliche Komponententypen sind: <ul><li>Anmerkung</li><li>Zielgruppe</li><li>Berechnete Metrik</li><li>Verbindung</li><li>Data_Group</li><li>Data_View (dieser Komponententyp umfasst Dimensionen und Metriken)</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Projekt</li><li>Bericht</li><li>Scheduled_Project</li><li>Benutzer</li><li>User_Group</li></ul> |
-| Kennung der IMS-Organisation | Eine eindeutige ID, die Ihrer Instanz bei der ersten Anmeldung bei Adobe Experience Cloud zugewiesen wird. Sie sollte im folgenden Format vorliegen: xxx@AdobeOrg |
-| Benutzer-ID | Eine eindeutige ID, die den/die Benutzende repräsentiert, der/die diese Aktion ausgeführt hat. |
-| Erstellt am | Zeitpunkt, zu dem diese Aktion durchgeführt wurde. |
-| E-Mail | Die E-Mail des/der Benutzenden, der/die die Aktion durchgeführt hat. |
-| Komponenten-ID | Eine eindeutige ID, die die Komponente identifiziert, für die eine Aktion durchgeführt wird. |
-| Protokoll-ID | Eine eindeutige ID für diesen Protokolleintrag. |
-| Benutzertyp | Mögliche Typen sind: IMS, OKTA |
+* **[!UICONTROL Aktionsname]**: Die getroffenen Maßnahmen. Mögliche Werte:
+   * API_REQUEST
+   * GENEHMIGEN
+   * ERSTELLEN
+   * DELETE
+   * BEARBEITEN
+   * EXPORTIEREN
+   * ORG_CHANGE
+   * AKTUALISIEREN
+   * FREIGEBEN
+   * TRANSFER
+   * UNGENEHMIGEN
+   * UNSHARE
+* **[!UICONTROL Erstellungsdatum]**: Datum und Uhrzeit der Aktion.
+* **[!UICONTROL Beschreibung]**: Eine Zusammenfassung der Aktion.
+* **[!UICONTROL Benutzername]**: Der Benutzer, der die Aktion ausgeführt hat.
+* **[!UICONTROL Email]**: Die E-Mail-Adresse des Benutzers, der die Aktion ausgeführt hat.
+* **[!UICONTROL Komponentenname]**: Die Komponente, auf die der Benutzer eine Aktion ausgeführt hat.
+* **[!UICONTROL Komponententyp]**: Der Typ der Komponente. Mögliche Werte:
+   * ANMERKUNG
+   * ZIELGRUPPE
+   * CALCULATED_METRIC
+   * VERBINDUNG
+   * DATA_GROUP
+   * DATA_VIEW
+   * DATASET_STITCHING
+   * DATE_RANGE
+   * FEATURE_ACCESS
+   * FILTER
+   * IMS_ORG
+   * MOBILE
+   * PROJEKT
+   * BERICHT
+   * ZEDULED_PROJECT
+   * BENUTZER
+   * USER_GROUP
+* **[!UICONTROL Komponenten-ID]**: Die ID der Komponente, für die der Benutzer eine Aktion ausgeführt hat.
+* **[!UICONTROL Kennung der IMS-Organisation]**: Die IMS-ID der Organisation, im Format `ABC123@AdobeOrg`.
+* **[!UICONTROL Protokollkennung]**: Eine eindeutige ID, die diesen Protokolleintrag identifiziert.
+* **[!UICONTROL Benutzer-ID]**: Die eindeutige ID, die den Benutzer identifiziert, der die Aktion ausgeführt hat.
+* **[!UICONTROL Benutzertyp]**: Der verwendete Authentifizierungstyp. Zu gültigen Werten gehören:
+   * IMS
+   * OKTA
 
 ### Filtern von Auditprotokollen
 
@@ -66,13 +96,13 @@ Die Benutzeroberfläche verfügt für Protokolle über folgende Filter:
 | Filter | Beschreibung |
 | --- | --- |
 | [!UICONTROL Datumsbereich] | Sie können nach einem Datumsbereich filtern, indem Sie ein Datum auswählen. Sie können einen Datumsbereich auswählen, indem Sie den Cursor über mehrere Daten ziehen. Standardmäßig sind das heutige und das gestrige Datum ausgewählt. |
-| [!UICONTROL Aktion] | Sie können nach einer oder mehreren der folgenden Aktionen filtern: <ul><li>API_Request</li><li>Genehmigen</li><li>Erstellen</li><li>Bearbeiten</li><li>Exportieren</li><li>Login_failed</li><li>Login_success</li><li>Abmelden</li><li>Org_change</li><li>Aktualisieren</li><li>Freigeben</li><li>Übertragen</li><li>Genehmigung aufheben</li><li>Freigabe aufheben</li></ul> |
+| [!UICONTROL Aktion] | Filtern Sie nach einem beliebigen Aktionsnamen, der oben aufgeführt ist. |
 | [!UICONTROL Benutzer-ID] | Filtern nach der Benutzer-ID eines/einer bestimmten Benutzenden. Die Benutzer-ID finden Sie, indem Sie auf die Info-Schaltfläche (i) neben einem Benutzernamen klicken. |
 | [!UICONTROL E-Mail] | Filtern nach der E-Mail-Adresse eines/einer bestimmten Benutzenden. Die E-Mail-Adresse finden Sie, indem Sie auf die Info-Schaltfläche (i) neben einem Benutzernamen klicken. |
 | [!UICONTROL Komponenten-ID] | Filtern nach einer bestimmten Komponenten-ID. Die Komponenten-ID finden Sie, indem Sie auf die Info-Schaltfläche (i) für die gewünschte Komponente klicken. |
-| [!UICONTROL Typ der Komponente] | Filtern nach einem oder mehreren Komponententypen: <ul><li>Anmerkung</li><li>Zielgruppe</li><li>Berechnete Metrik</li><li>Verbindung</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filter</li><li>IMS_Org</li><li>Mobile</li><li>Projekt</li><li>Bericht</li><li>Scheduled_Project</li><li>Benutzer</li><li>User_Group</li></ul> |
+| [!UICONTROL Typ der Komponente] | Filtern Sie nach einem beliebigen Komponententyp, der oben aufgeführt ist. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Von Auditprotokollen erfasste Ereignistypen
 
@@ -94,7 +124,7 @@ In der folgenden Tabelle ist aufgeführt, welche Aktionen für welche Komponente
 | [!UICONTROL Benutzer] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 | [!UICONTROL Benutzergruppe] | <ul><li>API_Request</li><li>Erstellen</li><li>Löschen</li><li>Bearbeiten</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Herunterladen von Auditprotokollen
 
