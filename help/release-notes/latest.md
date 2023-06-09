@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f02cda499b2050cd238ca2352237ae2cc9a502d6
+source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 62%
@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # Aktuelle Versionshinweise zu Customer Journey Analytics (CJA) (Juni 2023)
 
-**Letzte Aktualisierung**: 6. Juni 2023
+**Letzte Aktualisierung**: 9. Juni 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -26,7 +26,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Zugriff von PowerBI und Tableau auf CJA-Datenansichten** | Der SQL Connector Customer Journey Analytics (CJA) ermöglicht SQL-Zugriff auf Datenansichten, die Sie in CJA definiert haben. Data Engineers und Analysten, die mit Power BI, Tableau oder anderen Tools für Business Intelligence und Visualisierung vertraut sind, können jetzt Berichte und Dashboards auf der Basis derselben Datenansichten erstellen, die CJA-Benutzer für ihre Analysis Workspace-Projekte verwenden. [Weitere Informationen](/help/data-views/sql-connector.md) |  | 30. Juni 2023 |
 | **Experience Edge-Geo-Suche** | Sie können Berichte mit Geolocation-Daten in CJA erstellen, sobald die Experience Edge Geo Lookups für Ihren Datastream aktiviert sind. |  | 30. Juni 2023 |
 | **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Sie können Lookup-Datensätze nicht nur zu Ereignis-Datensätzen, sondern auch zu Profil- und Lookup-Datensätzen hinzufügen. | 21. Juni 2023 | 12. Juli 2023 |
-| **Unterstützung der Währungsumrechnung** | CJA unterstützt die Währungsumrechnung als Teil der Formatierung einer Metrikkomponente in einer Datenansicht. | 21. Juni 2023 | 19. Juli 2023 |
+| **Unterstützung der Währungsumrechnung** | CJA unterstützt die Währungsumrechnung als Teil der Formatierung einer Metrikkomponente in einer Datenansicht. | 7. Juni 2023 | 21. Juni 2023 |
 
 {style="table-layout:auto"}
 
