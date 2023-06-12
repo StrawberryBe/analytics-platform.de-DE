@@ -2,16 +2,16 @@
 title: Veröffentlichung von CJA-Zielgruppen – Überblick
 description: Erfahren Sie mehr über das Konzept der Zielgruppenveröffentlichung in Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: ht
-source-wordcount: '437'
-ht-degree: 100%
+source-git-commit: 7b86650cd3475a203d597baeec2ec2152e082b10
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 83%
 
 ---
 
 # Überblick über die Veröffentlichung von CJA-Zielgruppen
 
-Sie können jetzt in Customer Journey Analytics (CJA) verfügbare Zielgruppen erstellen und im [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCP) in Adobe Experience Platform veröffentlichen, um sie zum Targeting und zur Personalisierung zu verwenden.
+Sie können jetzt Zielgruppen erstellen und veröffentlichen, die in Customer Journey Analytics (CJA) in [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCDP) in Adobe Experience Platform für das Targeting und die Personalisierung von Kunden.
 
 Das Veröffentlichen von Zielgruppen bietet die Möglichkeit, die in CJA vorhandenen Einblicke zu aktivieren und entsprechende Maßnahmen zu ergreifen. Zu diesen Maßnahmen zählen:
 
@@ -20,6 +20,8 @@ Das Veröffentlichen von Zielgruppen bietet die Möglichkeit, die in CJA vorhand
 * Anreichern des Echtzeit-Kundenprofils mit nützlichen Attributen, die aus ereignisbasierten Daten in CJA abgeleitet wurden.
 * Dies alles geschieht mit minimaler Latenz nach der Publikation der Zielgruppe. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=de#latency)
 * Veröffentlichen einmaliger oder wiederkehrender Zielgruppen.
+
+Die Zielgruppen, die Sie in Customer Journey Analytics erstellen, müssen nicht auf für Profile aktivierten Datensätzen basieren. Sie können historische Daten in Experience Platform erfassen, ohne verknüpfte Datensätze und Schemas für Profile zu aktivieren. Verwenden Sie dann diese Datensätze, um relevante Zielgruppen in CJA zu ermitteln und diese Zielgruppen in der RTCDP-Experience Platform zu Aktivierungszwecken zu veröffentlichen.
 
 ## Wichtige Terminologie
 
