@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 62c2c74d1a5d0f92cbe8a641f392ccaba3b105ff
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '2086'
 ht-degree: 86%
@@ -40,7 +40,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Video zur Verwendung von Filtern als Dimensionen | Das Video über die Verwendung von Filtern als Dimensionen wurde aktualisiert. <p>Dieses Video ist von der Seite [Filter erstellen](/help/components/filters/create-filters.md) verlinkt.</p> <p>Im Folgenden finden Sie einen direkten Link zum Video: [Verwenden von Filtern als Dimensionen in Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=de).</p> |
 | Filterdokumenation | Es wurde ein Artikel zur Verwendung des [Filter Builders](/help/components/filters/filter-builder.md) hinzugefügt. <p>Die Dokumentation in [Filter erstellen](/help/components/filters/create-filters.md) und [Filterübersicht](/help/components/filters/filters-overview.md) wurde vereinheitlicht.</p> |
 | Aktualisierung der Dokumentation zum Experimentier-Bedienfeld | Es wurde ein Abschnitt zu [Interpretieren nicht-randomisierter Dimensionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=de#non-randomized) hinzugefügt. |
-| Projektfilter (Ad-hoc- und Schnellfilter) | Die Dokumentation zu Projektsegmenten wurde vereinheitlicht und duplizierte Informationen wurden entfernt. Die Schritte zum Erstellen von Ad-hoc-Filtern sind jetzt mit den Schritten zum [Erstellen von Schnellfiltern](/help/components/filters/quick-filters.md) kombiniert. |
+| Projektfilter (Ad-hoc- und Schnellfilter) | Die Dokumentation zu Projektfiltern wurde optimiert und duplizierte Informationen wurden entfernt. Die Schritte zum Erstellen von Ad-hoc-Filtern sind jetzt mit den Schritten zum [Erstellen von Schnellfiltern](/help/components/filters/quick-filters.md) kombiniert. |
 | **März 2023** | |
 | Integrieren von Entscheidungs-Management-Daten | Es wurden Inhalte hinzugefügt, die eine Erklärung der [Integration von Entscheidungs-Managament-Daten von Adobe Journey Optimizer in CJA](/help/integrations/ajo-od.md) liefern. |
 | Erstellen von Daten-Storys in Mobile Scorecards | Eine [Daten-Story](/help/mobile-app/create-scorecard.md#create-data-stories) ist eine Sammlung unterstützender Datenpunkte, Geschäftskontexte und verwandter Metriken, die auf einem zentralen Thema oder einer zentralen Metrik basieren. |

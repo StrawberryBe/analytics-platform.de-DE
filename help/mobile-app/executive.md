@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 92%
@@ -51,7 +51,7 @@ Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit i
 
 ![Willkommensbildschirm der App](assets/welcome.png)
 
-## Verwenden von Dashboards
+## Verwenden von Dashboards {#use-dashboards}
 
 So verwenden Sie Dashboards:
 
@@ -89,6 +89,7 @@ So verwenden Sie Dashboards:
       * Für einen Tag wird ein stündlicher Trend angezeigt.
       * Für mehr als einen Tag und weniger als ein Jahr wird ein täglicher Trend angezeigt.
       * Für ein Jahr oder mehr wird ein wöchentlicher Trend angezeigt.
+
    * Die Formel für die Änderung des Prozentwerts ist: Gesamtwert der Metrik (aktueller Datumsbereich) – Gesamtwert der Metrik (Vergleichsdatumsbereich) / Gesamtwert der Metrik (Vergleichsdatumsbereich).
 
    * Sie können den Anzeigebereich nach unten ziehen, um die Scorecard zu aktualisieren.
