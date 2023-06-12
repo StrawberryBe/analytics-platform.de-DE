@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 3426392854d60269f370228cbe7542e9789dae99
+source-git-commit: 62c2c74d1a5d0f92cbe8a641f392ccaba3b105ff
 workflow-type: tm+mt
-source-wordcount: '2102'
-ht-degree: 89%
+source-wordcount: '2086'
+ht-degree: 86%
 
 ---
 
@@ -20,12 +20,14 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der CJA-Dokumen
 | Funktion | Beschreibung |
 | --- | --- |
 | **Juni 2023** | |
+| Zugriff von PowerBI und Tableau auf CJA-Datenansichten | Der SQL Connector Customer Journey Analytics (CJA) ermöglicht SQL-Zugriff auf Datenansichten, die Sie in CJA definiert haben. [Weitere Informationen](/help/data-views/sql-connector.md) |
+| Adobe Journey Optimizer-Datenansichten | CJA-Administratoren haben Zugriff auf einige zusätzliche Datenansichten in CJA mit dem Titel &quot;AJO-Datenansicht (Sandbox-Name)&quot;. [Weitere Informationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). |
 | Währungsumrechnung | Aktualisierte Dokumentation für [Währungsumrechnung](../data-views/component-settings/format.md#currency) unterstützen. |
 | Aktualisierungen an berechneten Metriken | Die folgende Dokumentation zu berechneten Metriken wurde aktualisiert, um sie an die aktuelle CJA-Funktion anzupassen: <ul><li>Die Liste der [Berechnete Standardmetriken](/help/components/calc-metrics/default-calcmetrics.md) verfügbar in CJA</li><li>Aktualisierte Screenshots und Verfahren in verschiedenen Artikeln zu berechneten Metriken </li></ul> |
 | **Mai 2023** | |
-| Dokumentation zu Deep-Linking (Mobile App) | Ermöglicht Benutzerinnen und Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. Dies erleichtert die Freigabe von Projekten und eine stärkere Interaktion mit weniger technischen Zielgruppen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
-| Doc on &quot;Select data view from cell&quot;in Report Builder | Mit dieser Funktion können Benutzerinnen oder Benutzer die Datenansicht für einen Datenblock aus einer Zelle auswählen. Dies ist hilfreich, wenn Sie eine Arbeitsmappe erstellen und mehrere Datenansichten haben, die eine ähnliche Datenerstellung aufweisen, und eine Arbeitsmappe mehrmals mit verschiedenen Datenansichten wiederverwenden möchten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=de) |
-| Dokumentation für den aktualisierten Startbildschirm der Analytics-Dashboards-App (Mobile App) | Mit dem neuen aktualisierten Startbildschirm können Sie alle Ihre Scorecards in einer konsolidierten Scorecard-Liste anzeigen.  Wenn Sie unter einer Anmeldung Zugriff auf mehr als eine Organisation haben, stehen alle Scorecards Ihrer Organisation in einer einzigen Liste zur Verfügung. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
+| Dokumentation zu Deep-Linking (Mobile App) | Ermöglicht Benutzerinnen und Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
+| Doc on &quot;Select data view from cell&quot;in Report Builder | Mit dieser Funktion können Benutzerinnen oder Benutzer die Datenansicht für einen Datenblock aus einer Zelle auswählen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=de) |
+| Dokumentation für den aktualisierten Startbildschirm der Analytics-Dashboards-App (Mobile App) | Mit dem neuen aktualisierten Startbildschirm können Sie alle Ihre Scorecards in einer konsolidierten Scorecard-Liste anzeigen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
 | Optimierungsaktualisierung | Aktualisierter Artikel zu [Optimierung der CJA-Leistung](/help/admin/optimizing-performance.md) |
 | Analysis Workspace – Übersicht | Die [Übersicht über Analysis Workspace](/help/analysis-workspace/home.md) wurde aktualisiert, um allgemeinere Übersichtsinformationen und Links zu relevanten Inhalten einzuschließen. |
 | Erstellen von Projekten | Es wurde ein neuer Artikel erstellt, in dem das [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md) in Analysis Workspace ausführlich erklärt wird. |
