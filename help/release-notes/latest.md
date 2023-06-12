@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
+source-git-commit: c3bea466c4960893ebe746046250608bacc9e340
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 62%
+source-wordcount: '1369'
+ht-degree: 66%
 
 ---
 
@@ -26,7 +26,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Zugriff von PowerBI und Tableau auf CJA-Datenansichten** | Der SQL Connector Customer Journey Analytics (CJA) ermöglicht SQL-Zugriff auf Datenansichten, die Sie in CJA definiert haben. Data Engineers und Analysten, die mit Power BI, Tableau oder anderen Tools für Business Intelligence und Visualisierung vertraut sind, können jetzt Berichte und Dashboards auf der Basis derselben Datenansichten erstellen, die CJA-Benutzer für ihre Analysis Workspace-Projekte verwenden. [Weitere Informationen](/help/data-views/sql-connector.md) |  | 30. Juni 2023 |
 | **Experience Edge-Geo-Suche** | Sie können Berichte mit Geolocation-Daten in CJA erstellen, sobald die Experience Edge Geo Lookups für Ihren Datastream aktiviert sind. |  | 30. Juni 2023 |
 | **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Sie können Lookup-Datensätze nicht nur zu Ereignis-Datensätzen, sondern auch zu Profil- und Lookup-Datensätzen hinzufügen. | 21. Juni 2023 | 12. Juli 2023 |
-| **Unterstützung der Währungsumrechnung** | CJA unterstützt die Währungsumrechnung als Teil der Formatierung einer Metrikkomponente in einer Datenansicht. | 7. Juni 2023 | 21. Juni 2023 |
+| **Unterstützung für Währungskonversionen** | Die Währungsumrechnung wird im Rahmen der Formatierung einer Metrikkomponente in einer Datenansicht unterstützt. [Weitere Informationen](../data-views/component-settings/format.md#currency) | 7. Juni 2023 | 21. Juni 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,10 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Report Builder für CJA – Datenansicht aus Zelle auswählen** | Mit dieser Funktion können Benutzerinnen oder Benutzer die Datenansicht für einen Datenblock aus einer Zelle auswählen. Dies ist hilfreich, wenn Sie eine Arbeitsmappe erstellen und mehrere Datenansichten haben, die eine ähnliche Datenerstellung aufweisen, und eine Arbeitsmappe mehrmals mit verschiedenen Datenansichten wiederverwenden möchten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=de) | Nicht angegeben | 24. Mai 2023 |
 | **Aktualisierte Lernseite für CJA** | Der Tab Lernen auf der Landingpage für Customer Journey Analytics enthält jetzt CJA-spezifische Inhalte, einschließlich Inhalt, der auf die Umstellung von Adobe Analytics auf CJA ausgerichtet ist.<p>Die folgenden zusätzlichen Verbesserungen sind auch auf der Registerkarte Lernen verfügbar:</p><ul><li>Verbessertes Design, das mehr Lerninhalte auf einer Seite mit verbesserter Navigation anzeigt</li><li>Möglichkeit zur Personalisierung von Lerninhalten nach Erlebnisebene (Einstieg, Fortgeschrittene und Fortgeschrittene)</li></ul><p>Zuvor enthielt die Registerkarte &quot;Lernen&quot;in CJA identische Informationen wie die Registerkarte &quot;Lernen&quot;in Adobe Analytics.</p> [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | Nicht angegeben | 30. Juni 2023 |
 | **Sortieren von Komponenten in Analysis Workspace** | <p>Bei der Anzeige von Komponenten in der linken Leiste oder im Datenwörterbuch in Analysis Workspace ist jetzt eine neue Sortieroption verfügbar. Sie können Komponenten nach „Empfohlen“ (die am häufigsten verwendeten), „Alphabetisch“ oder „Kategorie“ (Typ) sortieren.</p><p>Zuvor war es nur möglich, Komponenten zu suchen oder zu filtern. [Weitere Informationen](/help/components/overview.md)</p> | Nicht angegeben | TBD |
+| **Löschen von Zeilen, die dynamische Dimensionen enthalten, aus einer Freiformtabelle** | In einer Freiformtabelle in Analysis Workspace können Sie jetzt mithilfe des Symbols „x“ schnell bestimmte Zeilen löschen, die dynamische Dimensionen enthalten. Dabei wird automatisch die Filterregel &quot;Elemente immer ausschließen&quot;angewendet.<p>Zuvor bestand die einzige Möglichkeit zum Löschen von Zeilen, die dynamische Dimensionen enthielten, darin, manuell eine Regel im Filterdialogfeld zu erstellen. [Weitere Informationen](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | Nicht angegeben | 17. Mai 2023 |
+| **Neue Schaltfläche zum Hinzufügen einer Visualisierung in einem Bedienfeld** | Unten in jedem Bedienfeld in Analysis Workspace ist jetzt eine neue Schaltfläche verfügbar, mit der Sie schnell eine Visualisierung hinzufügen können. <p>Zuvor bestand die einzige Methode zum Hinzufügen einer Visualisierung zu einem Bedienfeld darin, eine Visualisierung aus der linken Leiste zu ziehen, eine vorhandene Visualisierung zu duplizieren oder zu kopieren oder ein leeres Bedienfeld zu erstellen. [Weitere Informationen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | Nicht angegeben | 17. Mai 2023 |
+| **Deep-Linking (Mobile App)** | Ermöglicht Benutzerinnen und Benutzern das Senden von Links zu Scorecards, die sie direkt zum Scorecard-Projekt in der App führen. Dies erleichtert die Freigabe von Projekten und eine stärkere Interaktion mit weniger technischen Zielgruppen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | Nicht angegeben | 17. Mai 2023 |
+| **Intelligente Beschriftungen** | Anreicherung des Geschichtenerzählens für Benutzer mit natürlichen Sprachzusammenfassungen eines [!UICONTROL Linie] Visualisierung. [Weitere Informationen](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17. Mai 2023 | 1. Juni 2023 |
 
 {style="table-layout:auto"}
 
