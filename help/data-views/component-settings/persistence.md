@@ -4,10 +4,10 @@ description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum näch
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,33 +37,33 @@ Details zu den verfügbaren Zuordnungseinstellungen.
 
 * **[!UICONTROL Zuletzt verwendet]**: behält den letzten (nach Zeitstempel) in der Dimension vorhandenen Wert bei. Alle nachfolgenden Werte, die innerhalb des Gültigkeitszeitraums der Dimension auftreten, ersetzen den vorherigen Wert. Wenn „Kein Wert als Wert behandeln“ für diese Dimension unter [Optionen für keinen Wert](no-value-options.md) aktiviert ist, überschreiben leere Werte vorherige Werte. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Zuletzt verwendet] und der Gültigkeit [!UICONTROL Sitzung]:
 
-   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Datensatzwerte |  | C | B |  | A |
-   | Zuletzt verwendete Zuordnung |  | C | B | B | A |
+  | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Datensatzwerte |  | C | B |  | A |
+  | Zuletzt verwendete Zuordnung |  | C | B | B | A |
 
 * **[!UICONTROL Original]**: Behält den ursprünglichen Wert nach Zeitstempel bei, der innerhalb der Dimension für die Dauer des Gültigkeitszeitraums vorhanden ist. Wenn diese Dimension einen Wert hat, wird er nicht überschrieben, wenn bei einem nachfolgenden Ereignis ein anderer Wert auftritt. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Original] und der Gültigkeit [!UICONTROL Sitzung]:
 
-   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Datensatzwerte |  | C | B |  | A |
-   | Originale Zuordnung |  | C | C | C | C |
+  | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Datensatzwerte |  | C | B |  | A |
+  | Originale Zuordnung |  | C | C | C | C |
 
 * **[!UICONTROL Alle]**: Funktioniert ähnlich wie das Attributionsmodell [!UICONTROL Partizipation] für Metriken. Behält alle Werte bei, damit jeder Wert im Reporting vollständig für die Metrik angerechnet wird. Betrachten Sie beispielsweise die folgende Tabelle mit der Zuordnung [!UICONTROL Alle] und der Gültigkeit [!UICONTROL Sitzung]:
 
-   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Datensatzwerte | A | B | C |  | A |
-   | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
+  | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Datensatzwerte | A | B | C |  | A |
+  | Zuordnung Alle | A | A,B | A,B,C | A,B,C | A,B,C |
 
 * **[!UICONTROL Erster bekannter]** und **[!UICONTROL Letzter bekannter]**: (19. Januar 2022) Diese beiden Zuordnungsmodelle erfüllen die Anwendungsfälle der Dimensionen „Einstieg“ und „Ausstieg“. Sie wenden den ersten oder letzten beobachteten Wert für eine Dimension innerhalb eines bestimmten Persistenzbereichs (Sitzung, Person oder benutzerspezifischer Zeitraum mit Lookback) auf alle Ereignisse innerhalb des angegebenen Bereichs an. Beispiel:
 
-   | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Zeitstempel (Min.) | 1 | 2 | 3 | 6 | 7 |
-   | Ausgangswerte |  | C | B |  | A |
-   | Erster bekannter | C | C | C | C | C |
-   | Letzter bekannter | A | A | A | A | A |
+  | Dimension | Treffer 1 | Treffer 2 | Treffer 3 | Treffer 4 | Treffer 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Zeitstempel (Min.) | 1 | 2 | 3 | 6 | 7 |
+  | Ausgangswerte |  | C | B |  | A |
+  | Erster bekannter | C | C | C | C | C |
+  | Letzter bekannter | A | A | A | A | A |
 
 ## [!UICONTROL Gültigkeits]-Einstellungen
 
@@ -79,6 +79,8 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen sind andere Dimensionen, die in der Datenansicht enthalten sind.
 
 Siehe Beispiele für die effektive Verwendung von Bindungsdimensionen in [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/data-views/binding-dimensions-metrics.md).
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
 ## [!UICONTROL Binding-Metrik]
 
