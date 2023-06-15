@@ -3,11 +3,9 @@ title: Abgeleitete Felder
 description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafeldern und/oder Standardkomponenten durch eine Reihe verfügbarer Funktionen und Funktionsvorlagen an.
 solution: Customer Journey Analytics
 feature: Data Views
-hide: true
-hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
+source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
 workflow-type: tm+mt
 source-wordcount: '3252'
 ht-degree: 9%
@@ -16,8 +14,6 @@ ht-degree: 9%
 
 
 # Abgeleitete Felder
-
-{{release-limited-testing}}
 
 Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
 
@@ -289,7 +285,7 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die [!UICONTROL Referr
 |:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
-| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 3 | | `https://site.com/?cid=em_12345678` | [!DNL Email] |
 | 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
 | 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
 | 6 | `https://google.com` |  | [!DNL Natural Search] |
@@ -342,7 +338,7 @@ Ihre Site erfasst die folgenden Werte für Ihre [!DNL Product Finding Methods] D
 | [!DNL search p13n_no] | [!DNL search] |
 | [!DNL search p13n_yes] | [!DNL search] |
 | [!DNL search refine p13n_no] | [!DNL search] |
-| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search refine p13n_yes] | [!DNL search] |
 | [!DNL search redirect p13n_yes] | [!DNL search] |
 | [!DNL search-redirect] | [!DNL search] |
 
@@ -764,5 +760,5 @@ Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die [!UI
 
 Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder im Allgemeinen:
 
-- Sie können bei der Definition von Regeln für ein abgeleitetes Feld maximal 100 verschiedene Schemafelder (ohne Standardfelder) verwenden.
+- Beim Definieren von Regeln für ein abgeleitetes Feld können Sie maximal 10 verschiedene Schemafelder (ohne Standardfelder) verwenden.
 - Sie können pro CJA-Verbindung maximal 100 abgeleitete Felder haben.
