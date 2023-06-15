@@ -2,10 +2,10 @@
 title: Integrieren von Adobe Journey Optimizer (AJO) in Customer Journey Analytics (CJA)
 description: Binden Sie die von AJO generierten Daten ein und analysieren Sie diese mit Analysis Workspace in CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 84%
+source-wordcount: '864'
+ht-degree: 73%
 
 ---
 
@@ -31,7 +31,7 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 | AJO-E-Mail-Tracking-Erlebnisdatensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Ereignisse wie &quot;[!UICONTROL Öffnungen]&#39;, &#39;[!UICONTROL Klicks]&quot;, und &quot;[!UICONTROL Abmeldungen]&quot;. |
 | AJO Push Tracking Experience Event Datensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse wie &quot;[!UICONTROL App-Starts]&quot;. |
 | Journey-Schrittereignisse | Ereignis-   | Personen-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Enthält Ereignisse, die zeigen, welche Profile an den einzelnen Knoten der Journey beteiligt waren. |
-| AJO-Entitätsdatensatz | Suche | Schlüssel: `_id`<br>Übereinstimmungsschlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Classifications, die Journey- und Campaign-Metadaten mit allen AJO-Ereignisdaten verknüpfen. |
+| AJO-Entitätsdatensatz | Nachschlagen | Schlüssel: `_id`<br>Übereinstimmungsschlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Classifications, die Journey- und Campaign-Metadaten mit allen AJO-Ereignisdaten verknüpfen. |
 
 {style="table-layout:auto"}
 
@@ -64,6 +64,7 @@ Sie können die folgenden Dimensionen in einer Datenansicht erstellen, um eine u
 | Abwandlungsname | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Komponententyp: Dimension<br>Kontextkennzeichnungen: Experimentvariante |
 | Grund für fehlgeschlagenen E-Mail-Versand | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Komponententyp: Dimension |
 | Grund für Ausschluss vom E-Mail-Versand | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Komponententyp: Dimension |
+| Elementbezeichnung | `_experience.decisioning.propositionAction.label` | Komponententyp: Dimension |
 
 {style="table-layout:auto"}
 
@@ -82,6 +83,11 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Sendungen | Die Anzahl der Nachrichten, die von E-Mail-Anbietern akzeptiert wurden. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `sent` |
 | Spam-Beschwerden | Anzahl der Beschwerden wegen Spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `spam_complaint` |
 | Abonnementkündigungen | Anzahl der Abmeldungen. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `unsubscribe` |
+| Edge-Sendungen | Die Häufigkeit, mit der das Edge-Netzwerk eine Nachricht entweder an das Web- oder Mobile-SDK sendet | Schema String-Element verwenden `_experience.decisioning.propositionEventType.send` |
+| Eingehende Anzeigen | Die Häufigkeit, mit der dem Benutzer eine Web- oder In-App-Nachricht angezeigt wird | Schema String-Element verwenden `_experience.decisioning.propositionEventType.display` |
+| Eingehende Klicks | Die Anzahl der Web- oder In-App-Nachrichtenklicks | Schema String-Element verwenden `_experience.decisioning.propositionEventType.interact` |
+| In-App-Trigger | Die Häufigkeit, mit der die Decisioning Engine die Nachricht angezeigt hat. Das Mobile SDK kann die Entscheidung überschreiben, durch die die Anzahl der tatsächlichen Anzeigen reduziert wird. | Schema String-Element verwenden `_experience.decisioning.propositionEventType.trigger` |
+| In-App-Abweisungen | Die Häufigkeit, mit der eine In-App-Nachricht vom SDK aus der Benutzeroberfläche entfernt wird | Schema String-Element verwenden `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
