@@ -10,9 +10,9 @@ user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Erfahren Sie mehr über Customer Journey Analytics (CJA) und darüber, wie Sie Daten von Experience Platform in Analysis Workspace verwenden können.
 breadcrumb-title: Handbuch für Customer Journey Analytics
 source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 + Datenaufnahme {#cja-data-ingestion}
    + [Datenaufnahme – Übersicht](../data-ingestion/data-ingestion.md)
-   + Kurzanleitungen zur Aufnahme und Verwendung von Daten {#ingest-use-guides}
+   + Kurzanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [Adobe Experience Platform Web SDK und Edge Network](../data-ingestion/aepwebsdk.md)
       + [Batch-Daten](../data-ingestion/batch.md)
@@ -81,7 +81,7 @@ ht-degree: 95%
       + [Teilzeichenfolge](../data-views/component-settings/substring.md)
       + [Wert-Bucketing](../data-views/component-settings/value-bucketing.md)
    + [Standardkomponentenreferenz](../data-views/component-reference.md)
-   + [SQL Connector](../data-views/sql-connector.md)
+   + [SQL-Connector](../data-views/sql-connector.md)
    + [Abgeleitete Felder](../data-views/derived-fields/derived-fields.md)
    + [Beschriftungen und Richtlinien](../data-views/data-governance.md)
 
@@ -93,7 +93,7 @@ ht-degree: 95%
 
    + Projekte {#build-workspace-project}
       + [Übersicht über Projekte](../analysis-workspace/build-workspace-project/freeform-overview.md)
-      + [Erstellen von Projekten](/help/analysis-workspace/build-workspace-project/create-projects.md)
+      + [Projekte erstellen](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Projekte speichern](../analysis-workspace/build-workspace-project/save-projects.md)
       + Ordner in Analysis Workspace {#workspace-folders}
          + [Über Ordner in Analysis Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -233,7 +233,7 @@ ht-degree: 95%
       + [Filterübersicht](../components/filters/filters-overview.md)
       + [Filter erstellen](../components/filters/create-filters.md)
       + [Schnellfilter](../components/filters/quick-filters.md)
-      + [Filter Builder](../components/filters/filter-builder.md)
+      + [Filter-Builder](../components/filters/filter-builder.md)
       + [Filter verwalten](../components/filters/manage-filters.md)
       + [Operatoren](../components/filters/operators.md)
    + Berechnete Metriken {#cja-calcmetrics}
@@ -241,12 +241,12 @@ ht-degree: 95%
       + Workflow bei berechneten Metriken {#cm-workflow}
          + [Workflow bei berechneten Metriken](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Metriken suchen](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [Metriken erstellen](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Erstellen von Metriken](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Metriktyp und Attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Metrik &quot;Seitenansichten pro Besuche&quot;erstellen](../components/calc-metrics/cm-workflow/cm-pvv.md)
-         + [Metrik &quot;Beitrag&quot;erstellen](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Erstellen einer Metrik vom Typ „Seitenansichten pro Besuch“](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Erstellen einer Metrik „Teilnahme“](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Gefilterte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [Stapeln und Ersetzen von Filtern](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Filter stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Gefilterte und gewichtete Metriken](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Funktionen verwenden](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Berechnete Metriken taggen](../components/calc-metrics/cm-workflow/cm-tagging.md)
@@ -297,7 +297,7 @@ ht-degree: 95%
    + [Überblick über die Integration von Adobe-Lösungen in CJA](/help/integrations/overview.md)
    + [Integrieren von Adobe Analytics mit Customer Journey Analytics](/help/integrations/aa.md)
    + [Integrieren von Journey Optimizer-Daten mit CJA](/help/integrations/ajo.md)
-   + [Integrieren von Entscheidungsverwaltungsdaten mit CJA](/help/integrations/ajo-od.md)
+   + [Integrieren von Entscheidungs-Management-Daten mit CJA](/help/integrations/ajo-od.md)
    + [Integrieren von Customer AI mit CJA](/help/integrations/customer-ai.md)
 
 + Data Governance {#cja-privacy}
@@ -339,7 +339,7 @@ ht-degree: 95%
    + [Zugriffssteuerung](../admin/cja-access-control.md)
    + [Anzeigen und Verwalten der Nutzung](../admin/estimate-usage.md)
    + [Auswirkungen des Löschens](../admin/cja-deletion.md)
-   + [CJA-Leistung optimieren](../admin/optimizing-performance.md)
+   + [Optimieren der CJA-Leistung](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](../labs/labs.md)
