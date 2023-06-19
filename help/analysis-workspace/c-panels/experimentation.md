@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 73%
+source-wordcount: '1855'
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Va
 
 >[!IMPORTANT]
 >
->Aktuell können Daten aus [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) (A4T), die über Analytics Source Connector in Adobe Experience Platform importiert wurden, **nicht** im Bedienfeld [!UICONTROL Experimentieren] analysiert werden. Wir erwarten, dass dieses Problem 2023 gelöst wird.
+>An dieser Stelle [Adobe Analytics für Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T)-Daten *cannot* im Bereich Experimentierung analysiert werden.
 
 ## Zugriffssteuerung {#access}
 
@@ -28,7 +28,7 @@ Zwei neue erweiterte Funktionen wurden hinzugefügt: [!UICONTROL Anstieg] und [!
 
 ## Schritt 1: Einrichten der Verbindung zu Experimentier-Datensätzen {#connection}
 
-Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=de) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Wenn sich Ihre Experimentdaten in einer einzigen Dimension und die Experiment- und Variantendaten in einer begrenzten Zeichenfolge befinden, können Sie die Einstellung der [Teilzeichenfolge](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um sie zur Verwendung im Bedienfeld aufzuteilen.
+Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=de) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Beide Dimensionen müssen in einer **single** Objekt-Array. Wenn sich Ihre Experimentdaten in einer einzigen Dimension und die Experiment- und Variantendaten in einer begrenzten Zeichenfolge befinden, können Sie die Einstellung der [Teilzeichenfolge](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um sie zur Verwendung im Bedienfeld aufzuteilen.
 
 Wenn Ihre Experimentierdaten in Adobe Experience Platform [erfasst](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) sind, können Sie zu einem oder mehreren Testdatensätzen [in CJA eine Verbindung einrichten](/help/connections/create-connection.md).
 
@@ -86,9 +86,9 @@ Das [!UICONTROL Liniendiagramm] zeigt Ihnen die Performance von [!UICONTROL Kont
 
 ## Schritt 5: Interpretieren der Ergebnisse {#interpret}
 
-1. **Experiment ist schlüssig**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, analysiert Adobe die Daten, die bis zu diesem Zeitpunkt im Experiment gesammelt wurden, und erklärt ein Experiment als „schlüssig“, wenn die immer gültige Konfidenz einen Schwellenwert von 95 % für *mindestens eine* der Varianten überschreitet (mit Bonferonni-Korrektur, die bei mehr als zwei Varianten angewendet wird, um Mehrfach-Hypothesentests zu korrigieren).
+1. **Experiment ist abgeschlossen**: Jedes Mal, wenn Sie den Experimentbericht anzeigen, analysiert Adobe die Daten, die bis zu diesem Zeitpunkt im Experiment gesammelt wurden, und deklariert einen Versuch als &quot;Fazit&quot;, wenn das jederzeit gültige Konfidenzniveau einen Schwellenwert von 95 % für *mindestens* der Varianten (mit einer Benjamini-Hochberg Korrektur, wenn mehr als zwei Arme vorhanden sind, zur Korrektur der Mehrfachhypothesen).
 
-2. **Variante mit der besten Performance**: Wenn ein Experiment als endgültig deklariert wird, wird die Variante mit der höchsten Konversionsrate als „Variante mit der besten Performance“ gekennzeichnet. Beachten Sie, dass diese Variante entweder die Kontroll- bzw. Baseline-Variante sein muss oder eine der Varianten, die die 95-%-ige, immer gültige Konfidenzschwelle überschreiten (mit Bonferonni-Korrekturen).
+2. **Variante mit der besten Performance**: Wenn ein Experiment als endgültig deklariert wird, wird die Variante mit der höchsten Konversionsrate als „Variante mit der besten Performance“ gekennzeichnet. Beachten Sie, dass es sich bei dieser Variante entweder um die Kontroll- oder Grundvariante oder um eine der Varianten handeln muss, die die 95%-Schwelle jederzeit überschreiten (bei Anwendung von Benjamini-Hochberg-Korrekturen).
 
 3. **Konversionsrate**: Die angezeigte Konversionsrate ist ein Verhältnis zwischen dem Wert der Erfolgsmetrik und dem Wert der Normalisierungsmetrik. Beachten Sie, dass dies manchmal größer als 1 sein kann, wenn die Metrik nicht binär ist (1 oder 0 für jede Einheit im Experiment)
 
