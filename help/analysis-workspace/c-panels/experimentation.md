@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
+source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Va
 
 >[!IMPORTANT]
 >
->An dieser Stelle [Adobe Analytics für Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] (A4T)-Daten *cannot* im Bereich Experimentierung analysiert werden.
+>An dieser Stelle [Adobe Analytics für Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) (A4T)-Daten *cannot* im Bereich Experimentierung analysiert werden.
 
 ## Zugriffssteuerung {#access}
 
