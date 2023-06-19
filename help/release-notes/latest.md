@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste CJA-Versionshinweise
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 13ea4060bd5ca0a4b5b749b6e104edea26248a02
+source-git-commit: 7fdef4a33154f443722ad4625c83f91bea7e047d
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 91%
@@ -12,7 +12,7 @@ ht-degree: 91%
 
 # Aktuelle Versionshinweise zu Customer Journey Analytics (CJA) (Juni 2023)
 
-**Letzte Aktualisierung**: 15. Juni 2023
+**Letzte Aktualisierung**: 19. Juni 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -25,7 +25,7 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Abgeleitete Felder** | Dies stellt die erste Version abgeleiteter Felder dar. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Sie können das abgeleitete Feld als Komponente (Metrik oder Dimension) in Datenansichten weiter definieren und dann das abgeleitete Feld als Komponente in Workspace verwenden.<p>Diese Version unterstützt eine Vorlage für Marketing-Kanäle und die folgenden Funktionen:</p><ul><li>Verketten</li><li>Fall wenn</li><li>Suchen und Ersetzen</li><li>Nachschlagen</li><li>URL-Parsen</li></ul> <p>[Weitere Informationen](/help/data-views/derived-fields/derived-fields.md)</p> | 10. Mai 2023 | 14. Juni 2023 |
 | **Zugriff von PowerBI und Tableau auf CJA-Datenansichten** | Der Customer Journey Analytics (CJA) SQL-Connector ermöglicht den SQL-Zugriff auf Datenansichten, die Sie in CJA definiert haben. Dateningenieure oder -ingenieurinnen und Analysten oder Analystinnen, die mit Power BI, Tableau oder anderen Tools für Business Intelligence und Visualisierung vertraut sind, können jetzt Berichte und Dashboards auf der Basis derselben Datenansichten erstellen, die CJA-Benutzende für ihre Analysis Workspace-Projekte verwenden. [Weitere Informationen](/help/data-views/sql-connector.md) |  | 30. Juni 2023 |
 | **Experience Edge-Geo-Suchen** | Sie können Berichte mit Geolokalisierungs-Daten in CJA erstellen, sobald die Experience Edge-Geo-Suchen für Ihren Datenstrom aktiviert sind. |  | 30. Juni 2023 |
-| **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Sie können Such-Datensätze nicht nur zu Ereignis-Datensätzen, sondern auch zu Profil- und Such-Datensätzen hinzufügen. | 21. Juni 2023 | 12. Juli 2023 |
+| **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Sie können Such-Datensätze nicht nur zu Ereignis-Datensätzen, sondern auch zu Profil- und Such-Datensätzen hinzufügen. | 28. Juni 2023 | 12. Juli 2023 |
 | **Unterstützung für Währungskonversionen** | Die Währungsumrechnung wird im Rahmen der Formatierung einer Metrikkomponente in einer Datenansicht unterstützt. [Weitere Informationen](../data-views/component-settings/format.md#currency) | 7. Juni 2023 | 21. Juni 2023 |
 
 {style="table-layout:auto"}
