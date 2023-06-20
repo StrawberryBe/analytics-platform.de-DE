@@ -2,18 +2,18 @@
 title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 90%
+source-wordcount: '1565'
+ht-degree: 63%
 
 ---
 
 # Erstellen und Veröffentlichen von Zielgruppen
 
-In diesem Abschnitt wird beschrieben, wie Sie Zielgruppen, die in Customer Journey Analytics (CJA) identifiziert wurden, im [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform erstellen und veröffentlichen, um Targeting und Personalisierung durchzuführen.
+In diesem Thema wird beschrieben, wie Sie in Customer Journey Analytics identifizierte Zielgruppen erstellen und veröffentlichen. [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung.
 
-Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), um sich mit dem Konzept der CJA-Zielgruppen vertraut zu machen.
+Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) sich mit dem Konzept der Customer Journey Analytics-Zielgruppen vertraut zu machen.
 
 ## Zielgruppe erstellen {#create}
 
@@ -38,7 +38,7 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
    | [!UICONTROL Name] | Der Name der Zielgruppe. |
    | [!UICONTROL Tags] | Alle Tags, die Sie der Zielgruppe aus organisatorischen Gründen zuweisen möchten. Sie können ein bereits vorhandenes Tag verwenden oder ein neues eingeben. |
    | [!UICONTROL Beschreibung] | Fügen Sie der Zielgruppe eine Beschreibung hinzu, um sie von anderen leicht unterscheiden zu können. |
-   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Abhängig von Ihrer CJA-Berechtigung gibt es für das 4-Stunden-Aktualisierungsintervall ein Limit von 75 bis 150 Zielgruppen-Aktualisierungen.</li></ul> |
+   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für die Aktualisierungsfrequenz von 4 Stunden sind je nach Berechtigung des Customer Journey Analytics 75 bis 150 Zielgruppenaktualisierungen erlaubt.</li></ul> |
    | Ablaufdatum | Wann die Aktualisierung der Zielgruppe beendet ist. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Zielgruppe zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
@@ -74,38 +74,38 @@ Lesen Sie diese [Übersicht](/help/components/audiences/audiences-overview.md), 
 
 ## Was passiert, nachdem eine Zielgruppe erstellt wurde? {#after-audience-created}
 
-Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue CJA-Zielgruppe ein Experience Platform-Streaming-Segment. Ein AEP-Streaming-Segment wird nur erstellt, wenn die Streaming-Segmentierung für Ihre Organisation eingerichtet ist.
+Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue Customer Journey Analytics-Zielgruppe ein Experience Platformen-Streaming-Segment. Ein Adobe Experience Platform-Streaming-Segment wird nur erstellt, wenn Ihr Unternehmen für Streaming-Segmentierung eingerichtet ist.
 
-* Das AEP-Segment gibt denselben Namen bzw. dieselbe Beschreibung wie die CJA-Zielgruppe weiter. Dem Namen wird jedoch die CJA-Zielgruppen-ID angehängt, um sicherzustellen, dass er eindeutig ist.
-* Wenn sich der Name bzw. die Beschreibung der CJA-Zielgruppe ändert, spiegelt der Name bzw. die Beschreibung des AEP-Segments diese Änderung ebenfalls wider.
-* Wenn eine CJA-Zielgruppe von einem Benutzer gelöscht wird, wird das AEP-Segment NICHT gelöscht. Der Grund dafür ist, dass die Löschung der CJA-Zielgruppe später möglicherweise wieder aufgehoben wird.
+* Das Adobe Experience Platform-Segment trägt denselben Namen und dieselbe Beschreibung wie die Customer Journey Analytics-Zielgruppe. Der Name wird jedoch mit der Customer Journey Analytics-Zielgruppen-ID angehängt, um sicherzustellen, dass er eindeutig ist.
+* Wenn sich der Zielgruppenname/die Beschreibung des Customer Journey Analytics ändert, spiegelt der Adobe Experience Platform-Segmentname/die Beschreibung diese Änderung ebenfalls wider.
+* Wenn eine Customer Journey Analytics-Audience von einem Benutzer gelöscht wird, wird das Adobe Experience Platform-Segment NICHT gelöscht. Der Grund dafür ist, dass die Customer Journey Analytics-Audience später möglicherweise wieder aus der Liste entfernt wird.
 
 ## Latenzaspekte {#latency}
 
 An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgruppen können Latenzen auftreten. Im Folgenden finden Sie einen Überblick über mögliche Latenzen.
 
-![Latenz von AEP zu CJA](assets/latency-diagram.png)
+![Latenz von Adobe Experience Platform zu Customer Journey Analytics](assets/latency-diagram.png)
 
 | # | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
 | Nicht angezeigt | Adobe Analytics to Analytics Source Connector (A4T) | Bis zu 30 Minuten |
 | 1 | Datenerfassung in den Data Lake (von Analytics Source Connector oder anderen Quellen) | Bis zu 90 Minuten |
-| 2 | Datenerfassung vom Experience Platform Data Lake in CJA | Bis zu 90 Minuten |
+| 2 | Datenerfassung vom Experience Platform Data Lake in Customer Journey Analytics | Bis zu 90 Minuten |
 | 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
 | 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
-| 5 | Erstellen eines Ziels in AEP: Aktivieren des neuen Segments | 1–2 Stunden |
+| 5 | Erstellen eines Ziels in Adobe Experience Platform: Aktivieren des neuen Segments | 1–2 Stunden |
 
 {style="table-layout:auto"}
 
-## Verwenden von CJA-Zielgruppen in Experience Platform {#audiences-aep}
+## Verwenden von Customer Journey Analytics-Zielgruppen in Experience Platform {#audiences-aep}
 
-CJA nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und überträgt sie in das Echtzeit-Kundenprofil (RTCP). CJA sendet die Zielgruppe an Experience Platform, wobei die primäre Identität auf den Wert festgelegt ist, der bei der Verbindungskonfiguration als [!UICONTROL Personen-ID] ausgewählt wurde.
+Customer Journey Analytics nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). Customer Journey Analytics sendet die Zielgruppe je nach ausgewähltem Typ zur Experience Platform mit dem primären Identitätssatz [!UICONTROL Personen-ID] wenn die Verbindung konfiguriert wurde.
 
 Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Jetzt kann beispielsweise „user@adobe.com“ auf allen Geräten und Kanälen als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
-Sie können CJA-Zielgruppen in Platform anzeigen. Gehen Sie dazu zu **[!UICONTROL Segmente]** > **[!UICONTROL Segmente erstellen]** > Registerkarte **[!UICONTROL Zielgruppen]** > **[!UICONTROL CJA-Zielgruppen]**.
+Sie können Customer Journey Analytics-Zielgruppen in Platform anzeigen, indem Sie **[!UICONTROL Segmente]** > **[!UICONTROL Segmente erstellen]** > **[!UICONTROL Zielgruppen]** tab > **[!UICONTROL CJA-Zielgruppen]**.
 
-Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
+Sie können Customer Journey Analytics-Zielgruppen in die Segmentdefinition für Adobe Experience Platform-Segmente ziehen.
 
 ![](assets/audiences-aep.png)
 
@@ -113,15 +113,15 @@ Sie können CJA-Zielgruppen in die Segmentdefinition für AEP-Segmente ziehen.
 
 Häufig gestellte Fragen zur Veröffentlichung von Zielgruppen.
 
-+++**Was passiert, wenn eine benutzende Person nicht mehr Mitglied einer Zielgruppe in CJA ist?**
++++**Was passiert, wenn ein Benutzer in Customer Journey Analytics nicht mehr Mitglied einer Zielgruppe ist?**
 
-In diesem Fall wird ein Exit-Ereignis von CJA an Experience Platform gesendet.
+In diesem Fall wird ein exit -Ereignis vom Customer Journey Analytics an Experience Platform gesendet.
 
 +++
 
-+++**Was passiert, wenn eine Zielgruppe in CJA gelöscht wird?**
++++**Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen?**
 
-Wenn eine CJA-Zielgruppe gelöscht wird, wird sie nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Es werden jedoch keine Profile, die mit dieser Zielgruppe verknüpft sind, in Platform tatsächlich gelöscht.
+Wenn eine Customer Journey Analytics-Zielgruppe gelöscht wird, wird diese Zielgruppe nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Es werden jedoch keine Profile, die mit dieser Zielgruppe verknüpft sind, in Platform tatsächlich gelöscht.
 
 +++
 
@@ -131,13 +131,13 @@ Ja.
 
 +++
 
-+++**Sendet CJA die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?**
++++**Sendet Customer Journey Analytics die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?**
 
-Die Daten werden von CJA über die Pipeline in das RTCP gestreamt, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
+Customer Journey Analytics streamt die Daten über die Pipeline in RTCP, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
 +++
 
-+++**Welche Identitäten sendet CJA?**
++++**Welche Identitäten sendet Customer Journey Analytics?**
 
 Die Identitäts-/Namespace-Paare, die im [Verbindungseinrichtung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection). Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
 
@@ -145,11 +145,11 @@ Die Identitäts-/Namespace-Paare, die im [Verbindungseinrichtung](https://experi
 
 +++**Welche ID wird als primäre Identität ausgewählt?**
 
-Siehe oben. Wir senden nur eine Identität pro „Person“ in CJA.
+Siehe oben. Wir senden nur eine Identität pro Customer Journey Analytics &quot;person&quot;.
 
 +++
 
-+++**Verarbeitet RTCP auch die CJA-Nachrichten? Kann CJA einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
++++**Verarbeitet RTCP auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
 
 Nein. Wir senden nur eine Identität pro „Person“, sodass es keine Diagramme gibt, die RTCP nutzen könnte.
 

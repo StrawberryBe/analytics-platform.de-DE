@@ -4,10 +4,10 @@ description: Glossar zu Customer Journey Analytics.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: ht
-source-wordcount: '336'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Einige Begriffe in Customer Journey Analytics weichen von der bisherigen Verwend
 | Experience Cloud-Organisation | Anmeldeunternehmen | Siehe [Organisationen und Kontoverknüpfung](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | nicht angegeben | Report Suite | Report Suites im traditionellen Sinne von Adobe Analytics existieren nicht mehr. Stattdessen erstellen Sie (virtuelle) [Datenansichten](/help/data-views/create-dataview.md) aus den Platform-Datensätzen, mit denen Sie Verbindungen hergestellt haben. |
 | Filter | Segment | Segmente sind jetzt Filter. Filter in Customer Journey Analytics verhalten sich wie Segmente. Nur die Terminologie wurde geändert. |
-| Datenansicht | Virtual Report Suite | In Adobe Analytics ist eine Virtual Report Suite eine gefilterte Ansicht einer übergeordneten Report Suite. Der Hauptunterschied zwischen einer Virtual Report Suite und einer Datenansicht in CJA besteht darin, dass die Virtual Report Suite eine Untergruppe einer „Basis“- oder „übergeordneten“ Report Suite ist und daher einige ihrer Einstellungen übernimmt. Da es keine übergeordneten/Basis-Report Suites mehr gibt, definieren Sie Datenansichten mit ihren eigenen Einstellungen. |
+| Datenansicht | Virtual Report Suite | In Adobe Analytics ist eine Virtual Report Suite eine gefilterte Ansicht einer übergeordneten Report Suite. Der Hauptunterschied zwischen einer Virtual Report Suite und einer Datenansicht in Customer Journey Analytics besteht darin, dass die Virtual Report Suite eine Untergruppe einer &quot;Basis&quot;- oder &quot;übergeordneten&quot;Report Suite ist und daher einige ihrer Einstellungen übernimmt. Da es keine übergeordneten/Basis-Report Suites mehr gibt, definieren Sie Datenansichten mit ihren eigenen Einstellungen. |
 
 ## Glossar zu Adobe Experience Platform
 

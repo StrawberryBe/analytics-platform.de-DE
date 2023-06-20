@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Report Builder für Customer Journey Analytics wird von den folgenden Betriebssy
 - Windows 10 Version 1904 oder höher
 - Excel-Version 2106 oder höher
 
-   Alle Windows-Desktop-Excel-Benutzer müssen Microsoft Edge Webview2 installieren, um das Add-in verwenden zu können. So installieren Sie den Controller:
+  Alle Windows-Desktop-Excel-Benutzer müssen Microsoft Edge Webview2 installieren, um das Add-in verwenden zu können. So installieren Sie den Controller:
 
    1. Öffnen von <https://aka.ms/webview2installer>.
    1. Wählen Sie das Evergreen Standalone-Installationsprogramm aus und laden Sie es herunter.

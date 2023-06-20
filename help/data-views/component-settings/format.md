@@ -4,10 +4,10 @@ description: Konfigurieren Sie die Formatierung einer Metrik.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a3fea05ac95407c7f3bee723a267ae0bc03d334a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 32%
+source-wordcount: '493'
+ht-degree: 33%
 
 ---
 
@@ -43,7 +43,7 @@ So zeigen Sie eine Währung für eine Metrik an:
 2. Wählen Sie eine Währung aus dem **[!UICONTROL Währung anzeigen in]** Liste.
 
 
-### Währung konvertieren und anzeigen
+### Währung umrechnen und anzeigen
 
 [!BADGE Neue Funktion]{type=Positive}
 
@@ -51,7 +51,7 @@ So zeigen Sie eine Währung für eine Metrik an:
 
 So aktivieren Sie die Konvertierung einer Währung für eine Metrik:
 
-- Richten Sie Ihre CJA-Verbindung so ein, dass sie mindestens einen Ereignis-Datensatz enthält, der eine Währungscode-Dimension für jedes Ereignis enthält, das eine Währungsmetrik enthält. Diese Dimension des Währungscodes verwendet einen alphabetischen Währungscode, der dem [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) Standard für die Darstellung von Währungen. Zum Beispiel USD für $, EUR für €, GBP für £.
+- Richten Sie Ihre Customer Journey Analytics-Verbindung so ein, dass sie mindestens einen Ereignis-Datensatz enthält, der eine Währungscode-Dimension für jedes Ereignis enthält, das eine Währungsmetrik enthält. Diese Dimension des Währungscodes verwendet einen alphabetischen Währungscode, der dem [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) Standard für die Darstellung von Währungen. Zum Beispiel USD für $, EUR für €, GBP für £.
 
 - Sie haben (optional) die [!UICONTROL Währungscode] -Kontextbezeichnung zu einer oder mehreren Dimensionen, die in Ihrem Datensatz verfügbare Währungscodes definieren.
 

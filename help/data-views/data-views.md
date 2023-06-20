@@ -1,13 +1,13 @@
 ---
 title: Übersicht über die Datenansichten
-description: Eine Datenansicht gibt an, wie Datenelemente in der Customer Journey Analytics-Verbindung zu interpretieren sind, beispielsweise Metriken, Dimensionen, Sitzungen usw.
+description: Eine Datenansicht gibt an, wie Sie Datenelemente der Customer Journey Analytics-Verbindung, wie Metriken, Dimensionen, Sitzungen usw., interpretieren möchten.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: ht
-source-wordcount: '1045'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Arbeitsbereich-Projekte in Customer Journey Analytics basieren auf Datenansichte
 
 ## Datenansichten – Funktionen {#capabilities}
 
-Mit Datenansichten können Sie die Schema-Elementeinstellungen spontan ändern, ohne dass das Schema in Adobe Experience Platform geändert oder Ihre Customer Journey Analytics-Umgebung erneut implementiert werden muss.
+Mit Datenansichten können Sie spontan die Schemaelementeinstellungen ändern, ohne das Schema in Adobe Experience Platform ändern oder Ihre Customer Journey Analytics-Umgebung neu implementieren zu müssen.
 
 * **Sie können eine Komponente von einer Metrik in eine Dimension ändern und umgekehrt**. Sie können Metriken aus Zeichenfolgenfeldern oder Dimensionen aus numerischen Feldern erstellen. Dies erleichtert Ihnen das Leben, da Sie nicht für jede gewünschte Metrik ein numerisches Feld in Ihrem XDM-Schema erstellen müssen. Stattdessen können Sie sie spontan im Dialog „Dateiansichten“ erstellen. Im Folgenden finden Sie einige Beispiele:
    * **Erstellen Sie eine oder mehrere Dimensionen und/oder eine Dimension aus einem Schema-Feld**. Es ist eine Eins-zu-viele-Beziehung. Sie können beispielsweise eine oder mehrere Umsatzmetriken und/oder eine oder mehrere Umsatzdimensionen aus einem einzigen Schemafeld erstellen.

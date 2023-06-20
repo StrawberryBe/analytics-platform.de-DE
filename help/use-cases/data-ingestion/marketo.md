@@ -1,31 +1,31 @@
 ---
-title: Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA
-description: Erfahren Sie, wie Sie Marketo Engage-Daten in Customer Journey Analytics importieren können.
+title: Aufnehmen von Marketo Engage-Daten in Adobe Experience Platform und Berichterstellung in Customer Journey Analytics
+description: Erfahren Sie, wie Sie Marketo Engage-Daten in Customer Journey Analytics integrieren.
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 66%
 
 ---
 
-# Aufnahme von Marketo Engage-Daten in AEP und Berichterstellung in CJA
+# Aufnehmen von Marketo Engage-Daten in Adobe Experience Platform und Berichterstellung in Customer Journey Analytics
 
-Sie können die neu verfügbaren Marketo Engage-Datensätze in Adobe Experience Platform (AEP) nutzen, um B2B-Marketern nützliche Analyse- und Berichterstellungslösungen bereitzustellen. Danach können Sie einen Bericht zu diesen Datensätzen in Customer Journey Analytics (CJA) erstellen.
+Sie können die neu verfügbaren Marketo Engage-Datensätze in Adobe Experience Platform (Adobe Experience Platform) nutzen, um B2B-Marketingexperten wertvolle Analyse- und Berichterstellungslösungen bereitzustellen. Erstellen Sie dann einen Bericht zu diesen Datensätzen in Adobe Customer Journey Analytics.
 
 ## Schritt 1: Ordnen Sie Marketo-Quelldatenfeldern ihren XDM-Zielen zu
 
 Ordnen Sie die Objekte [Personen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=de#persons) und [Aktivitäten](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=de#activities) den jeweiligen XDM-Schema-Zielfeldern zu.
 
-## Schritt 2: Nehmen Sie Marketo-Daten in AEP auf.
+## Schritt 2: Marketo-Daten in Adobe Experience Platform erfassen
 
 Verwenden Sie den [Marketo Engage-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=de), um Daten aus Marketo in Experience Platform zu übertragen und mithilfe von Anwendungen, die mit Platform verbunden sind, auf dem neuesten Stand zu halten.
 
-## Schritt 3: Richten Sie eine Verbindung zu diesem Datensatz in CJA ein.
+## Schritt 3: Einrichten einer Verbindung zu diesem Datensatz in Customer Journey Analytics
 
-Um Berichte über Experience Platform-Datensätze zu erstellen, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und CJA herstellen. Weitere Informationen finden Sie unter [Verbindung erstellen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de).
+Um über Experience Platform-Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen Datensätzen in Experience Platform und Customer Journey Analytics herstellen. Weitere Informationen finden Sie unter [Verbindung erstellen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de).
 
 ## Schritt 4: Erstellen Sie eine oder mehrere Datenansichten.
 
@@ -36,7 +36,7 @@ Eine [Datenansicht](/help/data-views/data-views.md) ist ein für Customer Journe
 Ein möglicher Anwendungsfall ist: Wie viele Web-Seitenbesuche durch Leads hatten wir im April/Juni 2020?
 
 1. Öffnen Sie [Analysis Workspace](/help/analysis-workspace/home.md) und erstellen Sie ein neues Projekt.
-Kunden mit B2B/B2P CDP können eine B2C-Analyse in CJA durchführen. B2B-Objekte sind noch nicht verfügbar.
+Kunden mit B2B/B2P CDP können eine B2C-Analyse in Customer Journey Analytics durchführen. B2B-Objekte sind noch nicht verfügbar.
 
 1. Erstellen Sie einen [Filter](/help/components/filters/create-filters.md) für Web-Seitenansichten wie folgt: Ereignistyp = web.webpagedetails.pageViews :
 

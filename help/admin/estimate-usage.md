@@ -4,24 +4,24 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zur
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 94%
+source-wordcount: '895'
+ht-degree: 73%
 
 ---
 
 # Nutzung von Customer Journey Analytics anzeigen und verwalten
 
-Um Ihre CJA-Nutzung zu ermitteln, können Sie mehrere Methoden verwenden:
+Zur Anzeige der Nutzung Ihrer Customer Journey Analytics können Sie verschiedene Methoden verwenden:
 
 * Addieren Sie die Ereignisdatenzeilen für jede Verbindung. Siehe unten [Schätzen der Verbindungsgröße](#estimated size). Dies ist eine einfache Methode, um Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
 * Sie können Ihre Nutzung auf drei Arten anzeigen, von denen jede im Folgenden ausführlicher beschrieben wird:
    * Verwenden Sie Analysis Workspace, um Berichte zu den Ereignissen des letzten Monats zu erstellen.
    * Verwenden Sie Report Builder, um Berichte zu den Ereignissen des letzten Monats zu erstellen.
-   * Verwenden Sie die CJA-API, um einen automatisierten Bericht zu erstellen.
+   * Verwenden Sie die Customer Journey Analytics-API, um einen automatisierten Bericht zu erstellen.
 
-Gehen Sie folgendermaßen vor, um Ihre CJA-Nutzung zu verwalten:
+So verwalten Sie die Nutzung Ihrer Customer Journey Analytics:
 
 * Definieren Sie ein rollierendes Datenfenster.
 
@@ -55,7 +55,7 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisda
 
    * Ändern Sie Ihre [Datenspeicherungseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=de#set-rolling-window-for-connection-data-retention).
    * [Löschen Sie alle nicht verwendeten Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
-   * [Löschen Sie einen Datensatz in AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
+   * [Löschen eines Datensatzes in Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components).
    * Wenden Sie sich an Ihr Adobe Account Team, um zusätzliche Kapazitäten zu lizenzieren.
 
 ## Erstellen eines Analysis Workspace-Projekts mit allen Ereignisdaten {#workspace-event-data}
@@ -68,7 +68,7 @@ Mit dieser Methode können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzun
 >
 >    Erstellen Sie keine neue Verbindung mit all Ihren Daten ausschließlich zum Zweck der Nutzungsmessung, da dadurch Ihre Nutzungswerte tatsächlich verdoppelt werden würden.
 
-1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen CJA-Vertrags.
+1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen Customer Journey Analytics-Vertrags.
 
    ![Ereignisse](./assets/events-usage.png)
 
@@ -80,24 +80,24 @@ Mit dieser Methode können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzun
 
 Erstellen Sie in Report Builder für jede Datenansicht [einen Datenblock](/help/report-builder/create-a-data-block.md) und addieren Sie sie.
 
-## Erstellen eines automatisierten Berichts in der CJA-API {#api-report}
+## Erstellen eines automatisierten Berichts in der Customer Journey Analytics-API {#api-report}
 
-1. Verwenden Sie die [CJA-Reporting-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API), um **für jede Verbindung** einen Bericht zu allen Ereignisdaten zu erstellen. Richten Sie dies so ein, dass der Bericht folgendermaßen ausgeführt wird:
+1. Verwenden Sie die [Customer Journey Analytics Reporting-API](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) , um einen Bericht zu allen Ereignisdaten auszuführen, **für jede Verbindung**. Richten Sie dies so ein, dass der Bericht folgendermaßen ausgeführt wird:
 
    * An jedem ersten Freitag eines jeden Monats
-   * Zurück bis zum ersten Tag Ihres aktuellen CJA-Vertrags.
+   * zurück zum ersten Tag Ihres aktuellen Customer Journey Analytics-Vertrags.
 
-   Dadurch erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht. Dadurch erhalten Sie die Gesamtzahl der Zeilen für alle Ihre CJA-Verbindungen.
+   Dadurch erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht. Sie erhalten die Gesamtzahl der Zeilen für alle Ihre Customer Journey Analytics-Verbindungen.
 
 1. Verwenden Sie Excel, um diesen Bericht weiter anzupassen.
 
 ## Verwalten der Nutzung durch Definieren eines rollierenden Datenfensters {#rolling}
 
-Um Ihre Nutzung zu verwalten, können Sie über die [Verbindungs-Benutzeroberfläche](/help/connections/create-connection.md) die CJA-Datenspeicherung auf Verbindungsebene als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) festlegen.
+Um Ihre Nutzung zu verwalten, wird die [Verbindungs-Benutzeroberfläche](/help/connections/create-connection.md) ermöglicht die Definition der Aufbewahrung von Customer Journey Analytics-Daten als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 
-Wenn Sie die Standardeinstellung unverändert, d. h. deaktiviert, lassen, wird die Aufbewahrungsdauer durch die Datenaufbewahrungseinstellung von Adobe Experience Platform ersetzt. Wenn in Experience Platform Daten von einem Zeitraum von 25 Monaten enthalten sind, erhält CJA durch Aufstockung Daten von einem Zeitraum von 25 Monaten. Wenn Sie in Platform 10 dieser Monate löschen, werden in CJA die verbleibenden 15 Monate beibehalten.
+Wenn Sie die Standardeinstellung unverändert, d. h. deaktiviert, lassen, wird die Aufbewahrungsdauer durch die Datenaufbewahrungseinstellung von Adobe Experience Platform ersetzt. Wenn Daten aus 25 Monaten in Experience Platform sind, erhält der Customer Journey Analytics 25 Monate Daten durch Aufstockung. Wenn Sie 10 dieser Monate in Platform löschen, behält der Customer Journey Analytics die verbleibenden 15 Monate bei.
 
-Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung Profil- oder Lookup-Datensätze enthält, werden die Daten, da sie mit Ereignis-Datensätzen verbunden sind, in Customer Journey Analytics basierend auf Ihren Datenaufbewahrungseinstellungen für die Ereignis-Datensatz-Zeitstempel beibehalten.
+Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung Profil- oder Lookup-Datensätze enthält, da sie mit Ereignis-Datensätzen verbunden sind, werden die Daten in Customer Journey Analytics basierend auf Ihren Datenaufbewahrungseinstellungen für die Ereignis-Datensatz-Zeitstempel beibehalten.
 

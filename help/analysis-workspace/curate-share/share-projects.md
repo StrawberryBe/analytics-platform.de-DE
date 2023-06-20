@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1944'
-ht-degree: 47%
+source-wordcount: '1960'
+ht-degree: 46%
 
 ---
 
@@ -113,11 +113,11 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 
 >[!NOTE]
 >
->Beachten Sie Folgendes bei der Freigabe eines Analysis Workspace-Projekts für Personen, die keinen Zugriff auf CJA haben:
+>Beachten Sie Folgendes, wenn Sie ein Analysis Workspace-Projekt für Personen freigeben, die keinen Zugriff auf Customer Journey Analytics haben:
 >
->* Die Möglichkeit, ein Projekt auf diese Weise freizugeben, kann vom CJA-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Wenn Sie ein Projekt nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr CJA-Administrator diese Funktion deaktiviert.
+>* Die Möglichkeit, ein Projekt auf diese Weise freizugeben, kann vom Customer Journey Analytics-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Wenn Sie ein Projekt nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr Customer Journey Analytics-Administrator diese Funktion deaktiviert.
 >
->* Projekte mit mehr als 50 erweiterten Visualisierungen können nicht für Personen freigegeben werden, die keinen Zugriff auf CJA haben.
+>* Projekte mit mehr als 50 erweiterten Visualisierungen können nicht für Personen freigegeben werden, die keinen Zugriff auf Customer Journey Analytics haben.
 >
 >* Benutzer, für die Sie freigeben, können alle Filter anzeigen, die auf das Projekt während der [Kuratierung](curate.md).
 > 
@@ -147,17 +147,17 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
    Der Eigentümer des Projekts ist auch Eigentümer dieses Links. Das Linkeigentum kann nur dann an einen anderen Benutzer übertragen werden, wenn das Projekteigentum übertragen wird, wie unter [Übertragen von Benutzer-Assets oder Festlegen des Kontoablaufs](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) im Analytics Admin-Handbuch.
 
-1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihrem CJA-Administrator gesteuert werden):
+1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihrem Customer Journey Analytics-Administrator gesteuert werden):
 
    * **[!UICONTROL Experience Cloud-Authentifizierung verlangen]:**
 
      Wenn diese Option aktiviert ist, können nur Benutzer auf das Projekt zugreifen, die sich bei der Adobe Experience Cloud-Organisation anmelden können, in der das freigegebene Projekt erstellt wurde. Für Benutzer, für die Sie freigeben, ist jedoch kein Zugriff auf Adobe Analytics erforderlich.
 
-     CJA-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie der Administrator diese Option konfiguriert hat, können die folgenden Szenarien auftreten:
+     Customer Journey Analytics-Administratoren können diese Voreinstellung für das Unternehmen konfigurieren, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Je nachdem, wie der Administrator diese Option konfiguriert hat, können die folgenden Szenarien auftreten:
 
-      * Wenn diese Option nicht angezeigt wird, hat Ihr CJA-Administrator diese Funktion nicht aktiviert.
+      * Wenn diese Option nicht angezeigt wird, hat Ihr Customer Journey Analytics-Administrator diese Funktion nicht aktiviert.
 
-      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, bedeutet dies, dass Ihr CJA-Administrator für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen, eine Experience Cloud-Authentifizierung erfordert. Dies gilt immer für Organisationen, die Gesundheitsschild bestellen.
+      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, erfordert Ihr Customer Journey Analytics-Administrator die Authentifizierung von Experience Clouden für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen. Dies gilt immer für Organisationen, die Gesundheitsschild bestellen.
 
 1. Neben dem **[!UICONTROL Mit anderen teilen (keine Anmeldung erforderlich)]** und klicken Sie auf das **Link kopieren** icon ![Symbol &quot;Link kopieren&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)), um den Link in die Zwischenablage Ihres Systems zu kopieren.
 

@@ -4,9 +4,9 @@ title: Intelligente Beschriftungen
 feature: Visualizations
 role: User, Admin
 exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 * Analysten, die Geschichten benötigen, um sie für andere Benutzer freizugeben. Analysten benötigen diese Einblicke, um ihren Benutzern Kontext bieten zu können.
 * Geschäftsbenutzer, die schnell allgemeine Schnellzugriffe entdecken möchten.
 
-Untertitel sind für alle CJA-Benutzer verfügbar und erfordern keine speziellen Berechtigungen.
+Untertitel sind für alle Customer Journey Analytics verfügbar und erfordern keine speziellen Berechtigungen.
 
 ## Intelligente Beschriftungen starten {#launch}
 

@@ -4,10 +4,10 @@ description: Zeigt nützliche Berichte zu Google Analytics-Daten in Customer Jou
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 92%
+source-wordcount: '684'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ Anhand der Kohortentabelle ist ersichtlich, wie lange es in der Regel dauert, bi
 
 ## Erweiterte Marketing-Attribution verwenden
 
-Mit CJA kann man ausgefeilte Attributionsmodelle auf Cross-Channel-Daten anwenden. Im folgenden Beispiel sehen Sie einen Vergleich der Anwendung von Erstkontakt, Letztkontakt, U-förmig und algorithmischer Attribution von Umsatz mit den Channel Grouping-Dimensionen von Google Analytics.
+Mit Customer Journey Analytics können Sie komplexe Attributionsmodelle für kanalübergreifende Daten verwenden. Im folgenden Beispiel sehen Sie einen Vergleich der Anwendung von Erstkontakt, Letztkontakt, U-förmig und algorithmischer Attribution von Umsatz mit den Channel Grouping-Dimensionen von Google Analytics.
 
 ![Marketing-Attribution](../assets/mktg-attribution.png)
 
@@ -63,6 +63,6 @@ Sie können Ihren im Web und über Mobile Apps generierten Umsatz auch Ihren Goo
 
 ![Google-Anzeige](../assets/google-ad.png)
 
-Durch die Kombination von Datensätzen in CJA können Sie in diesem Beispiel sehen, dass Online-Anzeigen Auswirkungen auf Produkte hatten, die in Ihrer Mobile App gekauft wurden. In der folgenden Visualisierung sehen Sie, dass der Umsatz durch Google Ads über die Mobile App im Vergleich zum Internet allein zusätzliche 14.000 $ bis 15.000 $ ausmacht.
+Durch die Kombination von Datensätzen in Customer Journey Analytics können Sie in diesem Beispiel sehen, dass Online-Anzeigen Auswirkungen auf Produkte hatten, die in Ihrer App gekauft wurden. In der folgenden Visualisierung sehen Sie, dass der Umsatz durch Google Ads über die Mobile App im Vergleich zum Internet allein zusätzliche 14.000 $ bis 15.000 $ ausmacht.
 
 ![Google-Anzeige 2](../assets/google-ad2.png)

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: 4ae102baa524a7e01ac8f08365260e80fe90150e
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3262'
 ht-degree: 9%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 9%
 
 # Abgeleitete Felder
 
-Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Customer Journey Analytics (CJA). Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
+Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Adobe Customer Journey Analytics. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
 
-Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Standorten außerhalb von CJA. z. B. [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
+Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Orten außerhalb des Customer Journey Analytics. z. B. [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
 
 Abgeleitete Felder werden in [Datenansichten](../data-views.md), basieren auf einem Satz von Funktionen, die als Regeln definiert und auf verfügbare Standard- und/oder Schemafelder angewendet werden.
 
@@ -122,7 +122,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 >[!NOTE]
 >
->Abgeleitete Felder werden in CJA auf Verbindsebene verwaltet. Jede Änderung, die an einem abgeleiteten Feld in einer der mit dieser Verbindung verknüpften Datenansichten vorgenommen wurde, gilt für alle diese zugehörigen Datenansichten.
+>Abgeleitete Felder werden in Customer Journey Analytics auf Verbindungsebene verwaltet. Jede Änderung, die an einem abgeleiteten Feld in einer der mit dieser Verbindung verknüpften Datenansichten vorgenommen wurde, gilt für alle diese zugehörigen Datenansichten.
 
 
 
@@ -461,9 +461,9 @@ Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen 
 
 ## Begrenzungen
 
-CJA verwendet eine verschachtelte Container-Struktur, die nach dem Modell von Adobe Experience Platform modelliert ist [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen. Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf.
+Customer Journey Analytics verwendet eine verschachtelte Behälterstruktur, die nach dem Modell von Adobe Experience Platform modelliert ist [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen. Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf.
 
-CJA verwendet das folgende standardmäßige Containermodell:
+Customer Journey Analytics verwendet das folgende standardmäßige Containermodell:
 
 <p align="center">
 <img src="./assets/containers.png" width="50%" valign="middle">
@@ -761,4 +761,4 @@ Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die [!UI
 Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder im Allgemeinen:
 
 - Beim Definieren von Regeln für ein abgeleitetes Feld können Sie maximal 10 verschiedene Schemafelder (ohne Standardfelder) verwenden.
-- Sie können pro CJA-Verbindung maximal 100 abgeleitete Felder haben.
+- Pro Customer Journey Analytics-Verbindung können maximal 100 abgeleitete Felder verwendet werden.

@@ -2,10 +2,10 @@
 title: Verwalten von in Customer Journey Analytics erstellten Zielgruppen
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics verwalten
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: ht
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 75%
 
 ---
 
@@ -16,8 +16,8 @@ Die Verwaltung zuvor erstellter Zielgruppen ermöglicht Ihnen Folgendes:
 * **Erstellen eines Zeitplans bzw. Aufhebung des Zeitplans** für die automatische Aktualisierung der Zielgruppe. Die maximale Gültigkeit des Zeitplans beträgt 1 Jahr.
 * **Verlängern Sie einen Zeitplan für die Aktualisierung der Zielgruppe**, bevor er abläuft. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrierende ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf des Zeitplans eine E-Mail.
 * Sehen Sie sich das **Aktualisierungsintervall** und die **letzte Aktualisierung einer Zielgruppe** an.
-* Informationen zur **Erstellungsdauer einer Zielgruppe** in Customer Journey Analytics (CJA) und die Dauer, bis die Zielgruppe zur Aktivierung im Echtzeit-Kundenprofil angezeigt wird.
-* Überprüfen, ob die Zielgruppen in CJA **aktiv vom Echtzeit-Kundenprofil** oder (im Idealfall) von Experience Platform-Anwendungen verwendet werden, die die von CJA erstellten Zielgruppen nutzen.
+* Gewinnen Sie Einblicke in **Dauer der Erstellung einer Audience** vom Customer Journey Analytics aus und die Zeit, die benötigt wurde, um die Zielgruppe zur Aktivierung im Echtzeit-Kundenprofil erscheinen zu lassen.
+* Überprüfen Sie, ob die Zielgruppen in Customer Journey Analytics **aktiv vom Echtzeit-Kundenprofil verwendet werden** oder (idealerweise) alle Experience Platform Apps, die die von Customer Journey Analytics erstellten Zielgruppen nutzen.
 
 ## Verwaltungs-Benutzeroberfläche
 
@@ -36,4 +36,4 @@ Die Verwaltung zuvor erstellter Zielgruppen ermöglicht Ihnen Folgendes:
 | [!UICONTROL  Zuletzt aktualisiert] | Zeitpunkt der letzten Aktualisierung der Zielgruppe. |
 | [!UICONTROL Zuletzt geändert] | Zeitpunkt der letzten Bearbeitung oder Änderung der Zielgruppe. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

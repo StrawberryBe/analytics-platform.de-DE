@@ -4,10 +4,10 @@ description: Hier erhalten Sie Informationen über die unterschiedlichen Arten d
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Dieser Workflow nutzt den Adobe Analytics Source Connector und variiert je nachd
 
 [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de) ist eine Client-seitige JavaScript-Bibliothek, mit der Kunden von Adobe Experience Cloud mit den verschiedenen Services in Experience Cloud interagieren können.
 
-1. [Konfigurieren Sie die Adobe Experience Platform Web SDK-Erweiterung in Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=de), um Daten von Web-Eigenschaften über das Adobe Experience Platform Edge Network an Adobe Experience Cloud zu senden.
+1. [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung in Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=de) , um Daten von Webeigenschaften über das Adobe Experience Platform Edge Network an die Adobe Experience Cloud zu senden.
 1. Verwenden Sie [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=de), um eine oder mehrere [Verbindungen](/help/connections/create-connection.md) und [Datenansichten](/help/data-views/data-views.md) zu erstellen, die in Ihr kanalübergreifendes Reporting einfließen werden.
 
 ## Daten mit Batch-Erfassung und Streaming-Erfassung einlesen

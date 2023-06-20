@@ -3,7 +3,7 @@ description: Die Flussfunktion zeigt Kundenpfade durch Ihre Websites und Program
 title: Flussübersicht
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 93%
@@ -22,7 +22,7 @@ Damit können Sie:
 
 [Video-Tutorial zur Flussvisualisierung](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=de) (4:56)
 
-## Interdimensionale Flüsse {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Interdimensionale Flüsse {#in}
 
 Sie können den [Fluss zwischen Dimensionen](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md) anzeigen. So können Sie beispielsweise in einem Diagramm Seiten mit Abteilungen kombinieren. In diesem Fall würde der Fluss von der Startseite zur Seite „Männer“ und dann zur Abteilung „Schuhe“ verlaufen.
 

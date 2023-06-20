@@ -2,9 +2,9 @@
 title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4e2d4d8c4f8145ae691114d57d663af96240b5f5
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '967'
 ht-degree: 34%
 
 ---
@@ -112,7 +112,7 @@ Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
 ## Vordefinierte Filtervorlage {#template}
 
-Herkömmliche Analytics bietet zahlreiche vordefinierte Vorlagenfilter (Filter) und berechnete Metriken. Viele von ihnen gelten nicht für CJA oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextabhängige Variablen in CJA ab.
+Herkömmliche Analytics bietet zahlreiche vordefinierte Vorlagenfilter (Filter) und berechnete Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextabhängige Variablen in Customer Journey Analytics ab.
 
 | Filtername | Beschreibung |
 | --- | --- |

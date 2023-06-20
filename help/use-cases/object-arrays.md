@@ -1,21 +1,21 @@
 ---
 title: Verwenden von Objekt-Arrays
-description: Hier wird erklärt, wie CJA-Berichte Datenhierarchien darstellen.
+description: Erfahren Sie, wie Customer Journey Analytics Berichte zu Datenhierarchien erstellt.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 86%
+source-wordcount: '445'
+ht-degree: 66%
 
 ---
 
 # Verwenden von Objekt-Arrays
 
-Manche Plattformschemas können Objekt-Arrays enthalten. CJA unterstützt die Aufnahme von und die Berichterstellung zu Objekt-Arrays innerhalb von Ereignis-, Lookup- und Profildaten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
+Manche Plattformschemas können Objekt-Arrays enthalten. Adobe Customer Journey Analytics unterstützt die Erfassung und Berichterstellung von Objekt-Arrays innerhalb von Ereignis-, Such- und Profildaten. Eines der häufigsten Beispiele ist ein Warenkorb, der mehrere Produkte enthält. Jedes Produkt hat einen Namen, eine Produktnummer, eine Kategorie, einen Preis, eine Menge und andere Dimensionen, die Sie verfolgen möchten. Alle diese Faktoren haben unterschiedliche Anforderungen, müssen jedoch alle in denselben Hit passen.
 
-In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. CJA erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien in einer Datenzeile. Diese Funktion war in keiner früheren Version von Adobe Analytics verfügbar.
+In früheren Versionen von Adobe Analytics wurde dies durch die `products`-Variable erreicht. Dabei handelte es sich um eine verkettete Zeichenfolge, in der die Bestandteile eines Produkts durch Semikolons (`;`) getrennt waren, während die Produkte durch Kommas (`,`) getrennte waren. Dies war die einzige Variable mit eingeschränkter Unterstützung von „Objekt-Arrays“. Variablen mit mehreren Werten, wie z. B. Listenvariablen, konnten das Äquivalent zu Arrays unterstützen, sie konnten aber keine „Objekt-Arrays“ unterstützen. Customer Journey Analytics erweitert dieses Konzept durch die Unterstützung beliebig tiefer Hierarchien in einer Datenzeile, eine Funktion, die in keiner früheren Version von Adobe Analytics verfügbar ist.
 
 ## Beispiel für dasselbe Ereignis
 
@@ -91,7 +91,7 @@ Unter Verwendung des obigen Ereignisses zeigen die folgenden Tabellen Workspace-
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-CJA untersucht basierend auf der Tabelle selektiv die Dimension und die Metriken des Objekts.
+Customer Journey Analytics betrachtet die Dimension und Metriken des Objekts selektiv auf der Basis der Tabelle.
 
 ```diff
 {
@@ -143,7 +143,7 @@ Wenn Sie nur über Garantieumsätze berichten möchten, sieht Ihr Projekt in etw
 | `extended` | `50` |
 | `Total` | `250` |
 
-CJA untersucht diese Teile des Ereignisses, um den Bericht zu generieren:
+Customer Journey Analytics betrachtet diese Ereignisabschnitte zur Erstellung des Berichts:
 
 ```diff
 {
@@ -245,7 +245,7 @@ Achten Sie auf die Bestellungen, die keinen mit ihnen verbundenen Namen haben. D
 
 ### Kombinieren von Metriken
 
-CJA kombiniert nativ keine ähnlich benannten Metriken, wenn sie sich auf unterschiedlichen Objektebenen befinden.
+Customer Journey Analytics kombiniert nativ keine ähnlich benannten Metriken, wenn sie sich auf unterschiedlichen Objektebenen befinden.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |

@@ -6,28 +6,28 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
-workflow-type: ht
-source-wordcount: '311'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 60%
 
 ---
 
 # Eingeschränkte Beschriftungen in Report Builder
 
-Im Allgemeinen werden alle Einstellungen in Bezug auf die Data Governance in Customer Journey Analytics von Adobe Experience Platform übernommen. Die Integration zwischen CJA und Adobe Experience Platform Data Governance ermöglicht die Kennzeichnung sensibler CJA-Daten und die Durchsetzung von Datenschutzrichtlinien.
+Im Allgemeinen werden alle Einstellungen in Bezug auf die Data Governance in Customer Journey Analytics von Adobe Experience Platform übernommen. Die Integration zwischen Customer Journey Analytics und Adobe Experience Platform Data Governance ermöglicht die Kennzeichnung sensibler Customer Journey Analytics-Daten und die Durchsetzung von Datenschutzrichtlinien.
 
-Datenschutzbeschriftungen und -richtlinien, die für von Experience Platform genutzte Datensätze erstellt wurden, können im CJA-Datenansichts-Workflow angezeigt werden. Diese Beschriftungen stoppen oder warnen Benutzer, die Metriken und/oder Dimensionen aus sensiblen Feldern erstellen. Weiterführende Informationen über Datensätze finden Sie in der [Datensatzübersicht](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de)
+Datenschutzbezeichnungen und Richtlinien, die für von Experience Platform genutzte Datensätze erstellt wurden, können im Workflow für Customer Journey Analytics-Datenansichten angezeigt werden. Diese Beschriftungen stoppen oder warnen Benutzer, die Metriken und/oder Dimensionen aus sensiblen Feldern erstellen. Weiterführende Informationen über Datensätze finden Sie in der [Datensatzübersicht](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=de)
 
-Darüber hinaus werden beim Exportieren von Daten aus Customer Journey Analytics (über Reporting, Export, API usw.) Warnhinweise oder Beschriftungen hinzugefügt, die Benutzer darauf hinweisen, dass ein Bericht sensible Informationen enthält, die auf bestimmte Weise behandelt werden müssen.
+Darüber hinaus werden beim Exportieren von Daten aus dem Customer Journey Analytics (über Berichterstellung, Export, API usw.) Warnhinweise oder Beschriftungen hinzugefügt, die Benutzer darauf hinweisen, dass ein Bericht sensible Informationen enthält, die auf bestimmte Weise behandelt werden müssen.
 
-Durch diese Integration können Sie die Compliance einfacher verwalten. Datenverantwortliche in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Dadurch können Ihre CJA-Benutzer die Daten sicherer nutzen, da sie wissen, dass sie mit den von den Datenverwaltern festgelegten Richtlinien übereinstimmen.
+Durch diese Integration können Sie die Compliance einfacher verwalten. Datenverantwortliche in Ihrem Unternehmen können Richtlinien festlegen, um die Nutzung zu beschränken. Daher können Ihre Customer Journey Analytics-Benutzer Daten in dem Bewusstsein, dass sie den von Data Stewards definierten Richtlinien entsprechen, sicherer verwenden.
 
 Weitere Informationen finden Sie unter [Customer Journey Analytics und Data Governance](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/privacy-overview.html?lang=de)
 
 ## Anzeigen eingeschränkter Daten in Report Builder
 
-In CJA werden zwei von Adobe definierte Richtlinien angezeigt, die sich auf das Reporting und die Freigabe auswirken:
+In Customer Journey Analytics werden zwei von der Adobe definierte Richtlinien angezeigt, die sich auf das Reporting, Herunterladen und Freigeben auswirken:
 
 * Analytics erzwingen-Richtlinie
 * Download erzwingen-Richtlinie

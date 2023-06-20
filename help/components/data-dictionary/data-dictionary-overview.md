@@ -4,9 +4,9 @@ title: Datenwörterbuch – Überblick
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 9f1a96308fce7fb827cba43833df96098f05ef93
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 67%
 
 ---
@@ -49,9 +49,9 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Analytics-Administrierende da
 
 * Aktualisierung der Komponentenbeschreibungen direkt in Analysis Workspace. Alle Aktualisierungen, die an Komponentenbeschreibungen im Datenwörterbuch vorgenommen werden, werden in der Datenansicht angezeigt.
 
-   Ebenso spiegeln sich alle Aktualisierungen, die an Komponentenbeschreibungen in der Datenansicht vorgenommen wurden, in Analysis Workspace wider.
+  Ebenso spiegeln sich alle Aktualisierungen, die an Komponentenbeschreibungen in der Datenansicht vorgenommen wurden, in Analysis Workspace wider.
 
-   Weitere Informationen zum Hinzufügen von Komponentenbeschreibungen in Analysis Workspace oder in einer Datenansicht finden Sie unter [Komponentenbeschreibungen hinzufügen](/help/components/add-component-descriptions.md).
+  Weitere Informationen zum Hinzufügen von Komponentenbeschreibungen in Analysis Workspace oder in einer Datenansicht finden Sie unter [Komponentenbeschreibungen hinzufügen](/help/components/add-component-descriptions.md).
 
 ## Zugriff auf das Datenwörterbuch
 
@@ -59,12 +59,12 @@ Sie können auf eine der folgenden Arten in Analysis Workspace auf das Datenwör
 
 * über das Symbol **Datenwörterbuch** in der linken Leiste.
 
-   ![Datenwörterbuchsymbol in der linken Leiste](assets/data-dictionary-access-icon.png)
+  ![Datenwörterbuchsymbol in der linken Leiste](assets/data-dictionary-access-icon.png)
 
 * über das Symbol **Datenwörterbuch** im Info-Pop-up einer Komponente.
 
-   ![Datenwörterbuchsymbol im Info-Pop-up](assets/data-dictionary-access-infopopover.png)
-   <!--update screenshot; this was taken from a mock-->
+  ![Datenwörterbuchsymbol im Info-Pop-up](assets/data-dictionary-access-infopopover.png)
+  <!--update screenshot; this was taken from a mock-->
 
 * über das Menü: [!UICONTROL **Hilfe**] > [!UICONTROL **Datenwörterbuch**].
 
@@ -74,7 +74,7 @@ Detaillierte Informationen zu den verschiedenen verfügbaren Optionen im Datenw�
 
 Customer Journey Analytics-Administratoren sind für die Pflege eines gesunden Datenwörterbuchs für ihre Organisation verantwortlich, wie unter [Überwachen der Gesundheit von Datenwörterbüchern](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Im Rahmen dieses Prozesses können CJA-Administratoren Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Im Rahmen dieses Vorgangs können Customer Journey Analytics-Administratoren Informationen zu den einzelnen Komponenten im Datenwörterbuch bearbeiten, wie unter [Bearbeiten von Komponenteneinträgen im Datenwörterbuch](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Verschieben, Minimieren oder Schließen des Datenwörterbuchs
 
@@ -84,12 +84,12 @@ Sie können das Datenwörterbuchfenster auf eine der folgenden Arten verändern:
 
 * in einen beliebigen Bereich in Analysis Workspace ziehen
 
-   Wenn Sie Analysis Workspace schließen und erneut öffnen, bleibt das Datenwörterbuchfenster an der Stelle, an die Sie es zuletzt verschoben haben.<!--True?-->
+  Wenn Sie Analysis Workspace schließen und erneut öffnen, bleibt das Datenwörterbuchfenster an der Stelle, an die Sie es zuletzt verschoben haben.<!--True?-->
 
 * minimieren
 
-   Wenn es minimiert wird, erscheint das Datenwörterbuch als blaue Registerkarte in der rechten unteren Ecke von Analysis Workspace.
+  Wenn es minimiert wird, erscheint das Datenwörterbuch als blaue Registerkarte in der rechten unteren Ecke von Analysis Workspace.
 
-   Wenn Sie die blaue Registerkarte auswählen, wird das Datenwörterbuch für die Komponente geöffnet, die Sie zuletzt angesehen haben.
+  Wenn Sie die blaue Registerkarte auswählen, wird das Datenwörterbuch für die Komponente geöffnet, die Sie zuletzt angesehen haben.
 
 * schließen

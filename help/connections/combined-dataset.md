@@ -1,23 +1,23 @@
 ---
 title: Kombinierte Ereignis-Datensätze
-description: Erfahren Sie, wie CJA durch Kombinieren von Datensätzen eine Verbindung herstellt.
+description: Erfahren Sie, wie Customer Journey Analytics durch die Kombination von Datensätzen eine Verbindung herstellt.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 91%
+source-wordcount: '344'
+ht-degree: 72%
 
 ---
 
 
 # Kombinierte Ereignis-Datensätze
 
-Wenn Sie eine Verbindung herstellen, fasst Customer Journey Analytics (CJA) alle Schemata und Datensätze zu einem einzigen Datensatz zusammen. Dieser „kombinierte Ereignis-Datensatz“ wird von CJA für das Reporting verwendet. Wenn Sie mehrere Schemata oder Datensätze in eine Verbindung einschließen:
+Wenn Sie eine Verbindung erstellen, kombiniert Customer Journey Analytics alle Schemas und Datensätze zu einem Datensatz. Dieser &quot;kombinierte Ereignis-Datensatz&quot;wird von Customer Journey Analytics für die Berichterstellung verwendet. Wenn Sie mehrere Schemata oder Datensätze in eine Verbindung einschließen:
 
 * Schemata werden kombiniert. Doppelte Schemafelder werden zusammengeführt.
-* Die Spalte „Personen-ID“ jedes Datensatzes wird unabhängig von ihrem Namen in eine Spalte zusammengefasst. Diese Spalte bildet die Grundlage für die Identifizierung von Einzelpersonen in CJA.
+* Die Spalte „Personen-ID“ jedes Datensatzes wird unabhängig von ihrem Namen in eine Spalte zusammengefasst. Diese Spalte bildet die Grundlage für die Identifizierung von Einzelpersonen in der Customer Journey Analytics.
 * Zeilen werden anhand des Zeitstempels verarbeitet.
 * Ereignisse werden auf die Millisekunden-Ebene aufgelöst.
 
@@ -31,34 +31,34 @@ Siehe folgendes Beispiel. Sie haben zwei Ereignis-Datensätze mit jeweils unters
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` |  |
-| `user_310` | `1 Jan 7:04 AM` |  |  | `2` |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` |  | `3` |
-| `user_847` | `2 Jan 12:31 PM` |  | `Turtle` | `4` |
-| `user_847` | `2 Jan 12:44 PM` |  |  | `2` |
+| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | |
+| `user_310` | `1 Jan 7:04 AM` | | | `2` |
+| `user_310` | `1 Jan 7:08 AM` | `Blue` | | `3` |
+| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | `4` |
+| `user_847` | `2 Jan 12:44 PM` | | | `2` |
 
 | `different_id` | `timestamp` | `string_color` | `string_shape` | `metric_b` |
 | --- | --- | --- | --- | --- |
 | `user_847` | `2 Jan 12:26 PM` | `Yellow` | `Circle` | `8.5` |
-| `user_847` | `2 Jan 1:01 PM` | `Red` |  |  |
+| `user_847` | `2 Jan 1:01 PM` | `Red` | | |
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
+| `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
 
 Wenn Sie eine Verbindung mit diesen beiden Ereignis-Datensätzen erstellen, wird die folgende Tabelle für das Reporting verwendet.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
-| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` |  |  |  |
-| `user_310` | `1 Jan 7:04 AM` |  |  |  | `2` |  |
-| `user_310` | `1 Jan 7:08 AM` | `Blue` |  |  | `3` |  |
-| `user_847` | `2 Jan 12:26 PM` | `Yellow` |  | `Circle` |  | `8.5` |
-| `user_847` | `2 Jan 12:31 PM` |  | `Turtle` |  | `4` |  |
-| `user_847` | `2 Jan 12:44 PM` |  |  |  | `2` |  |
-| `user_847` | `2 Jan 1:01 PM` | `Red` |  |  |  |  |
-| `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
-| `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
+| `user_310` | `1 Jan 7:02 AM` | `Red` | `Fox` | | | |
+| `user_310` | `1 Jan 7:04 AM` | | | | `2` | |
+| `user_310` | `1 Jan 7:08 AM` | `Blue` | | | `3` | |
+| `user_847` | `2 Jan 12:26 PM` | `Yellow` | | `Circle` | | `8.5` |
+| `user_847` | `2 Jan 12:31 PM` | | `Turtle` | | `4` | |
+| `user_847` | `2 Jan 12:44 PM` | | | | `2` | |
+| `user_847` | `2 Jan 1:01 PM` | `Red` | | | | |
+| `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
+| `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. CJA behandelt alle Daten so, als ob sie sich im selben Datensatz befinden. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
+Dieser „kombinierte Ereignis-Datensatz“ wird für das Reporting verwendet. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Customer Journey Analytics behandelt alle Daten so, als befänden sie sich im selben Datensatz. Wenn in beiden Datensätzen eine übereinstimmende Personen-ID angezeigt wird, werden sie als dieselbe eindeutige Person betrachtet. Wenn eine übereinstimmende Personen-ID mit einem Zeitstempel innerhalb von 30 Minuten in beiden Datasets erscheint, werden sie als Teil derselben Sitzung betrachtet.
 
 Dieses Konzept gilt auch für die Attribution. Es spielt keine Rolle, aus welchem Datensatz eine Zeile stammt. Die Attribution funktioniert genau so, als ob alle Ereignisse aus einem einzigen Datensatz stammen. Anhand dem Beispiel der oben stehenden Tabellen:
 

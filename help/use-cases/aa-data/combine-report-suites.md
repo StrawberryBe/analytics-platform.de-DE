@@ -2,22 +2,22 @@
 title: Kombinieren von Report Suites mit verschiedenen Schemata
 description: Erfahren Sie, wie Sie mithilfe der Datenvorbereitung Report Suites mit verschiedenen Schemata kombinieren
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: ht
-source-wordcount: '1335'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1398'
+ht-degree: 64%
 
 ---
 
 # Kombinieren von Report Suites mit verschiedenen Schemata
 
-Der [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) bringt Report Suite-Daten aus Adobe Analytics in Adobe Experience Platform (AEP) zur Verwendung durch AEP-Programme wie Real-time Customer Data Platform und Customer Journey Analytics (CJA). Jede Report Suite, die in AEP importiert wird, wird als Datenfluss der individuellen Quellverbindung konfiguriert, und jeder Datenfluss gelangt als Datensatz in den Data Lake von AEP. Der Analytics-Quell-Connector erstellt einen Datensatz pro Report Suite.
+Die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) bringt Report Suite-Daten aus Adobe Analytics zur Verwendung durch Adobe Experience Platform-Anwendungen wie Real-time Customer Data Platform und Customer Journey Analytics (Customer Journey Analytics) in die Adobe Experience Platform. Jede Report Suite, die in Adobe Experience Platform eingebunden wird, wird als Datenfluss der individuellen Quellverbindung konfiguriert und jeder Datenfluss wird als Datensatz im Adobe Experience Platform Data Lake landet. Der Analytics-Quell-Connector erstellt einen Datensatz pro Report Suite.
 
-CJA-Kundinnen und Kunden verwenden [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de), um Datensätze aus dem Data Lake von AEP in Analysis Workspace von CJA zu integrieren. Wenn Sie jedoch Report Suites innerhalb einer Verbindung kombinieren, müssen Schemaunterschiede zwischen Report Suites mithilfe der Funktionalität [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) von AEP aufgelöst werden. Damit soll sichergestellt werden, dass Adobe Analytics-Variablen wie Props und eVars in CJA eine einheitliche Bedeutung haben.
+Customer Journey Analytics-Kunden verwenden [Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de) , um Datensätze aus dem Adobe Experience Platform Data Lake in Customer Journey Analytics Analysis Workspace zu integrieren. Wenn Sie jedoch Report Suites innerhalb einer Verbindung kombinieren, müssen Schemaunterschiede zwischen Report Suites mithilfe von Adobe Experience Platform behoben werden [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) Funktionalität. Damit soll sichergestellt werden, dass Adobe Analytics-Variablen wie Props und eVars eine einheitliche Bedeutung in Customer Journey Analytics haben.
 
 ## Schemaunterschiede zwischen Report Suites sind problematisch
 
-Angenommen, Ihre Firma möchte Daten aus zwei verschiedenen Report Suites in AEP zur Verwendung durch CJA importieren und geht davon aus, dass die Schemata für die beiden Report Suites Unterschiede aufweisen:
+Angenommen, Ihr Unternehmen möchte Daten aus zwei verschiedenen Report Suites in Adobe Experience Platform zur Verwendung durch Customer Journey Analytics importieren und geht davon aus, dass die Schemata für die beiden Report Suites unterschiedlich sind:
 
 | Report Suite A | Report Suite B |
 | --- | --- |
@@ -28,14 +28,14 @@ Sagen wir aus Gründen der Einfachheit, dass dies die einzigen definierten eVars
 
 Angenommen, Sie führen nun die folgenden Aktionen durch:
 
-- Sie erstellen eine Analytics-Quellverbindung (ohne Verwendung der Datenvorbereitung), die die **Report Suite A** als **Datensatz A** in den Data Lake von AEP aufnimmt.
-- Sie erstellen eine Analytics-Quellverbindung (ohne Verwendung der Datenvorbereitung), die die **Report Suite B** als **Datensatz B** in den Data Lake von AEP aufnimmt.
-- Sie erstellen eine [CJA-Verbindung](/help/connections/create-connection.md) namens **Alle Report Suites**, die Datensatz A und Datensatz B kombiniert.
-- Sie erstellen eine [CJA-Datenansicht](/help/data-views/create-dataview.md) namens **Globale Ansicht**, die auf der Verbindung „Alle Report Suites“ basiert.
+- Erstellen einer Analytics-Quellverbindung (ohne Verwendung von Data Prep), die erfasst **Report Suite A** in Adobe Experience Platform Data Lake als **Datensatz A**.
+- Erstellen einer Analytics-Quellverbindung (ohne Verwendung von Data Prep), die erfasst **Report Suite B** in Adobe Experience Platform Data Lake als **Datensatz B**.
+- Erstellen Sie eine [Customer Journey Analytics-Verbindung](/help/connections/create-connection.md) aufgerufen **Alle Report Suites** , der Datensatz A und Datensatz B kombiniert.
+- Erstellen Sie eine [Datenansicht des Customer Journey Analytics](/help/data-views/create-dataview.md) aufgerufen **Globale Ansicht** , der auf der Verbindung Alle Report Suites basiert.
 
 Ohne die Verwendung der Datenvorbereitung zur Auflösung der Schemaunterschiede zwischen Datensatz A und Datensatz B enthalten die eVars in der Datenansicht der globalen Ansicht eine Mischung aus Werten:
 
-| Datenansicht der globalen Ansicht in CJA |
+| Datenansicht in der globalen Ansicht in Customer Journey Analytics |
 | --- |
 | eVar1 => eine Mischung aus Suchbegriffen und Geschäftseinheiten |
 | eVar2 => eine Mischung aus Kundenkategorien und Suchbegriffen |
@@ -46,11 +46,11 @@ Dies führt zu sinnlosen Berichten für eVar1 und eVar2:
 - Suchbegriffe werden zwischen eVar1 und eVar2 verteilt.
 - Es ist nicht möglich, verschiedene Attributionsmodelle für die einzelnen Suchbegriffe, Geschäftseinheiten und Kundenkategorien zu verwenden.
 
-## Verwenden der AEP-Datenvorbereitung, um Schemaunterschiede zwischen Report Suites zu beheben
+## Adobe Experience Platform-Datenvorbereitung verwenden, um Schemaunterschiede zwischen Report Suites zu beheben
 
-Die Datenvorbereitungs-Funktion von Experience Platform ist in den Analytics-Quell-Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Schemaunterschiede zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der CJA-Datenansicht. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
+Die Datenvorbereitungs-Funktion von Experience Platform ist in den Analytics-Quell-Connector integriert und kann verwendet werden, um die im obigen Szenario beschriebenen Schemaunterschiede zu beheben. Dies führt zu eVars mit konsistenter Bedeutung in der Datenansicht des Customer Journey Analytics. (Die unten verwendeten Benennungskonventionen können Ihren Bedürfnissen entsprechend angepasst werden.)
 
-1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen, [erstellen Sie ein neues Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in AEP (nennen wir es in unserem Beispiel **Einheitliches Schema**.) Fügen Sie Folgendes zu diesem Schema hinzu:
+1. Bevor Sie die Datenflüsse für die Quellverbindung für Report Suite A und Report Suite B erstellen, [Neues Schema erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=de) in Adobe Experience Platform (nennen wir es **Einheitliches Schema** in unserem Beispiel.) Fügen Sie Folgendes zu diesem Schema hinzu:
 
    | „Einheitliches Schema“ |
    | --- |
@@ -83,11 +83,11 @@ Die Datenvorbereitungs-Funktion von Experience Platform ist in den Analytics-Que
    | \_experience.analytics.customDimensions.eVars.eVar1 | _\&lt;path>_.Business_unit |
    | _experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Search_term |
 
-1. Erstellen Sie jetzt eine Verbindung des Typs **Alle Report Suites** für CJA, wobei Datensatz A und Datensatz B kombiniert werden.
+1. Erstellen Sie jetzt eine **Alle Report Suites** Verbindung für Customer Journey Analytics, indem Datensatz A und Datensatz B kombiniert werden.
 
-1. Erstellen Sie eine Datenansicht des Typs **Globale Ansicht** in CJA. Ignorieren Sie die ursprünglichen eVar-Felder und schließen Sie nur die Felder aus der Feldergruppe „Einheitliche Felder“ ein.
+1. Erstellen Sie eine **Globale Ansicht** Datenansicht in Customer Journey Analytics. Ignorieren Sie die ursprünglichen eVar-Felder und schließen Sie nur die Felder aus der Feldergruppe „Einheitliche Felder“ ein.
 
-   Datenansicht des Typs **Globale Ansicht** in CJA:
+   **Globale Ansicht** Datenansicht in Customer Journey Analytics:
 
    | Quellfeld | In Datenansicht einschließen? |
    | --- | --- | 
@@ -117,7 +117,7 @@ Die Fähigkeiten der Datenvorbereitung zum Kombinieren von Datensätzen mit vers
 
 Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Analytics-Daten mit der Kundenkategorie in Some_field in den Callcenter-Daten kombinieren. Hier ist eine Möglichkeit, das zu tun. Auch hier kann die Namenskonvention Ihren Bedürfnissen entsprechend geändert werden.
 
-1. Erstellen Sie ein Schema in AEP. Fügen Sie Folgendes zu diesem Schema hinzu:
+1. Erstellen Sie ein Schema in Adobe Experience Platform. Fügen Sie Folgendes zu diesem Schema hinzu:
 
    | „Erweitertes Schema“ |
    | --- | 
@@ -142,11 +142,11 @@ Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Ana
    | --- | --- |
    | _\&lt;path>_.Some_field | _\&lt;path>_.Customer_category |
 
-1. Erstellen Sie eine CJA-Verbindung, die Datensatz A und Datensatz B kombiniert.
+1. Erstellen Sie eine Customer Journey Analytics-Verbindung, die Datensatz A und Datensatz B kombiniert.
 
-1. Erstellen Sie eine Datenansicht in CJA mithilfe der soeben erstellten CJA-Verbindung. Ignorieren Sie die ursprünglichen eVar-Felder und schließen Sie nur die Felder aus der Feldergruppe „Kundeninformationen“ ein.
+1. Erstellen Sie eine Datenansicht in Customer Journey Analytics mithilfe der soeben erstellten Customer Journey Analytics-Verbindung. Ignorieren Sie die ursprünglichen eVar-Felder und schließen Sie nur die Felder aus der Feldergruppe „Kundeninformationen“ ein.
 
-   Datenansicht in CJA:
+   Datenansicht in Customer Journey Analytics:
 
    | Quellfeld | In Datenansicht einschließen? |
    |---|---|
@@ -156,6 +156,6 @@ Mithilfe der Datenvorbereitung können Sie die Kundenkategorie in eVar 1 der Ana
 
 ## Datenvorbereitung vs. Komponenten-ID
 
-Wie oben beschrieben, können Sie mithilfe der Datenvorbereitung verschiedene Felder über mehrere Report Suites in Adobe Analytics hinweg zuordnen. Dies ist in CJA hilfreich, wenn Sie Daten aus mehreren Datensätzen in einer CJA-Verbindung kombinieren möchten. Wenn Sie die Report Suites jedoch in separaten CJA-Verbindungen belassen möchten, aber einen Berichtssatz für diese Verbindungen und Datenansichten verwenden möchten, bietet eine Änderung der zugrunde liegenden Komponenten-ID in CJA eine Möglichkeit, Berichte kompatibel zu machen, selbst wenn die Schemata unterschiedlich sind. Siehe [Komponenteneinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=de) für weitere Informationen.
+Wie oben beschrieben, können Sie mithilfe der Datenvorbereitung verschiedene Felder über mehrere Report Suites in Adobe Analytics hinweg zuordnen. Dies ist in Customer Journey Analytics hilfreich, wenn Sie Daten aus mehreren Datensätzen in einer Customer Journey Analytics-Verbindung kombinieren möchten. Wenn Sie die Report Suites jedoch in separaten Customer Journey Analytics-Verbindungen belassen möchten, aber einen Berichtssatz für diese Verbindungen und Datenansichten verwenden möchten, bietet die Änderung der zugrunde liegenden Komponenten-ID in Customer Journey Analytics eine Möglichkeit, Berichte kompatibel zu machen, selbst wenn es sich um andere  handelt. Siehe [Komponenteneinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=de) für weitere Informationen.
 
-Das Ändern der Komponenten-ID ist eine Funktion, die nur CJA betrifft, und hat keine Auswirkungen auf Daten aus dem Analytics-Quell-Connector, die an das Echtzeit-Kundenprofil und die RTCDP gesendet werden.
+Das Ändern der Komponenten-ID ist eine Nur-Customer Journey Analytics-Funktion und hat keine Auswirkungen auf Daten aus dem Analytics Source Connector, der an das Echtzeit-Kundenprofil und die RTCDP gesendet wird.

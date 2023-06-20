@@ -3,20 +3,20 @@ title: Dimensionselement „Longtail“
 description: Erläutert das Dimensionselement „Longtail“ und warum es in Berichten angezeigt wird.
 feature: FAQ
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 31%
+source-wordcount: '555'
+ht-degree: 26%
 
 ---
 
 # Long-Tail-Dimensionselement
 
-Wenn Sie eine Dimension verwenden, die eine große Anzahl eindeutiger Werte enthält, wird in einigen Fällen eine Warnung angezeigt, in der **[!UICONTROL Ergebnisse gekürzt]**.  Das bedeutet, dass die Berichterstellungsarchitektur, die CJA verwendet, zu viele eindeutige Werte enthält, um sie effizient zu verarbeiten. Dies hat zur Folge. Es entfernte die Artikel, die es für am wenigsten wichtig hielt.
+Wenn Sie eine Dimension verwenden, die eine große Anzahl eindeutiger Werte enthält, wird in einigen Fällen eine Warnung angezeigt, in der **[!UICONTROL Ergebnisse gekürzt]**.  Das bedeutet, dass der Customer Journey Analytics der Berichtsarchitektur zu viele eindeutige Werte verwendet, um sie effizient verarbeiten zu können. Dies hat zur Folge. Es entfernte die Artikel, die es für am wenigsten wichtig hielt.
 
-## CJA-Verarbeitungsarchitektur und eindeutige Werte
+## Verarbeitungsarchitektur und eindeutige Werte für Customer Journey Analytics
 
-CJA verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an mehrere Server. Die Daten pro Verarbeitungs-Server werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungs-Server enthält alle Daten für eine bestimmte Person. Nach Abschluss der Verarbeitung übergibt der Server seine Untergruppe verarbeiteter Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
+Customer Journey Analytics verarbeitet Berichte zum Zeitpunkt ihrer Ausführung und verteilt den kombinierten Datensatz an mehrere Server. Die Daten pro Verarbeitungs-Server werden nach Personen-ID gruppiert, d. h., ein einzelner Verarbeitungs-Server enthält alle Daten für eine bestimmte Person. Nach Abschluss der Verarbeitung übergibt der Server seine Untergruppe verarbeiteter Daten an einen Aggregator-Server. Alle Teilmengen verarbeiteter Daten werden kombiniert und in Form eines Workspace-Berichts zurückgegeben.
 
 Wenn ein einzelner Server eine Ergebnismenge aggregiert, die über einem Größenschwellenwert liegt, werden die Ergebnisse abgeschnitten, bevor sie zurückgesendet werden. Dadurch bleiben der Netzwerk-Traffic und die Aggregation innerhalb von Grenzen, um eine schnelle Berichterstellung zu ermöglichen.  Da die Ergebnisse nur mit der Ansicht der eigenen Daten abgeschnitten werden, ist es möglich (auch wenn es unwahrscheinlich ist), dass die in Analysis Workspace angezeigten Elemente falsche Metrikwerte aufweisen.
 
@@ -26,7 +26,7 @@ Der Server wählt basierend auf der für die Sortierung verwendeten Metrik aus, 
 
 In früheren Versionen von Adobe Analytics wurde eine andere Verarbeitungsarchitektur verwendet. Die Daten wurden zum Zeitpunkt ihrer Erfassung verarbeitet. Dimensionselemente wurden unter „Low-Traffic“ platziert, sobald eine Dimension 500.000 eindeutige Werte erreicht hatte, und es wurde eine aggressivere Filterung bei 1 Million eindeutigen Werten angewendet. Die Anzahl &quot;Einzelwert&quot;wurde zu Beginn jedes Kalendermonats zurückgesetzt. Verarbeitete Daten waren dauerhaft; es gab keine Möglichkeit, vorhandene Daten aus „Low-Traffic“ zu entfernen.
 
-In CJA werden Dimensionselemente nur abgeschnitten, wenn die Ergebnisse eines Berichts zu groß sind. Verarbeitete Daten sind nicht dauerhaft, d. h., Sie können die Kürzung reduzieren oder beseitigen, indem Sie Ihren Bericht ändern.
+Im Customer Journey Analytics werden Dimensionselemente nur abgeschnitten, wenn die Ergebnisse eines Berichts zu groß sind. Verarbeitete Daten sind nicht dauerhaft, d. h., Sie können die Kürzung reduzieren oder beseitigen, indem Sie Ihren Bericht ändern.
 
 ## Reduzieren des Dimensionselements „Longtail“
 

@@ -1,12 +1,12 @@
 ---
-description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Experimentier-Bedienfeld von CJA analysieren können.
+description: Erfahren Sie, wie Sie die Ergebnisse von A/B-Tests im Bedienfeld "Customer Journey Analytics Experimentation"analysieren können.
 title: Experimentier-Bedienfeld
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: f77ee391c0915f5e71ffc592c49a0b1d9f86f521
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 67%
+source-wordcount: '1870'
+ht-degree: 60%
 
 ---
 
@@ -20,7 +20,7 @@ Im Bedienfeld **[!UICONTROL Experimentieren]** können Analysten verschiedene Va
 
 ## Zugriffssteuerung {#access}
 
-Das Bedienfeld „Experimentieren“ kann von allen Anwendern von Customer Journey Analytics (CJA) genutzt werden. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Die Einrichtung (Schritte 1 und 2 unten) erfordert jedoch Aktionen, die nur Administratoren durchführen können.
+Das Experimentierungsfenster steht allen Customer Journey Analytics zur Verfügung. Es sind keine Administratorrechte oder anderen Berechtigungen erforderlich. Die Einrichtung (Schritte 1 und 2 unten) erfordert jedoch Aktionen, die nur Administratoren durchführen können.
 
 ## Neue Funktionen in berechneten Metriken {#functions}
 
@@ -30,11 +30,11 @@ Zwei neue erweiterte Funktionen wurden hinzugefügt: [!UICONTROL Anstieg] und [!
 
 Laut dem empfohlenen Datenschema sollten die Experimentdaten in einem [Objekt-Array](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=de) gespeichert sein, in dem die Experiment- und Variantendaten in zwei separaten Dimensionen enthalten sind. Beide Dimensionen müssen in einer **single** Objekt-Array. Wenn sich Ihre Experimentdaten in einer einzigen Dimension und die Experiment- und Variantendaten in einer begrenzten Zeichenfolge befinden, können Sie die Einstellung der [Teilzeichenfolge](/help/data-views/component-settings/substring.md) in Datenansichten verwenden, um sie zur Verwendung im Bedienfeld aufzuteilen.
 
-Wenn Ihre Experimentierdaten in Adobe Experience Platform [erfasst](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) sind, können Sie zu einem oder mehreren Testdatensätzen [in CJA eine Verbindung einrichten](/help/connections/create-connection.md).
+Nachdem Ihre Experimentdaten [erfasst](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) nach Adobe Experience Platform, [Erstellen einer Verbindung in Customer Journey Analytics](/help/connections/create-connection.md) zu einem oder mehreren Experimentdatensätzen hinzufügen.
 
 ## Schritt 2: Hinzufügen von Kontextbezeichnungen in Datenansichten {#contect-labels}
 
-In den Einstellungen für Datenansichten in CJA können Administratoren [Kontextbeschriftungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik hinzufügen, und CJA-Services wie das Bedienfeld [!UICONTROL Experimentieren] können diese Beschriftungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
+In den Datenansichtseinstellungen des Customer Journey Analytics können Administratoren [Kontextbezeichnungen](/help/data-views/component-settings/overview.md) zu einer Dimension oder Metrik und Customer Journey Analytics-Services wie [!UICONTROL Experimentieren] -Bedienfeld können diese Beschriftungen für ihre Zwecke verwenden. Für das Bedienfeld „Experimentieren“ werden zwei vordefinierte Beschriftungen verwendet:
 
 * [!UICONTROL Experimentierexperiment]
 * [!UICONTROL Experimentiervariante]
@@ -47,12 +47,12 @@ Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da
 
 ## Schritt 3: Konfigurieren des Bedienfelds „Experiment“ {#configure}
 
-1. Ziehen Sie in CJA Workspace das Bedienfeld „Experimentieren“ in ein Projekt.
+1. Ziehen Sie in Customer Journey Analytics Workspace das Experimentierfeld in ein Projekt.
 
 ![Bedienfeld „Experimentieren“](assets/experiment.png)
 
 >[!IMPORTANT]
->Wenn die erforderliche Einrichtung in CJA-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: „[!UICONTROL Konfigurieren Sie die Experiment- und Variantendimensionen in Datenansichten.]“.
+>Wenn die erforderliche Einrichtung in den Customer Journey Analytics-Datenansichten nicht abgeschlossen wurde, erhalten Sie diese Nachricht, bevor Sie fortfahren können: &quot;[!UICONTROL Konfigurieren Sie die Experiment- und Variantendimensionen in Datenansichten.]&quot;.
 
 1. Konfigurieren Sie die Einstellungen für die Bedienfeldeingabe.
 
@@ -62,7 +62,7 @@ Ohne diese Beschriftungen funktioniert das Bedienfeld „Experiment“ nicht, da
    | **[!UICONTROL Kontrollvariante]** | Eine von zwei oder mehr Änderungen im Erlebnis eines Endbenutzers, die verglichen werden, um die bessere Alternative zu ermitteln. Eine Variante muss als Kontrolle ausgewählt werden und nur eine Variante kann als Kontrollvariante betrachtet werden. Diese Einstellung wird vorab mit den Dimensionen gefüllt, die in den Datenansichten mit der Beschriftung **[!UICONTROL Variante]** gekennzeichnet wurden. Mit dieser Einstellung werden die Variantendaten abgerufen, die mit diesem Experiment verknüpft sind. |
    | **[!UICONTROL Erfolgsmetriken]** | Die Metrik(en), die ein Anwender verwendet, um Varianten zu vergleichen. Die Variante mit dem wünschenswertesten Ergebnis für die Konversionsmetrik (egal ob am höchsten oder am niedrigsten) wird zur „Variante mit der besten Performance“ eines Experiments erklärt. Sie können bis zu 5 Metriken hinzufügen. |
    | **[!UICONTROL Normalisierungsmetrik]** | Grundlage ([!UICONTROL Personen], [!UICONTROL Sitzungen] oder [!UICONTROL Ereignisse]) für die Ausführung eines Tests. Beispielsweise kann ein Test die Konversionsraten verschiedener Varianten vergleichen, bei denen die **[!UICONTROL Konversionsrate]** als **[!UICONTROL Konversionen pro Sitzung]** oder **[!UICONTROL Konversionen pro Person]** berechnet wird. |
-   | **[!UICONTROL Datumsbereich]** | Der Datumsbereich wird automatisch festgelegt, basierend auf dem ersten Ereignis, das in Customer Journey Analytics für das ausgewählte Experiment empfangen wurde. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
+   | **[!UICONTROL Datumsbereich]** | Der Datumsbereich wird automatisch festgelegt, basierend auf dem ersten Ereignis, das im Customer Journey Analytics für das ausgewählte Experiment empfangen wurde. Sie können den Datumsbereich bei Bedarf auf einen spezifischeren Zeitraum beschränken oder erweitern. |
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -110,7 +110,7 @@ Eine Konfidenzsequenz von 95 % enthält in 95 der 100 Experimente, die Sie ausge
 
 ## Nicht randomisierte Dimensionen interpretieren {#non-randomized}
 
-Mit CJA können Analysten jede Dimension als &quot;Experiment&quot;auswählen. Aber wie interpretieren Sie eine Analyse, bei der die als Experiment gewählte Dimension nicht diejenige ist, für die Personen randomisiert werden?
+Mit Customer Journey Analytics können Analysten eine beliebige Dimension als &quot;Experiment&quot;auswählen. Aber wie interpretieren Sie eine Analyse, bei der die als Experiment gewählte Dimension nicht diejenige ist, für die Personen randomisiert werden?
 
 Betrachten Sie beispielsweise eine Anzeige, die eine Person sieht. Sie können an der Messung der Veränderung in einer Metrik interessiert sein (z. B. der durchschnittliche Umsatz), wenn Sie Personen &quot;Anzeige B&quot;anstelle von &quot;Anzeige A&quot;anzeigen. Der kausale Effekt, dass anstelle von Anzeige A Anzeige B angezeigt wird, ist für die Marketing-Entscheidung von zentraler Bedeutung. Dieser kausale Effekt kann als durchschnittlicher Umsatz über die gesamte Population gemessen werden, wenn wir den Status quo der Anzeige von Anzeige A durch die alternative Strategie der Anzeige B ersetzen.
 

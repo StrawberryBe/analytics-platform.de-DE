@@ -1,17 +1,17 @@
 ---
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '698'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 63%
 
 ---
-# Virtual Report Suites, Datenansichten, AEP-Sandboxes und der Analytics-Quell-Connector
+# Virtual Report Suites, Datenansichten, Adobe Experience Platform-Sandboxes und der Analytics Source Connector
 
 Adobe bietet eine Vielzahl von Möglichkeiten zum Erstellen virtueller Reporting-Umgebungen und Sandbox-Umgebungen. Es ist nützlich, die Ähnlichkeiten und Unterschiede zwischen den folgenden Funktionen und deren Beziehung zum [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) zu verstehen:
 
 * Virtual Report Suites in Adobe Analytics
-* CJA-Datenansichten
-* AEP-Sandboxes
+* Customer Journey Analytics-Datenansichten
+* Adobe Experience Platform-Sandboxes
 
 ## Virtual Report Suites (VRS) in Adobe Analytics
 
@@ -33,46 +33,46 @@ Was eine Virtual Report Suite nicht ist/kann:
 
 * Eine Möglichkeit bieten, Report Suites miteinander zu kombinieren.
 * Sie ist nicht in Adobe Analytics Data Warehouse verfügbar.
-* Sie ist nicht als Quelle für Datenflüsse in AEP über den Analytics-Quell-Connector verfügbar. Nur vollständige (nicht virtuelle) Report Suites sind für die Verwendung mit dem Analytics-Quell-Connector verfügbar.
+* Verfügbar als Quelle für Datenflüsse in Adobe Experience Platform über den Analytics Source Connector. Nur vollständige (nicht virtuelle) Report Suites sind für die Verwendung mit dem Analytics-Quell-Connector verfügbar.
 
 
-## CJA-Datenansichten
+## Customer Journey Analytics-Datenansichten
 
 Weitere Informationen finden Sie unter [Datenansichten – Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de).
 
 Eine Datenansicht:
 
-* Kann auf CJA-Filtern basieren.
+* Kann auf Customer Journey Analytics-Filtern basieren.
 * Kann auf zerstörungsfreie Weise auf historische und neue Daten angewendet werden.
-* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten über eine CJA-Verbindung, die von verschiedenen Geschäfts-Teams verwendet werden kann.
-* Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzer in CJA zu steuern und diese Daten zu kuratieren.
-* Bietet leistungsstarke, zerstörungsfreie Optionen zum Transformieren und Verbessern von Daten, die über eine CJA-Verbindung in CJA eingehen.
-* Basiert auf den Funktionen für die Berichtszeitverarbeitung von CJA.
+* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten über eine Customer Journey Analytics-Verbindung, die von verschiedenen Geschäftsteams verwendet werden können.
+* Kann verwendet werden, um den Zugriff auf verschiedene Datentypen für verschiedene Benutzer in Customer Journey Analytics zu steuern und diese zu kuratieren.
+* Bietet leistungsstarke zerstörungsfreie Optionen zur Transformation und Verbesserung von Daten, die über eine Customer Journey Analytics-Verbindung in den Customer Journey Analytics gelangen.
+* basiert auf den Berichtszeitverarbeitungsfunktionen von Customer Journey Analytics.
 * Ermöglicht Benutzern das Erstellen einer benutzerdefinierten Definition für „Sitzung“.
-* Wird zur Berichtslaufzeit angewendet, ähnlich wie bei der Filterauswertung. Dies geschieht, _nachdem_ der Quell-Connector (Adobe Analytics oder ein anderer) Daten in einen Datensatz im AEP-Data Lake geschrieben hat und _nachdem_ die Daten über eine CJA-Verbindung in CJA erfasst wurden.
+* Wird zur Berichtslaufzeit angewendet, ähnlich wie bei der Filterauswertung. Dies ist _after_ der Quell-Connector (Adobe Analytics oder andere) Daten in einen Datensatz im Adobe Experience Platform Data Lake geschrieben hat und _after_ die Daten über eine Customer Journey Analytics-Verbindung in Customer Journey Analytics aufgenommen wurden.
 * Ermöglicht eine unbegrenzte Anzahl von Variablen, allerdings kann die Kuratierung einschränken, welche Variablen für Benutzer verfügbar sind.
 * Ermöglicht die benutzerdefinierte Benennung von Containern für Ereignisse, Sitzungen und Personen.
 * Unterstützt benutzerdefinierte Kalenderoptionen.
 
 Einschränkungen einer Datenansicht:
 
-* Sie stellt direkt keine Möglichkeit bereit, Report Suites oder andere Datensätze zu kombinieren. Stattdessen werden Datensätze in einer CJA-Verbindung kombiniert. Die kombinierten Daten aus der CJA-Verbindung können in allen Datenansichten verwendet werden, die auf dieser Verbindung basieren.
+* Sie stellt direkt keine Möglichkeit bereit, Report Suites oder andere Datensätze zu kombinieren. Stattdessen werden Datensätze mit in einer Customer Journey Analytics-Verbindung kombiniert. Die kombinierten Daten aus der Customer Journey Analytics-Verbindung stehen in allen Datenansichten zur Verfügung, die auf dieser Verbindung basieren.
 
-## AEP-Sandboxes
+## Adobe Experience Platform-Sandboxes
 
 Weitere Informationen finden Sie unter [Sandboxes – Übersicht](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de).
 
-Eine AEP-Sandbox:
+Eine Adobe Experience Platform-Sandbox:
 
-* Bietet eine Möglichkeit, eine einzelne AEP-Instanz in getrennte virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu unterstützen.
+* Bietet eine Möglichkeit, eine einzelne Adobe Experience Platform-Instanz in separate virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen. um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu unterstützen.
 * Kann als Container betrachtet werden, der alle Daten und Programme für eine bestimmte Umgebung enthält.
 
-Einschränkungen einer AEP-Sandbox:
+Eine Adobe Experience Platform-Sandbox nicht:
 
-* Bietet keine vergleichbaren Funktionen wie Virtual Report Suites, CJA-Verbindungen oder Datenansichten.
-* Report Suites können damit nicht mit oder ohne andere Datensätze kombiniert werden. Die Datensätze innerhalb einer Sandbox können jedoch innerhalb einer CJA-Verbindung kombiniert werden.
+* Stellen Sie ähnliche Funktionen wie Virtual Report Suites, Customer Journey Analytics-Verbindungen oder Datenansichten bereit.
+* Report Suites können damit nicht mit oder ohne andere Datensätze kombiniert werden. Die Datensätze innerhalb einer Sandbox können jedoch innerhalb einer Customer Journey Analytics-Verbindung kombiniert werden.
 
 Weiter:
 
-* Daten aus verschiedenen Sandboxes können nicht in CJA kombiniert werden.
+* Daten aus verschiedenen Sandboxes können nicht in Customer Journey Analytics kombiniert werden.
 * Der Analytics-Quell-Connector sendet Report Suite-Daten _in_ eine bestimmte Sandbox. Jede Report Suite kann als Quelle für eine einzelne Sandbox konfiguriert werden. Weitere Details finden Sie in der [Dokumentation zum Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).

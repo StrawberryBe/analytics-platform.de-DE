@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 9eae32c75218a9fd84da42593f4bd202757b4403
-workflow-type: ht
-source-wordcount: '1436'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '1462'
+ht-degree: 79%
 
 ---
 
@@ -22,10 +22,10 @@ Die Vorbereitung Ihrer Adobe Analytics-Daten auf einen nahtlosen Wechsel zu Cust
 
 ### 1. Identitäten erfassen {#identities}
 
-Die vielleicht wichtigste Komponente beim Verständnis einer Customer Journey ist, zu wissen, wer bei jedem Schritt der Kunde ist. Customer Journey Analytics verfügt über eine Kennung auf allen Kanälen und für alle entsprechenden Daten, die es ermöglicht, mehrere Quellen in CJA zusammenzufügen.
+Die vielleicht wichtigste Komponente beim Verständnis einer Customer Journey ist, zu wissen, wer bei jedem Schritt der Kunde ist. Customer Journey Analytics: Eine kanalübergreifende Kennung und die entsprechenden Daten ermöglichen die Zuordnung mehrerer Quellen innerhalb des Customer Journey Analytics.
 Beispiele für Identitäten sind Kunden-ID, Konto-ID oder E-Mail-ID. Für jede ID gilt Folgendes unabhängig von der Identität (es kann auch mehrere Identitäten geben):
 
-* Die ID ist vorhanden oder kann zu allen Datenquellen hinzugefügt werden, die Sie in CJA integrieren möchten
+* ID existiert oder kann zu allen Datenquellen hinzugefügt werden, die Sie in Customer Journey Analytics integrieren möchten
 * Die ID wird in jeder Datenzeile angegeben
 * Die ID enthält keine persönlich identifizierbare Informationen. Wenden Sie Hashing auf alle sensiblen Elemente an.
 * Die ID verwendet dasselbe Format für alle Quellen (gleiche Länge, gleiche Hashing-Methode usw.)
@@ -38,17 +38,17 @@ Die einfachste Methode, Adobe Analytics-Daten in Customer Journey Analytics-Date
 
 Eine vollständige globale Report Suite ist nicht in jedem Fall für eine Implementierung möglich. Wenn Sie planen, mehrere Report Suites in Customer Journey Analytics zu integrieren, haben Sie zwei Möglichkeiten:
 
-* Planen Sie im Voraus, damit Sie die Variablen in diesen Report Suites in Einklang bringen können. Beispielsweise kann eVar1 in Report Suite 1 auf [!UICONTROL Seite] verweisen. In Report Suite 2 kann eVar1 auf [!UICONTROL Interne Kampagne] verweisen. Wenn diese Variablen in Customer Journey Analytics importiert werden, werden sie in einer gemeinsamen eVar1-Dimension vermischt, was zu möglicherweise verwirrenden und ungenauen Berichten führt.
+* Planen Sie im Voraus, damit Sie die Variablen in diesen Report Suites in Einklang bringen können. Beispielsweise kann eVar1 in Report Suite 1 auf [!UICONTROL Seite] verweisen. In Report Suite 2 kann eVar1 auf [!UICONTROL Interne Kampagne] verweisen. Wenn diese Variablen in den Customer Journey Analytics aufgenommen werden, werden sie in eine einzige eVar1-Dimension gemischt, was zu möglicherweise verwirrenden und ungenauen Berichten führt.
 
 * Verwenden Sie die Funktion der [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) zum Zuordnen von Variablen. Es ist zwar einfacher, wenn alle Report Suites denselben Variablenaufbau verwenden, dies ist aber nicht erforderlich, wenn Sie die neue [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de#mapping)-Funktion von Experience Platform verwenden. Damit können Sie eine Variable anhand ihres zugeordneten Werts referenzieren, der sich auf der Ebene des Datenstroms (oder der Eigenschaft) befindet.
 
-Wenn Sie den Wechsel zu einer globalen Report Suite aufgrund von Problemen mit [!UICONTROL Eindeutige Werte überschritten] oder [!UICONTROL Geringer Traffic] vermieden haben, beachten Sie, dass es in CJA keine [Kardinalitätsbeschränkungen für eine Dimension](/help/components/dimensions/high-cardinality.md) gibt. Dadurch können alle eindeutigen Werte angezeigt und gezählt werden.
+Wenn Sie aufgrund von Problemen mit dem [!UICONTROL Individuelle Werte überschritten] oder [!UICONTROL Geringer Traffic], wissen, dass der Customer Journey Analytics keine [Kardinalitätsbeschränkungen für eine Dimension](/help/components/dimensions/high-cardinality.md). Dadurch können alle eindeutigen Werte angezeigt und gezählt werden.
 
 Im Folgenden finden Sie ein Anwendungsbeispiel für das [Kombinieren von Report Suites mit verschiedenen Schemata](/help/use-cases/aa-data/combine-report-suites.md).
 
 ### 3. Marketing-Kanäle (erneut) konfigurieren {#marketing-channels}
 
-Herkömmliche Einstellungen für Marketing-Kanäle in Adobe Analytics funktionieren in CJA nicht auf die gleiche Weise. Dies hat zwei Gründe:
+Die herkömmlichen Marketingkanaleinstellungen von Adobe Analytics führen in Customer Journey Analytics nicht dasselbe aus. Dies hat zwei Gründe:
 
 * Die Verarbeitungsstufe für die in Adobe Experience Platform aufgenommenen Adobe Analytics-Daten
 
@@ -58,11 +58,11 @@ Adobe hat [aktualisierte Best Practices für die Implementierung von Marketing-K
 
 ### 4. Entscheidung zwischen Analytics-Quell-Connector und Experience Platform SDKs {#connector-vs-sdk}
 
-Adobe Analytics-Kunden können mit dem Analytics-Quell-Connector ihre Report Suites einfach in Adobe Experience Platform und Customer Journey Analytics nutzen. Informationen zur Verwendung von Analytics Source Connector finden Sie in der Schnellstartanleitung [Daten aus Adobe Analytics aufnehmen und in CJA verwenden](../data-ingestion/analytics.md). Siehe auch [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de), um weitere Informationen zu erhalten.
+Adobe Analytics-Kunden können mit dem Analytics-Quell-Connector ihre Report Suites einfach in Adobe Experience Platform und Customer Journey Analytics nutzen. Informationen zur Verwendung des Analytics Source Connectors finden Sie in der Schnellstartanleitung zum [Daten aus Adobe Analytics erfassen und in Customer Journey Analytics verwenden](../data-ingestion/analytics.md). Siehe auch [Erstellen einer Adobe Analytics-Quellverbindung in der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de), um weitere Informationen zu erhalten.
 
 Im Zuge der Weiterentwicklung der [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=de)-Datenerfassung werden Sie wahrscheinlich entweder auf das [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=de) oder das [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=de) mit dem Adobe Experience Platform Edge Network migrieren. Während eine typische Implementierung der SDKs Daten an Adobe Analytics sendet, gibt es eine neue Möglichkeit, Daten direkt an Adobe Experience Platform zu senden. Diese Daten können dann in Customer Journey Analytics aufgenommen werden, während gleichzeitig die an Adobe Analytics gesendeten Daten beibehalten werden.
 
-Diese Methode erweitert die Möglichkeiten für die Datenerfassung deutlich: Die Anzahl der Felder ist nicht mehr beschränkt und es besteht keine Notwendigkeit mehr, Datenelemente Props, eVars und Ereignissen wie in Analytics zuzuordnen. Sie können unbegrenzte Schemaelemente verschiedener Typen verwenden und sie mithilfe von CJA-[Datenansichten](/help/data-views/data-views.md) auf verschiedene Weise darstellen. Die Geschwindigkeit der Datenverfügbarkeit steigt, wenn die Daten direkt an Adobe Experience Platform gesendet werden, da die Zeit für die Datenverarbeitung über Adobe Analytics entfällt.
+Diese Methode erweitert die Möglichkeiten für die Datenerfassung deutlich: Die Anzahl der Felder ist nicht mehr beschränkt und es besteht keine Notwendigkeit mehr, Datenelemente Props, eVars und Ereignissen wie in Analytics zuzuordnen. Sie können unbegrenzte Schemaelemente verschiedener Typen verwenden und sie mithilfe von Customer Journey Analytics auf verschiedene Weise darstellen [Datenansichten](/help/data-views/data-views.md). Die Geschwindigkeit der Datenverfügbarkeit steigt, wenn die Daten direkt an Adobe Experience Platform gesendet werden, da die Zeit für die Datenverarbeitung über Adobe Analytics entfällt.
 
 **Vorteile der Verwendung von Experience Platform-SDKs:**
 
@@ -93,7 +93,7 @@ Diese Änderung führt zu gewissen Unterschieden in der Verwendung von Daten zur
 
 ### Identifizieren Sie wichtige Segmente und berechnete Metriken {#segments-calcmetrics}
 
-Adobe Analytics-Segmente (in CJA als [!UICONTROL Filter] bezeichnet) und berechnete Metriken sind nicht mit Customer Journey Analytics kompatibel. In vielen Fällen können diese Komponenten in CJA mithilfe der neuen Schemata und verfügbaren Daten neu erstellt werden.
+Adobe Analytics-Segmente (namens [!UICONTROL Filter] in Customer Journey Analytics) und berechnete Metriken nicht mit Customer Journey Analytics kompatibel sind. In vielen Fällen können diese Komponenten in Customer Journey Analytics mithilfe der neuen Schemata und verfügbaren Daten neu erstellt werden.
 
 Um den Wechsel zwischen den Systemen für Benutzer so reibungslos wie möglich zu gestalten, führen Sie folgende Maßnahmen aus:
 
@@ -101,7 +101,7 @@ Um den Wechsel zwischen den Systemen für Benutzer so reibungslos wie möglich z
 
 2. Dokumentieren Sie ihre Definitionen
 
-3. Ermitteln Sie, welche Felder in den Daten erforderlich sind, um sie in CJA als [Filter](/help/components/filters/filters-overview.md) und [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md) zu replizieren.
+3. Identifizieren, welche Felder in den Daten benötigt werden, um sie in Customer Journey Analytics zu replizieren als [Filter](/help/components/filters/filters-overview.md) und [Berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md).
 
 Hier sind einige Videos, die Ihnen dabei helfen:
 
@@ -111,9 +111,9 @@ Hier sind einige Videos, die Ihnen dabei helfen:
 
 ### Weitere Überlegungen
 
-* Durch die CJA-Datenansichten haben Sie bei der Definition von Metriken und Dimensionen in Customer Journey Analytics deutlich mehr Flexibilität. Sie können beispielsweise den Wert einer Dimension als Definition einer Metrik verwenden. [Weitere Informationen](/help/use-cases/data-views/data-views-usecases.md)
+* Mithilfe der Vorteile von Customer Journey Analytics-Datenansichten haben Sie bei der Definition von Metriken und Dimensionen innerhalb von Customer Journey Analytics deutlich mehr Flexibilität. Sie können beispielsweise den Wert einer Dimension als Definition einer Metrik verwenden. [Weitere Informationen](/help/use-cases/data-views/data-views-usecases.md)
 
-* Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics definiert haben, verfügen Sie in CJA über ähnliche [benutzerdefinierte Kalenderfunktionen](/help/components/date-ranges/custom-date-ranges.md). Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
+* Wenn Sie einen benutzerdefinierten Kalender in Adobe Analytics definiert haben, haben Sie ähnliche [benutzerdefinierte Kalenderfunktionen](/help/components/date-ranges/custom-date-ranges.md) innerhalb von Customer Journey Analytics. Sie müssen sicherstellen, dass Ihr Kalender korrekt definiert ist.
 
 * In Customer Journey Analytics können Sie eine benutzerdefinierte maximale Wartezeit für Besuche/Sitzungen definieren sowie eine Metrik festlegen, durch die eine neue Sitzung gestartet wird. Sie können Datenansichten mit verschiedenen Sitzungsdefinitionen erstellen, um Einblicke zu erhalten, die weit darüber hinausgehen, was in Adobe Analytics möglich war. Diese Funktion kann besonders für Datensätze im Mobile-Bereich von Nutzen sein.
 
@@ -121,4 +121,4 @@ Hier sind einige Videos, die Ihnen dabei helfen:
 
 ## Nächste Schritte
 
-Wenn Sie nach dem Wechsel zu CJA Datendiskrepanzen feststellen, können Sie Ihre ursprünglichen Adobe Analytics-Daten mit den Adobe Analytics-Daten vergleichen, die sich jetzt in Customer Journey Analytics befinden. [Weitere Informationen](/help/troubleshooting/compare.md)
+Wenn Sie nach dem Wechsel zu Customer Journey Analytics Abweichungen feststellen, können Sie Ihre ursprünglichen Adobe Analytics-Daten mit den Adobe Analytics-Daten vergleichen, die sich jetzt in Customer Journey Analytics befinden. [Weitere Informationen](/help/troubleshooting/compare.md)

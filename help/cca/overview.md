@@ -4,10 +4,10 @@ description: Schlüssel von Personen-IDs aus mehreren Datensätzen neu eingeben,
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 95%
+source-wordcount: '1166'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attributi
 Bevor Sie die Cross-Channel-Analyse verwenden, sollten Sie sicherstellen, dass Ihr Unternehmen folgende Voraussetzungen erfüllt:
 
 * Ein Datensatz in Adobe Experience Platform muss über zwei Spalten verfügen, mit denen Personen identifiziert werden können:
-   * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Personen-ID, die von einer Adobe Analytics AppMeasurement-Bibliothek generiert wurde.
+   * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Personen-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde.
    * Eine **vorübergehende ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispiel: ein Hash-Benutzername oder eine E-Mail-Adresse, sobald sich eine Person authentifiziert. Sie können praktisch jede beliebige Kennung verwenden, sofern sie mindestens einmal für dasselbe Ereignis als beständige ID vorkommt.
 * Ein anderer Datensatz, beispielsweise Callcenter-Daten, der in jeder Zeile eine vorübergehende ID enthält. Diese Personen-ID muss ähnlich wie die vorübergehende ID in dem anderen Datensatz formatiert sein.
 * Mit dieser Funktion können Sie Datensätze zuordnen und somit beispielsweise authentifizierte und nicht authentifizierte Benutzerdaten zusammenführen. Vergewissern Sie sich vor dem Zusammenführen von Datensätzen, dass Sie die geltenden Gesetze und Vorschriften einhalten, wie etwa das Einholen der erforderlichen Berechtigungen der Endanwender.
@@ -62,7 +62,7 @@ Die Cross-Channel-Analyse ist eine innovative und zuverlässige Funktion, deren 
 
 ## Aktivieren der Cross-Channel-Analyse
 
-Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen überblickt, können Sie die folgenden Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
+Sobald Ihr Unternehmen alle Voraussetzungen erfüllt und die Einschränkungen versteht, können Sie diese Schritte ausführen, um mit der Verwendung in Customer Journey Analytics zu beginnen.
 
 1. Importieren Sie die gewünschten Daten in Adobe Experience Platform. Informationen zu Adobe Analytics-Daten finden Sie unter [Verwenden von Adobe Analytics-Report-Suite-Daten in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). Informationen zu anderen Datentypen finden Sie unter [Erstellen eines Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Aufnehmen von Daten](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
 1. Wenden Sie sich mit den folgenden Informationen an den Adobe-Support:
@@ -74,9 +74,9 @@ Sobald Ihre Organisation alle Anforderungen erfüllt und die Einschränkungen ü
    * Sandbox-Name.
 1. Wenn Sie eine Anfrage bezüglich der Cross-Channel-Analyse an den Adobe-Support stellen, wird diese Funktion in Zusammenarbeit mit dem Engineering-Team von Adobe aktiviert. Nach der Aktivierung wird in Adobe Experience Platform ein neu verschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Der Adobe-Support stellt die neue Datensatz-ID und den Namen der Personen-ID-Spalte bereit.
 1. Bei der erstmaligen Verwendung stellt Adobe eine Aufstockung der zugeordneten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zugewiesenen Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein.
-1. [Erstellen Sie eine Verbindung](/help/connections/create-connection.md) in CJA mit dem neu erstellten Datensatz und beliebigen weiteren Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
+1. [Verbindung erstellen](/help/connections/create-connection.md) in Customer Journey Analytics mit dem neu erstellten Datensatz und allen anderen Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 1. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Sobald die Datenansicht eingerichtet ist, erfolgt die Analyse in Customer Journey Analytics genau wie bei jeder anderen Customer Journey Analytics-Analyse, bis auf die Tatsache, dass die Daten nun kanal- und geräteübergreifend verarbeitet werden.
+Sobald die Datenansicht eingerichtet ist, erfolgt die Analyse in Customer Journey Analytics genau wie jede andere Analyse in Customer Journey Analytics, bis auf die Tatsache, dass die Daten jetzt kanalübergreifend und geräteübergreifend verwendet werden.

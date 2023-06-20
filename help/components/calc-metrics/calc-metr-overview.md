@@ -3,10 +3,10 @@ title: Übersicht über berechnete Metriken
 description: Erfahren Sie mehr über gefilterte Metriken, die zum Zeitpunkt der Berichtserstellung abgeleitet werden.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 92%
+source-wordcount: '461'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ Hier sehen Sie einen Vergleich zwischen den jeweiligen Möglichkeiten, die berec
 |--- |--- |
 | Generator für berechnete Metriken | <ul><li>Erstellen Sie einfache berechnete Metriken oder erweiterte berechnete Metriken mit erweiterten Zuordnungsmodellen.</li><li>Filter inline zu Metrik-Formeln hinzufügen.</li><li>Filter in einem Bericht vergleichen. Vergleichen Sie beispielsweise lokale und internationale Personen.</li><li>Statistische Funktionen verwenden.</li><li> Detaillierte Metrikbeschreibungen angeben (was die Metrik macht, wo sie verwendet werden sollte, wo sie NICHT verwendet werden sollte.)</li><li>Definitionen in neue Metriken kopieren.</li><li>Eine Inline-Metrikvorschau bereitstellen.</li><li>Die Metrikpolarität festlegen, die angibt, ob es gut oder schlecht ist, wenn ein bestimmtes benutzerspezifisches Ereignis (eine Metrik) steigt.</li><li>Metriken taggen.</li></ul> |
 | Manager für berechnete Metriken | <ul><li>Metriken für andere freigeben.</li><li>Metriken genehmigen und kuratieren.</li><li>Metriken organisieren (taggen), damit sie von Benutzern gefunden werden können.</li><li>Metriken löschen.</li><li>Metriken umbenennen.</li></ul> |
-| API für berechnete Metriken | Teil des Customer Journey Analytics-API-Satzes. |
+| API für berechnete Metriken | Teil des Customer Journey Analytics-API-Sets. |
 
 ## Vorlagen für berechnete Metriken in Customer Journey Analytics
 

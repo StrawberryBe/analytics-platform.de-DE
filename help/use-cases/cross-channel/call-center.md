@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie einen Datensatz erstellen, mit dem Sie Callce
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 98%
 
 ---
 
@@ -41,14 +41,14 @@ Beim Importieren von Daten in die Platform können folgende Tipps hilfreich sein
 
 ## Ordnen Sie die Personen-IDs zu
 
-Customer Journey Analytics erfordert eine gemeinsame Kennung, sodass ein [kombinierter Datensatz](/help/connections/combined-dataset.md) generiert werden kann.
+Customer Journey Analytics erfordert eine gemeinsame Kennung zum Generieren einer [kombinierter Datensatz](/help/connections/combined-dataset.md).
 
 * Wenn Ihre Datensätze bereits für jedes Ereignis in beiden Datensätzen eine gemeinsame Kennung aufweisen, können Sie diesen Schritt überspringen und eine Verbindung erstellen.
 * Wenn einer Ihrer Datensätze nur für einige Ereignisse eine gemeinsame Kennung enthält, können Sie Daten mithilfe der kanalübergreifenden Analyse zuordnen. Informationen zum Aktivieren der kanalübergreifenden Analyse für diese beiden Datensätze finden Sie unter [Übersicht zur kanalübergreifenden Analyse](/help/cca/overview.md).
 
 ## Erstellen einer Verbindung in Customer Journey Analytics
 
-[Erstellen Sie eine Verbindung](/help/connections/create-connection.md) in Customer Journey Analytics.
+[Erstellen einer Verbindung in Customer Journey Analytics.](/help/connections/create-connection.md)
 
 * Wenn die kanalübergreifende Analyse verwendet wird, steht Ihnen ein neuer zugeordneter Datensatz zur Verfügung. Verwenden Sie das neu erstellte Feld für die zugeordnete ID als die Personen-ID.
 * Andernfalls können Sie auch die ursprünglichen Web- und Callcenter-Datensätze für die Verbindung verwenden.

@@ -1,13 +1,13 @@
 ---
 title: (B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
-description: Erfahren Sie, wie Sie in Customer Journey Analytics kontobasierte Daten als Lookup-Datensatz hinzufügen.
+description: Erfahren Sie, wie Sie kontobasierte Daten als Lookup-Datensatz zu Customer Journey Analytics hinzufügen.
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 96%
+source-wordcount: '854'
+ht-degree: 73%
 
 ---
 
@@ -23,7 +23,7 @@ Dieser Anwendungsfall für den B2B-Bereich zeigt auf, wie Sie festlegen können,
 
 Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/getting-started/cja-glossary.md)-Datensatz eintragen.
 
-Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann einen Lookup-Tabellen-Datensatz, indem Sie CSV-basierte Kontodaten aufnehmen. Im nächsten Schritt erstellen Sie eine Verbindung in Customer Journey Analytics (CJA), die verschiedene Datensätze kombiniert, darunter auch den von Ihnen erstellen Lookup-Datensatz. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
+Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann einen Lookup-Tabellen-Datensatz, indem Sie CSV-basierte Kontodaten aufnehmen. Anschließend erstellen Sie eine Verbindung in Customer Journey Analytics (Customer Journey Analytics), die verschiedene Datensätze kombiniert, einschließlich des von Ihnen erstellten Lookup-Datensatzes. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
 
 >[!NOTE]
 >
@@ -31,13 +31,13 @@ Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann 
 
 ## 1. Erstellen eines Lookup-Schemas (Experience Platform)
 
-Durch die Erstellung eines eigenen Schemas für die [Lookup](/help/getting-started/cja-glossary.md)-Tabelle stellen Sie sicher, dass der verwendete Datensatz in CJA korrekt eingerichtet ist (d. h. den Typ „Datensatz“ aufweist). Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
+Erstellen eines eigenen Schemas für [Nachschlagen](/help/getting-started/cja-glossary.md) stellt sicher, dass der verwendete Datensatz in Customer Journey Analytics mit der richtigen Einrichtung (Datensatztyp) verfügbar ist. Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
 
 ![](../assets/create-new-class.png)
 
 ## 2. Erstellen eines Lookup-Datensatzes (Experience Platform)
 
-Nachdem dem Erstellen des Schemas müssen Sie daraus in Experience Platform einen Lookup-Datensatz erstellen. Dieser Lookup-Datensatz enthält Marketing-Informationen auf Kontoebene wie etwa den Unternehmensnamen, die Gesamtzahl der Mitarbeiter, den Namen der Domain, die Branche, in der das Unternehmen tätig ist, den Jahresumsatz, ob es sich um aktuelle Kunden von Experience Platform handelt oder nicht, in welcher Phase des Verkaufszyklus sie sich befinden, welches Team in diesem Konto CJA nutzt usw.
+Nachdem dem Erstellen des Schemas müssen Sie daraus in Experience Platform einen Lookup-Datensatz erstellen. Dieser Lookup-Datensatz enthält Marketing-Informationen auf Kontoebene, z. B.: Firmenname, Gesamtzahl der Mitarbeiter, Domain-Name, Branche, zu der sie gehören, Jahresumsatz, ob es sich um aktuelle Kunden der Experience Platform handelt oder nicht, in welcher Verkaufsstufe sie sich befinden, welches Team innerhalb des Kontos Customer Journey Analytics verwendet usw.
 
 1. Rufen Sie in Adobe Experience Platform **[!UICONTROL Daten-Management > Datensätze]** auf.
 1. Klicken Sie auf **[!UICONTROL + Datensatz erstellen]**.
@@ -57,13 +57,13 @@ Je nach Größe der Lookup-Tabelle dauert die Aufnahme der Daten und die Erstell
 
 ## 4. Kombinieren der Datensätze in einer Verbindung (Customer Journey Analytics)
 
-In diesem Beispiel kombinieren wir drei Datensätze zu einer CJA-Verbindung:
+Im folgenden Beispiel werden drei Datensätze zu einer Customer Journey Analytics-Verbindung kombiniert:
 
-| Datensatzname | Beschreibung | AEP-Schemaklasse | Datensatzdetails |
+| Datensatzname | Beschreibung | Adobe Experience Platform-Schemaklasse | Datensatzdetails |
 | --- | --- | --- | --- |
 | B2B Impressions | Umfasst Clickstream-Ereignisdaten auf Kontoebene. Beispiele für den Inhalt sind die E-Mail-ID einschließlich zugehöriger Konto-ID sowie der Marketing-Name für die Ausführung von Marketing-Anzeigen enthalten. Ebenfalls darin enthalten sind die pro Benutzer ermittelten Impressions für diese Anzeigen. | Basierend auf Schemaklasse „XDM ExperienceEvent“ | Verwenden Sie `emailID` als primäre Identität und weisen Sie als Namespace `Customer ID` zu. Dadurch wird sie in Customer Journey Analytics als die standardmäßige **[!UICONTROL Personen-ID]** angezeigt. ![Impressionen](../assets/impressions-mixins.png) |
-| B2B Profile | Dieser Profildatensatz liefert nähere Informationen über die in einem Konto enthaltenen Benutzer, z. B. deren Position im Unternehmen, welchem Konto sie zugeordnet sind, ihr LinkedIn-Profil usw. | Basierend auf Schemaklasse „XDM Individual Profile“ | Die Auswahl von `emailID` als primäre ID ist bei diesem Schema nicht erforderlich. Stellen Sie jedoch sicher, dass Sie **[!UICONTROL Profil]** aktivieren. Dies ist erforderlich, damit CJA die `emailID` aus „B2B Profil“ mit der `emailID` aus „B2B Impressions“ verbinden kann. ![Profil](../assets/profile-mixins.png) |
-| B2B Info | Siehe oben &quot;Lookup-Datensatz erstellen&quot;. | B2BAccount (benutzerdefinierte Schemaklasse) | Die Beziehung zwischen `accountID` und dem Datensatz „B2B Impressions“ wurde automatisch erstellt, indem der Datensatz „B2B Info“ in CJA mit dem Datensatz „B2B Impressions“ verbunden wird, wie in den folgenden Schritten beschrieben. ![Suche](../assets/lookup-mixins.png) |
+| B2B Profile | Dieser Profildatensatz liefert nähere Informationen über die in einem Konto enthaltenen Benutzer, z. B. deren Position im Unternehmen, welchem Konto sie zugeordnet sind, ihr LinkedIn-Profil usw. | Basierend auf Schemaklasse „XDM Individual Profile“ | Die Auswahl von `emailID` als primäre ID ist bei diesem Schema nicht erforderlich. Aktivieren Sie **[!UICONTROL Profil]**; Ist dies nicht der Fall, kann Customer Journey Analytics die `emailID` im B2B-Profil mit dem `emailID` in B2B-Impressionsdaten. ![Profil](../assets/profile-mixins.png) |
+| B2B Info | Siehe oben &quot;Lookup-Datensatz erstellen&quot;. | B2BAccount (benutzerdefinierte Schemaklasse) | Die Beziehung zwischen `accountID` und der Datensatz &quot;B2B-Impressionen&quot;automatisch erstellt wurde, indem der Datensatz &quot;B2B Info&quot;wie in den folgenden Schritten beschrieben mit dem Datensatz &quot;B2B-Impressionen&quot;in Customer Journey Analytics verbunden wurde. ![Suche](../assets/lookup-mixins.png) |
 
 Gehen Sie wie folgt vor, um die Datensätze zu kombinieren:
 

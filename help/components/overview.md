@@ -1,13 +1,13 @@
 ---
 title: Was sind Komponenten in Customer Journey Analytics?
-description: Erfahren Sie, welche Komponenten CJA anbietet und wie Sie sie für die Berichterstellung verwenden können.
+description: Erfahren Sie, welche Komponenten Customer Journey Analytics anbietet und wie Sie sie in Berichten verwenden können.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e8778520581ea6d1cf59285bc8a6c178904d44e2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 57%
+source-wordcount: '1037'
+ht-degree: 86%
 
 ---
 
@@ -64,7 +64,7 @@ Sie können Komponenten direkt in der linken Leiste verwalten.
 
    Oder
 
-   Wählen Sie eine Komponente aus und wählen Sie dann die **Aktion** (3-Punkt) oben in der Komponentenliste.
+   Klicken Sie mit der rechten Maustaste auf eine Komponente oder klicken Sie oben in der Komponentenliste auf das Symbol **Aktion** (drei Punkte).
 
    >[!TIP]
    >
@@ -89,7 +89,7 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
 
 ### Durchsuchen der Komponentenliste
 
-1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste.
+1. Wählen Sie in der linken Leiste das **Komponenten**-Symbol ![Komponentensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) aus.
 
 2. Geben Sie im Suchfeld den Namen der Komponente ein, die Sie in Ihrem Projekt verwenden möchten.
 
@@ -99,7 +99,7 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
 
 ### Filtern der Komponentenliste
 
-1. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste.
+1. Wählen Sie das **Komponenten**-Symbol ![Komponentensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste aus.
 
 2. Wählen Sie die **Filter** icon ![Symbol &quot;Datenwörterbuchfilter&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
@@ -120,17 +120,17 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
    | [!UICONTROL **Alle anzeigen**] | Alle Komponenten anzeigen. Diese Option steht nur Admins zur Verfügung. |
    | [!UICONTROL **Nicht genehmigt**] | Nur Komponenten anzeigen, die von Admins noch nicht als genehmigt markiert wurden. Für Admins beim Identifizieren von Komponenten hilfreich, die überprüft und genehmigt werden müssen. Diese Option steht nur Admins zur Verfügung. |
 
-4. (Optional) Um die Liste weiter zu verfeinern, können Sie die Komponentenliste sortieren, wie hier beschrieben: [Sortieren der Komponentenliste](#sort-the-component-list).
+4. (Optional) Um die Liste weiter zu präzisieren, können Sie die Komponentenliste sortieren, wie in [Sortieren der Komponentenliste](#sort-the-component-list) beschrieben.
 
 ### Sortieren der Komponentenliste
 
 {{release-limited-testing-section}}
 
-1. (Optional) Wenden Sie alle Filter auf die Komponentenliste an, wie unter [Filtern der Komponentenliste](#filter-the-component-list).
+1. (Optional) Wenden Sie alle Filter auf die Komponentenliste an, wie unter [Filtern der Komponentenliste](#filter-the-component-list) beschrieben.
 
-2. Wählen Sie die **Komponenten** icon ![Symbol &quot;Komponenten&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste.
+2. Wählen Sie das Symbol **Komponenten** ![Komponentensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) in der linken Leiste aus.
 
-3. Wählen Sie die **Sortieren** icon ![Symbol &quot;Komponenten sortieren&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)und wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu sortieren:
+3. Wählen Sie das Symbol **Sortieren** ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) aus und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu sortieren:
 
    {{components-sort-options}}
 

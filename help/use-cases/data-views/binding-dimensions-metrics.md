@@ -1,17 +1,17 @@
 ---
-title: Verwenden von Bindungsdimensionen und Metriken in CJA
+title: Bindungsdimensionen und Metriken in Customer Journey Analytics verwenden
 description: Ordnen Sie den Objekt-Arrays Dimensionen für die komplexe Persistenzanalyse zu.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 91%
+source-wordcount: '1343'
+ht-degree: 84%
 
 ---
 
 
-# Verwenden von Bindungsdimensionen und Metriken in CJA
+# Bindungsdimensionen und Metriken in Customer Journey Analytics verwenden
 
 Customer Journey Analytics bietet mehrere Möglichkeiten, Dimensionswerte über den Treffer hinaus beizubehalten, für den sie festgelegt wurden. Eine der Persistenzmethoden, die Adobe anbietet, wird als Bindung bezeichnet. In früheren Versionen von Adobe Analytics wurde dieses Konzept als Merchandising bezeichnet.
 
@@ -19,7 +19,7 @@ Sie können Bindungsdimensionen zwar mit Ereignisdaten der obersten Ebene verwen
 
 ## Beispiel 1: Bindungsdimensionen verwenden, um zusätzliche Produktattribute einem Kauf zuzuordnen
 
-Sie können Dimensionselemente innerhalb eines Objekt-Arrays an eine andere Dimension binden. Wenn das gebundene Dimensionselement angezeigt wird, ruft CJA die gebundene Dimension auf und fügt sie für Sie im Ereignis ein. Betrachten Sie die folgende Customer Journey:
+Sie können Dimensionselemente innerhalb eines Objekt-Arrays an eine andere Dimension binden. Wenn das gebundene Dimensionselement angezeigt wird, ruft Customer Journey Analytics die gebundene Dimension zurück und schließt sie in das Ereignis für Sie ein. Betrachten Sie die folgende Customer Journey:
 
 1. Ein Besucher sieht sich eine Produktseite zu einer Waschmaschine an.
 
@@ -82,7 +82,7 @@ Sie können den Datenansichtsmanager aufrufen und die Produktfarbe an den Produk
 
 ![Bindungsdimension](../assets/binding-dimension.png)
 
-Wenn Sie dieses Persistenzmodell wählen, erfasst CJA den Produktnamen bei jeder Einstellung der Produktfarbe. Wenn bei einem nachfolgenden Ereignis für diese Person derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
+Wenn Sie dieses Persistenzmodell festlegen, nimmt Customer Journey Analytics den Produktnamen bei jedem Festlegen der Produktfarbe zur Kenntnis. Wenn bei einem nachfolgenden Ereignis für diese Person derselbe Produktname erkannt wird, wird auch die Produktfarbe übernommen. Wenn Sie die Produktfarbe an den Produktnamen binden, sehen dieselben Daten etwa wie folgt aus:
 
 | product.color | Umsatz |
 | --- | --- |
@@ -263,7 +263,7 @@ In Analysis Workspace würde der resultierende Bericht in etwa wie folgt aussehe
 | Tennisschläger | $34.99 |
 | Schuhe | $79.99 |
 
-CJA erkennt automatisch die Beziehung zwischen der ausgewählten Dimension und der Bindungsdimension. Wenn sich die Bindungsdimension in einem Objekt-Array befindet, während die ausgewählte Dimension auf einer höheren Ebene liegt, ist eine Bindungsmetrik erforderlich. Eine Bindungsmetrik fungiert als Trigger für eine Bindungsdimension, sodass sie sich nur an Ereignisse bindet, bei denen die Bindungsmetrik vorhanden ist. Im Beispiel oben enthält die Suchergebnisseite immer eine Suchbegriffdimension und eine Suchmetrik.
+Customer Journey Analytics erkennt automatisch die Beziehung zwischen der ausgewählten Dimension und der Bindungsdimension. Wenn sich die Bindungsdimension in einem Objekt-Array befindet, während die ausgewählte Dimension auf einer höheren Ebene liegt, ist eine Bindungsmetrik erforderlich. Eine Bindungsmetrik fungiert als Trigger für eine Bindungsdimension, sodass sie sich nur an Ereignisse bindet, bei denen die Bindungsmetrik vorhanden ist. Im Beispiel oben enthält die Suchergebnisseite immer eine Suchbegriffdimension und eine Suchmetrik.
 
 Wenn Sie die Suchbegriffdimension auf dieses Persistenzmodell festlegen, wird die folgende Logik ausgeführt:
 
@@ -353,7 +353,7 @@ Analysis Workspace ordnet die zweite Folge von Orangey korrekt dem Suchbegriff `
 
 ## Beispiel 4: Bewertung des Browse- und Suchverhaltens in einer Einzelhandelsumgebung
 
-Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festgelegt wurden. Wenn Sie eine Variable mit einer Bindungsdimension festlegen, berücksichtigt CJA den beibehaltenen Wert. Wenn dieses Verhalten unerwünscht ist, können Sie die Persistenzeinstellungen der Bindungsdimension anpassen. Betrachten Sie das folgende Beispiel, bei dem `product_finding_method` für ein Ereignis festgelegt und dann für das folgende Ereignis an die Metrik „Hinzufügen zum Warenkorb“ gebunden wird.
+Sie können Werte an Dimensionen binden, die für vorhergehende Ereignisse festgelegt wurden. Wenn Sie eine Variable mit einer Bindungsdimension festlegen, berücksichtigt Customer Journey Analytics den beibehaltenen Wert. Wenn dieses Verhalten unerwünscht ist, können Sie die Persistenzeinstellungen der Bindungsdimension anpassen. Betrachten Sie das folgende Beispiel, bei dem `product_finding_method` für ein Ereignis festgelegt und dann für das folgende Ereignis an die Metrik „Hinzufügen zum Warenkorb“ gebunden wird.
 
 1. Ein Besucher sucht nach `"camera"`. Beachten Sie, dass auf dieser Seite keine Produkte festgelegt sind.
 

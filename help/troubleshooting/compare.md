@@ -1,31 +1,31 @@
 ---
-title: Vergleichen von Adobe Analytics-Daten mit Customer Journey Analytics-Daten
+title: Adobe Analytics-Daten mit Customer Journey Analytics-Daten vergleichen
 description: Erfahren Sie, wie Sie Ihre Adobe Analytics-Daten mit Daten in Customer Journey Analytics vergleichen
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 95f92d742dcc59098f51978a02c2989c42594807
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 94%
+source-wordcount: '906'
+ht-degree: 65%
 
 ---
 
-# Vergleichen von Adobe Analytics-Daten mit Customer Journey Analytics-Daten
+# Adobe Analytics-Daten mit Customer Journey Analytics-Daten vergleichen
 
-Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Unterschieden kommen. Dies ist normal und kann aus verschiedenen Gründen auftreten. CJA soll es Ihnen ermöglichen, einige Einschränkungen bei Daten in AA zu verbessern. Es können jedoch unerwartete/unbeabsichtigte Diskrepanzen auftreten. Dieser Artikel soll Ihnen dabei helfen, diese Unterschiede zu diagnostizieren und zu beheben, damit Sie und Ihr Team CJA ohne Beeinträchtigung der Datenintegrität verwenden können.
+Wenn Ihr Unternehmen Customer Journey Analytics einführt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Datenunterschieden kommen. Dies ist normal und kann aus verschiedenen Gründen auftreten. Customer Journey Analytics wurde entwickelt, um Ihnen zu ermöglichen, einige Einschränkungen für Ihre Daten in AA zu verbessern. Es können jedoch unerwartete/unbeabsichtigte Diskrepanzen auftreten. Dieser Artikel soll Ihnen dabei helfen, diese Unterschiede zu diagnostizieren und zu beheben, sodass Sie und Ihr Team Customer Journey Analytics ohne Beeinträchtigung der Datenintegrität verwenden können.
 
-Nehmen wir an, Sie haben Adobe Analytics-Daten über den [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in AEP aufgenommen und dann mit diesem Datensatz eine CJA-Verbindung erstellt.
+Nehmen wir an, Sie haben Adobe Analytics-Daten über die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de)und dann eine Customer Journey Analytics-Verbindung mithilfe dieses Datensatzes erstellt.
 
 ![Datenfluss](assets/compare.png)
 
-Als Nächstes haben Sie eine Datenansicht erstellt und anschließend Reporting zu diesen Daten in Customer Journey Analytics durchgeführt. Dabei wurden Abweichungen bei den Berichtsergebnissen in Adobe Analytics festgestellt.
+Als Nächstes haben Sie eine Datenansicht erstellt und anschließend über diese Daten auf dem Customer Journey Analytics berichtet. Es wurden Abweichungen bei den Berichtsergebnissen in Adobe Analytics festgestellt.
 
 Im Folgenden finden Sie einige Schritte zum Vergleich Ihrer ursprünglichen Adobe Analytics-Daten mit den Adobe Analytics-Daten, die sich jetzt in Customer Journey Analytics befinden.
 
 ## Voraussetzungen
 
-* Stellen Sie sicher, dass der Analytics-Datensatz in AEP Daten für den zu untersuchenden Datumsbereich enthält.
+* Stellen Sie sicher, dass der Analytics-Datensatz in Adobe Experience Platform Daten für den zu untersuchenden Datumsbereich enthält.
 
 * Stellen Sie sicher, dass die in Analytics ausgewählte Report Suite mit der in Adobe Experience Platform aufgenommenen Report Suite übereinstimmt.
 
@@ -39,7 +39,7 @@ Die Metrik [Vorfälle](https://experienceleague.adobe.com/docs/analytics/compone
 
 1. Speichern Sie dieses Projekt, damit Sie es im Vergleich verwenden können.
 
-## Schritt 2: Ergebnisse in CJA mit den [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] vergleichen
+## Schritt 2: Ergebnisse vergleichen mit [!UICONTROL Datensätze insgesamt nach Zeitstempeln] in Customer Journey Analytics
 
 Vergleichen Sie nun die [!UICONTROL Vorfälle] in Analytics mit der Gesamtzahl der Datensätze nach Zeitstempeln in Customer Journey Analytics.
 
@@ -47,18 +47,18 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
 
 >[!NOTE]
 >
->Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über die [Cross-Channel-Analyse](/help/cca/overview.md)). Beachten Sie, dass die Berücksichtigung der in CJA verwendeten Personen-ID für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist möglicherweise nicht immer einfach in AA zu replizieren, insbesondere wenn die Cross-Channel-Analyse aktiviert ist.
+>Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über die [Cross-Channel-Analyse](/help/cca/overview.md)). Bitte beachten Sie, dass die Berücksichtigung der Personen-ID, die in Customer Journey Analytics verwendet wird, für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist in Adobe Analytics möglicherweise nicht immer einfach zu replizieren, insbesondere wenn die kanalübergreifende Analyse aktiviert ist.
 
 1. Führen Sie in [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
 
        &quot;
-       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) as Day, \
+       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) als Tag, \
        Count(_id) AS-Datensätze
-       VON {dataset} \
+       VON  {dataset} \
        WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
-       UND-Zeitstempel&lt;from_utc_timestamp todate=&quot;&quot; utc=&quot;&quot; span=&quot;&quot; id=&quot;11&quot; translate=&quot;no&quot; />       UND timestamp IS NOT NULL \
-       UND-Endnutzer.
-_experience.aaid.id IS NOT NULL \
+       UND-Zeitstempel&lt;from_utc_timestamp span=&quot;&quot; id=&quot;14&quot; translate=&quot;no&quot; />&#39;,&#39;UTC&#39;) \
+       UND timestamp IS NOT NULL \
+       UND-Endnutzer.{toDate}_experience.aaid.id IS NOT NULL \
        GRUPPE nach Tag \
        BESTELLUNG NACH TAG;
        
@@ -81,11 +81,11 @@ _experience.aaid.id IS NOT NULL \
 
 1. Wenn der Connector Zeilen gefiltert hat, ziehen Sie diese Zeilen von der Metrik [!UICONTROL Vorfälle] ab. Die resultierende Zahl sollte mit der Anzahl der Ereignisse in den Adobe Experience Platform-Datensätzen übereinstimmen.
 
-## Warum Datensätze während der Aufnahme aus AEP möglicherweise gefiltert oder übersprungen werden
+## Gründe für das Filtern oder Überspringen von Datensätzen während der Aufnahme aus Adobe Experience Platform
 
-[Verbindungen](/help/connections/create-connection.md) in CJA ermöglichen es Ihnen, mehrere Datensätze zusammenzuführen und miteinander zu verbinden, basierend auf einer gemeinsamen Personen-ID über die Datensätze hinweg. Im Backend wird Deduplizierung angewendet: ein vollständiger äußerer Join oder eine Vereinigung für Ereignis-Datensätze basierend auf Zeitstempeln und dann ein innerer Join in Profil- und Lookup-Datensatz basierend auf der Personen-ID.
+Customer Journey Analytics [Verbindungen](/help/connections/create-connection.md) ermöglichen es Ihnen, mehrere Datensätze zusammenzuführen und miteinander zu verbinden, basierend auf einer gemeinsamen Personen-ID über die Datensätze hinweg. Im Backend wird Deduplizierung angewendet: ein vollständiger äußerer Join oder eine Vereinigung für Ereignis-Datensätze basierend auf Zeitstempeln und dann ein innerer Join in Profil- und Lookup-Datensatz basierend auf der Personen-ID.
 
-Im Folgenden finden Sie einige Gründe, warum Datensätze bei der Aufnahme von Daten aus AEP übersprungen werden können.
+Im Folgenden finden Sie einige Gründe, warum Datensätze bei der Aufnahme von Daten aus Adobe Experience Platform möglicherweise übersprungen werden.
 
 * **Fehlende Zeitstempel** – Wenn Zeitstempel in Ereignis-Datensätzen fehlen, werden diese Datensätze bei der Aufnahme vollständig ignoriert oder übersprungen.
 

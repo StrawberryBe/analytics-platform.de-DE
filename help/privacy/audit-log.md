@@ -1,31 +1,31 @@
 ---
 title: Auditprotokolle
-description: Erfahren Sie, wie Sie CJA-Auditprotokolle anzeigen und verwalten können.
+description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle anzeigen und verwalten.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 79%
+source-wordcount: '806'
+ht-degree: 67%
 
 ---
 
 # Auditprotokolle
 
-Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten zu erhöhen, ermöglicht Ihnen Customer Journey Analytics (CJA), die Benutzeraktivität für verschiedene Services und Funktionen mithilfe von Auditprotokollen zu erfassen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten.
+Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten zu erhöhen, können Sie mit Adobe Customer Journey Analytics die Benutzeraktivität für verschiedene Dienste und Funktionen in Form von &quot;Prüfprotokollen&quot;überprüfen. Diese Protokolle bilden einen Prüfpfad, der Ihnen bei der Fehlerbehebung helfen kann und Ihrem Unternehmen ermöglicht, betriebliche Datenverwaltungsrichtlinien und gesetzliche Anforderungen wie den Health Insurance Portability and Accountability Act (HIPAA) einzuhalten.
 
 In einem Auditprotokoll wird festgehalten, **wer** **welche** Aktion **wann** ausgeführt hat. Jede in einem Protokoll aufgezeichnete Aktion enthält Metadaten, die den Aktionstyp, das Datum und die Uhrzeit, die E-Mail-ID des/der Benutzenden, der/die die Aktion ausgeführt hat, und zusätzliche Attribute des Aktionstyps angeben.
 
-In diesem Artikel werden Auditprotokolle in CJA behandelt, einschließlich der Frage, wie sie in der Benutzeroberfläche angezeigt und verwaltet werden können.
+In diesem Thema werden Auditprotokolle in Customer Journey Analytics behandelt, einschließlich der Anzeige und Verwaltung dieser Protokolle in der Benutzeroberfläche.
 
 ## Zugriff auf Auditprotokolle
 
 Wenn diese Funktion für Ihr Unternehmen aktiviert ist, werden bei Aktivitäten automatisch Auditprotokolle aufgezeichnet. Sie müssen die Datenerfassung in Auditprotokollen nicht manuell aktivieren.
 
-Um Auditprotokolle anzeigen und exportieren zu können, benötigen Sie in der Adobe-Konsole die Zugriffsberechtigung **[!UICONTROL Zugriff auf Auditprotokolle]**. Informationen zum Verwalten individueller Berechtigungen für CJA-Funktionen finden Sie in der [Dokumentation zur Zugriffssteuerung](../admin/cja-access-control.md).
+Um Auditprotokolle anzeigen und exportieren zu können, benötigen Sie in der Adobe-Konsole die Zugriffsberechtigung **[!UICONTROL Zugriff auf Auditprotokolle]**. Informationen zum Verwalten individueller Berechtigungen für Customer Journey Analytics-Funktionen finden Sie im Abschnitt [Zugriffssteuerungsdokumentation](../admin/cja-access-control.md).
 
 ## Administratorprotokoll in der Benutzeroberfläche anzeigen
 
-Navigieren Sie in CJA zu **[!UICONTROL Tools]** > **[!UICONTROL Auditprotokolle]**.
+Navigieren Sie in Customer Journey Analytics zu **[!UICONTROL Instrumente]** > **[!UICONTROL Auditprotokolle]**.
 
 Das Auditprotokoll für den heutigen und gestrigen Tag wird standardmäßig angezeigt.
 
@@ -136,4 +136,4 @@ Sie können Auditprotokolle im CSV- oder JSON-Format herunterladen. Alle angewen
 
 ## Verwalten von Auditprotokollen in der API
 
-Alle Aktionen, die Sie in der Benutzeroberfläche ausführen können, können auch über API-Aufrufe ausgeführt werden. Weitere Informationen finden Sie in der [CJA-API-Dokumentation](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs).
+Alle Aktionen, die Sie in der Benutzeroberfläche ausführen können, können auch über API-Aufrufe ausgeführt werden. Siehe [Customer Journey Analytics API-Referenzdokument](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) für weitere Informationen.

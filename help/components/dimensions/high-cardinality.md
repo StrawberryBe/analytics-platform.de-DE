@@ -4,20 +4,20 @@ description: Beschreibt Best Practices für den Umgang mit Dimensionen mit hoher
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 0e9d612e1c0f6d64cd6f1e045c1049a1f8202b72
-workflow-type: ht
-source-wordcount: '455'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 88%
 
 ---
 
 # Dimensionen mit sehr hoher Kardinalität
 
-Customer Journey Analytics (CJA) legt keine Beschränkungen für die Anzahl der eindeutigen Werte oder Dimensionselemente fest, die innerhalb einer Dimension gemeldet werden können. Unter bestimmten Umständen können Dimensionen mit einer extrem großen Anzahl einzigartiger Elemente – auch als Dimensionen mit hoher Kardinalität bezeichnet – Auswirkungen auf das haben, worüber berichtet werden kann.
+Customer Journey Analytics (Customer Journey Analytics) begrenzt die Anzahl der eindeutigen Werte oder Dimensionselemente, über die innerhalb einer Dimension berichtet werden kann, nicht. Unter bestimmten Umständen können Dimensionen mit einer extrem großen Anzahl einzigartiger Elemente – auch als Dimensionen mit hoher Kardinalität bezeichnet – Auswirkungen auf das haben, worüber berichtet werden kann.
 
 ## Einschränkungen
 
-Je nach der Anzahl der Ereignisse in einer bestimmten CJA-Verbindung können die folgenden zwei Einschränkungen in Verbindung mit Dimensionen mit hoher Kardinalität auftreten:
+Abhängig von der Anzahl der Customer Journey Analytics in einer bestimmten Ereignisverbindung können die folgenden beiden Einschränkungen in Verbindung mit Dimensionen mit hoher Kardinalität auftreten:
 
 ### 1. Zeilenanzahl ist möglicherweise nicht genau zu reproduzieren.
 

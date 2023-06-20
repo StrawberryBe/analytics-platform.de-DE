@@ -5,42 +5,42 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 94%
+source-wordcount: '1480'
+ht-degree: 76%
 
 ---
 
 # Benutzerhandbuch für Adobe Analytics-Benutzende
 
-Wenn Ihr Unternehmen mit der Verwendung von Customer Journey Analytics (CJA) beginnt, werden Sie möglicherweise einige Ähnlichkeiten und Unterschiede zwischen herkömmlichem Analytics und CJA feststellen. Auf dieser Seite werden diese Unterschiede erläutert, um Ihr Unternehmen beim neuen Implementierungs- und Reporting-Workflow zu unterstützen. Auf dieser Seite finden Sie außerdem zusätzliche Ressourcen zu neuen Konzepten sowie weitere Schritte, um Ihre Arbeit als Analytiker einfacher und erfolgreicher zu gestalten.
+Wenn Ihr Unternehmen mit der Verwendung von Adobe Customer Journey Analytics beginnt, werden Sie möglicherweise einige Ähnlichkeiten und Unterschiede zwischen Adobe Analytics und Customer Journey Analytics feststellen. Auf dieser Seite werden diese Unterschiede erläutert, um Ihr Unternehmen beim neuen Implementierungs- und Reporting-Workflow zu unterstützen. Auf dieser Seite finden Sie außerdem zusätzliche Ressourcen zu neuen Konzepten sowie weitere Schritte, um Ihre Arbeit als Analytiker einfacher und erfolgreicher zu gestalten.
 
-Einige Funktionen in CJA werden umbenannt und entsprechend den Branchenstandards neu gestaltet. Zu den aktualisierten Begriffen gehören Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Es gibt keine Einschränkungen von eVars und Props mehr. Stattdessen stehen flexible benutzerdefinierte Dimensionen und Metriken zur Verfügung.
+Einige Funktionen in Customer Journey Analytics werden umbenannt und entsprechend den Branchenstandards neu gestaltet. Zu den aktualisierten Begriffen gehören Segmente, Virtual Report Suites, Klassifizierungen, Kundenattribute und Container-Namen. Es gibt keine Einschränkungen von eVars und Props mehr. Stattdessen stehen flexible benutzerdefinierte Dimensionen und Metriken zur Verfügung.
 
 ## Was sich nicht geändert hat
 
 Vieles beim Reporting hat sich nicht geändert.
 
 * Sie können weiterhin die Funktionen von [Analysis Workspace](/help/analysis-workspace/home.md) verwenden, um Ihre Daten zu analysieren. Der Arbeitsbereich funktioniert genauso wie im herkömmlichen Adobe Analytics.
-* Dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) ist verfügbar und funktioniert ähnlich in CJA wie in herkömmlichem Analytics.
+* Dieselbe Version von [Adobe Analytics-Dashboards](/help/mobile-app/home.md) ist verfügbar und funktioniert ähnlich zwischen Customer Journey Analytics und Adobe Analytics.
 * [Report Builder](/help/report-builder/report-buider-overview.md) verfügt über eine neue Benutzeroberfläche und läuft unter MS Windows, macOS und der Web-Version von Excel. (Vor dieser Version von Report Builder konnten Sie Report Builder nur dann auf Mac-Geräten verwenden, wenn das Programm auf VMware ausgeführt wurde.) Diese Version unterstützt die herkömmliche AA-Datenanfrage noch nicht.
 
 ## Änderungen beim Reporting
 
-Sie haben jetzt Zugriff auf viel mehr kanalübergreifende Daten, die Sie analysieren können. Sie können beispielsweise ein Arbeitsbereich-Projekt erstellen, das die Leistung mehrerer Kanäle analysiert, sofern diese Datensätze von Ihrem Unternehmen erfasst und in die von CJA verwendeten Datenansichten einbezogen werden (siehe „Änderungen an der Datenarchitektur“).
+Sie haben jetzt Zugriff auf viel mehr kanalübergreifende Daten, die Sie analysieren können. Sie können beispielsweise ein Workspace-Projekt erstellen, das die Leistung mehrerer Kanäle analysiert, sofern diese Datensätze von Ihrem Unternehmen erfasst und in von Customer Journey Analytics verwendeten Datenansichten enthalten sind (siehe &quot;Änderungen an der Datenarchitektur&quot;unten).
 
 ![Mehrkanal-Visualisierungen](assets/cross-channel.png)
 
 ## Änderungen an der Datenarchitektur {#architecture}
 
-CJA erhält seine Daten von Adobe Experience Platform. Mit Experience Platform können Sie Kundendaten und Inhalte aus beliebigen Systemen oder Kanälen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern.
+Customer Journey Analytics erhält seine Daten von Adobe Experience Platform. Mit Experience Platform können Sie Kundendaten und Inhalte aus beliebigen Systemen oder Kanälen zentral zusammenführen und standardisieren sowie mithilfe von Datenwissenschaft und maschinellem Lernen die Gestaltung und Bereitstellung personalisierter Erlebnisse verbessern.
 
 Kundendaten in Experience Platform werden als Datensätze gespeichert, die aus einem [Schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=de) und Datenstapeln bestehen. Weitere Informationen zu Platform finden Sie unter [Übersicht über die Adobe Experience Platform-Architektur](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=de).
 
-Ihr CJA-Administrator richtet [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Experience Platform. Anschließend erstellen sie mithilfe dieser Verbindungen [Datenansichten](/help/data-views/data-views.md). Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in CJA. Da Experience Platform alle Daten für die Berichterstellung bereitstellt, fungieren Report Suites nicht mehr als Daten-Container.
+Ihr Customer Journey Analytics-Administrator richtet [Verbindungen](/help/connections/create-connection.md) auf Datensätze in Experience Platform. Anschließend erstellen sie mithilfe dieser Verbindungen [Datenansichten](/help/data-views/data-views.md). Datenansichten ähneln konzeptionell den Virtual Report Suites und bilden die Grundlage für die Berichterstellung in Customer Journey Analytics. Da Experience Platform alle Daten für die Berichterstellung bereitstellt, fungieren Report Suites nicht mehr als Daten-Container.
 
-Mit einer Verbindung kann Ihr Analytics-Administrator Datensätze von Adobe Experience Platform in Customer Journey Analytics integrieren, wie im folgenden Video gezeigt wird:
+Mit einer Verbindung kann Ihr Analytics-Administrator Datensätze aus Adobe Experience Platform in Customer Journey Analytics integrieren, die im folgenden Video enthalten sind:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
@@ -60,7 +60,7 @@ Weitere Informationen zu diesem Konzept finden Sie unter [Anwendungsbeispiele f�
 
 Die Konzepte von [!UICONTROL eVars], [!UICONTROL Props] und [!UICONTROL Ereignisse] im traditionellen Adobe Analytics existieren in [!UICONTROL Customer Journey Analytics] nicht mehr. In Adobe Analytics speichern eVars und Props Beschreibungen von Inhalten, Kunden, Kampagnen usw. und Ereignisse zählen Dinge wie Umsatz, Abonnements oder generierte Leads. In Customer Journey Analytics bleiben beide Datentypen erhalten, und Sie können auf dieselbe Weise darauf zugreifen - über die linke Leiste in Analysis Workspace unter Dimensionen bzw. Metriken.
 
-In CJA sind unbegrenzte Schemaelemente verfügbar, einschließlich Dimensionen, Metriken und Listenfelder. Diese werden unbegrenzten Schemaelementen wie Dimensionen, Metriken und Listenfeldern in Experience Platform zugeordnet. Alle Besuchs- und Attributionseinstellungen, die nach den Verarbeitungsregeln in Adobe Analytics angewendet werden, gelten jetzt zur Abfragezeit in Customer Journey Analytics.
+In Customer Journey Analytics sind unbegrenzte Schemaelemente verfügbar, darunter Dimensionen, Metriken und Listenfelder. Diese werden unbegrenzten Schemaelementen wie Dimensionen, Metriken und Listenfeldern in Experience Platform zugeordnet. Alle Besuchs- und Attributionseinstellungen, die nach den Verarbeitungsregeln in Adobe Analytics angewendet werden, gelten jetzt zur Abfragezeit in Customer Journey Analytics.
 
 Mit dieser Flexibilität könnten Situationen auftreten, in denen ein einzelnes Schemafeld sowohl als Dimension als auch Metrik verwendet werden kann, um unterschiedliche Tracking-Anforderungen zu ermöglichen.
 
@@ -82,7 +82,7 @@ Zusätzlich zum geänderten Konzept der Segmente wurden auch Segment-Container a
 
 ## Änderungen am Konzept der berechneten Metriken
 
-Berechnete Metriken heißen im traditionellen Analytics und CJA gleich. Doch [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr, sondern verwendet stattdessen ein Experience Platform-Schemaelement. Diese grundlegende Änderung bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics] kompatibel sind. Wenn Sie berechnete Adobe Analytics-Metriken in Customer Journey Analytics verschieben möchten, sehen Sie sich das folgende Video an:
+Berechnete Metriken werden zwischen Adobe Analytics und Customer Journey Analytics auf ähnliche Weise benannt. Doch [!UICONTROL Customer Journey Analytics] verwendet keine eVars, Props oder Ereignisse mehr, sondern verwendet stattdessen ein Experience Platform-Schemaelement. Diese grundlegende Änderung bedeutet, dass keine der vorhandenen berechneten Metriken mit [!UICONTROL Customer Journey Analytics] kompatibel sind. Wenn Sie berechnete Adobe Analytics-Metriken in Customer Journey Analytics verschieben möchten, sehen Sie sich das folgende Video an:
 
 >[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 
@@ -104,10 +104,10 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 
-CJA erweitert die Konzepte von Identitäten über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zusammengeführte ID, Benutzer-ID, Trackingcode usw. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Cross-Channel-Analyse](/help/cca/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzer, die in CJA ein Workspace-Projekt einrichten, müssen wissen, welche IDs in den verschiedenen Datensätzen verwendet werden. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in CJA erläutert wird:
+Customer Journey Analytics erweitert die Identitätskonzepte über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Cross-Channel-Analyse](/help/cca/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzer, die ein Workspace-Projekt in Customer Journey Analytics einrichten, müssen die in den Datensätzen verwendeten IDs verstehen. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in Customer Journey Analytics hervorgehoben wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Änderungen am Konzept des Dimensionselements „Low Traffic“
 
-Im traditionellen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Low Traffic] zusammenzufassen. CJA hat weniger Einschränkungen bei Feldern mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur können in Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellt werden. Weitere Informationen dazu, wie in CJA die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert ist, finden Sie unter [Longtail](../analysis-workspace/workspace-faq/long-tail.md).
+Im traditionellen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Low Traffic] zusammenzufassen. Customer Journey Analytics hat weniger Einschränkungen für Felder mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur können in Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellt werden. Siehe [Long Tail](../analysis-workspace/workspace-faq/long-tail.md) Weitere Informationen dazu, wie Customer Journey Analytics die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert.

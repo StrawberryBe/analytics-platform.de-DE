@@ -1,21 +1,22 @@
 ---
-title: Integrieren der Adobe Journey Optimizer-Entscheidungsverwaltung mit Customer Journey Analytics (CJA)
+title: Integrieren der Adobe Journey Optimizer-Entscheidungsverwaltung in Adobe Customer Journey Analytics
 description: Einbinden von durch die Entscheidungsverwaltung von Adobe Journey Optimizer generierten Daten und Analysieren mit Analysis Workspace in Customer Journey Analytics.
-source-git-commit: 00a87f5f370310672ca37ab9df08350d14fc6a91
+exl-id: fde45264-46cf-4c68-9872-7fb739748f21
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 19%
+source-wordcount: '749'
+ht-degree: 20%
 
 ---
 
-# Integrieren der Entscheidungsverwaltung in Customer Journey Analytics
+# Integrieren der Entscheidungsverwaltung in Adobe Customer Journey Analytics
 
 
 Adobe Journey Optimizer [Entscheidungsverwaltung](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) erleichtert die Personalisierung mit einer zentralen Bibliothek von Marketing-Angeboten und einer Entscheidungs-Engine, die Regeln und Begrenzungen auf von Adobe Experience Platform erstellte umfangreiche Echtzeitprofile anwendet, damit Sie Ihren Kunden zum richtigen Zeitpunkt das richtige Angebot unterbreiten können.
 
-Die Entscheidungsverwaltung ist Teil von und in Adobe Journey Optimizer (AJO) integriert. Es kann auch unabhängig von Journey und Kampagnen verwendet werden, die in AJO definiert sind, und zwar mithilfe seines umfangreichen [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) unterstützen.
+Die Entscheidungsverwaltung ist Teil von und in Adobe Journey Optimizer integriert. Es kann auch unabhängig von Journey und Kampagnen verwendet werden, die in Adobe Journey Optimizer definiert sind, und zwar mithilfe seiner umfassenden [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=en) unterstützen.
 
-Sie können von der Entscheidungsverwaltung generierte Daten importieren, um eine erweiterte Analyse in Customer Journey Analytics (CJA) durchzuführen, indem Sie die folgenden Schritte ausführen:
+Sie können von der Entscheidungsverwaltung generierte Daten importieren, um eine erweiterte Analyse in Customer Journey Analytics durchzuführen, indem Sie die folgenden Schritte ausführen:
 
 ## Senden von Daten aus der Entscheidungsverwaltung an Adobe Experience Platform
 
@@ -30,20 +31,20 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 | Datensatz | Typ des Datensatzes | Verbindungseinstellungen | Beschreibung |
 | --- | --- | --- | --- |
 | ODE DecisonEvents - _Sandbox_ Entscheidungsfindung | Ereignis-   | Personen-ID: `IdentityMap` | Enthält automatisch generierte Daten für Entscheidungsereignisse in der Entscheidungsverwaltung. _Sandbox_ bezieht sich auf den spezifischen Sandbox-Namen. |
-| Datensatz mit AJO-Nachrichten-Feedback-Ereignissen | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Ereignisse zum Nachrichtenversand. |
-| AJO-E-Mail-Tracking-Erlebnisdatensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Ereignisse. |
-| AJO Push Tracking Experience Event Datensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse. |
-| AJO-Entitätsdatensatz | Suche | Schlüssel: `_id`<br>Übereinstimmungsschlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Classifications, die Journey- und Campaign-Metadaten mit allen AJO-Ereignisdaten verknüpfen. |
+| Adobe Journey Optimizer Message Feedback-Ereignisdatensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Ereignisse zum Nachrichtenversand. |
+| Datensatz zum Adobe Journey Optimizer-E-Mail-Tracking-Erlebnis | Ereignis-   | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Ereignisse. |
+| Adobe Journey Optimizer-Datensatz zum Push-Tracking-Erlebnis | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse. |
+| Adobe Journey Optimizer-Entitätsdatensatz | Nachschlagen | Schlüssel: `_id`<br>Übereinstimmungsschlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Classifications, die Journey- und Campaign-Metadaten mit allen Adobe Journey Optimizer-Ereignisdaten verknüpfen. |
 
 {style="table-layout:auto"}
 
 ## Datenansicht erstellen
 
-Nachdem eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansichten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de) , um die in CJA verfügbaren gewünschten Dimensionen und Metriken zu konfigurieren.
+Sobald eine Verbindung erstellt wurde, können Sie eine oder mehrere [Datenansichten](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=de) erstellen, um die gewünschten Dimensionen und Metriken zu konfigurieren, die in Customer Journey Analytics verfügbar sind.
 
 >[!NOTE]
 >
->Die Datenabweichungen zwischen AJO und CJA betragen in der Regel weniger als 1-2 %. Größere Abweichungen sind bei Daten möglich, die innerhalb der letzten zwei Stunden erfasst wurden. Verwenden Sie Datumsbereiche, die den heutigen Tag ausschließen, um Abweichungen aufgrund der Verarbeitungszeit zu vermeiden.
+>Datendiskrepanzen zwischen Adobe Journey Optimizer und Customer Journey Analytics liegen in der Regel unter 1-2 %. Größere Abweichungen sind bei Daten möglich, die innerhalb der letzten zwei Stunden erfasst wurden. Verwenden Sie Datumsbereiche, die den heutigen Tag ausschließen, um Abweichungen aufgrund der Verarbeitungszeit zu vermeiden.
 
 ### Dimensionen konfigurieren
 

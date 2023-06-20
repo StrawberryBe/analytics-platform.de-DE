@@ -4,10 +4,10 @@ description: Erstellen von Anmerkungen in Workspace.
 role: User, Admin
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 80%
+source-wordcount: '699'
+ht-degree: 76%
 
 ---
 
@@ -26,7 +26,7 @@ Administratoren können jedoch über die [Adobe Admin Console](https://experienc
 | **Klicken Sie mit der rechten Maustaste auf einen Punkt in einem [!UICONTROL Linien] diagramm.** | Der [!UICONTROL Anmerkungsgenerator] wird geöffnet. Beachten Sie, dass die auf diese Weise erstellten Anmerkungen standardmäßig nur in dem Projekt sichtbar sind, in dem sie erstellt wurden. Sie können sie aber für alle Projekte verfügbar machen. Beachten Sie, dass das Datum und ggf. Metriken usw. bereits ausgefüllt sind.<p>![](assets/annotate-line.png) |
 | **Wechseln Sie in Workspace zu [!UICONTROL Komponenten] > [!UICONTROL Anmerkung erstellen].** | Der [!UICONTROL Anmerkungsgenerator] wird geöffnet. |
 | **Verwenden Sie dieses Tastenkürzel**, um den Anmerkungsgenerator zu öffnen: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Beachten Sie, dass Sie durch Verwendung des Tastenkürzels zur Erstellung einer Anmerkung eine eintägige Anmerkung für das aktuelle Datum ohne einen vorab ausgewählten Bereich (Kennzahlen oder Dimensionen) erstellen. |
-| **Verwenden Sie die [CJA-Anmerkungs-API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Mit den CJA-Anmerkungs-APIs können Sie Anmerkungen programmgesteuert über Adobe Developer erstellen, aktualisieren oder abrufen. Diese APIs verwenden dieselben Daten und Methoden, die Adobe innerhalb der Produkt-Benutzeroberfläche verwendet. |
+| **Verwenden Sie die [Customer Journey Analytics Annotations-API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | Mit den Customer Journey Analytics-Anmerkungen-APIs können Sie Anmerkungen programmgesteuert über Adobe Developer erstellen, aktualisieren oder abrufen. Diese APIs verwenden dieselben Daten und Methoden, die Adobe innerhalb der Produkt-Benutzeroberfläche verwendet. |
 
 1. Füllen Sie die Elemente des [!UICONTROL Anmerkungsgenerators] aus.
 

@@ -4,16 +4,16 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 90ce711ddfdff9e3441e40aa968e62e34da6a122
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 66%
+source-wordcount: '2543'
+ht-degree: 62%
 
 ---
 
 # Verbindung herstellen
 
-Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verbindungen eingerichtet. Beim neuen Workflow für die Erstellung und Bearbeitung von Verbindungen können alle Einstellungen zur Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow in der Mitte des Bildschirms durchgeführt werden. Sie haben eine detaillierte Datensatzauswahl, -konfiguration und -überprüfung mit wichtigen Informationen wie Datensatztyp, -größe, -schema, -Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr bereitgestellt, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die neuen Funktionen:
+Kürzlich wurde in Customer Journey Analytics ein neuer Workflow für Verbindungen gestartet. Beim neuen Workflow für die Erstellung und Bearbeitung von Verbindungen können alle Einstellungen zur Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow in der Mitte des Bildschirms durchgeführt werden. Sie haben eine detaillierte Datensatzauswahl, -konfiguration und -überprüfung mit wichtigen Informationen wie Datensatztyp, -größe, -schema, -Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr bereitgestellt, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die neuen Funktionen:
 
 * Sie können bei der Erstellung der Verbindung ein rollierendes Fenster zur Datenaufbewahrung aktivieren.
 * Sie können Datensätze zu einer Verbindung hinzufügen und daraus entfernen. (Wenn Sie einen Datensatz entfernen, wird er aus der Verbindung entfernt und wirkt sich auf alle zugehörigen Datenansichten und zugrunde liegenden Analysis Workspace-Projekte aus.)
@@ -25,7 +25,7 @@ Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verb
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
-1. Klicken Sie in CJA auf die Registerkarte **[!UICONTROL Verbindungen]**.
+1. Rufen Sie in Customer Journey Analytics den Tab **[!UICONTROL Verbindungen]** auf.
 1. Klicken Sie auf **[!UICONTROL Neue Verbindung erstellen]**.
 
    ![Verbindungseinstellungen](assets/create-conn1.png)
@@ -37,7 +37,7 @@ Kürzlich wurde in Customer Journey Analytics (CJA) ein neuer Workflow für Verb
    | **[!UICONTROL Name der Verbindung]** | Geben Sie einen eindeutigen Namen für die Verbindung ein. |
    | **[!UICONTROL Beschreibung der Verbindung]** | Beschreiben Sie den Zweck dieser Verbindung. |
    | **[!UICONTROL Sandbox]** | Wählen Sie eine Sandbox in Experience Platform aus, die die Datensätze enthält, zu denen Sie eine Verbindung herstellen möchten.<p>Adobe Experience Platform bietet [Sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=de) bereit, die eine einzelne Platform-Instanz in separate virtuelle Umgebungen aufteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu erleichtern. Sandboxes können sich als &quot;Datensilos&quot;mit Datensätzen vorstellen. Sandboxes dienen zur Steuerung des Zugriffs auf Datensätze.<p>Nachdem Sie die Sandbox ausgewählt haben, werden in der linken Leiste alle Datensätze in der Sandbox angezeigt, aus denen Sie Daten abrufen können. |
-   | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn dieses Kontrollkästchen aktiviert ist, können Sie die CJA-Datenaufbewahrung als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Lookup-Datensätze enthält (neben einem oder mehreren Ereignis-Datensätzen), werden diese Daten für denselben Zeitraum beibehalten.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p>Wenn Sie die Standardeinstellung (deaktiviert) lassen, wird die Aufbewahrungsfrist durch die Adobe Experience Platform-Einstellung zur Datenaufbewahrung ersetzt. Wenn Daten aus 25 Monaten in Experience Platform sind, erhält CJA 25 Monate Daten durch Aufstockung. Wenn Sie in Platform 10 dieser Monate löschen, werden in CJA die verbleibenden 15 Monate beibehalten. |
+   | **[!UICONTROL Rollierendes Datenfenster aktivieren]** | Wenn dieses Kontrollkästchen aktiviert ist, können Sie die Aufbewahrung von Customer Journey Analytics-Daten als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene definieren.<p>Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung jedoch Profil- oder Lookup-Datensätze enthält (neben einem oder mehreren Ereignis-Datensätzen), werden diese Daten für denselben Zeitraum beibehalten.<p> Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.<p>Wenn Sie die Standardeinstellung (deaktiviert) lassen, wird die Aufbewahrungsfrist durch die Adobe Experience Platform-Einstellung zur Datenaufbewahrung ersetzt. Wenn Daten aus 25 Monaten in der Experience Platform vorliegen, erhält der Customer Journey Analytics 25 Monate Daten durch Aufstockung. Wenn Sie 10 dieser Monate in Platform löschen, behält der Customer Journey Analytics die verbleibenden 15 Monate bei. |
    | **[!UICONTROL Hinzufügen von Datensätzen]** (siehe unten) | Fügen Sie Datensätze hinzu, wenn in Ihrer Datensatzliste keine Datensätze erscheinen. |
    | **[!UICONTROL Datensatzname]** | Wählen Sie einen oder mehrere Datensätze aus, die Sie in Customer Journey Analytics abrufen möchten, und klicken Sie auf **[!UICONTROL Hinzufügen]**.<p>(Wenn Sie viele Datensätze zur Auswahl haben, können Sie über die Suchleiste Datensätze suchen über der Liste der Datensätze nach den richtigen suchen.) |
    | **[!UICONTROL Zuletzt aktualisiert]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. „K. A.“ bedeutet, dass dieser Datensatz keine Daten enthält. |
@@ -114,7 +114,7 @@ Diese Nachschlagefunktion ist nützlich, wenn Sie ein numerisches Feld, z. B. Ko
 
 ![Lookup-Schema](assets/schema.png)
 
-Sie unterstützen jetzt das Einbinden dieser Werte als Metriken oder Dimensionen in CJA-Berichte. Wenn Sie Ihre Verbindung einrichten und Lookup-Datensätze abrufen, können Sie die Datensätze bearbeiten, um die [!UICONTROL Schlüssel] und [!UICONTROL Übereinstimmungsschlüssel] auszuwählen:
+Sie unterstützen jetzt die Aufnahme dieser Werte als Metriken oder Dimensionen in die Berichterstellung für Customer Journey Analytics. Wenn Sie Ihre Verbindung einrichten und Lookup-Datensätze abrufen, können Sie die Datensätze bearbeiten, um die [!UICONTROL Schlüssel] und [!UICONTROL Übereinstimmungsschlüssel] auszuwählen:
 
 ![Datensatz bearbeiten](assets/lookup-dataset.png)
 
@@ -124,7 +124,7 @@ Wenn Sie eine Datenansicht einrichten, die auf dieser Verbindung basiert, fügen
 
 In Customer Journey Analytics kann die Identity Map für ihre Personen-ID verwendet werden. Identity Map ist eine Zuordnungs-Datenstruktur, mit der Schlüssel-/Wert-Paare hochgeladen werden können. Die Schlüssel sind Identity-Namespaces und der Wert ist eine Struktur, die den Identitätswert enthält. Die Identity Map ist für jede hochgeladene Zeile/jedes hochgeladene Ereignis vorhanden und wird für jede Zeile entsprechend aufgefüllt.
 
-Die Identity Map ist für jeden Datensatz verfügbar, der ein auf der [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)-Klasse basierendes Schema verwendet. Wenn Sie einen solchen Datensatz für eine CJA-Verbindung auswählen, können Sie entweder ein Feld als primäre ID oder die Identity Map auswählen:
+Die Identity Map ist für jeden Datensatz verfügbar, der ein auf der [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de)-Klasse basierendes Schema verwendet. Wenn Sie einen solchen Datensatz auswählen, der in eine Customer Journey Analytics-Verbindung aufgenommen werden soll, können Sie entweder ein Feld als primäre ID oder die Identity Map auswählen:
 
 ![](assets/idmap1.png)
 
@@ -132,8 +132,8 @@ Wenn Sie Identity Map auswählen, erhalten Sie zwei zusätzliche Konfigurationso
 
 | Option | Beschreibung |
 |---|---|
-| **[!UICONTROL Primären ID-Namespace verwenden]** | Diese Option weist CJA an, die Identität pro Zeile in der Identity Map zu suchen, die mit dem Attribut primary=true markiert ist, und diese als Personen-ID für diese Zeile zu verwenden. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. Diese Identität ist auch der Hauptkandidat für die Verwendung als Personen-ID von CJA (je nachdem, wie der Datensatz in einer CJA-Verbindung konfiguriert ist). |
-| **[!UICONTROL Namespace]** | (Diese Option ist nur verfügbar, wenn Sie den primären Identity-Namespace nicht verwenden.) Identity-Namespace sind eine Komponente des [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=de), die als Indikatoren für den Kontext dient, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht CJA in der Identity Map jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für diese Zeile. Da CJA nicht alle Zeilen einer vollständigen Datensatzsuche unterziehen kann, um festzustellen, welche Namespaces vorhanden sind, werden alle möglichen Namespaces in der Dropdown-Liste angezeigt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Diese Namespaces werden nicht automatisch erkannt. |
+| **[!UICONTROL Primären ID-Namespace verwenden]** | Diese Option weist Customer Journey Analytics an, die Identität pro Zeile in der Identity Map zu finden, die mit dem Attribut primary=true markiert ist, und diese als Personen-ID für diese Zeile zu verwenden. Diese Identität ist der Primärschlüssel, der in Experience Platform für die Partitionierung verwendet wird. Diese Identität ist auch der Hauptkandidat für die Verwendung als Customer Journey Analytics-Personen-ID (je nachdem, wie der Datensatz in einer Customer Journey Analytics-Verbindung konfiguriert ist). |
+| **[!UICONTROL Namespace]** | (Diese Option ist nur verfügbar, wenn Sie den primären Identity-Namespace nicht verwenden.) Identity-Namespace sind eine Komponente des [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=de), die als Indikatoren für den Kontext dient, auf den sich eine Identität bezieht. Wenn Sie einen Namespace angeben, sucht der Customer Journey Analytics in der Identity Map jeder Zeile nach diesem Namespace-Schlüssel und verwendet die Identität unter diesem Namespace als Personen-ID für diese Zeile. Da der Customer Journey Analytics nicht alle Zeilen einer vollständigen Datensatzsuche unterziehen kann, um festzustellen, welche Namespaces vorhanden sind, werden alle möglichen Namespaces in der Dropdownliste angezeigt. Sie müssen wissen, welche Namespaces in den Daten angegeben sind. Diese Namespaces werden nicht automatisch erkannt. |
 
 {style="table-layout:auto"}
 
@@ -143,8 +143,8 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 | Option | In der Identity Map sind keine IDs vorhanden | Mehrere IDs, keine als primär markiert | Es wurden mehrere IDs als primär markiert | Einzelne ID, als primär markiert oder nicht | Ungültiger Namespace mit einer als primär markierten ID |
 |---|---|---|---|---|---|
-| **[!UICONTROL Primären ID-Namespace verwenden] aktiviert** | Die Zeile wird aus CJA gelöscht. | Die Zeile wird aus CJA gelöscht, da keine primäre ID angegeben wurde. | Alle unter allen Namespaces als primär markierten IDs werden in eine Liste extrahiert. Sie werden dann alphabetisch sortiert; bei der neuen Sortierung wird der erste Namespace mit der ersten ID als Personen-ID verwendet. | Die einzelne ID wird als Personen-ID verwendet. | Obwohl der Namespace möglicherweise ungültig ist (nicht in AEP vorhanden), verwendet CJA die primäre ID unter diesem Namespace als Personen-ID. |
-| **[!UICONTROL Spezifischer Identity Map-Namespace] ausgewählt** | Die Zeile wird aus CJA gelöscht. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. (Bei der Erstellung der Verbindung kann nur ein gültiger Namespace ausgewählt werden. Daher ist es nicht möglich, einen ungültigen Namespace/eine ungültige ID als Personen-ID zu verwenden.) |
+| **[!UICONTROL Primären ID-Namespace verwenden] aktiviert** | Die Zeile wird nach Customer Journey Analytics abgelegt. | Die Zeile wird nach Customer Journey Analytics abgelegt, da keine primäre ID angegeben ist. | Alle unter allen Namespaces als primär markierten IDs werden in eine Liste extrahiert. Sie werden dann alphabetisch sortiert; bei der neuen Sortierung wird der erste Namespace mit der ersten ID als Personen-ID verwendet. | Die einzelne ID wird als Personen-ID verwendet. | Obwohl der Namespace möglicherweise ungültig ist (nicht in Adobe Experience Platform vorhanden), verwendet Customer Journey Analytics die primäre ID unter diesem Namespace als Personen-ID. |
+| **[!UICONTROL Spezifischer Identity Map-Namespace] ausgewählt** | Die Zeile wird nach Customer Journey Analytics abgelegt. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. | Alle IDs unter dem ausgewählten Namespace werden in eine Liste extrahiert und die erste wird als Personen-ID verwendet. (Bei der Erstellung der Verbindung kann nur ein gültiger Namespace ausgewählt werden. Daher ist es nicht möglich, einen ungültigen Namespace/eine ungültige ID als Personen-ID zu verwenden.) |
 
 {style="table-layout:auto"}
 
@@ -162,4 +162,4 @@ Diese Berechnung erfolgt für jeden Datensatz in der Verbindung.
 
    In diesem Beispiel ist „analytics_demo_data“ der Name des Datensatzes.
 
-2. Um alle in AEP vorhandenen Datensätze anzuzeigen, führen Sie die `Show Tables` Abfrage .
+2. Um alle in Adobe Experience Platform vorhandenen Datensätze anzuzeigen, führen Sie die `Show Tables` Abfrage .

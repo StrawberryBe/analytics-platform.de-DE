@@ -4,10 +4,10 @@ description: Bestimmen, wie oder ob Dimensionswerte von einem Ereignis zum näch
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '810'
+ht-degree: 86%
 
 ---
 
@@ -78,7 +78,7 @@ Details zu den verfügbaren Gültigkeitseinstellungen.
 
 Eine Dropdown-Liste, mit der Sie die Persistenz eines Dimensionswerts an Dimensionswerte in einer anderen Dimension binden können. Gültige Optionen sind andere Dimensionen, die in der Datenansicht enthalten sind.
 
-Siehe Beispiele für die effektive Verwendung von Bindungsdimensionen in [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/data-views/binding-dimensions-metrics.md).
+Siehe [Bindungsdimensionen und Metriken in Customer Journey Analytics verwenden](../../use-cases/data-views/binding-dimensions-metrics.md) Beispiele für die effektive Verwendung von Bindungsdimensionen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
@@ -88,4 +88,4 @@ Eine Dropdown-Liste, in der Sie eine Metrik auswählen können, die als bindende
 
 Diese Einstellung wird nur angezeigt, wenn die Binding-Dimension im Objekt-Array niedriger ist als die Komponente. Wenn in einem Ereignis eine Bindungsmetrik vorhanden ist, werden Dimensionswerte von der Ereignisebene auf die untere Schemaebene der Bindungsdimension kopiert.
 
-Siehe das zweite Beispiel unter [Verwenden von Bindungsdimensionen und Metriken in CJA](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
+Siehe das zweite Beispiel unter [Bindungsdimensionen und Metriken in Customer Journey Analytics verwenden](../../use-cases/data-views/binding-dimensions-metrics.md) für weitere Informationen zur effektiven Verwendung von Bindungsmetriken.
