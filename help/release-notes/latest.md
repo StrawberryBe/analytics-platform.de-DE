@@ -3,7 +3,7 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f224a37190d60e7f055fdeb39c42dd77d8764259
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 75%
@@ -12,7 +12,7 @@ ht-degree: 75%
 
 # Aktuelle Adobe Customer Journey Analytics-Versionshinweise (Juni 2023)
 
-**Letzte Aktualisierung**: 19. Juni 2023
+**Letzte Aktualisierung**: 21. Juni 2023
 
 Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -23,10 +23,10 @@ Versionen von Customer Journey Analytics basieren auf einem [Modell der kontinui
 | **Intelligente Beschriftungen** | Bereichern Sie mit der Zusammenfassung einer [!UICONTROL Linienvisualisierung] in natürlicher Sprache das Storytelling für Benutzerinnen und Benutzer. [Weitere Informationen](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17. Mai 2023 | 1. Juni 2023 |
 | **Link-Freigabe für Projekte (keine Anmeldung erforderlich)** | Sie können jetzt schreibgeschützte Links zu Analysis Workspace-Projekten für Personen freigeben, die keinen Zugriff auf Adobe Analytics haben. Sie können Dinge mit Personen außerhalb Ihrer Organisation oder mit Personen innerhalb Ihrer Organisation teilen, die nicht für Adobe Analytics vorgesehen sind. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de#share-public-link) <p>Diese Funktion ist standardmäßig aktiviert und kann von Systemadmins deaktiviert werden. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=de#company-preferences)</p> | 3. Mai 2023 | 6. Juni 2023 |
 | **Abgeleitete Felder** | Dies stellt die erste Version abgeleiteter Felder dar. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Sie können das abgeleitete Feld als Komponente (Metrik oder Dimension) in Datenansichten weiter definieren und dann das abgeleitete Feld als Komponente in Workspace verwenden.<p>Diese Version unterstützt eine Vorlage für Marketing-Kanäle und die folgenden Funktionen:</p><ul><li>Verketten</li><li>Fall wenn</li><li>Suchen und Ersetzen</li><li>Nachschlagen</li><li>URL-Parsen</li></ul> <p>[Weitere Informationen](/help/data-views/derived-fields/derived-fields.md)</p> | 10. Mai 2023 | 14. Juni 2023 |
-| **Zugriff von PowerBI und Tableau auf Customer Journey Analytics-Datenansichten** | Der Adobe Customer Journey Analytics SQL Connector ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. Data Engineers und Analytiker, die mit Power BI, Tableau oder anderen Tools für Business Intelligence und Visualisierung vertraut sind, können jetzt Berichte und Dashboards auf der Basis derselben Datenansichten erstellen, die Customer Journey Analytics für ihre Analysis Workspace-Projekte verwenden. [Weitere Informationen](/help/data-views/sql-connector.md) |  | 30. Juni 2023 |
-| **Experience Edge-Geo-Suchen** | Sie können Berichte mit Geolocation-Daten in Customer Journey Analytics erstellen, sobald die Experience Edge Geo-Suche für Ihren Datastream aktiviert wurde. |  | 30. Juni 2023 |
-| **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Sie können Such-Datensätze nicht nur zu Ereignis-Datensätzen, sondern auch zu Profil- und Such-Datensätzen hinzufügen. | 28. Juni 2023 | 12. Juli 2023 |
 | **Unterstützung für Währungskonversionen** | Die Währungsumrechnung wird im Rahmen der Formatierung einer Metrikkomponente in einer Datenansicht unterstützt. [Weitere Informationen](../data-views/component-settings/format.md#currency) | 7. Juni 2023 | 21. Juni 2023 |
+| **Zugriff von PowerBI und Tableau auf Customer Journey Analytics-Datenansichten** | Der Adobe Customer Journey Analytics SQL Connector ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. Data Engineers und Analytiker, die mit Power BI, Tableau oder anderen Tools für Business Intelligence und Visualisierung vertraut sind, können jetzt Berichte und Dashboards auf der Basis derselben Datenansichten erstellen, die Customer Journey Analytics für ihre Analysis Workspace-Projekte verwenden. [Weitere Informationen](/help/data-views/sql-connector.md) |  | 30. Juni 2023 |
+| **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Sie können Such-Datensätze nicht nur zu Ereignis-Datensätzen, sondern auch zu Profil- und Such-Datensätzen hinzufügen. | 28. Juni 2023 | 12. Juli 2023 |
+| **Experience Edge-Geo-Suchen** | Sie können Berichte mit Geolocation-Daten in Customer Journey Analytics erstellen, sobald die Experience Edge Geo-Suche für Ihren Datastream aktiviert wurde. |  | 26. Juli 2023 |
 
 {style="table-layout:auto"}
 
