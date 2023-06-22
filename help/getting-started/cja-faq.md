@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
 workflow-type: tm+mt
-source-wordcount: '2162'
-ht-degree: 84%
+source-wordcount: '2161'
+ht-degree: 83%
 
 ---
 
@@ -130,7 +130,7 @@ Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer 
 >[!NOTE]
 >Es gibt keine feste Datengröße im Customer Journey Analytics und daher kann die Adobe nicht auf eine standardmäßige Erfassungszeit übertragen werden. Wir arbeiten aktiv daran, diese Latenzen durch neue Updates und Aufnahmeoptimierung zu reduzieren.
 
-+++**Wie hoch ist die erwartete Latenz für [!UICONTROL Customer Journey Analytics] auf [!UICONTROL Adobe Experience Platform]?**
++++**Wie hoch ist die erwartete Latenz? [!UICONTROL Customer Journey Analytics] Daten zu [!UICONTROL Adobe Experience Platform]?**
 
 <ul><li>Live-Daten oder -Ereignisse: Wird innerhalb von 90 Minuten verarbeitet und erfasst, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe &gt; 50 Millionen Zeilen: länger als 90 Minuten.)</li><li>Kleine Aufstockungen – z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 7 Tagen<li>Große Aufstockungen – z. B. 500 Milliarden Zeilen: 30 Tage</li></ul>
 
@@ -171,7 +171,7 @@ Wenn Sie planen, Adobe Analytics-Daten über den [Adobe Analytics-Quell-Connecto
 | [!UICONTROL Klassifizierungen] | [!UICONTROL Klassifizierungen] werden beim Zusammenführen von Report Suites nicht automatisch dedupliziert. Beim Kombinieren mehrerer Klassifizierungsdateien zu einer [!UICONTROL Nachschlagen] -Datensatz, können Probleme auftreten. |
 
 
-## 8. Herkömmliche [!UICONTROL Adobe Analytics]-Komponenten
+## 8. [!UICONTROL Adobe Analytics] Komponenten
 
 
 +++**Kann ich [!UICONTROL Filter] ([!UICONTROL Segmente]) von [!DNL Customer Journey Analytics] für Experience Platform Unified Profile oder andere Experience Cloud-Programme freigeben/veröffentlichen?**
@@ -183,7 +183,7 @@ Noch nicht, wir arbeiten aber aktuell daran, diese Funktion bald bereitstellen z
 
 +++**Was ist mit meiner alten [!UICONTROL eVar]-Einstellung passiert?**
 
-[!UICONTROL eVars], [!UICONTROL Props] und [!UICONTROL Ereignisse] im herkömmlichen Sinne von Adobe Analytics existieren in [!UICONTROL Customer Journey Analytics] nicht mehr. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet.
+[!UICONTROL eVars], [!UICONTROL props]und [!UICONTROL events] im Sinne von Adobe Analytics gibt es in [!UICONTROL Customer Journey Analytics]. Es gibt unbegrenzte Schemaelemente (Dimensionen, Metriken, Listenfelder). Alle Zuordnungseinstellungen, die Sie bisher während des Datenerfassungsprozesses angewendet haben, werden jetzt bei der Abfrage angewendet.
 
 +++
 
