@@ -4,16 +4,16 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 42%
+source-wordcount: '2056'
+ht-degree: 41%
 
 ---
 
-# Unterstützung der Customer Journey Analytics-Funktion
+# Adobe Customer Journey Analytics-Funktionsunterstützung
 
-In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics in Customer Journey Analytics (Customer Journey Analytics) unterstützt, teilweise unterstützt oder nicht unterstützt werden und welche Funktionen von Customer Journey Analytics in Adobe Analytics nicht unterstützt oder nicht verfügbar sind. Diese Listen ändern sich im Laufe der Zeit, wenn Funktionen zu Customer Journey Analytics hinzugefügt werden.
+In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics in Customer Journey Analytics unterstützt, teilweise unterstützt oder nicht unterstützt werden und welche Funktionen von Customer Journey Analytics in Adobe Analytics nicht unterstützt oder nicht verfügbar sind. Diese Listen ändern sich im Laufe der Zeit, wenn Funktionen zu Customer Journey Analytics hinzugefügt werden.
 
 ## Vollständig unterstützte Funktionen/Komponenten {#full-support}
 
@@ -56,6 +56,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Classifications | Jetzt „Lookup-Datensätze“ genannt. In Analytics verwendete Classifications können mithilfe des Analytics Classifications Source Connector in die Experience Platform und den Customer Journey Analytics importiert werden. Lookup-Datensätze können auch direkt in Experience Platform hochgeladen und in Customer Journey Analytics verfügbar gemacht werden. |
 | Classification Rule Builder | Unterstützt mit [Teilzeichenfolgen](/help/data-views/component-settings/substring.md) in Customer Journey Analytics. Verwendet zum Zeitpunkt der Berichtserstellung Zeichenfolgenmanipulationen anstelle von Lookup-Datensätzen. |
 | Benutzerdefinierte Sitzungen | Unterstützung für alle benutzerdefinierten Sitzungsfunktionen außer mobilen Hintergrundereignissen. |
+| Währungsumrechnung | Unterstützt als Teil von [Formatieren einer Metrikkomponente](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=en#currency) in einer Datenansicht. |
 | Persistenz von Merchandising-Variablen | Vollständige Unterstützung über [Binding-Dimensionen und Binding-Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=de#binding-dimension) |
 | Kundenattribute | Jetzt als &quot;Profildatensätze&quot;bezeichnet, werden sie nicht automatisch aus Experience Cloud importiert, sondern müssen in Experience Platform hochgeladen werden, bevor sie in Customer Journey Analytics verfügbar sind. |
 | Daten-Feeds | Der Datenexport der ersten Generation von Datensätzen ist über das [Experience Platform Data Access API](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) und [Experience Platform-Ziele](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=de). Diese Optionen bieten den Export aller erfassten oder in den Experience Platform Data Lake erfassten Daten auf Ereignis-/Zeilenebene. Nachbearbeitungs-Datenspalten sind nicht verfügbar, da Post-Spalten zur Abfragezeit berechnet werden. Der Export von Post-Spalten ist über Berichte verfügbar. |
@@ -99,7 +100,6 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 | Projektvorlagen | Unterstützung ist geplant. |
 | Echtzeitberichterstellung | Unterstützung ist geplant. |
 | Segment IQ | Unterstützung ist geplant. |
-| Währungsumrechnung | Unterstützung ist geplant. |
 | Transaktions-ID-Datenquellen | Unterstützung ist geplant. |
 | Migrieren von Projekten/Filtern/berechneten Metriken von Adobe Analytics zu Customer Journey Analytics | Unterstützung ist geplant. |
 | Datenquellen auf Zusammenfassungsebene | Unterstützung ist geplant. |
@@ -115,7 +115,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 {style="table-layout:auto"}
 
-## Nie Support {#never}
+## Nie unterstützt {#never}
 
 * Benutzermetriken mit Cross-Device Coop
 * Reports &amp; Analytics-Dashboards
@@ -124,7 +124,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 ## Adobe Customer Journey Analytics-Funktionen sind in Adobe Analytics nicht verfügbar {#cja-not-aa}
 
-In der folgenden Tabelle sind die Funktionen aufgeführt, die in Customer Journey Analytics verfügbar sind, in Adobe Analytics jedoch nicht unterstützt werden.
+In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey Analytics verfügbar sind, in Adobe Analytics jedoch nicht unterstützt werden.
 
 | Funktion | Mehr Infos |
 | --- | --- |

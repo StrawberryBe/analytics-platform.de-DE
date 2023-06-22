@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 73%
+source-wordcount: '1426'
+ht-degree: 69%
 
 ---
 
 # Aktuelle Adobe Customer Journey Analytics-Versionshinweise (Juni 2023)
 
-**Letzte Aktualisierung**: 21. Juni 2023
+**Letzte Aktualisierung**: 22. Juni 2023
 
 Adobe Customer Journey Analytics-Versionen funktionieren auf einer [kontinuierlicher Versand](releases.md) , was einen skalierbareren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -56,7 +56,7 @@ AN-318343; AN-319453
 
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| Nicht angegeben | nicht angegeben | Nicht angegeben |
+| Änderungen bei der Verarbeitung von Daten durch Customer Journey Analytics | 22. Juni 2023 | Wir haben kürzlich die Art und Weise geändert, wie wir Daten in Customer Journey Analytics verarbeiten.<p>**Alte Methode:**<ul><li>Live-Daten oder -Ereignisse: Wird innerhalb von 90 Minuten verarbeitet und erfasst, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe > 50 Millionen Zeilen: länger als 90 Minuten.)</li><li>Kleine Aufstockungen – z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 7 Tagen<li>Große Aufstockungen – z. B. 500 Milliarden Zeilen: 30 Tage</li></ul>**Neue Methode (ab Juni 2023)**<ul><li>Alle Ereignisdaten mit einem Zeitstempel unter 24 Stunden werden gestreamt.</li><li>Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität erfasst.</li></ul> |
 
 ## Mitteilungen über das Ende der Nutzungsdauer (EOL) {#eol}
 
