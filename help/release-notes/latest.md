@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
+source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1376'
 ht-degree: 69%
 
 ---
@@ -56,7 +56,7 @@ AN-318343; AN-319453
 
 | Hinweis | Hinweis hinzugefügt oder aktualisiert | Beschreibung |
 | --- | --- | --- |
-| Änderungen bei der Verarbeitung von Daten durch Customer Journey Analytics | 22. Juni 2023 | Wir haben kürzlich die Art und Weise geändert, wie wir Daten in Customer Journey Analytics verarbeiten.<p>**Alte Methode:**<ul><li>Live-Daten oder -Ereignisse: Wird innerhalb von 90 Minuten verarbeitet und erfasst, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe > 50 Millionen Zeilen: länger als 90 Minuten.)</li><li>Kleine Aufstockungen – z. B. ein Lookup-Datensatz mit 10 Millionen Zeilen: innerhalb von 7 Tagen<li>Große Aufstockungen – z. B. 500 Milliarden Zeilen: 30 Tage</li></ul>**Neue Methode (ab Juni 2023)**<ul><li>Alle Ereignisdaten mit einem Zeitstempel unter 24 Stunden werden gestreamt.</li><li>Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität erfasst.</li></ul> |
+| Änderungen bei der Verarbeitung von Daten durch Customer Journey Analytics | 22. Juni 2023 | Wir haben kürzlich die Art und Weise geändert, wie wir Daten in Customer Journey Analytics verarbeiten.<ul><li>Alle Ereignisdaten mit einem Zeitstempel unter 24 Stunden werden gestreamt.</li><li>Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität erfasst.</li></ul> |
 
 ## Mitteilungen über das Ende der Nutzungsdauer (EOL) {#eol}
 
