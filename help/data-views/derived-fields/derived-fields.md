@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cc33257a04214ba786d7e5510a1b6bc618a84883
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3281'
 ht-degree: 9%
 
 ---
@@ -761,4 +761,5 @@ Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die [!UI
 Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder im Allgemeinen:
 
 - Beim Definieren von Regeln für ein abgeleitetes Feld können Sie maximal 10 verschiedene Schemafelder (ohne Standardfelder) verwenden.
+   - Von diesen maximal 10 verschiedenen Schemafeldern sind maximal 3 Lookup-Schema- oder Profilschemafelder zulässig.
 - Pro Customer Journey Analytics-Verbindung können maximal 100 abgeleitete Felder verwendet werden.
