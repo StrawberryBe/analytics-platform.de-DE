@@ -4,10 +4,10 @@ description: Konfigurieren Sie die Formatierung einer Metrik.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
+source-git-commit: 66e7adfbca3f20d21b4331033f70ac7d0933cd12
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 33%
+source-wordcount: '530'
+ht-degree: 30%
 
 ---
 
@@ -47,17 +47,11 @@ So zeigen Sie eine Währung für eine Metrik an:
 
 So aktivieren Sie die Konvertierung einer Währung für eine Metrik:
 
-- Richten Sie Ihre Customer Journey Analytics-Verbindung so ein, dass sie mindestens einen Ereignis-Datensatz enthält, der eine Währungscode-Dimension für jedes Ereignis enthält, das eine Währungsmetrik enthält. Diese Dimension des Währungscodes verwendet einen alphabetischen Währungscode, der dem [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) Standard für die Darstellung von Währungen. Zum Beispiel USD für $, EUR für €, GBP für £.
-
-- Sie haben (optional) die [!UICONTROL Währungscode] -Kontextbezeichnung zu einer oder mehreren Dimensionen, die in Ihrem Datensatz verfügbare Währungscodes definieren.
-
-  So wenden Sie die [!UICONTROL Währungscode] -Kontextbezeichnung in der [!UICONTROL Komponenten] Registerkarte Ihrer Datenansicht:
-
-  <!--![Currency Context Label](../assets/currency-context-label.png)-->
+- Richten Sie Ihre Customer Journey Analytics-Verbindung so ein, dass sie mindestens einen Ereignis-Datensatz enthält, der eine Währungscode-Dimension für jedes Ereignis enthält, das eine Währungsmetrik enthält. Diese Dimension des Währungscodes verwendet einen alphabetischen Währungscode, der dem [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) Standard für die Darstellung von Währungen. Diese Werte sollten in einem vollständigen Großbuchstabenformat vorliegen, z. B. USD für $, EUR für €, GBP für £.
 
    1. Wählen Sie die Dimension aus einem Ihrer Datensätze aus, die die Währungscodes enthält. Beispiel: [!UICONTROL Währungscode].
 
-   2. Auswählen **[!UICONTROL Währungscode]** von [!UICONTROL Kontextbezeichnungen] Liste.
+   2. Auswählen **[!UICONTROL Währungscode]** aus der Liste der Dimensionen.
 
   Wiederholen Sie diese Schritte für den Fall, dass Sie mehr Dimensionen haben, die Währungscodes enthalten, die Sie für die Währungsumrechnung verwenden möchten.
 
@@ -72,7 +66,7 @@ So definieren Sie, wie Sie eine Währung für eine Metrik konvertieren und anzei
 
 2. Auswählen **[!UICONTROL Konvertieren der Parallelität]**.
 
-3. Basierend auf der angewendeten Kontextbeschriftung wird die entsprechende Dimension aus dem **[!UICONTROL Währungs-Code-Dimension]** automatisch ausgewählt wird. Sie können eine beliebige andere Dimension auswählen, einschließlich Dimensionen, auf die Sie zusätzlich die Kontextbeschriftung Währungscode angewendet haben.
+3. Wählen Sie die entsprechende Dimension aus der Liste der Dimensionen aus, die das Währungscode-Feld enthalten.
 
 4. Wählen Sie eine Währung aus dem **[!UICONTROL Währung konvertieren und anzeigen in]** Liste.
 
@@ -81,6 +75,14 @@ So definieren Sie, wie Sie eine Währung für eine Metrik konvertieren und anzei
 +++ Wie wird die Währungsumrechnung ausgeführt?
 
 Bei Berichtszeit werden der Wert der Metrik und der ursprüngliche Währungscode in USD konvertiert und dann in die für die Anzeige konfigurierte Währung konvertiert. Für diese Konversion werden die Tageswährungskurse verwendet, die für die Zeit des Ereignisses gelten.
+
++++ Wie weit sind die täglichen Konversionsraten zurück?
+
+Die täglichen Konversionsraten werden in den letzten vier Jahren beibehalten?
+
++++ Was passiert, wenn ich kein Währungscode-Feld als Teil meines aktuellen Datenschemas verwende?
+
+Es gibt verschiedene Optionen zum Erstellen eines neuen Währungscode-Felds, einschließlich Datenvorbereitung, Data Distiller und abgeleitete Felder. Data Prep wäre ideal für neue Implementierungen, da dies nur zukünftig möglich wäre. Je nach Einrichtung eines Unternehmens können Data Distiller und abgeleitete Felder verwendet werden, um historisch auf die Währungscodewerte zuzugreifen.
 
 +++
 
