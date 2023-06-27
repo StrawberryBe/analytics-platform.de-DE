@@ -4,9 +4,9 @@ description: Konfigurieren Sie die Formatierung einer Metrik.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 66e7adfbca3f20d21b4331033f70ac7d0933cd12
+source-git-commit: 585242be7ffff5b089d8452d34f7ee012a7d01f5
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '532'
 ht-degree: 30%
 
 ---
@@ -40,20 +40,20 @@ So zeigen Sie eine Währung für eine Metrik an:
 
 1. Geben Sie die Anzahl der **[!UICONTROL Dezimalstellen]**.
 
-2. Wählen Sie eine Währung aus dem **[!UICONTROL Währung anzeigen in]** Liste.
+1. Wählen Sie eine Währung aus dem **[!UICONTROL Währung anzeigen in]** Liste.
 
 
 ### Währung umrechnen und anzeigen
 
-So aktivieren Sie die Konvertierung einer Währung für eine Metrik:
+So aktivieren Sie die Konvertierung einer Währung für eine oder mehrere Metriken:
 
 - Richten Sie Ihre Customer Journey Analytics-Verbindung so ein, dass sie mindestens einen Ereignis-Datensatz enthält, der eine Währungscode-Dimension für jedes Ereignis enthält, das eine Währungsmetrik enthält. Diese Dimension des Währungscodes verwendet einen alphabetischen Währungscode, der dem [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) Standard für die Darstellung von Währungen. Diese Werte sollten in einem vollständigen Großbuchstabenformat vorliegen, z. B. USD für $, EUR für €, GBP für £.
 
    1. Wählen Sie die Dimension aus einem Ihrer Datensätze aus, die die Währungscodes enthält. Beispiel: [!UICONTROL Währungscode].
 
-   2. Auswählen **[!UICONTROL Währungscode]** aus der Liste der Dimensionen.
+   1. Auswählen **[!UICONTROL Währungscode]** aus der Liste der Dimensionen.
 
-  Wiederholen Sie diese Schritte für den Fall, dass Sie mehr Dimensionen haben, die Währungscodes enthalten, die Sie für die Währungsumrechnung verwenden möchten.
+- Wiederholen Sie diese Schritte für den Fall, dass Sie mehr Dimensionen haben, die Währungscodes enthalten, die Sie für die Währungsumrechnung verwenden möchten.
 
 >[!NOTE]
 >
@@ -64,11 +64,11 @@ So definieren Sie, wie Sie eine Währung für eine Metrik konvertieren und anzei
 
 1. Geben Sie die Anzahl der **[!UICONTROL Dezimalstellen]**.
 
-2. Auswählen **[!UICONTROL Konvertieren der Parallelität]**.
+1. Auswählen **[!UICONTROL Konvertieren der Parallelität]**.
 
-3. Wählen Sie die entsprechende Dimension aus der Liste der Dimensionen aus, die das Währungscode-Feld enthalten.
+1. Wählen Sie die entsprechende Dimension aus der Liste der Dimensionen aus, die das Währungscode-Feld enthalten.
 
-4. Wählen Sie eine Währung aus dem **[!UICONTROL Währung konvertieren und anzeigen in]** Liste.
+1. Wählen Sie eine Währung aus dem **[!UICONTROL Währung konvertieren und anzeigen in]** Liste.
 
 ### Häufig gestellte Fragen
 
@@ -76,9 +76,15 @@ So definieren Sie, wie Sie eine Währung für eine Metrik konvertieren und anzei
 
 Bei Berichtszeit werden der Wert der Metrik und der ursprüngliche Währungscode in USD konvertiert und dann in die für die Anzeige konfigurierte Währung konvertiert. Für diese Konversion werden die Tageswährungskurse verwendet, die für die Zeit des Ereignisses gelten.
 
++++
+
+
 +++ Wie weit sind die täglichen Konversionsraten zurück?
 
 Die täglichen Konversionsraten werden in den letzten vier Jahren beibehalten?
+
++++
+
 
 +++ Was passiert, wenn ich kein Währungscode-Feld als Teil meines aktuellen Datenschemas verwende?
 
