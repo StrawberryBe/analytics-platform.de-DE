@@ -4,10 +4,10 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: 04da0dd42e4ab44dbacdc7a3bf840b7c7dcf24ee
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 96%
+source-wordcount: '1514'
+ht-degree: 82%
 
 ---
 
@@ -78,15 +78,29 @@ Ein gängiger Anwendungsfall für die Seite „Projekt-Manager“ war die Ansich
 
 Wenn Sie sich in der Ansicht „Ordner und Projekte“ befinden, erscheint ein Popup, in dem Sie gefragt werden, ob Sie zur Ansicht „Alle Projekte“ wechseln möchten. Dies erleichtert die Anzeige aller Ihrer Projekte außerhalb etwaiger Ordner, in denen sie gruppiert sind.   Wählen Sie **Zur Ansicht „Alle Projekte“ wechseln** aus, um eine bessere Ansicht aller Projekte zu erhalten, auf die Sie Zugriff haben.
 
-![Wechseln zur Ansicht „Alle Projekte“](assets/switch-all-projects-view.png)
+![Zu „Alle Projekte“ wechseln](assets/switch-all-projects-view.png)
 
-## Navigieren Sie zur Registerkarte „Lernen“ {#navigate-learning}
+## Registerkarte &quot;Lernen&quot;verwenden {#navigate-learning}
 
-Die Seite „Lernen“ enthält praktische Videoführungen und -Tutorials sowie Links zur Dokumentation.
+Die Lernseite enthält praktische Videoführungen, Tutorials und Links zur Dokumentation.
 
-* Die Tour [!UICONTROL Arbeitsbereich-Grundlagen] führt Sie direkt zu Arbeitsbereich und zeigt Ihnen das Arbeitsbereich-Layout und wo Sie die häufigsten Aktionen finden/durchführen können. Diese Tour kann auch jederzeit direkt in Arbeitsbereich über das QuickInfo-Pop-over in der Kopfzeile des Bedienfelds neu gestartet werden.
-* Durch Klicken auf ein Video/eine Tour wird ein Tag **[!UICONTROL Angezeigt]** hinzugefügt. Mit diesem Tag können Sie Ihren Fortschritt durch den Lerninhalt verfolgen. Sie können auf das Tag klicken und es wird ausgeblendet, falls Sie den Inhalt noch nicht abgeschlossen haben.
-* Die Schaltfläche **[!UICONTROL Weitere Informationen]** im Video-Modal bietet Zugriff auf eine Adobe Experience League-Dokumentationsseite mit weiteren Hilfeinhalten zu dem Video, das Sie gerade angesehen haben.  **[!UICONTROL Weitere Videos anzeigen]** führt Sie zur vollständigen YouTube-Playlist für Analysis Workspace.
+Auf der Seite &quot;Lernen&quot;in Customer Journey Analytics erfahren Sie mehr über folgende Themen:
+
+* Erste, mittlere oder erweiterte Funktionen und Anwendungsfälle in CJA
+* So wechseln Sie nahtloser von Adobe Analytics zu CJA
+
+### Auf die Lernseite zugreifen
+
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Arbeitsbereich**] > [!UICONTROL **Lernen**].
+
+### Funktionen von Lernseiten
+
+* **Inhalt filtern:** Mit dem Filtersymbol in der linken Leiste können Sie Lerninhalte nach Erlebnisebene (Starter, Intermediate oder Erweitert) und nach Inhaltstyp (Dokument, Video oder Tours &amp; Tutorials) filtern.
+* **Fortschritt verfolgen:** Nachdem Sie ein Inhaltselement ausgewählt haben, wird ein **[!UICONTROL Angezeigt]** -Tag angezeigt. Mit diesem Tag können Sie Ihren Fortschritt durch den Lerninhalt verfolgen. Sie können die **[!UICONTROL Angezeigt]** -Tag, um es aus einem Inhaltselement zu entfernen.
+* **Zusätzliche Inhalte anzeigen:** Wählen Sie beim Anzeigen eines Videos die **[!UICONTROL Weitere Infos]** -Schaltfläche, um zugehörige Dokumentationsinhalte auf der Experience League anzuzeigen. Wählen Sie auf der Seite Lernen eine der folgenden Optionen aus, um weitere Inhalte anzuzeigen:
+   * **[!UICONTROL Besuchen Sie YouTube]:** Zeigen Sie die vollständige Analysis Workspace YouTube-Playlist an.
+   * [!UICONTROL **Experience League des Besuchs**]: Sehen Sie sich die vollständige CJA-Dokumentation zur Experience League an.
+* **Grundlagen für neue Benutzer:** Die [!UICONTROL Workspace-Grundlagen] Diese Tour wird für neue Benutzer empfohlen. Diese Tour führt Sie direkt zu Workspace und führt Sie durch die gängigsten Aktionen. Diese Tour kann auch jederzeit in Workspace über das QuickInfo-Pop-over in der Bedienfeldkopfzeile neu gestartet werden.
 
 ## Einrichten einer Landingpage {#set-landing}
 
