@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Customer Journey Analytics durch die Kombination 
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 72%
+source-wordcount: '584'
+ht-degree: 61%
 
 ---
 
@@ -77,3 +77,28 @@ Wenn Sie jedoch beide Tabellen in Ihrer Verbindung eingeschlossen haben, ändert
 | Gelb | 6 |
 | Blau | 3 |
 | Rot | 2 |
+
+## Kanalübergreifende Analyse
+
+Die nächste Ebene der Kombination von Datensätzen ist die kanalübergreifende Analyse, bei der Datensätze aus verschiedenen Kanälen anhand einer gemeinsamen Kennung (Personen-ID) kombiniert werden. Die kanalübergreifende Analyse kann von der Funktion zum Zuordnen profitieren. So können Sie die Personen-ID eines Datensatzes neu zuweisen, damit der Datensatz ordnungsgemäß aktualisiert wird, um eine nahtlose Kombination mehrerer Datensätze zu ermöglichen. Beim Zuordnen werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um eine zugeordnete ID zu generieren.
+
+Mithilfe der kanalübergreifenden Analyse können Sie Fragen beantworten, z. B.:
+
+* Wie viele Personen beginnen ihr Erlebnis auf einem Kanal und beenden es auf einem anderen?
+* Wie viele Menschen interagieren mit meiner Marke? Wie viele und welche Gerätetypen verwenden sie? Wie überschneiden sich diese?
+* Wie oft beginnen Personen mit einer Aufgabe auf einem Mobilgerät und wechseln dann zu einem Desktop-PC, um die Aufgabe abzuschließen? Führen Kampagnen-Clickthroughs, die auf einem Gerät landen, irgendwo anders zur Konversion?
+* Wie ändert sich mein Verständnis von Kampagneneffizienz, wenn ich geräteübergreifende Journey berücksichtige? Wie ändert sich meine Trichteranalyse?
+* Welche sind die häufigsten Pfade, die Benutzer beim Wechsel von einem Gerät zum anderen verwenden? Wo steigen sie aus? Wo schließen sie ihre Aktion erfolgreich ab?
+* Wie unterscheidet sich das Verhalten von Benutzern mit mehreren Geräten von Benutzern mit nur einem Gerät?
+
+
+Weiterführende Informationen zur kanalübergreifenden Analyse finden Sie im entsprechenden Anwendungsbeispiel:
+
+* [Kanalübergreifende Analyse](../use-cases/cross-channel/cross-channel.md)
+
+Eine ausführlichere Funktion zum Stitching finden Sie unter:
+
+* [Stitching-Übersicht](/help/stitching/overview.md)
+* [Funktionsweise von Stitching](../stitching/explained.md)
+* [Häufig gestellte Fragen](/help/stitching/faq.md)
+

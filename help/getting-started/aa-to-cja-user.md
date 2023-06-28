@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 76%
+source-wordcount: '1479'
+ht-degree: 75%
 
 ---
 
@@ -104,7 +104,7 @@ Sie können auch mehrere Datenansichten haben, die auf derselben Verbindung basi
 
 ## Änderungen bei der Besucheridentifizierung durch die Adobe
 
-Customer Journey Analytics erweitert die Identitätskonzepte über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Durch die Verwendung einer gemeinsamen Namespace-ID für mehrere Datensätze oder die Verwendung der [Cross-Channel-Analyse](/help/cca/overview.md) können Personen über verschiedene Datensätze hinweg miteinander verknüpft werden. Benutzer, die ein Workspace-Projekt in Customer Journey Analytics einrichten, müssen die in den Datensätzen verwendeten IDs verstehen. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in Customer Journey Analytics hervorgehoben wird:
+Customer Journey Analytics erweitert die Identitätskonzepte über ECIDs hinaus und umfasst alle IDs, die Sie verwenden möchten, einschließlich Kunden-ID, Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. Verwenden einer gemeinsamen Namespace-ID für mehrere Datensätze oder Verwenden von [Stitching](../stitching/overview.md) hilft, Personen über verschiedene Datensätze hinweg miteinander zu verknüpfen. Benutzer, die ein Workspace-Projekt in Customer Journey Analytics einrichten, müssen die in den Datensätzen verwendeten IDs verstehen. Sehen Sie sich das folgende Video an, in dem die Verwendung von Identitäten in Customer Journey Analytics hervorgehoben wird:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 

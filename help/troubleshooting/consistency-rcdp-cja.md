@@ -4,9 +4,9 @@ title: Konsistenz von Metriken und Anzahl der Zielgruppenzugehörigkeiten zwisch
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 25%
 
 ---
@@ -22,7 +22,7 @@ Beim Vergleich der Anzahl der Zielgruppenzugehörigkeiten zwischen der Echtzeit-
 
 Die Echtzeit-Kundendatenplattform und der Customer Journey Analytics haben heute nicht die gleiche Definition wie eine Person. Die Real-Time CDP beruht ausschließlich auf den Informationen im [Identitätsdiagramm](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=de) um ein zusammengeführtes Profil zu erstellen.
 
-Customer Journey Analytics kann für die Verwendung konfiguriert werden [Kanalübergreifende Analyse](/help/cca/overview.md) , das IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
+Customer Journey Analytics kann für die Verwendung konfiguriert werden [Stitching](../stitching/overview.md) , das IDs aus Datensätzen im Data Lake extrahiert und benutzerdefinierte Logik anwendet, um sie miteinander zu verknüpfen.
 
 Zukünftig kann Customer Journey Analytics Identitätsdiagramme verwenden.
 

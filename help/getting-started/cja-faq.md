@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 72%
+source-wordcount: '2197'
+ht-degree: 68%
 
 ---
 
@@ -38,39 +38,40 @@ Customer Journey Analytics enthält Funktionen zur [Datenvorbereitung](https://e
 +++
 
 
-## 2. Daten zusammenfügen (Cross-Channel-Analyse) {#stitching}
+## 2. Zuordnung der Daten {#stitching}
 
 +++**Kann [!UICONTROL Customer Journey Analytics] Daten über Geräte oder über Datensätze hinweg zusammenfügen?**
 
-Ja. [!UICONTROL Customer Journey Analytics] verfügt über eine Lösung zum Zusammenfügen (Stitching) von Daten namens [Cross-Channel-Analyse](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) (CCA). Damit können Sie die Personen-ID eines Datensatzes neu eingeben, was eine nahtlose Kombination mehrerer Datensätze ermöglicht.
+Ja. [!UICONTROL Customer Journey Analytics] has [Stitching](../stitching/overview.md) -Funktion, die in einem Datensatz bei authentifizierten und nicht authentifizierten Ereignissen funktioniert. Dies ermöglicht die Auflösung verschiedener Datensätze in eine einzelne zugeordnete ID für geräteübergreifende Analysen auf der Personenebene.
+Außerdem, wenn eine gemeinsame Namespace-ID (Personen-ID) über Datensätze in einer [Verbindung](/help/connections/overview.md)können Sie die Analyse auf einer nahtlosen Kombination mehrerer Datensätze ausführen, die auf der Personenebene &quot;zugeordnet&quot;werden.
 
 +++
 
 
 +++**Wird das Zusammenfügen von anonymen Verhaltens- mit authentifizierten Verhaltensdaten unterstützt?**
 
-Ja. Die [Cross-Channel-Analyse](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de) untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen und generiert eine zusammengefügte ID.
+Ja. [Stitching](../stitching/overview.md) prüft Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um eine zugeordnete ID zu generieren.
 
 +++
 
 
-+++**Wie funktioniert „Replay“ in CCA?**
++++**Wie wirkt &quot;replay&quot;beim Stitching?**
 
-CCA gibt Daten basierend auf eindeutigen Kennungen wieder, die CCA gelernt hat. Bei einem Replay werden zu einer Verbindung neu hinzugefügte Geräte per Stitching zusammengefügt. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=de#step-1%3A-live-stitching)
-
-+++
-
-
-+++**Wie funktioniert das Zusammenfügen historischer Daten (Aufstockung) in CCA?**
-
-Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=de#enable-cross-channel-analytics)
+Durch die Zuordnung von &quot;wiederholt&quot;Daten basierend auf eindeutigen Kennungen, die gelernt wurden. Bei der Wiederholung werden zunächst nicht authentifizierte Ereignisse von Geräten zugeordnet, die in der Zwischenzeit identifiziert wurden. [Weitere Informationen](../stitching/explained.md)
 
 +++
 
 
-+++**Welches Verhalten wird für nicht zugeordnete Profil-Datensatzdatensätze erwartet?**
++++**Wie funktioniert das Stitching von historischen Daten (Aufstockung)?**
 
-**Beispielszenario**: Sie fügen zwei Datensätze in einer Customer Journey Analytics-Verbindung ein, indem Sie `CRMid` als Personen-ID. Einer ist ein Web-Ereignis-Datensatz mit `CRMid` in allen Datensätzen. Der andere Datensatz ist ein CRM-Profildatensatz. 40 % des CRM-Datensatzes verfügen über `CRMid` im Webereignis-Datensatz vorhanden. Für die anderen 60 % ist es nicht im CRM-Datensatz vorhanden. Werden diese Datensätze im Reporting in Analysis Workspace angezeigt?<p> **Antwort**: Profilzeilen, für die keine Ereignisse verknüpft sind, werden in Customer Journey Analytics gespeichert. Sie können sie jedoch erst dann in Analysis Workspace sehen, wenn ein mit dieser ID verknüpftes Ereignis angezeigt wird.
+Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchführen zu können, muss die vorübergehende ID in den nicht zusammengefügten Daten aus dem so weit zurückreichenden Zeitfenster vorhanden sein. [Weitere Informationen](../stitching/explained.md)
+
++++
+
+
++++**Welches Verhalten wird bei nicht zugeordneten Profildatensätzen erwartet?**
+
+**Beispielszenario**: Sie fügen zwei Datensätze in einer Customer Journey Analytics-Verbindung ein, indem Sie `CRMid` als Personen-ID. Einer ist ein Web-Ereignis-Datensatz mit `CRMid` in allen Datensätzen. Der andere Datensatz ist ein CRM-Profildatensatz. 40 % des CRM-Datensatzes verfügen über `CRMid`, das im Web-Ereignis-Datensatz vorhanden ist. Für die anderen 60 % ist es nicht im CRM-Datensatz vorhanden. Werden diese Datensätze im Reporting in Analysis Workspace angezeigt?<p> **Antwort**: Profilzeilen, für die keine Ereignisse verknüpft sind, werden in Customer Journey Analytics gespeichert. Sie können sie jedoch erst dann in Analysis Workspace sehen, wenn ein mit dieser ID verknüpftes Ereignis angezeigt wird.
 
 +++
 
@@ -226,6 +227,6 @@ In einigen Fällen kann es vorkommen, dass die Gesamtanzahl der von Ihrer Verbin
 
    ![Aufschlüsselung](assets/data-size2.png)
 
-2. Wenn wir außerdem einchecken [!UICONTROL Adobe Experience Platform], gibt es keinen Datensatz mit der ID &quot;5f21c12b732044194bffc1d0&quot;, daher hat jemand diesen bestimmten Datensatz aus [!UICONTROL Adobe Experience Platform] bei der Erstellung der ersten Verbindung. Später wurde es wieder zum Customer Journey Analytics hinzugefügt, aber eine andere [!UICONTROL Platform-Datensatz-ID] wurde von [!UICONTROL Adobe Experience Platform].
+1. Wenn wir außerdem einchecken [!UICONTROL Adobe Experience Platform], gibt es keinen Datensatz mit der ID &quot;5f21c12b732044194bffc1d0&quot;, daher hat jemand diesen bestimmten Datensatz aus [!UICONTROL Adobe Experience Platform] bei der Erstellung der ersten Verbindung. Später wurde es wieder zum Customer Journey Analytics hinzugefügt, aber eine andere [!UICONTROL Platform-Datensatz-ID] wurde von [!UICONTROL Adobe Experience Platform].
 
 Weitere Informationen über die [Implikationen beim Löschen von Datensätzen und Verbindungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=de#implications-of-deleting-data-components) erhalten Sie in [!UICONTROL Customer Journey Analytics] und [!UICONTROL Adobe Experience Platform].

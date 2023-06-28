@@ -4,9 +4,9 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: fb5642f8dafdc16749b355cf4b77a8366e1f8401
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2055'
 ht-degree: 41%
 
 ---
@@ -79,7 +79,7 @@ In den folgenden Tabellen ist aufgeführt, welche Funktionen in Adobe Analytics 
 
 | Funktion | Hinweise |
 | --- | --- |
-| Geräteübergreifendes/kanalübergreifendes Stitching | Unterstützt bei Datensätzen, die direkt Identitätsinformationen enthalten (auch als „feldbasiertes“ Stitching bezeichnet). Diagrammbasiertes Stitching wird noch nicht unterstützt, ist aber in Planung. Siehe die [Cross-Channel-Analyse](/help/cca/overview.md). |
+| Geräteübergreifendes/kanalübergreifendes Stitching | Unterstützt bei Datensätzen, die direkt Identitätsinformationen enthalten (auch als „feldbasiertes“ Stitching bezeichnet). Diagrammbasiertes Stitching wird noch nicht unterstützt, ist aber in Planung. Siehe [Stitching](../../stitching/overview.md). |
 | Bot-Filterung | Bei Datensätzen, die auf dem [Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) basieren, wird die Bot-Filterung angewendet. Die allgemeine Bot-Filterlogik für andere Datensätze wird nicht von der [!UICONTROL Experience Platform] oder Customer Journey Analytics. |
 | Dimensionen Gerät, Browser, Referrer, Technologie | Unterstützt für [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de)-basierte Datensätze. Siehe [Dokumentation darüber, welche Analytics-Variablen über ADC unterstützt werden](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=de).<p>Wenn Sie die Experience Platform Web SDK-Datenerfassung verwenden, werden Gerät und Dimensionen, die auf der Gerätesuche basieren, derzeit nicht unterstützt. Eine künftige Unterstützung ist geplant. |
 | GeoSegmentation-Dimensionen | Alle in Adobe Analytics erfassten GeoSegmentation/Geografie fließen über die [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de). Implementierungen, die nicht den Analytics Source Connector verwenden, aber für die digitale Datenerfassung auf das Experience Platform Web SDK angewiesen sind, können die [Experience Edge Geo Lookup-Dienst](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de). |

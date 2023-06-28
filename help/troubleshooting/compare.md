@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Analytics-Daten mit Daten in Custo
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '905'
 ht-degree: 65%
 
 ---
@@ -47,7 +47,7 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
 
 >[!NOTE]
 >
->Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über die [Cross-Channel-Analyse](/help/cca/overview.md)). Bitte beachten Sie, dass die Berücksichtigung der Personen-ID, die in Customer Journey Analytics verwendet wird, für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist in Adobe Analytics möglicherweise nicht immer einfach zu replizieren, insbesondere wenn die kanalübergreifende Analyse aktiviert ist.
+>Dies funktioniert nur für normale Mittelwert-Datensätze, nicht für zugeordnete Datensätze (über die [Cross-Channel-Analyse](/help/cca/overview.md)). Bitte beachten Sie, dass die Berücksichtigung der Personen-ID, die in Customer Journey Analytics verwendet wird, für die Durchführung des Vergleichs von entscheidender Bedeutung ist. Dies ist in Adobe Analytics möglicherweise nicht immer einfach zu replizieren, insbesondere wenn Stitching aktiviert ist.
 
 1. Führen Sie in [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
 
