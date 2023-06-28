@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: ffa57379c868322290fbe23ba43659620c01f068
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 78%
+source-wordcount: '2213'
+ht-degree: 76%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden an der Dokumentation zu Customer Journey A
 | Funktion | Beschreibung |
 | --- | --- |
 | **Juni 2023** | |
+| Kanalübergreifende Analyse und Stitching | In Erwartung der bevorstehenden Änderungen, die das Stitching ermöglichen und weiter verdeutlichen sollen, wie die kanalübergreifende Analyse mithilfe des Stitching erhöht werden kann, werden alle Inhalte im Zusammenhang mit der kanalübergreifenden Analyse so bearbeitet, dass sie sich auf die kanalübergreifende Analyse als Customer Journey Analytics-Funktion und Stitching beziehen. |
 | Zugriff von PowerBI und Tableau auf Customer Journey Analytics-Datenansichten | Der Customer Journey Analytics SQL Connector ermöglicht SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. [Weitere Informationen](/help/data-views/sql-connector.md) |
 | Adobe Journey Optimizer-Datenansichten | Customer Journey Analytics-Administratoren haben Zugriff auf einige zusätzliche Datenansichten in Customer Journey Analytics mit dem Titel &quot;AJO-Datenansicht (Sandbox-Name)&quot;. [Weitere Informationen](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=de). |
 | Währungsumrechnung | Aktualisierte Dokumentation für [Währungsumrechnung](../data-views/component-settings/format.md#currency) unterstützen. |
