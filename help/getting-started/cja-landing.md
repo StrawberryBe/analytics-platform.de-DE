@@ -4,10 +4,10 @@ description: Landingpage von Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9b69f36f47ca8f0bd709af8bdd8aa8e47830e06d
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 89%
+source-wordcount: '453'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Kunden von Analytics Select, Prime und Ultimate sind zum Erwerb dieses Zusatzpro
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Neue oder vorgestellte Funktionen</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cca/overview.html?lang=de#cja-connections"> Cross-Channel-Analyse (Zusammenfügen von IDs in Customer Journey Analytics) </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html"> Kanalübergreifende Analyse (Zuordnen von IDs in Customer Journey Analytics) </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=de">Verwenden von Daten aus Report Suites von Adobe Analytics in Customer Journey Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=de"> Kombinieren von Report Suites mit unterschiedlichen Schemata </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=de"> Verarbeitungsregeln, VISTA und Klassifizierungen versus Datenvorbereitung </a> </li>
