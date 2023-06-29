@@ -3,7 +3,7 @@ title: Funktionsweise von Stitching
 description: Konzept des Stitching
 solution: Customer Journey Analytics
 feature: Stitching
-source-git-commit: cfe369ca1d0b18e32f1d88b543e549d01ddc0d64
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 28%
@@ -129,5 +129,5 @@ Wenn Sie eine Datenschutzanfrage erhalten, wird die Zeile mit den ursprüngliche
 
 * Beim Stitching werden bekannte Geräte sofort zugeordnet, neue oder nicht erkannte Geräte werden jedoch nicht sofort zugeordnet.
 * Die Daten werden in regelmäßigen Abständen wiederholt und ändern die historischen Daten in der Verbindung basierend auf Geräten, die sie zu identifizieren gelernt hat.
-* Die Echtzeit-Zuordnung und die Wiederholungszuordnung werden für einen Datensatz durchgeführt. Das Ergebnis ist ein neuer höher gelegener Datensatz, der besser verwendet werden kann, wenn er mit anderen Datensätzen (z. B. Callcenter-Daten) kombiniert wird, um eine kanalübergreifende Analyse durchzuführen.
+* Die Echtzeit-Zuordnung und die Wiederholungszuordnung werden für einen Datensatz durchgeführt. Das Ergebnis ist ein neuer, höher gelegener Datensatz, der bei der Kombination mit anderen Datensätzen (z. B. Callcenter-Daten) besser verwendet werden kann, um kanalübergreifende Analysen durchzuführen.
 * Datenschutzanfragen entfernen Identitäten, die in nicht authentifizierte Zeilen übertragen wurden.
