@@ -4,9 +4,9 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
+source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2605'
 ht-degree: 60%
 
 ---
@@ -98,8 +98,6 @@ Für jeden Datensatz, den Sie dieser Verbindung hinzufügen, [!UICONTROL Custome
 >
 >Sie müssen mindestens einen Ereignis-Datensatz als Teil einer Verbindung hinzufügen.
 
-![Dialogfeld &quot;Datensatz hinzufügen&quot;](assets/add-dataset.png)
-
 Es gibt drei verschiedene Datensatztypen: [!UICONTROL Ereignis] Daten, [!UICONTROL Profil] Daten und [!UICONTROL Suche] Daten.
 
 | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
@@ -150,7 +148,7 @@ In dieser Tabelle werden die beiden Konfigurationsoptionen angezeigt, wenn Randf
 
 {style="table-layout:auto"}
 
-## Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen
+## Berechnen der durchschnittlichen Anzahl von täglichen Ereignissen {#average-number}
 
 Diese Berechnung erfolgt für jeden Datensatz in der Verbindung.
 
