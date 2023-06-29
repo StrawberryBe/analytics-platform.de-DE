@@ -4,10 +4,10 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
 workflow-type: tm+mt
-source-wordcount: '2543'
-ht-degree: 62%
+source-wordcount: '2608'
+ht-degree: 60%
 
 ---
 
@@ -98,12 +98,14 @@ Für jeden Datensatz, den Sie dieser Verbindung hinzufügen, [!UICONTROL Custome
 >
 >Sie müssen mindestens einen Ereignis-Datensatz als Teil einer Verbindung hinzufügen.
 
+![Dialogfeld &quot;Datensatz hinzufügen&quot;](assets/add-dataset.png)
+
 Es gibt drei verschiedene Datensatztypen: [!UICONTROL Ereignis] Daten, [!UICONTROL Profil] Daten und [!UICONTROL Suche] Daten.
 
 | Typ des Datensatzes | Beschreibung | Zeitstempel | Schema | Personen-ID |
 |---|---|---|---|---|
 | **[!UICONTROL Ereignis]** | Daten, die zeitliche Ereignisse darstellen (z. B. Webbesuche, Interaktionen, Transaktionen, POS-Daten, Umfragedaten, Ad-Impression-Daten usw.). Diese Daten können beispielsweise typische Clickstream-Daten mit einer Kunden-ID, einer Cookie-ID und einem Zeitstempel sein. Bei Ereignisdaten können Sie entscheiden, welche ID als Personen-ID verwendet wird. | Wird automatisch auf das standardmäßige Zeitstempelfeld von ereignisbasierten Schemata in [!UICONTROL Experience Platform] gesetzt. | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Zeitreihen“ basiert. Beispiele sind „XDM-Erlebnisereignis“ oder „XDM-Entscheidungsereignis“. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Für jedes in Experience Platform definierte Datensatzschema kann ein eigener Satz von einer oder mehreren Identitäten definiert und mit einem Identitäts-Namespace verknüpft werden. Jede dieser Identitäten kann als Personen-ID verwendet werden. Beispiele sind Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw. |
-| **[!UICONTROL Suche]** | Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis- oder Profildaten zu suchen. Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten Produktnamen zuordnen. Siehe [Anwendungsfall B2B](/help/use-cases/b2b/b2b.md) für ein Beispiel. | Nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | Nicht angegeben |
+| **[!UICONTROL Suche]** | Sie können jetzt Datensätze als Suchen von Feldern in allen Datensatztypen hinzufügen: Profil-, Such- und Ereignis-Datensätze (Letztere wurden immer unterstützt). Diese zusätzliche Funktion erweitert die Fähigkeit von CJA, komplexe Datenmodelle zu unterstützen, einschließlich der B2B-CDP. Diese Daten werden verwendet, um nach Werten oder Schlüsseln in Ihren Ereignis-, Profil- oder Suchdaten zu suchen. Sie können bis zu zwei Ebenen der Suche hinzufügen. (Beachten Sie Folgendes: [Abgeleitete Felder](/help/data-views/derived-fields/derived-fields.md) kann nicht als übereinstimmende Schlüssel für Suchen in Verbindungen verwendet werden.) Beispielsweise können Sie Suchdaten hochladen, die numerische IDs in Ihren Ereignisdaten den Produktnamen zuordnen. Siehe [Anwendungsfall B2B](/help/use-cases/b2b/b2b.md) für ein Beispiel. | Nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf einer XDM-Klasse mit dem Verhalten „Eintrag“ basiert, mit Ausnahme der Klasse „XDM-Individuelles Profil“. | Nicht angegeben |
 | **[!UICONTROL Profil]** | Daten, die auf Ihre Personen, Benutzer oder Kunden im [!UICONTROL Ereignis] Daten. Sie können beispielsweise CRM-Daten zu Ihren Kunden hochladen. | Nicht angegeben | Jedes integrierte oder benutzerdefinierte Schema, das auf der Klasse „XDM-Individuelles Profil“ basiert. | Sie können auswählen, welche Personen-ID Sie einbeziehen möchten. Jeder Datensatz, der in der Variablen [!DNL Experience Platform] verfügt über einen eigenen Satz von einer oder mehreren definierten Personen-IDs, z. B. Cookie-ID, zugeordnete ID, Benutzer-ID, Trackingcode usw.<br>![Personen-ID ](assets/person-id.png)**Hinweis**: Wenn Sie eine Verbindung erstellen, die Datensätze mit unterschiedlichen IDs enthält, spiegelt die Berichterstellung dies wider. Um Datensätze zusammenzuführen, müssen Sie dieselbe Personen-ID verwenden. |
 
 {style="table-layout:auto"}
