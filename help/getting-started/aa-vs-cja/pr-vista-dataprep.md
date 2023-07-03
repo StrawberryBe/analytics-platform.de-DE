@@ -2,10 +2,11 @@
 title: Verarbeitungsregeln, VISTA und Klassifizierungen vs. Datenvorbereitung für den Analytics-Quell-Connector
 description: Erfahren Sie mehr über die Datenumwandlung mithilfe von Verarbeitungsregeln und VISTA statt mithilfe der Datenvorbereitung.
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: CJA Basics
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 83%
+ht-degree: 80%
 
 ---
 
@@ -29,4 +30,4 @@ Die Datenvorbereitung hat in bestimmten Situationen Überscheidungen mit [Klassi
 
 Beispielsweise können Sie in einem durch Trennzeichen getrennten Feld mithilfe der Datenvorbereitung dieses Feld in mehrere einzelne Felder aufteilen, ohne Klassifizierungen zu verwenden. Im Allgemeinen bieten Klassifizierungen die Möglichkeit, einem Feld Metadaten hinzuzufügen, indem eine Lookup-Datei hochgeladen wird, die außerhalb des Streams eingehender Analytics-Ereignisse bereitgestellt wird.
 
-Sie können beispielsweise eine Klassifizierungsdatei hochladen, in der SKUs nach „Größe“, „Marke“, „Farbe“ usw. gruppiert sind. Ein weiterer Unterschied zwischen Klassifizierungen und der Datenvorbereitung besteht darin, dass Klassifizierungen für _historische und zukünftige_ Daten gelten. Zuordnungen der Datenvorbereitung werden hingegen auf Daten angewendet, die _nach_ dem Zeitpunkt liegen, zu dem die Zuordnung erstellt wurde.
+Sie können beispielsweise eine Classification-Datei hochladen, in der SKUs in &quot;Größe&quot;, &quot;Marke&quot;, &quot;Farbe&quot;usw. gruppiert werden. Ein weiterer Unterschied zwischen Klassifizierungen und der Datenvorbereitung besteht darin, dass Klassifizierungen für _historische und zukünftige_ Daten gelten. Zuordnungen der Datenvorbereitung werden hingegen auf Daten angewendet, die _nach_ dem Zeitpunkt liegen, zu dem die Zuordnung erstellt wurde.
