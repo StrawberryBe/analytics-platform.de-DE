@@ -1,10 +1,10 @@
 ---
 description: Verwenden von Schnellfiltern in Analysis Workspace für Customer Journey Analytics
 title: Schnellfilter
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 38%
@@ -35,20 +35,19 @@ So erstellen Sie einen Schnellfilter:
 
    * **Ad Hoc (Drag &amp; Drop):** Ziehen Sie eine Komponente aus der linken Leiste in die Dropzone neben dem **Filter** Symbol in der Bedienfeldüberschrift und wählen Sie dann die **Bearbeiten** -Symbol, um den Filter anzupassen.
 
-      ![Ad-hoc-Filter bearbeiten](assets/filter-adhoc-edit.png)
+     ![Ad-hoc-Filter bearbeiten](assets/filter-adhoc-edit.png)
 
-      >[!NOTE]
-      >
-      > Beachten Sie Folgendes beim Erstellen eines Schnellfilters Ad-hoc (Drag &amp; Drop):
-      > * Die folgenden Komponententypen werden nicht unterstützt: berechnete Metriken und Dimensionen sowie Metriken, aus denen Sie keine Filter erstellen können.
-      > * Für vollständige Dimensionen und Ereignisse erstellt Analysis Workspace Ereignisfilter &quot;vorhanden&quot;. Beispiele: `Hit where eVar1 exists` oder `Hit where event1 exists`.
-      > * Wenn „nicht angegeben“ oder „keine“ im Filterablagebereich abgelegt werden, werden sie automatisch in einen Filter mit „nicht vorhanden“ umgewandelt, damit sie beim Filtern korrekt behandelt werden.
-
+     >[!NOTE]
+     >
+     > Beachten Sie Folgendes beim Erstellen eines Schnellfilters Ad-hoc (Drag &amp; Drop):
+     > * Die folgenden Komponententypen werden nicht unterstützt: berechnete Metriken und Dimensionen sowie Metriken, aus denen Sie keine Filter erstellen können.
+     > * Für vollständige Dimensionen und Ereignisse erstellt Analysis Workspace Ereignisfilter &quot;vorhanden&quot;. Beispiele: `Hit where eVar1 exists` oder `Hit where event1 exists`.
+     > * Wenn „nicht angegeben“ oder „keine“ im Filterablagebereich abgelegt werden, werden sie automatisch in einen Filter mit „nicht vorhanden“ umgewandelt, damit sie beim Filtern korrekt behandelt werden.
 
 
    * **Verwenden des Filtersymbols:** Wählen Sie in einer Freiformtabelle die **Filter** in der Bedienfeldüberschrift.
 
-      ![Segmentfilter](assets/quick-seg1.png)
+     ![Segmentfilter](assets/quick-seg1.png)
 
 1. Passen Sie eine der folgenden Einstellungen an:
 
@@ -87,7 +86,6 @@ So erstellen Sie einen Schnellfilter:
 > * Um einen Schnellfilter zu speichern, benötigen Sie die Berechtigung Filtererstellung im [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=de#analytics-tools).
 > 
 > * Nachdem Sie den Filter gespeichert oder angewendet haben, kann er nicht mehr im Schnellfilter-Builder bearbeitet werden. Stattdessen müssen Sie den regulären Filter Builder verwenden.
-
 
 Sie können Schnellfilter als Komponentenlistenfilter speichern. Vorteile von Komponentenlistenfiltern:
 

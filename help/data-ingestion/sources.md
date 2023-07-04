@@ -2,10 +2,10 @@
 title: Aufnehmen und Verwenden von Daten über Quell-Connectoren
 description: Erläuterung der Aufnahme und Verwendung von Daten in Customer Journey Analytics mithilfe von Quell-Connectoren
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 100%
 
@@ -187,10 +187,9 @@ Gehen Sie folgendermaßen vor, um einen Quell-Connector einzurichten:
 
    - Wählen Sie auf der Connector-Kachel die Punkte **[!UICONTROL ...]** neben [!UICONTROL Einrichten] oder [!UICONTROL Daten hinzufügen].
 
-      ![Anzeigen der Dokumentation](./assets/sourceconnector-documentation.png)
+     ![Anzeigen der Dokumentation](./assets/sourceconnector-documentation.png)
 
    - Wählen Sie **[!UICONTROL Dokumentation anzeigen]** aus.
-
 
 Weitere Informationen zur Verwendung des Adobe Analytics-Quell-Connectors finden Sie unter [Aufnahme und Verwendung der Daten im herkömmlichen Adobe Analytics](./analytics.md).
 
@@ -207,7 +206,7 @@ Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform 
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigationsleiste aus.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Verbindungen]** in der oberen Navigation aus.
 
 2. Wählen Sie **[!UICONTROL Neue Verbindung erstellen]** aus.
 
@@ -225,9 +224,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Wählen Sie den zuvor erstellten Datensatz aus (`Example Loyalty Dataset`) und etwaige andere Datensätze, die Sie in Ihre Verbindung einschließen möchten.
 
-      ![Hinzufügen von Datensätzen](./assets/cja-connections-2.png)
+     ![Hinzufügen von Datensätzen](./assets/cja-connections-2.png)
 
-   - Klicken Sie auf **[!UICONTROL Weiter]**.
+   - Wählen Sie **[!UICONTROL Weiter]** aus.
+
    Im Schritt [!UICONTROL Datensatzeinstellungen] in [!UICONTROL Datensätze hinzufügen]:
 
    - Für jeden Datensatz:
@@ -238,9 +238,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
       - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
-      ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
+     ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
 
    - Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
+
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Weitere Informationen zum Erstellen und Verwalten einer Verbindung und zum Auswählen und Kombinieren von Datensätzen finden Sie unter [Verbindungen – Überblick](../connections/overview.md).
@@ -251,13 +252,13 @@ Eine Datenansicht ist ein für Customer Journey Analytics spezifischer Container
 
 Gehen Sie folgendermaßen vor, um eine Datenansicht zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigationsleiste aus.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Datenansichten]** in der oberen Navigationsleiste.
 
-2. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]** aus.
+2. Wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**.
 
 3. Im Schritt [!UICONTROL Konfigurieren]:
 
-   Wählen Sie Ihre Verbindung in der Liste [!UICONTROL Verbindung] aus.
+   Wählen Sie Ihre Verbindung in der Liste [!UICONTROL Verbindung].
 
    Geben Sie einen Namen und (optional) eine Beschreibung für Ihre Verbindung ein.
 
@@ -288,11 +289,11 @@ Analysis Workspace ist ein flexibles Browsertool, mit dem Sie schnell Analysen e
 
 Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
-1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigationsleiste aus.
+1. Wählen Sie in der Customer Journey Analytics-Benutzeroberfläche die Option **[!UICONTROL Projekte]** in der oberen Navigationsleiste.
 
-2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigationsleiste aus.
+2. Wählen Sie **[!UICONTROL Projekte]** in der linken Navigation aus.
 
-3. Wählen Sie **[!UICONTROL Projekt erstellen]** aus.
+3. Wählen Sie **[!UICONTROL Projekt erstellen]** aus
 
    ![Analysis Workspace-Projekt](./assets/cja-projects-1.png)
 

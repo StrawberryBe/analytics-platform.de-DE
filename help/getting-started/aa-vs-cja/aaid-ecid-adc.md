@@ -2,7 +2,8 @@
 title: AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector
 description: Erfahren Sie, wie der Analytics-Quell-Connector mit Adobe Analytics-Identitätsfeldern umgeht.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: Basics
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 91%
@@ -39,9 +40,9 @@ Der Analytics-Quell-Connector übergibt diese Identitäten in XDM-Form an Adobe 
 
 Diese Felder sind nicht als Identitäten markiert. Stattdessen werden dieselben Identitäten als Schlüssel-Wert-Paare wie folgt in die **_identityMap_** von XDM kopiert:
 
-* `{ “key”: “AAID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “ECID”, “value”: [ { “id”: “<identity>”, “primary”: <true or false> } ] }`
-* `{ “key”: “AACUSTOMID”, “value”: [ { “id”: “<identity>”, “primary”: false } ] }`
+* `{ "key": "AAID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "ECID", "value": [ { "id": "<identity>", "primary": <true or false> } ] }`
+* `{ "key": "AACUSTOMID", "value": [ { "id": "<identity>", "primary": false } ] }`
 
 Die Elemente in den Klammern &lt;> stellen Positionen dar, an denen tatsächliche Werte erscheinen würden.
 

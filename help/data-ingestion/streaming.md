@@ -2,10 +2,10 @@
 title: Aufnehmen und Verwenden von Streaming-Daten
 description: Erklärung der Aufnahme und Verwendung von Streaming-Daten in Customer Journey Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 100%
 
@@ -256,9 +256,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Wählen Sie den zuvor erstellten Datensatz aus (`Example Loyalty Dataset`) und etwaige andere Datensätze, die Sie in Ihre Verbindung einschließen möchten.
 
-      ![Hinzufügen von Datensätzen](./assets/cja-connections-2.png)
+     ![Hinzufügen von Datensätzen](./assets/cja-connections-2.png)
 
    - Wählen Sie **[!UICONTROL Weiter]** aus.
+
    Im Schritt [!UICONTROL Datensatzeinstellungen] in [!UICONTROL Datensätze hinzufügen]:
 
    - Für jeden Datensatz:
@@ -269,9 +270,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
       - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
-      ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
+     ![Konfigurieren von Datensätzen](./assets/cja-connections-3.png)
 
    - Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
+
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Weitere Informationen zum Erstellen und Verwalten einer Verbindung und zum Auswählen und Kombinieren von Datensätzen finden Sie unter [Verbindungen – Überblick](../connections/overview.md).

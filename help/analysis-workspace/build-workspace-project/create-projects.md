@@ -1,16 +1,17 @@
 ---
 description: Erfahren Sie, wie Sie ein Projekt in Analysis Workspace erstellen
-title: Erstellen von Projekten
-feature: CJA Workspace Basics
+title: Projekte erstellen
+feature: Workspace Basics
 role: User, Admin
-source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
+exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Erstellen von Projekten
+# Projekte erstellen
 
 [Projekte](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in Analysis Workspace können Sie geschäftskritische Analysen anzeigen, die für Interessengruppen innerhalb oder außerhalb Ihres Unternehmens freigegeben werden können.
 
@@ -92,4 +93,3 @@ So fügen Sie eine Komponente hinzu:
 Bei der Erstellung einer Analyse in Analysis Workspace [automatisch gespeichert](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
 Wenn Sie das Projekt fertig erstellen und praktische Einblicke gewinnen, kann das Projekt von anderen genutzt werden. Sie können das Projekt für Benutzer und Gruppen in Ihrer Organisation oder auch für Personen außerhalb Ihrer Organisation freigeben. Informationen zum Freigeben eines Projekts finden Sie unter [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
-

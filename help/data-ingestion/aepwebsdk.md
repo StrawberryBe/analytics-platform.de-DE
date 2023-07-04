@@ -2,9 +2,9 @@
 title: Aufnehmen von Daten über das Adobe Experience Platform Web SDK und Edge Network
 description: Erläuterung der Datenaufnahme in Customer Journey Analytics über das Adobe Experience Platform Web SDK und das Edge Network
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 98%
@@ -303,11 +303,11 @@ Gehen Sie folgendermaßen vor, um ein Datenelement für den Seitennamen zu defin
 
    - Wählen Sie **[!UICONTROL Titel]** in der Liste [!UICONTROL Attribut] aus.
 
-      ![Erstellen eines Datumselements mithilfe von Seiteninformationen](./assets/create-dataelement-1.png)
+     ![Erstellen eines Datumselements mithilfe von Seiteninformationen](./assets/create-dataelement-1.png)
 
-      Alternativ hätten Sie zum Definieren des Datenelements auch den Wert einer Variablen Ihrer Datenschicht, z. B. `pageName`, und ein Datenelement vom Typ [!UICONTROL JavaScript-Variable] verwenden können.
+     Alternativ hätten Sie zum Definieren des Datenelements auch den Wert einer Variablen Ihrer Datenschicht, z. B. `pageName`, und ein Datenelement vom Typ [!UICONTROL JavaScript-Variable] verwenden können.
 
-      ![Erstellen eines Datenelements mit einer JavaScript-Variablen](./assets/create-dataelement-2.png)
+     ![Erstellen eines Datenelements mit einer JavaScript-Variablen](./assets/create-dataelement-2.png)
 
    - Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -327,7 +327,7 @@ Gehen Sie folgendermaßen vor, um ein ECID-Datenelement zu definieren:
 
    - Wählen Sie **[!UICONTROL ECID]** in der Liste [!UICONTROL Datenelementtyp].
 
-      ![ECID-Datenelement](./assets/ecid-dataelement.png)
+     ![ECID-Datenelement](./assets/ecid-dataelement.png)
 
    - Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -353,14 +353,14 @@ Gehen Sie folgendermaßen vor, um ein XDM-Objekt-Datenelement zu definieren:
 
    - Ordnen Sie das Attribut `identification > core > ecid`, das in Ihrem Schema definiert ist, dem ECID-Datenelement zu. Wählen Sie das Zylindersymbol aus, um das ECID-Datenelement in der Liste der Datenelemente einfach auswählen zu können.
 
-      ![ECID-Datenelement auswählen](./assets/pick-ecid-dataelement.png)
+     ![ECID-Datenelement auswählen](./assets/pick-ecid-dataelement.png)
 
-      ![ECID-Datenelement zuordnen](./assets/map-ecid.png)
+     ![ECID-Datenelement zuordnen](./assets/map-ecid.png)
 
 
    - Ordnen Sie das Attribut `web > webPageDetails > name`, das in Ihrem Schema definiert ist, dem Datenelement „Seitenname“ zu.
 
-      ![Datenelement „Seitenname“ zuordnen](./assets/map-pagename.png)
+     ![Datenelement „Seitenname“ zuordnen](./assets/map-pagename.png)
 
    - Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -387,9 +387,12 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
       - Wählen Sie **[!UICONTROL Fenster geladen]** in der Liste [!UICONTROL Ereignistyp] aus.
 
-         ![Regel – Ereigniskonfiguration](./assets/event-windowloaded-pageview.png)
+        ![Regel – Ereigniskonfiguration](./assets/event-windowloaded-pageview.png)
 
       - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
+
+
    - Wählen Sie **[!UICONTROL + Hinzufügen]** unter [!UICONTROL Aktionen] aus.
 
    - Im Dialog [!UICONTROL Aktionskonfiguration]:
@@ -402,18 +405,15 @@ Gehen Sie folgendermaßen vor, um eine Regel zu definieren:
 
       - Wählen Sie das Zylindersymbol neben [!UICONTROL XDM-Daten] und dann **[!UICONTROL XDM – Seitenansicht]** in der Liste der Datenelemente aus
 
-         ![Regel – Aktionskonfiguration](./assets/action-pageview-xdm.png)
+        ![Regel – Aktionskonfiguration](./assets/action-pageview-xdm.png)
 
       - Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus.
+
    - Ihre Regel sollte wie folgt aussehen:
 
-      ![Regel erstellen](assets/rule-pageview.png)
+     ![Regel erstellen](assets/rule-pageview.png)
 
    - Wählen Sie **[!UICONTROL Speichern]** aus.
-
-
-
-
 
 Dies ist nur ein Beispiel für die Definition einer Regel, mit der XDM-Daten, die Werte aus anderen Datenelementen enthalten, an Adobe Experience Platform gesendet werden.
 
@@ -439,7 +439,7 @@ Gehen Sie folgendermaßen vor, um Ihr Tag zu erstellen und zu veröffentlichen:
 
    - Wählen Sie **[!UICONTROL + Alle geänderten Ressourcen hinzufügen]** aus.
 
-      ![Veröffentlichen – Bibliothek erstellen](./assets/create-library-aep.png)
+     ![Veröffentlichen – Bibliothek erstellen](./assets/create-library-aep.png)
 
    - Wählen Sie **[!UICONTROL Speichern und in Entwicklung erstellen]** aus.
 
@@ -510,9 +510,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Wählen Sie den zuvor erstellten Datensatz aus (`Example dataset`) und etwaige andere Datensätze, die Sie in Ihre Verbindung einschließen möchten.
 
-      ![Hinzufügen von Datensätzen](./assets/cja-connections-2b.png)
+     ![Hinzufügen von Datensätzen](./assets/cja-connections-2b.png)
 
    - Wählen Sie **[!UICONTROL Weiter]** aus.
+
    Im Schritt [!UICONTROL Datensatzeinstellungen] in [!UICONTROL Datensätze hinzufügen]:
 
    - Für jeden Datensatz:
@@ -523,9 +524,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
       - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
-      ![Konfigurieren von Datensätzen](./assets/cja-connections-3b.png)
+     ![Konfigurieren von Datensätzen](./assets/cja-connections-3b.png)
 
    - Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
+
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Weitere Informationen zum Erstellen und Verwalten einer Verbindung und zum Auswählen und Kombinieren von Datensätzen finden Sie unter [Verbindungen – Überblick](../connections/overview.md).

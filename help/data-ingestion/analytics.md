@@ -2,12 +2,12 @@
 title: Aufnehmen und Verwenden von Daten aus Adobe Analytics
 description: Erläuterung der Datenaufnahme aus Adobe Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1162'
+ht-degree: 95%
 
 ---
 
@@ -17,14 +17,13 @@ In dieser Kurzanleitung wird erläutert, wie Sie die von Adobe Analytics erfasst
 
 >[!PREREQUISITES]
 >
->Sie besitzen eine Lizenz für Adobe Analytics auf einer oder mehreren Ihrer Websites und Adobe Analytics ist dort mithilfe einer der dokumentierten Methoden implementiert:
+>Sie besitzen eine Lizenz für Adobe Analytics auf einer oder mehreren Ihrer Websites und Adobe Analytics ist dort mithilfe einer der dokumentierten Methoden bereitgestellt:
 >
 >- [Implementierung von Analytics mithilfe Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=de)
 >
 >- [Implementierung von Analytics mithilfe der Adobe Analytics-Erweiterung](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=de)
 >
 >- [Implementierung von Analytics mithilfe von JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de)
-
 
 Gehen Sie dazu folgendermaßen vor:
 
@@ -112,9 +111,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
    - Wählen Sie den automatisch vom Adobe Analytics-Quell-Connector erstellten Datensatz sowie alle anderen Datensätze aus, die in Ihre Verbindung eingeschlossen werden sollen.
 
-      ![Hinzufügen von Datensätzen](./assets/cja-connections-2a.png)
+     ![Hinzufügen von Datensätzen](./assets/cja-connections-2a.png)
 
    - Wählen Sie **[!UICONTROL Weiter]** aus.
+
    Im Schritt [!UICONTROL Datensatzeinstellungen] in [!UICONTROL Datensätze hinzufügen]:
 
    - Für jeden Datensatz:
@@ -125,9 +125,10 @@ Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
       - Definieren Sie **[!UICONTROL Alle neuen Daten importieren]** und **[!UICONTROL Datensatz-Aufstockung vorhandener Daten]** entsprechend Ihren Anforderungen.
 
-      ![Konfigurieren von Datensätzen](./assets/cja-connections-3a.png)
+     ![Konfigurieren von Datensätzen](./assets/cja-connections-3a.png)
 
    - Wählen Sie **[!UICONTROL Datensätze hinzufügen]** aus.
+
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Weitere Informationen zum Erstellen und Verwalten einer Verbindung und zum Auswählen und Kombinieren von Datensätzen finden Sie unter [Verbindungen – Überblick](../connections/overview.md).

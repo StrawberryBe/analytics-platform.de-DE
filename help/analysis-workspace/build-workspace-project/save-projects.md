@@ -1,11 +1,11 @@
 ---
 description: Erfahren Sie mehr über die verschiedenen Speicheroptionen, einschließlich automatisches Speichern, Speichern unter, Speichern als Vorlage und Öffnen früherer Versionen.
 title: Projekte speichern
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 100%
 
@@ -38,9 +38,9 @@ Alle Projekte in Analysis Workspace werden automatisch alle 2 Minuten auf Ihrem 
 
 * **Neue Projekte:** Obwohl neue Projekte automatisch gespeichert werden, müssen Sie jedes neue Projekt beim ersten Mal manuell speichern. Analysis Workspace fordert Sie auf, neue Projekte manuell zu speichern, wenn Sie zu einem anderen Projekt wechseln, die Browser-Registerkarte schließen usw.
 
-   Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell gespeichert haben, wird eine Wiederherstellungsversion Ihres Projekts auf der Analysis Workspace-Landingpage in einem Ordner namens `Recovered Projects (Last 7 Days)` gespeichert. Sie müssen das betroffene Projekt wiederherstellen und manuell an einem gewünschten Ort speichern.
+  Wenn Sie aus irgendeinem Grund unerwartet den Zugriff auf ein neu erstelltes Projekt verlieren, bevor Sie es manuell gespeichert haben, wird eine Wiederherstellungsversion Ihres Projekts auf der Analysis Workspace-Landingpage in einem Ordner namens `Recovered Projects (Last 7 Days)` gespeichert. Sie müssen das betroffene Projekt wiederherstellen und manuell an einem gewünschten Ort speichern.
 
-   Gehen Sie folgendermaßen vor, um ein Projekt wiederherzustellen:
+  Gehen Sie folgendermaßen vor, um ein Projekt wiederherzustellen:
 
    1. Gehen Sie zum Ordner [!UICONTROL **Wiederhergestellte Projekte**] auf der Landingpage von Analysis Workspace.
 
@@ -51,7 +51,7 @@ Alle Projekte in Analysis Workspace werden automatisch alle 2 Minuten auf Ihrem 
 
 * **Bestehende Projekte:** Wenn Sie aus irgendeinem Grund ein Projekt verlassen, das noch nicht automatisch gespeicherten Änderungen enthält, fordert Sie Analysis Workspace entweder auf, Ihre Änderungen zu speichern, oder gibt eine Warnmeldung aus.
 
-   Im Folgenden finden Sie einige gängige Szenarien:
+  Im Folgenden finden Sie einige gängige Szenarien:
 
 ### Öffnen eines weiteres Projekts
 

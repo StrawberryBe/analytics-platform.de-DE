@@ -2,10 +2,10 @@
 description: Erfahren Sie, wie Sie Projekte aus Ordnern entfernen
 keywords: Analysis Workspace
 title: Entfernen von Projekten aus Ordnern
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: b251cc2f918b54e52ad70def28187473255efbfa
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Entfernen eines Projekts aus einem Ordner
 
-Um ein Projekt aus einem Ordner zu entfernen, können Sie es an einen anderen Speicherort verschieben oder löschen.
+Um ein Projekt aus einem Ordner zu entfernen, können Sie das Projekt an einen anderen Speicherort verschieben oder das Projekt löschen.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Um ein Projekt aus einem Ordner zu entfernen, können Sie es an einen anderen Sp
 
 ## Verschieben eines Projekts {#move-project-in-folder}
 
-Sie können Projekte von einem Ordner in einen anderen, von Ihnen erstellten Ordner verschieben.
+Sie können Projekte von einem Ordner in einen anderen, von Ihnen erstellen Ordner verschieben.
 
 1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **...** neben dem Projektnamen.
 
