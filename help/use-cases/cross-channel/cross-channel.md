@@ -4,10 +4,10 @@ description: Analysieren und extrahieren Sie Einblicke aus Kundeninteraktionen �
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 68%
+source-wordcount: '523'
+ht-degree: 63%
 
 ---
 
@@ -43,6 +43,6 @@ Beachten Sie bei der Erstellung dieses Workflows die folgenden Punkte.
 * Für die kanalübergreifende Analyse von Daten ist für jeden Datensatz derselbe ID-Namespace erforderlich.
 * Für den Vereinigungsprozess verschiedener Datensätze ist ein gemeinsamer primärer Personen-/Entitätsschlüssel für die Datensätze erforderlich.
 * Sekundäre schlüsselbasierte Vereinigungen werden derzeit nicht unterstützt.
-* Der Stitching-Prozess ermöglicht die Neuzuweisung von Identitäten in Zeilen basierend auf nachfolgenden vorübergehenden ID-Datensätzen, z. B. einer Authentifizierungs-ID. Dies ermöglicht die Auflösung unterschiedlicher Datensätze in einer zentralen ID für die Analyse auf der Personenebene und nicht auf Geräte- oder Cookie-Ebene.
+* Der Stitching-Prozess ermöglicht die Neuzuweisung von Identitäten in Zeilen basierend auf vorübergehenden ID-Informationen (z. B. einer Authentifizierungs-ID) aus Datensätzen, die dieselbe beständige ID aufweisen. Dies ermöglicht die Auflösung verschiedener Datensätze zu einer einheitlichen ID für die Analyse auf der Personenebene und nicht auf der Geräte- oder Cookie-Ebene.
 * Objekte und Attribute desselben XDM-Felds werden in Customer Journey Analytics zu einer Dimension zusammengeführt. Um mehrere Attribute aus verschiedenen Datensätzen mit derselben Customer Journey Analytics-Dimension zusammenzuführen, sollten die Datensätze auf dasselbe XDM-Feld oder Schema verweisen.
 

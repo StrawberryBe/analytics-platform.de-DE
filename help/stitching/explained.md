@@ -3,10 +3,10 @@ title: Funktionsweise von Stitching
 description: Konzept des Stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 28%
+source-wordcount: '1246'
+ht-degree: 24%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 28%
 
 Die Zuordnung führt mindestens zwei Durchgänge an Daten in einem bestimmten Datensatz durch:
 
-* **Live-Zuordnung**: versucht, jeden Treffer beim Eintritt zuzuordnen. Neue Geräte im Datensatz, die noch nie angemeldet wurden, werden in der Regel nicht auf dieser Ebene zugeordnet. Bereits erkannte Geräte werden sofort zugeordnet.
+* **Live-Zuordnung**: versucht, jeden Treffer (Ereignis) beim Eintritt zuzuordnen. Treffer von Geräten, die dem Datensatz &quot;neu&quot;sind (sich noch nie authentifiziert haben), werden normalerweise nicht auf dieser Ebene zugeordnet. Treffer von bereits erkannten Geräten werden sofort zugeordnet.
 
-* **Wiederholungszuordnung**: wiederholt Daten basierend auf eindeutigen Kennungen, die gelernt wurden. In dieser Phase werden neue Geräte in der Verbindung zugeordnet. Adobe bietet zwei Wiederholungsintervalle:
+* **Wiederholungszuordnung**: wiederholt Daten basierend auf eindeutigen Kennungen (vorübergehenden IDs), die gelernt wurden. In dieser Phase werden Treffer von zuvor unbekannten Geräten (beständigen IDs) zugeordnet (zu vorübergehenden IDs). Adobe bietet zwei Wiederholungsintervalle:
    * **Täglich**: Die Daten werden täglich mit einem 24-Stunden-Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass Wiederholungen viel häufiger vorkommen. Nicht authentifizierte Besucher müssen sich jedoch an dem Tag authentifizieren, an dem sie Ihre Website besuchen.
-   * **Wöchentlich**: Die Daten werden einmal pro Woche mit einem 7-tägigen Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Daten, die weniger als eine Woche alt sind, werden jedoch nicht zugeordnet.
+   * **Wöchentlich**: Die Daten werden einmal pro Woche mit einem 7-tägigen Lookback-Fenster wiederholt. Diese Option bietet den Vorteil, dass nicht authentifizierte Sitzungen über einen weniger eng gefasst Zeitraum für die Authentifizierung verfügen. Nicht zugeordnete Daten, die weniger als eine Woche alt sind, werden jedoch erst bei der nächsten wöchentlichen Wiederholung erneut verarbeitet.
 
 * **Datenschutz (optional)**: Wenn datenschutzbezogene Anfragen empfangen werden, muss neben der Entfernung der angeforderten Identität auch die Zuordnung dieser Identität zu nicht authentifizierten Ereignissen rückgängig gemacht werden.
 
-Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich innerhalb eines gegebenen Lookback-Fensters authentifiziert haben, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet. Datenschutzanfragen werden unabhängig von der Zeit über zugeordnete Daten hinweg verarbeitet.
+Daten, die über das Lookback-Fenster hinausgehen, werden nicht wiederholt. Ein Besucher muss sich innerhalb eines gegebenen Lookback-Fensters authentifiziert haben, damit ein nicht authentifizierter Besuch und ein authentifizierter Besuch gemeinsam identifiziert werden können. Sobald ein Gerät erkannt wurde, wird es von diesem Punkt an live zugeordnet.
 
 ## Schritt 1: Live-Zuordnung
 
@@ -127,7 +127,7 @@ Wenn Sie eine Datenschutzanfrage erhalten, wird die Zeile mit den ursprüngliche
 
 ## Zusammenfassung
 
-* Beim Stitching werden bekannte Geräte sofort zugeordnet, neue oder nicht erkannte Geräte werden jedoch nicht sofort zugeordnet.
+* Beim Stitching werden Ereignisse von bekannten Geräten sofort zugeordnet, Ereignisse von neuen oder nicht erkannten Geräten werden jedoch nicht sofort zugeordnet.
 * Die Daten werden in regelmäßigen Abständen wiederholt und ändern die historischen Daten in der Verbindung basierend auf Geräten, die sie zu identifizieren gelernt hat.
 * Die Echtzeit-Zuordnung und die Wiederholungszuordnung werden für einen Datensatz durchgeführt. Das Ergebnis ist ein neuer, höher gelegener Datensatz, der bei der Kombination mit anderen Datensätzen (z. B. Callcenter-Daten) besser verwendet werden kann, um kanalübergreifende Analysen durchzuführen.
 * Datenschutzanfragen entfernen Identitäten, die in nicht authentifizierte Zeilen übertragen wurden.

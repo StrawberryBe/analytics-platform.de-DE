@@ -3,10 +3,10 @@ title: Stitching-Übersicht
 description: Übersicht über das Stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 32%
+source-wordcount: '1273'
+ht-degree: 31%
 
 ---
 
@@ -18,7 +18,7 @@ Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attributi
 
 Leider sind nicht alle ereignisbasierten Datensätze, die Teil Ihrer Verbindung in Customer Journey Analytics sind, ausreichend mit Daten gefüllt, um diese Attribution standardmäßig zu unterstützen. Insbesondere verfügen Web- oder mobile-basierte Erlebnisdatensätze häufig nicht über tatsächliche Personen-ID-Informationen für alle Ereignisse.
 
-Die Zuordnung ermöglicht die Neuzuordnung von Identitäten in den Zeilen eines Datensatzes, um sicherzustellen, dass die gewünschte Personen-ID (zugeordnete ID) für jedes Ereignis verfügbar ist. Beim Zuordnen werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um eine zugeordnete ID zu generieren. Die Zuordnung ermöglicht die Auflösung verschiedener Datensätze zu einer einzelnen zugeordneten ID für die Analyse auf Personenebene und nicht auf Geräte- oder Cookie-Ebene.
+Die Zuordnung ermöglicht die Neuzuordnung von Identitäten in den Zeilen eines Datensatzes und stellt sicher, dass die Personen-ID (zugeordnete ID) für jedes Ereignis verfügbar ist. Die Zuordnung untersucht Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen, um den allgemeinen vorübergehenden ID-Wert zu ermitteln, der als zugeordnete ID verwendet werden kann. Dies ermöglicht die Auflösung verschiedener Datensätze zu einer einzelnen zugeordneten ID für die Analyse auf der Personenebene und nicht auf Geräte- oder Cookie-Ebene.
 
 Sie profitieren von einer kanalübergreifenden Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze mit anderen Datensätzen, z. B. Callcenter-Daten, kombinieren, um Ihre Customer Journey Analytics-Verbindung zu definieren. Dabei wird davon ausgegangen, dass diese anderen Datensätze bereits in jeder Zeile eine Personen-ID enthalten, die der zugeordneten ID ähnelt.
 
@@ -36,12 +36,13 @@ Stellen Sie vor der Verwendung von Stitching sicher, dass Ihr Unternehmen wie fo
    * Informationen zu Adobe Analytics-Daten finden Sie unter [Verwenden von Adobe Analytics Report Suite-Daten in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    * Informationen zu anderen Datentypen finden Sie unter [Erstellen eines Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) und [Aufnehmen von Daten](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=de) in der Adobe Experience Platform-Dokumentation.
 
-* Der Datensatz in Adobe Experience Platform, auf den Sie die Zuordnung anwenden möchten, muss über zwei Spalten verfügen, die die Identifizierung von Besuchern erleichtern:
+* Der Ereignisdatensatz in Adobe Experience Platform, auf den Sie die Zuordnung anwenden möchten, muss zwei Spalten enthalten, die die Identifizierung von Besuchern erleichtern:
 
    * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Adobe Experience Cloud Identity-Dienst generiert wurde.
-   * Eine **vorübergehende ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispiel: ein/e gehashte/r Benutzername oder E-Mail-Adresse, wenn sich ein Besucher authentifiziert. Sie können praktisch jede beliebige Kennung verwenden, sofern diese mindestens einmal für dasselbe Ereignis wie eine bestimmte beständige ID vorhanden ist.
+   * Eine **vorübergehende ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispiel: ein/e gehashte/r Benutzername oder E-Mail-Adresse, wenn sich ein Besucher authentifiziert. Sie können praktisch jede beliebige Kennung verwenden. Beim Zuordnen werden in diesem Feld die tatsächlichen Personen-ID-Informationen gespeichert. Für optimale Zuordnungsergebnisse sollte für jede beständige ID mindestens einmal innerhalb der Ereignisse des Datensatzes eine vorübergehende ID gesendet werden.
+Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einbeziehen möchten, sollten die anderen Datensätze ebenfalls eine ähnliche gemeinsame Kennung aufweisen.
 
-* Die Zuordnung umfasst das Zusammenführen authentifizierter und nicht authentifizierter Benutzerdaten. Stellen Sie vor dem Zusammenführen von Datensätzen sicher, dass Sie die geltenden Gesetze und Vorschriften einhalten, einschließlich der Erlangung der erforderlichen Endbenutzerberechtigungen.
+* Die Zuordnung umfasst das Zusammenführen authentifizierter und nicht authentifizierter Benutzerdaten. Stellen Sie sicher, dass Sie die geltenden Gesetze und Vorschriften einhalten, einschließlich der Erlangung der erforderlichen Endbenutzerberechtigungen, bevor Sie die Zuordnung für einen Ereignis-Datensatz aktivieren.
 
 
 ## Stitching verwenden
