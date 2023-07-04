@@ -3,10 +3,10 @@ title: Stitching-Übersicht
 description: Übersicht über das Stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 3fd4038c44b50490618f838d281684742920d152
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 31%
+source-wordcount: '1246'
+ht-degree: 26%
 
 ---
 
@@ -56,22 +56,22 @@ Sobald Ihr Unternehmen alle Voraussetzungen erfüllt und die [Einschränkungen](
    * Eine Anfrage zum Aktivieren der Zuordnung.
    * Die Datensatz-ID für den Datensatz, den Sie neu zuweisen möchten.
    * Der Spaltenname der beständigen ID für den gewünschten Datensatz (Kennung, die in jeder Zeile erscheint).
-   * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Verbindung der Personenkennung zwischen Datensätzen).
+   * Der Spaltenname der vorübergehenden ID für den gewünschten Datensatz (die Personenkennung, die auch als Verknüpfung zwischen Datensätzen im Kontext einer Verbindung dient).
    * Ihre Voreinstellung für die Häufigkeit der [Wiederholungen](explained.md) und die Lookback-Länge. Zu den verfügbaren Optionen gehören eine Wiederholung pro Woche mit einem 7-tägigen Lookback-Fenster oder eine tägliche Wiederholung mit einem 1-tägigen Lookback-Fenster.
    * Sandbox-Name.
 
 
-2. Der Adobe-Kundensupport arbeitet mit Adobe Engineering zusammen, um das Stitching nach Erhalt Ihrer Anfrage zu aktivieren. Nach der Aktivierung wird in Adobe Experience Platform ein neu verschlüsselter Datensatz angezeigt, der eine neue Spalte für die Personen-ID enthält. Der Adobe-Support stellt die neue Datensatz-ID und den Namen der Personen-ID-Spalte bereit.
+2. Der Adobe-Kundensupport arbeitet mit Adobe Engineering zusammen, um das Stitching nach Erhalt Ihrer Anfrage zu aktivieren. Nach der Aktivierung wird in Adobe Experience Platform ein neuer neu zugewiesener Datensatz mit einer neuen Spalte für die zugeordnete ID angezeigt. Der Adobe-Support kann die ID des neuen Datensatzes angeben.
 
-3. Bei der erstmaligen Aktivierung stellt Adobe eine Aufstockung der zusammengefügten Daten bereit, die bis zum Beginn des Vormonats zurückreicht (bis zu 60 Tage). Um diese Aufstockung durchzuführen, muss die vorübergehende ID in den nicht zugewiesenen Daten bis zu diesem Zeitpunkt vorhanden sein.
+3. Wenn die Option zum ersten Mal aktiviert ist, stellt Adobe eine Aufstockung der zugewiesenen Daten bereit, die 30 Tage zurückliegt.
 
-4. [Verbindung erstellen](/help/connections/create-connection.md) in Customer Journey Analytics mit dem neu erstellten Datensatz und allen anderen Datensätzen, die Sie einbeziehen möchten. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
+4. Wenn Sie den neuen zugeordneten Datensatz in einer kanalübergreifenden Analyse verwenden möchten, müssen Sie ihn zu einem [connection](../connections/overview.md) in Customer Journey Analytics zusammen mit allen anderen erforderlichen Datensätzen. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 
 5. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) auf Grundlage der Verbindung.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Sobald die Datenansicht eingerichtet ist, erfolgt die kanalübergreifende Analyse in Customer Journey Analytics genau wie jede andere Analyse in Customer Journey Analytics, bis auf die Tatsache, dass die Daten jetzt kanalübergreifend und geräteübergreifend verwendet werden.
+Sobald die Datenansicht eingerichtet ist, können Sie die Analyse der Customer Journey Analytics-Berichterstellung kanalübergreifend und geräteübergreifend durchführen.
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
