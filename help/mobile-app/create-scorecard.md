@@ -1,27 +1,28 @@
 ---
-description: Erstellen und Freigeben von Scorecards für Adobe Analytics-Dashboards
+description: Erstellen und Freigeben von Scorecards für Analytics-Dashboards
 title: Scorecards erstellen und freigeben
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 76%
+source-wordcount: '2532'
+ht-degree: 74%
 
 ---
 
-# Erstellen einer Mobile-Scorecard
+# Erstellen einer mobilen Scorecard
 
-Die folgenden Informationen liefern Kuratoren von Adobe Analytics-Daten eine Anleitung dazu, wie Dashboards für ausführende Benutzer konfiguriert und dargestellt werden. Beginnen Sie mit dem Video zum Scorecard Builder für Adobe Analytics-Dashboards:
+Die folgenden Informationen geben Kuratoren von Customer Journey Analytics-Daten Aufschluss darüber, wie Dashboards für ausführende Benutzer konfiguriert und präsentiert werden. Beginnen Sie mit dem Video zum Scorecard Builder für Analytics-Dashboards:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->Scorecard-Screenshots für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus Customer Journey Analytics. Die Benutzeroberflächen sind fast identisch.
+>
+>Screenshots von Analytics-Scorecards für diese Seite stammen aus der Adobe Analytics-Benutzeroberfläche und nicht aus Customer Journey Analytics. Die Benutzeroberflächen sind fast identisch.
 
-Eine Adobe Analytics Scorecard stellt wie nachfolgend gezeigt wichtige Datenvisualisierungen für ausführende Benutzer in einem gekachelten Layout bereit:
+Eine Analytics Scorecard stellt wie nachfolgend gezeigt wichtige Datenvisualisierungen für ausführende Benutzer in einem gekachelten Layout bereit:
 
 ![Beispiel-Scorecard](assets/intro_scorecard.png)
 
@@ -40,7 +41,7 @@ Sie können die Vorlage [!UICONTROL Leere mobile Scorecard] öffnen, indem Sie e
 
 ### Neues Projekt erstellen {#create}
 
-1. Öffnen Sie Adobe Analytics und klicken Sie auf die Registerkarte **[!UICONTROL Arbeitsbereich]**.
+1. Öffnen Sie Customer Journey Analytics und klicken Sie auf **[!UICONTROL Arbeitsbereich]** Registerkarte.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Projekt erstellen]** und wählen Sie die Projektvorlage **[!UICONTROL Leere mobile Scorecard]** aus.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -78,7 +79,7 @@ Sie können beispielsweise geeignete Dimensionen (wie **[!DNL Marketing Channel]
 
 Um Filter auf einzelne Kacheln anzuwenden, ziehen Sie einen Filter (Segmente sind Filter im Customer Journey Analytics) aus dem linken Bereich und legen Sie ihn direkt über der Kachel ab.
 
-Wenn Sie den Filter auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel auf der Scorecard ab. Sie können auch Filter anwenden, indem Sie im Menü „Filter“ unterhalb der Datumsbereiche Filter auswählen. You [Konfigurieren und Anwenden von Filtern für Ihre Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) auf die gleiche Weise wie in Adobe Analytics Workspace.
+Wenn Sie den Filter auf alle Kacheln in der Scorecard anwenden möchten, legen Sie die Kachel auf der Scorecard ab. Sie können auch Filter anwenden, indem Sie im Menü „Filter“ unterhalb der Datumsbereiche Filter auswählen. You [Konfigurieren und Anwenden von Filtern für Ihre Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=de) auf die gleiche Weise wie in Customer Journey Analytics Workspace.
 
 ![Erstellen von Filtern](assets/segment_ui.png)
 
@@ -278,7 +279,7 @@ Sie können auch hin und her navigieren, indem Sie die Pfeile auf der Tastatur v
 
 ## Scorecards in der Vorschau anzeigen {#preview}
 
-Sie können eine Vorschau davon anzeigen, wie die Scorecard nach ihrer Veröffentlichung in der Analytics-Dashboards-App aussieht und funktioniert.
+Sie können eine Vorschau der Scorecard anzeigen, die nach ihrer Veröffentlichung in der Adobe Analytics-Dashboards-App angezeigt wird.
 
 1. Klicken Sie auf **[!UICONTROL Vorschau]** in der rechten oberen Ecke des Bildschirms.
 
@@ -337,7 +338,7 @@ So geben Sie eine Scorecard über einen freigebbaren Link frei
 
    Wenn ein Empfänger ein Desktop-Programm oder einen Browser verwendet, um den Link zu öffnen, wird das mobile Scorecard-Projekt in Workspace geöffnet.
 
-   Wenn ein Empfänger den Link auf einem Mobilgerät öffnet, wird die Scorecard direkt in der Analytics-Dashboards-App geöffnet.
+   Wenn ein Empfänger den Link auf einem Mobilgerät öffnet, wird die Scorecard direkt in der Adobe Analytics-Dashboards-App geöffnet.
 
    Wenn ein Empfänger die App nicht heruntergeladen hat, wird er zur App-Liste im App Store- oder Google Play-Store weitergeleitet, wo er sie herunterladen kann.
 
