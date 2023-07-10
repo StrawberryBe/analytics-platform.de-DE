@@ -3,7 +3,7 @@ title: Stitching-Übersicht
 description: Übersicht über das Stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 3fd4038c44b50490618f838d281684742920d152
+source-git-commit: 41dc46ed5e30d08708ebb97fa29312aafd99ff9d
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 26%
@@ -63,7 +63,7 @@ Sobald Ihr Unternehmen alle Voraussetzungen erfüllt und die [Einschränkungen](
 
 2. Der Adobe-Kundensupport arbeitet mit Adobe Engineering zusammen, um das Stitching nach Erhalt Ihrer Anfrage zu aktivieren. Nach der Aktivierung wird in Adobe Experience Platform ein neuer neu zugewiesener Datensatz mit einer neuen Spalte für die zugeordnete ID angezeigt. Der Adobe-Support kann die ID des neuen Datensatzes angeben.
 
-3. Wenn die Option zum ersten Mal aktiviert ist, stellt Adobe eine Aufstockung der zugewiesenen Daten bereit, die 30 Tage zurückliegt.
+3. Wenn die Option zum ersten Mal aktiviert ist, stellt Adobe eine Aufstockung der zugewiesenen Daten bereit, die 60 Tage zurückliegt.
 
 4. Wenn Sie den neuen zugeordneten Datensatz in einer kanalübergreifenden Analyse verwenden möchten, müssen Sie ihn zu einem [connection](../connections/overview.md) in Customer Journey Analytics zusammen mit allen anderen erforderlichen Datensätzen. Wählen Sie für jeden Datensatz die korrekte Personen-ID.
 
