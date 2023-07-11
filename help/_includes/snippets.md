@@ -1,8 +1,8 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 89665490fb3b03a9d9578d22e0e9ed62415c66be
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 68%
+source-wordcount: '1061'
+ht-degree: 66%
 
 ---
 # Snippets
@@ -61,9 +61,14 @@ ht-degree: 68%
 
 | Option | Funktion |
 |---------|----------|
-| [!UICONTROL **Empfohlen**] | Sortiert Komponenten nach den empfohlenen Komponenten oben in der Liste. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
+| [!UICONTROL **Empfohlen**] | Sortiert Komponenten nach den am Anfang der Liste empfohlenen Komponenten. Komponenten, die am häufigsten und zuletzt von Ihnen oder anderen in Ihrem Unternehmen verwendet werden, werden weiter oben in der Liste angezeigt. |
 | [!UICONTROL **Alphabetisch**] | Sortiert Komponenten alphabetisch. |
 | [!UICONTROL **Kategorisch**] | Sortiert Komponenten nach Komponententyp (Dimension, Metrik, Filter, Datumsbereich). |
 
 {style="table-layout:auto"}
 
+## Zeitvergleich anwenden {#apply-time-comparison}
+
+Sie können den aktuellen Zeitraum mit einem vorherigen Zeitraum vergleichen. Wenn Sie in diesem Menü eine Option auswählen, erhält jeder Datenpunkt ein ähnlich farbiges gepunktetes Gegenstück. Dieses Gegenstück stellt dieselbe Metrik im ausgewählten vorherigen Datumsbereich dar. Wenn Sie diese Option festlegen, verdoppelt sich die Anzahl der Elemente im Diagramm und der Zeilen in der Tabelle.
+
+Zu den verfügbaren Zeitvergleichsoptionen gehören der vorherige Zeitraum, 13 Wochen zuvor, 52 Wochen zuvor und ein benutzerdefinierter Datumsbereich. Wenn Sie den benutzerdefinierten Datumsbereich auswählen, werden zusätzliche Optionen angezeigt, mit denen Sie die Zahl und Granularität auswählen können. Wenn Sie &quot;Keine&quot;auswählen, wird der Datumsvergleich entfernt.

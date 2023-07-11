@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 51bc0de7186b87fad4011c2ec77cfe841186a58e
+source-git-commit: db8f92941677ba37f41a62c7612f517d7b071b4a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '956'
 ht-degree: 86%
 
 ---
@@ -85,12 +85,10 @@ ht-degree: 86%
    + [Abgeleitete Felder](../data-views/derived-fields/derived-fields.md)
    + [Beschriftungen und Richtlinien](../data-views/data-governance.md)
 
-
 + Workspace-Projekte {#cja-workspace}
    + [Analysis Workspace – Übersicht](../analysis-workspace/home.md)
    + [Grundlegende Analyse durchführen](../analysis-workspace/perform-basic-analysis.md)
    + [Durchführen einer erweiterten Analyse](../analysis-workspace/perform-adv-analysis.md)
-
    + Projekte {#build-workspace-project}
       + [Übersicht über Projekte](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Projekte erstellen](/help/analysis-workspace/build-workspace-project/create-projects.md)
@@ -105,40 +103,31 @@ ht-degree: 86%
       + [Hotkeys (Tastaturbefehle)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Farbpaletten](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Dichte anzeigen](../analysis-workspace/build-workspace-project/view-density.md)
-
    + Visualisierungen {#visualizations}
       + [Visualisierungsübersicht](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Datenquellen verwalten](../analysis-workspace/visualizations/t-sync-visualization.md)
-
       + Freiformtabelle {#freeform-table}
          + [Freiformtabelle](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + Spalten- und Zeileneinstellungen {#column-row-settings}
             + [Spalteneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Zeileneinstellungen](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamische im Vergleich zu statischen Elementen](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-
          + [Filtern und Sortieren von Tabellen](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-
          + [Arbeitsbereich-Summen](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-
       + Kohortentabelle {#cohort-table}
          + [Was ist eine Kohortenanalyse?](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurieren eines Kohortenanalyseberichts](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Anwendungsfälle für die Kohortenanalyse](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
-
       + Fallout {#fallout}
          + [Fallout-Übersicht](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Fallout-Visualisierung konfigurieren](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Interdimensionaler Fallout](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Filter in Fallout-Analyse anwenden](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
-
-
       + Fluss {#flow}
          + [Flussübersicht](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Flussvisualisierung konfigurieren](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Interdimensionale Flüsse](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Bereich und Bereich gestapelt](../analysis-workspace/visualizations/area.md)
-
       + [Balken und Balken gestapelt](../analysis-workspace/visualizations/bar.md)
       + [Lineardiagramm](../analysis-workspace/visualizations/bullet-graph.md)
       + [Kombinationsdiagramm](../analysis-workspace/visualizations/combo-charts.md)
@@ -153,7 +142,6 @@ ht-degree: 86%
       + [Text](../analysis-workspace/visualizations/text.md)
       + [Baumdiagramm](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
-
    + Bedienfelder {#panels}
       + [Übersicht über Bedienfelder](../analysis-workspace/c-panels/panels.md)
       + [Attributionsbedienfeld](../analysis-workspace/c-panels/attribution.md)
@@ -166,7 +154,6 @@ ht-degree: 86%
          + [Überblick](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [Eingabe- und Ausgabeeinstellungen](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
          + [Häufig gestellte Fragen (FAQ)](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
-
    + Kuratieren, Freigeben und Planen von Projekten {#curate-share}
       + [Menü „Freigeben“](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratieren von Projekten](../analysis-workspace/curate-share/curate.md)
@@ -175,7 +162,6 @@ ht-degree: 86%
       + [Schreibgeschützte Projekte](../analysis-workspace/curate-share/view-only-projects.md)
       + [PDF- oder CSV-Dateien herunterladen](../analysis-workspace/curate-share/download-send.md)
       + [Planen von Projekten](../analysis-workspace/curate-share/t-schedule-report.md)
-
    + Virtual Analyst {#virtual-analyst}
       + [Übersicht über Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
       + Anomalieerkennung {#anomaly-detection}
@@ -183,7 +169,6 @@ ht-degree: 86%
          + [Anomalien in Analysis Workspace anzeigen](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [In der Anomalieerkennung verwendete statistische Verfahren](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
-
    + Häufig gestellte Fragen zu Workspace {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
       + [Fehlermeldungen](../analysis-workspace/workspace-faq/error-messages.md)
@@ -201,37 +186,38 @@ ht-degree: 86%
 
 + Geführte Analyse {#guided-analysis}
    + [Überblick](../guided-analysis/overview.md)
-   + Analysetypen {#analysis-types}
-      + [Überblick](../guided-analysis/analysis-types/overview.md)
-      + [Trichter](../guided-analysis/analysis-types/funnel.md)
-      + [Trends](../guided-analysis/analysis-types/trends.md)
-      + [Benutzerwachstum](../guided-analysis/analysis-types/user-growth.md)
+   + Wirkung {#impact}
+      + [Version](../guided-analysis/types/release.md)
+      + [Erstmalige Verwendung](../guided-analysis/types/first-use.md)
+   + Trichter {#funnel}
+      + [Reibung](../guided-analysis/types/friction.md)
+      + [Konversions-Trends](../guided-analysis/types/conversion-trends.md)
+   + Benutzerwachstum {#user-growth}
+      + [Aktiv](../guided-analysis/types/active.md)
+      + [Nettowachstum](../guided-analysis/types/net-growth.md)
+   + Trends {#trends}
+      + [Nutzung](../guided-analysis/types/usage.md)
    + [Häufig gestellte Fragen](../guided-analysis/faq.md)
 
 + Komponenten {#cja-components}
    + [Komponentenübersicht](../components/overview.md)
    + [Komponentenbeschreibungen hinzufügen](../components/add-component-descriptions.md)
-
    + Anmerkungen {#annotations}
       + [Anmerkungen – Übersicht](../components/annotations/overview.md)
       + [Erstellen von Anmerkungen](../components/annotations/create-annotations.md)
       + [Verwalten von Anmerkungen](../components/annotations/manage-annotations.md)
       + [Anzeigen von Anmerkungen](../components/annotations/view-annotations.md)
       + [Anmerkungen für Mobilgeräte](../components/annotations/mobile-annotations.md)
-
    + Zielgruppen {#audiences}
       + [Überblick über Zielgruppen](../components/audiences/audiences-overview.md)
       + [Erstellen und Veröffentlichen von Zielgruppen](../components/audiences/publish.md)
       + [Verwalten von Audiences](../components/audiences/manage.md)
-
    + Dimensionen {#dimensions}
       + [Dimensionsvorschau](../components/dimensions/view-dimensions.md)
       + [Dimensionen aufschlüsseln](../components/dimensions/t-breakdown-fa.md)
       + [Dimensionen für die Zeitunterteilung](../components/dimensions/time-parting-dimensions.md)
       + [Dimensionen mit sehr hoher Kardinalität](../components/dimensions/high-cardinality.md)
-
    + [Metriken](../components/apply-create-metrics.md)
-
    + Filter {#cja-filters}
       + [Filterübersicht](../components/filters/filters-overview.md)
       + [Filter erstellen](../components/filters/create-filters.md)
@@ -239,7 +225,6 @@ ht-degree: 86%
       + [Filter-Builder](../components/filters/filter-builder.md)
       + [Filter verwalten](../components/filters/manage-filters.md)
       + [Operatoren](../components/filters/operators.md)
-
    + Berechnete Metriken {#cja-calcmetrics}
       + [Übersicht über berechnete Metriken](../components/calc-metrics/calc-metr-overview.md)
       + Workflow bei berechneten Metriken {#cm-workflow}
@@ -259,14 +244,12 @@ ht-degree: 86%
       + [Standardmäßig berechnete Metriken](../components/calc-metrics/default-calcmetrics.md)
       + [Grundlegende Funktionen](../components/calc-metrics/cm-functions.md)
       + [Erweiterte Funktionen](../components/calc-metrics/cm-adv-functions.md)
-
    + Kalender und Datumsbereiche {#cja-date-ranges}
       + [Übersicht über Kalender und Datumsbereiche](../components/date-ranges/calendar.md)
       + [Datumsbereich erstellen](../components/date-ranges/create.md)
       + [Datumsbereiche verwalten](../components/date-ranges/manage.md)
       + [Benutzerdefinierte Datumsbereiche erstellen](../components/date-ranges/custom-date-ranges.md)
       + [Datumsvergleich](../components/date-ranges/time-comparison.md)
-
    + Datenwörterbuch {#data-dictionary}
       + [Datenwörterbuch – Überblick](../components/data-dictionary/data-dictionary-overview.md)
       + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
@@ -312,31 +295,25 @@ ht-degree: 86%
 
 + Anwendungsfälle {#cja-usecases}
    + [Anwendungsfälle für Customer Journey Analytics](../use-cases/cja-usecases.md)
-
    + Google Analytics-Daten {#ga}
       + [Übersicht über die Migration von Daten von Google Analytics zu Customer Journey Analytics](../use-cases/ga/overview.md)
       + [Aufnehmen von historischen Daten von Google Analytics in Platform](../use-cases/ga/backfill.md)
       + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Platform](../use-cases/ga/streaming.md)
       + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](../use-cases/ga/report.md)
-
    + Datenaufnahme {#data-ingestion}
       + [Aufnehmen von Marketo Engage-Daten in Adobe Experience Platform und Berichterstellung in Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
       + [Adobe Experience Platform-Zielgruppen in Customer Journey Analytics erfassen](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datenansichten {#data-views}
       + [Anwendungsfälle von Datenansichten](../use-cases/data-views/data-views-usecases.md)
       + [Verwenden von Bindungsdimensionen und Metriken](../use-cases/data-views/binding-dimensions-metrics.md)
-
    + B2B {#b2b}
       + [Hinzufügen von Daten der Kontoebene als Lookup-Datensatz](../use-cases/b2b/b2b.md)
-
    + Kanalübergreifende Daten {#cross-channel}
       + [Kanalübergreifendes Analysieren von Daten](../use-cases/cross-channel/cross-channel.md)
       + [Importieren von Callcenter- und Web-Daten](../use-cases/cross-channel/call-center.md)
-
    + Adobe Analytics-Daten {#aa-data}
       + [Verwenden von Marketing-Kanal-Dimensionen](../use-cases/aa-data/marketing-channels.md)
       + [Kombinieren von Report Suites mit verschiedenen Schemata](../use-cases/aa-data/combine-report-suites.md)
-
    + Komplexe Daten {#complex-data}
       + [Verwenden von Objekt-Arrays](../use-cases/object-arrays.md)
 
