@@ -3,10 +3,10 @@ title: Reibung
 description: Konversionsraten zwischen den Schritten vergleichen.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Die **Friktion** Der Ansichtstyp bietet eine visuelle Darstellung eines kritisch
 * **Funktionsbereitschaft und Interaktion**: Erfahren Sie, wie Benutzer mit bestimmten Funktionen in Ihrem Produkt interagieren. Durch die Analyse des Fortschritts der Benutzer durch funktionsbezogene Schritte können Sie die Rate der Funktionsbereitstellung bewerten und Bereiche identifizieren, in denen Benutzer bestimmte Funktionen abbrechen oder nicht nutzen können. Anschließend können Sie diese Informationen verwenden, um sich auf Verbesserungen der Funktionen oder der Benutzeroberfläche zu konzentrieren und so die Akzeptanzraten zu erhöhen.
 * **Kampagnenbewertung**: Messen Sie die Effektivität von Marketing-Kampagnen. Sie können ein Segment erstellen, das sich auf Benutzer konzentriert, die eine bestimmte Kampagne berührt haben, und ihren Konversionsprozess mit anderen Kampagnen oder innerhalb Ihres gesamten Produkts vergleichen.
 
-[Screenshot des Trichters]
+![Reibung](../assets/friction.png)
 
 ## Abfrageleiste
 
@@ -41,6 +41,8 @@ Trichter bietet die folgenden Diagrammeinstellungen. Sie können die Diagrammein
 ## Zeitvergleich anwenden
 
 {{apply-time-comparison}}
+
+![Fristvergleich](../assets/friction-compare.png)
 
 ## Datumsbereich
 

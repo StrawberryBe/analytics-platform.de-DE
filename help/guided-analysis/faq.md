@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen zur geführten Analyse
 description: Häufig gestellte Fragen zur geführten Analyse.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,13 +47,11 @@ Geführte Analyse verwendet Begriffe, die in der Produktanalysebranche häufiger
 
 Während die Analyse mit Analysis Workspace und Guided die gleichen zugrunde liegenden Daten verwendet, unterscheidet sich die Art und Weise, wie jedes Tool diese Daten abfragt.
 
-**Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Tabellen bestehen normalerweise aus Dimensionselementzeilen, während Spalten normalerweise Metriken sind. Sie können Filter auf anwenden, um die gewünschten Daten abzurufen.
+* **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Tabellen bestehen normalerweise aus Dimensionselementzeilen, während Spalten normalerweise Metriken sind. Sie können Filter auf anwenden, um die gewünschten Daten abzurufen.
 
-![Workspace-Struktur](assets/workspace-structure.png)
+* **Geführte Analyse ist ein ereigniszentriertes Erlebnis.** Visualisierungen konzentrieren sich auf Ereignisse und ergänzen diese Daten mit Dimensionen und Filtern.
 
-**Geführte Analyse ist ein ereigniszentriertes Erlebnis.** Visualisierungen konzentrieren sich auf Ereignisse und ergänzen diese Daten mit Dimensionen und Filtern.
-
-![Geführte Analysestruktur](assets/guided-analysis-structure.png)
+![Struktur](assets/structure.png)
 
 Betrachten Sie das folgende Beispiel, in dem Sie sich auf Daten rund um die Startseite Ihrer Website konzentrieren. Teams stellen ähnliche Fragen, aber der Analysenansatz kann unterschiedlich sein.
 

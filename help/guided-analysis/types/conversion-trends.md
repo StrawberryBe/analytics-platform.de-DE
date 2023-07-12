@@ -2,10 +2,10 @@
 title: Konversions-Trends
 description: Verfolgen Sie Änderungen der Konversionsrate im Zeitverlauf.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Die **Konversionstrends** Der Ansichtstyp bietet eine Trend-Visualisierung um Ko
 * **A/B-Test-Bewertung**: Bewerten Sie die Wirksamkeit von A/B-Tests oder -Experimenten, die im Rahmen eines Trichters durchgeführt werden. Durch den Vergleich von Konversionsraten zwischen verschiedenen Varianten können Sie einfach feststellen, welche Tests höhere Konversionsraten bieten, was zu datengesteuerten Entscheidungen führt, um welche Varianten dauerhaft implementiert werden sollen.
 * **Kampagnenbewertung im Zeitverlauf**: Messen Sie die Effektivität von Marketing-Kampagnen im Zeitverlauf. Sie können ein Segment erstellen, das sich auf Benutzer konzentriert, die eine bestimmte Kampagne berührt haben, und ihre Konversionsraten mit anderen Kampagnen vergleichen. Sie können auch die aktuellen Konversionsraten mit ähnlichen Kampagnen vergleichen, die in der Vergangenheit ausgeführt wurden.
 
-[Screenshot des Trichters]
+![Konversions-Trends](../assets/conversion-trends.png)
 
 ## Abfrageleiste
 
@@ -39,6 +39,8 @@ Trichter bietet die folgenden Diagrammeinstellungen. Sie können die Diagrammein
 ## Zeitvergleich anwenden
 
 {{apply-time-comparison}}
+
+![Zeitvergleich für Konversionstrends](../assets/conversion-trends-compare.png)
 
 ## Datumsbereich
 

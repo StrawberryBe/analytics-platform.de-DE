@@ -3,10 +3,10 @@ title: Aktiv
 description: Wachstum der Benutzerbasis messen.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 * **Kampagnenbewertung**: Die Anzeige einer bestimmten Kampagne kann Ihnen dabei helfen, nicht nur zu verstehen, wie viel Traffic sie generiert hat, sondern auch, wie gut die Kampagne den Benutzern geholfen hat, aktiv zu bleiben.
 * **Analyse des Benutzerlebenszyklus**: Die Analyse des aktiven Nutzerwachstums während des gesamten Benutzerlebenszyklus kann dabei helfen, spezifische Phasen zu identifizieren, in denen die Benutzerinteraktion abnimmt. Wenn beispielsweise eine hohe Anzahl ruhender Benutzer für Personen im Onboarding-Stadium vorhanden ist, kann dies auf Benutzerfreundlichkeits-Probleme oder die Notwendigkeit einer besseren produktinternen Anleitung hinweisen.
 
-[Screenshot des Benutzerwachstums]
+![Aktiv](../assets/active.png)
 
 ## Abfrageleiste
 
@@ -48,6 +48,8 @@ Dieser Ansichtstyp bietet die folgenden Diagrammeinstellungen. Sie können die D
 ## Zeitvergleich anwenden
 
 {{apply-time-comparison}}
+
+![Vergleich der aktiven Zeit](../assets/active-compare.png)
 
 ## Datumsbereich
 

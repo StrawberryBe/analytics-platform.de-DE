@@ -2,10 +2,10 @@
 title: Nettowachstum
 description: Saldo Nutzergewinne und -verluste.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 * **Leistungsbewertung**: Ermöglicht es Ihnen, die Gesamtleistung Ihres Produkts im Hinblick auf die Akquise neuer Benutzer zu bewerten. Durch die Verfolgung von Wachstumstrends können Sie besser nachvollziehen, ob Ihr Produkt Benutzer in einem gewünschten Tempo anzieht und bindet.
 * **Abwanderungsanalyse**: Das Nettowachstum umfasst die Ablösung in der Formel (ruhende Nutzer). Sie können die allgemeine Gesundheit Ihrer Benutzerbasis im Laufe der Zeit bewerten. Wenn das Nettowachstum konsequent niedriger ist `1`, deutet es auf eine hohe Anzahl von Abbrüchen hin, die Sie auffordern, die Gründe dafür zu untersuchen und Aufbewahrungsstrategien zu implementieren.
 
-[Screenshot des Benutzerwachstums]
+![Nettowachstum](../assets/net-growth.png)
 
 ## Abfrageleiste
 

@@ -3,10 +3,10 @@ title: Nutzung
 description: Benutzerinteraktion im Lauf der Zeit messen.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Die **Nutzung** Ansichtstyp bietet wertvolle Einblicke in die Leistung Ihres Pro
 * **Benutzerverhalten**: Trends können Einblicke in das Benutzerverhalten im Zeitverlauf bieten. Indem Sie bestimmte Aktionen untersuchen, die Benutzer ausführen, können Sie Muster identifizieren, in denen Benutzer abbrechen können. Sie können Einblicke aus diesem Ansichtstyp mit [Friktion](friction.md) für noch mehr Einblicke in das Verhalten.
 * **A/B-Tests und -Experimente**: Wenn Sie in Ihrem Produkt A/B-Tests durchführen, können Sie mithilfe von Trends messen, welche Tests im Laufe der Zeit am erfolgreichsten sind.
 
-[Screenshot der Trends]
+![Nutzung](../assets/usage.png)
 
 ## Abfrageleiste
 
@@ -40,6 +40,8 @@ Trends bieten die folgenden Diagrammeinstellungen. Sie können die Diagrammeinst
 ## Zeitvergleich anwenden
 
 {{apply-time-comparison}}
+
+![Zeitvergleich der Nutzung](../assets/usage-compare.png)
 
 ## Datumsbereich
 
