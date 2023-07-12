@@ -3,7 +3,7 @@ title: Friktionsansicht
 description: Konversionsraten zwischen den Schritten vergleichen.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%
@@ -14,11 +14,13 @@ ht-degree: 3%
 
 {{release-limited-testing}}
 
-Die **Friktion** -Ansicht bietet eine visuelle Darstellung eines kritischen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den ein Benutzer durchlaufen muss. Die vertikale Achse stellt den Prozentsatz der Benutzer oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in der gewünschten Reihenfolge durchgeführt werden, können jedoch jederzeit im Berichtsfenster erfolgen. Anwendungsbeispiele für diesen Ansichtstyp sind:
+Die **Friktion** -Ansicht bietet eine visuelle Darstellung eines kritischen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den ein Benutzer durchlaufen muss. Die vertikale Achse stellt den Prozentsatz der Benutzer oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in der gewünschten Reihenfolge durchgeführt werden, können jedoch jederzeit im Berichtsfenster erfolgen.
 
 ![Reibung](../assets/friction.png)
 
 ## Anwendungsbeispiele
+
+Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 * **Konversionsanalyse**: Sie können Konversionen in jeder Phase des Trichters analysieren. Indem Sie die Anzahl der Benutzer verfolgen, die von einem Schritt zum nächsten gelangen, können Sie Engpässe identifizieren, die ungewöhnliche oder unerwünschte Konversionsraten aufweisen. Diese Informationen sind nützlich, um zu verstehen, wo Sie Ihr Produkt für sofortige Ergebnisse verbessern können.
 * **Onboarding-Optimierung**: Optimieren Sie den Onboarding-Prozess Ihres Produkts, indem Sie das Benutzerverhalten in Bezug auf wichtige Ereignisse untersuchen. Sie können ermitteln, mit welchen Schritten Benutzer zu kämpfen haben oder welche Schritte nicht ausgeführt werden können.
