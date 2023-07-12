@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen zur geführten Analyse
 description: Häufig gestellte Fragen zur geführten Analyse.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
+source-git-commit: 23d3e6a9662cda932a376c09849ab078d22830dc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '333'
+ht-degree: 3%
 
 ---
 
@@ -35,6 +35,7 @@ Geführte Analyse verwendet Begriffe, die in der Produktanalysebranche häufiger
 | Geführter Analysebegriff | Analysis Workspace-Begriff |
 | --- | --- |
 | Ereignis-   | Metrik |
+| Benutzer | Personen |
 | Eigenschaft | Dimension |
 | Wert | Dimensionselement |
 | Segment | Filter |
@@ -43,11 +44,11 @@ Geführte Analyse verwendet Begriffe, die in der Produktanalysebranche häufiger
 
 +++
 
-+++**Was sind einige Unterschiede in der Vorgehensweise bei Berichten mit Analysis Workspace und Guided Analysis?**
++++**Was sind einige Unterschiede bei der Analyse des Ansatzes von Analysis Workspace und Guided Analysis?**
 
-Während die Analyse mit Analysis Workspace und Guided die gleichen zugrunde liegenden Daten verwendet, unterscheidet sich die Art und Weise, wie jedes Tool diese Daten abfragt.
+Während die Analyse mit Analysis Workspace und Guided die gleichen zugrunde liegenden Daten verwendet, unterscheidet sich die Art und Weise, wie Sie mit jedem Tool Abfragen dieser Daten erstellen können.
 
-* **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Tabellen bestehen normalerweise aus Dimensionselementzeilen, während Spalten normalerweise Metriken sind. Sie können Filter auf anwenden, um die gewünschten Daten abzurufen.
+* **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Tabellen bestehen normalerweise aus Dimensionselementzeilen, während Spalten normalerweise Metriken sind. Sie können Filter sowohl auf Zeilen als auch auf Spalten anwenden, um die gewünschten Daten zu erhalten.
 
 * **Geführte Analyse ist ein ereigniszentriertes Erlebnis.** Visualisierungen konzentrieren sich auf Ereignisse und ergänzen diese Daten mit Dimensionen und Filtern.
 
