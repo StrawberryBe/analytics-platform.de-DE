@@ -1,25 +1,29 @@
 ---
-title: Konversions-Trends
+title: Ansicht "Konversionstrends"
 description: Verfolgen Sie Änderungen der Konversionsrate im Zeitverlauf.
 feature: Guided Analysis
-source-git-commit: 84ac8008e4c90250e9f626b8c4d72f20297c14ad
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---
 
-# Konversions-Trends
+# Ansicht &quot;Konversionstrends&quot;
 
 {{release-limited-testing}}
 
-Die **Konversionstrends** -Ansicht bietet eine Trend-Visualisierung um Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt. Anwendungsbeispiele für diesen Ansichtstyp sind:
+Die **Konversionstrends** -Ansicht bietet eine Trend-Visualisierung um Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt.
+
+![Konversions-Trends](../assets/conversion-trends.png)
+
+## Anwendungsbeispiele
+
+Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 * **Optimierungsbemühungen verfolgen**: Nachdem Sie die wichtigsten Engpässe identifiziert haben, die Sie verbessern möchten, verwenden Sie [Friktion](friction.md)können Sie diese Ansicht verwenden, um zu verfolgen, wie sich diese Optimierungen auf die Konversionsrate im Zeitverlauf auswirken.
 * **A/B-Test-Bewertung**: Bewerten Sie die Wirksamkeit von A/B-Tests oder -Experimenten, die im Rahmen eines Trichters durchgeführt werden. Durch den Vergleich von Konversionsraten zwischen verschiedenen Varianten können Sie einfach feststellen, welche Tests höhere Konversionsraten bieten, was zu datengesteuerten Entscheidungen führt, um welche Varianten dauerhaft implementiert werden sollen.
 * **Kampagnenbewertung im Zeitverlauf**: Messen Sie die Effektivität von Marketing-Kampagnen im Zeitverlauf. Sie können ein Segment erstellen, das sich auf Benutzer konzentriert, die eine bestimmte Kampagne berührt haben, und ihre Konversionsraten mit anderen Kampagnen vergleichen. Sie können auch die aktuellen Konversionsraten mit ähnlichen Kampagnen vergleichen, die in der Vergangenheit ausgeführt wurden.
-
-![Konversions-Trends](../assets/conversion-trends.png)
 
 ## Abfrageleiste
 

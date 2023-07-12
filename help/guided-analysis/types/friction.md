@@ -1,27 +1,29 @@
 ---
-title: Reibung
+title: Friktionsansicht
 description: Konversionsraten zwischen den Schritten vergleichen.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 164785f52990c43691c8e13c8fa80e3c201995f7
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '490'
 ht-degree: 3%
 
 ---
 
-# Reibung
+# Friktionsansicht
 
 {{release-limited-testing}}
 
 Die **Friktion** -Ansicht bietet eine visuelle Darstellung eines kritischen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den ein Benutzer durchlaufen muss. Die vertikale Achse stellt den Prozentsatz der Benutzer oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in der gewünschten Reihenfolge durchgeführt werden, können jedoch jederzeit im Berichtsfenster erfolgen. Anwendungsbeispiele für diesen Ansichtstyp sind:
 
+![Reibung](../assets/friction.png)
+
+## Anwendungsbeispiele
+
 * **Konversionsanalyse**: Sie können Konversionen in jeder Phase des Trichters analysieren. Indem Sie die Anzahl der Benutzer verfolgen, die von einem Schritt zum nächsten gelangen, können Sie Engpässe identifizieren, die ungewöhnliche oder unerwünschte Konversionsraten aufweisen. Diese Informationen sind nützlich, um zu verstehen, wo Sie Ihr Produkt für sofortige Ergebnisse verbessern können.
 * **Onboarding-Optimierung**: Optimieren Sie den Onboarding-Prozess Ihres Produkts, indem Sie das Benutzerverhalten in Bezug auf wichtige Ereignisse untersuchen. Sie können ermitteln, mit welchen Schritten Benutzer zu kämpfen haben oder welche Schritte nicht ausgeführt werden können.
 * **Funktionsbereitschaft und Interaktion**: Erfahren Sie, wie Benutzer mit bestimmten Funktionen in Ihrem Produkt interagieren. Durch die Analyse des Fortschritts der Benutzer durch funktionsbezogene Schritte können Sie die Rate der Funktionsbereitstellung bewerten und Bereiche identifizieren, in denen Benutzer bestimmte Funktionen abbrechen oder nicht nutzen können. Anschließend können Sie diese Informationen verwenden, um sich auf Funktionsverbesserungen zu konzentrieren und so die Akzeptanzraten zu erhöhen.
 * **Kampagnenbewertung**: Messen Sie die Effektivität von Marketing-Kampagnen. Sie können ein Segment erstellen, das sich auf Benutzer konzentriert, die eine bestimmte Kampagne berührt haben, und ihren Konversionsprozess mit anderen Kampagnen oder innerhalb Ihres gesamten Produkts vergleichen.
-
-![Reibung](../assets/friction.png)
 
 ## Abfrageleiste
 

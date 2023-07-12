@@ -1,15 +1,15 @@
 ---
-title: Nettowachstum
+title: Netto-Wachstumsansicht
 description: Gewinnen oder verlieren Sie Nutzende?
 feature: Guided Analysis
-source-git-commit: ab734506a023eacdeeb7c26f31a4361a6b804795
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 2%
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
-# Nettowachstum
+# Netto-Wachstumsansicht
 
 {{release-limited-testing}}
 
@@ -28,13 +28,15 @@ Das Ergebnis dieser Formel ist ein Verhältnis. Nettowachstum `1` ein Gleichgewi
 * **Dormant**: Der Benutzer war im unmittelbar vorherigen Zeitraum aktiv, ist aber im aktuellen Zeitraum nicht aktiv. Dormant-Benutzer zählen nicht zur Gesamtanzahl aktiver Benutzer.
 * Hinweis: Wiederholte Benutzer werden nicht in diese Berechnung einbezogen, da sie keinen Gewinn oder Verlust von Benutzern darstellen.
 
+![Nettowachstum](../assets/net-growth.png)
+
+## Anwendungsbeispiele
+
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 * **Leistungsbewertung**: Ermöglicht es Ihnen, die Gesamtleistung Ihres Produkts im Hinblick auf die Akquise neuer Benutzer zu bewerten. Durch die Verfolgung von Wachstumstrends können Sie besser nachvollziehen, ob Ihr Produkt Benutzer in einem gewünschten Tempo anzieht und bindet.
 * **Benutzerakquise-Analyse**: Ermöglicht es Ihnen, die Effektivität Ihrer Benutzerakquisestrategien zu bewerten. Die Analyse der Quellen für das Benutzerwachstum, wie Suchmaschinen, Kampagnen oder andere Marketingkanäle, ermöglicht es Ihnen, die wichtigsten Wachstumsquellen zu identifizieren, sodass Sie Ressourcen entsprechend zuordnen können.
 * **Abwanderungsanalyse**: Das Nettowachstum beinhaltet die Ablösung in der Formel (ruhende Nutzer). Sie können die allgemeine Gesundheit Ihrer Benutzerbasis im Laufe der Zeit bewerten. Wenn das Nettowachstum konsequent niedriger ist `1`, deutet dies auf eine hohe Anzahl von Abbrüchen hin, die die Implementierung von Bindungsstrategien erforderlich machen könnten.
-
-![Nettowachstum](../assets/net-growth.png)
 
 ## Abfrageleiste
 

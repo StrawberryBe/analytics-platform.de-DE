@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 3364850a56c7382fc1591b75d493ee9478ac59f6
+source-git-commit: eacb6eeaeadce7dfe39e6fb67eaba76986078363
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 86%
+source-wordcount: '966'
+ht-degree: 84%
 
 ---
 
@@ -187,16 +187,16 @@ ht-degree: 86%
 + Geführte Analyse {#guided-analysis}
    + [Überblick](../guided-analysis/overview.md)
    + Wirkung {#impact}
-      + [Version](../guided-analysis/types/release.md)
-      + [Erstmalige Verwendung](../guided-analysis/types/first-use.md)
+      + [Versionsansicht](../guided-analysis/types/release.md)
+      + [Erste Ansicht](../guided-analysis/types/first-use.md)
    + Trichter {#funnel}
-      + [Reibung](../guided-analysis/types/friction.md)
-      + [Konversions-Trends](../guided-analysis/types/conversion-trends.md)
+      + [Friktionsansicht](../guided-analysis/types/friction.md)
+      + [Ansicht &quot;Konversionstrends&quot;](../guided-analysis/types/conversion-trends.md)
    + Benutzerwachstum {#user-growth}
-      + [Aktiv](../guided-analysis/types/active.md)
-      + [Nettowachstum](../guided-analysis/types/net-growth.md)
+      + [Aktive Ansicht](../guided-analysis/types/active.md)
+      + [Netto-Wachstumsansicht](../guided-analysis/types/net-growth.md)
    + Trends {#trends}
-      + [Nutzung](../guided-analysis/types/usage.md)
+      + [Nutzungsansicht](../guided-analysis/types/usage.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
    + [Häufig gestellte Fragen](../guided-analysis/faq.md)
 

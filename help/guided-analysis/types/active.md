@@ -1,16 +1,16 @@
 ---
-title: Aktiv
+title: Aktive Ansicht
 description: Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: c96f30979cc8bf519a8e96a1fafa5aba2ebc4c01
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
 
-# Aktiv
+# Aktive Ansicht
 
 {{release-limited-testing}}
 
@@ -23,13 +23,15 @@ Die **Aktiv** -Ansicht bietet Einblicke in das Wachstum und die Akquise von Benu
 
 Alle aktiven Benutzer (neu + Wiederholen + Rückgabe) werden als Teelichtenschatten über der horizontalen Achse angezeigt, während alle ruhenden Benutzer unter der horizontalen Achse orange dargestellt werden.
 
+![Aktiv](../assets/active.png)
+
+## Anwendungsbeispiele
+
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 * **Benutzerbindung und -abwanderung:** Bietet eine klare Visualisierung für Zeiträume hoher oder niedriger Benutzerbindung. Die Erkennung dieser Zeiträume mit hoher oder niedriger Aufbewahrung kann Ihnen dabei helfen, Produktentscheidungen zu treffen, um eine hohe Beibehaltung zu fördern oder Abwanderung zu minimieren.
 * **Kampagnenbewertung**: Die Anzeige einer bestimmten Kampagne kann Ihnen dabei helfen, nicht nur zu verstehen, wie viel Traffic sie generiert hat, sondern auch, wie gut die Kampagne den Benutzern geholfen hat, aktiv zu bleiben.
 * **Analyse des Benutzerlebenszyklus**: Die Analyse des aktiven Nutzerwachstums während des gesamten Benutzerlebenszyklus kann dabei helfen, spezifische Phasen zu identifizieren, in denen die Benutzerinteraktion abnimmt. Wenn beispielsweise eine hohe Anzahl ruhender Benutzer für Einzelpersonen in einer Onboarding-Phase vorhanden ist, kann dies auf Nutzungsprobleme oder die Notwendigkeit einer besseren produktinternen Anleitung hinweisen.
-
-![Aktiv](../assets/active.png)
 
 ## Abfrageleiste
 
