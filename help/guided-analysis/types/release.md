@@ -2,9 +2,9 @@
 title: Versionsansicht
 description: Leistung in gleichen Zeiträumen vor und nach Veröffentlichung vergleichen.
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: a635c43c129ea45b270e304f4310b95124709b2a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '475'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,8 @@ Die **Version** zeigt einen Vergleich der Leistung von Schlüsselindikatoren vor
 
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
-* **Allgemeine Leistungsbewertung:** Der Vergleich der wichtigsten Indikatoren insgesamt, wie z. B. der Umsatz, kann Ihnen dabei helfen festzustellen, ob eine Version insgesamt erfolgreich war.
+* **Allgemeine Leistungsbewertung:** Der Vergleich der wichtigsten Indikatoren insgesamt, wie z. B. Interaktionsmaßnahmen, kann Ihnen dabei helfen festzustellen, ob eine bestimmte Version insgesamt erfolgreich war.
+* **Überwachung**: Wenn es bestimmte Maßnahmen gibt, die Sie bei Änderungen erwarten, dass sie flach bleiben, wie z. B. Web-Vitale wie Ladezeit oder Logins, vergleichen Sie sie vor und nach, um sicherzustellen, dass Ihre Veröffentlichung keine unbeabsichtigten Folgen hat.
 * **Funktionsbereitstellung**: Wenn sich eine Produktaktualisierung auf die Verbesserung einer bestimmten Funktion konzentriert, können Sie diese Ansicht verwenden, um die Nutzung dieser Funktion vor und nach der Produktaktualisierung direkt zu vergleichen.
 * **Fehlererkennung**: Das Tracking der Anzahl der Fehler vor und nach einer Version kann einen frühzeitigen Indikator für Kundenprobleme liefern. Wenn Sie unmittelbar nach einer Veröffentlichung einen Anstieg der Fehler feststellen, können Sie mit Entwicklungs- oder Entwicklungsteams zusammenarbeiten, um das Problem zu identifizieren und zu beheben, wodurch weitere Auswirkungen für Kunden vermieden werden.
 
@@ -42,7 +43,7 @@ Die Freigabeansicht bietet die folgenden Diagrammeinstellungen, die im Menü üb
 
 ## Datumsbereich
 
-Die Datumsauswahl in Folgenabschätzungsberichten funktioniert anders als bei anderen Analysetypen, da sich der Bericht um das in der Abfrageleiste angegebene Datum dreht. Die folgenden Optionen sind verfügbar:
+Die Datumsauswahl in der Impact-Analyse funktioniert anders als bei anderen Analysetypen, da sich der Bericht um das in der Abfrageleiste angegebene Datum dreht. Die folgenden Optionen sind verfügbar:
 
 * **Intervall**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Zu den gültigen Optionen gehören [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich]und [!UICONTROL Quartal]. Eine Änderung des Intervalls wirkt sich auf die für den Zeitraum vor und nach verfügbaren Optionen aus.
 * **Vor- und Nach-Zeitraum**: Die Zeitdauer, die vor und nach dem in der Abfrageleiste angegebenen Datum analysiert werden soll. Die verfügbaren Optionen hängen von der [!UICONTROL Intervall] auswählen.
