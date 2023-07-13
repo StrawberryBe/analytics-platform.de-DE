@@ -2,10 +2,10 @@
 title: Erste Ansicht
 description: Messen der Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren.
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: 9fa4b894e69a25b26632a93f00a655eec8e8aa86
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 8%
+source-wordcount: '417'
+ht-degree: 5%
 
 ---
 
@@ -24,25 +24,26 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 * **Analyse neuer Funktionen**: Wenn Sie eine neue Funktion in Ihrem Produkt starten, können Sie vergleichen, wie die Schlüsselindikatoren vor und nach der erstmaligen Anzeige der neuen Funktion durch die Benutzer abgeschnitten wurden.
 * **Kampagneneffizienz**: Wenn ein Benutzer eine bestimmte Kampagne anzeigt, können Sie vergleichen, wie die Schlüsselindikatoren vor und nach der Anzeige oder Interaktion des Benutzers mit dieser Kampagne abgeschnitten wurden.
 
-<!--
-## Query rail
+## Abfrageleiste
 
-The query rail allows you to configure the following components:
+In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **Key indicators**: The events that you want to measure per user. Each selected key indicator is represented as a colored line. A row representing the event is added to the table. You can include up to three events.
-* **Factors**: The date that you want to compare before and after.
-* **People**: The segment that you want to measure. The selected segment filters your data to focus only on the individuals who match your segment criteria.
+* **Schlüsselindikatoren**: Die Ereignisse, die pro Benutzer gemessen werden sollen. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
+* **Faktoren**: Für diese Ansicht gibt es zwei Faktoren:
+   * **Datum**: Wie weit zurück Sie zum ersten Mal suchen möchten, wenn ein Ereignis berührt wurde.
+   * **Ereignis**: Das Ereignis, das Sie vor und nach dem Berühren vergleichen möchten.
+* **Personen**: Das Segment, das Sie messen möchten. Das ausgewählte Segment filtert Ihre Daten so, dass sie sich nur auf die Personen konzentrieren, die Ihren Segmentkriterien entsprechen.
 
-## Chart settings
+## Diagrammeinstellungen
 
-The Release view offers the following chart settings, which can be adjusted in the menu above the chart:
+Die Ansicht Erste Verwendung bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **Metric**: The metric that you want to measure. Options include [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions], and [!UICONTROL Users].
-* **Chart type**: The type of visualization that you want to use. Options include Line.
+* **Metrik**: Die Metrik, die Sie messen möchten. Optionen umfassen [!UICONTROL Ereignisse pro Benutzer], [!UICONTROL Veranstaltungen], [!UICONTROL Sitzungen]und [!UICONTROL Benutzer].
+* **Diagrammtyp**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;.
 
-## Date range
+## Datumsbereich
 
-Date selection in impact reports operate differently than other analysis types, since the report revolves around the date specified in the query rail. The following options are available:
+Datumsauswahlen in Wirkungsberichten funktionieren anders als andere Analysetypen, da sich der Bericht um ein bestimmtes Ereignis dreht, das zum ersten Mal berührt wird (spezifiziert in der Abfrageleiste). Die folgenden Optionen sind verfügbar:
 
-* **Interval**: The date granularity that you want to view trended data by. Valid options include [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly], and [!UICONTROL Quarterly]. Changing the interval affects the options available for the Before and after period.
-* **Before and after period**: The amount of time to analyze before and after the date specified in the query rail. Available options depend on the [!UICONTROL Interval] selection. -->
+* **Intervall**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Zu den gültigen Optionen gehören [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich]und [!UICONTROL Quartal]. Eine Änderung des Intervalls wirkt sich auf die für den Zeitraum vor und nach verfügbaren Optionen aus.
+* **Vor- und Nach-Zeitraum**: Die Zeitdauer, die vor und nach dem in der Abfrageleiste angegebenen berührten Ereignis analysiert werden soll. Die verfügbaren Optionen hängen von der [!UICONTROL Intervall] auswählen.
