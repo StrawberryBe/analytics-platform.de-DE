@@ -1,9 +1,9 @@
 ---
 title: Anwendungsfälle für Branchen
 description: Anwendungsfälle für die Branche für eine geleitete Analyse
-source-git-commit: 9311157c8aa8bab8627e3fdf3e989a0302d29f32
+source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1442'
 ht-degree: 3%
 
 ---
@@ -23,6 +23,10 @@ Anwendungsbeispiele für eine geleitete Analyse variieren je nach Branche. Auf d
 
 {style="table-layout:auto"}
 
+![Fristansicht für Einzelhandel](assets/retail-funnel-friction.png)
+
+![Nutzungsansicht für den Einzelhandel](assets/retail-trends-usage.png)
+
 +++
 
 +++**Finanzdienste**
@@ -36,6 +40,14 @@ Anwendungsbeispiele für eine geleitete Analyse variieren je nach Branche. Auf d
 
 {style="table-layout:auto"}
 
+![Fristverlängerung für Finanzdienstleistungen](assets/fsi-funnel-friction.png)
+
+![Nutzungsansicht für Finanzdienstleistungen](assets/fsi-trends-usage.png)
+
+![Aktive Sicht auf Finanzdienstleistungen](assets/fsi-user-growth-active.png)
+
+![Alternative aktive Ansicht für Finanzdienstleistungen](assets/fsi-user-growth-active-2.png)
+
 +++
 
 +++**Touristik**
@@ -45,9 +57,13 @@ Anwendungsbeispiele für eine geleitete Analyse variieren je nach Branche. Auf d
 | **Auswirkungen neuer Buchungsflussfunktionen quantifizieren** | Wir analysierten schnell die Auswirkungen einer neuen Buchungsschritt-Funktion auf die Konversionsraten und identifizierten den Teil des Erlebnisses mit den größten Gewinnen. | **Erhöhen Sie die Buchungsraten.** Messen Sie die geschäftlichen Auswirkungen anstatt nur die Nutzung von Funktionen. | [Ansicht mit Auswirkung auf die Version](types/release.md) <p/><p/> [Friktionsansicht](types/friction.md) |
 | **Optimieren des App-Erlebnisses** | Wir konnten unsere monatlichen aktiven App-Benutzer (MAUs) im Laufe der Zeit schnell und einfach verstehen und positive Auswirkungen nach Version identifizieren. | **Erhöhen Sie MAUs.** Messen und erhöhen Sie die App-Nutzung, die mit dem Kundenzufriedenheit in Zusammenhang steht. | [Wachstumsansicht aktiver Benutzer](types/active.md) <p/><p/> [Netto-Wachstumsansicht](types/net-growth.md) |
 | **Reibungssuche im mobilen Check-in-Fluss** | Wenn wir sehen, wo Personen erfolgreich sind oder den erwarteten Mobile-Check-in-Prozess verlassen, können wir mühelos Bereiche für die Erlebnisoptimierung identifizieren. | **Erhöhen Sie CSAT und reduzieren Sie IROPs.** Die Beseitigung von Reibung führt zu einem nahtloseren &quot;Tag des Reisens&quot;. | [Friktionsansicht](types/friction.md) <p/><p/> [Ansicht &quot;Konversionstrends&quot;](types/conversion-trends.md) |
-| **Callcenter-Aufrufe deaktivieren** | Wenn ich meine Benutzererfahrung in einer Trichteransicht sah, zeigte sich, wo unsere Benutzer die Reibung aufnahmen, was zu einem kostspieligen Callcenter-Volumen führte. Wir wussten, wo wir uns als Nächstes konzentrieren mussten. | **Reduzierung der Nutzung des Callcenters.** Erfahren Sie mehr über &quot;glückliche Wege&quot;-Benutzererlebnisse und reduzieren Sie kostspielige Aufrufe. | [Friktionsansicht](types/friction.md) <p/><p/> [Ansicht &quot;Konversionstrends&quot;](types/conversion-trends.md) |
+| **Callcenter-Aufrufe deaktivieren** | Wenn ich meine Benutzererfahrung in einer Trichteransicht sah, zeigte sich, wo unsere Benutzer die Reibung aufnahmen, was zu einem kostspieligen Callcenter-Volumen führte. Wir wussten, wo wir uns als Nächstes konzentrieren mussten. | **Reduzierung der Nutzung des Callcenters.** Erfahren Sie mehr über &quot;glückliche Pfade&quot;und reduzieren Sie teure Anrufe. | [Friktionsansicht](types/friction.md) <p/><p/> [Ansicht &quot;Konversionstrends&quot;](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
+
+![Friktionsansicht für Reisen und Gastfreundschaft](assets/th-funnel-friction.png)
+
+![Nutzungsansicht für Reisen und Gastfreundschaft](assets/th-trends-usage.png)
 
 +++
 
@@ -62,18 +78,24 @@ Anwendungsbeispiele für eine geleitete Analyse variieren je nach Branche. Auf d
 
 {style="table-layout:auto"}
 
+![Frisierungsansicht für Medien und Unterhaltung](assets/me-funnel-friction.png)
+
+![Aktive Sicht auf Medien und Unterhaltung](assets/me-user-growth-active.png)
+
 +++
 
 +++**Gesundheitswesen**
 
 | Anwendungsfall | Beispiel | Wirkung | Analyse |
 | --- | --- | --- | --- |
-| **Verbesserung der gesundheitlichen Situation von Patienten** | Ich hatte keine klare Vorstellung davon, wie viele Mitglieder des Wellness-Plans pro Woche einfach aufgehört haben, ihn ganz zu benutzen. Wir verfügen nun über Daten, um unsere Bemühungen auf Wachstum zu konzentrieren. | **Reduzierung der Arztbesuche.** Schnell identifizierte ruhende Benutzer zur erneuten Interaktion. | [Wachstumsansichten aktiver Benutzer](types/active.md) |
-| **Verbesserung der Patientenerfahrung** | Durch die direkte Einsicht in die Anzahl der Patienten, die unsere Call-Center für einfache Passwörter anrufen, wurde meine Leidenschaft erneuert, mich auf die Reduzierung der Gesamtkosten unseres Unternehmens zu konzentrieren und unsere Patientenerfahrung zu stärken. | **Reduzieren Sie die Gesamtkosten für die Bereitstellung.** Erstellen Sie eine bessere Patientenerfahrung und reduzieren Sie die Aufrufe an Patientendienste. | [Ansicht zu Nutzungstrends](types/usage.md) <p/><p/> [Friktionsansicht](types/friction.md) |
+| **Verbesserung der gesundheitlichen Situation von Patienten** | Ich hatte keine klare Vorstellung davon, wie viele Mitglieder eines Wellness-Plans pro Woche einfach aufgehört haben, ihn ganz zu benutzen. Wir verfügen nun über Daten, um unsere Bemühungen auf Wachstum zu konzentrieren. | **Reduzierung der Arztbesuche.** Schnell identifizierte ruhende Benutzer zur erneuten Interaktion. | [Wachstumsansichten aktiver Benutzer](types/active.md) |
+| **Verbesserung der Patientenerfahrung** | Durch die direkte Einsicht in die Anzahl der Patienten, die unsere Call-Center für einfache Passwörter anrufen, wurde meine Leidenschaft erneuert, mich auf die Reduzierung der Gesamtkosten unseres Unternehmens für die Bedienung und die Stärkung unserer Patientenerfahrung zu konzentrieren. | **Reduzieren Sie die Gesamtkosten für die Bereitstellung.** Erstellen Sie eine bessere Patientenerfahrung und reduzieren Sie die Aufrufe an Patientendienste. | [Ansicht zu Nutzungstrends](types/usage.md) <p/><p/> [Friktionsansicht](types/friction.md) |
 | **Ermitteln wiederholter kanalübergreifender Aktionen nach Segment** | Ich muss verstehen, wie aktive, für Medicare infrage kommende Mitglieder mit ihrer geplanten Nutzung für bestimmte Botschaften in unseren digitalen Produkten sind. Produktsignale tragen dazu bei, unser Marketing effektiver zu gestalten. | **Personalisieren der Medicare-Registrierungsoptionen.** Vergleichen Sie allgemeine sequenzielle Aktionen meiner aktivsten Planmitglieder. | [Friktionsansicht](types/friction.md) <p/><p/> [Wachstumsansicht aktiver Benutzer](types/active.md) |
 | **Bewahren Sie die besten Branchenkenntnisse auf** | Unsere Analytics-Ressourcen sind so zeitnah. Ich muss schnell die Produktnutzungsdaten abrufen, die ich für meine Führungsaktualisierung-Aufrufe benötige. | **Reduzierung des Arbeitsaufwands für Analysen.** Erhalten Sie schneller Antworten. Angemessene Berichterstellung für den Zeitpunkt, zu dem ich sie am meisten benötige. | [Geführte Analyse](overview.md) |
 
 {style="table-layout:auto"}
+
+![Fristverlängerung für die Gesundheitsfürsorge](assets/healthcare-funnel-friction.png)
 
 +++
 
@@ -87,5 +109,7 @@ Anwendungsbeispiele für eine geleitete Analyse variieren je nach Branche. Auf d
 | **Selbstbedienungsanalyse entsperren** | Der Versuch, Zugriff auf Einblicke zu erhalten, ist schwierig und unsere Benutzer werden nicht für die Analyse geschult. Sie müssen in der Lage sein, Antworten zu erhalten und die gleichen Daten wie die gesamte Organisation zu nutzen, was zu stärkeren Partnerschaften und echten datengesteuerten Entscheidungen führt. | **Engere Partnerschaften innerhalb der Organisation.** Gewähren Sie Produktmanagern Zugriff auf zuvor silodierte Daten. | [Geführte Analyse](overview.md) |
 
 {style="table-layout:auto"}
+
+![Nutzungsansicht für B2B](assets/b2b-trends-usage.png)
 
 +++
