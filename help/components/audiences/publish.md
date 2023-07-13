@@ -3,10 +3,10 @@ title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 63%
+source-wordcount: '1576'
+ht-degree: 61%
 
 ---
 
@@ -32,7 +32,7 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
 
    Konfigurieren Sie diese Einstellungen. Danach können Sie die Zielgruppe veröffentlichen.
 
-   ![](assets/create-audience.png)
+   ![Screenshot zum Erstellen einer Zielgruppe](assets/create-audience.png)
 
    | Einstellung | Beschreibung |
    | --- | --- |
@@ -52,7 +52,7 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
 
    Die Zielgruppenvorschau wird in der rechten Leiste angezeigt. Sie ermöglicht eine zusammengefasste Analyse der von Ihnen erstellten Zielgruppe.
 
-   ![](assets/data-preview.png)
+   ![Screenshot der Datenvorschau](assets/data-preview.png)
 
    | Vorschaueinstellung | Beschreibung |
    | --- | --- |
@@ -85,7 +85,7 @@ Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue Custom
 
 An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgruppen können Latenzen auftreten. Im Folgenden finden Sie einen Überblick über mögliche Latenzen.
 
-![Latenz von Adobe Experience Platform zu Customer Journey Analytics](assets/latency-diagram.png)
+![Latenzen bei der Zielgruppenveröffentlichung, wie beschrieben in [Latenzaspekte](#latency-considerations)](assets/latency-diagram.png)
 
 | # | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 
 Customer Journey Analytics nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). Customer Journey Analytics sendet die Zielgruppe je nach ausgewähltem Typ zur Experience Platform mit dem primären Identitätssatz [!UICONTROL Personen-ID] wenn die Verbindung konfiguriert wurde.
 
-Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Jetzt kann beispielsweise „user@adobe.com“ auf allen Geräten und Kanälen als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
+Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Jetzt zum Beispiel: <user@adobe.com> kann für alle ihre Geräte und Kanäle als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
 Sie können Customer Journey Analytics-Zielgruppen in Platform anzeigen, indem Sie **[!UICONTROL Segmente]** > **[!UICONTROL Segmente erstellen]** > **[!UICONTROL Zielgruppen]** tab > **[!UICONTROL CJA-Zielgruppen]**.
 
