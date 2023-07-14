@@ -3,7 +3,7 @@ title: Geführte Analyse – Übersicht
 description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit der Produktteams schnell hochwertige Einblicke erhalten können.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
+source-git-commit: 75f946e65bfc0ccee4f173b699b14caced21bbaf
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 8%
@@ -40,11 +40,11 @@ Wenn Ihr Unternehmen für eine geleitete Analyse vorgesehen ist, können Sie üb
 
 1. Klicken **[!UICONTROL Geführte Analyse]** von der Startseite aus direkt zum [Ansicht zu Nutzungstrends](types/usage.md).
 
-   ![Neues Modal erstellen](assets/create-new-modal.png)
+   ![Kachel der Landingpage](assets/landing-page-tile.png)
 
 1. Klicken **[!UICONTROL Neu erstellen]** um die verschiedenen Ansichtsoptionen anzuzeigen und einen anderen Ausgangspunkt für Ihre Analyse auszuwählen.
 
-   ![Kachel der Landingpage](assets/landing-page-tile.png)
+   ![Neues Modal erstellen](assets/create-new-modal.png)
 
 ## Benutzeroberfläche
 
