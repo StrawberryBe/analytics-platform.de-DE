@@ -3,10 +3,10 @@ title: Häufig gestellte Fragen zur geführten Analyse
 description: Häufig gestellte Fragen zur geführten Analyse.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 23d3e6a9662cda932a376c09849ab078d22830dc
+source-git-commit: d15ada7c5b46c55f56e3fd3ba2b749f0495a0c10
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -16,21 +16,31 @@ ht-degree: 3%
 
 Häufig gestellte Fragen zur geführten Analyse.
 
-+++**Ist die geführte Analyse für alle verfügbar?**
++++**Wie kann meine Organisation für die geführte Analyse bereitgestellt werden?**
 
-Nein; Geführte Analyse ist ein kostenpflichtiges Add-on für Customer Journey Analytics. Wenden Sie sich an Ihr Adobe Account Team, wenn Sie mit der Verwendung dieses Add-ons beginnen möchten.
+Geführte Analyse ist ein kostenpflichtiges Add-on für Customer Journey Analytics. Wenden Sie sich an Ihr Adobe Account Team, wenn Sie mit der Verwendung dieses Add-ons beginnen möchten.
 
 +++
 
 +++**Welche Implementierungsänderungen sind erforderlich, um die geführte Analyse zu verwenden?**
 
-Wenn Sie Analysis Workspace bereits in Customer Journey Analytics verwenden, sind keine zusätzlichen Implementierungsänderungen erforderlich. Geführte Analysen verwenden dieselben Datenansichten und Verbindungen wie Analysis Workspace. Der Prozess zum Einbinden und Verwenden eines beliebigen Projekttyps ist für alle Customer Journey Analytics identisch, einschließlich der geführten Analyse.
+Wenn Sie Customer Journey Analytics bereits heute verwenden, sind keine zusätzlichen Implementierungsänderungen erforderlich. Die geführte Analyse verwendet dieselbe [Datenansichten](../data-views/data-views.md) und [Verbindungen](../connections/overview.md) als andere CJA-Schnittstellen wie [Analysis Workspace](../analysis-workspace/home.md).
+
+Damit Ihre Endbenutzer mit der geführten Analyse am erfolgreichsten sind, wird empfohlen, in Adobe Experience Platform über ein starkes Ereignisschema und eine leistungsstarke Verwaltungsstrategie zu verfügen und [Datenansichten](../data-views/data-views.md).
 
 +++
 
-+++**Wie stehen Begriffe innerhalb und außerhalb der geführten Analyse zueinander in Beziehung?**
++++**Wann sollten Sie die Geführte Analyse oder Analysis Workspace verwenden?**
 
-Geführte Analyse verwendet Begriffe, die in der Produktanalysebranche häufiger verwendet werden. Sie können diese Tabelle referenzieren, wenn Sie zwischen der geführten Analyse und Analysis Workspace wechseln.
+**Geführte Analyse** kann Benutzern dabei helfen, schnell hochwertige Einblicke zu erhalten. Dies ist nützlich für Produktteams, Benutzer, die vertraulicher mit Daten arbeiten möchten, und sogar für Analysten als Vorsprung zu einer tieferen Analyse.
+
+**[Analysis Workspace](../analysis-workspace/home.md)** ist ein Freiformraum, mit dem Sie weiter in die Daten eintauchen können, um weitere Einblicke zu erhalten. Es ist nützlich für Analysten und Power-Benutzer, die die Daten gut verstehen und tief in sie eintauchen möchten.
+
++++
+
++++**Wie unterscheidet sich die Terminologie zwischen der geführten Analyse und Analysis Workspace?**
+
+Geführte Analyse verwendet Begriffe, die häufiger von Produktteams verwendet werden. Sie können diese Tabelle referenzieren, wenn Sie zwischen der geführten Analyse und [Analysis Workspace](../analysis-workspace/home.md).
 
 | Geführter Analysebegriff | Analysis Workspace-Begriff |
 | --- | --- |
@@ -44,26 +54,24 @@ Geführte Analyse verwendet Begriffe, die in der Produktanalysebranche häufiger
 
 +++
 
-+++**Was sind einige Unterschiede bei der Analyse des Ansatzes von Analysis Workspace und Guided Analysis?**
++++**Was sind einige Unterschiede in der Vorgehensweise bei der geführten Analyse und der Berichterstellung mit Analysis Workspace?**
 
-Während die Analyse mit Analysis Workspace und Guided die gleichen zugrunde liegenden Daten verwendet, unterscheidet sich die Art und Weise, wie Sie mit jedem Tool Abfragen dieser Daten erstellen können.
+while [Analysis Workspace](../analysis-workspace/home.md) und geführte Analysen verwenden dieselben zugrunde liegenden Daten. Die Art und Weise, mit der jedes Tool Abfragen dieser Daten erstellen kann, ist anders.
 
-* **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Tabellen bestehen normalerweise aus Dimensionselementzeilen, während Spalten normalerweise Metriken sind. Sie können Filter sowohl auf Zeilen als auch auf Spalten anwenden, um die gewünschten Daten zu erhalten.
+* **Analysis Workspace ist ein dimensionszentriertes Erlebnis.** Tabellen bestehen normalerweise aus dimensionalen Zeilen, während Spalten normalerweise Metriken sind. Filter können sowohl in Zeilen als auch in Spalten angewendet werden, um die gewünschten Daten zu erhalten.
 
-* **Geführte Analyse ist ein ereigniszentriertes Erlebnis.** Visualisierungen konzentrieren sich auf Ereignisse und ergänzen diese Daten mit Dimensionen und Filtern.
+* **Geführte Analyse ist ein ereigniszentriertes Erlebnis.** Jede Analyse beginnt mit der Auswahl von Ereignissen. Anschließend können Dimensionen und Filter hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
 
 ![Struktur](assets/structure.png)
 
 Betrachten Sie das folgende Beispiel, in dem Sie sich auf Daten rund um die Startseite Ihrer Website konzentrieren. Teams stellen ähnliche Fragen, aber der Analysenansatz kann unterschiedlich sein.
 
-* Ein typischer, dimensionszentrierter Analysis Workspace-Ansatz wäre: &quot;Wie viele Seitenansichten hat die Homepage erhalten?&quot;
+* Ein typischer, dimensionszentrierter Analysis Workspace-Ansatz wäre: &quot;Sehen wir uns die Startseite an und sehen Sie, wie viele Seitenansichten sie erhalten hat.&quot;
 
   ![Dimension zentriert](assets/dimension-centered.png)
 
 * Ein typischer, ereigniszentrierter Ansatz der geführten Analyse wäre: &quot;Wie viele Benutzer haben die Homepage angesehen?&quot;
 
   ![Ereignis zentriert](assets/event-centered.png)
-
-Diese Anweisungen veranschaulichen zwei verschiedene Methoden, um je nach Ereignisverwaltungsstrategie denselben Bericht zu erreichen.
 
 +++
