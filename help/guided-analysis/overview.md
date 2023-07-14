@@ -3,9 +3,9 @@ title: Geführte Analyse – Übersicht
 description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit der Produktteams schnell hochwertige Einblicke erhalten können.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
+source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1048'
 ht-degree: 8%
 
 ---
@@ -24,23 +24,27 @@ Geführte Analyse kategorisiert Ansichtstypen in **Analysetypen**. Die folgenden
 
 | Analysetyp | Ansichtstyp | Beschreibung |
 | --- | --- | --- |
-| Wirkung | [Version](types/release.md) | Leistung in gleichen Zeiträumen vor und nach Veröffentlichung vergleichen. |
-| Wirkung | [Erstmalige Verwendung](types/first-use.md) | Messen der Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
-| Trichter | [Reibung](types/friction.md) | Konversionsraten zwischen den Schritten vergleichen. |
-| Trichter | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie Veränderungen der Konversionsraten im Laufe der Zeit. |
-| Benutzerwachstum | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
-| Benutzerwachstum | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
-| Trends | [Nutzung](types/usage.md) | Benutzerinteraktion im Lauf der Zeit messen. |
+| [!UICONTROL Wirkung] | [Version](types/release.md) | Leistung in gleichen Zeiträumen vor und nach Veröffentlichung vergleichen. |
+| [!UICONTROL Wirkung] | [Erstmalige Verwendung](types/first-use.md) | Messen der Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren. |
+| [!UICONTROL Trichter] | [Reibung](types/friction.md) | Konversionsraten zwischen den Schritten vergleichen. |
+| [!UICONTROL Trichter] | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie Veränderungen der Konversionsraten im Laufe der Zeit. |
+| [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
+| [!UICONTROL Nettowachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
+| [!UICONTROL Trends] | [Nutzung](types/usage.md) | Benutzerinteraktion im Lauf der Zeit messen. |
 
 {style="table-layout:auto"}
 
 ## Zugriff auf
 
-Wenn Ihr Unternehmen für eine geleitete Analyse vorgesehen ist, können Sie von der Startseite des Customer Journey Analytics aus darauf zugreifen.
+Wenn Ihr Unternehmen für eine geleitete Analyse vorgesehen ist, können Sie über die Customer Journey Analytics-Startseite darauf zugreifen.
 
-Klicken **Geführte Analyse** von der Startseite aus direkt zum [Ansicht zu Nutzungstrends](types/usage.md).
+1. Klicken **[!UICONTROL Geführte Analyse]** von der Startseite aus direkt zum [Ansicht zu Nutzungstrends](types/usage.md).
 
-Klicken **Neu erstellen** um die verschiedenen Ansichtsoptionen anzuzeigen und einen anderen Ausgangspunkt für Ihre Analyse auszuwählen.
+   ![Neues Modal erstellen](assets/create-new-modal.png)
+
+1. Klicken **[!UICONTROL Neu erstellen]** um die verschiedenen Ansichtsoptionen anzuzeigen und einen anderen Ausgangspunkt für Ihre Analyse auszuwählen.
+
+   ![Kachel der Landingpage](assets/landing-page-tile.png)
 
 ## Benutzeroberfläche
 
