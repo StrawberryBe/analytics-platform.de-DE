@@ -2,7 +2,7 @@
 title: Netto-Wachstumsansicht
 description: Gewinnen oder verlieren Sie Nutzende?
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 1%
@@ -10,8 +10,6 @@ ht-degree: 1%
 ---
 
 # Netto-Wachstumsansicht
-
-{{release-limited-testing}}
 
 Die **Nettowachstum** Der Ansichtstyp bietet Einblicke in die Rate, mit der Sie in einem bestimmten Zeitraum Benutzer gewinnen oder verlieren. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Wachstumsmessung darstellt.
 

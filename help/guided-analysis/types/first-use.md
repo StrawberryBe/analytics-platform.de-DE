@@ -2,7 +2,7 @@
 title: Erste Ansicht
 description: Messen der Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren.
 feature: Guided Analysis
-source-git-commit: 4d642c150f04ed4780820036cfd53fc343fc94c8
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 3%
@@ -10,8 +10,6 @@ ht-degree: 3%
 ---
 
 # Erste Ansicht
-
-{{release-limited-testing}}
 
 Die **Erste Verwendung** zeigt einen Vergleich der Leistung von Schlüsselindikatoren, bevor und nachdem ein Benutzer eine Produktfunktion zum ersten Mal verwendet hat. Die horizontale Achse dieses Berichts ist ein relatives Zeitintervall vor und nach dem Ereignis, während die vertikale Achse die gewünschten Schlüsselindikatoren misst. Ein vertikaler Balken in der Mitte des Diagramms stellt den Tag 0 für den Zeitpunkt dar, zu dem eine Funktion von einem bestimmten Benutzer zum ersten Mal verwendet wird. Da Benutzer nicht immer Funktionen am selben Tag übernehmen und Ihre Rollouts mehrere Tage dauern können, bedeutet Tag 0 für jeden einzelnen Benutzer etwas Anderes.
 

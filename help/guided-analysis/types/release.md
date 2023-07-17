@@ -2,7 +2,7 @@
 title: Versionsansicht
 description: Leistung in gleichen Zeiträumen vor und nach Veröffentlichung vergleichen.
 feature: Guided Analysis
-source-git-commit: a635c43c129ea45b270e304f4310b95124709b2a
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 4%
@@ -10,8 +10,6 @@ ht-degree: 4%
 ---
 
 # Versionsansicht
-
-{{release-limited-testing}}
 
 Die **Version** zeigt einen Vergleich der Leistung von Schlüsselindikatoren vor und nach einem bestimmten Datum. Die horizontale Achse dieses Berichts ist ein Zeitintervall, während die vertikale Achse die gewünschten Schlüsselindikatoren misst. Ein vertikaler Balken in der Mitte des Diagramms stellt das Datum dar, das Sie vor und nach dem vergleichen möchten. Dieses Datum stellt in der Regel eine erhebliche Änderung am Produkt dar, mit dem Sie messen möchten, z. B. eine Aktualisierung des Produkts oder einen Kampagnen-Start.
 

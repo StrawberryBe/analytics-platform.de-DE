@@ -3,7 +3,7 @@ title: Aktive Ansicht
 description: Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 1%
@@ -11,8 +11,6 @@ ht-degree: 1%
 ---
 
 # Aktive Ansicht
-
-{{release-limited-testing}}
 
 Die **Aktiv** -Ansicht bietet Einblicke in das Wachstum und die Akquise von Benutzern über einen bestimmten Zeitraum. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse eine Benutzermessung darstellt. Benutzer sind in vier Kategorien unterteilt:
 
