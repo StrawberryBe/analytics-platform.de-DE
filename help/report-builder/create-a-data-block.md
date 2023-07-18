@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
+source-git-commit: fe52730e3904ba5ccc5d1e7e5ff89eed8a575fbc
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 82%
+source-wordcount: '541'
+ht-degree: 83%
 
 ---
 
@@ -72,8 +72,6 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
    ![](./assets/image10.png)
 
    **Anzeigen oder Ausblenden von Zeilen- und Spaltenüberschriften**
-
-1. Klicken Sie im Report Builder-Hub auf den Befehl Datenblock bearbeiten .
 
 1. Klicken Sie auf **Verzeichnis** Einstellungssymbol.
 
