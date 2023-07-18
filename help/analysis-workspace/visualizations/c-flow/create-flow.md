@@ -4,10 +4,10 @@ title: Flussvisualisierung konfigurieren
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 4e5a186aa39ae7c56ff29e1523a4092546092789
+source-git-commit: f97572025d07d56d1fd699074228abe5d2a7b8a1
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 63%
+source-wordcount: '1487'
+ht-degree: 62%
 
 ---
 
@@ -21,13 +21,11 @@ Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem
 
 ## Erstellen einer Flussvisualisierung {#configure}
 
-1. Fügen Sie ein leeres Bedienfeld zu Ihrem Projekt hinzu und klicken Sie in der linken Leiste auf das Visualisierungssymbol.
-
-1. Ziehen Sie die [!UICONTROL **Fluss**] Visualisierung in das Bedienfeld ein.
+1. Fügen Sie ein leeres Bedienfeld zu Ihrem Projekt hinzu, wählen Sie in der linken Leiste das Symbol Visualisierungen aus und ziehen Sie dann die [!UICONTROL **Fluss**] Visualisierung in das Bedienfeld ein.
 
    Oder
 
-   Ziehen Sie die [!UICONTROL **Fluss**] Visualisierung in ein vorhandenes Projekt.
+   Fügen Sie eine Visualisierung auf eine der im Abschnitt &quot;Visualisierungen zu einem Bedienfeld hinzufügen&quot;unter [Visualisierungen - Übersicht](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 1. Die Flussvisualisierung können Sie mit einer der folgenden Optionen verankern:
 
@@ -45,7 +43,7 @@ Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem
    >
    >Berechnete Metriken können nicht im  **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet in]** -Felder.
 
-1. Wenn Sie eine Metrik auswählen, müssen Sie auch eine [!UICONTROL Pathing-Dimension] , um als Pfad zu verwenden, der zu Ihrer ausgewählten Komponente führt oder von dieser weg führt, wie hier dargestellt. Die Standardeinstellung ist [!UICONTROL **Seite**].
+1. Wenn Sie eine Metrik auswählen, müssen Sie auch eine [!UICONTROL **Pathing-Dimension**] , um als Pfad zu verwenden, der zu Ihrer ausgewählten Komponente führt oder von dieser weg führt, wie hier dargestellt. Die Standardeinstellung ist [!UICONTROL **Seite**].
 
    ![Pfaddimension](assets/pathing-dim.png)
 
