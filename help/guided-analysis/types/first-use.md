@@ -2,18 +2,22 @@
 title: Erste Ansicht
 description: Messen der Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren.
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '618'
 ht-degree: 3%
 
 ---
 
-# Erste Ansicht
+# [!UICONTROL Erste Verwendung] Ansicht
 
-Die **Erste Verwendung** zeigt einen Vergleich der Leistung von Schlüsselindikatoren, bevor und nachdem ein Benutzer eine Produktfunktion zum ersten Mal verwendet hat. Die horizontale Achse dieses Berichts ist ein relatives Zeitintervall vor und nach dem Ereignis, während die vertikale Achse die gewünschten Schlüsselindikatoren misst. Ein vertikaler Balken in der Mitte des Diagramms stellt den Tag 0 für den Zeitpunkt dar, zu dem eine Funktion von einem bestimmten Benutzer zum ersten Mal verwendet wird. Da Benutzer nicht immer Funktionen am selben Tag übernehmen und Ihre Rollouts mehrere Tage dauern können, bedeutet Tag 0 für jeden einzelnen Benutzer etwas Anderes.
+Die **[!UICONTROL Erste Verwendung]** zeigt einen Vergleich der Leistung von Schlüsselindikatoren, bevor und nachdem ein Benutzer eine Produktfunktion zum ersten Mal verwendet hat. Die horizontale Achse dieses Berichts ist ein relatives Zeitintervall vor und nach dem Ereignis, während die vertikale Achse die gewünschten Schlüsselindikatoren misst. Ein vertikaler Balken in der Mitte des Diagramms stellt den Tag 0 für den Zeitpunkt dar, zu dem eine Funktion von einem bestimmten Benutzer zum ersten Mal verwendet wird. Da Benutzer nicht immer Funktionen am selben Tag übernehmen und Ihre Rollouts mehrere Tage dauern können, bedeutet Tag 0 für jeden einzelnen Benutzer etwas Anderes.
 
 ![Version](../assets/first-use.png)
+
+## Sehen Sie es in Aktion
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
 ## Anwendungsbeispiele
 
@@ -29,22 +33,22 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **Schlüsselindikatoren**: Die Ereignisse, die pro Benutzer gemessen werden sollen. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
-* **Faktoren**: Für diese Ansicht gibt es zwei Faktoren:
-   * **Datum**: Wie weit Sie zurücklegen möchten, um nach dem ersten aufgetretenen Nutzungsereignis zu suchen.
-   * **Ereignis**: Das Ereignis, nach dem Sie die Analyse zum ersten Mal verwenden möchten, um sie zu zentrieren.
-* **Personen**: Das Segment, das Sie messen möchten. Das ausgewählte Segment filtert Ihre Daten so, dass sie sich nur auf die Personen konzentrieren, die Ihren Segmentkriterien entsprechen.
+* **[!UICONTROL Schlüsselindikatoren]**: Die Ereignisse, die pro Benutzer gemessen werden sollen. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
+* **[!UICONTROL Faktoren]**: Für diese Ansicht gibt es zwei Faktoren:
+   * **[!UICONTROL Datum]**: Wie weit Sie zurücklegen möchten, um nach dem ersten aufgetretenen Nutzungsereignis zu suchen.
+   * **[!UICONTROL Ereignis]**: Das Ereignis, nach dem Sie die Analyse zum ersten Mal verwenden möchten, um sie zu zentrieren.
+* **[!UICONTROL Personen]**: Das Segment, das Sie messen möchten. Das ausgewählte Segment filtert Ihre Daten so, dass sie sich nur auf die Personen konzentrieren, die Ihren Segmentkriterien entsprechen.
 
 ## Diagrammeinstellungen
 
 Die Ansicht Erste Verwendung bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **Metrik**: Die Metrik, die Sie messen möchten. Optionen umfassen [!UICONTROL Ereignisse pro Benutzer], [!UICONTROL Veranstaltungen], [!UICONTROL Sitzungen]und [!UICONTROL Benutzer].
-* **Diagrammtyp**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;.
+* **[!UICONTROL Metrik]**: Die Metrik, die Sie messen möchten. Optionen umfassen [!UICONTROL Ereignisse pro Benutzer], [!UICONTROL Veranstaltungen], [!UICONTROL Sitzungen]und [!UICONTROL Benutzer].
+* **[!UICONTROL Diagrammtyp]**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;.
 
 ## Datumsbereich
 
 Die Datumsauswahl in der Impact-Analyse funktioniert anders als bei anderen Analysetypen, da sich die Analyse um das in der Abfrageleiste angegebene Datum dreht. Die folgenden Optionen sind verfügbar:
 
-* **Intervall**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Zu den gültigen Optionen gehören [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich]und [!UICONTROL Quartal]. Eine Änderung des Intervalls wirkt sich auf die für den Zeitraum vor und nach verfügbaren Optionen aus.
-* **Vor- und Nach-Zeitraum**: Die Zeitdauer, die vor und nach dem ersten in der Abfrageleiste angegebenen Anwendungsereignis analysiert werden soll. Die verfügbaren Optionen hängen von der [!UICONTROL Intervall] auswählen.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Zu den gültigen Optionen gehören [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich]und [!UICONTROL Quartal]. Eine Änderung des Intervalls wirkt sich auf die für den Zeitraum vor und nach verfügbaren Optionen aus.
+* **[!UICONTROL Vor- und Nach-Zeitraum]**: Die Zeitdauer, die vor und nach dem ersten in der Abfrageleiste angegebenen Anwendungsereignis analysiert werden soll. Die verfügbaren Optionen hängen von der [!UICONTROL Intervall] auswählen.

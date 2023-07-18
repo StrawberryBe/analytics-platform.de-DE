@@ -3,9 +3,9 @@ title: Friktionsansicht
 description: Konversionsraten zwischen den Schritten vergleichen.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 3%
 Die **Friktion** -Ansicht bietet eine visuelle Darstellung eines kritischen Benutzer-Journey in Ihrem Produkt. Die horizontale Achse stellt jeden Schritt dar, den ein Benutzer durchlaufen muss. Die vertikale Achse stellt den Prozentsatz der Benutzer oder Sitzungen bei jedem Schritt dar. Alle Schritte müssen in der gewünschten Reihenfolge durchgeführt werden, können jedoch jederzeit im Berichtsfenster erfolgen.
 
 ![Reibung](../assets/friction.png)
+
+## Siehe Friktierungsansicht in Aktion
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
 ## Anwendungsbeispiele
 
@@ -29,16 +33,16 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **Schritte**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jede Leiste im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einbeziehen.
-* **Personen**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
+* **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jede Leiste im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einbeziehen.
+* **[!UICONTROL Personen]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
 
 ## Diagrammeinstellungen
 
 Die Ansicht &quot;Friction&quot;bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **Metrik**: Der Bereich, der auf den Trichter angewendet werden soll. Zu den Optionen gehören Sitzungen und Benutzer. Durch die Auswahl von Sitzungen müssen alle Schritte innerhalb derselben Sitzung erfolgen, damit sie gezählt werden. Durch Auswahl von Benutzern müssen alle Schritte innerhalb des Berichtsfensters erfolgen, das für die Zählung ausgewählt wurde.
-* **Diagrammtyp**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören die Schritte .
-* **Konversion von**: Bestimmt die Berechnung des Prozentsatzes von Schritt zu Schritt. Zu den Optionen gehören die Berechnung der Konvertierung aus dem ersten Schritt oder dem vorherigen Schritt.
+* **[!UICONTROL Metrik]**: Der Bereich, der auf den Trichter angewendet werden soll. Zu den Optionen gehören Sitzungen und Benutzer. Durch die Auswahl von Sitzungen müssen alle Schritte innerhalb derselben Sitzung erfolgen, damit sie gezählt werden. Durch Auswahl von Benutzern müssen alle Schritte innerhalb des Berichtsfensters erfolgen, das für die Zählung ausgewählt wurde.
+* **[!UICONTROL Diagrammtyp]**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören die Schritte .
+* **[!UICONTROL Konversion von]**: Bestimmt die Berechnung des Prozentsatzes von Schritt zu Schritt. Zu den Optionen gehören die Berechnung der Konvertierung aus dem ersten Schritt oder dem vorherigen Schritt.
 
 ## Zeitvergleich anwenden
 
@@ -50,5 +54,5 @@ Die Ansicht &quot;Friction&quot;bietet die folgenden Diagrammeinstellungen, die 
 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
-* **Intervall**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Diese Einstellung wirkt sich nicht auf Trend-Ansichten wie &quot;Friction&quot;aus.
-* **Datum**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie mit der Kalenderauswahl einen festen Datumsbereich auswählen.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Diese Einstellung wirkt sich nicht auf Trend-Ansichten wie &quot;Friction&quot;aus.
+* **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie mit der Kalenderauswahl einen festen Datumsbereich auswählen.

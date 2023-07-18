@@ -1,9 +1,9 @@
 ---
 title: Anwendungsfälle für Branchen
 description: Anwendungsfälle für die Branche für eine geleitete Analyse
-source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1442'
 ht-degree: 3%
 
 ---
@@ -46,8 +46,6 @@ Anwendungsbeispiele für eine geleitete Analyse variieren je nach Branche. Auf d
 
 ![Aktive Sicht auf Finanzdienstleistungen](assets/fsi-user-growth-active.png)
 
-![Alternative aktive Ansicht für Finanzdienstleistungen](assets/fsi-user-growth-active-2.png)
-
 +++
 
 +++**Touristik**
@@ -65,7 +63,7 @@ Anwendungsbeispiele für eine geleitete Analyse variieren je nach Branche. Auf d
 
 ![Nutzungsansicht für Reisen und Gastfreundschaft](assets/th-trends-usage.png)
 
-![Umrechnungstrends für Reisen und Gastgewerbe](assets/th-funnel-conversio-trends.png)
+![Umrechnungstrends für Reisen und Gastgewerbe](assets/th-funnel-conversion-trends.png)
 
 +++
 
