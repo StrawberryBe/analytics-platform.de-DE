@@ -3,9 +3,9 @@ title: Aktive Ansicht
 description: Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,6 @@ Die **Aktiv** -Ansicht bietet Einblicke in das Wachstum und die Akquise von Benu
 * **[!UICONTROL Dormant]**: Der Benutzer war im unmittelbar vorherigen Zeitraum aktiv, ist aber im aktuellen Zeitraum nicht aktiv. Dormant-Benutzer zählen nicht zur Gesamtanzahl aktiver Benutzer.
 
 Alle aktiven Benutzer (neu + Wiederholen + Rückgabe) werden als Teelichtenschatten über der horizontalen Achse angezeigt, während alle ruhenden Benutzer unter der horizontalen Achse orange dargestellt werden.
-
-Siehe [!UICONTROL Aktiv] Ansicht in Aktion:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 

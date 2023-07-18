@@ -2,18 +2,16 @@
 title: Ansicht "Konversionstrends"
 description: Verfolgen Sie Änderungen der Konversionsrate im Zeitverlauf.
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 1%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
 # Ansicht &quot;Konversionstrends&quot;
 
 Die **Konversionstrends** -Ansicht bietet eine Trend-Visualisierung um Konversionsraten im Zeitverlauf. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Konversionsrate darstellt.
-
-Siehe [!UICONTROL Konversionstrends] Ansicht in Aktion
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 

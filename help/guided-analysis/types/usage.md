@@ -3,9 +3,9 @@ title: Nutzungsansicht
 description: Benutzerinteraktion im Lauf der Zeit messen.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '492'
 ht-degree: 2%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 2%
 # [!UICONTROL Nutzung] Ansicht
 
 Die **[!UICONTROL Nutzung]** -Ansicht bietet wertvolle Einblicke in die Leistung Ihres Produkts oder das Verhalten Ihrer Benutzer im Zeitverlauf. Die horizontale Achse dieses Berichts ist ein Zeitintervall, während die vertikale Achse Ihre gewünschten Ereignisse misst.
-
-Siehe [!UICONTROL Nutzung] Ansicht in Aktion:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 

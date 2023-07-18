@@ -2,9 +2,9 @@
 title: Netto-Wachstumsansicht
 description: Gewinnen oder verlieren Sie Nutzende?
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,6 @@ Das Ergebnis dieser Formel ist ein Verhältnis. Nettowachstum `1` ein Gleichgewi
 >[!NOTE]
 >
 >Wiederholte Benutzer werden nicht in diese Berechnung einbezogen, da sie keinen Gewinn oder Verlust von Benutzern darstellen.
-
-Siehe [!UICONTROL Nettowachstum] Ansicht in Aktion:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
