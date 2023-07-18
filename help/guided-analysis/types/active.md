@@ -3,7 +3,7 @@ title: Aktive Ansicht
 description: Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 1%
@@ -21,9 +21,7 @@ Die **Aktiv** -Ansicht bietet Einblicke in das Wachstum und die Akquise von Benu
 
 Alle aktiven Benutzer (neu + Wiederholen + Rückgabe) werden als Teelichtenschatten über der horizontalen Achse angezeigt, während alle ruhenden Benutzer unter der horizontalen Achse orange dargestellt werden.
 
-![Aktiv](../assets/active.png)
-
-## Anzeigen der aktiven Ansicht in Aktion
+Siehe [!UICONTROL Aktiv] Ansicht in Aktion:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 

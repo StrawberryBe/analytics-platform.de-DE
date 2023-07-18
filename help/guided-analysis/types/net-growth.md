@@ -2,16 +2,16 @@
 title: Netto-Wachstumsansicht
 description: Gewinnen oder verlieren Sie Nutzende?
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
 
-# Netto-Wachstumsansicht
+# [!UICONTROL Nettowachstum] Ansicht
 
-Die **Nettowachstum** Der Ansichtstyp bietet Einblicke in die Rate, mit der Sie in einem bestimmten Zeitraum Benutzer gewinnen oder verlieren. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Wachstumsmessung darstellt.
+Die **[!UICONTROL Nettowachstum]** Der Ansichtstyp bietet Einblicke in die Rate, mit der Sie in einem bestimmten Zeitraum Benutzer gewinnen oder verlieren. Die horizontale Achse ist ein Zeitintervall, während die vertikale Achse die Wachstumsmessung darstellt.
 
 Jeder Datenpunkt stellt das Nettowachstum dar, das anhand der folgenden Formel berechnet wird:
 
@@ -29,9 +29,7 @@ Das Ergebnis dieser Formel ist ein Verhältnis. Nettowachstum `1` ein Gleichgewi
 >
 >Wiederholte Benutzer werden nicht in diese Berechnung einbezogen, da sie keinen Gewinn oder Verlust von Benutzern darstellen.
 
-![Nettowachstum](../assets/net-growth.png)
-
-## Siehe Net Growth view in action
+Siehe [!UICONTROL Nettowachstum] Ansicht in Aktion:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
