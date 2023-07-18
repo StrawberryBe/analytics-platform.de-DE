@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 97%
+source-wordcount: '750'
+ht-degree: 68%
 
 ---
 
@@ -90,3 +90,47 @@ Sie können einen vorhandenen Filter durch einen anderen Filter ersetzen, um zu 
 1. Klicken Sie auf **Anwenden**.
 
    Report Builder aktualisiert die Filterliste entsprechend der Ersetzung.
+
+### Definieren von Datenblockfiltern aus Zellen
+
+Datenblöcke können auf Filter aus einer Zelle verweisen. Mehrere Datenblöcke können für Filter auf dieselbe Zelle verweisen, sodass Sie auf einfache Weise Filter für mehrere Datenblöcke gleichzeitig wechseln können.
+
+So wenden Sie Filter aus einer Zelle an
+
+1. Navigieren Sie im Erstellungs- oder Bearbeitungsvorgang für Datenblöcke zu Schritt 2. Siehe [Erstellen eines Datenblocks](./create-a-data-block.md).
+1. Klicken Sie auf **Filter** -Tab zum Definieren von Filtern.
+1. Klicken **Filter aus Zelle erstellen**.
+
+   ![](./assets/create-filter-from-cell.png)
+
+1. Wählen Sie die Zelle aus, aus der die Datenblöcke auf einen Filter verweisen sollen.
+
+1. Fügen Sie die Filterauswahl hinzu, die Sie der Zelle hinzufügen möchten, indem Sie entweder auf den Filter doppelklicken oder ihn per Drag-and-Drop in den Bereich Einbezogene Filter ziehen.
+
+   Hinweis: Es kann jeweils nur eine Auswahl für die angegebene Zelle ausgewählt werden.
+
+   ![](./assets/select-filters.png)
+
+1. Klicken **Anwenden** , um die Referenzzelle zu erstellen.
+
+1. Aus dem **Filter** Fügen Sie den neu erstellten Referenz-Zellenfilter zu Ihrem Datenblock hinzu.
+
+   ![](./assets/reference-cell-filter.png)
+
+1. Klicken Sie auf **Fertig stellen**.
+
+   Jetzt kann diese Zelle von anderen Datenblöcken in ihren Filtern referenziert werden. Um die Referenzzelle als Filter auf andere Datenblöcke anzuwenden, fügen Sie einfach im Filter -Tab die Zellenreferenz zu ihren Filtern hinzu.
+
+#### Verwenden Sie die Referenzzelle, um Datenblockfilter zu ändern.
+
+1. Wählen Sie die Referenzzelle in Ihrer Tabelle aus.
+
+1. Klicken Sie auf den Link unter **Filter aus Zelle** im Menü Schnellbearbeitung .
+
+   ![](./assets/filters-from-cell-link.png)
+
+1. Wählen Sie Ihren Filter aus dem Dropdown-Menü aus.
+
+   ![](./assets/filter-drop-down.png)
+
+1. Klicken Sie auf **Anwenden**.

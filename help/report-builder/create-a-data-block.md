@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -70,6 +70,24 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
    Wenn Sie Komponenten zur Tabelle hinzufügen, wird eine Vorschau des Datenblocks an der Stelle des Datenblocks im Arbeitsblatt angezeigt. Das Layout der Datenblock-Vorschau wird automatisch aktualisiert, wenn Sie in der Tabelle Elemente hinzufügen, verschieben oder entfernen.
 
    ![](./assets/image10.png)
+
+   **Anzeigen oder Ausblenden von Zeilen- und Spaltenüberschriften**
+
+1. Klicken Sie im Report Builder-Hub auf den Befehl Datenblock bearbeiten .
+
+1. Klicken Sie auf **Verzeichnis** Einstellungssymbol.
+
+   ![Platzhalterbild](./assets/table-settings.png){width="35%"}
+
+1. Aktivieren oder deaktivieren Sie die Option zum Anzeigen von Zeilen- und Spaltenüberschriften. Die Kopfzeilen werden standardmäßig angezeigt.
+
+   **Ausblenden oder Anzeigen von Dimensionsbezeichnungen und Metrik-Überschriften**
+
+1. Klicken Sie auf das Auslassungssymbol in den Dimensionen oder Spaltenüberschriften, um die Einstellungen anzuzeigen.
+
+   ![Platzhalterbild](./assets/row-heading.png){width="35%"}
+
+1. Klicken Sie auf Ausblenden oder Anzeigen , um die Dimensionsbezeichnungen oder Spaltenüberschriften umzuschalten. Alle Beschriftungen werden standardmäßig angezeigt.
 
 1. Klicken Sie auf **Beenden**.
 
