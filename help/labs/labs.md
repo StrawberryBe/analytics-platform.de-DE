@@ -4,10 +4,10 @@ description: Vorschau von Prototypprojekten für Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 90%
+source-wordcount: '424'
+ht-degree: 91%
 
 ---
 
@@ -64,11 +64,6 @@ So starten und bewerten Sie einen Prototyp:
    ![Feld für neues Feedback](assets/short-survey.png)
 
 1. Klicken Sie auf **[!UICONTROL Senden]**, um zum Hauptportal „Vorschau“ zurückzukehren.
-
-## Customer Journey Analytics Labs-Prototypen
-
-* Natural-Language Insight Generator: Bietet eine Zusammenfassung aller von Ihnen analysierten Daten zu natürlicher Sprache in einer Freiformtabelle.
-* Visualization Recommender: Empfiehlt Visualisierungen, die gut zu Ihren Daten passen.
 
 ## Zusätzliche Informationen
 
