@@ -3,7 +3,7 @@ title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
+source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 61%
@@ -85,7 +85,7 @@ Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue Custom
 
 An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgruppen können Latenzen auftreten. Im Folgenden finden Sie einen Überblick über mögliche Latenzen.
 
-![Latenzen bei der Zielgruppenveröffentlichung, wie beschrieben in [Latenzaspekte](#latency-considerations)](assets/latency-diagram.png)
+![Latenzen bei der Zielgruppenveröffentlichung, wie in diesem Abschnitt beschrieben.](assets/latency-diagram.png)
 
 | # | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
