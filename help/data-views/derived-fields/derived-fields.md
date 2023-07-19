@@ -4,11 +4,11 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+badgeDerivedFields: label="Neue Funktion" type="Positive"
+source-git-commit: 33ed28de1c410bcba04ab405ce8d779a501f4b3f
 workflow-type: tm+mt
-source-wordcount: '3281'
-ht-degree: 9%
+source-wordcount: '4350'
+ht-degree: 15%
 
 ---
 
@@ -31,7 +31,7 @@ Anwendungsbeispiele sind:
 
 Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abgeleitete Feldoberfläche.
 
-![Dialogfeld &quot;Abgeleitetes Feld&quot;](assets/derived-field-dialog.png)
+![Screenshot des Dialogfelds &quot;Abgeleitetes Feld&quot;](assets/derived-field-dialog.png)
 
 
 |  | Name | Beschreibung |
@@ -56,7 +56,7 @@ Ihr abgeleitetes Felddialogfeld enthält Regeln (und Funktionen), die für den v
 
 Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfläche.
 
-![Regelschnittstelle](assets/rule-interface.png)
+![Screenshot der abgeleiteten Felderregelschnittstelle](assets/rule-interface.png)
 
 |  | Name | Beschreibung |
 |---------|----------|--------|
@@ -139,7 +139,7 @@ Diese Vorlage ist so konfiguriert, dass die [URL-Analyse](#dnl-url-parse) und [G
 
 Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funktion angeben, die als Teil der Regeln in der Vorlage aufgeführt wird. Siehe [Funktionsreferenz](#function-reference) für weitere Informationen.
 
-![Regel-Builder für Marketing-Kanalvorlagen](assets/marketing-channel-template.png)
+![Screenshot des Regel-Builders für Marketing-Kanal-Vorlagen](assets/marketing-channel-template.png)
 
 +++
 
@@ -177,7 +177,7 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
 ### Verketten
 
-Kombiniert zwei oder mehr Felder, abgeleitete Felder oder vom Benutzer eingegebene Werte in einem Feld mit definierten Trennzeichen.
+Verbindet Feldwerte in einem neuen abgeleiteten Feld mit definierten Trennzeichen.
 
 +++ Details
 
@@ -185,7 +185,7 @@ Kombiniert zwei oder mehr Felder, abgeleitete Felder oder vom Benutzer eingegebe
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <p>Zeichenfolge</p> | <ul><li>Für jeden [!UICONTROL Wert]:<ul><li>Regel</li><li>Standardfeld</li><li>Feld</li><li>Benutzereingabe</li></ul></li><li>Für jeden [!UICONTROL Trennzeichen]:<ul><li>Benutzereingabe</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Trennzeichen]:<ul><li>Zeichenfolge</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -235,7 +235,7 @@ Der gewünschte Bericht sollte wie folgt aussehen:
 
 Sie definieren eine neue [!UICONTROL Origin - Ziel] abgeleitetes Feld. Sie verwenden die [!UICONTROL CONCATENATE] -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
 
-![Verketten einer Regel](assets/concatenate.png)
+![Screenshot der Verkettungsregel](assets/concatenate.png)
 
 ### Daten nach {#concatenate-dataafter}
 
@@ -263,7 +263,7 @@ Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Fel
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Für jeden [!UICONTROL Wenn], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regel</li><li>Standardfeld</li><li>Feld</li></ul><li>[!UICONTROL Kriterium] (siehe eingeschlossene Operatoren, basierend auf dem ausgewählten Werttyp)</li></ul></li><li>Für jeden [!UICONTROL Legen Sie dann den Wert auf], [!UICONTROL Setzen Sie den Wert andernfalls auf]:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regel</li><li>Standardfeld</li><li>Feld</li></ul></ul></li></ul> | <p>Zeichenfolgen</p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Ist gleich keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt nicht mit einem Begriff</li><li>Endet nicht mit</li><li>endet nicht mit einem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Numerisch</p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Größer als</li><li>Größer als oder gleich</li><li>Kleiner als</li><li>Kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Daten </p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist später als</li><li>Ist später als oder gleich</li><li>Is before</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 Operatoren pro abgeleitetem Feld. Ein Beispiel für einen einzelnen Operator ist &quot;Referrerdomäne enthält Google&quot;. </li></ul> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Wenn], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Kriterium] (siehe eingeschlossene Operatoren, basierend auf dem ausgewählten Werttyp)</li></ul></li><li>[!UICONTROL Legen Sie dann den Wert auf], [!UICONTROL Setzen Sie den Wert andernfalls auf]:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul></li></ul> | <p>Zeichenfolgen</p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Ist gleich keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt nicht mit einem Begriff</li><li>Endet nicht mit</li><li>endet nicht mit einem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Numerisch</p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Größer als</li><li>Größer als oder gleich</li><li>Kleiner als</li><li>Kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Daten </p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist später als</li><li>Ist später als oder gleich</li><li>Is before</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 Operatoren pro abgeleitetem Feld. Ein Beispiel für einen einzelnen Operator ist &quot;Referrerdomäne enthält Google&quot;. </li></ul> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -311,7 +311,7 @@ Sie definieren eine neue `Marketing Channel` abgeleitetes Feld. Sie verwenden di
 
 Beachten Sie die Verwendung der Funktion . [!UICONTROL URL PARSE] zum Definieren von Regeln zum Abrufen der Werte für `Page Url` und `Referring Url` vor [!UICONTROL WENN] -Regeln angewendet werden.
 
-![Fall: Regel 1](assets/case-when-1.png)
+![Screenshot des Falls bei Regel 1](assets/case-when-1.png)
 
 ### Daten nach {#casewhen-uc1-dataafter}
 
@@ -365,7 +365,7 @@ Ihre Site erfasst die folgenden Werte für Ihre [!DNL Product Finding Methods] D
 
 Sie definieren eine `Product Finding Methods (new)` abgeleitetes Feld. Sie erstellen Folgendes [!UICONTROL WENN] Regeln im Regel-Builder. Diese Regeln gelten für die Logik für alle möglichen Varianten der alten [!UICONTROL Methoden zur Produktsuche] Feldwerte für `search` und `browse` mithilfe der [!UICONTROL Enthält die Wortgruppe] Kriterium.
 
-![Fall: Regel 2](assets/case-when-2.png)
+![Screenshot des Falls, wenn Regel 2](assets/case-when-2.png)
 
 ### Daten nach {#casewhen-uc2-dataafter}
 
@@ -438,7 +438,7 @@ Ihr gewünschter Bericht sollte wie folgt aussehen:
 
 Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen Folgendes [!UICONTROL WENN] Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte [!UICONTROL Reisedauer] -Feldwerte in drei Werte: `short trip`, `medium  trip`und `long trip`.
 
-![Fall: Regel 3](assets/case-when-3.png)
+![Screenshot des Falls, wenn Regel 3](assets/case-when-3.png)
 
 
 ### Daten nach {#casewhen-uc3-dataafter}
@@ -459,7 +459,7 @@ Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen 
 | [!DNL long trip] |
 
 
-## Begrenzungen
+## Weitere Informationen
 
 Customer Journey Analytics verwendet eine verschachtelte Behälterstruktur, die nach dem Modell von Adobe Experience Platform modelliert ist [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen. Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf.
 
@@ -469,15 +469,13 @@ Customer Journey Analytics verwendet das folgende standardmäßige Containermode
 <img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-
-
 Die folgenden Einschränkungen gelten und werden erzwungen, wenn *Auswählen* und *Einstellung* -Werte.
 
 |  | Begrenzungen |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Werte *select* innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Abhängigkeit A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Alle Werte, die Sie *set* in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Abhängigkeit B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Die Werte, die Sie *select* quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe *not* müssen aus demselben Container stammen und tun *not* müssen vom gleichen Typ sein. <br/> ![Abhängigkeit C](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | Werte *select* innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Screenshot der Abhängigkeit A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Alle Werte, die Sie *set* in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Screenshot der Abhängigkeit B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Die Werte, die Sie *select* quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe *not* müssen aus demselben Container stammen und tun *not* müssen vom gleichen Typ sein. <br/> ![Screenshot der Abhängigkeit C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -496,7 +494,7 @@ Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <p>Zeichenfolge</p> | <ul><li>Für Kriterien:<ul><li>[!UICONTROL Wert]<ul><li>Regel</li><li>Standardfeld</li><li>Feld</li></ul></li></ul></li><li>Für jeden [!UICONTROL Alle suchen], [!UICONTROL und ersetzen Sie alle durch]:<ul><li>[!UICONTROL Wert]</li><ul><li>Benutzereingabe</li></ul></li></ul></ul> | <p>Zeichenfolgen</p><ul><li>[!UICONTROL Alle suchen], [!UICONTROL und ersetzen Sie alle durch]</li></ul> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Alle suchen], [!UICONTROL und ersetzen Sie alle durch]:<ul><li>Zeichenfolge</li></ul></li></ul></ul> | <p>Zeichenfolgen</p><ul><li>[!UICONTROL Alle suchen], [!UICONTROL und ersetzen Sie alle durch]</li></ul> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -537,7 +535,7 @@ Sie haben einige falsch formatierte Werte für Ihren externen Marketingkanalberi
 
 Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN UND ERSETZEN] -Funktion zum Definieren einer Regel zum Suchen und Ersetzen aller Vorkommen von `email%20marketing` mit `email marketing`.
 
-![Regel suchen und ersetzen](assets/find-and-replace.png)
+![Screenshot der Regel &quot;Suchen und Ersetzen&quot;](assets/find-and-replace.png)
 
 ### Daten nach {#findreplace-uc-dataafter}
 
@@ -558,7 +556,7 @@ Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden
 
 ### Nachschlagen
 
-Definiert einen Satz von Lookup-Werten, die durch entsprechende Werte ersetzt werden.
+Definiert einen Satz von Lookup-Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
 
 +++ Details
 
@@ -567,7 +565,7 @@ Definiert einen Satz von Lookup-Werten, die durch entsprechende Werte ersetzt we
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>Für [!UICONTROL Feld zum Anwenden der Suche]:<ul><li>Regel</li><li>Standardfeld</li><li>Feld</li></ul></li><li>Für [!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Benutzereingabe</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld für die Anwendung von Lookup]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -623,7 +621,7 @@ Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus 
 
 Sie definieren eine `Hotel Name` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN] -Funktion, um eine Regel zu definieren, mit der Sie die Werte der [!UICONTROL Hotel-ID] und durch neue Werte ersetzen.
 
-![Suchregel 1](assets/lookup-1.png)
+![Screenshot der Suchregel 1](assets/lookup-1.png)
 
 ### Daten nach {#lookup-uc1-dataafter}
 
@@ -658,7 +656,7 @@ Sie haben URLs anstelle des benutzerfreundlichen Seitennamens für mehrere Seite
 
 Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN] -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen [!UICONTROL Seitenname] und ersetzen Sie sie durch die aktualisierten richtigen Werte.
 
-![Suchregel 2](assets/lookup-2.png)
+![Screenshot der Suchregel 2](assets/lookup-2.png)
 
 ### Daten nach {#lookup-uc2-dataafter}
 
@@ -674,6 +672,262 @@ Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die [
 
 +++
 
+<!-- MERGE FIELDS -->
+
+### Felder zusammenführen
+
+Führt Werte aus zwei verschiedenen Feldern zu einem neuen abgeleiteten Feld zusammen.
+
++++ Details
+
+## Spezifikation {#merge-fields-io}
+
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall {#merge-fields-uc}
+
+Sie möchten eine neue Dimension erstellen, die sich aus dem Feld &quot;Seitenname&quot;und dem Feld &quot;Anrufgrund&quot;zusammensetzt und die Journey kanalübergreifend analysieren soll.
+
+### Daten vor {#merge-fields-uc-databefore}
+
+| Seitenname | Sitzung | Besucher |
+|---|--:|--:|
+| Hilfeseite | 250 | 200 |
+| homepage | 500 | 250 |
+| Produktdetailseite | 300 | 200 |
+
+{style="table-layout:auto"}
+
+| Grund des Aufrufs | Sitzung | Besucher |
+|---|--:|--:|
+| Fragen zu meiner Bestellung | 275 | 250 |
+| Änderung meiner Bestellung | 150 | 145 |
+| Bestellproblem | 100 | 95 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#merge-fields-uc-derivedfield}
+
+Sie definieren eine `Cross Channel Interactions` abgeleitetes Feld. Sie verwenden die [!UICONTROL FELDER ZUSAMMENFÜHREN] -Funktion, um eine Regel zum Zusammenführen der Werte aus dem [!UICONTROL Seitenname] und [!UICONTROL Grund des Aufrufs] und speichern Sie es im neuen abgeleiteten Feld.
+
+![Screenshot der Regel &quot;Felder zusammenführen&quot;](assets/merge-fields.png)
+
+### Daten nach {#merge-fields-uc-dataafter}
+
+| Kanalübergreifende Interaktionen | Sitzungen | Besucher |
+|---|--:|--:|
+| homepage | 500 | 250 |
+| Produktdetailseite | 300 | 200 |
+| Fragen zu meiner Bestellung | 275 | 250 |
+| Hilfeseite | 250 | 200 |
+| Änderung meiner Bestellung | 150 | 145 |
+| Bestellproblem | 100 | 95 |
+
+{style="table-layout:auto"}
+
+## Weitere Informationen {#merge-fields-moreinfo}
+
+Sie müssen denselben Feldtyp in einer Regel zum Zusammenführen von Feldern auswählen. Wenn Sie beispielsweise ein Datumsfeld auswählen, müssen alle anderen Felder, die Sie zusammenführen möchten, Datumsfelder sein.
+
+![Screenshot der Einschränkung für Zusammenführungsfelder](assets/merge-fields-constraint.png)
+
++++
+
+
+<!-- REGEX REPLACE -->
+
+### Regex ersetzen
+
+Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neues abgeleitetes Feld.
+
++++ Details
+
+## Spezifikation {#regex-replace-io}
+
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Von Schreibweise abhängig</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall {#regex-replace-uc}
+
+Sie möchten eine Option einer URL erfassen und diese als eindeutige Seitenkennung verwenden, um den Traffic zu analysieren. Sie werden `[^/]+(?=/$|$)` für den regulären Ausdruck, um das Ende der URL zu erfassen, und `$1` als Ausgabemuster.
+
+### Daten vor {#regex-replace-uc-databefore}
+
+| Seiten-URL |
+|---|
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#regex-replace-uc-derivedfield}
+
+Sie erstellen eine `Page Identifier` abgeleitetes Feld. Sie verwenden die [!UICONTROL REGEX REPLATZ] -Funktion, um eine Regel zu definieren, die den Wert der [!UICONTROL Verweisende URL] -Feld mithilfe eines [!UICONTROL Regex] von `[^/]+(?=/$|$)` und [!UICONTROL Ausgabeformat] von `$1`.
+
+![Screenshot der Regex-Ersetzungsregel](assets/regex-replace.png)
+
+
+### Daten nach {#regex-replace-uc-dataafter}
+
+| Seiten-ID |
+|---|
+| adobe-analytics-benefits.html |
+| adobe-analytics.html |
+| customer-journey-analytics.html |
+| adobe-experience-platform.html |
+
+## Weitere Informationen
+
+Customer Journey Analytics verwendet eine Untergruppe der Perl-Regex-Syntax. Die folgenden Ausdrücke werden unterstützt:
+
+| Ausdruck | Beschreibung |
+| --- | --- |
+| `a` | Ein einzelnes Zeichen: `a`. |
+| `a\|b` | Ein einzelnes Zeichen: `a` oder `b`. |
+| `[abc]` | Ein einzelnes Zeichen: `a`, `b` oder `c`. |
+| `[^abc]` | Ein beliebiges einzelnes Zeichen, außer: `a`, `b` oder `c`. |
+| `[a-z]` | Ein beliebiges einzelnes Zeichen im Bereich `a`–`z`. |
+| `[a-zA-Z0-9]` | Ein beliebiges einzelnes Zeichen im Bereich `a`–`z`, `A`–`Z` oder im Ziffernbereich `0`–`9`. |
+| `^` | Entspricht dem Zeilenanfang. |
+| `$` | Entspricht dem Zeilenende. |
+| `\A` | Beginn der Zeichenfolge. |
+| `\z` | Ende der Zeichenfolge. |
+| `.` | Entspricht einem beliebigen Zeichen. |
+| `\s` | Beliebiges Whitespace-Zeichen. |
+| `\S` | Beliebiges Zeichen, außer Whitespace-Zeichen. |
+| `\d` | Beliebige Ziffer. |
+| `\D` | Beliebiges Zeichen, außer Ziffern. |
+| `\w` | Beliebige Buchstaben, Zahlen oder Unterstriche. |
+| `\W` | Beliebiges Zeichen, das nicht in Wörtern zulässig ist. |
+| `\b` | Beliebige Wortgrenze. |
+| `\B` | Beliebiges Zeichen, das keine Wortgrenze ist. |
+| `\<` | Wortbeginn. |
+| `\>` | Wortende. |
+| `(...)` | Alles dazwischen wird erfasst. |
+| `(?:...)` | Nicht-kennzeichnende Erfassung. Verhindert, dass in der Ausgabezeichenfolge auf die Übereinstimmung verwiesen wird. |
+| `a?` | Null oder eins von `a`. |
+| `a*` | Null oder mehr von `a`. |
+| `a+` | Eines oder mehr von `a`. |
+| `a{3}` | Genau 3 von `a`. |
+| `a{3,}` | 3 oder mehr von `a`. |
+| `a{3,6}` | Zwischen 3 und 6 von `a`. |
+
+Sie können diese Sequenzen im [!UICONTROL Ausgabeformat] beliebig oft und in beliebiger Reihenfolge verwenden, um die gewünschte Zeichenfolgenausgabe zu erlangen.
+
+| Ausgabe-Platzhaltersequenz | Beschreibung |
+| --- | --- |
+| `$&` | Gibt aus, was mit dem gesamten Ausdruck übereinstimmt. |
+| `$n` | Gibt aus, was mit dem n-ten Unterausdruck übereinstimmt. Beispiel: `$1` gibt den ersten Unterausdruck aus. |
+| ``$` `` | Gibt den Text zwischen dem Ende der letzten gefundenen Übereinstimmung (oder dem Beginn des Textes aus, wenn keine vorherige Übereinstimmung gefunden wurde) und dem Beginn der aktuellen Übereinstimmung aus. |
+| `$+` | Gibt aus, was mit dem letzten markierten Unterausdruck im regulären Ausdruck übereinstimmt. |
+| `$$` | Gibt das Zeichenfolgenzeichen `"$"` aus. |
+
+{style="table-layout:auto"}
+
++++
+
+<!-- SPLIT -->
+
+### Split
+
+Teilt einen Wert aus einem Feld in ein neues abgeleitetes Feld.
+
++++ Details
+
+## Spezifikation {#split-io}
+
+| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Methode]:</li><ul><li>Von links</li><li>Von rechts</li><li>In Array konvertieren</li></ul></li><li>Für Trennzeichen:<ul><li>Zeichenfolge</li></ul><li>Für Index:<ul><li>Numerisch</li></ul></li> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall 1 {#split-uc1}
+
+Sie erfassen Sprach-App-Antworten in einer durch Trennzeichen getrennten Liste in einer einzigen Dimension. Jeder Wert in der Liste soll ein eindeutiger Wert im Antwortbericht sein.
+
+### Daten vor {#split-uc1-databefore}
+
+| Voice-App-Antworten | Ereignisse |
+|---|--:|
+| Es war großartig, hat vollkommenen Sinn, wird anderen empfehlen | 1 |
+| Es war toll, etwas verwirrend, wird anderen empfehlen | 1 |
+| Es war nicht groß, sehr verwirrend, wird nicht empfohlen, andere | 1 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#split-u1-derivedfield}
+
+Sie erstellen eine `Responses` abgeleitetes Feld. Sie verwenden die [!UICONTROL AUFTEILUNG] -Funktion, um eine Regel zur Verwendung der  [!UICONTROL In Array konvertieren] -Methode zum Konvertieren der Werte aus der [!UICONTROL Sprachanwendungs-Antwort] Feld verwenden `,` als [!UICONTROL Trennzeichen].
+
+![Screenshot der Aufspaltungsregel 1](assets/split-1.png)
+
+### Daten nach {#split-uc1-dataafter}
+
+| Antworten | Ereignisse |
+|---|--:|
+| es war toll | 2 |
+| wird anderen | 2 |
+| es war nicht groß | 1 |
+| vollendeten Sinn | 1 |
+| etwas verwirrend | 1 |
+| sehr verwirrend | 1 |
+| wird anderen nicht empfehlen | 1 |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall 2 {#split-uc2}
+
+Sie erfassen Sprach-App-Antworten in einer durch Trennzeichen getrennten Liste in einer einzigen Dimension. Sie möchten die Antworten aus dem ersten Wert in der Liste in eine eigene Dimension umwandeln. Sie möchten den letzten Wert in der Liste in eine eigene Dimension setzen.
+
+### Daten vor {#split-uc2-databefore}
+
+| Antworten | Ereignisse |
+|---|--:|
+| es war großartig, vollendete Vernunft, wird anderen empfohlen | 1 |
+| Es war toll, etwas verwirrend, wird anderen empfehlen | 1 |
+| Es war nicht groß, sehr verwirrend, wird nicht empfohlen, andere | 1 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#split-u2-derivedfield}
+
+Sie erstellen eine  `First Response` abgeleitetes Feld. Sie verwenden die [!UICONTROL AUFTEILUNG] -Funktion, um eine Regel zu definieren, die den ersten Wert aus der [!UICONTROL Antworten] -Feld links neben der Antwort `,` als Trennzeichen.
+
+![Screenshot der Aufspaltungsregel - erster Wert](assets/split-2.png)
+
+Sie erstellen eine `Second Response` abgeleitetes Feld, um den letzten Wert aus dem [!UICONTROL Antworten] durch Auswahl von Von rechts, 1 als Trennzeichen und 1 als Index.
+
+![Screenshot der Aufspaltungsregel - letzter Wert](assets/split-3.png)
+
+### Daten nach {#split-uc2-dataafter}
+
+| Erste Antwort | Ereignisse |
+|---|--:|
+| es war toll | 2 |
+| es war nicht groß | 1 |
+
+{style="table-layout:auto"}
+
+| Zweite Antwort | Ereignisse |
+|---|--:|
+| wird anderen | 2 |
+| wird anderen nicht empfehlen | 1 |
+
+{style="table-layout:auto"}
+
++++
+
+
 <!-- URL PARSE -->
 
 ### URL-Parsen
@@ -686,7 +940,7 @@ Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>Für [!UICONTROL Feld]:</li><ul><li>Regel</li><li>Standardfeld</li><li>Feld</li></ul><li>Für [!UICONTROL Option]:<ul><li>[!UICONTROL Protokoll abrufen]</li><li>[!UICONTROL Host abrufen]</li><li>[!UICONTROL  Pfad abrufen]</li><li>[!UICONTROL Wert der Abfragezeichenfolge abrufen]<ul><li>[!UICONTROL Abfrageparameter]:<ul><li>Benutzereingabe</li></ul></li></ul></li><li>[!UICONTROL Hash-Wert abrufen]</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Protokoll abrufen]</li><li>[!UICONTROL Host abrufen]</li><li>[!UICONTROL  Pfad abrufen]</li><li>[!UICONTROL Wert der Abfragezeichenfolge abrufen]<ul><li>[!UICONTROL Abfrageparameter]:<ul><li>Zeichenfolge</li></ul></li></ul></li><li>[!UICONTROL Hash-Wert abrufen]</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -710,7 +964,7 @@ Sie möchten die Referrer-Domäne aus der Referrer-URL nur als Teil des Regelsat
 
 Sie definieren eine  `Referring Domain` abgeleitetes Feld. Sie verwenden die [!UICONTROL URL PARSE] -Funktion, um eine Regel zum Abrufen des Hosts aus dem [!UICONTROL Verweisende URL] und speichern Sie es im neuen abgeleiteten Feld.
 
-![ Url Parse rule 1](assets/url-parse-1.png)
+![Screenshot der Url Parse-Regel 1](assets/url-parse-1.png)
 
 ### Daten nach {#urlparse-uc1-dataafter}
 
@@ -742,7 +996,7 @@ Sie möchten den Wert der `cid` -Parameter einer Abfragezeichenfolge in einer [!
 
 Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die [!UICONTROL URL PARSE] -Funktion, um eine Regel zum Abrufen des Werts des Abfragezeichenfolgenparameters im [!UICONTROL Seiten-URL] -Feld angeben `cid` als Abfrageparameter. Der Ausgabewert wird im neuen abgeleiteten Feld gespeichert.
 
-![Url Parse rule 2](assets/url-parse-2.png)
+![Screenshot der Url Parse-Regel 2](assets/url-parse-2.png)
 
 ### Daten nach {#urlparse-uc2-dataafter}
 
@@ -760,6 +1014,13 @@ Sie definieren eine `Query String CID` abgeleitetes Feld. Sie verwenden die [!UI
 
 Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder im Allgemeinen:
 
-- Beim Definieren von Regeln für ein abgeleitetes Feld können Sie maximal 10 verschiedene Schemafelder (ohne Standardfelder) verwenden.
-   - Von diesen maximal 10 verschiedenen Schemafeldern sind maximal 3 Lookup-Schema- oder Profilschemafelder zulässig.
+- Sie können beim Definieren von Regeln für ein abgeleitetes Feld maximal zehn verschiedene Schemafelder (ohne Standardfelder) verwenden.
+   - Von diesen maximal zehn verschiedenen Schemafeldern sind maximal drei Lookup-Schema- oder Profilschemafelder zulässig.
 - Pro Customer Journey Analytics-Verbindung können maximal 100 abgeleitete Felder verwendet werden.
+
+## Weitere Informationen
+
+- [So nutzen Sie Ihre Daten optimal: Ein Framework für die Verwendung abgeleiteter Felder in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+
+- [Abgeleitete Felder Anwendungsfälle für Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+
