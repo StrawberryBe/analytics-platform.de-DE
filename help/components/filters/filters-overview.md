@@ -3,9 +3,9 @@ title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '990'
 ht-degree: 33%
 
 ---
@@ -43,8 +43,6 @@ Mit sequenziellen Filtern können Sie Personen anhand der Navigation und Seitena
 >Sie müssen über die **Auswählen** -Paket, um kanalübergreifende sequenzielle Filter zu erstellen. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Package Sie haben. &#x200B;
 
 Siehe folgendes Beispiel:
-
-<!--![](assets/sequential_fil.png)-->
 
 | Sitzung 1 | Sitzung 2 | Sitzung drei |
 | --- | --- | --- |
@@ -117,7 +115,7 @@ Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
 ## Vordefinierte Filtervorlage {#template}
 
-Herkömmliche Analytics bietet zahlreiche vordefinierte Vorlagenfilter (Filter) und berechnete Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextabhängige Variablen in Customer Journey Analytics ab.
+Die herkömmliche Analytics-Version enthält zahlreiche vordefinierte Vorlagen und berechnete Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextabhängige Variablen in Customer Journey Analytics ab.
 
 | Filtername | Beschreibung |
 | --- | --- |

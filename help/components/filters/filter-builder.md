@@ -3,14 +3,14 @@ description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablege
 title: Erstellen von Filtern
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 28%
+source-wordcount: '1396'
+ht-degree: 23%
 
 ---
 
-# Filter Builder
+# Filter-Builder
 
 Die [!UICONTROL Filter Builder] können Sie einfache oder komplexe Filter erstellen, mit denen Personenattribute und Aktionen über Besuche und Ereignisse hinweg identifiziert werden. Es bietet eine Arbeitsfläche zum Ziehen und Ablegen von Metrikdimensionen, Ereignissen oder anderen Filtern, um Personen basierend auf Hierarchielogik, Regeln und Operatoren zu filtern.
 
@@ -20,10 +20,9 @@ Informationen zum Erstellen von Schnellfiltern, die nur für das Projekt gelten,
 
 Sie haben folgende Möglichkeiten, auf den Filter-Builder zuzugreifen:
 
-* **Obere Navigation in Analytics**: Klicken **[!UICONTROL Analytics]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]**.
+* **Navigation oben**: Klicken **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]**.
 * **[!UICONTROL Analysis Workspace]**: Öffnen Sie ein Projekt in Analysis Workspace und wählen Sie **[!UICONTROL + Komponenten]** > **[!UICONTROL Filter erstellen]**.
-* **[!UICONTROL Reports &amp; Analytics]**: Klicken **[!UICONTROL Analytics]** > **[!UICONTROL Berichte]**, öffnen Sie einen vorhandenen Bericht und klicken Sie auf die **Filter** Symbol in der linken Navigation und klicken Sie dann auf **[!UICONTROL Hinzufügen]**.
-* **[!UICONTROL Report Builder]**: [Filter in Report Builder hinzufügen oder bearbeiten](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html?lang=de).
+* **[!UICONTROL Report Builder]**: [Arbeiten mit Filtern in Report Builder](/help/report-builder/work-with-filters.md).
 
 ## Übersicht über Builder-Kriterien {#section_F61C4268A5974C788629399ADE1E6E7C}
 
@@ -153,91 +152,3 @@ Durch die Filterstapelung können Sie die Anzahl der Filter auf 22 reduzieren un
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-## Vorlagen filtern {#concept_5098446CC78D441E93B8E4D1D1EA6558}
-
-Filtervorlagen werden für gängige Anwendungsfälle von Filtern bereitgestellt, z. B. &quot;Erstbesuche&quot;oder &quot;Besuche von Mobilgeräten&quot;. Sie sind in Workspace-Projekten und im Filter Builder als Bausteine für neue Filter verfügbar.
-
-Vorlagen werden mit dem Adobe-Logo „A“ gekennzeichnet. Nachfolgend sind einige Beispielvorlagen aufgeführt:
-
-<table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Vorlagenname </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Warenkorb vorzeitig verlassen </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die Artikel zu ihrem Warenkorb hinzugefügt, aber nichts bestellt haben. In der Filterdefinition ist der Behälter "Besuch". Die Regel für diesen sequenziellen Filter ist <p> Zusätze zum Warenkorb ist nicht null </p> <p>Dann </p> <p>Bestellungen gleich 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Erstbesuche </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die maximal ein [1] Mal besucht haben. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Besuchsnummer gleich 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Nichtkäufer </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die nicht an einem Bestellereignis teilgenommen haben. In der Filterdefinition ist der Behälter Besucher. Dieser Filter verwendet die Ausschlusslogik. Die Regel ist <p>Bestellungen ist nicht null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Nicht-Einzelseitenbesuche (Keine Absprünge) </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die mehr als einen Besuch durchgeführt haben. In der Filterdefinition ist der Behälter Besucher. Dieser Filter verwendet die Ausschlusslogik. Die Regel ist <p>Einzelzugriff ist nicht null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Paid Search </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die aus einer gebührenpflichtigen Suche stammen. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Gebührenpflichtige Sucherkennung gleich 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Käufern </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die an einem Bestellereignis teilgenommen haben. In der Filterdefinition ist der Behälter Besucher. Die Regel ist <p>Bestellungen ist nicht null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Rückkehrende Besucher </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die mindestens einen Besuch durchgeführt haben. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Besuchsnummer ist größer als 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Einzelseitenbesuche </td> 
-   <td colname="col2"> Daten zu Besuchen anzeigen, bei denen ein Einzelseitenwert vorliegt, auch wenn während des Besuchs mehrere Seitenansichten übermittelt werden. Einzelseitenbesuche mit Exitlink-Ereignissen sind im Filter enthalten. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Einzelseitenbesuche gleich 1. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Angesehenes Produkt wurde nicht dem Warenkorb hinzugefügt </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die Produkte angesehen, aber keine Zusatz zum Warenkorb hatten. In der Filterdefinition ist der Behälter "Besuch". Die Regel für diesen sequenziellen Filter ist <p>Produktansichten ist nicht null </p> <p>Dann </p> <p> Warenkorbzusätze gleich 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche von Kampagnen </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die durch Kampagnen verwiesen wurden. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Trackingcode ist nicht null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche von Mobilgeräten </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die Mobilgeräte verwenden. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Mobiles Gerät ist ungleich null. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche über eine kostenlose Suche </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die nicht von einer gebührenpflichtigen Suche stammen. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Gebührenpflichtige Sucherkennung gleich 0. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche von Nicht-Mobilgerät </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die keine Mobilgeräte verwenden. In der Filterdefinition ist der Behälter "Besuch". Dieser Filter verwendet die Ausschlusslogik. Die Regel ist <p>Mobilgerätetyp gleich Mobiltelefon </p> <p>Oder </p> <p>Mobilgerätetyp gleich Tablet. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche von Smartphones </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die Smartphones verwenden. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Gerätetyp gleich Mobiltelefon. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche über Suchmaschinen </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die von Suchmaschinen verwiesen wurden. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Referrer-Typ gleich Suchmaschinen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche von sozialen Netzwerken aus </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die von Social Sites verwiesen wurden. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Referrer-Typ gleich soziale Netzwerke. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche von Tablets </td> 
-   <td colname="col2">Daten zu Personen anzeigen, die Tablets verwenden. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Gerätetyp gleich Tablet. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Besuche mit Besucher-ID-Cookie </td> 
-   <td colname="col2">Daten von Personen zu Ihrer Site anzeigen, für die ein beständiges Cookie erforderlich ist. In der Filterdefinition ist der Behälter "Besuch". Die Regel ist <p>Beständiges Cookie gleich 1. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
