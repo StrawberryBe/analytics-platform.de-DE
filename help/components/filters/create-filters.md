@@ -3,9 +3,9 @@ title: Filter erstellen
 description: Machen Sie sich mit der Benutzeroberfläche zur Filtererstellung vertraut.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '312'
 ht-degree: 55%
 
 ---
@@ -23,7 +23,7 @@ Im Folgenden finden Sie eine Zusammenfassung der verfügbaren Filtertypen mit Li
 | Filter in Fallout-Analyse | [Fallout-Visualisierung](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) in Analysis Workspace | Für individuelle Fallout-Visualisierungen | Erstellen von Filtern von einem Touchpoint aus, Hinzufügen von Filtern als Touchpoint und Vergleichen wichtiger Workflows über verschiedene Filter hinweg. |
 | Auf berechneten Metriken basierende Filter | [Generator für berechnete Metriken](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | Für einzelne berechnete Metriken | Anwenden von Filtern innerhalb Ihrer Metrikdefinition |
 
-Wenn Sie Filter auf ein Freiformprojekt anwenden, stehen auch mehrere andere Methoden zur Verfügung:
+Beim Anwenden von Filtern auf ein Freiformprojekt stehen auch mehrere andere Methoden zur Verfügung:
 
 | Aktion | Beschreibung |
 | --- | --- |

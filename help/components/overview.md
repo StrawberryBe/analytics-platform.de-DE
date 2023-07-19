@@ -4,10 +4,10 @@ description: Erfahren Sie, welche Komponenten Customer Journey Analytics anbiete
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 86%
+source-wordcount: '1127'
+ht-degree: 79%
 
 ---
 
@@ -21,10 +21,14 @@ Komponenten sind Funktionen in Customer Journey Analytics, die in Berichten verw
 Sie können die folgenden Komponenten verwalten:
 
 * [**Anmerkungen**](/help/components/annotations/overview.md): Informieren Sie andere Benutzerinnen und Benutzer in Ihrem Unternehmen über die kontextbezogene Bedeutung von Daten und Erkenntnissen.
-* [**Filter:**](filters/filters-overview.md) Schließen Sie Teile Ihrer Daten aus, um sich auf gebräuchliche Dimensionselemente zu konzentrieren
+* [**Zielgruppen**](/help/components/audiences/audiences-overview.md): Erstellen und Veröffentlichen von Zielgruppen, die im Customer Journey Analytics zu [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCDP) in Adobe Experience Platform für das Targeting und die Personalisierung von Kunden.
+* [**Filter**](filters/filters-overview.md): Erstellen, verwalten, teilen und wenden Sie leistungsstarke, fokussierte Zielgruppenfilter auf Ihre Berichte an. Mit Filtern können Sie Personengruppen anhand von Merkmalen oder Interaktionen identifizieren.
 * [**Berechnete Metriken:**](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung
-* [**Datumsbereiche:**](date-ranges/create.md) Passen Sie die von Analysis Workspace angebotenen Datumsbereiche an und präzisieren Sie diese
-* [**Projekte:**](/help/analysis-workspace/home.md) Organisieren und verwalten Sie Ihre Projekte in Analysis Workspace
+* [**Datenwörterbuch**](/help/components/data-dictionary/data-dictionary-overview.md): Hilft Benutzern und Administratoren, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen.
+* [**Datumsbereiche:**](date-ranges/create.md) Passen Sie die von Analysis Workspace angebotenen Datumsbereiche an und präzisieren Sie diese.
+* [**Dimensionen**](/help/components/dimensions/view-dimensions.md): Dimensionen sind Variablen, die normalerweise Zeichenfolgenwerte enthalten. Zu den gebräuchlichen Dimensionen gehören Seite und Referrer-Domäne.
+* [**Metriken**](/help/components/apply-create-metrics.md): Ermöglicht Ihnen die Quantifizierung von Datenpunkten in Analysis Workspace.
+* [**Projekte:**](/help/analysis-workspace/home.md) Organisieren und verwalten Sie Ihre Projekte in Analysis Workspace.
 
 ## Analysis Workspace-Komponenten
 

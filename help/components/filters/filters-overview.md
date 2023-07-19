@@ -3,17 +3,17 @@ title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 34%
+source-wordcount: '992'
+ht-degree: 33%
 
 ---
 
 
 # Filterübersicht {#overview}
 
-Mit Customer Journey Analytics können Sie leistungsstarke, zielgerichtete Zielgruppenfilter für Ihre Berichte erstellen, verwalten, freigeben und anwenden. Mit Filtern können Sie Untergruppen von Personen anhand von Merkmalen oder Website-Interaktionen identifizieren. Filter sind als kodifizierte Zielgruppeneinblicke konzipiert, die Sie für Ihre speziellen Anforderungen erstellen und dann überprüfen, bearbeiten und mit anderen Team-Mitgliedern austauschen können.
+Mit Customer Journey Analytics können Sie leistungsstarke, zielgerichtete Zielgruppenfilter für Ihre Berichte erstellen, verwalten, freigeben und anwenden. Mit Filtern können Sie Personengruppen anhand von Merkmalen oder Interaktionen identifizieren. Filter sind als kodifizierte Zielgruppeneinblicke konzipiert, die Sie für Ihre speziellen Anforderungen erstellen und dann überprüfen, bearbeiten und mit anderen Team-Mitgliedern austauschen können.
 
 Filter können auf
 
@@ -37,6 +37,10 @@ Informationen zu den verfügbaren Filtertypen und deren Erstellung finden Sie un
 ## Sequenzielle Filter {#sequential}
 
 Mit sequenziellen Filtern können Sie Personen anhand der Navigation und Seitenansicht auf Ihrer Site identifizieren und einen Filter für definierte Aktionen und Interaktionen bereitstellen. Mit sequenziellen Filtern können Sie erkennen, was eine Person mag und was sie meidet. Beim Erstellen sequenzieller Filter wird der Operator THEN verwendet, um die Personennavigation zu definieren und zu ordnen.
+
+>[!IMPORTANT]
+>
+>Sie müssen über die **Auswählen** -Paket, um kanalübergreifende sequenzielle Filter zu erstellen. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Package Sie haben. &#x200B;
 
 Siehe folgendes Beispiel:
 

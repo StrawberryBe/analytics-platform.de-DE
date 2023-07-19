@@ -4,16 +4,16 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '2605'
-ht-degree: 60%
+source-wordcount: '2630'
+ht-degree: 58%
 
 ---
 
 # Verbindung herstellen
 
-Kürzlich wurde in Customer Journey Analytics ein neuer Workflow für Verbindungen gestartet. Beim neuen Workflow für die Erstellung und Bearbeitung von Verbindungen können alle Einstellungen zur Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow in der Mitte des Bildschirms durchgeführt werden. Sie haben eine detaillierte Datensatzauswahl, -konfiguration und -überprüfung mit wichtigen Informationen wie Datensatztyp, -größe, -schema, -Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr bereitgestellt, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die neuen Funktionen:
+Das Workflow-Erlebnis für die Erstellung und Bearbeitung von Verbindungen bringt alle Einstellungen für Datensatz- und Verbindungskonfiguration mit einem unterstützenden Workflow in die Mitte des Bildschirms. Es bietet detaillierte Informationen zur Auswahl, Konfiguration und Überprüfung von Datensätzen mit kritischen Informationen wie Datensatztyp, Größe, Schema, Datensatz-ID, Batch-Status, Aufstockungsstatus, Personen-IDs und vieles mehr, um das Risiko einer falschen Verbindungskonfiguration zu verringern. Im Folgenden finden Sie einen Überblick über die Funktionen:
 
 * Sie können bei der Erstellung der Verbindung ein rollierendes Fenster zur Datenaufbewahrung aktivieren.
 * Sie können Datensätze zu einer Verbindung hinzufügen und daraus entfernen. (Wenn Sie einen Datensatz entfernen, wird er aus der Verbindung entfernt und wirkt sich auf alle zugehörigen Datenansichten und zugrunde liegenden Analysis Workspace-Projekte aus.)
@@ -22,6 +22,10 @@ Kürzlich wurde in Customer Journey Analytics ein neuer Workflow für Verbindung
 * Sie können für einzelne Datensätze vorhandene Daten importieren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
+>[!IMPORTANT]
+>
+>Sie müssen über die **Auswählen** -Paket, um einer Verbindung eine unbegrenzte Anzahl von Datensätzen hinzuzufügen. Die **Stiftung** -Paket ist auf einen Datensatz beschränkt. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Package Sie haben. &#x200B;
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 

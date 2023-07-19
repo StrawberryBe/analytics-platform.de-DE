@@ -3,10 +3,10 @@ description: In Analysis Workspace gibt es zwei Möglichkeiten zur Verwendung vo
 title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: a9751cad1ba49fe3e8c2c484e34d1725e063c2d4
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 23%
+ht-degree: 51%
 
 ---
 
@@ -14,8 +14,7 @@ ht-degree: 23%
 
 Mit Metriken können Sie Datenpunkte in Analysis Workspace quantifizieren. Sie werden meist als Spalten in einer Visualisierung verwendet und sind an Dimensionen gebunden.
 
-
-## Metriktypen
+## Arten von Metriken
 
 Adobe bietet verschiedene Arten von Metriken zur Verwendung in Analysis Workspace:
 
@@ -35,7 +34,7 @@ Metriken sind in ihrer Verwendung in Analysis Workspace flexibel. Ziehen Sie ein
 
 ## Berechnete Metriken 
 
-Berechnete Metriken ermöglichen es Ihnen, mithilfe einfacher Operatoren oder statistischer Funktionen einfach zu erkennen, wie sich Metriken zueinander verhalten. Es gibt mehrere Möglichkeiten, berechnete Metriken zu erstellen:
+Berechnete Metriken ermöglichen es Ihnen, mithilfe einfacher Operatoren oder statistischer Funktionen leicht zu erkennen, wie sich Metriken zueinander verhalten. Es gibt mehrere Möglichkeiten, berechnete Metriken zu erstellen:
 
 Sie können **[!UICONTROL Komponenten]** > **[!UICONTROL Berechnete Metriken]**. Dadurch gelangen Sie zum [Generator für berechnete Metriken](/help/components/calc-metrics/calc-metr-overview.md), wo Sie benutzerdefinierte Metriken aus vorhandenen Metriken erstellen können.
 
