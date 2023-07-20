@@ -4,10 +4,10 @@ description: Hier erhalten Sie Informationen über die unterschiedlichen Arten d
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Experience Platform bringt Daten aus mehreren Quellen zusammen, um Markete
 
 In diesem Tutorial finden Sie detaillierte Schritte, wie Sie [Daten von Google Analytics mit Customer Journey Analytics analysieren](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=de).
 
-## Verwenden Sie die Bulk Data Insertion API, um Daten in Analytics einzulesen, und nehmen Sie sie dann über Adobe Source Connector in Experience Platform auf.
+## Verwenden Sie die Bulk-Dateneinfüge-API, um Daten in Analytics aufzunehmen, und erfassen Sie dann über den Analytics-Quell-Connector in Experience Platform.
 
 1. [Verwenden Sie die Bulk Data Insertion API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md), um Server-seitig gesammelte Daten an Adobe Analytics zu senden. Damit können Sie Dateien im CSV-Format senden, die Ereignisdaten enthalten.
 1. [Erstellen Sie einen Adobe Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de), um diese Verbraucherdaten in Adobe Experience Platform zu importieren.
