@@ -3,10 +3,10 @@ title: Vergleich der Datenverarbeitung über die Berichterstellungsfunktionen vo
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1216'
-ht-degree: 58%
+ht-degree: 54%
 
 ---
 
@@ -29,7 +29,7 @@ Das Verständnis der Unterschiede bei der Datenverarbeitung für die verschieden
 
 Da beispielsweise &quot;Besuche&quot;als Metrik in Adobe Analytics zum Zeitpunkt der Datenverarbeitung definiert und &quot;Sitzungen&quot;als Metrik in Customer Journey Analytics zum Zeitpunkt des Berichts berechnet wird, können die beiden Metriken je nach den Regeln, die für die Sitzungsdefinition in der Datenansicht des Customer Journey Analytics verwendet werden, unterschiedlich sein.
 
-Außerdem sind weder Besuche noch Sitzungen als Metrik in Datensätzen verfügbar, die vom Analytics-Quell-Connector erstellt wurden. Daher müssten Sie die Sitzung in Ihrer Abfragelogik definieren, um Vergleiche durchzuführen.
+Außerdem sind weder Besuche noch Sitzungen als Metrik in Datensätzen verfügbar, die vom Analytics-Quell-Connector erstellt wurden. Daher müssen Sie die Sitzung in Ihrer Abfragelogik definieren, um Vergleiche durchzuführen.
 
 ## Terminologie {#terms}
 
@@ -64,7 +64,7 @@ Die Datenverarbeitungsschritte, die für Adobe Analytics und Customer Journey An
 | Adobe Analytics [Livestream](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/live-stream-api/getting_started.md) | <ul><li> Verarbeitungsregeln</li><li>VISTA-Regeln</li><ul> |   | <ul><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Regeln für Marketing-Kanäle auf Besuchsebene</li><li>Besuchslogik</li><li>Attributionslogik</li><li>Segmentlogik</li><li>Berechnete Metriken</li><li>Cross-Device Analytics</li></ul> |  |
 | Adobe Analytics [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=de) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Besuchsdefinition (siehe Hinweis)</li><li>Cross-Device Analytics (siehe Hinweis)</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Trefferebene (siehe Hinweis)</li><li>Regeln für Marketing-Kanäle auf Besuchsebene (siehe Hinweis) Attributionslogik</li><li>Segmentlogik</li><li>Berechnete Metriken</li></ul> |  | <ul><li>CDA erfordert die Verwendung von Virtual Report Suites mit Berichtszeitverarbeitung.</li><li>Attribution IQ in Core Analytics verwendet Marketing-Kanäle, die vollständig zur Berichtszeit abgeleitet wurden (d. h. abgeleitete Mittelwerte).</li><li>Attribution IQ verwendet eine Besuchsdefinition für Verarbeitungszeiten, es sei denn, diese wird in einer VRS zur Berichtszeitverarbeitung verwendet.</li></ul> |
 | Virtual Report Suites von Adobe Analytics mit [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) (VRS RTP) | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>[Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de)</li></ul> | <ul><li>Besuchsdefinition</li><li>Attributionslogik</li><li>Segmentlogik</li><li>Berechnete Metriken</li><li>Andere VRS-RTP-Einstellungen</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Siehe VRS-RTP-[Dokumentation](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de).</li></ul> |
-| [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de)-basierter Datensatz in Adobe Experience Platform Data Lake | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Feldbasierte Zuordnung (siehe Hinweis)</li></ul> |   | <ul><li>[Regeln für Marketing-Kanäle auf Besuchsebene](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de)</li><li>Besuchslogik</li><li>Attributionslogik</li><li>Filterlogik</li></ul> | <ul><li>Muss Ihre eigene Filterlogik und berechnete Metriken anwenden</li><li>Bei der feldbasierten Zuordnung wird zusätzlich zu dem vom Analytics-Quell-Connector erstellten Datensatz ein separater zugeordneter Datensatz erstellt.</li></ul> |
+| [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de)-basierter Datensatz in Adobe Experience Platform Data Lake | <ul><li>Verarbeitungsregeln</li><li>VISTA-Regeln</li><li>Regeln für Marketing-Kanäle auf Trefferebene</li><li>Feldbasierte Zuordnung (siehe Hinweis)</li></ul> |   | <ul><li>[Regeln für Marketing-Kanäle auf Besuchsebene](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=de)</li><li>Besuchslogik</li><li>Attributionslogik</li><li>Filterlogik</li></ul> | <ul><li>Muss Ihre eigene Filterlogik und berechnete Metriken anwenden</li><li>Beim feldbasierten Stitching wird zusätzlich zu dem vom Analytics-Quell-Connector erstellten Datensatz ein separater zugeordneter Datensatz erstellt.</li></ul> |
 | Reporting in [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=de) | <ul><li>Implementiert als Teil der Adobe Experience Platform-Datenerfassung</li></ul> | <ul><li>Sitzungsdefinition</li><li>[Datenansichtseinstellungen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=de)<li>Attributionslogik</li><li>Berechnete Metriken</li><li>Filterlogik</li></ul> | <ul><li>Regeln für Marketing-Kanäle auf Besuchsebene</li></ul> | <ul><li>Muss zugeordnete Datensätze verwenden, um kanalübergreifende Analysen nutzen zu können.</li></ul> |
 
 {style="table-layout:auto"}

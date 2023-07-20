@@ -4,10 +4,10 @@ description: Customer Journey Analytics – häufig gestellte Fragen.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 68%
+source-wordcount: '2196'
+ht-degree: 70%
 
 ---
 
@@ -100,7 +100,7 @@ Mit Ihrer Berechtigung zur Nutzung von Customer Journey Analytics können Sie Da
 
 +++**Wie integriere ich [!UICONTROL Adobe Analytics]-Daten in [!UICONTROL Customer Journey Analytics]?**
 
-[!UICONTROL Adobe Analytics]-Daten können über [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) mit Experience Platform verbunden werden. Die meisten [!UICONTROL Adobe Analytics]-Felder werden im XDM-Format übermittelt, andere Felder sind aber noch nicht verfügbar.
+[!UICONTROL Adobe Analytics] Daten können über die [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de). Die meisten [!UICONTROL Adobe Analytics]-Felder werden im XDM-Format übermittelt, andere Felder sind aber noch nicht verfügbar.
 
 +++
 
@@ -133,9 +133,9 @@ Nein, Sie können eine beliebige ID verwenden, einschließlich eines Hash einer 
 
 <ul><li>Live-Daten oder -Ereignisse: Wird innerhalb von 90 Minuten verarbeitet und erfasst, sobald Daten in Adobe Experience Platform verfügbar sind. (Batch-Größe &gt; 50 Millionen Zeilen: länger als 90 Minuten.)</li><li>Kleine Backfilets: innerhalb von 7 Tagen<li>Große Backfilets: innerhalb von 30 Tagen</li></ul>
 
-Wir haben kürzlich die Verarbeitung von Daten in Customer Journey Analytics geändert:
+Wir haben kürzlich die Art und Weise geändert, wie Daten in Customer Journey Analytics verarbeitet werden:
 
-<ul><li>Alle Ereignisdaten mit einem Zeitstempel unter 24 Stunden werden gestreamt.</li><li>Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität erfasst.</li></ul>
+<ul><li>Alle Ereignisdaten mit einem Zeitstempel unter 24 Stunden werden gestreamt.</li><li>Alle Ereignisdaten mit einem Zeitstempel, der älter als 24 Stunden ist (auch wenn sie sich im gleichen Batch wie neuere Daten befinden) werden als Aufstockung betrachtet und mit einer niedrigeren Priorität aufgenommen.</li></ul>
 
 ## 5. Festlegen eines rollierenden Fensters für die [!UICONTROL Verbindungs]-Datenspeicherung {#data-retention}
 

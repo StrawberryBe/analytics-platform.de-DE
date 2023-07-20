@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 89%
+ht-degree: 85%
 
 ---
 
@@ -55,7 +55,7 @@ Die Cross-Channel-Analyse ist eine innovative und zuverlässige Funktion, deren 
 * Benutzerdefinierte ID-Maps, die in Ihrem Unternehmen verwendet werden, werden nicht unterstützt.
 * Das geräteübergreifende private Diagramm wird nicht unterstützt.
 * Die Cross-Channel-Analyse transformiert nicht das zum Verbinden verwendete Feld. Die feldbasierte Zuordnung verwendet den Wert im angegebenen Feld so, wie er im nicht zugewiesenen Datensatz innerhalb des Datensees vorhanden ist. Bei der Zuordnung wird zwischen Groß- und Kleinschreibung unterschieden. Wenn beispielsweise das Wort „Bob“ im Feld erscheint und manchmal das Wort „BOB“ angezeigt wird, werden diese als zwei separate Personen behandelt.
-* Da bei der feldbasierten Zuordnung die Groß- und Kleinschreibung beachtet wird, empfiehlt Adobe für Analytics-Datensätze, die über den Analytics Source Connector generiert werden, die Überprüfung aller VISTA-Regeln oder Verarbeitungsregeln, die für das Feld für die vorübergehende ID gelten, um sicherzustellen, dass keine dieser Regeln neue Formen derselben ID einführt. So sollten Sie beispielsweise sicherstellen, dass keine VISTA- oder Verarbeitungsregeln dafür sorgen, dass im Feld für die vorübergehende ID nur für einen Teil der Ereignisse Kleinschreibung verwendet wird.
+* Bei der feldbasierten Zuordnung wird zwischen Groß- und Kleinschreibung unterschieden. Bei Analytics-Datensätzen, die über den Analytics-Quell-Connector generiert werden, empfiehlt Adobe, alle VISTA-Regeln oder Verarbeitungsregeln zu überprüfen, die für das vorübergehende ID-Feld gelten, um sicherzustellen, dass keine dieser Regeln neue Formen derselben ID einführt. So sollten Sie beispielsweise sicherstellen, dass keine VISTA- oder Verarbeitungsregeln dafür sorgen, dass im Feld für die vorübergehende ID nur für einen Teil der Ereignisse Kleinschreibung verwendet wird.
 * Bei der feldbasierten Suche werden Felder nicht kombiniert oder verknüpft.
 * Das Feld für die vorübergehende ID sollte nur einen ID-Typ enthalten (also IDs aus einem einzigen Namespace). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
 * Wenn mehrere Ereignis mit demselben Zeitstempel für dieselbe permanente ID auftreten, jedoch unterschiedliche Werte im Feld für die vorübergehende ID vorliegen, wird die feldbasierte Zuordnung auf Grundlage der alphabetischen Reihenfolge gewählt. Wenn also eine permanente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignis „Bob“ und das andere „Ann“ angibt, wählt die feldbasierte Zuordnung „Ann“.

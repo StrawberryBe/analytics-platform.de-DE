@@ -4,10 +4,10 @@ description: Hier erhalten Sie Informationen über die unterschiedlichen Arten d
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 96%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Sie haben eine Reihe von Möglichkeiten, Daten in Customer Journey Analytics auf
 
 ## Daten aus Adobe Analytics erfassen
 
-Dieser Workflow nutzt den Adobe Analytics Source Connector und variiert je nachdem, ob Sie DTM oder Launch als Tag-Manager verwenden.
+Dieser Workflow nutzt den Analytics-Quell-Connector und variiert je nachdem, ob Sie DTM oder Launch als Tag-Manager verwenden.
 
 ### Über Tags in Adobe Experience Platform (früher [!UICONTROL Launch] genannt)
 

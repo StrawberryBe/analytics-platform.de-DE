@@ -1,13 +1,13 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '744'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
-# Virtual Report Suites, Datenansichten, Adobe Experience Platform-Sandboxes und der Analytics Source Connector
+# Virtual Report Suites, Datenansichten, Adobe Experience Platform-Sandboxes und der Analytics-Quell-Connector
 
-Adobe bietet eine Vielzahl von Möglichkeiten zum Erstellen virtueller Reporting-Umgebungen und Sandbox-Umgebungen. Es ist nützlich, die Ähnlichkeiten und Unterschiede zwischen den folgenden Funktionen und deren Beziehung zum [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) zu verstehen:
+Adobe bietet eine Vielzahl von Möglichkeiten zum Erstellen virtueller Reporting-Umgebungen und Sandbox-Umgebungen. Es ist nützlich, die Ähnlichkeiten und Unterschiede zwischen den folgenden Funktionen zu verstehen und zu verstehen, wie diese Funktionen mit dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de):
 
 * Virtual Report Suites in Adobe Analytics
 * Customer Journey Analytics-Datenansichten
@@ -33,7 +33,7 @@ Was eine Virtual Report Suite nicht ist/kann:
 
 * Eine Möglichkeit bieten, Report Suites miteinander zu kombinieren.
 * Sie ist nicht in Adobe Analytics Data Warehouse verfügbar.
-* Verfügbar als Quelle für Datenflüsse in Adobe Experience Platform über den Analytics Source Connector. Nur vollständige (nicht virtuelle) Report Suites sind für die Verwendung mit dem Analytics-Quell-Connector verfügbar.
+* Verfügbar als Quelle für Datenflüsse in Adobe Experience Platform über den Analytics-Quell-Connector. Nur vollständige (nicht virtuelle) Report Suites sind für die Verwendung mit dem Analytics-Quell-Connector verfügbar.
 
 
 ## Customer Journey Analytics-Datenansichten
@@ -75,4 +75,4 @@ Eine Adobe Experience Platform-Sandbox nicht:
 Weiter:
 
 * Daten aus verschiedenen Sandboxes können nicht in Customer Journey Analytics kombiniert werden.
-* Der Analytics-Quell-Connector sendet Report Suite-Daten _in_ eine bestimmte Sandbox. Jede Report Suite kann als Quelle für eine einzelne Sandbox konfiguriert werden. Weitere Details finden Sie in der [Dokumentation zum Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de).
+* Der Analytics-Quell-Connector sendet Report Suite-Daten _in_ eine bestimmte Sandbox. Jede Report Suite kann als Quelle für eine einzelne Sandbox konfiguriert werden. Siehe [Dokumentation zum Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) für weitere Details.

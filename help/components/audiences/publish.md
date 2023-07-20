@@ -3,7 +3,7 @@ title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 61%
@@ -89,8 +89,8 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 
 | # | Latenzpunkt | Latenzdauer |
 | --- | --- | --- |
-| Nicht angezeigt | Adobe Analytics to Analytics Source Connector (A4T) | Bis zu 30 Minuten |
-| 1 | Datenerfassung in den Data Lake (von Analytics Source Connector oder anderen Quellen) | Bis zu 90 Minuten |
+| Nicht angezeigt | Quell-Connector von Adobe Analytics zu Analytics (A4T) | Bis zu 30 Minuten |
+| 1 | Datenaufnahme in den Data Lake (aus dem Analytics-Quell-Connector oder anderen Quellen) | Bis zu 90 Minuten |
 | 2 | Datenerfassung vom Experience Platform Data Lake in Customer Journey Analytics | Bis zu 90 Minuten |
 | 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
 | 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |

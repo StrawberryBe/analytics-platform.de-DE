@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
-workflow-type: ht
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+workflow-type: tm+mt
 source-wordcount: '2215'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -84,17 +84,17 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | September 2022 | Neues Thema zu [Kombinationsdiagrammen](/help/analysis-workspace/visualizations/combo-charts.md) in Workspace. |
 | September 2022 | Neues Thema zu [Experimentationsbereich](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** | |
-| August 2022 | Adobe Experience Platform-Artikel zum Thema [Regionsübergreifende Unterstützung für Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). |
+| August 2022 | Adobe Experience Platform-Artikel zu [Regionsübergreifende Unterstützung für Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de). |
 | August 2022 | Erheblich aktualisierter Artikel über die [Customer Journey Analytics-Zugriffskontrolle](/help/admin/cja-access-control.md). |
 | August 2022 | Neuer Artikel zu [Customer Journey Analytics-Unterstützung für Data-Governance-Beschriftungen und -Richtlinien](/help/data-views/data-governance.md). |
-| August 2022 | Neuer Artikel zu [Vergleich der Terminologie für Analytics-Daten, die durch den Analytics Source Connector übergeben werden](/help/getting-started/aa-vs-cja/terminology.md). |
+| August 2022 | Neuer Artikel zu [Vergleich der Terminologie für Analytics-Daten, die über den Analytics-Quell-Connector übermittelt werden](/help/getting-started/aa-vs-cja/terminology.md). |
 | August 2022 | Neue Dokumentation zu [Zielgruppenveröffentlichung im Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=de). |
 | **Juli 2022** | |
 | Juli 2022 | Dokumentation zum [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=de). |
 | Juli 2022 | Dokumentation zum [Bedienfeld „Gleichzeitige Medienbetrachter“](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=de). |
 | Juli 2022 | [Erste Sitzung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=de#new-repeat) mit der Reporting-Dokumentation. |
 | **Juni 2022** | |
-| Juni 2022 | Neuer Artikel zu [AAID, ECID, AACUSTOMID und zum Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=de) |
+| Juni 2022 | Neuer Artikel zu [AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=de) |
 | Juni 2022 | Neuer Artikel zu [Adobe Analytics-Verarbeitungsregeln, VISTA und Klassifizierungen vs. Datenvorbereitung für den Analytics-Quell-Connector](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Juni 2022 | Neuer Artikel zu [virtuellen Reporting-Umgebungen und Sandbox-Umgebungen](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | Juni 2022 | Neuer Artikel zum [Vergleich der Datenverarbeitung zwischen den Berichtsfunktionen von Adobe Analytics und Customer Journey Analytics](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |

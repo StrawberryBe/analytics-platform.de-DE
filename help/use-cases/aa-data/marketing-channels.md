@@ -1,30 +1,30 @@
 ---
 title: Verwenden von Marketing-Kanal-Dimensionen in Adobe Experience Platform
-description: Verwenden Sie Analytics Source Connector, um Verarbeitungsregeln für den Marketing-Kanal in Adobe Experience Platform zu importieren.
+description: Verwenden Sie den Analytics-Quell-Connector, um Marketingkanal-Verarbeitungsregeln in Adobe Experience Platform zu importieren.
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 74%
+ht-degree: 63%
 
 ---
 
 # Verwenden von Marketing-Kanal-Dimensionen in Adobe Experience Platform
 
-Wenn Ihr Unternehmen [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) Um Report Suite-Daten in Customer Journey Analytics zu importieren, können Sie eine Verbindung in Customer Journey Analytics konfigurieren, um Berichte zu Marketingkanal-Dimensionen zu erstellen.
+Wenn Ihr Unternehmen [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) Um Report Suite-Daten in Customer Journey Analytics zu importieren, können Sie eine Verbindung in Customer Journey Analytics konfigurieren, um Berichte zu Marketingkanal-Dimensionen zu erstellen.
 
-## Voraussetzungen
+## Voraussetzungen 
 
-* Report Suite-Daten müssen bereits mit [Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de) in Adobe Experience Platform importiert worden sein. Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
+* Report Suite-Daten müssen bereits mit der Variablen [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=de). Andere Datenquellen werden nicht unterstützt, da Marketing-Kanäle auf Verarbeitungsregeln in einer Analytics Report Suite angewiesen sind.
 * Verarbeitungsregeln für den Marketing-Kanal müssen bereits eingerichtet sein. Siehe [Verarbeitungsregeln für Marketing-Kanäle](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=de) im Adobe Analytics-Komponentenleitfaden.
 
 ## Marketing-Kanal: Schema-Elemente
 
-Nachdem Sie Analytics Source Connector für eine gewünschte Report Suite eingerichtet haben, wird ein XDM-Schema für Sie erstellt. Dieses Schema enthält alle Analytics-Dimensionen und -Metriken als Rohdaten. Diese Rohdaten enthalten keine Attribution oder Persistenz. Stattdessen durchläuft jedes Ereignis die Verarbeitungsregeln des Marketing-Kanals und zeichnet die erste Regel auf, die es erfüllt. Beim Erstellen einer Datenansicht in Customer Journey Analytics geben Sie Attribution und Persistenz an.
+Nachdem Sie den Analytics-Quell-Connector in einer gewünschten Report Suite eingerichtet haben, wird ein XDM-Schema für Sie erstellt. Dieses Schema enthält alle Analytics-Dimensionen und -Metriken als Rohdaten. Diese Rohdaten enthalten keine Attribution oder Persistenz. Stattdessen durchläuft jedes Ereignis die Verarbeitungsregeln des Marketing-Kanals und zeichnet die erste Regel auf, die es erfüllt. Beim Erstellen einer Datenansicht in Customer Journey Analytics geben Sie Attribution und Persistenz an.
 
-1. [Erstellen Sie eine Verbindung](/help/connections/create-connection.md), die einen Datensatz enthält, der auf Analytics Source Connector basiert.
+1. [Verbindung erstellen](/help/connections/create-connection.md) , der einen Datensatz enthält, der auf dem Analytics-Quell-Connector basiert.
 2. [Erstellen Sie eine Datenansicht](/help/data-views/create-dataview.md) mit folgenden Dimensionen:
    * **`channel.typeAtSource`**: entspricht der [Marketing-Kanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=de)-Dimension.
    * **`channel._id`**: entspricht dem [Marketing-Kanal-Detail](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=de).
@@ -35,7 +35,7 @@ Die Dimensionen Ihres Marketing-Kanals stehen jetzt in Analysis Workspace zur Ve
 
 >[!NOTE]
 >
-> Analytics Source Connector erfordert, dass sowohl `channel.typeAtSource` (Marketing-Kanal) als auch `channel._id` (Details zum Marketing-Kanal) ausgefüllt werden, sonst wird keiner der Werte in das XDM ExperienceEvent übertragen. Wenn die Details zum Marketing-Kanal in der Quell-Report Suite leer sind, führt dies zu einer leeren `channel._id` und Analytics Source Connector wird auch `channel.typeAtSource` leer lassen. Dies kann zu Berichtsunterschieden zwischen Adobe Analytics und Customer Journey Analytics führen.
+> Der Analytics-Quell-Connector erfordert, dass beide `channel.typeAtSource` (Marketingkanal) und `channel._id` (Marketingkanal-Detail) ausgefüllt werden, sonst wird keines in das XDM ExperienceEvent übertragen. Wenn die Marketing-Kanaldetails in der Quell-Report Suite leer sind, wird dies zu einer leeren `channel._id` und der Analytics-Quell-Connector wird leer `channel.typeAtSource` sowie Dies kann zu Berichtsunterschieden zwischen Adobe Analytics und Customer Journey Analytics führen.
 
 ## Unterschiede in der Verarbeitung und der Architektur
 

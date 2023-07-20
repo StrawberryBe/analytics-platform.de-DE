@@ -4,7 +4,7 @@ description: Analysieren und extrahieren Sie Einblicke aus Kundeninteraktionen �
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 62%
@@ -22,7 +22,7 @@ Die kanalübergreifende Analyse ermöglicht eine zentrale, konsolidierte Ansicht
 1. [Erstellen Sie Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de) für aufzunehmende Daten.
 1. [Erstellen Sie Datensätze](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=de) für aufzunehmende Daten.
 1. [Erfassen von Daten in Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=de):
-   1. Ereignisbasierte Daten ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) von der Website oder mobilen App über Edge Network oder Analytics Data Connector.
+   1. Ereignisbasierte Daten ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) von der Website oder App über den Quell-Connector von Edge Network oder Analytics.
    2. Profildaten ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (z. B. über ein CRM-System, Callcenter-Anwendung, Treueprogramm).
    3. Suchdaten ![Nachschlagen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (z. B. Produktname, Kategorie aus einem Produktinformationssystem).
 
