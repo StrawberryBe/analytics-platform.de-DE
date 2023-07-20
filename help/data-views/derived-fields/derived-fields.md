@@ -4,7 +4,7 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: b8d6b8b0f2740e118bd744bcb7b7ee46aefc75ed
+source-git-commit: bd017810cb0f7813bdada5e3e951b0f6d5b768e4
 workflow-type: tm+mt
 source-wordcount: '4348'
 ht-degree: 15%
@@ -749,7 +749,7 @@ Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neu
 
 | Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Von Schreibweise abhängig</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Von Schreibweise abhängig</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>Nicht angegeben</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
