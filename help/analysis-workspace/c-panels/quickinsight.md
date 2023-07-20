@@ -1,12 +1,12 @@
 ---
-description: Quick Insights ist ein Tool für neue Workspace-Benutzer, das diese beim Erstellen von Datentabellen und Visualisierungen unterstützt.
+description: Quick Insights ist ein Tool für neue Workspace-Benutzer, das diese beim Erstellen von Datentabellen und Visualisierungen unterstützt
 title: Bedienfeld „Quick Insights“
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -35,10 +35,10 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
 |---|---|
 | [!UICONTROL Dimension] | Dimensionen sind Beschreibungen oder Eigenschaften metrischer Daten, die in einem Projekt angezeigt, aufgeschlüsselt und verglichen werden können. Es handelt sich um nicht-numerische Werte und Daten, die in Dimensionselemente aufgeschlüsselt werden. Beispielsweise sind „Browser“ und „Seite“ Dimensionen. |
 | [!UICONTROL Dimensionselement] | Dimensionselemente sind individuelle Werte für eine Dimension. Beispielsweise wären „Chrome“, „Firefox“, „Edge“ usw. Dimensionselemente für die Browser-Dimension. |
-| [!UICONTROL Metrik] | Metriken sind quantitative Informationen über die Personenaktivität, z. B. Ansichten, Clickthroughs, Neuladungen, durchschnittliche Besuchszeit, Einheiten, Bestellungen, Umsatz usw. |
+| [!UICONTROL Metrik] | Metriken sind quantitative Informationen über Aktivitäten von Personen wie Ansichten, Clickthroughs, Neuladungen, durchschnittliche Besuchszeit, Einheiten, Bestellungen, Umsatz usw. |
 | [!UICONTROL Visualisierung] | Workspace bietet [eine Reihe von Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), mit denen Sie visuelle Darstellungen Ihrer Daten erstellen können, wie beispielsweise Balkendiagramme, Donut-Diagramme, Histogramme, Liniendiagramme, Karten und Streudiagramme. |
 | [!UICONTROL Dimensionsaufschlüsselung] | Mit einer Dimensionsaufschlüsselung können Sie eine Dimension buchstäblich nach anderen Dimensionen aufschlüsseln. In unserem Beispiel könnten Sie die US-Bundesstaaten nach Mobilgeräten aufschlüsseln, um die Besuche der Mobilgeräte pro Bundesland zu erhalten, oder Sie könnten Mobilgeräte nach Mobilgerätetypen, Regionen, internen Kampagnen usw. aufschlüsseln. |
-| [!UICONTROL Filter] | Mit Filtern können Sie Untergruppen von Personen anhand von Merkmalen oder Website-Interaktionen identifizieren. Sie können beispielsweise [!UICONTROL Besucher] Filter anhand von Attributen: Browsertyp, Gerät, Anzahl Besuche, Land, Geschlecht oder basierend auf Interaktionen: Kampagnen, Keyword-Suche, Suchmaschine oder basierend auf Ausstiegen und Einstiegen: Personen aus Facebook, einer definierten Landingpage, einer verweisenden Domäne oder basierend auf benutzerdefinierten Variablen: Formularfeld, definierte Kategorien, Kunden-ID. |
+| [!UICONTROL Filter] | Mit Filtern können Personenuntergruppen anhand von Merkmalen oder Website-Interaktionen identifiziert werden. Sie können beispielsweise [!UICONTROL Besucherfilter] basierend auf Attributen erstellen (Browser-Typ, Gerät, Anzahl der Besuche, Land, Geschlecht) oder auf der Grundlage von Interaktionen (Kampagnen, Keyword-Suche, Suchmaschinen) oder auf der Grundlage von Ausstiegen und Einstiegen (besuchende Personen von Facebook, einer definierten Landingpage, einer Referrer Domain) oder auf der Grundlage von benutzerspezifischen Variablen (Formularfeld, definierte Kategorien, Kunden-ID). |
 
 ## Erste Schritte mit Quick Insights
 
@@ -67,7 +67,6 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
 
    * Eine begleitende Visualisierung, in diesem Fall ein [Balkendiagramm](/help/analysis-workspace/visualizations/bar.md). Die erstellte Visualisierung basiert auf dem Datentyp, den Sie der Tabelle hinzugefügt haben. Zeitbasierte Daten (z. B. [!UICONTROL Besuche] pro Tag/Monat) verwenden standardmäßig ein [!UICONTROL Liniendiagramm]. Alle nicht zeitbasierten Daten (z. B. [!UICONTROL Besuche] pro [!UICONTROL Gerät]) verwenden standardmäßig ein [!UICONTROL Balkendiagramm]. Sie können den Visualisierungstyp ändern, indem Sie auf den Dropdown-Pfeil neben dem Visualisierungstyp klicken.
 
-
 1. (Optional) Führen Sie einen Drilldown für Dimensionen durch und zeigen Sie Dimensionselemente an, indem Sie auf den Pfeil „>“ rechts neben der Dimension klicken.
 
 1. Versuchen Sie, einige weitere Verfeinerungen hinzuzufügen, wie nachfolgend unter „Weitere Tipps“ beschrieben.
@@ -80,19 +79,19 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
 * Schließen Sie zunächst das Tutorial **[!UICONTROL Weitere Tipps]** ab: Greifen Sie über das Hilfe- Symbol (?) neben dem Titel [!UICONTROL Quick Insights] darauf zu. Dieses Tutorial wird 24 Stunden nach dem Erstellen eines Projekts mit mindestens einer Dimension und einer Metrik angezeigt.
 
-   ![](assets/qibuilder4.png)
+  ![](assets/qibuilder4.png)
 
 * **Aufschlüsselung nach**: Sie können bis zu drei Aufschlüsselungsebenen für Dimensionen verwenden, um einen Drilldown zu den Daten durchzuführen, die Sie benötigen.
 
-   ![](assets/qibuilder5.png)
+  ![](assets/qibuilder5.png)
 
 * **Weitere Metriken hinzufügen**: Mithilfe des AND-Operators können Sie bis zu 2 weitere Metriken hinzufügen.
 
-   ![](assets/qibuilder6.png)
+  ![](assets/qibuilder6.png)
 
 * **Weitere Filter hinzufügen**: Mithilfe des AND- oder OR-Operators können Sie bis zu zwei weitere Filter zur Tabelle hinzufügen. Sehen Sie sich an, was mit der Tabelle passiert, wenn Sie „Mobilbenutzer OR Treue Besucher“ hinzufügen. Sie finden sie nebeneinander über den Metriken. Wenn Sie „Mobilbenutzer UND Treue Besucher“ hinzufügen, werden die Ergebnisse beider Segmente zusammen angezeigt und in der Tabelle übereinandergestapelt.
 
-   ![](assets/qibuilder7.png)
+  ![](assets/qibuilder7.png)
 
 ## Bekannte Einschränkungen
 
