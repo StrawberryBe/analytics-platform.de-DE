@@ -3,7 +3,7 @@ title: Häufig gestellte Fragen zur Zuordnung
 description: Häufig gestellte Fragen zum Stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: c87aaefdd15e02b7fe2cf8e638830aa278d46b92
+source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 35%
@@ -60,6 +60,8 @@ Die Echtzeit-Zuordnung ist ca. eine Woche nach der Adobe verfügbar, die das Sti
 [Geräteübergreifende Analyse](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) ist eine Funktion, die speziell für den herkömmlichen Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzer geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
 
 Die kanalübergreifende Analyse ist ein für Customer Journey Analytics spezifisches Anwendungsbeispiel, in dem Sie verstehen können, wie Benutzer auf Geräten und Kanälen arbeiten. Er ordnet die Personen-ID eines Datensatzes zu, sodass dieser Datensatz nahtlos mit anderen Datensätzen kombiniert werden kann. Diese Funktion funktioniert im Design ähnlich wie die geräteübergreifende feldbasierte Zuordnung für Analysen, aber die Implementierung unterscheidet sich aufgrund der unterschiedlichen Datenarchitektur zwischen herkömmlichem Analytics und Customer Journey Analytics. Siehe [Stitching](overview.md) und [Cross-Channel-Analyse](../use-cases/cross-channel/cross-channel.md) Anwendungsbeispiel für weitere Informationen.
+
++++
 
 +++**Wie verarbeitet die Zuordnung DSGVO- und CCPA-Anfragen?**
 

@@ -4,10 +4,10 @@ description: Hier erhalten Sie Informationen über die unterschiedlichen Methode
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 96%
+source-wordcount: '626'
+ht-degree: 92%
 
 ---
 
@@ -46,11 +46,11 @@ Sie haben Adobe Analytics bereits bereitgestellt und möchten diese Daten in Ado
 
 Weitere Informationen finden Sie unter [Aufnehmen und Verwenden von Daten aus Adobe Analytics](./analytics.md).
 
-## Aufnehmen und Verwenden von Daten unter Verwendung des Adobe Experience Platform Web SDK und Edge Network
+## Daten über das Adobe Experience Platform Web SDK erfassen und verwenden
 
 Sie möchten Ihre Website mit Adobe-Technologie analysieren, möglicherweise aus einer anderen  migrieren oder das Verhalten Ihrer Person verfolgen. Sie sollten die Best Practices von Adobe bei der Implementierung befolgen, bei der die Adobe Experience Platform SDKs und das Edge Network zur Aufnahme von Daten verwendet werden. Anschließend können Sie die aufgenommenen Daten mit Daten aus anderen Kanälen und Datenquellen in Customer Journey Analytics verwenden, kombinieren und analysieren.
 
-Weitere Informationen dazu finden Sie unter [Aufnehmen und Verwenden von Daten unter Verwendung des Adobe Experience Platform Web SDK und Edge Network](./aepwebsdk.md).
+Siehe [Daten über das Adobe Experience Platform Web SDK erfassen und verwenden](./aepwebsdk.md) für weitere Informationen.
 
 ## Aufnehmen und Verwenden von Batch-Daten
 
