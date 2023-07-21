@@ -3,10 +3,10 @@ title: Attributionsbedienfeld
 description: Verwendung und Interpretation des Attributionsbedienfelds in Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 89%
+source-wordcount: '515'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics erweitert die Attribution und ermöglicht Ihnen Folge
 
 * Die Attribution über bezahlte Medien definieren: Dimensionen, Metriken, Kanäle oder Ereignisse können auf Modelle (z. B. die interne Suche) angewendet werden, nicht nur Marketing-Kampagnen.
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
-* Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann Customer Journey-Kontext erstellt und zur Laufzeit angewendet werden.
+* Vermeiden Sie Implementierungsänderungen: Mit Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann der Journey-Kontext für Kunden zur Laufzeit integriert und angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
 * Die Attribution nach Filtern aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketing-Kanäle über alle wichtigen Filter hinweg (z. B. Neu- mit Bestandskunden, Produkt X vs. Produkt Y, Loyalitätsgrad oder CLV).
 * Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
