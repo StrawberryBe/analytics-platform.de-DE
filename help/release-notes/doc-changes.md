@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 97%
+source-wordcount: '2367'
+ht-degree: 95%
 
 ---
 
@@ -19,6 +19,12 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Juli 2023** |
+| Adobe Product Analytics | Adobe Product Analytics ist eine neue Möglichkeit, in Customer Journey Analytics mit kanalübergreifenden Daten und Erkenntnissen zu interagieren. Diese neuen Funktionen ermöglichen es Produktteams, Daten und Einblicke über ihr Produkterlebnis selbst bereitzustellen. [Geführte Analyse](/help/guided-analysis/overview.md) Workflows &#x200B;. |
+| Abgeleitete Felder | A [abgeleitetes Feld](/help/data-views/derived-fields/derived-fields.md) ermöglicht Ihnen, mithilfe eines anpassbaren Regel-Builders (Regel-Builder) Datenmanipulationen direkt zu definieren (häufig komplexe). |
+| Erweiterte Suchunterstützung für Profil- und Suchdaten | Bietet die Möglichkeit, Datensätze als Suchen von Feldern in Profil- oder Lookup-Datensätzen hinzuzufügen. Zuvor wurden nur Ereignisdatensätze unterstützt. [Weitere Informationen](/help/connections/create-connection.md) |
+| Report Builder-Verbesserungen | <ul><li>[Filtern Sie aus einer Zelle nach mehreren Datenblöcken](/help/report-builder/select-data-view.md)</li><li>[Blenden Sie Zeilen- und Spaltenüberschriften ein und aus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=de#build-the-data-block)</li></ul> |
+| Experience Edge-Geo-Suchen | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de) fügt einen Geo-Suchdienst hinzu, der allen Experience Edge-Benutzern einheitliche geografische Daten bereitstellt. |
 | **Juni 2023** | |
 | Kanalübergreifende Analyse und Zuordnung | Um die bevorstehenden Änderungen vorwegzunehmen, die die Zuordnung ermöglichen, und um weiter zu klären, wie die kanalübergreifende Analyse mithilfe der Zuordnung erhöht werden kann, wurde die Dokumentation zur Funktionalität der Cross-Channel-Analyse überarbeitet. Sie verweist nun auf die [Cross-Channel-Analyse](../use-cases/cross-channel/cross-channel.md) als Fähigkeit und Anwendungsfall von Customer Journey Analytics sowie auf die [Zuordnung](../stitching/overview.md) als eine wichtige Funktionalität zur Erreichung dieses Ziels. |
 | Zugriff von PowerBI und Tableau auf Customer Journey Analytics-Datenansichten | Der SQL-Connector für Customer Journey Analytics ermöglicht den SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. [Weitere Informationen](/help/data-views/sql-connector.md) |

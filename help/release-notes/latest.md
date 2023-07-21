@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9e6231e4dc9770fbb7c859b397ea8c57e7dff478
+source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der ko
 | **Abgeleitete Felder** | Dies stellt die erste Version abgeleiteter Felder dar. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Sie können das abgeleitete Feld weiter als Komponente (Metrik oder Dimension) in Datenansichten definieren und dann dieses abgeleitete Feld als Komponente in Workspace verwenden.<p>Diese Version unterstützt eine Vorlage für Marketing-Kanäle und die folgenden Funktionen:</p><ul><li>Verketten</li><li>Fall wenn</li><li>Suchen und Ersetzen</li><li>Nachschlagen</li><li>URL-Parsen</li></ul> <p>[Weitere Informationen](/help/data-views/derived-fields/derived-fields.md)</p> | 10. Mai 2023 | 2. August 2023 |
 | **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Bietet die Möglichkeit, Datensätze als Suchen von Feldern in Profil- oder Lookup-Datensätzen hinzuzufügen. Zuvor wurden nur Ereignisdatensätze unterstützt. [Weitere Informationen](/help/connections/create-connection.md) | 21. Juni 2023 | 12. Juli 2023 |
 | **Report Builder-Verbesserungen** | <ul><li>Filtern Sie aus einer Zelle nach mehreren Datenblöcken. Sie können die Filter für mehrere Datenblöcke aus einer Zelle ändern. Verwenden Sie eine vordefinierte Zelle, weisen Sie sie mehreren Datenblöcken zu und aktualisieren Sie die Daten anhand der in der Zelle definierten Filter. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=de)</li><li>Blenden Sie Zeilen- und Spaltenüberschriften ein und aus. Sie können Tabellenüberschriften von Datenblöcken ein- oder ausblenden oder Zeilen- und Spaltenüberschriften verwenden, um die Tabelle neu zu formatieren und Datenblöcke in einem Bericht auszurichten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=de#build-the-data-block)</li></ul> | Nicht angegeben | 19. Juli 2023 |
-| **Experience Edge-Geo-Suchen** | Adobe Experience Edge fügt einen Geo-Suchdienst hinzu, der allen Experience Edge-Benutzenden (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Medien Analytics, Adobe Experience Platform usw.) einheitliche geografische Daten bereitstellt. | Nicht angegeben | 26. Juli 2023 |
+| **Experience Edge-Geo-Suchen** | [Adobe Experience Edge fügt einen Geo-Suchdienst hinzu, der allen Experience Edge-Benutzenden (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Medien Analytics, Adobe Experience Platform usw.) einheitliche geografische Daten bereitstellt.](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=de) | Nicht angegeben | 26. Juli 2023 |
 
 {style="table-layout:auto"}
 
