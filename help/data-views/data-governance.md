@@ -3,10 +3,10 @@ title: Beschriftungen und Richtlinien
 description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Datenbezeichnungen und Richtlinien auf Datenansichten und Berichte in Customer Journey Analytics auswirken.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 60%
+source-wordcount: '501'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ Die folgenden Beschriftungen sind für den Customer Journey Analytics von besond
 >
 >Datennutzungsbezeichnungen werden nicht automatisch in zugeordnete Datensätze übertragen. Sie können jedoch manuell hinzugefügt werden.
 
-Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungsbezeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie können Ihre Richtlinien mithilfe der Variablen [Richtlinien-Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in der Experience Platform erstellen.
+Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungsbezeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie erstellen Ihre Richtlinien mithilfe der Variablen [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de) oder über die [Policy Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in der Experience Platform.
 
 In Customer Journey Analytics werden zwei von der Adobe definierte Richtlinien angezeigt, die sich auf die Berichterstellung und Download-/Freigabe auswirken:
 
