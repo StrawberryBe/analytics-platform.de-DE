@@ -3,7 +3,7 @@ title: Geführte Analyse – Übersicht
 description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit der Produktteams schnell hochwertige Einblicke erhalten können. Wird auch als Product Analytics bezeichnet.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
+source-git-commit: 4ed5acc2c9bb1a530d16d9c3ce8f5e9243bfa1f2
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 8%
@@ -13,8 +13,6 @@ ht-degree: 8%
 # Geführte Analyse – Übersicht
 
 Geführte Analyse ist ein Berichtsformat, das es Produktteams ermöglicht, schnell ihre Datenanforderungen selbst zu erfüllen, sodass sie schnell hochwertige Einblicke erhalten und datengesteuerte Produktentscheidungen treffen können. Funktions-Teams können in Echtzeit eine Verbindung herstellen, um diese Berichte zu verwenden und zu verstehen.
-
->[!VIDEO](https://video.tv.adobe.com/v/3421621/)
 
 Ähnlich wie bei Analysis Workspace- und Mobile-Scorecards verwendet ein Bericht mit einer geführten Analyse Daten aus einer [Datenansicht](../data-views/data-views.md), die Daten in Adobe Experience Platform über einen [Verbindung](../connections/overview.md). Alle in der geführten Analyse erstellten Berichte können nahtlos zur weiteren Recherche an Analysis Workspace übermittelt werden.
 
