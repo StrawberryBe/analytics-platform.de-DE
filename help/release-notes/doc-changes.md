@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
+source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
 workflow-type: tm+mt
-source-wordcount: '2367'
-ht-degree: 95%
+source-wordcount: '2379'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Juli 2023** |
-| Adobe Product Analytics | Adobe Product Analytics ist eine neue Möglichkeit, in Customer Journey Analytics mit kanalübergreifenden Daten und Erkenntnissen zu interagieren. Diese neuen Funktionen ermöglichen es Produktteams, Daten und Einblicke über ihr Produkterlebnis selbst bereitzustellen. [Geführte Analyse](/help/guided-analysis/overview.md) Workflows &#x200B;. |
+| Kontextbezogene Sitzungen | Es wurde ein Thema für diese Datenansichtseinstellung hinzugefügt. [Weitere Informationen](/help/data-views/context-aware-sessions.md) |
+| Adobe Product Analytics | Adobe Product Analytics ist eine neue Möglichkeit, in Customer Journey Analytics mit kanalübergreifenden Daten und Erkenntnissen zu interagieren. Diese neuen Funktionen ermöglichen es Produktteams, Daten und Einblicke über ihr Produkterlebnis selbst bereitzustellen. [Geführte Analyse](/help/guided-analysis/overview.md) &#x200B;. |
 | Abgeleitete Felder | A [abgeleitetes Feld](/help/data-views/derived-fields/derived-fields.md) ermöglicht Ihnen, mithilfe eines anpassbaren Regel-Builders (Regel-Builder) Datenmanipulationen direkt zu definieren (häufig komplexe). |
 | Erweiterte Suchunterstützung für Profil- und Suchdaten | Bietet die Möglichkeit, Datensätze als Suchen von Feldern in Profil- oder Lookup-Datensätzen hinzuzufügen. Zuvor wurden nur Ereignisdatensätze unterstützt. [Weitere Informationen](/help/connections/create-connection.md) |
 | Report Builder-Verbesserungen | <ul><li>[Filtern Sie aus einer Zelle nach mehreren Datenblöcken](/help/report-builder/select-data-view.md)</li><li>[Blenden Sie Zeilen- und Spaltenüberschriften ein und aus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=de#build-the-data-block)</li></ul> |
