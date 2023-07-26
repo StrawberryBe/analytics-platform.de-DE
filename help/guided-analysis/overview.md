@@ -3,10 +3,10 @@ title: Geführte Analyse – Übersicht
 description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit der Produktteams schnell hochwertige Einblicke erhalten können. Wird auch als Product Analytics bezeichnet.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bbf69470727dae531065972511bcc29eb3f47679
+source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 8%
+source-wordcount: '1128'
+ht-degree: 7%
 
 ---
 
@@ -46,7 +46,9 @@ Wenn Ihr Unternehmen für eine geleitete Analyse vorgesehen ist, können Sie üb
 
 ## Benutzeroberfläche
 
-Die Benutzeroberfläche für die geführte Analyse umfasst unabhängig vom Analysetyp die folgenden Hauptelemente der Benutzeroberfläche:
+Die Oberfläche für die geführte Analyse folgt einem Frage- und Antwortformat. Sie formulieren Ihre Frage in der Abfrageleiste und erhalten dann eine Antwort in Form eines schriftlichen Einblicks, einer Grafik und einer Tabelle. Sie können dann die nächste Frage mit den Visualisierungseinstellungen und Ansichtstypen stellen.
+
+Unabhängig vom Analysetyp besteht die geführte Analyse aus den folgenden UI-Elementen:
 
 | Benutzeroberfläche | UI-Element | Beschreibung |
 | --- | --- | --- |
