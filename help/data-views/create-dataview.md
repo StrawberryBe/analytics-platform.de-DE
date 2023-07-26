@@ -4,10 +4,10 @@ description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht 
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 77647ddbd2deee402629104312db1620de4449e9
+source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 57%
+source-wordcount: '1391'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 1. Wählen Sie die **[!UICONTROL Konfigurieren]** Registerkarte (falls noch nicht aktiv).
 
    ![Datenansicht konfigurieren](assets/dataview-configure.png)
-1. Angeben [!UICONTROL Einstellungen], [!UICONTROL Container]und [!UICONTROL Kalender] Details (siehe unten).
+1. Angeben [!UICONTROL Einstellungen], [!UICONTROL Container], und [!UICONTROL Kalender] Details (siehe unten).
 1. Auswählen **[!UICONTROL Speichern und fortfahren]** um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Auswählen **[!UICONTROL Speichern]** , um die Konfiguration für Ihre vorhandene Datenansicht zu speichern.
 
 
@@ -113,7 +113,7 @@ Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spe
 
 **Filtern von Schemafeldern oder Datensätzen**
 
-Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) Schemafelder in der linken Leiste nach [!UICONTROL Datentyp], [!UICONTROL Datensätze], [!UICONTROL Data Governance]und [!UICONTROL other] Kriterien ([!UICONTROL enthält Daten], [!UICONTROL Identität]und [!UICONTROL ist nicht veraltet]):
+Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) Schemafelder in der linken Leiste nach [!UICONTROL Datentyp], [!UICONTROL Datensätze], [!UICONTROL Data Governance], und [!UICONTROL other] Kriterien ([!UICONTROL enthält Daten], [!UICONTROL is identity], und [!UICONTROL ist nicht veraltet]):
 
 ![Felder filtern](assets/dataview-components-filter.png)
 
@@ -131,6 +131,6 @@ Sie können Filter hinzufügen, die für die gesamte Datenansicht gelten. Dieser
 
 ### Sitzungseinstellungen
 
-Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Sitzung abläuft und eine neue gestartet wird. Ein Zeitraum ist erforderlich. Sie können optional auch den Start einer neuen Sitzung erzwingen, wenn ein Ereignis eine bestimmte Metrik enthält.
+Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Sitzung abläuft und eine neue gestartet wird. Ein Zeitraum ist erforderlich. Sie können optional auch den Start einer neuen Sitzung erzwingen, wenn ein Ereignis eine bestimmte Metrik enthält. Siehe [Kontextbezogene Sitzungen](context-aware-sessions.md) für weitere Details.
 
 Nachdem alle gewünschten Einstellungen angegeben wurden, klicken Sie auf **[!UICONTROL Speichern und beenden]**.

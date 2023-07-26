@@ -9,17 +9,17 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '968'
 ht-degree: 82%
 
 ---
 
 
-# Adobe Customer Journey Analytics-Handbuch {#using}
+# Adobe Customer Journey Analytics-Anleitung {#using}
 
-+ [Adobe Customer Journey Analytics-Handbuch](../getting-started/cja-landing.md)
++ [Adobe Customer Journey Analytics-Anleitung](../getting-started/cja-landing.md)
 
 + Versionshinweise {#releases}
    + [Neueste Version](../release-notes/latest.md)
@@ -69,6 +69,7 @@ ht-degree: 82%
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](../data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
+   + [Kontextbezogene Sitzungen](../data-views/context-aware-sessions.md)
    + Komponenteneinstellungen {#component-settings}
       + [Übersicht über Komponenteneinstellungen](../data-views/component-settings/overview.md)
       + [Attribution](../data-views/component-settings/attribution.md)
@@ -188,7 +189,7 @@ ht-degree: 82%
    + [Überblick](../guided-analysis/overview.md)
    + Wirkung {#impact}
       + [Versionsansicht](../guided-analysis/types/release.md)
-      + [Erste Ansicht](../guided-analysis/types/first-use.md)
+      + [Ansicht &quot;Erste Verwendung&quot;](../guided-analysis/types/first-use.md)
    + Trichter {#funnel}
       + [Friktionsansicht](../guided-analysis/types/friction.md)
       + [Ansicht &quot;Konversionstrends&quot;](../guided-analysis/types/conversion-trends.md)
