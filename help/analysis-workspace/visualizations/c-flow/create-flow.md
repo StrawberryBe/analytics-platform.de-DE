@@ -4,10 +4,10 @@ title: Flussvisualisierung konfigurieren
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: f97572025d07d56d1fd699074228abe5d2a7b8a1
+source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 62%
+source-wordcount: '1539'
+ht-degree: 60%
 
 ---
 
@@ -56,9 +56,14 @@ Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem
    | **[!UICONTROL Beschriftungen umbrechen]** | Die Bezeichnungen der Flusselemente werden üblicherweise aus Platzgründen auf dem Bildschirm abgeschnitten. Aktivieren Sie dieses Kontrollkästchen, um die gesamte Bezeichnung anzuzeigen.  Standard = deaktiviert. |
    | **[!UICONTROL Wiederholungsinstanzen einschließen]** | Flussvisualisierungen basieren auf Instanzen einer Dimension. Diese Einstellung gibt Ihnen die Möglichkeit, wiederholte Instanzen ein- oder auszuschließen, z. B. Seitenneuladungen. Wiederholungen können jedoch nicht aus Flussvisualisierungen entfernt werden, die Dimensionen mit mehreren Werten enthalten, wie listVars, listProps, s.product, Merchandising-eVars usw. <p>Standardmäßig ist diese Option deaktiviert.</p> |
    | **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** | Begrenzen Sie Pfade auf jene, die mit dem ersten/letzten Vorkommen einer Dimension/eines Elements/einer Metrik beginnen/enden. Siehe den Abschnitt unten. [Beispielszenario für &quot;Beschränkung auf das erste/letzte Vorkommen&quot;](#example-scenario-for-limit-to-firstlast-occurrence), um eine ausführlichere Erläuterung zu erhalten. |
-   | **[!UICONTROL Anzahl der Spalten]** | Die Anzahl der Spalten, die in Ihrem Flussdiagramm angezeigt werden sollen. |
-   | **[!UICONTROL Erweiterte Elemente pro Spalte]** | Die Anzahl der Elemente, die in jeder Spalte angezeigt werden sollen. |
+   | **[!UICONTROL Anzahl der Spalten]** | Die Anzahl der Spalten, die in Ihrem Flussdiagramm angezeigt werden sollen. Sie können maximal 5 Spalten angeben. |
+   | **[!UICONTROL Erweiterte Elemente pro Spalte]** | Die Anzahl der Elemente, die in jeder Spalte angezeigt werden sollen. Sie können pro Spalte maximal 10 erweiterte Elemente angeben. |
    | **[!UICONTROL Fluss-Container]** | <ul><li>Besuch</li><li>Besucher.</li></ul> Hiermit können Sie bei der Analyse der Besucherpfade zwischen Besuch und Besucher wechseln. Mithilfe dieser Einstellungen können Sie Einblicke in Besucheraktivitäten auf der Besucherebene (besuchsübergreifend) erhalten oder die Analyse auf einen einzelnen Besuch einschränken. |
+
+   >[!IMPORTANT]
+   >
+   >Die Kombination **[!UICONTROL Anzahl der Spalten]** und **[!UICONTROL Elemente pro Spalte erweitert]** bestimmen die Anzahl der zugrunde liegenden Anforderungen, die zum Erstellen der Flussvisualisierung erforderlich sind. Je höher diese Zahlen sind, desto länger dauert das Rendern einer Visualisierung.
+
 
 1. Auswählen **[!UICONTROL Build]**.
 
@@ -67,8 +72,9 @@ Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem
 >**Beispiel:** Angenommen, Sie möchten den Pfad verfolgen, den Benutzer zu den beliebtesten Seiten Ihrer Site und von diesen aus eingeschlagen haben.
 >
 >Dazu würden Sie
+>
 >1. Erstellen Sie eine Flussvisualisierung wie oben beschrieben.
->1. Ziehen Sie die [!UICONTROL **Seite**] Dimension in **[!UICONTROL Enthält]** und wählen Sie [!UICONTROL **Build**].
+>1. Ziehen Sie die [!UICONTROL **Seite**] Dimension in die **[!UICONTROL Enthält]** und wählen Sie [!UICONTROL **Build**].
 >1. Die Flussvisualisierung wird mit der am häufigsten angezeigten Seite erstellt, die im Fokusknoten in der Mitte der Visualisierung angezeigt wird. Sie sehen auch die obersten Seiten, die zu dieser Seite führen (links neben dem Fokusknoten), sowie die obersten Seiten, die aus dieser Fokusseite führen (rechts neben dem Fokusknoten).
 >1. Daten im Fluss analysieren, wie unter [Flussausgabe anzeigen und ändern](#view-and-change-the-flow-output).
 
@@ -130,7 +136,7 @@ Beachten Sie bei Verwendung dieser Option Folgendes:
 * **[!UICONTROL Auf das erste/letzte Vorkommen beschränken]** zählt nur das erste/letzte Vorkommen in der Reihe. Alle anderen Vorkommen der Kriterien **[!UICONTROL Beginnt mit]** oder **[!UICONTROL Endet mit]** werden verworfen.
 * Bei Verwendung mit einem Fluss des Typs **[!UICONTROL Beginnt mit]** wird nur das erste Vorkommen einbezogen, das den Startkriterien entspricht.
 * Bei Verwendung mit einem Fluss des Typs **[!UICONTROL Endet mit]** wird nur das letzte Vorkommen einbezogen, das den Endkriterien entspricht.
-* Die verwendete Reihe unterscheidet sich je nach Container. Wenn Sie **[!UICONTROL Besuch]** -Container, wird die Ereignisreihe die Sitzung sein. Wenn Sie **[!UICONTROL Besucher]** -Container enthalten, sind alle Ereignisse aus der Ereignisreihe für einen bestimmten Benutzer im angegebenen Datumsbereich.
+* Die verwendete Reihe unterscheidet sich je nach Container. Wenn Sie die **[!UICONTROL Besuch]** -Container, wird die Ereignisreihe die Sitzung sein. Wenn Sie die **[!UICONTROL Besucher]** -Container enthalten, sind alle Ereignisse aus der Ereignisreihe für einen bestimmten Benutzer im angegebenen Datumsbereich.
 * Die Option **[!UICONTROL Begrenzung auf erstes/letztes Auftreten]** kann in den erweiterten Einstellungen konfiguriert werden, wenn ein Metrik- oder Dimensionselement in den Feldern „Beginnt mit“ oder „Endet mit“ verwendet wird.
 
 Beispielserie von Ereignissen:
