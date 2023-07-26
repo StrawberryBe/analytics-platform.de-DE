@@ -3,7 +3,7 @@ title: Kontextbezogene Sitzungen
 description: Einstellungen in einer Datenansicht können Sie zum Definieren kontextbezogener Sitzungen verwenden.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 6235fbb128098e2a624d5fd4fd72c2c583cfd277
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Kontextbezogene Sitzungen in Datenansichten ändern, wie Customer Journey Analytics Sitzungen aus den Daten in Ihrer Verbindung berechnet.
 
-Innerhalb der [!UICONTROL Einstellungen] -Registerkarte von Datenansichten können Sie eine Sitzung auf beliebige Weise definieren, um zu bestimmen, wie Personen mit Ihren digitalen Erlebnissen interagieren. Kontextbezogene Sitzungsdefinitionen sind zerstörungsfrei und ändern die zugrunde liegenden Daten nicht. Sie können mehrere Datenansichten mit jeweils einer spezifischen kontextbezogenen Sitzungsdefinition als Grundlage für Ihre Workspace-Projekte einrichten.
+Innerhalb der [!UICONTROL Einstellungen] -Registerkarte von Datenansichten können Sie eine Sitzung auf beliebige Weise definieren, um zu bestimmen, wie Personen mit Ihren digitalen Erlebnissen interagieren. Kontextbezogene Sitzungsdefinitionen sind zerstörungsfrei und ändern die zugrunde liegenden Daten nicht. Sie können mehrere Datenansichten einrichten, von denen jede eine spezifische kontextbezogene Sitzungsdefinition als Grundlage für Ihre Workspace-Projekte hat.
 
 So definieren Sie den Kontext einer Sitzung für eine Datenansicht:
 
