@@ -3,7 +3,7 @@ title: Geführte Analyse – Übersicht
 description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit der Produktteams schnell hochwertige Einblicke erhalten können. Wird auch als Product Analytics bezeichnet.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: f1eb7eefb84054c37a04dd1535f30e3e5130e019
+source-git-commit: bf34b4e1a7c1e28cbaae98e61492901b1d143e3e
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Geführte Analyse kategorisiert Ansichtstypen in **Analysetypen**. Die folgenden
 | [!UICONTROL Trichter] | [Reibung](types/friction.md) | Konversionsraten zwischen den Schritten vergleichen. |
 | [!UICONTROL Trichter] | [Konversions-Trends](types/conversion-trends.md) | Verfolgen Sie Veränderungen der Konversionsraten im Laufe der Zeit. |
 | [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
-| [!UICONTROL Nettowachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
+| [!UICONTROL Benutzerwachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
 | [!UICONTROL Trends] | [Nutzung](types/usage.md) | Benutzerinteraktion im Lauf der Zeit messen. |
 
 {style="table-layout:auto"}
