@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1514'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Wo
 | [!UICONTROL Mobile Scorecard] | Erstellt eine leere [mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=de), die Sie anpassen und weiterverwenden können. |
 | [!UICONTROL Schulungs-Tutorial öffnen] | Öffnet das Analysis Workspace-Tutorial, das Sie Schritt für Schritt durch die Erstellung eines neuen Projekts führt. |
 | [!UICONTROL Versionshinweise öffnen] | Öffnet den Abschnitt „Adobe Analytics“ der neuesten Versionshinweise zu Adobe Experience Cloud. |
-| Filtersymbol | Filter nach Tags, Datenansichten, Inhabern, Typen und anderen Filtern (Meine, Für mich freigegeben, Favoriten und Genehmigt) |
+| Filtersymbol | Filtert nach Tags, Datenansichten, Besitzenden, Typen und anderen Kriterien („Meine“, „Für mich freigegeben“, „Favoriten“ und „Genehmigt“) |
 | Suchleiste | Durchsucht alle Spalten in der Tabelle. |
 | Auswahlfeld | Wählt ein oder mehrere Projekte aus, um die Projektverwaltungsaktionen anzuzeigen, die Sie ausführen können: **Löschen**, **Freigeben**, **Umbenennen**, **Kopieren**, **Loslösen**, **Nach oben**, **Nach unten**, **Taggen**, **Genehmigen**, **CSV exportieren** und **Verschieben nach**. Sie sind möglicherweise nicht berechtigt, alle aufgeführten Aktionen durchzuführen. |
 | [!UICONTROL Favoriten] | Fügt neben einem Projekt oder Ordner einen Stern hinzu, der als Filter verwendet werden kann. |
@@ -61,7 +61,7 @@ Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Wo
 | [!UICONTROL Typ] | Gibt an, ob es sich bei diesem Typ um ein Analysis Workspace-Projekt, eine mobile Scorecard oder einen Ordner handelt. |
 | [!UICONTROL Tags] | Taggt Projekte, um sie in Gruppen einzuteilen. |
 | [!UICONTROL Projektrolle] | Gibt die Projektrollen an: ob Sie Projekteigentümer sind und ob Sie berechtigt sind, das Projekt zu bearbeiten oder zu duplizieren. |
-| [!UICONTROL Datenansicht] | Identifiziert die Datenansichten, die mit dem Projekt verknüpft sind.<br>Tabellen und Visualisierungen innerhalb eines Bedienfelds leiten Daten von der Datenansicht ab, die oben rechts im Bedienfeld ausgewählt wurde. Von der Datenansicht hängt auch ab, welche Komponenten in der linken Leiste verfügbar sind. In einem Projekt können Sie je nach Anwendungsfällen Ihrer Analyse eine oder mehrere Datenansichten verwenden. Die Liste der Datenansichten ist nach Relevanz sortiert. Adobe definiert die Relevanz anhand der Häufigkeit der kürzlichen Verwendung der Suite durch den aktuellen Benutzer und der Häufigkeit der Verwendung der Suite innerhalb des Unternehmens. |
+| [!UICONTROL Datenansicht] | Gbit die mit dem Projekt verknüpften Datenansichten an.<br>Tabellen und Visualisierungen innerhalb eines Bedienfelds leiten Daten von der Datenansicht ab, die oben rechts im Bedienfeld ausgewählt wurde. Von der Datenansicht hängt auch ab, welche Komponenten in der linken Leiste verfügbar sind. In einem Projekt können Sie je nach Anwendungsfällen Ihrer Analyse eine oder mehrere Datenansichten verwenden. Die Liste der Datenansichten ist nach Relevanz sortiert. Adobe definiert die Relevanz anhand der Häufigkeit der kürzlichen Verwendung der Suite durch die aktuelle Benutzerin bzw. den aktuellen Benutzer und der Häufigkeit der Verwendung der Suite innerhalb der Organisation. |
 | [!UICONTROL Inhaber] | Die Person, die das Projekt erstellt hat. |
 | [!UICONTROL Zuletzt geöffnet] | Gibt das Datum an, an dem Sie das Projekt zuletzt geöffnet haben. |
 | Symbol „Tabelle anpassen“ | Ermöglicht die Auswahl der Spalten, die in der Tabelle angezeigt werden sollen. Um Spalten zur Projektliste hinzuzufügen oder daraus zu entfernen, klicken Sie oben rechts auf das Spaltensymbol (![Landing (alle)](assets/select-column.png)) und wählen Sie dann Spaltentitel aus bzw. entfernen Sie die Auswahl. |
@@ -80,27 +80,27 @@ Wenn Sie sich in der Ansicht „Ordner und Projekte“ befinden, erscheint ein P
 
 ![Zu „Alle Projekte“ wechseln](assets/switch-all-projects-view.png)
 
-## Registerkarte &quot;Lernen&quot;verwenden {#navigate-learning}
+## Verwenden der Registerkarte „Lernen“ {#navigate-learning}
 
-Die Lernseite enthält praktische Videoführungen, Tutorials und Links zur Dokumentation.
+Die Seite „Lernen“ enthält praktische Video-Touren und Tutorials sowie Links zur Dokumentation.
 
-Auf der Seite &quot;Lernen&quot;in Customer Journey Analytics erfahren Sie mehr über folgende Themen:
+Auf der Seite „Lernen“ in Customer Journey Analytics erfahren Sie mehr über:
 
-* Erste, mittlere oder erweiterte Funktionen und Anwendungsfälle in CJA
-* So wechseln Sie nahtloser von Adobe Analytics zu CJA
+* CJA-Funktionen und -Anwendungsfälle auf der Ebene für Anfängerinnen bzw. Anfänger, ein mittleres Niveau oder für Fortgeschrittene
+* den nahtlosen Übergang von Adobe Analytics zu CJA
 
-### Auf die Lernseite zugreifen
+### Zugreifen auf die Seite „Lernen“
 
-1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Arbeitsbereich**] > [!UICONTROL **Lernen**].
+1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Workspace**] > [!UICONTROL **Lernen**] aus.
 
-### Funktionen von Lernseiten
+### Funktionen der Seite „Lernen“
 
-* **Inhalt filtern:** Mit dem Filtersymbol in der linken Leiste können Sie Lerninhalte nach Erlebnisebene (Starter, Intermediate oder Erweitert) und nach Inhaltstyp (Dokument, Video oder Tours &amp; Tutorials) filtern.
-* **Fortschritt verfolgen:** Nachdem Sie ein Inhaltselement ausgewählt haben, wird ein **[!UICONTROL Angezeigt]** -Tag angezeigt. Mit diesem Tag können Sie Ihren Fortschritt durch den Lerninhalt verfolgen. Sie können die **[!UICONTROL Angezeigt]** -Tag, um es aus einem Inhaltselement zu entfernen.
-* **Zusätzliche Inhalte anzeigen:** Wählen Sie beim Anzeigen eines Videos die **[!UICONTROL Weitere Infos]** -Schaltfläche, um zugehörige Dokumentationsinhalte auf der Experience League anzuzeigen. Wählen Sie auf der Seite Lernen eine der folgenden Optionen aus, um weitere Inhalte anzuzeigen:
-   * **[!UICONTROL Besuchen Sie YouTube]:** Zeigen Sie die vollständige Analysis Workspace YouTube-Playlist an.
-   * [!UICONTROL **Experience League des Besuchs**]: Sehen Sie sich die vollständige CJA-Dokumentation zur Experience League an.
-* **Grundlagen für neue Benutzer:** Die [!UICONTROL Workspace-Grundlagen] Diese Tour wird für neue Benutzer empfohlen. Diese Tour führt Sie direkt zu Workspace und führt Sie durch die gängigsten Aktionen. Diese Tour kann auch jederzeit in Workspace über das QuickInfo-Pop-over in der Bedienfeldkopfzeile neu gestartet werden.
+* **Inhalt filtern:** Mit dem Filtersymbol in der linken Leiste können Sie Lerninhalte nach Erlebnisebene („Anfängerinnen und Anfänger“, „Mittleres Niveau“ oder „Fortgeschrittene“) und nach Inhaltstyp („Dokument“, „Video“ oder „Touren und Tutorials“) filtern.
+* **Fortschritt verfolgen:** Nachdem Sie ein Inhaltselement ausgewählt haben, wird das Tag **[!UICONTROL Angesehen]** angezeigt. Mit diesem Tag können Sie Ihren Fortschritt durch den Lerninhalt verfolgen. Sie können das Tag **[!UICONTROL Angesehen]** auswählen, um es aus einem Inhaltselement zu entfernen.
+* **Zusätzliche Inhalte anzeigen:** Wählen Sie beim Anzeigen eines Videos die Schaltfläche **[!UICONTROL Weitere Informationen]** aus, um zugehörige Dokumentationsinhalte zu Experience League anzuzeigen. Wählen Sie auf der Seite „Lernen“ eine der folgenden Optionen aus, um weitere Inhalte anzuzeigen:
+   * **[!UICONTROL YouTube besuchen]:** Zeigen Sie die vollständige YouTube-Wiedergabeliste von Analysis Workspace an.
+   * [!UICONTROL **Experience League besuchen**]: Zeigen Sie die vollständige CJA-Dokumentation zu Experience League an.
+* **Grundlagen für neue Benutzende:** Neuen Benutzenden wird die Tour [!UICONTROL Workspace-Grundlagen] empfohlen. Diese Tour führt Sie direkt zu Workspace und durch die gängigsten Aktionen. Diese Tour kann auch jederzeit in Workspace über das QuickInfo-Popup in der Kopfzeile des Bedienfelds neu gestartet werden.
 
 ## Einrichten einer Landingpage {#set-landing}
 
