@@ -1,13 +1,13 @@
 ---
-title: Übersicht über Customer Journey Analytics-Verbindungen
+title: Customer Journey Analytics-Verbindungen – Übersicht
 description: Erfahren Sie mehr über Verbindungen in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
