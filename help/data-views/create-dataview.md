@@ -7,13 +7,13 @@ feature: Data Views
 source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 56%
+ht-degree: 99%
 
 ---
 
 # Erstellen oder Bearbeiten einer Datenansicht
 
-Das Erstellen einer Datenansicht umfasst entweder die Erstellung von Metriken und Dimensionen aus Schemaelementen oder die Verwendung von Standardkomponenten. Die meisten Schemaelemente können je nach den Anforderungen Ihres Unternehmens entweder eine Dimension oder eine Metrik sein. Nachdem Sie ein Schemaelement in eine Datenansicht gezogen haben, werden rechts Optionen angezeigt, mit denen Sie anpassen können, wie die Dimension oder Metrik in Customer Journey Analytics funktioniert.
+Das Erstellen einer Datenansicht beinhaltet entweder das Erstellen von Metriken und Dimensionen aus Schemaelementen oder die Verwendung von Standardkomponenten. Die meisten Schemaelemente können je nach den Anforderungen Ihres Unternehmens entweder eine Dimension oder eine Metrik sein. Nachdem Sie ein Schemaelement in eine Datenansicht gezogen haben, werden rechts Optionen angezeigt, mit denen Sie anpassen können, wie die Dimension oder Metrik in Customer Journey Analytics funktioniert.
 
 Im Folgenden finden Sie ein Video zum Thema:
 
@@ -21,19 +21,19 @@ Im Folgenden finden Sie ein Video zum Thema:
 
 So erstellen oder bearbeiten Sie eine Datenansicht:
 
-1. Anmelden bei [Customer Journey Analytics](https://analytics.adobe.com) und gehen Sie zu **[!UICONTROL Datenansichten]** Registerkarte.
-1. Um eine Datenansicht zu erstellen, wählen Sie **[!UICONTROL Neue Datenansicht erstellen]**. Alternativ können Sie eine vorhandene Datenansicht aus der Liste der Datenansichten auswählen, um sie zu bearbeiten.
+1. Melden Sie sich bei [Customer Journey Analytics](https://analytics.adobe.com) an und gehen Sie zur Registerkarte **[!UICONTROL Datenansichten]**.
+1. Um eine Datenansicht zu erstellen, wählen Sie **[!UICONTROL Neue Datenansicht erstellen]** aus. Sie können auch eine vorhandene Datenansicht aus der Liste der Datenansichten auswählen und diese bearbeiten.
 
 
 ## Konfigurieren
 
 So konfigurieren Sie eine neue oder vorhandene Datenansicht:
 
-1. Wählen Sie die **[!UICONTROL Konfigurieren]** Registerkarte (falls noch nicht aktiv).
+1. Wählen Sie die Registerkarte **[!UICONTROL Konfigurieren]** aus (sofern noch nicht aktiv).
 
-   ![Datenansicht konfigurieren](assets/dataview-configure.png)
-1. Angeben [!UICONTROL Einstellungen], [!UICONTROL Container], und [!UICONTROL Kalender] Details (siehe unten).
-1. Auswählen **[!UICONTROL Speichern und fortfahren]** um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Auswählen **[!UICONTROL Speichern]** , um die Konfiguration für Ihre vorhandene Datenansicht zu speichern.
+   ![Konfigurieren der Datenansicht](assets/dataview-configure.png)
+1. Legen Sie Angaben für [!UICONTROL Einstellungen], [!UICONTROL Container] und [!UICONTROL Kalender] fest (siehe unten).
+1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus, um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration für die vorhandene Datenansicht zu speichern.
 
 
 ### Einstellungen
@@ -43,7 +43,7 @@ Stellt übergreifende Einstellungen für die Datenansicht bereit.
 | Einstellung | Beschreibung |
 | --- | --- |
 | [!UICONTROL Verbindung] | In diesem Feld wird die Datenansicht mit der zuvor eingerichteten Verbindung verknüpft, die einen oder mehrere Adobe Experience Platform-Datensätze enthält. |
-| [!UICONTROL Name] | Erforderlich. Der Name der Datenansicht. Dieser Wert wird in der oberen rechten Dropdown-Liste in Analysis Workspace angezeigt. |
+| [!UICONTROL Name] | Erforderlich. Der Name der Datenansicht. Dieser Wert wird in der Dropdown-Liste oben rechts in Analysis Workspace angezeigt. |
 | [!UICONTROL Beschreibung] | Optional. Adobe empfiehlt eine detaillierte Beschreibung, damit Benutzer verstehen, warum die Datenansicht vorhanden ist und für wen sie konzipiert ist. |
 
 {style="table-layout:auto"}
@@ -54,7 +54,7 @@ Gibt den Namen der Container für die Datenansicht an. Container-Namen werden h�
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL Container-Name für Person] | [!UICONTROL Person] (Standard). Die [!UICONTROL Person] enthält alle Sitzungen und Ereignisse für Personen innerhalb des festgelegten Zeitraums. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
+| [!UICONTROL Container-Name für Person] | [!UICONTROL Person] (Standard). Der Container [!UICONTROL Person] enthält sämtliche Sitzungen und Ereignisse für Personen innerhalb des angegebenen Zeitrahmens. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Besucher“ oder „Benutzer“), können Sie den Container hier umbenennen. |
 | [!UICONTROL Container-Name für Sitzung] | [!UICONTROL Sitzung] (Standard). Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte [!UICONTROL Sitzung] identifiziert werden. Sie können diesen Container in „Besuch“ oder einen anderen von Ihrem Unternehmen bevorzugten Begriff umbenennen. |
 | [!UICONTROL Container-Name für Ereignis] | [!UICONTROL Ereignis] (Standard). Der Container [!UICONTROL Ereignis] definiert einzelne Ereignisse in einem Datensatz. Wenn Ihr Unternehmen einen anderen Begriff verwendet (z. B. „Hits“ oder „Seitenansichten“), können Sie den Container hier umbenennen. |
 
@@ -66,33 +66,33 @@ Gibt das Kalenderformat an, dem die Datenansicht folgen soll. Sie können mehrer
 
 | Einstellung | Beschreibung |
 | --- | --- |
-| [!UICONTROL Zeitzone] | Wählen Sie die Zeitzone aus, in der Ihre Daten dargestellt werden sollen. Wenn Sie eine Zeitzone auswählen, die mit der Sommerzeit arbeitet, werden die Daten automatisch entsprechend angepasst. Im Frühling, wenn die Uhren eine Stunde vor gestellt werden, besteht eine Lücke von einer Stunde. Im Herbst, wenn die Uhren eine Stunde zurück gestellt werden, wird während der Sommerzeit eine Stunde wiederholt. |
-| [!UICONTROL Kalendertyp] | Bestimmen Sie, wie die Wochen des Monats gruppiert werden.<br>**Gregorianisch:** Standardkalenderformat. Die Quartale werden nach Monat gruppiert.<br>**4-5-4 Einzelhandel:** Ein standardisierter 4-5-4 Einzelhandelskalender. Der erste und der letzte Monat des Quartals enthalten 4 Wochen, während der zweite Monat des Quartals aus 5 Wochen besteht.<br>**Benutzerspezifisch (4-5-4):** Ähnlich wie der 4-5-4-Kalender mit dem Unterschied, dass Sie den ersten Tag des Jahres und das Jahr auswählen können, in dem die „zusätzliche“ Woche liegt.<br>**Benutzerdefiniert (4-4-5):** Der erste und zweite Monat jedes Quartals enthalten 4 Wochen, während die letzte Woche jedes Quartals aus 5 Wochen besteht.<br>**Benutzerspezifisch (5-4-4):** Der erste Monat jedes Quartals umfasst 5 Wochen, während der zweite und dritte Monat jedes Quartals 4 Wochen umfassen. |
-| [!UICONTROL Erster Monat des Jahres] und [!UICONTROL Erster Wochentag] | Sichtbar für den gregorianischen Kalender. Geben Sie an, in welchem Monat das Kalenderjahr beginnen soll und an welchem Tag jede Woche beginnen soll. |
+| [!UICONTROL Zeitzone] | Wählen Sie die Zeitzone aus, in der Ihre Daten angezeigt werden sollen. Wenn Sie eine Zeitzone auswählen, die mit der Sommerzeit arbeitet, werden die Daten automatisch entsprechend angepasst. Im Frühling, wenn die Uhren eine Stunde vor gestellt werden, besteht eine Lücke von einer Stunde. Im Herbst, wenn die Uhren eine Stunde zurück gestellt werden, wird während der Sommerzeit eine Stunde wiederholt. |
+| [!UICONTROL Kalendertyp] | Bestimmen Sie, wie die Wochen des Monats gruppiert werden.<br>**Gregorianisch:** Standardkalenderformat. Die Quartale werden nach Monat gruppiert.<br>**4-5-4 Einzelhandel:** Ein standardisierter 4-5-4 Einzelhandelskalender. Der erste und der letzte Monat des Quartals enthalten 4 Wochen, während der zweite Monat des Quartals 5 Wochen umfasst.<br>**Benutzerspezifisch (4-5-4):** Ähnlich wie der 4-5-4-Kalender, mit dem Unterschied, dass Sie den ersten Tag des Jahres und das Jahr auswählen können, in dem die „zusätzliche“ Woche liegt.<br>**Benutzerspezifisch (4-4-5):** Der erste und zweite Monat jedes Quartals enthalten 4 Wochen, während die letzte Woche jedes Quartals 5 Wochen umfasst.<br>**Benutzerspezifisch (5-4-4):** Der erste Monat jedes Quartals umfasst 5 Wochen, während der zweite und dritte Monat jedes Quartals 4 Wochen umfassen. |
+| [!UICONTROL Erster Monat des Jahres] und [!UICONTROL Erster Wochentag] | Sichtbar für den gregorianischen Kalender. Geben Sie an, mit welchem Monat das Kalenderjahr beginnen soll und mit welchem Tag jede Woche beginnen soll. |
 | [!UICONTROL Erster Tag des aktuellen Jahres] | Für benutzerdefinierte Kalendertypen sichtbar. Geben Sie an, an welchem Tag des Jahres das aktuelle Jahr beginnen soll. Der Kalender formatiert automatisch den ersten Wochentag auf Grundlage dieses Werts. |
-| [!UICONTROL Jahr mit „zusätzlicher“ Woche] | Mit den meisten 364-tägigen Kalendern (52 Wochen von jeweils 7 Tagen) sammeln sich jedes Jahr verbleibende Tage, bis sie eine zusätzliche Woche ergeben. Diese zusätzliche Woche wird dann zum letzten Monat des Jahres hinzugefügt. Geben Sie an, zu welchem Jahr die zusätzliche Woche hinzugefügt werden soll. |
+| [!UICONTROL Jahr mit „zusätzlicher“ Woche] | Bei den meisten 364-tägigen Kalendern (52 Wochen mit jeweils 7 Tagen) sammeln sich jedes Jahr verbleibende Tage, bis sie eine zusätzliche Woche ausmachen. Diese zusätzliche Woche wird dann zum letzten Monat des Jahres hinzugefügt. Geben Sie an, zu welchem Jahr die zusätzliche Woche hinzugefügt werden soll. |
 
 {style="table-layout:auto"}
 
 ## Komponenten
 
-Als Nächstes können Sie die Komponenten einer Datenansicht festlegen, d. h. Sie können Metriken und Dimensionen aus Schemaelementen erstellen. Sie können auch Standardkomponenten verwenden.
+Als Nächstes können Sie die Komponenten einer Datenansicht festlegen, d. h., Sie können Metriken und Dimensionen aus Schemaelementen erstellen. Sie können auch Standardkomponenten verwenden.
 
-1. Wählen Sie die **[!UICONTROL Komponenten]** Registerkarte.
+1. Wählen Sie die Registerkarte **[!UICONTROL Komponenten]** aus.
 
    ![Registerkarte „Komponenten“](assets/dataview-components.png)
 
-   Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze und die [!UICONTROL Schemafelder] unten enthält.  Bei den bereits eingeschlossenen Komponenten handelt es sich um Standardkomponenten (vom System generiert), die für alle Datenansichten benötigt werden (z. B. Ereignisse, Personen, Sitzungsmetriken und Dimensionen &quot;Minute&quot;, &quot;Quartal&quot;und &quot;Woche&quot;). Adobe wendet auch den Filter an **[!UICONTROL Enthält Daten]** und **[!UICONTROL ist nicht veraltet]** Standardmäßig werden nur Schemafelder angezeigt, die Daten enthalten und nicht veraltet sind.
+   Links oben sehen Sie die [!UICONTROL Verbindung], die die Datensätze enthält, und unten ihre [!UICONTROL Schemafelder].  Bei den bereits eingeschlossenen Komponenten handelt es sich um die (vom System generierten) Standardkomponenten, die für alle Datenansichten benötigt werden (z. B. Ereignisse, Personen, Sitzungsmetriken und die Dimensionen „Minute“, „Quartal“und „Woche“). Adobe wendet auch den Filter **[!UICONTROL Enthält Daten]** und **[!UICONTROL Ist nicht veraltet]** standardmäßig an, sodass nur Schemafelder angezeigt werden, die Daten enthalten und nicht veraltet sind.
 
-1. Suchen Sie nach einem Schemafeld mit ![Suchsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Suchschemafelder]** oder suchen Sie ein Feld, indem Sie in eine der Datensatz-Sammlungen wechseln, z. B. ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignis-Datensätze]**.<br/>Alternativ können Sie ein abgeleitetes Feld mit ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **abgeleitetes Feld erstellen** . Siehe [Abgeleitete Felder](./derived-fields/derived-fields.md) für weitere Informationen.
+1. Suchen Sie nach einem Schemafeld mit ![Suchsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Suchschemafeldern]** oder suchen Sie ein Feld, indem Sie in eine der Datensatzsammlungen wechseln, z. B. ![Ordnersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Ereignisdatensätze]**.<br/>Alternativ können Sie über ![Datensymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Abgeleitetes Feld erstellen** ein abgeleitetes Feld erstellen. Weitere Informationen finden Sie unter [Abgeleitete Felder](./derived-fields/derived-fields.md).
 
-1. Wenn Sie Ihr spezifisches Schemafeld gefunden oder Ihr abgeleitetes Feld definiert haben, ziehen Sie dieses Feld, z. B. ![Handle-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Seitenname]**aus der linken Leiste in den Bereich Metriken oder Dimensionen .
-Sie können dasselbe Schema mehrmals in die Bereiche „Dimensionen“ oder „Metriken“ ziehen und dieselbe Dimension oder Metrik auf unterschiedliche Weise konfigurieren. Beispielsweise können Sie im Feld &quot;pageName&quot;eine Dimension namens &quot;Produktseiten&quot;und eine weitere &quot;Fehlerseiten&quot;erstellen, indem Sie verschiedene [Komponenteneinstellungen](component-settings/overview.md) rechts.
+1. Wenn Sie Ihr spezifisches Schemafeld gefunden oder Ihr abgeleitetes Feld definiert haben, ziehen Sie dieses Feld, z. B. ![Handle-Symbol](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Seitenname]**, aus der linken Leiste in den Bereich „Metriken“ oder „Dimensionen“.
+Sie können dasselbe Schema mehrmals in die Bereiche „Dimensionen“ oder „Metriken“ ziehen und dieselbe Dimension bzw. Metrik auf unterschiedliche Weise konfigurieren. Beispielsweise können Sie im pageName-Feld eine Dimension namens „Produktseiten“ und eine weitere Dimension „Fehlerseiten“ erstellen, indem Sie rechts verschiedene [Komponenteneinstellungen](component-settings/overview.md) verwenden.
 Wenn Sie einen Ordner mit Schemafeldern aus der linken Leiste ziehen, werden diese automatisch in typische Abschnitte unterteilt. Zeichenfolgenfelder landen im Abschnitt [!UICONTROL Dimensionen] und numerische Schematypen landen im Abschnitt [!UICONTROL Metriken]. Sie können auch auf **[!UICONTROL Alle hinzufügen]** klicken, dann werden alle Schemafelder zu ihren jeweiligen Speicherorten hinzugefügt.
 
 1. Nachdem Sie eine Komponente ausgewählt haben, werden die Einstellungen auf der rechten Seite angezeigt.
 
-   ![Datenansichtskomponente ausgewählt](assets/dataview-component-pagename.png)
+   ![Ausgewählte Datenansichtskomponente](assets/dataview-component-pagename.png)
 
    Konfigurieren Sie die Komponente mit [Komponenteneinstellungen](component-settings/overview.md). Die verfügbaren Komponenteneinstellungen hängen davon ab, ob es sich bei der Komponente um eine Dimension/Metrik und um den Schemadatentyp handelt. Zu den Einstellungen gehören:
 
@@ -105,7 +105,7 @@ Wenn Sie einen Ordner mit Schemafeldern aus der linken Leiste ziehen, werden die
    * [[!UICONTROL Persistenz]](component-settings/persistence.md)
    * [[!UICONTROL Wert-Bucketing]](component-settings/value-bucketing.md)
 
-1. Auswählen **[!UICONTROL Speichern und fortfahren]** um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Auswählen **[!UICONTROL Speichern]** , um die Konfiguration für Ihre vorhandene Datenansicht zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus, um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration für die vorhandene Datenansicht zu speichern.
 
 **Duplizieren von Metriken oder Dimensionen**
 
@@ -113,17 +113,17 @@ Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spe
 
 **Filtern von Schemafeldern oder Datensätzen**
 
-Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) Schemafelder in der linken Leiste nach [!UICONTROL Datentyp], [!UICONTROL Datensätze], [!UICONTROL Data Governance], und [!UICONTROL other] Kriterien ([!UICONTROL enthält Daten], [!UICONTROL is identity], und [!UICONTROL ist nicht veraltet]):
+Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) Schemafelder in der linken Leiste nach [!UICONTROL Datentyp], [!UICONTROL Datensätzen], [!UICONTROL Data Governance] und [!UICONTROL anderen] Kriterien ([!UICONTROL Enthält Daten], [!UICONTROL Ist Identität] und [!UICONTROL Ist nicht veraltet]) filtern:
 
-![Felder filtern](assets/dataview-components-filter.png)
+![Filtern von Feldern](assets/dataview-components-filter.png)
 
 
 ## Einstellungen 
 
-1. Wählen Sie die **[!UICONTROL Einstellungen]** Registerkarte.
+1. Wählen Sie die Registerkarte **[!UICONTROL Einstellungen]** aus.
 1. Konfigurieren Sie Filter, die auf die gesamte Datenansicht angewendet werden sollen. Siehe [Einstellungen (Filter)](#settings-filters) unten.
 1. Konfigurieren Sie Sitzungs-Timeout und Metriken. Siehe [Sitzungseinstellungen](#session-settings) unten.
-1. Auswählen **[!UICONTROL Speichern und fortfahren]** um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Auswählen **[!UICONTROL Speichern]** , um die Konfiguration für Ihre vorhandene Datenansicht zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern und fortfahren]** aus, um mit der Konfiguration der neuen oder vorhandenen Datenansicht fortzufahren. Wählen Sie **[!UICONTROL Speichern]** aus, um die Konfiguration für die vorhandene Datenansicht zu speichern.
 
 ### Einstellungen (Filter)
 

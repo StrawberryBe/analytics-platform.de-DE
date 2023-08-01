@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '1101'
-ht-degree: 66%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können eine Flussvisualisierung mit der Dimension „Datensatz-ID“ verwen
 
 Wenn Sie die Datensatz-ID-Dimensionselemente umbenennen möchten, können Sie einen Lookup-Datensatz verwenden.
 
-## Wie weit reicht die Rekordzahl der CCA zurück?
+## Wie weit zurück werden Personen bei der Cross-Channel-Analyse neu zugewiesen?
 
 Das Lookback-Fenster für die Neuzuweisung hängt von der gewünschten Häufigkeit der [Wiederholung](replay.md) der Daten ab. Wenn Sie beispielsweise die CCA so einrichten, dass Daten einmal wöchentlich wiederholt werden, umfasst das Lookback-Fenster für die Neuzuweisung sieben Tage. Wenn Sie CCA so einrichten, dass Daten jeden Tag wiederholt werden, umfasst das Lookback-Fenster für die Neuzuweisung einen Tag.
 
@@ -42,15 +42,15 @@ In einigen Fällen kann eine einzelne benutzende Person mit mehreren beständige
 
 Die Anzahl der beständigen IDs ist für die vorübergehende ID irrelevant. Ein einzelner Benutzer kann zu einer beliebigen Anzahl von Geräten gehören, ohne dass sich dies auf die Fähigkeit von CCA auswirkt, Zuordnungen geräteübergreifend vorzunehmen.
 
-## Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar wird, nachdem ich mein Adobe-Kontoteam mit den gewünschten Informationen kontaktiert habe?
+## Wie lange dauert es, bis der neu zugewiesene Datensatz verfügbar ist, nachdem ich meinem Adobe-Accountteam die gewünschten Informationen mitgeteilt habe?
 
-Die Echtzeit-Zuordnung ist etwa eine Woche nach der Aktivierung von Cross-Channel Analytics durch Adobe verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Kleine Datensätze (weniger als 1 Million Ereignisse pro Tag) dauern in der Regel einige Tage, während große Datensätze (1 Milliarde Ereignisse pro Tag) eine Woche oder länger dauern können.
+Die Echtzeit-Zuordnung ist etwa eine Woche nach der Aktivierung von Cross-Channel Analytics durch Adobe verfügbar. Die Verfügbarkeit der Aufstockung hängt von der Menge der vorhandenen Daten ab. Bei kleinen Datensätzen (weniger als 1 Million Ereignisse pro Tag) dauert es in der Regel einige Tage, bei großen Datensätzen (1 Milliarde Ereignisse pro Tag) durchaus eine Woche oder länger.
 
-## Was ist der Unterschied zwischen der geräteübergreifenden Analyse (eine Funktion in Adobe Analytics) und der kanalübergreifenden Analyse?
+## Was ist der Unterschied zwischen geräteübergreifenden Analysen (eine Funktion in Adobe Analytics) und Cross-Channel-Analyse?
 
 [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) ist eine Funktion, die speziell für das herkömmliche Adobe Analytics entwickelt wurde und Ihnen hilft, zu verstehen, wie Benutzende geräteübergreifend arbeiten. Sie bietet zwei Workflows zum Verknüpfen von Gerätedaten: die feldbasierte Zuordnung und das Gerätediagramm.
 
-[Kanalübergreifende Analyse](/help/cca/overview.md) ist eine für Customer Journey Analytics spezifische Funktion, mit der Sie verstehen können, wie Benutzer auf beiden Geräten und Kanälen arbeiten. Sie verschlüsselt die Personen-ID eines Datensatzes neu, sodass dieser Datensatz nahtlos mit anderen Datensätzen kombiniert werden kann. Diese Funktion funktioniert im Design ähnlich wie das feldbasierte Stitching der geräteübergreifenden Analyse, aber die Implementierung unterscheidet sich von der unterschiedlichen Datenarchitektur zwischen Adobe Analytics und Customer Journey Analytics.
+[Cross-Channel-Analyse](/help/cca/overview.md) ist eine Customer Journey Analytics-spezifische Funktion, mit der Sie verstehen können, wie Personen über Geräte und Kanäle hinweg agieren. Dabei wird die Personen-ID eines Datensatzes neu definiert, sodass dieser Datensatz nahtlos mit anderen Datensätzen kombiniert werden kann. Diese Funktion wirkt in Bezug auf das Design ähnlich wie die feldbasierte Zuordnung von CDA, aber die Implementierung ist aufgrund der unterschiedlichen Datenarchitektur von Adobe Analytics und Customer Journey Analytics anders.
 
 ## Wie handhabt Cross-Channel Analytics DSGVO- und CCPA-Anforderungen?
 
@@ -61,19 +61,19 @@ Adobe handhabt DSGVO- und CCPA -Anforderungen gemäß den nationalen und interna
 Wenn das Feld `Persistent ID` bei einem Ereignis in einem Datensatz, der mit feldbasierter Zuordnung verknüpft ist, leer ist, füllt CCA die `Stitched ID` für dieses Ereignis auf eine dieser zwei Arten aus:
 
 * Wenn das Feld `Transient ID` nicht leer ist, verwendet CCA den Wert in `Transient ID` als `Stitched ID`.
-* Wenn das Feld `Transient ID` leer ist, lässt CCA auch das Feld `Stitched ID` leer. In diesem Fall sind die Felder `Persistent ID`, `Transient ID` und `Stitched ID` für das Ereignis alle leer. Diese Ereignistypen werden aus jeder Customer Journey Analytics-Verbindung mit dem Datensatz, der zugeordnet wird, entfernt, in dem `Stitched ID` wurde als `Person ID`.
+* Wenn das Feld `Transient ID` leer ist, lässt CCA auch das Feld `Stitched ID` leer. In diesem Fall sind die Felder `Persistent ID`, `Transient ID` und `Stitched ID` für das Ereignis alle leer. Diese Arten von Ereignissen werden aus jeder Customer Journey Analytics-Verbindung herausgenommen, die den zugeordneten Datensatz verwendet, bei dem die `Stitched ID` als `Person ID` gewählt wurde.
 
-## Wie vergleichen sich Metriken in Customer Journey Analytics-zugeordneten Datensätzen mit ähnlichen Metriken in nicht zugeordneten Datensätzen in Customer Journey Analytics und mit dem herkömmlichen Adobe Analytics?
+## Wie stellt sich ein Vergleich zwischen Metriken in zugeordneten Customer Journey Analytics-Datensätzen und ähnlichen Metriken in nicht zugeordneten Customer Journey Analytics-Datensätzen sowie mit dem herkömmlichen Adobe Analytics dar?
 
-Bestimmte Metriken in Customer Journey Analytics ähneln den Metriken in Adobe Analytics, andere unterscheiden sich jedoch je nach dem, was Sie vergleichen. In der folgenden Tabelle werden verschiedene häufig verwendete Metriken verglichen:
+Bestimmte Metriken in Customer Journey Analytics ähneln den Metriken in Adobe Analytics. Andere unterscheiden sich jedoch davon, je nachdem, was Sie vergleichen. In der folgenden Tabelle werden verschiedene häufig verwendete Metriken verglichen:
 
-| **Vom Customer Journey Analytics zugeordnete Daten** | **Aufgepasste Daten vom Customer Journey Analytics** | **Traditionelles Adobe Analytics** | **Analytics Ultimate mit CDA** |
+| **Zugeordnete Customer Journey Analytics-Daten** | **Nicht zugeordnete Customer Journey Analytics-Daten** | **Traditionelles Adobe Analytics** | **Analytics Ultimate mit CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personen** = Anzahl der einzelnen `Person ID`s, für die `Stitched ID` als `Person ID` ausgewählt ist. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl der einzelnen `Person ID`s basierend auf der Spalte, die als `Person ID` ausgewählt wurde. **Personen** in Analytics-Quell-Connector-Datensätzen ähnelt **Unique Visitors** im traditionellen Adobe Analytics `endUserIDs._experience.aaid.id` ausgewählt wird als `Person ID` in Customer Journey Analytics. | **Unique Visitors** = Anzahl der eindeutigen Personen-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
-| **Sitzungen**: Wird basierend auf den Sitzungseinstellungen in der Datenansicht des Customer Journey Analytics definiert. Der Zuordnungsprozess kann einzelne Sitzungen von mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Definiert anhand der Sitzungseinstellungen, die in der Datenansicht des Customer Journey Analytics angegeben sind. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite von CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=de) angegeben sind. |
-| **Veranstaltungen** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einem leeren `Persistent ID`. | **Veranstaltungen** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass bei Ereignissen, die eine leere `Person ID` in den nicht zugewiesenen Daten im Data Lake der Experience Platform sind diese Ereignisse nicht in Customer Journey Analytics enthalten. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). |
+| **Personen** = Anzahl der einzelnen `Person ID`s, für die `Stitched ID` als `Person ID` ausgewählt ist. Je nach Ergebnis des Zuordnungsprozesses kann **Personen** größer oder kleiner als **Unique Visitors** im herkömmlichen Adobe Analytics sein. | **Personen** = Anzahl der einzelnen `Person ID`s basierend auf der Spalte, die als `Person ID` ausgewählt wurde. **Personen** in den Analytics-Quell-Connector-Datensätzen ähnelt **Unique Visitors** im traditionellen Adobe Analytics `endUserIDs._experience.aaid.id` ausgewählt wird als `Person ID` in Customer Journey Analytics. | **Unique Visitors** = Anzahl unterschiedlicher Personen-IDs. **Unique Visitors** ist möglicherweise nicht identisch mit der Anzahl der eindeutigen **ECID** s. | Siehe [Personen](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=de). |
+| **Sitzungen**: Wird anhand der Sitzungseinstellungen in der Customer Journey Analytics-Datenansicht definiert. Der Zuordnungsprozess kann einzelne Sitzungen auf mehreren Geräten zu einer einzelnen Sitzung kombinieren. | **Sitzungen**: Wird anhand der in der Customer Journey Analytics-Datenansicht angegebenen Sitzungseinstellungen definiert. | **Besuche**: Siehe [Besuche](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=de). | **Besuche**: Wird basierend auf den Sitzungseinstellungen definiert, die in der [Virtual Report Suite von CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=de) angegeben sind. |
+| **Ereignisse** = Anzahl der Zeilen in den zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch die oben stehenden häufig gestellten Fragen zu Zeilen mit einer leeren `Persistent ID`. | **Ereignisse** = Anzahl der Zeilen in den nicht zugeordneten Daten in Customer Journey Analytics. Diese Metrik liegt normalerweise nahe bei **Vorfälle** im herkömmlichen Adobe Analytics. Beachten Sie jedoch, dass Ereignisse, die eine leere `Person ID` in den nicht zugeordneten Daten im Data Lake von Experience Platform aufweisen, nicht in Customer Journey Analytics aufgenommen werden. | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). | **Vorfälle**: Siehe [Vorfälle](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=de). |
 
-Andere Metriken können in Customer Journey Analytics und im herkömmlichen Adobe Analytics ähnlich sein. Beispielsweise die Gesamtzahl für Adobe Analytics [benutzerspezifische Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=de) 1-100 ist im Allgemeinen zwischen dem herkömmlichen Adobe Analytics und dem herkömmlichen Customer Journey Analytics vergleichbar (ob zugeordnet oder nicht zugeordnet). [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und traditionellem Adobe Analytics kann zu Diskrepanzen zwischen den beiden Produkten führen.
+Andere Metriken können in Customer Journey Analytics und herkömmlichem Adobe Analytics ähnlich sein. Beispielsweise ist die Gesamtanzahl für [benutzerdefinierte Ereignisse](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=de) in Adobe Analytics (Ereignisse 1–100) in herkömmlichem Adobe Analytics und Customer Journey Analytics allgemein vergleichbar (unabhängig davon, ob zugeordnet oder nicht zugeordnet). [Funktionsunterschiede](/help/getting-started/aa-vs-cja/cja-aa.md)), z. B. die Deduplizierung zwischen Customer Journey Analytics und herkömmlichem Adobe Analytics, können zu Diskrepanzen zwischen den beiden Produkten führen.
 
 ## Kann CCA Identity Map-Felder verwenden?
 

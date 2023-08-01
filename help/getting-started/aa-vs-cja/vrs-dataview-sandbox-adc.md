@@ -6,7 +6,7 @@ feature: Basics
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 56%
+ht-degree: 88%
 
 ---
 
@@ -49,19 +49,19 @@ Eine Datenansicht:
 
 * Kann auf Customer Journey Analytics-Filtern basieren.
 * Kann auf zerstörungsfreie Weise auf historische und neue Daten angewendet werden.
-* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten über eine Customer Journey Analytics-Verbindung, die von verschiedenen Geschäftsteams verwendet werden können.
-* Kann verwendet werden, um den Zugriff auf verschiedene Datentypen für verschiedene Benutzer in Customer Journey Analytics zu steuern und diese zu kuratieren.
-* Bietet leistungsstarke zerstörungsfreie Optionen zur Transformation und Verbesserung von Daten, die über eine Customer Journey Analytics-Verbindung in den Customer Journey Analytics gelangen.
-* basiert auf den Berichtszeitverarbeitungsfunktionen von Customer Journey Analytics.
+* Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten auf Basis einer Customer Journey Analytics-Verbindung, die von verschiedenen Unternehmens-Teams verwendet werden können.
+* Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzende in Customer Journey Analytics zu steuern und diese Daten zu kuratieren.
+* Bietet leistungsstarke, zerstörungsfreie Optionen zum Transformieren und Verbessern von Daten, die über eine Customer Journey Analytics-Verbindung in Customer Journey Analytics eingehen.
+* Basiert auf den Customer Journey Analytics-Funktionen für die Verarbeitung zum Zeitpunkt der Berichtserstellung.
 * Ermöglicht Benutzern das Erstellen einer benutzerdefinierten Definition für „Sitzung“.
-* Wird zur Berichtslaufzeit angewendet, ähnlich wie eine Filterauswertung. Dies ist _after_ der Quell-Connector (Adobe Analytics oder andere) Daten in einen Datensatz im Adobe Experience Platform Data Lake geschrieben hat und _after_ die Daten über eine Customer Journey Analytics-Verbindung in Customer Journey Analytics aufgenommen wurden.
+* Wird zur Berichtslaufzeit angewendet, ähnlich wie eine Filterauswertung. Dies geschieht, _nachdem_ der Quell-Connector (z. B. Adobe Analytics) Daten in einen Datensatz im Adobe Experience Platform Data Lake geschrieben hat und _nachdem_ die Daten über eine Customer Journey Analytics-Verbindung in Customer Journey Analytics aufgenommen wurden.
 * Ermöglicht eine unbegrenzte Anzahl von Variablen, allerdings kann die Kuratierung einschränken, welche Variablen für Benutzer verfügbar sind.
 * Ermöglicht die benutzerdefinierte Benennung von Containern für Ereignisse, Sitzungen und Personen.
 * Unterstützt benutzerdefinierte Kalenderoptionen.
 
 Einschränkungen einer Datenansicht:
 
-* Sie stellt direkt keine Möglichkeit bereit, Report Suites oder andere Datensätze zu kombinieren. Stattdessen werden Datensätze mit in einer Customer Journey Analytics-Verbindung kombiniert. Die kombinierten Daten aus der Customer Journey Analytics-Verbindung stehen in allen Datenansichten zur Verfügung, die auf dieser Verbindung basieren.
+* Sie stellt direkt keine Möglichkeit bereit, Report Suites oder andere Datensätze zu kombinieren. Stattdessen werden Datensätze in einer Customer Journey Analytics-Verbindung kombiniert. Die kombinierten Daten aus der Customer Journey Analytics-Verbindung können in allen Datenansichten verwendet werden, die auf dieser Verbindung basieren.
 
 ## Adobe Experience Platform-Sandboxes
 
@@ -69,12 +69,12 @@ Weitere Informationen finden Sie unter [Sandboxes – Übersicht](https://experi
 
 Eine Adobe Experience Platform-Sandbox:
 
-* Bietet eine Möglichkeit, eine einzelne Adobe Experience Platform-Instanz in separate virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen. um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu unterstützen.
+* Bietet eine Möglichkeit, eine einzelne Adobe Experience Platform-Instanz in getrennte virtuelle Umgebungen (Entwicklung, Test, Staging, Produktion usw.) zu unterteilen, um die Entwicklung und Weiterentwicklung von Programmen für digitale Erlebnisse zu unterstützen.
 * Kann als Container betrachtet werden, der alle Daten und Programme für eine bestimmte Umgebung enthält.
 
-Eine Adobe Experience Platform-Sandbox nicht:
+Einschränkungen einer Adobe Experience Platform-Sandbox:
 
-* Stellen Sie ähnliche Funktionen wie Virtual Report Suites, Customer Journey Analytics-Verbindungen oder Datenansichten bereit.
+* Sie bietet keine vergleichbaren Funktionen wie Virtual Report Suites, Customer Journey Analytics-Verbindungen oder -Datenansichten.
 * Report Suites können damit nicht mit oder ohne andere Datensätze kombiniert werden. Die Datensätze innerhalb einer Sandbox können jedoch innerhalb einer Customer Journey Analytics-Verbindung kombiniert werden.
 
 Beachten Sie Folgendes:
