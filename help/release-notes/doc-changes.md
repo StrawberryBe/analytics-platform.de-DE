@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 94%
+source-wordcount: '2430'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
-| **Juli 2023** |
+| **August 2023** | |
+| Schnellstartanleitungen zur Datenerfassung für mobile Anwendungen und andere Plattformen | Es wurden zusätzliche Schnellstartanleitungen zur Datenerfassung hinzugefügt, in denen erläutert wird, wie Daten von mobilen Anwendungen oder anderen Plattformen (z. B. Desktop-Anwendungen, Spiele auf Konsolen, Anwendungen auf Set-Top-Boxen und IoT-Geräte) in Customer Journey Analytics erfasst und verwendet werden. [Weitere Informationen](../data-ingestion/data-ingestion.md) |
+| **Juli 2023** | |
 | Kontextbezogene Sitzungen | Es wurde ein Thema für diese Datenansichtseinstellung hinzugefügt. [Weitere Informationen](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | Adobe Product Analytics ist eine neue Möglichkeit, in Customer Journey Analytics mit kanalübergreifenden Daten und Erkenntnissen zu interagieren. Diese neuen Funktionen ermöglichen es Produktteams, Daten und Einblicke über ihr Produkterlebnis selbst bereitzustellen. [Geführte Analyse](/help/guided-analysis/overview.md) &#x200B;. |
 | Abgeleitete Felder | A [abgeleitetes Feld](/help/data-views/derived-fields/derived-fields.md) ermöglicht Ihnen, mithilfe eines anpassbaren Regel-Builders (Regel-Builder) Datenmanipulationen direkt zu definieren (häufig komplexe). |
