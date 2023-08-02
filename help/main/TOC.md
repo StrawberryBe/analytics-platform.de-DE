@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 82%
+source-wordcount: '971'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 82%
       + [Verwenden von Adobe Analytics-Daten in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Unterstützung der Customer Journey Analytics-Funktion](../getting-started/aa-vs-cja/cja-aa.md)
       + [Vergleich der Terminologie für Analytics-Daten, die über den Analytics-Quell-Connector übergeben werden](../getting-started/aa-vs-cja/terminology.md)
-      + [Datenverarbeitung in Adobe Analytics und Customer Journey Analytics vergleichen](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Vergleich der Datenverarbeitung in Adobe Analytics und Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Virtuelle Reporting-Umgebungen und Sandbox-Umgebungen](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Verarbeitungsregeln, VISTA und Klassifizierungen versus Datenvorbereitung](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -53,7 +53,10 @@ ht-degree: 82%
    + [Datenaufnahme – Übersicht](../data-ingestion/data-ingestion.md)
    + Kurzanleitungen zur Aufnahme und Verwendung von Daten{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [Adobe Experience Platform Web SDK und Edge Network](../data-ingestion/aepwebsdk.md)
+      + Adobe Experience Platform Edge Network {#edge-network}
+         + [Web SDK](../data-ingestion/aepwebsdk.md)
+         + [Mobile SDK](../data-ingestion/aepmobilesdk.md)
+         + [Server-API](../data-ingestion/serverapi.md)
       + [Batch-Daten](../data-ingestion/batch.md)
       + [Streaming-Daten](../data-ingestion/streaming.md)
       + [Quell-Connectoren](../data-ingestion/sources.md)
@@ -329,7 +332,7 @@ ht-degree: 82%
    + [Labs-Benutzerhandbuch](../labs/labs.md)
 
 + Fehlerbehebung {#troubleshooting}
-   + [Adobe Analytics-Daten mit Customer Journey Analytics-Daten vergleichen](../troubleshooting/compare.md)
+   + [Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](../troubleshooting/compare.md)
    + [Konsistenz von Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen Echtzeit-Kundendatenplattform und Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
 
 + [Glossar zu Customer Journey Analytics](../getting-started/cja-glossary.md)

@@ -4,10 +4,10 @@ description: Erläuterung der Datenaufnahme aus Adobe Analytics
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1159'
+ht-degree: 86%
 
 ---
 
@@ -27,9 +27,9 @@ In dieser Kurzanleitung wird erläutert, wie Sie die von Adobe Analytics erfasst
 
 Gehen Sie dazu folgendermaßen vor:
 
-- **Richten Sie in Adobe Experience Platform einen Adobe Analytics-Quell-Connector ein**. Dadurch werden Ihre aktuellen Adobe Analytics-Daten in einen Datensatz in Adobe Experience Platform aufgenommen.
+- **Richten Sie in Adobe Experience Platform einen Adobe Analytics-Quell-Connector ein**. Der Quell-Connector übernimmt die Aufnahme Ihrer aktuellen Adobe Analytics-Daten in einen Datensatz in Adobe Experience Platform.
 
-- **Richten Sie in Customer Journey Analytics eine Verbindung ein**. Diese Verbindung sollte (zumindest) Ihren Adobe Experience Platform-Datensatz enthalten.
+- **Richten Sie in Customer Journey Analytics eine Verbindung ein**. Die Verbindung sollte (zumindest) Ihren Adobe Experience Platform-Datensatz enthalten.
 
 - **Richten Sie in Customer Journey Analytics eine Datenansicht ein**, um Metriken und Dimensionen zu definieren, die Sie in Analysis Workspace verwenden möchten.
 
@@ -38,7 +38,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Dies ist eine vereinfachte Anleitung zur Aufnahme von Daten mithilfe des Adobe Analytics-Quell-Connectors und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Dieses Schnellstarthandbuch ist eine vereinfachte Anleitung zur Erfassung von Daten mithilfe des Adobe Analytics-Quell-Connectors und zur Verwendung dieser Daten in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
 ## Einrichten eines Adobe Analytics-Quell-Connectors
@@ -78,7 +78,7 @@ Gehen Sie folgendermaßen vor, um einen Adobe Analytics-Quell-Connector zu erste
    ![Überprüfung](./assets/review.png)
 
 
-Nach der Erstellung der Verbindung wird der Datenfluss automatisch erstellt, um einen Datensatz mit den Adobe Analytics-Daten aus Ihrer Report Suite zu füllen, einschließlich der Erfassung von bis zu 13 Monaten historischen Daten für Produktions-Sandboxes. (Beachten Sie, dass die Aufstockung in Nicht-Produktions-Sandboxes ab dem 26. April 2023 auf 3 Monate beschränkt ist.)
+Nachdem die Verbindung erstellt wurde, wird der Datenfluss automatisch erstellt, um einen Datensatz mit den Adobe Analytics-Daten aus Ihrer Report Suite zu füllen. Der Datenfluss erfasst bis zu 13 Monate historischer Daten für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist auf drei Monate beschränkt.
 
 Wenn die erste Aufnahme abgeschlossen ist, können Ihre Adobe Analytics-Report-Suite-Daten von Customer Journey Analytics verwendet werden.
 
@@ -89,7 +89,7 @@ Ein umfassendes Tutorial finden Sie unter [Erstellen eines Adobe Analytics-Quell
 
 Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um von diesen Datensätzen Berichte erstellen zu können, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und Analysis Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
@@ -192,7 +192,7 @@ Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
    ![Workspace – Datenansicht auswählen](./assets/cja-projects-3.png).
 
-5. Ziehen Sie per Drag-and-Drop Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld], um Ihren ersten Bericht zu erstellen. Ziehen Sie beispielsweise `Program Points Balance` und `Page View` als Metriken sowie `email` als Dimension auf die Tabelle, um einen kurzen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Mitglieder des Treueprogramms sind, mit dem Treuepunkte gesammelt werden.
+5. Um Ihren ersten Bericht zu erstellen, ziehen Sie Dimensionen und Metriken per Drag-and-Drop in die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] . Ziehen Sie beispielsweise `Program Points Balance` und `Page View` als Metriken sowie `email` als Dimension auf die Tabelle, um einen kurzen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Mitglieder des Treueprogramms sind, mit dem Treuepunkte gesammelt werden.
 
    ![Analysis Workspace – erster Bericht](./assets/cja-projects-5.png)
 
@@ -201,5 +201,5 @@ Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Ana
 
 >[!SUCCESS]
 >
->Sie haben jetzt alle Schritte ausgeführt. Nach der Einrichtung des Adobe Analytics-Datenquellen-Connectors und der Konfiguration dieses Connectors für Ihre Report Suite werden Ihre Adobe Analytics-Daten automatisch in Adobe Experience Platform hochgeladen. Sie haben eine Verbindung in Customer Journey Analytics definiert und können jetzt die aufgenommenen Adobe Analytics-Daten und andere Daten verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.
+>Sie haben jetzt alle Schritte ausgeführt. Nach der Einrichtung des Adobe Analytics-Datenquellen-Connectors und der Konfiguration dieses Connectors für Ihre Report Suite werden Ihre Adobe Analytics-Daten automatisch in Adobe Experience Platform hochgeladen. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die erfassten Adobe Analytics-Daten und andere Daten zu verwenden. Durch die Definition Ihrer Datenansicht konnten Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Abschließend haben Sie Ihr erstes Projekt erstellt, in dem Ihre Daten visualisiert und analysiert wurden.
 

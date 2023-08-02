@@ -4,10 +4,10 @@ description: Erklärung der Aufnahme und Verwendung von Streaming-Daten in Custo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '2000'
+ht-degree: 88%
 
 ---
 
@@ -30,20 +30,20 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Dies ist eine vereinfachte Anleitung zur Aufnahme von Streaming-Daten in Adobe Experience Platform und deren Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Streaming-Daten in Adobe Experience Platform und zur Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 ## Einrichten eines Schemas und eines Datensatzes
 
-Um Daten in Adobe Experience Platform aufzunehmen, müssen Sie zunächst definieren, welche Daten Sie erfassen möchten. Alle in Adobe Experience Platform aufgenommenen Daten müssen einer standardmäßigen, denormalisierten Struktur entsprechen, damit sie von nachgelagerten Funktionen erkannt und genutzt werden können. Das Experience-Datenmodell (XDM) ist das Standard-Framework, das diese Struktur in Form von Schemata bereitstellt.
+Um Daten in Adobe Experience Platform zu erfassen, müssen Sie zunächst definieren, welche Daten Sie erfassen möchten. Alle in Adobe Experience Platform aufgenommenen Daten müssen einer standardmäßigen, denormalisierten Struktur entsprechen, damit sie von nachgelagerten Funktionen erkannt und genutzt werden können. Das Experience-Datenmodell (XDM) ist das Standard-Framework, das diese Struktur in Form von Schemata bereitstellt.
 
-Nachdem Sie ein Schema definiert haben, verwenden Sie einen oder mehrere Datensätze, um die erfassten Daten zu speichern und zu verwalten. Ein Datensatz ist ein Konstrukt zur Datenspeicherung und -verwaltung, in dem Daten in der Regel in einer Tabelle erfasst werden, die ein Schema (Spalten) und Felder (Zeilen) beinhaltet.
+Nachdem Sie ein Schema definiert haben, verwenden Sie einen oder mehrere Datensätze, um die erfassten Daten zu speichern und zu verwalten. Ein Datensatz ist ein Speicher- und Verwaltungskonstrukt für eine Datenerfassung (normalerweise eine Tabelle), die ein Schema (Spalten) und Felder (Zeilen) enthält.
 
 Alle in Adobe Experience Platform aufgenommene Daten müssen einem vordefinierten Schema entsprechen, bevor sie als Datensatz gespeichert werden können.
 
 ### Einrichten eines Schemas
 
 Im vorliegenden Fall möchten Sie Treuedaten erfassen, z. B. Treueprogramm-ID, Treuepunkte und Treuestatus.
-Dazu müssen Sie zunächst ein Schema definieren, das diese Daten modelliert.
+Zunächst müssen Sie ein Schema definieren, das diese Daten modelliert.
 
 Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
@@ -90,7 +90,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Identifizierungsobjekt](./assets/identifcation-loyalty-field.png)
 
-   Dadurch erhält Ihr Schema Identifizierungsfähigkeiten. In Ihrem Fall möchten Sie anhand der E-Mail-Adresse in Ihren Batch-Daten Informationen zum Treueprogramm identifizieren.
+   Dieses Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie anhand der E-Mail-Adresse in Ihren Batch-Daten Informationen zum Treueprogramm identifizieren.
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
@@ -122,7 +122,7 @@ Weitere Informationen zum Hinzufügen und Entfernen von Feldergruppen und einzel
 
 ### Erstellen eines Datensatzes
 
-Mit Ihrem Schema haben Sie Ihr Datenmodell definiert. Jetzt müssen Sie das Konstrukt zum Speichern und Verwalten dieser Daten definieren. Dies erfolgt über Datensätze.
+Mit Ihrem Schema haben Sie Ihr Datenmodell definiert. Jetzt müssen Sie das Konstrukt definieren, um diese Daten zu speichern und zu verwalten, was über Datensätze erfolgt.
 
 Gehen Sie folgendermaßen vor, um einen Datensatz einzurichten:
 
@@ -183,7 +183,7 @@ Ihre Quellanwendung streamt Daten, die dem von Ihnen erstellten Schema entsprech
 }
 ```
 
-Um diese Daten in den von Ihnen erstellten Datensatz zu streamen, müssen Sie einen Streaming-Endpunkt definieren, an den diese Daten gesendet werden sollen. Zu diesem Zweck müssen Sie einen Quell-Connector für die HTTP-API definieren.
+Um diese Daten in den erstellten Datensatz zu streamen, müssen Sie einen Streaming-Endpunkt definieren, an den diese Daten gesendet werden sollen. Ein Streaming-Endpunkt wird mithilfe eines Quell-Connectors für die HTTP-API erstellt.
 
 Gehen Sie folgendermaßen vor, um einen Quell-Connector für die HTTP-API zu erstellen:
 
@@ -227,14 +227,18 @@ Gehen Sie folgendermaßen vor, um einen Quell-Connector für die HTTP-API zu ers
 
 Sie können die Streaming-Endpunkt-URL kopieren und sie zum Konfigurieren Ihrer Treueprogramm-Anwendung verwenden, um Daten in den Adobe Experience Platform-Treueprogramm-Datensatz zu streamen.
 
-In [Erstellen einer HTTP-API-Streaming-Verbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=de) finden Sie ein umfassendes Tutorial, in dem erläutert wird, wie die Authentifizierung verwendet wird, wie Daten zugeordnet werden, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind, und wie ein neuer Datensatz im Zuge der Einrichtung des Streaming-Connectors erstellt wird.
+Siehe [Erstellen einer HTTP-API-Streaming-Verbindung über die Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=de) für ein viel umfassenderes Tutorial, das Folgendes erklärt:
+
+- Verwendung der Authentifizierung,
+- Zuordnen von Daten, wenn Ihre eingehenden Daten nicht mit Ihrem XDM-Schema kompatibel sind, und
+- Erfahren Sie, wie Sie einen Datensatz im Rahmen der Einrichtung des Streaming-Connectors erstellen.
 
 
 ## Einrichten einer Verbindung
 
 Um die Adobe Experience Platform-Daten in Customer Journey Analytics verwenden zu können, erstellen Sie eine Verbindung, die die Daten enthält, die aus der Einrichtung Ihres Schemas, Datensatzes und Workflows resultieren.
 
-Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um von diesen Datensätzen Berichte erstellen zu können, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Experience Platform und Analysis Workspace herstellen.
+Mithilfe einer Verbindung können Sie Datensätze aus Adobe Experience Platform in Analysis Workspace integrieren. Um über diese Datensätze zu berichten, müssen Sie zunächst eine Verbindung zwischen den Datensätzen in Adobe Experience Platform und Workspace herstellen.
 
 Gehen Sie folgendermaßen vor, um eine Verbindung zu erstellen:
 
@@ -337,7 +341,7 @@ Gehen Sie folgendermaßen vor, um ein Projekt zu erstellen:
 
    ![Workspace – Datenansicht auswählen](./assets/cja-projects-3.png).
 
-5. Ziehen Sie per Drag-and-Drop Dimensionen und Metriken auf die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld], um Ihren ersten Bericht zu erstellen. Ziehen Sie beispielsweise `Program Points Balance` und `Page View` als Metriken sowie `email` als Dimension auf die Tabelle, um einen kurzen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Mitglieder des Treueprogramms sind, mit dem Treuepunkte gesammelt werden.
+5. Um Ihren ersten Bericht zu erstellen, ziehen Sie Dimensionen und Metriken per Drag-and-Drop in die [!UICONTROL Freiformtabelle] im [!UICONTROL Bedienfeld] . Ziehen Sie beispielsweise `Program Points Balance` und `Page View` als Metriken sowie `email` als Dimension auf die Tabelle, um einen kurzen Überblick über die Profile zu erhalten, die Ihre Website besucht haben und Mitglieder des Treueprogramms sind, mit dem Treuepunkte gesammelt werden.
 
    ![Analysis Workspace – erster Bericht](./assets/cja-projects-5.png)
 
