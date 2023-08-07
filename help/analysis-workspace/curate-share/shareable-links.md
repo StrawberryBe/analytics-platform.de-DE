@@ -4,7 +4,7 @@ keywords: Analysis Workspace-Freigabe
 title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7889c9e7c55dadfe0966f03365eabc4929a32d7a
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 62%
@@ -17,9 +17,9 @@ Analysis Workspace bietet viele Möglichkeiten, ein Projekt für Ihre Benutzer f
 
 ## Projekt-Link zur Freigabe für andere Workspace-Benutzer abrufen {#project-link}
 
-Um einen Link zu einem Projekt freizugeben, gehen Sie zu dem Projekt, das Sie freigeben möchten, und wählen Sie dann Navigieren Sie zu [!UICONTROL **Freigeben**] > [!UICONTROL **Projekt-Link abrufen**] (oder **Freigeben**] > [!UICONTROL **Freigeben für Workspace-Benutzer**] > [!UICONTROL **Über Link freigeben**). Benutzer, für die Sie den Link freigeben, müssen sich anmelden.
+Um einen Link zu einem Projekt freizugeben, gehen Sie zu dem Projekt, das Sie freigeben möchten, und wählen Sie dann gehen aus [!UICONTROL **Freigeben**] > [!UICONTROL **Projekt-Link abrufen**] (oder **Freigeben**] > [!UICONTROL **Freigeben für Workspace-Benutzer**] > [!UICONTROL **Über Link freigeben**). Benutzer, für die Sie den Link freigeben, müssen sich anmelden.
 
-Wenn dem Empfänger des Links kein [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de), erhalten Administratoren **[!UICONTROL Kann bearbeiten]** und Nicht-Administratoren erhalten **[!UICONTROL Kann duplizieren]** Erlebnisse.
+Wenn dem Empfänger des Links kein [Projektrolle](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=de), erhalten Administratoren **[!UICONTROL Original bearbeiten]** und Nicht-Administratoren erhalten **[!UICONTROL Kopie bearbeiten]** Erlebnisse.
 
 ## Einen schreibgeschützten Link zur Freigabe für alle abrufen
 
