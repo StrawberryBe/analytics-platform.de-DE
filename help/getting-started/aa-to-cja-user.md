@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Mit einer Verbindung können Analytics-Admins Datensätze von Adobe Experience P
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-Adobe bietet mehrere Möglichkeiten, Daten in Adobe Experience Platform zu importieren, einschließlich Report Suite-Daten über den Analytics-Quell-Connector oder das Web SDK. Vorhandene Implementierungen aus mehreren Report Suites können in Experience Platform zusammengefasst werden. Die auf diesen Datensätzen basierenden Verbindungen und Datenansichten können Daten kombinieren, die zuvor in separaten Report Suites vorhanden gewesen sind.
+Adobe bietet mehrere Möglichkeiten, Daten in Adobe Experience Platform zu importieren, wie etwa Report Suite-Daten über den Analytics-Quell-Connector oder das Web SDK. Vorhandene Implementierungen aus mehreren Report Suites können in Experience Platform zusammengefasst werden. Die auf diesen Datensätzen basierenden Verbindungen und Datenansichten können Daten kombinieren, die zuvor in separaten Report Suites vorhanden gewesen sind.
 
 ## Änderungen am Konzept von Virtual Report Suites {#data-views}
 
