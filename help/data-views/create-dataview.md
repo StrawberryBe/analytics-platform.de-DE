@@ -4,10 +4,10 @@ description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht 
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1418'
+ht-degree: 98%
 
 ---
 
@@ -116,6 +116,11 @@ Das Duplizieren von Metriken oder Dimensionen und das anschließende Ändern spe
 Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) Schemafelder in der linken Leiste nach [!UICONTROL Datentyp], [!UICONTROL Datensätzen], [!UICONTROL Data Governance] und [!UICONTROL anderen] Kriterien ([!UICONTROL Enthält Daten], [!UICONTROL Ist Identität] und [!UICONTROL Ist nicht veraltet]) filtern:
 
 ![Filtern von Feldern](assets/dataview-components-filter.png)
+
+>[!TIP]
+>
+>Wenn die Komponenten in Ihrer Datenansicht nicht ordnungsgemäß geladen werden und stattdessen eine Fehlermeldung angezeigt wird, lesen Sie bitte den Abschnitt [Fehlende Berechtigungen](../troubleshooting/lack-of-permissions.md) für eine Entschließung.
+
 
 
 ## Einstellungen 

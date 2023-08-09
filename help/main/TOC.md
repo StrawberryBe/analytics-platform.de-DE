@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 84%
+source-wordcount: '974'
+ht-degree: 86%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 84%
    + [Benutzerhandbuch für Adobe Analytics-Benutzende](../getting-started/aa-to-cja-user.md)
    + Vergleich mit Adobe Analytics {#cja-aa-comparison}
       + [Verwenden von Adobe Analytics-Daten in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-      + [Unterstützung der Customer Journey Analytics-Funktion](../getting-started/aa-vs-cja/cja-aa.md)
-      + [Vergleich der Terminologie für Analytics-Daten, die über den Analytics-Quell-Connector übergeben werden](../getting-started/aa-vs-cja/terminology.md)
+      + [Unterstützung der Customer Journey Analytics-Funktionen](../getting-started/aa-vs-cja/cja-aa.md)
+      + [Vergleich der Terminologie für Analytics-Daten, die durch den Analytics-Quell-Connector übergeben werden](../getting-started/aa-vs-cja/terminology.md)
       + [Vergleich der Datenverarbeitung in Adobe Analytics und Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Virtuelle Reporting-Umgebungen und Sandbox-Umgebungen](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Verarbeitungsregeln, VISTA und Klassifizierungen versus Datenvorbereitung](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
@@ -334,6 +334,7 @@ ht-degree: 84%
 + Fehlerbehebung {#troubleshooting}
    + [Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](../troubleshooting/compare.md)
    + [Konsistenz von Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen Echtzeit-Kundendatenplattform und Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+   + [Fehlende Berechtigungen](../troubleshooting/lack-of-permissions.md)
 
 + [Glossar zu Customer Journey Analytics](../getting-started/cja-glossary.md)
 
