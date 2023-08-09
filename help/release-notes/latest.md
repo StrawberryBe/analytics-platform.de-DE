@@ -3,33 +3,34 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e6b2df9ae90ef5663206e768b985749de38e263c
+source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 75%
 
 ---
 
-# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Juli 2023)
+# Aktuelle Adobe Customer Journey Analytics-Versionshinweise (August 2023)
 
-**Letzte Aktualisierung**: 25. Juli 2023
+**Letzte Aktualisierung**: 9. August 2023
 
-Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
+Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 9. August bis 13. September 2023. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
 ## Neue oder aktualisierte Funktionen
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics** | Adobe Product Analytics ist eine neue Möglichkeit, in Customer Journey Analytics mit kanalübergreifenden Daten und Erkenntnissen zu interagieren. Diese neuen Funktionen ermöglichen es Produkt-Teams, Daten und Erkenntnisse selbst mithilfe geführter Analyse-Workflows in ihrem Produkterlebnis bereitzustellen. Teams können:<ul><li>im Lauf der Zeit Muster in der Benutzerinteraktion erkennen</li><li>das Wachstum und die Treue der Nutzerbasis des Produkts verfolgen</li><li>Reibungsbereiche im Produkt identifizieren</li><li>die Auswirkungen von Feature-Versionen und der ersten Verwendung messen</li><li>aussagekräftige Benutzersegmente entdecken, um mit ihnen während ihrer lebenslangen Journey mit dem Produkt zu interagieren und sie zu fördern</li><li>eine Verbindung zu Analysis Workspace für eine tiefergehende Analyse und Zusammenarbeit mit Analystinnen und Analysten herstellen</li></ul>Adobe Product Analytics ist ein kostenpflichtiges Add-on für Customer Journey Analytics. Wenn Ihre Organisation diese Funktion nutzen möchte, wenden Sie sich bitte an Ihr Adobe-Accountteam. [Weitere Informationen](/help/guided-analysis/overview.md) | Nicht angegeben | 17. Juli 2023 |
-| **Abgeleitete Felder** | Dies stellt die erste Version abgeleiteter Felder dar. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Sie können das abgeleitete Feld weiter als Komponente (Metrik oder Dimension) in Datenansichten definieren und dann dieses abgeleitete Feld als Komponente in Workspace verwenden.<p>Diese Version unterstützt eine Vorlage für Marketing-Kanäle und die folgenden Funktionen:</p><ul><li>Verketten</li><li>Fall wenn</li><li>Suchen und Ersetzen</li><li>Nachschlagen</li><li>URL-Parsen</li></ul> <p>[Weitere Informationen](/help/data-views/derived-fields/derived-fields.md)</p> | 10. Mai 2023 | 2. August 2023 |
-| **Erweiterte Suchunterstützung für Profil- und Suchdaten** | Bietet die Möglichkeit, Datensätze als Suchen von Feldern in Profil- oder Lookup-Datensätzen hinzuzufügen. Zuvor wurden nur Ereignisdatensätze unterstützt. [Weitere Informationen](/help/connections/create-connection.md) | 21. Juni 2023 | 12. Juli 2023 |
-| **Report Builder-Verbesserungen** | <ul><li>Filtern Sie aus einer Zelle nach mehreren Datenblöcken. Sie können die Filter für mehrere Datenblöcke aus einer Zelle ändern. Verwenden Sie eine vordefinierte Zelle, weisen Sie sie mehreren Datenblöcken zu und aktualisieren Sie die Daten anhand der in der Zelle definierten Filter. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=de)</li><li>Blenden Sie Zeilen- und Spaltenüberschriften ein und aus. Sie können Tabellenüberschriften von Datenblöcken ein- oder ausblenden oder Zeilen- und Spaltenüberschriften verwenden, um die Tabelle neu zu formatieren und Datenblöcke in einem Bericht auszurichten. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=de#build-the-data-block)</li></ul> | Nicht angegeben | 19. Juli 2023 |
+| **Report Builder-Verbesserungen** | <ul><li>Laden Sie geplante Aufgaben vom Tab Verlauf herunter, auf dem Sie den Verlauf geplanter Aufgaben anzeigen können. Laden Sie die Arbeitsmappe von dieser Aufgabe herunter. </li><li>Startdatum als Dimension: Ermöglicht es Benutzern, das Startdatum des Datenblocks als Dimension in der Datenblock-Ausgabe zu platzieren. </li></ul> | Nicht angegeben | 17. August 2023 |
+| **Währungsumrechnung** | Kunden-Journey bietet die Möglichkeit, mehrere Währungen zu unterstützen. In den Datenansichtseinstellungen können Sie eine Währung in eine andere Währung konvertieren. [Weitere Informationen](/help/data-views/component-settings/format.md) | Nicht angegeben | 31. August 2023 |
+| **Unterstützung für A4T-Klassifizierungen im Analytics Source Connector** | Wir fügen eine Korrelations-ID hinzu, um die Zuordnung von Classification-Daten zu Adobe Target-Aktivitäten und Erlebnisereignissen zu erleichtern. | Nicht angegeben | 31. August 2023 |
+| **Reporting Activity Manager** | Bietet Administratoren detaillierte Einblicke in den Berichtsverbrauch für jede Verbindung, sodass Administratoren während Spitzenzeiten der Berichterstellung mühelos Kapazitätsprobleme diagnostizieren und beheben können. | Nicht angegeben | 6. September 2023 |
+| **Zugriff von PowerBI und Tableau auf Customer Journey Analytics-Datenansichten** | Der SQL-Connector für Adobe Customer Journey Analytics ermöglicht den SQL-Zugriff auf Datenansichten, die Sie in Customer Journey Analytics definiert haben. Dateningenieurinnen oder -ingenieure und -analystinnen oder -analysten, die mit Power BI, Tableau oder anderen Tools für Business Intelligence und Visualisierung vertraut sind, können jetzt Berichte und Dashboards auf der Basis derselben Datenansichten erstellen, die Customer Journey Analytics-Benutzende für ihre Analysis Workspace-Projekte verwenden. [Weitere Informationen](/help/data-views/sql-connector.md) | Nicht angegeben | 13. September 2023 |
 
 {style="table-layout:auto"}
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-AN-317971; AN-319234; AN-320439; AN-320519; AN-321740; AN-322444; AN-323116
+AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
 
 ## Wichtige Hinweise für Customer Journey Analytics-Admins
 
