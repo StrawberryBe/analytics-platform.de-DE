@@ -8,7 +8,7 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
 workflow-type: tm+mt
 source-wordcount: '1492'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Herkömmliche Einstellungen für Marketing-Kanäle in Adobe Analytics funktionie
 
 Adobe hat [aktualisierte Best Practices für die Implementierung von Marketing-Kanälen](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=de) veröffentlicht. Diese aktualisierten Empfehlungen helfen Ihnen dabei, die bereits in Adobe Analytics vorhandenen Funktionen mit Attribution IQ optimal zu nutzen. Diese werden Ihnen auch bei der Umstellung auf Customer Journey Analytics helfen.
 
-Mit der Einführung von [Abgeleitete Felder](../data-views/derived-fields/derived-fields.md) im Rahmen von Customer Journey Analytics Data Views werden Marketingkanäle auch zerstörungsfrei und rückwirkend unterstützt, indem die Variable [Marketingkanal-Funktionsvorlage](../data-views/derived-fields/derived-fields.md#function-templates).
+Mit der Einführung von [abgeleiteten Feldern](../data-views/derived-fields/derived-fields.md) im Rahmen der Datenansichten von Customer Journey Analytics werden Marketing-Kanäle auch zerstörungsfrei und rückwirkend unterstützt, indem die Vorlage [Marketing-Kanal-Funktion](../data-views/derived-fields/derived-fields.md#function-templates) verwendet wird.
 
 ### 4. Entscheidung zwischen Analytics-Quell-Connector und Experience Platform SDKs {#connector-vs-sdk}
 
