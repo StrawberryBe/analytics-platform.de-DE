@@ -1,5 +1,5 @@
 ---
-source-git-commit: 497334bdd0324e5b3955be79029079af88ca56e2
+source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 64%
@@ -11,19 +11,19 @@ ht-degree: 64%
 
 >[!AVAILABILITY]
 >
->Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](/help/release-notes/releases.md).
+>Die in diesem Artikel beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsveröffentlichungen](/help/release-notes/releases.md).
 
 ## Abschnitt zur eingeschränkten Testphase der Veröffentlichung {#release-limited-testing-section}
 
 >[!AVAILABILITY]
 >
->Die in diesem Abschnitt beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsversionen](/help/release-notes/releases.md).
+>Die in diesem Abschnitt beschriebene Funktion befindet sich in der eingeschränkten Testphase der Version und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsveröffentlichungen](/help/release-notes/releases.md).
 
 ## Paket auswählen {#select-package}
 
 >[!NOTE]
 >
->Sie müssen über die **Auswählen** -Paket, um die in diesem Artikel beschriebene Funktion zu verwenden. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Package Sie haben.
+>Sie müssen über die **Auswählen** -Paket, um die in diesem Abschnitt beschriebene Funktion zu verwenden. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
 
 
 ## Filterkriterien für Datenwörterbuch {#dd-filter-criteria}
@@ -41,7 +41,7 @@ ht-degree: 64%
    | [!UICONTROL **Alle anzeigen**] | Alle Komponenten anzeigen. Diese Option steht nur Admins zur Verfügung. |
    | [!UICONTROL **Nicht genehmigt**] | Nur Komponenten anzeigen, die von Admins noch nicht als genehmigt markiert wurden. Für Admins beim Identifizieren von Komponenten hilfreich, die überprüft und genehmigt werden müssen. Diese Option steht nur Admins zur Verfügung. |
    | [!UICONTROL **Fehlende Beschreibung**] | Nur Komponenten anzeigen, die noch keine Beschreibung im Feld „Beschreibung“ haben. Diese Option steht nur Admins zur Verfügung. |
-   | [!UICONTROL **Duplikate anzeigen**] | Zeigen Sie in der ausgewählten Datenansicht nur Komponenten mit demselben Namen oder derselben Beschreibung wie eine andere Komponente an. Dazu gehören Komponenten, die Sie erstellen, sowie Komponenten, die von Adobe bereitgestellt werden. Namen oder Beschreibungen müssen exakt übereinstimmen, damit sie als Duplikate angezeigt werden. Diese Option steht nur Admins zur Verfügung. |
+   | [!UICONTROL **Duplikate anzeigen**] | Zeigen Sie in der ausgewählten Datenansicht nur Komponenten mit demselben Namen oder derselben Beschreibung wie eine andere Komponente an. Dies umfasst sowohl von Ihnen erstellte Komponenten als auch die von Adobe bereitgestellten Komponenten. Namen oder Beschreibungen müssen exakt übereinstimmen, damit sie als Duplikate angezeigt werden. Diese Option steht nur Admins zur Verfügung. |
    | [!UICONTROL **Keine aktuellen Daten**] | Nur Komponenten anzeigen, die in den letzten 90 Tagen keine Daten erfasst haben. Diese Option steht nur Admins zur Verfügung. |
    | [!UICONTROL **Erstellt von Adobe**] <!-- I don't see this option--> | Nur Komponenten anzeigen, die von Adobe erstellt wurden. Komponenten, die von Admins oder anderen Benutzenden in deren Organisation erstellt wurden, werden nicht angezeigt. |
 
