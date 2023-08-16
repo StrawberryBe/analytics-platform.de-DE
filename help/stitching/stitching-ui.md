@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 2%
@@ -14,7 +14,9 @@ ht-degree: 2%
 
 # Erstellen und Verwalten von zugeordneten Datensätzen
 
-Durch die Zuordnung können Administratoren Identitäten zu in Customer Journey Analytics verfügbaren Datensätzen zuordnen. Die Zuordnung von Datensätzen erhöht die Genauigkeit der Darstellung eines Profils, was letztendlich zu einer besseren Analyse und Berichterstellung führt.
+{{select-package}}
+
+Die Zuordnung ermöglicht es Administratoren, Identitäten in Datensätzen zu verknüpfen, die in Customer Journey Analytics verfügbar sind. Die Zuordnung von Datensätzen erhöht die Genauigkeit der Darstellung eines Profils, was letztendlich zu einer besseren Analyse und Berichterstellung führt.
 
 Mit dem Stitching-Prozess können Sie eine vorhandene **beständige ID** in einem Datensatz. Ordnen Sie dann diese beständige Kennung für ein bestimmtes Wiederholungsfenster (täglich, wöchentlich) mit der präzisesten **vorübergehende ID** (Person oder authentifizierte Kennung), die für diesen Datensatz verfügbar ist. Beispiele für vorübergehende Identifikatoren sind E-Mail-, Telefonnummer-, CRM-ID- oder andere im Diagramm gespeicherte Identitäten. Siehe [Übersicht](overview.md) für weitere Informationen zum Stitching.
 
@@ -24,7 +26,7 @@ Um das Stitching zu starten, erstellen Sie einen oder mehrere zugeordnete Datens
 
 1. Auswählen **[!UICONTROL ** Stitching **]** von **[!UICONTROL ** Data Management **]** in der oberen Leiste.
 
-2. Im [!UICONTROL Zugeordnete Datensätze] Bildschirm, wählen Sie **[!UICONTROL ** Erstellen eines zugeordneten Datensatzes **]**.
+2. Im [!UICONTROL Zugeordnete Datensätze] Bildschirm, auswählen **[!UICONTROL ** Erstellen eines zugeordneten Datensatzes **]**.
 
    Sie werden aufgefordert, einen Dialog zu führen, in dem Ihre Verantwortlichkeiten erläutert werden.
 
@@ -40,7 +42,7 @@ Um das Stitching zu starten, erstellen Sie einen oder mehrere zugeordnete Datens
 
    2. Wählen Sie die Sandbox aus dem **[!UICONTROL ** Sandbox **]** Liste, in der der Ereignis-Datensatz gespeichert wird.
 
-      ![Bildschirm zur ersten Erstellung](./assets/create-initial.png)
+      ![Erstellungsbildschirm beim ersten Versuch](./assets/create-initial.png)
 
    3. Wählen Sie die **[!UICONTROL ** Quelldatensatz auswählen **]** Schaltfläche.
 
@@ -48,7 +50,7 @@ Um das Stitching zu starten, erstellen Sie einen oder mehrere zugeordnete Datens
 
       ![Datensatz auswählen](./assets/select-one-dataset.png)
 
-      - Datensatz auswählen und **[!UICONTROL ** Auswählen **]** , um fortzufahren.
+      - Datensatz auswählen und auswählen **[!UICONTROL ** Auswählen **]** , um fortzufahren.
 
    4. Wählen Sie eine persistente Kennung aus der **[!UICONTROL ** Persistente ID **]** Liste.
 
@@ -60,15 +62,15 @@ Um das Stitching zu starten, erstellen Sie einen oder mehrere zugeordnete Datens
 
       Die Mindestbedingungen sind:
 
-      - persistente Bezeichnersättigung: Rate >= 95%
+      - dauerhafte Sättigung der Kennungen: Rate >= 95 %
 
-      - vorübergehende Sättigung der Kennung: Rate >= 5 %
+      - Sättigung der vorübergehenden Kennung: Rate >= 5 %
 
         Wenn die Mindestbedingungen erfüllt sind, können Sie mit Beispielwerten experimentieren.
 
       - Auswählen **[!UICONTROL ** Erstellen von demo-zugeordneten IDs **]**.
 
-        Im [!UICONTROL Experimentieren mit Beispielwerten] Dialogfeld wird eine Tabelle mit Beispielwert für [!UICONTROL timestamp], [!UICONTROL Persistente ID], [!UICONTROL Verlaufs-ID], [!UICONTROL Zugeordnete ID (Live)], [!UICONTROL Zugeordnete ID (1-Tage-Wiederholung)]und [!UICONTROL Zugeordnete ID (7-Tage-Wiederholung)].
+        Im [!UICONTROL Experimentieren mit Beispielwerten] Dialogfeld wird eine Tabelle mit Beispielwert für [!UICONTROL timestamp], [!UICONTROL Persistente ID], [!UICONTROL Verlaufs-ID], [!UICONTROL Zugeordnete ID (Live)], [!UICONTROL Zugeordnete ID (1-Tage-Wiederholung)], und [!UICONTROL Zugeordnete ID (7-Tage-Wiederholung)].
 
             ![Experimentieren mit Beispielwerten](./assets/experiment-sample-values.png)
             
@@ -79,7 +81,7 @@ Um das Stitching zu starten, erstellen Sie einen oder mehrere zugeordnete Datens
             3.  Wählen Sie **[!UICONTROL **Close**]** wenn Sie mit dem Experimentieren mit Beispielwerten fertig sind.
         
 
-        Zurück im [!UICONTROL Zugeordnete Datensätze > _Datensatzname_] screen:
+        Zurück im [!UICONTROL Zugewiesene Datensätze > _Datensatzname_] screen:
 
    6. Wählen Sie eine Option für die Häufigkeit und den Zeitraum der Wiederherstellung von historischen Daten aus dem **[!UICONTROL ** Wiederholungsfenster **]** Liste.
 
@@ -87,7 +89,7 @@ Um das Stitching zu starten, erstellen Sie einen oder mehrere zugeordnete Datens
 
    7. Wählen Sie einen Wert aus dem **[!UICONTROL ** Durchschnittliche Anzahl der täglichen Ereignisse **]** Liste.
 
-   8. Geben Sie einen Wert ein (zwischen `0` und `12`) in **[!UICONTROL ** Anzahl der aufzustockenden Monate **]**.
+   8. Wert eingeben (zwischen `0` und `12`) in **[!UICONTROL ** Anzahl der aufzustockenden Monate **]**.
 
    9. Auswählen **[!UICONTROL ** Speichern **]** , um Ihren zugeordneten Datensatz zu speichern und die Zuordnung zu starten.
 
@@ -97,7 +99,7 @@ Sie können den Status des Stitching im [!UICONTROL Zugeordnete Datensätze] Lis
 
 - Auswählen **[!UICONTROL ** Stitching **]** von **[!UICONTROL ** Data Management **]** in der oberen Leiste.
 
-  Es wird eine Liste von zugeordneten Datensätzen angezeigt, die jeweils mit [!UICONTROL Sandbox], [!UICONTROL Quelldatensatz], [!UICONTROL Status], [!UICONTROL Aufstockungsstatus], [!UICONTROL Inhaber]und [!UICONTROL Erstellungsdatum].
+  Es wird eine Liste von zugeordneten Datensätzen angezeigt, die jeweils mit [!UICONTROL Sandbox], [!UICONTROL Quelldatensatz], [!UICONTROL Status], [!UICONTROL Aufstockungsstatus], [!UICONTROL Inhaber], und [!UICONTROL Erstellungsdatum].
 
   ![Übersicht über zugeordnete Datensätze](./assets/overview-stitched-datasetts.png)
 

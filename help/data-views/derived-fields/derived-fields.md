@@ -4,7 +4,7 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: bd017810cb0f7813bdada5e3e951b0f6d5b768e4
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '4348'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 Abgeleitete Felder sind ein wichtiger Aspekt der Echtzeitberichterstellungsfunktion in Adobe Customer Journey Analytics. Mit einem abgeleiteten Feld können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenmanipulationen definieren. Anschließend können Sie dieses abgeleitete Feld als Komponente (Metrik oder Dimension) in [Arbeitsbereich](../../analysis-workspace/home.md) oder definieren Sie das abgeleitete Feld als Komponente in [Datenansicht](../data-views.md).
 
-Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Orten außerhalb des Customer Journey Analytics. z. B. [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
+Abgeleitete Felder können viel Zeit und Mühe sparen, verglichen mit der Transformation oder Manipulation Ihrer Daten an anderen Orten außerhalb von Customer Journey Analytics. Beispiel: [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)oder innerhalb Ihrer eigenen Extract Transform Load (ETL)-/Extract Load Transform (ELT)-Prozesse.
 
 Abgeleitete Felder werden in [Datenansichten](../data-views.md), basieren auf einem Satz von Funktionen, die als Regeln definiert und auf verfügbare Standard- und/oder Schemafelder angewendet werden.
 
@@ -35,8 +35,8 @@ Wenn Sie ein abgeleitetes Feld erstellen oder bearbeiten, verwenden Sie die abge
 
 |  | Name | Beschreibung |
 |---------|----------|--------|
-| 1 | **Selektor** | Sie verwenden den Auswahlbereich, um Ihre Funktion, Funktionsvorlage, Schemafelder oder Standardfelder auszuwählen und in den Regel-Builder zu ziehen. <br/>Verwenden Sie das Dropdown-Menü, um zwischen folgenden Optionen auszuwählen: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Funktionen] - verfügbare Listen [Funktionen](#function-reference), </br>![Symbol für Funktionsvorlage](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Funktionsvorlagen] - verfügbare Listen [Funktionsvorlagen](#function-templates), <br/>![Symbol für Schemafeld](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schemafelder] - listet Felder auf, die aus Datensatzkategorien (Ereignis, Profil, Suche) und zuvor definierten abgeleiteten Feldern verfügbar sind, und <br/>![Standardfeldsymbol](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standardfelder] - standardmäßige verfügbare Felder (z. B. Platform-Datensatz-ID). In der Auswahl werden nur Zeichenfolgen- und numerische Standardfelder angezeigt. Wenn die Funktion andere Datentypen unterstützt, können in der Regelschnittstelle Standardfelder mit diesen anderen Datentypen für Werte oder Felder ausgewählt werden.<br/>Sie können mithilfe der Variablen ![Suchsymbol](assets/Smock_Search_18_N.svg) Suchfeld. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) Filter und Filter im [!UICONTROL Filtern von Feldern nach] angezeigt. Sie können Filter einfach mit ![Symbol &quot;Schließen&quot;](assets/CrossSize75.svg) für jeden Filter. |
-| 2 | **Regel-Builder** | Sie erstellen Ihr abgeleitetes Feld sequenziell mithilfe einer oder mehrerer Regeln. Eine Regel ist eine spezifische Implementierung einer Funktion und ist daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Schnittstelle der Regel.<br/>Siehe [Regelschnittstelle](#rule-interface) für weitere Informationen. <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Rule Builder bestimmt die endgültige Ausgabe des abgeleiteten Felds. |
+| 1 | **Selektor** | Sie verwenden den Auswahlbereich, um Ihre Funktion, Funktionsvorlage, Schemafelder oder Standardfelder auszuwählen und in den Regel-Builder zu ziehen. <br/>Verwenden Sie das Dropdown-Menü, um zwischen folgenden Optionen auszuwählen: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Funktionen] - verfügbare Listen [Funktionen](#function-reference), </br>![Symbol für Funktionsvorlage](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Funktionsvorlagen] - verfügbare Listen [Funktionsvorlagen](#function-templates), <br/>![Symbol für Schemafeld](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schemafelder] - listet Felder auf, die aus Datensatzkategorien (Ereignis, Profil, Suche) und zuvor definierten abgeleiteten Feldern verfügbar sind, und <br/>![Standardfeld-Symbol](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standardfelder] - standardmäßige verfügbare Felder (z. B. Platform-Datensatz-ID). In der Auswahl werden nur Zeichenfolgen- und numerische Standardfelder angezeigt. Wenn die Funktion andere Datentypen unterstützt, können in der Regelschnittstelle Standardfelder mit diesen anderen Datentypen für Werte oder Felder ausgewählt werden.<br/>Sie können mithilfe der Variablen ![Suchsymbol](assets/Smock_Search_18_N.svg) Suchfeld. <br/>Sie können die ausgewählte Objektliste filtern, indem Sie ![Filtersymbol](assets/Smock_Filter_18_N.svg) Filter und Filter im [!UICONTROL Filtern von Feldern nach] angezeigt. Sie können Filter einfach mit ![Symbol &quot;Schließen&quot;](assets/CrossSize75.svg) für jeden Filter. |
+| 2 | **Regel-Builder** | Sie erstellen Ihr abgeleitetes Feld sequenziell mithilfe einer oder mehrerer Regeln. Eine Regel ist eine spezifische Implementierung einer Funktion und ist daher immer nur einer Funktion zugeordnet. Sie erstellen eine Regel, indem Sie eine Funktion per Drag-and-Drop in den Regel-Builder ziehen. Der Funktionstyp bestimmt die Schnittstelle der Regel.<br/>Siehe [Regelschnittstelle](#rule-interface) für weitere Informationen. <br/>Sie können eine Funktion am Anfang, Ende oder zwischen Regeln einfügen, die bereits im Regel-Builder verfügbar sind. Die letzte Regel im Regel-Builder bestimmt die endgültige Ausgabe des abgeleiteten Felds. |
 | 3 | **[!UICONTROL ** Feldeinstellungen **]** | Sie können Ihr abgeleitetes Feld benennen und beschreiben und dessen Feldtyp überprüfen. |
 | 4 | **[!UICONTROL ** Endausgabe **]** | Dieser Bereich zeigt eine direkt aktualisierte Vorschau der Ausgabewerte basierend auf den Daten der letzten 30 Tage und den Änderungen, die Sie am abgeleiteten Feld im Regel-Builder vornehmen. |
 
@@ -60,7 +60,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 |  | Name | Beschreibung |
 |---------|----------|--------|
 | A  | **Regelname** | Standardmäßig lautet der Regelname **Regel X** (X bezieht sich auf eine Sequenznummer). Um den Namen einer Regel zu bearbeiten, wählen Sie deren Namen aus und geben Sie den neuen Namen ein, z. B. `Query Parameter`. |
-| B | **Name der Funktion** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion der letzte in der Funktionssequenz ist und die endgültigen Ausgabewerte bestimmt, wird dem Funktionsnamen gefolgt von [!UICONTROL - ENDGÜLTIGE AUSGABE]beispielsweise [!UICONTROL URL-PARSE - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Name der Funktion** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion der letzte in der Funktionssequenz ist und die endgültigen Ausgabewerte bestimmt, folgt dem Funktionsnamen [!UICONTROL - ENDGÜLTIGE AUSGABE], beispielsweise [!UICONTROL URL-PARSE - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg). |
 | C  | **Regelbeschreibung** | Sie können optional einer Regel eine Beschreibung hinzufügen.<br/>Auswählen ![Weitere Symbole](assets/More.svg), wählen Sie **[!UICONTROL ** Beschreibung hinzufügen **]** , um eine Beschreibung hinzuzufügen, oder **[!UICONTROL ** Beschreibung bearbeiten **]** , um eine vorhandene Beschreibung zu bearbeiten.<br/>Geben Sie im Editor eine Beschreibung ein. Sie können die Symbolleiste verwenden, um den Text zu formatieren (mithilfe der Stilauswahl, fett, kursiv, unterstrichen, rechts, links, zentriert, Farbe, Nummernliste, Aufzählungsliste) und Links zu externen Informationen hinzuzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie außerhalb des Editors auf . |
 | D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Benutzeroberfläche hängt vom Funktionstyp ab. Das Dropdown-Menü für [!UICONTROL Feld] oder [!UICONTROL Wert] zeigt alle verfügbaren Feldkategorien (Regeln, Standardfelder, Felder) basierend auf dem Typ der Eingabe an, die die Funktion erwartet. Siehe [Funktionsreferenz](#function-reference) Detaillierte Informationen zu den einzelnen unterstützten Funktionen. |
 
@@ -121,7 +121,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 >[!NOTE]
 >
->Abgeleitete Felder werden in Customer Journey Analytics auf Verbindungsebene verwaltet. Jede Änderung, die an einem abgeleiteten Feld in einer der mit dieser Verbindung verknüpften Datenansichten vorgenommen wurde, gilt für alle diese zugehörigen Datenansichten.
+>Abgeleitete Felder werden auf Verbindungsebene im Customer Journey Analytics verwaltet. Jede Änderung, die an einem abgeleiteten Feld in einer der mit dieser Verbindung verknüpften Datenansichten vorgenommen wurde, gilt für alle diese zugehörigen Datenansichten.
 
 
 
@@ -155,12 +155,14 @@ Um die Vorlage zu verwenden, müssen Sie die richtigen Parameter für jede Funkt
 
 ## Funktionsreferenz
 
+{{select-package}}
+
 Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
 - Spezifikationen:
-   - Eingabedatentyp: Art der unterstützten Daten,
-   - input: mögliche Eingabewerte,
-   - enthaltene Operatoren: für diese Funktion unterstützte Operatoren (sofern vorhanden),
+   - Eingabedatentyp: Typ der unterstützten Daten,
+   - Eingabe: mögliche Werte für die Eingabe,
+   - enthaltene Operatoren: für diese Funktion unterstützte Operatoren (falls vorhanden),
    - Einschränkungen: Einschränkungen, die für diese spezifische Funktion gelten,
    - Ausgabe.
 
@@ -182,7 +184,7 @@ Verbindet Feldwerte in einem neuen abgeleiteten Feld mit definierten Trennzeiche
 
 ## Spezifikationen {#concatenate-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Trennzeichen]:<ul><li>Zeichenfolge</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
@@ -260,7 +262,7 @@ Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Fel
 
 ## Spezifikationen {#casewhen-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Wenn], [!UICONTROL Else If] container:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Kriterium] (siehe eingeschlossene Operatoren, basierend auf dem ausgewählten Werttyp)</li></ul></li><li>[!UICONTROL Legen Sie dann den Wert auf], [!UICONTROL Setzen Sie den Wert andernfalls auf]:</p><ul><li>[!UICONTROL Wert]</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul></li></ul> | <p>Zeichenfolgen</p><ul><li>Gleich</li><li>Gleich jedem Begriff</li><li>Enthält die Wortgruppe</li><li>Enthält einen der Begriffe</li><li>Enthält alle Begriffe</li><li>Beginnt mit</li><li>Beginnt mit einem beliebigen Begriff</li><li>Endet mit</li><li>Endet mit einem beliebigen Begriff</li><li>Ist nicht gleich</li><li>Ist gleich keinem Begriff</li><li>Enthält nicht die Wortgruppe</li><li>Enthält keine Begriffe</li><li>Enthält nicht alle Begriffe</li><li>Beginnt nicht mit</li><li>Beginnt nicht mit einem Begriff</li><li>Endet nicht mit</li><li>endet nicht mit einem Begriff</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Numerisch</p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Größer als</li><li>Größer als oder gleich</li><li>Kleiner als</li><li>Kleiner als oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul><p>Daten </p><ul><li>Gleich</li><li>Ist nicht gleich</li><li>Ist später als</li><li>Ist später als oder gleich</li><li>Is before</li><li>Ist vor oder gleich</li><li>Ist eingestellt</li><li>Ist nicht eingestellt</li></ul> | <ul><li>5 Funktionen pro abgeleitetem Feld</li><li>200 Operatoren pro abgeleitetem Feld. Ein Beispiel für einen einzelnen Operator ist &quot;Referrerdomäne enthält Google&quot;. </li></ul> | <p>Neues abgeleitetes Feld</p> |
 
@@ -271,10 +273,10 @@ Wendet Bedingungen an, die auf definierten Kriterien aus einem oder mehreren Fel
 Sie möchten Regeln definieren, um verschiedene Marketing-Kanäle zu identifizieren, indem Sie eine kaskadierende Logik anwenden, um ein Marketing-Kanal-Feld auf den richtigen Wert festzulegen:
 
 - Wenn der Referrer aus einer Suchmaschine stammt und die Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `ps_`sollte der Marketing-Kanal als [!DNL *Gebührenpflichtige Suche*].
-- Wenn der Referrer aus einer Suchmaschine stammt und die Seite nicht über die Abfragezeichenfolge verfügt `cid`sollte der Marketing-Kanal als [!DNL *Kostenlose Suche*].
-- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `em_`sollte der Marketing-Kanal als [!DNL *Email*].
-- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `ds_`sollte der Marketing-Kanal als [!DNL *Display Ad*].
-- Wenn eine Seite einen Abfragezeichenfolgenwert hat, wobei `cid` contains `so_`sollte der Marketing-Kanal als [!DNL *Paid Social*].
+- Wenn der Referrer aus einer Suchmaschine stammt und die Seite keine Abfragezeichenfolge aufweist `cid`sollte der Marketing-Kanal als [!DNL *Kostenlose Suche*].
+- Wenn eine Seite einen Abfragezeichenfolgenwert hat, bei dem `cid` contains `em_`sollte der Marketing-Kanal als [!DNL *Email*].
+- Wenn eine Seite einen Abfragezeichenfolgenwert hat, bei dem `cid` contains `ds_`sollte der Marketing-Kanal als [!DNL *Display Ad*].
+- Wenn eine Seite einen Abfragezeichenfolgenwert hat, bei dem `cid` contains `so_`sollte der Marketing-Kanal als [!DNL *Paid Social*].
 - Wenn der Referrer aus einer Referrer-Domäne von [!DNL twitter.com], [!DNL facebook.com], [!DNL linkedin.com]oder [!DNL tiktok.com]sollte der Marketing-Kanal als [!DNL *Natürliche Social*].
 - Wenn keine der oben genannten Regeln übereinstimmt, sollte der Marketing-Kanal als [!DNL *Andere verweisende Stelle*].
 
@@ -308,7 +310,7 @@ Falls Ihre Site die folgenden Beispielereignisse erhält, die [!UICONTROL Referr
 
 Sie definieren eine neue `Marketing Channel` abgeleitetes Feld. Sie verwenden die [!UICONTROL WENN] Funktionen zum Definieren von Regeln, die Werte für die basierend auf vorhandenen Werten für `Page URL` und `Referring URL` -Feld.
 
-Beachten Sie die Verwendung der Funktion . [!UICONTROL URL PARSE] zum Definieren von Regeln zum Abrufen der Werte für `Page Url` und `Referring Url` vor [!UICONTROL WENN] -Regeln angewendet werden.
+Beachten Sie die Verwendung der Funktion . [!UICONTROL URL PARSE] zum Definieren von Regeln zum Abrufen der Werte für `Page Url` und `Referring Url` vor dem [!UICONTROL WENN] -Regeln angewendet werden.
 
 ![Screenshot des Falls bei Regel 1](assets/case-when-1.png)
 
@@ -404,7 +406,7 @@ Annahmen:
 - 50 Reisen wurden für eine Dauer von 9 Tagen gebucht
 - 44 Reisen wurden für eine Dauer von 10 Tagen gebucht
 - 38 Ausflüge wurden für eine Dauer von 11 Tagen gebucht
-- 31 Reisen wurden für eine Dauer von 12 Tagen gebucht
+- 31 Ausflüge wurden für eine Dauer von 12 Tagen gebucht
 
 Ihr gewünschter Bericht sollte wie folgt aussehen:
 
@@ -435,7 +437,7 @@ Ihr gewünschter Bericht sollte wie folgt aussehen:
 
 ### Abgeleitetes Feld {#casewhen-uc3-derivedfield}
 
-Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen Folgendes [!UICONTROL WENN] Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte [!UICONTROL Reisedauer] -Feldwerte in drei Werte: `short trip`, `medium  trip`und `long trip`.
+Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen Folgendes [!UICONTROL WENN] Regel im Regel-Builder. Diese Regel wendet eine Logik an, um die alte [!UICONTROL Reisedauer] -Feldwerte in drei Werte: `short trip`, `medium  trip`, und `long trip`.
 
 ![Screenshot des Falls, wenn Regel 3](assets/case-when-3.png)
 
@@ -460,7 +462,7 @@ Sie definieren eine `Trip Duration (bucketed)` abgeleitetes Feld. Sie erstellen 
 
 ## Weitere Informationen
 
-Customer Journey Analytics verwendet eine verschachtelte Behälterstruktur, die nach dem Modell von Adobe Experience Platform modelliert ist [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen. Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf.
+Customer Journey Analytics verwendet eine verschachtelte Containerstruktur, die nach dem Modell von Adobe Experience Platform modelliert wurde [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de) (Experience-Datenmodell). Siehe [Container](../create-dataview.md#containers) und [Filter-Container](../../components/filters/filters-overview.md#filter-containers) für weitere Hintergrundinformationen. Dieses Containermodell, auch wenn es von Natur aus flexibel ist, stellt bei der Verwendung des Regel-Builders einige Einschränkungen auf.
 
 Customer Journey Analytics verwendet das folgende standardmäßige Containermodell:
 
@@ -474,7 +476,7 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *Auswählen* un
 |:---:|----|
 | **<span style='color: red'>A</span>** | Werte *select* innerhalb desselben [!UICONTROL Wenn], [!UICONTROL Else If] struct (using [!UICONTROL und] oder [!UICONTROL Oder]) in einer Regel muss aus demselben Container stammen und kann von jedem Typ sein (Zeichenfolge) ![Zeichenfolge](assets/Smock_ABC_18_N.svg), numerisch ![Numerisch](assets/Smock_123_18_N.svg)usw.). <br/>![Screenshot der Abhängigkeit A](assets/dependency-a.png) |
 | **<span style='color: red'>B</span>** | Alle Werte, die Sie *set* in einer Regel muss aus demselben Container stammen und denselben Typ oder einen abgeleiteten Wert desselben Typs aufweisen. <br/> ![Screenshot der Abhängigkeit B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Die Werte, die Sie *select* quer [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe *not* müssen aus demselben Container stammen und tun *not* müssen vom gleichen Typ sein. <br/> ![Screenshot der Abhängigkeit C](assets/dependency-c.png) |
+| **<span style='color: blue'>C</span>** | Die Werte, die Sie *select* Überall [!UICONTROL Wenn], [!UICONTROL Else If] -Konstrukte in der Regelaufgabe *not* müssen aus demselben Container stammen und tun *not* müssen vom gleichen Typ sein. <br/> ![Screenshot der Abhängigkeit C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -491,7 +493,7 @@ Sucht alle Werte in einem ausgewählten Feld und ersetzt diese Werte durch einen
 
 ## Spezifikationen {#findreplace-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Alle suchen], [!UICONTROL und ersetzen Sie alle durch]:<ul><li>Zeichenfolge</li></ul></li></ul></ul> | <p>Zeichenfolgen</p><ul><li>[!UICONTROL Alle suchen], [!UICONTROL und ersetzen Sie alle durch]</li></ul> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
@@ -532,7 +534,7 @@ Sie haben einige falsch formatierte Werte für Ihren externen Marketingkanalberi
 
 ### Abgeleitetes Feld {#findreplace-uc-derivedfield}
 
-Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN UND ERSETZEN] -Funktion zum Definieren einer Regel zum Suchen und Ersetzen aller Vorkommen von `email%20marketing` mit `email marketing`.
+Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL Suchen und Ersetzen] -Funktion zum Definieren einer Regel zum Suchen und Ersetzen aller Vorkommen von `email%20marketing` mit `email marketing`.
 
 ![Screenshot der Regel &quot;Suchen und Ersetzen&quot;](assets/find-and-replace.png)
 
@@ -562,7 +564,7 @@ Definiert einen Satz von Lookup-Werten, die in einem neuen abgeleiteten Feld dur
 
 ## Spezifikationen {#lookup-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Einschränkungen | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld für die Anwendung von Lookup]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
@@ -681,7 +683,7 @@ Führt Werte aus zwei verschiedenen Feldern zu einem neuen abgeleiteten Feld zus
 
 ## Spezifikation {#merge-fields-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
@@ -747,7 +749,7 @@ Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neu
 
 ## Spezifikation {#regex-replace-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Ausgabeformat]:<ul><li>Zeichenfolge</li></ul></ul><ul><li>Von Schreibweise abhängig</li><ul><li>Boolesch</li></ul></li></ul></li> | <p>Nicht angegeben</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
@@ -844,7 +846,7 @@ Teilt einen Wert aus einem Feld in ein neues abgeleitetes Feld.
 
 ## Spezifikation {#split-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li><li>Numerisch</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></ul><ul><li>[!UICONTROL Methode]:</li><ul><li>Von links</li><li>Von rechts</li><li>In Array konvertieren</li></ul></li><li>Für Trennzeichen:<ul><li>Zeichenfolge</li></ul><li>Für Index:<ul><li>Numerisch</li></ul></li> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
@@ -892,7 +894,7 @@ Sie erfassen Sprach-App-Antworten in einer durch Trennzeichen getrennten Liste i
 
 | Antworten | Ereignisse |
 |---|--:|
-| es war großartig, vollendete Vernunft, wird anderen empfohlen | 1 |
+| es war großartig, vollendete Sinn, wird anderen empfohlen | 1 |
 | Es war toll, etwas verwirrend, wird anderen empfehlen | 1 |
 | Es war nicht groß, sehr verwirrend, wird nicht empfohlen, andere | 1 |
 
@@ -937,7 +939,7 @@ Analysiert verschiedene Teile einer URL, einschließlich Protokoll-, Host-, Pfad
 
 ## Spezifikationen {#urlparse-io}
 
-| Eingabedatentyp | Eingabe | Eingeschlossene Operatoren | Limit | Ausgabe |
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
 |---|---|---|---|---|
 | <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul><li>[!UICONTROL Option]:<ul><li>[!UICONTROL Protokoll abrufen]</li><li>[!UICONTROL Host abrufen]</li><li>[!UICONTROL  Pfad abrufen]</li><li>[!UICONTROL Wert der Abfragezeichenfolge abrufen]<ul><li>[!UICONTROL Abfrageparameter]:<ul><li>Zeichenfolge</li></ul></li></ul></li><li>[!UICONTROL Hash-Wert abrufen]</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
@@ -979,7 +981,7 @@ Sie definieren eine  `Referring Domain` abgeleitetes Feld. Sie verwenden die [!U
 
 ## Anwendungsfall 2 {#urlparse-uc2}
 
-Sie möchten den Wert der `cid` -Parameter einer Abfragezeichenfolge in einer [!DNL Page URL] als Teil der Ausgabe eines abgeleiteten Trackingcode-Berichts.
+Sie möchten den Wert der Variablen `cid` -Parameter einer Abfragezeichenfolge in einer [!DNL Page URL] als Teil der Ausgabe eines abgeleiteten Trackingcode-Berichts.
 
 ### Daten vor {#urlparse-uc2-databefore}
 
@@ -1019,7 +1021,7 @@ Die folgenden Einschränkungen gelten für die Funktion für abgeleitete Felder 
 
 ## Weitere Informationen
 
-- [So nutzen Sie Ihre Daten optimal: Ein Framework für die Verwendung abgeleiteter Felder in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+- [Optimale Nutzung Ihrer Daten: Ein Framework für die Verwendung abgeleiteter Felder im Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
 - [Abgeleitete Felder Anwendungsfälle für Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
 

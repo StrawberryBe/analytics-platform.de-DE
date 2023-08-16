@@ -5,9 +5,8 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 hide: true
 hidefromtoc: true
-badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 5%
@@ -18,17 +17,19 @@ ht-degree: 5%
 
 {{release-limited-testing}}
 
-Die [!DNL Customer Journey Analytics SQL Connector] ermöglicht SQL-Zugriff auf [Datenansichten](./data-views.md) die Sie in Customer Journey Analytics definiert haben. Ihre Dateningenieure und Analytiker sind möglicherweise besser mit Power BI, Tableau oder anderen Business Intelligence- und Visualisierungs-Tools (auch BI-Tools genannt) vertraut. Sie können jetzt Berichte und Dashboards basierend auf denselben Datenansichten erstellen, die Customer Journey Analytics bei der Erstellung ihrer Analysis Workspace-Projekte verwenden.
+{{select-package}}
 
-Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) ist die SQL-Schnittstelle zu Daten, die im Data Lake der Experience Platform verfügbar sind. Mit dem [!DNL Customer Journey Analytics SQL Connector] aktiviert ist, wird die Funktionalität von [!DNL Query Service] wird erweitert, um Ihre Customer Journey Analytics-Datenansichten als Tabellen oder Ansichten in einer [!DNL Query Service] Sitzung. Daher nutzen Business-Intelligence-Tools [!DNL Query Service] da ihre PostgresSQL-Schnittstelle nahtlos von dieser erweiterten Funktion profitiert.
+Die [!DNL Customer Journey Analytics SQL Connector] ermöglicht SQL-Zugriff auf [Datenansichten](./data-views.md) die Sie in Customer Journey Analytics definiert haben. Ihre Dateningenieure und Analytiker sind möglicherweise besser mit Power BI, Tableau oder anderen Business Intelligence- und Visualisierungs-Tools (auch BI-Tools genannt) vertraut. Sie können jetzt Berichte und Dashboards basierend auf denselben Datenansichten erstellen, die Customer Journey Analytics-Benutzer beim Erstellen ihrer Analysis Workspace-Projekte verwenden.
+
+Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de) ist die SQL-Schnittstelle zu Daten, die im Data Lake von Experience Platform verfügbar sind. Mit dem [!DNL Customer Journey Analytics SQL Connector] aktiviert ist, wird die Funktionalität von [!DNL Query Service] wird erweitert, um Ihre Customer Journey Analytics-Datenansichten als Tabellen oder Ansichten in einer [!DNL Query Service] Sitzung. Daher nutzen Business-Intelligence-Tools [!DNL Query Service] da ihre PostgresSQL-Schnittstelle nahtlos von dieser erweiterten Funktion profitiert.
 
 Die wichtigsten Vorteile sind:
 
-- Es ist nicht erforderlich, eine äquivalente Darstellung der Customer Journey Analytics-Datenansichten im BI-Tool selbst zu erstellen. <br/>Siehe [Datenansicht](data-views.md) für weitere Informationen zur Funktionalität von Datenansichten, um zu verstehen, was neu erstellt werden muss.<br/>
+- Es ist nicht erforderlich, eine äquivalente Darstellung von Customer Journey Analytics-Datenansichten im BI-Tool selbst zu erstellen. <br/>Siehe [Datenansicht](data-views.md) für weitere Informationen zur Funktionalität von Datenansichten, um zu verstehen, was neu erstellt werden muss.<br/>
 
 - Größere Konsistenz bei der Berichterstellung und Analyse zwischen BI-Tools und Customer Journey Analytics.
 
-- Kombinieren Sie Customer Journey Analytics-Daten mit anderen Datenquellen, die bereits in BI-Tools verfügbar sind.
+- Kombinieren von Customer Journey Analytics-Daten mit anderen Datenquellen, die bereits in BI-Tools verfügbar sind.
 
 ## Voraussetzungen 
 
@@ -40,11 +41,11 @@ Um diese Funktion verwenden zu können, müssen Sie
 Benutzer müssen Zugriff auf:
    - Experience Platform Query Service,
    - Customer Journey Analytics Workspace-Projekte und
-   - Customer Journey Analytics-Datenansichten, die sie verwenden möchten.
+   - Customer Journey Analytics Datenansichten, die sie verwenden möchten.
 
 - Verwenden Sie das Ablaufdatum für nicht ablaufende Anmeldeinformationen, um BI-Tools mit dem Customer Journey Analytics SQL Connector zu verbinden. Thr [Handbuch zu Anmeldeinformationen](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) enthält weitere Informationen zum Festlegen ablaufender oder nicht ablaufender Anmeldeinformationen.
 
-Siehe [Zugriffssteuerung](../admin/cja-access-control.md) im Bereich Administration des Customer Journey Analytics.
+Siehe [Zugriffssteuerung](../admin/cja-access-control.md) im Bereich Customer Journey Analytics-Administration .
 
 
 ## Nutzung
@@ -80,7 +81,7 @@ In der Experience Platform-Benutzeroberfläche:
 
 2. Öffnen Sie Ihre PostgresSQL-CLI.
 
-3. Um sich anzumelden und mit der Ausführung Ihrer Abfragen zu beginnen, fügen Sie die Verbindungszeichenfolge in die PostgresSQL-CLI ein.
+3. Um sich anzumelden und Ihre Abfragen auszuführen, fügen Sie die Verbindungszeichenfolge in die PostgresSQL-CLI ein.
 
 +++
 
@@ -99,15 +100,15 @@ Derzeit wird der Customer Journey Analytics SQL Connector nur für Power BI und 
 
    2. Auswählen **[!UICONTROL ** Anmeldeinformationen **]** aus der oberen Leiste.
 
-   3. Verwendung ![Kopieren](assets/Smock_Copy_18_N.svg) zum Kopieren der einzelnen Parameter der Postgres-Anmeldedaten ([!UICONTROL Host], [!UICONTROL Port], [!UICONTROL Datenbank], [!UICONTROL Benutzername], und andere), wenn dies im Power BI erforderlich ist.
+   3. Verwenden Sie ![ Kopie ](assets/Smock_Copy_18_N.svg) , um jeden der Postgres Berechtigungsparameter ( [!UICONTROL  Host ] , [!UICONTROL  Anschluss ] , [!UICONTROL  Datenbankanlagen ] , [!UICONTROL  Benutzername ] und andere) zu ändern, wenn dies in Power BI erforderlich ist.
 
-2. Im Power BI:
+2. In Power BI:
 
-   1. Wählen Sie im Hauptfenster die Option **[!UICONTROL ** Daten abrufen **]** aus der oberen Symbolleiste.
+   1. Wählen Sie **[!UICONTROL ** im Hauptfenster Daten **]** aus der oberen Symbolleiste aus.
 
-   2. Auswählen **[!UICONTROL ** Mehr ...**]** in der linken Leiste.
+   2. Wählen Sie **[!UICONTROL ** im linken Leiste mehr **]** ... aus.
 
-   3. Im **Daten abrufen** Bildschirm, suchen Sie nach `PostgresSQL` und wählen Sie die **[!UICONTROL ** PostgresSQL-Datenbank **]** aus der Liste.
+   3. Im **Daten abrufen** Bildschirm, nach `PostgresSQL` und wählen Sie die **[!UICONTROL ** PostgresSQL-Datenbank **]** aus der Liste.
 
    4. Im **[!UICONTROL ** PostgressSQL-Datenbank **]** dialog:
 
@@ -119,10 +120,10 @@ Derzeit wird der Customer Journey Analytics SQL Connector nur für Power BI und 
 
       3. Wenn Sie dazu aufgefordert werden **[!UICONTROL ** Data Connectivity **]** mode, select **[!UICONTROL ** DirectQuery **]** , um sicherzustellen, dass die Datenstrukturen ordnungsgemäß reduziert werden.
 
-      4. Sie werden aufgefordert, **[!UICONTROL ** Benutzername **]** und **[!UICONTROL ** Passwort **]**. Äquivalente Parameter aus Experience Platform-Abfragen verwenden [!UICONTROL Anmeldeinformationen].
+      4. Sie werden aufgefordert, **[!UICONTROL ** Benutzername **]** und **[!UICONTROL ** Passwort **]**. Entsprechende Parameter aus Experience Platform-Abfragen verwenden [!UICONTROL Anmeldeinformationen].
 
 
-   5. Nach erfolgreicher Anmeldung werden die Customer Journey Analytics-Datenansichtstabellen in der Power BI-Variablen **[!UICONTROL ** Navigator **]**. Datenansichtstabellen werden anhand von `dv_` in ihren Namen.
+   5. Nach erfolgreicher Anmeldung werden die Customer Journey Analytics-Datenansichtstabellen im Power BI **[!UICONTROL ** Navigator **]**. Datenansichtstabellen werden anhand von `dv_` in ihren Namen.
 
 
    6. Wählen Sie die zu verwendenden Datenansichtstabellen aus und wählen Sie **[!UICONTROL ** Laden **]**.
@@ -163,15 +164,15 @@ Derzeit wird der Customer Journey Analytics SQL Connector nur für Power BI und 
 
       5. Einfügen **[!UICONTROL ** Benutzername **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in **[!UICONTROL ** Benutzername **]** Textfeld.
 
-      6. Einfügen **[!UICONTROL ** Passwort **]** Parameter aus Experience Platform-Abfragen [!UICONTROL Anmeldeinformationen] in **[!UICONTROL ** Passwort **]** Textfeld.
+      6. Einfügen **[!UICONTROL ** Passwort **]** Parameter aus Experience Platform Abfrage [!UICONTROL  Anmeldedaten ] in **[!UICONTROL ** Passwort **]** Textfeld.
 
-      7. Auswählen **[!UICONTROL ** Anmelden **]**.
+      7. Wählen Sie **[!UICONTROL ** &quot;Anmelden **]** &quot;.
 
-   4. Customer Journey Analytics-Datenansichten werden als Tabellen in der **[!UICONTROL ** Verzeichnis **]** Liste. Datenansichtstabellen erhalten das Präfix `dv_`.
+   4. Customer Journey Analytics Datenanliegen werden in den **[!UICONTROL ** Tabelle **]** Liste als tabellenweisen angezeigt. Daten Ansicht-tablagen sind mit `dv_` vorfixiert.
 
-   5. Ziehen Sie die Tabellen, die Sie verwenden möchten, auf die Arbeitsfläche.
+   5. Ziehen Sie die Benutzer, die Sie auf der Arbeitsfläche verwenden möchten.
 
-   Sie können jetzt mit den Daten aus den Datenansichtstabellen arbeiten, um Ihre Berichte und Visualisierungen zu erstellen.
+   Sie können nun mit Daten aus den Ansicht für die Build Ihre Berichte und Visualisierungen arbeiten.
 
    Siehe [Verbinden von Tableau mit Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) für weitere Informationen.
 
@@ -187,9 +188,9 @@ Wenn Sie die Datenansichts-IDs als Tabellennamen verwenden möchten, können Sie
 
 ### Data Governance
 
-Die Data Governance-bezogenen Einstellungen in Customer Journey Analytics werden von Adobe Experience Platform übernommen. Die Integration zwischen Customer Journey Analytics und Adobe Experience Platform Data Governance ermöglicht die Kennzeichnung sensibler Customer Journey Analytics-Daten und die Durchsetzung von Datenschutzrichtlinien.
+Die Data Governance-bezogenen Einstellungen in Customer Journey Analytics werden von Adobe Experience Platform übernommen. Die Integration von Customer Journey Analytics und Adobe Experience Platform Data Governance ermöglicht die Kennzeichnung sensibler Customer Journey Analytics-Daten und die Durchsetzung von Datenschutzrichtlinien.
 
-Datenschutzbezeichnungen und Richtlinien, die für von Experience Platform genutzte Datensätze erstellt wurden, können im Workflow für Customer Journey Analytics-Datenansichten angezeigt werden. Daher zeigen mit dem Customer Journey Analytics SQL Connector abgefragte Daten geeignete Warnungen oder Fehler, wenn sie nicht den definierten Datenschutzbezeichnungen und Richtlinien entsprechen.
+Datenschutzbezeichnungen und Richtlinien, die für von Experience Platform verwendete Datensätze erstellt wurden, können im Workflow Customer Journey Analytics-Datenansichten angezeigt werden. Daher zeigen mit dem Customer Journey Analytics SQL Connector abgefragte Daten geeignete Warnungen oder Fehler, wenn sie nicht den definierten Datenschutzbezeichnungen und Richtlinien entsprechen.
 
 ### Datenansichten auflisten
 
@@ -229,14 +230,14 @@ Beispiele für SQL, die Sie verwenden können, finden Sie in der folgenden Tabel
 
 | Muster | Beispiel |
 |---|---|
-| Schemaerkennung | <pre>SELECT * FROM dv1 WHERE 1=0</pre> |
-| Rangansicht/Aufschlüsselung | <pre>SELECT dim1, SUM(metric1) AS m1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE NACH DIME1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>VON dv1<br/>WO \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39; UND<br/>  filterId = &#39;12345&#39;<br/>GRUPPE NACH DIME1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>VON dv1<br/>WO \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39; UND<br/>  AND (dim2 = &#39;A&#39; ODER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;)<br/>GRUPPE NACH DIME1</pre> |
-| HAVING-Klausel | <pre>SELECT dim1, SUM(metric1) AS m1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE NACH DIME1<br/>HAVING m1 > 100</pre> |
+| Schemaerkennung | <pre>Wählen Sie * aus DV1, wobei 1 = 0</pre> |
+| Rang/Aufschlüsselung | <pre>Wählen Sie dim1, Summe (Metric1) als M1 <br/> aus DV1 <br/> , wobei \ &#39; Zeitstempel \ &#39; zwischen &#39; 2022-01-01 &#39; und &#39; 2022-01-02 &#39;-Gruppe <br/> nach dim1</pre><pre>Wählen Sie dim1, Summe (Metric1) als M1 <br/> aus DV1 <br/> , wobei \ &#39; Zeitstempel \ &#39; zwischen &#39; 2022-01-01 &#39; und &#39; 2022-01-02 &#39; und <br/>  FilterID = &#39; 12345 &#39; <br/> -Gruppe nach dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>VON dv1<br/>WO \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39; UND<br/>  AND (dim2 = &#39;A&#39; ODER dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;)<br/>GRUPPE NACH DIME1</pre> |
+| HAVING-Klausel | <pre>SELECT dim1, SUM(metric1) AS m1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE NACH DIME1<br/>MIT m1 > 100</pre> |
 | Unterschiedlich, oben <br/>Dimensionswerte | <pre>WÄHLEN SIE &quot;dim1 DISTINCT&quot;VON &quot;dv1&quot;</pre><pre>SELECT dim1 AS dv1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE NACH DIME1</pre><pre>SELECT dim1 AS dv1<br/>VON dv1<br/>WOBEI \`timestamp\` >= &#39;2022-01-01&#39; UND \`timestamp\` &lt; &#39;2022-01-02&#39;<br/>GRUPPE NACH DIME1<br/>ORDER BY SUM(metric1)<br/>LIMIT 15</pre> |
 | Metriksummen | <pre>SUM(metric1) AS m1 AUSWÄHLEN<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;</pre> |
-| Mehrdimensionale Dimension<br/>Aufschlüsselungen<br/>und oberste Unterscheidungen | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE NACH 1, 2<br/>BESTELLUNG DURCH 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>VON dv1</pre> |
+| Mehrfachdimension<br/>Aufschlüsselungen<br/>und oberste Unterscheidungen | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE NACH 1, 2<br/>BESTELLUNG DURCH 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>VON dv1</pre> |
 | Unterauswahl:<br/>Zusätzliches Ergebnis<br/>Filter | <pre>SELECT dim1, m1<br/>VON (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  VON dv1<br/>  WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;</br>  GRUPPE NACH DIME1<br/>)<br/>WOBEI DIm1 in (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Unterauswahl:<br/>Verbinden mit<br/>Datensatz nicht in<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>VON (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  VON dv1<br/>  WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>  GRUPPE NACH DIME1<br/>)<br/>LINKE JOIN-Suche b ON a.dim1 = b.key</pre> |
+| Unterauswahl:<br/>Verbinden mit<br/>Datensatz nicht in<br/>Customer Journey Analytics | <pre>SELECT b.key, a.dim1, a.m1<br/>VON (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  VON dv1<br/>  WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>  GRUPPE NACH DIME1<br/>) a<br/>LINKE JOIN-Suche b ON a.dim1 = b.key</pre> |
 | Unterauswahl:<br/>Abfrage über<br/>data-views | <pre>SELECT key, SUM(m1) AS total<br/>VON (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  VON dv1<br/>  WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>  GRUPPE NACH DIME1<br/><br/>  UNION<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  VON dv2<br/>  WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>  GRUPPE NACH DIME2<br/>GRUPPE nach Schlüssel<br/>BESTELLUNG NACH GESAMT</pre> |
 | Unterauswahl: <br/>Ebenenquelle, <br/>Filtern, <br/>und Aggregation | Ebenen mit Unterselekten:<br><pre>SELECT rows.dim1, SUM(rows.m1) AS total<br/>VON (<br/>  SELECT \_.dim1,\_.m1<br/>  VON (<br/>    SELECT \* FROM dv1<br/>    WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>  ) \_<br/>  WOBEI \_.dim1 in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) Zeilen<br/>GRUPPE NACH 1<br/>BESTELLUNG NACH GESAMT</pre><br/>Ebenen, die CTE MIT verwenden:<br/><pre>MIT DEN Zeilen ALS (<br/>  MIT \_ AS (<br/>    SELECT * FROM data_ares<br/>    WO \`timestamp\` ZWISCHEN &#39;2021-01-01&#39; UND &#39;2021-02-01&#39; IST<br/>  )<br/>  SELECT _.item, _.unit FROM _<br/>  WOBEI _.item NICHT NULL IST<br/>)<br/>SELECT rows.item, SUM(rows.unit) AS-Einheiten<br/>AUS DEN Zeilen WHERE rows.item in (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
 | Wählt aus, wo die<br/>Metriken kommen voran<br/> oder mit<br/>die Dimensionen | <pre>SUM(metric1) AS m1, dim1<br/>VON dv1<br/>WOBEI \`timestamp\` ZWISCHEN &#39;2022-01-01&#39; UND &#39;2022-01-02&#39;<br/>GRUPPE NACH 2</pre> |
@@ -247,15 +248,15 @@ Beispiele für SQL, die Sie verwenden können, finden Sie in der folgenden Tabel
 
 ### Dimensionen
 
-Sie können eine der Dimensionen auswählen, die standardmäßig verfügbar oder in der Datenansicht definiert sind. Sie wählen eine Dimension anhand ihrer Kennung aus.
+Sie können eine der Dimensionen auswählen, die standardmäßig verfügbar oder in der Datenansicht definiert sind. Sie wählen eine Dimension nach ihrer ID aus.
 
 ### Metriken
 
-Folgende Metriken stehen zur Auswahl:
+Die zur Auswahl verfügbaren Metriken sind:
 
-- einer der standardmäßig verfügbaren Metriken,
+- Alle Metriken, die standardmäßig verfügbar sind,
 
-- in der Datenansicht definiert wurde,
+- Definiert in den Daten Ansicht,
 
 - berechnete Metriken, die mit der Datenansicht kompatibel sind, auf die der Benutzer Zugriff hat.
 
@@ -263,7 +264,7 @@ Sie wählen eine Metrik anhand ihrer Kennung aus, die in eine `SUM(metric)` -Aus
 
 Sie können:
 
-- `SELECT COUNT(*)` oder `COUNT(1)` , um die Metrik &quot;Vorkommen&quot;abzurufen.
+- `SELECT COUNT(*)` oder `COUNT(1)` , um die Metrik Vorkommen zu erhalten.
 
 - `SELECT COUNT(DISTINCT dimension)` oder `SELECT APPROX_COUNT_DISTINCT(dimension)` , um die ungefähren eindeutigen Werte einer Dimension zu zählen. Siehe Details unter [Zählung von Unterschieden](#counting-distincts).
 
@@ -271,11 +272,11 @@ Sie können:
 
 #### Zählung von Unterschieden
 
-Aufgrund der zugrunde liegenden Funktionsweise von Customer Journey Analytics können Sie als einzige Dimension eine exakte eindeutige Anzahl erhalten, indem Sie die `adobe_personid` Dimension. Die folgenden SQL-Anweisungen `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` gibt den Wert der Standard-Personenmetrik zurück, die der Anzahl unterschiedlicher Personen entspricht. Bei anderen Dimensionen wird eine ungefähre eindeutige Anzahl zurückgegeben.
+Aufgrund der zugrunde liegenden Funktionsweise von Customer Journey Analytics können Sie als einzige Dimension genau bestimmen, für welche die `adobe_personid` Dimension. Die folgenden SQL-Anweisungen `SELECT COUNT(DISTINCT adobe_personid)` oder `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` gibt den Wert der Standard-Personenmetrik zurück, die der Anzahl unterschiedlicher Personen entspricht. Bei anderen Dimensionen wird eine ungefähre eindeutige Anzahl zurückgegeben.
 
 #### Bedingte Metriken
 
-Sie können eine `IF` oder `CASE` -Klausel `SUM` oder `COUNT` Funktionen zum Hinzufügen zusätzlicher Filter, die für eine ausgewählte Metrik spezifisch sind. Das Hinzufügen dieser Klauseln ähnelt dem Anwenden eines Filters auf eine Metrikspalte in einer Workspace-Berichtstabelle.
+Sie können eine `IF` oder `CASE` in der `SUM` oder `COUNT` Funktionen zum Hinzufügen zusätzlicher Filter, die für eine ausgewählte Metrik spezifisch sind. Das Hinzufügen dieser Klauseln ähnelt dem Anwenden eines Filters auf eine Metrikspalte in einer Workspace-Berichtstabelle.
 
 Beispiele:
 
@@ -296,12 +297,12 @@ Sie können in Ihren `SELECT` anstatt die Mathematik in einer berechneten Metrik
 | `+`, `-`, `*`, `/`, und `%` | Addieren, subtrahieren, multiplizieren, dividieren und modularen/Rest |
 | `-X` oder `+X` | Ändern des Zeichens oder einer Metrik, bei der X der Metrikausdruck ist |
 | `PI()` | Kennzahl |
-| `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP`, `LN`, `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES`, `RADIANS`, `SIN`, `COS`, `TAN`, `ACOS`, `ASIN`, `ATAN`, `COSH`, `SINH`und `TANH` | Unäre mathematische Funktionen |
-| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Binärmathematik-Funktionen |
+| `POSITIVE``ACOS` `LOG1P` `SQRT` `LOG10` `LN` `EXP` `CBRT` `DEGREES` `COS` `SIN` `TAN` `RADIANS` `ASIN` `CEILING` `SINH` `ABS` `COSH` `FLOOR` `ATAN` `CEIL` , `NEGATIVE` ,,,,,,,,,,,,,`TANH` | Unargiere mathematischen Funktionen |
+| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Binär mathematischen Funktionen |
 
 {style="table-layout:auto"}
 
-### Sonderspalten
+### Spezielle Spalten
 
 **Zeitstempel**
 
@@ -340,7 +341,7 @@ Die Verarbeitung erfolgt durch Parsen der ersten Ebene von `AND`s im `WHERE` -Kl
 
 ### BESTELLUNG NACH
 
-Standardmäßig sortiert die Abfrage die Ergebnisse nach der ersten ausgewählten Metrik in absteigender Reihenfolge. Sie können die standardmäßige Sortierreihenfolge überschreiben, indem Sie `ORDER BY ... ASC` oder `ORDER BY ... DESC`. Wenn Sie `ORDER BY`angegeben `ORDER BY` für die erste ausgewählte Metrik.
+Standardmäßig sortiert die Abfrage die Ergebnisse nach der ersten ausgewählten Metrik in absteigender Reihenfolge. Sie können die standardmäßige Sortierreihenfolge überschreiben, indem Sie `ORDER BY ... ASC` oder `ORDER BY ... DESC`. Wenn Sie `ORDER BY`angegeben werden, müssen Sie `ORDER BY` für die erste ausgewählte Metrik.
 
 Sie können die Reihenfolge auch ändern, indem Sie `-` (Minus) vor der Metrik. Beide Anweisungen führen zur selben Reihenfolge:
 
@@ -356,7 +357,7 @@ ORDER BY -metric1 DESC
 
 | Funktion | Beispiel | Details |
 |---|---|---|
-| [CAST(column AS type)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` oder <br/> `` `timestamp`::string `` | Die Typumwandlung wird derzeit nicht unterstützt, es wird jedoch kein Fehler ausgegeben. Die `CAST` -Funktion ignoriert wird. |
+| [Besetzung (Spalte als Typ)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` oder <br/> `` `timestamp`::string `` | Der Typ &quot;Gießguss&quot; wird zurzeit nicht unterstützt, aber es wird kein Fehler ausgelöst. Die `CAST` Funktion wird ignoriert. |
 | [TIMESTAMP(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Analysieren einer Zeitzeichenfolge als Zeitstempel zur Verwendung in einer `WHERE` -Klausel. |
 | [TO_TIMESTAMP(timeString, formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Analysieren einer Zeitzeichenfolge als Zeitstempel zur Verwendung in einer `WHERE` -Klausel, die optional ein Format für diese Zeitzeichenfolge bereitstellt. |
 | [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Analysieren einer Datums-Zeichenfolge als Zeitstempel zur Verwendung in einer `WHERE` -Klausel. |
@@ -391,6 +392,6 @@ Diese Funktionen können für Dimensionen im `SELECT`, `WHERE` -Klausel oder in 
 | [MINUTE(Datum oder Datum/Uhrzeit)](https://spark.apache.org/docs/latest/api/sql/index.html#minute) | ``SELECT MINUTE(`timestamp`)`` | Generieren Sie eine dynamische Dimensionsidentität für das übergebene Feld. |
 | [EXTRAKT(TEIL VON Datum oder Datum/Uhrzeit)](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Generieren Sie eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts für einige Teile dieser Funktion, da Sie die Nummer und nicht den Anzeigenamen benötigen.<br/>Folgende Komponenten werden unterstützt:<br>- Suchbegriffe: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Zeichenfolgen:  `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&quot;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`oder `'MINUTE'`. |
 | [DATE_PART(Teil, Datum oder Datum/Uhrzeit)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Generieren Sie eine dynamische Dimensionsidentität für das übergebene Feld. Verwenden Sie die Element-ID anstelle des Werts für einige Teile dieser Funktion, da Sie die Nummer und nicht den Anzeigenamen benötigen.<br/>Unterstützte String-Teile sind: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&quot;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`oder `'MINUTE'`. |
-| [DATE_TRUNC(Granularität, Datum oder Datum/Uhrzeit)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generieren Sie eine dynamische Dimensionsidentität für das übergebene Feld.<br/>Unterstützte Zeichenfolgengranularitäten sind: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&quot;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`oder `'MINUTE'`. |
+| [DATE_TRUNC(Granularität, Datum oder Datum/Uhrzeit)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Generieren Sie eine dynamische Dimensionsidentität für das übergebene Feld.<br/>Folgende Granularitäten werden unterstützt: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&quot;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`oder `'MINUTE'`. |
 
 {style="table-layout:auto"}
