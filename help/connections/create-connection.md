@@ -4,9 +4,9 @@ description: Beschreibt, wie eine Verbindung zu einem Platform-Datensatz in Cust
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2630'
 ht-degree: 100%
 
 ---
@@ -23,9 +23,9 @@ Beim Workflow für die Erstellung und Bearbeitung von Verbindungen können alle 
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
->[!IMPORTANT]
->
->Sie müssen über das **Select**-Paket verfügen, um einer Verbindung eine unbegrenzte Anzahl von Datensätzen hinzuzufügen. Das **Foundation**-Paket ist auf einen Datensatz beschränkt. Wenden Sie sich an Ihr Admin-Team, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
+## Voraussetzungen 
+
+Sie müssen über das **Select**-Paket verfügen, um einer Verbindung eine unbegrenzte Anzahl von Datensätzen hinzuzufügen. Das **Foundation**-Paket ist auf einen Datensatz beschränkt. Wenden Sie sich an Ihr Admin-Team, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie besitzen.
 
 ## Erstellen und Konfigurieren der Verbindung {#create-connection}
 
