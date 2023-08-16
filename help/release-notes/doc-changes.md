@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
+source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Weiterentwicklung von Adobe Analytics | Der Abschnitt *(Neu-)Konfigurieren von Marketing-Kanälen* wurde mit einem Verweis auf die Vorlage „Abgeleitete Felder – Funktion von Marketing-Kanälen“ aktualisiert. [Weitere Informationen](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Schnellstartanleitungen zur Datenaufnahme für Mobile Apps und andere Plattformen | Es wurden zusätzliche Schnellstartanleitungen zur Datenaufnahme hinzugefügt, in denen erläutert wird, wie Daten von Mobile Apps oder anderen Plattformen (z. B. Desktop-Anwendungen, Spiele auf Konsolen, Anwendungen auf Set-Top-Boxen und IoT-Geräte) in Customer Journey Analytics aufgenommen und verwendet werden. [Weitere Informationen](../data-ingestion/data-ingestion.md) |
 | **Juli 2023** | |
-| Kontextbezogene Sitzungen | Es wurde ein Thema für diese Datenansichtseinstellung hinzugefügt. [Weitere Informationen](/help/data-views/context-aware-sessions.md) |
+| Sitzungseinstellungen | Es wurde ein Thema für diese Datenansichtseinstellung hinzugefügt. [Weitere Informationen](/help/data-views/session-settings.md) |
 | Adobe Product Analytics | Adobe Product Analytics ist eine neue Möglichkeit, in Customer Journey Analytics mit kanalübergreifenden Daten und Erkenntnissen zu interagieren. Diese neuen Funktionen ermöglichen es Produkt-Teams, Daten und Erkenntnisse zu ihrem Produkterlebnis mithilfe [geführter Analyse](/help/guided-analysis/overview.md)-Workflows bereitzustellen. |
 | Abgeleitete Felder | Bei einem [abgeleiteten Feld](/help/data-views/derived-fields/derived-fields.md) können Sie mithilfe eines anpassbaren Regel-Builders spontan (häufig komplexe) Datenbearbeitungen definieren. |
 | Erweiterte Suchunterstützung für Profil- und Suchdaten | Bietet die Möglichkeit, Datensätze als Suchen von Feldern in Profil- oder Lookup-Datensätzen hinzuzufügen. Zuvor wurden nur Ereignisdatensätze unterstützt. [Weitere Informationen](/help/connections/create-connection.md) |

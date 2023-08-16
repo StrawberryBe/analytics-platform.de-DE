@@ -4,10 +4,10 @@ description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht 
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
+source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -136,6 +136,6 @@ Sie können Filter hinzufügen, die für die gesamte Datenansicht gelten. Dieser
 
 ### Sitzungseinstellungen
 
-Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Sitzung abläuft und eine neue gestartet wird. Ein Zeitraum ist erforderlich. Sie können optional auch den Start einer neuen Sitzung erzwingen, wenn ein Ereignis eine bestimmte Metrik enthält. Weitere Informationen unter [Kontextbezogene Sitzungen](context-aware-sessions.md).
+Legen Sie den Zeitraum der Inaktivität zwischen Ereignissen fest, bevor eine Sitzung abläuft und eine neue gestartet wird. Ein Zeitraum ist erforderlich. Sie können optional auch den Start einer neuen Sitzung erzwingen, wenn ein Ereignis eine bestimmte Metrik enthält. Siehe [Sitzungseinstellungen](session-settings.md) für weitere Details.
 
 Nachdem alle gewünschten Einstellungen angegeben wurden, klicken Sie auf **[!UICONTROL Speichern und beenden]**.

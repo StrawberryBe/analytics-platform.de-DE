@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: 555ef833c3137c6e1c441b16781c240e5ef43419
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 86%
@@ -27,7 +27,7 @@ ht-degree: 86%
    + [Versionen 2022](../release-notes/2022.md)
    + [Versionen von 2021](../release-notes/2021.md)
    + [Versionen von 2020](../release-notes/2020.md)
-   + [Customer Journey Analytics-Versionen](../release-notes/releases.md)
+   + [Customer Journey Analytics-Releases](../release-notes/releases.md)
    + [Customer Journey Analytics – Aktualisierungen der Dokumentation](../release-notes/doc-changes.md)
 
 + Erste Schritte {#cja-overview}
@@ -72,7 +72,7 @@ ht-degree: 86%
 + Datenansichten {#cja-dataviews}
    + [Übersicht über die Datenansichten](../data-views/data-views.md)
    + [Erstellen oder Bearbeiten einer Datenansicht](../data-views/create-dataview.md)
-   + [Kontextbezogene Sitzungen](../data-views/context-aware-sessions.md)
+   + [Sitzungseinstellungen](../data-views/session-settings.md)
    + Komponenteneinstellungen {#component-settings}
       + [Übersicht über Komponenteneinstellungen](../data-views/component-settings/overview.md)
       + [Attribution](../data-views/component-settings/attribution.md)
@@ -286,7 +286,7 @@ ht-degree: 86%
    + [Häufig gestellte Fragen zur Cross-Channel-Analyse](../cca/faq.md)
 
 + Adobe-Integrationen {#integrations}
-   + [Integration von Adobe-Lösungen mit Customer Journey Analytics - Überblick](/help/integrations/overview.md)
+   + [Adobe-Lösungen mit Customer Journey Analytics integrieren - Übersicht](/help/integrations/overview.md)
    + [Integrieren von Adobe Analytics mit Customer Journey Analytics](/help/integrations/aa.md)
    + [Integrieren von Journey Optimizer-Daten mit Customer Journey Analytics](/help/integrations/ajo.md)
    + [Integrieren von Entscheidungsverwaltungsdaten mit Customer Journey Analytics](/help/integrations/ajo-od.md)
@@ -305,7 +305,7 @@ ht-degree: 86%
       + [Konfigurieren des Streaming-Vorgangs von Google Analytics-Daten in Platform](../use-cases/ga/streaming.md)
       + [Bericht zu Google Analytics-Daten in Customer Journey Analytics](../use-cases/ga/report.md)
    + Datenaufnahme {#data-ingestion}
-      + [Aufnehmen von Marketo Engage-Daten in Adobe Experience Platform und Berichterstellung in Customer Journey Analytics](../use-cases/data-ingestion/marketo.md)
+      + [Marketo Engage-Daten in Adobe Experience Platform erfassen und in Customer Journey Analytics berichten](../use-cases/data-ingestion/marketo.md)
       + [Adobe Experience Platform-Zielgruppen in Customer Journey Analytics erfassen](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Datenansichten {#data-views}
       + [Anwendungsfälle von Datenansichten](../use-cases/data-views/data-views-usecases.md)
@@ -325,14 +325,14 @@ ht-degree: 86%
    + [Zugriffssteuerung](../admin/cja-access-control.md)
    + [Anzeigen und Verwalten der Nutzung](../admin/estimate-usage.md)
    + [Auswirkungen des Löschens](../admin/cja-deletion.md)
-   + [Optimieren der Leistung von Customer Journey Analytics](../admin/optimizing-performance.md)
+   + [Customer Journey Analytics-Performance optimieren](../admin/optimizing-performance.md)
 
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](../labs/labs.md)
 
 + Fehlerbehebung {#troubleshooting}
    + [Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten](../troubleshooting/compare.md)
-   + [Konsistenz von Metriken und Anzahl der Zielgruppenzugehörigkeiten zwischen Echtzeit-Kundendatenplattform und Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+   + [Konsistenz von Metriken und Zählungen der Zielgruppenzugehörigkeit zwischen Echtzeit-Kundendatenplattform und Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
    + [Fehlende Berechtigungen](../troubleshooting/lack-of-permissions.md)
 
 + [Glossar zu Customer Journey Analytics](../getting-started/cja-glossary.md)
