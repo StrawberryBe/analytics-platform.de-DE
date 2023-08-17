@@ -4,9 +4,9 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4378'
 ht-degree: 15%
 
 ---
@@ -173,84 +173,9 @@ Für jede unterstützte Funktion finden Sie im Folgenden Details zu:
 
 - Einschränkungen (falls zutreffend).
 
-
-<!-- Concatenate -->
-
-### Verketten
-
-Verbindet Feldwerte in einem neuen abgeleiteten Feld mit definierten Trennzeichen.
-
-+++ Details
-
-## Spezifikationen {#concatenate-io}
-
-| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
-|---|---|---|---|---|
-| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Trennzeichen]:<ul><li>Zeichenfolge</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
-
-{style="table-layout:auto"}
-
-
-## Anwendungsfall {#concatenate-uc}
-
-Sie erfassen derzeit die Ursprungs- und Zielflughafencodes als separate Felder. Sie möchten die beiden Felder zu einer durch Bindestriche (-) getrennten Dimension zusammenfassen. So können Sie die Kombination aus Ursprung und Ziel analysieren, um die wichtigsten gebuchten Routen zu identifizieren.
-
-Annahmen:
-
-- Die Ursprungs- und Zielwerte werden in separaten Feldern in derselben Tabelle erfasst.
-- Der Benutzer legt fest, das Trennzeichen &quot;-&quot;zwischen den Werten zu verwenden.
-
-Stellen Sie sich die folgenden Buchungen vor:
-
-- Der Kunde ABC123 bucht einen Flug zwischen Salt Lake City (SLC) und Orlando (MCO)
-- Der Kunde ABC456 bucht einen Flug zwischen Salt Lake City (SLC) und Los Angeles (LAX)
-- Der Kunde ABC789 bucht einen Flug zwischen Salt Lake City (SLC) und Seattle (SEA)
-- Der Kunde ABC987 bucht einen Flug zwischen Salt Lake City (SLC) und San Jose (SJO)
-- Der Kunde ABC654 bucht einen Flug zwischen Salt Lake City (SLC) und Orlando (MCO)
-
-Der gewünschte Bericht sollte wie folgt aussehen:
-
-| Ursprung/Ziel | Buchungen |
-|----|---:|
-| SLC-MCO | 2 |
-| SLC-LAX | 1 |
-| SLC-SEA | 1 |
-| SLC-SJO | 1 |
-
-{style="table-layout:auto"}
-
-
-### Daten vor {#concatenate-uc-databefore}
-
-| Herkunft | Ziel |
-|----|---:|
-| SLC | MCO |
-| SLC | LAX |
-| SLC | SEA |
-| SLC | SJO |
-| SLC | MCO |
-
-{style="table-layout:auto"}
-
-### Abgeleitetes Feld {#concatenate-derivedfield}
-
-Sie definieren eine neue [!UICONTROL Origin - Ziel] abgeleitetes Feld. Sie verwenden die [!UICONTROL CONCATENATE] -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
-
-![Screenshot der Verkettungsregel](assets/concatenate.png)
-
-### Daten nach {#concatenate-dataafter}
-
-| Origin - Ziel<br/>(abgeleitetes Feld) |
-|---|
-| SLC-MCO |
-| SLC-LAX |
-| SLC-SEA |
-| SLC-SJO |
-| SLC-MCO |
-
-{style="table-layout:auto"}
-
-+++
+>[!NOTE]
+>
+>Die Suchfunktion wurde in [Klassifizieren](#classify). Siehe [Klassifizieren](#classify) für weitere Informationen.
 
 <!-- CASE WHEN -->
 
@@ -482,6 +407,209 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *Auswählen* un
 
 +++
 
+<!-- CLASSIFY -->
+
+### Klassifizieren
+
+Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
+
+
+
+
++++ Details
+
+>[!NOTE]
+>
+>Diese Funktion hieß ursprünglich Lookup , wurde aber in Classify umbenannt, um eine kommende Suchfunktion mit unterschiedlichen Funktionen aufzunehmen.
+
+## Spezifikationen {#classify-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+
+## Anwendungsfall 1 {#classify-uc1}
+
+Sie verfügen über eine CSV-Datei, die eine Schlüsselspalte für `hotelID` und eine oder mehrere zusätzliche Spalten, die mit dem `hotelID`: `city`, `rooms`, `hotel name`.
+Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus der `hotelID` in der CSV-Datei.
+
+**Struktur und Inhalt von CSV-Dateien**
+
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
+|---|---|---:|---|
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+**Aktueller Bericht**
+
+| [!DNL Hotel ID] | Produktansichten |
+|---|---:|
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
+
+{style="table-layout:auto"}
+
+
+**Gewünschter Bericht**
+
+| [!DNL Hotel Name] | Produktansichten |
+|----|----:|
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
+
+{style="table-layout:auto"}
+
+### Daten vor {#classify-uc1-databefore}
+
+| [!DNL Hotel ID] |
+|----|
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
+
+{style="table-layout:auto"}
+
+
+### Abgeleitetes Feld {#classify-uc1-derivedfield}
+
+Sie definieren eine `Hotel Name` abgeleitetes Feld. Sie verwenden die [!UICONTROL CLASSIFY] -Funktion, um eine Regel zu definieren, mit der Sie Werte der [!UICONTROL Hotel-ID] und durch neue Werte ersetzen.
+
+![Screenshot der Klassifizierungsregel 1](assets/lookup-1.png)
+
+### Daten nach {#classify-uc1-dataafter}
+
+| [!DNL Hotel Name] |
+|----|
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+
+## Anwendungsfall 2 {#classify-uc2}
+
+Sie haben URLs anstelle des benutzerfreundlichen Seitennamens für mehrere Seiten erfasst. Diese gemischte Sammlung von Werten unterbricht die Berichterstellung.
+
+### Daten vor {#classify-uc2-databefore}
+
+| [!DNL Page Name] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
+| [!DNL Deals & Offers] |
+| `http://www.adobetravel.ca/user/reviews` |
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#classify-uc2-derivedfield}
+
+Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL CLASSIFY] -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen [!UICONTROL Seitenname] und ersetzen Sie sie durch die aktualisierten richtigen Werte.
+
+![Screenshot der Klassifizierungsregel 2](assets/lookup-2.png)
+
+### Daten nach {#classify-uc2-dataafter}
+
+| [!DNL Page Name (updated)] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
+
++++
+
+<!-- CONCATENATE -->
+
+### Verketten
+
+Verbindet Feldwerte in einem neuen abgeleiteten Feld mit definierten Trennzeichen.
+
++++ Details
+
+## Spezifikationen {#concatenate-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Wert]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li><li>Zeichenfolge</li></ul></li><li>[!UICONTROL Trennzeichen]:<ul><li>Zeichenfolge</li></ul></li> </ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+
+## Anwendungsfall {#concatenate-uc}
+
+Sie erfassen derzeit die Ursprungs- und Zielflughafencodes als separate Felder. Sie möchten die beiden Felder zu einer durch Bindestriche (-) getrennten Dimension zusammenfassen. So können Sie die Kombination aus Ursprung und Ziel analysieren, um die wichtigsten gebuchten Routen zu identifizieren.
+
+Annahmen:
+
+- Die Ursprungs- und Zielwerte werden in separaten Feldern in derselben Tabelle erfasst.
+- Der Benutzer legt fest, das Trennzeichen &quot;-&quot;zwischen den Werten zu verwenden.
+
+Stellen Sie sich die folgenden Buchungen vor:
+
+- Der Kunde ABC123 bucht einen Flug zwischen Salt Lake City (SLC) und Orlando (MCO)
+- Der Kunde ABC456 bucht einen Flug zwischen Salt Lake City (SLC) und Los Angeles (LAX)
+- Der Kunde ABC789 bucht einen Flug zwischen Salt Lake City (SLC) und Seattle (SEA)
+- Der Kunde ABC987 bucht einen Flug zwischen Salt Lake City (SLC) und San Jose (SJO)
+- Der Kunde ABC654 bucht einen Flug zwischen Salt Lake City (SLC) und Orlando (MCO)
+
+Der gewünschte Bericht sollte wie folgt aussehen:
+
+| Ursprung/Ziel | Buchungen |
+|----|---:|
+| SLC-MCO | 2 |
+| SLC-LAX | 1 |
+| SLC-SEA | 1 |
+| SLC-SJO | 1 |
+
+{style="table-layout:auto"}
+
+
+### Daten vor {#concatenate-uc-databefore}
+
+| Herkunft | Ziel |
+|----|---:|
+| SLC | MCO |
+| SLC | LAX |
+| SLC | SEA |
+| SLC | SJO |
+| SLC | MCO |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#concatenate-derivedfield}
+
+Sie definieren eine neue [!UICONTROL Origin - Ziel] abgeleitetes Feld. Sie verwenden die [!UICONTROL CONCATENATE] -Funktion, um eine Regel zum Verketten der [!UICONTROL Original] und [!UICONTROL Ziel] -Felder, die `-` [!UICONTROL Trennzeichen].
+
+![Screenshot der Verkettungsregel](assets/concatenate.png)
+
+### Daten nach {#concatenate-dataafter}
+
+| Origin - Ziel<br/>(abgeleitetes Feld) |
+|---|
+| SLC-MCO |
+| SLC-LAX |
+| SLC-SEA |
+| SLC-SJO |
+| SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- FIND AND REPLACE -->
 
@@ -552,127 +680,6 @@ Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden
 
 +++
 
-
-<!-- LOOKUP -->
-
-### Nachschlagen
-
-Definiert einen Satz von Lookup-Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
-
-+++ Details
-
-
-## Spezifikationen {#lookup-io}
-
-| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
-|---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld für die Anwendung von Lookup]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
-
-{style="table-layout:auto"}
-
-
-## Anwendungsfall 1 {#lookup-uc1}
-
-Sie verfügen über eine CSV-Datei, die eine Schlüsselspalte für `hotelID` und eine oder mehrere zusätzliche Spalten, die mit dem `hotelID`: `city`, `rooms`, `hotel name`.
-Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus der `hotelID` in der CSV-Datei.
-
-**Struktur und Inhalt von CSV-Dateien**
-
-| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
-|---|---|---:|---|
-| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
-| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
-| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-**Aktueller Bericht**
-
-| [!DNL Hotel ID] | Produktansichten |
-|---|---:|
-| [!DNL SLC123] | 200 |
-| [!DNL LX342] | 198 |
-| [!DNL SFO456] | 190 |
-
-{style="table-layout:auto"}
-
-
-**Gewünschter Bericht**
-
-| [!DNL Hotel Name] | Produktansichten |
-|----|----:|
-| [!DNL SLC Downtown] | 200 |
-| [!DNL LA Airport] | 198 |
-| [!DNL Market Street] | 190 |
-
-{style="table-layout:auto"}
-
-### Daten vor {#lookup-uc1-databefore}
-
-| [!DNL Hotel ID] |
-|----|
-| [!DNL SLC123] |
-| [!DNL LAX342] |
-| [!DNL SFO456] |
-
-{style="table-layout:auto"}
-
-
-### Abgeleitetes Feld {#lookup-uc1-derivedfield}
-
-Sie definieren eine `Hotel Name` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN] -Funktion, um eine Regel zu definieren, mit der Sie die Werte der [!UICONTROL Hotel-ID] und durch neue Werte ersetzen.
-
-![Screenshot der Suchregel 1](assets/lookup-1.png)
-
-### Daten nach {#lookup-uc1-dataafter}
-
-| [!DNL Hotel Name] |
-|----|
-| [!DNL SLC Downtown] |
-| [!DNL LA Airport] |
-| [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-
-## Anwendungsfall 2 {#lookup-uc2}
-
-Sie haben URLs anstelle des benutzerfreundlichen Seitennamens für mehrere Seiten erfasst. Diese gemischte Sammlung von Werten unterbricht die Berichterstellung.
-
-### Daten vor {#lookup-uc2-databefore}
-
-| [!DNL Page Name] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| `http://www.adobetravel.ca/Hotel-Search` |
-| `https://www.adobetravel.com/Package-Search` |
-| [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` |
-| `https://www.adobetravel.com.br/Generate-Quote/preview` |
-
-{style="table-layout:auto"}
-
-### Abgeleitetes Feld {#lookup-uc2-derivedfield}
-
-Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL SUCHEN] -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen [!UICONTROL Seitenname] und ersetzen Sie sie durch die aktualisierten richtigen Werte.
-
-![Screenshot der Suchregel 2](assets/lookup-2.png)
-
-### Daten nach {#lookup-uc2-dataafter}
-
-| [!DNL Page Name (updated)] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| [!DNL Hotel Search] |
-| [!DNL Package Search] |
-| [!DNL Deals & Offers] |
-| [!DNL Reviews] |
-| [!DNL Generate Quote] |
-
-+++
-
 <!-- MERGE FIELDS -->
 
 ### Felder zusammenführen
@@ -691,7 +698,7 @@ Führt Werte aus zwei verschiedenen Feldern zu einem neuen abgeleiteten Feld zus
 
 ## Anwendungsfall {#merge-fields-uc}
 
-Sie möchten eine neue Dimension erstellen, die sich aus dem Feld &quot;Seitenname&quot;und dem Feld &quot;Anrufgrund&quot;zusammensetzt und die Journey kanalübergreifend analysieren soll.
+Sie möchten eine Dimension erstellen, die sich aus dem Feld &quot;Seitenname&quot;und dem Feld &quot;Anrufgrund&quot;zusammensetzt und die Journey kanalübergreifend analysieren soll.
 
 ### Daten vor {#merge-fields-uc-databefore}
 
@@ -757,7 +764,7 @@ Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neu
 
 ## Anwendungsfall {#regex-replace-uc}
 
-Sie möchten eine Option einer URL erfassen und diese als eindeutige Seitenkennung verwenden, um den Traffic zu analysieren. Sie werden `[^/]+(?=/$|$)` für den regulären Ausdruck, um das Ende der URL zu erfassen, und `$1` als Ausgabemuster.
+Sie möchten eine Option einer URL erfassen und diese als eindeutige Seitenkennung verwenden, um den Traffic zu analysieren. Sie verwenden `[^/]+(?=/$|$)` für den regulären Ausdruck, um das Ende der URL zu erfassen, und `$1` als Ausgabemuster.
 
 ### Daten vor {#regex-replace-uc-databefore}
 
