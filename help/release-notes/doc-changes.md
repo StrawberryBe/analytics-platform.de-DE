@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
+source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 100%
+source-wordcount: '2518'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **August 2023** | |
+| Inhalt zur Verwaltung geplanter Projekte verschoben | Es wurde ein neuer Artikel im Analytics-Komponentenleitfaden mit dem Namen [Geplante Projekte](/help/components/scheduled-projects-manager.md). Diese Inhalte befinden sich zuvor im [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md) im Handbuch für Analytics-Tools. |
 | Unterstützte Funktionen in Adobe Customer Journey Analytics | Es wurden weitere Informationen in der Tabelle *Auf neue Weise unterstützt* zu den Sitzungsfunktionen in Customer Journey Analytics im Vergleich zu Adobe Analytics hinzugefügt. [Weitere Informationen](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Weiterentwicklung von Adobe Analytics | Der Abschnitt *(Neu-)Konfigurieren von Marketing-Kanälen* wurde mit einem Verweis auf die Vorlage „Abgeleitete Felder – Funktion von Marketing-Kanälen“ aktualisiert. [Weitere Informationen](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Schnellstartanleitungen zur Datenaufnahme für Mobile Apps und andere Plattformen | Es wurden zusätzliche Schnellstartanleitungen zur Datenaufnahme hinzugefügt, in denen erläutert wird, wie Daten von Mobile Apps oder anderen Plattformen (z. B. Desktop-Anwendungen, Spiele auf Konsolen, Anwendungen auf Set-Top-Boxen und IoT-Geräte) in Customer Journey Analytics aufgenommen und verwendet werden. [Weitere Informationen](../data-ingestion/data-ingestion.md) |
