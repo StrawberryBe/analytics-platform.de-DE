@@ -4,9 +4,9 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
+source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
 workflow-type: tm+mt
-source-wordcount: '4378'
+source-wordcount: '4433'
 ht-degree: 15%
 
 ---
@@ -426,7 +426,7 @@ Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch ents
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul><li>Originalwerte anzeigen<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -443,6 +443,7 @@ Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus 
 | [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
 | [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
 | [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+| [!DNL AMS789] | [!DNL Amsterdam] | 50 | [!DNL Okura] |
 
 {style="table-layout:auto"}
 
@@ -453,6 +454,7 @@ Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus 
 | [!DNL SLC123] | 200 |
 | [!DNL LX342] | 198 |
 | [!DNL SFO456] | 190 |
+| [!DNL AMS789] | 150 |
 
 {style="table-layout:auto"}
 
@@ -474,6 +476,7 @@ Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus 
 | [!DNL SLC123] |
 | [!DNL LAX342] |
 | [!DNL SFO456] |
+| [!DNL AMS789] |
 
 {style="table-layout:auto"}
 
@@ -482,7 +485,9 @@ Sie sammeln [!DNL Hotel ID] in einer Dimension, aber eine [!DNL Hotel Name] aus 
 
 Sie definieren eine `Hotel Name` abgeleitetes Feld. Sie verwenden die [!UICONTROL CLASSIFY] -Funktion, um eine Regel zu definieren, mit der Sie Werte der [!UICONTROL Hotel-ID] und durch neue Werte ersetzen.
 
-![Screenshot der Klassifizierungsregel 1](assets/lookup-1.png)
+Wenn Sie Originalwerte einbeziehen möchten, die Sie nicht als Teil der zu klassifizierenden Werte definiert haben (z. B. Hotel-ID AMS789), wählen Sie **[!UICONTROL Originalwerte anzeigen]**. Dadurch wird sichergestellt, dass AMS789 Teil der Ausgabe für das abgeleitete Feld ist, obwohl dieser Wert nicht klassifiziert wird.
+
+![Screenshot der Klassifizierungsregel 1](assets/classify-1.png)
 
 ### Daten nach {#classify-uc1-dataafter}
 
@@ -517,7 +522,7 @@ Sie haben URLs anstelle des benutzerfreundlichen Seitennamens für mehrere Seite
 
 Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die [!UICONTROL CLASSIFY] -Funktion, um eine Regel zu definieren, mit der Sie Werte Ihrer vorhandenen [!UICONTROL Seitenname] und ersetzen Sie sie durch die aktualisierten richtigen Werte.
 
-![Screenshot der Klassifizierungsregel 2](assets/lookup-2.png)
+![Screenshot der Klassifizierungsregel 2](assets/classify-2.png)
 
 ### Daten nach {#classify-uc2-dataafter}
 
