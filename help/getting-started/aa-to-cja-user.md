@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -110,4 +110,4 @@ Customer Journey Analytics erweitert die Konzepte von Identitäten über ECIDs h
 
 ## Änderungen am Konzept des Dimensionselements „Low Traffic“
 
-Im traditionellen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Low Traffic] zusammenzufassen. Customer Journey Analytics hat weniger Einschränkungen in Bezug auf Felder mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur können in Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellt werden. Siehe [Hohe Kardinalitätsdimensionen](../components/dimensions/high-cardinality.md) für weitere Informationen darüber, wie Customer Journey Analytics die Berichterstellung für Dimensionen mit vielen eindeutigen Werten optimiert.
+Im traditionellen Adobe Analytics beginnt eine Variable, die zu viele eindeutige Werte erhält, Dimensionselemente unter [!UICONTROL Low Traffic] zusammenzufassen. Customer Journey Analytics hat weniger Einschränkungen in Bezug auf Felder mit hoher Kardinalität. Aufgrund von Änderungen an der Berichtsarchitektur können in Analysis Workspace Berichte zu vielen weiteren eindeutigen Dimensionselementen erstellt werden. Weitere Informationen dazu, wie Customer Journey Analytics das Reporting für Dimensionen mit vielen eindeutigen Werten optimiert, finden Sie unter [Dimensionen mit hoher Kardinalität](../components/dimensions/high-cardinality.md).
