@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: d40638272263a389421adfe224649e2b905c652b
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 90%
@@ -93,7 +93,7 @@ Sie können alle geplanten Arbeitsmappen auf der Registerkarte „Arbeitsmappen�
 
 1. Wählen Sie eine Arbeitsmappe aus. Es werden verschiedene Tools angezeigt, mit denen Sie die Arbeitsmappe bearbeiten, die Planungsaufgabe bearbeiten, die Planaufgabe anhalten und neu starten, einen terminierten Aufgabenbericht herunterladen oder die Planaufgabe löschen können.
 
-   ![Screenshot mit den Symbolen des Arbeitsmappen-Zeitplans.](./assets/schedule-icons.png){width="15%"}
+   ![Screenshot mit den Symbolen des Arbeitsmappen-Zeitplans.](./assets/schedule-icons.png){width="20%"}
 
 * (Optional) Klicken Sie auf das Stiftsymbol, um die Aufgabe für den Arbeitsmappen-Zeitplan zu bearbeiten.
 
@@ -105,7 +105,7 @@ Sie können alle geplanten Arbeitsmappen auf der Registerkarte „Arbeitsmappen�
 
 * (Optional) Klicken Sie auf den Papierkorb, um die Zeitplanaufgabe zu löschen.
 
-  ![Screenshot mit der Liste der geplanten Aufgaben.](./assets/selected-workbook.png){width="20%"}
+  ![Screenshot mit der Liste der geplanten Aufgaben.](./assets/selected-workbook.png){width="40%"}
 
 ## Überprüfen des Status geplanter Aufgaben
 

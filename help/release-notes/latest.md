@@ -3,10 +3,10 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '571'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -20,7 +20,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 9. A
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Report Builder-Verbesserungen** | <ul><li>Laden Sie geplante Aufgaben vom Tab Verlauf herunter, auf dem Sie den Verlauf geplanter Aufgaben anzeigen können. Laden Sie die Arbeitsmappe von dieser Aufgabe herunter. </li><li>Startdatum als Dimension: Ermöglicht es Benutzern, das Startdatum des Datenblocks als Dimension in der Datenblock-Ausgabe zu platzieren. </li></ul> | Nicht angegeben | 17. August 2023 |
+| **Report Builder-Verbesserungen** | <ul><li>Sie können eine geplante Aufgabe über die Registerkarte Arbeitsmappen herunterladen und sie dann benennen, speichern und freigeben. [Weitere Informationen](/help/report-builder/schedule-reportbuilder.md)</li><li>Startdatum als Dimension ermöglicht es Ihnen, das Startdatum des Datenblocks als Dimension in der Datenblock-Ausgabe zu platzieren. [Weitere Informationen](/help/report-builder/create-a-data-block.md) </li></ul> | Nicht angegeben | 17. August 2023 |
 | **Währungsumrechnung** | Kunden-Journey bietet die Möglichkeit, mehrere Währungen zu unterstützen. In den Datenansichtseinstellungen können Sie eine Währung in eine andere Währung konvertieren. [Weitere Informationen](/help/data-views/component-settings/format.md) | Nicht angegeben | 31. August 2023 |
 | **Unterstützung für A4T-Klassifizierungen im Analytics Source Connector** | Wir fügen eine Korrelations-ID hinzu, um die Zuordnung von Classification-Daten zu Adobe Target-Aktivitäten und Erlebnisereignissen zu erleichtern. | Nicht angegeben | 31. August 2023 |
 | **Reporting Activity Manager** | Bietet Administratoren detaillierte Einblicke in den Berichtsverbrauch für jede Verbindung, sodass Administratoren während Spitzenzeiten der Berichterstellung mühelos Kapazitätsprobleme diagnostizieren und beheben können. | Nicht angegeben | 6. September 2023 |
