@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -119,7 +119,7 @@ Sie können ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/
 
 >[!TIP]
 >
->Wenn die Komponenten in Ihrer Datenansicht nicht ordnungsgemäß geladen werden und stattdessen eine Fehlermeldung angezeigt wird, lesen Sie bitte den Abschnitt [Fehlende Berechtigungen](../troubleshooting/lack-of-permissions.md) für eine Entschließung.
+>Wenn die Komponenten in Ihrer Datenansicht nicht ordnungsgemäß geladen werden und stattdessen eine Fehlermeldung angezeigt wird, lesen Sie bitte den Abschnitt [Fehlende Berechtigungen](../troubleshooting/lack-of-permissions.md), um das Problem zu beheben.
 
 
 
