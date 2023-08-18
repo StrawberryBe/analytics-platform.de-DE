@@ -1,15 +1,15 @@
 ---
 title: Zeitliche Planung von Arbeitsmappen mithilfe von Report Builder in Customer Journey Analytics
-description: Beschreibt die Verwendung der Zeitplanfunktion in Report Builder
+description: Erfahren Sie, wie Sie die Planungsfunktion in Report Builder verwenden
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: cd3ed8873619c7fb5281d42b1f74c32b245400d0
-workflow-type: ht
-source-wordcount: '1078'
-ht-degree: 100%
+source-git-commit: d40638272263a389421adfe224649e2b905c652b
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 90%
 
 ---
 
@@ -91,17 +91,21 @@ Sie können alle geplanten Arbeitsmappen auf der Registerkarte „Arbeitsmappen�
 
 1. Klicken Sie im Report Builder-Hub im Bereich „Zeitplan“ auf die Registerkarte „Arbeitsmappen“. In dieser Ansicht finden Sie eine Liste aller geplanten Arbeitsmappen.
 
-1. Wählen Sie eine Arbeitsmappe aus. Es werden verschiedene Tools angezeigt, mit denen Sie die Arbeitsmappe bearbeiten und den Zeitplan ändern, anhalten und neu starten oder löschen können.
+1. Wählen Sie eine Arbeitsmappe aus. Es werden verschiedene Tools angezeigt, mit denen Sie die Arbeitsmappe bearbeiten, die Planungsaufgabe bearbeiten, die Planaufgabe anhalten und neu starten, einen terminierten Aufgabenbericht herunterladen oder die Planaufgabe löschen können.
 
-   ![ALT-Beschreibung](./assets/edit-icons.png){width="55%"}
+   ![Screenshot mit den Symbolen des Arbeitsmappen-Zeitplans.](./assets/schedule-icons.png){width="15%"}
 
-* (Optional) Klicken Sie auf das Stiftsymbol, um den Arbeitsmappen-Zeitplan zu bearbeiten.
+* (Optional) Klicken Sie auf das Stiftsymbol, um die Aufgabe für den Arbeitsmappen-Zeitplan zu bearbeiten.
 
 * (Optional) Klicken Sie auf das Uhrensymbol, um den Verlauf jeder geplanten Aufgabe anzuzeigen.
 
-* (Optional) Klicken Sie auf das Pausensymbol, um den Versandzeitplan anzuhalten und neu zu starten. Dies ist hilfreich, wenn Sie die Arbeitsmappe vor ihrem Versand ändern müssen. Klicken Sie erneut auf das Pausensymbol, wenn Sie den Versand neu starten möchten.
+* (Optional) Klicken Sie auf das Pausensymbol, um die Aufgabe des Verteilungszeitplans anzuhalten und neu zu starten. Dies ist hilfreich, wenn Sie die Arbeitsmappe vor ihrem Versand ändern müssen. Klicken Sie erneut auf das Pausensymbol, wenn Sie den Versand neu starten möchten.
 
-* (Optional) Klicken Sie auf den Papierkorb, um den Zeitplan zu löschen.
+* (Optional) Klicken Sie auf das Symbol Herunterladen , um eine Kopie der Arbeitsmappen-Planaufgabe herunterzuladen.
+
+* (Optional) Klicken Sie auf den Papierkorb, um die Zeitplanaufgabe zu löschen.
+
+  ![Screenshot mit der Liste der geplanten Aufgaben.](./assets/selected-workbook.png){width="20%"}
 
 ## Überprüfen des Status geplanter Aufgaben
 

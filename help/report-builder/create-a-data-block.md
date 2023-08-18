@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: fe52730e3904ba5ccc5d1e7e5ff89eed8a575fbc
+source-git-commit: bc82cd376a082b55f915c1e27f6fcec861989b00
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 83%
+source-wordcount: '607'
+ht-degree: 74%
 
 ---
 
@@ -63,6 +63,12 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
    - Datumskomponenten werden dem Abschnitt „Spalte“ hinzugefügt.
    - Filterkomponenten werden dem Abschnitt „Filter“ hinzugefügt.
 
+   **Startdatum als Dimension**
+
+   Legen Sie das Startdatum als Dimension fest, um das Startdatum Ihres Datenblocks eindeutig zu identifizieren. Dies ist hilfreich, wenn Sie einen regelmäßig terminierten Bericht mit einem rollierenden Datumsbereich haben oder wenn Sie einen unkonventionellen Datumsbereich haben und das Startdatum nicht angegeben werden muss.
+
+   ![Screenshot mit dem Startdatum in der Liste der Dimensionen.](./assets/start-date-dimension.png){width="15%"}
+
 1. Ordnen Sie die Elemente im Tabellenbereich an, um das Layout Ihres Datenblocks anzupassen.
 
    Ziehen Sie Komponenten per Drag &amp; Drop in den Tabellenbereich, um sie neu anzuordnen, oder klicken Sie mit der rechten Maustaste auf einen Komponentennamen und wählen Sie im Optionsmenü die Option aus.
@@ -85,7 +91,7 @@ Um den Datenblock zu erstellen, wählen Sie Berichtkomponenten aus und passen Si
 
    ![Platzhalterbild](./assets/row-heading.png){width="35%"}
 
-1. Klicken Sie auf Ausblenden oder Anzeigen , um die Dimensionsbezeichnungen oder Spaltenüberschriften umzuschalten. Alle Beschriftungen werden standardmäßig angezeigt.
+1. Klicken Sie auf Ausblenden oder Anzeigen , um die Dimensionsbezeichnungen oder Spaltenüberschriften umzuschalten. Alle Bezeichnungen werden standardmäßig angezeigt.
 
 1. Klicken Sie auf **Beenden**.
 
