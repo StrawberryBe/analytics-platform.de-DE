@@ -4,9 +4,9 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0160aee587c1f88e4889f26757b1962c3d59b9fa
+source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2566'
 ht-degree: 97%
 
 ---
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **August 2023** | |
+| Panel „Verbrachte Zeit bei der Medienwiedergabe“ | Inhalt für  [Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) , um die Lesbarkeit zu verbessern. |
 | Report Builder-Verbesserungen | Inhalt für [Arbeitsmappen planen](/help/report-builder/schedule-reportbuilder.md) , um Informationen zum Herunterladen geplanter Aufgaben bereitzustellen. Inhalt für  [Datenblock erstellen](/help/report-builder/create-a-data-block.md) , um Informationen zur Verwendung des Startdatums als Dimension bereitzustellen. |
 | Inhalt zur Verwaltung geplanter Projekte verschoben | Es wurde ein neuer Artikel im Analytics-Komponentenleitfaden mit dem Namen [Geplante Projekte](/help/components/scheduled-projects-manager.md). Diese Inhalte befinden sich zuvor im [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md) im Handbuch für Analytics-Tools. |
 | Unterstützte Funktionen in Adobe Customer Journey Analytics | Es wurden weitere Informationen in der Tabelle *Auf neue Weise unterstützt* zu den Sitzungsfunktionen in Customer Journey Analytics im Vergleich zu Adobe Analytics hinzugefügt. [Weitere Informationen](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
