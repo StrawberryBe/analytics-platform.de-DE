@@ -3,10 +3,10 @@ title: Stitching-Übersicht
 description: Übersicht über das Stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 25%
+source-wordcount: '1322'
+ht-degree: 24%
 
 ---
 
@@ -18,7 +18,7 @@ Wenn Sie Datensätze mit ähnlichen Personen-IDs kombinieren, wird die Attributi
 
 Leider sind nicht alle ereignisbasierten Datensätze, die Teil Ihrer Customer Journey Analytics-Verbindung sind, ausreichend mit Daten gefüllt, um diese Attribution standardmäßig zu unterstützen. Insbesondere verfügen Web- oder mobile-basierte Erlebnisdatensätze häufig nicht über tatsächliche Personen-ID-Informationen für alle Ereignisse.
 
-Die Zuordnung ermöglicht die Neuzuordnung von Identitäten in den Zeilen eines Datensatzes und stellt sicher, dass die Personen-ID (zugeordnete ID) für jedes Ereignis verfügbar ist. Beim Zuordnen werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um den allgemeinen vorübergehenden ID-Wert zu ermitteln, der als zugeordnete ID verwendet werden kann. Dies ermöglicht die Auflösung verschiedener Datensätze zu einer einzelnen zugeordneten ID für die Analyse auf der Personenebene und nicht auf Geräte- oder Cookie-Ebene.
+Die Zuordnung ermöglicht die Neuzuordnung von Identitäten in den Zeilen eines Datensatzes und stellt sicher, dass die Personen-ID (zugeordnete ID) für jedes Ereignis verfügbar ist. Beim Zuordnen werden Benutzerdaten aus authentifizierten und nicht authentifizierten Sitzungen untersucht, um den allgemeinen vorübergehenden ID-Wert zu ermitteln, der als zugeordnete ID verwendet werden kann. Diese Neuzuweisung ermöglicht die Auflösung verschiedener Datensätze zu einer einzigen zugeordneten ID, die auf der Personenebene und nicht auf der Geräte- oder Cookie-Ebene analysiert werden kann.
 
 Sie profitieren von einer kanalübergreifenden Analyse, wenn Sie einen oder mehrere Ihrer zugeordneten Datensätze mit anderen Datensätzen, z. B. Callcenter-Daten, kombinieren, um Ihre Customer Journey Analytics-Verbindung zu definieren. Dabei wird davon ausgegangen, dass diese anderen Datensätze bereits in jeder Zeile eine Personen-ID enthalten, die der zugeordneten ID ähnelt.
 
@@ -102,9 +102,11 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 >[!IMPORTANT]
 >
->Wenden Sie alle Änderungen, die Sie an dem Schema des globalen Ereignis-Datensatzes vornehmen, auch auf das neue zugeordnete Datensatzschema an, da es andernfalls den zugewiesenen Datensatz beschädigt.
+>* Wenden Sie alle Änderungen, die Sie an dem Schema des globalen Ereignis-Datensatzes vornehmen, auch auf das neue zugeordnete Datensatzschema an, da es andernfalls den zugewiesenen Datensatz beschädigt.
 >
->Wenn Sie den Quelldatensatz entfernen, wird der zugeordnete Datensatz nicht weiter verarbeitet und vom System entfernt.
+>* Wenn Sie den Quelldatensatz entfernen, stoppt der zugeordnete Datensatz die Verarbeitung und wird vom System entfernt.
+>
+>* Datennutzungsbezeichnungen werden nicht automatisch in das zugeordnete Datensatzschema übertragen. Wenn Sie Datennutzungsbezeichnungen auf das Quelldatensatzschema angewendet haben, müssen Sie diese Datennutzungsbezeichnungen manuell auf das zugeordnete Datensatzschema anwenden. Siehe [Verwalten von Datennutzungsbezeichnungen in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=de) für weitere Informationen.
 
 Das Stitching ist eine innovative und zuverlässige Funktion, die jedoch Einschränkungen hinsichtlich der Verwendung aufweist.
 
@@ -123,7 +125,7 @@ Verwechseln Sie nicht das Stitching mit:
 
 * Die Zusammenführung von zwei oder mehr Datensätzen. Die Zuordnung gilt nur für einen Datensatz. Die Zusammenführung von Datensätzen erfolgt durch Einrichten einer Customer Journey Analytics-Verbindung und Auswählen derselben Personen-ID für die ausgewählten Datensätze in der Verbindung.
 
-* Der Join zweier Datensätze. Unter Customer Journey Analytics wird häufig ein Join für Suchen oder Klassifizierungen in Analysis Workspace verwendet. Obwohl das Stitching die Join-Funktion verwendet, umfasst der Prozess selbst viel mehr als nur Joins.
+* Der Join zweier Datensätze. Unter Customer Journey Analytics wird häufig ein Join für Suchen oder Klassifizierungen in Analysis Workspace verwendet. Obwohl das Stitching die Join-Funktion verwendet, umfasst der Prozess selbst mehr als nur Joins.
 
 
 
