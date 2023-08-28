@@ -2,9 +2,10 @@
 title: Netto-Wachstumsansicht
 description: Gewinnen oder verlieren Sie Nutzende?
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+keywords: Produktanalyse
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '618'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ Jeder Datenpunkt stellt das Nettowachstum dar, das anhand der folgenden Formel b
 
 `([New users] + [Return users]) / [Dormant users]`
 
-Das Ergebnis dieser Formel ist ein Verhältnis. Nettowachstum `1` ein Gleichgewicht darstellt; das Produkt die gleiche Anzahl von Anwendern wie verloren. Nettowachstum größer als `1` ein positives Wachstum darstellt; Es gab mehr neue + wiederkehrende Benutzer als ruhende Benutzer. Ebenso ein Nettowachstum von weniger als `1` einen Verlust darstellt; es waren mehr ruhende Benutzer als neue + wiederkehrende Benutzer.
+Das Ergebnis dieser Formel ist ein Verhältnis. Nettowachstum von `1` stellt ein Gleichgewicht dar; das Produkt hat die gleiche Anzahl von Benutzern gewonnen, die es verloren hat. Nettowachstum größer als `1` bedeutet ein positives Wachstum; es gab mehr neue + wiederkehrende Benutzer als ruhende Benutzer. Ebenso ein Nettowachstum von weniger als `1` bedeutet einen Verlust; es waren mehr ruhende Benutzer als neue + wiederkehrende Benutzer.
 
 Ähnlich wie bei [Aktiv](active.md) Ansichtstyp, werden Benutzer wie folgt definiert:
 
@@ -37,7 +38,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 * **Leistungsbewertung**: Ermöglicht es Ihnen, die Gesamtleistung Ihres Produkts im Hinblick auf die Akquise neuer Benutzer zu bewerten. Durch die Verfolgung von Wachstumstrends können Sie besser nachvollziehen, ob Ihr Produkt Benutzer in einem gewünschten Tempo anzieht und bindet.
 * **Benutzerakquise-Analyse**: Ermöglicht es Ihnen, die Effektivität Ihrer Benutzerakquisestrategien zu bewerten. Die Analyse der Quellen für das Benutzerwachstum, wie Suchmaschinen, Kampagnen oder andere Marketingkanäle, ermöglicht es Ihnen, die wichtigsten Wachstumsquellen zu identifizieren, sodass Sie Ressourcen entsprechend zuordnen können.
-* **Abwanderungsanalyse**: Das Nettowachstum beinhaltet die Ablösung in der Formel (ruhende Nutzer). Sie können die allgemeine Gesundheit Ihrer Benutzerbasis im Laufe der Zeit bewerten. Wenn das Nettowachstum konsequent niedriger ist `1`, deutet dies auf eine hohe Anzahl von Abbrüchen hin, die die Implementierung von Bindungsstrategien erforderlich machen könnten.
+* **Abwanderungsanalyse**: Das Nettowachstum beinhaltet die Abbruch in der Formel (ruhende Benutzer). Sie können die allgemeine Gesundheit Ihrer Benutzerbasis im Laufe der Zeit bewerten. Wenn das Nettowachstum konsequent niedriger ist `1`, deutet dies auf eine hohe Anzahl von Abbrüchen hin, die die Implementierung von Bindungsstrategien erforderlich machen könnten.
 
 ## Abfrageleiste
 
@@ -51,4 +52,4 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
 * **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Gültige Optionen sind &quot;Stündlich&quot;, &quot;Täglich&quot;, &quot;Wöchentlich&quot;, &quot;Monatlich&quot;und &quot;Quartal&quot;. Derselbe Datumsbereich kann unterschiedliche Intervalle haben, die sich auf die Anzahl der Datenpunkte im Diagramm und die Anzahl der Spalten in der Tabelle auswirken. Wenn Sie beispielsweise eine Analyse betrachten, die sich auf drei Tage mit täglicher Granularität erstreckt, werden nur drei Datenpunkte angezeigt, während eine Analyse, die drei Tage mit stündlicher Granularität umfasst, 72 Datenpunkte anzeigen würde.
-* **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie mit der Kalenderauswahl einen festen Datumsbereich auswählen.
+* **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.

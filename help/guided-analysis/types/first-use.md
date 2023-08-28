@@ -1,10 +1,11 @@
 ---
-title: Erste Ansicht
+title: Ansicht "Erste Verwendung"
 description: Messen der Auswirkung der erstmaligen Verwendung von Funktionen auf Schlüsselindikatoren.
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+keywords: Produktanalyse
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '615'
 ht-degree: 3%
 
 ---
@@ -29,22 +30,22 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Schlüsselindikatoren]**: Die Ereignisse, die pro Benutzer gemessen werden sollen. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
+* **[!UICONTROL Schlüsselindikatoren]**: Die Ereignisse, die Sie pro Benutzer messen möchten. Jeder ausgewählte Schlüsselindikator wird als farbige Linie dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Ereignis darstellt. Sie können bis zu drei Ereignisse einbeziehen.
 * **[!UICONTROL Faktoren]**: Für diese Ansicht gibt es zwei Faktoren:
-   * **[!UICONTROL Datum]**: Wie weit Sie zurücklegen möchten, um nach dem ersten aufgetretenen Nutzungsereignis zu suchen.
-   * **[!UICONTROL Ereignis]**: Das Ereignis, nach dem Sie die Analyse zum ersten Mal verwenden möchten, um sie zu zentrieren.
+   * **[!UICONTROL Datum]**: Wie weit zurück Sie nach dem ersten aufgetretenen Anwendungsereignis suchen möchten.
+   * **[!UICONTROL Ereignis]**: Das Ereignis, bei dem Sie die Analyse zur ersten Verwendung zentrieren möchten.
 * **[!UICONTROL Personen]**: Das Segment, das Sie messen möchten. Das ausgewählte Segment filtert Ihre Daten so, dass sie sich nur auf die Personen konzentrieren, die Ihren Segmentkriterien entsprechen.
 
 ## Diagrammeinstellungen
 
 Die Ansicht Erste Verwendung bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
-* **[!UICONTROL Metrik]**: Die Metrik, die Sie messen möchten. Optionen umfassen [!UICONTROL Ereignisse pro Benutzer], [!UICONTROL Veranstaltungen], [!UICONTROL Sitzungen]und [!UICONTROL Benutzer].
-* **[!UICONTROL Diagrammtyp]**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;.
+* **[!UICONTROL Metrik]**: Die zu messende Metrik. Optionen umfassen [!UICONTROL Ereignisse pro Benutzer], [!UICONTROL Veranstaltungen], [!UICONTROL Sitzungen], und [!UICONTROL Benutzer].
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;.
 
 ## Datumsbereich
 
 Die Datumsauswahl in der Impact-Analyse funktioniert anders als bei anderen Analysetypen, da sich die Analyse um das in der Abfrageleiste angegebene Datum dreht. Die folgenden Optionen sind verfügbar:
 
-* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Zu den gültigen Optionen gehören [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich]und [!UICONTROL Quartal]. Eine Änderung des Intervalls wirkt sich auf die für den Zeitraum vor und nach verfügbaren Optionen aus.
-* **[!UICONTROL Vor- und Nach-Zeitraum]**: Die Zeitdauer, die vor und nach dem ersten in der Abfrageleiste angegebenen Anwendungsereignis analysiert werden soll. Die verfügbaren Optionen hängen von der [!UICONTROL Intervall] auswählen.
+* **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Zu den gültigen Optionen gehören [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich], und [!UICONTROL Vierteljährlich]. Eine Änderung des Intervalls wirkt sich auf die für den Zeitraum vor und nach verfügbaren Optionen aus.
+* **[!UICONTROL Vor- und Nach-Zeitraum]**: Die Zeitdauer, die vor und nach dem in der Abfrageleiste angegebenen ersten Anwendungsereignis analysiert werden soll. Die verfügbaren Optionen hängen von der [!UICONTROL Intervall] auswählen.

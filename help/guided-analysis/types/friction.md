@@ -3,9 +3,10 @@ title: Friktionsansicht
 description: Konversionsraten zwischen den Schritten vergleichen.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+keywords: Produktanalyse
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '491'
 ht-degree: 2%
 
 ---
@@ -37,7 +38,7 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 Die Ansicht &quot;Friction&quot;bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Metrik]**: Der Bereich, der auf den Trichter angewendet werden soll. Zu den Optionen gehören Sitzungen und Benutzer. Durch die Auswahl von Sitzungen müssen alle Schritte innerhalb derselben Sitzung erfolgen, damit sie gezählt werden. Durch Auswahl von Benutzern müssen alle Schritte innerhalb des Berichtsfensters erfolgen, das für die Zählung ausgewählt wurde.
-* **[!UICONTROL Diagrammtyp]**: Die Art der Visualisierung, die Sie verwenden möchten. Zu den Optionen gehören die Schritte .
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören die Schritte .
 * **[!UICONTROL Konversion von]**: Bestimmt die Berechnung des Prozentsatzes von Schritt zu Schritt. Zu den Optionen gehören die Berechnung der Konvertierung aus dem ersten Schritt oder dem vorherigen Schritt.
 
 ## Zeitvergleich anwenden
@@ -51,4 +52,4 @@ Die Ansicht &quot;Friction&quot;bietet die folgenden Diagrammeinstellungen, die 
 Der gewünschte Datumsbereich für Ihre Analyse. Diese Einstellung umfasst zwei Komponenten:
 
 * **[!UICONTROL Intervall]**: Die Datumsgranularität, mit der Sie Trenddaten anzeigen möchten. Diese Einstellung wirkt sich nicht auf Trend-Ansichten wie &quot;Friction&quot;aus.
-* **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie mit der Kalenderauswahl einen festen Datumsbereich auswählen.
+* **[!UICONTROL Datum]**: Das Start- und Enddatum. Vorgaben für rollierende Datumsbereiche und zuvor gespeicherte benutzerdefinierte Bereiche stehen Ihnen zur Verfügung. Alternativ können Sie die Kalenderauswahl verwenden, um einen festen Datumsbereich auszuwählen.
