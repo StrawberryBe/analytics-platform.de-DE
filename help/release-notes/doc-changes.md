@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **August 2023** | |
-| Panel „Verbrachte Zeit bei der Medienwiedergabe“ | Inhalt für  [Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) , um die Lesbarkeit zu verbessern. |
-| Report Builder-Verbesserungen | Inhalt für [Arbeitsmappen planen](/help/report-builder/schedule-reportbuilder.md) , um Informationen zum Herunterladen geplanter Aufgaben bereitzustellen. Inhalt für  [Datenblock erstellen](/help/report-builder/create-a-data-block.md) , um Informationen zur Verwendung des Startdatums als Dimension bereitzustellen. |
-| Inhalt zur Verwaltung geplanter Projekte verschoben | Es wurde ein neuer Artikel im Analytics-Komponentenleitfaden mit dem Namen [Geplante Projekte](/help/components/scheduled-projects-manager.md). Diese Inhalte befinden sich zuvor im [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md) im Handbuch für Analytics-Tools. |
+| Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ | Inhalt für [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) wurde aktualisiert, um die Lesbarkeit zu verbessern. |
+| Report Builder-Verbesserungen | Inhalt für [Planen von Arbeitsmappen](/help/report-builder/schedule-reportbuilder.md) wurde aktualisiert, um Informationen zum Herunterladen geplanter Aufgaben bereitzustellen. Inhalt für [Erstellen eines Datenblocks](/help/report-builder/create-a-data-block.md) wurde aktualisiert, um Informationen zur Verwendung des Startdatums als Dimension bereitzustellen. |
+| Inhalte über die Verwaltung geplanter Projekte wurden verschoben | Es wurde ein neuer Artikel mit dem Namen [Geplante Projekte](/help/components/scheduled-projects-manager.md) im Handbuch zu Analytics-Komponenten hinzugefügt. Diese Inhalte befanden sich zuvor im Artikel [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md) im Handbuch zu Analytics-Tools. |
 | Unterstützte Funktionen in Adobe Customer Journey Analytics | Es wurden weitere Informationen in der Tabelle *Auf neue Weise unterstützt* zu den Sitzungsfunktionen in Customer Journey Analytics im Vergleich zu Adobe Analytics hinzugefügt. [Weitere Informationen](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Weiterentwicklung von Adobe Analytics | Der Abschnitt *(Neu-)Konfigurieren von Marketing-Kanälen* wurde mit einem Verweis auf die Vorlage „Abgeleitete Felder – Funktion von Marketing-Kanälen“ aktualisiert. [Weitere Informationen](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Schnellstartanleitungen zur Datenaufnahme für Mobile Apps und andere Plattformen | Es wurden zusätzliche Schnellstartanleitungen zur Datenaufnahme hinzugefügt, in denen erläutert wird, wie Daten von Mobile Apps oder anderen Plattformen (z. B. Desktop-Anwendungen, Spiele auf Konsolen, Anwendungen auf Set-Top-Boxen und IoT-Geräte) in Customer Journey Analytics aufgenommen und verwendet werden. [Weitere Informationen](../data-ingestion/data-ingestion.md) |
