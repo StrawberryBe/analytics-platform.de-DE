@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
-workflow-type: ht
-source-wordcount: '2566'
-ht-degree: 100%
+source-git-commit: e4aa9a525fb2ae291cc0c753524d09a81b88c4c3
+workflow-type: tm+mt
+source-wordcount: '2583'
+ht-degree: 99%
 
 ---
 
@@ -19,10 +19,12 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **September 2023** | |
+| Regionale Datenerfassung | Aktualisiert [FAQs](../getting-started/cja-faq.md#12-regional-data-collection) mit Informationen zur regionalen Datenerfassung bei Verwendung von Customer Journey Analytics. |
 | **August 2023** | |
 | Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ | Inhalt für [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) wurde aktualisiert, um die Lesbarkeit zu verbessern. |
 | Report Builder-Verbesserungen | Inhalt für [Planen von Arbeitsmappen](/help/report-builder/schedule-reportbuilder.md) wurde aktualisiert, um Informationen zum Herunterladen geplanter Aufgaben bereitzustellen. Inhalt für [Erstellen eines Datenblocks](/help/report-builder/create-a-data-block.md) wurde aktualisiert, um Informationen zur Verwendung des Startdatums als Dimension bereitzustellen. |
-| Inhalte über die Verwaltung geplanter Projekte wurden verschoben | Es wurde ein neuer Artikel mit dem Namen [Geplante Projekte](/help/components/scheduled-projects-manager.md) im Handbuch zu Analytics-Komponenten hinzugefügt. Diese Inhalte befanden sich zuvor im Artikel [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md) im Handbuch zu Analytics-Tools. |
+| Inhalte zur Verwaltung terminierter Projekte verschoben | Es wurde ein neuer Artikel mit dem Titel [Terminierte Projekte](/help/components/scheduled-projects-manager.md) im Handbuch zu den Analytics-Komponenten hinzugefügt. Diese Inhalte befanden sich zuvor im Artikel [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md) im Handbuch zu Analytics-Tools. |
 | Unterstützte Funktionen in Adobe Customer Journey Analytics | Es wurden weitere Informationen in der Tabelle *Auf neue Weise unterstützt* zu den Sitzungsfunktionen in Customer Journey Analytics im Vergleich zu Adobe Analytics hinzugefügt. [Weitere Informationen](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Weiterentwicklung von Adobe Analytics | Der Abschnitt *(Neu-)Konfigurieren von Marketing-Kanälen* wurde mit einem Verweis auf die Vorlage „Abgeleitete Felder – Funktion von Marketing-Kanälen“ aktualisiert. [Weitere Informationen](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Schnellstartanleitungen zur Datenaufnahme für Mobile Apps und andere Plattformen | Es wurden zusätzliche Schnellstartanleitungen zur Datenaufnahme hinzugefügt, in denen erläutert wird, wie Daten von Mobile Apps oder anderen Plattformen (z. B. Desktop-Anwendungen, Spiele auf Konsolen, Anwendungen auf Set-Top-Boxen und IoT-Geräte) in Customer Journey Analytics aufgenommen und verwendet werden. [Weitere Informationen](../data-ingestion/data-ingestion.md) |
