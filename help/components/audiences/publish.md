@@ -3,18 +3,18 @@ title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 15853fe7f37b1f0a3088f8dc108d7c65f1ef470a
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 61%
+source-wordcount: '1608'
+ht-degree: 60%
 
 ---
 
 # Erstellen und Veröffentlichen von Zielgruppen
 
-In diesem Thema wird beschrieben, wie Sie in Customer Journey Analytics identifizierte Zielgruppen erstellen und veröffentlichen. [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung.
+In diesem Thema wird beschrieben, wie Sie unter Customer Journey Analytics in identifizierte Zielgruppen erstellen und veröffentlichen [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) in Adobe Experience Platform für Kunden-Targeting und Personalisierung.
 
-Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) sich mit dem Konzept der Customer Journey Analytics-Zielgruppen vertraut zu machen.
+Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) sich mit dem Konzept der Customer Journey Analytics-Audiences vertraut zu machen.
 
 ## Zielgruppe erstellen {#create}
 
@@ -39,7 +39,7 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
    | [!UICONTROL Name] | Der Name der Zielgruppe. |
    | [!UICONTROL Tags] | Alle Tags, die Sie der Zielgruppe aus organisatorischen Gründen zuweisen möchten. Sie können ein bereits vorhandenes Tag verwenden oder ein neues eingeben. |
    | [!UICONTROL Beschreibung] | Fügen Sie der Zielgruppe eine Beschreibung hinzu, um sie von anderen leicht unterscheiden zu können. |
-   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für die Aktualisierungsfrequenz von 4 Stunden sind je nach Berechtigung des Customer Journey Analytics 75 bis 150 Zielgruppenaktualisierungen erlaubt.</li></ul> |
+   | [!UICONTROL Häufigkeit der Aktualisierung] | Die Häufigkeit, mit der Sie die Zielgruppe aktualisieren möchten.<ul><li>Sie können eine einmalige Zielgruppe (Standard) erstellen, die nicht aktualisiert werden muss. Dies könnte beispielsweise bei bestimmten einmaligen Kampagnen der Fall sein.</li><li>Sie können auch andere Aktualisierungsintervalle auswählen. Für die Aktualisierungshäufigkeit von 4 Stunden gilt je nach Customer Journey Analytics-Berechtigung eine Beschränkung von 75 bis 150 Zielgruppenaktualisierungen.</li></ul> |
    | Ablaufdatum | Wann die Aktualisierung der Zielgruppe beendet ist. Der Standardwert liegt bei 1 Jahr ab dem Erstellungsdatum. Vor der Beendigung der Zielgruppen-Aktualisierung erhält der Administrator ähnlich wie bei der Beendigung von geplanten Berichten einen Monat vor Ablauf der Zielgruppe eine E-Mail. |
    | Lookback-Fenster aktualisieren | Gibt an, wie weit Sie im Datenfenster bei der Erstellung dieser Zielgruppe zurückgehen möchten. Die Höchstdauer beträgt 90 Tage. |
    | [!UICONTROL Einmaliger Datumsbereich] | Datumsbereich, in dem die einmalige Zielgruppe veröffentlicht werden soll. |
@@ -75,11 +75,11 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
 
 ## Was passiert, nachdem eine Zielgruppe erstellt wurde? {#after-audience-created}
 
-Nachdem Sie eine Zielgruppe erstellt haben, erstellt Adobe für jede neue Customer Journey Analytics-Zielgruppe ein Experience Platformen-Streaming-Segment. Ein Adobe Experience Platform-Streaming-Segment wird nur erstellt, wenn Ihr Unternehmen für Streaming-Segmentierung eingerichtet ist.
+Nachdem Sie eine Audience erstellt haben, erstellt Adobe für jede neue Customer Journey Analytics-Audience ein Experience Platform-Streaming-Segment. Ein Adobe Experience Platform-Streaming-Segment wird nur erstellt, wenn Ihr Unternehmen für Streaming-Segmentierung eingerichtet ist.
 
-* Das Adobe Experience Platform-Segment trägt denselben Namen und dieselbe Beschreibung wie die Customer Journey Analytics-Zielgruppe. Der Name wird jedoch mit der Customer Journey Analytics-Zielgruppen-ID angehängt, um sicherzustellen, dass er eindeutig ist.
-* Wenn sich der Zielgruppenname/die Beschreibung des Customer Journey Analytics ändert, spiegelt der Adobe Experience Platform-Segmentname/die Beschreibung diese Änderung ebenfalls wider.
-* Wenn eine Customer Journey Analytics-Audience von einem Benutzer gelöscht wird, wird das Adobe Experience Platform-Segment NICHT gelöscht. Der Grund dafür ist, dass die Customer Journey Analytics-Audience später möglicherweise wieder aus der Liste entfernt wird.
+* Das Adobe Experience Platform-Segment trägt denselben Namen/dieselbe Beschreibung wie die Customer Journey Analytics-Audience, doch wird der Name an die Customer Journey Analytics-Audience-ID angehängt, um sicherzustellen, dass er eindeutig ist.
+* Wenn sich der Customer Journey Analytics-Zielgruppenname/-beschreibung ändert, spiegelt der Adobe Experience Platform-Segmentname/-beschreibung diese Änderung ebenfalls wider.
+* Wenn eine Customer Journey Analytics-Audience von einem Benutzer gelöscht wird, wird das Adobe Experience Platform-Segment NICHT gelöscht. Der Grund dafür ist, dass die Customer Journey Analytics-Audience später wieder gelöscht werden kann.
 
 ## Latenzaspekte {#latency}
 
@@ -92,7 +92,7 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 | Nicht angezeigt | Quell-Connector von Adobe Analytics zu Analytics (A4T) | Bis zu 30 Minuten |
 | 1 | Datenaufnahme in den Data Lake (aus dem Analytics-Quell-Connector oder anderen Quellen) | Bis zu 90 Minuten |
 | 2 | Datenerfassung vom Experience Platform Data Lake in Customer Journey Analytics | Bis zu 90 Minuten |
-| 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist. | Rund 60 Minuten |
+| 3 | Zielgruppenveröffentlichung im Echtzeit-Kundenprofil, einschließlich der automatischen Erstellung des Streaming-Segments, sodass das Segment bereit für den Empfang der Daten ist.<p>**Hinweis**: Die Audience wird innerhalb von 1-2 Minuten im Experience Platform erstellt/definiert. Es dauert jedoch etwa 60 Minuten, bis die Zielgruppe die IDs basierend auf übereinstimmenden Kriterien erhält und zur Aktivierung bereit ist. | Rund 60 Minuten |
 | 4 | Aktualisierungshäufigkeit für Zielgruppen | <ul><li>Einmalige Aktualisierung (Latenz von weniger als 5 Minuten)</li><li>Aktualisierung alle 4 Stunden, täglich, wöchentlich, monatlich (die Latenz wird mit der Aktualisierungsrate in Verbindung gebracht) |
 | 5 | Erstellen eines Ziels in Adobe Experience Platform: Aktivieren des neuen Segments | 1–2 Stunden |
 
@@ -100,9 +100,9 @@ An verschiedenen Stellen vor, während und nach der Veröffentlichung von Zielgr
 
 ## Verwenden von Customer Journey Analytics-Zielgruppen in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics nimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). Customer Journey Analytics sendet die Zielgruppe je nach ausgewähltem Typ zur Experience Platform mit dem primären Identitätssatz [!UICONTROL Personen-ID] wenn die Verbindung konfiguriert wurde.
+Customer Journey Analytics übernimmt alle Namespace- und ID-Kombinationen aus Ihrer veröffentlichten Zielgruppe und streamt sie in das Echtzeit-Kundenprofil (RTCP). Customer Journey Analytics sendet die Zielgruppe mit dem Hauptidentitätssatz entsprechend der Auswahl als [!UICONTROL Personen-ID] wenn die Verbindung konfiguriert wurde.
 
-Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Jetzt zum Beispiel: <user@adobe.com> kann für alle ihre Geräte und Kanäle als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
+Das Echtzeit-Kundenprofil untersucht dann jede Namespace/ID-Kombination und sucht nach einem passenden Profil. Ein Profil ist im Grunde eine Gruppe verknüpfter Namespaces, IDs und Geräte. Wenn ein Profil gefunden wird, werden der Namespace und die ID zu den anderen IDs in diesem Profil als Segmentzugehörigkeits-Attribut hinzugefügt. Nun, zum Beispiel: <user@adobe.com> kann für alle ihre Geräte und Kanäle als Ziel ausgewählt werden. Wenn kein Profil gefunden wird, wird ein neues erstellt.
 
 Sie können Customer Journey Analytics-Zielgruppen in Platform anzeigen, indem Sie **[!UICONTROL Segmente]** > **[!UICONTROL Segmente erstellen]** > **[!UICONTROL Zielgruppen]** tab > **[!UICONTROL CJA-Zielgruppen]**.
 
@@ -114,13 +114,13 @@ Sie können Customer Journey Analytics-Zielgruppen in die Segmentdefinition für
 
 Häufig gestellte Fragen zur Veröffentlichung von Zielgruppen.
 
-+++**Was passiert, wenn ein Benutzer in Customer Journey Analytics nicht mehr Mitglied einer Zielgruppe ist?**
++++**Was passiert, wenn ein Benutzer nicht mehr Mitglied einer Zielgruppe im Customer Journey Analytics ist?**
 
-In diesem Fall wird ein exit -Ereignis vom Customer Journey Analytics an Experience Platform gesendet.
+In diesem Fall wird ein exit -Ereignis von Customer Journey Analytics an Experience Platform gesendet.
 
 +++
 
-+++**Was passiert, wenn Sie eine Zielgruppe in Customer Journey Analytics löschen?**
++++**Was passiert, wenn Sie eine Audience im Customer Journey Analytics löschen?**
 
 Wenn eine Customer Journey Analytics-Zielgruppe gelöscht wird, wird diese Zielgruppe nicht mehr in der Experience Platform-Benutzeroberfläche angezeigt. Es werden jedoch keine Profile, die mit dieser Zielgruppe verknüpft sind, in Platform tatsächlich gelöscht.
 
@@ -134,23 +134,23 @@ Ja.
 
 +++**Sendet Customer Journey Analytics die Zielgruppendaten als Pipeline-Ereignisse oder als flache Datei, die auch an den Data Lake gesendet wird?**
 
-Customer Journey Analytics streamt die Daten über die Pipeline in RTCP, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
+Customer Journey Analytics streamt die Daten per Pipeline in RTCP, und diese Daten werden auch in einem Systemdatensatz im Data Lake erfasst.
 
 +++
 
 +++**Welche Identitäten sendet Customer Journey Analytics?**
 
-Die Identitäts-/Namespace-Paare, die im [Verbindungseinrichtung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection). Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
+Die Identitäts-/Namespace-Paare, die im [Verbindungs-Setup](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=de#create-connection). Indesondere der Schritt, in dem Benutzende das Feld auswählen, das sie als ihre „Personen-ID“ verwenden möchten.
 
 +++
 
 +++**Welche ID wird als primäre Identität ausgewählt?**
 
-Siehe oben. Wir senden nur eine Identität pro Customer Journey Analytics &quot;person&quot;.
+Siehe oben. Wir senden nur eine Identität pro Customer Journey Analytics &quot;Person&quot;.
 
 +++
 
-+++**Verarbeitet RTCP auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics einem Profilidentitätsdiagramm durch Zielgruppenfreigabe Identitäten hinzufügen?**
++++**Verarbeitet RTCP auch die Customer Journey Analytics-Nachrichten? Kann Customer Journey Analytics Identitäten zu einem Profilidentitätsdiagramm durch Zielgruppenfreigabe hinzufügen?**
 
 Nein. Wir senden nur eine Identität pro „Person“, sodass es keine Diagramme gibt, die RTCP nutzen könnte.
 
