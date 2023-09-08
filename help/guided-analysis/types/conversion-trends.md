@@ -3,9 +3,9 @@ title: Ansicht "Konversionstrends"
 description: Verfolgen Sie Änderungen der Konversionsrate im Zeitverlauf.
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: a40cfa2498bed03c169eed10cea091574bf90730
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Schritte]**: Die Ereignis-Touchpoints, die Sie verfolgen möchten. Jede Leiste im Diagramm stellt einen Schritt dar. Sie können bis zu zehn Schritte einbeziehen.
-* **People**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
+* **[!UICONTROL Personen]**: Die Segmente, über die Sie den Trichter vergleichen möchten. Jedes ausgewählte Segment teilt jeden Schritt in mehrere Balken auf. Jede Farbe stellt ein anderes Segment dar. Sie können bis zu drei Segmente einbeziehen.
 
 ## Diagrammeinstellungen
 

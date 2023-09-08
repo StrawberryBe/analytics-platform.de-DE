@@ -4,9 +4,9 @@ description: Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ru
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: 35e009ca6c21754fe7127fe63eea41f8ed00943d
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -28,9 +28,9 @@ Alle aktiven Benutzer (neu + Wiederholen + Rückgabe) werden als Teelichtenschat
 
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
-* **[!UICONTROL Benutzerbindung und Benutzerkreuz]n:** Bietet eine klare Visualisierung für Zeiträume hoher oder niedriger Benutzerbindung. Die Erkennung dieser Zeiträume mit hoher oder niedriger Aufbewahrung kann Ihnen dabei helfen, Produktentscheidungen zu treffen, um eine hohe Beibehaltung zu fördern oder Abwanderung zu minimieren.
-* **[!UICONTROL Kampagnenbewertung]**: Die Anzeige einer bestimmten Kampagne kann Ihnen dabei helfen, nicht nur zu verstehen, wie viel Traffic sie generiert hat, sondern auch, wie gut die Kampagne den Benutzern geholfen hat, ihre Interaktion fortzusetzen.
-* **[!UICONTROL Analyse des Benutzerlebenszyklus]**: Die Analyse des aktiven Nutzerwachstums während des gesamten Benutzerlebenszyklus kann dabei helfen, bestimmte Phasen zu identifizieren, in denen die Benutzerinteraktion abnimmt. Wenn beispielsweise eine hohe Anzahl ruhender Benutzer für Einzelpersonen in einer Onboarding-Phase vorhanden ist, kann dies auf Nutzungsprobleme oder die Notwendigkeit einer besseren produktinternen Anleitung hinweisen.
+* **Benutzerbindung und -abwanderung:** Bietet eine klare Visualisierung für Zeiträume hoher oder niedriger Benutzerbindung. Die Erkennung dieser Zeiträume mit hoher oder niedriger Aufbewahrung kann Ihnen dabei helfen, Produktentscheidungen zu treffen, um eine hohe Beibehaltung zu fördern oder Abwanderung zu minimieren.
+* **Kampagnenbewertung**: Die Anzeige einer bestimmten Kampagne kann Ihnen dabei helfen, nicht nur zu verstehen, wie viel Traffic sie generiert hat, sondern auch, wie gut die Kampagne den Benutzern geholfen hat, ihre Interaktion fortzusetzen.
+* **Analyse des Benutzerlebenszyklus**: Die Analyse des aktiven Nutzerwachstums während des gesamten Benutzerlebenszyklus kann dabei helfen, bestimmte Phasen zu identifizieren, in denen die Benutzerinteraktion abnimmt. Wenn beispielsweise eine hohe Anzahl ruhender Benutzer für Einzelpersonen in einer Onboarding-Phase vorhanden ist, kann dies auf Nutzungsprobleme oder die Notwendigkeit einer besseren produktinternen Anleitung hinweisen.
 
 ## Abfrageleiste
 
