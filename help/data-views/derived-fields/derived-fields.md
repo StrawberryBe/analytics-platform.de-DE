@@ -4,10 +4,10 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f8ad8b651a9a50b4fc4663ee82e842e3e5da7432
+source-git-commit: 9dbda5000c1d0930fac782b5e3cf382ed6b99a85
 workflow-type: tm+mt
-source-wordcount: '4433'
-ht-degree: 15%
+source-wordcount: '5056'
+ht-degree: 16%
 
 ---
 
@@ -62,7 +62,7 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 | A  | **Regelname** | Standardmäßig lautet der Regelname **Regel X** (X bezieht sich auf eine Sequenznummer). Um den Namen einer Regel zu bearbeiten, wählen Sie deren Namen aus und geben Sie den neuen Namen ein, z. B. `Query Parameter`. |
 | B | **Name der Funktion** | Der ausgewählte Funktionsname für die Regel, z. B. [!UICONTROL URL PARSE]. Wenn die Funktion der letzte in der Funktionssequenz ist und die endgültigen Ausgabewerte bestimmt, folgt dem Funktionsnamen [!UICONTROL - ENDGÜLTIGE AUSGABE], beispielsweise [!UICONTROL URL-PARSE - ENDGÜLTIGE AUSGABE]. <br/>Um ein Popup mit weiteren Informationen zur Funktion anzuzeigen, wählen Sie ![Hilfesymbol](assets/Smock_HelpOutline_18_N.svg). |
 | C  | **Regelbeschreibung** | Sie können optional einer Regel eine Beschreibung hinzufügen.<br/>Auswählen ![Weitere Symbole](assets/More.svg), wählen Sie **[!UICONTROL ** Beschreibung hinzufügen **]** , um eine Beschreibung hinzuzufügen, oder **[!UICONTROL ** Beschreibung bearbeiten **]** , um eine vorhandene Beschreibung zu bearbeiten.<br/>Geben Sie im Editor eine Beschreibung ein. Sie können die Symbolleiste verwenden, um den Text zu formatieren (mithilfe der Stilauswahl, fett, kursiv, unterstrichen, rechts, links, zentriert, Farbe, Nummernliste, Aufzählungsliste) und Links zu externen Informationen hinzuzufügen. <br/>Um die Bearbeitung der Beschreibung abzuschließen, klicken Sie außerhalb des Editors auf . |
-| D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Benutzeroberfläche hängt vom Funktionstyp ab. Das Dropdown-Menü für [!UICONTROL Feld] oder [!UICONTROL Wert] zeigt alle verfügbaren Feldkategorien (Regeln, Standardfelder, Felder) basierend auf dem Typ der Eingabe an, die die Funktion erwartet. Siehe [Funktionsreferenz](#function-reference) Detaillierte Informationen zu den einzelnen unterstützten Funktionen. |
+| D | **Funktionsbereich** | Definiert die Logik der Funktion. Die Benutzeroberfläche hängt vom Funktionstyp ab. Das Dropdown-Menü für [!UICONTROL Feld] oder [!UICONTROL Wert] zeigt alle verfügbaren Feldkategorien (Regeln, Standardfelder, Felder) basierend auf dem Typ der Eingabe an, die die Funktion erwartet. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
 
 {style="table-layout:auto"}
 
@@ -413,9 +413,6 @@ Die folgenden Einschränkungen gelten und werden erzwungen, wenn *Auswählen* un
 
 Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch entsprechende Werte ersetzt werden.
 
-
-
-
 +++ Details
 
 >[!NOTE]
@@ -426,7 +423,7 @@ Definiert einen Satz von Werten, die in einem neuen abgeleiteten Feld durch ents
 
 | Eingabedatentyp | Eingabe | Einbezogene Operatoren | Einschränkungen | Ausgabe |
 |---|---|---|---|---|
-| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul><li>Originalwerte anzeigen<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Zu klassifizierendes Feld]:<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>[!UICONTROL Wenn der Wert gleich] und [!UICONTROL Werte ersetzen durch]:</p><ul><li>Zeichenfolge</li></ul><li>Originalwerte anzeigen<ul><li>Boolesch</li></ul></li></ul> | <p>Nicht angegeben</p> | <p>5 Funktionen pro abgeleitetem Feld<br/>100 Zeilen pro Funktion</p> | <p>Neues abgeleitetes Feld</p> |
 
 {style="table-layout:auto"}
 
@@ -535,6 +532,17 @@ Sie definieren eine `Page Name (updated)` abgeleitetes Feld. Sie verwenden die [
 | [!DNL Deals & Offers] |
 | [!DNL Reviews] |
 | [!DNL Generate Quote] |
+
+
+## Weitere Informationen {#classify-moreinfo}
+
+Die folgenden zusätzlichen Funktionen sind in der Benutzeroberfläche der Regel klassifizieren verfügbar:
+
+- Um alle Tabellenwerte schnell zu löschen, wählen Sie ![Löschen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Alle Tabellenwerte löschen]**.
+- Um eine CSV-Datei hochzuladen, die die ursprünglichen Werte für Wenn -Werte gleich und neue Werte für Ersetzen mit enthält, wählen Sie ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL CSV hochladen]**.
+- Um eine Vorlage zum Erstellen einer CSV-Datei mit den hochzuladenden ursprünglichen und neuen Werten herunterzuladen, wählen Sie ![Herunterladen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV-Vorlage herunterladen]**.
+- Um eine CSV-Datei mit allen ursprünglichen und neuen Werten in der Regeloberfläche herunterzuladen, wählen Sie ![Herunterladen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL CSV-Werte herunterladen]**.
+
 
 +++
 
@@ -685,6 +693,108 @@ Sie definieren eine `Email Marketing (updated)` abgeleitetes Feld. Sie verwenden
 
 +++
 
+
+<!-- LOOKUP
+
+### Lookup
+
+Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+
++++ Details
+
+## Specification {#lookup-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+
+{style="table-layout:auto"}
+
+## Use case {#lookup-uc}
+
+You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+
+### A4T lookup dataset {#lookup-uc-lookup}
+
+| Activity Id | Activity Name |
+|---|---|
+| 415851 | MVT Test Category Pages |
+| 415852 | Luma - Campaign Max 2022 |
+| 402922 | Home Page Banners |
+
+{style="table-layout:auto"}
+
+### Derived field {#lookup-uc-derivedfield}
+
+You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+
+![Screenshot of the Lowercase rule](assets/lookup.png)
+
+## More info
+
+You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+
+  1. Select **[!UICONTROL Schema fields]** from selector.
+  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
+  1. Select your lookup dataset and find the field you want to use for lookup.
+  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
+     ![Lookup drag](assets/lookup-drag.png) 
+
++++
+
+-->
+
+<!-- LOWERCASE -->
+
+### Kleinschreibung
+
+Konvertiert Werte aus einem Feld in Kleinbuchstaben und speichert sie in ein neues abgeleitetes Feld.
+
++++ Details
+
+## Spezifikation {#lowercase-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li><li>Numerisch</li><li>Datum</li></ul> | <ul><li>[!UICONTROL Feld]:</li><ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul> | <p>Nicht angegeben</p> | <p>2 Funktionen pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall {#lowercase-uc}
+
+Sie möchten alle erfassten Produktnamen für eine korrekte Berichterstellung in Kleinbuchstaben konvertieren.
+
+### Daten vor {#lowercase-uc-databefore}
+
+| Erfasste Produktnamen | Produktansichten |
+|---|---:|
+| Tennisschläger | 35 |
+| Tennis Racket | 33 |
+| Tennisschläger | 21 |
+| Baseballschläger | 15 |
+| Baseball Bat | 12 |
+| Baseballschläger | 10 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#lowercase-uc-derivedfield}
+
+Sie definieren eine `Product Names` abgeleitetes Feld. Sie verwenden die [!UICONTROL KLEIN] -Funktion, um eine Regel zum Konvertieren des Werts aus dem [!UICONTROL Erfasste Produktnamen] in Kleinbuchstaben umzuwandeln und im neuen abgeleiteten Feld zu speichern.
+
+![Screenshot der Regel &quot;Kleinbuchstaben&quot;](assets/lowercase.png)
+
+
+### Daten nach {#lowercase-uc-dataafter}
+
+| Produktnamen | Produktansichten |
+|---|---|
+| Tennisschläger | 89 |
+| Baseballschläger | 37 |
+
+{style="table-layout:auto"}
+
++++
+
 <!-- MERGE FIELDS -->
 
 ### Felder zusammenführen
@@ -753,7 +863,7 @@ Sie müssen denselben Feldtyp in einer Regel zum Zusammenführen von Feldern aus
 
 <!-- REGEX REPLACE -->
 
-### Regex ersetzen
+### Regulären Ausdruck ersetzen
 
 Ersetzt einen Wert aus einem Feld mithilfe eines regulären Ausdrucks in ein neues abgeleitetes Feld.
 
@@ -938,6 +1048,119 @@ Sie erstellen eine `Second Response` abgeleitetes Feld, um den letzten Wert aus 
 
 {style="table-layout:auto"}
 
++++
+
+
+<!-- TRIM -->
+
+### Zuschneiden
+
+Beschneidet Leerzeichen, Sonderzeichen oder die Anzahl der Zeichen vom Anfang oder Ende der Feldwerte in ein neues abgeleitetes Feld.
+
++++ Details
+
+## Spezifikation {#trim-io}
+
+| Eingabedatentyp | Eingabe | Einbezogene Operatoren | Limit | Ausgabe |
+|---|---|---|---|---|
+| <ul><li>Zeichenfolge</li></ul> | <ul><li>[!UICONTROL Feld]<ul><li>Regeln</li><li>Standardfelder</li><li>Felder</li></ul></li><li>Leerzeichen trimmen</li><li>Sonderzeichen trimmen<ul><li>Eingabe von Sonderzeichen</li></ul></li><li>Von links beschneiden<ul><li>Von <ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li><li>Von rechts zuschneiden<ul><li>Von <ul><li>Ende der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li></ul></li><li>Hierzu<ul><li>Beginn der Zeichenfolge</li><li>Position<ul><li>Position #</li></ul></li><li>Zeichenfolge<ul><li>Zeichenfolgenwert</li><li>Index</li><li>Flag zum Einschließen von Zeichenfolge</li></ul></li><li>Länge</li></ul></li></ul></li></ul> | <p>Nicht angegeben</p> | <p>1 Funktion pro abgeleitetem Feld</p> | <p>Neues abgeleitetes Feld</p> |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall 1 {#trim-uc1}
+
+Sie erfassen Produktdaten, diese Daten enthalten jedoch ausgeblendete Leerzeichen, die die Berichterstellung fragmentieren. Sie möchten einfach jede überschüssige Whitepace abschneiden
+
+### Daten vor {#trim-uc1-databefore}
+
+| Produkt-ID | Ereignisse |
+|---|--:|
+| `"prod12356 "` | 1 |
+| `"prod12356"` | 1 |
+| `" prod12356"` | 1 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#trim-u1-derivedfield}
+
+Sie erstellen eine `Product Identifier` abgeleitetes Feld. Sie verwenden die [!UICONTROL TRIM] -Funktion zum Definieren einer Regel für **[!UICONTROL Leerzeichen zuschneiden]** aus dem **[!UICONTROL Produkt-ID]** -Feld.
+
+![Screenshot der Aufspaltungsregel 1](assets/trim-1.png)
+
+### Daten nach {#trim-uc1-dataafter}
+
+| Produkt-ID | Ereignisse |
+|---|--:|
+| `"prod12356 "` | 3 |
+
+{style="table-layout:auto"}
+
+## Anwendungsfall 2 {#trim-uc2}
+
+Ihre Daten zu den erfassten Seitennamen enthalten einige fehlerhafte Sonderzeichen am Ende des Seitennamens, die entfernt werden müssen.
+
+### Daten vor {#trim-uc2-databefore}
+
+| Name | Ereignisse |
+|---|--:|
+| homepage# | 1 |
+| homepage? | 1 |
+| homepage% | 1 |
+| homepage&amp; | 1 |
+| homepage/ | 1 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#trim-u2-derivedfield}
+
+Sie erstellen eine  `Page Name` abgeleitetes Feld. Sie verwenden die [!UICONTROL TRIM] -Funktion zum Definieren einer Regel für [!UICONTROL Sonderzeichen beschneiden] aus dem [!UICONTROL Name] -Feld mithilfe des [!UICONTROL Sonderzeichen] `#?%&/`.
+
+![Screenshot der Aufspaltungsregel - erster Wert](assets/trim-2.png)
+
+### Daten nach {#trim-uc2-dataafter}
+
+| Seitenname | Ereignisse |
+|---|--:|
+| homepage | 5 |
+
+{style="table-layout:auto"}
+
+
+## Anwendungsfall 3 {#trim-uc3}
+
+Sie erfassen Daten, einschließlich einer storeID. Die storeID enthält den abgekürzten US-Statuscode als die ersten beiden Zeichen. Sie möchten diesen Statuscode nur in Ihren Berichten verwenden.
+
+### Daten vor {#trim-uc3-databefore}
+
+| storeID | Ereignisse |
+|---|--:|
+| CA293842 | 1 |
+| CA423402 | 1 |
+| UT123418 | 1 |
+| UT189021 | 1 |
+| ID028930 | 1 |
+| OR234223 | 1 |
+| NV22342 | 1 |
+
+{style="table-layout:auto"}
+
+### Abgeleitetes Feld {#trim-u3-derivedfield}
+
+Sie erstellen eine  `Store Identifier` abgeleitetes Feld. Sie verwenden die [!UICONTROL TRIM] -Funktion zum Definieren einer Regel für [!UICONTROL Von rechts abschneiden] die [!UICONTROL storeID] -Feld vom String-Ende bis zur Position `3`.
+
+![Screenshot der Aufspaltungsregel - erster Wert](assets/trim-3.png)
+
+### Daten nach {#trim-uc3-dataafter}
+
+| Store-Kennung | Ereignisse |
+|---|--:|
+| CA | 2 |
+| UT | 2 |
+| ID | 1 |
+| OR | 1 |
+| NV | 1 |
+
+{style="table-layout:auto"}
 +++
 
 
