@@ -3,9 +3,9 @@ title: Frequenzansicht
 description: Interaktion anhand der Nutzungshäufigkeit messen.
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: 1e095720301f3e59e88674d086f5e0de9df88872
+source-git-commit: 77192426a58e1560abe91b904452b9cd46c862e9
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 3%
 # [!UICONTROL Häufigkeit] Ansicht
 
 Die **[!UICONTROL Häufigkeit]** die Ansicht gruppiert Ereignisdaten nach der Häufigkeit, mit der ein Ereignis angezeigt wird. Die vertikale Achse dieses Berichts enthält Behälter, die die Häufigkeit des angezeigten Ereignisses bzw. der angezeigten Ereignisse darstellen. Die horizontale Achse misst die Anzahl der Benutzer oder Sitzungen für jeden Behälter.
+
+![Häufigkeit, Screenshot](../assets/frequency-stacked.png)
 
 ## Anwendungsbeispiele
 
