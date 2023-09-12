@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e4aa9a525fb2ae291cc0c753524d09a81b88c4c3
+source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
 workflow-type: tm+mt
-source-wordcount: '2583'
-ht-degree: 99%
+source-wordcount: '2604'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **September 2023** | |
+| Zusätzliche abgeleitete Feldfunktionen | Aktualisierte Dokumentation für die neue [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) und [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) Funktionen und für die zusätzlichen CSV-Funktionen, die der [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) -Funktion. |
 | Regionale Datenerfassung | Aktualisiert [FAQs](../getting-started/cja-faq.md#12-regional-data-collection) mit Informationen zur regionalen Datenerfassung bei Verwendung von Customer Journey Analytics. |
 | **August 2023** | |
 | Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ | Inhalt für [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) wurde aktualisiert, um die Lesbarkeit zu verbessern. |
