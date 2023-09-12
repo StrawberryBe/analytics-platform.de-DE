@@ -4,10 +4,10 @@ description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit de
 keywords: Produktanalyse
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: 341ad5105be009bd6dd450f255a195961e5652a8
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 7%
+source-wordcount: '1138'
+ht-degree: 8%
 
 ---
 
@@ -30,6 +30,7 @@ Geführte Analyse kategorisiert Ansichtstypen in **Analysetypen**. Die folgenden
 | [!UICONTROL Benutzerwachstum] | [Aktiv](types/active.md) | Identifizieren Sie, wer neu ist, beibehalten, zurückkehren oder ruhend ist. |
 | [!UICONTROL Benutzerwachstum] | [Nettowachstum](types/net-growth.md) | Gewinnen oder verlieren Sie Nutzende? |
 | [!UICONTROL Trends] | [Nutzung](types/usage.md) | Benutzerinteraktion im Lauf der Zeit messen. |
+| [!UICONTROL Trends] | [Häufigkeit](types/frequency.md) | Interaktion anhand der Nutzungshäufigkeit messen. |
 
 {style="table-layout:auto"}
 
