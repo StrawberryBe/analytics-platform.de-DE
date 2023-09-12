@@ -4,10 +4,10 @@ description: Eine Methode zur Datenanalyse in Customer Journey Analytics, mit de
 keywords: Produktanalyse
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 341ad5105be009bd6dd450f255a195961e5652a8
+source-git-commit: 55310a844f5928f0e97e7ea7f44ae146e103dafa
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 8%
+source-wordcount: '1188'
+ht-degree: 7%
 
 ---
 
@@ -54,7 +54,7 @@ Unabhängig vom Analysetyp besteht die geführte Analyse aus den folgenden UI-El
 
 | Benutzeroberfläche | UI-Element | Beschreibung |
 | --- | --- | --- |
-| ![Abfrageleiste](assets/query-rail.png) | Abfrageleiste | Konfigurieren Sie die gewünschten Komponenten (Ereignisse, Eigenschaften und Segmente), aus denen eine Analyse besteht. Jeder Analysetyp erzwingt unterschiedliche Beschränkungen für die Anzahl der Ereignisse und Segmente, die Sie konfigurieren können. Wenn Sie zu einem neuen Analysetyp wechseln, werden Ihre Abfrageauswahlen innerhalb der für diesen Analysetyp zulässigen Grenzen beibehalten. |
+| ![Abfrageleiste](assets/query-rail.png) | Abfrageleiste | Konfigurieren Sie die gewünschten Komponenten (Ereignisse, Eigenschaften und Segmente), aus denen eine Analyse besteht. Jeder Analysetyp erzwingt unterschiedliche Beschränkungen für die Anzahl der Ereignisse und Segmente, die Sie konfigurieren können.<p>Verwenden Sie das Filtersymbol, um die Eigenschaften eines bestimmten Ereignisses einzuschränken, oder erstellen Sie spontan neue Segmente. Sobald eine Eigenschaft ausgewählt ist, wird zusätzlich zu den Standardfilterkriterien wie &quot;gleich&quot;, &quot;enthält&quot;und &quot;endet mit&quot; eine Liste der 1000 wichtigsten Eigenschaftswerte bereitgestellt, die schnell gefiltert werden können.<p>Wenn Sie zu einem neuen Analysetyp wechseln, werden Ihre Abfrageauswahlen innerhalb der für diesen Analysetyp zulässigen Grenzen beibehalten. |
 | ![Diagramm](assets/chart.png) | Diagramm | Eine Visualisierung der zurückgegebenen Daten basierend auf Ihrer Eingabe aus der Abfrageleiste und den Einstellungen. Welche Visualisierung Sie sehen, hängt von der Ansicht und den Einstellungen über dem Diagramm ab. Die verfügbaren Ansichten hängen vom Analysetyp über der Abfrageleiste ab. Das Diagramm enthält außerdem: <ul><li>**Tooltips**: Bewegen Sie den Mauszeiger über einen beliebigen Diagrammdatenpunkt, um eine QuickInfo mit weiteren Informationen anzuzeigen.</li><li>**Legende**: Bewegen Sie den Mauszeiger über die Diagrammlegende, um Seriendefinitionen anzuzeigen, sofern verfügbar.</li><li>**Klickaktionen**: Zeigen Sie die nächsten verfügbaren Aktionen an, indem Sie mit der linken Maustaste auf einen beliebigen Datenpunkt klicken. Optionen umfassen **Segment speichern**.</li></ul> |
 | ![Tabelle](assets/table.png) | Tabelle | Eine Tabellendarstellung der zurückgegebenen Daten basierend auf Ihrer Eingabe aus der Abfrageleiste und den Einstellungen. Die Spalten in der Tabelle hängen vom Ansichtstyp über dem Diagramm ab. Die verfügbaren Ansichten hängen vom Analysetyp über der Abfrageleiste ab. Die Tabelle enthält auch: <ul><li>**Klickaktionen**: Zeigen Sie die verfügbaren nächsten Aktionen an, indem Sie auf die **[!UICONTROL Mehr]** Menü. Optionen umfassen **Segment speichern**.</li></ul> |
 | ![Visualisierungseinstellungen](assets/visualization-settings.png) | Visualisierungseinstellungen | Mehrere Optionen über dem Diagramm ermöglichen es Ihnen, anzupassen, wie das Diagramm und die Tabelle Daten zurückgeben.<ul><li>**Ansichtstyp**: Eine Dropdown-Auswahl, mit der Sie Daten für einen bestimmten Analysetyp auf andere Weise darstellen können.</li><li>**Diagrammeinstellungen**: Passen Sie die Anzeige Ihrer Diagramme und Tabellen an. Die verfügbaren Optionen hängen von der gewählten Ansicht ab.</li><li>**Datumsbereich**: Eine Kalenderauswahl, mit der Sie den Datumsbereich der Analyse ermitteln können. Sie können auch ein Intervall für Trend-Ansichten auswählen, z. B. für tägliche, wöchentliche oder monatliche Ansichten.</li><li>**Insights**: Kontextuelle Einblicke in Abhängigkeit von der von Ihnen angezeigten Analyse. Mithilfe der Pfeile können Sie weitere Einblicke aufrufen oder diese Einblicke mithilfe des Glühbirnensymbols oben rechts ein- oder ausblenden.</li></ul> |
