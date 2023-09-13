@@ -3,10 +3,10 @@ title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 53a1a6995caad960d8daba4e0d1f4394aa184206
+source-git-commit: 8d681a956cc826642e8fc22081acd2c579543b2e
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 27%
+source-wordcount: '1171'
+ht-degree: 26%
 
 ---
 
@@ -73,13 +73,13 @@ Filter basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereignisebene,
 >[!NOTE]
 >Der Personen-Container wurde früher als Besucher-Container bezeichnet. Der Sitzungs-Container wurde als Besuchs-Container bezeichnet, und der Ereignis-Container war früher der Treffer-Container.
 
-Ein Filter legt Bedingungen zum Filtern einer Person auf der Grundlage der Attribute oder Interaktionen der Person mit Ihrer Site, mobilen App oder einem anderen Gerätetyp fest, von dem Sie Daten erfasst haben. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln fest, mit denen Personen nach Personenmerkmalen und/oder Navigationsmerkmalen gefiltert werden. Um Personendaten weiter aufzuschlüsseln, können Sie nach spezifischen Besuchen und/oder Seitenansichtstreffen, Bildschirmtippen und Menüoptionen für jede Person filtern. Der Filtergenerator bietet eine einfache Architektur zum Erstellen dieser Untergruppen und das Anwenden von Regeln als verschachtelte hierarchische Personen-, Sitzungs- oder Ereignis-Container.
+Ein Filter legt Bedingungen zum Filtern einer Person auf der Grundlage der Attribute oder Interaktionen der Person mit Ihrer Site, mobilen App oder einem anderen Gerätetyp fest, von dem Sie Daten erfasst haben. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln fest, mit denen Personen nach Personenmerkmalen und/oder Navigationsmerkmalen gefiltert werden. Um Personendaten weiter aufzuschlüsseln, können Sie für jede Person nach bestimmten Besuchen und/oder Seitenansichtstreffen, Bildschirmtippen und Menüoptionen in einem Set-Top-Feld filtern. Filtern Sie jedoch auch nach Attributen, die Sie aus einem CRM- oder Treuesystem erfasst haben. Der Filtergenerator bietet eine einfache Architektur zum Erstellen dieser Untergruppen und das Anwenden von Regeln als verschachtelte hierarchische Personen-, Sitzungs- oder Ereignis-Container.
 
-Die im Filtergenerator verwendete Behälterarchitektur definiert Person als den äußersten Behälter. Der Container enthält übergreifende Daten, die für die Person über Besuche und Seitenansichten, Mobilanwendungsbildschirme oder Menübildschirme in einem Set-Top-Feld hinweg spezifisch sind. Mit einem verschachtelten Sitzungs-Container können Sie Regeln festlegen, mit denen die Daten der Person auf der Grundlage von Sitzungen aufgeschlüsselt werden, und einen verschachtelten Ereignis-Container, mit dem die Personeninformationen auf der Grundlage einzelner Seitenansichten aufgeschlüsselt werden. Jeder Container ermöglicht Berichte über den Verlauf einer Person, nach Sitzungen aufgeschlüsselte Interaktionen oder aufgeschlüsselte einzelne Ereignisse.
+Die im Filtergenerator verwendete Behälterarchitektur definiert Person als den äußersten Behälter. Der Container enthält übergreifende Daten, die für die Person über Besuche und Seitenansichten, Mobilanwendungsbildschirme oder Menübildschirme in einem Set-Top-Feld hinweg spezifisch sind. Mit einem verschachtelten Sitzungs-Container können Sie Regeln festlegen, mit denen die Daten der Person auf der Grundlage von Sitzungen aufgeschlüsselt werden, und einen verschachtelten Ereignis-Container, mit dem die Personeninformationen auf der Grundlage einzelner Interaktionen aufgeschlüsselt werden. Mit jedem Behälter können Sie Berichte über den Verlauf einer Person, nach Sitzungen aufgeschlüsselte Interaktionen oder einzelne Erlebnisereignisse aufschlüsseln.
 
 ### Personen-Container {#person}
 
-Der Personen-Container enthält alle Besuche und Seitenansichten, mobile App-Bildschirme, Set-Top-Box oder Konsolenspiel-Interaktionen für Personen innerhalb eines bestimmten Zeitraums. Ein Filter auf Benutzerebene gibt die Seitenansichten, die mobile App oder Set-Top-Box-Bildschirme zurück, die die Bedingung erfüllen. Plus alle anderen Seiten und Bildschirme, die von derselben Person über verschiedene Kanäle angesehen werden (und nur durch definierte Datumsbereiche eingeschränkt). Da es sich um den am weitesten definierten Container handelt, geben Berichte, die auf der Ebene des Personen-Containers generiert werden, Seitenansichten, mobile App-Bildschirme und mehr über alle Besuche hinweg zurück und ermöglichen Ihnen die Erstellung einer kanalübergreifenden Analyse mehrerer Besuche. Daher ist der Personen-Container am wahrscheinlichsten, dass er sich basierend auf definierten Datumsbereichen ändert.
+Der Personen-Container enthält alle Besuche und Seitenansichten, mobile App-Bildschirme, Set-Top-Box oder Konsolenspiel-Interaktionen für Personen innerhalb eines bestimmten Zeitraums. Grundsätzlich gilt für jedes Erlebnisereignis, das Teil der Datensätze ist, die Sie in Ihrer Customer Journey Analytics-Verbindung definiert haben. Ein Filter auf Benutzerebene gibt die Seitenansichten, die mobile App oder Set-Top-Box-Bildschirme zurück, die die Bedingung erfüllen. Außerdem alle anderen Interaktionen derselben Person über Online- und Offline-Kanäle (und nur durch definierte Datumsbereiche eingeschränkt). Als am weitesten definierten Container geben Berichte, die auf der Ebene des Personen-Containers generiert werden, Seitenansichten, mobile App-Bildschirme und mehr über alle Besuche hinweg zurück und ermöglichen Ihnen die Erstellung einer kanalübergreifenden Analyse mehrerer Besuche. Daher ist der Personen-Container am wahrscheinlichsten, dass er sich basierend auf definierten Datumsbereichen ändert.
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf einer Person basieren:
 
 - Tage bis Erstkauf
@@ -101,7 +101,7 @@ Sitzungs-Container enthalten Werte, die auf dem Auftreten pro Sitzung basieren:
 - Beitragsmetriken
 - Linear zugeordnete Metriken
 
-Mithilfe von Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung definieren, die darauf basiert, wann ein Benutzer Ihre neue App startet. Siehe [Komponenteneinstellungen](/help/data-views/session-settings.md) für weitere Informationen.
+Mithilfe von Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung definieren, die auf jedem Start der App durch einen Benutzer basiert. Siehe [Komponenteneinstellungen](/help/data-views/session-settings.md) für weitere Informationen.
 
 ### Ereignis-Container {#event}
 
