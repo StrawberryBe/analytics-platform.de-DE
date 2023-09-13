@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
 workflow-type: tm+mt
 source-wordcount: '2604'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | --- | --- |
 | **September 2023** | |
 | Zusätzliche abgeleitete Feldfunktionen | Aktualisierte Dokumentation für die neue [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) und [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) Funktionen und für die zusätzlichen CSV-Funktionen, die der [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) -Funktion. |
-| Regionale Datenerfassung | Aktualisiert [FAQs](../getting-started/cja-faq.md#12-regional-data-collection) mit Informationen zur regionalen Datenerfassung bei Verwendung von Customer Journey Analytics. |
+| Regionale Datenerfassung | Die [Häufig gestellte Fragen](../getting-started/cja-faq.md#12-regional-data-collection) wurden mit Informationen zur regionalen Datenerfassung bei der Verwendung von Customer Journey Analytics aktualisiert. |
 | **August 2023** | |
 | Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ | Inhalt für [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) wurde aktualisiert, um die Lesbarkeit zu verbessern. |
 | Report Builder-Verbesserungen | Inhalt für [Planen von Arbeitsmappen](/help/report-builder/schedule-reportbuilder.md) wurde aktualisiert, um Informationen zum Herunterladen geplanter Aufgaben bereitzustellen. Inhalt für [Erstellen eines Datenblocks](/help/report-builder/create-a-data-block.md) wurde aktualisiert, um Informationen zur Verwendung des Startdatums als Dimension bereitzustellen. |
