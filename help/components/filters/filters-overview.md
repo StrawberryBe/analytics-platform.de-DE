@@ -3,10 +3,10 @@ title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 53a1a6995caad960d8daba4e0d1f4394aa184206
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 33%
+source-wordcount: '1131'
+ht-degree: 27%
 
 ---
 
@@ -19,8 +19,7 @@ Filter können auf
 
 - Attribute (Browsertyp, Gerät, Anzahl Besuche, Land, Geschlecht),
 - Interaktionen (Kampagnen, Keyword-Suche, Suchmaschine),
-- Ausstiege und Einstiege (Personen aus Facebook,
-- eine definierte Landingpage, Referrer-Domäne),
+- Ausstiege und Einstiege (Personen aus Facebook, eine definierte Landingpage, Referrer-Domäne, Geofence-Ereignis),
 - benutzerdefinierte Variablen (Formularfeld, definierte Kategorien, Kunden-ID),
 - und anderen Kriterien.
 
@@ -36,11 +35,11 @@ Informationen zu den verfügbaren Filtertypen und deren Erstellung finden Sie un
 
 ## Sequenzielle Filter {#sequential}
 
-Mit sequenziellen Filtern können Sie Personen anhand der Navigation und Seitenansicht auf Ihrer Site identifizieren und einen Filter für definierte Aktionen und Interaktionen bereitstellen. Mit sequenziellen Filtern können Sie erkennen, was eine Person mag und was sie meidet. Beim Erstellen sequenzieller Filter wird der Operator THEN verwendet, um die Personennavigation zu definieren und zu ordnen.
+Mit sequenziellen Filtern können Sie Personen anhand der Navigation identifizieren (Seitenansichten auf der gesamten Site, Interaktionen mit Szenen in Ihrer mobilen App oder über ein Menü in einem Set-Top-Feld). Sequenzielle Filter bieten einen Filter für definierte Aktionen und Interaktionen und helfen Ihnen dabei zu identifizieren, was eine Person mag und was eine Person vermeidet. Beim Erstellen sequenzieller Filter wird der Operator THEN verwendet, um die Personennavigation zu definieren und zu ordnen.
 
 >[!IMPORTANT]
 >
->Sie müssen über die **Auswählen** -Paket, um kanalübergreifende sequenzielle Filter zu erstellen. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Package Sie haben. &#x200B;
+>Sie müssen über die **Auswählen** -Paket zum Erstellen von kanalübergreifenden sequenziellen Filtern. Wenden Sie sich an Ihren Administrator, wenn Sie sich nicht sicher sind, welches Customer Journey Analytics-Paket Sie haben.
 
 Siehe folgendes Beispiel:
 
@@ -74,22 +73,22 @@ Filter basieren auf einer Hierarchie auf Personen-, Sitzungs- und Ereignisebene,
 >[!NOTE]
 >Der Personen-Container wurde früher als Besucher-Container bezeichnet. Der Sitzungs-Container wurde als Besuchs-Container bezeichnet, und der Ereignis-Container war früher der Treffer-Container.
 
-Ein Filter legt Bedingungen fest, um eine Person basierend auf den Attributen oder Interaktionen der Person mit Ihrer Site zu filtern. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln fest, mit denen Personen nach Personenmerkmalen und/oder Navigationsmerkmalen gefiltert werden. Um Personendaten weiter aufzuschlüsseln, können Sie für jede Person nach spezifischen Besuchen und/oder Seitenansichtstreffen filtern. Der Filtergenerator bietet eine einfache Architektur zum Erstellen dieser Untergruppen und das Anwenden von Regeln als verschachtelte hierarchische Personen-, Sitzungs- oder Ereignis-Container.
+Ein Filter legt Bedingungen zum Filtern einer Person auf der Grundlage der Attribute oder Interaktionen der Person mit Ihrer Site, mobilen App oder einem anderen Gerätetyp fest, von dem Sie Daten erfasst haben. Um Bedingungen in einem Filter festzulegen, legen Sie Regeln fest, mit denen Personen nach Personenmerkmalen und/oder Navigationsmerkmalen gefiltert werden. Um Personendaten weiter aufzuschlüsseln, können Sie nach spezifischen Besuchen und/oder Seitenansichtstreffen, Bildschirmtippen und Menüoptionen für jede Person filtern. Der Filtergenerator bietet eine einfache Architektur zum Erstellen dieser Untergruppen und das Anwenden von Regeln als verschachtelte hierarchische Personen-, Sitzungs- oder Ereignis-Container.
 
-Die im Filtergenerator verwendete Behälterarchitektur definiert Person als den äußersten Behälter, der übergreifende Daten enthält, die für die Person über Besuche und Seitenansichten hinweg spezifisch sind. Mit einem verschachtelten Sitzungs-Container können Sie Regeln festlegen, mit denen die Daten der Person auf der Grundlage von Sitzungen aufgeschlüsselt werden, und einen verschachtelten Ereignis-Container, mit dem die Personeninformationen auf der Grundlage einzelner Seitenansichten aufgeschlüsselt werden. Jeder Container ermöglicht Berichte über den Verlauf einer Person, nach Sitzungen aufgeschlüsselte Interaktionen oder aufgeschlüsselte einzelne Ereignisse.
+Die im Filtergenerator verwendete Behälterarchitektur definiert Person als den äußersten Behälter. Der Container enthält übergreifende Daten, die für die Person über Besuche und Seitenansichten, Mobilanwendungsbildschirme oder Menübildschirme in einem Set-Top-Feld hinweg spezifisch sind. Mit einem verschachtelten Sitzungs-Container können Sie Regeln festlegen, mit denen die Daten der Person auf der Grundlage von Sitzungen aufgeschlüsselt werden, und einen verschachtelten Ereignis-Container, mit dem die Personeninformationen auf der Grundlage einzelner Seitenansichten aufgeschlüsselt werden. Jeder Container ermöglicht Berichte über den Verlauf einer Person, nach Sitzungen aufgeschlüsselte Interaktionen oder aufgeschlüsselte einzelne Ereignisse.
 
 ### Personen-Container {#person}
 
-Der Personen-Container enthält alle Besuche und Seitenansichten für Personen innerhalb eines bestimmten Zeitraums. Ein Filter auf der Ebene der Person gibt die Seite zurück, die die Bedingung erfüllt, sowie alle anderen Seiten, die von der Person angezeigt wurden (und nur durch definierte Datumsbereiche eingeschränkt sind). Da es sich um den am weitesten definierten Container handelt, geben Berichte, die auf der Ebene des Personen-Containers generiert werden, Seitenansichten über alle Besuche hinweg zurück und ermöglichen Ihnen die Erstellung einer Analyse mehrerer Besuche. Daher ist der Personen-Container am wahrscheinlichsten, dass er sich basierend auf definierten Datumsbereichen ändert.
+Der Personen-Container enthält alle Besuche und Seitenansichten, mobile App-Bildschirme, Set-Top-Box oder Konsolenspiel-Interaktionen für Personen innerhalb eines bestimmten Zeitraums. Ein Filter auf Benutzerebene gibt die Seitenansichten, die mobile App oder Set-Top-Box-Bildschirme zurück, die die Bedingung erfüllen. Plus alle anderen Seiten und Bildschirme, die von derselben Person über verschiedene Kanäle angesehen werden (und nur durch definierte Datumsbereiche eingeschränkt). Da es sich um den am weitesten definierten Container handelt, geben Berichte, die auf der Ebene des Personen-Containers generiert werden, Seitenansichten, mobile App-Bildschirme und mehr über alle Besuche hinweg zurück und ermöglichen Ihnen die Erstellung einer kanalübergreifenden Analyse mehrerer Besuche. Daher ist der Personen-Container am wahrscheinlichsten, dass er sich basierend auf definierten Datumsbereichen ändert.
 Personen-Container können Werte enthalten, die auf dem Gesamtverlauf einer Person basieren:
 
 - Tage bis Erstkauf
-- Ursprüngliche Einstiegsseite
-- Ursprünglich Referrerdomänen
+- Ursprüngliche Einstiegsseite oder Startseite der mobilen App
+- Ursprünglich Referrerdomänen 
 
 ### Sitzungs-Container {#session}
 
-Mit dem Sitzungs-Container können Seiteninteraktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifiziert werden. Der Sitzungs-Container ist der am häufigsten verwendete Container, da er das Verhalten für die gesamte Besuchssitzung erfasst, sobald die Regel erfüllt ist. Mit dem Sitzungs-Container können Sie auch definieren, welche Sitzungen beim Erstellen und Anwenden eines Filters ein- oder ausgeschlossen werden sollen. Es kann Ihnen bei der Beantwortung der folgenden Fragen helfen:
+Mit dem Sitzungs-Container können Sie Seiteninteraktionen oder mobile App-Interaktionen, Kampagnen oder Konversionen für eine bestimmte Sitzung identifizieren. Der Sitzungs-Container ist der am häufigsten verwendete Container, da er das Verhalten für die gesamte Besuchssitzung erfasst, sobald die Regel erfüllt ist. Mit dem Sitzungs-Container können Sie auch definieren, welche Sitzungen beim Erstellen und Anwenden eines Filters ein- oder ausgeschlossen werden sollen. Es kann Ihnen bei der Beantwortung der folgenden Fragen helfen:
 
 - Bei wie vielen Sitzungen wurden sowohl Web- als auch Callcenter-Datenquellen verwendet?
 - Welche Seiten haben zu einer erfolgreichen Konversion in einem Verkauf beigetragen?
@@ -102,11 +101,13 @@ Sitzungs-Container enthalten Werte, die auf dem Auftreten pro Sitzung basieren:
 - Beitragsmetriken
 - Linear zugeordnete Metriken
 
+Mithilfe von Datenansichten in Customer Journey Analytics können Sie festlegen, wie lange eine Sitzung dauert, aber auch, wann eine neue Sitzung erstellt werden soll. Sie können beispielsweise eine neue App-Sitzung definieren, die darauf basiert, wann ein Benutzer Ihre neue App startet. Siehe [Komponenteneinstellungen](/help/data-views/session-settings.md) für weitere Informationen.
+
 ### Ereignis-Container {#event}
 
-Der Ereignis-Container definiert, welche Seitenereignisse von einem Filter ein- oder ausgeschlossen werden sollen. Es handelt sich um die schmalsten verfügbaren Container, mit denen Sie bestimmte Klicks und Seitenansichten identifizieren können, bei denen eine Bedingung wahr ist. Mit dem Ereignis-Container können Sie einen einzelnen Trackingcode anzeigen oder das Verhalten in einem bestimmten Abschnitt Ihrer Site isolieren. Sie können auch einen bestimmten Wert erkennen, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, wenn ein Auftrag platziert wurde.
+Der Ereignis-Container definiert, welche Seite, Mobile App oder andere Ereignistypen Sie ein- oder ausschließen möchten. Es handelt sich dabei um die schmalsten verfügbaren Container, mit denen Sie bestimmte Klicks, Seitenansichten und Tippen auf die Schaltfläche in einer mobilen App identifizieren können, in der eine Bedingung wahr ist. Mit dem Ereignis-Container können Sie einen einzelnen Trackingcode anzeigen oder das Verhalten in einem bestimmten Bereich Ihrer App isolieren. Sie können auch einen bestimmten Wert erkennen, wenn eine Aktion stattfindet, z. B. den Marketing-Kanal, wenn ein Auftrag platziert wurde.
 
-Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
+Ereignis-Container enthalten wertbasierte Einzelseitenaufschlüsselungen für:
 
 - Produkte
 - Listen-Props
@@ -115,7 +116,7 @@ Zu den Ereignis-Containern zählen wertbasierte Einzelseitenunterteilungen:
 
 ## Vordefinierte Filtervorlage {#template}
 
-Die herkömmliche Analytics-Version enthält zahlreiche vordefinierte Vorlagen und berechnete Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics oder müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextabhängige Variablen in Customer Journey Analytics ab.
+Herkömmliche Analytics bietet zahlreiche vordefinierte Vorlagen und berechnete Metriken. Viele von ihnen gelten nicht für Customer Journey Analytics, müssen umbenannt oder neu erstellt werden. Andere hängen von einer Lösung für kontextsensitive Variablen im Customer Journey Analytics ab.
 
 | Filtername | Beschreibung |
 | --- | --- |
