@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 4fd0f680ee0a1e61956899c2e3148cb1f0d46d76
+source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '969'
 ht-degree: 86%
 
 ---
@@ -154,10 +154,7 @@ ht-degree: 86%
       + [Freiform-Bedienfeld](../analysis-workspace/c-panels/freeform-panel.md)
       + [Bedienfeld „Quick Insights“](../analysis-workspace/c-panels/quickinsight.md)
       + [Bedienfeld „Gleichzeitige Medienbetrachter“](../analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + Mit Medienwiedergabe verbrachte Zeit {#media-playback-timespent}
-         + [Überblick](../analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
-         + [Eingabe- und Ausgabeeinstellungen](../analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
-         + [Häufig gestellte Fragen (FAQ)](../analysis-workspace/c-panels/media-playback-timespent/faqs.md)
+      + [Panel „Verbrachte Zeit bei der Medienwiedergabe“](../analysis-workspace/c-panels/media-playback-time-spent.md)
    + Kuratieren, Freigeben und Planen von Projekten {#curate-share}
       + [Menü „Freigeben“](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratieren von Projekten](../analysis-workspace/curate-share/curate.md)

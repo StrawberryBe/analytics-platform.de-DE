@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 09414449c200199682b68cf5aa71c06cb192328f
+source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
 workflow-type: tm+mt
-source-wordcount: '2604'
-ht-degree: 99%
+source-wordcount: '2651'
+ht-degree: 97%
 
 ---
 
@@ -20,10 +20,11 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **September 2023** | |
+| Die Struktur der Artikel für das Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;wurde aktualisiert | Der Ordner &quot;Media Play-back Time Spent&quot;wurde entfernt und der Inhalt des Ordners in einen einzigen Artikel zusammengefasst: [Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Diese Änderung entspricht eher der Dokumentation für andere Bedienfelder.</p> |
 | Zusätzliche abgeleitete Feldfunktionen | Aktualisierte Dokumentation für die neue [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) und [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) Funktionen und für die zusätzlichen CSV-Funktionen, die der [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) -Funktion. |
 | Regionale Datenerfassung | Die [Häufig gestellte Fragen](../getting-started/cja-faq.md#12-regional-data-collection) wurden mit Informationen zur regionalen Datenerfassung bei der Verwendung von Customer Journey Analytics aktualisiert. |
 | **August 2023** | |
-| Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ | Inhalt für [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) wurde aktualisiert, um die Lesbarkeit zu verbessern. |
+| Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ | Inhalt für [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-time-spent.md) wurde aktualisiert, um die Lesbarkeit zu verbessern. |
 | Report Builder-Verbesserungen | Inhalt für [Planen von Arbeitsmappen](/help/report-builder/schedule-reportbuilder.md) wurde aktualisiert, um Informationen zum Herunterladen geplanter Aufgaben bereitzustellen. Inhalt für [Erstellen eines Datenblocks](/help/report-builder/create-a-data-block.md) wurde aktualisiert, um Informationen zur Verwendung des Startdatums als Dimension bereitzustellen. |
 | Inhalte zur Verwaltung terminierter Projekte verschoben | Es wurde ein neuer Artikel mit dem Titel [Terminierte Projekte](/help/components/scheduled-projects-manager.md) im Handbuch zu den Analytics-Komponenten hinzugefügt. Diese Inhalte befanden sich zuvor im Artikel [Planen von Projekten](/help/analysis-workspace/curate-share/t-schedule-report.md) im Handbuch zu Analytics-Tools. |
 | Unterstützte Funktionen in Adobe Customer Journey Analytics | Es wurden weitere Informationen in der Tabelle *Auf neue Weise unterstützt* zu den Sitzungsfunktionen in Customer Journey Analytics im Vergleich zu Adobe Analytics hinzugefügt. [Weitere Informationen](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |

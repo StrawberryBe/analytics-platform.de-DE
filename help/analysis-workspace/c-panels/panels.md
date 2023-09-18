@@ -3,7 +3,7 @@ description: Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
+source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
 workflow-type: tm+mt
 source-wordcount: '1232'
 ht-degree: 51%
@@ -25,7 +25,7 @@ Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Custom
 | [Attributionsbedienfeld](attribution.md) | Vergleichen und visualisieren Sie im Handumdrehen eine beliebige Anzahl von Attributionsmodellen unter Verwendung verschiedener Dimensionen und Konversionskennzahlen. |
 | [Freiform-Bedienfeld](freeform-panel.md) | Führen Sie unbegrenzte Vergleiche und Aufschlüsselungen durch und fügen Sie dann Visualisierungen hinzu, um eine ausführliche Story mit den Daten zu erzählen. |
 | [Bedienfeld „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md) | Analysieren Sie gleichzeitige Betrachter über einen längeren Zeitraum. Sie erhalten Details zum maximalen gleichzeitigen Zugriff und die Möglichkeit, aufzuschlüsseln und zu vergleichen. |
-| [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“](media-playback-timespent/media-playback-time-spent.md) | Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei gleichzeitigen Ansichten aufgetreten sind oder wo es zu Abbrüchen gekommen ist. |
+| [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei gleichzeitigen Ansichten aufgetreten sind oder wo es zu Abbrüchen gekommen ist. |
 
 ![](assets/panel-overview.png)
 
@@ -74,7 +74,7 @@ Dropdown-Filter können auch verwendet werden, um viele Projekte zu einem zusamm
 So erstellen Sie einen statischen Dropdown-Filter:
 
 * Klicken Sie bei Dropdown-Filtern, die Dimensionselemente verwenden, in der linken Leiste auf das Pfeilsymbol neben der gewünschten Dimension. Diese Aktion legt alle verfügbaren Dimensionselemente offen. Mehrere Dimensionselemente aus dieser Liste auswählen mithilfe von `[Shift + Click]` oder `[Ctrl + Click]`und legen Sie sie dann in der Dropzone des Bedienfelds ab **während des Betriebs`[Shift]`**.
-* Bei Dropdown-Filtern, die andere Komponenten wie Metriken, Filter oder Datumsbereiche verwenden, wählen Sie mehrere Komponenten mithilfe von `[Shift + Click]` oder `[Ctrl + Click]`. Auswahl in die Dropzone des Bedienfelds legen **während des Betriebs`[Shift]`**. Alle Komponententypen werden in diesem Kontext als Filter behandelt.
+* Bei Dropdown-Filtern, die andere Komponenten wie Metriken, Filter oder Datumsbereiche verwenden, wählen Sie mehrere Komponenten mit `[Shift + Click]` oder `[Ctrl + Click]`. Auswahl in die Dropzone des Bedienfelds legen **während des Betriebs`[Shift]`**. Alle Komponententypen werden in diesem Kontext als Filter behandelt.
 * Ein einzelner Dropdown-Filter kann nur einen Komponententyp enthalten. Wenn Sie mehrere Komponententypen in Ihre Auswahl aufnehmen, wird pro Komponententyp ein separater Dropdown-Filter erstellt. Wenn Sie beispielsweise sowohl Metriken als auch Dimensionselemente in Ihre Auswahl aufnehmen, werden zwei separate Dropdown-Filter erstellt. Ein Dropdown-Filter enthält Dimensionselemente, der andere wiederum Metriken.
 
 Wählen Sie eine der Optionen aus der Dropdownliste aus, um die Daten im Bedienfeld zu ändern. Sie können auch auf die Filterung von Bedienfelddaten verzichten, indem Sie **[!UICONTROL Kein Filter]**.
@@ -93,7 +93,7 @@ Wenn Sie mit der rechten Maustaste auf einen Dropdown-Filter klicken, stehen fol
 
 Mit dynamischen Dropdown-Filtern können Sie verfügbare Werte basierend auf Daten innerhalb des Berichtsbereichs des Bedienfelds und Werte in anderen Dropdown-Filtern bestimmen. Sie können beispielsweise zwei dynamische Dropdown-Listen mit der Dimension Länder und der Dimension Städte erstellen. Wenn Sie ein Land aus der Dropdown-Liste UICONTROL Länder auswählen, wird die Dropdownliste Städte dynamisch angepasst, sodass nur Städte in diesem Land angezeigt werden.
 
-Dieses Konzept gilt für alle Dimensionen. nur Dimensionselemente sichtbar, die innerhalb des Datumsbereichs des Bedienfelds und der ausgewählten Filter angezeigt werden. In statischen Dropdown-Filtern ausgewählte Dimensionen wirken sich auf verfügbare Werte in dynamischen Dropdown-Filtern aus. Das Gegenteil ist jedoch nicht wahr; In dynamischen Dropdown-Filtern ausgewählte Dimensionen wirken sich nicht auf verfügbare Werte in statischen Dropdown-Filtern aus.
+Dieses Konzept gilt für alle Dimensionen. Es werden nur Dimensionselemente angezeigt, die innerhalb des Datumsbereichs des Bedienfelds und in den ausgewählten Filtern angezeigt werden. In statischen Dropdown-Filtern ausgewählte Dimensionen wirken sich auf verfügbare Werte in dynamischen Dropdown-Filtern aus. Das Gegenteil ist jedoch nicht der Fall. In dynamischen Dropdown-Dimensionen ausgewählte Elemente wirken sich nicht auf verfügbare Werte in statischen Dropdownfiltern aus.
 
 Eine manuelle Auswahl von Dimensionselementen ist verfügbar, wenn Sie erwarten, dass ein bestimmtes Dimensionselement in Zukunft erfasst wird. Sie können auch einen dynamischen Dropdown-Filter löschen, sodass dieser keinen Wert enthält, sodass andere dynamische Dropdown-Filter mehr Werte enthalten können. Auswählen **[!UICONTROL Alle zurücksetzen]** , um die Auswahl aus allen Dropdown-Filtern für dieses Bedienfeld zu löschen.
 
