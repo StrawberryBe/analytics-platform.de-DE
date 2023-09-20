@@ -3,7 +3,7 @@ description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablege
 title: Erstellen von Filtern
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e97f206e2c2f00d32e7e06d56fcc84819fe329c6
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 23%
@@ -64,7 +64,7 @@ Sie können Regeldefinitionen und Container hinzufügen, um Ihre Filter zu defin
 1. Geben Sie für das ausgewählte Element einen Wert ein oder wählen Sie einen aus.
 1. Fügen Sie, sofern erforderlich, mithilfe von **[!UICONTROL AND]**-, **[!UICONTROL OR]**- oder **[!UICONTROL THEN]**-Regeln weitere Behälter hinzu.
 1. Nachdem Sie die Behälter platziert und die Regeln festgelegt haben, sehen Sie sich die Ergebnisse des Filters in der Validierungsdiagramm oben rechts an. Der Validator gibt den Prozentsatz und die absolute Anzahl der Seitenansichten, Besuche und eindeutigen Personen an, die mit dem erstellten Filter übereinstimmen.
-1. under **[!UICONTROL Tags]**, [Tag](/help/components/filters/manage-filters.md) den Container durch Auswahl eines vorhandenen Tags oder Erstellen eines neuen.
+1. under **[!UICONTROL Tags]**, [Tag](/help/components/filters/filters-tag.md) den Container durch Auswahl eines vorhandenen Tags oder Erstellen eines neuen.
 1. Klicks **[!UICONTROL Speichern]** , um den Filter zu speichern.
 
    Sie werden zum [Filter Manager](/help/components/filters/manage-filters.md), wo Sie Filter auf verschiedene Arten taggen, freigeben und verwalten können.

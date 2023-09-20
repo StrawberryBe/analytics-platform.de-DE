@@ -3,9 +3,9 @@ description: Durch das Taggen von Segmenten können Sie diese im Manager für be
 title: Berechnete Metriken taggen
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '277'
 ht-degree: 19%
 
 ---
@@ -20,15 +20,14 @@ Alle Benutzer können Tags für berechnete Metriken erstellen und eines oder meh
 >
 >Die nützlichsten Typen von Tags sind normalerweise Tags, die auf den folgenden Kriterien basieren:
 >
->* **Teamnamen**, wie Social Marketing oder Mobile Marketing.
+>* **Teamnamen**, z. B. Social Marketing oder Mobile Marketing.
 >* **Projekt** (Analyse-Tags), z. B. Entrypage-Analyse.
 >* **Kategorien**, wie z. B. Frauen oder Geografie.
->* **Workflows**, z. B. Genehmigung oder Kuratierung für (einen bestimmten Geschäftsbereich).
-
+>* **Workflows**, wie Genehmigung oder Kuratierung für (einen bestimmten Geschäftsbereich).
 
 ## Anwenden von Tags auf eine berechnete Metrik
 
-1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Berechnete Metriken**] , um zum Manager für berechnete Metriken zu wechseln.
+1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Berechnete Metriken**].
 
 1. Aktivieren Sie im Manager für berechnete Metriken das Kontrollkästchen neben den Metriken, die Sie taggen möchten.
 
@@ -43,13 +42,13 @@ Alle Benutzer können Tags für berechnete Metriken erstellen und eines oder meh
 
 ## Angewandte Tags anzeigen
 
-1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Berechnete Metriken**] , um zum Manager für berechnete Metriken zu wechseln.
+1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Berechnete Metriken**] , um zum Manager für berechnete Metriken zu wechseln.
 
 1. Im Manager für berechnete Metriken werden Tags im [!UICONTROL **Tags**] Spalte. (Klicken Sie auf das Zahnradsymbol oben rechts, um Ihre Spalten zu verwalten.)
 
 ## Metriken nach Tags filtern
 
-1. Wählen Sie in Customer Journey Analytics [!UICONTROL **Komponenten**] > [!UICONTROL **Berechnete Metriken**] , um zum Manager für berechnete Metriken zu wechseln.
+1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Berechnete Metriken**] , um zum Manager für berechnete Metriken zu wechseln.
 
 1. Wählen Sie im Manager für berechnete Metriken die **Filter** und wählen Sie dann die Tags aus, nach denen Sie filtern möchten.
 

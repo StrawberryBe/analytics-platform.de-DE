@@ -1,139 +1,69 @@
 ---
-title: Filter verwalten
+title: Filter Manager
 description: Erfahren Sie, wie Sie Filter in Customer Journey Analytics verwalten.
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 8d6dc1d220fc3719b13842e812aaf6ddc55ae47c
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 99%
+source-wordcount: '644'
+ht-degree: 24%
 
 ---
 
-# Filter verwalten
+# Filter Manager
 
-Der Filter-Manager bietet verschiedene Möglichkeiten zum Kuratieren von Filtern wie deren Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Kennzeichnen als Favoriten.
+Der Filter-Manager bietet viele Möglichkeiten zum Kuratieren von Filtern, wie das Freigeben, Taggen, Genehmigen, Kopieren, Löschen und Kennzeichnen als Favoriten.
 
-Der Filter-Manager zeigt Ihnen alle Filter, die sich in Ihrem Besitz befinden und für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. Dieser Überblick stellt die Benutzeroberfläche und die Funktionen des Filter-Managers vor.
-
-Sie können den Filter-Manager aufrufen, indem Sie in der oberen Navigation zu **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Komponenten]** > **[!UICONTROL Filter]** navigieren.
-
-## Filter Manager-Benutzeroberfläche {#ui}
+Der Filter-Manager zeigt Ihnen alle Filter an, deren Inhaber Sie sind und die für Sie freigegeben wurden. Benutzer auf Administratorebene können alle Filter der Organisation anzeigen. In dieser Übersicht werden die Benutzeroberfläche und die Funktionen des Filters-Managers vorgestellt.
 
 ![](assets/filter-manager-ui.png)
 
-| # | Funktion der Benutzeroberfläche | Beschreibung |
-|---|---|---|
-| 1 | Werkzeugleiste für die Filterverwaltung | Diese Werkzeugleiste wird angezeigt, sobald Sie einen Filter aktivieren. Über diese Werkzeugleiste können die meisten Verwaltungsaufgaben erledigt werden. |
-| 2 | Kontrollkästchen | Aktivieren Sie einen Filter, um ihn zu verwalten. |
-| 4 | Favoriten | Wenn Sie auf den Stern neben einem Filter klicken, wird der Stern gelb und der Filter als Favorit markiert. |
-| 5 | Titel und Beschreibung | Werden durch den Filtergenerator bereitgestellt. Klicken Sie auf den Titel-Link, um den Titel und die Beschreibung zu bearbeiten. Dadurch gelangen Sie zurück zum Filtergenerator. |
-| 7 | Inhaber | Zeigt an, wer Inhaber des Filters ist. Wenn Sie kein Administrator sind, können Sie nur Filter sehen, deren Inhaber Sie sind, sowie Filter, die für Sie freigegeben wurden. |
-| 8 | Tags (in der Spaltenauswahl nicht aktiviert, weshalb die Spalte nicht angezeigt wird) | Tags, die entweder durch Sie oder durch Personen, die einen Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
-| 9 | Freigegeben für | Zeigt Personen oder Gruppen (nur Administrator) oder „Alle“ (nur Administrator) an, für die Sie den Filter freigegeben haben. |
-| 10 | Änderungsdatum | Zeigt das Datum der letzten Änderung des Filters an. |
-| 11 | Spaltenauswahl | (Oben rechts) Hier können Sie auswählen, welche Spalten im Filter-Manager angezeigt werden sollen. |
-| 12 | Gemeinsam-Symbol | Gibt an, dass dieser Filter von Ihnen oder für Sie freigegeben wurde. |
-| 13 | Freigegeben-Symbol | Gibt an, dass dieser Filter durch einen Administrator genehmigt wurde. |
-| 14 | Andere Filter | Ermöglicht Ihnen, die Filter unter „Tags“, „Datenansichten“, „Inhaber“ und „Sonstige“ („Alle anzeigen“, „Meine“, „Für mich freigegeben“, „Genehmigt“, „Favoriten“) zu sehen. |
+## Zugriff auf den Filter-Manager
 
-## Filter planen {#plan}
+1. Wählen Sie unter Customer Journey Analytics die **[!UICONTROL Komponenten]** Registerkarte und wählen Sie **[!UICONTROL Filter]**.
 
-Wenn Sie für die Planung von Filtern etwas Zeit aufwenden, verbessern Sie die Chancen, dass diese für Ihre Organisation von Nutzen sein werden und dass ihre Anzahl unter Kontrolle bleibt.
+## Verfügbare Aktionen im Filter-Manager
 
-* Bedenken Sie die Zielgruppe: Wer wird ihn benutzen? Für wen werden Sie er freigeben? Welche Personengruppe wird diesen Filter benutzen und wie sollte er demnach getaggt werden? Dies erfordert auch eine gute Filterbeschreibung. Die Beschreibung sollte mindestens die folgenden Fragen beantworten:
+Im Filter-Manager haben Sie folgende Möglichkeiten:
 
-   * Wofür ist dieser Filter nützlich?
+* [Filtern der Filterliste](/help/components/filters/filters-filter.md)
 
-   * Wann sollte dieser Filter benutzt werden?
+* [Filter als Favoriten markieren](/help/components/filters/filters-favorite.md)
 
-* Legen Sie den Filterumfang fest. Welcher [Filter-Container](/help/components/filters/filters-overview.md) stellt den Umfang am besten dar? Benutzen Sie den kleinstmöglichen Container.
+* [Filter genehmigen](/help/components/filters/filters-approve.md)
 
-* Entscheiden Sie, welche Elemente und welche Werte in die Filterdefinition aufgenommen werden.
+* [Filter taggen](/help/components/filters/filters-tag.md)
 
-* Überlegen Sie, wie der Genehmigungsprozess verlaufen soll. Wird eine einzelne Person die Filter prüfen und genehmigen oder wird dies die Entscheidung einer Kommission sein?
+* [Filter freigeben](/help/components/filters/filters-share.md)
 
-* Definieren Sie Ihre Filter mit Blick auf eine Filterbibliothek, die Unternehmensbenutzern die Möglichkeit gibt, Teile oder Komponenten von Filtern modular zu stapeln und wiederzuverwenden. Welche „Module“ müssen Sie definieren, um diese Bibliothek zu realisieren?
+* Exportieren Sie einen Filter in eine CSV-Datei.
 
-### Filter taggen {#tag}
+* [Filter kopieren](/help/components/filters/filters-copy.md)
 
-Durch das Taggen von Filtern können Sie diese im Filter-Manager organisieren. Alle Benutzer können Tags für Filter erstellen und eines oder mehrere Tags auf einen Filter anwenden. Sie sehen Tags jedoch nur für die Filter, deren Inhaber Sie sind oder die für Sie freigegeben wurden.
+* Filter löschen
 
-Welche Arten von Tags sollten Sie erstellen? Hier finden Sie einige Vorschläge für nützliche Tags:
+## Spalten konfigurieren
 
-* Auf Teamnamen basierende Tags wie Social Marketing, Mobile Marketing
+Sie können die für jeden Filter angezeigten Informationen im Filter-Manager konfigurieren, indem Sie die angezeigten Spalten konfigurieren.
 
-* Projekt-Tags (Analyse-Tags) wie Entrypage-Analyse
+So konfigurieren Sie die sichtbaren Spalten im Filter-Manager:
 
-* Kategorie-Tags: Männer, Region
+1. Wählen Sie unter Customer Journey Analytics die **[!UICONTROL Komponenten]** Registerkarte und wählen Sie **[!UICONTROL Filter]**.
 
-* Workflow-Tags: Genehmigung ausstehend, kuratiert für (einen bestimmten Geschäftsbereich).
+1. Wählen Sie im Filter-Manager die **Spalten anpassen** icon ![Symbol &quot;Spalten anpassen&quot;](assets/customize-columns-icon.png)und wählen Sie dann die Spalten aus, die im Filter-Manager angezeigt werden sollen.
 
-Taggen eines Filters:
+   Die folgenden Spalten sind verfügbar:
 
-1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie taggen möchten. Die Werkzeugleiste für die Filterverwaltung wird angezeigt.
+   | Spaltentitel | Beschreibung |
+   |---|---|
+   | Titel und Beschreibung | Diese Werte werden im Filter-Builder bereitgestellt. Um den Titel und die Beschreibung zu bearbeiten, wählen Sie den Titel-Link aus, um den Filter-Builder zu öffnen. |
+   | Favoriten | Zeigt neben jedem Filter Sternensymbole an, mit denen Sie Filter als Favoriten markieren können. Weitere Informationen finden Sie unter [Filter als Favoriten markieren](/help/components/filters/filters-favorite.md). |
+   | Datenansicht | Diese Spalte gibt an, in welcher Datenansicht der Filter zuletzt gespeichert wurde. |
+   | Verantwortlicher | Zeigt an, wer Inhaber des Filters ist. Wenn Sie kein Administrator sind, können Sie nur Filter sehen, deren Inhaber Sie sind, sowie Filter, die für Sie freigegeben wurden. |
+   | Tags (in der Spaltenauswahl nicht aktiviert, weshalb die Spalte nicht angezeigt wird) | Tags, die entweder durch Sie oder durch Personen, die einen Filter für Sie freigegeben haben, auf den Filter angewendet wurden. |
+   | Freigegeben für | Zeigt Personen oder Gruppen (nur Administrator) oder „Alle“ (nur Administrator) an, für die Sie den Filter freigegeben haben. <p>Wenn ein Filter von Ihnen oder für Sie freigegeben wird, wird neben dem Filternamen ein Freigabesymbol angezeigt.</p> |
+   | Änderungsdatum | Zeigt das Datum der letzten Änderung des Filters an. |
+   | Verwendet in | **Hinweis:** Diese Funktion befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsveröffentlichungen](/help/release-notes/releases.md).<p>Zeigt an, in welchem der folgenden Komponententypen der Filter derzeit verwendet wird:</p> <ul><li>Berechnete Metriken </li><li>Projekte</li><li>Geplante Projekte</li><li>Filter</li></ul> Wenn der Filter beispielsweise in 40 Projekten und 2 berechneten Metriken verwendet wird, zeigt diese Spalte [!UICONTROL **Berechnete Metriken (2), Projekte (40)**]. <p>Diese Informationen können Ihnen dabei helfen festzustellen, ob ein Filter für Benutzer in Ihrer Organisation nützlich ist oder ob er gelöscht werden soll.</p><p>Diese Informationen enthalten keine Verwendung über die API oder den Report Builder.</p><p>Sie können die [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen, damit Sie die Verwendung von Komponenten in Ihrem Unternehmen verfolgen und besser verstehen können. |
+   | Zuletzt verwendet | **Hinweis:** Diese Funktion befindet sich in der eingeschränkten Testphase der Veröffentlichung und ist möglicherweise noch nicht in Ihrer Umgebung verfügbar. Diese Anmerkung wird entfernt, wenn die Funktion allgemein verfügbar ist. Informationen zum Customer Journey Analytics-Veröffentlichungsprozess finden Sie unter [Customer Journey Analytics-Funktionsveröffentlichungen](/help/release-notes/releases.md).<p>Zeigt das Datum der letzten Verwendung des Filters in einem der folgenden Komponententypen an:</p> <ul><li>Berechnete Metriken </li><li>Projekte</li><li>Geplante Projekte</li><li>Filter</li></ul> <p>Anhand dieser Informationen können Sie feststellen, ob eine Komponente für Benutzer in Ihrer Organisation nützlich ist oder ob sie gelöscht werden soll.</p><p>Diese Informationen enthalten keine Verwendung über die API oder den Report Builder.</p><p>Sie können die [Datenwörterbuch](/help/components/data-dictionary/data-dictionary-overview.md) zusammen mit diesen Informationen, damit Sie die Verwendung von Komponenten in Ihrem Unternehmen verfolgen und besser verstehen können. |
 
-1. Klicken Sie auf **[!UICONTROL Taggen]** und
-
-   * wählen Sie entweder ein vorhandenes Tag aus oder
-
-   * geben Sie einen neuen Tag-Namen ein und drücken Sie die **[!UICONTROL Eingabetaste]**.
-
-1. Klicken Sie erneut auf **[!UICONTROL Taggen]**, um den Filter zu taggen.
-
-Das Tag wird jetzt in der Spalte „Tags“ angezeigt. (Klicken Sie oben rechts auf das Zahnradsymbol, um Ihre Spalten zu verwalten.)
-Sie können unter **[!UICONTROL Filter > Tags]** auch nach Tags filtern.
-
-### Filter genehmigen {#approve}
-
-Im Filter-Manager können Sie einen Workflow einrichten, der das Genehmigen von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen umfasst und mit den Berichtserstellungsrichtlinien übereinstimmt.
-
-So wird ein Filter als genehmigt gekennzeichnet:
-
-1. Aktivieren Sie im Filter-Manager das Kontrollkästchen links neben dem Filtertitel.
-
-1. Klicken Sie in der Task-Leiste für die Filterverwaltung auf **[!UICONTROL Genehmigen]**.
-
-1. Überlegen Sie, ob Sie die genehmigten Filter für Ihre Organisation freigeben möchten.
-
-1. Klicken Sie auf **[!UICONTROL OK]**.
-
-   Beachten Sie, dass in der Liste neben dem Filter ein Genehmigungssymbol angezeigt wird:
-
-   ![](assets/seg_approved.png)
-
-1. Sie können die Genehmigung eines genehmigten Filters auch aufheben, indem Sie auf **[!UICONTROL Nicht genehmigen]** klicken.
-
-### Filter freigeben {#share}
-
-Abhängig von Ihren Berechtigungen können Sie Filter für Ihre gesamte Organisation, Gruppen oder einzelne Benutzer freigeben.
-
-| Administrator | Nicht-Administrator |
-|---|---|
-| Kann Filter für alle, für Gruppen und für Benutzer freigeben. Weitere Informationen finden Sie in der [Dokumentation zu Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-products-and-profiles.html). | Kann Filter nur für einzelne Benutzer freigeben. |
-
-Wann sollten Filter für das gesamte Unternehmen und wann nur für eine Benutzergruppe oder einzelne Benutzer freigegeben werden? Im Folgenden finden Sie einige Best Practices, an denen Sie sich orientieren können:
-
-* Geben Sie als Administrator einen Filter für alle frei, wenn er für das gesamte Unternehmen von Nutzen ist und von jedem problemlos verwendet werden kann. In diesem Fall sollten Sie den Filter eventuell auch genehmigen.
-
-* Geben Sie als Administrator einen Filter für ein bestimmtes Produktprofil frei, wenn der Filter für das entsprechende Team einen Geschäftswert bietet. Führen Sie für diesen Filtertyp keine offizielle Genehmigung durch.
-
-* Geben Sie als Administrator oder als einzelner Benutzer einen Filter für andere einzelne Benutzer frei, um einen Filter zu prüfen und zu validieren. Wenn er sich als nicht nützlich erweist, kann er verworfen werden. Führen Sie für diesen Filtertyp keine offizielle Genehmigung durch.
-
-Freigeben eines Filters:
-
-1. Aktivieren Sie im Filter-Manager das Kontrollkästchen neben dem Filter, den Sie freigeben möchten.
-
-1. Klicken Sie in der Toolbar für die Filterverwaltung auf **[!UICONTROL Freigeben]**.
-
-1. Wenn Sie Administrator sind, können Sie „Alle“ oder Gruppen und Benutzer in Ihrer Organisation auswählen. Als Nicht-Administrator sehen Sie nur einzelne Benutzer. Benutzen Sie das Suchfeld, um nach Gruppen oder Benutzern zu suchen. Klicken Sie auf **[!UICONTROL Freigabe]**. Neben dem Filter wird das Freigabesymbol angezeigt: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
-
-1. Sie können nach für Sie freigegebenen Filtern filtern, indem Sie „Filter“ > „Weitere Filter“ > „Für mich freigegeben“ verwenden.
-
-### Filter als Favoriten markieren {#favorites}
-
-Das Kennzeichnen von Filtern als Favoriten bietet eine weitere Möglichkeit, diese für eine einfache Verwendung zu organisieren.
-
-1. Klicken Sie im Filter-Manager auf den Stern neben allen Filtern, die Sie als Favoriten kennzeichnen möchten. Der Stern wird gelb, wenn Sie ihn auswählen.
-
-1. Sie können unter „Filter“ > „Weitere Filter“ > „Favoriten“ nach Favoriten filtern.
+   {style="table-layout:auto"}

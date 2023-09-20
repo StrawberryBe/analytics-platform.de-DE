@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Konfigurieren eines Kohortenanalyseberichts
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 91%
@@ -47,7 +47,7 @@ Erstellen Sie in Analysis Workspace eine Kohorte und führen Sie einen [!UICONTR
 
    Wählen Sie Zellen aus (fortlaufende oder nicht fortlaufende) und klicken Sie mit der rechten Maustaste auf **[!UICONTROL Filter aus Auswahl erstellen]**.
 
-1. Bearbeiten Sie den Filter im [Filter-Builder](/help/components/filters/manage-filters.md) weiter und klicken Sie dann auf **[!UICONTROL Speichern]**.
+1. Bearbeiten Sie den Filter im [Filter-Builder](/help/components/filters/filter-builder.md) weiter und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
    Der gespeicherte Filter ist im Bedienfeld [!UICONTROL Filter] in [!UICONTROL Analysis Workspace] für die Verwendung verfügbar.
 1. Geben Sie Ihrem Kohortenprojekt einen Namen und speichern Sie es.

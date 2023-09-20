@@ -3,10 +3,10 @@ title: Filterübersicht
 description: Erfahren Sie, wofür Filter verwendet werden und wie Sie einen einfachen Filter erstellen.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 8d681a956cc826642e8fc22081acd2c579543b2e
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 26%
+ht-degree: 24%
 
 ---
 
@@ -25,7 +25,7 @@ Filter können auf
 
 Sie können Filter im Filtergenerator erstellen und speichern oder Filter aus einer Fallout-Visualisierung (in Workspace) generieren. Darüber hinaus können Filter zusammen als gestapelte Filter verwendet werden.
 
-Die Filterung umfasst den [Filtergenerator](/help/components/filters/filter-builder.md) zum Aufbau von Filtern und zur Ausführung eines Vorab-Tests sowie den [Filter-Manager](/help/components/filters/manage-filters.md) zur Erfassung, Kennzeichnung, Freigabe, Sicherheitseinstellung und Weitergabe von Filtern in Ihrer Organisation.
+Die Filterung umfasst die [Filter Builder](/help/components/filters/filter-builder.md) , um Filter zu erstellen und einen Vortest auszuführen, und die [Filter Manager](/help/components/filters/manage-filters.md) , um Filter in Ihrem Unternehmen zu sammeln, zu taggen, zu genehmigen, zu schützen und freizugeben.
 
 Die maximale Anzahl von Filtern, die Sie pro IMS-Organisation erstellen können, beträgt 50.000.
 

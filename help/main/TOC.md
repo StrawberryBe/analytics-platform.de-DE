@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 92580534f2a09bfd7e9cc2d4993cc05374922ca7
+source-git-commit: dab672e07ddf834701279e108ad2daab1ad94efa
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 83%
+source-wordcount: '1023'
+ht-degree: 82%
 
 ---
 
@@ -227,6 +227,12 @@ ht-degree: 83%
    + Filter {#cja-filters}
       + [Filterübersicht](../components/filters/filters-overview.md)
       + [Filter erstellen](../components/filters/create-filters.md)
+      + [Filter freigeben](../components/filters/filters-share.md)
+      + [Filter taggen](../components/filters/filters-tag.md)
+      + [Filtern der Filterliste](../components/filters/filters-filter.md)
+      + [Filter als Favoriten markieren](../components/filters/filters-favorite.md)
+      + [Filter genehmigen](../components/filters/filters-approve.md)
+      + [Filter kopieren](../components/filters/filters-copy.md)
       + [Schnellfilter](../components/filters/quick-filters.md)
       + [Filter-Builder](../components/filters/filter-builder.md)
       + [Filter verwalten](../components/filters/manage-filters.md)
@@ -242,6 +248,9 @@ ht-degree: 83%
          + [Gefilterte Metriken](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Filter stapeln und ersetzen](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Gefilterte und gewichtete Metriken](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+         + [Berechnete Metriken filtern](../components/calc-metrics/cm-workflow/cm-filter.md)
+         + [Berechnete Metriken als Favoriten markieren](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [Berechnete Metriken kopieren](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [Funktionen verwenden](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Berechnete Metriken taggen](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Berechnete Metriken genehmigen](../components/calc-metrics/cm-workflow/cm-approving.md)
