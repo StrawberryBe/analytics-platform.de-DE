@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 92580534f2a09bfd7e9cc2d4993cc05374922ca7
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 86%
+source-wordcount: '995'
+ht-degree: 83%
 
 ---
 
@@ -161,8 +161,11 @@ ht-degree: 86%
       + [Freigeben von Projekten](../analysis-workspace/curate-share/share-projects.md)
       + [Erstellen von freigebbaren Links](../analysis-workspace/curate-share/shareable-links.md)
       + [Schreibgeschützte Projekte](../analysis-workspace/curate-share/view-only-projects.md)
-      + [PDF- oder CSV-Dateien herunterladen](../analysis-workspace/curate-share/download-send.md)
-      + [Planen von Projekten](../analysis-workspace/curate-share/t-schedule-report.md)
+   + Exportieren {#export}
+      + [Exportübersicht](../analysis-workspace/export/export-project-overview.md)
+      + [Download](../analysis-workspace/export/download-send.md)
+      + [An andere senden](../analysis-workspace/export/t-schedule-report.md)
+      + [In die Cloud exportieren](../analysis-workspace/export/export-cloud.md)
    + Virtual Analyst {#virtual-analyst}
       + [Übersicht über Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
       + Anomalieerkennung {#anomaly-detection}
@@ -253,6 +256,13 @@ ht-degree: 86%
       + [Datumsbereiche verwalten](../components/date-ranges/manage.md)
       + [Benutzerdefinierte Datumsbereiche erstellen](../components/date-ranges/custom-date-ranges.md)
       + [Datumsvergleich](../components/date-ranges/time-comparison.md)
+   + Exporte {#exports}
+      + [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md)
+      + [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md)
+      + [Verwalten von Cloud-Exportspeicherorten](/help/components/exports/manage-export-locations.md)
+      + [Verwalten von Exporten](/help/components/exports/manage-exports.md)
+      + [Verwalten von Exportprotokollen](/help/components/exports/manage-export-logs.md)
+      + [Fehlerbehebung bei Exporten](/help/components/exports/troubleshoot-exports.md)
    + Datenwörterbuch {#data-dictionary}
       + [Datenwörterbuch – Überblick](../components/data-dictionary/data-dictionary-overview.md)
       + [Komponenteninformationen im Datenwörterbuch anzeigen](../components/data-dictionary/view-data-dictionary.md)
@@ -325,6 +335,7 @@ ht-degree: 86%
    + [Anzeigen und Verwalten der Nutzung](../admin/estimate-usage.md)
    + [Auswirkungen des Löschens](../admin/cja-deletion.md)
    + [Customer Journey Analytics-Performance optimieren](../admin/optimizing-performance.md)
+   + [IP-Adressen](../admin/ip-addresses.md)
 
 + Labs {#labs}
    + [Labs-Benutzerhandbuch](../labs/labs.md)

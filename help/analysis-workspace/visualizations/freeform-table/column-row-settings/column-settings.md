@@ -3,10 +3,10 @@ description: Mithilfe der Spalteneinstellungen können Sie die Spaltenformatieru
 title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 98%
+source-wordcount: '686'
+ht-degree: 94%
 
 ---
 
@@ -56,7 +56,25 @@ Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, d
 
 Ermöglicht es Ihnen, den standardmäßigen Attributionsmodellsatz in [Datenansichten](/help/data-views/component-settings/attribution.md).
 
-1. Klicken Sie auf das Zahnradsymbol „Einstellungen“ in einer Freiformtabellenspalte.
+<!--
+
+>[!NOTE]
+>
+>Consider the following when updating a component's attribution to a non-default attribution model:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
+
+-->
+
+So verwenden Sie ein nicht standardmäßiges Attributionsmodell für eine Metrik in einer Analysis Workspace:
+
+1. Klicken Sie auf das Symbol Einstellungen (Zahnrad) für eine Metrik in einer Freiformtabellenspalte.
 
    ![Kontrollkästchen „Attribution“](assets/attribution-checkbox.png)
 
@@ -67,4 +85,3 @@ Ermöglicht es Ihnen, den standardmäßigen Attributionsmodellsatz in [Datenansi
 >[!MORELIKETHIS]
 >
 >* [Datenquellen verwalten](/help/analysis-workspace/visualizations/t-sync-visualization.md)
-

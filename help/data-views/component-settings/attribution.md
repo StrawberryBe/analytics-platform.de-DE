@@ -4,38 +4,71 @@ description: Hier können Sie die Standardattribution für eine Metrik festlegen
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 38%
+source-wordcount: '1859'
+ht-degree: 37%
 
 ---
 
 # Attributions-Komponenteneinstellungen
 
-Mit Attribution können Sie anpassen, wie Erfolgsereignisse Dimensionselementen zugeschrieben werden.
+Attribution bietet die Möglichkeit, anzupassen, wie Dimensionselemente für Erfolgsereignisse angerechnet werden.
 
 ![](../assets/attribution-settings.png)
 
 Zum Beispiel:
 
 1. Eine Person auf Ihrer Site klickt auf einen Paid Search-Link zu einer Ihrer Produktseiten. Das Produkt wird zum Warenkorb hinzugefügt, aber nicht gekauft.
-2. Am nächsten Tag sehen sie einen Social-Media-Beitrag von einem ihrer Freunde. Er klickt auf den Link und schließt dann den Kauf ab.
+2. Am nächsten Tag sehen sie einen Social-Media-Post von einem ihrer Freunde. Er klickt auf den Link und schließt dann den Kauf ab.
 
 In einigen Berichten möchten Sie die Bestellung eventuell Paid Search zuordnen. In anderen Berichten möchten Sie die Bestellung eventuell Social Media zuordnen. Mithilfe von Attribution können Sie diesen Aspekt der Berichterstattung steuern.
 
-Mit dieser Komponenteneinstellung für die Datenansicht können Sie ein standardmäßiges Attributionsmodell für eine Metrik festlegen. Sie können das Attributionsmodell einer bestimmten Metrik überschreiben, während Sie in Analysis Workspace arbeiten.
+## Standardattributionsmodell einer Komponente festlegen
 
+Sie können ein standardmäßiges Attributionsmodell für eine bestimmte Metrik festlegen, indem Sie die Einstellung der Metrik in der Datenansicht aktualisieren. Dadurch wird das Attributionsmodell der Metrik bei jeder Verwendung in Analysis Workspace außer Kraft gesetzt.
 
+<!-- 
 
-Wenn Ihre Organisation erfordert, dass eine Metrik über mehrere Attributionseinstellungen verfügt, können Sie eine der folgenden Aktionen durchführen:
+>[!NOTE]
+>
+>Consider the following when enabling attribution on a metric:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 
-* Kopieren Sie die Metrik in der Datenansicht mit jeder gewünschten Attributionseinstellung. Sie können dieselbe Metrik mehrmals in eine Datenansicht einbeziehen, wodurch jede Metrik eine andere Einstellung erhält. Stellen Sie sicher, dass Sie jede Metrik entsprechend benennen, damit Analysten den Unterschied zwischen diesen Metriken bei der Berichterstellung verstehen.
-* Überschreiben Sie die Metrik in Analysis Workspace. In einer Metrik [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)auswählen **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** , um das Attributionsmodell der Metrik und das Lookback-Fenster für diesen Bericht zu ändern.
+-->
+
+So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
+
+1. Rufen Sie die Datenansicht auf, die die Komponente enthält, deren standardmäßiges Attributionsmodell Sie aktualisieren möchten.
+
+1. Wählen Sie die Komponente aus und erweitern Sie dann den Abschnitt Attribution auf der rechten Seite des Bildschirms.
+
+   ![](../assets/attribution-settings.png)
+
+1. Auswählen [!UICONTROL **Attribution festlegen**] und wählen Sie dann das Attributionsmodell im [!UICONTROL **Attributionsmodell**] Dropdown-Menü.
+
+   Siehe [Attributionsmodelle](#attribution-models) , um mehr über die einzelnen Attributionsmodelle zu erfahren.
+
+1. Wählen Sie [!UICONTROL **Speichern und fortfahren**] aus.
+
+>[!TIP]
+>
+>Wenn Ihre Organisation erfordert, dass eine Metrik über mehrere Attributionseinstellungen verfügt, können Sie eine der folgenden Aktionen durchführen:
+>
+> * Kopieren Sie die Metrik in der Datenansicht mit jeder gewünschten Attributionseinstellung. Sie können dieselbe Metrik mehrmals in eine Datenansicht einbeziehen, wodurch jede Metrik eine andere Einstellung erhält. Stellen Sie sicher, dass Sie jede Metrik entsprechend benennen, damit Analysten den Unterschied zwischen diesen Metriken bei der Berichterstellung verstehen.
+>
+> * Überschreiben Sie die Metrik in Analysis Workspace. In einer Metrik [Spalteneinstellungen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)auswählen **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]** , um das Attributionsmodell der Metrik und das Lookback-Fenster für diesen Bericht zu ändern.
 
 ## Attributionsmodelle
 
-Ein Attributionsmodell bestimmt, welchen Dimensionselementen eine Metrik zugeschrieben wird, wenn innerhalb des Lookback-Fensters einer Metrik mehrere Werte angezeigt werden. Attributionsmodelle gelten nur, wenn im Lookback-Fenster mehrere Dimensionselemente festgelegt sind. Wenn nur ein einzelnes Dimensionselement festgelegt ist, wird diesem Dimensionselement unabhängig vom verwendeten Attributionsmodell 100 % zugeschrieben.
+Ein Attributionsmodell bestimmt, welche Dimensionselemente einer Metrik gutgeschrieben werden, wenn innerhalb des Lookback-Fensters einer Metrik mehrere Werte angezeigt werden. Attributionsmodelle gelten nur, wenn im Lookback-Fenster mehrere Dimensionselemente festgelegt sind. Wenn nur ein einzelnes Dimensionselement festgelegt ist, wird diesem Dimensionselement unabhängig vom verwendeten Attributionsmodell 100 % zugeschrieben.
 
 | Symbol | Attributionsmodell | Definition |
 | :---: | :--- | --- |
@@ -61,9 +94,9 @@ Ein Lookback-Fenster ist der Zeitraum, der für eine Konversion rückblickend be
 * **30 Tage**: Blickt bis zu 30 Tage nach der Konvertierung zurück.
 * **60 Tage**: Blickt bis zu 60 Tage nach der Konvertierung zurück.
 * **90 Tage**: Blickt bis zu 90 Tage nach der Konvertierung zurück.
-* **Sitzung**: Blickt bis zum Anfang der Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen die geänderte [Sitzungs-Timeout](../create-dataview.md#session-settings).
+* **Sitzung**: Blickt bis zum Beginn der Sitzung zurück, in der eine Konversion stattgefunden hat. Sitzungs-Lookback-Fenster berücksichtigen die geänderte [Sitzungs-Timeout](../create-dataview.md#session-settings).
 * **Person (Berichtsfenster)**: Betrachtet alle Besuche bis zum ersten des Monats des aktuellen Datumsbereichs. Wenn der Berichtszeitraum beispielsweise zwischen dem 15. September und dem 30. September liegt, liegt der Personen-Lookback-Datumsbereich zwischen dem 1. September und dem 30. September. Wenn Sie dieses Lookback-Fenster verwenden, können Sie gelegentlich sehen, dass Dimensionselemente Datumsangaben außerhalb Ihres Berichtsfensters zugeordnet werden.
-* **Benutzerdefinierte Zeit:** Ermöglicht Ihnen das Festlegen eines benutzerdefinierten Lookback-Fensters ab dem Zeitpunkt der Konvertierung. Sie können die Anzahl der Minuten, Stunden, Tage, Wochen, Monate oder Quartale festlegen. Wenn beispielsweise am 20. Februar eine Konversion stattfand, würde ein Lookback-Fenster von fünf Tagen alle Dimensionskontaktpunkte vom 15. Februar bis 20. Februar im Attributionsmodell auswerten.
+* **Benutzerdefinierte Zeit:** Ermöglicht Ihnen das Festlegen eines benutzerdefinierten Lookback-Fensters ab dem Zeitpunkt der Konvertierung. Sie können die Anzahl der Minuten, Stunden, Tage, Wochen, Monate oder Quartale festlegen. Wenn beispielsweise am 20. Februar eine Konversion stattgefunden hat, würde ein Lookback-Fenster von fünf Tagen alle Dimensionskontaktpunkte vom 15. Februar bis 20. Februar im Attributionsmodell auswerten.
 
 ## Beispiel
 
@@ -86,7 +119,7 @@ Je nach Lookback-Fenster und Attributionsmodell erhalten Kanäle eine unterschie
 * Verwenden **Zeitverfall** und **Personen-Lookback-Fenster**, wird die Gewichtung zwischen Paid Search, Social Media, E-Mail und Display-Anzeige aufgeteilt. Verwendung der standardmäßigen 7-Tage-Halbwertszeit:
    * Abstand von null Tagen zwischen Display-Touchpoint und Konversion. `2^(-0/7) = 1`
    * Abstand von null Tagen zwischen E-Mail-Touchpoint und Konversion. `2^(-0/7) = 1`
-   * Abstand von sechs Tagen zwischen Social-Media-Touchpoint und Konversion. `2^(-6/7) = 0.552`
+   * Abstand von sechs Tagen zwischen Social Touch-Point und Konversion. `2^(-6/7) = 0.552`
    * Abstand von neun Tagen zwischen Paid-Search-Touchpoint und Konversion. `2^(-9/7) = 0.41`
    * Die Normalisierung dieser Werte führt zu Folgendem:
       * Display-Anzeige: 33,8 %, 16,88 Euro

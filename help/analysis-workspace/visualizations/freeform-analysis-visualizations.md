@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 87%
+source-wordcount: '1243'
+ht-degree: 86%
 
 ---
 
@@ -45,19 +45,19 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
 1. Verwenden Sie eine der folgenden Methoden, um die Visualisierung hinzuzufügen:
 
-   * Wählen Sie in der linken Leiste die **Visualisierungen** icon <!-- add icon -->, und ziehen Sie eine Visualisierung in den Bereich, dem Sie sie hinzufügen möchten.
+   * Wählen Sie in der linken Leiste die **Visualisierung** icon <!-- add icon -->, und ziehen Sie eine Visualisierung in den Bereich, dem Sie sie hinzufügen möchten.
 
-      ![](assets/viz-rail.png)
+     ![](assets/viz-rail.png)
 
    * Wählen Sie im Bereich, in dem Sie die Visualisierung hinzufügen möchten, die **Plus** und wählen Sie dann das Symbol aus, das die Visualisierung darstellt, die Sie hinzufügen möchten. Bewegen Sie den Mauszeiger über das Symbol für jede Visualisierung, um den Namen anzuzeigen.
 
-      ![Schaltfläche zum Hinzufügen einer Visualisierung](assets/visualization-add-to-panel.png)
+     ![Schaltfläche zum Hinzufügen einer Visualisierung](assets/visualization-add-to-panel.png)
 
    * Hinzufügen einer [leeres Bedienfeld](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=de)und wählen Sie dann die Visualisierung aus, die Sie hinzufügen möchten.
 
-      ![Leeres Bedienfeld](assets/blank_panel.png)
+     ![Leeres Bedienfeld](assets/blank_panel.png)
 
-   * Klicken Sie mit der rechten Maustaste auf ein vorhandenes Bedienfeld in Ihrem Analysis Workspace-Projekt und wählen Sie [!UICONTROL **Visualisierung duplizieren**] oder [!UICONTROL **Visualisierung kopieren**].
+   * Klicken Sie mit der rechten Maustaste auf einen vorhandenen Bereich in Ihrem Analysis Workspace-Projekt und wählen Sie [!UICONTROL **Visualisierung duplizieren**] oder [!UICONTROL **Visualisierung kopieren**].
 
 ## Anpassen von Visualisierungseinstellungen
 
@@ -86,7 +86,7 @@ Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten könn
 | Einstellung | Beschreibung |
 | --- | --- |
 | Visualisierungstyp | Ändern Sie den visuellen Typ, der zur Darstellung der Daten verwendet wird. |
-| Granularität | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste aus. Diese Änderung gilt auch für die Datenquellentabelle. |
+| Granularität | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste. Diese Änderung gilt auch für die Datenquellentabelle. |
 | Prozentsatz | Zeigt Werte als Prozentzahlen an. |
 | 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. Beispiel: ![Gestapelt 100%](assets/stacked_100_percent.png) |
 | Legende sichtbar | Hiermit können Sie den erklärenden Text zu Details für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |
@@ -122,8 +122,8 @@ Weitere Funktionen für eine Visualisierung sind verfügbar, wenn Sie mit der re
 | --- | --- |
 | Kopiertes Bedienfeld/kopierte Visualisierung einfügen | Sie können das kopierte Bedienfeld oder die kopierte Visualisierung an einer anderen Stelle innerhalb des Projekts oder in ein ganz anderes Projekt einfügen. |
 | Visualisierung kopieren | Ermöglicht es Ihnen, mit der rechten Maustaste auf eine Visualisierung zu klicken und sie zu kopieren, sodass Sie sie an einer anderen Stelle innerhalb des Projekts oder in ein anderes Projekt einfügen können. |
-| [Objekte als CSV herunterladen](/help/analysis-workspace/curate-share/download-send.md) | Laden Sie bis zu 50.000 Dimensionselemente für die ausgewählte Dimension als CSV herunter. |
-| [Daten als CSV herunterladen](/help/analysis-workspace/curate-share/download-send.md) | Laden Sie die Visualisierungsdatenquelle als CSV herunter. |
+| [Projektdaten herunterladen](/help/analysis-workspace/export/download-send.md) | Laden Sie bis zu 50.000 Dimensionselemente für die ausgewählte Dimension als CSV herunter. |
+| [Projektdaten herunterladen](/help/analysis-workspace/export/download-send.md) | Laden Sie die Visualisierungsdatenquelle als CSV herunter. |
 | Visualisierung duplizieren | Fertigt ein exaktes Duplikat der aktuellen Visualisierung an, das Sie dann bearbeiten können. |
 | Beschreibung bearbeiten | Text zur Beschreibung der Visualisierung hinzufügen (oder bearbeiten). |
 | Visualisierungs-Link anfordern | Hiermit können Sie Personen zu einer bestimmten Visualisierung innerhalb eines Projekts leiten. Wenn auf den Link geklickt wird, muss sich der Empfänger anmelden, bevor er zu genau der verknüpften Visualisierung weitergeleitet wird. |
