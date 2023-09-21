@@ -1,24 +1,22 @@
 ---
 description: Exportieren Sie ein Analysis Workspace-Projekt an einen Cloud-Speicherort.
 keywords: Analysis Workspace
-title: Customer Journey Analytics-Daten in die Cloud exportieren
+title: Customer Journey Analytics-Berichte in die Cloud exportieren
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 92d240581282684fd3e71dd2135d188b9239512b
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1609'
 ht-degree: 4%
 
 ---
 
-# Customer Journey Analytics-Daten in die Cloud exportieren
+# Customer Journey Analytics-Berichte in die Cloud exportieren
 
-{{select-package}}
+Sie können Workspace-Volltabellen von Customer Journey Analytics exportieren und Exporte an bestimmte Cloud-Ziele senden.
 
-Sie können vollständige Tabellen aus Customer Journey Analytics exportieren und Daten an bestimmte Cloud-Ziele senden.
-
-Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Daten zur Verfügung, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md).
+Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Berichten zur Verfügung, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Vollständige Tabellen aus Analysis Workspace exportieren
 
@@ -44,15 +42,14 @@ So exportieren Sie vollständige Tabellen aus Analysis Workspace:
    | Tags | Sie können ein vorhandenes Tag auf den Export anwenden oder ein neues Tag erstellen und anwenden. <p>Um ein vorhandenes Tag auf den Export anzuwenden, wählen Sie beliebige Tags aus dem Dropdownmenü aus. Alle Tags in Ihrem Unternehmen können angewendet werden.<!-- double-check this -->.</p> <p>Um ein neues Tag zu erstellen, geben Sie den Namen des neuen Tags ein und drücken Sie dann die Eingabetaste.</p><p>Beachten Sie beim Anwenden von Tags auf einen Export Folgendes: <ul><li>Von Ihnen angewendete Tags können in der Exporttabelle nach gefiltert oder gesucht werden.</li> <li>Auf ein Projekt angewendete Tags werden beim Export einer vollständigen Tabelle nicht automatisch angewendet, wie unter &quot;Spalten auf der Exportseite konfigurieren&quot;in [Verwalten von Exporten](/help/components/exports/manage-exports.md). (Alternativ: Wenn [Planen eines vollständigen Projekts für den Export](/help/analysis-workspace/export/t-schedule-report.md)festgelegt ist, werden alle auf das Projekt angewendeten Tags automatisch auf den Export angewendet.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | Beschreibung | Fügen Sie dem Export eine Beschreibung hinzu. Sie können Beschreibungen als Spalte im [Exportieren einer Seite](/help/components/exports/manage-exports.md) beim Anzeigen von Exporten. |
    | Datenansicht | Wählen Sie die Datenansicht aus, die die Komponenten enthält, die Sie in den Export einbeziehen möchten. Das Dropdown-Menü Datenansicht befindet sich in der linken oberen Ecke des Dialogfelds und kann über das Datenansichtssymbol identifiziert werden![Datenansichtssymbol](assets/data-view-icon.png).  <p>**Hinweis:** Wenn Sie eine Datenansicht auswählen, in der Komponenten fehlen, die bereits in Ihrer Datentabelle enthalten sind, werden Sie aufgefordert, die Datentabelle zu löschen und sie mithilfe von Komponenten, die in der ausgewählten Datenansicht enthalten sind, erneut zu erstellen. </p> |
-   | Lookback-Fenster | Wählen Sie den Zeitrahmen aus, der in die Datentabelle aufgenommen werden soll. Optionen umfassen [!UICONTROL **Heute**], [!UICONTROL **Gestern**], [!UICONTROL **Letzte 7 Tage**], [!UICONTROL **Letzte 30 Tage**], [!UICONTROL **Diese Woche**], und [!UICONTROL **Diesen Monat**]. |
+   | Lookback-Fenster | Wählen Sie den Zeitrahmen für die Berichterstellung aus, der in jede Exportdatei aufgenommen werden soll. Optionen umfassen [!UICONTROL **Heute**], [!UICONTROL **Gestern**], [!UICONTROL **Letzte 7 Tage**], [!UICONTROL **Letzte 30 Tage**], [!UICONTROL **Diese Woche**], und [!UICONTROL **Diesen Monat**]. |
    | Leeren | Löscht den Inhalt der Datentabelle. Auf diese Weise können Sie direkt im Dialogfeld Neuer vollständiger Tabellenexport mit der Erstellung einer neuen Tabelle beginnen. |
-   | Exporthäufigkeit | Wählen Sie aus, wie oft der Export erfolgen soll. <p>Sie können [!UICONTROL **Jetzt senden (einmal)**] , um den Export nur einmal zu senden. Wenn Sie diese Option auswählen, wird der Export sofort gesendet.<p>Sie haben auch die Möglichkeit, den Export nach einem festgelegten Zeitplan durchzuführen. Beim Versand innerhalb eines Zeitplans umfassen die Optionen [!UICONTROL **Täglich**], [!UICONTROL **Wöchentlich**], [!UICONTROL **Monatlich nach Wochentag**], [!UICONTROL **Monatlich nach Tag des Monats**], [!UICONTROL **Jährlich nach Tag des Monats**], und [!UICONTROL **Jährlich nach spezifischem Datum**]. </p><p>Beachten Sie bei der Auswahl einer Exportfrequenz Folgendes:</p><ul><li>Die Optionen in [!UICONTROL **Lookback**] -Feld ändern, je nachdem, was Sie hier auswählen.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Je nach gewählter Option werden weitere Konfigurationsfelder angezeigt.</li></ul> |
+   | Exporthäufigkeit | Legen Sie den Zeitplan fest, wie oft der Export erfolgen soll. <p>Sie können [!UICONTROL **Jetzt senden (einmal)**] , um den Export nur einmal zu senden. Wenn Sie diese Option auswählen, wird der Export sofort gestartet.<p>Sie haben auch die Möglichkeit, den Export nach einem festgelegten Zeitplan durchzuführen. Beim Versand innerhalb eines Zeitplans umfassen die Optionen [!UICONTROL **Täglich**], [!UICONTROL **Wöchentlich**], [!UICONTROL **Monatlich nach Wochentag**], [!UICONTROL **Monatlich nach Tag des Monats**], [!UICONTROL **Jährlich nach Tag des Monats**], und [!UICONTROL **Jährlich nach spezifischem Datum**]. </p><p>Beachten Sie bei der Auswahl einer Exportfrequenz Folgendes:</p><ul><li>Die Optionen in [!UICONTROL **Lookback**] -Feld ändern, je nachdem, was Sie hier auswählen.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Je nach gewählter Option werden weitere Konfigurationsfelder angezeigt.</li></ul> |
    | Startet am | Tag und Uhrzeit, zu der der geplante Export beginnen soll. <p>Diese Option ist nur verfügbar, wenn Sie eine geplante Exportfrequenz auswählen.</p> |
    | Beenden am | Der Tag und die Uhrzeit, zu der der geplante Export abläuft. Der geplante Export wird nicht mehr nach dem von Ihnen festgelegten Datum und der festgelegten Uhrzeit ausgeführt. <p>Diese Option ist nur verfügbar, wenn Sie eine geplante Exportfrequenz auswählen.</p> |
    | Dateiformat | Wählen Sie aus, ob die exportierten Daten im .csv - oder .json -Format vorliegen sollen. |
    | Konto | Wählen Sie das Cloud-Exportkonto aus, an das die Daten gesendet werden sollen. <p>Weitere Informationen finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md).</p> |
    | Name des Speicherorts | Wählen Sie den Speicherort für das Konto aus, an den die Exportdaten gesendet werden sollen. <p>Weitere Informationen finden Sie unter [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).</p><p>Sie können die [!UICONTROL **Neuen Speicherort hinzufügen**] -Schaltfläche, um einen neuen Speicherort für ein vorhandenes Exportkonto zu erstellen. |
-   | Datenvorschau | Zeigt die geschätzte Größe, die geschätzte Anzahl von Zeilen und die Anzahl der Aufschlüsselungen an. |
 
    {style="table-layout:auto"}
 
@@ -76,11 +73,11 @@ Durch das Exportieren von Customer Journey Analytics-Daten in die Cloud haben Si
 
 * Schließen Sie berechnete Metriken in die exportierten Customer Journey Analytics ein.
 
-* Strukturdatenausgabe als verkettete Werte (wie Data Warehouse für Adobe Analytics).
+* Strukturdatenausgabe als verkettete Werte.
 
 * Exportieren Sie Ad Hoc oder einen Zeitplan. (Auch verfügbar mit [andere Exportoptionen](/help/analysis-workspace/export/export-project-overview.md).
 
-* Exportieren Sie Dateien im CSV- oder PDF-Format. (Auch verfügbar mit [andere Exportoptionen](/help/analysis-workspace/export/export-project-overview.md).
+* Exportieren Sie Dateien im CSV- oder JSON-Format. (Auch verfügbar mit [andere Exportoptionen](/help/analysis-workspace/export/export-project-overview.md).
 
 * Exportieren Sie Tabellen, die mehrere Dimensionen enthalten.
 
@@ -145,8 +142,6 @@ Wenn in einem Bericht ein nicht standardmäßiges Attributionsmodell verwendet w
 
 Nachdem die Daten aus Analysis Workspace exportiert wurden, können Sie bestehende Exporte bearbeiten, erneut exportieren, duplizieren, taggen oder löschen, wie unter [Verwalten von Exporten](/help/components/exports/manage-exports.md).
 
-Sie können Support-Tickets für fehlgeschlagene Exporte auch erneut versuchen oder protokollieren, wie unter [Verwalten von Exportprotokollen](/help/components/exports/manage-export-logs.md).
-
 ## Exportierte Daten und Manifestdatei anzeigen
 
 ### Exportierte Daten
@@ -184,10 +179,10 @@ Wenn Sie zuvor Data Warehouse zum Exportieren von Adobe Analytics-Daten verwende
 |---------|----------|---------|
 | Benutzerspezifischen Bericht erstellen | Ja | Ja |
 | Berechnete Metriken  | Ja | Nein |
-| Segmente  | Ja | Ja |
+| Segmente  | Ja | Begrenzt |
 | Dimensionen | Maximal 5 | Unbegrenzt |
 | Metriken | Maximal 5 | Unbegrenzt |
-| Berichtszeilen | Limit von 3, 30, 150 oder 300, je nach Ebene | Unbegrenzt |
+| Berichtszeilen | Limit von 3 Millionen, 30 Millionen, 150 Millionen oder 300 Millionen je nach Tier | Unbegrenzt |
 | Anzahl der Berichte | Unbegrenzt | Unbegrenzt |
 | Ad-hoc-Bereitstellung | Ja | Ja |
 | Planen eines wiederkehrenden Versands | Ja | Ja |

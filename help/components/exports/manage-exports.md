@@ -5,18 +5,16 @@ title: Verwalten von Exporten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 7%
+source-wordcount: '931'
+ht-degree: 6%
 
 ---
 
 # Verwalten von Exporten
 
-{{select-package}}
-
-Nachdem Sie eine vollständige Tabelle wie unter [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md), sind die Exporte im Abschnitt [!UICONTROL Exporte] auf der Registerkarte [!UICONTROL Exporte] Seite.
+Nachdem Sie eine vollständige Tabelle wie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md), sind die Exporte im Abschnitt [!UICONTROL Exporte] auf der Registerkarte [!UICONTROL Exporte] Seite.
 
 Es werden nur die von Ihnen erstellten Exporte angezeigt.
 
@@ -38,7 +36,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der E
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem der Export verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. |
+   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem der Export verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager-Einstiegszone**]</li></ul>. |
    | [!UICONTROL **Status**] | Der Status des Exports. Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Aktiv**]: Gibt an, dass ein geplanter Export noch nicht abgelaufen ist. </li><li>[!UICONTROL **Abgeschlossen**]: Gibt an, dass ein Export erfolgreich exportiert wurde. Bei geplanten Exporten bedeutet dies, dass der Zeitplan abgelaufen ist.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Die folgenden Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen. <ul><li>Geplanter Exportablauf</li><li>Zeilenlimit für geplanten Export erreicht </li></ul> </p></li></ul> |
    | [!UICONTROL **Häufigkeit**] | Wie oft der Export erfolgt. Die folgenden Häufigkeiten sind verfügbar: <ul><li>[!UICONTROL **Einmalig**]</li><li>[!UICONTROL **Täglich**]</li><li>[!UICONTROL **Wöchentlich**]</li><li>[!UICONTROL **Monatlich**]</li><li>[!UICONTROL **Jährlich**]</li></ul> |
 
@@ -128,10 +126,10 @@ Sie können Spalten zum [!UICONTROL Exporte] um zu konfigurieren, welche Informa
 
    | Spalte verfügbar | Beschreibung |
    |---------|----------|
-   | Name | Der Name des Exports. Benutzer geben Exporten einen Namen, wenn sie sie erstellen, wie in [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
+   | Name | Der Name des Exports. Benutzer geben Exporten einen Namen, wenn sie sie erstellen, wie in [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
    | ID | Die beim Erstellen automatisch dem Export zugewiesene Kennung. <!-- True? --> |
    | Status | Der Status des Exports. Verfügbare Status sind [!UICONTROL Aktiv], [!UICONTROL Angehalten], [!UICONTROL Abgeschlossen], und [!UICONTROL Fehlgeschlagen].<p> **Hinweis:** Informationen zur Fehlerbehebung bei fehlgeschlagenen Exporten finden Sie unter [Fehlerbehebung bei fehlgeschlagenen Exporten](/help/components/exports/troubleshoot-exports.md).</p> |
-   | Name der Datenansicht | Der Name der mit dem Export verknüpften Datenansicht. Benutzer können die Datenansicht beim Erstellen des Exports auswählen, wie unter [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
+   | Name der Datenansicht | Der Name der mit dem Export verknüpften Datenansicht. Benutzer können die Datenansicht beim Erstellen des Exports auswählen, wie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
    | Status | Der Status des Exports. Verfügbare Status sind [!UICONTROL Ausstehend], [!UICONTROL Zugestellt], und [!UICONTROL Fehlgeschlagen]. |
    | Tabellengröße (zuletzt gesendet) | Die Größe des Exports beim letzten Versand. |
    | Erstellt von | Der Benutzer, der den Export erstellt hat. |

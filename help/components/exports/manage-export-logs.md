@@ -5,18 +5,16 @@ title: Verwalten von Exportprotokollen
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: f070f998758cead3709f6c48412b22b29de00164
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '681'
 ht-degree: 7%
 
 ---
 
 # Verwalten von Exportprotokollen
 
-{{select-package}}
-
-Exportprotokolle enthalten Details zu jedem Export und werden jedes Mal generiert, wenn Analysis Workspace-Daten in die Cloud exportiert werden. (Informationen dazu, wie Daten in die Cloud exportiert werden können, finden Sie unter [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
+Exportprotokolle enthalten Details zu jedem Export und werden jedes Mal generiert, wenn Analysis Workspace-Daten in die Cloud exportiert werden. (Informationen dazu, wie Daten in die Cloud exportiert werden können, finden Sie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
 
 Bei geplanten Exporten spiegeln Protokolle die Exporteinstellungen so wider, wie sie zum Zeitpunkt des Protokollversands waren. Protokolle können nicht gelöscht werden.
 
@@ -38,7 +36,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. |
+   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | Der Status des Exports. Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Wenn Sie einen Export mit dem Status Ausstehend erneut ausführen, wird der Exportvorgang verzögert.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Die folgenden Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen. <ul><li>Geplanter Exportablauf</li><li>Zeilenlimit für geplanten Export erreicht </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
@@ -95,10 +93,10 @@ So konfigurieren Sie Spalten in der [!UICONTROL Protokoll] tab:
 
    | Spalte verfügbar | Beschreibung |
    |---------|----------|
-   | Exportname | Der Name des Exports. Benutzer geben Exporten einen Namen, wenn sie sie erstellen, wie in [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
+   | Exportname | Der Name des Exports. Benutzer geben Exporten einen Namen, wenn sie sie erstellen, wie in [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
    | Export-ID | Die beim Erstellen automatisch dem Export zugewiesene Kennung. <!-- True? --> |
    | Instanz-ID | Die ID der Customer Journey Analytics-Instanz. <!-- True? --> |
-   | Name der Datenansicht | Der Name der mit dem Export verknüpften Datenansicht. Benutzer können die Datenansicht beim Erstellen des Exports auswählen, wie unter [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
+   | Name der Datenansicht | Der Name der mit dem Export verknüpften Datenansicht. Benutzer können die Datenansicht beim Erstellen des Exports auswählen, wie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md). |
    | Anzahl der Dateien | Die Anzahl der im Export enthaltenen Dateien. |
    | Größe | Die Größe des Exports.<p>Die Dateigröße wird mit einer Basis von 1024 berechnet, die manchmal als KIB und MIB dargestellt wird. Wenn Ihr Cloud-Anbieter die Größe mit einer Basis von 1000 berechnet, kann dies dazu führen, dass sich die in Ihrem Cloud-Anbieter angezeigte Größe geringfügig von der hier angezeigten Größe unterscheidet.</p> |
    | Standort | Der Speicherort auf dem Konto, auf dem die Daten exportiert wurden. |

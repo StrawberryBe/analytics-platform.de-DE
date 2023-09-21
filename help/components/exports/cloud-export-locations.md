@@ -5,18 +5,16 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: c8f855ad5b586ed9ac3cde6889b6e73ecb216efa
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 6%
+source-wordcount: '972'
+ht-degree: 5%
 
 ---
 
 # Konfigurieren von Cloud-Exportspeicherorten
 
-{{select-package}}
-
-Bevor Sie Customer Journey Analytics-Daten an ein Cloud-Ziel exportieren können, siehe [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md)müssen Sie den Ort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen.
+Bevor Sie Customer Journey Analytics-Berichte an ein Cloud-Ziel exportieren können, siehe [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md)müssen Sie den Ort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen.
 
 Dieser Prozess besteht aus dem Hinzufügen und Konfigurieren des Kontos (z. B. Amazon S3, Google Cloud Platform usw.), wie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md)und dann den Speicherort innerhalb dieses Kontos (z. B. einen Ordner innerhalb des Kontos) hinzufügen und konfigurieren, wie in diesem Artikel beschrieben.
 
@@ -26,18 +24,36 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
 
 1. Sie müssen ein Konto hinzufügen, bevor Sie einen Ort hinzufügen können. Fügen Sie, falls noch nicht geschehen, ein Konto wie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md).
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
-1. Im [!UICONTROL Exporte] Seite, wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
-1. Auswählen [!UICONTROL **Ort hinzufügen**].
+1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte und wählen Sie [!UICONTROL **Ort hinzufügen**].
 
    ![Schaltfläche &quot;Ort hinzufügen&quot;](assets/location-add.png)
 
+   Oder
+
+   Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte das 3-Punkt-Symbol für ein vorhandenes Konto auswählen, dem Sie einen Ort hinzufügen möchten, und dann [!UICONTROL **Ort hinzufügen**].
+
+   ![Standort zu vorhandenem Konto hinzufügen](assets/add-location-existing-account.png)
+
    Das Dialogfeld Standort wird angezeigt.
 
-1. Geben Sie die folgenden Informationen an: |Feld | Funktion | |—|—| | [!UICONTROL **Name**] | Der Name des Standorts.  | | [!UICONTROL **Beschreibung**] | Geben Sie eine kurze Beschreibung des Kontos ein, um es von anderen Konten desselben Kontotyps zu unterscheiden. | | [!UICONTROL **Standortkonto**] | Wählen Sie das Standortkonto aus, das Sie in [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md). |
+1. Geben Sie die folgenden Informationen an: |Feld | Funktion | |—|—| | [!UICONTROL **Name**] | Der Name des Standorts.  | | [!UICONTROL **Beschreibung**] | Geben Sie eine kurze Beschreibung des Kontos ein, um es von anderen Konten desselben Kontotyps zu unterscheiden. | | [!UICONTROL **Standortkonto**] | Wählen Sie das Konto aus, in dem Sie den Standort erstellen möchten. Informationen zum Erstellen eines Kontos finden Sie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md). |
 
 1. Im [!UICONTROL **Standorteigenschaften**] Informationen zum Kontotyp Ihres Standortkontos angeben.
 
    Erweitern Sie für Konfigurationsanweisungen den folgenden Abschnitt, der dem Kontotyp entspricht, den Sie in der [!UICONTROL **Standortkonten**] -Feld.
+
+   ++ + Adobe Experience Platform Data Landing Zone
+
+   Geben Sie die folgenden Informationen an, um einen Adobe Experience Platform Data Landing Zone-Speicherort zu konfigurieren:
+
+   <!-- still need to update; can't create AEP account -->
+
+   | Feld | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Kennung der IMS-Organisation**] | Die IMS-Organisations-ID wird von Adobe bereitgestellt. Klicken Sie auf das Symbol Kopieren neben dem [!UICONTROL **Kennung der IMS-Organisation**] zum Kopieren des Feldinhalts und zur anschließenden Verwendung der ID in Ihrem Adobe Experience Platform-Konto. |
+   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
+
++++
 
    +++Amazon S3 Role ARN
 
@@ -108,19 +124,6 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
    | [!UICONTROL **Schrittpfad**] | Der Pfad zum Speicherort, an dem Datendateien unter Snowflake gespeichert werden. <p>Weitere Informationen finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
-
-+++
-
-   +++Adobe Experience Platform
-
-   Geben Sie die folgenden Informationen an, um einen Adobe Experience Platform-Speicherort zu konfigurieren:
-
-   <!-- still need to update; can't create AEP account -->
-
-   | Feld | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Kennung der IMS-Organisation**] | Die IMS-Organisations-ID wird von Adobe bereitgestellt. Klicken Sie auf das Symbol Kopieren neben dem [!UICONTROL **Kennung der IMS-Organisation**] zum Kopieren des Feldinhalts und zur anschließenden Verwendung der ID in Ihrem Adobe Experience Platform-Konto. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
 
 +++
 

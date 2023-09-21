@@ -5,16 +5,14 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 7%
+source-wordcount: '383'
+ht-degree: 6%
 
 ---
 
 # Verwalten von Cloud-Exportspeicherorten und -konten
-
-{{select-package}}
 
 Sie können Cloud-Exportspeicherorte anzeigen, bearbeiten und löschen.
 
@@ -38,7 +36,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Ort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul> |
+   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Ort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Konto**] | Der Name des Kontos, mit dem der Standort verknüpft ist. |
    | [!UICONTROL **Erstellt von**] | Die E-Mail-Adresse des Benutzers, der den Standort erstellt hat. |
 

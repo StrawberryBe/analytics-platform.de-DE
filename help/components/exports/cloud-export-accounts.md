@@ -5,26 +5,22 @@ title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: bcbd7ebb075a0d25b566fa8be164d6817bedf2e5
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 5%
+source-wordcount: '1580'
+ht-degree: 6%
 
 ---
 
 # Konfigurieren von Cloud-Exportkonten
 
-{{select-package}}
-
-Bevor Sie Customer Journey Analytics-Daten an ein Cloud-Ziel exportieren können, siehe [Customer Journey Analytics-Daten in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md)müssen Sie den Ort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen.
+Bevor Sie Customer Journey Analytics-Berichte an ein Cloud-Ziel exportieren können, siehe [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md)hinzugefügt und konfiguriert werden, an die die Daten gesendet werden sollen.
 
 Dieser Prozess besteht aus dem Hinzufügen und Konfigurieren des Kontos (z. B. Amazon S3, Google Cloud Platform usw.), wie in diesem Artikel beschrieben, und anschließendem Hinzufügen und Konfigurieren des Speicherorts innerhalb dieses Kontos (z. B. eines Ordners innerhalb des Kontos), wie in [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
 Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbeiten und Löschen von Konten, finden Sie unter [Verwalten von Cloud-Exportspeicherorten und -konten](/help/components/exports/manage-export-locations.md).
 
-Sie müssen Customer Journey Analytics mit den erforderlichen Informationen konfigurieren, um auf Ihr Cloud-Zielkonto zuzugreifen.
-
-So konfigurieren Sie ein Cloud-Exportkonto:
+## Erstellen eines Cloud-Exportkontos beginnen
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 1. Im [!UICONTROL Exporte] Seite, wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
@@ -33,40 +29,108 @@ So konfigurieren Sie ein Cloud-Exportkonto:
    ![Konto hinzufügen](assets/account-add.png)
 
    Das Dialogfeld Konto hinzufügen wird angezeigt.
-1. Geben Sie die folgenden Informationen an: |Feld | Funktion | |—|—| | [!UICONTROL **Name des Standortkontos**] | Der Name des Standortkontos. Dieser Name wird beim Erstellen eines Standorts angezeigt | | [!UICONTROL **Beschreibung des Standortkontos**] | Geben Sie eine kurze Beschreibung des Kontos ein, um es von anderen Konten desselben Kontotyps zu unterscheiden. | | [!UICONTROL **Kontotyp**] | Wählen Sie den Typ des Cloud-Kontos aus, in das Sie exportieren. Verfügbare Kontotypen sind Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake und Adobe Experience Platform. |
-1. Im [!UICONTROL **Kontoeigenschaften**] -Abschnitt Informationen zum ausgewählten Kontotyp angeben.
 
-   Erweitern Sie für Konfigurationsanweisungen den folgenden Abschnitt, der dem [!UICONTROL **Kontotyp**] die Sie ausgewählt haben.
+1. Im [!UICONTROL **Name des Standortkontos**] -Feld einen Namen für das Standortkonto angeben. Dieser Name wird beim Erstellen eines Standorts angezeigt.
 
-   +++Amazon S3 Role ARN
+1. Im [!UICONTROL **Beschreibung des Standortkontos**] geben Sie eine kurze Beschreibung des Kontos ein, um es von anderen Konten desselben Kontotyps zu unterscheiden.
 
-   Geben Sie die folgenden Informationen an, um ein Amazon S3 Role ARN-Konto zu konfigurieren:
+1. Im [!UICONTROL **Kontotyp**] auswählen, wählen Sie den Typ des Cloud-Kontos aus, in das Sie exportieren. Verfügbare Kontotypen sind Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake und Adobe Experience Platform Data Landing Zone.
+
+1. Fahren Sie mit dem folgenden Abschnitt fort, der dem [!UICONTROL **Kontotyp**] ausgewählt haben.
+
+   * [Adobe Experience Platform Data Landing Zone](#adobe-experience-platform)
+
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+
+   * [Google Cloud Platform](#google-cloud-platform)
+
+   * [Azure SAS](#azure-sas)
+
+   * [Azure RBAC](#azure-rbac)
+
+   * [Snowflake](#snowflake)
+
+### Adobe Experience Platform Data Landing Zone
+
+>[!IMPORTANT]
+>
+>Achten Sie beim Exportieren von Customer Journey Analytics-Berichten in die Adobe Experience Platform Data Landing Zone darauf, die Daten innerhalb von 7 Tagen herunterzuladen und sie dann aus der AEP Data Landing Zone zu löschen. Nach 7 Tagen werden die Daten automatisch aus der AEP Data Landing Zone gelöscht.
+
+1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+
+1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] werden die folgenden Informationen angezeigt:
+
+   | Feld | Funktion |
+   |---------|----------|
+   | [!UICONTROL **Kennung der IMS-Organisation**] | Die IMS-Organisations-ID wird von Adobe bereitgestellt. Diese Informationen sind im Allgemeinen nicht erforderlich. Dies kann nützlich sein, wenn Sie Probleme mit Ihrem Konto haben und sich an die Kundenunterstützung wenden müssen. |
+
+   {style="table-layout:auto"}
+
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
+
+   Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
+
+   <!-- add screen shot -->
+
+1. Kopieren Sie den Inhalt der [!UICONTROL **SAS**] in die Zwischenablage. Verwenden Sie dieses SAS-Token, um auf die Daten zuzugreifen, die aus Analysis Workspace aus der AEP-Einstiegszone exportiert werden. Erfahren Sie mehr über den Zugriff auf Ihre Daten&quot; |
+
+1. Wählen Sie [!UICONTROL **Schließen**] aus.
+
+1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
+
+### Amazon S3 Role ARN
+
+1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+
+1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
    | Feld | Funktion |
    |---------|----------|
    | [!UICONTROL **Rollen-ARN**] | Sie müssen einen Role ARN (Amazon Resource Name) bereitstellen, den Adobe verwenden kann, um Zugriff auf das Amazon S3-Konto zu erhalten. Dazu erstellen Sie eine IAM-Berechtigungsrichtlinie für das Quellkonto, hängen die Richtlinie an einen Benutzer an und erstellen dann eine Rolle für das Zielkonto. Weitere Informationen finden Sie unter [Diese AWS-Dokumentation](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
-   | [!UICONTROL **Benutzer-ARN**] | Die Benutzer-ARN (Amazon Resource Name) wird von Adobe bereitgestellt. Sie müssen diesen Benutzer an die von Ihnen erstellte Richtlinie anhängen. |
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Google Cloud Platform
+   Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   Geben Sie die folgenden Informationen an, um ein Google Cloud Platform-Konto zu konfigurieren:
+   <!-- add screen shot -->
+
+1. Kopieren Sie den Inhalt der [!UICONTROL **Benutzer-ARN**] in die Zwischenablage. Die Benutzer-ARN (Amazon Resource Name) wird von Adobe bereitgestellt. Sie müssen diesen Benutzer an die Richtlinie anhängen, die Sie in Amazon S3 Role ARN erstellt haben.
+
+1. Wählen Sie [!UICONTROL **Schließen**] aus.
+
+1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
+
+### Google Cloud Platform
+
+1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+
+1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
    | Feld | Funktion |
    |---------|----------|
    | [!UICONTROL **Projekt-ID**] | Ihre Google Cloud-Projekt-ID, die Sie aus Ihrem Google Cloud-Konto kopieren. Siehe [Dokumentation zu Google Cloud zum Abrufen einer Projekt-ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |
-   | [!UICONTROL **Prinzipal**] | Der Prinzipal wird von Adobe bereitgestellt. Klicken Sie auf [!UICONTROL **Kopieren**] Symbol neben [!UICONTROL **Principal**] zum Kopieren des Feldinhalts und dann sicherstellen, dass Sie dem Prinzipal die Berechtigung zum Hochladen von Dateien in diesen Bucket in Google Cloud Platform erteilen. <!-- add link to Google Cloud docs on how to do this --> |
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Azure SAS
+   Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   Geben Sie die folgenden Informationen an, um ein Azure SAS-Konto zu konfigurieren:
+   <!-- add screen shot -->
+
+1. Kopieren Sie den Inhalt der [!UICONTROL **Principal**] in die Zwischenablage ein, und stellen Sie sicher, dass Sie dem Prinzipal Berechtigungen zum Hochladen von Dateien in diesen Behälter in Google Cloud Platform erteilen. <!-- add link to Google Cloud docs on how to do this -->
+
+1. Wählen Sie [!UICONTROL **Schließen**] aus.
+
+1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
+
+### Azure SAS
+
+1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+
+1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
    | Feld | Funktion |
    |---------|----------|
@@ -74,15 +138,27 @@ So konfigurieren Sie ein Cloud-Exportkonto:
    | [!UICONTROL **Mandanten-ID**] | Kopieren Sie diese ID aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen im **Übersicht** in Ihrer Anwendung. Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft-Identitätsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **Key Vault-URI**] | <p>Der Pfad zum SAS-Token im Azure Key Vault.  Um Azure SAS zu konfigurieren, müssen Sie ein SAS-Token mithilfe des Azure Key Vault als Geheimnis speichern. Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation zum Einrichten und Abrufen eines Geheimnisses aus Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>Nachdem der Schlüssel-Vault-URI erstellt wurde, fügen Sie im Key Vault eine Zugriffsrichtlinie hinzu, um der von Ihnen erstellten Azure-Anwendung Berechtigungen zu erteilen. Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation zur Zuweisung einer Key Vault-Zugriffsrichtlinie](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> |
    | [!UICONTROL **Key Vault-Geheimnisname**] | Der geheime Name, den Sie beim Hinzufügen des Geheimnisses zum Azure Key Vault erstellt haben. In Microsoft Azure befinden sich diese Informationen im von Ihnen erstellten Key Vault im **Key Vault** Einstellungsseiten. Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation zum Einrichten und Abrufen eines Geheimnisses aus Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
-   | [!UICONTROL **Geheimnis des Standortkontos**] | Kopieren Sie das Geheimnis aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen im **Zertifikate &amp; Geheimnisse** in Ihrer Anwendung. Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft-Identitätsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
+   | [!UICONTROL **Geheimnis des Standortkontos**] <!-- nothing for us to have them do on the second screen. Just need to permission the container if they haven't --> | Kopieren Sie das Geheimnis aus der von Ihnen erstellten Azure-Anwendung. In Microsoft Azure befinden sich diese Informationen im **Zertifikate &amp; Geheimnisse** in Ihrer Anwendung. Weitere Informationen finden Sie unter [Microsoft Azure-Dokumentation zur Registrierung einer Anwendung bei der Microsoft-Identitätsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Azure RBAC
+   Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   Geben Sie die folgenden Informationen an, um ein Azure RBAC-Konto zu konfigurieren:
+   <!-- add screen shot -->
+
+1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie dem Behälter in Azure SAS Berechtigungen erteilen. <!-- add link to Google Cloud docs on how to do this -->
+
+1. Wählen Sie [!UICONTROL **Schließen**] aus.
+
+1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
+
+### Azure RBAC
+
+1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+
+1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
    | Feld | Funktion |
    |---------|----------|
@@ -92,34 +168,43 @@ So konfigurieren Sie ein Cloud-Exportkonto:
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Snowflake
+   Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   Geben Sie die folgenden Informationen an, um ein Snowflake-Konto zu konfigurieren:
+   <!-- add screen shot -->
 
-   | Feld | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Kontokennung**] | Identifiziert eindeutig ein Snowflake-Konto innerhalb Ihres Unternehmens sowie im gesamten globalen Netzwerk von Snowflake-unterstützten Cloud-Plattformen und Cloud-Regionen. <p>Weitere Informationen finden Sie unter [Seite &quot;Konto-IDs&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **Benutzer**] | Gibt den Anmeldenamen des Benutzers für die Verbindung an. Dies ist ein Benutzer, der speziell zum Adobe verwendet wird. Sie können den Benutzer im Snowflake erstellen, nachdem Sie hier den Benutzernamen angegeben haben. <p>Weitere Informationen finden Sie unter [Referenzseite für JDBC-Treiberverbindungsparameter in der Snowflake-Dokumentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Rolle**] | Die standardmäßige Zugriffssteuerungsrolle, die in der vom Treiber initiierten Snowflake-Sitzung verwendet wird. Sie sollten eine spezifische Rolle für Adobe erstellen, die Lese- und Schreibzugriff hat.<p>Weitere Informationen finden Sie unter [Referenzseite für JDBC-Treiberverbindungsparameter in der Snowflake-Dokumentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Öffentlicher Schlüssel**] | Der öffentliche Schlüssel wird von Adobe bereitgestellt. Klicken Sie auf das Symbol Kopieren neben dem [!UICONTROL **Öffentlicher Schlüssel**] zum Kopieren des Feldinhalts und dann den öffentlichen Schlüssel in Ihrem Snowflake-Konto verwenden. Weitere Informationen finden Sie unter [Seite &quot;Schlüsselpaarauthentifizierung und Schlüsselpaar-Rotation&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
+1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie dem Bucket in Azure RBAC Berechtigungen erteilen. <!-- add link to Google Cloud docs on how to do this -->
 
-+++
+1. Wählen Sie [!UICONTROL **Schließen**] aus.
 
-   +++Adobe Experience Platform
+1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
-   Alle Adobe Experience Platform-Kunden können Daten in die AEP-Einstiegszone exportieren.
+### Snowflake
 
-   Geben Sie die folgenden Informationen an, um ein Adobe Experience Platform-Konto zu konfigurieren.
+1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
+
+1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] Geben Sie die folgenden Informationen an:
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Kennung der IMS-Organisation**] | Die IMS-Organisations-ID wird von Adobe bereitgestellt. Klicken Sie auf das Symbol Kopieren neben dem [!UICONTROL **Kennung der IMS-Organisation**] zum Kopieren des Feldinhalts und zur anschließenden Verwendung der ID in Ihrem Adobe Experience Platform-Konto. |
+   | [!UICONTROL **Kontokennung**] | Identifiziert eindeutig ein Snowflake-Konto innerhalb Ihres Unternehmens sowie im gesamten globalen Netzwerk von Snowflake-unterstützten Cloud-Plattformen und Cloud-Regionen. <p>Sie müssen die Kontokennung von Ihrem Snowflake-Konto abrufen und die Informationen hier einfügen.</p><p>Informationen darüber, wo Sie diese Informationen erhalten, finden Sie unter [Seite &quot;Konto-IDs&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
+   | [!UICONTROL **Benutzer**] | Der Anmeldename des Benutzers, der für die Verbindung verwendet wird. Dies ist ein Benutzer, der speziell zum Adobe verwendet wird. Geben Sie hier den Namen an und erstellen Sie dann einen Benutzer im Snowflake mit demselben Namen. <p>Weitere Informationen finden Sie unter [Referenzseite für JDBC-Treiberverbindungsparameter in der Snowflake-Dokumentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
+   | [!UICONTROL **Rolle**] | Die standardmäßige Zugriffssteuerungsrolle, die in der vom Treiber initiierten Snowflake-Sitzung verwendet wird. Dies ist eine Rolle, die speziell für das Adobe verwendet wird. Geben Sie hier die Rolle an, erstellen Sie dann eine Rolle im Snowflake mit demselben Namen und gewähren Sie Lese- und Schreibzugriff.<p>Weitere Informationen finden Sie unter [Referenzseite für JDBC-Treiberverbindungsparameter in der Snowflake-Dokumentation](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
 
-+++
+   {style="table-layout:auto"}
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
+   Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
+
+   <!-- add screen shot -->
+
+1. Kopieren Sie den Inhalt der [!UICONTROL **Öffentlicher Schlüssel**] in die Zwischenablage. Der öffentliche Schlüssel wird von Adobe bereitgestellt. Verwenden Sie den öffentlichen Schlüssel im Snowflake, um eine Verbindung zu Ihrem Snowflake-Konto herzustellen. Weitere Informationen finden Sie unter [Seite &quot;Schlüsselpaarauthentifizierung und Schlüsselpaar-Rotation&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
+
+1. Wählen Sie [!UICONTROL **Schließen**] aus.
+
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
+
+
 
