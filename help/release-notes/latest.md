@@ -6,11 +6,11 @@ feature: Release Notes
 source-git-commit: aa7f4361b1353a86b87c36c3d08e99ddb8ffd049
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 53%
+ht-degree: 82%
 
 ---
 
-# Aktuelle Adobe Customer Journey Analytics-Versionshinweise (September 2023)
+# Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (September 2023)
 
 **Letzte Aktualisierung**: 13. September 2023
 
@@ -20,17 +20,17 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 13. 
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Unterstützung für A4T-Klassifizierungen im Analytics Source Connector** | Das Feld `_experience.decisioning.propositions.scopeDetails.correlationID` ist jetzt im Quell-Connector-Schema von Adobe Analytics verfügbar. Dieses Feld wird zur Unterstützung von A4T-Klassifizierungen verwendet und ab September 2023 ausgefüllt. | | Nicht angegeben | 12. September 2023 |
-| **Aktualisierungen abgeleiteter Felder** | Die folgenden Aktualisierungen wurden an der abgeleiteten Feldfunktionalität vorgenommen:<ul><li>Die [!UICONTROL Suche] wurde in [!UICONTROL Klassifizieren], mit zusätzlichen Optionen zum Laden von CSV-Daten. **(Versionen 27. September 2023)**</li><li>Beim Definieren eines abgeleiteten Felds stehen zusätzliche Funktionen zur Verfügung: [!UICONTROL Zuschneiden], [!UICONTROL Kleinbuchstabe] und [!UICONTROL Suche].</li><li>Abgeleitete Felddefinitionen unterstützen jetzt auch Felder aus [!UICONTROL Suche] und [!UICONTROL Profil] Datensätze.</li></ul>[Weitere Informationen](/help/data-views/derived-fields/derived-fields.md) | Nicht angegeben | 13. September 2023 |
-| **Neue Funktionen im Adobe Product Analytics** | <ul><li>**Anomalieerkennung**: Vergleichen Sie Ereignisse mit erwarteten Werten, die aus historischen Trends abgeleitet wurden. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Trends Häufigkeit der Verwendung**: Messen Sie die Akzeptanz Ihrer Funktionen anhand der Häufigkeit der Verwendung. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**Benutzereinstellungen**: Konfigurieren Sie eine Reihe von Benutzereinstellungen, z. B. Farbpaletten und Zahlenformat. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=de)</li></ul> | Nicht angegeben | 18. September 2023 |
-| **Experience Edge-Gerätesuche** | Aktivieren Sie die automatische Datenerfassung vom Gerätetyp über das Experience Platform Edge-Netzwerk. Dieser Experience Edge-Dienst profitiert vom Customer Journey Analytics sowie anderen Experience Platform-Apps. (Dokumentationslink folgt) | Nicht angegeben | 27. September 2023 |
+| **Unterstützung für A4T-Klassifizierungen im Analytics Source Connector** | Das Feld `_experience.decisioning.propositions.scopeDetails.correlationID` ist jetzt im Quell-Connector-Schema von Adobe Analytics verfügbar. Dieses Feld wird zur Unterstützung von A4T-Klassifizierungen verwendet und wird ab September 2023 ausgefüllt. | | Nicht angegeben | 12. September 2023 |
+| **Aktualisierungen für abgeleitete Felder** | Die folgenden Aktualisierungen wurden an der Funktionalität von abgeleiteten Feldern vorgenommen:<ul><li>Die Funktion [!UICONTROL Lookup] wurde in [!UICONTROL Klassifizieren] umbenannt und verfügt jetzt über weitere Aktionen zum Hochladen von CSV-Daten. **(Veröffentlichung am 27. September 2023)**</li><li>Beim Definieren eines abgeleiteten Felds stehen zusätzliche Funktionen zur Verfügung: [!UICONTROL Zuschneiden], [!UICONTROL Kleinschreibung] und [!UICONTROL Lookup].</li><li>Definitionen von abgeleiteten Feldern unterstützen jetzt auch Felder aus [!UICONTROL Lookup]- und [!UICONTROL Profil]-Datensätzen.</li></ul>[Weitere Informationen](/help/data-views/derived-fields/derived-fields.md) | Nicht angegeben | 13. September 2023 |
+| **Neue Funktionen in Adobe Product Analytics** | <ul><li>**Anomalieerkennung**: Vergleichen Sie Ereignisse mit erwarteten Werten, die aus historischen Trends abgeleitet wurden. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Ansicht für Trends bei der Nutzungshäufigkeit**: Messen Sie die Benutzerakzeptanz Ihrer Funktionen anhand der Nutzungshäufigkeit. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html?lang=de)</li><li>**Benutzereinstellungen**: Konfigurieren Sie eine Reihe von Benutzereinstellungen, z. B. Farbpaletten und Zahlenformat. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=de)</li></ul> | Nicht angegeben | 18. September 2023 |
+| **Geräte-Lookups für Experience Edge** | Aktivieren Sie die automatische Datenerfassung zum Gerätetyp über das Experience Platform Edge-Netzwerk. Dieser Experience Edge-Dienst kommt Customer Journey Analytics sowie anderen Experience Platform-Apps zugute. (Link zur Dokumentation folgt) | Nicht angegeben | 27. September 2023 |
 | **Neue Spalten verfügbar bei der Verwaltung von Komponenten** | Die folgenden neuen Spalten sind jetzt im [Manager für berechnete Metriken](/help/components/calc-metrics/cm-workflow/cm-manager.md) und [Filter Manager](/help/components/filters/manage-filters.md) beim Verwalten von Komponenten:<ul><li>Verwendet in</li><li>Zuletzt verwendet</li></ul><p>Diese Informationen können Ihnen dabei helfen festzustellen, ob eine Komponente für Benutzer in Ihrer Organisation nützlich ist, wo sie verwendet wird und ob sie gelöscht oder geändert werden muss. Sie können das Datenwörterbuch zusammen mit diesen Informationen verwenden, um die Verwendung von Komponenten in Ihrem Unternehmen zu verfolgen und besser zu verstehen.</p> | 20. September 2023 | 4. Oktober 2023 |
 
 {style="table-layout:auto"}
 
 ## Fehlerbehebungen in Customer Journey Analytics
 
-AN-310972; AN-319509; AN-32245; AN-323411; AN-323719; AN-326101; AN-326125; AN 326888
+AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-326888
 
 
 ## Wichtige Hinweise für Customer Journey Analytics-Admins
