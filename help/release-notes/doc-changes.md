@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
 workflow-type: tm+mt
 source-wordcount: '2651'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | --- | --- |
 | **September 2023** | |
 | Die Struktur der Artikel für das Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;wurde aktualisiert | Der Ordner &quot;Media Play-back Time Spent&quot;wurde entfernt und der Inhalt des Ordners in einen einzigen Artikel zusammengefasst: [Bedienfeld &quot;Besuchszeit für Medienwiedergabe&quot;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Diese Änderung entspricht eher der Dokumentation für andere Bedienfelder.</p> |
-| Zusätzliche abgeleitete Feldfunktionen | Aktualisierte Dokumentation für die neue [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) und [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) Funktionen und für die zusätzlichen CSV-Funktionen, die der [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) -Funktion. |
+| Zusätzliche Funktionalität von abgeleiteten Feldern | Aktualisierte Dokumentation für die neuen Funktionen [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) und [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) und für die zusätzlichen CSV-Funktionen, die der [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify)-Funktion hinzugefügt wurden. |
 | Regionale Datenerfassung | Die [Häufig gestellte Fragen](../getting-started/cja-faq.md#12-regional-data-collection) wurden mit Informationen zur regionalen Datenerfassung bei der Verwendung von Customer Journey Analytics aktualisiert. |
 | **August 2023** | |
 | Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ | Inhalt für [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-time-spent.md) wurde aktualisiert, um die Lesbarkeit zu verbessern. |
