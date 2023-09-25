@@ -4,9 +4,9 @@ description: Benutzerinteraktion im Lauf der Zeit messen.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
+source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ Die [!UICONTROL Nutzung] Die Ansicht bietet die folgenden Diagrammeinstellungen,
 
 Fügen Sie dem Diagramm zusätzliche Daten hinzu.
 
-* **[!UICONTROL Anomalien anzeigen]**: Führt die Anomalieerkennung in der Analyse aus. Ausreißer erscheinen als Punkte, über die Sie den Mauszeiger bewegen können, um weitere Informationen zu erhalten.
+* **[!UICONTROL Anomalien anzeigen]**: Ausführungen [Anomalieerkennung](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) in der Trendanalyse. Ausreißer erscheinen als Punkte, über die Sie den Mauszeiger bewegen können, um weitere Informationen zu erhalten.
 
 ## Zeitvergleich anwenden
 
