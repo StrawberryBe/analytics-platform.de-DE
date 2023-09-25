@@ -1,26 +1,27 @@
 ---
-title: Adobe Analytics-Daten mit Customer Journey Analytics-Daten vergleichen
+title: Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten
 description: Erfahren Sie, wie Sie Ihre Adobe Analytics-Daten mit Daten in Customer Journey Analytics vergleichen
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+keywords: Query Service;Query Service;SQL-Syntax
+source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 64%
+source-wordcount: '866'
+ht-degree: 69%
 
 ---
 
-# Adobe Analytics-Daten mit Customer Journey Analytics-Daten vergleichen
+# Vergleich von Adobe Analytics-Daten mit Customer Journey Analytics-Daten
 
-Wenn Ihr Unternehmen Customer Journey Analytics einführt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Datenunterschieden kommen. Dies ist normal und kann aus verschiedenen Gründen auftreten. Customer Journey Analytics wurde entwickelt, um Ihnen zu ermöglichen, einige Einschränkungen für Ihre Daten in AA zu verbessern. Es können jedoch unerwartete und unbeabsichtigte Diskrepanzen auftreten. Dieser Artikel soll Ihnen dabei helfen, diese Unterschiede zu diagnostizieren und zu beheben, sodass Sie und Ihr Team Customer Journey Analytics ohne Beeinträchtigung der Datenintegrität verwenden können.
+Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten zwischen Adobe Analytics und Customer Journey Analytics zu Datenunterschieden kommen. Dies ist normal und kann aus verschiedenen Gründen auftreten. Mit Customer Journey Analytics können Sie einige Einschränkungen Ihrer Daten in AA verbessern. Es können jedoch unerwartete und unbeabsichtigte Diskrepanzen auftreten. Dieser Artikel soll Ihnen dabei helfen, diese Unterschiede zu diagnostizieren und zu beheben, sodass Sie und Ihr Team Customer Journey Analytics verwenden können, ohne dass Bedenken hinsichtlich der Datenintegrität bestehen.
 
 Nehmen wir an, Sie haben Adobe Analytics-Daten über die [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de)und dann eine Customer Journey Analytics-Verbindung mithilfe dieses Datensatzes erstellt.
 
 ![Datenfluss](assets/compare.png)
 
-Als Nächstes haben Sie eine Datenansicht erstellt und anschließend über diese Daten auf dem Customer Journey Analytics berichtet. Es wurden Abweichungen bei den Berichtsergebnissen in Adobe Analytics festgestellt.
+Als Nächstes haben Sie eine Datenansicht erstellt und anschließend über diese Daten auf der Customer Journey Analytics berichtet. Es wurden Abweichungen bei den Berichtsergebnissen in Adobe Analytics festgestellt.
 
 Im Folgenden finden Sie einige Schritte zum Vergleich Ihrer ursprünglichen Adobe Analytics-Daten mit den Adobe Analytics-Daten, die sich jetzt in Customer Journey Analytics befinden.
 
@@ -52,19 +53,19 @@ Die Gesamtzahl der Datensätze nach Zeitstempeln sollten mit der der Vorfälle �
 
 1. Führen Sie in [Abfrage-Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=de) von Adobe Experience Platform die folgende Abfrage zu [!UICONTROL Datensätzen insgesamt nach Zeitstempeln] aus:
 
-       &quot;
-       SELECT Substring(from_utc_timestamp(timestamp,&#39;{timeZone}&#39;), 1, 10) als Tag, \
-       Count(_id) AS-Datensätze
-       VON  {dataset} \
-       WHERE timestamp>=from_utc_timestamp(&#39;{fromDate}&#39;,&#39;UTC&#39;) \
-       UND-Zeitstempel&lt;from_utc_timestamp span=&quot;&quot; id=&quot;14&quot; translate=&quot;no&quot; />&#39;,&#39;UTC&#39;) \
-       UND timestamp IS NOT NULL \
-       UND-Endnutzer.{toDate}_experience.aaid.id IS NOT NULL \
-       GRUPPE nach Tag \
-       BESTELLUNG NACH TAG;
-       
-       &quot;
-   
+   ```sql
+   SELECT
+       Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
+       Count(_id) AS Records 
+   FROM  {dataset}
+   WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
+       AND timestamp < from_utc_timestamp('{toDate}','UTC')
+       AND timestamp IS NOT NULL
+       AND enduserids._experience.aaid.id IS NOT NULL
+   GROUP BY Day
+   ORDER BY Day; 
+   ```
+
 1. Stellen Sie in den [Analytics-Daten-Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de) anhand der Rohdaten fest, ob einige Zeilen möglicherweise vom Analytics-Quell-Connector herausgefiltert wurden.
 
    Der [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) kann bei der Umwandlung in das XDM-Schema Zeilen filtern. Es kann mehrere Gründe dafür geben, dass die gesamte Zeile nicht für eine Umwandlung geeignet ist. Wenn eines der folgenden Analytics-Felder diese Werte aufweist, wird die gesamte Zeile herausgefiltert.
