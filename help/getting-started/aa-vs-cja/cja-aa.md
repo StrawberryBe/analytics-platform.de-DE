@@ -4,10 +4,10 @@ description: Customer Journey Analytics-Funktionen im Vergleich zu Adobe Analyti
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 3149c50c14430c1960a9311b0464547b6e61bec7
-workflow-type: ht
-source-wordcount: '2080'
-ht-degree: 100%
+source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
+workflow-type: tm+mt
+source-wordcount: '2140'
+ht-degree: 97%
 
 ---
 
@@ -136,5 +136,7 @@ In der folgenden Tabelle sind Funktionen aufgeführt, die in Customer Journey An
 | Geräteübergreifende Analyse | Customer Journey Analytics unterstützt die nahtlose Kombination gerätespezifischer Datensätze aus nicht authentifizierten und authentifizierten Sitzungen. Customer Journey Analytics bietet die Möglichkeit, historische Daten auf bekannte Geräte aufzustocken. In Analytics ist diese Funktion auf eine einzige Report Suite und die Verwendung eines Gerätediagramms beschränkt. |
 | SQL-Zugriff | Mit der Data Distiller-Option kann Customer Journey Analytics die Einschränkungen in Bezug auf die per Backend-Verarbeitung von Adobe erfassten Daten aufheben. Sie können Ihre Daten mit SQL ändern, unternehmensspezifische Werte und Datensätze erstellen und Ihre Entdeckungsreise fortsetzen. Analytics unterstützt keinen SQL-Zugriff auf seine Daten. |
 | Verbesserte Sicherheits- und Datenschutzoptionen – HIPAA-Fähigkeit | Customer Journey Analytics ist HIPAA-fähig und bietet zusätzliche Sicherheitsoptionen für die Einhaltung von Vorschriften. Adobe Analytics ist nicht HIPAA-fähig. |
+| Möglichkeit zur Kombination von Datensätzen (z. B. Adobe Analytics-Report Suites) | Mit Customer Journey Analytics können Sie Daten aus mehreren Report Suites so kombinieren, als wären sie eine einzige Report Suite in Adobe Analytics. |
+| Abgeleitete Felder | Abgeleitete Felder ermöglichen Berichtszeittransformationen an Ihren Daten. Daten können dynamisch kombiniert, korrigiert oder erstellt werden und gelten rückwirkend für alle Berichte. |
 
 {style="table-layout:auto"}
