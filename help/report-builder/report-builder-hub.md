@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Verwenden Sie den Report Builder-Hub, um Datenblöcke zu erstellen, zu aktualisi
 
 Der Report Builder-Hub enthält die Schaltflächen „Erstellen“ und „Verwalten“ sowie die Liste BEFEHLE und die Bedienfelder zur SCHNELLBEARBEITUNG.
 
-<img src="./assets/hub51.png" width="50%"/>
+<img src="./assets/hub51.png" width="50%" alt="Report Builder-Hub"/>
 
 
 ## Die Schaltflächen „Erstellen“ und „Verwalten“
@@ -30,7 +30,7 @@ Verwenden Sie die Schaltflächen „Erstellen“ oder „Verwalten“, um neue D
 
 Verwenden Sie das Bedienfeld „Befehle“, um auf Befehle zuzugreifen, die mit den ausgewählten Zellen oder einer vorherigen Aktion kompatibel sind.
 
-![](./assets/hub1.png)
+![Bereich &quot;Befehle&quot;in Report Builder-Hub](./assets/hub1.png)
 
 ### Befehle
 
@@ -47,7 +47,7 @@ Verwenden Sie das Bedienfeld „Befehle“, um auf Befehle zuzugreifen, die mit 
 
 Wenn Sie einen oder mehrere Datenblöcke in einem Arbeitsblatt auswählen, zeigt Report Builder das Bedienfeld „Schnellbearbeitung“ an. Sie können das Bedienfeld „Schnellbearbeitung“ verwenden, um Parameter in einem Datenblock zu ändern oder Parameter in mehreren Datenblöcken gleichzeitig zu ändern.
 
-![](./assets/hub2.png)
+![Bereich &quot;Schnellbearbeitung&quot;im Report Builder](./assets/hub2.png)
 
 Die mithilfe der Schnellbearbeitungs-Bereiche vorgenommenen Änderungen gelten für alle ausgewählten Datenblöcke.
 
@@ -59,7 +59,7 @@ Wenn Sie die Datenansicht ändern, übernehmen alle Datenblöcke in der Auswahl 
 
 Um die Datenansicht zu ändern, wählen Sie eine neue Datenansicht aus dem Dropdown-Menü aus.
 
-![](./assets/image16.png)
+![Report Builder-Hub, der das Dropdown-Menü für Datenansichten anzeigt.](./assets/image16.png)
 
 ### Datumsbereich
 

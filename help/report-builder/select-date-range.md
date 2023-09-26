@@ -1,15 +1,15 @@
 ---
-title: Auswählen eines Datenbereichs in Report Builder in Customer Journey Analytics
-description: Beschreibt die Verwendung des Kalenders, rollierender Daten und benutzerdefinierter Ausdrücke in Report Builder für Customer Journey Analytics
+title: Auswählen eines Datenbereichs in Report Builder unter Customer Journey Analytics
+description: Beschreibt die Verwendung des Kalenders, rollierender Datumsangaben und benutzerdefinierter Ausdrücke in Report Builder zum Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 96%
+source-wordcount: '1051'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Mit der Option „Von Zelle“ können Sie auf Daten verweisen, die in Zellen ei
 
 Sie können den aktuellen Tag für einen beliebigen Datumsbereich ausschließen.
 
-![](./assets/image17.png)
+![Wählen Sie Heute ausschließen aus.](./assets/image17.png)
 
 ## Verwenden des Kalenders
 
@@ -62,7 +62,7 @@ So wählen Sie Datumsangaben mithilfe des Kalenders aus
 
 Um einen Datumsbereich rückwärts festzulegen, klicken Sie zuerst auf das Enddatum und dann auf das Startdatum.
 
-![](./assets/image18.png)
+![Klicken Sie auf das Enddatum und dann auf das Startdatum.](./assets/image18.png)
 
 ### Dropdown-Menü „Voreinstellung“
 
@@ -76,7 +76,7 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie einen rollierenden Ausdruck für Ihr Start- und Enddatum aus.
 
-   ![](./assets/image19.png)
+   ![Wählen Sie Rollierende Datumswerte verwenden und dann den rollierenden Ausdruck aus.](./assets/image19.png)
 
    **Beginn von** – Ermöglicht die Auswahl des Anfangs eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
 
@@ -86,11 +86,11 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie als rollierenden Zeitraum Tag, Woche, Monat, Quartal oder Jahr aus.
 
-   ![](./assets/image20.png)
+   ![Wählen Sie den aktuellen Tag aus.](./assets/image20.png)
 
 1. Fügen Sie Tage, Wochen, Monate, Quartale oder Jahre ab dem rollierenden Datum hinzu oder subtrahieren Sie diese.
 
-   ![](./assets/image21.png)
+   ![Wählen Sie den aktuellen Tag plus 14 Tage aus.](./assets/image21.png)
 
 1. Klicken Sie auf „Weiter“, um den Datenbereich zu definieren.
 
@@ -106,7 +106,7 @@ Mit der Option für benutzerdefinierte Ausdrücke können Sie den Datumsbereich 
 
    Wenn Sie die Option **Benutzerdefinierte Ausdrücke verwenden** auswählen, sind die standardmäßigen Steuerelemente für rollierende Datumsbereiche deaktiviert.
 
-   ![](./assets/custom_expression.png)
+   ![Wählen Sie Benutzerdefinierten Ausdruck verwenden aus, der tm-1m bis td-1d anzeigt.](./assets/custom_expression.png)
 
 1. Geben Sie einen benutzerdefinierten Ausdruck ein.
 
@@ -163,7 +163,7 @@ In der folgenden Tabelle sind Beispiele für Datumsausdrücke aufgeführt.
 
 Der Datumsbereich kann in Zellen eines Arbeitsblatts angegeben werden. Verwenden Sie die Option **Datumsbereich aus Zelle**, um das Start- und Enddatum des Datenblocks aus ausgewählten Zellen auszuwählen. Wenn Sie die Option **Aus Zelle** auswählen, zeigt das Bedienfeld die Felder **Von** und **Bis** an, in die Sie eine Zellenposition eingeben können.
 
-![](./assets/image23.png)
+![Aus Zellenblatt1!H4 in Blatt1!I4 auswählen](./assets/image23.png)
 
 ## Heute ausschließen
 

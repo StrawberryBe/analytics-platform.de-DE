@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 063fc71a9c0bbcadb1348aa4c41c64bed08a51f6
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 90%
+source-wordcount: '1166'
+ht-degree: 85%
 
 ---
 
@@ -29,15 +29,15 @@ Verwenden Sie im Report Builder-Hub die Schaltfläche „Aufgabe planen“, um s
 
 1. Klicken Sie im Report Builder-Hub auf die Schaltfläche „Planen“.
 
-   ![](./assets/schedule-button.png){width="55%"}
+   ![Klicken Sie auf die Schaltfläche Planung , um einen Zeitplan zu erstellen.](./assets/schedule-button.png){width="55%"}
 
 1. Klicken Sie oben links auf „Arbeitsmappe planen“ oder auf die Plusschaltfläche, um eine neue Arbeitsmappe mit Zeitplan zu erstellen.
 
-   ![ALT-Beschreibung](./assets/schedule-workbook.png){width="55%"}
+   ![Das Fenster Arbeitsmappen planen .](./assets/schedule-workbook.png){width="55%"}
 
    Im Zeitplanfenster werden einige vordefinierte Informationen zur Arbeitsmappe angezeigt, z. B. der Arbeitsmappenname und das Datum der letzten Änderung der Arbeitsmappe.
 
-   ![ALT-Beschreibung](./assets/schedule-pane.png){width="55%"}
+   ![Der Planungsbereich.](./assets/schedule-pane.png){width="55%"}
 
 1. (Optional) Geben Sie einen Dateinamen ein.
 
@@ -51,13 +51,13 @@ Verwenden Sie im Report Builder-Hub die Schaltfläche „Aufgabe planen“, um s
 
    Wenn Sie diese Auswahl treffen, werden Sie beim Öffnen der Datei aufgefordert, ein Passwort einzugeben. Dies ist hilfreich, wenn Sie Bedenken hinsichtlich der Datensicherheit haben und die Arbeitsmappe mit einem Passwort schützen möchten. Wenn Sie die Datei mit einem Passwort schützen möchten, wählen Sie **.zip-Komprimierung** aus. Das Passwort muss mindestens 8 Zeichen lang sein und eine Zahl und ein Sonderzeichen enthalten.
 
-   ![ALT-Beschreibung](./assets/zip-compression.png){width="55%"}
+   ![Geben Sie im Feld Kennwort zum Schutz der Arbeitsmappe ein Kennwort ein.](./assets/zip-compression.png){width="55%"}
 
 1. Eingeben der **Empfänger und Empfängerinnen**. Sie können entweder den Namen einer in Ihrem Unternehmen bekannten Person oder eine E-Mail-Adresse einer unternehmensinternen oder -externen Person eingeben.
 
 1. Geben Sie den **Betreff** Ihrer E-Mail und eine Beschreibung ein. Der Betreff verwendet standardmäßig den Namen der Arbeitsmappen-Datei. Sie können den Betreff jedoch bei Bedarf ändern. Im Beschreibungsabschnitt können Sie Informationen hinzufügen.
 
-   ![ALT-Beschreibung](./assets/recipients-subject.png){width="55%"}
+   ![Geben Sie einen Betreff in das Feld Betreff ein.](./assets/recipients-subject.png){width="55%"}
 
 1. Aktivieren Sie die Zeitplanoptionen, um das Datum und die Uhrzeit festzulegen, zu denen die Arbeitsmappe per E-Mail an Ihre Empfänger und Empfängerinnen gesendet werden soll.
 
@@ -65,15 +65,15 @@ Verwenden Sie im Report Builder-Hub die Schaltfläche „Aufgabe planen“, um s
 
    Wählen Sie aus dem Dropdown-Menü die **Häufigkeit** aus. Sie können die Häufigkeit auf stündlich, täglich, wöchentlich, monatlich oder jährlich an einem bestimmten Tag einstellen. Sie können beispielsweise einen Zeitplan einrichten, um die Arbeitsmappe am ersten Sonntagabend des Monats zu senden, sodass Ihre Empfänger und Empfängerinnen die E-Mail am Montagmorgen in ihrem Posteingang haben.
 
-   ![ALT-Beschreibung](./assets/frequency.png){width="55%"}
+   ![Wählen Sie die Häufigkeit aus, mit der Ihr Bericht terminiert werden soll.](./assets/frequency.png){width="55%"}
 
 1. Nachdem Sie den Zeitplan festgelegt haben, klicken Sie auf **Planmäßig senden**.
 
-   ![ALT-Beschreibung](./assets/send-on-schedule.png){width="55%"}
+   ![Klicken Sie auf Planmäßig senden.](./assets/send-on-schedule.png){width="55%"}
 
    Im Report Builder-Abschnitt wird unten eine Bestätigungsmitteilung angezeigt, und die zeitlich geplante Arbeitsmappe wird auf der Registerkarte „Arbeitsmappen“ aufgeführt.
 
-   ![ALT-Beschreibung](./assets/confirmation-toast.png){width="55%"}
+   ![Bestätigungstoast](./assets/confirmation-toast.png){width="55%"}
 
 ## Einmaliges Senden der Arbeitsmappe
 
@@ -81,7 +81,7 @@ Sie können die Arbeitsmappe auch nur ein einziges Mal versenden.
 
 1. Deaktivieren Sie die Option **Planungsoptionen anzeigen**.
 
-   ![ALT-Beschreibung](./assets/send-now.png){width="40%"}
+   ![Klicken Sie auf die Option Zeitplanoptionen anzeigen , um eine Arbeitsmappe einmal auszuführen.](./assets/send-now.png){width="40%"}
 
 1. Klicken Sie auf **Jetzt senden**.
 
@@ -115,14 +115,14 @@ Ein grünes Häkchen bedeutet, dass die Arbeitsmappe erfolgreich gesendet wurde.
 
 Sie können auswählen, welche Spalten in der Registerkarte „Verlauf“ angezeigt werden sollen, indem Sie rechts neben der Suchleiste auf das Spalteneinstellungssymbol klicken.
 
-![ALT-Beschreibung](./assets/history.png){width="55%"}
+![Klicken Sie auf das Spaltensymbol, um bestimmte Spalten ein- oder auszublenden.](./assets/history.png){width="55%"}
 
 Sie können den Verlauf so filtern, dass nur der Verlauf einer einzigen geplanten Arbeitsmappen angezeigt wird. Gehen Sie dazu zur Registerkarte „Arbeitsmappen“, wählen Sie die Arbeitsmappe aus und klicken Sie auf das Verlaufsymbol.
 
 Sie können den Verlauf einer bestimmten Arbeitsmappe auch auf der Registerkarte „Arbeitsmappen“ einsehen. Wählen Sie dazu auf der Registerkarte „Arbeitsmappen“ die entsprechende Arbeitsmappe aus und klicken Sie auf das Verlaufsymbol.
 
-![ALT-Beschreibung](./assets/history2.png){width="55%"}
+![Symbol &quot;Arbeitsmappen-Verlauf&quot;](./assets/history2.png){width="55%"}
 
 Der Arbeitsmappen-Filter wird dann oben im Verlauf angezeigt. Um wieder den Verlauf aller geplanten Aufgaben anzuzeigen, klicken Sie auf das x neben dem Filter.
 
-![ALT-Beschreibung](./assets/history3.png){width="55%"}
+![Der Arbeitsmappen-Filter.](./assets/history3.png){width="55%"}

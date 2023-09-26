@@ -1,15 +1,15 @@
 ---
 title: Einrichten von Report Builder in Customer Journey Analytics
-description: Beschreibt das Einrichten von Report Builder in Customer Journey Analytics
+description: Beschreibt, wie Report Builder in Customer Journey Analytics eingerichtet wird
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 97%
+source-wordcount: '491'
+ht-degree: 89%
 
 ---
 
@@ -72,11 +72,11 @@ So laden Sie das Report Builder-Add-in herunter und installieren es
 
 Wenden Sie sich an Ihre IT- oder Sicherheitsabteilung, um eine Genehmigung für das Report Builder-Add-in anzufordern. Nachdem die Genehmigung erteilt wurde, wählen Sie im Dialogfeld „Office-Add-Ins“ die Registerkarte „Admin Managed“ aus.
 
-![](./assets/image1.png)
+![Die Registerkarte &quot;Admin Managed&quot;im Dialogfeld &quot;Office Add-Ins&quot;.](./assets/image1.png)
 
 Nach der Installation des Report Builder-Add-ins wird das Report Builder-Symbol im Excel-Band auf der Registerkarte „Start“ angezeigt.
 
-![](./assets/rb_app_icon.png)
+![Das Report Builder-Symbol in Excel](./assets/rb_app_icon.png)
 
 ## Anmelden bei Report Builder
 
@@ -88,11 +88,11 @@ Nachdem Sie das Report Builder for Excel-Add-in für Ihr Betriebssystem oder Ihr
 
 1. Klicken Sie in der Adobe Report Builder-Symbolleiste auf **Anmelden**.
 
-   ![](./assets/rb_login.png)
+   ![Klicken Sie auf die Schaltfläche Report Builder-Anmeldung .](./assets/rb_login.png)
 
 1. Geben Sie Ihre Adobe Experience ID-Kontoinformationen ein. Ihre Kontoinformationen sollten mit Ihren Customer Journey Analytics-Anmeldedaten übereinstimmen.
 
-   ![](./assets/image4.png)
+   ![Ihr Anmeldesymbol und Ihre Organisation.](./assets/image4.png)
 
 Nach der Anmeldung werden Ihr Anmeldesymbol und Ihre Organisation oben im Bedienfeld angezeigt
 
@@ -104,7 +104,7 @@ Bei der ersten Anmeldung werden Sie bei der Ihrem Profil zugewiesenen Standardor
 
 1. Wählen Sie eine Organisation aus der Liste der verfügbaren Organisationen aus. Es werden nur Organisationen aufgelistet, auf die Sie Zugriff haben.
 
-   ![](./assets/image5.png)
+   ![Die Liste der Organisationen, auf die Sie zugreifen können.](./assets/image5.png)
 
 ## Abmelden
 
@@ -114,6 +114,6 @@ Sie können sich über das Benutzerprofil von Report Builder abmelden.
 
 1. Klicken Sie auf das Avatar-Symbol, um Ihr Benutzerprofil anzuzeigen.
 
-   ![](./assets/image6.png)
+   ![Ihr Benutzerprofilavatar und die Schaltfläche Abmelden .](./assets/image6.png)
 
 1. Klicken Sie auf **Abmelden**.

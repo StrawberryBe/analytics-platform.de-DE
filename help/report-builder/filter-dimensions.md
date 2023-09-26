@@ -1,15 +1,15 @@
 ---
 title: Dimensionen in Report Builder filtern
-description: Beschreibt die Verwendung von Filterdimensionen in Report Builder für Customer Journey Analytics
+description: Beschreibt die Verwendung von Filterdimensionen in Report Builder zum Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 98%
+source-wordcount: '988'
+ht-degree: 88%
 
 ---
 
@@ -25,13 +25,13 @@ So ändern Sie die für jede Dimension zurückgegebenen Dimensionselemente
 
 1. Klicken Sie auf das Symbol **...** neben einem Komponentennamen in der Tabelle.
 
-   ![](./assets/image27.png)
+   ![Die Optionen für die Auslassungszeichen.](./assets/image27.png)
 
 1. Wählen Sie **Filterdimension** im Popup-Menü aus, um den Bereich **Filterdimension** anzuzeigen.
 
 1. Wählen Sie **Am beliebtesten** oder **Spezifisch**.
 
-   ![](./assets/image28.png)
+   ![Die spezifische Option, die im Bereich Filterdimension ausgewählt ist.](./assets/image28.png)
 
 1. Wählen Sie je nach ausgewähltem Filtertyp die gewünschten Optionen aus.
 
@@ -49,7 +49,7 @@ Es gibt zwei Möglichkeiten, Dimensionselemente zu filtern: „Am beliebtesten�
 
 Mit der Option „Am beliebtesten“ können Sie Dimensionselemente basierend auf Metrikwerten dynamisch filtern. Die beliebteste Filterung gibt die am höchsten bewerteten Dimensionselemente basierend auf Metrikwerten zurück. Standardmäßig werden die ersten 10 Dimensionselemente aufgelistet, sortiert nach der ersten Metrik, die zum Datenblock hinzugefügt wurde.
 
-![Grafikdateien](./assets/image29.png)
+![Die beliebteste Option.](./assets/image29.png)
 
 
 ### Seiten- und Zeilenoptionen
@@ -92,7 +92,7 @@ So legen Sie Filterkriterien fest
 
 1. Wählen Sie einen aus der Dropdownliste „Operator“ aus.
 
-   ![](./assets/image31.png)
+   ![Die Benutzerliste.](./assets/image31.png)
 
 1. Geben Sie einen Wert in das Suchfeld ein.
 
@@ -114,14 +114,14 @@ So ändern Sie die zum Filtern und Sortieren des Datenblocks verwendete Metrik:
 
 2. Klicken Sie auf den Pfeil der gewünschten Metrik. 
 
-   ![](./assets/image30.png)
+   ![Tabellenaufbau und -metriken.](./assets/image30.png)
 
 
 ## Spezifische Filter
 
 Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste von Dimensionselementen erstellen. Verwenden Sie den Filtertyp **Spezifisch**, um die genauen Dimensionselemente anzugeben, die in Ihren Filter aufgenommen werden sollen. Sie können Elemente aus einer Liste oder aus einem Zellenbereich auswählen.
 
-![](./assets/image32.png)
+![Die spezifischen Optionen und ausgewählten Elemente.](./assets/image32.png)
 
 ### Aus Liste
 
@@ -129,7 +129,7 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
    Wenn Sie die Option **Aus Liste** auswählen, wird die Liste mit Dimensionselementen gefüllt, wobei die meisten Ereignisse zuerst auftreten.
 
-   ![](./assets/image33.png)
+   ![Die Option Aus Liste und die verfügbaren Elemente.](./assets/image33.png)
 
    Die Liste **Verfügbare Elemente** wird von Dimensionselementen mit den meisten Ereignissen zu den Elementen mit den geringsten Werten sortiert.
 
@@ -137,9 +137,9 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
 1. Um nach einem Element zu suchen, das in den letzten 90 Tagen nicht enthalten war, klicken Sie auf **Elemente für die letzten 6 Monate anzeigen**, um die Suche zu erweitern.
 
-   ![](./assets/image34.png)
+   ![Die Liste Elemente der letzten 6 Monate anzeigen .](./assets/image34.png)
 
-   Wenn die Daten der letzten sechs Monate geladen sind, aktualisiert Report Builder den Link zu **Elemente für die letzten 18 Monate anzeigen**.
+   Nach den Daten der letzten 6 Monate lädt der Report Builder den Link zu **Elemente der letzten 18 Monate anzeigen**.
 
 1. Wählen Sie ein Dimensionselement aus.
 
@@ -151,7 +151,7 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
    Um ein Element in der Liste zu verschieben, ziehen Sie es per Drag &amp; Drop oder klicken Sie auf „…“, um das Menü zum Verschieben anzuzeigen.
 
-   ![](./assets/image36.png)
+   ![Die Liste der Dimensionselemente.](./assets/image36.png)
 
 1. Klicken Sie auf **Anwenden**
 
@@ -161,7 +161,7 @@ Mit der Option „Spezifisch“ können Sie für jede Dimension eine feste Liste
 
 Wählen Sie die Option **Aus Zellenbereich** aus, um einen Zellenbereich auszuwählen, der die Liste der abzugleichenden Dimensionselemente enthält.
 
-![](./assets/image37.png)
+![Wählen Sie die Option Aus Zellenbereich und das Feld , um einen Zellenbereich auszuwählen.](./assets/image37.png)
 
 Beachten Sie bei der Auswahl eines Zellenbereichs die folgenden Einschränkungen:
 
@@ -175,6 +175,6 @@ Ihre Auswahl kann leere Zellen oder Zellen mit Werten enthalten, die nicht mit e
 
 Klicken Sie auf der Registerkarte **Dimensionen** auf das Pfeilsymbol neben einem Dimensionsnamen, um die Liste der Dimensionselemente anzuzeigen.
 
-![](./assets/dimensions_chevron.png)
+![Registerkarte Dimensionen und Liste der Dimensionen.](./assets/dimensions_chevron.png)
 
 Sie können Elemente per Drag &amp; Drop in die **Tabelle** ziehen oder auf einen Elementnamen doppelklicken, um ihn zum **Tabellen**-Builder hinzuzufügen.
