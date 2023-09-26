@@ -5,9 +5,9 @@ title: Customer Journey Analytics-Berichte in die Cloud exportieren
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1626'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ Durch das Exportieren von Customer Journey Analytics-Daten in die Cloud haben Si
 
   Diese Art von Daten kann verwendet werden, um langfristige Trends zu erkennen, um Business Intelligence zu gewinnen und letztlich zu einer besseren Entscheidungsfindung in Unternehmen zu führen.
 
-* Exportieren Sie vollständige Tabellen mit Tausenden oder Millionen von Zeilen. Andere Exportmethoden erlauben maximal 50.000 Zeilen.
+* Exportieren Sie vollständige Tabellen mit Tausenden oder Millionen von Zeilen (3 Millionen, 30 Millionen oder 150 Millionen Zeilen je nach Lizenztyp). Andere Exportmethoden erlauben maximal 50.000 Zeilen.
 
 * Schließen Sie berechnete Metriken in die exportierten Customer Journey Analytics ein.
 
@@ -108,7 +108,7 @@ Die folgenden Funktionen werden nicht unterstützt und automatisch aus dem Expor
 
 Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace fordert Sie auf, sie bei einem vollständigen Tabellenexport aus der Tabelle zu entfernen:
 
-* Berechnete Metriken, die erweiterte Funktionen in der Metrikdefinition verwenden (siehe [Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md) für weitere Informationen)
+* Berechnete Metriken, die grundlegende oder erweiterte Funktionen in der Metrikdefinition verwenden (siehe [Grundlegende Funktionen](/help/components/calc-metrics/cm-functions.md) und [Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md) für weitere Informationen)
 * Komponenten, die von einem Administrator für den Export eingeschränkt wurden (siehe *Filtern nach Data Governance-Richtlinien in Datenansichten* Abschnitt in [Beschriftungen und Richtlinien](/help/data-views/data-governance.md) für weitere Informationen)
 * Mehr als 5 Dimensionen und 5 Metriken pro Bericht (bis zu 5 Dimensionen und 5 Metriken werden unterstützt)
 * In Tabellenspalten:

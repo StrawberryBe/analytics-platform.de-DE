@@ -5,10 +5,10 @@ title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -74,7 +74,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Kopieren Sie den Inhalt der [!UICONTROL **SAS**] in die Zwischenablage. Verwenden Sie dieses SAS-Token, um auf die Daten zuzugreifen, die aus Analysis Workspace aus der AEP-Einstiegszone exportiert werden. Erfahren Sie mehr über den Zugriff auf Ihre Daten&quot; |
 
-1. Wählen Sie [!UICONTROL **Schließen**] aus.
+1. Auswählen [!UICONTROL **OK**].
 
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
@@ -98,7 +98,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Kopieren Sie den Inhalt der [!UICONTROL **Benutzer-ARN**] in die Zwischenablage. Die Benutzer-ARN (Amazon Resource Name) wird von Adobe bereitgestellt. Sie müssen diesen Benutzer an die Richtlinie anhängen, die Sie in Amazon S3 Role ARN erstellt haben.
 
-1. Wählen Sie [!UICONTROL **Schließen**] aus.
+1. Auswählen [!UICONTROL **OK**].
 
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
@@ -122,7 +122,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Kopieren Sie den Inhalt der [!UICONTROL **Principal**] in die Zwischenablage ein, und stellen Sie sicher, dass Sie dem Prinzipal Berechtigungen zum Hochladen von Dateien in diesen Behälter in Google Cloud Platform erteilen. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Wählen Sie [!UICONTROL **Schließen**] aus.
+1. Auswählen [!UICONTROL **OK**].
 
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
@@ -150,7 +150,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie dem Behälter in Azure SAS Berechtigungen erteilen. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Wählen Sie [!UICONTROL **Schließen**] aus.
+1. Auswählen [!UICONTROL **OK**].
 
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
@@ -176,7 +176,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie dem Bucket in Azure RBAC Berechtigungen erteilen. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Wählen Sie [!UICONTROL **Schließen**] aus.
+1. Auswählen [!UICONTROL **OK**].
 
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
@@ -202,7 +202,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Kopieren Sie den Inhalt der [!UICONTROL **Öffentlicher Schlüssel**] in die Zwischenablage. Der öffentliche Schlüssel wird von Adobe bereitgestellt. Verwenden Sie den öffentlichen Schlüssel im Snowflake, um eine Verbindung zu Ihrem Snowflake-Konto herzustellen. Weitere Informationen finden Sie unter [Seite &quot;Schlüsselpaarauthentifizierung und Schlüsselpaar-Rotation&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
 
-1. Wählen Sie [!UICONTROL **Schließen**] aus.
+1. Auswählen [!UICONTROL **OK**].
 
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
 
