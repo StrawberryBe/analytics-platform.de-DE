@@ -5,9 +5,9 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1082'
 ht-degree: 5%
 
 ---
@@ -118,9 +118,9 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **DB**] | Die angegebene Datenbank sollte eine bestehende Datenbank sein, für die die angegebene Standardrolle über Berechtigungen verfügt.<p>Dies ist die Datenbank, die mit dem Staging-Namen verknüpft ist.</p> <p>Weitere Informationen finden Sie unter [Seite &quot;Datenbank&quot;, &quot;Schema&quot;und &quot;Befehle freigeben&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Schema**] | Das angegebene Schema sollte ein vorhandenes Schema sein, für das die angegebene Standardrolle über Berechtigungen verfügt.<p>Dies ist das Schema, das mit dem Staging-Namen verknüpft ist.</p><p>Weitere Informationen finden Sie unter [Seite &quot;Datenbank&quot;, &quot;Schema&quot;und &quot;Befehle freigeben&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Schrittname**] | Der Name der Phase, in der Datendateien im Snowflake gespeichert werden. <p>Stellen Sie sicher, dass die Rolle, die Sie im Konto angegeben haben, Lese- und Schreibzugriff auf diesen Staging-Namen hat. (Da Sie Lese- und Schreibzugriff gewähren, empfehlen wir die Verwendung einer Bühne, die nur von Adobe verwendet wird.) <p>Informationen zum Gewähren von Berechtigungen für eine Rolle finden Sie unter [Gewähren von Berechtigungen in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Weitere Informationen zum Namen der Bühne finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | Die angegebene Datenbank sollte eine bestehende Datenbank sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf diese Datenbank verfügen.<p>Dies ist die Datenbank, die mit dem Staging-Namen verknüpft ist.</p><p>Sie können diese Rollenberechtigungen der Datenbank unter Snowflake mit dem folgenden Befehl gewähren: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Weitere Informationen finden Sie unter [Seite &quot;Datenbank&quot;, &quot;Schema&quot;und &quot;Befehle freigeben&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Schema**] | Das angegebene Schema sollte ein vorhandenes Schema sein. Die von Ihnen erstellte Rolle muss über Berechtigungen für den Zugriff auf dieses Schema verfügen.<p>Dies ist das Schema, das mit dem Staging-Namen verknüpft ist.<p>Mit dem folgenden Befehl können Sie dem Schema in Snowflake die Rolle zuweisen, die Sie für das Schema erstellt haben: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Weitere Informationen finden Sie unter [Seite &quot;Datenbank&quot;, &quot;Schema&quot;und &quot;Befehle freigeben&quot;in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Schrittname**] | Der Name der internen Phase, in der Datendateien im Snowflake gespeichert werden.<p>Stellen Sie sicher, dass die Rolle, die Sie im Konto angegeben haben, Lese- und Schreibzugriff auf diesen Staging-Namen hat. (Da Sie Lese- und Schreibzugriff gewähren, empfehlen wir die Verwendung einer Bühne, die nur von Adobe verwendet wird.)<p>Mit dem folgenden Befehl können Sie Lese- und Schreibzugriff auf den Staging-Namen im Snowflake gewähren: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Informationen zum Gewähren von Berechtigungen für eine Rolle finden Sie unter [Gewähren von Berechtigungen in der Snowflake-Dokumentation](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Weitere Informationen zum Namen der Bühne finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Schrittpfad**] | Der Pfad zum Speicherort, an dem Datendateien unter Snowflake gespeichert werden. <p>Weitere Informationen finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

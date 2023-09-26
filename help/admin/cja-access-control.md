@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 83%
@@ -20,7 +20,7 @@ Darüber hinaus werden granulare Möglichkeiten zur Einschränkung des Zugriffs 
 
 ## Produktadministrator-Rolle
 
-Produktadministratoren haben die Berechtigung, alle in Customer Journey Analytics erforderlichen Aufgaben auszuführen. Sie müssen dem **Customer Journey Analytics-Produktprofil** in der [Admin Console](https://adminconsole.adobe.com/enterprise/) unter [!UICONTROL Customer Journey Analytics] > Registerkarte [!UICONTROL Admins] > [!UICONTROL Admin hinzufügen] als Produkt-Admin hinzugefügt werden. Produktadmins erhalten die folgenden Berechtigungen:
+Produktadministratoren haben die Berechtigung, alle Aufgaben auszuführen, die innerhalb von Customer Journey Analytics erforderlich sind. Sie müssen dem **Customer Journey Analytics-Produktprofil** in der [Admin Console](https://adminconsole.adobe.com/enterprise/) unter [!UICONTROL Customer Journey Analytics] > Registerkarte [!UICONTROL Admins] > [!UICONTROL Admin hinzufügen] als Produkt-Admin hinzugefügt werden. Produktadmins erhalten die folgenden Berechtigungen:
 
 * Erstellen/Aktualisieren/Löschen von Verbindungen oder Datenansichten
 * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken, Zielgruppen, Kommentaren oder von anderen Benutzenden erstellten Filtern
@@ -49,7 +49,7 @@ Benutzende in Customer Journey Analytics können keine Datenansichten oder Verbi
 
 ## Workspace-Projektkuratierung
 
-Eine weitere Ebene der Zugriffskontrolle kann auf der Workspace-Berichtsebene verwendet werden. Der Zugriff auf bestimmte Komponenten kann für bestimmte Benutzende eingeschränkt werden. Weitere Informationen dazu, wie Sie Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) auf Workspace-Projektebene einschränken und wie die Kuratierung mit Datenansichten verknüpft ist, finden Sie unter [Kuratieren von Projekten](/help/analysis-workspace/curate-share/curate.md).
+Eine weitere Ebene der Zugriffskontrolle kann auf der Workspace-Berichtsebene verwendet werden. Der Zugriff auf bestimmte Komponenten kann für bestimmte Benutzende eingeschränkt werden. Weitere Informationen zum Eingrenzen von Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) auf Workspace-Projektebene und dazu, wie die Kuratierung mit Datenansichten verknüpft ist, finden Sie unter [Kuratieren von Projekten](/help/analysis-workspace/curate-share/curate.md).
 
 ## Gewähren von Zugriff auf einzelne Metriken oder Dimensionen
 
@@ -67,7 +67,7 @@ Ein Drittanbieter, mit dem Ihr Unternehmen zusammenarbeitet, hat einen Teamleite
 
 Angenommen, die Benutzenden sollen nur auf die Daten eines bestimmten Tages zugreifen können. So könnte der Zugriff auf diese speziellen Zeilen beschränkt werden:
 
-1. Erstellen Sie einen Filter in Customer Journey Analytics, in dem **[!UICONTROL Tag]** entspricht dem Datum, auf das Sie Datenzugriff haben möchten.
+1. Erstellen Sie einen Filter auf einer Customer Journey Analytics, wobei **[!UICONTROL Tag]** entspricht dem Datum, auf das Sie Datenzugriff haben möchten.
 1. Fügen Sie in [!UICONTROL Datenansichten] > [!UICONTROL Einstellungen] den Filter zu der Datenansicht hinzu.
 1. Wenn Sie nun die Datenansicht speichern, wird der Filter automatisch auf den Datensatz angewendet. Alle Zeilen, die nicht der Filterdefinition entsprechen, werden jetzt automatisch aus der bearbeiteten Datenansicht ausgeschlossen.
 1. Erstellen Sie ein neues Produktprofil in der Admin Console, fügen Sie Benutzende hinzu und beschränken Sie deren Zugriff auf diese Datenansicht.
@@ -93,9 +93,11 @@ Die Registerkarte **[!UICONTROL Berechtigungen]** ist Teil jedes Produktprofils 
 | **[!UICONTROL Anzeige der Reporting-Nutzung]** | Ermöglicht Benutzenden die Anzeige aller gleichzeitigen Berichtsanfragen. |
 | **[!UICONTROL Erstellung berechneter Metriken]** | Ermöglicht Benutzenden die Erstellung von [berechneten Metriken](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Filter-Erstellung]** | Ermöglicht Benutzenden die Erstellung von [Filtern](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Labs-Zugriff]** | Benutzer können auf die [Labs](/help/labs/labs.md) in Customer Journey Analytics. |
+| **[!UICONTROL Labs-Zugriff]** | Ermöglicht Benutzern den Zugriff auf [Labs](/help/labs/labs.md) Registerkarte in Customer Journey Analytics. |
 | **[!UICONTROL Anmerkungserstellung]** | Ermöglicht Benutzenden das Erstellen von [Anmerkungen](/help/components/annotations/overview.md). |
 | **[!UICONTROL Zielgruppenerstellung]** | Ermöglicht Benutzenden das Erstellen von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Zielgruppenansicht]** | Ermöglicht Benutzenden die Ansicht von [Zielgruppen](/help/components/audiences/audiences-overview.md). |
 
 {style="table-layout:auto"}
+
+<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->

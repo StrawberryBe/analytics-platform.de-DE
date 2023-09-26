@@ -5,9 +5,9 @@ title: Customer Journey Analytics-Berichte in die Cloud exportieren
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1716'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Be
 
 >[!NOTE]
 >
->Bevor Sie Daten wie in diesem Abschnitt beschrieben exportieren, müssen Sie sicherstellen, dass Ihre Tabelle die [Exportanforderungen](#export-requirements).
+>Bevor Sie Daten wie in diesem Abschnitt beschrieben exportieren, stellen Sie sicher, dass die [Exportanforderungen](#export-requirements) sind erfüllt.
 
 So exportieren Sie vollständige Tabellen aus Analysis Workspace:
 
@@ -85,9 +85,13 @@ Durch das Exportieren von Customer Journey Analytics-Daten in die Cloud haben Si
 
 ### Mindestanforderungen
 
-Tabellen müssen mindestens eine Dimension in der Zeile und eine Metrik in jeder Spalte enthalten, damit sie bei einem vollständigen Tabellenexport unterstützt werden.
+Stellen Sie sicher, dass Ihre Tabellen, Ihre Umgebung und Ihre Berechtigungen die folgenden Anforderungen erfüllen:
 
-Administratoren sollten sicherstellen, dass die in [Von Customer Journey Analytics verwendete IP-Adressen](/help/admin/ip-addresses.md) sind in der Firewall-Zulassungsliste enthalten.
+* **Tabellen:** Alle Tabellen müssen mindestens eine Dimension in der Zeile und eine Metrik in jeder Spalte enthalten, damit sie bei einem vollständigen Tabellenexport unterstützt werden.
+
+* **Umgebung:** Administratoren sollten sicherstellen, dass die in [Von Customer Journey Analytics verwendete IP-Adressen](/help/admin/ip-addresses.md) sind in der Firewall-Zulassungsliste enthalten.
+
+* **Berechtigungen:** In der Adobe Admin Console müssen Benutzer einem Produktprofil zugewiesen werden, das über die [!UICONTROL **Vollständiger Tabellenexport**] Berechtigung zum Export vollständiger Tabellen zugewiesen wurde. Informationen zum Zuweisen von Berechtigungen zu einem Produktprofil in der Admin Console finden Sie unter [Customer Journey Analytics-Berechtigung in Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Customer Journey Analytics-Zugangssteuerung](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
 ### Nicht unterstützte Funktionen
 
