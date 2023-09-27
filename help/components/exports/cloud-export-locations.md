@@ -5,10 +5,10 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
+source-git-commit: 2da2b4b2931f28dc373a2c634c38e9dfcbdd2788
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 5%
+source-wordcount: '1417'
+ht-degree: 4%
 
 ---
 
@@ -20,10 +20,12 @@ Dieser Prozess besteht aus dem Hinzufügen und Konfigurieren des Kontos (z. B. A
 
 Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bearbeiten und Löschen von Standorten, finden Sie unter [Verwalten von Cloud-Exportspeicherorten und -konten](/help/components/exports/manage-export-locations.md).
 
-So konfigurieren Sie einen Cloud-Exportspeicherort:
+## Erstellen eines Cloud-Export-Standorts
 
 1. Sie müssen ein Konto hinzufügen, bevor Sie einen Ort hinzufügen können. Fügen Sie, falls noch nicht geschehen, ein Konto wie unter [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md).
+
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
+
 1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte und wählen Sie [!UICONTROL **Ort hinzufügen**].
 
    ![Schaltfläche &quot;Ort hinzufügen&quot;](assets/location-add.png)
@@ -40,11 +42,17 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
 
 1. Im [!UICONTROL **Standorteigenschaften**] Informationen zum Kontotyp Ihres Standortkontos angeben.
 
-   Erweitern Sie für Konfigurationsanweisungen den folgenden Abschnitt, der dem Kontotyp entspricht, den Sie in der [!UICONTROL **Standortkonten**] -Feld.
+   Fahren Sie mit dem folgenden Abschnitt fort, der dem Kontotyp entspricht, den Sie in der [!UICONTROL **Standortkonto**] -Feld.
 
-   ++ + Adobe Experience Platform Data Landing Zone
+### Adobe Experience Platform Data Landing Zone
 
-   Geben Sie die folgenden Informationen an, um einen Adobe Experience Platform Data Landing Zone-Speicherort zu konfigurieren:
+>[!IMPORTANT]
+>
+>Achten Sie beim Exportieren von Customer Journey Analytics-Berichten in die Adobe Experience Platform Data Landing Zone darauf, die Daten innerhalb von 7 Tagen herunterzuladen und sie dann aus der AEP Data Landing Zone zu löschen. Nach 7 Tagen werden die Daten automatisch aus der AEP Data Landing Zone gelöscht.
+
+1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+
+1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Adobe Experience Platform Data Landing Zone-Speicherort zu konfigurieren:
 
    <!-- still need to update; can't create AEP account -->
 
@@ -53,11 +61,17 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
    | [!UICONTROL **Kennung der IMS-Organisation**] | Die IMS-Organisations-ID wird von Adobe bereitgestellt. Klicken Sie auf das Symbol Kopieren neben dem [!UICONTROL **Kennung der IMS-Organisation**] zum Kopieren des Feldinhalts und zur anschließenden Verwendung der ID in Ihrem Adobe Experience Platform-Konto. |
    | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
 
-+++
+   {style="table-layout:auto"}
 
-   +++Amazon S3 Role ARN
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   Geben Sie die folgenden Informationen an, um einen Amazon S3 Role ARN-Speicherort zu konfigurieren:
+1. Sie können jetzt Daten aus Analysis Workspace in das Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
+
+### Amazon S3 Role ARN
+
+1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+
+1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Amazon S3 Role ARN-Speicherort zu konfigurieren:
 
    <!-- still need to update; can't create S3 role ARN account -->
 
@@ -68,11 +82,15 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Google Cloud Platform
+1. Sie können jetzt Daten aus Analysis Workspace in das Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
-   Geben Sie die folgenden Informationen an, um einen Google Cloud Platform-Speicherort zu konfigurieren:
+### Google Cloud Platform
+
+1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+
+1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Google Cloud Platform-Speicherort zu konfigurieren:
 
    <!-- still need to update; can't create GCP account -->
 
@@ -83,11 +101,15 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Azure SAS
+1. Sie können jetzt Daten aus Analysis Workspace in das Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
-   Geben Sie die folgenden Informationen an, um einen Azure SAS-Speicherort zu konfigurieren:
+### Azure SAS
+
+1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+
+1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Azure SAS-Speicherort zu konfigurieren:
 
    | Feld | Funktion |
    |---------|----------|
@@ -96,11 +118,15 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Azure RBAC
+1. Sie können jetzt Daten aus Analysis Workspace in das Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
-   Geben Sie die folgenden Informationen an, um einen Azure RBAC-Speicherort zu konfigurieren:
+### Azure RBAC
+
+1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+
+1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Azure RBAC-Speicherort zu konfigurieren:
 
    | Feld | Funktion |
    |---------|----------|
@@ -110,11 +136,15 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
 
    {style="table-layout:auto"}
 
-+++
+1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
-   +++Snowflake
+1. Sie können jetzt Daten aus Analysis Workspace in das Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
 
-   Geben Sie die folgenden Informationen an, um einen Snowflake-Speicherort zu konfigurieren:
+### Snowflake
+
+1. [Erstellen eines Cloud-Export-Standorts](#begin-creating-a-cloud-export-location), wie oben beschrieben.
+
+1. Im [!UICONTROL **Standorteigenschaften**] Abschnitt [!UICONTROL **Ort hinzufügen**] Geben Sie die folgenden Informationen an, um einen Snowflake-Speicherort zu konfigurieren:
 
    | Feld | Funktion |
    |---------|----------|
@@ -124,8 +154,6 @@ So konfigurieren Sie einen Cloud-Exportspeicherort:
    | [!UICONTROL **Schrittpfad**] | Der Pfad zum Speicherort, an dem Datendateien unter Snowflake gespeichert werden. <p>Weitere Informationen finden Sie unter [Auswählen einer internen Phase für lokale Dateien in der Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
-
-+++
 
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
