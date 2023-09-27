@@ -5,9 +5,9 @@ title: Customer Journey Analytics-Berichte in die Cloud exportieren
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: b984241de42b2db2992e18c17cd60ca14cc725c7
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1853'
 ht-degree: 4%
 
 ---
@@ -18,11 +18,35 @@ Sie können Workspace-Volltabellen von Customer Journey Analytics exportieren un
 
 Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Berichten zur Verfügung, wie unter [Exportübersicht](/help/analysis-workspace/export/export-project-overview.md).
 
+## Vollständiger Tabellenexport
+
+Sie können vollständige Tabellen aus Analysis Workspace in Cloud-Anbieter wie Google, Azure, Amazon und Adobe exportieren.
+
+[Vorteile beim Exportieren vollständiger Tabellen in die Cloud](#advantages-of-exporting-to-the-cloud) umfassen die Möglichkeit, Millionen von Zeilen zu exportieren, berechnete Metriken einzuschließen, die Ausgabe von Strukturdaten in verketteten Werten zu strukturieren und mehr.
+
+Beachten Sie beim Exportieren vollständiger Tabellen Folgendes:
+
+* Bevor Sie in die Cloud exportieren, stellen Sie sicher, dass Ihre Tabellen, Ihre Umgebung und Ihre Berechtigungen den [Exportanforderungen](#export-requirements).
+
+* Einige [Funktionen](#unsupported-features) und [Komponenten](#unsupported-components) werden beim Exportieren vollständiger Tabellen in die Cloud nicht unterstützt.
+
+Verwenden Sie beim Exportieren vollständiger Tabellen in die Cloud den folgenden Prozess:
+
+1. [Konfigurieren eines Cloud-Kontos](/help/components/exports/cloud-export-accounts.md)
+
+1. [Speicherort für das Konto konfigurieren](/help/components/exports/cloud-export-locations.md)
+
+1. [Exportieren einer vollständigen Tabelle aus Workspace](#export-full-tables-from-analysis-workspace)
+
+1. [Zugriff auf Daten in der Cloud](#view-exported-data-and-manifest-file) und [Exporte im Adobe verwalten](/help/components/exports/manage-exports.md)
+
+![Vollständiger Tabellenexport](assets/export-full-table-process.png)
+
 ## Vollständige Tabellen aus Analysis Workspace exportieren
 
 >[!NOTE]
 >
->Bevor Sie Daten wie in diesem Abschnitt beschrieben exportieren, stellen Sie sicher, dass die [Exportanforderungen](#export-requirements) sind erfüllt.
+>Bevor Sie Daten wie in diesem Abschnitt beschrieben exportieren, erfahren Sie mehr über den vollständigen Tabellenexport im [Vollständiger Tabellenexport](#understand-full-table-export) Abschnitt weiter oben.
 
 So exportieren Sie vollständige Tabellen aus Analysis Workspace:
 
@@ -58,6 +82,38 @@ So exportieren Sie vollständige Tabellen aus Analysis Workspace:
    Die Daten werden an das Cloud-Konto gesendet, das Sie in der von Ihnen festgelegten Häufigkeit angegeben haben.
 
 1. (Optional) Nachdem Sie den Export erstellt haben, können Sie ihn jetzt oder nach einem festgelegten Zeitplan auf der [Exportieren einer Seite](/help/components/exports/manage-exports.md) und sie im [Logs exportieren](/help/components/exports/manage-export-logs.md).</p>
+
+## Verwalten von Exporten
+
+Nachdem die Daten aus Analysis Workspace exportiert wurden, können Sie bestehende Exporte bearbeiten, erneut exportieren, duplizieren, taggen oder löschen, wie unter [Verwalten von Exporten](/help/components/exports/manage-exports.md).
+
+## Exportierte Daten und Manifestdatei anzeigen
+
+### Exportierte Daten
+
+Exportierte Daten sind als komprimierte Datei in dem Cloud-Ziel verfügbar, das Sie konfiguriert haben, wie hier beschrieben: [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
+
+Der Dateiname der komprimierten Datei lautet wie folgt, je nachdem, ob Sie CSV oder JSON als Dateiformat ausgewählt haben:
+
+* `cja-export-{reportInstanceId}-{idx}.csv.gz`
+
+* `cja-export-{reportInstanceId}-{idx}.json.gz`
+
+>[!NOTE]
+>
+>Sie wählen das Dateiformat im [!UICONTROL **Dateiformat**] -Feld beim Exportieren der Tabelle, wie unter [Vollständige Tabellen aus Analysis Workspace exportieren](#export-full-tables-from-analysis-workspace).
+
+### Manifestdatei 
+
+Eine Manifestdatei mit dem Dateinamen `cja-export-{reportInstanceId}-{idx}.json.gz` ist in jedem erfolgreichen Exportversand enthalten, der mindestens eine Datei enthält. Mit der Manifestdatei können Sie überprüfen, ob alle Dateien erfolgreich bereitgestellt wurden. Er enthält die folgenden Informationen:
+
+* Eine Liste aller Dateien, die bereitgestellt wurden
+
+* Die Größe der einzelnen Dateien
+
+* Der Zeitstempel jeder Datei
+
+<!-- add in  what the file name, structure, and file format will be -->
 
 ## Vorteile des Exports in die Cloud
 
@@ -141,38 +197,6 @@ Wenn in einem Bericht ein nicht standardmäßiges Attributionsmodell verwendet w
   >[!NOTE]
   >
   >Mehrdimensionale Berichte werden nur beim Exportieren von Daten in die Cloud unterstützt, wie in diesem Artikel beschrieben.
-
-## Verwalten von Exporten
-
-Nachdem die Daten aus Analysis Workspace exportiert wurden, können Sie bestehende Exporte bearbeiten, erneut exportieren, duplizieren, taggen oder löschen, wie unter [Verwalten von Exporten](/help/components/exports/manage-exports.md).
-
-## Exportierte Daten und Manifestdatei anzeigen
-
-### Exportierte Daten
-
-Exportierte Daten sind als komprimierte Datei in dem Cloud-Ziel verfügbar, das Sie konfiguriert haben, wie hier beschrieben: [Konfigurieren von Cloud-Exportkonten](/help/components/exports/cloud-export-accounts.md) und [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
-
-Der Dateiname der komprimierten Datei lautet wie folgt, je nachdem, ob Sie CSV oder JSON als Dateiformat ausgewählt haben:
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->Sie wählen das Dateiformat im [!UICONTROL **Dateiformat**] -Feld beim Exportieren der Tabelle, wie unter [Vollständige Tabellen aus Analysis Workspace exportieren](#export-full-tables-from-analysis-workspace).
-
-### Manifestdatei 
-
-Eine Manifestdatei mit dem Dateinamen `cja-export-{reportInstanceId}-{idx}.json.gz` ist in jedem erfolgreichen Exportversand enthalten, der mindestens eine Datei enthält. Mit der Manifestdatei können Sie überprüfen, ob alle Dateien erfolgreich bereitgestellt wurden. Er enthält die folgenden Informationen:
-
-* Eine Liste aller Dateien, die bereitgestellt wurden
-
-* Die Größe der einzelnen Dateien
-
-* Der Zeitstempel jeder Datei
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## Vergleich des vollständigen Tabellenexports (in Customer Journey Analytics) mit Data Warehouse (in Adobe Analytics)
 
