@@ -4,9 +4,9 @@ title: Schnellfilter
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: 3d55105a7d4f4687ed0fc6d857c906eec707f6a6
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1168'
 ht-degree: 38%
 
 ---
@@ -61,7 +61,7 @@ So erstellen Sie einen Schnellfilter:
    | Plus (+)-Zeichen | Eine weitere Regel hinzufügen |
    | AND/OR-Kriterien | Sie können den Regeln „AND“- oder „OR“-Kriterien hinzufügen, aber „AND“- und „OR“-Werte können nicht in einer Filterdefinition gemischt werden. |
    | [!UICONTROL Übernehmen] | Diesen Filter auf das Bedienfeld an. Wenn der Filter keine Daten enthält, werden Sie gefragt, ob Sie fortfahren möchten. |
-   | [!UICONTROL Builder öffnen] | Zeigt den Filtergenerator an. Nachdem Sie den Filter im Filtergenerator gespeichert oder angewendet haben, wird er nicht mehr als &quot;Schnellfilter&quot;betrachtet. Er wird Teil der Komponentenlisten-Filterbibliothek. <p>Um die Komponente für alle Projekte und in der linken Leiste verfügbar zu machen, wählen Sie die Option [!UICONTROL **Machen Sie diesen Filter für alle Projekte verfügbar und fügen Sie ihn Ihrer Komponentenliste hinzu.**].</p><p>Weitere Informationen finden Sie im Abschnitt . [Schnellfilter als Komponentenlistenfilter speichern](#save-a-quick-filter-as-a-component-list-filter) in diesem Artikel.</p><p>**Hinweis:** Nur Benutzer mit der Berechtigung &quot;Filtererstellung&quot;im [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=de#analytics-tools) kann den Filtergenerator öffnen.</p> |
+   | [!UICONTROL Builder öffnen] | Zeigt den Filtergenerator an. Nachdem Sie den Filter im Filtergenerator gespeichert oder angewendet haben, wird er nicht mehr als &quot;Schnellfilter&quot;betrachtet. Er wird Teil der Komponentenlisten-Filterbibliothek. <p>Um die Komponente für alle Projekte und in der linken Leiste verfügbar zu machen, wählen Sie die Option [!UICONTROL **Machen Sie diesen Filter für alle Projekte verfügbar und fügen Sie ihn Ihrer Komponentenliste hinzu.**].</p><p>Weitere Informationen finden Sie im Abschnitt . [Schnellfilter als Komponentenlistenfilter speichern](#save-a-quick-filter-as-a-component-list-filter) in diesem Artikel.</p><p>**Hinweis:** Nur Benutzer mit der Berechtigung Segmenterstellung im [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=de) kann den Filtergenerator öffnen.</p> |
    | [!UICONTROL Abbrechen] | Abbrechen dieses Schnellfilters (nicht anwenden). |
    | [!UICONTROL Datumsbereich] | Der Validator verwendet den Datumsbereich des Bedienfelds für die Datensuche. Jeder Datumsbereich, der in einem Schnellfilter angewendet wird, überschreibt jedoch den Datumsbereich des Bedienfelds oben im Bedienfeld. |
    | Vorschau (oben rechts) | Hiermit können Sie sehen, ob Sie über einen gültigen Filter verfügen und wie breit der Filter ist. Stellt die Aufschlüsselung des Datensatzes dar, den Sie bei Anwendung dieses Filters erwarten können. Sie erhalten möglicherweise einen Hinweis, der anzeigt, dass dieser Filter keine Daten enthält. In diesem Fall können Sie weiterarbeiten oder aber die Filterdefinition ändern. |
@@ -83,7 +83,7 @@ So erstellen Sie einen Schnellfilter:
 >
 > Beachten Sie beim Speichern eines Schnellfilters Folgendes:
 > 
-> * Um einen Schnellfilter zu speichern, benötigen Sie die Berechtigung Filtererstellung im [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=de#analytics-tools).
+> * Um einen Schnellfilter zu speichern, benötigen Sie die Berechtigung Segmenterstellung im [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=de).
 > 
 > * Nachdem Sie den Filter gespeichert oder angewendet haben, kann er nicht mehr im Schnellfilter-Builder bearbeitet werden. Stattdessen müssen Sie den regulären Filter Builder verwenden.
 
