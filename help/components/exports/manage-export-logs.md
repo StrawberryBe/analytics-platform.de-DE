@@ -5,10 +5,10 @@ title: Verwalten von Exportprotokollen
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 7%
+source-wordcount: '708'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Protokoll**] Registerkarte.
+1. Wählen Sie die [!UICONTROL **Protokolle**] Registerkarte.
 
 1. Wählen Sie die **Filter** Symbol.
 
@@ -45,7 +45,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Protokoll**] Registerkarte.
+1. Wählen Sie die [!UICONTROL **Protokolle**] Registerkarte.
 
 1. Geben Sie auf der Registerkarte &quot;Suchen&quot;alle Informationen ein, die mit dem gesuchten Protokoll verknüpft sind. Sie können in einer beliebigen Spalte der Tabelle nach Daten suchen.
 
@@ -69,25 +69,29 @@ Diese Option ist nicht verfügbar, wenn mehrere Protokolle ausgewählt werden.
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Protokolle**] und wählen Sie ein Protokoll aus.
+1. Wählen Sie die [!UICONTROL **Protokolle**] Registerkarte.
 
-   <!-- add screenshot? -->
+1. Suchen Sie das Protokoll, das mit dem zu bearbeitenden Export verknüpft ist.
 
-1. Wählen Sie [!UICONTROL **Bearbeiten**] aus.
+1. Wählen Sie die **Export bearbeiten** icon ![Log-Symbol exportieren](assets/export-icon.png) neben dem Protokoll.
+
+   Oder
+
+   Wählen Sie das Protokoll aus und klicken Sie auf [!UICONTROL **Export bearbeiten**].
 
 ## Spalten konfigurieren
 
-Sie können Spalten zum [!UICONTROL Protokoll] um zu konfigurieren, welche Informationen angezeigt werden.
+Sie können Spalten zum [!UICONTROL Protokolle] um zu konfigurieren, welche Informationen angezeigt werden.
 
 Wählen Sie eine Spaltenüberschrift aus, um die Protokolle nach dieser Spalte zu sortieren. Standardmäßig werden die Protokolle nach Datum und Uhrzeit des Beginns des Exports sortiert.
 
-So konfigurieren Sie Spalten in der [!UICONTROL Protokoll] tab:
+So konfigurieren Sie Spalten in der [!UICONTROL Protokolle] tab:
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Protokoll**] Registerkarte.
+1. Wählen Sie die [!UICONTROL **Protokolle**] Registerkarte.
 
-1. Wählen Sie die **Tabelle anpassen** icon ![Anpassbare Tabelle](assets/customize-table-icon.png) oben rechts im [!UICONTROL Protokoll] Seite.
+1. Wählen Sie die **Tabelle anpassen** icon ![Anpassbare Tabelle](assets/customize-table-icon.png) oben rechts im [!UICONTROL Protokolle] Seite.
 
    Die folgenden Spalten sind verfügbar:
 
@@ -108,7 +112,7 @@ So konfigurieren Sie Spalten in der [!UICONTROL Protokoll] tab:
 
    {style="table-layout:auto"}
 
-1. Stellen Sie sicher, dass alle Spalten ausgewählt sind, die angezeigt werden sollen. Die ausgewählten Spalten werden auf der [!UICONTROL Protokoll] und die relevanten Informationen anzeigen.
+1. Stellen Sie sicher, dass alle Spalten ausgewählt sind, die angezeigt werden sollen. Die ausgewählten Spalten werden auf der [!UICONTROL Protokolle] und die relevanten Informationen anzeigen.
 
 ## Audit-Protokolle anzeigen
 

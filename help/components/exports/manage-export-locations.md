@@ -5,9 +5,9 @@ title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Standort**] Registerkarte.
+1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
 
 1. Wählen Sie die **Filter** Symbol.
 
@@ -36,7 +36,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Ort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Ort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Konto**] | Der Name des Kontos, mit dem der Standort verknüpft ist. |
    | [!UICONTROL **Erstellt von**] | Die E-Mail-Adresse des Benutzers, der den Standort erstellt hat. |
 
@@ -46,7 +46,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Standort**] Registerkarte.
+1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
 
 1. Geben Sie auf der Registerkarte &quot;Suchen&quot;alle Informationen ein, die mit dem gesuchten Ort verknüpft sind. Sie können in einer beliebigen Spalte der Tabelle nach Daten suchen.
 
@@ -54,7 +54,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Standort**] und wählen Sie dann den Ort aus, den Sie bearbeiten möchten.
+1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie dann den Ort aus, den Sie bearbeiten möchten.
 
    <!-- add screenshot? -->
 
@@ -74,7 +74,7 @@ So löschen Sie einen Speicherort:
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
 
-1. Wählen Sie die [!UICONTROL **Standort**] und wählen Sie einen oder mehrere Speicherorte aus, die Sie löschen möchten.
+1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie einen oder mehrere Speicherorte aus, die Sie löschen möchten.
 
    <!-- add screenshot? -->
 

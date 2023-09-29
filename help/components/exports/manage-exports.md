@@ -5,9 +5,9 @@ title: Verwalten von Exporten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a95be4cf8e11b7b62f6777abe8884779cfebf482
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '968'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der E
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem der Export verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem der Export verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | Der Status des Exports. Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Aktiv**]: Gibt an, dass ein geplanter Export noch nicht abgelaufen ist. </li><li>[!UICONTROL **Abgeschlossen**]: Gibt an, dass ein Export erfolgreich exportiert wurde. Bei geplanten Exporten bedeutet dies, dass der Zeitplan abgelaufen ist.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Die folgenden Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen. <ul><li>Geplanter Exportablauf</li><li>Zeilenlimit für geplanten Export erreicht </li></ul> </p></li></ul> |
    | [!UICONTROL **Häufigkeit**] | Wie oft der Export erfolgt. Die folgenden Häufigkeiten sind verfügbar: <ul><li>[!UICONTROL **Einmalig**]</li><li>[!UICONTROL **Täglich**]</li><li>[!UICONTROL **Wöchentlich**]</li><li>[!UICONTROL **Monatlich**]</li><li>[!UICONTROL **Jährlich**]</li></ul> |
 
@@ -120,6 +120,8 @@ Sie können Exporte über die Seite Exporte löschen. Geplante, gelöschte Expor
 
 Sie können Spalten zum [!UICONTROL Exporte] um zu konfigurieren, welche Informationen angezeigt werden.
 
+Wählen Sie eine Spaltenüberschrift aus, um die Exporte nach dieser Spalte zu sortieren. Standardmäßig werden Exporte nach Datum und Uhrzeit der letzten Änderung des Exports sortiert.
+
 1. Wählen Sie die **Tabelle anpassen** icon ![Anpassbare Tabelle](assets/customize-table-icon.png) oben rechts im [!UICONTROL Exporte] Seite.
 
    Die folgenden Spalten sind verfügbar:
@@ -139,7 +141,7 @@ Sie können Spalten zum [!UICONTROL Exporte] um zu konfigurieren, welche Informa
    | Häufigkeit | Die Häufigkeit, mit der der Export durchgeführt wird. Verfügbare Optionen sind [!UICONTROL Einmalig], [!UICONTROL Täglich], [!UICONTROL Wöchentlich], [!UICONTROL Monatlich nach Wochentag], [!UICONTROL Monatlich nach Tag des Monats], [!UICONTROL Jährlich nach Tag des Monats], und [!UICONTROL Jährlich nach spezifischem Datum]. |
    | Gesendet um | Der Zeitpunkt, zu dem der Export gesendet wurde. |
    | Zuletzt gesendet | Das letzte Mal, dass der Export gesendet wurde. |
-   | Zuletzt geändert | Das letzte Mal, dass der Export geändert wurde. |
+   | Zuletzt geändert | Das letzte Mal, dass der Export geändert wurde. Die Elemente auf der Seite Exporte sind standardmäßig nach dieser Spalte sortiert. |
    | Kontotyp | Der Typ des Cloud-Kontos, in das die Daten exportiert wurden. Verfügbare Kontotypen sind [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], und [!UICONTROL Adobe Experience Platform]. |
    | Tags | Zeigt alle Tags an, die auf den Export angewendet werden. Informationen zum Anwenden von Tags auf einen Export finden Sie unter [Export taggen](#tag-an-export). |
 
