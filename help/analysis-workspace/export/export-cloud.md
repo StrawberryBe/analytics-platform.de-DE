@@ -5,9 +5,10 @@ title: Customer Journey Analytics-Berichte in die Cloud exportieren
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1924'
 ht-degree: 4%
 
 ---
@@ -110,9 +111,7 @@ Eine Manifestdatei mit dem Dateinamen `cja-export-{reportInstanceId}-{idx}.json.
 
 * Eine Liste aller Dateien, die bereitgestellt wurden
 
-* Die Größe der einzelnen Dateien
-
-* Der Zeitstempel jeder Datei
+* Die MD5-Prüfsumme jeder Datei
 
 <!-- add in  what the file name, structure, and file format will be -->
 
@@ -126,7 +125,7 @@ Durch das Exportieren von Customer Journey Analytics-Daten in die Cloud haben Si
 
   Diese Art von Daten kann verwendet werden, um langfristige Trends zu erkennen, um Business Intelligence zu gewinnen und letztlich zu einer besseren Entscheidungsfindung in Unternehmen zu führen.
 
-* Exportieren Sie vollständige Tabellen mit Tausenden oder Millionen von Zeilen (3 Millionen, 30 Millionen oder 150 Millionen Zeilen je nach Lizenztyp). Andere Exportmethoden erlauben maximal 50.000 Zeilen.
+* Exportieren Sie vollständige Tabellen mit Tausenden oder Millionen Zeilen (3 Millionen, 30 Millionen, 150 Millionen oder 300 Millionen Zeilen, je nach Lizenztyp). Andere Exportmethoden erlauben maximal 50.000 Zeilen.
 
 * Schließen Sie berechnete Metriken in die exportierten Customer Journey Analytics ein.
 

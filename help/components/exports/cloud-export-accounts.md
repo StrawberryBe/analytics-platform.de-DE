@@ -5,9 +5,10 @@ title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1543'
 ht-degree: 5%
 
 ---
@@ -58,21 +59,13 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. [Erstellen eines Cloud-Exportkontos beginnen](#begin-creating-a-cloud-export-account), wie oben beschrieben.
 
-1. Im [!UICONTROL **Kontoeigenschaften**] Abschnitt [!UICONTROL **Konto hinzufügen**] werden die folgenden Informationen angezeigt:
-
-   | Feld | Funktion |
-   |---------|----------|
-   | [!UICONTROL **Kennung der IMS-Organisation**] | Die IMS-Organisations-ID wird von Adobe bereitgestellt. Diese Informationen sind im Allgemeinen nicht erforderlich. Dies kann nützlich sein, wenn Sie Probleme mit Ihrem Konto haben und sich an die Kundenunterstützung wenden müssen. |
-
-   {style="table-layout:auto"}
-
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
    Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
    <!-- add screen shot -->
 
-1. Kopieren Sie den Inhalt der [!UICONTROL **SAS**] in die Zwischenablage. Verwenden Sie dieses SAS-Token, um auf die Daten zuzugreifen, die aus Analysis Workspace aus der AEP-Einstiegszone exportiert werden. Erfahren Sie mehr über den Zugriff auf Ihre Daten&quot; |
+1. Kopieren Sie den Inhalt der [!UICONTROL **SAS**] in die Zwischenablage. Verwenden Sie dieses SAS-Token, um auf die Daten zuzugreifen, die aus Analysis Workspace aus der AEP-Einstiegszone exportiert werden.
 
 1. Auswählen [!UICONTROL **OK**].
 
@@ -215,6 +208,3 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 1. Auswählen [!UICONTROL **OK**].
 
 1. Fahren Sie mit [Konfigurieren von Cloud-Exportspeicherorten](/help/components/exports/cloud-export-locations.md).
-
-
-

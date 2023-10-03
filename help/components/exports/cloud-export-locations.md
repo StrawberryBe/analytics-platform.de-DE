@@ -5,9 +5,10 @@ title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1376'
 ht-degree: 4%
 
 ---
@@ -58,8 +59,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    | Feld | Funktion |
    |---------|----------|
-   | [!UICONTROL **Kennung der IMS-Organisation**] | Die IMS-Organisations-ID wird von Adobe bereitgestellt. Klicken Sie auf das Symbol Kopieren neben dem [!UICONTROL **Kennung der IMS-Organisation**] zum Kopieren des Feldinhalts und zur anschließenden Verwendung der ID in Ihrem Adobe Experience Platform-Konto. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
+   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -78,7 +78,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
    | Feld | Funktion |
    |---------|----------|
    | [!UICONTROL **Behälter**] | Der Behälter in Ihrem Amazon S3-Konto, an den Adobe Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass die von Adobe bereitgestellte Benutzer-ARN Zugriff auf das Hochladen von Dateien in diesen Bucket hat. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Behälter, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Beispiel: folder_name/ |
+   | [!UICONTROL **Präfix**] | Der Ordner im Behälter, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -97,7 +97,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
    | Feld | Funktion |
    |---------|----------|
    | [!UICONTROL **Behälter**] | Der Bucket in Ihrem GCP-Konto, an den Customer Journey Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie dem von Adobe bereitgestellten Prinzipal die Berechtigung zum Hochladen von Dateien in diesen Bucket erteilt haben. (Der Prinzipal wird bereitgestellt, wenn [Konfigurieren des Google Cloud Platform-Kontos](/help/components/exports/cloud-export-accounts.md). Informationen zum Gewähren von Berechtigungen finden Sie unter [Einen Prinzipal zu einer Richtlinie auf Behälterebene hinzufügen](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in der Dokumentation zu Google Cloud. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Behälter, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Beispiel: folder_name/ |
+   | [!UICONTROL **Präfix**] | Der Ordner im Behälter, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Beispiel: folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -114,7 +114,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
    | Feld | Funktion |
    |---------|----------|
    | [!UICONTROL **Container-Name**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Customer Journey Analytics-Daten gesendet werden sollen. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
+   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -131,7 +131,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
    | Feld | Funktion |
    |---------|----------|
    | [!UICONTROL **Container**] | Der Container innerhalb des von Ihnen angegebenen Kontos, an den Adobe Analytics-Daten gesendet werden sollen. Stellen Sie sicher, dass Sie Berechtigungen zum Hochladen von Dateien in die Azure-Anwendung erteilen, die Sie zuvor erstellt haben. |
-   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie dann einen umgekehrten Schrägstrich nach dem Namen hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
+   | [!UICONTROL **Präfix**] | Der Ordner im Container, in den Sie die Daten ablegen möchten. Geben Sie einen Ordnernamen an und fügen Sie nach dem Namen einen Schrägstrich hinzu, um den Ordner zu erstellen. Zum Beispiel, `folder_name/` |
    | [!UICONTROL **Konto**] | Das Azure-Speicherkonto. |
 
    {style="table-layout:auto"}
