@@ -1,37 +1,37 @@
 ---
 title: Beschriftungen und Richtlinien
-description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Datenbezeichnungen und Richtlinien auf Datenansichten und Berichte in Customer Journey Analytics auswirken.
+description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Datenbeschriftungen und Richtlinien auf Datenansichten und Berichte in Customer Journey Analytics auswirken.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # Beschriftungen und Richtlinien
 
-Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungsbezeichnungen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=de) für einige oder alle Elemente im Datensatz erstellen. Sie können diese Beschriftungen und Richtlinien im Customer Journey Analytics anzeigen.
+Wenn Sie einen Datensatz in Experience Platform erstellen, können Sie [Datennutzungskennzeichnungen](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=de) für einige oder alle Elemente im Datensatz erstellen. Sie können diese Beschriftungen und Richtlinien in Customer Journey Analytics anzeigen.
 
 Die folgenden Beschriftungen sind für Customer Journey Analytics von besonderem Interesse:
 
-* Die `C8` Bezeichnung – **[!UICONTROL Keine Messung]**. Diese Bezeichnung bedeutet, dass Daten nicht für Analysen auf den Websites oder Apps Ihres Unternehmens verwendet werden können.
+* Die Beschriftung `C8` – **[!UICONTROL Keine Messung]**. Diese Beschriftung bedeutet, dass Daten nicht für Analysen auf den Websites oder in Anwendungen Ihres Unternehmens verwendet werden können.
 
-* Die `C12` Bezeichnung – **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht von Customer Journey Analytics exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
+* Die Beschriftung `C12` – **[!UICONTROL Kein allgemeiner Datenexport]**. Auf diese Weise gekennzeichnete Schemafelder können nicht aus CJA exportiert oder heruntergeladen werden (über Reporting, Export, API usw.)
 
 >[!NOTE]
 >
->Datennutzungsbezeichnungen werden nicht automatisch in zugeordnete Datensätze übertragen. Sie können jedoch manuell hinzugefügt werden.
+>Datennutzungskennzeichnungen werden nicht automatisch in zugeordnete Datensätze übertragen. Sie können jedoch manuell hinzugefügt werden.
 
-Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungsbezeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie erstellen Ihre Richtlinien mithilfe der Variablen [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de) oder über die [Policy Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in Experience Platform.
+Die Beschriftung an sich bedeutet nicht, dass diese Datennutzungskennzeichnungen erzwungen werden. Dafür werden Richtlinien verwendet. Sie erstellen Ihre Richtlinien mithilfe der [Experience Platform-Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=de) oder über die [Richtlinien-Service-API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=de) in Experience Platform.
 
-Zwei Adobe-definierte Richtlinien werden im Customer Journey Analytics angezeigt und wirken sich auf die Berichterstellung und Download/Freigabe aus:
+In Customer Journey Analytics werden zwei von Adobe definierte Richtlinien angezeigt, die sich auf Reporting sowie Download/Freigabe auswirken:
 
 * **[!UICONTROL Analytics erzwingen]**-Richtlinie
 * **[!UICONTROL Download erzwingen]**-Richtlinie
 
-## Anzeigen von Datenbeschriftungen in Customer Journey Analytics-Datenansichten
+## Anzeigen von Datenbeschriftungen in Datenansichten von Customer Journey Analytics
 
 Datenbeschriftungen, die in Experience Platform erstellt wurden, werden an drei Stellen in der Benutzeroberfläche der Datenansichten angezeigt:
 
@@ -45,7 +45,7 @@ Datenbeschriftungen, die in Experience Platform erstellt wurden, werden an drei 
 
 ## Filtern nach Data Governance-Beschriftungen in Datenansichten
 
-Klicken Sie im Datenansichtseditor auf die [!UICONTROL filter] Symbol im linken Pfad und Filtern Sie die Datenansichtskomponenten nach **[!UICONTROL Data Governance]** und Art der **[!UICONTROL Titel]**:
+Klicken Sie im Editor für Datenansichten auf das Symbol [!UICONTROL Filter] in der linken Spur und filtern Sie die Komponenten der Datenansichten nach **[!UICONTROL Data Governance]** und dem Typ der **[!UICONTROL Beschriftung]**:
 
 ![](assets/filter-labels.png)
 
@@ -53,9 +53,9 @@ Klicken **[!UICONTROL Anwenden]**, um zu sehen, an welche Komponenten Beschriftu
 
 ## Filtern nach Data Governance-Richtlinien in Datenansichten
 
-Sie können überprüfen, ob eine Richtlinie aktiviert ist, die die Verwendung bestimmter Customer Journey Analytics-Datenansichtselemente für Analysen oder Exporte blockiert.
+Sie können überprüfen, ob eine Richtlinie aktiviert ist, die die Verwendung bestimmter Datenansichtselemente von Customer Journey Analytics für Analyse- oder Exportzwecke blockiert.
 
-Klicken Sie erneut auf die [!UICONTROL filter] Symbol in der linken Leiste und unter **[!UICONTROL Data Governance]** klicken **[!UICONTROL Richtlinien]**:
+Klicken Sie erneut auf das [!UICONTROL Filtersymbol] in der linken Leiste und klicken Sie unter **[!UICONTROL Data Governance]** auf **[!UICONTROL Richtlinien]**:
 
 ![](assets/filter-policies.png)
 

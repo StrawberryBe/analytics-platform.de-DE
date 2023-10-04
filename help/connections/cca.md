@@ -1,15 +1,15 @@
 ---
 title: Cross-Channel-Analyse
-description: Erfahren Sie, wie Sie Personen-IDs aus mehreren Datensätzen neu eingeben, um Personen zuzuordnen.
+description: Erfahren Sie, wie Sie aus mehreren Datensätzen stammende Personen-IDs neu verknüpfen können, damit Personen zugeordnet werden können.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
 hide: true
 hidefromtoc: true
 source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
