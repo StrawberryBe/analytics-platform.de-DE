@@ -3,9 +3,8 @@ description: Machen Sie sich mit den verschiedenen Methoden vertraut, die für d
 keywords: Analysis Workspace
 title: Übersicht über die Exportzweck-Projektdaten
 feature: Curate and Share
-hide: true
-hidefromtoc: true
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -39,5 +38,3 @@ Beim Exportieren aus Analysis Workspace stehen verschiedene Methoden zur Verfüg
 | [Senden an eine Cloud-Anwendung](/help/analysis-workspace/export/export-cloud.md) | Verwenden Sie diese Methode, wenn Sie: <ul><li>Exportieren Sie in einen freigegebenen Speicherort, z. B. Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3 oder Snowflake.</li><li>Kann ad hoc oder nach einem Zeitplan sein.</li><li>Speichern Sie größere Mengen von Customer Journey Analytics-Daten.</li><li>Exportieren Sie vollständige Tabellen mit Tausenden oder Millionen von Zeilen.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
-
-

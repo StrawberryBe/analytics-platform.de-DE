@@ -3,10 +3,8 @@ description: Konfigurieren des Cloud-Exportspeicherorts, an den Customer Journey
 keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
-hide: true
-hidefromtoc: true
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 4%
@@ -14,6 +12,8 @@ ht-degree: 4%
 ---
 
 # Konfigurieren von Cloud-Exportspeicherorten
+
+{{release-limited-testing}}
 
 Bevor Sie Customer Journey Analytics-Berichte an ein Cloud-Ziel exportieren können, siehe [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md)müssen Sie den Ort hinzufügen und konfigurieren, an den die Daten gesendet werden sollen.
 
