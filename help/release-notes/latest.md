@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2b8712506d68d89d41668fac32bb669055d94e91
+source-git-commit: e1254a5ecff0f638cbef1051564c1ce856f715bd
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '769'
 ht-degree: 51%
 
 ---
@@ -24,7 +24,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 4. O
 | **Neue Spalten verfügbar bei der Verwaltung von Komponenten** | Die folgenden neuen Spalten sind jetzt im [Manager für berechnete Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) und im [Filter-Manager](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html) für das Verwalten von Komponenten verfügbar:<ul><li>Verwendet in</li><li>Zuletzt verwendet</li></ul>Mithilfe dieser Informationen können Sie feststellen, ob eine Komponente für Benutzerinnen und Benutzer in Ihrer Organisation nützlich ist, wo sie verwendet wird und ob sie gelöscht oder geändert werden muss. Sie können das Datenwörterbuch zusammen mit diesen Informationen verwenden, um die Verwendung von Komponenten in Ihrem Unternehmen zu verfolgen und besser zu verstehen. | 23. September 2023 | 4. Oktober 2023 |
 | **Migrieren von Adobe Analytics-Projekten und allen enthaltenen Komponenten zum Customer Journey Analytics** | Sie können Ihre Adobe Analytics-Projekte jetzt auf Customer Journey Analytics migrieren. Dadurch wird der Übergang von Adobe Analytics zu Customer Journey Analytics vereinfacht. Wenn Sie Projekte zu Customer Journey Analytics migrieren, werden Assets von einer Adobe Analytics Report Suite zu einer Customer Journey Analytics-Datenansicht zugeordnet. **Sie migrieren Projekte über die Adobe Analytics-Benutzeroberfläche zu Customer Journey Analytics.** [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | Nicht angegeben | 4. Oktober 2023 |
 | **Adobe Product Analytics: Serie ein-/ausblenden** | Klicken Sie auf die Diagrammlegende oder Tabellenzeilen, um die Sichtbarkeit von Reihen in Ihren Visualisierungen zu steuern.  Weitere Informationen (in Kürze verfügbar) | Nicht angegeben | 4. Oktober 2023 |
-| **Anmerkungen in Adobe Product Analytics** | Geführte Analyseprojekte unterstützen jetzt die Möglichkeit, Anmerkungen anzuzeigen. Siehe jeden Ansichtstyp in [Geführte Analyse](/help/guided-analysis/overview.md) für Details zur Interaktion mit Anmerkungen. Weitere Informationen (in Kürze verfügbar) | Nicht angegeben | 4. Oktober 2023 |
+| **Anmerkungen in Adobe Product Analytics** | Geführte Analyseprojekte unterstützen jetzt die Möglichkeit, Anmerkungen anzuzeigen. Siehe jeden Ansichtstyp in [Geführte Analyse](/help/guided-analysis/overview.md) für Details zur Interaktion mit Anmerkungen. | Nicht angegeben | 4. Oktober 2023 |
 | **Reporting Activity Manager** | Mit dem Reporting Activity Manager können Sie die Berichtskapazität für jede Verbindung in Ihrem Unternehmen anzeigen. Administratoren erhalten detaillierte Einblicke in den Berichtsverbrauch, um Kapazitätsprobleme während Spitzenzeiten der Berichterstellung einfach zu diagnostizieren und zu beheben. Zu den wichtigsten Funktionen des Reporting Activity Manager gehören:<ul><li>Abbrechen aktueller Berichtsanforderungen (einschließlich Anforderungen aus geführten Analysen und vollständigen Tabellenexporten)</li><li>Einschränken nachfolgender Anforderungen für einen bestimmten Zeitraum</li></ul>Administratoren können nicht nur aktuelle Anforderungen abbrechen, sondern auch Anforderungen für einen bestimmten Zeitraum einschränken. Administratoren können Anforderungen nach Anforderung, Projekt oder Benutzer einschränken.  Weitere Informationen (in Kürze verfügbar) | 17. Oktober 2023 | 23. Oktober 2023 |
 
 {style="table-layout:auto"}
