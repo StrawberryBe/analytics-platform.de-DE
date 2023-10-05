@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1573'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
 1. Fahren Sie mit dem folgenden Abschnitt fort, der dem [!UICONTROL **Kontotyp**] ausgewählt haben.
 
-   * [Adobe Experience Platform Data Landing Zone](#adobe-experience-platform)
+   * [AEP Data Landing Zone](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -63,9 +63,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   <!-- add screen shot -->
+   ![Dialogfeld &quot;Konto exportieren&quot;AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Kopieren Sie den Inhalt der [!UICONTROL **SAS**] in die Zwischenablage. Verwenden Sie diesen SAS-URI, um auf die Daten zuzugreifen, die aus Analysis Workspace aus der AEP-Einstiegszone exportiert werden.
+1. Kopieren Sie den Inhalt der [!UICONTROL **SAS-URI**] in die Zwischenablage. Verwenden Sie diesen SAS-URI, um auf die Daten zuzugreifen, die aus Analysis Workspace aus der AEP-Einstiegszone exportiert werden.
 
 1. Auswählen [!UICONTROL **OK**].
 
@@ -87,7 +87,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   <!-- add screen shot -->
+   ![Dialogfeld &quot;Konto exportieren&quot;Amazon S3 Rolle ARN](assets/export-account-amazons3.png)
 
 1. Kopieren Sie den Inhalt der [!UICONTROL **Benutzer-ARN**] in die Zwischenablage. Die Benutzer-ARN (Amazon Resource Name) wird von Adobe bereitgestellt. Sie müssen diesen Benutzer an die Richtlinie anhängen, die Sie in Amazon S3 Role ARN erstellt haben.
 
@@ -111,7 +111,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   <!-- add screen shot -->
+   ![Dialogfeld &quot;Konto erstellen&quot;exportieren](assets/export-account-gcp.png)
 
 1. Kopieren Sie den Inhalt der [!UICONTROL **Principal**] in die Zwischenablage ein, und stellen Sie sicher, dass Sie dem Prinzipal Berechtigungen zum Hochladen von Dateien in diesen Behälter in Google Cloud Platform erteilen. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -139,7 +139,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   <!-- add screen shot -->
+   ![Dialogfeld &quot;Konto erstellen&quot;exportieren](assets/export-account-azure.png)
 
 1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie dem Behälter in Azure SAS Berechtigungen erteilen. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -165,7 +165,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   <!-- add screen shot -->
+   ![Dialogfeld &quot;Konto erstellen&quot;exportieren](assets/export-account-azure.png)
 
 1. Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie dem Bucket in Azure RBAC Berechtigungen erteilen. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -191,7 +191,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    Die [!UICONTROL **Konto exportieren erstellt**] angezeigt.
 
-   <!-- add screen shot -->
+   ![Dialogfeld &quot;Konto erstellen&quot;exportieren](assets/export-account-snowflake.png)
 
 1. Kopieren Sie den Inhalt der [!UICONTROL **Öffentlicher Schlüssel**] in die Zwischenablage. Der öffentliche Schlüssel wird von Adobe bereitgestellt.
 

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Verwalten von Exportprotokollen
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '725'
 ht-degree: 6%
 
 ---
@@ -37,8 +37,9 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **Adobe Experience Platform Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Der Status des Exports. Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Wenn Sie einen Export mit dem Status Ausstehend erneut ausführen, wird der Exportvorgang verzögert.</p></li><li>[!UICONTROL **Abgeschlossen**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Die folgenden Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen. <ul><li>Geplanter Exportablauf</li><li>Zeilenlimit für geplanten Export erreicht </li></ul> </p></li></ul> |
+   | [!UICONTROL **Export-ID**] | Geben Sie die Export-ID des Exportprotokolls an, das Sie anzeigen möchten. |
+   | [!UICONTROL **Kontotyp**] | Der Kontotyp, mit dem das Protokoll verknüpft ist. Die folgenden Kontotypen sind verfügbar: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Status**] | Der Status des Exports. Die folgenden Status sind verfügbar: <ul><li>[!UICONTROL **Ausstehend**]: Eine bestimmte Instanz eines Exports wurde gestartet, ist jedoch noch nicht abgeschlossen.<p>Wenn Sie einen Export mit dem Status Ausstehend erneut ausführen, wird der Exportvorgang verzögert.</p></li><li>[!UICONTROL **Fertig**]: Eine bestimmte Instanz eines Exports wurde fertig verarbeitet und ist im Exportkonto verfügbar.</li><li>[!UICONTROL **Fehlgeschlagen**]<p>Die folgenden Situationen können zu einem fehlgeschlagenen Export führen. Bewegen Sie den Mauszeiger über den Status Fehlgeschlagen , um Details zum Fehler anzuzeigen. <ul><li>Geplanter Exportablauf</li><li>Zeilenlimit für geplanten Export erreicht </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -48,7 +49,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
 1. Wählen Sie die [!UICONTROL **Protokolle**] Registerkarte.
 
-1. Geben Sie auf der Registerkarte &quot;Suchen&quot;alle Informationen ein, die mit dem gesuchten Protokoll verknüpft sind. Sie können in einer beliebigen Spalte der Tabelle nach Daten suchen.
+1. Geben Sie im Suchfeld alle Informationen ein, die mit dem gesuchten Protokoll verknüpft sind. Sie können in einer beliebigen Spalte der Tabelle nach Daten suchen.
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -74,11 +75,11 @@ Diese Option ist nicht verfügbar, wenn mehrere Protokolle ausgewählt werden.
 
 1. Suchen Sie das Protokoll, das mit dem zu bearbeitenden Export verknüpft ist.
 
-1. Wählen Sie die **Export bearbeiten** icon ![Log-Symbol exportieren](assets/export-icon.png) neben dem Protokoll.
+1. Wählen Sie die **Export bearbeiten** icon ![Log-Symbol exportieren](assets/export-icon.png) neben dem Protokollnamen.
 
    Oder
 
-   Wählen Sie das Protokoll aus und klicken Sie auf [!UICONTROL **Export bearbeiten**].
+   Aktivieren Sie das Kontrollkästchen neben dem Protokoll und wählen Sie [!UICONTROL **Export bearbeiten**].
 
 ## Spalten konfigurieren
 

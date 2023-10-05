@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 6%
+source-wordcount: '467'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
    | Filter | Beschreibung |
    |---------|----------|
-   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Ort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Standorttyp**]<!--should this be changed to Account type?--> | Der Kontotyp, mit dem der Ort verknüpft ist. Die folgenden Kontotypen können verfügbar sein: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Konto**] | Der Name des Kontos, mit dem der Standort verknüpft ist. |
    | [!UICONTROL **Erstellt von**] | Die E-Mail-Adresse des Benutzers, der den Standort erstellt hat. |
 
@@ -49,7 +49,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte.
 
-1. Geben Sie auf der Registerkarte &quot;Suchen&quot;alle Informationen ein, die mit dem gesuchten Ort verknüpft sind. Sie können in einer beliebigen Spalte der Tabelle nach Daten suchen.
+1. Geben Sie im Suchfeld alle Informationen ein, die mit dem gesuchten Ort verknüpft sind. Sie können in einer beliebigen Spalte der Tabelle nach Daten suchen.
 
 ## Bearbeitungsorte
 
@@ -57,7 +57,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie dann den Ort aus, den Sie bearbeiten möchten.
 
-   <!-- add screenshot? -->
+   ![Bearbeitungsorte](assets/locations-edit.png)
 
 1. Wählen Sie [!UICONTROL **Bearbeiten**] aus.
 
@@ -77,7 +77,7 @@ So löschen Sie einen Speicherort:
 
 1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie einen oder mehrere Speicherorte aus, die Sie löschen möchten.
 
-   <!-- add screenshot? -->
+   ![Bearbeitungsorte](assets/locations-edit.png)
 
 1. Auswählen [!UICONTROL **Löschen**], wählen Sie [!UICONTROL **Löschen**] erneut im Bestätigungsdialogfeld angezeigt.
 
@@ -92,6 +92,20 @@ So löschen Sie einen Speicherort:
 1. Auswählen [!UICONTROL **Details anzeigen**] auf dem Konto, das Sie bearbeiten möchten.
 
 1. Nehmen Sie die gewünschten Änderungen vor und wählen Sie dann [!UICONTROL **Speichern**].
+
+## Kontoschlüssel anzeigen
+
+Nachdem Sie ein Konto erstellt haben, können Sie alle zugehörigen Kontoschlüssel für dieses Konto anzeigen. Möglicherweise müssen Sie diese Informationen einsehen, wenn Sie die Konfiguration des Kontos für Ihren Cloud-Anbieter nicht abgeschlossen haben [bei der ursprünglichen Konfiguration des Kontos](/help/components/exports/cloud-export-accounts.md).
+
+So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
+
+1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
+
+1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
+
+   ![Kontoseite](assets/account-page.png)
+
+1. Wählen Sie das 3-Punkt-Symbol für das Konto aus, das Sie bearbeiten möchten, und wählen Sie dann [!UICONTROL **Kontoschlüssel**].
 
 ## Löschen von Konten
 
