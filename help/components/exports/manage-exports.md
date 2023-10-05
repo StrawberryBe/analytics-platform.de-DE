@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Verwalten von Exporten
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1029'
 ht-degree: 6%
 
 ---
@@ -62,6 +62,10 @@ Sie können die Eigenschaften, das Format, die Planung und die Standortinformati
    Diese Option ist nicht verfügbar, wenn mehrere Exporte ausgewählt werden.
 
 1. Wählen Sie [!UICONTROL **Bearbeiten**] aus.
+
+   Die [!UICONTROL **Gesamte Tabelle exportieren**] angezeigt.
+
+1. Aktualisieren Sie eine der verfügbaren Optionen. Informationen zu den einzelnen Optionen finden Sie unter [Vollständige Tabellen aus Analysis Workspace exportieren](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
 
 ## Export duplizieren
 
