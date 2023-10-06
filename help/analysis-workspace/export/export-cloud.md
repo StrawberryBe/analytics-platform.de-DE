@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Customer Journey Analytics-Berichte in die Cloud exportieren
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1955'
 ht-degree: 4%
 
 ---
@@ -170,6 +170,10 @@ Die folgenden Komponenten werden nicht unterstützt und Analysis Workspace forde
 
 * Berechnete Metriken, die grundlegende oder erweiterte Funktionen in der Metrikdefinition verwenden (siehe [Grundlegende Funktionen](/help/components/calc-metrics/cm-functions.md) und [Erweiterte Funktionen](/help/components/calc-metrics/cm-adv-functions.md) für weitere Informationen)
 * Komponenten, die von einem Administrator für den Export eingeschränkt wurden (siehe *Filtern nach Data Governance-Richtlinien in Datenansichten* Abschnitt in [Beschriftungen und Richtlinien](/help/data-views/data-governance.md) für weitere Informationen)
+* Jede Dimension, die alle der folgenden Kriterien erfüllt:
+   * wurde aus einem Feld erstellt, das Teil eines [Array von Objekten](/help/use-cases/object-arrays.md)
+   * has [persistence enabled](/help/data-views/component-settings/persistence.md)
+   * Verwendet keine [Bindungsdimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Mehr als 5 Dimensionen und 5 Metriken pro Bericht (bis zu 5 Dimensionen und 5 Metriken werden unterstützt)
 * In Tabellenspalten:
    * Datumsbereiche
