@@ -3,10 +3,10 @@ description: Sie können Daten von Analysis Workspace durch Kopieren oder in PDF
 title: Customer Journey Analytics-Daten herunterladen
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 58%
+source-wordcount: '1133'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,7 @@ Es stehen auch andere Methoden zum Exportieren von Customer Journey Analytics-Da
 
      Wählen Sie diese Option aus, wenn die heruntergeladene Datei Text enthalten soll.
 
-   ![](assets/download-project.png)
+   ![Das Dropdown-Menü Projekt mit den Optionen CSV herunterladen und PDF herunterladen hervorgehoben.](assets/download-project.png)
 
 1. (Bedingt) Wenn Sie sich für den Download einer PDF entschieden haben, wird eine Nachricht angezeigt, nachdem das Projekt heruntergeladen werden kann. Wählen Sie [!UICONTROL **Herunterladen**] aus.
 
@@ -51,7 +51,7 @@ Die Rechtsklickoption **[!UICONTROL In Zwischenablage kopieren]** ermöglicht Ih
 >Sie können den Hotkey verwenden `Ctrl+C` , um Ihre Auswahl in die Zwischenablage zu kopieren, und verwenden Sie `Ctrl+V` , um es in ein Tool eines Drittanbieters einzufügen.
 
 
-![](assets/copy-selection.png)
+![Die Option Auswahl in Zwischenablage kopieren ](assets/copy-selection.png)
 
 ## Als CSV herunterladen {#download-data}
 
@@ -66,7 +66,7 @@ Die Rechtsklickoption **[!UICONTROL Daten als CSV herunterladen]** ermöglicht I
 
 * Klicken Sie in einer Tabelle mit der rechten Maustaste und wählen Sie **[!UICONTROL Auswahl als CSV herunterladen]**. Mit dieser Option wird nur die Auswahl heruntergeladen, nicht die vollständige, angezeigte Tabelle.
 
-![](assets/download-data-viz.png)
+![Die Option Daten als CSV herunterladen .](assets/download-data-viz.png)
 
 ## Objekte als CSV herunterladen {#download-items}
 
@@ -78,7 +78,7 @@ Wenn Sie mehr als die sichtbaren 400 Datenzeilen in einer Tabelle analysieren m�
 
 Während eines Downloads können Sie mehrere Aufgaben im Projekt ausführen und sogar zu einem neuen Workspace-Projekt auf derselben Registerkarte navigieren. Der Download wird angehalten, wenn Sie eine neue Browser-Registerkarte öffnen. Der Download wird abgebrochen, wenn Sie Workspace vollständig verlassen oder die Browser-Registerkarte schließen.
 
-![](assets/download-items.png)
+![Die Option Elemente als CSV (Seite) herunterladen .](assets/download-items.png)
 
 ### Datei mit heruntergeladenen Elementen {#items-file}
 
@@ -90,7 +90,7 @@ Die Eigenschaften der Tabelle werden wie folgt auf die heruntergeladene Datei an
 
 Im obigen Beispiel werden Seitenelemente mit dem Bedienfeldfilter („Neue Besucher-Kunden“) heruntergeladen und die darüber liegenden Komponenten („Marketing-Kanal = E-Mail“) als Filter angewendet, während die darunter liegenden Komponenten („Typ des Mobilgeräts“) aus der heruntergeladenen CSV-Datei entfernt werden.
 
-![](assets/downloaded-file.png)
+![Die heruntergeladene CSV-Datei wurde in Excel geöffnet.](assets/downloaded-file.png)
 
 ### Download-Benachrichtigungen {#notifications}
 
@@ -100,7 +100,7 @@ Sobald die Datei abgeschlossen ist, wird eine Benachrichtigung angezeigt und die
 
 Wenn Sie mehrere Downloads gleichzeitig anfordern, erhalten Sie eine Benachrichtigung, dass jeder weitere Download in die Warteschlange gestellt wird, bis der vorherige Download abgeschlossen ist.
 
-![](assets/toast.png)
+![Die Benachrichtigung zum Download-Status, die den Prozentsatz der Fertigstellung und den Link Download abbrechen anzeigt.](assets/toast.png)
 
 ## Herunterladen sensibler Daten {#sensitive}
 

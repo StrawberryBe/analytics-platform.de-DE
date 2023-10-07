@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Übersicht über Projekte
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 80%
+source-wordcount: '1371'
+ht-degree: 72%
 
 ---
 
@@ -17,9 +17,9 @@ Mit Workspace-Projekten können Sie Datenkomponenten, Tabellen und Visualisierun
 
 ## Projektliste {#project-list}
 
-Wenn Sie **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** erstmalig aufrufen, werden auf der Seite alle Projekte aufgeführt, deren Inhaber Sie sind oder zu denen Ihnen Zugriff gewährt wurde. Dies ist auch die Landingpage für Adobe Analytics, es sei denn, Sie haben zuvor eine benutzerdefinierte Landingpage festgelegt.
+Wenn Sie zum ersten Mal **[!UICONTROL Analytics]** > **[!UICONTROL Arbeitsbereich]**, listet die Seite alle Projekte auf, deren Inhaber Sie sind, oder Projekte, die für Sie freigegeben wurden. Dies ist auch die Landingpage für Adobe Analytics, es sei denn, Sie haben zuvor eine benutzerdefinierte Landingpage festgelegt.
 
-![](assets/sample-project.png)
+![Projekt-Landingpage mit der Projektliste.](assets/sample-project.png)
 
 Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
 
@@ -55,7 +55,7 @@ Die Seite &quot;Projekte&quot;enthält die folgenden Informationen:
 
 Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts, zum Hinzufügen von Komponenten, zur Suche von Hilfe und mehr. Auf jede Menüoption kann auch über [Tastenkombinationen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) zugegriffen werden.
 
-![](assets/menu.png)
+![Neue Projektoptionen, einschließlich der Optionen Projekt, Bearbeiten, Einfügen, Komponenten, Freigabe und Hilfe .](assets/menu.png)
 
 | Menüelement | Beschreibung |
 |---|---|
@@ -71,7 +71,7 @@ Innerhalb eines Projekts bietet das Menü Optionen zum Verwalten Ihres Projekts,
 
 **[!UICONTROL Workspace]** > **[!UICONTROL Projekt]** > **[!UICONTROL Projektinfo und Einstellungen]**   enthält Informationen auf Projektebene zum derzeit aktiven Projekt.
 
-![](assets/projectinfo.png)
+![Das Fenster Projektinfo und Einstellungen .](assets/projectinfo.png)
 
 Zu den Einstellungen gehören:
 
@@ -94,7 +94,7 @@ Sie können auch über das [leere Bedienfeld](/help/analysis-workspace/c-panels/
 
 Komponenten (Dimensionen, Metriken, Filter, Datumsbereiche) in der linken Leiste beziehen sich auf die Datenansicht des aktiven Bedienfelds. Das aktive Bedienfeld wird durch einen blauen Rand umgeben, und die aktive Datenansicht wird oben in der Komponentenleiste aufgeführt.
 
-![](assets/left-rail.png)
+![Die Komponenten, die sich auf die Ansicht der aktiven Bedienfelddaten für die Datenansicht der branchenübergreifenden Demodaten beziehen.](assets/left-rail.png)
 
 ## Arbeitsfläche des Projekts {#canvas}
 
@@ -104,15 +104,15 @@ Bedienfelder sind hilfreich, wenn Sie Ihre Projekte nach Zeiträumen, Datenansic
 
 Je nach Ausgangspunkt, den Sie für Ihre Projekte ausgewählt haben, befindet sich auf der Arbeitsfläche zu Beginn entweder eine [Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) oder ein [leeres Bedienfeld](/help/analysis-workspace/c-panels/blank-panel.md). Die schnellste Möglichkeit, eine Analyse zu starten, besteht darin, eine oder mehrere Komponenten auszuwählen und sie einfach in die Projektarbeitsfläche zu ziehen. Eine Datentabelle wird automatisch für Sie erstellt. [Erfahren Sie mehr](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) über die verschiedenen Optionen zum Erstellen einer Tabelle oder nutzen Sie unser [Tutorial](/help/analysis-workspace/home.md) für eine Anleitung zum Erstellen Ihres ersten Projekts.
 
-![](assets/canvas.png)
+![Eine Freiformtabelle für das Projekt.](assets/canvas.png)
 
 ## Projektmanager {#manager}
 
-Analysis Workspace-Projekte können unter **„Analysen“ > „Komponenten“ > „Projekte“** verwaltet werden. Im Projekt-Manager werden die Elemente angezeigt, die von einem bestimmten Benutzer erstellt wurden. Die Inhaberschaft eines Projekts kann unter „Administration“ > „Analytics-Benutzer und -Assets“ > „Assets übertragen“ an einen neuen Benutzer übertragen werden.
+Analysis Workspace-Projekte können unter **„Analysen“ > „Komponenten“ > „Projekte“** verwaltet werden. Der Projekt-Manager zeigt die Elemente an, die ein bestimmter Benutzer erstellt hat. Sie können das Projekteigentum an einen neuen Benutzer unter Admin > Analytics-Benutzer und -Assets > Assets übertragen.
 
-Im Projekt-Manager können Sie u. a. Elemente hinzufügen, taggen, freigeben und duplizieren/kopieren. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen in der linken Leiste nach einem Projekt. Sie können u. a. nach Tag, Inhaber und Projekttyp filtern.
+Im Projektmanager können Sie u. a. hinzufügen, taggen, freigeben, duplizieren/kopieren und vieles mehr. Suchen Sie in der Suchleiste oder mithilfe der Filteroptionen in der linken Leiste nach einem Projekt. Sie können u. a. nach Tag, Inhaber und Projekttyp filtern.
 
-![](assets/project-manager.png)
+![Suchfeld &quot;Projekt-Manager-Tags&quot;und Suchfeld &quot;Titel&quot;.](assets/project-manager.png)
 
 Die folgenden Aktionen können im Projekt-Manager für ein oder mehrere Projekte gleichzeitig ausgeführt werden:
 

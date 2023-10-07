@@ -3,11 +3,11 @@ description: Erfahren Sie, wie Sie ein Projekt in Analysis Workspace erstellen
 title: Projekte erstellen
 feature: Workspace Basics
 role: User, Admin
-exl-id: f5ea0a1f-5dd6-4c73-b316-33c15ca5443c
-source-git-commit: c52dd6d8a22d2092f5f70aeb79d24ecf897e012e
+exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 4%
+source-wordcount: '602'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +19,7 @@ Allgemeine Informationen zu den ersten Schritten mit Analysis Workspace finden S
 
 In den folgenden Abschnitten wird beschrieben, wie Sie ein Projekt erstellen und die wichtigsten Bausteine für ein Analysis Workspace-Projekt hinzufügen: Bedienfelder, Visualisierungen und Komponenten.
 
-## Erstellen eines Projekts beginnen
+## Erstellen eines Projekts
 
 1. Wählen Sie in Adobe Analytics [!UICONTROL **Arbeitsbereich**].
 
@@ -36,7 +36,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie ein Projekt erstellen und
 
 ## Hinzufügen von Bedienfeldern zum Projekt {#panels}
 
-[Bedienfelder](/help/analysis-workspace/c-panels/panels.md) sind die Grundlage für jedes Projekt in Analysis Workspace. Bedienfelder werden verwendet, um den Inhalt (Visualisierungen und Komponenten) eines Projekts zu organisieren.
+[Bedienfelder](/help/analysis-workspace/c-panels/panels.md) sind die Grundlage für jedes Projekt in Analysis Workspace. Bedienfelder dienen zum Organisieren der Inhalte (Visualisierungen und Komponenten) eines Projekts.
 
 Viele der in Analysis Workspace bereitgestellten Bedienfelder generieren einen vollständigen Satz von Analysen auf der Grundlage einiger Benutzereingaben.
 
@@ -44,7 +44,7 @@ So fügen Sie einen Bereich hinzu:
 
 1. Wählen Sie die [!UICONTROL **Bedienfelder**] in der linken Leiste.
 
-   ![](assets/build-panels.png)
+   ![Das Symbol Bedienfelder auswählen und die Liste der verfügbaren Bedienfelder.](assets/build-panels.png)
 
 1. Suchen Sie nach dem Bereich, den Sie hinzufügen möchten. Wenn es in der linken Leiste angezeigt wird, ziehen Sie es in Ihr Projekt.
 
@@ -54,7 +54,7 @@ So fügen Sie einen Bereich hinzu:
 
 ## Hinzufügen von Visualisierungen zum Projekt
 
-[Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) (z. B. eine Freiformtabelle, ein Balkendiagramm oder ein Liniendiagramm) verwendet werden, um Daten visuell darzustellen.
+[Visualisierung](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) (z. B. eine Freiformtabelle, ein Balkendiagramm oder ein Liniendiagramm) verwendet werden, um Daten visuell darzustellen.
 
 >[!TIP]
 >
@@ -62,9 +62,9 @@ So fügen Sie einen Bereich hinzu:
 
 So fügen Sie eine Visualisierung hinzu:
 
-1. Wählen Sie die **[!UICONTROL Visualisierungen]** in der linken Leiste.
+1. Wählen Sie die **[!UICONTROL Visualisierung]** in der linken Leiste.
 
-   ![](assets/build-visualizations.png)
+   ![Das Symbol &quot;Ausgewählte Visualisierungen&quot;und die Liste der verfügbaren Visualisierungen.](assets/build-visualizations.png)
 
 1. Suchen Sie nach der Visualisierung, die Sie hinzufügen möchten. Wenn es in der linken Leiste angezeigt wird, ziehen Sie es in ein Bedienfeld innerhalb Ihres Projekts.
 
@@ -82,7 +82,7 @@ So fügen Sie eine Komponente hinzu:
 
 1. Wählen Sie die **[!UICONTROL Komponenten]** in der linken Leiste.
 
-   ![](assets/build-components.png)
+   ![Symbol &quot;Ausgewählte Komponenten&quot;und Liste der verfügbaren Dimensionen.](assets/build-components.png)
 
 1. Suchen Sie nach der Komponente, die Sie hinzufügen möchten. Wenn es in der linken Leiste angezeigt wird, ziehen Sie es in ein Bedienfeld oder eine Visualisierung innerhalb Ihres Projekts.
 
@@ -90,6 +90,6 @@ So fügen Sie eine Komponente hinzu:
 
 ## Projekt speichern und freigeben
 
-Bei der Erstellung einer Analyse in Analysis Workspace [automatisch gespeichert](/help/analysis-workspace/build-workspace-project/save-projects.md).
+Bei der Erstellung einer Analyse in Analysis Workspace wird Ihre Arbeit [automatisch gespeichert](/help/analysis-workspace/build-workspace-project/save-projects.md).
 
-Wenn Sie das Projekt fertig erstellen und praktische Einblicke gewinnen, kann das Projekt von anderen genutzt werden. Sie können das Projekt für Benutzer und Gruppen in Ihrer Organisation oder auch für Personen außerhalb Ihrer Organisation freigeben. Informationen zum Freigeben eines Projekts finden Sie unter [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
+Wenn Sie das Projekt fertiggestellt haben und es praktische Einblicke liefert, kann das Projekt auch von anderen genutzt werden. Sie können das Projekt für Benutzende sowie Gruppen in Ihrer Organisation oder auch für Personen außerhalb Ihrer Organisation freigeben. Informationen zum Freigeben eines Projekts finden Sie unter [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).

@@ -4,9 +4,9 @@ keywords: Analysis Workspace-Freigabe
 title: Freigeben von Projekten
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: bf700355597760b36441864de36f460b5996a1fe
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1980'
 ht-degree: 36%
 
 ---
@@ -36,7 +36,7 @@ Im Folgenden finden Sie eine Videoübersicht zur gemeinsamen Nutzung von Projekt
 
 ## Freigeben für Customer Journey Analytics-Benutzer und -Gruppen in Ihrer Organisation {#Add}
 
-Sie können ein Projekt für bestehende Customer Journey Analytics oder Benutzergruppen in Ihrem Unternehmen freigeben. Wenn Sie ein Projekt wie in diesem Abschnitt beschrieben freigeben, müssen die Benutzer, für die Sie freigeben, bereits über ein Customer Journey Analytics-Konto verfügen.
+Sie können ein Projekt für bestehende Customer Journey Analytics-Benutzer oder -Gruppen in Ihrem Unternehmen freigeben. Wenn Sie ein Projekt wie in diesem Abschnitt beschrieben freigeben, müssen die Benutzer, für die Sie freigeben, bereits über ein Customer Journey Analytics-Konto verfügen.
 
 Sie können eine bestimmte Rolle für Benutzende oder Gruppen freigeben oder einen Link freigeben.
 
@@ -61,7 +61,7 @@ So geben Sie eine bestimmte Projektrolle für Benutzende oder Gruppen in Ihrer O
 1. Wechseln Sie zu dem Projekt, das Sie freigeben möchten, und klicken Sie dann auf **[!UICONTROL Freigeben]** > **[!UICONTROL Freigeben für Workspace-Benutzer]**.
 Wenn es nicht gespeicherte Änderungen gibt, werden Sie aufgefordert, das Projekt zuerst zu speichern.
 
-   ![](assets/share-proj-modal.png)
+   ![Das Fenster Projekt freigeben .](assets/share-proj-modal.png)
 
    Informationen dazu, wie Sie mehrere Projekte gleichzeitig freigeben, finden Sie unter [Freigeben von Projekten im Projekt-Manager](#share-projects-in-the-project-manager).
 
@@ -99,7 +99,7 @@ So geben Sie den Projekt-Link für Benutzende in Ihrer Organisation frei:
 
 1. Auswählen **[!UICONTROL Freigeben]** > **[!UICONTROL Freigeben für Workspace-Benutzer]**, wählen Sie **[!UICONTROL Kopieren]** neben dem **[!UICONTROL Über Link freigeben]** -Feld.
 
-   ![](assets/share-proj-modal.png)
+   ![Das Projekt Freigabe , das das Feld Freigabe nach Link hervorhebt.](assets/share-proj-modal.png)
 
 1. Geben Sie den Link für Benutzende in Ihrer Organisation frei. Sie können ihn beispielsweise in eine E-Mail oder eine interne Website usw. einfügen.
 
@@ -113,7 +113,7 @@ Sie können [Schreibgeschützter Zugriff](/help/analysis-workspace/curate-share/
 
 >[!NOTE]
 >
->Beachten Sie Folgendes, wenn Sie ein Analysis Workspace-Projekt für Personen freigeben, die keinen Zugriff auf Customer Journey Analytics haben:
+>Beachten Sie Folgendes bei der Freigabe eines Analysis Workspace-Projekts für Personen, die keinen Zugriff auf Customer Journey Analytics haben:
 >
 >* Die Möglichkeit, ein Projekt auf diese Weise freizugeben, kann vom Customer Journey Analytics-Administrator deaktiviert werden, wie unter [Voreinstellungen](/help/analysis-workspace/user-preferences.md). Wenn Sie ein Projekt nicht wie in diesem Abschnitt beschrieben freigeben können, hat Ihr Customer Journey Analytics-Administrator diese Funktion deaktiviert.
 >
@@ -145,7 +145,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
    Wenn Sie diese Option auswählen, wird ein Link zum Projekt erstellt, der für alle freigegeben werden kann. Sie können den Zugriff auf das Projekt jederzeit deaktivieren, indem Sie diese Option deaktivieren.
 
-   Der Eigentümer des Projekts ist auch Eigentümer dieses Links. Das Linkeigentum kann nur dann an einen anderen Benutzer übertragen werden, wenn das Projekteigentum übertragen wird, wie unter [Übertragen von Benutzer-Assets oder Festlegen des Kontoablaufs](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) im Analytics Admin-Handbuch.
+   Der Eigentümer des Projekts ist auch Eigentümer dieses Links. Das Linkeigentum kann nur dann an einen anderen Benutzer übertragen werden, wenn das Projekteigentum übertragen wird, wie unter [Übertragen von Benutzer-Assets oder Festlegen des Kontoablaufs](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=de) im Analytics Admin-Handbuch.
 
 1. Wählen Sie aus, ob die folgende Sicherheitsoption aktiviert werden soll (diese Option kann von Ihrem Customer Journey Analytics-Administrator gesteuert werden):
 
@@ -157,7 +157,7 @@ So geben Sie ein Analysis Workspace-Projekt für andere frei:
 
       * Wenn diese Option nicht angezeigt wird, hat Ihr Customer Journey Analytics-Administrator diese Funktion nicht aktiviert.
 
-      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, erfordert Ihr Customer Journey Analytics-Administrator die Authentifizierung von Experience Clouden für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen. Dies gilt immer für Organisationen, die Gesundheitsschild bestellen.
+      * Wenn diese Option aktiviert ist und Sie sie nicht deaktivieren können, erfordert Ihr Customer Journey Analytics-Administrator die Experience Cloud-Authentifizierung für alle Benutzer, die auf Analysis Workspace-Projekte zugreifen. Dies gilt immer für Organisationen, die Gesundheitsschild bestellen.
 
 1. Neben dem **[!UICONTROL Mit anderen teilen (keine Anmeldung erforderlich)]** und klicken Sie auf das **Link kopieren** icon ![Symbol Link kopieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg)), um den Link in die Zwischenablage Ihres Systems zu kopieren.
 
@@ -183,7 +183,7 @@ Während Projekt A und B ausgewählt sind, werden die Empfänger 4 und 7 den Fre
 * Projekt A: 1, 2, 3, 4, 7
 * Projekt B: 4, 5, 6, 7
 
-![](assets/mult-proj-sharing.png)
+![Das Fenster Empfänger zu mehreren Projekten hinzufügen .](assets/mult-proj-sharing.png)
 
 ## Freigeben von eingebetteten Komponenten
 

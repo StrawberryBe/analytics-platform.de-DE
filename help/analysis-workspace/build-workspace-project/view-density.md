@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Anzeigedichte in Analysis Workspace anpas
 title: Dichte anzeigen
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Zum Wechseln zwischen den Anzeigedichten gibt es drei Optionsschaltflächen:
 - **[!UICONTROL Komfort]**: Bietet etwas mehr Abstand als die Kompaktversion.
 - **[!UICONTROL Erweitert]** (Standard): Die aus Workspace bekannte Ansicht.
 
-![](assets/view-density.png)
+![Die kompakten, komfortablen und erweiterten Ansichtsdichten.](assets/view-density.png)
 
 So stellen Sie die Anzeigedichte ein:
 

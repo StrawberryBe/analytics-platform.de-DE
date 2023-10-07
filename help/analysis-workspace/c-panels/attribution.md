@@ -3,10 +3,10 @@ title: Attributionsbedienfeld
 description: Verwendung und Interpretation des Attributionsbedienfelds in Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 85%
+source-wordcount: '534'
+ht-degree: 80%
 
 ---
 
@@ -18,7 +18,7 @@ Customer Journey Analytics erweitert die Attribution und ermöglicht Ihnen Folge
 
 * Die Attribution über bezahlte Medien definieren: Dimensionen, Metriken, Kanäle oder Ereignisse können auf Modelle (z. B. die interne Suche) angewendet werden, nicht nur Marketing-Kampagnen.
 * Den Vergleich für unbegrenzte Attributionsmodelle verwenden: Vergleichen Sie dynamisch so viele Modelle, wie Sie möchten.
-* Vermeiden Sie Implementierungsänderungen: Mit Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann der Journey-Kontext für Kunden zur Laufzeit integriert und angewendet werden.
+* Implementierungsänderungen vermeiden: Mit der Berichtszeitverarbeitung und kontextabhängigen Sitzungen kann der Journey-Kontext für Kunden integriert und zur Laufzeit angewendet werden.
 * Die Sitzung erstellen, die Ihrem Attributionsszenario am ehesten entspricht.
 * Die Attribution nach Filtern aufschlüsseln: Vergleichen Sie problemlos die Leistung Ihrer Marketing-Kanäle über alle wichtigen Filter hinweg (z. B. Neu- mit Bestandskunden, Produkt X vs. Produkt Y, Loyalitätsgrad oder CLV).
 * Wechsel zwischen Kanälen und Multi-Touch-Analyse beachten: Verwenden Sie Venn-Diagramme und Histogramme und erstellen Sie Trends anhand von Attributionsergebnissen.
@@ -30,17 +30,17 @@ Customer Journey Analytics erweitert die Attribution und ermöglicht Ihnen Folge
 1. Klicken Sie links auf das Bedienfeldsymbol.
 1. Ziehen Sie das [!UICONTROL Attributionsbedienfeld] in Ihr Analysis Workspace-Projekt.
 
-   ![Neues Attributionsbedienfeld](assets/Attribution_Panel_1.png)
+   ![Das Fenster Neues Projekt , in dem der Bereich Attribution hervorgehoben wird.](assets/Attribution_Panel_1.png)
 
 1. Fügen Sie eine Metrik hinzu, die Sie zuordnen möchten, und fügen Sie eine beliebige Dimension hinzu, gegen die Sie zuordnen möchten. Beispiele sind Marketing-Kanäle oder benutzerdefinierte Dimensionen wie interne Promotions.
 
-   ![Dimension und Metrik auswählen](assets/attribution_panel2.png)
+   ![Das Fenster &quot;Attribution&quot;zeigt mehrere ausgewählte Dimensionen und Metriken an.](assets/attribution_panel2.png)
 
 1. Wählen Sie die Attributionsmodelle und das Lookback-Fenster aus, die Sie vergleichen möchten.
 
 1. Das Attributionsbedienfeld gibt einen umfangreichen Satz an Daten und Visualisierungen zurück, die die Attribution für die ausgewählte Dimension und Metrik vergleichen.
 
-   ![Visualisierungen der Attribution](assets/attr_panel_vizs.png)
+   ![Die Visualisierungen des Attributionsbedienfelds, die ausgewählte Metriken und Dimensionen vergleichen.](assets/attr_panel_vizs.png)
 
 ## Visualisierungen der Attribution
 

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Hinzufügen von Ordnern in Workspace
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 76%
 
 ---
 
@@ -21,25 +21,25 @@ Fügen Sie auf der Startseite aus der Tabellenansicht Projekte zu einem Ordner h
 
 1. Wählen Sie ein oder mehrere Projekte aus, die Sie einem Ordner hinzufügen möchten.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+   ![Tabellenansicht &quot;Projekte&quot;mit drei ausgewählten Projekten.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
 
 1. Wählen Sie **Verschieben nach** aus. Das Dialogfeld „Ordner auswählen“ wird angezeigt.
 
 1. Wählen Sie einen Ordnernamen aus dem Dropdown-Menü aus.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
+   ![In der Ansicht Ordner auswählen werden das Dropdown-Menü und die verfügbaren Unterordner angezeigt.](/help/analysis-workspace/build-workspace-project/assets/move-select-folder.png)
 
 1. Klicken Sie auf **Hinzufügen**.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
+   ![Klicken Sie auf Hinzufügen.](/help/analysis-workspace/build-workspace-project/assets/move-add.png)
 
    Die ausgewählten Projekte werden dem Ordner hinzugefügt.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
+   ![Der ausgewählte Unterordner zeigt die drei verschobenen Projekte an.](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
    Auf der Startseite von Workspace wird nun angezeigt, dass der Ordner (3) Projekte enthält.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
+   ![Die aktualisierte Startseitenliste für Projekte zeigt den Unterordner mit drei Projekten an.](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
 ## Aus dem Inneren eines Ordners {#inside-folder}
 
@@ -47,25 +47,25 @@ Sie können auch Projekte aus dem Inneren eines Ordners hinzufügen, indem Sie d
 
 1. Wählen Sie einen Ordner in der Tabellenansicht aus und öffnen Sie ihn.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![Der Unterordner, der keine Projekte enthält](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
 1. Klicken Sie auf das Symbol mit den Auslassungspunkten **...** oben rechts.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
+   ![Dropdown-Menüoptionen mit Auslassungspunkten.](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
    In einem Dropdown-Menü wird die Option zum Hinzufügen von Projekten zum Ordner angezeigt. Zusätzliche Optionen ermöglichen es Ihnen, den Ordner umzubenennen, zu verschieben oder zu löschen und die Ordnerberechtigungen zu verwalten.
 
 1. Wählen Sie **Projekte hinzufügen** und wählen Sie das Projekt, das Sie hinzufügen möchten, aus der Dropdown-Liste.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
+   ![Die Liste Projekte hinzufügen .](/help/analysis-workspace/build-workspace-project/assets/select-add-projects.png)
 
    Sie können mehrere Projekte zu dem Ordner hinzufügen.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
+   ![Das Fenster Projekte hinzufügen zeigt drei Projekte an](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
 1. Klicken Sie auf **Hinzufügen**, um die Projekte zu dem Ordner hinzuzufügen.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
+   ![Klicken Sie auf Hinzufügen.](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
 
 
 >[!NOTE]

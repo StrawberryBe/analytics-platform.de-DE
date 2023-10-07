@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Entfernen von Projekten aus Ordnern
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 92%
 
 ---
 
@@ -25,19 +25,19 @@ Sie können Projekte von einem Ordner in einen anderen, von Ihnen erstellen Ordn
 
 1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **...** neben dem Projektnamen.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Die Suchoptionen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Wählen Sie **Verschieben nach** und wählen Sie dann einen Ordner aus, in den das Projekt verschoben werden soll.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![Das Fenster Standort auswählen .](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. Klicken Sie auf **Verschieben**.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+   ![Klicken Sie auf Verschieben.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
    Ein Popup-Fenster bestätigt, dass das Projekt verschoben wurde.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![Der Verschiebebestätigungstoast. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## Löschen eines Projekts aus einem Projektordner {#delete-project-in-folder}
 
@@ -45,7 +45,7 @@ Wenn Sie ein Projekt aus einem Ordner löschen, wird das Projekt vollständig ge
 
 1. Klicken Sie in einem Projektordner auf die Auslassungspunkte **...** neben dem Projektnamen.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![Die Suchoptionen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Wählen Sie **Löschen** aus.
 

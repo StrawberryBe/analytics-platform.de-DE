@@ -4,16 +4,16 @@ description: Zeigt zwei Methoden zur Schätzung der Nutzung und eine Methode zur
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 73%
+source-wordcount: '901'
+ht-degree: 74%
 
 ---
 
 # Nutzung von Customer Journey Analytics anzeigen und verwalten
 
-Zur Anzeige der Nutzung Ihrer Customer Journey Analytics können Sie verschiedene Methoden verwenden:
+Um Ihre Customer Journey Analytics-Nutzung anzuzeigen, können Sie mehrere Methoden verwenden:
 
 * Addieren Sie die Ereignisdatenzeilen für jede Verbindung. Siehe unten [Schätzen der Verbindungsgröße](#estimated size). Dies ist eine einfache Methode, um Ihre Ereigniszeilendaten pro Verbindung für einen bestimmten Zeitstempel anzuzeigen.
 * Sie können Ihre Nutzung auf drei Arten anzeigen, von denen jede im Folgenden ausführlicher beschrieben wird:
@@ -21,7 +21,7 @@ Zur Anzeige der Nutzung Ihrer Customer Journey Analytics können Sie verschieden
    * Verwenden Sie Report Builder, um Berichte zu den Ereignissen des letzten Monats zu erstellen.
    * Verwenden Sie die Customer Journey Analytics-API, um einen automatisierten Bericht zu erstellen.
 
-So verwalten Sie die Nutzung Ihrer Customer Journey Analytics:
+So verwalten Sie Ihre Customer Journey Analytics-Nutzung:
 
 * Definieren Sie ein rollierendes Datenfenster.
 
@@ -41,7 +41,7 @@ Möglicherweise benötigen Sie Informationen zur aktuellen Anzahl von Ereignisda
 
 1. Addieren Sie die **[!UICONTROL verfügbaren Sätze von Ereignisdaten]** für jede Verbindung, die Ihr Unternehmen erstellt hat. (Je nach Größe Ihrer Verbindung kann es eine Weile dauern, bis die Anzahl angezeigt wird.)
 
-   ![Ereignisdaten](./assets/event-data.png)
+   ![Verfügbare Datensätze von Ereignisdaten.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -70,7 +70,7 @@ Mit dieser Methode können Sie Ihre Nutzungsdaten sowie den Verlauf Ihrer Nutzun
 
 1. Erstellen Sie in Workspace neue Projekte basierend auf den einzelnen Datenansichten und rufen Sie alle Ereignisse ab (aus dem **[!UICONTROL Metriken]** -Dropdown-Liste) bis zum ersten Freitag des Monats, beginnend mit dem ersten Tag Ihres aktuellen Customer Journey Analytics-Vertrags.
 
-   ![Ereignisse](./assets/events-usage.png)
+   ![Freiformtabelle mit Ereignissen.](./assets/events-usage.png)
 
    Dadurch erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht.
 
@@ -87,17 +87,17 @@ Erstellen Sie in Report Builder für jede Datenansicht [einen Datenblock](/help/
    * An jedem ersten Freitag eines jeden Monats
    * zurück zum ersten Tag Ihres aktuellen Customer Journey Analytics-Vertrags.
 
-   Dadurch erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht. Sie erhalten die Gesamtzahl der Zeilen für alle Ihre Customer Journey Analytics-Verbindungen.
+   Dadurch erhalten Sie eine gute Vorstellung davon, wie Ihre Nutzung von Monat zu Monat aussieht. Sie erhalten die Gesamtanzahl der Zeilen auf allen Ihren Customer Journey Analytics-Verbindungen.
 
 1. Verwenden Sie Excel, um diesen Bericht weiter anzupassen.
 
 ## Verwalten der Nutzung durch Definieren eines rollierenden Datenfensters {#rolling}
 
-Um Ihre Nutzung zu verwalten, wird die [Verbindungs-Benutzeroberfläche](/help/connections/create-connection.md) ermöglicht die Definition der Aufbewahrung von Customer Journey Analytics-Daten als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindlichkeitsebene.
+Um Ihre Nutzung zu verwalten, wird die [Verbindungs-Benutzeroberfläche](/help/connections/create-connection.md) ermöglicht die Definition der Aufbewahrung von Customer Journey Analytics-Daten als rollierendes Fenster in Monaten (1 Monat, 3 Monate, 6 Monate usw.) auf Verbindungsebene.
 
 Der Hauptvorteil besteht darin, dass Sie nur Daten speichern oder Berichte dazu erstellen, die anwendbar und nützlich sind, und ältere Daten löschen, die nicht mehr nützlich sind. Dies hilft Ihnen, Ihre vertraglichen Beschränkungen einzuhalten und das Risiko bezüglich Kostendeckung zu reduzieren.
 
-Wenn Sie die Standardeinstellung unverändert, d. h. deaktiviert, lassen, wird die Aufbewahrungsdauer durch die Datenaufbewahrungseinstellung von Adobe Experience Platform ersetzt. Wenn Daten aus 25 Monaten in Experience Platform sind, erhält der Customer Journey Analytics 25 Monate Daten durch Aufstockung. Wenn Sie 10 dieser Monate in Platform löschen, behält der Customer Journey Analytics die verbleibenden 15 Monate bei.
+Wenn Sie die Standardeinstellung unverändert, d. h. deaktiviert, lassen, wird die Aufbewahrungsdauer durch die Datenaufbewahrungseinstellung von Adobe Experience Platform ersetzt. Wenn Sie 25 Monate Daten im Experience Platform haben, erhält Customer Journey Analytics 25 Monate Daten durch Aufstockung. Wenn Sie in Platform 10 dieser Monate löschen, werden in Customer Journey Analytics die verbleibenden 15 Monate beibehalten.
 
 Die Datenaufbewahrung basiert auf Zeitstempeln für Ereignis-Datensätze und gilt nur für Ereignis-Datensätze. Für Profil- oder Lookup-Datensätze gibt es keine rollierenden Datenfenstereinstellungen, da keine entsprechenden Zeitstempel vorhanden sind. Wenn Ihre Verbindung Profil- oder Lookup-Datensätze enthält, da sie mit Ereignis-Datensätzen verbunden sind, werden die Daten in Customer Journey Analytics basierend auf Ihren Datenaufbewahrungseinstellungen für die Ereignis-Datensatz-Zeitstempel beibehalten.
 

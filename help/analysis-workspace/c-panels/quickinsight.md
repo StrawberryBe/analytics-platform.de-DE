@@ -3,10 +3,10 @@ description: Quick Insights ist ein Tool für neue Workspace-Benutzer, das diese
 title: Bedienfeld „Quick Insights“
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
-workflow-type: ht
-source-wordcount: '1049'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '1135'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Wenn Sie [!UICONTROL Analysis Workspace] zum ersten Mal verwenden, fragen Sie si
 
 Um Ihnen dabei zu helfen, und basierend auf der Nutzung der Datenkomponenten in [!UICONTROL Analysis Workspace] durch Ihr Unternehmen, verwendet [!UICONTROL Quick Insights] einen Algorithmus, der Ihnen die beliebtesten Dimensionen, Metriken, Filter und Datumsbereiche präsentiert, die Ihr Unternehmen verwendet. In der Dropdown-Liste werden Dimensionen, Metriken und Filter angezeigt, die als [!UICONTROL Beliebt] gekennzeichnet sind, wie im Folgenden gezeigt:
 
-![](assets/popular-tag.png)
+![Bereich &quot;Quick Insights&quot;.](assets/popular-tag.png)
 
 [!UICONTROL Quick Insights] hilft Ihnen bei Folgendem:
 
@@ -45,14 +45,14 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
 1. Melden Sie sich mit den Ihnen zur Verfügung gestellten Zugangsdaten bei Customer Journey Analytics an.
 1. Wechseln Sie zu [!UICONTROL Workspace] und klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL Quick Insights]**. (Sie können auf dieses Bedienfeld auch über das Menü **[!UICONTROL Bedienfeld]** in der linken Leiste zugreifen.)
 
-   ![](assets/qibuilder.png)
+   ![In der Ansicht &quot;Alle Vorlagen&quot;wird die Option Quick Insights hervorgehoben.](assets/qibuilder.png)
 
-   ![](assets/qi-panel.png)
+   ![In der Liste Bedienfelder wird die Option Quick Insights hervorgehoben.](assets/qi-panel.png)
 
 1. Lesen Sie zunächst das kurze Tutorial, um sich mit einigen der Grundlagen des [!UICONTROL Bedienfelds „Quick Insights“] vertraut zu machen. Sie können auch auf **[!UICONTROL Tutorial überspringen]** klicken.
 1. Wählen Sie die Bausteine (auch als Komponenten bezeichnet) aus: Dimensionen (orange), Metriken (grün), Filter (blau) oder Datumsbereiche (violett). Sie müssen mindestens eine Dimension und eine Metrik auswählen, damit eine Tabelle automatisch erstellt wird.
 
-   ![](assets/qibuilder2.png)
+   ![Die Komponenten, einschließlich Dimensionen, Metriken, Filter, Segmente und Datumsbereiche.](assets/qibuilder2.png)
 
    Sie haben drei Möglichkeiten, die Bausteine auszuwählen:
    * Aus der der linken Leiste per Drag-and-Drop ziehen.
@@ -63,7 +63,7 @@ Im Folgenden finden Sie einige grundlegende Begriffe, mit denen Sie vertraut sei
 
    * Eine Freiformtabelle mit der Dimension (hier US-Bundesstaaten) in senkrechter Richtung und der Metrik (hier Besuche) oben in waagerechter Richtung. Sehen Sie sich diese Tabelle an:
 
-   ![](assets/qibuilder3.png)
+   ![Die Freiformtabelle, die die Dimension vertikal und die Metrik horizontal anzeigt.](assets/qibuilder3.png)
 
    * Eine begleitende Visualisierung, in diesem Fall ein [Balkendiagramm](/help/analysis-workspace/visualizations/bar.md). Die erstellte Visualisierung basiert auf dem Datentyp, den Sie der Tabelle hinzugefügt haben. Zeitbasierte Daten (z. B. [!UICONTROL Besuche] pro Tag/Monat) verwenden standardmäßig ein [!UICONTROL Liniendiagramm]. Alle nicht zeitbasierten Daten (z. B. [!UICONTROL Besuche] pro [!UICONTROL Gerät]) verwenden standardmäßig ein [!UICONTROL Balkendiagramm]. Sie können den Visualisierungstyp ändern, indem Sie auf den Dropdown-Pfeil neben dem Visualisierungstyp klicken.
 
@@ -79,28 +79,28 @@ Weitere nützliche Hinweise werden im [!UICONTROL Quick Insights Builder] angeze
 
 * Schließen Sie zunächst das Tutorial **[!UICONTROL Weitere Tipps]** ab: Greifen Sie über das Hilfe- Symbol (?) neben dem Titel [!UICONTROL Quick Insights] darauf zu. Dieses Tutorial wird 24 Stunden nach dem Erstellen eines Projekts mit mindestens einer Dimension und einer Metrik angezeigt.
 
-  ![](assets/qibuilder4.png)
+  ![Die Benachrichtigung zum Bedienfeld &quot;Quick Insights&quot;wird angezeigt, nachdem Sie auf das Hilfesymbol geklickt haben.](assets/qibuilder4.png)
 
 * **Aufschlüsselung nach**: Sie können bis zu drei Aufschlüsselungsebenen für Dimensionen verwenden, um einen Drilldown zu den Daten durchzuführen, die Sie benötigen.
 
-  ![](assets/qibuilder5.png)
+  ![Unterebenen von Aufschlüsselungen.](assets/qibuilder5.png)
 
 * **Weitere Metriken hinzufügen**: Mithilfe des AND-Operators können Sie bis zu 2 weitere Metriken hinzufügen.
 
-  ![](assets/qibuilder6.png)
+  ![Mehrere Metriken, einschließlich Besuche und Geräte.](assets/qibuilder6.png)
 
 * **Weitere Filter hinzufügen**: Mithilfe des AND- oder OR-Operators können Sie bis zu zwei weitere Filter zur Tabelle hinzufügen. Sehen Sie sich an, was mit der Tabelle passiert, wenn Sie „Mobilbenutzer OR Treue Besucher“ hinzufügen. Sie finden sie nebeneinander über den Metriken. Wenn Sie „Mobilbenutzer UND Treue Besucher“ hinzufügen, werden die Ergebnisse beider Segmente zusammen angezeigt und in der Tabelle übereinandergestapelt.
 
-  ![](assets/qibuilder7.png)
+  ![Abbildung der hinzugefügten Mobilbenutzer und Treuebesucher.](assets/qibuilder7.png)
 
 ## Bekannte Einschränkungen
 
 Wenn Sie versuchen, die Datei direkt in der Tabelle zu bearbeiten, wird das Bedienfeld [!UICONTROL Quick Insights] nicht mehr synchronisiert. Sie können die vorherigen Einstellungen für [!UICONTROL Quick Insights] wiederherstellen, indem Sie oben rechts im Bedienfeld auf **[!UICONTROL Builder neu synchronisieren]** klicken.
 
-![](assets/qibuilder9.png)
+![Das Bedienfeld Quick Insights mit der Option Builder neu synchronisieren .](assets/qibuilder9.png)
 
 Sie erhalten eine Warnung, bevor Sie etwas direkt zur Tabelle hinzufügen:
 
-![](assets/qibuilder8.png)
+![Die Warnung zur Option Builder neu synchronisieren .](assets/qibuilder8.png)
 
 Andernfalls verhält sich die Tabelle beim direkten Erstellen jetzt wie eine herkömmliche Freiformtabelle, ohne die hilfreichen Funktionen für neue Benutzer.

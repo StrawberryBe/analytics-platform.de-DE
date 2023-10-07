@@ -3,10 +3,10 @@ description: Ein Bedienfeld ist eine Sammlung von Tabellen und Visualisierungen
 title: Übersicht über Bedienfelder
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 51%
+source-wordcount: '1313'
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ Die folgenden Bedienfeldtypen sind in Analysis Workspace für [!UICONTROL Custom
 | [Bedienfeld „Gleichzeitige Medienbetrachter“](media-concurrent-viewers.md) | Analysieren Sie gleichzeitige Betrachter über einen längeren Zeitraum. Sie erhalten Details zum maximalen gleichzeitigen Zugriff und die Möglichkeit, aufzuschlüsseln und zu vergleichen. |
 | [Bedienfeld „Mit Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Durch die Analyse der Wiedergabedauer können Sie erkennen, wo Spitzenzeiten bei gleichzeitigen Ansichten aufgetreten sind oder wo es zu Abbrüchen gekommen ist. |
 
-![](assets/panel-overview.png)
+![Das Bedienfeld Customer Journey Analytics listet die verfügbaren Bedienfeldtypen auf.](assets/panel-overview.png)
 
 Die Bedienfelder [!UICONTROL Quick Insights], [!UICONTROL Leer] und [!UICONTROL Freiform] eignen sich hervorragend als Ausgangspunkt für Ihre Analyse. [!UICONTROL Attribution IQ] bietet sich für erweiterte Analysen an. In Projekten steht eine `"+"`-Schaltfläche zur Verfügung, mit der Sie jederzeit leere Bedienfelder hinzufügen können.
 
@@ -39,7 +39,7 @@ Das standardmäßige Startbedienfeld ist das [!UICONTROL Freiform-]Bedienfeld. S
 
 Hinweis: Wenn eine (violette) Datumsbereichskomponente in einer Tabelle, Visualisierung oder dem Ablagebereich eines Bedienfelds verwendet wird, wird der Bedienfeldkalender überschrieben.
 
-![](assets/panel-calendar.png)
+![Das Kalenderfenster mit dem ausgewählten Datumsbereich.](assets/panel-calendar.png)
 
 Sie können unter den erweiterten Einstellungen Ihres Bedienfeldkalenders einen Datumsbereich auf Minutenebene anwenden. Wenn Sie Berichte zu einem Datumsbereich erstellen, der viele Tage umfasst, gilt als Startzeit der erste Tag und als Endzeit der letzte Tag in Ihrem Bereich.
 
@@ -51,7 +51,7 @@ Mit dem Ablagebereich eines Bedienfelds können Sie Filter und Dropdown-Filter a
 
 Ziehen Sie einen beliebigen Filter aus der linken Leiste in den Ablagebereich des Bedienfelds, um mit dem Filtern des Bedienfelds zu beginnen.
 
-![](assets/segment-filter.png)
+![Die linke Leiste zeigt verfügbare Metriken und die Mobile-Kunden-Metrik wurde in die Dropzone des Bedienfelds gezogen.](assets/segment-filter.png)
 
 ### Ad-hoc-Filter
 
@@ -61,7 +61,7 @@ Ad-hoc-Filter sind eine Art Schnellfilter und für das Projekt lokal verfügbar.
 
 Weitere Informationen finden Sie unter [Schnellfilter](/help/components/filters/quick-filters.md).
 
-![](assets/adhoc-segment-filter.png)
+![Ad-hoc-Filter, die veröffentlicht und in der Dropzone abgelegt werden.](assets/adhoc-segment-filter.png)
 
 ### Statische Dropdown-Filter
 
@@ -69,7 +69,7 @@ Dropdown-Filter ermöglichen Ihnen die kontrollierte Interaktion mit den Daten. 
 
 Dropdown-Filter können auch verwendet werden, um viele Projekte zu einem zusammenzufassen. Wenn Sie z. B. mehrere Versionen desselben Projekts mit unterschiedlichen Filtern je nach Land verwenden, können Sie alle Versionen in einem Projekt zusammenfassen und einen Dropdown-Filter „Land“ hinzufügen.
 
-![](assets/dropdown-filter-intro.png)
+![Statische Dropdown-Filter, die den Filter &quot;Direkt&quot;für den Marktkanal anzeigen, hervorgehoben sind. ](assets/dropdown-filter-intro.png)
 
 So erstellen Sie einen statischen Dropdown-Filter:
 
@@ -79,7 +79,7 @@ So erstellen Sie einen statischen Dropdown-Filter:
 
 Wählen Sie eine der Optionen aus der Dropdownliste aus, um die Daten im Bedienfeld zu ändern. Sie können auch auf die Filterung von Bedienfelddaten verzichten, indem Sie **[!UICONTROL Kein Filter]**.
 
-![](assets/create-dropdown.png)
+![Das Fenster Bedienfeld mit dem Feld Mobilkundensegment ist verfügbar, um einen statischen Dropdown-Filter abzulegen. ](assets/create-dropdown.png)
 
 Wenn Sie mit der rechten Maustaste auf einen Dropdown-Filter klicken, stehen folgende Optionen zur Verfügung:
 
@@ -109,7 +109,7 @@ Wenn Sie mit der rechten Maustaste auf einen dynamischen Dropdown-Filter klicken
 
 Weitere Funktionen für ein Bedienfeld sind verfügbar, wenn Sie mit der rechten Maustaste auf die Bedienfeldkopfzeile klicken.
 
-![](assets/right-click-menu.png)
+![Die Rechtsklickoptionen für eine Bedienfeldüberschrift.](assets/right-click-menu.png)
 
 Folgende Einstellungen sind verfügbar:
 

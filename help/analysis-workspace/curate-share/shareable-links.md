@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Freigabe
 title: Erstellen von freigebbaren Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
-source-git-commit: 7889c9e7c55dadfe0966f03365eabc4929a32d7a
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 62%
+source-wordcount: '395'
+ht-degree: 57%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können einen schreibgeschützten Link zu Analysis Workspace-Projekten für 
 
 Weitere Informationen finden Sie unter &quot;Freigeben eines Projekts für andere (keine Anmeldung erforderlich)&quot;im Artikel [Freigeben von Projekten](/help/analysis-workspace/curate-share/share-projects.md).
 
-## Bedienfeld- oder Visualisierungs-Link abrufen {#panel-link}
+## Bedienfeld- oder Visualisierungslink abrufen {#panel-link}
 
 Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z. B. einem Bedienfeld oder einer individuellen Visualisierung. Dies wird manchmal auch als Intra-Linking bezeichnet. Dies kann nützlich sein, um die Aufmerksamkeit Ihrer Benutzerinnen und Benutzer auf wichtige Erkenntnisse im Projekt zu lenken.
 
@@ -36,7 +36,7 @@ Sie können auch einen Link zu einem bestimmten Teil eines Projekts freigeben, z
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=de), wie Sie Links erstellen und diese verwenden, um Empfänger zu bestimmten Teilen Ihres Projekts zu führen.
 
-![](assets/get-viz-link.png)
+![Das Dropdown-Menü, nachdem Sie mit der rechten Maustaste auf die Kopfzeile geklickt haben, wobei der Link Visualisierung abrufen hervorgehoben ist.](assets/get-viz-link.png)
 
 ## Links in Inhaltsverzeichnissen verwenden {#TOC}
 
@@ -44,4 +44,4 @@ Ein Tipp für die Nutzung der verschiedenen Link-Optionen besteht darin, immer e
 
 [Sehen Sie sich das Video an](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=de), wie Sie mithilfe von Links und dem Rich-Text-Editor von Workspace ein Inhaltsverzeichnis erstellen.
 
-![](assets/toc.png)
+![Ein Projektinhaltsverzeichnis.](assets/toc.png)

@@ -1,13 +1,13 @@
 ---
-description: Tastaturinteraktionen, Tastaturbefehle und Point-and-Click-Verhaltensweisen, die in Analysis Workspace verfügbar sind.
+description: Erfahren Sie mehr über Tastaturinteraktionen, Tastaturbefehle und Point-and-Click-Verhaltensweisen, die in Analysis Workspace verfügbar sind.
 keywords: Analysis Workspace
 feature: Workspace Basics
-title: Hotkeys (Tastaturbefehle)
+title: Verwenden von Workspace-Hotkeys
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 378098861bde949a2224a9b8c6376aa7b5e8ec27
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 93%
 
 ---
 

@@ -5,10 +5,10 @@ title: Customer Journey Analytics-Daten per E-Mail an andere senden
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 62%
+source-wordcount: '1036'
+ht-degree: 58%
 
 ---
 
@@ -31,10 +31,10 @@ So senden Sie eine Datei sofort per E-Mail an die Empfänger:
 1. (Optional) Fügen Sie eine Beschreibung hinzu, die in die E-Mail aufgenommen werden soll, um die empfangene Datei zu erklären.
 1. Fügen Sie Empfänger oder Gruppen hinzu. E-Mail-Adressen können auch eingegeben werden.
 1. (Nur für Kunden von Health Care Shield) Geben Sie ein Passwort an. Siehe Abschnitt „Passwortschutz für terminierte Berichte“.
-1. Klicken Sie auf **[!UICONTROL Jetzt senden]**.
 1. (Optional) Klicken Sie auf **[!UICONTROL Planungsoptionen anzeigen]**, um einen Zeitplan für den Versand festzulegen.
+1. Klicken Sie auf **[!UICONTROL Jetzt senden]**.
 
-![Datei jetzt senden](assets/send-file-no-scheduling-options.JPG)
+![Das Fenster Datei senden und die Schaltfläche Jetzt senden .](assets/send-file-no-scheduling-options.JPG)
 
 ## Datei planmäßig senden {#schedule}
 
@@ -49,7 +49,7 @@ So senden Sie eine Datei nach einem wiederkehrenden Zeitplan per E-Mail an Empf�
 1. Geben Sie die Versandhäufigkeit an. Jede Häufigkeit ermöglicht unterschiedliche Anpassungen.
 1. Klicken Sie auf **[!UICONTROL Planmäßig senden]**.
 
-![](assets/send-file.JPG)
+![Das Fenster Datei senden und die angezeigten Planungsoptionen zeigen den Start am, das Ende am Datum und die täglichen Frequenzeinstellungen an.](assets/send-file.JPG)
 
 ## Manager für geplante Projekte {#manager}
 
@@ -98,7 +98,7 @@ Nachdem Ihr Unternehmen die SKU für den Gesundheitsschild erworben und dafür a
 
 * Wenn ein vorhandenes geplantes Projekt kurz vor dem Senden steht. Das aktuell geplante Projekt ist deaktiviert, bis der Kennwortschutz eingerichtet ist. Der Eigentümer des geplanten Projekts erhält eine E-Mail, in der er über diese Anforderung informiert wird.
 
-![Passwortschutz](assets/password.png)
+![Das Fenster Geplantes Projekt bearbeiten und die Benachrichtigung zur Kennwortverschlüsselung, die angibt, dass Ihr Unternehmen die Kennwortverschlüsselung benötigt, werden angezeigt.](assets/password.png)
 
 ### Passwortanforderungen
 
@@ -113,7 +113,7 @@ Die Passwortanforderungen entsprechen den Adobe-Standards und erfordern mindeste
 
 Bevor ein Projekt geplant wird, erhält der Projekteigentümer eine E-Mail wie die folgende:
 
-![email](assets/email-password.png)
+![Die Customer Journey Analytics-E-Mail-Benachrichtigung, die die Kennwortverschlüsselung angibt, ist für Ihr Unternehmen erforderlich.](assets/email-password.png)
 
 1. Melden Sie sich bei Customer Journey Analytics an.
 1. Auswählen **[!UICONTROL Geplantes Projekt anzeigen]**.

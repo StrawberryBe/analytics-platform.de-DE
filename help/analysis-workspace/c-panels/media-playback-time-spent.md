@@ -4,10 +4,10 @@ description: Verwendung und Interpretation des Panels „verbrachten Zeit bei de
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 75%
+source-wordcount: '924'
+ht-degree: 74%
 
 ---
 
@@ -55,7 +55,7 @@ Sie können das Panel „Verbrachte Zeit bei der Medienwiedergabe“ mithilfe de
 
 ## Standardansicht
 
-![Standardansicht](assets/mpts_default_view.png)
+![Die Standardansicht der Besuchszeit für Medienplayer.](assets/mpts_default_view.png)
 
 ## Panel-Ausgabe {#Output}
 
@@ -65,7 +65,7 @@ Sie können das Bedienfeld jederzeit bearbeiten oder erneut erstellen, indem Sie
 
 Wenn Sie Serienaufschlüsselung ausgewählt haben, wird für jeden der folgenden Punkte eine Zeile im Liniendiagramm und eine Zusammenfassungsnummer angezeigt:
 
-![Ausgabe der verbrachten Zeit bei der Medienwiedergabe](assets/mpts_outputs1.png)
+![Die Ausgabe der Ausgabedauer für die Medienwiedergabe mit einem Liniendiagramm und einer Zusammenfassung.](assets/mpts_outputs1.png)
 
 ### Datenquelle
 

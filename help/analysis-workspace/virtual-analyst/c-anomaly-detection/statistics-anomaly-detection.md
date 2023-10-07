@@ -3,10 +3,10 @@ description: Die Anomalieerkennung in Analysis Workspace setzt eine Reihe statis
 title: In der Anomalieerkennung verwendete statistische Verfahren
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '794'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Nach Auswahl des Modells und der Identifizierung der im Berichtszeitraum befindl
 
 Beachten Sie im folgenden Beispiel die deutliche Verbesserung der Performance an Weihnachten und Neujahr:
 
-![](assets/anomaly_statistics.png)
+![Zwei Liniendiagramme mit Leistungsänderungen mit und ohne Urlaubsleistung.](assets/anomaly_statistics.png)
 
 ## Anomalieerkennung für Granularität „Stündlich“ 
 

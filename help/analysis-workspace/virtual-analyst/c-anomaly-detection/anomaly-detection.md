@@ -1,12 +1,12 @@
 ---
-description: Datenanomalien können kontextbezogen in Analysis Workspace angezeigt und analysiert werden.
-title: Übersicht über die Anomalieerkennung
+description: Erfahren Sie mehr über die Erkennung von Datenanomalien in Analysis Workspace.
+title: Funktionsweise der Anomalieerkennung
 feature: Anomaly Detection
 exl-id: f706cdb9-bc80-42b9-9450-4f68bdb3fd85
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '182'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 93%
 
 ---
 

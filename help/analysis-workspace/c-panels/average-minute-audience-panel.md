@@ -4,10 +4,10 @@ description: Verwenden und Interpretieren des Bedienfelds „Medien-Zielgruppend
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 89%
+source-wordcount: '1331'
+ht-degree: 88%
 
 ---
 
@@ -82,7 +82,7 @@ Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ gibt Folgendes zu
 
 Sie können das Bedienfeld jederzeit bearbeiten und neu erstellen. Klicken Sie dazu oben rechts auf den Stift „Bearbeiten“.
 
-![Standardansicht](assets/specific-content-panel-output.png)
+![Die Standardansicht des Bereichs Zielgruppendurchschnitt pro Minute .](assets/specific-content-panel-output.png)
 
 
 ### Bestimmte Inhaltsdatenquelle
@@ -99,7 +99,7 @@ Das Bedienfeld „Medien-Zielgruppendurchschnitt pro Minute“ gibt den Zielgrup
 
 Sie können das Bedienfeld jederzeit bearbeiten und neu erstellen. Klicken Sie dazu oben rechts auf den Stift „Bearbeiten“.
 
-![Output von gleichzeitigen Betrachtern](assets/custom-time-period-panel-output.png)
+![Das Bedienfeld Zielgruppendurchschnitt pro Minute zeigt die Daten für die gesamte Auswahl an.](assets/custom-time-period-panel-output.png)
 
 ### Datenquelle für den benutzerdefinierten Zeitraum
 

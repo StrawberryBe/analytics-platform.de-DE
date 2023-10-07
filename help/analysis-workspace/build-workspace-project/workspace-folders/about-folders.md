@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Übersicht über Ordner
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ In Analysis Workspace gibt es zwei Arten von Ordnern: den Unternehmensordner und
 
 Wenn Sie sich bei Analysis Workspace anmelden, wird auf der Startseite von „Projekte“ eine Liste Ihrer Projekte mit dem Unternehmensordner und allen von Ihnen erstellten persönlichen Ordnern angezeigt.
 
-![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Projekt-Startseite, auf der Ihre Projekte und der Ordner Firma aufgelistet sind.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## Über den Unternehmensordner {#company-folder}
 
@@ -38,11 +38,11 @@ Wenn sich ein(e) Benutzende(r) bei Analysis Workspace anmeldet, wird der Unterne
 
 Administratoren bzw. Administratorinnen verfügen über spezielle Berechtigungen in Bezug auf den Unternehmensordner. Beispielsweise können nur Administratoren bzw. Administratorinnen Ordner oder Projekte im Unternehmensordner hinzufügen oder entfernen. Benutzende ohne Administratorrechte können den Inhalt des Unternehmensordners anzeigen.
 
-![](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![Auf der Seite &quot;Projekte&quot;werden die Admin-Optionen angezeigt.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 Die Optionen für Benutzende ohne Administratorrechte sind eingeschränkt.
 
-![](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![Auf der Seite &quot;Projekte&quot;werden die Optionen für Ordner ohne Administratorrechte angezeigt.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### Informationen zum Unternehmensordner {#company-folder-guidelines}
 

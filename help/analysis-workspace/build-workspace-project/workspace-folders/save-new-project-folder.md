@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Speichern von Projekten in Ordnern
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 100%
+source-wordcount: '93'
+ht-degree: 75%
 
 ---
 
@@ -17,11 +17,11 @@ Um ein neues Projekt in einem bestimmten Ordner zu speichern, wählen Sie den Or
 
 1. Erstellen Sie in Workspace ein neues Projekt.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+   ![Das Freiformtabellenfenster, in dem Sie ein neues Projekt erstellen können.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
 1. Wählen Sie im Dialogfeld **Projekt** > **Speichern** einen Ordnernamen aus dem Dropdown-Menü „Ordner“.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+   ![Das Fenster Speichern , in dem Sie Ihr neues Projekt in einem Ordner speichern.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1. Klicken Sie auf **Speichern**.
 

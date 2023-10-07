@@ -1,18 +1,18 @@
 ---
-description: Sie können PDF/CSV-Projekte für Empfänger in Ihrer Organisation kuratieren, freigeben und planen.
+description: Erfahren Sie mehr über die Menüoptionen für Workspace-Freigabe .
 title: Menü „Freigeben“
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: b36ba438a14f9fd257f2b6a38be7eb39baaa7d92
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 75%
+source-wordcount: '146'
+ht-degree: 56%
 
 ---
 
 # Menü „Freigeben“
 
-Sie können PDF-/CSV-Projekte für Empfänger in Ihrer Organisation im **Menü „Freigeben“** in Workspace kuratieren, freigeben und planen.
+Sie können PDF- und CSV-Projekte für Empfänger in Ihrer Organisation in Workspace kuratieren, freigeben und planen **Menü freigeben**.
 
 | Menüoption | Beschreibung |
 |---|---|
