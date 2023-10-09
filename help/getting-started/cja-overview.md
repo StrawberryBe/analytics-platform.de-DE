@@ -5,15 +5,15 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 0b8fb4007ecb71be2186b8a83f2026b2e296e8a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Überblick über Customer Journey Analytics
 
-Customer Journey Analytics ist eine Analytics-Lösung der nächsten Generation von Adobe, mit der Sie die Funktionen von Analysis Workspace mit Daten von Adobe Experience Platform nutzen können. Sie kann die Daten mehrerer Jahre aufschlüsseln, filtern, abfragen und visualisieren und wird mit der Fähigkeit von Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des **Erlebnis-Datenmodells (XDM)** können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. **Adobe Experience Platform Query Service** ermöglicht Ihnen die Verwendung von SQL-kompatiblen Tools und Frameworks, um alle Ihre Daten abzufragen und zu bearbeiten.
+Customer Journey Analytics ist eine Analytics-Lösung der nächsten Generation von Adobe, mit der Sie die Funktionen von Analysis Workspace mit Daten von Adobe Experience Platform nutzen können. Sie kann die Daten mehrerer Jahre aufschlüsseln, filtern, abfragen und visualisieren und wird mit der Fähigkeit von Platform kombiniert, alle Arten von Datenschemata und -typen zu speichern. Mithilfe des **Erlebnis-Datenmodells (XDM)** können Daten einheitlich dargestellt und organisiert werden, sodass sie kombiniert und untersucht werden können. Mit dem **Abfrage-Service von Adobe Experience Platform** können Sie SQL-kompatible Tools und Frameworks verwenden, um alle Ihre Daten abzufragen und zu bearbeiten.
 
 Die allgemeine Customer Journey Analytics-Architektur ist im Folgenden dargestellt:
 
@@ -47,7 +47,7 @@ Customer Journey Analytics unterstützt folgende Anwendungsfälle:
 * **Möglichkeiten der Datenwissenschaft für Ihre Analysten nutzen**: Mit Customer Journey Analytics können normale Menschen mithilfe der Datenwissenschaft tiefe Einblicke und Analysen gewinnen.
 * **Datensätze visualisieren und mit ihnen mithilfe von Ad-hoc-Berichten interagieren**: Der Arbeitsbereich kann jeden Datensatz aus Adobe Experience Platform verwenden, sofern er einigen Grundregeln entspricht.
 * **Nicht-Webdaten anzeigen**: Arbeitsbereich ist nicht mehr auf eine starre Definition eines „Treffers“ oder „Ereignisses“ beschränkt. Benutzerdefinierte Schemata ermöglichen die vollständige Kontrolle über Daten und Definitionen.
-* **Mehr Kontrolle über die Datenmanipulationen**: Sie können Daten ändern, die Sie hochgeladen haben, Datensätze erstellen und sie in den Arbeitsbereich importieren. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Experience Platform Query Service.
+* **Mehr Kontrolle über die Datenmanipulationen**: Sie können Daten ändern, die Sie hochgeladen haben, Datensätze erstellen und sie in den Arbeitsbereich importieren. Adobe Experience Platform bietet Tools zum Abfragen, Extrahieren, Transformieren und Laden über den Abfrage-Service von Experience Platform.
 
 ## Voraussetzungen
 
@@ -81,7 +81,7 @@ Mit Adobe Experience Platform können Sie Kundendaten und Inhalte aus beliebigen
 
 Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von Experience Platform für Customer Journey Analytics von zentraler Bedeutung und dienen als Ergänzung:
 
-* [Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de): Verwenden Sie Standard-SQL, um Daten aus Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieterdaten von Kunden oder andere Platform-Daten. Es handelt sich dabei um ein Server-loses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können. Dieser kann in Berichten, Data Science Workspace oder zur Aufnahme in den Profil-Service verwendet werden. Sie können den Experience Platform Query Service verwenden, um Ökosysteme für die Datenanalyse zu erstellen und so ein Bild der Verbraucher über ihre verschiedenen Interaktionskanäle hinweg zu erstellen. Zu diesen Kanälen gehören beispielsweise PoS-Systeme, Web-, mobile und CRM-Systeme usw.
+* [Abfrage-Service von Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein Server-loses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können. Dieser kann in Berichten, Data Science Workspace oder zur Aufnahme in den Profil-Service verwendet werden. Mit dem Abfrage-Service von Experience Platform können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucherinnen und Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen gehören beispielsweise PoS-Systeme, Web-, mobile und CRM-Systeme usw.
 * [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de):
 * [Identity-Dienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de):
 * [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=de) in Entwicklermodus: Sie können vorgefertigte Modelle für künstliche Intelligenz (KI) und maschinelles Lernen in Adobe Experience Platform verwenden, um verschiedene Aspekte der Customer Journey zu beeinflussen. Durch das Aufspüren verborgener Erkenntnisse können Sie bessere Vorhersagen für die gesamte Customer Journey treffen, Empfehlungen für die besten nächsten Schritte geben oder umständliche Prozesse automatisieren.
