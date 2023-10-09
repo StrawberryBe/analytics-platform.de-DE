@@ -4,13 +4,13 @@ description: Erfahren Sie, wie Sie Probleme beheben können, die durch fehlende 
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
-source-git-commit: 1905e37b76843a7622af4e874a2d74aceff55384
+exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
+source-git-commit: 72d42123a3c9463514ada584530ad959e99d5c94
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '166'
 ht-degree: 4%
 
 ---
-
 
 # Fehlende Berechtigungen
 
@@ -21,14 +21,14 @@ Beispiel: nach der Erstellung eines [Verbindung](../connections/overview.md) und
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL Etwas ist schiefgelaufen und wir konnten keine Schemafelder laden. Bitte versuchen Sie es erneut.]*
+*[!UICONTROL Beim Abrufen von DULE-Richtlinien ist etwas schiefgelaufen. Überprüfen Sie die Kontoberechtigungen, Richtlinien oder Bezeichnungen. Nachricht: Verboten.]*
 
 >[!ENDSHADEBOX]
 
 
-Um diesen Fehler zu beheben, müssen Sie über System- oder Produktadministratorberechtigungen für ein Unternehmen verfügen, das über ein Experience Platform-Produkt verfügt. Siehe [Zugriffskontrolle - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) für weitere Informationen.
+Um diesen Fehler zu beheben, müssen Sie über System- oder Produktadministratorberechtigungen für eine Organisation verfügen, die über ein Experience Platform-Produkt verfügt. Siehe [Zugriffskontrolle - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) für weitere Informationen.
 
-1. Navigieren Sie zur Benutzeroberfläche von Adobe Experience Platform.
+1. Navigieren Sie zur Adobe Experience Platform-Benutzeroberfläche.
 
 1. Auswählen **[!UICONTROL Berechtigungen]** über die linke Leiste.
 
@@ -41,5 +41,3 @@ Um diesen Fehler zu beheben, müssen Sie über System- oder Produktadministrator
 1. Sichern **[!UICONTROL Richtlinien zur Datennutzung verwalten]** und **[!UICONTROL Datennutzungsrichtlinien anzeigen]** werden der **[!UICONTROL Data Governance]** Container.
 
 1. Auswählen **[!UICONTROL Speichern]** , um die Änderungen zu speichern.
-
-

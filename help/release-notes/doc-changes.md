@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
-workflow-type: ht
-source-wordcount: '2651'
-ht-degree: 100%
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+workflow-type: tm+mt
+source-wordcount: '2662'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Oktober 2023** | |
+| Zusätzliche Funktionalität von abgeleiteten Feldern | Aktualisierte Dokumentation für die neue [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) -Funktion. |
 | **September 2023** | |
 | Struktur von Artikeln für das Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ wurde aktualisiert | Der Ordner „Bei Medienwiedergabe verbrachte Zeit“ wurde entfernt und der Inhalt des Ordners in einem einzigen Artikel zusammengefasst: [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Diese Änderung entspricht eher der Dokumentation für andere Bedienfelder.</p> |
 | Zusätzliche Funktionalität von abgeleiteten Feldern | Aktualisierte Dokumentation für die neuen Funktionen [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) und [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) und für die zusätzlichen CSV-Funktionen, die der [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify)-Funktion hinzugefügt wurden. |
