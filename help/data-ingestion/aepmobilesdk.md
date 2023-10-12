@@ -1,18 +1,19 @@
 ---
 title: Daten über das Adobe Experience Platform Mobile SDK erfassen
-description: Erläuterung der Datenerfassung in Customer Journey Analytics über das Adobe Experience Platform Mobile SDK und das Edge Network
+description: Erläuterung der Datenaufnahme in Customer Journey Analytics über das Adobe Experience Platform Mobile SDK und das Edge Network
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 662e9645cdb4b67f364525167e5191a52c474864
+exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '3411'
-ht-degree: 62%
+source-wordcount: '3435'
+ht-degree: 61%
 
 ---
 
 # Daten über das Adobe Experience Platform Mobile SDK erfassen
 
-In dieser Kurzanleitung wird erläutert, wie Sie mit dem Adobe Experience Platform Mobile SDK und Edge Network Tracking-Daten von mobilen Apps direkt in Adobe Experience Platform erfassen können. Verwenden Sie dann diese Daten in Customer Journey Analytics.
+In dieser Kurzanleitung wird erläutert, wie Sie mit dem Adobe Experience Platform Mobile SDK und Edge Network Tracking-Daten von mobilen Apps direkt in Adobe Experience Platform erfassen können. Verwenden Sie dann diese Daten im Customer Journey Analytics.
 
 Gehen Sie dazu folgendermaßen vor:
 
@@ -32,7 +33,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
->Diese Kurzanleitung enthält eine vereinfachte Anleitung zur Erfassung und Verwendung von in Ihrer Anwendung erfassten Daten in Adobe Experience Platform und Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+>Diese Kurzanleitung ist eine vereinfachte Anleitung zur Aufnahme von Daten, die aus Ihrer Anwendung erfasst wurden, in Adobe Experience Platform und zur Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
 ## Einrichten eines Schemas und eines Datensatzes
@@ -52,28 +53,35 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
-2. Wählen Sie **[!UICONTROL Schema erstellen]** aus. Wählen Sie **[!UICONTROL XDM ExperienceEvent]** aus der Optionsliste aus.
+1. Auswählen **[!UICONTROL Schema erstellen]**. .
+1. Wählen Sie im Schritt Klasse auswählen des Assistenten Schema erstellen die Option **[!UICONTROL Erlebnisereignis]**.
 
-   ![Erstellen eines Schemas](./assets/create-ee-schema.png)
+   ![Erstellen eines Schemas](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
    >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
 
+   Klicken Sie auf **[!UICONTROL Weiter]**.
 
-3. Im Bildschirm [!UICONTROL Nicht benanntes Schema]:
 
-   1. Geben Sie einen Anzeigenamen für Ihr Schema und (optional) eine Beschreibung ein.
+1. Im [!UICONTROL Name und Überprüfungsschritt] des [!UICONTROL Schema erstellen] Assistent:
 
-      ![Benennen des Schemas](./assets/name-schema.png)
+   1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
 
-   2. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
+      ![Benennen des Schemas](./assets/create-ee-schema-wizard-step-2.png)
+
+   1. Wählen Sie **[!UICONTROL Beenden]** aus.
+
+1. Auf der Registerkarte Struktur des Beispielschemas:
+
+   1. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
 
       ![Hinzufügen der Feldergruppe](./assets/add-field-group-button.png)
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   3. Im [!UICONTROL Feldergruppen hinzufügen] wählen Sie das **[!UICONTROL AEP Mobile SDK ExperienceEvent]** Feldergruppe aus der Liste.
+   1. Im [!UICONTROL Feldergruppen hinzufügen] wählen Sie das **[!UICONTROL AEP Mobile SDK ExperienceEvent]** Feldergruppe aus der Liste.
 
       ![Feldergruppe &quot;AEP Mobile Lifecycle Details&quot;](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -83,21 +91,21 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Wählen Sie **[!UICONTROL Zurück]** aus, um die Vorschau zu schließen.
 
-   4. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
+   1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 
-4. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
+1. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-mobileschema-plus.png)
 
-5. Im [!UICONTROL Feldeigenschaften] Bereich, eingeben `identification` als [!UICONTROL Feldname], **[!UICONTROL Bezeichnung]** als [!UICONTROL Anzeigename]auswählen **[!UICONTROL Objekt]** als [!UICONTROL Typ] und wählen **[!UICONTROL ExperienceEvent Core v2.1]** als [!UICONTROL Feldergruppe].
+1. Im [!UICONTROL Feldeigenschaften] Bereich, eingeben `identification` als [!UICONTROL Feldname], **[!UICONTROL Bezeichnung]** als [!UICONTROL Anzeigename]auswählen **[!UICONTROL Objekt]** als [!UICONTROL Typ] und wählen **[!UICONTROL ExperienceEvent Core v2.1]** als [!UICONTROL Feldergruppe].
 
    ![Identifizierungsobjekt](./assets/identification-field-mobile.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In diesem Fall möchten Sie Profile mithilfe Ihrer App mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Es gibt viele weitere Attribute, mit denen Sie die Identifizierung Ihrer Person verfolgen können (z. B. Kunden-ID, Treueprogramm-ID).
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile mithilfe Ihrer App mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren. Es gibt viele weitere Attribute, mit denen Sie die Identifizierung Ihrer Person verfolgen können (z. B. Kunden-ID, Treueprogramm-ID).
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
-6. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
+1. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
 
    ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity-mobile.png)
 
@@ -105,7 +113,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Anwenden]** aus. Daraufhin erscheint ein Fingerabdruck-Symbol im ECID-Attribut.
 
-7. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
+1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
    ![Spezifizieren von E-Mail als Identität](./assets/specify-email-identity-mobile.png)
 
@@ -115,7 +123,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
-8. Wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas trägt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
+1. Wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas trägt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
@@ -127,7 +135,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Aktivieren eines Schemas für ein Profil](./assets/enable-for-profile.png)
 
-9. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
 Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie aus Ihrer Mobile App erfassen können. Mithilfe des Schemas können Profile anhand der Experience Cloud-Identität und -E-Mail-Adresse identifiziert werden. Durch Aktivierung des Schemas für das Profil stellen Sie sicher, dass aus Ihrer Mobile App erfasste Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
 
@@ -244,7 +252,7 @@ Wählen Sie zum Konfigurieren das neu erstellte Tag aus der Liste der [!UICONTRO
 
 #### **Erweiterungen**
 
-Fügen Sie Ihrem -Tag die Adobe Platform Edge Network-Erweiterung hinzu, um sicherzustellen, dass Sie Daten (über Ihren Datenspeicher) an Adobe Experience Platform senden können.
+Fügen Sie Ihrem -Tag die Adobe Platform Edge Network-Erweiterung hinzu, um sicherzustellen, dass Sie Daten an Adobe Experience Platform senden können (über Ihren Datenspeicher).
 
 So erstellen und konfigurieren Sie die Adobe Experience Platform Mobile SDK-Erweiterung:
 
@@ -528,4 +536,4 @@ Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Ana
 
 >[!SUCCESS]
 >
->Sie haben jetzt alle Schritte ausgeführt. Sie haben zunächst definiert, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Dann haben Sie einen Datenstrom im Edge Network konfiguriert, damit Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie Ihr Tag definiert und bereitgestellt, das die Erweiterungen (Adobe Experience Platform Edge Network und andere), Datenelemente und Regeln enthält, um Daten aus Ihrer mobilen App zu erfassen und an Ihren Datastream zu senden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um die Tracking-Daten Ihrer Mobile App-Push-Benachrichtigungen und andere Daten zu verwenden. Mit Ihrer Datenansichtsdefinition können Sie angeben, welche Dimension und Metriken verwendet werden sollen, und schließlich haben Sie Ihre ersten Projektvisualisierungs- und -analysedaten erstellt.
+>Sie haben jetzt alle Schritte ausgeführt. Sie haben zunächst definiert, welche Daten erfasst werden sollen (Schema) und wo sie in Adobe Experience Platform gespeichert werden sollen (Datensatz). Dann haben Sie einen Datenstrom im Edge Network konfiguriert, damit Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie Ihr Tag definiert und bereitgestellt, das die Erweiterungen (Adobe Experience Platform Edge Network und andere), Datenelemente und Regeln enthält, um Daten aus Ihrer mobilen App zu erfassen und an Ihren Datastream zu senden. Sie haben eine Verbindung im Customer Journey Analytics definiert, um Ihre Mobile App-Push-Benachrichtigungs-Tracking-Daten und andere Daten zu verwenden. Mit Ihrer Datenansichtsdefinition können Sie angeben, welche Dimension und Metriken verwendet werden sollen, und schließlich haben Sie Ihre ersten Projektvisualisierungs- und -analysedaten erstellt.

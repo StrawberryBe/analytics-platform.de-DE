@@ -4,10 +4,10 @@ description: Erklärung der Aufnahme und Verwendung von Streaming-Daten in Custo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 88%
+source-wordcount: '2026'
+ht-degree: 85%
 
 ---
 
@@ -49,28 +49,35 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
-2. Wählen Sie **[!UICONTROL Schema erstellen]** aus. Wählen Sie **[!UICONTROL XDM Individual Profile]** aus der Optionsliste aus.
+1. Auswählen **[!UICONTROL Schema erstellen]**. .
+1. Wählen Sie im Schritt Klasse auswählen des Assistenten Schema erstellen die Option **[!UICONTROL Individuelles Profil]**.
 
-   ![Erstellen eines Schemas](./assets/create-schema.png)
+   ![Erstellen eines Schemas](./assets/create-pr-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht). Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Seitenansicht, Zum Warenkorb hinzufügen).
+   >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+
+   Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-3. Im Bildschirm [!UICONTROL Nicht benanntes Schema]:
+1. Im [!UICONTROL Name und Überprüfungsschritt] des [!UICONTROL Schema erstellen] Assistent:
 
-   1. Geben Sie einen Anzeigenamen für Ihr Schema und (optional) eine Beschreibung ein.
+   1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
 
-      ![Benennen des Schemas](./assets/name-loyalty-schema.png)
+      ![Benennen des Schemas](./assets/create-pr-schema-wizard-step-2.png)
 
-   2. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
+   1. Wählen Sie **[!UICONTROL Beenden]** aus.
+
+1. Auf der Registerkarte Struktur des Beispielschemas:
+
+   1. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
 
       ![Hinzufügen der Feldergruppe](./assets/add-field-group-button.png)
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihre Schemata einfach erweitern können.
 
-   3. Wählen Sie im Dialog [!UICONTROL Feldergruppen hinzufügen] die Feldergruppe **[!UICONTROL Treueprogramm-Details]** aus der Liste aus.
+   1. Wählen Sie im Dialog [!UICONTROL Feldergruppen hinzufügen] die Feldergruppe **[!UICONTROL Treueprogramm-Details]** aus der Liste aus.
 
       ![Die Feldergruppe „AEP Web SDK ExperienceEvent“](./assets/loyalty-fieldgroup.png)
 
@@ -80,13 +87,13 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Wählen Sie **[!UICONTROL Zurück]** aus, um die Vorschau zu schließen.
 
-   4. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
+   1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 
-4. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
+1. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-loalty-schema-plus.png)
 
-5. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL Profile Core v2]** aus.
 
    ![Identifizierungsobjekt](./assets/identifcation-loyalty-field.png)
 
@@ -94,7 +101,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
-6. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
+1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
    ![Spezifizieren von E-Mail als Identität](./assets/specify-email-loyalty-id.png)
 
@@ -102,7 +109,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Anwenden]** aus. Daraufhin erscheint ein Fingerabdruck-Symbol im E-Mail-Attribut.
 
-7. Wählen Sie die oberste Ebene Ihres Schemas (trägt den Namen des Schemas) und danach den Umschalter **[!UICONTROL Profil]** aus.
+1. Wählen Sie die oberste Ebene Ihres Schemas (trägt den Namen des Schemas) und danach den Umschalter **[!UICONTROL Profil]** aus.
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
@@ -114,7 +121,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Aktivieren eines Schemas für ein Profil](./assets/enable-for-profile.png)
 
-8. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
 Sie haben ein Minimalschema erstellt, das die Treueprogramm-Daten modelliert, die in Adobe Experience Platform aufgenommen werden können. Mithilfe des Schemas können Profile anhand der E-Mail-Adresse identifiziert werden. Durch die Aktivierung des Schemas für das Profil stellen Sie sicher, dass von Ihren Streaming-Quellen erfasste Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
 

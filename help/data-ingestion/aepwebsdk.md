@@ -4,10 +4,10 @@ description: Erläuterung der Datenaufnahme in Customer Journey Analytics über 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 662e9645cdb4b67f364525167e5191a52c474864
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '3580'
-ht-degree: 87%
+source-wordcount: '3607'
+ht-degree: 86%
 
 ---
 
@@ -33,7 +33,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 >[!NOTE]
 >
-> Dieses Schnellstarthandbuch ist eine vereinfachte Anleitung zur Erfassung von Daten, die von Ihrer Site in Adobe Experience Platform erfasst und in Customer Journey Analytics verwendet werden. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
+> Dieses Schnellstarthandbuch ist eine vereinfachte Anleitung zur Erfassung von Daten, die von Ihrer Site in Adobe Experience Platform erfasst wurden, und zur Verwendung in Customer Journey Analytics. Es wird dringend empfohlen, die zusätzlichen Artikel zu lesen, auf die verwiesen wird.
 
 
 ## Einrichten eines Schemas und eines Datensatzes
@@ -53,28 +53,35 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
-2. Wählen Sie **[!UICONTROL Schema erstellen]** aus. Wählen Sie **[!UICONTROL XDM ExperienceEvent]** aus der Optionsliste aus.
+1. Auswählen **[!UICONTROL Schema erstellen]**. .
+1. Wählen Sie im Schritt Klasse auswählen des Assistenten Schema erstellen die Option **[!UICONTROL Erlebnisereignis]**.
 
-   ![Erstellen eines Schemas](./assets/create-ee-schema.png)
+   ![Erstellen eines Schemas](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Ein Erlebnisereignis-Schema wird zum Modellieren des _Verhaltens_ eines Profils verwendet (z. B. Seitenansicht, Hinzufügen von Artikeln zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+   >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+
+   Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-3. Im Bildschirm [!UICONTROL Nicht benanntes Schema]:
+1. Im [!UICONTROL Name und Überprüfungsschritt] des [!UICONTROL Schema erstellen] Assistent:
 
-   1. Geben Sie einen Anzeigenamen für Ihr Schema und (optional) eine Beschreibung ein.
+   1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
 
-      ![Benennen des Schemas](./assets/name-schema.png)
+      ![Benennen des Schemas](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
+   1. Wählen Sie **[!UICONTROL Beenden]** aus.
+
+1. Auf der Registerkarte Struktur des Beispielschemas:
+
+   1. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
 
       ![Hinzufügen der Feldergruppe](./assets/add-field-group-button.png)
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   3. Wählen Sie im Dialog [!UICONTROL Feldergruppen hinzufügen] die Feldergruppe **[!UICONTROL AEP Web SDK ExperienceEvent]** aus der Liste aus.
+   1. Wählen Sie im Dialog [!UICONTROL Feldergruppen hinzufügen] die Feldergruppe **[!UICONTROL AEP Web SDK ExperienceEvent]** aus der Liste aus.
 
       ![Die Feldergruppe „AEP Web SDK ExperienceEvent“](./assets/select-aepwebsdk-experienceevent.png)
 
@@ -84,13 +91,13 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Wählen Sie **[!UICONTROL Zurück]** aus, um die Vorschau zu schließen.
 
-   4. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
+   1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 
-4. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
+1. Wählen Sie **[!UICONTROL +]** neben Ihrem Schemanamen im Bedienfeld [!UICONTROL Struktur] aus.
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-schema-plus.png)
 
-5. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL ExperienceEvent Core v2.1]** aus.
+1. Geben Sie im Bedienfeld [!UICONTROL Feldeigenschaften] als Namen `Identification` und als [!UICONTROL Anzeigename]**[!UICONTROL Identifikation]** ein, wählen Sie als [!UICONTROL Typ] **[!UICONTROL Objekt]** und als [!UICONTROL Feldergruppe] **[!UICONTROL ExperienceEvent Core v2.1]** aus.
 
    ![Identifizierungsobjekt](./assets/identification-field.png)
 
@@ -98,7 +105,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
-6. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
+1. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
 
    ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity.png)
 
@@ -106,7 +113,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Anwenden]** aus. Daraufhin erscheint ein Fingerabdruck-Symbol im ECID-Attribut.
 
-7. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
+1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
    ![Spezifizieren von E-Mail als Identität](./assets/specify-email-identity.png)
 
@@ -116,7 +123,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
-8. Wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas trägt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
+1. Wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas trägt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
@@ -128,7 +135,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Aktivieren eines Schemas für ein Profil](./assets/enable-for-profile.png)
 
-9. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
 Sie haben ein Minimalschema erstellt, das die Daten modelliert, die Sie auf Ihrer Website erfassen können. Mithilfe des Schemas können Profile anhand der Experience Cloud-Identität und -E-Mail-Adresse identifiziert werden. Durch die Aktivierung des Schemas für das Profil können die auf Ihrer Website erfassten Daten zum Echtzeit-Kundenprofil hinzugefügt werden.
 
@@ -265,7 +272,7 @@ Gehen Sie folgendermaßen vor, um die Adobe Experience Platform Web SDK-Erweiter
 
 Weitere Informationen finden Sie unter [Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html).
 
-Richten Sie auch die Experience Cloud ID Service-Erweiterung ein, damit Sie die Experience Cloud-ID einfach verwenden können. Der Experience Cloud-ID-Dienst identifiziert Personen in allen Adobe Experience Cloud-Lösungen.
+Richten Sie auch die Experience Cloud ID Service-Erweiterung ein, damit Sie die Experience Cloud-ID einfach verwenden können. Der Experience Cloud ID-Dienst identifiziert Personen in allen Adobe Experience Cloud-Lösungen.
 
 Gehen Sie folgendermaßen vor, um die Experience Cloud ID Service-Erweiterung zu erstellen und zu konfigurieren:
 

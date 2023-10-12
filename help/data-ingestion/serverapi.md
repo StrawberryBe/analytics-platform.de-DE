@@ -1,18 +1,19 @@
 ---
 title: Daten über die Adobe Experience Platform Edge Network Server-API erfassen
-description: Erfahren Sie, wie Sie Daten über die Adobe Experience Platform Edge Network Server-API und das Edge Network in Customer Journey Analytics erfassen
+description: Erfahren Sie, wie Sie Daten über die Adobe Experience Platform Edge Network Server-API und das Edge Network in Customer Journey Analytics aufnehmen.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '2329'
-ht-degree: 62%
+source-wordcount: '2353'
+ht-degree: 60%
 
 ---
 
 # Daten über die Adobe Experience Platform Edge Network Server-API erfassen
 
-In dieser Kurzanleitung wird erläutert, wie Sie Tracking-Daten von Geräten wie IoT-Geräten, Set-Top-Boxen, Spielekonsolen und Desktop-Anwendungen direkt über die Adobe Experience Platform Edge Network Server API und das Edge Network in Adobe Experience Platform erfassen können. Verwenden Sie dann diese Daten in Customer Journey Analytics.
+In dieser Kurzanleitung wird erläutert, wie Sie Tracking-Daten von Geräten wie IoT-Geräten, Set-Top-Boxen, Spielekonsolen und Desktop-Anwendungen direkt über die Adobe Experience Platform Edge Network Server API und das Edge Network in Adobe Experience Platform erfassen können. Verwenden Sie dann diese Daten im Customer Journey Analytics.
 
 Dazu müssen Sie:
 
@@ -52,28 +53,35 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
-2. Wählen Sie **[!UICONTROL Schema erstellen]** aus. Wählen Sie **[!UICONTROL XDM ExperienceEvent]** aus der Optionsliste aus.
+1. Auswählen **[!UICONTROL Schema erstellen]**. .
+1. Wählen Sie im Schritt Klasse auswählen des Assistenten Schema erstellen die Option **[!UICONTROL Erlebnisereignis]**.
 
-   ![Erstellen eines Schemas](./assets/create-ee-schema.png)
+   ![Erstellen eines Schemas](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (z. B. einen Level im Spiel erreichen). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+   >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+
+   Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
-3. Im Bildschirm [!UICONTROL Nicht benanntes Schema]:
+1. Im [!UICONTROL Name und Überprüfungsschritt] des [!UICONTROL Schema erstellen] Assistent:
 
-   1. Geben Sie einen Anzeigenamen für Ihr Schema und (optional) eine Beschreibung ein.
+   1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
 
-      ![Benennen des Schemas](./assets/name-schema.png)
+      ![Benennen des Schemas](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
+   1. Wählen Sie **[!UICONTROL Beenden]** aus.
+
+1. Auf der Registerkarte Struktur des Beispielschemas:
+
+   1. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
 
       ![Hinzufügen der Feldergruppe](./assets/add-field-group-button.png)
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihr Schema einfach erweitern können.
 
-   3. Im [!UICONTROL Feldergruppen hinzufügen] wählen Sie das **[!UICONTROL Blende Licht]** Feldergruppe aus der Liste. Diese Feldgruppe wird erstellt, um den Benutzerfortschritt beim Spielen eines fiktiven Spiels mit dem Titel Blinding Light auf einer Konsole zu verfolgen.
+   1. Im [!UICONTROL Feldergruppen hinzufügen] wählen Sie das **[!UICONTROL Blende Licht]** Feldergruppe aus der Liste. Diese Feldgruppe wird erstellt, um den Benutzerfortschritt beim Spielen eines fiktiven Spiels mit dem Titel Blinding Light auf einer Konsole zu verfolgen.
 
       ![Feldgruppe &quot;Blinding Light&quot;](assets/schema-fieldgroup-blindinglight.png)
 
@@ -83,21 +91,21 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
       Wählen Sie **[!UICONTROL Zurück]** aus, um die Vorschau zu schließen.
 
-   4. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
+   1. Wählen Sie **[!UICONTROL Feldergruppen hinzufügen]** aus.
 
-4. Auswählen **[!UICONTROL +]** neben Ihrem Schemanamen.
+1. Auswählen **[!UICONTROL +]** neben Ihrem Schemanamen.
 
    ![Beispiel für die Schaltfläche zum Hinzufügen eines Feldes zum Schema](./assets/example-gamingschema-plus.png)
 
-5. Im [!UICONTROL Feldeigenschaften] Bereich, eingeben `identification` als [!UICONTROL Feldname], **[!UICONTROL Bezeichnung]** als [!UICONTROL Anzeigename]auswählen **[!UICONTROL Objekt]** als [!UICONTROL Typ] und wählen **[!UICONTROL ExperienceEvent Core v2.1]** als [!UICONTROL Feldergruppe].
+1. Im [!UICONTROL Feldeigenschaften] Bereich, eingeben `identification` als [!UICONTROL Feldname], **[!UICONTROL Bezeichnung]** als [!UICONTROL Anzeigename]auswählen **[!UICONTROL Objekt]** als [!UICONTROL Typ] und wählen **[!UICONTROL ExperienceEvent Core v2.1]** als [!UICONTROL Feldergruppe].
 
    ![Identifizierungsobjekt](./assets/identification-field-gaming.png)
 
-   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie die Spielprofile anhand der Experience Cloud-ID und der E-Mail-Adresse identifizieren, die sie für die Anmeldung bei der Spielkonsole verwenden. Es gibt viele weitere Attribute, mit denen Sie die Identifizierung Ihrer Person verfolgen können.
+   Das Identifizierungsobjekt fügt Ihrem Schema Identifizierungsfunktionen hinzu. In Ihrem Fall möchten Sie Profile, die Ihr Spiel spielen, mithilfe der Experience Cloud-ID und der E-Mail-Adresse identifizieren, die sie für die Anmeldung bei der Spielkonsole verwenden. Es gibt viele weitere Attribute, mit denen Sie die Identifizierung Ihrer Person verfolgen können.
 
    Wählen Sie **[!UICONTROL Anwenden]** aus, um dieses Objekt zu Ihrem Schema hinzuzufügen.
 
-6. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
+1. Wählen Sie im soeben hinzugefügten Identifizierungsobjekt das Feld **[!UICONTROL ECID]** aus und danach im rechten Bedienfeld **[!UICONTROL Identität]** und **[!UICONTROL Primäre Identität]** sowie die Option **[!UICONTROL ECID]** in der Liste [!UICONTROL Identity-Namespace].
 
    ![Spezifizieren Sie die ECID als Identität](./assets/specify-identity-gaming.png)
 
@@ -105,7 +113,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Anwenden]** aus. Daraufhin erscheint ein Fingerabdruck-Symbol im ECID-Attribut.
 
-7. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
+1. Wählen Sie das Feld **[!UICONTROL E-Mail]** im soeben hinzugefügten Identifizierungsobjekt aus und danach **[!UICONTROL Identität]** und **[!UICONTROL E-Mail]** in der Liste [!UICONTROL Identity-Namespace] im Bedienfeld [!UICONTROL Feldeigenschaften].
 
    ![Spezifizieren von E-Mail als Identität](./assets/specify-email-identity-gaming.png)
 
@@ -115,7 +123,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    Wählen Sie **[!UICONTROL Speichern]** aus.
 
-8. Wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas trägt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
+1. Wählen Sie das Stammelement Ihres Schemas aus, das den Namen des Schemas trägt, und wählen Sie dann den Umschalter **[!UICONTROL Profil]** aus.
 
    Sie werden aufgefordert, das Schema für das Profil zu aktivieren. Nach der Aktivierung werden Daten, die auf der Basis dieses Schemas in Datensätze aufgenommen werden, zum Echtzeit-Kundenprofil hinzugefügt.
 
@@ -127,7 +135,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    ![Aktivieren eines Schemas für ein Profil](./assets/enable-for-profile.png)
 
-9. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um Ihr Schema zu speichern.
 
 Sie haben ein Minimalschema erstellt, das die Daten, die Sie aus Ihrem Spiel erfassen können, modelliert. Mithilfe des Schemas können Profile anhand der Experience Cloud-Identität und -E-Mail-Adresse identifiziert werden. Durch Aktivierung des Schemas für das Profil stellen Sie sicher, dass aus Ihrem Konsolenspiel erfasste Daten dem Echtzeit-Kundenprofil hinzugefügt werden.
 
@@ -365,4 +373,4 @@ Weitere Informationen zum Erstellen von Projekten und zum Durchführen einer Ana
 
 >[!SUCCESS]
 >
->Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten (Schema) erfasst werden sollen und wo sie (Datensatz) in Adobe Experience Platform gespeichert werden sollen. Sie haben einen Datenspeicher im Edge-Netzwerk konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie die Edge Network Server-API verwendet, um diese Daten an Ihren Datastream zu senden. Sie haben eine Verbindung in Customer Journey Analytics definiert, um Ihre Spieldaten und andere Daten zu verwenden. Mit Ihrer Datenansichtsdefinition können Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Schließlich haben Sie Ihre ersten Projektvisualisierungen und -analysen für Ihre Spieldaten erstellt.
+>Sie haben jetzt alle Schritte ausgeführt. Definieren Sie zunächst, welche Daten (Schema) erfasst werden sollen und wo sie (Datensatz) in Adobe Experience Platform gespeichert werden sollen. Sie haben einen Datenspeicher im Edge-Netzwerk konfiguriert, um sicherzustellen, dass Daten an diesen Datensatz weitergeleitet werden können. Anschließend haben Sie die Edge Network Server-API verwendet, um diese Daten an Ihren Datastream zu senden. Sie haben eine Verbindung im Customer Journey Analytics definiert, um Ihre Spieldaten und andere Daten zu verwenden. Mit Ihrer Datenansichtsdefinition können Sie festlegen, welche Dimension und Metriken verwendet werden sollen. Schließlich haben Sie Ihre ersten Projektvisualisierungen und -analysen für Ihre Spieldaten erstellt.
