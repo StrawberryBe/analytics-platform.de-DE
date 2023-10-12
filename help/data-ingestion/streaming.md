@@ -4,7 +4,7 @@ description: Erklärung der Aufnahme und Verwendung von Streaming-Daten in Custo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
+source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
 workflow-type: tm+mt
 source-wordcount: '2026'
 ht-degree: 85%
@@ -50,15 +50,17 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 1. Wählen Sie in der Adobe Experience Platform-Benutzeroberfläche in der linken Leiste die Option **[!UICONTROL Schemata]** in [!UICONTROL DATEN-MANAGEMENT] aus.
 
 1. Auswählen **[!UICONTROL Schema erstellen]**. .
-1. Wählen Sie im Schritt Klasse auswählen des Assistenten Schema erstellen die Option **[!UICONTROL Individuelles Profil]**.
+1. Im Schritt Klasse auswählen des Assistenten Schema erstellen :
 
-   ![Erstellen eines Schemas](./assets/create-pr-schema-wizard-step-1.png)
+   1. Auswählen **[!UICONTROL Individuelles Profil]**.
 
-   >[!INFO]
-   >
-   >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+      ![Erstellen eines Schemas](./assets/create-pr-schema-wizard-step-1.png)
 
-   Klicken Sie auf **[!UICONTROL Weiter]**.
+      >[!INFO]
+      >
+      >    Ein Erlebnisereignis-Schema wird zum Modellieren der _Verhalten_ eines Profils (wie Name der Szene, Schaltfläche zum Hinzufügen zum Warenkorb). Das Schema „Individuelles Profil“ wird verwendet, um die _Attribute_ eines Profils zu modellieren (z. B. Name, E-Mail, Geschlecht).
+
+   1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
 
 1. Im [!UICONTROL Name und Überprüfungsschritt] des [!UICONTROL Schema erstellen] Assistent:
