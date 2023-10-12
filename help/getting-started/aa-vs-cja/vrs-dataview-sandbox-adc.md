@@ -3,10 +3,10 @@ title: Virtual Report Suites, Datenansichten, Adobe Experience Platform-Sandboxe
 description: Erfahren Sie mehr über virtuelle Reporting-Umgebungen und Sandbox-Umgebungen.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '771'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe bietet eine Vielzahl von Möglichkeiten zum Erstellen virtueller Reporting
 * Customer Journey Analytics-Datenansichten
 * Adobe Experience Platform-Sandboxes
 
-## Virtual Report Suites (VRS) in Adobe Analytics
+## Virtual Report Suites in Adobe Analytics
 
 Weitere Informationen finden Sie unter [Virtual Report Suites – Übersicht](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=de).
 
@@ -28,10 +28,10 @@ Eine Virtual Report Suite:
 * Kann auf zerstörungsfreie Weise auf historische und neue Daten angewendet werden.
 * Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten auf Basis einer Adobe Analytics-Report Suite zur Verwendung durch verschiedene Unternehmens-Teams.
 * Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzer in Adobe Analytics zu steuern und diese Daten zu kuratieren.
-* Bietet optional Funktionen für die [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) für Adobe Analytics. In diesem Fall kann eine VRS verwendet werden, um eine benutzerdefinierte Definition für „Besuch“ zu erstellen.
+* Bietet optional Funktionen für die [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) für Adobe Analytics. In diesem Fall kann eine Virtual Report Suite verwendet werden, um eine benutzerdefinierte Definition für &quot;Besuch&quot;zu erstellen.
 * Wird zur Berichtslaufzeit angewendet, ähnlich wie die Segmentauswertung. Dies geschieht, _nachdem_ die Daten in Adobe Analytics erfasst und gespeichert wurden.
 * Ist für [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) in Adobe Analytics erforderlich.
-* Weist dieselbe Anzahl von Variablen für die Verwendung auf wie eine standardmäßige Analytics-Report Suite (250 eVars, 250 Eigenschaften, 1.000 Ereignisse), allerdings kann die VRS-Kuratierung begrenzen, welche Variablen für Benutzende verfügbar sind.
+* Hat dieselbe Anzahl von Variablen für die Verwendung als Standard-Analytics Report Suite (250 eVars, 250 Props, 1000 Ereignisse) zur Verfügung, obwohl die Kuratierung der Virtual Report Suite die Benutzerexponierung begrenzen kann.
 * Unterstützt benutzerdefinierte Kalenderoptionen.
 
 Einschränkungen einer Virtual Report Suite:

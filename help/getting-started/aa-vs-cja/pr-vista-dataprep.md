@@ -3,14 +3,14 @@ title: Verarbeitungsregeln, VISTA und Klassifizierungen vs. Datenvorbereitung f�
 description: Erfahren Sie mehr über die Datenumwandlung mithilfe von Verarbeitungsregeln und VISTA statt mithilfe der Datenvorbereitung.
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Verarbeitungsregeln, VISTA und Klassifizierungen versus Datenvorbereitung
+# Verarbeitungsregeln, VISTA und Klassifizierungen im Vergleich zur Datenvorbereitung
 
 [Verarbeitungsregeln und VISTA-Regeln](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=de) in Adobe Analytics stellen eine Möglichkeit bereit, Daten, die an die [Datenerfassung](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=de) in Adobe Analytics übergeben werden, umzuwandeln und zu bearbeiten. Diese Umwandlungen werden im Rahmen der Datenverarbeitung in Adobe vorgenommen, bevor die Daten zu Reporting- und Analysezwecken in Adobe Analytics gespeichert werden.
 

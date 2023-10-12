@@ -5,16 +5,16 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 65%
+source-wordcount: '297'
+ht-degree: 57%
 
 ---
 
 # Anmerkungen – Übersicht
 
-Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden. Sie können etwa ein Datum oder einen Datumsbereich mit bekannten Datenproblemen, öffentlichen Feiertagen, Kampagnenstarts usw. kommentieren. Sie können dann Ereignisse grafisch darstellen und sehen, ob sich Kampagnen oder andere Ereignisse auf den Traffic Ihrer Site, den Umsatz oder andere Metriken ausgewirkt haben.
+Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und Einblicke effektiv übermitteln. Durch sie können Sie Kalenderereignisse an bestimmte Dimensionen/Metriken binden. Sie können etwa ein Datum oder einen Datumsbereich mit bekannten Datenproblemen, öffentlichen Feiertagen, Kampagnenstarts usw. kommentieren. Anschließend können Sie Ereignisse grafisch darstellen und sehen, ob Kampagnen oder andere Ereignisse den Traffic Ihrer Site, die Nutzung mobiler Apps, den Umsatz oder andere Metriken beeinflusst haben.
 
 Angenommen, Sie geben Projekte für Ihr Unternehmen frei. Wenn der Traffic aufgrund einer Marketing-Kampagne stark angestiegen ist, können Sie die Anmerkung &quot;Kampagnenstartdatum&quot;erstellen und sie auf die gesamte Datenansicht eingrenzen. Wenn Ihre Benutzer Datensätze anzeigen, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten neben den Daten.
 

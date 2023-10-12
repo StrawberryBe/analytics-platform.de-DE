@@ -3,14 +3,14 @@ title: Vergleich der Datenverarbeitung zwischen Reporting-Funktionen von Adobe A
 description: Verstehen der Unterschiede bei der Datenverarbeitung für die verschiedenen Reporting-Funktionen
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
-workflow-type: ht
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 
 ---
 
-# Vergleich der Datenverarbeitung in Adobe Analytics und Customer Journey Analytics.
+# Vergleich der Datenverarbeitung in Adobe Analytics und Customer Journey Analytics
 
 Häufig ist es erforderlich, Daten zu verarbeiten, damit sie für Berichte nützlich werden. Sie können diese Daten in verschiedenen Phasen der Journey verarbeiten, von der Datenerfassung bis zur Erstellung des Berichts oder der Visualisierung.
 
