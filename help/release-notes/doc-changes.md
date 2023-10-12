@@ -4,7 +4,7 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bf1e14fc0ecfdab3ff7032133d05ab0f40f123d6
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 99%
@@ -20,7 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Oktober 2023** | |
-| Vergleich mit Adobe Analytics | Eine Übersichtsseite wurde als Einführung zum Vergleichen und Verständnis der Unterschiede zwischen Customer Journey Analytics und Adobe Analytics hinzugefügt. |
+| Vergleich mit Adobe Analytics | Hinzufügung von [Übersichtsseite](../getting-started/aa-vs-cja/overview.md) als Einführung zum Vergleichen und Verständnis der Unterschiede zwischen Customer Journey Analytics und Adobe Analytics. |
 | Zusätzliche Funktionalität von abgeleiteten Feldern | Aktualisierte Dokumentation für die neue [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) -Funktion. |
 | **September 2023** | |
 | Struktur von Artikeln für das Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“ wurde aktualisiert | Der Ordner „Bei Medienwiedergabe verbrachte Zeit“ wurde entfernt und der Inhalt des Ordners in einem einzigen Artikel zusammengefasst: [Bedienfeld „Bei Medienwiedergabe verbrachte Zeit“](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Diese Änderung entspricht eher der Dokumentation für andere Bedienfelder.</p> |

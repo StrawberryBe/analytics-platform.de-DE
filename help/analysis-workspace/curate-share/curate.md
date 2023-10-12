@@ -4,10 +4,10 @@ keywords: Analysis Workspace-Kuratierung
 title: Kuratieren von Projekten
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: f2f85db4b670f1c4b1f6bc0954a5549c793edf5a
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 92%
 
 ---
 
@@ -47,13 +47,13 @@ So entfernen Sie die Projektkuratierung und stellen Sie den vollständigen Satz 
 
 In einem kuratierten Projekt wird dem Empfänger in der linken Leiste die Option **[!UICONTROL Alle anzeigen]** für Komponenten angezeigt. [!UICONTROL Alle anzeigen] zeigt verschiedene Komponentensätze an, je nach:
 
-* Berechtigungsebene des Benutzers (Administrator oder Nicht-Administrator)
+* Berechtigungsstufe des Benutzers (Administrator oder Nicht-Administrator)
 * Projektrolle (Inhaber/Bearbeiter oder nicht)
 * Art der angewendeten Kuratierung (auf Projektebene)
 
 | Kuratierungstyp | Admin hat Einsicht | Projektverantwortlicher ohne Administratorrechte (oder Bearbeitungsrolle) hat Einsicht | Duplizierte Rolle ohne Administratorrechte hat Einsicht |
 | --- | --- | --- | --- |
 | **Komponenten, die in einer Datenansicht „versteckt“ sind** | Alle für die Berichterstellung verfügbaren Datenansichtskomponenten (für ausgeblendete Komponenten ist das Klicken auf „Alle anzeigen“ erforderlich) | Nicht für die Berichterstellung verfügbar | Nicht für die Berichterstellung verfügbar |
-| **Komponenten, die zur Datenansicht hinzugefügt oder daraus entfernt wurden** | Nur Komponenten, die zur Datenansicht hinzugefügt wurden (ausgeblendet oder nicht ausgeblendet). Administratoren können keine Berichte zu Feldern oder Komponenten erstellen, die nicht in der Datenansicht definiert sind. | Nur Komponenten, die zur Datenansicht hinzugefügt wurden, oder Komponenten, für die der Benutzer verantwortlich ist oder die für ihn freigegeben wurden. Ausgeblendete Komponenten sind nicht verfügbar (wie VRS-Kuratierung). | Nur Komponenten, die zum DV hinzugefügt wurden, sind nicht ausgeblendet und wurden in die Projektkuratierung aufgenommen. |
+| **Komponenten, die zur Datenansicht hinzugefügt oder daraus entfernt wurden** | Nur Komponenten, die zur Datenansicht hinzugefügt wurden (ausgeblendet oder nicht ausgeblendet). Administratoren können keine Berichte zu Feldern oder Komponenten erstellen, die nicht in der Datenansicht definiert sind. | Nur Komponenten, die zur Datenansicht hinzugefügt wurden, oder Komponenten, für die der Benutzer verantwortlich ist oder die für ihn freigegeben wurden. Ausgeblendete Komponenten sind nicht verfügbar (z. B. Kuratierung der Virtual Report Suite). | Nur Komponenten, die zum DV hinzugefügt wurden, sind nicht ausgeblendet und wurden in die Projektkuratierung aufgenommen. |
 | **Kuratierte Komponenten in einem Projekt** | Alle für die Berichterstellung verfügbaren Datenansichtskomponenten (für ausgeblendete Komponenten ist das Klicken auf „Alle anzeigen“ erforderlich) | Alle nicht ausgeblendeten Datenansichtskomponenten (erfordert das Klicken auf „Alle anzeigen“) | Nur kuratierte Komponenten sowie alle Komponenten, für die der Benutzer verantwortlich ist oder die für ihn freigegeben wurden |
 | **Kuratiertes Projekt mit einer Datenansicht mit ausgeblendeten Komponenten** | Alle für die Berichterstellung verfügbaren Datenkomponenten (für ausgeblendete und nicht kuratierte Komponenten ist das Klicken auf „Alle anzeigen“ erforderlich) | Alle nicht kuratierten Projektkomponenten, alle nicht ausgeblendeten Datenansichtskomponenten und alle Komponenten, für die der Benutzer verantwortlich ist oder die für ihn freigegeben wurden | Nur kuratierte Komponenten sowie alle Komponenten, für die der Benutzer verantwortlich ist oder die für ihn freigegeben wurden |
