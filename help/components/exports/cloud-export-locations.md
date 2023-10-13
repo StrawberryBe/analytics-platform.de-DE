@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3c1e256bb2197ed844d699e4a28076b014566b99
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -66,6 +66,21 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 1. Wählen Sie [!UICONTROL **Speichern**] aus.
 
 1. Sie können jetzt Daten aus Analysis Workspace in das Konto und den Speicherort exportieren, die Sie konfiguriert haben. Informationen zum Exportieren von Daten in die Cloud finden Sie unter [Exportieren von Projektdaten in die Cloud](/help/analysis-workspace/export/export-cloud.md).
+
+1. Die einfachste Möglichkeit, auf Ihre Daten in der AEP Data Landing Zone zuzugreifen, besteht in der Verwendung des Microsoft Azure Storage Explorer. Dies ist dasselbe Tool, das in den Anweisungen zum Konfigurieren der [AEP Data Landing Zone-Konto](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+
+   1. Öffnen Sie die [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Navigieren Sie zu [!UICONTROL **Speicherkonten**] > [!UICONTROL **(Angehängte Container)**] > [!UICONTROL **Blob-Container**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
+
+      >[!NOTE]
+      >
+      >Der Ordnername **[!UICONTROL cjaexport-_number_]**ist der Standardname, der von Azure Storage Explorer bereitgestellt wird. Wenn Sie nur eine Verbindung mit Ihrem SAS-URI haben (was normal ist), lautet der Name dieses Ordners **[!UICONTROL cjaexport-1]**.
+
+
+      ![Auf Dateien in Azure Storage Explorer zugreifen](assets/azure-storage-explorer-access.png)
+
+   1. Wählen Sie den Export aus, den Sie herunterladen möchten, und klicken Sie auf [!UICONTROL **Herunterladen**] herunterladen.
 
 ### Amazon S3 Role ARN
 
