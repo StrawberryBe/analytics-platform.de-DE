@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1826'
 ht-degree: 4%
 
 ---
@@ -65,9 +65,9 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 
    ![Dialogfeld &quot;Konto exportieren&quot;AEP Data Landing Zone](assets/export-account-aep.png)
 
-1. Kopieren Sie den Inhalt der [!UICONTROL **SAS-URI**] in die Zwischenablage.
+1. Kopieren Sie den Inhalt der [!UICONTROL **SAS-URI**] in die Zwischenablage. Mit diesem SAS-URI greifen Sie auf die Daten zu, die aus Analysis Workspace aus der AEP Data Landing Zone exportiert werden.
 
-   Mit diesem SAS-URI greifen Sie auf die Daten zu, die aus Analysis Workspace aus der AEP Data Landing Zone exportiert werden.
+   Wenn dieses Feld leer ist, müssen Sie eine Zugriffsberechtigung für Adobe Experience Platform erhalten.
 
 1. Konfigurieren Sie in Adobe Experience Platform Ihren Dateneinstiegszonen-Container, um den von Ihnen kopierten SAS-URI zu verwenden.
 
@@ -82,6 +82,11 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
       Sie können die in den Abschnitten beschriebenen Aufgaben überspringen. [Abrufen der Anmeldeinformationen für Ihre Dateneinstiegszone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) und [Aktualisieren der Landingzone-Anmeldedaten für Daten](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), da der von Ihnen kopierte URI diese Anmeldeinformationen enthält.
 
    1. Wenn Sie die Adobe Experience Platform-Dokumentation befolgen und zur [!UICONTROL **Blob-Container SAS-URL**] Fügen Sie den SAS-URI ein, den Sie in Schritt 3 kopiert haben.
+
+      >[!NOTE]
+      >
+      >Sie müssen diese Aktion alle 7 Tage ausführen, da der SAS-URI 7 Tage nach seiner Erstellung abläuft. Sie können ein Skript erstellen, um diesen Prozess zu automatisieren.
+
 
       ![SAS-URL-Feld](assets/blob-container-sas-uri.png)
 

@@ -3,9 +3,9 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 49d91b513abd545ea73c7867817cd8724b460be4
-workflow-type: ht
-source-wordcount: '777'
+source-git-commit: 2828a38161222a5433b15045a70cb25cfbc8bae7
+workflow-type: tm+mt
+source-wordcount: '775'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 4. O
 | **Migrieren von Adobe Analytics-Projekten und allen enthaltenen Komponenten zu Customer Journey Analytics** | Sie können Ihre Adobe Analytics-Projekte jetzt zu Customer Journey Analytics migrieren. Dadurch wird der Übergang von Adobe Analytics zu Customer Journey Analytics vereinfacht. <p>Wenn Sie Projekte zu Customer Journey Analytics migrieren, werden Assets aus einer Report Suite inAdobe Analytics einer Customer Journey Analytics-Datenansicht zugeordnet.</p> <p>Sie migrieren Projekte über die Adobe Analytics-Benutzeroberfläche zu Customer Journey Analytics. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de)</p> | Nicht angegeben | 9. Oktober 2023 |
 | **Adobe Product Analytics: Reihe ein-/ausblenden** | Klicken Sie auf die Diagrammlegende oder Tabellenzeilen, um die Sichtbarkeit von Reihen in Ihren Visualisierungen zu steuern.  [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=de) | Nicht angegeben | 4. Oktober 2023 |
 | **Anmerkungen in Adobe Product Analytics** | Die geführte Analyse unterstützt jetzt die Möglichkeit, in Customer Journey Analytics erstellte Anmerkungen anzuzeigen. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=de) | Nicht angegeben | 4. Oktober 2023 |
-| **Reporting Activity Manager** | Reporting Activity Manager zeigt die Berichtskapazität für jede Verbindung in Ihrer Organisation an. Er bietet Admins detaillierte Einblicke in die Berichtsnutzung und hilft ihnen, Kapazitätsprobleme bei Spitzen während der Berichterstellung mühelos zu diagnostizieren und zu beheben. Zu den wichtigsten Funktionen von Reporting Activity Manager gehören:<ul><li>Abbrechen aktueller Berichtsanfragen (einschließlich Anfragen aus geführten Analysen und Exporten von vollständigen Tabellen)</li><li>Einschränken nachfolgender Anfragen für einen bestimmten Zeitraum</li></ul>Admins können nicht nur aktuelle Anfragen abbrechen, sondern auch Anfragen für einen bestimmten Zeitraum einschränken. Admins können Anfragen nach Anfrage, Projekt oder Benutzerin bzw. Benutzer einschränken.  Weitere Informationen (in Kürze verfügbar) | 17. Oktober 2023 | 23. Oktober 2023 |
+| **Reporting Activity Manager** | Reporting Activity Manager zeigt die Berichtskapazität für jede Verbindung in Ihrer Organisation an. Er bietet Admins detaillierte Einblicke in die Berichtsnutzung und hilft ihnen, Kapazitätsprobleme bei Spitzen während der Berichterstellung mühelos zu diagnostizieren und zu beheben. Zu den wichtigsten Funktionen von Reporting Activity Manager gehören:<ul><li>Abbrechen aktueller Berichtsanfragen (einschließlich Anfragen aus geführten Analysen und Exporten von vollständigen Tabellen)</li><li>Einschränken nachfolgender Anfragen für einen bestimmten Zeitraum</li></ul>Admins können nicht nur aktuelle Anfragen abbrechen, sondern auch Anfragen für einen bestimmten Zeitraum einschränken. Admins können Anfragen nach Anfrage, Projekt oder Benutzerin bzw. Benutzer einschränken.  [Weitere Informationen](/help/reporting-activity-manager/reporting-activity-overview.md) | 17. Oktober 2023 | 23. Oktober 2023 |
 
 {style="table-layout:auto"}
 
