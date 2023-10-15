@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
+source-git-commit: 7b90ce212b6964fde6bdf2d47b2c751330e4f399
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 17%
@@ -302,7 +302,7 @@ Nachdem Sie Ihre Komponenten ordnungsgemäß definiert haben, können Sie jetzt 
 
 Nachfolgend finden Sie ein Beispiel für ein Workspace-Projekt, das auf der oben beschriebenen Verbindungs- und Datenansicht basiert. Weitere Informationen finden Sie in den Beschreibungen für jede Visualisierung.
 
-+++ Details
++++ Projekt  
 
 ![Visualisierungen](assets/visualizations.png)
 
