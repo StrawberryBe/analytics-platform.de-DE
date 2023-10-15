@@ -3,7 +3,7 @@ title: Übersicht über die Berichterstellung in Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 34%
@@ -29,6 +29,8 @@ Reporting Activity Manager bietet die folgenden Vorteile:
 * Hier können Sie zukünftige Anforderungen für einen bestimmten Zeitraum einschränken. Sie können bestimmte Anforderungen einschränken oder alle Anforderungen eines bestimmten Benutzers oder Anforderungen einschränken, die mit einem bestimmten Projekt verknüpft sind.
 
 ## Zugriffsberechtigung
+
+<!-- update for CJA -->
 
 Zur Verwaltung der Berichtsaktivität benötigen Sie die Berechtigung Analytics-Produkt-Administrator in Adobe Admin Console.
 

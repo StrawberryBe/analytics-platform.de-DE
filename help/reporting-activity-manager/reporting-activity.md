@@ -3,10 +3,10 @@ title: Berichtsaktivität im Reporting Activity Manager anzeigen
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: dba42bedd14c4c6d958feab9a1ebdc137d489f32
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 17%
+source-wordcount: '1731'
+ht-degree: 16%
 
 ---
 
@@ -42,26 +42,26 @@ Weitere Informationen zum Reporting Activity Manager, einschließlich der wichti
 
    | UI-Element | Beschreibung |
    | --- | --- |
-   | **[!UICONTROL -Verbindung]** | Die Verbindung, deren Berichtsaktivität Sie überwachen. |
-   | **[!UICONTROL Virtual Report Suites]** | Zeigt alle Virtual Report Suites an, die in diese zugrunde liegende Report Suite einfließen. Virtual Report Suites ermöglichen eine höhere Komplexität von Berichtsanfragen aufgrund zusätzlich anwendbarer Filter- und Segmentierungsebenen. Alle Anforderungen, die von Virtual Report Suites stammen, werden in der zugrunde liegenden Report Suite kombiniert.<p>Wenn Sie z. B. 10 Anforderungen aus 5 Virtual Report Suites haben, sind dies 50 Anforderungen auf Basis-Ebene-Report Suite. Auf diese Weise können Sie sehr schnell die Kapazitätsgrenzen erreichen. |
-   | **[!UICONTROL Kapazitätsauslastung]** | Der Prozentsatz der verwendeten Berichtskapazität der Report Suite in Echtzeit. <p>**Hinweis** Eine Nutzungskapazität von 100 % bedeutet nicht unbedingt, dass Sie sofort mit dem Abbrechen von Berichtsanfragen beginnen sollten. 100 % der Nutzkapazität können gesund sein, wenn die durchschnittliche Wartezeit vernünftig ist. Andererseits könnte die Nutzungskapazität von 100 % auf ein Problem hindeuten, wenn auch die Anzahl der Anforderungen in der Warteschlange wächst.</p> |
+   | **[!UICONTROL Verbindung]** | Die Verbindung, deren Berichtsaktivität Sie überwachen. |
+   | **[!UICONTROL Datenansichten]** | Zeigt alle Datenansichten an, die in die Verbindung eingespeist werden. Datenansichten erhöhen die Komplexität von Berichtsanforderungen aufgrund zusätzlicher Ebenen der angewendeten Filterung und Segmentierung. Alle Anforderungen, die aus der Datenansicht stammen, werden in der Verbindung kombiniert.<p>Wenn Sie beispielsweise 10 Anfragen von 5 Datenansichten haben, sind dies 50 Anfragen in der Verbindung. Auf diese Weise können Sie sehr schnell die Kapazitätsgrenzen erreichen. |
+   | **[!UICONTROL Kapazitätsauslastung]** | Der Prozentsatz der verwendeten Berichtskapazität der Verbindung in Echtzeit. <p>**Hinweis** Eine Nutzungskapazität von 100 % bedeutet nicht unbedingt, dass Sie sofort mit dem Abbrechen von Berichtsanfragen beginnen sollten. 100 % der Nutzkapazität können gesund sein, wenn die durchschnittliche Wartezeit vernünftig ist. Andererseits könnte die Nutzungskapazität von 100 % auf ein Problem hindeuten, wenn auch die Anzahl der Anforderungen in der Warteschlange wächst.</p> |
    | **[!UICONTROL Anfragen in der Warteschlange]** | Die Anzahl der zu verarbeitenden Anforderungen. <!-- ??? --> |
    | **[!UICONTROL Wartezeit in der Warteschlange]** | Die durchschnittliche Wartezeit, bevor die Verarbeitung von Anforderungen beginnt. <!-- ???? --> |
-   | **[!UICONTROL Status]** | Folgende Status sind möglich: <ul><li>[!UICONTROL **Aktiv**] (blau): Berichte wurden für die Report Suite ausgeführt und werden auf Aktivität überwacht.</li><li>[!UICONTROL **Inaaktiv**] (grau): Für die Report Suite wurden bisher keine Berichte ausgeführt. Dieser Status wird nur angezeigt, wenn Report Suites zum ersten Mal erstellt werden.</li></ul> |
+   | **[!UICONTROL Status]** | Folgende Status sind möglich: <ul><li>[!UICONTROL **Aktiv**] (blau): Berichte wurden für die Verbindung ausgeführt und werden auf Aktivität überwacht.</li><li>[!UICONTROL **Inaaktiv**] (grau): Für die Verbindung wurden bisher keine Berichte ausgeführt. Dieser Status wird nur angezeigt, wenn Verbindungen zum ersten Mal erstellt werden.</li></ul> |
 
    {style="table-layout:auto"}
 
-## Berichtsaktivität für eine einzelne Report Suite anzeigen
+## Berichtsaktivität für eine einzelne Verbindung anzeigen
 
 1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Instrumente**] > [!UICONTROL **Reporting Activity Manager**].
 
-1. Wählen Sie den verknüpften Titel der Report Suite aus, für die Sie Details anzeigen möchten.
+1. Wählen Sie den verknüpften Titel der Verbindung aus, für die Sie Details anzeigen möchten.
 
-   Berichtsaktivitätsdaten werden für die von Ihnen ausgewählte Report Suite angezeigt.
+   Berichtsaktivitätsdaten werden für die ausgewählte Verbindung angezeigt.
 
-   <!-- Need to update this screenshot: ![report suite](assets/indiv-report-ste.png) -->
+   <!-- Need to update this screenshot: ![connection](assets/indiv-report-ste.png) -->
 
-1. Verwenden Sie die verfügbaren Diagramme und Tabellen, um die Berichtsaktivität in der Report Suite zu verstehen.
+1. Verwenden Sie die verfügbaren Diagramme und Tabellen, um die Berichtsaktivität in der Verbindung zu verstehen.
 
    * [Diagramme anzeigen](#view-graphs)
 
@@ -69,13 +69,13 @@ Weitere Informationen zum Reporting Activity Manager, einschließlich der wichti
 
 ### Diagramme anzeigen
 
-Die folgenden Diagramme helfen Ihnen dabei, die Aktivitäten in der Report Suite besser zu verstehen.
+Die folgenden Diagramme helfen Ihnen dabei, die in der Verbindung stattfindenden Aktivitäten besser zu verstehen.
 
 Wenn keine Diagramme sichtbar sind, wählen Sie die [!UICONTROL **Diagramme anzeigen**] Schaltfläche.
 
 #### Auslastungsdiagramm {#utilization}
 
-Das Nutzungsdiagramm zeigt die Nutzung der Berichte für die ausgewählte Report Suite in den letzten 2 Stunden.
+Das Nutzungsdiagramm zeigt die Nutzung der Berichte für die ausgewählte Verbindung über die letzten 2 Stunden.
 
 Bewegen Sie den Mauszeiger über das Diagramm, um Zeitpunkte anzuzeigen, an denen der Prozentsatz der Nutzungskapazität für diese Minute am höchsten war.
 
@@ -86,7 +86,7 @@ Bewegen Sie den Mauszeiger über das Diagramm, um Zeitpunkte anzuzeigen, an dene
 
 #### Diagramm &quot;Unique Users&quot;
 
-Das Diagramm Unique Users zeigt die Berichtsaktivität für die ausgewählte Report Suite in den letzten 2 Stunden an.
+Das Diagramm Unique Users zeigt die Berichtsaktivität für die ausgewählte Verbindung über die letzten 2 Stunden an.
 
 Bewegen Sie den Mauszeiger über das Diagramm, um die Zeitpunkte anzuzeigen, an denen die maximale Anzahl von Benutzern für diese Minute lag.
 
@@ -97,7 +97,7 @@ Bewegen Sie den Mauszeiger über das Diagramm, um die Zeitpunkte anzuzeigen, an 
 
 #### Anforderungsdiagramm
 
-Das Anforderungsdiagramm zeigt die Anzahl der verarbeiteten und abgeschlossenen Anfragen für die ausgewählte Report Suite in den letzten 2 Stunden an.
+Das Anforderungsdiagramm zeigt die Anzahl der verarbeiteten und abgeschlossenen Anfragen für die ausgewählte Verbindung in den letzten 2 Stunden an.
 
 Bewegen Sie den Mauszeiger über das Diagramm, um die Zeitpunkte anzuzeigen, an denen die maximale Anzahl von Anforderungen für diese Minute am höchsten war.
 
@@ -108,7 +108,7 @@ Bewegen Sie den Mauszeiger über das Diagramm, um die Zeitpunkte anzuzeigen, an 
 
 #### Einreihungsdiagramm
 
-Das Queuing-Diagramm zeigt die durchschnittliche Wartezeit (in Sekunden) für die Berichterstellungsanfragen für die ausgewählte Report Suite in den letzten 2 Stunden an.
+Das Queuing-Diagramm zeigt die durchschnittliche Wartezeit der Warteschlange (in Sekunden) für Reporting-Anforderungen für die ausgewählte Verbindung über die letzten 2 Stunden an.
 
 Bewegen Sie den Mauszeiger über das Diagramm, um Zeitpunkte anzuzeigen, an denen die maximale durchschnittliche Wartezeit für diese Minute am höchsten war.
 
@@ -215,11 +215,11 @@ The Summary Numbers show the following information:
 
 | Summary Number | Description |
 | --- | --- |
-| [!UICONTROL **Users**] | The number of users that are currently sending reporting requests to this report suite. |
+| [!UICONTROL **Users**] | The number of users that are currently sending reporting requests to this connection. |
 | [!UICONTROL **Projects**] | Workspace projects, Report Builder workbooks, etc.  | 
 | [!UICONTROL **Queries**] | The number of queries currently running. |
 | [!UICONTROL **Average Wait Time**] | The average wait time for all running queries.  |
-| [!UICONTROL **Usage Capacity**] | The current usage capacity for this report suite. |
+| [!UICONTROL **Usage Capacity**] | The current usage capacity for this connection. |
 
 {style="table-layout:auto"}
 

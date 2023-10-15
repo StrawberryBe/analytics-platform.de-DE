@@ -3,7 +3,7 @@ title: Abbrechen von Berichtsanforderungen im Reporting Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 7%
@@ -132,6 +132,8 @@ Sie können alle Anforderungen abbrechen, die mit einem oder mehreren Projekten 
    In Analysis Workspace wird eine Benachrichtigung angezeigt, die Benutzer darüber informiert, dass die Anfrage abgebrochen wurde. Weitere Informationen dazu, wie dies in Analysis Workspace angezeigt wird, finden Sie unter [Erlebnis beim Zugriff auf einen abgebrochenen Bericht](#experience-when-users-access-a-cancelled-report).
 
 ## Erlebnis beim Zugriff auf einen abgebrochenen Bericht
+
+<!-- Update for CJA and AA -->
 
 In Analysis Workspace sehen Benutzer die folgende Meldung, wenn sie versuchen, auf einen Bericht zuzugreifen, der von einem Administrator abgebrochen wurde:
 
