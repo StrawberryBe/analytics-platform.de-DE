@@ -1,17 +1,17 @@
 ---
-title: (B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
+title: Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
 description: Erfahren Sie, wie Sie kontobasierte Daten als Lookup-Datensatz zu Customer Journey Analytics hinzufügen.
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '817'
 ht-degree: 74%
 
 ---
 
-# (B2B) Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
+# Hinzufügen von Daten der Kontoebene als Lookup-Datensatz
 
 Dieser Anwendungsfall für den B2B-Bereich zeigt auf, wie Sie festlegen können, dass Daten für Ihre Analysen nicht auf Personenebene verwendet werden, sondern auf Kontoebene. Analysen auf Kontoebene liefern Aufschluss über folgende Fragen:
 
@@ -23,7 +23,7 @@ Dieser Anwendungsfall für den B2B-Bereich zeigt auf, wie Sie festlegen können,
 
 Sie erreichen dies, indem Sie die Informationen auf Kontoebene als [Lookup](/help/getting-started/cja-glossary.md)-Datensatz eintragen.
 
-Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann einen Lookup-Tabellen-Datensatz, indem Sie CSV-basierte Kontodaten aufnehmen. Anschließend erstellen Sie eine Verbindung in Customer Journey Analytics (Customer Journey Analytics), die verschiedene Datensätze kombiniert, einschließlich des von Ihnen erstellten Lookup-Datensatzes. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
+Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann einen Lookup-Tabellen-Datensatz, indem Sie CSV-basierte Kontodaten aufnehmen. Anschließend erstellen Sie eine Verbindung im Customer Journey Analytics (Customer Journey Analytics), die verschiedene Datensätze kombiniert, einschließlich des von Ihnen erstellten Lookup-Datensatzes. Wenn Sie dann eine Datenansicht erstellen, können Sie letztendlich alle diese Daten in Arbeitsbereich nutzen.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Erstellen Sie zunächst ein Lookup-Schema in Adobe Experience Platform und dann 
 
 ## 1. Erstellen eines Lookup-Schemas (Experience Platform)
 
-Erstellen eines eigenen Schemas für die [Nachschlagen](/help/getting-started/cja-glossary.md) stellt sicher, dass der verwendete Datensatz in Customer Journey Analytics mit der richtigen Einrichtung (Datensatztyp) verfügbar ist. Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
+Erstellen eines eigenen Schemas für die [Nachschlagen](/help/getting-started/cja-glossary.md) -Tabelle stellt sicher, dass der verwendete Datensatz in Customer Journey Analytics mit der richtigen Einrichtung (Datensatztyp) verfügbar ist. Als Best Practice empfiehlt sich die [Erstellung einer benutzerdefinierten Schemaklasse](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=de#create-new-class) mit dem Namen „Lookup“, die keinerlei Elemente enthält. Diese kann dann für alle Lookup-Tabellen wiederverwendet werden.
 
 ![](../assets/create-new-class.png)
 
@@ -57,7 +57,7 @@ Je nach Größe der Lookup-Tabelle dauert die Aufnahme der Daten und die Erstell
 
 ## 4. Kombinieren der Datensätze in einer Verbindung (Customer Journey Analytics)
 
-Im folgenden Beispiel werden drei Datensätze zu einer Customer Journey Analytics-Verbindung kombiniert:
+In diesem Beispiel werden drei Datensätze zu einer Customer Journey Analytics-Verbindung kombiniert:
 
 | Datensatzname | Beschreibung | Adobe Experience Platform-Schemaklasse | Datensatzdetails |
 | --- | --- | --- | --- |

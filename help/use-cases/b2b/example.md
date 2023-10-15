@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1818'
 ht-degree: 17%
 
 ---
@@ -70,16 +70,11 @@ Um beim Erstellen Ihres Workspace-Projekts Zugriff auf relevante B2B-Dimensionen
 
 Dieser Abschnitt enthält Empfehlungen und Vorschläge zu den Dimensionen und Metriken, die bei der Definition der [Komponenten](../../data-views/create-dataview.md#components) Ihrer Datenansicht.
 
-Für jede Komponente werden der Name, der Schemapfad und (falls zutreffend) Details zur Konfiguration bereitgestellt.
+Für jede Komponente werden der Name, der Schematyp, der Schemapfad und (falls zutreffend) Details zur Konfiguration bereitgestellt.
 
++++ B2B-Aktivitäts-Datensatz
 
-### B2B-Aktivitäts-Datensatz
-
-Der Datensatz &quot;B2B-Aktivität&quot;enthält die relevanten Erlebnisereignisse und ist als Teil einer Verbindung erforderlich.
-
-+++ Details
-
-#### Metriken
+### Metriken
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -111,7 +106,7 @@ Der Datensatz &quot;B2B-Aktivität&quot;enthält die relevanten Erlebnisereignis
 {style="table-layout:auto"}
 
 
-#### Dimensionen
+### Dimensionen
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -139,19 +134,15 @@ Der Datensatz &quot;B2B-Aktivität&quot;enthält die relevanten Erlebnisereignis
 +++
 
 
-### B2B Person-Datensatz
-
-Der Datensatz &quot;B2B Person&quot;enthält die relevanten Profile.
-
-+++ Details
++++ B2B Person-Datensatz
 
 
-#### Metriken
+### Metriken
 
 Als Teil dieses Datensatzes werden keine Metrikkomponenten definiert.
 
 
-#### Dimensionen
+### Dimensionen
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -160,15 +151,12 @@ Als Teil dieses Datensatzes werden keine Metrikkomponenten definiert.
 
 {style="table-layout:auto"}
 
-+++ Details
++++
 
-### B2B Opportunity-Datensatz
 
-Der Datensatz &quot;B2B Opportunity&quot;enthält die relevanten Möglichkeiten.
++++  B2B Opportunity-Datensatz
 
-+++ Details
-
-#### Metriken
+### Metriken
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -182,7 +170,7 @@ Der Datensatz &quot;B2B Opportunity&quot;enthält die relevanten Möglichkeiten.
 {style="table-layout:auto"}
 
 
-#### Dimensionen
+### Dimensionen
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -199,13 +187,10 @@ Der Datensatz &quot;B2B Opportunity&quot;enthält die relevanten Möglichkeiten.
 
 +++
 
-### B2B-Campaign-Datensatz
 
-Der Datensatz B2B Campaign enthält Kampagnendaten.
++++ B2B-Campaign-Datensatz
 
-+++ Details
-
-#### Metriken
+### Metriken
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -214,7 +199,7 @@ Der Datensatz B2B Campaign enthält Kampagnendaten.
 {style="table-layout:auto"}
 
 
-#### Dimensionen
+### Dimensionen
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -229,13 +214,10 @@ Der Datensatz B2B Campaign enthält Kampagnendaten.
 +++
 
 
-### B2B-Kontodatensatz
 
-Der Datensatz B2B-Konto enthält die Kontodaten.
++++ B2B-Kontodatensatz
 
-+++ Details
-
-#### Metriken
+### Metriken
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -245,7 +227,7 @@ Der Datensatz B2B-Konto enthält die Kontodaten.
 {style="table-layout:auto"}
 
 
-#### Dimensionen
+### Dimensionen
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -265,13 +247,9 @@ Der Datensatz B2B-Konto enthält die Kontodaten.
 +++
 
 
-### B2B Campaign-Mitgliederdatensatz
++++ B2B Campaign-Mitgliederdatensatz
 
-Der Datensatz &quot;B2B Campaign Member&quot;enthält die Interaktionen von Mitgliedern von Kampagnen.
-
-+++ Details
-
-#### Metriken
+### Metriken
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
@@ -284,7 +262,7 @@ Der Datensatz &quot;B2B Campaign Member&quot;enthält die Interaktionen von Mitg
 
 {style="table-layout:auto"}
 
-#### Dimensionen
+### Dimensionen
 
 | Name der Komponente | Datentyp des Schemas | Pfad des Schemas | Konfiguration |
 |---|---|---|---|
