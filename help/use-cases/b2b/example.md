@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1822'
 ht-degree: 17%
 
 ---
@@ -68,7 +68,7 @@ Siehe [Hinzufügen und Konfigurieren von Datensätzen](../../connections/create-
 
 Um beim Erstellen Ihres Workspace-Projekts Zugriff auf relevante B2B-Dimensionen und -Metriken zu erhalten, müssen Sie Ihre Datenansicht entsprechend definieren.
 
-Dieser Abschnitt enthält Empfehlungen und Vorschläge zu den Dimensionen und Metriken, die bei der Definition der [Komponenten](../../data-views/create-dataview.md#components) Ihrer Datenansicht.
+Dieser Abschnitt enthält Empfehlungen und Vorschläge zu den Dimensionen und Metriken, die bei der Definition der [Komponenten](../../data-views/create-dataview.md#components) für B2B-Datensätze in Ihrer Datenansicht.
 
 Für jede Komponente werden der Name, der Schematyp, der Schemapfad und (falls zutreffend) Details zur Konfiguration bereitgestellt.
 
