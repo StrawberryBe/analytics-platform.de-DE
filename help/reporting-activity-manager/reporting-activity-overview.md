@@ -3,10 +3,10 @@ title: Übersicht über die Berichterstellung in Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 34%
+source-wordcount: '289'
+ht-degree: 29%
 
 ---
 
@@ -24,7 +24,7 @@ Reporting Activity Manager bietet die folgenden Vorteile:
 
 * Ermöglicht Ihnen die Überwachung und Verwaltung der Berichtskapazität für jede Verbindung in Ihrem Unternehmen.
 * Informiert Sie in Echtzeit über Ihre aktuelle Berichtskapazität für alle Verbindungen.
-* Enthält detaillierte Berichtsabfrageinformationen zu aktuellen Berichtsanfragen, unabhängig davon, ob diese sich in der Warteschlange befinden oder in Bearbeitung sind.
+* Enthält detaillierte Berichtinformationen zu aktuellen Berichtsanforderungen, unabhängig davon, ob sie sich in der Warteschlange befinden oder in Bearbeitung sind.
 * Ermöglicht Ihnen die Optimierung der Berichtswarteschlange durch Priorisierung einiger Berichtsanfragen und Abbruch von anderen, um Kapazitäten freizugeben. Er beantwortet Fragen wie: Ist dieser Bericht zum jetzigen Zeitpunkt notwendig oder kann ich ihn zugunsten dringender Berichte ablehnen?
 * Hier können Sie zukünftige Anforderungen für einen bestimmten Zeitraum einschränken. Sie können bestimmte Anforderungen einschränken oder alle Anforderungen eines bestimmten Benutzers oder Anforderungen einschränken, die mit einem bestimmten Projekt verknüpft sind.
 
