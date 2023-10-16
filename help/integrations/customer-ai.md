@@ -1,11 +1,11 @@
 ---
-description: Erfahren Sie, wie Adobe Experience Platform Customer AI-Daten in Customer Journey Analytics in Workspace integriert werden.
+description: Erfahren Sie, wie Adobe Experience Platform Customer AI-Daten in Workspace in Customer Journey Analytics integriert werden.
 title: Integrieren von Customer AI-Daten mit Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 51%
@@ -26,21 +26,21 @@ Customer AI kann in Customer Journey Analytics integriert werden, soweit für Cu
 
 * **Tendenz-Scores für ein Segment von Benutzern im Zeitverlauf verfolgen**.
    * Anwendungsfall: Verstehen Sie die Wahrscheinlichkeit, dass Kunden in einem bestimmten Segment konvertieren.
-   * Beispiel: Ein Marketer in einer Hotelkette möchte wissen, wie wahrscheinlich es ist, dass ein Hotelkunde ein Showticket am Konzertplatz des Hotels kauft.
+   * Beispiel: Ein Marketing-Experte einer Hotelkette möchte die Wahrscheinlichkeit verstehen, dass ein Hotelkunde ein Showticket am Konzertplatz des Hotels kauft.
 * **Analysieren, welche Erfolgsereignisse oder Attribute mit Tendenz-Scores verknüpft sind**.
-   * Anwendungsfall: Machen Sie sich mit den Attributen oder Erfolgsereignissen im Zusammenhang mit Tendenzwerten vertraut.
-   * Beispiel: Ein Marketer in einer Hotelkette möchte verstehen, wie die Käufe von Show-Tickets in einem Konzerthaus eines Hotels mit Tendenzwerten verbunden sind.
+   * Anwendungsfall: Erläuterung der Attribute oder Erfolgsereignisse im Zusammenhang mit Tendenzwerten.
+   * Beispiel: Ein Marketing-Experte in einer Hotelkette möchte verstehen, wie der Kauf von Show-Tickets bei einem Konzerthaus eines Hotels mit Tendenzwerten verbunden ist.
 * **Den Eintrittsfluss für die Kundentendenz über verschiedene Scoring-Durchgänge hinweg verfolgen.**. 
-   * Anwendungsfall: Verstehen Sie Menschen, die anfangs wenig Neigung hatten und im Laufe der Zeit zu Nutzern mit hoher Tendenz wurden.
-   * Beispiel: Ein Marketer in einer Hotelkette möchte wissen, welche Hotelkunden ursprünglich als Kunden identifiziert wurden, die nur mit geringer Tendenz ein Showticket zu erwerben hatten, aber mit der Zeit zu Kunden wurden, die eine hohe Tendenz hatten, ein Showticket zu kaufen.
+   * Anwendungsfall: Verstehen Sie Personen, die anfangs wenig Neigung hatten und im Laufe der Zeit zu Nutzern mit hoher Tendenz wurden.
+   * Beispiel: Ein Marketing-Experte in einer Hotelkette möchte verstehen, welche Hotelkunden ursprünglich als Kunden identifiziert wurden, die mit geringer Tendenz ein Showticket zu erwerben hatten, aber mit der Zeit zu Kunden wurden, die eine hohe Tendenz hatten, ein Showticket zu erwerben.
 * **Die Verteilung der Tendenz betrachten**.
-   * Anwendungsfall: Machen Sie sich mit der Verteilung der Tendenzwerte vertraut, um bei der Definition von Segmenten präziser zu sein.
-   * Beispiel: Ein Einzelhändler möchte eine spezifische Promotion für 50 US-Dollar pro Produkt durchführen. Da sein Budget begrenzt ist, möchte er nur eine sehr eingeschränkte Promotion durchführen. Sie analysieren die Daten und entscheiden, nur die 80 %+ der Kunden als Ziel festzulegen.
+   * Anwendungsfall: Verstehen Sie die Verteilung der Tendenzwerte, um bei der Definition von Segmenten präziser zu sein.
+   * Beispiel: Ein Einzelhändler möchte eine bestimmte Promotion für 50 US-Dollar an einem Produkt durchführen. Da sein Budget begrenzt ist, möchte er nur eine sehr eingeschränkte Promotion durchführen. Sie analysieren die Daten und entscheiden, nur die 80 %+ der Kunden als Ziel festzulegen.
 * **Die Konsumtendenz betrachten, um im Laufe der Zeit eine Maßnahme für eine bestimmte Kohorte zu ergreifen**.
    * Anwendungsfall: Verfolgen Sie eine bestimmte Kohorte im Zeitverlauf.
-   * Beispiel: Ein Marketer in einer Hotelkette möchte ihre Bronzestufe im Laufe der Zeit im Vergleich zu ihrer Silberstufe oder Silberstufe im Vergleich zu ihrer Goldstufe nachverfolgen. Sie können die Neigung jeder Kohorte sehen, das Hotel im Laufe der Zeit zu buchen.
+   * Beispiel: Ein Marketing-Experte in einer Hotelkette möchte ihre Bronzestufe im Laufe der Zeit im Vergleich zu ihrer Silberstufe oder Silberstufe im Vergleich zu ihrer Goldstufe nachverfolgen. Sie können die Neigung jeder Kohorte sehen, das Hotel im Laufe der Zeit zu buchen.
 
-Gehen Sie wie folgt vor, um Customer AI-Daten in Customer Journey Analytics zu integrieren:
+Gehen Sie wie folgt vor, um Customer AI-Daten mit Customer Journey Analytics zu integrieren:
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Nachdem Sie Ihre Daten vorbereitet und alle Ihre Anmeldedaten und Schemata einge
 
 ## Schritt 2: Einrichten einer Customer Journey Analytics-Verbindung zu Customer AI-Datensätzen
 
-Im Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen erstellen](/help/connections/create-connection.md) in Experience Platform von Datensätzen, die für Customer AI instrumentiert wurden. Jede Vorhersage, z. B. „Wahrscheinlichkeit für ein Konto-Upgrade“, entspricht einem Datensatz. Diese Datensätze werden mit dem Präfix „Customer AI Scores in EE Format – Name_der_Anwendung“ angezeigt.
+Unter Customer Journey Analytics können Sie jetzt [eine oder mehrere Verbindungen erstellen](/help/connections/create-connection.md) zum Experience Platform von Datensätzen, die für Customer AI instrumentiert wurden. Jede Vorhersage, z. B. „Wahrscheinlichkeit für ein Konto-Upgrade“, entspricht einem Datensatz. Diese Datensätze werden mit dem Präfix „Customer AI Scores in EE Format – Name_der_Anwendung“ angezeigt.
 
 >[!IMPORTANT]
 >
@@ -67,11 +67,11 @@ Im Folgenden finden Sie ein Beispiel für ein XDM-Schema, das Customer Journey A
 
 ![CAI-Schema](assets/cai-schema.png)
 
-(Beachten Sie, dass das Beispiel ein Profildatensatz ist. derselbe Satz von Schemaobjekten wäre Teil eines Erlebnisereignis-Datensatzes, den der Customer Journey Analytics erfassen würde. Der Erlebnisereignis-Datensatz würde Zeitstempel als Score-Datum enthalten.) Jeder in diesem Modell bewertete Kunde hätte einen Score und ein mit ihm verknüpftes Score-Datum usw.
+(Beachten Sie, dass es sich bei dem Beispiel um einen Profildatensatz handelt. Derselbe Satz von Schemaobjekten wäre Teil eines Erlebnisereignis-Datensatzes, den Customer Journey Analytics erfassen würde. Der Erlebnisereignis-Datensatz würde Zeitstempel als Score-Datum enthalten.) Jeder in diesem Modell bewertete Kunde hätte einen Score und ein mit ihm verknüpftes Score-Datum usw.
 
 ## Schritt 3: Erstellen von Datenansichten basierend auf diesen Verbindungen
 
-Im Customer Journey Analytics können Sie jetzt mit dem [Datenansichten erstellen](/help/data-views/create-dataview.md) mit den Dimensionen (z. B. Bewertung, Bewertungsdatum, Wahrscheinlichkeit usw.) und Metriken, die als Teil der von Ihnen eingerichteten Verbindung eingebunden wurden.
+Unter Customer Journey Analytics können Sie jetzt mit dem [Datenansichten erstellen](/help/data-views/create-dataview.md) mit den Dimensionen (z. B. Bewertung, Bewertungsdatum, Wahrscheinlichkeit usw.) und Metriken, die als Teil der von Ihnen eingerichteten Verbindung eingebunden wurden.
 
 ![Datenansicht erstellen](assets/create-dataview.png)
 

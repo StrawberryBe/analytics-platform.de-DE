@@ -1,9 +1,9 @@
 ---
 title: Integrieren der Adobe Journey Optimizer-Entscheidungsverwaltung in Adobe Customer Journey Analytics
-description: Einbinden von durch die Entscheidungsverwaltung von Adobe Journey Optimizer generierten Daten und Analysieren mit Analysis Workspace in Customer Journey Analytics.
+description: Einbinden von Daten, die vom Adobe Journey Optimizer-Entscheidungsmanagement generiert wurden, und Analysieren Sie sie mithilfe von Analysis Workspace im Customer Journey Analytics.
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 20%
@@ -21,7 +21,7 @@ Sie können von der Entscheidungsverwaltung generierte Daten importieren, um ein
 
 ## Senden von Daten aus der Entscheidungsverwaltung an Adobe Experience Platform
 
-Adobe Experience Platform dient als zentrale Datenquelle und Verknüpfung zwischen Entscheidungsverwaltung und Customer Journey Analytics. Daten aus der Entscheidungsverwaltung werden in der Experience Platform erfasst **automatisch** oder als Teil von **explizit gesendete Erlebnisereignisse** (z. B. Impressionen oder Klicks). Siehe [Erste Schritte mit der Datenerfassung](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=en) für weitere Details.
+Adobe Experience Platform dient als zentrale Datenquelle und Verknüpfung zwischen Entscheidungsverwaltung und Customer Journey Analytics. Daten aus der Entscheidungsverwaltung werden in Experience Platform erfasst **automatisch** oder als Teil von **explizit gesendete Erlebnisereignisse** (zum Beispiel Impressionen oder Klicks). Siehe [Erste Schritte mit der Datenerfassung](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=en) für weitere Details.
 
 ## Verbindung herstellen
 
@@ -69,7 +69,7 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 
 | Metrik | Beschreibung | Schemaelement | Einstellungen der Komponente |
 | --- | --- | --- | --- |
-| Ereignistyp (umbenennen, um auf ein bestimmtes Ereignis zu verweisen, z. B. `Feedback` für `message.feedback`) [1] | Betrag eines bestimmten Ereignistyps | `eventType` | Komponententyp: Metrik<br/>**[!UICONTROL Einschlusswerte festlegen ]**: on<br/>**[!UICONTROL Übereinstimmung]**: [!UICONTROL Wenn alle Kriterien erfüllt sind]<br/>**[!UICONTROL Kriterien ]**:**[!UICONTROL  Gleich ]**`message.feedback` |
+| Ereignistyp (umbenennen, um auf ein bestimmtes Ereignis zu verweisen, beispielsweise `Feedback` für `message.feedback`) [1] | Betrag eines bestimmten Ereignistyps | `eventType` | Komponententyp: Metrik<br/>**[!UICONTROL Einschlusswerte festlegen ]**: Ein<br/>**[!UICONTROL Übereinstimmung]**: [!UICONTROL Wenn alle Kriterien erfüllt sind]<br/>**[!UICONTROL Kriterien ]**:**[!UICONTROL  Gleich ]**`message.feedback` |
 | Entscheidungsoptionen-Bewertung | Berechneter Wert für eine Entscheidungsoption im Kontext eines einzelnen Umfangs. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Komponententyp: Metrik |
 | Bewertung der Fallback-Entscheidungsoptionen | Berechneter Wert für eine Fallback-Entscheidungsoption im Kontext eines einzelnen Umfangs. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Komponententyp: Metrik |
 | Angebote verwerfen | Die Anzahl der Angebote, die ohne andere direkte Interaktion verworfen oder abgelehnt wurden. | `_experience.decisioning.`<br/>`propositionEventType.display` | Komponententyp: Metrik |

@@ -2,8 +2,8 @@
 title: Integrieren von Adobe-Lösungen mit Customer Journey Analytics
 description: Erfahren Sie, wie Sie Daten aus anderen Adobe-Lösungen und -Services integrieren können.
 exl-id: f89d07e9-100e-4f82-9486-35bc9c748b19
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 100%

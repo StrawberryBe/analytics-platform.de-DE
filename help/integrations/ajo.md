@@ -1,9 +1,9 @@
 ---
 title: Integrieren von Adobe Journey Optimizer in Customer Journey Analytics
-description: Einbinden von Adobe Journey Optimizer generierter Daten und Analysieren mit Analysis Workspace in Customer Journey Analytics.
+description: Einbinden von Adobe Journey Optimizer generierter Daten und Analysieren mit Analysis Workspace im Customer Journey Analytics.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-feature: Platform Integration
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+feature: Experience Platform Integration
+source-git-commit: 2429c60cab701017702e3312770232aa329e303c
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 68%
@@ -30,7 +30,7 @@ Wählen Sie die folgenden Datensätze aus und konfigurieren Sie sie:
 | --- | --- | --- | --- |
 | Datensatz mit AJO-Nachrichten-Feedback-Ereignissen | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Ereignisse zum Nachrichtenversand, z. B.[!UICONTROL Sendungen]&#39; und &#39;[!UICONTROL Bounces]&quot;. |
 | AJO-E-Mail-Tracking-Erlebnisdatensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält E-Mail-Tracking-Ereignisse wie &quot;[!UICONTROL Öffnungen]&#39;, &#39;[!UICONTROL Klicks]&quot;, und &quot;[!UICONTROL Abmeldungen]&quot;. |
-| AJO Push Tracking Experience Event Datensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse wie &quot;[!UICONTROL App-Starts]&quot;. |
+| AJO Push Tracking Erlebnis-Datensatz | Ereignis-   | Personen-ID: `IdentityMap` | Enthält Push-Tracking-Ereignisse wie &quot;[!UICONTROL App-Starts]&quot;. |
 | Journey-Schrittereignisse | Ereignis-   | Personen-ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Enthält Ereignisse, die zeigen, welche Profile an den einzelnen Knoten der Journey beteiligt waren. |
 | AJO-Entitätsdatensatz | Nachschlagen | Schlüssel: `_id`<br>Übereinstimmungsschlüssel: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Enthält Classifications, die Journey- und Campaign-Metadaten mit allen Adobe Journey Optimizer-Ereignisdaten verknüpfen. |
 
@@ -84,11 +84,11 @@ Sie können die folgenden Metriken in einer Datenansicht erstellen, um eine unge
 | Sendungen | Die Anzahl der Nachrichten, die von E-Mail-Anbietern akzeptiert wurden. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `sent` |
 | Spam-Beschwerden | Anzahl der Beschwerden wegen Spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `spam_complaint` |
 | Abonnementkündigungen | Anzahl der Abmeldungen. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Komponententyp: Metrik<br>Ausschlusswerte einschließen: Gleich `unsubscribe` |
-| Edge-Sendungen | Die Häufigkeit, mit der das Edge-Netzwerk eine Nachricht entweder an das Web- oder Mobile-SDK sendet | Schema String-Element verwenden `_experience.decisioning.propositionEventType.send` |
-| Eingehende Anzeigen | Die Häufigkeit, mit der dem Benutzer eine Web- oder In-App-Nachricht angezeigt wird | Schema String-Element verwenden `_experience.decisioning.propositionEventType.display` |
-| Eingehende Klicks | Die Anzahl der Web- oder In-App-Nachrichtenklicks | Schema String-Element verwenden `_experience.decisioning.propositionEventType.interact` |
-| In-App-Trigger | Die Häufigkeit, mit der die Decisioning Engine die Nachricht angezeigt hat. Das Mobile SDK kann die Entscheidung überschreiben, durch die die Anzahl der tatsächlichen Anzeigen reduziert wird. | Schema String-Element verwenden `_experience.decisioning.propositionEventType.trigger` |
-| In-App-Abweisungen | Die Häufigkeit, mit der eine In-App-Nachricht vom SDK aus der Benutzeroberfläche entfernt wird | Schema String-Element verwenden `_experience.decisioning.propositionEventType.dismiss` |
+| Edge-Sendungen | Die Häufigkeit, mit der das Edge-Netzwerk eine Nachricht entweder an das Web- oder Mobile-SDK sendet | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.send` |
+| Eingehende Anzeigen | Die Häufigkeit, mit der dem Benutzer eine Web- oder In-App-Nachricht angezeigt wird | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.display` |
+| Eingehende Klicks | Die Anzahl der Web- oder In-App-Nachrichtenklicks | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.interact` |
+| In-App-Trigger | Die Häufigkeit, mit der die Decisioning Engine die Nachricht angezeigt hat. Das Mobile SDK kann die Entscheidung überschreiben, durch die die Anzahl der tatsächlichen Anzeigen reduziert wird. | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.trigger` |
+| In-App-Abweisungen | Die Häufigkeit, mit der eine In-App-Nachricht vom SDK aus der Benutzeroberfläche entfernt wird | Verwenden des Schemazeichenfolgenelements `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
