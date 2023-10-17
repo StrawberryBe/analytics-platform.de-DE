@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: d5a46c4ffbacb0e05a637ee9e19875572a2aebf4
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '956'
 ht-degree: 82%
 
 ---
@@ -25,6 +25,7 @@ Produktadministratoren haben die Berechtigung, alle Aufgaben auszuführen, die i
 * Erstellen/Aktualisieren/Löschen von Verbindungen oder Datenansichten
 * Aktualisieren/Löschen von Projekten, Filtern, Berechnungsmetriken, Zielgruppen, Kommentaren oder von anderen Benutzenden erstellten Filtern
 * Freigeben von Workspace-Projekten für alle Benutzenden
+* Berichtaktivität im [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
 
 Ein Produkt-Admin in Customer Journey Analytics zu werden, reicht allein nicht aus, um eine [Verbindung](/help/connections/overview.md) zu erstellen, zu aktualisieren oder zu löschen. Um eine Verbindung zu einem Experience Platform-Datensatz herzustellen, benötigen Sie auch Experience Platform-Berechtigungen. Insbesondere müssen Sie Teil eines **Experience Platform-Produktprofils** ein, das Ihnen die folgenden Berechtigungen gewährt:
 

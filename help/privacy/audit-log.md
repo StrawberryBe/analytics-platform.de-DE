@@ -3,9 +3,9 @@ title: Auditprotokolle
 description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle anzeigen und verwalten.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '807'
 ht-degree: 67%
 
 ---
@@ -16,7 +16,7 @@ Um die Transparenz und Sichtbarkeit der im System durchgeführten Aktivitäten z
 
 In einem Auditprotokoll wird festgehalten, **wer** **welche** Aktion **wann** ausgeführt hat. Jede in einem Protokoll aufgezeichnete Aktion enthält Metadaten, die den Aktionstyp, das Datum und die Uhrzeit, die E-Mail-ID des/der Benutzenden, der/die die Aktion ausgeführt hat, und zusätzliche Attribute des Aktionstyps angeben.
 
-In diesem Thema werden Auditprotokolle in Customer Journey Analytics behandelt, einschließlich der Anzeige und Verwaltung dieser Protokolle in der Benutzeroberfläche.
+In diesem Thema werden Auditprotokolle im Customer Journey Analytics behandelt, einschließlich der Anzeige und Verwaltung dieser Protokolle in der Benutzeroberfläche.
 
 ## Zugriff auf Auditprotokolle
 
@@ -26,7 +26,7 @@ Um Auditprotokolle anzeigen und exportieren zu können, benötigen Sie in der Ad
 
 ## Administratorprotokoll in der Benutzeroberfläche anzeigen
 
-Navigieren Sie in Customer Journey Analytics zu **[!UICONTROL Instrumente]** > **[!UICONTROL Auditprotokolle]**.
+Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Instrumente]** > **[!UICONTROL Auditprotokolle]**.
 
 Das Auditprotokoll für den heutigen und gestrigen Tag wird standardmäßig angezeigt.
 
@@ -42,12 +42,13 @@ Doppelklicken Sie auf die Info-Schaltfläche (i) neben einer Beschreibung.
 
 Die folgenden Informationen werden angezeigt:
 
-* **[!UICONTROL Aktionsname]**: Die getroffenen Maßnahmen. Mögliche Werte:
-   * API_REQUEST
-   * GENEHMIGEN
+* **[!UICONTROL Aktionsname]**: Die durchgeführte Aktion. Mögliche Werte:
+   * API_ANFRAGE
+   * Genehmigen
    * ERSTELLEN
    * DELETE
    * BEARBEITEN
+   * EMBARGO
    * EXPORTIEREN
    * ORG_CHANGE
    * AKTUALISIEREN
@@ -79,9 +80,9 @@ Die folgenden Informationen werden angezeigt:
    * BENUTZER
    * USER_GROUP
 * **[!UICONTROL Komponenten-ID]**: Die ID der Komponente, für die der Benutzer eine Aktion ausgeführt hat.
-* **[!UICONTROL Kennung der IMS-Organisation]**: Die IMS-ID der Organisation, im Format `ABC123@AdobeOrg`.
+* **[!UICONTROL Kennung der IMS-Organisation]**: Die IMS-ID der Organisation im Format `ABC123@AdobeOrg`.
 * **[!UICONTROL Protokollkennung]**: Eine eindeutige ID, die diesen Protokolleintrag identifiziert.
-* **[!UICONTROL Benutzer-ID]**: Die eindeutige ID, die den Benutzer identifiziert, der die Aktion ausgeführt hat.
+* **[!UICONTROL Benutzer-ID]**: Die eindeutige ID, mit der der Benutzer identifiziert wird, der die Aktion ausgeführt hat.
 * **[!UICONTROL Benutzertyp]**: Der verwendete Authentifizierungstyp. Zu gültigen Werten gehören:
    * IMS
    * OKTA

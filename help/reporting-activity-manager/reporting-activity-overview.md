@@ -3,10 +3,10 @@ title: Übersicht über die Berichterstellung in Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
+source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 29%
+source-wordcount: '276'
+ht-degree: 23%
 
 ---
 
@@ -32,9 +32,7 @@ Reporting Activity Manager bietet die folgenden Vorteile:
 
 <!-- update for CJA -->
 
-Zur Verwaltung der Berichtsaktivität benötigen Sie die Berechtigung Analytics-Produkt-Administrator in Adobe Admin Console.
-
-Berechtigung ![](assets/rep-mgr-permission.png)
+Zur Verwaltung der Berichtsaktivität müssen Sie über die Rolle Produkt-Admin verfügen. Weitere Informationen finden Sie unter [Produkt-Admin-Rolle](/help/admin/cja-access-control.md#product-admin-role) in [Customer Journey Analytics-Zugangssteuerung](/help/admin/cja-access-control.md).
 
 ## Berichtsaktivität anzeigen
 
@@ -43,11 +41,3 @@ Informationen zum Anzeigen der Berichtsaktivität im Reporting-Aktivitäts-Manag
 ## Abbrechen von Berichtsanfragen
 
 Informationen zum Abbrechen von Berichtsanforderungen im Reporting-Aktivitäts-Manager finden Sie unter [Abbrechen von Berichtsanforderungen im Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
-
-## Häufig gestellte Fragen {#faq}
-
-| Frage | Antwort |
-| --- | --- |
-| Kann ich zusätzliche Berichtskapazitäten erwerben? | Diese Funktion wird demnächst verfügbar sein. |
-
-{style="table-layout:auto"}

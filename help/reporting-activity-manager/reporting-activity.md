@@ -3,10 +3,10 @@ title: Berichtsaktivität im Reporting Activity Manager anzeigen
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: c6896187173c70eedb370d0b4670640bab1d8827
+source-git-commit: 3c4f7bc66c21987cbbf0c00a5aec6c9df97b165a
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 16%
+source-wordcount: '1904'
+ht-degree: 13%
 
 ---
 
@@ -43,7 +43,7 @@ Weitere Informationen zum Reporting Activity Manager, einschließlich der wichti
    | UI-Element | Beschreibung |
    | --- | --- |
    | **[!UICONTROL Verbindung]** | Die Verbindung, deren Berichtsaktivität Sie überwachen. |
-   | **[!UICONTROL Datenansichten]** | Zeigt alle Datenansichten an, die in die Verbindung eingespeist werden. Datenansichten erhöhen die Komplexität von Berichtsanforderungen aufgrund zusätzlicher Ebenen der angewendeten Filterung und Segmentierung. Alle Anforderungen, die aus der Datenansicht stammen, werden in der Verbindung kombiniert.<p>Wenn Sie beispielsweise 10 Anfragen von 5 Datenansichten haben, sind dies 50 Anfragen in der Verbindung. Auf diese Weise können Sie sehr schnell die Kapazitätsgrenzen erreichen. |
+   | **[!UICONTROL Datenansichten]** | Zeigt alle Datenansichten an, die die Verbindung verwenden. Die Datenansichtskonfiguration kann Berichtsanforderungen komplexer machen. |
    | **[!UICONTROL Kapazitätsauslastung]** | Der Prozentsatz der verwendeten Berichtskapazität der Verbindung in Echtzeit. <p>**Hinweis** Eine Nutzungskapazität von 100 % bedeutet nicht unbedingt, dass Sie sofort mit dem Abbrechen von Berichtsanfragen beginnen sollten. 100 % der Nutzkapazität können gesund sein, wenn die durchschnittliche Wartezeit vernünftig ist. Andererseits könnte die Nutzungskapazität von 100 % auf ein Problem hindeuten, wenn auch die Anzahl der Anforderungen in der Warteschlange wächst.</p> |
    | **[!UICONTROL Anfragen in der Warteschlange]** | Die Anzahl der zu verarbeitenden Anforderungen. <!-- ??? --> |
    | **[!UICONTROL Wartezeit in der Warteschlange]** | Die durchschnittliche Wartezeit, bevor die Verarbeitung von Anforderungen beginnt. <!-- ???? --> |
@@ -58,6 +58,8 @@ Weitere Informationen zum Reporting Activity Manager, einschließlich der wichti
 1. Wählen Sie den verknüpften Titel der Verbindung aus, für die Sie Details anzeigen möchten.
 
    Berichtsaktivitätsdaten werden für die ausgewählte Verbindung angezeigt.
+
+1. (Optional) Wenn eine Verbindung zum ersten Mal im Reporting Activity Manager geladen wird, stellen die angezeigten Daten die aktuellen Nutzungsmetriken dar. Um aktualisierte Metriken nach dem ersten Laden anzuzeigen, wählen Sie die [!UICONTROL **Aktualisieren**] -Schaltfläche, um die Seite manuell zu aktualisieren.
 
    <!-- Need to update this screenshot: ![connection](assets/indiv-report-ste.png) -->
 
@@ -97,12 +99,12 @@ Bewegen Sie den Mauszeiger über das Diagramm, um die Zeitpunkte anzuzeigen, an 
 
 #### Anforderungsdiagramm
 
-Das Anforderungsdiagramm zeigt die Anzahl der verarbeiteten und abgeschlossenen Anfragen für die ausgewählte Verbindung in den letzten 2 Stunden an.
+Das Anforderungsdiagramm zeigt die Anzahl der verarbeiteten und in die Warteschlange gestellten Anforderungen für die ausgewählte Verbindung in den letzten 2 Stunden an.
 
 Bewegen Sie den Mauszeiger über das Diagramm, um die Zeitpunkte anzuzeigen, an denen die maximale Anzahl von Anforderungen für diese Minute am höchsten war.
 
-* **X-Achse**: Die Anzahl der verarbeiteten und abgeschlossenen Anforderungen im letzten 2-Stunden-Zeitraum.
-* **Y-Achse**: Die Anzahl der verarbeiteten Anforderungen (in violett) und der abgeschlossenen Anforderungen (in grün) nach Minuten.
+* **X-Achse**: Die Anzahl der verarbeiteten und in die Warteschlange gestellten Anforderungen im letzten 2-Stunden-Zeitraum.
+* **Y-Achse**: Die Anzahl der verarbeiteten Anforderungen (grün) und Anforderungen in der Warteschlange (violett) nach Minuten.
 
   ![Diagramm &quot;Unique Users&quot;](assets/requests-graph.png)
 
@@ -119,13 +121,19 @@ Bewegen Sie den Mauszeiger über das Diagramm, um Zeitpunkte anzuzeigen, an dene
 
 ### Tabelle anzeigen {#view-table}
 
-Sie können die Anzeige der Daten auf eine der folgenden Registerkarten oben in der Datentabelle einstellen: [!UICONTROL **Anfrage**], [!UICONTROL **Benutzer**], [!UICONTROL **Projekt**] oder [!UICONTROL **Anwendung**].
+Beachten Sie beim Anzeigen der Tabelle Folgendes:
 
->[!TIP]
->
->Sie können [!UICONTROL **Ausblenden von Diagrammen**] , um nur die Tabelle anzuzeigen.
+* Sie können die Anzeige der Daten auf eine der folgenden Registerkarten oben in der Datentabelle einstellen: [!UICONTROL **Anfrage**], [!UICONTROL **Benutzer**], [!UICONTROL **Projekt**] oder [!UICONTROL **Anwendung**].
 
-![Tabellenregisterkarten](assets/indiv-report-ste-table-tabs.png)
+* Sie können die Liste der Verbindungen durchsuchen oder filtern:
+
+   * Verwenden Sie das Suchfeld, um nach einer bestimmten Verbindung zu suchen. Beginnen Sie mit der Eingabe des Verbindungsnamens oder der ID und die Liste der Verbindungen wird bei der Eingabe aktualisiert.
+
+   * Wählen Sie die [!UICONTROL **Filter**] icon ![Filtersymbol](assets/filter-icon.png) um die Liste der Filteroptionen zu erweitern. Sie können nach [!UICONTROL **Status**], [!UICONTROL **Komplexität**], [!UICONTROL **Anwendung**], [!UICONTROL **Benutzer**] oder [!UICONTROL **Projekt**].
+
+   * Sie können [!UICONTROL **Ausblenden von Diagrammen**] , um nur die Tabelle anzuzeigen.
+
+![Tabellenregisterkarten](assets/report-activity-tabs.png)
 
 #### Daten nach Anforderung anzeigen
 
@@ -133,13 +141,13 @@ Wenn Sie die [!UICONTROL **Anfrage**] -Tab, stehen in der Tabelle die folgenden 
 
 | Spalte | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Antrags-ID**] | Kann zur Fehlerbehebung verwendet werden. |
+| [!UICONTROL **Antrags-ID**] | Eine eindeutige ID, die zur Fehlerbehebung verwendet werden kann. Um die ID zu kopieren, wählen Sie die Anforderung und dann die Option aus. [!UICONTROL **Anforderungs-ID kopieren**]. |
 | [!UICONTROL **Ausführungszeit**] | Dauer der Ausführung der Anfrage. |
 | [!UICONTROL **Startzeit**] | Der Zeitpunkt, zu dem die Anfrage verarbeitet wurde (basierend auf der Ortszeit des Administrators). |
 | [!UICONTROL **Wartezeit**] | Wie lange die Anfrage vor der Verarbeitung gewartet hat. Dieser Wert liegt im Allgemeinen bei &quot;0&quot;, wenn ausreichend Kapazität vorhanden ist. |
-| [!UICONTROL **Programm**] | Die von [!UICONTROL Reporting Activity Manager] unterstützten Programme sind: <ul><li>Analysis Workspace-Benutzeroberfläche</li><li>Geplante Projekte im Workspace</li><li>Report Builder</li><li>Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Audiences usw.</li><li>API-Aufrufe aus der API 1.4 oder 2.0</li><li>Intelligente Warnhinweise</li></ul> |
-| [!UICONTROL **Benutzer**] | Der Benutzer, der die Anfrage initiiert hat. <p>**Hinweis:** Wenn der Wert dieser Spalte [!UICONTROL **Nicht erkannt**], bedeutet dies, dass sich der Benutzer in einem Anmeldeunternehmen befindet, für das Sie keine Administratorberechtigungen haben.</p> |
-| [!UICONTROL **Projekt**] | Gespeicherte Workspace-Projektnamen, API-Berichts-IDs usw. (Metadaten können von Programm zu Programm variieren.) |
+| [!UICONTROL **Programm**] | Die von [!UICONTROL Reporting Activity Manager] unterstützten Programme sind: <ul><li>Analysis Workspace-Benutzeroberfläche</li><li>Geplante Projekte im Workspace</li><li>Report Builder</li><li>Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Audiences usw.</li><li>API-Aufrufe von der 2.0-API</li><li>Intelligente Warnhinweise<li>Vollständiger Tabellenexport</li><li>Für alle Links freigeben</li><li>Geführte Analyse</li><li>Jede andere Anwendung, die die Analytics-Reporting-Engine abfragt</li></li></ul><p>**Hinweis:** Wenn der Wert dieser Spalte [!UICONTROL **unbekannt**] bedeutet dies, dass die Metadaten der Anfrage für den Benutzer nicht verfügbar sind.</p> |
+| [!UICONTROL **Benutzer**] | Der Benutzer, der die Anfrage initiiert hat. <p>**Hinweis:** Wenn der Wert dieser Spalte [!UICONTROL **unbekannt**] bedeutet dies, dass die Metadaten der Anfrage für den Benutzer nicht verfügbar sind.</p> |
+| [!UICONTROL **Projekt**] | Gespeicherte Workspace-Projektnamen, API-Berichts-IDs usw. (Metadaten können von Programm zu Programm variieren.)<p>**Hinweis:** Wenn der Wert dieser Spalte [!UICONTROL **unbekannt**] bedeutet dies, dass das Projekt nicht gespeichert wurde oder dass die Metadaten der Anfrage für den Benutzer nicht verfügbar sind.</p> |
 | [!UICONTROL **Status**] | Statusindikatoren: <ul><li>**Läuft**: Die Anfrage wird derzeit verarbeitet.</li><li>**Ausstehend**: Die Anfrage wartet auf die Verarbeitung.</li></ul> |
 | [!UICONTROL **Komplexität**] | Nicht alle Anforderungen benötigen dieselbe Verarbeitungszeit. Die Anforderungskomplexität kann dabei helfen, eine allgemeine Vorstellung davon zu erhalten, wie viel Zeit für die Verarbeitung der Anfrage erforderlich ist. <p>Mögliche Werte:</p> <ul><li>[!UICONTROL **Niedrig**]</li><li>[!UICONTROL **Mittel**]</li><li>[!UICONTROL **Hoch**]</li></ul>Dieser Wert wird durch die Werte in den folgenden Spalten beeinflusst:<ul><li>[!UICONTROL **Monatsgrenzen**]</li><li>[!UICONTROL **Spalten**]</li><li>[!UICONTROL **Segmente**]</li></ul> |
 | [!UICONTROL **Monatsgrenzen**] | Die Anzahl der Monate, die in einer Anfrage enthalten sind. Mehr Monatsgrenzen erhöhen die Komplexität der Anfrage. |
@@ -157,7 +165,7 @@ Wenn Sie die [!UICONTROL **Benutzer**] -Tab, stehen in der Tabelle die folgenden
 | [!UICONTROL **Benutzer**] | Der Benutzer, der die Anfrage initiiert hat. Wenn der Wert dieser Spalte [!UICONTROL **Nicht erkannt**], bedeutet dies, dass sich der Benutzer in einem Anmeldeunternehmen befindet, für das Sie keine Administratorberechtigungen haben. |
 | [!UICONTROL **Anzahl der Anfragen**] | Die Anzahl der vom Benutzer initiierten Anfragen. |
 | [!UICONTROL **Anzahl der Projekte**] | Die Anzahl der mit dem Benutzer verknüpften Projekte. <!-- ??? --> |
-| [!UICONTROL **Programm**] | Die von [!UICONTROL Reporting Activity Manager] unterstützten Programme sind: <ul><li>Analysis Workspace-Benutzeroberfläche</li><li>Geplante Projekte im Workspace</li><li>Report Builder</li><li>Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Audiences usw.</li><li>API-Aufrufe aus der API 1.4 oder 2.0</li><li>Intelligente Warnhinweise</li></ul> |
+| [!UICONTROL **Programm**] | Die von [!UICONTROL Reporting Activity Manager] unterstützten Programme sind: <ul><li>Analysis Workspace-Benutzeroberfläche</li><li>Geplante Projekte im Workspace</li><li>Report Builder</li><li>Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Audiences usw.</li><li>API-Aufrufe von der 2.0-API</li><li>Intelligente Warnhinweise<li>Vollständiger Tabellenexport</li><li>Für alle Links freigeben</li><li>Geführte Analyse</li><li>Jede andere Anwendung, die die Analytics-Reporting-Engine abfragt</li></li></ul> |
 | [!UICONTROL **Durchschnittliche Komplexität**] | Die durchschnittliche Komplexität von Anforderungen, die vom Benutzer initiiert wurden. <p>Nicht alle Anforderungen benötigen dieselbe Verarbeitungszeit. Die Anforderungskomplexität kann dabei helfen, eine allgemeine Vorstellung davon zu erhalten, wie viel Zeit für die Verarbeitung der Anfrage erforderlich ist.</p><p>Der Wert in dieser Spalte basiert auf einem Wert, der durch die Werte in den folgenden Spalten bestimmt wird:</p><ul><li>[!UICONTROL **Durchschnittliche Monatsgrenzen**]</li><li>[!UICONTROL **Durchschnittliche Spalten**]</li><li>[!UICONTROL **Durchschnittliche Segmente**]</li></ul> |
 | [!UICONTROL **Durchschnittliche Monatsgrenzen**] | Die durchschnittliche Anzahl der Monate, die in den Anforderungen enthalten sind. Mehr Monatsgrenzen erhöhen die Komplexität der Anfrage. |
 | [!UICONTROL **Durchschnittliche Spalten**] | Die durchschnittliche Anzahl von Metriken und Aufschlüsselungen in den enthaltenen Anforderungen. Mehr Spalten erhöhen die Komplexität der Anforderung. |
@@ -174,7 +182,7 @@ Wenn Sie die [!UICONTROL **Projekt**] -Tab, stehen in der Tabelle die folgenden 
 | [!UICONTROL **Projekt**] | Das Projekt, bei dem die Anfragen initiiert wurden. |
 | [!UICONTROL **Anzahl der Anfragen**] | Die Anzahl der mit dem Projekt verknüpften Anforderungen. |
 | [!UICONTROL **Anzahl der Benutzer**] | Die Anzahl der mit dem Projekt verknüpften Benutzer. <!-- ??? --> |
-| [!UICONTROL **Programm**] | Die von [!UICONTROL Reporting Activity Manager] unterstützten Programme sind: <ul><li>Analysis Workspace-Benutzeroberfläche</li><li>Geplante Projekte im Workspace</li><li>Report Builder</li><li>Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Audiences usw.</li><li>API-Aufrufe aus der API 1.4 oder 2.0</li><li>Intelligente Warnhinweise</li></ul> |
+| [!UICONTROL **Programm**] | Die von [!UICONTROL Reporting Activity Manager] unterstützten Programme sind: <ul><li>Analysis Workspace-Benutzeroberfläche</li><li>Geplante Projekte im Workspace</li><li>Report Builder</li><li>Builder-Benutzeroberflächen: Segment, berechnete Metriken, Anmerkungen, Audiences usw.</li><li>API-Aufrufe von der 2.0-API</li><li>Intelligente Warnhinweise<li>Vollständiger Tabellenexport</li><li>Für alle Links freigeben</li><li>Geführte Analyse</li><li>Jede andere Anwendung, die die Analytics-Reporting-Engine abfragt</li></li></ul> |
 | [!UICONTROL **Durchschnittliche Komplexität**] | Die durchschnittliche Komplexität der Anforderungen, die im Projekt enthalten sind. <p>Nicht alle Anforderungen benötigen dieselbe Verarbeitungszeit. Die Anforderungskomplexität kann dabei helfen, eine allgemeine Vorstellung davon zu erhalten, wie viel Zeit für die Verarbeitung der Anfrage erforderlich ist.</p><p>Der Wert in dieser Spalte basiert auf einem Wert, der durch die Werte in den folgenden Spalten bestimmt wird:</p><ul><li>[!UICONTROL **Durchschnittliche Monatsgrenzen**]</li><li>[!UICONTROL **Durchschnittliche Spalten**]</li><li>[!UICONTROL **Durchschnittliche Segmente**]</li></ul> |
 | [!UICONTROL **Durchschnittliche Monatsgrenzen**] | Die durchschnittliche Anzahl der Monate, die in den Anforderungen enthalten sind. Mehr Monatsgrenzen erhöhen die Komplexität der Anfrage. |
 | [!UICONTROL **Durchschnittliche Spalten**] | Die durchschnittliche Anzahl von Metriken und Aufschlüsselungen in den enthaltenen Anforderungen. Mehr Spalten erhöhen die Komplexität der Anforderung. |
@@ -198,3 +206,15 @@ Wenn Sie die [!UICONTROL **Anwendung**] -Tab, stehen in der Tabelle die folgende
 | [!UICONTROL **Durchschnittliche Segmente**] | Die durchschnittliche Anzahl von Segmenten, die auf die enthaltenen Anforderungen angewendet werden. Weitere Segmente erhöhen die Komplexität der Anforderung. |
 
 {style="table-layout:auto"}
+
+<!-- 
+
+## Frequently asked questions {#faq}
+
+| Question | Answer |
+| --- | --- |
+| | |
+
+{style="table-layout:auto"}
+
+-->
