@@ -4,10 +4,10 @@ description: Ein abgeleitetes Feld gibt die Berichtszeitbearbeitung von Schemafe
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
 workflow-type: tm+mt
-source-wordcount: '5431'
-ht-degree: 15%
+source-wordcount: '5641'
+ht-degree: 14%
 
 ---
 
@@ -100,6 +100,22 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
    - Auswählen **[!UICONTROL ** Speichern unter **]** , um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld mit `(copy)` hinzugefügt.
 
+Wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
+
+1. Wählen Sie die Komponente aus. Beachten Sie, dass die Komponente möglicherweise einen anderen Namen hat als Ihr abgeleitetes Feld.
+
+1. Wählen Sie im Komponentenbereich die ![Symbol Bearbeiten](assets/Smock_Edit_18_N.svg) neben Ihrem abgeleiteten Feld unter dem Namen des Schemafelds.
+
+1. Um Ihr abgeleitetes Feld zu bearbeiten, verwenden Sie die [!UICONTROL abgeleitetes Feld bearbeiten] -Schnittstelle. Siehe [Abgeleitete Feldoberfläche](#derived-field-interface).
+
+   - Auswählen **[!UICONTROL ** Speichern **]** , um Ihr aktualisiertes abgeleitetes Feld zu speichern.
+
+   - Auswählen **[!UICONTROL ** Abbrechen **]** , um alle Änderungen abzubrechen, die Sie am abgeleiteten Feld vorgenommen haben.
+
+   - Auswählen **[!UICONTROL ** Speichern unter **]** , um das abgeleitete Feld als neues abgeleitetes Feld zu speichern. Das neue abgeleitete Feld hat denselben Namen wie das ursprünglich bearbeitete abgeleitete Feld mit `(copy)` hinzugefügt.
+
+
+
 ## abgeleitetes Feld löschen
 
 1. Wählen Sie eine Datenansicht aus. Siehe [Datenansichten](../data-views.md) für weitere Informationen.
@@ -112,7 +128,19 @@ Wenn Sie eine Regel im Regel-Builder definieren, verwenden Sie die Regel-Oberfl�
 
 5. Bewegen Sie den Mauszeiger über das abgeleitete Feld, das Sie löschen möchten, und wählen Sie ![Symbol Bearbeiten](assets/Smock_Edit_18_N.svg).
 
-6. In der Verwendung **[!UICONTROL ** abgeleitetes Feld bearbeiten **]** -Benutzeroberfläche verwenden, wählen Sie Löschen aus.
+6. Im [!UICONTROL abgeleitetes Feld bearbeiten] Benutzeroberfläche, wählen Sie **[!UICONTROL Löschen]**.
+
+   A [!UICONTROL Komponente löschen] werden Sie aufgefordert, den Löschvorgang zu bestätigen. Betrachten Sie alle externen Verweise, die außerhalb der Datenansicht auf das abgeleitete Feld vorhanden sein könnten.
+
+   - Auswählen **[!UICONTROL ** Weiter **]** , um das abgeleitete Feld zu löschen.
+
+Wenn Sie ein abgeleitetes Feld als Komponente für Dimensionen oder Metriken in Ihrer Datenansicht verwendet haben:
+
+1. Wählen Sie die Komponente aus. Beachten Sie, dass die Komponente möglicherweise einen anderen Namen hat als Ihr abgeleitetes Feld.
+
+1. Wählen Sie im Komponentenbereich die ![Symbol Bearbeiten](assets/Smock_Edit_18_N.svg) neben Ihrem abgeleiteten Feld unter dem Namen des Schemafelds.
+
+1. Im [!UICONTROL abgeleitetes Feld bearbeiten] Benutzeroberfläche, wählen Sie **[!UICONTROL Löschen]**.
 
    A [!UICONTROL Komponente löschen] werden Sie aufgefordert, den Löschvorgang zu bestätigen. Betrachten Sie alle externen Verweise, die außerhalb der Datenansicht auf das abgeleitete Feld vorhanden sein könnten.
 
