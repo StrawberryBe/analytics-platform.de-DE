@@ -4,16 +4,14 @@ keywords: Analysis Workspace
 title: Verwalten von Exportprotokollen
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 708367159d00935bb77043e551dc915f79dd2584
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 # Verwalten von Exportprotokollen
-
-{{release-limited-testing}}
 
 Exportprotokolle enthalten Details zu jedem Export und werden jedes Mal generiert, wenn Analysis Workspace-Daten in die Cloud exportiert werden. (Informationen dazu, wie Daten in die Cloud exportiert werden können, finden Sie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
 

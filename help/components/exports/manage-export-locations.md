@@ -4,16 +4,14 @@ keywords: Analysis Workspace
 title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 # Verwalten von Cloud-Exportspeicherorten und -konten
-
-{{release-limited-testing}}
 
 Sie können Cloud-Exportspeicherorte anzeigen, bearbeiten und löschen.
 
