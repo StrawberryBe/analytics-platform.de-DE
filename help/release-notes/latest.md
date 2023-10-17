@@ -3,16 +3,16 @@ title: Aktuelle Versionshinweise zu Customer Journey Analytics anzeigen
 description: Neueste Versionshinweise zu Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: 1482cc7b9da01b60e15d2e48b1156b603e20c6e3
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 100%
+source-wordcount: '793'
+ht-degree: 97%
 
 ---
 
 # Aktuelle Versionshinweise zu Adobe Customer Journey Analytics (Oktober 2023)
 
-**Letztes Update**: 13. Oktober 2023
+**Letztes Update**: 17. Oktober 2023
 
 Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 4. Oktober 2023 bis zum 24. Oktober 2023. Versionen von Adobe Customer Journey Analytics basieren auf einem [Modell der kontinuierlichen Bereitstellung](releases.md), das einen besser skalierbaren, schrittweisen Ansatz für die Implementierung von Funktionen ermöglicht. Dementsprechend werden diese Versionshinweise mehrmals im Monat aktualisiert. Bitte überprüfen Sie sie regelmäßig.
 
@@ -20,6 +20,7 @@ Diese Versionshinweise beziehen sich auf den Veröffentlichungszeitraum vom 4. O
 
 | Funktion | Beschreibung | [Rollout-Beginn](releases.md) | [Allgemeine Verfügbarkeit](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Zeilenanzahl-Metriken für Lookup- und Profildatensätze** | Diese Metriken waren zuvor nur für Ereignis-Datensätze verfügbar. | 16. Oktober 2023 |
 | **Exportieren von vollständigen Tabellen in die Cloud** | Mit dem Export von vollständigen Tabellen aus Customer Journey Analytics können Sie Millionen von Workspace-Zeilen in Cloud-Ziele exportieren. <p>Der Export vollständiger Tabellen bietet einen einmaligen oder geplanten Versand von Datentabellen, die in Workspace entwickelt wurden. Dabei werden bis zu fünf Aufschlüsselungen, fünf Metriken, Filter und berechnete Metriken in einer verketteten Tabelle unterstützt. Es ist die Weiterentwicklung von Data Warehouse-Berichten in Adobe Analytics, mit vielen neuen, häufig angeforderten Funktionen, die heute nicht in Data Warehouse verfügbar sind.</p><p> Zu den Cloud-Exportoptionen gehören:</p><ul><li>Adobe Experience Platform Data Landing Zone</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>Snowflake</li></ul>Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=de). | 4. Oktober 2023 | 19. Oktober 2023 |
 | **Neue Spalten verfügbar bei der Verwaltung von Komponenten** | Die folgenden neuen Spalten sind jetzt im [Manager für berechnete Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=de) und im [Filter-Manager](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=de) für das Verwalten von Komponenten verfügbar:<ul><li>Verwendet in</li><li>Zuletzt verwendet</li></ul>Mithilfe dieser Informationen können Sie feststellen, ob eine Komponente für Benutzerinnen und Benutzer in Ihrer Organisation nützlich ist, wo sie verwendet wird und ob sie gelöscht oder geändert werden muss. Sie können das Datenwörterbuch zusammen mit diesen Informationen verwenden, um die Verwendung von Komponenten in Ihrem Unternehmen zu verfolgen und besser zu verstehen. | 23. September 2023 | 4. Oktober 2023 |
 | **Migrieren von Adobe Analytics-Projekten und allen enthaltenen Komponenten zu Customer Journey Analytics** | Sie können Ihre Adobe Analytics-Projekte jetzt zu Customer Journey Analytics migrieren. Dadurch wird der Übergang von Adobe Analytics zu Customer Journey Analytics vereinfacht. <p>Wenn Sie Projekte zu Customer Journey Analytics migrieren, werden Assets aus einer Report Suite inAdobe Analytics einer Customer Journey Analytics-Datenansicht zugeordnet.</p> <p>Sie migrieren Projekte über die Adobe Analytics-Benutzeroberfläche zu Customer Journey Analytics. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=de)</p> | Nicht angegeben | 9. Oktober 2023 |
