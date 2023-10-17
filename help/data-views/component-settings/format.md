@@ -4,7 +4,7 @@ description: Konfigurieren Sie die Formatierung einer Metrik.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
+source-git-commit: 6945026bd452e1dabe90812f8d056f19aac71490
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 30%
@@ -43,8 +43,6 @@ So zeigen Sie eine Währung für eine Metrik an:
 
 
 ### Währung umrechnen und anzeigen
-
-{{release-limited-testing-section}}
 
 So aktivieren Sie die Konvertierung einer Währung für eine oder mehrere Metriken:
 
