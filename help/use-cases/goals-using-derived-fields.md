@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 53cf026531ac5690a3e5a31acaa5654a52747b69
+source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Sie möchten für jeden Ihrer Marketing-Kanäle ein monatliches Umsatzziel festl
 
 ## Ziele verwenden
 
-Um Ziele in Ihrem Workspace-Projekt zu verwenden, verwenden Sie die Funktion für berechnete Metriken, um das abgeleitete Feld wieder auf seinen ursprünglichen statischen Wert zu normalisieren.
+Um Ziele in Ihrem Workspace-Projekt zu verwenden, verwenden Sie die Funktion für berechnete Metriken, um das abgeleitete Feld wieder auf seinen ursprünglichen statischen Wert zu normalisieren. Diese Normalisierung ist erforderlich, da die statischen Werte, die Sie für die abgeleiteten Felder festlegen, die Ziele definieren, mit jedem Ereignis inkrementiert werden.
 
 ### Ziele für monatliche Geschenkzertifikate
 
