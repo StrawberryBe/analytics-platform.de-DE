@@ -9,9 +9,9 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: debc0f4bc3521bbf547bfc287e7881b805863867
+source-git-commit: f6c874a96278cf593174f5ee79557b3a711a23e3
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 81%
 
 ---
@@ -190,18 +190,20 @@ ht-degree: 81%
 
 + Geführte Analyse {#guided-analysis}
    + [Überblick](../guided-analysis/overview.md)
-   + Wirkung {#impact}
-      + [Versionsansicht](../guided-analysis/types/release.md)
-      + [Ansicht &quot;Erste Verwendung&quot;](../guided-analysis/types/first-use.md)
-   + Trichter {#funnel}
-      + [Friktionsansicht](../guided-analysis/types/friction.md)
-      + [Ansicht &quot;Konversionstrends&quot;](../guided-analysis/types/conversion-trends.md)
    + Benutzerwachstum {#user-growth}
       + [Aktive Ansicht](../guided-analysis/types/active.md)
       + [Netto-Wachstumsansicht](../guided-analysis/types/net-growth.md)
    + Trends {#trends}
       + [Nutzungsansicht](../guided-analysis/types/usage.md)
       + [Frequenzansicht](../guided-analysis/types/frequency.md)
+   + Trichter {#funnel}
+      + [Friktionsansicht](../guided-analysis/types/friction.md)
+      + [Ansicht &quot;Konversionstrends&quot;](../guided-analysis/types/conversion-trends.md)
+   + Wirkung {#impact}
+      + [Versionsansicht](../guided-analysis/types/release.md)
+      + [Ansicht &quot;Erste Verwendung&quot;](../guided-analysis/types/first-use.md)
+   + Treue {#retention}
+      + [Retentionsquoten](../guided-analysis/types/retention-rates.md)
    + [Anwendungsfälle für Branchen](../guided-analysis/industry-use-cases.md)
    + [Häufig gestellte Fragen](../guided-analysis/faq.md)
 
