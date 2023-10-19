@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Verwalten von Exportprotokollen
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '825'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,26 @@ ht-degree: 7%
 Exportprotokolle enthalten Details zu jedem Export und werden jedes Mal generiert, wenn Analysis Workspace-Daten in die Cloud exportiert werden. (Informationen dazu, wie Daten in die Cloud exportiert werden können, finden Sie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
 
 Bei geplanten Exporten spiegeln Protokolle die Exporteinstellungen so wider, wie sie zum Zeitpunkt des Protokollversands waren. Protokolle können nicht gelöscht werden.
+
+## Exportprotokolle anzeigen
+
+1. Wählen Sie unter Customer Journey Analytics die Option [!UICONTROL **Komponenten**] > [!UICONTROL **Exporte**].
+
+1. Wählen Sie die [!UICONTROL **Protokolle**] Registerkarte.
+
+   ![Tab &quot;Logs exportieren&quot;](assets/export-logs-tab.png)
+
+   Details zu den einzelnen Protokollen werden in den verfügbaren Spalten angezeigt.
+
+1. Führen Sie einen der folgenden Schritte aus:
+
+   * [Spalten anpassen](#configure-columns) angezeigt werden.
+
+   * Wählen Sie die **Informationssymbol** ![Informationssymbol](assets/information-icon.png) neben dem Protokollnamen, um den mit dem Protokoll verknüpften Export anzuzeigen.
+
+   * Wählen Sie die **Symbol Export bearbeiten** ![Informationssymbol](assets/edit-export-icon.png) neben dem Protokollnamen, um den mit dem Protokoll verknüpften Export zu bearbeiten.
+
+     Weitere Informationen zum Bearbeiten eines Exports finden Sie unter [Customer Journey Analytics-Berichte in die Cloud exportieren](/help/analysis-workspace/export/export-cloud.md).
 
 ## Filtern und Suchen nach Protokollen
 

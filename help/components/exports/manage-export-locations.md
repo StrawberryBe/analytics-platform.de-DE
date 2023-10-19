@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '482'
 ht-degree: 6%
 
 ---
@@ -63,11 +63,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 ## Speicherorte löschen
 
-Wenn Sie einen Speicherort löschen, werden auch alle Exporte gelöscht, die diesen Speicherort verwenden.
-
-Prüfen Sie vor dem Löschen eines Standorts zunächst, ob dieser für beliebige Exporte verwendet wird. Aktivieren Sie dazu das Informationssymbol neben dem Ortsnamen.
-
-![verbundene Exporte](assets/location-connected-exports.png)
+Wenn Sie einen Speicherort löschen, werden auch alle Exporte gelöscht, die diesen Speicherort verwenden. Prüfen Sie beim Löschen das Bestätigungsdialogfeld, um sicherzustellen, dass dem Speicherort keine Exporte zugeordnet sind.
 
 So löschen Sie einen Speicherort:
 
@@ -77,7 +73,15 @@ So löschen Sie einen Speicherort:
 
    ![Bearbeitungsorte](assets/locations-edit.png)
 
-1. Auswählen [!UICONTROL **Löschen**], wählen Sie [!UICONTROL **Löschen**] erneut im Bestätigungsdialogfeld angezeigt.
+1. Wählen Sie [!UICONTROL **Löschen**] aus.
+
+   Das Dialogfeld Speicherort löschen wird angezeigt.
+
+1. Stellen Sie im Dialogfeld Speicherort löschen sicher, dass der Speicherort keinem Export zugeordnet ist, bevor Sie den Löschvorgang bestätigen.
+
+   ![Dialogfeld &quot;Speicherstandbestätigung&quot;](assets/delete-location-confirmation-dialog.png)
+
+1. Auswählen [!UICONTROL **Löschen**] erneut zu bestätigen.
 
 ## Konten bearbeiten
 
@@ -85,7 +89,7 @@ So löschen Sie einen Speicherort:
 
 1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 
-   ![Kontoseite](assets/account-page.png)
+   ![Kontoseite](assets/account-add.png)
 
 1. Auswählen [!UICONTROL **Details anzeigen**] auf dem Konto, das Sie bearbeiten möchten.
 
@@ -101,7 +105,7 @@ So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
 
 1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 
-   ![Kontoseite](assets/account-page.png)
+   ![Kontoseite](assets/account-add.png)
 
 1. Wählen Sie das 3-Punkt-Symbol für das Konto aus, das Sie bearbeiten möchten, und wählen Sie dann [!UICONTROL **Kontoschlüssel**].
 
@@ -111,7 +115,7 @@ So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
 
 1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 
-   ![Kontoseite](assets/account-page.png)
+   ![Kontoseite](assets/account-add.png)
 
 1. Wählen Sie das 3-Punkt-Symbol für das Konto aus, das Sie bearbeiten möchten, und wählen Sie dann [!UICONTROL **Konto löschen**].
 
