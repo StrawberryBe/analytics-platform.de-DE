@@ -9,7 +9,7 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: f6c874a96278cf593174f5ee79557b3a711a23e3
+source-git-commit: 648acd49d6cc38531f50df0a7d78ec6dce533d01
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 81%
@@ -45,7 +45,7 @@ ht-degree: 81%
       + [Verwenden von Adobe Analytics-Daten in Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Unterstützung der Customer Journey Analytics-Funktionen](../getting-started/aa-vs-cja/cja-aa.md)
       + [Vergleich der Terminologie für Analytics-Daten, die durch den Analytics-Quell-Connector übergeben werden](../getting-started/aa-vs-cja/terminology.md)
-      + [Vergleich der Datenverarbeitung in Adobe Analytics und Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Vergleich der Datenverarbeitung zwischen Adobe Analytics und Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Virtuelle Reporting-Umgebungen und Sandbox-Umgebungen](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Verarbeitungsregeln, VISTA und Klassifizierungen versus Datenvorbereitung](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID, ECID, AACUSTOMID und der Analytics-Quell-Connector](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
