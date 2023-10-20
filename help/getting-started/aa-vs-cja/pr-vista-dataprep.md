@@ -1,12 +1,12 @@
 ---
 title: Verarbeitungsregeln, VISTA und Klassifizierungen vs. Datenvorbereitung für den Analytics-Quell-Connector
-description: Erfahren Sie mehr über die Datenumwandlung mithilfe von Verarbeitungsregeln und VISTA statt mithilfe der Datenvorbereitung.
+description: Erfahren Sie mehr über die Umwandlung von Daten mithilfe von Verarbeitungsregeln und VISTA statt mithilfe der Datenvorbereitung.
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

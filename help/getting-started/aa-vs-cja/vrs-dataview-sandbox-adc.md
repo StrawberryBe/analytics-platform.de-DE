@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über virtuelle Reporting-Umgebungen und Sandbox-
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Eine Virtual Report Suite:
 * Kann auf zerstörungsfreie Weise auf historische und neue Daten angewendet werden.
 * Ermöglicht die Erstellung einer oder mehrerer virtueller Ansichten auf Basis einer Adobe Analytics-Report Suite zur Verwendung durch verschiedene Unternehmens-Teams.
 * Kann verwendet werden, um den Zugriff auf verschiedene Arten von Daten für verschiedene Benutzer in Adobe Analytics zu steuern und diese Daten zu kuratieren.
-* Bietet optional Funktionen für die [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) für Adobe Analytics. In diesem Fall kann eine Virtual Report Suite verwendet werden, um eine benutzerdefinierte Definition für &quot;Besuch&quot;zu erstellen.
+* Bietet optional Funktionen für die [Berichtszeitverarbeitung](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=de) für Adobe Analytics. In diesem Fall kann eine Virtual Report Suite verwendet werden, um eine benutzerdefinierte Definition für „Besuch“ zu erstellen.
 * Wird zur Berichtslaufzeit angewendet, ähnlich wie die Segmentauswertung. Dies geschieht, _nachdem_ die Daten in Adobe Analytics erfasst und gespeichert wurden.
 * Ist für [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=de) in Adobe Analytics erforderlich.
-* Hat dieselbe Anzahl von Variablen für die Verwendung als Standard-Analytics Report Suite (250 eVars, 250 Props, 1000 Ereignisse) zur Verfügung, obwohl die Kuratierung der Virtual Report Suite die Benutzerexponierung begrenzen kann.
+* Weist dieselbe Anzahl von Variablen für die Verwendung auf wie eine standardmäßige Report Suite in Analytics (250 eVars, 250 Eigenschaften, 1.000 Ereignisse), allerdings kann durch Kuratierung der Virtual Report Suite begrenzt werden, welche Variablen für Benutzende verfügbar sind.
 * Unterstützt benutzerdefinierte Kalenderoptionen.
 
 Einschränkungen einer Virtual Report Suite:

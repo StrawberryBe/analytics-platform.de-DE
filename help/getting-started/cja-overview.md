@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '993'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Siehe das Thema [Zugriffssteuerung](/help/admin/cja-access-control.md).
 Verschiedene Funktionen von Customer Journey Analytics wurden gegenüber dem herkömmlichen Adobe Analytics umbenannt, um sie an Branchenstandards anzupassen. Zur aktualisierten Terminologie gehören:
 
 * Segmente werden jetzt als Filter bezeichnet.
-* Virtual Report Suites werden jetzt als &quot;Datenansichten&quot;bezeichnet.
+* Virtuelle Report Suites werden jetzt als „Datenansichten“ bezeichnet.
 * Klassifizierungen werden jetzt als Suchdatensätze bezeichnet.
 * Kundenattribute werden jetzt als Profildatensätze bezeichnet.
 * Treffer-Container werden jetzt als Ereignis-Container bezeichnet.
