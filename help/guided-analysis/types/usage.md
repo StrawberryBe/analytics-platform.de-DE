@@ -1,12 +1,12 @@
 ---
 title: Nutzungsansicht
 description: Benutzerinteraktion im Lauf der Zeit messen.
-exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
+exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
+source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '538'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,7 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
 * **[!UICONTROL Veranstaltungen]**: Die Ereignisse, die Sie messen möchten. Jedes ausgewählte Ereignis wird je nach Diagrammtyp als farbige Linie oder Gruppe von Balken dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Trendereignis darstellt. Sie können bis zu fünf Ereignisse einbeziehen.
 * **[!UICONTROL Personen]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Zeilen im Diagramm und Zeilen in der Tabelle. Sie können bis zu fünf Segmente einbeziehen.
+* **[!UICONTROL Verteilung]**: Erstellen Sie eine separate Trendlinie pro Dimensionselement. Es wird eine Aufschlüsselungsdimension unterstützt.
 
 ## Diagrammeinstellungen
 

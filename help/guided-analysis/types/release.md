@@ -3,9 +3,10 @@ title: Versionsansicht
 description: Leistung in gleichen Zeiträumen vor und nach Veröffentlichung vergleichen.
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
+source-git-commit: 02044961612a3d0f4f40bdc71c3f00585d702c92
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '484'
 ht-degree: 3%
 
 ---
@@ -21,7 +22,7 @@ Die **[!UICONTROL Version]** zeigt einen Vergleich der Leistung von Schlüsselin
 Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 * **Allgemeine Leistungsbewertung:** Der Vergleich der wichtigsten Indikatoren insgesamt, wie z. B. Interaktionsmaßnahmen, kann Ihnen dabei helfen festzustellen, ob eine bestimmte Version insgesamt erfolgreich war.
-* **Überwachung**: Wenn es bestimmte Maßnahmen gibt, die Sie bei Änderungen erwarten, dass sie flach bleiben, wie z. B. Web-Vitale wie Ladezeit oder Logins, vergleichen Sie sie vor und nach, um sicherzustellen, dass Ihre Veröffentlichung keine unbeabsichtigten Folgen hat.
+* **Überwachung**: Verfolgen Sie wichtige Metriken, von denen Sie erwarten würden, dass sie bei Änderungen flach bleiben, z. B. Ladezeit oder Anzahl der Anmeldungen. Verwenden Sie diesen Analysetyp, um sie vor und nach einer Veröffentlichung zu vergleichen, um sicherzustellen, dass er keine unbeabsichtigten Folgen hat.
 * **Funktionsbereitstellung**: Wenn sich eine Produktaktualisierung auf die Verbesserung einer bestimmten Funktion konzentriert, können Sie diese Ansicht verwenden, um die Nutzung dieser Funktion vor und nach der Produktaktualisierung direkt zu vergleichen.
 * **Fehlererkennung**: Das Tracking der Anzahl der Fehler vor und nach einer Version kann einen frühzeitigen Indikator für Kundenprobleme liefern. Wenn Sie unmittelbar nach einer Veröffentlichung einen Anstieg der Fehler feststellen, können Sie mit Entwicklungs- oder Entwicklungsteams zusammenarbeiten, um das Problem zu identifizieren und zu beheben, wodurch weitere Auswirkungen für Kunden vermieden werden.
 
@@ -38,7 +39,7 @@ In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 Die Freigabeansicht bietet die folgenden Diagrammeinstellungen, die im Menü über dem Diagramm angepasst werden können:
 
 * **[!UICONTROL Metrik]**: Die zu messende Metrik. Optionen umfassen [!UICONTROL Ereignisse pro Benutzer], [!UICONTROL Prozentsatz der Benutzer], [!UICONTROL Veranstaltungen], [!UICONTROL Sitzungen], und [!UICONTROL Benutzer].
-* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Zu den Optionen gehören &quot;Linie&quot;.
+* **[!UICONTROL Diagrammtyp]**: Der Visualisierungstyp, den Sie verwenden möchten. Optionen umfassen [!UICONTROL Linie] und [!UICONTROL Balken].
 
 ## Datumsbereich
 
