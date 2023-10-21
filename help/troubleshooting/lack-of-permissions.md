@@ -5,10 +5,10 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
 exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
-source-git-commit: 72d42123a3c9463514ada584530ad959e99d5c94
+source-git-commit: 788d1d32548ef510cf12376b244fcc0e090e189d
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 4%
+source-wordcount: '212'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,12 @@ Beispiel: nach der Erstellung eines [Verbindung](../connections/overview.md) und
 >[!ENDSHADEBOX]
 
 
-Um diesen Fehler zu beheben, müssen Sie über System- oder Produktadministratorberechtigungen für eine Organisation verfügen, die über ein Experience Platform-Produkt verfügt. Siehe [Zugriffskontrolle - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) für weitere Informationen.
+1. Stellen Sie sicher, dass Sie über die richtige Zugriffskontrolle verfügen:
+
+   * Sie müssen über System- oder Produktadministratorberechtigungen für eine Organisation verfügen, die über ein Experience Platform-Produkt verfügt. Siehe [Zugriffskontrolle - Übersicht](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#platform-permissions) für weitere Informationen.
+
+   * Sie müssen ein Benutzer im Produktprofil &quot;AEP-Default-All-Users&quot;sein. Fragen Sie Ihren Administrator, ob Sie nicht berechtigt sind, sich diesem Profil hinzuzufügen. Siehe [Zugriffssteuerungshierarchie und Workflow](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=en#access-control-hierarchy-and-workflow) für weitere Informationen.
+
 
 1. Navigieren Sie zur Adobe Experience Platform-Benutzeroberfläche.
 
