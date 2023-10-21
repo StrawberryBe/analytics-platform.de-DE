@@ -1,13 +1,13 @@
 ---
-description: Verwenden Sie die Flussvisualisierung in einem Workspace-Projekt.
-title: Flussvisualisierung konfigurieren
+description: Erfahren Sie, wie Sie die Flussvisualisierung in einem Workspace-Projekt verwenden.
+title: Konfigurieren einer Flussvisualisierung
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 60%
+source-wordcount: '1581'
+ht-degree: 57%
 
 ---
 
@@ -17,7 +17,7 @@ Flussvisualisierungen helfen Ihnen dabei, die Journey zu verstehen, die von eine
 
 Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem Sie interessiert sind, konfigurieren oder alle Pfade analysieren, die durch eine Dimension oder ein Dimensionselement fließen.
 
-![Neue Fluss-Benutzeroberfläche](assets/new-flow.png)
+![Im Konfigurationsbildschirm &quot;Fluss&quot;werden die Felder &quot;Beginnt mit&quot;, &quot;Enthält&quot;und &quot;Endet mit&quot;angezeigt.](assets/new-flow.png)
 
 ## Erstellen einer Flussvisualisierung {#configure}
 
@@ -45,11 +45,11 @@ Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem
 
 1. Wenn Sie eine Metrik auswählen, müssen Sie auch eine [!UICONTROL **Pathing-Dimension**] , um als Pfad zu verwenden, der zu Ihrer ausgewählten Komponente führt oder von dieser weg führt, wie hier dargestellt. Die Standardeinstellung ist [!UICONTROL **Seite**].
 
-   ![Pfaddimension](assets/pathing-dim.png)
+   ![Die Pfaddimension.](assets/pathing-dim.png)
 
 1. (Optional) Wählen Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** um eine der folgenden Optionen zu konfigurieren:
 
-   ![Erweiterte Einstellungen](assets/adv-settings.png)
+   ![Erweiterte Einstellungen mit Anzeigeoptionen, Anzahl der Spalten und Fluss-Container.](assets/adv-settings.png)
 
    | Einstellung | Beschreibung |
    | --- | --- |
@@ -80,7 +80,7 @@ Mit Flussvisualisierungen können Sie den Anfang oder das Ende des Pfads, an dem
 
 ## Flussausgabe anzeigen und ändern {#output}
 
-![Flussausgabe](assets/flow-output.png)
+![Beispiel für die Flussausgabe mit Ends with Visits, Pathing dimension: Page, and Flow container: Visitors.](assets/flow-output.png)
 
 Eine Zusammenfassung der Flusskonfiguration wird oben im Diagramm angezeigt. Die Pfade in dem Diagramm sind proportional. Pfade mit mehr Aktivität werden dicker dargestellt.
 
@@ -90,7 +90,7 @@ Um die Daten weiter zu untersuchen, haben Sie mehrere Möglichkeiten:
 
 * Wenn Sie auf einen Knoten in dem Diagramm klicken, werden die zugehörigen Details zu diesem Knoten angezeigt. Klicken Sie erneut auf den Knoten, um ihn wieder zu reduzieren.
 
-  ![Knoten-Details](assets/node-details.png)
+  ![Interaktives Flussdiagramm mit Knotendetails.](assets/node-details.png)
 
 * Sie können eine Spalte so filtern, dass nur bestimmte Ergebnisse angezeigt werden, z. B. das Ein- und Ausschließen, die Angabe von Kriterien usw.
 

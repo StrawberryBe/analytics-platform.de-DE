@@ -1,20 +1,20 @@
 ---
-description: Fallout-Visualisierungen zeigen, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und durchlaufen (durchgefallen) haben.
-title: Fallout-Übersicht
+description: Informationen zu Fallout-Berichten und -Visualisierungen.
+title: Über Fallout-Berichte und -Visualisierungen
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 79%
+source-wordcount: '234'
+ht-degree: 80%
 
 ---
 
 # Fallout-Übersicht
 
-Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Fallout-Berichte zeigen an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgefallen) haben.
+Fallout-Berichte zeigen an, wo Personen eine vordefinierte Seitensequenz verlassen (ausgefallen) und weitergemacht (durchgefallen) haben.
 
-Mit Fallout-Visualisierungen können Sie:
+Fallout-Visualisierungen bieten mehr Optionen zum Erstellen Ihrer Fallout-Berichte. Mit Fallout-Visualisierungen können Sie:
 
 * Eine Gegenüberstellung zweier verschiedener Filter im gleichen Bericht vornehmen.
 * Trichterschritte (Touchpoints) ziehen, ablegen und neu anordnen.

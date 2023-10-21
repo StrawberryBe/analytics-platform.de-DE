@@ -4,10 +4,10 @@ keywords: Fallout und Filter;Filter in Fallout-Analyse;Filter in Fallout verglei
 title: Anwenden von Filtern in der Fallout-Analyse
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 87%
+source-wordcount: '467'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 >[!IMPORTANT]
 >
->Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer personenbezogenen Fallout-Funktion müssen Filter, die als Checkpoints verwendet werden, besuchs- oder ereignisbasierte Filter sein. Bei einem besuchskontextbezogenen Fallout müssen Filter, die als Checkpoint verwendet werden, ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnmeldung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, z. B.:
+>Filter, die als Checkpoints in Fallout verwendet werden, müssen einen Container verwenden, der auf einer niedrigeren Ebene als der Gesamtkontext der Fallout-Visualisierung liegt. Bei einer personenbezogenen Fallout-Funktion müssen Filter, die als Checkpoints verwendet werden, besuchs- oder ereignisbasierte Filter sein. Bei einem besuchskontextbezogenen Fallout müssen als Checkpoint verwendete Filter ereignisbasierte Filter sein. Wenn Sie eine ungültige Kombination verwenden, beträgt der Fallout 100 %. Wir haben eine Warnmeldung zur Fallout-Visualisierung hinzugefügt, die angezeigt wird, wenn Sie einen inkompatiblen Filter als Touchpoint hinzufügen. Bestimmte ungültige Filter-Container-Kombinationen führen zu ungültigen Fallout-Diagrammen, z. B.:
 
 * Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Personen
 * Verwenden eines personenbasierten Filters als Touchpoint innerhalb einer Fallout-Visualisierung für Besuche
@@ -27,11 +27,11 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 1. Erstellen Sie einen Filter aus einem bestimmten Touchpoint, an dem Sie interessiert sind und den Sie eventuell auch in andere Berichte übernehmen möchten. Klicken Sie dazu mit der rechten Maustaste auf den Touchpoint und wählen Sie dann **[!UICONTROL Filter aus Touchpoint erstellen]** aus.
 
-   ![](assets/segment-from-touchpoint.png)
+   ![Das Dropdown-Menü Touchpoint mit hervorgehobenem Dropdown-Menü Segment aus Touchpoint erstellen .](assets/segment-from-touchpoint.png)
 
    Der Filtergenerator wird geöffnet und enthält bereits den vorkonfigurierten sequenziellen Filter, der zu dem von Ihnen ausgewählten Touchpoint passt:
 
-   ![](assets/segment-builder.png)
+   ![Der Filter Builder zeigt den vorausgefüllten und vordefinierten sequenziellen Filter an.](assets/segment-builder.png)
 
 1. Geben Sie einen Titel und eine Beschreibung für den Filter ein und speichern Sie ihn.
 
@@ -41,7 +41,7 @@ Sie können in Analysis Workspace Filter aus einem Touchpoint erstellen, Filter 
 
 Wenn Sie zum Beispiel wissen möchten, wie der Trend bei Ihren Benutzern aus den USA aussieht und wie sich dies in der Fallout-Analyse auswirkt, ziehen Sie einfach den Filter „USA-Benutzer“ in den Fallout:
 
-![](assets/segment-touchpoint.png)
+![Der Filter &quot;US-Benutzer&quot;wurde ausgewählt und hervorgehoben, um ihn in den Fallout zu ziehen.](assets/segment-touchpoint.png)
 
 Oder Sie erstellen einen AND-Touchpoint, indem Sie den Filter „USA-Benutzer“ auf einen anderen Checkpoint ziehen.
 
@@ -52,10 +52,10 @@ In der Fallout-Visualisierung können Sie eine unbegrenzte Anzahl von Filtern mi
 1. Wählen Sie die zu vergleichenden Filter links in der Leiste [!UICONTROL Filter] aus. Im vorliegenden Beispiel haben wir zwei Filter ausgewählt: „USA-Benutzer“ und „Benutzer außerhalb der USA“.
 1. Ziehen Sie sie nach oben in die Ablegezone „Filter“.
 
-   ![](assets/segment-drop.png)
+   ![Die Fallout-Visualisierung mit ausgewählten Filtern und der rote Pfeil, der auf die Dropzone Filter zeigt.](assets/segment-drop.png)
 
 1. Optional: Sie können „Alle Besuche“ als Standard-Container belassen oder ihn löschen.
 
-   ![](assets/seg-compare.png)
+   ![Der Fallout, der alle Besuche anzeigt, sowie die beiden Filter, die im vorherigen Schritt gezogen wurden.](assets/seg-compare.png)
 
 1. Sie können nun den Fallout über zwei Filter hinweg vergleichen (z. B. an welcher Stelle ein Filter eine bessere Leistung als der andere hat) oder sonstige Einblicke erhalten.

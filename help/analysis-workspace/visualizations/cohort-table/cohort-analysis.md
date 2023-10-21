@@ -3,10 +3,10 @@ title: Was ist eine Kohortenanalyse?
 description: Erfahren Sie mehr über die Kohortenanalyse in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 78%
+source-wordcount: '528'
+ht-degree: 68%
 
 ---
 
@@ -29,7 +29,7 @@ Die [!UICONTROL Kohortenanalyse] steht allen Customer Journey Analytics-Kunden m
 
 >[!IMPORTANT]
 >
->[!UICONTROL Kohortenanalyse] nicht filterbare Metriken (einschließlich berechneter Metriken), nicht ganzzahlige Metriken (z. B. Umsatz) oder Vorfälle werden nicht unterstützt. Nur Metriken, die in Filtern verwendet werden können, können in [!UICONTROL Kohortenanalyse]und sie können jeweils nur um 1 inkrementiert werden.
+>[!UICONTROL Kohortenanalyse] unterstützt keine nicht filterbaren Metriken (einschließlich berechneter Metriken), Nicht-Ganzzahlmetriken (z. B. Umsatz) oder Vorfälle. Nur Metriken, die in Filtern verwendet werden können, können in [!UICONTROL Kohortenanalyse]und sie können jeweils nur um 1 inkrementiert werden.
 
 ## Funktionen der Kohortenanalyse
 
@@ -37,32 +37,32 @@ Die folgenden Fähigkeiten ermöglichen eine fein abgestimmte Kontrolle über di
 
 ### [!UICONTROL Bindungstabelle]
 
-A [!UICONTROL Treue] Der Kohortenbericht gibt Personen zurück: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Personen in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
+A [!UICONTROL Treue] Kohortenbericht gibt Personen zurück: Jede Datenzelle zeigt die Roh- und Prozentanzahl der Personen in der Kohorte, die die Aktion während dieses Zeitraums ausgeführt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
-![](assets/retention-report.png)
+![Ein Bericht zur Kohorte &quot;Rention&quot;, der die Einheiten und den Prozentsatz der Personen in der Kohorte anzeigt.](assets/retention-report.png)
 
 ### [!UICONTROL Abwanderungstabelle]
 
 A [!UICONTROL Abwanderung] Die Kohorte ist die Umkehrung einer Bindungstabelle und zeigt die Personen an, die abgestürzt sind oder die Rückkehrkriterien für Ihre Kohorte im Laufe der Zeit nie erfüllt haben. Sie können bis zu 3 Metriken und bis zu 10 Filter einschließen.
 
-![](assets/churn-report.png)
+![Eine Abwanderungstabelle, die Einheiten und Prozentsatz der Personen anzeigt, die die Rückkehrkriterien für eine Kohorte nicht erfüllt haben.](assets/churn-report.png)
 
 ### [!UICONTROL Rollierende Berechnung]
 
 Ermöglicht es Ihnen, die Bindung oder die Abwanderung auf Grundlage der vorherigen Spalte und nicht der Aufnahmespalte zu berechnen.
 
-![](assets/cohort-rolling-calculation.png)
+![Ein Kohortenaufbewahrungsbericht, der Berechnungen basierend auf einer vorherigen Datenspalte anzeigt.](assets/cohort-rolling-calculation.png)
 
 ### [!UICONTROL Latenztabelle]
 
 Misst die Zeit, die vor und nach dem Aufnahmeereignis verstrichen ist. Ein hervorragendes Tool für die Vor- und Nachanalyse. Die Spalte **[!UICONTROL Aufnahme]** befindet sich in der Mitte der Tabelle und die Zeiträume vor und nach dem Aufnahmeereignis werden auf beiden Seiten angezeigt.
 
-![](assets/cohort-latency.png)
+![Ein Kohortenbericht, der die verstrichene Zeit vor und nach einem Ereignis anzeigt.](assets/cohort-latency.png)
 
 ### [!UICONTROL Angepasste Dimensionskohorte]
 
 Erstellen Sie Kohorten auf Grundlage einer ausgewählten Dimension und nicht auf Grundlage zeitbasierter Kohorten, die Standardeinstellung sind. Verwenden Sie Dimensionen wie [!UICONTROL Marketing-Kanal], [!UICONTROL Kampagne], [!UICONTROL Produkt], [!UICONTROL Seite], [!UICONTROL Region] oder jede andere Dimension in Customer Journey Analytics, um zu zeigen, wie sich die Kundenbindung basierend auf den verschiedenen Werten dieser Dimensionen ändert.
 
-![](assets/cohort-customizable-cohort-row.png)
+![Ein Kohortenbericht, der einen benutzerdefinierten Bericht mit ausgewählten Dimensionen anzeigt, nicht die standardmäßige zeitbasierte Kohorte.](assets/cohort-customizable-cohort-row.png)
 
 Anweisungen zum Einrichten und Durchführen eines Kohortenberichts finden Sie unter  [Konfigurieren eines Kohortenanalyseberichts](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

@@ -3,10 +3,10 @@ description: Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie
 title: Zeileneinstellungen
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 93%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Sehen Sie sich hier ein Video zu Zeilen- und Spalteneinstellungen an:
 
 Die Zeileneinstellungen variieren je nachdem, welche Komponente Sie in die Tabelle gezogen haben. Um auf die Einstellungen der Tabellenzeilen zuzugreifen, klicken Sie auf das Symbol [!UICONTROL Einstellungen] neben einer Dimension, einem Filter, einer Metrik, einem Zeitraum oder einer Aufschlüsselung im jeweiligen Element:
 
-![](assets/row-settings.png)
+![Freiformtabelle, in der das Einstellungssymbol für Metriken hervorgehoben wird](assets/row-settings.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -33,6 +33,6 @@ So ändern Sie die Anzahl der angezeigten Zeilen:
 
 1. Klicken Sie auf die Zahl neben [!UICONTROL Zeilen] oberhalb der Tabelle.
 
-   ![](assets/row-number.png)
+   ![Freiformtabelle mit der Dropdown-Liste der angezeigten Zeilen. 400 Zeilen sind ausgewählt.](assets/row-number.png)
 
 1. Wählen Sie aus der Dropdown-Liste die Anzahl der Zeilen aus, die die Tabelle anzeigen soll.

@@ -3,10 +3,10 @@ description: Mithilfe eines interdimensionalen Flusses können Sie Benutzerpfade
 title: Interdimensionale Flüsse
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
-source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 73%
 
 ---
 
@@ -16,7 +16,7 @@ Mithilfe eines interdimensionalen Flusses können Sie Benutzerpfade über versch
 
 Eine Dimensionsbezeichnung jeweils oben in der Spalte „Fluss“ vereinfacht die Verwendung mehrerer Dimensionen in einer Flussvisualisierung:
 
-![](assets/flow.png)
+![Interdimensionaler Fluss, der mehrere Dimensionen wie Produkt, Seite, Betriebssystemversion und Besuchszeit hervorhebt.](assets/flow.png)
 
 Sehen wir uns 2 Anwendungsfälle an: einen App-Anwendungsfall und einen Web-Anwendungsfall.
 
@@ -24,29 +24,29 @@ Sehen wir uns 2 Anwendungsfälle an: einen App-Anwendungsfall und einen Web-Anwe
 
 Die Dimension [!UICONTROL Aktionsname] wurde dem Fluss hinzugefügt, wobei das oberste zurückgegebene Element [!UICONTROL ItemAdded] ist:
 
-![](assets/multi-dimensional-flow.png)
+![Ein Fluss, der das hinzugefügte Element anzeigt.](assets/multi-dimensional-flow.png)
 
 Um die Interaktion zwischen Bildschirmen/Seiten und Aktionen in dieser App zu untersuchen, können Sie die Dimension „Seite“ an mehrere Stellen ziehen (je nachdem, was genau Sie untersuchen möchten):
 
 * Ziehen Sie die Dimension an eines der Enden der Dropzone (innerhalb der schwarz umrandeten rechteckigen Zone, die eingeblendet wird), um die obersten Ergebnisse an den Enden zu **ersetzen**:
 
-   ![](assets/multi-dimensional-flow2.png) ![](assets/multi-dimensional-flow3.png)
+  ![Ein Fluss, der die Dimension Seite anzeigt, die in mehrere Bereiche gezogen wurde.](assets/multi-dimensional-flow2.png) ![Flussdiagramm mit den gezogenen Elementen.](assets/multi-dimensional-flow3.png)
 
 * Ziehen Sie die Dimension auf die weiße Fläche an dem Ende (beachten Sie die schwarze Klammer), um sie **der Visualisierung hinzuzufügen**:
 
-   ![](assets/multi-dimensional-flow4.png)
+  ![Ein Fluss, der die Dimension Seite anzeigt, die am Ende in den Leerraum gezogen wurde.](assets/multi-dimensional-flow4.png)
 
 Falls Sie sich enschieden haben, das Element „ItemScaled“ in der rechten Spalte mit der Dimension „Seite“ zu ersetzen, sieht das Ergebnis so aus. Das oberste Ergebnis ändert sich nun so, dass es das oberste Ergebnis für die Dimension „Seite“ ist.
 
-![](assets/multi-dimensional-flow5.png)
+![Eine niedrige Anzeige der Dimension Seite ergibt sich oben in der Liste.](assets/multi-dimensional-flow5.png)
 
 Nun können Sie erkennen, wie Ihre Kunden durch die Aktionen und Seiten navigieren. Per Klick auf die verschiedenen Knoten können Sie den Fluss noch weiter untersuchen:
 
-![](assets/multi-dimensional-flow6.png)
+![Ein Fluss, der hinzugefügte Elemente, gezogene Elemente und die Hauptansicht anzeigt.](assets/multi-dimensional-flow6.png)
 
 Wenn Sie eine weitere Dimension Aktionsname am Ende der Visualisierung hinzufügen, geschieht Folgendes:
 
-![](assets/multi-dimensional-flow7.png)
+![Ein Fluss mit dem hinzugefügten Aktionsnamen.](assets/multi-dimensional-flow7.png)
 
 Dies gibt Ihnen tiefere Einblicke in die App, die Sie analysieren möchten, und erlaubt geeignete Änderungen.
 
@@ -56,8 +56,8 @@ Dieser Verwendungsfall zeigt, wie Sie anaysieren können, welche Kampagnen die m
 
 Ziehen Sie die Dimension „Kampagnenname“ in einen neuen Fluss:
 
-![](assets/multi-dimensional-flow8.png)
+![Ein Fluss, der die Dimension Kampagnenname anzeigt und in einen neuen Fluss gezogen wurde.](assets/multi-dimensional-flow8.png)
 
 Nun möchte ich wissen, auf welche Seiten diese Kampagnen Traffic leiten. Daher ziehe ich die Dimension „Seite“ nach rechts von den Flussergebnissen, um sie in der Visualisierung hinzuzufügen:
 
-![](assets/multi-dimensional-flow9.png)
+![Ein Fluss, der die Dimension Seite anzeigt, die rechts von den Flussergebnissen gezogen wurde.](assets/multi-dimensional-flow9.png)

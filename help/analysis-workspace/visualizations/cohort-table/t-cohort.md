@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Konfigurieren eines Kohortenanalyseberichts
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 91%
+source-wordcount: '1003'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Erstellen Sie in Analysis Workspace eine Kohorte und führen Sie einen [!UICONTR
 
 1. Klicken Sie in Analysis Workspace in der linken Leiste auf das Symbol **[!UICONTROL Visualisierungen]** und ziehen Sie eine **[!UICONTROL Kohortentabelle]** auf die Arbeitsfläche.
 
-   ![](assets/cohort-table.png)
+   ![Eine Beispielkohortentabelle mit den Aufnahmekriterien und Rückkehrkriterien.](assets/cohort-table.png)
 
 1. Bestimmen Sie die **[!UICONTROL Aufnahmekriterien]**, die **[!UICONTROL Rückkehrkriterien]**, den **[!UICONTROL Kohortentyp]** und die **[!UICONTROL Einstellungen]** wie in der Tabelle unten definiert.
 
@@ -40,7 +40,7 @@ Erstellen Sie in Analysis Workspace eine Kohorte und führen Sie einen [!UICONTR
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   ![Schritt Ergebnis](assets/cohort-report.png)
+   ![Kohortentabellenansicht mit ausgewählten Aufnahmekriterien und Rückkehrkriterien. Klicken Sie auf Erstellen.](assets/cohort-report.png)
 
    Der Bericht zeigt Personen an, die eine Bestellung aufgegeben haben ( *`Included`* ) und die bei nachfolgenden Besuchen zu Ihrer Site zurückkehrten. Über den Rückgang der Besuche im Laufe der Zeit können Sie Probleme erkennen und Maßnahmen ergreifen.
 1. (Optional) Erstellen Sie einen Filter aus einer Auswahl.

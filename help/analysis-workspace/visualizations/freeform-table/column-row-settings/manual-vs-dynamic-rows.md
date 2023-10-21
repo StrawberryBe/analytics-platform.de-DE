@@ -3,10 +3,10 @@ title: Dynamische und statische Dimensionselemente in Freiformtabellen im Vergle
 description: Interaktion mit dynamischen und statischen Dimensionselementen in Tabellen
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 88%
+source-wordcount: '555'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn Sie beispielsweise die Dimension „Browser-Typ“ in die Tabelle ziehen, k
 Dynamische Dimensionselemente verfügen über die Zeilenfilteroption und die X-Symbole und tun dies **not** Schloss-Symbol vorhanden. <!--do they have the lock icon? --> Wenn Sie auf das x neben einem dynamischen Dimensionselement klicken, wird automatisch ein Filter angewendet. Weitere Informationen zum Anwenden von Filtern auf Tabellen finden Sie unter [Tabellen filtern und sortieren](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
-![](assets/dynamic-items.png)
+![Eine Freiformtabelle, die das Filtersymbol hervorhebt.](assets/dynamic-items.png)
 
 ## Statische Dimensionselemente
 
@@ -40,13 +40,13 @@ Wenn Sie beispielsweise über bestimmte Browser-Typ-Elemente wie Microsoft und A
 
 Statische Dimensionselemente verfügen **nicht** über die Zeilenfilteroption. Stattdessen sind für jedes Element Schloss- und X-Symbole vorhanden. Klicken Sie auf das X-Symbol, um dieses Dimensionselement aus der Tabelle zu entfernen.
 
-![](assets/static-items.png)
+![Eine Freiformtabelle, die den Browsertyp und die Microsoft-Zeile mit einem Schlosssymbol anzeigt: Dieses Dimensionselement ist statisch und ändert sich mit der Zeit nicht.](assets/static-items.png)
 
 ## Gemischte Dimensionselemente
 
 Dimensionselemente aus verschiedenen Dimensionen können derselben Tabelle hinzugefügt werden. In diesen Fällen steht in der Kopfzeile der Zeile „Gemischte Dimensionen“. Diese Dimensionselemente sind statisch. Fügen Sie beispielsweise bestimmte Dimensionselemente aus der Dimension „Browser-Typ“ und andere Dimensionselemente aus der Dimension „Browser“ hinzu.
 
-![](assets/mixed-dimensions.png)
+![Eine Freiformtabelle, die die Spalte Gemischte Dimensionen hervorhebt.](assets/mixed-dimensions.png)
 
 ## Freiform-Gesamtzeilen
 

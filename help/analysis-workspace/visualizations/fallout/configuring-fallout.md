@@ -3,10 +3,10 @@ description: Erfahren Sie, wie Sie die Touchpoints angeben, um eine mehrdimensio
 title: Fallout-Visualisierung konfigurieren
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 71%
+source-wordcount: '718'
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und 
 
 1. Ziehen Sie die Dimension „Seite“ in die Freiformtabelle und ziehen Sie von dort eine Seite (in diesem Fall „Startseite – JJEsquire“) als ersten Touchpoint in das Feld **[!UICONTROL Touchpoint hinzufügen]**.
 
-   ![](assets/fallout1.png)
+   ![Die Dropdown-Liste Alle Besuche mit JJEsquire wurde in das Feld Touchpoint hinzufügen gezogen.](assets/fallout1.png)
 
    Bewegen Sie den Mauszeiger über einen Touchpoint, um den Fallout und andere Informationen zu dieser Ebene anzuzeigen, z. B. den Namen des Touchpoints, die Anzahl der Personen an diesem Punkt und die Erfolgsrate für diesen Touchpoint (sowie den Vergleich der Erfolgsrate mit anderen Touchpoints).
 
@@ -40,11 +40,11 @@ Sie können Pathing an eVars vornehmen, einschließlich Merchandising-eVars und 
    >
    >Hinweis: Mehrere Segmente werden mit AND verbunden, mehrere Elemente wie Dimensionselemente und Metriken hingegen mit OR.
 
-   ![](assets/multiple_obj_touchpoint.png)
+   ![Die Touchpoints &quot;Page:CamerRoll&quot;oder &quot;Page: Camera&quot;wurden hervorgehoben.](assets/multiple_obj_touchpoint.png)
 
 1. Sie können auch **einzelne Touchpoints auf das nächste Ereignis beschränken** (im Gegensatz zu &quot;schließlich&quot;) innerhalb des Pfads. Jedem Touchpoint unterliegen die Auswahlmöglichkeiten „Pfad am Ende“ und „Nächster Hit“:
 
-   ![](assets/next-hit-eventually.png)
+   ![In der Ansicht &quot;Alle Besuche&quot;wurde die Option Pfad am Ende hervorgehoben. ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 

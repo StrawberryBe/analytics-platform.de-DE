@@ -1,12 +1,12 @@
 ---
-description: Mithilfe der Spalteneinstellungen können Sie die Spaltenformatierung konfigurieren. Einige davon sind bedingt.
+description: Erfahren Sie, wie Sie Spalteneinstellungen bearbeiten, um die Spaltenformatierung zu konfigurieren. Einige davon sind bedingt.
 title: Spalteneinstellungen
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 84%
+source-wordcount: '806'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Sehen Sie sich hier ein Video zu Zeilen- und Spalteneinstellungen an:
 
 Um die [!UICONTROL Spalteneinstellungen] aufzurufen, ziehen Sie eine Freiformtabelle in das Projekt und klicken Sie dann auf das Zahnrad-Symbol in der Spaltenüberschrift.
 
-![](assets/column_settings.png)
+![In den Spalteneinstellungen werden die Summenzellen, Tabellenzellen und die Tabellenzellenvorschau angezeigt.](assets/column_settings.png)
 
 Sie können Einstellungen **für mehrere Spalten gleichzeitig** bearbeiten. Wählen Sie hierzu einfach mehrere Spalten aus und klicken Sie in einer der Spalten auf das Einstellungs-Symbol. Sämtliche Änderungen, die Sie hier vornehmen, werden auf die markierten Zellen aller Spalten angewendet.
 
@@ -42,7 +42,7 @@ Sie können Einstellungen **für mehrere Spalten gleichzeitig** bearbeiten. Wäh
 
 Die bedingte Formatierung gilt für Obergrenzen, Mittelwerte und Untergrenzen, die Sie definieren können. Das Anwenden bedingter Formatierung (Farben etc.) in Freiformtabellen ist bei Aufschlüsselungen auch automatisch aktiviert, wenn keine benutzerdefinierten Beschränkungen ausgewählt sind.
 
-![](assets/conditional-formatting.png)
+![Die Optionen für die bedingte Formatierung mit Auswahl von &quot;Benutzerdefiniert&quot;.](assets/conditional-formatting.png)
 
 | Element | Beschreibung |
 | --- | --- |
@@ -72,11 +72,11 @@ So verwenden Sie ein nicht standardmäßiges Attributionsmodell für eine Metrik
 
 1. Klicken Sie auf das Symbol Einstellungen (Zahnrad) für eine Metrik in einer Freiformtabellenspalte.
 
-   ![Kontrollkästchen „Attribution“](assets/attribution-checkbox.png)
+   ![Die Optionen für Spalteneinstellungen , die die Option Dateneinstellungen hervorheben: Verwenden Sie den nicht standardmäßigen Attributionsmodus.](assets/attribution-checkbox.png)
 
 2. Aktivieren Sie unter **[!UICONTROL Dateneinstellungen]** die Option **[!UICONTROL Nicht standardmäßiges Attributionsmodell verwenden]**. Weitere Informationen zu den unterschiedlichen Attributionsmodellen finden Sie unter [Attributionsmodelle](/help/data-views/component-settings/attribution.md).
 
-   ![Attributionsmodell auswählen](assets/attribution-select.png)
+   ![Die Optionen des Spaltenattributionsmodells zeigen die Option Linear ausgewählt an.](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >
