@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Customer Journey Analytics Analysis Works
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: ht
-source-wordcount: '993'
+source-git-commit: cd3747e0c9e041394db79d70fcd63294d0da9867
+workflow-type: tm+mt
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -83,8 +83,7 @@ Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von
 
 * [Abfrage-Service von Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein Server-loses Tool, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können. Dieser kann in Berichten, Data Science Workspace oder zur Aufnahme in den Profil-Service verwendet werden. Mit dem Abfrage-Service von Experience Platform können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucherinnen und Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen gehören beispielsweise PoS-Systeme, Web-, mobile und CRM-Systeme usw.
 * [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de):
-* [Identity-Dienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de):
-* [Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html?lang=de) in Entwicklermodus: Sie können vorgefertigte Modelle für künstliche Intelligenz (KI) und maschinelles Lernen in Adobe Experience Platform verwenden, um verschiedene Aspekte der Customer Journey zu beeinflussen. Durch das Aufspüren verborgener Erkenntnisse können Sie bessere Vorhersagen für die gesamte Customer Journey treffen, Empfehlungen für die besten nächsten Schritte geben oder umständliche Prozesse automatisieren.
+* [Identitätsdienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
 
 ## Videos
 
