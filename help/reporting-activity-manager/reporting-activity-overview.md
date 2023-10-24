@@ -3,7 +3,7 @@ title: Übersicht über die Berichterstellung in Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 23%
@@ -11,8 +11,6 @@ ht-degree: 23%
 ---
 
 # Reporting Activity Manager Übersicht
-
-{{release-limited-testing}}
 
 Die [!UICONTROL Reporting Activity Manager] ist für Administratoren verfügbar.
 
