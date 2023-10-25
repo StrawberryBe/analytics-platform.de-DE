@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2797'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -60,12 +60,12 @@ Sie müssen über das **Select**-Paket verfügen, um einer Verbindung eine unbeg
 
 Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experience Platform-Datensatz hinzufügen.
 
-1. Wählen Sie im Dialogfeld Verbindungsparameter die Option **[!UICONTROL Hinzufügen von Datensätzen]**.
+1. Wählen Sie im Dialogfeld „Verbindungseinstellungen“ die Option **[!UICONTROL Datensätze hinzufügen]** aus.
 
-2. Im [!UICONTROL Auswählen von Datensätzen] Schritt, wählen Sie einen oder mehrere Datensätze aus und wählen Sie **[!UICONTROL Nächste]**. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
-   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) und wählen Sie die Spalten aus, die im [!UICONTROL Tabelle anpassen] angezeigt.
-   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie die ![Suche](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) Suchfeld.
-   * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Ausblenden ausgewählt]** oder **[!UICONTROL Ausgewählte anzeigen]**.
+2. Wählen Sie im Schritt [!UICONTROL Datensätze auswählen] einen oder mehrere Datensätze aus und klicken Sie auf **[!UICONTROL Weiter]**. Mindestens ein Ereignisdatensatz muss Teil der Verbindung sein.
+   * Um die für die Liste der Datensätze angezeigten Spalten zu ändern, wählen Sie ![Spalteneinstellungen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) aus und wählen Sie die Spalten aus, die im Dialogfeld [!UICONTROL Tabelle anpassen] angezeigt werden sollen.
+   * Um nach einem bestimmten Datensatz zu suchen, verwenden Sie das ![Suchfeld](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
+   * Um die ausgewählten Datensätze ein- oder auszublenden, wählen Sie ![Auswählen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg), **[!UICONTROL Ausgewählte ausblenden]** oder **[!UICONTROL Ausgewählte anzeigen]** aus.
    * Um einen Datensatz aus der Liste der ausgewählten Datensätze zu entfernen, verwenden Sie ![Schließen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Um alle ausgewählten Datensätze zu entfernen, wählen Sie **[!UICONTROL Alle löschen]**.
 
    ![Auswählen von Datensätzen](assets/select-datasets.png)
@@ -79,7 +79,7 @@ Mit dem neuen Workflow können Sie beim Erstellen einer Verbindung einen Experie
    | **[!UICONTROL Personen-ID]** | Nur für Ereignis- und Profildatensätze verfügbar. Wählen Sie eine Personen-ID aus der Dropdown-Liste der verfügbaren Identitäten aus. Diese Identitäten wurden im Datensatzschema in Experience Platform definiert. Weitere Informationen zur Verwendung von Identity Map als Personen-ID finden Sie weiter unten.<p>Wenn keine Personen-IDs zur Auswahl stehen, bedeutet das, dass eine oder mehrere Personen-IDs im Schema nicht definiert wurden. In diesem Videos sehen Sie, wie Sie eine Identität in Experience Platform definieren. |
    | **[!UICONTROL Zeitstempel]** | Nur für Ereignis-Datensätze wird diese Einstellung automatisch auf das Standard-Zeitstempelfeld von Ereignis-basierten Schemas in Experience Platform gesetzt. |
    | **[!UICONTROL Schlüssel]** | Nur für Lookup-Datensätze verfügbar. Der für einen Lookup-Datensatz zu verwendende Schlüssel. |
-   | **[!UICONTROL Passender Schlüssel]** | Nur für Lookup-Datensätze verfügbar. Der passende Schlüssel, der in einem der Ereignis-Datensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignis-Datensatz hinzugefügt oder konfiguriert. |
+   | **[!UICONTROL Passender Schlüssel]** | Nur für Lookup-Datensätze verfügbar. Der passende Schlüssel, der in einem der Ereignisdatensätze hinzugefügt werden soll. Wenn diese Liste leer ist, haben Sie wahrscheinlich keinen Ereignisdatensatz hinzugefügt oder konfiguriert. |
    | **[!UICONTROL Datenquellentyp]** | Wählen Sie einen Datenquellentyp aus. <br/>Hierzu gehören: <ul><li>[!UICONTROL Web-Daten]</li><li>[!UICONTROL App-Daten]</li><li>[!UICONTROL PoS-Daten]</li><li>[!UICONTROL CRM-Daten]</li><li>[!UICONTROL Umfragedaten]</li><li>[!UICONTROL Callcenter-Daten]</li><li>[!UICONTROL Produktdaten]</li><li> [!UICONTROL Kontodaten]</li><li> [!UICONTROL Transaktionsdaten]</li><li>[!UICONTROL Kunden-Feedback-Daten]</li><li> [!UICONTROL Sonstige]</li></ul>Dieses Feld wird verwendet, um sich einen Überblick über die verwendeten Datenquellen zu verschaffen. |
    | **[!UICONTROL Neue Daten importieren]** | Wählen Sie diese Option aus, wenn Sie eine fortlaufende Verbindung herstellen möchten. Damit fließen alle neuen Daten-Batches, die zu den Datensätzen in dieser Verbindung hinzugefügt werden, automatisch in Workspace ein. Kann auf [!UICONTROL Ein] oder [!UICONTROL Aus] eingestellt werden. |
    | **[!UICONTROL Aufstockung des Datensatzes]** | Wählen Sie **[!UICONTROL Aufstockung anfordern]** aus, um eine Aufstockung mit historischen Daten durchzuführen.<ul><li>Sie können jeden Datensatz einzeln aufstocken.</li><li>Neue Daten, die einem Datensatz in der Verbindung hinzugefügt werden, werden priorisiert, sodass diese neuen Daten die geringste Latenz aufweisen.</li><li>Alle (historischen) Aufstockungsdaten werden langsamer importiert. Die Latenz hängt von der vorhandenen Anzahl historischer Daten ab.</li><li>Der Analytics-Quell-Connector importiert Daten aus bis zu 13 Monaten (unabhängig von ihrer Größe) für Produktions-Sandboxes. Die Aufstockung in Nicht-Produktions-Sandboxes ist dagegen auf 3 Monate beschränkt.</li></ul> |

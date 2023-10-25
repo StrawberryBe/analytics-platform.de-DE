@@ -4,32 +4,32 @@ description: Übersicht über den Vergleich von Customer Journey Analytics mit A
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 4cbf01d397e7f89e67ae20702790129478d45cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Vergleich mit Adobe Analytics
 
-In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie die Unterschiede zwischen Adobe Customer Journey Analytics und Adobe Analytics vergleichen und verstehen.
+In diesem Abschnitt der Dokumentation wird erläutert, wie Sie Adobe Customer Journey Analytics und Adobe Analytics vergleichen sowie die Unterschiede zwischen ihnen verstehen können.
 
 Der grundlegende Unterschied zwischen den beiden Lösungen besteht in der Breite der Daten, die Sie bei der Erstellung Ihrer Berichte und Analysen berücksichtigen können.
 
-In Customer Journey Analytics kann *jede* Datenquelle Teil der Daten sein, die Sie für die Reporting und Analyse verwenden. Adobe Analytics ist in erster Linie auf Online-Daten ausgerichtet, die über Websites und mobile Apps erfasst werden. Adobe Analytics bietet Funktionen zum Importieren von Daten aus anderen Quellen. Der Hauptzweck besteht darin, mehr Kontext für die oben genannten Online-Daten bereitzustellen.
+In Customer Journey Analytics kann *jede* Datenquelle Teil der Daten sein, die Sie für die Reporting und Analyse verwenden. Adobe Analytics ist in erster Linie auf Online-Daten ausgerichtet, die über Websites und mobile Apps erfasst werden. Adobe Analytics bietet zwar Möglichkeiten, Daten aus anderen Quellen zu importieren, doch der Hauptzweck besteht darin, den zuvor erwähnten Online-Daten mehr Kontext zu geben.
 
 ## Datenerfassung
 
-Customer Journey Analytics beruht auf Daten, die in Adobe Experience Platform-Datensätzen gespeichert sind. Sie haben mehrere Möglichkeiten, Daten aus diesen Datensätzen zu erfassen und in Experience Platform zu erfassen. Diese Optionen werden im Abschnitt [Datenaufnahme – Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=de) beschrieben.
+Customer Journey Analytics beruht auf Daten, die in Adobe Experience Platform-Datensätzen gespeichert sind. Sie haben mehrere Möglichkeiten, Daten in diesen Datensätzen zu erfassen und in Experience Platform aufzunehmen. Diese Optionen werden im Abschnitt [Datenaufnahme – Übersicht](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=de) beschrieben.
 
 Adobe Analytics erfasst letztendlich Daten innerhalb der Lösung selbst. Auch hier haben Sie mehrere Möglichkeiten, diese Daten zu erfassen, die im [Implementierungshandbuch für Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=de) genauer beschrieben werden.
 
-Sie können Ihre Report Suite-Daten aus Adobe Analytics mit dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in Customer Journey Analytics verwenden. Dieser Connector erfasst die in Adobe Analytics erfassten Daten in Experience Platform. Anschließend können Sie eine Verbindung zu diesem Datensatz im Customer Journey Analytics erstellen. Siehe [Verwenden von Report Suite-Daten aus Adobe Analytics in Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=de), um weitere Informationen zu erhalten.
+Sie können Ihre Report Suite-Daten aus Adobe Analytics mit dem [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de) in Customer Journey Analytics verwenden. Dieser Connector nimmt Daten, die in Adobe Analytics erfasst werden, in Experience Platform auf. Anschließend können Sie eine Verbindung zu diesem Datensatz im Customer Journey Analytics erstellen. Siehe [Verwenden von Report Suite-Daten aus Adobe Analytics in Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=de), um weitere Informationen zu erhalten.
 
 
 ## Datenverarbeitung
 
-Bevor Sie Berichte zu Daten erstellen können, müssen Sie diese Daten häufig verarbeiten, um sicherzustellen, dass die Daten ordnungsgemäß für die Berichterstellung verwendet werden können. Die Datenverarbeitung kann zur Erfassungszeit und zur Berichtszeit erfolgen.
+Bevor Sie Berichte zu Daten erstellen können, müssen diese Daten häufig verarbeitet werden, um sicherzustellen, dass die Daten ordnungsgemäß für das Reporting verwendet werden können. Datenverarbeitung kann zeitgleich mit der Erfassung oder mit der Berichterstellung erfolgen.
 
 Im Allgemeinen kann Customer Journey Analytics mit den Daten verwendet werden, die zeitgleich zur Berichterstellung in einem Experience Platform-Datensatz erfasst und gespeichert wurden. Customer Journey Analytics bietet eine leistungsstarke Funktionalität zur Verarbeitung zum Zeitpunkt der Berichterstellung, um sicherzustellen, dass die Daten für Berichte und Analysen bereit sind. Wenn Sie Daten vor der Erfassung in Experience Platform zuordnen, transformieren und validieren müssen, können Sie die Funktionalität [Datenvorbereitung](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=de) von Experience Platform verwenden.
 
@@ -40,7 +40,7 @@ Siehe [Vergleich der Datenverarbeitung zwischen Adobe Analytics und Customer Jou
 
 ## Terminologie
 
-Customer Journey Analytics gibt Ihnen eine Flexibilität bei der Definition von Dimensionen und Metriken, was durch die Flexibilität ermöglicht wird, die die zugrunde liegenden Schemata bieten, welche auf dem Experience-Datenmodell (XDM) basieren. Wenn Adobe Analytics beispielsweise Besucher, Besuche und Treffer verwendet, verwendet Customer Journey Analytics Personen, Sitzungen und Ereignisse als gleichwertige Konzepte (Sie können die Benennung nach Belieben ändern).
+Customer Journey Analytics gibt Ihnen eine Flexibilität bei der Definition von Dimensionen und Metriken, was durch die Flexibilität ermöglicht wird, die die zugrunde liegenden Schemata bieten, welche auf dem Experience-Datenmodell (XDM) basieren. Dort wo Adobe Analytics beispielsweise Besucherinnen und Besucher, Besuche und Treffer verwendet, verwendet Customer Journey Analytics Personen, Sitzungen und Ereignisse als gleichwertige Konzepte (aber Sie können die Benennung nach Bedarf ändern).
 
 Siehe [Vergleich der Terminologie für Analytics-Daten, die über den Analytics Source Connector übergeben werden](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=de), um weitere Informationen zu den Unterschieden in der Terminologie zu erhalten.
 
@@ -49,9 +49,9 @@ Siehe [Vergleich der Terminologie für Analytics-Daten, die über den Analytics 
 
 Adobe Analytics basiert auf dem Konzept von Virtual Report Suites, mit denen Sie Ihre erfassten Daten segmentieren und den Zugriff auf diese segmentierten Daten steuern können.
 
-Customer Journey Analytics hat ein ähnliches Konzept, so genannte Datenansichten. Datenansichten sind Container, mit denen Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Sie bieten höchste Flexibilität bei der Spezifizierung und Konfiguration von Dimensionen und Metriken zur Vorbereitung auf Ihre Berichterstellung und Analyse.
+Customer Journey Analytics hat ein ähnliches Konzept, das „Datenansichten“ genannt wird. Datenansichten sind Container, mit denen Sie bestimmen können, wie Daten aus einer Verbindung interpretiert werden. Sie sind äußerst flexibel, um Dimensionen und Metriken zur Vorbereitung auf Ihre Berichte und Analysen zu spezifizieren und zu konfigurieren.
 
-Experience Platform bietet Sandboxes, die als Container mit Daten und Anwendungen für eine bestimmte Umgebung betrachtet werden können. Die Funktionalität einer Sandbox ist nicht mit einer Virtual Report Suite in Adobe Analytics oder einer Datenansicht in Customer Journey Analytics verbunden. Adobe Analytics selbst hat keine Abhängigkeit oder Beziehung zu Experience Platform-Sandboxes. Customer Journey Analytics unterstützt zwar Experience Platform-Sandboxes, es gibt jedoch einige wichtige Aspekte.
+Experience Platform bietet Sandboxes, die als Container mit Daten und Anwendungen für eine bestimmte Umgebung betrachtet werden können. Die Funktionalität einer Sandbox ist nicht mit einer Virtual Report Suite in Adobe Analytics oder einer Datenansicht in Customer Journey Analytics verbunden. Adobe Analytics selbst hat keine Abhängigkeit oder Beziehung zu Experience Platform-Sandboxes. Customer Journey Analytics unterstützt zwar Experience Platform-Sandboxes, allerdings gibt es einige Aspekte zu bedenken.
 
 Weitere Informationen finden Sie unter [Virtual Report Suites, Datenansichten, Adobe Experience Platform-Sandboxes und der Analytics Source Connector](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=de).
 
