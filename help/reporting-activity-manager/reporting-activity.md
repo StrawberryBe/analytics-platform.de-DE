@@ -3,10 +3,10 @@ title: Berichtsaktivität im Reporting Activity Manager anzeigen
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+source-git-commit: 9c76b7c9f5f99da70b5c097a11cfb4cfd1370e9f
 workflow-type: tm+mt
 source-wordcount: '1904'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -139,7 +139,7 @@ Wenn Sie die [!UICONTROL **Anfrage**] -Tab, stehen in der Tabelle die folgenden 
 
 | Spalte | Beschreibung |
 | --- | --- |
-| [!UICONTROL **Antrags-ID**] | Eine eindeutige ID, die zur Fehlerbehebung verwendet werden kann. Um die ID zu kopieren, wählen Sie die Anforderung und dann die Option aus. [!UICONTROL **Anforderungs-ID kopieren**]. |
+| [!UICONTROL **Antrags-ID**] | Eine eindeutige ID, die zur Fehlerbehebung verwendet werden kann. Um die ID zu kopieren, wählen Sie die Anforderung und dann die Option aus. [!UICONTROL **Anforderungs-IDs kopieren**]. |
 | [!UICONTROL **Ausführungszeit**] | Dauer der Ausführung der Anfrage. |
 | [!UICONTROL **Startzeit**] | Der Zeitpunkt, zu dem die Anfrage verarbeitet wurde (basierend auf der Ortszeit des Administrators). |
 | [!UICONTROL **Wartezeit**] | Wie lange die Anfrage vor der Verarbeitung gewartet hat. Dieser Wert liegt im Allgemeinen bei &quot;0&quot;, wenn ausreichend Kapazität vorhanden ist. |
