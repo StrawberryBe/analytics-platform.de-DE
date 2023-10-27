@@ -5,9 +5,9 @@ title: Customer Journey Analytics-Daten per E-Mail an andere senden
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 58%
 
 ---
@@ -88,7 +88,7 @@ Weitere Informationen finden Sie unter [Geplante Projekte](/help/components/sche
 
 >[!NOTE]
 >
->Die Option zum Kennwortschutz für ein geplantes Projekt wird nur für Customer Journey Analytics-Kunden angezeigt, die die [Gesundheitsschild](https://business.adobe.com/de/solutions/experience-cloud-for-healthcare.html) Add-On-Produkt.
+>Die Option zum Kennwortschutz für ein geplantes Projekt wird nur für Customer Journey Analytics-Kunden angezeigt, die die [Gesundheitsschild](https://business.adobe.com/solutions/industries/healthcare.html) Add-On-Produkt.
 
 Adobe verwendet das Passwort zum Verschlüsseln geplanter Projekte, unabhängig davon, ob sie im .pdf- oder .csv-Format gesendet werden.
 
