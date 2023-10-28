@@ -4,9 +4,9 @@ description: Benutzerinteraktion im Lauf der Zeit messen.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
+source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '621'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,10 @@ Die [!UICONTROL Nutzung] Die Ansicht bietet die folgenden Diagrammeinstellungen,
 Fügen Sie dem Diagramm zusätzliche Daten hinzu.
 
 * **[!UICONTROL Anomalien anzeigen]**: Ausführungen [Anomalieerkennung](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) in der Trendanalyse. Ausreißer erscheinen als Punkte, über die Sie den Mauszeiger bewegen können, um weitere Informationen zu erhalten.
+* **[!UICONTROL Trendzeilenüberlagerung]**: Fügt eine Trendlinie zum Diagramm hinzu, mit der Sie die Gesamtrichtung Ihrer Daten innerhalb des angegebenen Zeitraums anzeigen können.
+   * [!UICONTROL Linear]: Ein lineares Regressionsmodell. Empfohlen für Daten, die stetig zunehmen oder abnehmen.
+   * [!UICONTROL Logarithmisch]: Ein gekrümmtes Regressionsmodell. Empfohlen für Daten, die im Laufe der Zeit stufenlos verteilt werden.
+   * [!UICONTROL anpassbarer Durchschnittswert]: Eine geglättete Linie, die den vorherigen Zeitraum von jedem Punkt aus durchschnittlich darstellt. Empfohlen für Daten mit regelmäßigen Zyklen. Die verfügbaren gleitenden Durchschnittszeiträume hängen vom ausgewählten Datumsbereich ab.
 
 ## Zeitvergleich anwenden
 
