@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
+source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
 workflow-type: tm+mt
-source-wordcount: '2894'
-ht-degree: 96%
+source-wordcount: '2919'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,7 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 | Funktion | Beschreibung |
 | --- | --- |
 | **Oktober 2023** | |
+| Verwenden abgeleiteter Felder zum Festlegen von Zielen | hinzugefügt [Anwendungsfall](../use-cases/goals-using-derived-fields.md) Artikel, in dem erläutert wird, wie abgeleitete Felder zum Festlegen von Zielen/Zielen und zum Reporting zu diesen verwendet werden. |
 | Exportieren von vollständigen Tabellen in die Cloud | Es wurde eine Dokumentation zum Exportieren vollständiger Tabellen mit Millionen von Workspace-Zeilen in Cloud-Ziele hinzugefügt. <p>Der Export vollständiger Tabellen bietet einen einmaligen oder geplanten Versand von Datentabellen, die in Workspace entwickelt wurden. Dabei werden bis zu fünf Aufschlüsselungen, fünf Metriken, Filter und berechnete Metriken in einer verketteten Tabelle unterstützt. Es ist die Weiterentwicklung von Data Warehouse-Berichten in Adobe Analytics, mit vielen neuen, häufig angeforderten Funktionen, die heute nicht in Data Warehouse verfügbar sind.</p><p>Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=de). | 4. Oktober 2023 |
 | Reporting Activity Manager | Es wurde eine Dokumentation für den Reporting Activity Manager hinzugefügt. <p>Reporting Activity Manager zeigt die Berichtskapazität für jede Verbindung in Ihrer Organisation an. Er bietet Admins detaillierte Einblicke in die Berichtsnutzung und hilft ihnen, Kapazitätsprobleme bei Spitzen während der Berichterstellung mühelos zu diagnostizieren und zu beheben.</p> <p>Die folgenden neuen Artikel wurden hinzugefügt:<ul><li>[Übersicht über die Berichterstellung in Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[Berichtsaktivität im Reporting Activity Manager anzeigen](/help/reporting-activity-manager/reporting-activity.md)</li><li>[Abbrechen von Anforderungen im Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
 | Neue Spalten auf Verwaltungsseiten | Neue Spalten dokumentiert, die jetzt im [Manager für berechnete Metriken](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=de) und [Filter Manager](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=de). |
