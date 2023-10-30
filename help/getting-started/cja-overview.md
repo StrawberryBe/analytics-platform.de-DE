@@ -83,7 +83,7 @@ Von der Datenerfassung bis zum direkten SQL-Zugriff sind mehrere Komponenten von
 
 * [Abfrage-Service von Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=de): Verwenden Sie Standard-SQL, um Daten von Adobe Experience Platform abzurufen, z. B. Adobe-Lösungsdaten, Erstanbieter-Kundendaten oder andere Platform-Daten. Es handelt sich dabei um ein Tool ohne Server, mit dem Sie beliebige Datensätze zusammenführen und die Abfrageergebnisse als neuen Datensatz erfassen können, der für die Berichterstellung oder für die Aufnahme in den Profil-Service verwendet werden kann. Mit dem Abfrage-Service von Experience Platform können Sie Ökosysteme für die Datenanalyse erstellen und sich ein Bild über die Verbraucherinnen und Verbraucher über ihre verschiedenen Interaktionskanäle hinweg machen. Zu diesen Kanälen gehören beispielsweise PoS-Systeme, Web-, mobile und CRM-Systeme usw.
 * [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de):
-* [Identitätsdienst](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
+* [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de)
 
 ## Videos
 
