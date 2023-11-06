@@ -5,8 +5,8 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
-workflow-type: ht
+source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
+workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 100%
 
@@ -60,7 +60,6 @@ Die Cross-Channel-Analyse ist eine innovative und zuverlässige Funktion, deren 
 * Das Feld für die vorübergehende ID sollte nur einen ID-Typ enthalten (also IDs aus einem einzigen Namespace). Das Feld für die vorübergehende ID sollte beispielsweise keine Kombination aus Anmelde-IDs und E-Mail-IDs enthalten.
 * Wenn mehrere Ereignis mit demselben Zeitstempel für dieselbe permanente ID auftreten, jedoch unterschiedliche Werte im Feld für die vorübergehende ID vorliegen, wird die feldbasierte Zuordnung auf Grundlage der alphabetischen Reihenfolge gewählt. Wenn also eine permanente ID A zwei Ereignisse mit demselben Zeitstempel hat und eines der Ereignis „Bob“ und das andere „Ann“ angibt, wählt die feldbasierte Zuordnung „Ann“.
 * Wenn ein Gerät von mehreren Personen gemeinsam genutzt wird und die Gesamtzahl der Transitionen aller Benutzer 50.000 überschreitet, stoppt die kanalübergreifende Analyse die Zuordnung von Daten für dieses Gerät.
-
 
 ## Aktivieren der Cross-Channel-Analyse
 
