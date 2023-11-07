@@ -4,10 +4,10 @@ description: Übersicht über das Stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
-source-git-commit: c83917d0d73c2a178d5479f2a0257bd3f400666c
+source-git-commit: 058b8d997c7cb2e4e73d3c2026a4b9bf29db26bd
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 23%
+source-wordcount: '1468'
+ht-degree: 21%
 
 ---
 
@@ -44,7 +44,7 @@ Stellen Sie vor der Verwendung von Stitching sicher, dass Ihr Unternehmen wie fo
    * Eine **beständige ID**, eine Kennung, die in jeder Zeile vorhanden ist. Beispielsweise eine Besucher-ID, die von einer Adobe Analytics-AppMeasurement-Bibliothek generiert wurde, oder eine ECID, die vom Adobe Experience Cloud Identity-Dienst generiert wurde.
    * Eine **vorübergehende ID**, eine Kennung, die nur in einigen Zeilen vorhanden ist. Beispiel: ein/e gehashte/r Benutzername oder E-Mail-Adresse, wenn sich ein Besucher authentifiziert. Sie können praktisch jede beliebige Kennung verwenden. Beim Zuordnen werden in diesem Feld die tatsächlichen Personen-ID-Informationen gespeichert. Für optimale Zuordnungsergebnisse sollte für jede beständige ID mindestens einmal innerhalb der Ereignisse des Datensatzes eine vorübergehende ID gesendet werden. Wenn Sie diesen Datensatz in eine Customer Journey Analytics-Verbindung einschließen möchten, sollten die anderen Datensätze ebenfalls eine ähnliche gemeinsame Kennung aufweisen.
 
-  Beide Spalten (beständige ID und vorübergehende ID) müssen als Identitätsfeld mit einem Identitäts-Namespace im Schema definiert werden, der dem Datensatz zugrunde liegt, den Sie zuordnen möchten.
+  Beide Spalten (beständige ID und vorübergehende ID) müssen als Identitätsfeld mit einem Identitäts-Namespace im Schema definiert werden, der dem Datensatz zugrunde liegt, den Sie zuordnen möchten. Bei Verwendung der Identitätszusammenfügung in Real-time Customer Data Platform mithilfe des [identityMap-Feldergruppe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity)müssen Sie weiterhin Identitätsfelder mit einem Identitäts-Namespace hinzufügen, da die in diesem Abschnitt beschriebene Wiederholungszuordnung die Feldergruppe identityMap nicht unterstützt. Führen Sie beim Hinzufügen eines Identitätsfelds bei Verwendung der Identitätszuordnung in Real-time Customer Data Platform basierend auf der Identitätszuordnungsfeldgruppe folgende Schritte aus: *not* Legen Sie das zusätzliche Identitätsfeld als primäre Identität fest, da dies die Identitätszuordnung auf der Grundlage der Identitätszuordnung für Identitätsgruppen in Real-time Customer Data Platform stört.
 
 * Die Zuordnung umfasst das Zusammenführen authentifizierter und nicht authentifizierter Benutzerdaten. Stellen Sie sicher, dass Sie die geltenden Gesetze und Vorschriften einhalten, einschließlich der Erlangung der erforderlichen Endbenutzerberechtigungen, bevor Sie die Zuordnung für einen Ereignis-Datensatz aktivieren. Siehe [Identitätsfelder in der Benutzeroberfläche definieren](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) für weitere Informationen.
 
