@@ -3,9 +3,9 @@ description: Verwenden Sie die Visualisierungen „Zusammenfassungsnummer“ und
 title: Sammelnummer und Sammeländerung
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+workflow-type: tm+mt
+source-wordcount: '395'
 ht-degree: 100%
 
 ---
@@ -30,16 +30,7 @@ Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstel
 | Wert abkürzen | Wählen Sie diese Option, um Werte zu kürzen und bis zu 3 Dezimalstellen anzuzeigen. |
 | Wert zusammenfassen nach | Wählen Sie diese Option, um das Maximum, das Minimum, den Mittelwert, den Median oder die Summe für eine Auswahl von Daten anzuzeigen. |
 
-
-Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstellungen für die Zusammenfassungsnummer zu konfigurieren:
-
-| Einstellung | Definition |
-|--- |--- |
-| Prozentsatz | Zeigt Prozentsätze und keine Rohdaten an. |
-| Legende sichtbar | Zeigt Informationen zur angezeigten Metrik an. |
-| Wert abkürzen | Wählen Sie diese Option, um Werte zu kürzen und bis zu 3 Dezimalstellen anzuzeigen. |
-| Wert zusammenfassen nach | Wählen Sie diese Option, um das Maximum, das Minimum, den Mittelwert, den Median oder die Summe für eine Auswahl von Daten anzuzeigen. |
-
+{style="table-layout:auto"}
 
 ## Visualisierung für Zusammenfassungsänderung: {#summary-change}
 
