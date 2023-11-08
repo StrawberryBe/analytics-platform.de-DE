@@ -4,9 +4,9 @@ description: Benutzerinteraktion im Lauf der Zeit messen.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
+source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,9 @@ Anwendungsbeispiele für diesen Ansichtstyp sind:
 
 In der Abfrageleiste können Sie die folgenden Komponenten konfigurieren:
 
-* **[!UICONTROL Veranstaltungen]**: Die Ereignisse, die Sie messen möchten. Jedes ausgewählte Ereignis wird je nach Diagrammtyp als farbige Linie oder Gruppe von Balken dargestellt. Der Tabelle wird eine Zeile hinzugefügt, die das Trendereignis darstellt. Sie können bis zu fünf Ereignisse einbeziehen.
-* **[!UICONTROL Personen]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Zeilen im Diagramm und Zeilen in der Tabelle. Sie können bis zu fünf Segmente einbeziehen.
-* **[!UICONTROL Verteilung]**: Erstellen Sie eine separate Trendlinie pro Dimensionselement. Es wird eine Aufschlüsselungsdimension unterstützt.
+* **[!UICONTROL Veranstaltungen]**: Die Ereignisse, die Sie messen möchten. Jedes ausgewählte Ereignis wird als Diagrammreihen und Tabellenzeile dargestellt. Sie können bis zu fünf Ereignisse einbeziehen.
+* **[!UICONTROL Personen]**: Die Segmente, die Sie messen möchten. Jedes ausgewählte Segment verdoppelt die Anzahl der Diagrammreihen und Tabellenzeilen. Sie können bis zu fünf Segmente einbeziehen.
+* **[!UICONTROL Aufschlüsselungseigenschaft]**: Schlüsselt die Diagrammreihen und Tabellenzeilen nach den Werten der ausgewählten Eigenschaft auf. Eine einzelne Aufschlüsselungseigenschaft wird unterstützt. Die Top-20-Werte werden in der Tabelle angezeigt und bis zu zehn Werte können in der Grafik angezeigt werden. Sie können eine Zeile im Diagramm ausblenden oder verfügbar machen, indem Sie die ![Symbol zum Ausblenden](../assets/hide-in-chart.png) Symbol.
 
 ## Diagrammeinstellungen
 
@@ -43,13 +43,13 @@ Die [!UICONTROL Nutzung] Die Ansicht bietet die folgenden Diagrammeinstellungen,
 
 ## Überlagerungen
 
-Fügen Sie dem Diagramm zusätzliche Daten hinzu.
+Fügen Sie dem Diagramm zusätzliche Daten hinzu. Wenn mehrere Reihen im Diagramm sichtbar sind, werden Überlagerungen nur beim Bewegen des Mauszeigers angezeigt.
 
-* **[!UICONTROL Anomalien anzeigen]**: Ausführungen [Anomalieerkennung](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) in der Trendanalyse. Ausreißer erscheinen als Punkte, über die Sie den Mauszeiger bewegen können, um weitere Informationen zu erhalten.
-* **[!UICONTROL Trendzeilenüberlagerung]**: Fügt eine Trendlinie zum Diagramm hinzu, mit der Sie die Gesamtrichtung Ihrer Daten innerhalb des angegebenen Zeitraums anzeigen können.
-   * [!UICONTROL Linear]: Ein lineares Regressionsmodell. Empfohlen für Daten, die stetig zunehmen oder abnehmen.
-   * [!UICONTROL Logarithmisch]: Ein gekrümmtes Regressionsmodell. Empfohlen für Daten, die im Laufe der Zeit stufenlos verteilt werden.
-   * [!UICONTROL anpassbarer Durchschnittswert]: Eine geglättete Linie, die den vorherigen Zeitraum von jedem Punkt aus durchschnittlich darstellt. Empfohlen für Daten mit regelmäßigen Zyklen. Die verfügbaren gleitenden Durchschnittszeiträume hängen vom ausgewählten Datumsbereich ab.
+* **[!UICONTROL Anomalieerkennung]**: Ausführungen [Anomalieerkennung](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) in der Trendanalyse. Ausreißer erscheinen als Punkte, über die Sie den Mauszeiger bewegen können, um weitere Informationen zu erhalten.
+* **[!UICONTROL Trendzeilenüberlagerung]**: Fügt dem Diagramm eine Trendlinie hinzu, die dazu beiträgt, ein klareres Muster in den Daten darzustellen.
+   * [!UICONTROL Linear]: Erstellt eine gerade Regressionslinie. Am besten für einfache lineare Daten, die stetig zunehmen oder abnehmen. Gleichung: `y = a + b * x`
+   * [!UICONTROL Logarithmisch]: Erstellt eine gekrümmte Regressionslinie. Am besten für Daten, die schnell zunehmen oder abnehmen und dann weiter steigen. Gleichung: `y = a + b * log(x)`
+   * [!UICONTROL anpassbarer Durchschnittswert]: Erstellt eine glatte Trendlinie basierend auf einer Reihe von Durchschnittswerten. Ein anpassbarer Durchschnittswert, der auch als rollierender Durchschnitt bezeichnet wird, verwendet eine bestimmte Anzahl vorheriger Datenpunkte (bestimmt durch Ihre Auswahl), errechnet einen Durchschnittswert und verwendet den Durchschnittswert als Punkt in der Zeile. Beispiele sind der anpassbare Durchschnittswert von sieben Tagen oder der anpassbare Durchschnittswert von vier Wochen. Die verfügbaren anpassbaren Durchschnittsoptionen hängen von Ihrem ausgewählten Intervall und Datumsbereich ab.
 
 ## Zeitvergleich anwenden
 
