@@ -4,9 +4,9 @@ description: Alle Einstellungen, die Sie anpassen können, um eine Datenansicht 
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
+source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1431'
 ht-degree: 99%
 
 ---
@@ -77,6 +77,10 @@ Gibt das Kalenderformat an, dem die Datenansicht folgen soll. Sie können mehrer
 ## Komponenten
 
 Als Nächstes können Sie die Komponenten einer Datenansicht festlegen, d. h., Sie können Metriken und Dimensionen aus Schemaelementen erstellen. Sie können auch Standardkomponenten verwenden.
+
+>[!IMPORTANT]
+>
+>Zu einer Datenansicht können bis zu 5.000 Metriken und 5.000 Dimensionen hinzugefügt werden.
 
 1. Wählen Sie die Registerkarte **[!UICONTROL Komponenten]** aus.
 
