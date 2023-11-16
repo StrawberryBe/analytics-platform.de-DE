@@ -3,14 +3,15 @@ description: Dokumentation, in der beschrieben wird, wie Tabellen in Analysis Wo
 title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 5469585897e483d721326fd6859ad74087407825
+source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 73%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
 
-# Filtern und Sortieren von Tabellen
+
+# Filtern und Sortieren von Freiformtabellen
 
 Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive Datenanalyse. Daher können sie Tausende von Informationszeilen enthalten. Das Filtern und Sortieren der Daten kann ein wichtiger Teil der effizienten Aufdeckung der wichtigsten Informationen sein.
 
@@ -18,13 +19,24 @@ Freiformtabellen in Analysis Workspace bilden die Grundlage für die interaktive
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
-## Filtern von Tabellen {#section_36E92E31442B4EBCB052073590C1F025}
+## Filtern von Tabellen
 
 Mit Filtern in Analysis Workspace können Sie die wichtigsten Informationen aufdecken.
 
 >[!NOTE]
 >
-> Nur dynamische Dimensionselemente können wie in diesem Abschnitt beschrieben gefiltert werden. Statische Dimensionselemente können nicht gefiltert werden. Weitere Informationen finden Sie unter [Dynamische im Vergleich zu statischen Dimensionselementen in Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+> Nur dynamische Dimensionselemente können wie in diesem Abschnitt beschrieben gefiltert werden. Statische Dimensionselemente können nicht gefiltert werden. Weitere Informationen finden Sie unter [Dynamische und statische Dimensionselemente in Freiformtabellen](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+
+## Freiformtabellenzeilen filtern
+
+Sie können mehrere Methoden verwenden, um Zeilen aus einer Freiformtabelle zu filtern. 
+
+- Klicken Sie auf das X in der Zeile
+- Rechtsklick > Ausgewählte Zeilen gelöscht
+- Tabellenfilter
+- Segmentierung
+
+Lesen Sie unbedingt, wie sich die einzelnen Methoden auf [Gesamtwerte der Freiformtabelle](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Schnelles Ausschließen bestimmter Zeilen aus einer Tabelle
 
@@ -32,15 +44,22 @@ Sie können bestimmte Zeilen schnell aus der Tabelle ausschließen, ohne das Dia
 
 >[!NOTE]
 >
->Wenn Sie Zeilen ausschließen, wie in diesem Abschnitt beschrieben, wird ein [!UICONTROL **Ausschließen von Elementen**] im Dialogfeld für erweiterte Filter automatisch angewendet. (Sie können die angewendete Regel anzeigen, indem Sie das Filtersymbol auswählen und dann [**[!UICONTROL Erweitert anzeigen]**](#apply-a-simple-or-advanced-filter-to-a-table).
+>Wenn Sie Zeilen ausschließen, wie in diesem Abschnitt beschrieben, wird ein [!UICONTROL **Ausschließen von Elementen**] im Dialogfeld für erweiterte Filter automatisch angewendet wird. (Sie können die angewendete Regel anzeigen, indem Sie das Filtersymbol auswählen und dann [**[!UICONTROL Erweitert anzeigen]**](#apply-a-simple-or-advanced-filter-to-a-table).
 
 So schließen Sie bestimmte Zeilen schnell aus einer Freiformtabelle aus:
 
 1. Bewegen Sie den Mauszeiger über die Zeile, die Sie ausschließen möchten, und wählen Sie dann das Symbol x aus.
 
-   Halten Sie die Umschalttaste gedrückt, um Bereichszeilen auszuwählen, oder halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt, um mehrere Zeilen auszuwählen.
+   Halten Sie die Umschalttaste gedrückt, um einen Zeilenbereich auszuwählen, oder halten Sie die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt, um mehrere Zeilen auszuwählen.
 
-### Anwenden eines einfachen oder erweiterten Filters auf eine Tabelle
+### Rechtsklick > Ausgewählte Zeilen löschen
+
+1. Wählen Sie mindestens eine Zeile aus.
+1. Rechtsklicken Sie auf und wählen Sie **[!UICONTROL Ausgewählte Zeilen löschen]**.
+
+   Dadurch werden die Zeilen aus der Tabelle entfernt und ein Tabellenfilter angewendet.
+
+### Einfache oder erweiterte Filter auf Tabellen anwenden
 
 So filtern Sie Daten in Freiformtabellen:
 
@@ -59,7 +78,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 1. (Optional) Um nach verschiedenen Kriterien oder nach mehreren Kriterien zu filtern, wählen Sie [!UICONTROL **Erweiterte Einstellungen anzeigen**] aus.
 
-   Die folgenden Optionen sind verfügbar
+   Die folgenden erweiterten Filteroptionen sind verfügbar:
 
    | Option | Funktion |
    |---------|----------|
@@ -72,6 +91,10 @@ So filtern Sie Daten in Freiformtabellen:
 
    Das **Filtersymbol** ![Blaues Filtersymbol zur Filterung der Tabelle](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) wird angezeigt, wenn ein Filter auf die Tabelle angewendet wird.
 
+### Filter
+
+Siehe unsere [Filterdokumentation](/help/components/filters/filters-overview.md) für weitere Details.
+
 ## Sortieren von Tabellen
 
 Sie können die Daten einer Freiformtabelle nach jeder Spalte in Analysis Workspace sortieren, die entweder eine Dimension oder eine Metrik ist.
@@ -82,8 +105,8 @@ Ein Pfeil-nach-unten-Symbol ![Pfeil nach unten zur Sortierung einer Tabellenspal
 
    Beachten Sie beim Sortieren Folgendes:
 
-   * Der Nach-unten-Pfeil sortiert in absteigender Reihenfolge und der Nach-oben-Pfeil (Standard) in aufsteigender Reihenfolge.
-   * Sie können Dimensionen alphabetisch oder numerisch sortieren. Beispielsweise können Sie in einem Workflow nummerierte Schritte verwenden und nach der Schrittnummer sortieren. Eine datumsbezogene Dimension kann nach Datum sortiert werden. Oder Sie können, wie in der folgenden Abbildung, Datenquellen alphabetisch sortieren.
+   - Der Nach-unten-Pfeil sortiert in absteigender Reihenfolge und der Nach-oben-Pfeil (Standard) in aufsteigender Reihenfolge.
+   - Sie können Dimensionen alphabetisch oder numerisch sortieren. Beispielsweise können Sie in einem Workflow nummerierte Schritte verwenden und nach der Schrittnummer sortieren. Eine datumsbezogene Dimension kann nach Datum sortiert werden. Oder Sie können, wie in der folgenden Abbildung, Datenquellen alphabetisch sortieren.
 
    ![](assets/sort-dimensions.png)
 
