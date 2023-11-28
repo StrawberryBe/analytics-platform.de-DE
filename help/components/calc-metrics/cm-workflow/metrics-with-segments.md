@@ -3,10 +3,10 @@ description: Durch Filterung einzelner Metriken können Sie Metrikvergleiche inn
 title: Gefilterte Metriken
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 59%
+source-wordcount: '527'
+ht-degree: 53%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 59%
 
 Im Generator für berechnete Metriken können Sie Filter innerhalb Ihrer Metrikdefinition anwenden. Dies ist hilfreich, wenn Sie neue Metriken für Ihre Analyse ableiten möchten. Denken Sie daran, dass Filterdefinitionen über den Filter Builder aktualisiert werden können. Wenn Änderungen vorgenommen werden, wird der Filter automatisch überall dort aktualisiert, wo er angewendet wurde, auch wenn er Teil einer Definition für berechnete Metriken ist.
 
-![](assets/german-visitors.png)
+![Zusammenfassung und Definition von Filtern für Länder = Deutschland und Unique Visitors](assets/german-visitors.png)
 
 ## Erstellen einer gefilterten Metrik {#create}
 
@@ -28,7 +28,7 @@ Erstellen und speichern Sie eine Metrik namens &quot;Deutsche Besucher&quot;und 
 
 1. Erstellen Sie im Generator für berechnete Metriken einen Ad-hoc-Filter namens &quot;Deutsche Besucher&quot;, bei dem &quot;Länder&quot;gleich &quot;Deutschland&quot;ist. Ziehen Sie die Dimension Länder in die Arbeitsfläche Definition und wählen Sie [!UICONTROL **Deutschland**] als Wert:
 
-   ![](assets/segment-from-dimension.png)
+   ![Adhoc-Filter, der Länder gleich Deutschland anzeigt](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
@@ -36,7 +36,7 @@ Erstellen und speichern Sie eine Metrik namens &quot;Deutsche Besucher&quot;und 
 
 1. Ziehen Sie den Filter Deutschland in die Arbeitsfläche Definition und ziehen Sie die Metrik Unique Visitors darin:
 
-   ![](assets/german-visitors.png)
+   ![Zusammenfassung und Definition von Ländern gleich Deutschland und Unique Visitors](assets/german-visitors.png)
 
 1. Auswählen [!UICONTROL **Speichern**] , um die berechnete Metrik zu speichern.
 
@@ -50,7 +50,7 @@ Erstellen und speichern Sie eine Metrik namens &quot;Deutsche Besucher&quot;und 
 
 1. Ziehen Sie in Analysis Workspace die Dimension **[!UICONTROL Seite]** in eine Freiform-Tabelle und dann die zwei neuen berechneten Metriken nebeneinander oben in die Tabelle:
 
-   ![](assets/workspace-pages.png)
+   ![Freiformtabelle mit der Dimension &quot;Seite&quot;für deutsche Besucher und internationale Besucher](assets/workspace-pages.png)
 
 Im Folgenden finden Sie eine Videoübersicht:
 
@@ -63,8 +63,8 @@ Sie können das obige Beispiel fortentwickeln, indem Sie Ihren Filter mit der Ge
 1. Ziehen Sie den Filter „Deutsche Besucher“ (oder „Internationale Besucher“) auf die Arbeitsfläche.
 1. Legen Sie darunter einen weiteren Filter „Deutsche Besucher“ (oder „Internationale Besucher“) ab. Klicken Sie dieses Mal aber auf das zugehörige Konfigurationssymbol (Zahnrad), um den Metriktyp „Gesamt“ auszuwählen. Das Format sollte „Prozent“ lauten. Der Operator sollte „Geteilt durch“ lauten. Dadurch erhalten Sie die folgende Metrikdefinition:
 
-   ![](assets/cm_metric_total.png)
+   ![Länder gleich Deutschland und Gesamtanzahl Unique Visitors](assets/cm_metric_total.png)
 
 1. Wenden Sie diese Metrik auf das Projekt an:
 
-   ![](assets/cm_percent_total.png)
+   ![Freiformtabelle mit Seite und % der deutschen Gesamtbesucher](assets/cm_percent_total.png)

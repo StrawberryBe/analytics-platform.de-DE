@@ -3,10 +3,10 @@ description: Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte
 title: Horizontalbalken und Horizontalbalken gestapelt
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '74'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 68%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 100%
 
 Diese Visualisierung zeigt Horizontalbalken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
-![](assets/horizontal_bar.png)
+![Horizontalbalken mit Metriken wie Seitenansichten, Seitengeschwindigkeit, Besuche, Einstiege und Ausstiege.](assets/horizontal_bar.png)
 
 ## Horizontalbalken gestapelt {#section_50C08E9E20A94024A6553BC352ADB597}
 
 Diese Visualisierung entspricht dem [!UICONTROL horizontalen Balkendiagramm], die Serien sind hier jedoch gestapelt.
 
-![](assets/horizontal-bar-stacked.png)
+![Eine gestapelte horizontale Leiste mit Seitenansichten, Besuchen, Einstiegen und Ausstiegen.](assets/horizontal-bar-stacked.png)
 
 Mit der neuen Einstellung [!UICONTROL Horizontalbalken gestapelt] erhalten Sie eine zu „100 % gestapelte“ Visualisierung.
 
-![](assets/horizstacked100.png)
+![Horizontalbalken wurden zu 100 % gestapelt und zeigen Besuche, Seitenansichten und Unique Visitors an.](assets/horizstacked100.png)

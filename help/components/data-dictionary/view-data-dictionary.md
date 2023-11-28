@@ -4,10 +4,10 @@ title: Datenwörterbuch anzeigen
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 48%
+source-wordcount: '362'
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
    Das Fenster „Datenwörterbuch“ wird angezeigt.
 
-   ![data-dictionary.png](assets/data-dictionary.png)
+   ![Datenwörterbuchfenster mit Schnellfiltern für Dimensionen, Metriken, Segmente und Datumsbereiche](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
@@ -31,11 +31,11 @@ So zeigen Sie Informationen zu einer Komponente im Datenwörterbuch an:
 
 1. (Optional) Geben Sie im Suchfeld den Namen der Komponente ein, die Sie anzeigen möchten.
 
-   Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) orange sind, **Filter** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) violett sind und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün. Das Symbol Adobe ![Symbol &quot;Adobe&quot;](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an und das Symbol für den Taschenrechner ![Symbol &quot;Rechner&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
+   Der Komponententyp kann sowohl durch Farbe als auch durch ein Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) orange sind, **Filter** ![Segmentsymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) violett sind und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün. Das Adobe-Symbol ![Adobe-Symbol](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an und das Symbol für den Taschenrechner ![Symbol &quot;Rechner&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
 
 {{dd-filter-criteria}}
 
-1. (Optional) Wählen Sie die **Sortieren** icon ![Symbol &quot;Komponenten sortieren&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg)und wählen Sie eine der folgenden Filteroptionen aus, um die Liste der Komponenten zu sortieren:
+1. (Optional) Wählen Sie das Symbol **Sortieren** Symbol ![Komponenten sortieren](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) aus und wählen Sie dann eine der folgenden Filteroptionen, um die Liste der Komponenten zu sortieren:
 
    {{components-sort-options}}
 

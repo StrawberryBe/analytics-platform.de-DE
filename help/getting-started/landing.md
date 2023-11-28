@@ -4,10 +4,10 @@ title: Landingpage von Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
-workflow-type: ht
-source-wordcount: '1514'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '1524'
+ht-degree: 99%
 
 ---
 
@@ -21,8 +21,8 @@ Auf der Landingpage für Customer Journey Analytics finden Sie [!DNL Analysis Wo
 
 | Funktion | Beschreibung | Screenshot |
 | --- | --- | --- |
-| Erweitern der Tabelle [!UICONTROL Projekte] auf Vollbild | Um die Tabelle zu erweitern, klicken Sie einfach auf das Hamburger-Menüsymbol. Durch diese Aktion werden die Registerkarten in der linken Leiste reduziert. | ![Tabelle erweitern](assets/landing-collapse2.png) |
-| Spaltenbreite anpassen | Zuvor war die Spaltenbreite fixiert. Jetzt können Sie sie anpassen, indem Sie das Spaltentrennzeichen ziehen. | ![Spaltenbreite](assets/column-width.png) |
+| Erweitern der Tabelle [!UICONTROL Projekte] auf Vollbild | Um die Tabelle zu erweitern, klicken Sie einfach auf das Hamburger-Menüsymbol. Durch diese Aktion werden die Registerkarten in der linken Leiste reduziert. | ![Ausgewählte Tabelle erweitern , sodass nur die Projekte ohne die Registerkarten in der linken Leiste angezeigt werden](assets/landing-collapse2.png) |
+| Spaltenbreite anpassen | Zuvor war die Spaltenbreite fixiert. Jetzt können Sie sie anpassen, indem Sie das Spaltentrennzeichen ziehen. | ![Spaltenbreitenauswahlen](assets/column-width.png) |
 | Fixierte Elemente neu anordnen | Um die fixierten Elemente nach oben und unten zu verschieben, klicken Sie auf das Auslassungszeichen neben dem fixierten Element und wählen Sie **[!UICONTROL Nach oben]** oder **[!UICONTROL Nach unten]**. | ![Verschieben von fixierten Elementen](assets/move-up-down.png) |
 | Neue Tabellenspalten | Klicken Sie auf [!UICONTROL Tabelle anpassen] rechts oben in der Tabelle. Die neuen Tabellenspalten umfassen: <ul><li>**[!UICONTROL Geplant]**: Legen Sie dies auf [!UICONTROL Ein] fest, wenn ein Projekt geplant ist, oder auf [!UICONTROL Aus], wenn dies nicht der Fall ist. Ein Klick auf den Link [!UICONTROL Ein] zeigt Informationen über das geplante Projekt an. Sie können auch [den Projektplan bearbeiten](/help/analysis-workspace/export/t-schedule-report.md), wenn Sie Projektinhaber sind.</li><li>**[!UICONTROL Projekt-ID]**: Die Projekt-ID kann zum Debugging von Projekten verwendet werden.</li><li>**[!UICONTROL Längster Datumsbereich]**: Längere Datumsbereiche erhöhen die Projektkomplexität und können die Verarbeitungs- und Ladezeiten erhöhen. </li><li>**[!UICONTROL Anzahl der Abfragen]**: Die Gesamtzahl der Anfragen, die beim Laden des Projekts an Analytics gesendet wurden. Eine höhere Anzahl von Projektabfragen erhöht die Projektkomplexität und kann die Verarbeitungs- und Ladezeiten erhöhen. Diese Daten sind erst verfügbar, nachdem ein Projekt geladen oder ein geplantes Projekt gesendet wurde. </li></ul> | ![Neue Spalten](assets/new-columns.png) |
 | Die Option **[!UICONTROL Projekt erstellen]** ist zurück | Wenn Sie in Analysis Workspace auf **[!UICONTROL Projekt erstellen]** klicken, haben Sie erneut die Wahl zwischen einem [!UICONTROL leeren Projekt] und einer [!UICONTROL leeren mobilen Scorecard]. Sie können auch aus beliebigen Vorlagen wählen, die Ihr Unternehmen erstellt hat. | ![Neu erstellen](assets/create-new.png) |

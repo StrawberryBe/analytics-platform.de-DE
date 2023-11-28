@@ -2,10 +2,11 @@
 description: Filtern Sie nach Tags, Datenansicht, Inhabern und anderen Filtern (Alle anzeigen, Meine, Für mich freigegeben, Favoriten und Genehmigt).
 title: Berechnete Metriken filtern
 feature: Calculated Metrics
-source-git-commit: 59b120022fcb149e6bfcab0039efc5a802995b92
+exl-id: 902da464-14de-45b9-bd92-d2db064cb095
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 29%
+source-wordcount: '216'
+ht-degree: 30%
 
 ---
 
@@ -19,7 +20,7 @@ Die Filterung erleichtert die Suche nach berechneten Metriken in der Segmentleis
 
 1. Klicken Sie im Manager für berechnete Metriken auf die **[!UICONTROL Filter]** -Symbol:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Manager für berechnete Metriken mit dem Symbol Filter und verfügbaren Filtern wie Tags, Report Suite und Inhaber.](assets/filtering.png)
 
 1. Folgende Filter sind verfügbar:
 

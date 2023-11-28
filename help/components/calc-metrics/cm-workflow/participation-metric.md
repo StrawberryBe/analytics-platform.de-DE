@@ -3,9 +3,9 @@ description: Mit dem Generator für berechnete Metriken kann jeder Benutzer eine
 title: Beitragsmetrik
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '297'
 ht-degree: 6%
 
 ---
@@ -29,13 +29,13 @@ Diese Art von Informationen kann für jeden Inhaltsbesitzer nützlich sein.
 
    Im Feld Definition wird die ausgewählte Metrik durch Anhängen aktualisiert.  **(Partizipation|Sitzung)** auf ihren Namen.
 
-   ![](assets/participation-setup.png)
+   ![Spalten-Attributionsmodell-Popup, das die Option Beitrag als Modell und Sitzung anzeigt, die für das Lookback-Fenster ausgewählt wurden.](assets/participation-setup.png)
 
 
 
 1. Auswählen [!UICONTROL **Speichern**] , um die Metrik zu speichern.
 1. Verwenden Sie die berechnete Metrik in Ihrem Bericht. Verwenden Sie beispielsweise die berechnete [!DNL Orders (Session Participation)] Metrik (wie in Schritt 5 definiert) in einem Bericht zu zeigen, an welcher Kundenebene Sitzungen beteiligt waren, die eine Bestellung enthielten.
 
-   ![](assets/participation-pages-customer-tier.png)
+   ![Freiformtabelle mit Kundenebene und Bestellungen.](assets/participation-pages-customer-tier.png)
 
 1. (Optional) Geben Sie die Metrik für andere Benutzer in Ihrer Organisation frei, wie beschrieben in [Berechnete Metriken freigeben](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

@@ -3,9 +3,9 @@ description: Der Filter-Builder bietet eine Arbeitsfläche zum Ziehen und Ablege
 title: Erstellen von Filtern
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1261'
 ht-degree: 23%
 
 ---
@@ -28,7 +28,7 @@ Sie haben folgende Möglichkeiten, auf den Filter-Builder zuzugreifen:
 
 Sie können Regeldefinitionen und Container hinzufügen, um Ihre Filter zu definieren. (Informationen zum Zugriff auf den Filter-Builder finden Sie unter [Zugriff auf den Filter-Builder](#access-the-filter-builder).
 
-![](assets/segment_builder_ui_2.png)
+![Filtergenerator mit neuen Filteroptionen, die in diesem Abschnitt beschrieben werden.](assets/segment_builder_ui_2.png)
 
 | UI-Element | Beschreibung |
 | --- | --- |

@@ -3,10 +3,10 @@ description: Verwenden Sie intelligente Beschriftungen, um Einblicke in natürli
 title: Intelligente Beschriftungen
 feature: Visualizations
 role: User, Admin
-exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,13 @@ Intelligente Beschriftungen sind auf Folgendes ausgerichtet:
 * Analysten, die Geschichten benötigen, um sie für andere Benutzer freizugeben. Analysten benötigen diese Einblicke, um ihren Benutzern Kontext bieten zu können.
 * Geschäftsbenutzer, die schnell allgemeine Schnellzugriffe entdecken möchten.
 
-Untertitel sind für alle Customer Journey Analytics verfügbar und erfordern keine speziellen Berechtigungen.
+Untertitel sind für alle Customer Journey Analytics-Benutzer verfügbar und erfordern keine speziellen Berechtigungen.
 
 ## Intelligente Beschriftungen starten {#launch}
 
 Um automatisch generierte Beschriftungen für eine Linienvisualisierung zu starten, klicken Sie auf die **[!UICONTROL Intelligente Beschriftungen]** Symbol oben rechts in der Visualisierung.
 
-![intelligente Beschriftungen starten](assets/intell-caps-1.png)
+![Launch Analysis-Fenster mit den intelligenten Beschriftungen für den Trend zu Produktansichten. ](assets/intell-caps-1.png)
 
 Einblicke in natürliche Sprachen werden jetzt generiert.
 
@@ -40,7 +40,7 @@ Einblicke in natürliche Sprachen werden jetzt generiert.
 
 Im Folgenden finden Sie ein Beispiel dafür, wie die Beschriftungen aussehen könnten:
 
-![Untertitel](assets/captions.png)
+![Intelligente Beschriftungen für die Linienvisualisierung, einschließlich Saisonabhängigkeit, Min., Max., Spitze und Rückgang.](assets/captions.png)
 
 ## In Zwischenablage kopieren {#copy}
 
@@ -50,7 +50,7 @@ Sie können die Beschriftungen in eine Zwischenablage kopieren und in ein PowerP
 
 Sie können die Beschriftungen bearbeiten, z. B. eine bestimmte Kategorie von Einblicken ein- oder ausblenden. Wenn Sie beispielsweise keinen Einblick in die Mindestreihenfolge wünschen, können Sie sie einfach ausblenden und auf &quot;Anwenden&quot;klicken, sodass sie nicht erneut angezeigt wird.
 
-1. Klicken **[!UICONTROL Anzeige intelligenter Beschriftungen bearbeiten]** neben dem Symbol &quot;Zwischenablage&quot;angezeigt.
+1. Klicks **[!UICONTROL Anzeige intelligenter Beschriftungen bearbeiten]** neben dem Symbol &quot;Zwischenablage&quot;angezeigt.
 
 1. Klicken Sie im Dialogfeld &quot;Bearbeiten&quot;auf das Augensymbol neben dem Einblick, den Sie ausblenden möchten.
 
@@ -58,12 +58,12 @@ Sie können die Beschriftungen bearbeiten, z. B. eine bestimmte Kategorie von Ei
 
 Verwenden Sie denselben Prozess, um Beschriftungen wieder einzublenden.
 
-## Exportieren von Untertiteln {#export}
+## Untertitel exportieren {#export}
 
 Sie können **Untertitel über PDF exportieren**, solange das Projekt mit den generierten Untertiteln gespeichert wird.
 
 ## Beschriftungen deaktivieren {#toggle}
 
-Wenn Sie keine intelligenten Untertitel erstellen möchten, können Sie diese Funktion deaktivieren, indem Sie die Voreinstellungen für die Visualisierung aufrufen und die Option deaktivieren **[!UICONTROL Intelligente Beschriftungen anzeigen]**.
+Wenn Sie keine intelligenten Untertitel erstellen möchten, können Sie diese Funktion deaktivieren, indem Sie die Voreinstellungen für die Visualisierung aufrufen und die Option deaktivieren. **[!UICONTROL Intelligente Beschriftungen anzeigen]**.
 
-![Beschriftungseinstellungen](assets/toggle-captions.png)
+![Linienvisualisierungsoptionen mit der Option zum Deaktivieren der Option Intelligente Untertitel anzeigen.](assets/toggle-captions.png)

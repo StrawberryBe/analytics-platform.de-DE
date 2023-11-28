@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '367'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 91%
 
 ---
 
@@ -29,21 +29,21 @@ Informationen zum Erstellen von Anmerkungen finden Sie unter [Erstellen von Anme
 
 1. Wählen Sie **[!UICONTROL Anmerkungen anzeigen]**, um die Anmerkung in mobilen Scorecards anzuzeigen.
 
-   ![](assets/show-annotations.png)
+   ![Optionen für mobile Anmerkungen für Scorecards.](assets/show-annotations.png)
 
 1. Um sicherzustellen, dass die Option „Anmerkungen anzeigen“ ausgewählt ist, gehen Sie zu **[!UICONTROL Projekt]** > **[!UICONTROL Projektinformationen und Einstellungen]**.
 
-   ![](assets/project-info-settings.png)
+   ![Optionen für mobile Anmerkungen für Projektinformationen und Einstellungen, die die Option Anmerkungen anzeigen markieren.](assets/project-info-settings.png)
 
 ## Anzeigen von Anmerkungen in mobilen Scorecards
 
 Wenn Anmerkungen aktiviert sind, werden in Scorecard Builder Anmerkungssymbole angezeigt. Anmerkungen werden nur in Diagrammen und Tabellen in der Detailansicht angezeigt. in der Ansicht der Hauptkachel der Scorecard sind Anmerkungen nicht sichtbar.
 
-![](assets/view-annotations.png)
+![Scorecard Builder, der die Anmerkungssymbole hervorhebt.](assets/view-annotations.png)
 
-Wenn Anmerkungssymbole sichtbar sind, können Sie Anmerkungen auf der Arbeitsfläche des Builders nicht vollständig anzeigen oder damit interagieren. Verwenden Sie den Vorschaumodus, um Anmerkungen so anzuzeigen und zu bearbeiten, wie sie in der App angezeigt werden. ![](assets/preview-icon.png)
+Wenn Anmerkungssymbole sichtbar sind, können Sie Anmerkungen auf der Arbeitsfläche des Builders nicht vollständig anzeigen oder damit interagieren. Verwenden Sie den Vorschaumodus, um Anmerkungen so anzuzeigen und zu bearbeiten, wie sie in der App angezeigt werden. ![Vorschausymbol](assets/preview-icon.png)
 
-Es werden Anmerkungsfarben ausgewählt, wenn die Anmerkung in Workspace erstellt wird. Graue Anmerkungen weisen auf das Vorhandensein von mehr als einer Anmerkung hin. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
+Es werden Anmerkungsfarben ausgewählt, wenn die Anmerkung in Workspace erstellt wird. Graue Anmerkungen weisen auf das Vorhandensein von mehr als einer Anmerkung hin. ![Anmerkungssymbole](assets/gray-annotations1.png) ![Mobile Scorecard mit hervorgehobenem Anmerkungssymbol.](assets/gray-annotations2.png)
 
 ## Anzeigen von Diagrammanmerkungen
 

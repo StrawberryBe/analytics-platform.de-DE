@@ -1,12 +1,12 @@
 ---
 title: Hohe Kardinalitätsdimensionen
-description: Erläutert, wie Customer Journey Analytics Dimensionen mit vielen eindeutigen Werten handhabt
+description: Erläutert, wie Customer Journey Analytics Dimensionen mit vielen eindeutigen Werten verarbeitet
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '526'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ Bei Verwendung einer Dimension, die viele eindeutige Werte enthält, kann der re
 
 Wenn Sie einen Bericht mit zu vielen eindeutigen Werten anfordern, zeigt Analysis Workspace in der Dimensionsüberschrift einen Indikator an, der angibt, dass nicht alle Dimensionselemente einbezogen werden. Beispiel: &quot;Zeilen: 1-50 von mehr als 22.343.156&quot;. Das Keyword &quot;Mehr als&quot;zeigt an, dass eine Optimierung auf den Bericht angewendet wurde, um die wichtigsten Dimensionselemente zurückzugeben.
 
-![Workspace-Vorschau](assets/high-cardinality.png)
+![Freiformtabelle in Workspace mit dem Keyword &quot;Mehr als&quot;, um 1-50 von mehr als 22.343.156 anzuzeigen](assets/high-cardinality.png)
 
 ## Festlegen der anzuzeigenden Dimensionselemente
 

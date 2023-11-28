@@ -4,10 +4,10 @@ description: Erläuterung der Datenaufnahme in Customer Journey Analytics über 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 86%
+source-wordcount: '3616'
+ht-degree: 85%
 
 ---
 
@@ -58,7 +58,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Auswählen **[!UICONTROL Erlebnisereignis]**.
 
-      ![Erstellen eines Schemas](./assets/create-ee-schema-wizard-step-1.png)
+      ![Erstellen eines Schemas zur Hervorhebung eines Erlebnisereignisses](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -71,7 +71,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
 
-      ![Benennen des Schemas](./assets/create-ee-schema-wizard-step-2.png)
+      ![Schema-Fenster mit Namen für Schemafelder erstellen](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 

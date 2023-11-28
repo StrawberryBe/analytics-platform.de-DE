@@ -2,10 +2,11 @@
 description: Sie können einen Workflow einrichten, der die Genehmigung von Filtern für verschiedene Anwendungsebenen, für bestimmte Abteilungen oder Gruppen umfasst und mit Berichtserstellungsrichtlinien übereinstimmt.
 title: Filter genehmigen
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 79%
+source-wordcount: '131'
+ht-degree: 72%
 
 ---
 
@@ -25,6 +26,6 @@ So wird ein Filter als genehmigt gekennzeichnet:
 
    Beachten Sie, dass in der Liste neben dem Filter ein Genehmigungssymbol angezeigt wird:
 
-   ![](assets/seg_approved.png)
+   ![Filter-Manager, der anzeigt, dass Bestellungen über 100 für die Freigabe genehmigt wurden.](assets/seg_approved.png)
 
 1. Sie können die Genehmigung eines genehmigten Filters auch aufheben, indem Sie auf **[!UICONTROL Nicht genehmigen]** klicken.

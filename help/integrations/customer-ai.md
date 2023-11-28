@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '980'
 ht-degree: 51%
 
 ---
@@ -73,7 +73,7 @@ Im Folgenden finden Sie ein Beispiel für ein XDM-Schema, das Customer Journey A
 
 Unter Customer Journey Analytics können Sie jetzt mit dem [Datenansichten erstellen](/help/data-views/create-dataview.md) mit den Dimensionen (z. B. Bewertung, Bewertungsdatum, Wahrscheinlichkeit usw.) und Metriken, die als Teil der von Ihnen eingerichteten Verbindung eingebunden wurden.
 
-![Datenansicht erstellen](assets/create-dataview.png)
+![Fenster &quot;Datenansicht erstellen&quot;](assets/create-dataview.png)
 
 ## Schritt 4: Erstellen von Berichten zu CAI-Scores in Workspace
 

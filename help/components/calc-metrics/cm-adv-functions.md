@@ -3,9 +3,9 @@ title: Referenz – Erweiterte Funktionen
 description: Greifen Sie auf diese Funktionen zu, indem Sie in der Dropdown-Liste „Funktionen“ die Option „Erweitert anzeigen“ auswählen.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3123'
 ht-degree: 98%
 
 ---
@@ -61,11 +61,11 @@ Ungefährer Distinct Count (Kunden-ID-eVar) ist ein typischer Anwendungsfall fü
 
 Definition für eine neue berechnete „Ungefähre Kunden“-Metrik:
 
-![](assets/approx-count-distinct.png)
+![Ungefähre Definition einer neuen Dimension für das Land, die die Kunden-ID anzeigt (eVar 1)](assets/approx-count-distinct.png)
 
 So könnte die „Ungefähre Kunden“-Metrik für Berichte verwendet werden:
 
-![](assets/approx-customers.png)
+![Freiformtabelle mit Unique Visitors und Ungefähren Kunden ](assets/approx-customers.png)
 
 ## Individuelle Werte überschritten
 
@@ -225,7 +225,7 @@ Wenn N &lt;= 0 ist, werden alle vorherigen Zeilen verwendet. Da die Anordnung na
 
 >[!NOTE]
 >
->Mit Quotenmetriken wie Umsatz/Person funktioniert dies nicht wie erwartet: es berechnet den Durchschnittswert der Raten, anstatt den Umsatz über die letzten N und die Personen über die letzten N zusammenzufassen und sie dann zu teilen. Verwenden Sie stattdessen
+>Mit Quotenmetriken wie Umsatz/Person funktioniert dies nicht so, wie Sie es vielleicht erwarten: Es wird der Quotendurchschnitt ermittelt, anstatt dass der Umsatz über die letzten N summiert und Personen über die letzten N summiert und anschließend geteilt werden. Verwenden Sie stattdessen
 
 ```
 cumul(revenue)/cumul(person)

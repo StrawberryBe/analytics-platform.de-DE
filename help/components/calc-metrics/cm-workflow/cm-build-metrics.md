@@ -3,10 +3,10 @@ description: Der Generator für berechnete Metriken bietet eine Arbeitsfläche, 
 title: Metriken erstellen
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 61%
+source-wordcount: '1069'
+ht-degree: 60%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können mit der Erstellung einer berechneten Metrik auf eine der folgenden A
 
 Die folgende Abbildung und die zugehörige Tabelle erläutern einige der Hauptbereiche und -funktionen des Generators für berechnete Metriken.
 
-![](assets/cm_builder_ui.png)
+![Neues Fenster mit berechneten Metriken mit den wichtigsten in diesem Abschnitt beschriebenen Bereichen und Funktionen.](assets/cm_builder_ui.png)
 
 | Feld | Beschreibung |
 | --- | --- |

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visualisierungsübersicht
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 84%
+source-wordcount: '1323'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ Die folgenden Visualisierungstypen sind in Analysis Workspace verfügbar:
 
    * Wählen Sie in der linken Leiste die **Visualisierung** icon <!-- add icon -->, und ziehen Sie eine Visualisierung in den Bereich, dem Sie sie hinzufügen möchten.
 
-     ![](assets/viz-rail.png)
+     ![Visualisierungsbereich](assets/viz-rail.png)
 
    * Wählen Sie im Bereich, in dem Sie die Visualisierung hinzufügen möchten, die **Plus** und wählen Sie dann das Symbol aus, das die Visualisierung darstellt, die Sie hinzufügen möchten. Bewegen Sie den Mauszeiger über das Symbol für jede Visualisierung, um den Namen anzuzeigen.
 
@@ -81,14 +81,14 @@ Sie können die Einstellungen für alle von Ihnen erstellten Visualisierungen an
 
 Jede Visualisierung verfügt über eigene Einstellungen, die Sie verwalten können. Um auf [!UICONTROL Visualisierungseinstellungen] zuzugreifen, klicken Sie auf das Zahnradsymbol [!UICONTROL Visualisierungseinstellungen].
 
-![Einstellungen](assets/settings.png)
+![Visualisierungseinstellungen mit den im nächsten Abschnitt beschriebenen Einstellungsoptionen.](assets/settings.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |
 | Visualisierungstyp | Ändern Sie den visuellen Typ, der zur Darstellung der Daten verwendet wird. |
 | Granularität | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste. Diese Änderung gilt auch für die Datenquellentabelle. |
 | Prozentsatz | Zeigt Werte als Prozentzahlen an. |
-| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. Beispiel: ![Gestapelt 100%](assets/stacked_100_percent.png) |
+| 100 % gestapelt | Mit dieser Einstellung für die Visualisierungen „Bereich gestapelt“, „Balken gestapelt“ und „Horizontalbalken gestapelt“ wandeln Sie Diagramme in „zu 100 % gestapelte“ Visualisierungen um. Beispiel: ![Ein Balkendiagramm mit der Optionsansicht &quot;Gestapelt 100 %&quot;.](assets/stacked_100_percent.png) |
 | Legende sichtbar | Hiermit können Sie den erklärenden Text zu Details für die Visualisierung „Zusammenfassungsnummer/Zusammenfassungsänderung“ ausblenden. |
 | Grenzwert für max. Anzahl von Elementen | Hiermit können Sie die Anzahl der Elemente begrenzen, die in einer Visualisierung angezeigt werden. |
 | Y-Achse bei null verankern | Wenn alle im Diagramm dargestellten Werte deutlich größer als null sind, wird der untere Teil der Y-Achse standardmäßig zu NICHT-NULL gemacht. Wenn Sie dieses Kontrollkästchen aktivieren, wird die Y-Achse zwangsweise auf null gesetzt (und das Diagramm neu gezeichnet). |
@@ -107,7 +107,7 @@ So bearbeiten Sie eine Legendenbezeichnung:
 1. klicken Sie mit der rechten Maustaste auf die Legendenbeschriftungen.
 1. Klicken Sie auf **[!UICONTROL Bezeichnung bearbeiten]**.
 
-   ![Bezeichnung bearbeiten](assets/edit-label.png)
+   ![Titel der Legende und Option Titel bearbeiten .](assets/edit-label.png)
 
 1. Geben Sie den neuen Beschriftungstext ein.
 1. Drücken Sie zum Speichern die **[!UICONTROL Eingabetaste]**.
@@ -116,7 +116,7 @@ So bearbeiten Sie eine Legendenbezeichnung:
 
 Weitere Funktionen für eine Visualisierung sind verfügbar, wenn Sie mit der rechten Maustaste auf die Kopfzeile der Visualisierung klicken. Die Einstellungen variieren je nach Visualisierung. Einige der verfügbaren Einstellungen sind:
 
-![Rechtsklick](assets/right-click.png)
+![Zusätzliche Visualisierungseinstellungen mit den angezeigten Rechtsklickoptionen. Die Optionen werden im nächsten Abschnitt beschrieben.](assets/right-click.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |

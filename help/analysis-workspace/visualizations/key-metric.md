@@ -4,10 +4,10 @@ title: Zusammenfassung einer Schlüsselmetrik
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: 22cb88aa98576b70b8b089eda4a46f1e8963767a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 91%
+source-wordcount: '641'
+ht-degree: 85%
 
 ---
 
@@ -37,7 +37,7 @@ Diese Visualisierung eignet sich für eine Vielzahl gängiger Anwendungsfälle, 
 
 1. Konfigurieren Sie die Visualisierung, indem Sie eine Metrik, einen primären Datumsbereich, einen Vergleichsdatumsbereich und einen Filter auswählen (falls gewünscht):
 
-   ![Schlüsselmetrikkonfiguration](assets/key-metric-config.png)
+   ![Schlüsselmetrikkonfiguration, die die Optionen für Metrik, Primärdatumsbereich, Vergleichsdatumsbereich und Segment anzeigt.](assets/key-metric-config.png)
 
    | Konfigurationseinstellungen | Definition |
    | --- | --- |
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## Ausgabe anzeigen
 
-![](assets/key-metric-output.png)
+![Schlüsselmetrikausgabe, die die Metrik, Zusammenfassungsänderung, Zusammenfassungsnummer und Liniendiagramme anzeigt.](assets/key-metric-output.png)
 
 Bitte beachten Sie:
 
@@ -89,13 +89,13 @@ Bitte beachten Sie:
 
 * Von hier aus können Sie mit dem Mauszeiger über die Liniendiagramme fahren, um die Statistiken für einzelne Tage zu sehen:
 
-![statistics](assets/key-metric-output2.png)
+![Besuchsstatistiken](assets/key-metric-output2.png)
 
 ## Visualisierungseinstellungen
 
 Die Zusammenfassung der Schlüsselmetriken bietet mehrere flexible Einstellungen, um eine bessere Berichterstellung und Kommunikation wichtiger Metriken zu ermöglichen. Die Einstellungen können über das Zahnradsymbol in der oberen rechten Ecke der Visualisierung aufgerufen werden.
 
-![](assets/key-metric-settings.png)
+![Schlüsselmetrikzusammenfassungs-Einstellungen mit Anzeigetyp, Allgemein und Anzeigeoptionen der Zusammenfassung](assets/key-metric-settings.png)
 
 | Einstellung | Beschreibung |
 | --- | --- |
@@ -116,7 +116,7 @@ Nach dem Erstellen der Visualisierung können Sie die ursprüngliche Konfigurati
 
 1. Klicken Sie oben rechts in der Visualisierung auf das Stiftsymbol (neben dem Zahnradsymbol für Einstellungen).
 
-   ![edit](assets/edit-icon.png)
+   ![Symbol für die Visualisierungsbearbeitung](assets/edit-icon.png)
 
    Sie gelangen nun zurück zur ursprünglichen Konfigurationsansicht.
 

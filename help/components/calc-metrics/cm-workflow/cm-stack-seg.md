@@ -3,10 +3,10 @@ description: Hier wird erläutert, wie Sie Filter mit dem Generator für berechn
 title: Stapeln und Ersetzen von Filtern
 feature: Calculated Metrics
 exl-id: a396599c-2033-40a7-90b5-f9c84106c328
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 32%
+source-wordcount: '111'
+ht-degree: 24%
 
 ---
 
@@ -20,7 +20,7 @@ Sie können Filter im Generator für berechnete Metriken stapeln und ersetzen.
 
 1. Ziehen Sie den neuen Filter in die Arbeitsfläche Definition und legen Sie ihn neben dem vorhandenen Filter ab:
 
-![](assets/cm_stack_seg.png)
+![Arbeitsfläche für die Definition, die anzeigt, dass die Metrik &quot;US-Besucher&quot;neben den vorhandenen internationalen Besuchern zurückging.](assets/cm_stack_seg.png)
 
 ## Ersetzen eines Filters durch einen anderen {#replace-filter}
 
@@ -28,4 +28,4 @@ Sie können Filter im Generator für berechnete Metriken stapeln und ersetzen.
 
 1. Legen Sie den neuen Filter auf der Arbeitsfläche &quot;Definition&quot;über den vorhandenen Filter ab:
 
-![](assets/cm_replace_seg.png)
+![Arbeitsfläche mit Definition, die anzeigt, dass US-Besucher auf der Metrik &quot;Internationale Besucher&quot;einen Abbruch verzeichneten.](assets/cm_replace_seg.png)

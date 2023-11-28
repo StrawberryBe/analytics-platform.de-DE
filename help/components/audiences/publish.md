@@ -3,10 +3,10 @@ title: Erstellen und Veröffentlichen von Zielgruppen im Echtzeit-Kundenprofil
 description: Erfahren Sie, wie Sie Zielgruppen in Customer Journey Analytics veröffentlichen
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 58%
+source-wordcount: '1641'
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
 
    Konfigurieren Sie diese Einstellungen. Danach können Sie die Zielgruppe veröffentlichen.
 
-   ![Screenshot zum Erstellen einer Zielgruppe](assets/create-audience.png)
+   ![Screenshot zum Erstellen von Zielgruppen-Sbowing-Einstellungen, beschrieben im nächsten Abschnitt.](assets/create-audience.png)
 
    | Einstellung | Beschreibung |
    | --- | --- |
@@ -52,7 +52,7 @@ Lesen Sie dies [Übersicht](/help/components/audiences/audiences-overview.md) si
 
    Die Zielgruppenvorschau wird in der rechten Leiste angezeigt. Sie ermöglicht eine zusammengefasste Analyse der von Ihnen erstellten Zielgruppe.
 
-   ![Screenshot der Datenvorschau](assets/data-preview.png)
+   ![Screenshot der Datenvorschau mit einer zusammengefassten Analyse der Audience.](assets/data-preview.png)
 
    | Vorschaueinstellung | Beschreibung |
    | --- | --- |
@@ -108,7 +108,7 @@ Sie können Customer Journey Analytics-Zielgruppen in Platform anzeigen, indem S
 
 Sie können Customer Journey Analytics-Zielgruppen in die Segmentdefinition für Adobe Experience Platform-Segmente ziehen.
 
-![](assets/audiences-aep.png)
+![Adobe Experience Platform-Benutzeroberfläche, die Segmente im linken Bereich und CJA-Zielgruppen im Hauptbereich hervorhebt.](assets/audiences-aep.png)
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 

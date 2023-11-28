@@ -3,9 +3,10 @@ title: Abbrechen von Berichtsanforderungen im Reporting Activity Manager
 description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der Berichterstellung mit Reporting Activity Manager diagnostizieren und beheben können.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1473'
 ht-degree: 14%
 
 ---
@@ -50,7 +51,7 @@ Sie können einzelne Anforderungen abbrechen, die eine große Menge an Berichtsk
 
    1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**].
 
-      ![Nachfolgende Anfragen einschränken](assets/restrict-subsequent-requests.png)
+      ![Anfrage &quot;Abbrechen 1&quot;mit der Meldung Einschränken der nachfolgenden ausgewählten Anforderungen und Abbruch .](assets/restrict-subsequent-requests.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 
@@ -91,7 +92,7 @@ Sie können alle Anforderungen abbrechen, die mit einem oder mehreren Benutzern 
 
    1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**]
 
-      ![Einschränken nachfolgender Anforderungen durch den Benutzer](assets/restrict-subsequent-requests-user.png)
+      ![Anfrage &quot;Abbrechen 1&quot;mit der ausgewählten Option Folgende Anforderungen durch Benutzer beschränken .](assets/restrict-subsequent-requests-user.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 
@@ -132,7 +133,7 @@ Sie können alle Anforderungen abbrechen, die mit einem oder mehreren Projekten 
 
    1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**].
 
-      ![Einschränken nachfolgender Anforderungen nach Projekt](assets/restrict-subsequent-requests-project.png)
+      ![Anfrage &quot;Abbrechen 1&quot;mit nachfolgenden Anforderungen nach Projekt beschränken](assets/restrict-subsequent-requests-project.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 
@@ -188,7 +189,7 @@ So brechen Sie Anfragen nach Anwendung ab:
 
    1. Aktivieren Sie die Option zum [!UICONTROL **Einschränken nachfolgender Anforderungen**]
 
-      ![Einschränken nachfolgender Anforderungen nach Anwendung](assets/restrict-subsequent-requests-application.png)
+      ![Anfrage &quot;Abbrechen 1&quot;mit der ausgewählten Option Folgende Anforderungen durch Anwendung beschränken .](assets/restrict-subsequent-requests-application.png)
 
    1. Wählen Sie aus den folgenden Optionen:
 

@@ -2,10 +2,11 @@
 description: Filtern Sie nach Tags, Inhabern und anderen Filtern (Alle anzeigen, Meine, Für mich freigegeben, Favoriten und Genehmigt).
 title: Filtern der Filterliste
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 30%
 
 ---
 
@@ -17,7 +18,7 @@ Filter erleichtern die Suche nach Filtern.
 
 1. Klicken Sie im Filter-Manager auf die **[!UICONTROL Filter]** -Symbol:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Filter-Manager: Zeigt das Symbol Filter und verfügbare Filter an.](assets/filtering.png)
 
 2. Folgende Filter sind verfügbar:
 

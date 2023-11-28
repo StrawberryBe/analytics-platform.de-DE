@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1502'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
    Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte das 3-Punkt-Symbol für ein vorhandenes Konto auswählen, dem Sie einen Ort hinzufügen möchten, und dann [!UICONTROL **Ort hinzufügen**].
 
-   ![Standort zu vorhandenem Konto hinzufügen](assets/add-location-existing-account.png)
+   ![GCP-Konto und Ellipse-Dropdown-Menü mit ausgewähltem Standort hinzufügen](assets/add-location-existing-account.png)
 
    Das Dialogfeld Standort wird angezeigt.
 

@@ -3,10 +3,10 @@ title: Beschriftungen und Richtlinien
 description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Datenbeschriftungen und Richtlinien auf Datenansichten und Berichte in Customer Journey Analytics auswirken.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
-workflow-type: ht
-source-wordcount: '501'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Sie können überprüfen, ob eine Richtlinie aktiviert ist, die die Verwendung b
 
 Klicken Sie erneut auf das [!UICONTROL Filtersymbol] in der linken Leiste und klicken Sie unter **[!UICONTROL Data Governance]** auf **[!UICONTROL Richtlinien]**:
 
-![](assets/filter-policies.png)
+![Filtern eingeschlossener Komponenten nach Liste mit ausgewählter Option &quot;Analytics erzwingen&quot;](assets/filter-policies.png)
 
 Klicken Sie auf **[!UICONTROL Anwenden]**, um zu sehen, welche Richtlinien aktiviert sind.
 
@@ -67,7 +67,7 @@ Wenn die Richtlinien **[!UICONTROL Analytics erzwingen]** oder **[!UICONTROL Dow
 
 Diese Komponenten sind in der linken Liste [!UICONTROL Schemafelder]-Liste ausgegraut:
 
-![](assets/component-greyed.png)
+![Ausgegraute Komponenten und die Meldung Richtlinien wurden auf dieses Feld angewendet, um die Verwendung der Daten zu beschränken](assets/component-greyed.png)
 
 Sie können auch keine Datensicht speichern, die gesperrte Felder enthält.
 

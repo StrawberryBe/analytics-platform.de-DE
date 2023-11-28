@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Kapazitätsprobleme bei Spitzen während der 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
-source-git-commit: 8e2605a18d7c8201122603c9f8ee381a2e97fb9f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1944'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ Weitere Informationen zum Reporting Activity Manager, einschließlich der wichti
 
    Eine Liste Ihrer aktivierten Basisverbindungen wird angezeigt.
 
-   ![Berichtswarteschlange](assets/reporting-activity1.png)
+   ![Berichtsaktivität, die die Berichtswarteschlange anzeigt](assets/reporting-activity1.png)
 
 1. (Optional) Sie können die Liste der Verbindungen durchsuchen oder filtern:
 

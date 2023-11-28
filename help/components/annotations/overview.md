@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 57%
+source-wordcount: '314'
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Anmerkungen können Sie Ihrer Organisation kontextbezogene Datennuancen und 
 
 Angenommen, Sie geben Projekte für Ihr Unternehmen frei. Wenn der Traffic aufgrund einer Marketing-Kampagne stark angestiegen ist, können Sie die Anmerkung &quot;Kampagnenstartdatum&quot;erstellen und sie auf die gesamte Datenansicht eingrenzen. Wenn Ihre Benutzer Datensätze anzeigen, die dieses Datum enthalten, sehen sie die Anmerkung in ihren Projekten neben den Daten.
 
-![](assets/multi-day.png)
+![Liniendiagramm mit hervorgehobener Anmerkung.](assets/multi-day.png)
 
 Beachten Sie:
 
@@ -46,6 +46,6 @@ Anmerkungen können auf verschiedenen Ebenen aktiviert oder deaktiviert werden:
 
 * Auf Benutzerebene: [!UICONTROL Komponenten] > [!UICONTROL Benutzereinstellungen] > [!UICONTROL Daten] > [!UICONTROL Anmerkungen anzeigen]
 
-![](assets/show-ann.png)
+![Dialogfeld &quot;Visualisierungseinstellungen&quot;mit hervorgehobenen Anmerkungen anzeigen](assets/show-ann.png)
 
-![](assets/show-ann2.png)
+![Benutzereinstellungen - Hervorhebung Anmerkungen anzeigen.](assets/show-ann2.png)

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie abgeleitete Felder verwenden können, um übe
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '435'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Sie möchten explizit Ziele für Ihre Bestellungen von Geschenkgutscheinen für 
 
 1. Legen Sie für jeden Monat mithilfe einer REGEL &quot;CASE WHEN&quot; statische Werte fest, indem Sie eine **[!UICONTROL Benutzerdefinierter numerischer Wert]**. Siehe Regel &quot;Monatliche Produktziele&quot; unten.
 
-   ![Produktziele](assets/goals-derived-field-product-goals-1.png)
+   ![Monatliche Produktziele](assets/goals-derived-field-product-goals-1.png)
 
 
 ### Umsatzziele für Marketing-Kanäle

@@ -4,9 +4,9 @@ description: Erfahren Sie, welche Komponenten Customer Journey Analytics anbiete
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1132'
 ht-degree: 79%
 
 ---
@@ -21,7 +21,7 @@ Komponenten sind Funktionen in Customer Journey Analytics, die in Berichten verw
 Sie können die folgenden Komponenten verwalten:
 
 * [**Anmerkungen**](/help/components/annotations/overview.md): Informieren Sie andere Benutzerinnen und Benutzer in Ihrem Unternehmen über die kontextbezogene Bedeutung von Daten und Erkenntnissen.
-* [**Zielgruppen**](/help/components/audiences/audiences-overview.md): Erstellen und Veröffentlichen von Zielgruppen, die im Customer Journey Analytics zu [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCDP) in Adobe Experience Platform für das Targeting und die Personalisierung von Kunden.
+* [**Zielgruppen**](/help/components/audiences/audiences-overview.md): Erstellen und Veröffentlichen von Zielgruppen, die beim Customer Journey Analytics in entdeckt werden [Echtzeit-Kundenprofil](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=de) (RTCDP) in Adobe Experience Platform für das Targeting und die Personalisierung von Kunden.
 * [**Filter**](filters/filters-overview.md): Erstellen, verwalten, teilen und wenden Sie leistungsstarke, fokussierte Zielgruppenfilter auf Ihre Berichte an. Mit Filtern können Sie Personengruppen anhand von Merkmalen oder Interaktionen identifizieren.
 * [**Berechnete Metriken:**](calc-metrics/calc-metr-overview.md) Verwenden Sie Metriken und Formeln als neue Komponenten für die Berichterstellung
 * [**Datenwörterbuch**](/help/components/data-dictionary/data-dictionary-overview.md): Hilft Benutzern und Administratoren, die Komponenten in ihrer Analytics-Umgebung zu verfolgen und besser zu verstehen.
@@ -36,7 +36,7 @@ Komponenten in Analysis Workspace bestehen aus Metriken, Dimensionen, Segmenten 
 
 Klicken Sie in der linken Leiste auf das Symbol **[!UICONTROL Komponenten]**, um auf das Bedienfeld „Komponenten“ zuzugreifen. Sie können zwischen Bedienfeldern (leeres Bedienfeld, [Freiform-Bedienfeld](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) oder dem Bedienfeld [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) und Komponenten mithilfe der Symbole auf der linken Leiste oder mithilfe von [Tastaturbefehlen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) wechseln.
 
-![](assets/components.png)
+![Symbol &quot;Komponenten&quot;](assets/components.png)
 
 Siehe [Erstellen eines Projekts](/help/analysis-workspace/home.md), um Informationen über die Verwendung von Komponenten in einem Projekt zu erhalten.
 
@@ -75,7 +75,7 @@ Sie können Komponenten direkt in der linken Leiste verwalten.
    >   Sie können mehrere Komponenten auswählen, indem Sie die Umschalttaste gedrückt halten oder die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt halten.
 
 
-   ![](assets/component-actions.png)
+   ![Liste der Komponentenaktionen](assets/component-actions.png)
 
    | Komponentenaktion | Beschreibung |
    |--- |--- |
@@ -97,7 +97,7 @@ Sie können die Komponentenliste in der linken Leiste von Analysis Workspace suc
 
 2. Geben Sie im Suchfeld den Namen der Komponente ein, die Sie in Ihrem Projekt verwenden möchten.
 
-   Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) orange sind, **Filter** ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) violett sind und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün. Das Symbol Adobe ![Symbol &quot;Adobe&quot;](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an und das Symbol für den Taschenrechner ![Symbol &quot;Rechner&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
+   Der Komponententyp kann sowohl durch Farbe als auch durch Symbol identifiziert werden. **Dimensionen** ![Symbol &quot;Dimension&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) orange sind, **Filter** ![Filtersymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) blau sind, **Datumsbereiche** ![Symbol für Datumsbereich](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) violett sind und **Metriken** ![Metriksymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) sind grün. Das Adobe-Symbol ![Adobe-Symbol](assets/default-calc-metric-icon.png) gibt entweder eine Vorlage für berechnete Metriken oder eine Filtervorlage an und das Symbol für den Taschenrechner ![Symbol &quot;Rechner&quot;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) eine berechnete Metrik angezeigt, die von einem Analytics-Administrator in Ihrer Organisation erstellt wurde.
 
 3. Wählen Sie die Komponente aus, wenn sie in der Dropdown-Liste angezeigt wird.
 

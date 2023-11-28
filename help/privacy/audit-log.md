@@ -3,10 +3,10 @@ title: Auditprotokolle
 description: Erfahren Sie, wie Sie Customer Journey Analytics-Auditprotokolle anzeigen und verwalten.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 67%
+source-wordcount: '825'
+ht-degree: 64%
 
 ---
 
@@ -30,7 +30,7 @@ Navigieren Sie unter Customer Journey Analytics zu **[!UICONTROL Instrumente]** 
 
 Das Auditprotokoll für den heutigen und gestrigen Tag wird standardmäßig angezeigt.
 
-![Auditprotokoll](assets/audit_ui.png)
+![Auditprotokoll, das heute (14. Oktober 2022) und gestern (13. Oktober 2022) hervorhebt. ](assets/audit_ui.png)
 
 Sie können auswählen, welche Spalten sichtbar sein sollen, indem Sie oben rechts zur Spaltenauswahl wechseln.
 
@@ -38,7 +38,7 @@ Sie können auswählen, welche Spalten sichtbar sein sollen, indem Sie oben rech
 
 Doppelklicken Sie auf die Info-Schaltfläche (i) neben einer Beschreibung.
 
-![Auditprotokoll](assets/info-button-audit.png)
+![Auditprotokoll, das die Info-Schaltfläche hervorhebt. ](assets/info-button-audit.png)
 
 Die folgenden Informationen werden angezeigt:
 
@@ -91,7 +91,7 @@ Die folgenden Informationen werden angezeigt:
 
 Wählen Sie das Trichtersymbol (![Filter](assets/filter-icon.png)), um eine Liste von Filterfeldern anzuzeigen, mit denen die Ergebnisse eingegrenzt werden können. Unabhängig von den ausgewählten Filtern werden nur die letzten 1.000 Datensätze angezeigt.
 
-![Filter](assets/filters.png)
+![Auditprotokoll mit den für den Datenbereich angezeigten Filtern.](assets/filters.png)
 
 Die Benutzeroberfläche verfügt für Protokolle über folgende Filter:
 

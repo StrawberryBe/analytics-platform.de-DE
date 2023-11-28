@@ -3,10 +3,10 @@ description: Sie können benutzerdefinierten Text zu Ihrem Workspace hinzufügen
 title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '168'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 87%
 
 ---
 
@@ -18,16 +18,16 @@ Sie können Ihrem Workspace-Projekt benutzerdefinierten Text hinzufügen, indem 
 
 Beim Bearbeiten des Textfelds oder der Beschreibung können Sie Schriftgrad (Überschriftenebenen), Farbe, Formatierung (fett, kursiv, unterstrichen) und Ausrichtung des ausgewählten Textes anpassen. Sie können auch Aufzählungs- und nummerierte Listen hinzufügen.
 
-![](assets/format.png)
+![Textoptionen für ein Workspace-Projekt, das die Textfarbpalette hervorhebt.](assets/format.png)
 
 ## Hyperlinks hinzufügen {#hyperlinks}
 
 Um einen Hyperlink hinzuzufügen, markieren Sie den Text und klicken Sie im Menü auf das Hyperlink-Symbol. Hyperlinks können zur zusätzlichen Unterstützung der Projektempfänger Links zu externen Websites, Dokumentationsseiten, [Workspace-Projekten/Bedienfeldern/Visualisierungen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=de) und mehr enthalten.
 
-![](assets/hyperlink.png)
+![Textoptionen mit hervorgehobenem Link-Symbol.](assets/hyperlink.png)
 
 ## Bilder hinzufügen {#images}
 
 Um ein Bild zu Ihrem Projekt hinzuzufügen, klicken Sie auf das Bildsymbol im Menü und fügen Sie eine URL für ein öffentliches Bild ein. Die Bild-URL muss öffentlich zugänglich sein, mit `https` beginnen und das Format `.png`, `.jpeg`, `.jpg` oder `.gif` haben. Statische und animierte Bilder werden unterstützt.
 
-![](assets/image.png)
+![Textoptionen mit ausgewähltem Bildsymbol.](assets/image.png)

@@ -3,10 +3,10 @@ description: Ein Histogramm ähnelt einem Balkendiagramm, fasst jedoch Zahlen zu
 title: Histogramm
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 85%
+source-wordcount: '443'
+ht-degree: 79%
 
 ---
 
@@ -22,7 +22,7 @@ So erstellen Sie ein Histogramm:
 1. Ziehen Sie **[!UICONTROL Histogramm]** in das Bedienfeld.
 1. Wählen Sie eine Metrik zum Ziehen der Visualisierung „Histogramm“ aus und klicken Sie dann auf **[!UICONTROL Erstellen]**.
 
-![](assets/histogram.png)
+![Leeres Histogrammbedienfeld mit dem Feld Metrik unter ablegen .](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ Wenn Sie die Einstellungen für Ihr Histogramm ändern möchten, klicken Sie auf
 
 Wenn Sie die Datenquelle für das Histogramm anzeigen oder ändern möchten, klicken Sie auf den Punkt neben der Histogramm-Überschrift und navigieren Sie zu **[!UICONTROL Datenquelleneinstellungen]** > **[!UICONTROL Datenquelle anzeigen]**.
 
-![](assets/manage-data-source.png)
+![Datenquelleneinstellungen mit ausgewählten Optionen Datenquelle anzeigen und Auswahl sperren .](assets/manage-data-source.png)
 
 Vorkonfigurierte Filter, die in der Tabelle angezeigt werden, sind interne Filter und werden in der Filterauswahl nicht angezeigt. Klicken Sie auf das Symbol „i“ neben dem Filternamen und dann auf **[!UICONTROL Veröffentlichen]**, um den Filter öffentlich zu machen.
 
-![](assets/prebuilt_segments.png)
+![Segmente, die das Bearbeitungsfenster und den Link Öffentlich machen anzeigen.](assets/prebuilt_segments.png)
 
 Weitere Möglichkeiten zum Verwalten von Freiform-Datentabellen und anderen Visualisierungen (wie zum Beispiel Datenaufschlüsselungen) finden Sie [hier](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=de).
 

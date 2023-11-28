@@ -3,10 +3,10 @@ description: Verwenden Sie die Visualisierungen „Zusammenfassungsnummer“ und
 title: Sammelnummer und Sammeländerung
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ Diese Visualisierung verhält sich folgendermaßen:
 * Wenn die Spalte ausgewählt ist, wird der erste Wert mit sich selbst verglichen, sodass eine Änderung von 0 angezeigt wird.
 
 
-![](assets/summary-change.png)
+![Visualisierung der Zusammenfassungsänderung, die die Differenz zwischen zwei Zahlen anzeigt.](assets/summary-change.png)
 
 
 Klicken Sie oben rechts auf den **Visualisierungseinstellungen**, um die Einstellungen für die Zusammenfassungsänderung zu konfigurieren:

@@ -3,9 +3,9 @@ description: Durch das Taggen von Segmenten können Sie diese im Manager für be
 title: Berechnete Metriken taggen
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '285'
 ht-degree: 19%
 
 ---
@@ -31,7 +31,7 @@ Alle Benutzer können Tags für berechnete Metriken erstellen und eines oder meh
 
 1. Aktivieren Sie im Manager für berechnete Metriken das Kontrollkästchen neben den Metriken, die Sie taggen möchten.
 
-   ![](assets/cm_add_tags.png)
+   ![Taggen Sie die Liste der berechneten Metriken mit ausgewähltem Mobile Marketing.](assets/cm_add_tags.png)
 
 1. Im [!UICONTROL **Berechnete Metrik taggen**] Dialogfeld:
 

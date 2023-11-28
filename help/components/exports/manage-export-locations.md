@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Verwalten von Cloud-Exportspeicherorten und -konten
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '508'
 ht-degree: 6%
 
 ---
@@ -55,7 +55,7 @@ Um benötigte Informationen zu finden, können Sie entweder die Liste der Stando
 
 1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie dann den Ort aus, den Sie bearbeiten möchten.
 
-   ![Bearbeitungsorte](assets/locations-edit.png)
+   ![Exportiert das Fenster mit der Registerkarte Standorte und der Liste der Standorte.](assets/locations-edit.png)
 
 1. Wählen Sie [!UICONTROL **Bearbeiten**] aus.
 
@@ -71,7 +71,7 @@ So löschen Sie einen Speicherort:
 
 1. Wählen Sie die [!UICONTROL **Standorte**] und wählen Sie einen oder mehrere Speicherorte aus, die Sie löschen möchten.
 
-   ![Bearbeitungsorte](assets/locations-edit.png)
+   ![Exportiert das Fenster mit der Registerkarte Standorte und der Liste der Standorte](assets/locations-edit.png)
 
 1. Wählen Sie [!UICONTROL **Löschen**] aus.
 
@@ -89,7 +89,7 @@ So löschen Sie einen Speicherort:
 
 1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 
-   ![Kontoseite](assets/account-add.png)
+   ![Exportfenster mit der Registerkarte Standortkonten](assets/account-add.png)
 
 1. Auswählen [!UICONTROL **Details anzeigen**] auf dem Konto, das Sie bearbeiten möchten.
 
@@ -105,7 +105,7 @@ So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
 
 1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 
-   ![Kontoseite](assets/account-add.png)
+   ![Exportfenster mit der Registerkarte Standortkonten](assets/account-add.png)
 
 1. Wählen Sie das 3-Punkt-Symbol für das Konto aus, das Sie bearbeiten möchten, und wählen Sie dann [!UICONTROL **Kontoschlüssel**].
 
@@ -115,7 +115,7 @@ So zeigen Sie Schlüssel an, die mit einem Exportkonto verknüpft sind:
 
 1. Wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 
-   ![Kontoseite](assets/account-add.png)
+   ![Exportfenster mit der Registerkarte Standortkonten](assets/account-add.png)
 
 1. Wählen Sie das 3-Punkt-Symbol für das Konto aus, das Sie bearbeiten möchten, und wählen Sie dann [!UICONTROL **Konto löschen**].
 

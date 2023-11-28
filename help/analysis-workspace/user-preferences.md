@@ -4,10 +4,10 @@ description: Sie können allgemeine Voreinstellungen und Projektvoreinstellungen
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 84%
+source-wordcount: '3228'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Sie können für alle neu erstellten Projekte oder Bedienfelder die auf Analysis
 
 1. Navigieren Sie unter Customer Journey Analytics zum [!UICONTROL **Projekte**] Landingpage und wählen Sie [!UICONTROL **Voreinstellungen bearbeiten**].
 
-   ![Benutzervoreinstellungen](assets/user-preferences.png)
+   ![Workspace-Projektansicht , in der die auf dieser Seite beschriebenen Optionen zum Bearbeiten von Voreinstellungen hervorgehoben werden.](assets/user-preferences.png)
 
    Oder
 
@@ -71,7 +71,7 @@ Klicken Sie auf die verlinkten Voreinstellungstitel, um weitere Informationen un
 | --- | --- | --- |
 | **Anzeigen** | | |
 |  | [Dichte anzeigen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=de) | Wählen Sie aus, wie viel Inhalt auf dem Bildschirm angezeigt werden soll, indem Sie den vertikalen Abstand der linken Schiene, der Freiformtabellen und der Kohortentabellen verkleinern. <ul><li>Kompakt</li><li>Komfortabel</li><li>Erweitert (Standard)</li></ul> |
-| | [Farbpalette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=de) | Wählen Sie die Farbpaletten für die Visualisierung aus, die in Analysis Workspace und der geführten Analyse verwendet werden. <ul><li> Kategorische Palette: Wird auf viele Visualisierungen in Analysis Workspace und Geführte Analyse angewendet. Jede Farbe stellt einen eindeutigen Kategorenwert dar. Wählen Sie aus den von Adobe bereitgestellten Optionen oder geben Sie eine benutzerdefinierte Palette ein, die durch kommagetrennte Hexadezimalwerte definiert wird.</li><li> Divergente Palette: Wird auf die Kohortentabelle in Analysis Workspace angewendet und durch Benutzerwachstum gesteuerte Analyse. Diese Palette enthält eine numerische Bedeutung mit zwei Extremen und eine Grundlinie in der Mitte.<li> Sequenzielle Palette: Angewandt auf die geleitete Analyse &quot;Häufigkeitstrends&quot;(gestapelte Leiste). Diese Palette hat eine numerische Bedeutung von hell bis dunkel.</li></ul> |
+| | [Farbpalette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=de) | Wählen Sie die Farbpaletten für die Visualisierung aus, die in Analysis Workspace und der geführten Analyse verwendet werden. <ul><li> Kategorische Palette: Wird auf viele Visualisierungen in Analysis Workspace und Geführte Analyse angewendet. Jede Farbe stellt einen bestimmten kategorischen Wert dar. Wählen Sie aus den von Adobe bereitgestellten Optionen oder geben Sie eine benutzerdefinierte Palette ein, die durch kommagetrennte Hexadezimalwerte definiert ist.</li><li> Divergente Palette: Wird auf die Kohortentabelle in Analysis Workspace angewendet und durch Benutzerwachstum gesteuerte Analyse. Diese Palette enthält eine numerische Bedeutung mit zwei Extremen und einer Grundlinie in der Mitte.<li> Sequenzielle Palette: Wird auf die geführte Analyse der Häufigkeits-Trends (gestapelter Balken) angewendet. Diese Palette hat eine numerische Bedeutung von hell bis dunkel.</li></ul> |
 | **Daten** | | |
 |  | [Datenansicht](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#report-suite) | Wählen Sie aus, von wo Tabellen und Visualisierungen ihre Daten beziehen sollen. <ul><li>Zuletzt verwendet (Standard)</li><li>Ausgewählte Datenansicht aus einer Liste</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=de#calendar) | Wählen Sie aus einer Liste, die Folgendes enthält: <ul><li>Von Adobe bereitgestellte Bereiche (Standard ist „Diesen Monat“)</li><li>Benutzerdefinierte Bereiche</li></ul> |
@@ -164,7 +164,7 @@ Klicken Sie auf die verlinkten Abschnittstitel, um weitere Informationen und den
 | | Container | Im Abschnitt [!UICONTROL **Fluss**] <ul><li>Besuch</li><li>Besucher</li></ul> |
 | | Beschriftungen umbrechen | Die Beschriftungen der Flusselemente werden üblicherweise aus Platzgründen auf dem Bildschirm abgeschnitten. Aktivieren Sie dieses Kontrollkästchen, um die gesamte Beschriftung anzuzeigen. Standard = deaktiviert. |
 | | Wiederholungsinstanzen einschließen | Flussvisualisierungen basieren auf Instanzen einer Dimension. Diese Einstellung gibt Ihnen die Möglichkeit, wiederholte Instanzen ein- oder auszuschließen, z. B. Seitenneuladungen. Wiederholungen können jedoch nicht aus Flussvisualisierungen entfernt werden, die Dimensionen mit mehreren Werten enthalten, wie listVars, listProps, s.product, Merchandising-eVars usw. Standard = deaktiviert. |
-| | Tooltips anzeigen | Bestimmt, ob Tooltips mit Knotendaten angezeigt werden, wenn der Mauszeiger über einzelne Knoten in einer Flussvisualisierung bewegt wird. |
+| | QuickInfos anzeigen | Bestimmt, ob QuickInfos mit Knotendaten angezeigt werden, wenn der Mauszeiger über einzelne Knoten in einer Flussvisualisierung bewegt wird. |
 | | Anzahl der Spalten | Gibt an, wie viele Spalten Sie in Ihrem Flussdiagramm anzeigen möchten. |
 | | Erweiterte Elemente pro Spalte | Wie viele Elemente Sie in jeder Spalte anzeigen möchten. |
 | **Stapeldiagramme** | | |

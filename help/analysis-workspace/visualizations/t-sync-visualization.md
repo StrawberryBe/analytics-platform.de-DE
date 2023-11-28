@@ -4,10 +4,10 @@ keywords: Analysis Workspace;Synchronisieren der Visualisierung mit der Datenque
 title: Datenquellen verwalten
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ Beim Verwalten von Datenquellen können Sie die Datenquelle anzeigen oder die Au
 1. Wählen Sie in der Datentabelle die Zellen (Datenquelle) aus, die Sie der Visualisierung zuordnen möchten.
 1. Klicken Sie in der Visualisierung auf den Punkt neben dem Titel, um das Dialogfeld **[!UICONTROL Datenquelle]** zu öffnen. Wählen Sie **[!UICONTROL Datenquelle anzeigen]** oder **[!UICONTROL Auswahl sperren]** aus.
 
-   ![](assets/manage-data-source.png)
+   ![Das Dialogfeld &quot;Dadta Source&quot;mit den im nächsten Abschnitt beschriebenen Optionen.](assets/manage-data-source.png)
 
    Beim Synchronisieren einer Visualisierung mit einer Tabellenzelle wird eine neue (ausgeblendete) Tabelle erstellt und die synchronisierte Visualisierung mit dieser Tabelle farblich codiert.
 
@@ -39,10 +39,10 @@ Diese Architektur unterscheidet sich von der vorherigen darin, dass Analysis Wor
 
 * Sie können eine Zusammenfassungsvisualisierung erstellen und mit einer Zelle in der Tabelle verknüpfen, aus der Sie sie erstellt haben. Wenn Sie „Datenquelle anzeigen“ aktivieren, wird angezeigt, wo genau die Informationen aus der Tabelle herkommen. Die Quelldaten werden abgeblendet dargestellt:
 
-   ![](assets/data-source2.png)>
+  ![Speicherort der Datenquelle in einem Arbeitsblatt.](assets/data-source2.png)>
 * Sie können zahlreiche Visualisierungen hinzufügen und sie aus unterschiedlichen Zellen in derselben Tabelle beziehen, wie hier gezeigt wird. Es handelt sich um dieselbe Tabelle wie im Beispiel oben, allerdings ist die bezogene Zelle (und Metrik) anders:
 
-   ![](assets/data-source3.png)>
+  ![Speicherort der Datenquelle mit zusätzlichen Visualisierungen, die aus mehreren Zellen stammen](assets/data-source3.png)>
 * Sie können sehen, ob es mit einer Freiform- oder Kohortentabelle verknüpfte Visualisierungen gibt, indem Sie auf den Punkt oben links klicken (Datenquelleneinstellungen). Durch Bewegen der Maus über die betreffende Stelle wird die verbundene Visualisierung hervorgehoben. Sie haben auch die Möglichkeit, durch Klicken mit der Maus dorthin zu gelangen.
 
-   ![](assets/linked-visualizations.png)>
+  ![Datenquelleneinstellungen, die eine verknüpfte Visualisierung für Top-Seitenansichten hervorheben.](assets/linked-visualizations.png)>

@@ -4,10 +4,10 @@ title: Übersicht über Kalender und Datumsbereiche
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 79%
+source-wordcount: '892'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ Mithilfe des Kalenders können Sie Daten und Datumsbereiche angeben oder eine Vo
 
 Wenn Sie im Kalender etwas auswählen, bezieht sich diese Auswahl auf das jeweilige Panel. Sie haben jedoch die Möglichkeit, die Auswahl auf sämtliche Panels anzuwenden. Wenn Sie in Workspace auf einen Datumsbereich klicken, zeigt die Benutzeroberfläche den aktuellen Kalendermonat und den vorherigen Kalendermonat an. Sie können diese beiden Kalender anpassen, indem Sie auf die Rechts- und Linkspfeile in den jeweiligen oberen Ecken klicken.
 
-![Kalender](assets/aw_calendar2.png){width="60%"}
+![Kalender, der die Monate Oktober 2022 und November 2022 mit der Auswahl vom 1. bis 30. November anzeigt.](assets/aw_calendar2.png){width="60%"}
 
 Beim ersten Klick auf einen Kalender wird die Auswahl eines Datumsbereichs begonnen. Mit dem zweiten Klick wird die Auswahl des Datumsbereichs beendet und hervorgehoben. Wenn die `Shift` Taste gedrückt gehalten wird (oder ein Rechtsklick verwendet wird), wird der entsprechende Bereich an den derzeit ausgewählten Bereich angehängt.
 
@@ -48,12 +48,12 @@ So verwenden Sie relative Datumsbereiche im Bedienfeld
 Wenn relative Datumswerte ausgewählt sind, basieren rollierende Datumswerte auf dem Startdatum des Bedienfeldkalenders und nicht auf dem heutigen Datum.
    * Ist diese Option nicht ausgewählt, basieren rollierende Datumswerte auf dem heutigen Datum.
 
-   ![relative Bedienfeld-Datumsangaben](assets/relative-date-selected.png){width="60%"}
+   ![Kalender mit Festlegen von Datumsbereichskomponenten relativ zum ausgewählten Bedienfeldkalender](assets/relative-date-selected.png){width="60%"}
 
 1. Klicken Sie auf **Anwenden**.
 Die relativen Daten werden oben rechts angezeigt.
 
-   ![relative Daten in Freiform ](assets/relative-date-range1.png)
+   ![Freiformtabelle mit hervorgehobenen relativen Daten und hervorgehobenem Letzten Monat. ](assets/relative-date-range1.png)
 
 ## Richtlinien für relative Bedienfelddatumsbereiche {#guidelines}
 

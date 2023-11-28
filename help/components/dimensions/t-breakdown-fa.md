@@ -5,10 +5,10 @@ title: Dimensionen aufschlüsseln
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 1. [Erstellen Sie ein Projekt](/help/analysis-workspace/home.md) mit einer Datentabelle.
 1. Klicken Sie in der Datentabelle mit der rechten Maustaste auf einen Zeileneintrag und wählen Sie **[!UICONTROL Aufschlüsselung]** > *`<item>`* aus.
 
-   ![Ergebnis des Schritts](assets/fa_data_table_actions.png)
+   ![Schrittergebnis mit ausgewählter Option Warnhinweis aus Auswahl erstellen](assets/fa_data_table_actions.png)
 
    Sie können Metriken nach Dimensionselementen oder Zielgruppenfiltern über ausgewählte Zeiträume aufschlüsseln. Sie können auch noch granularer aufschlüsseln.
 
@@ -41,7 +41,7 @@ Sie können Ihre Daten für Ihre spezifischen Anforderungen unbegrenzt aufschlü
 
 Auf jede Aufschlüsselung innerhalb einer Tabelle kann auch ein beliebiges Attributionsmodell angewandt werden. Dieses Attributionsmodell kann mit der übergeordneten Spalte identisch sein oder sich von ihr unterscheiden. Sie können beispielsweise lineare Bestellungen in Ihrer Dimension „Marketing-Kanäle“ analysieren, jedoch U-förmige Bestellungen auf spezifische Trackingcodes in einem Kanal anwenden. Bewegen Sie zum Bearbeiten des auf eine Aufschlüsselung angewendeten Attributionsmodells einfach den Mauszeiger auf das Aufschlüsselungsmodell und klicken Sie auf **[!UICONTROL Bearbeiten]**:
 
-![Aufschlüsselungseinstellungen](assets/breakdown_settings.png)
+![Vergleich der Bestellzuordnung mit den Aufschlüsselungseinstellungen](assets/breakdown_settings.png)
 
 Dies ist das erwartete Verhalten, wenn Attributionsmodelle auf Aufschlüsselungen angewendet oder bearbeitet werden:
 

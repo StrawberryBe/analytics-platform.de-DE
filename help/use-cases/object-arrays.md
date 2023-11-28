@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Customer Journey Analytics Berichte zu Datenhiera
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 66%
@@ -91,7 +91,7 @@ Unter Verwendung des obigen Ereignisses zeigen die folgenden Tabellen Workspace-
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-Customer Journey Analytics betrachtet die Dimension und Metriken des Objekts selektiv auf der Basis der Tabelle.
+Customer Journey Analytics untersucht selektiv die Dimension und Metriken des Objekts basierend auf der Tabelle.
 
 ```diff
 {
@@ -143,7 +143,7 @@ Wenn Sie nur über Garantieumsätze berichten möchten, sieht Ihr Projekt in etw
 | `extended` | `50` |
 | `Total` | `250` |
 
-Customer Journey Analytics betrachtet diese Ereignisabschnitte zur Erstellung des Berichts:
+Customer Journey Analytics untersucht diese Teile des Ereignisses, um den Bericht zu generieren:
 
 ```diff
 {

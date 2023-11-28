@@ -4,10 +4,10 @@ description: Ein Dimensionselement kann abhängig von seinem Wert bedingt ein- o
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '303'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 „Werte einschließen/ausschließen“ ermöglicht die Erstellung von Regeln, die vom Wert eines Dimensionselements abhängen. Werte, die die von Ihnen festgelegten Kriterien nicht erfüllen, werden in Analysis Workspace so behandelt, als wären sie nicht vorhanden, obwohl die Daten noch im zugrunde liegenden Datensatz vorhanden sind.
 
-![Einschließen/ausschließen](../assets/include-exclude.png)
+![Datenansichten, in denen die Werte zum Ausschließen einschließen hervorgehoben werden](../assets/include-exclude.png)
 
 | Einstellung | Beschreibung/Verwendungsfall |
 | --- | --- |
@@ -26,4 +26,4 @@ ht-degree: 100%
 | [!UICONTROL Übereinstimmungsoperand] | Hiermit können Sie den Übereinstimmungsoperanden angeben, auf den der Übereinstimmungsoperator angewendet werden soll.<ul><li>**Zeichenfolge**: Textfeld</li><li>**Dezimalzahl/Ganzzahl**: Textfeld mit Pfeilen nach oben/unten für numerische Werte</li><li>**Datum**: Auswahl der Tagesgranularität (Kalender)</li><li>**Datum Uhrzeit**: Auswahl der Datums- und Uhrzeitgranularität</li></ul> |
 | [!UICONTROL Regel hinzufügen] | Hier können Sie einen zusätzlichen Übereinstimmungsoperator und -operanden angeben. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

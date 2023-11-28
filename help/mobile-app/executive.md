@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 77%
+source-wordcount: '1307'
+ht-degree: 76%
 
 ---
 
@@ -41,19 +41,19 @@ Um die App herunterzuladen und zu installieren, führen Sie die Schritte entspre
 
 **Für ausführende Benutzer mit iOS-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch im Customer Journey Analytics unter verfügbar). **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile App)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics verfügbar unter **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile App)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 [iOS-Link](https://apple.co/2zXq0aN)
 
 **Für ausführende Benutzer mit Android-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch im Customer Journey Analytics unter verfügbar). **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile App)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics verfügbar unter **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile App)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 [Android-Link](https://bit.ly/2LM38Oo)
 
 Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit ihren vorhandenen Customer Journey Analytics-Anmeldeinformationen bei der App anmelden.
 
-![Willkommensbildschirm der App](assets/welcome.png)
+![Startbildschirm der Customer Journey Analytics-App](assets/welcome.png)
 
 ## Verwenden von Dashboards {#use-dashboards}
 
@@ -77,7 +77,7 @@ So verwenden Sie Dashboards:
 
    Wenn Sie sich anmelden und eine Meldung darüber erhalten, dass nichts freigegeben wurde, überprüfen Sie Folgendes zusammen mit Ihrem Kurator:
 
-   * Sie können sich bei der rechten Customer Journey Analytics-Sandbox anmelden.
+   * Sie können sich bei der richtigen Customer Journey Analytics-Sandbox anmelden.
    * Die Scorecard wurde für Sie freigegeben.
 
    ![Nichts freigegeben](assets/nothing.png)
@@ -152,8 +152,8 @@ Tippen Sie auf die Option und geben Sie im obersten Feld Ihre E-Mail-Adresse und
 
 | Begriff | Definition |
 |--- |--- |
-| Verbraucher | Ausführende Person, die Schlüsselmetriken und Einblicke aus Customer Journey Analytics auf einem Mobilgerät anzeigt |
-| Kurator | Person mit Datenerfassung, die Einblicke aus Customer Journey Analytics findet und verteilt und die Scorecards konfiguriert, die vom Verbraucher angezeigt werden sollen |
+| Verbraucher | Ausführende Person, die Schlüsselmetriken und Einblicke von Customer Journey Analytics auf einem Mobilgerät anzeigt |
+| Kurator | Person mit Datenerfassung, die Einblicke aus dem Customer Journey Analytics findet und verteilt und die Scorecards konfiguriert, die vom Verbraucher angezeigt werden sollen |
 | Kuratierung | Der Vorgang der Erstellung oder Bearbeitung einer mobilen Scorecard mit relevanten Metriken, Dimensionen und anderen Komponenten für den Verbraucher |
 | Scorecard | Eine Ansicht der Dashboards mit einer oder mehreren Kacheln |
 | Kachel | Wiedergabe einer Metrik in einer Scorecard-Ansicht |

@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Verwalten von Exportprotokollen
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '835'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ Bei geplanten Exporten spiegeln Protokolle die Exporteinstellungen so wider, wie
 
 1. Wählen Sie die [!UICONTROL **Protokolle**] Registerkarte.
 
-   ![Tab &quot;Logs exportieren&quot;](assets/export-logs-tab.png)
+   ![Exportfenster mit der Registerkarte Protokolle](assets/export-logs-tab.png)
 
    Details zu den einzelnen Protokollen werden in den verfügbaren Spalten angezeigt.
 
@@ -49,7 +49,7 @@ Um die benötigten Informationen zu finden, können Sie entweder die Liste der P
 
 1. Wählen Sie die **Filter** Symbol.
 
-   ![Informationen filtern](assets/export-log-filters.png)
+   ![Exportfenster mit der Liste Filter nach Kontotyp](assets/export-log-filters.png)
 
    Sie können nach folgenden Kriterien filtern:
 

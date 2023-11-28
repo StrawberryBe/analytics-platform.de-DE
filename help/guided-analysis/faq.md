@@ -1,12 +1,12 @@
 ---
 title: Häufig gestellte Fragen zur geführten Analyse
 description: Häufig gestellte Fragen zur geführten Analyse.
-exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
+exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ while [Analysis Workspace](../analysis-workspace/home.md) und geführte Analysen
 
 * **Geführte Analyse ist ein ereigniszentriertes Erlebnis.** Jede Analyse beginnt mit der Auswahl von Ereignissen. Anschließend können Dimensionen und Filter hinzugefügt werden, um diese Ereignisdaten zu verfeinern.
 
-![Struktur](assets/structure.png)
+![Ansichten der Analysis Workspace- und Guided-Analyse](assets/structure.png)
 
 Betrachten Sie das folgende Beispiel, in dem Sie sich auf Daten rund um die Startseite Ihrer Website konzentrieren. Teams stellen ähnliche Fragen, aber der Analysenansatz kann unterschiedlich sein.
 

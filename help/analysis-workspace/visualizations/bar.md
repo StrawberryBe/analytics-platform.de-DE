@@ -3,10 +3,10 @@ description: Die Balkenvisualisierung zeigt vertikale Balken, die verschiedene W
 title: Balken und Balken gestapelt
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '94'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Diese Visualisierung zeigt vertikale Balken, die verschiedene Werte aus einer oder mehreren Metriken darstellen.
 
-![](assets/bar.png)
+![Visualisierung virtueller Balken mit mehreren Metriken, einschließlich Seitenansichten, Besuchen, Einstiegen und Ausstiegen.](assets/bar.png)
 
 In den Visualisierungseinstellungen können Sie über ein Dropdown-Menü für die Granularität eine Trend-Visualisierung (z. B. Linie, Balken) von täglich über wöchentlich zu monatlich usw. ändern.
 
@@ -24,8 +24,8 @@ In den Visualisierungseinstellungen können Sie über ein Dropdown-Menü für di
 
 Diese Visualisierung entspricht einem Balkendiagramm, aber die Serienbalken sind hier übereinander gestapelt.
 
-![](assets/bar-stacked.png)
+![Gestapeltes Balkendiagramm mit mehreren Metriken.](assets/bar-stacked.png)
 
 Mit der neuen Einstellung für gestapelte Balkendiagramme erhalten Sie eine zu „100 % gestapelte“ Visualisierung.
 
-![](assets/stacked_100_percent.png)
+![Ein gestapeltes Balkendiagramm von 100 %.](assets/stacked_100_percent.png)

@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 92%
+source-wordcount: '1087'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ Mit der Option „Von Zelle“ können Sie auf Daten verweisen, die in Zellen ei
 
 Sie können den aktuellen Tag für einen beliebigen Datumsbereich ausschließen.
 
-![Wählen Sie Heute ausschließen aus.](./assets/image17.png)
+![Report Builder Quick edit panel mit the calendar selected and Exclude today selected.](./assets/image17.png)
 
 ## Verwenden des Kalenders
 
@@ -62,7 +62,7 @@ So wählen Sie Datumsangaben mithilfe des Kalenders aus
 
 Um einen Datumsbereich rückwärts festzulegen, klicken Sie zuerst auf das Enddatum und dann auf das Startdatum.
 
-![Klicken Sie auf das Enddatum und dann auf das Startdatum.](./assets/image18.png)
+![Datumsbereich des Report Builders, der den Kalender sowie das Enddatum und das Startdatum anzeigt.](./assets/image18.png)
 
 ### Dropdown-Menü „Voreinstellung“
 
@@ -76,7 +76,7 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie einen rollierenden Ausdruck für Ihr Start- und Enddatum aus.
 
-   ![Wählen Sie Rollierende Datumswerte verwenden und dann den rollierenden Ausdruck aus.](./assets/image19.png)
+   ![Datumsbereich des Report Builders, der die Option Rollierende Datumswerte verwenden und den rollierenden Ausdruck anzeigt.](./assets/image19.png)
 
    **Beginn von** – Ermöglicht die Auswahl des Anfangs eines Tages, einer Woche, eines Monats, eines Quartals oder eines Jahres.
 
@@ -86,11 +86,11 @@ Mit der Option „Rollierende Datumswerte“ können Sie einen Datumsbereich mit
 
 1. Wählen Sie als rollierenden Zeitraum Tag, Woche, Monat, Quartal oder Jahr aus.
 
-   ![Wählen Sie den aktuellen Tag aus.](./assets/image20.png)
+   ![Datumsbereich des Report Builders mit dem ausgewählten aktuellen Tag.](./assets/image20.png)
 
 1. Fügen Sie Tage, Wochen, Monate, Quartale oder Jahre ab dem rollierenden Datum hinzu oder subtrahieren Sie diese.
 
-   ![Wählen Sie den aktuellen Tag plus 14 Tage aus.](./assets/image21.png)
+   ![Datumsbereich des Report Builders mit dem ausgewählten Tag plus 14 Tagen.](./assets/image21.png)
 
 1. Klicken Sie auf „Weiter“, um den Datenbereich zu definieren.
 

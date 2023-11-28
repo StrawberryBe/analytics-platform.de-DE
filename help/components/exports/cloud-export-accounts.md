@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportkonten
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1836'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
 1. Im [!UICONTROL Exporte] Seite, wählen Sie die [!UICONTROL **Standortkonten**] Registerkarte.
 1. Auswählen [!UICONTROL **Konto hinzufügen**].
 
-   ![Konto hinzufügen](assets/account-add.png)
+   ![Exportiert Seitenoptionen mit Anzeige Weitere Konten hinzufügen](assets/account-add.png)
 
    Das Dialogfeld Konto hinzufügen wird angezeigt.
 
@@ -86,7 +86,7 @@ Informationen zum Verwalten vorhandener Konten, einschließlich Anzeigen, Bearbe
       >Sie müssen diese Aktion alle 7 Tage ausführen, da der SAS-URI 7 Tage nach seiner Erstellung abläuft. Sie können ein Skript erstellen, um diesen Prozess zu automatisieren.
 
 
-      ![SAS-URL-Feld](assets/blob-container-sas-uri.png)
+      ![Fenster &quot;Verbindungsinformationen&quot;mit SAS-URL-Feld öffnen](assets/blob-container-sas-uri.png)
 
    1. Auswählen [!UICONTROL **Nächste**] > [!UICONTROL **Verbinden**].
 

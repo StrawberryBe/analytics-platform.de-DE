@@ -4,10 +4,10 @@ title: Überwachen des Zustands des Datenwörterbuchs
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 89%
+source-wordcount: '241'
+ht-degree: 87%
 
 ---
 
@@ -37,7 +37,7 @@ So identifizieren Sie Probleme mit Ihrem Datenwörterbuch:
 
    Das Fenster „Datenwörterbuch“ wird angezeigt.
 
-   ![Administratoransicht des Datenwörterbuchs](assets/data-dictionary-admin.png)
+   ![Ansicht des Administrators des Datenwörterbuchs, in der der Zustand des Wörterbuchs angezeigt wird](assets/data-dictionary-admin.png)
 
 1. Stellen Sie sicher, dass im Dropdown-Menü die richtige Datenansicht ausgewählt ist.
 

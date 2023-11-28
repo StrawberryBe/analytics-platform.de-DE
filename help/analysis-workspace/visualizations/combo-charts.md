@@ -4,10 +4,10 @@ title: Visualisierung von Kombinationsdiagrammen
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '843'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ Beachten Sie:
 
 1. Ziehen Sie aus der Visualisierungs-Dropdown-Liste in der linken Leiste die Visualisierung [!UICONTROL Kombinationsdiagramm] in ein leeres Bedienfeld.
 
-   ![Build](assets/combo-chart-build.png)
+   ![Combo-Diagramm mit der X- und Y-Achse und dem Optionsfeld](assets/combo-chart-build.png)
 
 1. Wählen Sie aus den Dropdown-Listen eine Dimension für die X-Achse und eine Metrik für die Y-Achse aus.
 
@@ -41,9 +41,9 @@ Beachten Sie:
 
    | Linienvergleichstyp | Definition |
    | --- | --- |
-   | **[!UICONTROL Zeitvergleich]** | Der häufigste Vergleichstyp, z. B. Vergleich dieses Zeitraums mit dem vor 4 Wochen. Wenn Sie [!UICONTROL Zeitvergleich] auswählen, führen Sie eine zweite Auswahl durch, um anzugeben, mit welchem Zeitraum der Vergleich durchgeführt werden soll.<p>![Zeitraum](assets/combo-time-period.png) |
-   | **[!UICONTROL Funktion]** | Sie können zum Vergleich eine Funktion wie [!UICONTROL Durchschnitt] hinzufügen. Eine Liste der unterstützten Funktionen finden Sie unten.<p>![Funktionen](assets/combo-functions.png) |
-   | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise den [!UICONTROL Umsatz] mit einer anderen Metrik vergleichen.<p>![Zwei Metriken](assets/combo-2metrics.png) |
+   | **[!UICONTROL Zeitvergleich]** | Der häufigste Vergleichstyp, z. B. Vergleich dieses Zeitraums mit dem vor 4 Wochen. Wenn Sie [!UICONTROL Zeitvergleich] auswählen, führen Sie eine zweite Auswahl durch, um anzugeben, mit welchem Zeitraum der Vergleich durchgeführt werden soll.<p>![Vergleich mit ausgewähltem Zeitraum und sekundäres Auswahlfeld für Zeitraum.](assets/combo-time-period.png) |
+   | **[!UICONTROL Funktion]** | Sie können zum Vergleich eine Funktion wie [!UICONTROL Durchschnitt] hinzufügen. Eine Liste der unterstützten Funktionen finden Sie unten.<p>![Ein Dropdown-Menü für einen Vergleich mit ausgewählten Funktionen und einer Liste der verfügbaren unterstützten Funktionen.](assets/combo-functions.png) |
+   | **[!UICONTROL Sekundäre Metrik]** | Sie können beispielsweise den [!UICONTROL Umsatz] mit einer anderen Metrik vergleichen.<p>![Ein Combo-Diagramm, das zwei Metriken vergleicht.](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ Beachten Sie:
 
    Die Ausgabe sieht in etwa so aus:
 
-   ![Ausgabe](assets/combo-output.png)
+   ![Ein Combo-Diagramm, das den aktuellen Zeitraum in einem Balkendiagramm und einem Vergleichszeitraum im Liniendiagramm anzeigt ](assets/combo-output.png)
 
    Der aktuelle Zeitraum wird im Balkendiagramm angezeigt und der Vergleichszeitraum wird durch das Liniendiagramm dargestellt. Die Punkte im Liniendiagramm werden als „Datenpunkte“ bezeichnet.
 
@@ -73,28 +73,28 @@ Wenn Sie **[!UICONTROL Funktion]** als [!UICONTROL Linienvergleichstyp] auswähl
 
 Im Folgenden finden Sie ein Beispiel für den kumulativen Durchschnitt der Umsatzmetrik:
 
-![Kumulativer Durchschnitt](assets/combo-cumul-avg.png)
+![Ein Combo-Diagramm mit dem kumulativen Durchschnitt](assets/combo-cumul-avg.png)
 
 Im Folgenden finden Sie ein Beispiel für ein Kombinationsdiagramm mit den Funktionen „Kumulativer Durchschnitt“ und „Mittel“:
 
-![Zwei Funktionen](assets/combo-two-functions.png)
+![Ein Combo-Diagramm, das sowohl die durchschnittliche als auch die mittlere Funktion anzeigt.](assets/combo-two-functions.png)
 
 ## Einstellungen des Kombinationsdiagramms
 
 Klicken Sie in einem Kombinationsdiagramm oben rechts auf das Zahnradsymbol, um die Einstellungen des Diagramms zu ändern.
 
-![Einstellungen](assets/combo-settings.png)
+![Ansicht &quot;Combo chart Settings&quot;mit den unten beschriebenen Optionen.](assets/combo-settings.png)
 
 | Einstellung | Definition |
 | --- | --- |
 | **[!UICONTROL Visualisierungstyp]** | Hiermit können Sie zu einem anderen Visualisierungstyp wechseln. |
-| **[!UICONTROL Granularität]** | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste aus. |
+| **[!UICONTROL Granularität]** | Für Trend-Visualisierungen können Sie die Zeitgranularität (Tag, Woche, Monat usw.) aus dieser Dropdown-Liste. |
 | **[!UICONTROL Allgemein]** |  |
 | **[!UICONTROL Prozentsätze]** | Zeigt Werte als Prozentzahlen an. |
 | **[!UICONTROL Legende eingeblendet]** | Ermöglicht das Ausblenden des detaillierten Legendentextes für die Kombinationsdiagramm-Visualisierung. |
 | **[!UICONTROL Grenzwert für max. Anzahl von Elementen]** | Reduziert die Anzahl der Elemente auf der X-Achse. Wenn Sie einen großen Datensatz haben, zeigen Sie möglicherweise nur die ersten 10 Elemente (oder einen beliebigen Wert) an. |
 | **[!UICONTROL Überlagerungen]** | Ein- oder Ausblenden von Datenpunkten auf Linien. |
-| **[!UICONTROL Achse]** |  |
+| **[!UICONTROL Achse]** | |
 | **[!UICONTROL Zwei Achsen anzeigen]** | Gilt nur, wenn Sie zwei Metriken haben – möglich sind eine Y-Achse links (für die eine Metrik) und eine rechts (für die andere). Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. Die Farbe der Doppelachse entspricht der Farbe der Tabelle, es sei denn, es gibt mehrere Vergleiche. In diesem Fall ist die Farbe für alle Vergleiche grau. |
 | **[!UICONTROL Normalisierung]** | Erzwingt Metriken für gleiche Anteile. Dies ist hilfreich, wenn grafisch dargestellte Metriken sehr unterschiedliche Größenordnungen aufweisen. |
 | **[!UICONTROL X-Achse anzeigen]** | Zeigen Sie die X-Achse an oder blenden Sie sie aus. |

@@ -2,10 +2,11 @@
 description: Die Kennzeichnung berechneter Metriken als Favoriten bietet eine weitere Möglichkeit, sie zur einfachen Verwendung zu organisieren.
 title: Berechnete Metriken als Favoriten markieren
 feature: Calculated Metrics
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 20%
+source-wordcount: '98'
+ht-degree: 29%
 
 ---
 
@@ -17,6 +18,6 @@ Die Kennzeichnung berechneter Metriken als Favoriten bietet eine weitere Möglic
 
 1. Überprüfen Sie im Manager für berechnete Metriken den Stern neben einer beliebigen berechneten Metrik, die Sie als Favoriten markieren möchten. Der Stern wird daraufhin gelb angezeigt:
 
-   ![](assets/favorites.png)
+   ![Gelber Stern, der Besucher von Bing anzeigt.](assets/favorites.png)
 
 1. Sie können unter **[!UICONTROL Filter]** > **[!UICONTROL Weitere Filter]** > **[!UICONTROL Favoriten]** nach Favoriten filtern.

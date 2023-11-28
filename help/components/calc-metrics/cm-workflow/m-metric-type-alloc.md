@@ -3,10 +3,10 @@ description: Informationen
 title: Metriktyp und Attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 37%
+source-wordcount: '225'
+ht-degree: 36%
 
 ---
 
@@ -20,7 +20,7 @@ So legen Sie den Metriktyp beim Erstellen einer berechneten Metrik fest:
 
 1. Wählen Sie das Zahnradsymbol neben der Metrik aus, deren Typ Sie auswählen möchten.
 
-   ![](assets/cm_type_alloc.png)
+   ![Zahnradsymbol mit Popup-Fenster, das den Metriktyp &quot;Standard&quot;anzeigt.](assets/cm_type_alloc.png)
 
 1. Wählen Sie aus den folgenden Optionen:
 

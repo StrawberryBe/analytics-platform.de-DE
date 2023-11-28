@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 76%
+source-wordcount: '717'
+ht-degree: 74%
 
 ---
 
@@ -27,7 +27,7 @@ In einigen Fällen benötigen die ausführenden Benutzer möglicherweise zusätz
 Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben, müssen folgende Voraussetzungen gegeben sein:
 
 * Auf den Geräten Ihrer Benutzer muss mindestens iOS-Version 10 oder Android-Version 4.4 (KitKat) installiert sein.
-* Sie haben eine gültige Anmeldung bei Customer Journey Analytics.
+* Sie haben eine gültige Anmeldung bei der Customer Journey Analytics.
 * Sie haben die mobilen Scorecards für Ihre Benutzer korrekt erstellt und freigegeben.
 * Ihre Benutzer müssen Zugriff auf die Komponenten haben, die die Scorecard enthält. Sie können bei der Freigabe Ihrer Scorecards eine Option auswählen, um **[!UICONTROL eingebettete Komponenten freizugeben]**.
 
@@ -39,19 +39,19 @@ Damit ausführende Benutzer Zugriff auf Ihre Scorecards in der Mobile App haben,
 
 **Für ausführende Benutzer mit iOS-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch im Customer Journey Analytics unter verfügbar). **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile Opp)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics verfügbar unter **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile Opp)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Für ausführende Benutzer mit Android-Geräten:**
 
-Klicken Sie auf den folgenden Link (er ist auch im Customer Journey Analytics unter verfügbar). **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile App)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
+Klicken Sie auf den folgenden Link (er ist auch unter Customer Journey Analytics verfügbar unter **[!UICONTROL Instrumente]** > **[!UICONTROL Analytics-Dashboards (mobile App)]**) und befolgen Sie die Anweisungen zum Herunterladen, Installieren und Öffnen der App:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit ihren vorhandenen Customer Journey Analytics-Anmeldeinformationen bei der App anmelden. Wir unterstützen sowohl Adobe- als auch Enterprise/Federated IDs.
+Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit ihren vorhandenen Customer Journey Analytics-Anmeldedaten bei der App anmelden. Wir unterstützen sowohl Adobe als auch Enterprise/Federated IDs.
 
-![Willkommensbildschirm der App](assets/welcome.png)
+![Willkommensbildschirm von Adobe Analytics-Dashboards](assets/welcome.png)
 
 ## Ausführenden Benutzern helfen, auf Ihre Scorecard zuzugreifen
 
@@ -74,7 +74,7 @@ Nach dem Herunterladen und Installieren können sich ausführende Benutzer mit i
 
 Erklären Sie dem ausführenden Benutzer, wie die Kacheln in den von Ihnen freigegebenen Scorecards dargestellt werden.
 
-![Kacheln erklären](assets/newexplain.png)
+![Kacheln erklären, einschließlich Datumsbereich, Segmentfilter sowie ausgewählte Metriken und Dimensionen](assets/newexplain.png)
 
 ![Beispiel-Scorecard](assets/intro_scorecard.png)
 
@@ -115,4 +115,4 @@ Wenn sich der ausführende Benutzer anmeldet und eine Meldung angezeigt wird, da
 * Der ausführende Benutzer hat möglicherweise die falsche Customer Journey Analytics-Sandbox ausgewählt oder
 * eventuell wurde die Scorecard nicht für den ausführenden Benutzer freigegeben.
 
-Vergewissern Sie sich, dass sich der ausführende Benutzer bei der Sandbox des richtigen Customer Journey Analytics anmelden kann und dass die Scorecard freigegeben wurde.
+Stellen Sie sicher, dass sich der ausführende Benutzer bei der richtigen Customer Journey Analytics-Sandbox anmelden kann und dass die Scorecard freigegeben wurde.

@@ -3,10 +3,10 @@ description: Der Manager für berechnete Metriken bietet verschiedene Möglichke
 title: Manager für berechnete Metriken
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 16%
+source-wordcount: '705'
+ht-degree: 17%
 
 ---
 
@@ -16,7 +16,7 @@ Die Seite &quot;Berechnete Metrik&quot;bietet viele Möglichkeiten zum Kuratiere
 
 Der Manager für berechnete Metriken zeigt Ihnen alle Filter an, deren Inhaber Sie sind und die für Sie freigegeben wurden. Benutzer auf Administratorebene sehen alle benutzerdefinierten Metriken der Organisation. In dieser Übersicht werden die Benutzeroberfläche und die Funktionen des Managers für berechnete Metriken vorgestellt.
 
-![](assets/calc-metric-manager.png)
+![Fenster für berechnete Metriken mit verfügbaren Filtern.](assets/calc-metric-manager.png)
 
 ## Zugriff auf den Manager für berechnete Metriken
 

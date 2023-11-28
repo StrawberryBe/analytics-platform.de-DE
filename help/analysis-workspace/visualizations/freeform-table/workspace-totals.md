@@ -1,12 +1,12 @@
 ---
-description: Berechnung der Gesamtsummen in Workspace.
+description: Erfahren Sie, wie die Gesamtsummen in Workspace berechnet werden.
 title: Workspace-Summen
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 81%
+source-wordcount: '522'
+ht-degree: 76%
 
 ---
 
@@ -17,13 +17,13 @@ In Freiformtabellen wird auf jeder Unterteilungsebene eine Zeile insgesamt angez
 * **[!UICONTROL Gesamtsumme]** (graue &quot;von&quot;-Zahl) - dieser Gesamtwert stellt alle erfassten Ereignisse dar. Wenn ein Filter entweder auf Bereichsebene oder in der Freiformtabelle angewendet wird, passt sich diese Summe an, um alle Ereignisse widerzuspiegeln, die den Filterkriterien entsprechen.
 * **[!UICONTROL Tabellensumme]** (schwarze Zahl) - dieser Gesamtwert entspricht in der Regel der [!UICONTROL Gesamtsumme] oder einer Untergruppe davon. Er spiegelt alle Tabellenfilter wider, die innerhalb der Freiformtabelle angewendet werden, einschließlich der Option [!UICONTROL Keine einschließen].
 
-![](assets/total-row.png)
+![Freiformtabelle, die die Gesamtsumme und die Tabellensumme hervorhebt.](assets/total-row.png)
 
 ## Gesamteinstellung anzeigen
 
 Unter **[!UICONTROL Spalteneinstellungen]** finden Sie die Optionen **[!UICONTROL Summen anzeigen]** und **[!UICONTROL Gesamtsumme anzeigen]**. Wenn diese Einstellungen deaktiviert sind, werden die Summen aus der Tabelle entfernt. Dies kann in Fällen gewünscht werden, in denen Summen beispielsweise in bestimmten [Szenarien mit berechneten Metriken](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=de) keinen Sinn ergeben.
 
-![](assets/column-settings-total.png)
+![Optionen für Spalteneinstellungen mit Häkchen für &quot;Summen anzeigen&quot;und &quot;Zuschusssumme anzeigen&quot;.](assets/column-settings-total.png)
 
 ## Gesamteinstellungen für statische Zeile
 
@@ -32,7 +32,7 @@ Die Gesamtwerte für [statische Zeilen](/help/analysis-workspace/visualizations/
 * **[!UICONTROL Summe der aktuellen Zeilen als Gesamtsumme anzeigen]** - Zeigt eine clientseitige Summe der Zeilen in der Tabelle an, was bedeutet, dass die Summe **not** Duplizieren Sie Metriken wie Besuche oder Personen.
 * **[!UICONTROL Gesamtsumme anzeigen]** - Zeigt eine Server-seitige Summe an, d. h. die Gesamtsumme dedupliziert Metriken wie Besuche oder Personen.
 
-![](assets/static-rows.png)
+![Zeileneinstellungen, in denen die Gesamtsumme angezeigt wird.](assets/static-rows.png)
 
 ## Häufig gestellte Fragen
 

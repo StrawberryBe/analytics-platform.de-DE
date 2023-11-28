@@ -4,10 +4,10 @@ description: Erläutert die Verwendung von Adobe Customer Journey Analytics zur 
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 91%
+source-wordcount: '634'
+ht-degree: 90%
 
 ---
 
@@ -77,11 +77,11 @@ Navigieren Sie in der Google Cloud Platform zu **Exportieren > In GCS exportiere
 
 >[!TIP]
 >
->Wenn Sie sowohl historische als auch Live-Streaming-Google Analytics-Daten importieren möchten, stellen Sie sicher, dass Sie für beide Datensätze dasselbe Schema verwenden. Sie können die Datensätze in einem Customer Journey Analytics mithilfe eines [Kombinierter Datensatz](/help/connections/combined-dataset.md).
+>Wenn Sie sowohl historische als auch Live-Streaming-Google Analytics-Daten importieren möchten, stellen Sie sicher, dass Sie für beide Datensätze dasselbe Schema verwenden. Sie können die Datensätze mithilfe einer [Kombinierter Datensatz](/help/connections/combined-dataset.md).
 
 Sie können die GA-Ereignisdaten einem vorhandenen, zuvor erstellten Datensatz zuordnen oder unter Verwendung eines beliebigen XDM-Schemas einen neuen Datensatz erstellen. Nachdem Sie das Schema ausgewählt haben, wendet Experience Platform maschinelles Lernen an, um jedes der Felder in den Daten von Google Analytics automatisch Ihrem [XDM-Schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=de#ui) vor-zuzuordnen.
 
-![Schema-Zuordnung](../assets/schema-map.png)
+![Schema-Zuordnung, die die GA-Datenfelder und die Target-Schemazuordnungen hervorhebt](../assets/schema-map.png)
 
 Nachdem Sie die Felder Ihrem XDM-Schema zugeordnet haben, können Sie für diesen Import einen sich wiederholenden Zeitplan festlegen und während des Aufnahmevorgangs eine Fehlerprüfung anwenden. Durch diese Prüfung wird sichergestellt, dass keine Probleme mit den importierten Daten auftreten.
 

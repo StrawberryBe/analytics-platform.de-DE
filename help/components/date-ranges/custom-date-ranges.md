@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Erstellen von benutzerdefinierten Datumsbereichen
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '248'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 85%
 
 ---
 
@@ -23,15 +23,15 @@ Ein Datumsbereich wird auf der Bereichsebene angewendet. Klicken Sie, um einen D
 
 Der folgende benutzerdefinierte Datumsbereich zeigt den Bereich vor zwei Monaten mit einer Visualisierung der Zusammenfassungsänderung, die eine Trend-Entwicklung anzeigt.
 
-![](assets/date-range-two-months-ago.png)
+![Datumsbereich-Builder mit Rollierenden Datumswerten für den Zeitraum vor zwei Monaten](assets/date-range-two-months-ago.png)
 
 Der benutzerdefinierte Datumsbereich wird in Ihrem Projekt oben auf dem Komponentenbereich für den [!UICONTROL Datumsbereich] angezeigt:
 
-![](assets/date-range-panel-two-months-ago.png)
+![Bereich der Datumsbereich-Komponente mit Pfeil, der auf vor zwei Monaten zeigt.](assets/date-range-panel-two-months-ago.png)
 
 Sie können diesen benutzerdefinierten Datumsbereich auf eine Spalte neben einem benutzerdefinierten, monatlichen rollierenden Datumsbereich ziehen und die Voreinstellung für den letzten Monat für den Vergleich nutzen. Fügen Sie eine Visualisierung der Sammeländerung hinzu und wählen Sie die Gesamtsummen der einzelnen Spalten aus, um eine Trendentwicklung zu zeigen:
 
-![](assets/date-range-two-months-table.png)
+![Zusammenfassende Veränderung, die 14,45 % aufwies und stieg.](assets/date-range-two-months-table.png)
 
 ## Verwenden eines 7-Tage-Datumsbereichs
 
@@ -41,7 +41,7 @@ Im Datumsbereich-Builder können Sie einen benutzerdefinierten Datumsbereich ers
 
 Sie können z. B. einen Datumsbereich erstellen, der ein rollierendes Zeitfenster von 7 Tagen anzeigt, das vor einer Woche endet:
 
-![](assets/create_date_range.png)
+![Datumsbereich-Builder mit einem Datumsbereich, der ein 7-tägiges Rollierungsfenster angibt.](assets/create_date_range.png)
 
 Verwenden Sie *`rolling daily`*.
 

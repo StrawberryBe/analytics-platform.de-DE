@@ -4,9 +4,9 @@ description: Hier können Sie die Standardattribution für eine Metrik festlegen
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1953'
 ht-degree: 35%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 Attribution bietet die Möglichkeit, anzupassen, wie Dimensionselemente für Erfolgsereignisse angerechnet werden.
 
-![](../assets/attribution-settings.png)
+![Datenansichtsfenster mit der Option Attribution festlegen](../assets/attribution-settings.png)
 
 Zum Beispiel:
 
@@ -46,7 +46,7 @@ So aktualisieren Sie das standardmäßige Attributionsmodell einer Komponente:
 
 1. Wählen Sie die Komponente aus und erweitern Sie dann den Abschnitt Attribution auf der rechten Seite des Bildschirms.
 
-   ![](../assets/attribution-settings.png)
+   ![Datenansichtsfenster mit der Option Attribution festlegen](../assets/attribution-settings.png)
 
 1. Auswählen [!UICONTROL **Attribution festlegen**] und wählen Sie dann das Attributionsmodell im [!UICONTROL **Attributionsmodell**] Dropdown-Menü.
 

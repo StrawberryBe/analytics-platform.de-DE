@@ -3,10 +3,10 @@ description: Verwenden Sie die Linienvisualisierung, um Trend-Datensätze (zeitb
 title: Linie
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 86%
+source-wordcount: '521'
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ In den [Visualisierungseinstellungen](freeform-analysis-visualizations.md) könn
 
 Unter **[!UICONTROL Visualisierungseinstellungen]** > **[!UICONTROL Überlagerungen]** > **[!UICONTROL Min/Max anzeigen]** können Sie eine Beschriftung für Minimal- und Maximalwerte überlagern, um die Spitzen und Täler schnell in einer Metrik hervorzuheben. Hinweis: Die Minimal bzw. Maximalwerte werden aus den sichtbaren Datenpunkten in der Visualisierung abgeleitet, nicht aus dem vollständigen Satz von Werten innerhalb einer Dimension.
 
-![Min./Max. anzeigen](assets/min-max-labels.png)
+![Eine Überlagerung mit der minimalen und maximalen Wertebeschriftung.](assets/min-max-labels.png)
 
 ## Trendzeilenüberlagerung anzeigen
 

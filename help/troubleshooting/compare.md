@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: Query Service;Query Service;SQL-Syntax
-source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 69%
+source-wordcount: '886'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ Wenn Ihr Unternehmen Customer Journey Analytics einsetzt, kann es bei den Daten 
 
 Nehmen wir an, Sie haben Adobe Analytics-Daten über die [Analytics-Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=de)und dann eine Customer Journey Analytics-Verbindung mithilfe dieses Datensatzes erstellt.
 
-![Datenfluss](assets/compare.png)
+![Der Datenfluss von Adobe Analytics über den Data Connector zu Adobe Experience Platform und zu Customer Journey Analytics mithilfe von CJA-Verbindungen.](assets/compare.png)
 
 Als Nächstes haben Sie eine Datenansicht erstellt und anschließend über diese Daten auf der Customer Journey Analytics berichtet. Es wurden Abweichungen bei den Berichtsergebnissen in Adobe Analytics festgestellt.
 

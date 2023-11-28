@@ -3,9 +3,9 @@ description: Dokumentation, in der beschrieben wird, wie Tabellen in Analysis Wo
 title: Filtern und Sortieren von Tabellen
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '966'
 ht-degree: 67%
 
 ---
@@ -67,7 +67,7 @@ So filtern Sie Daten in Freiformtabellen:
 
 1. Wählen Sie das **Filtersymbol** aus, wenn es angezeigt wird.
 
-   ![Filtersymbol in einer Tabelle](assets/table-filter-icon.png)
+   ![Freiformtabelle, die das Symbol Filter hervorhebt.](assets/table-filter-icon.png)
 
    Die folgenden Optionen sind verfügbar:
 
@@ -108,6 +108,6 @@ Ein Pfeil-nach-unten-Symbol ![Pfeil nach unten zur Sortierung einer Tabellenspal
    - Der Nach-unten-Pfeil sortiert in absteigender Reihenfolge und der Nach-oben-Pfeil (Standard) in aufsteigender Reihenfolge.
    - Sie können Dimensionen alphabetisch oder numerisch sortieren. Beispielsweise können Sie in einem Workflow nummerierte Schritte verwenden und nach der Schrittnummer sortieren. Eine datumsbezogene Dimension kann nach Datum sortiert werden. Oder Sie können, wie in der folgenden Abbildung, Datenquellen alphabetisch sortieren.
 
-   ![](assets/sort-dimensions.png)
+   ![Data Sources-Ansicht, die das Sortiersymbol hervorhebt.](assets/sort-dimensions.png)
 
 

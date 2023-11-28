@@ -3,10 +3,10 @@ description: Unterstützende Funktionen für die Barrierefreiheit in Analysis Wo
 title: Barrierefreiheit in Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 99%
+source-wordcount: '618'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Die Navigation in [!UICONTROL Analysis Workspace] funktioniert von oben nach unt
 * Mit `F6` navigieren Sie zum ersten Bedienfeld im Projekt und können zwischen den Visualisierungen in diesem Bedienfeld wechseln. Anschließend wird zum nächsten Bedienfeld im Projekt gewechselt und es wird wiederholt.
 * Wir wenden Fokusindikatoren an, sodass sehende Tastaturbenutzer einen klaren Hinweis darauf haben, welches Element der Benutzeroberfläche derzeit im Fokus ist. Der Indikator ist ein blauer Rand um das ausgewählte Element herum.
 
-   ![Fokusindikator](assets/focus-indicator.png)
+  ![Freiformtabelle mit einem Fokusindikator eines blauen Rands um die Freiformtabelle.](assets/focus-indicator.png)
 
 ### Tastaturnavigation zur Menüleiste
 
@@ -98,7 +98,7 @@ Beim Erstellen einer Komponente werden die erforderlichen Felder beim Speichern 
 
 Sobald eine Komponente vollständig validiert ist, wird der Builder durch Klicken auf `Save` geschlossen.
 
-![Fehlervalidierung](assets/error-validation.png)
+![Segmentaufbau und Indikator zur Fehlervalidierung.](assets/error-validation.png)
 
 ## Unterstützung für Barrierefreiheitsfunktionen des Betriebssystems
 

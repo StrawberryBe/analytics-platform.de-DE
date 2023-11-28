@@ -3,10 +3,10 @@ title: Freiformtabelle
 description: Freiformtabellen sind die Grundlage für die Analyse von Daten in Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 91%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 100%
 
 In Analysis Workspace bildet eine Freiformtabelle die Grundlage für die interaktive Analyse von Daten. Sie können eine Kombination von [Komponenten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=de) per Drag und Drop in die Zeilen und Spalten ziehen, um eine benutzerdefinierte Tabelle für Ihre Analyse zu erstellen. Sobald eine Komponente abgelegt wird, wird die Tabelle aktualisiert, damit Sie schnell analysieren und weiter recherchieren können.
 
-![](assets/opening-section.png)
+![Freiformtabelle mit Komponenten in Zeilen und Spalten, einschließlich Besuchen und Online-Bestellungen für mehrere Webseiten.](assets/opening-section.png)
 
 ## Automatisierte Tabellen
 
 Am schnellsten können Sie eine Tabelle erstellen, indem Sie Komponenten direkt in ein leeres Projekt, ein leeres Bedienfeld oder eine Freiformtabelle ablegen. Eine Freiformtabelle wird dann automatisch in einem empfohlenen Format erstellt. [Tutorial ansehen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=de).
 
-![](assets/automated-table.png)
+![Ein neues Bedienfeld mit der Komponente &quot;Besuche&quot;wurde im Arbeitsbereich abgelegt.](assets/automated-table.png)
 
 ## Freiformtabellen-Builder
 
 Wenn Sie Ihrer Tabelle lieber zuerst mehrere Komponenten hinzufügen und dann die Daten rendern möchten, können Sie Freiformtabellen-Builder aktivieren. Wenn der Builder aktiviert ist, können Sie für komplexe Fragen Tabellen mit vielen Dimensionen, Unterteilungen, Metriken und Filtern per Drag-and-Drop erstellen. Daten werden nicht sofort aktualisiert. Sie werden erst aktualisiert, wenn Sie auf **[!UICONTROL Erstellen]** klicken.
 
-![](assets/table-builder.png)
+![Freiform-Tabellen-Builder mit ](assets/table-builder.png)
 
 ## Tabelleninteraktionen
 
@@ -53,4 +53,4 @@ Erfahren Sie mehr über die [Exportoptionen](https://experienceleague.adobe.com/
 
 Erfahren Sie mehr über die [Exportoptionen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=de) aller Daten für Analysis Workspace.
 
-![](assets/export-options.png)
+![Freiformtabelle mit den ausgewählten Exportoptionen und Daten in die Zwischenablage kopieren](assets/export-options.png)

@@ -4,10 +4,10 @@ description: Erläuterung der Aufnahme und Verwendung von Daten in Customer Jour
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 87%
+source-wordcount: '1997'
+ht-degree: 86%
 
 ---
 
@@ -56,7 +56,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Auswählen **[!UICONTROL Individuelles Profil]**.
 
-      ![Erstellen eines Schemas](./assets/create-pr-schema-wizard-step-1.png)
+      ![Erstellen eines Schemafensters mit ausgewähltem individuellen Profil](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -69,7 +69,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Geben Sie einen **[!UICONTROL Anzeigename des Schemas]** für Ihr Schema und (optional) a **[!UICONTROL Beschreibung]**.
 
-      ![Benennen des Schemas](./assets/create-pr-schema-wizard-step-2.png)
+      ![Schema-Fenster erstellen mit Feldern zum Benennen Ihres Schemas ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Wählen Sie **[!UICONTROL Beenden]** aus.
 
@@ -77,7 +77,7 @@ Gehen Sie folgendermaßen vor, um das Schema einzurichten:
 
    1. Wählen Sie **[!UICONTROL + Hinzufügen]** in [!UICONTROL Feldergruppen] aus.
 
-      ![Hinzufügen der Feldergruppe](./assets/add-field-group-button.png)
+      ![Schema-Fenster mit der Feldergruppe hinzufügen erstellen](./assets/add-field-group-button.png)
 
       Feldergruppen sind wiederverwendbare Sammlungen von Objekten und Attributen, mit denen Sie Ihre Schemata einfach erweitern können.
 
