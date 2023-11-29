@@ -4,7 +4,7 @@ description: Benutzerinteraktion im Lauf der Zeit messen.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: Produktanalyse
-source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 2%
@@ -45,7 +45,7 @@ Die [!UICONTROL Nutzung] Die Ansicht bietet die folgenden Diagrammeinstellungen,
 
 Fügen Sie dem Diagramm zusätzliche Daten hinzu. Wenn mehrere Reihen im Diagramm sichtbar sind, werden Überlagerungen nur beim Bewegen des Mauszeigers angezeigt.
 
-* **[!UICONTROL Anomalieerkennung]**: Ausführungen [Anomalieerkennung](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) in der Trendanalyse. Ausreißer erscheinen als Punkte, über die Sie den Mauszeiger bewegen können, um weitere Informationen zu erhalten.
+* **[!UICONTROL Anomalieerkennung]**: Ausführungen [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) in der Trendanalyse. Ausreißer erscheinen als Punkte, über die Sie den Mauszeiger bewegen können, um weitere Informationen zu erhalten.
 * **[!UICONTROL Trendzeilenüberlagerung]**: Fügt dem Diagramm eine Trendlinie hinzu, die dazu beiträgt, ein klareres Muster in den Daten darzustellen.
    * [!UICONTROL Linear]: Erstellt eine gerade Regressionslinie. Am besten für einfache lineare Daten, die stetig zunehmen oder abnehmen. Gleichung: `y = a + b * x`
    * [!UICONTROL Logarithmisch]: Erstellt eine gekrümmte Regressionslinie. Am besten für Daten, die schnell zunehmen oder abnehmen und dann weiter steigen. Gleichung: `y = a + b * log(x)`

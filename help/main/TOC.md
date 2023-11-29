@@ -9,10 +9,10 @@ index: true
 user-guide-title: Handbuch für Customer Journey Analytics
 user-guide-description: Hier erhalten Sie Informationen zu Adobe Customer Journey Analytics und Erläuterungen zur Nutzung von Analysis Workspace mit Daten aus Experience Platform.
 breadcrumb-title: Handbuch für Customer Journey Analytics
-source-git-commit: 648acd49d6cc38531f50df0a7d78ec6dce533d01
+source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 81%
+source-wordcount: '1046'
+ht-degree: 82%
 
 ---
 
@@ -167,12 +167,10 @@ ht-degree: 81%
       + [Download](../analysis-workspace/export/download-send.md)
       + [An andere senden](../analysis-workspace/export/t-schedule-report.md)
       + [In die Cloud exportieren](../analysis-workspace/export/export-cloud.md)
-   + Virtual Analyst {#virtual-analyst}
-      + [Übersicht über Virtual Analyst](../analysis-workspace/virtual-analyst/overview.md)
-      + Anomalieerkennung {#anomaly-detection}
-         + [Übersicht über die Anomalieerkennung](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Anomalien in Analysis Workspace anzeigen](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-         + [In der Anomalieerkennung verwendete statistische Verfahren](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + Anomalieerkennung {#anomaly-detection}
+      + [Übersicht über die Anomalieerkennung](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Anomalien in Analysis Workspace anzeigen](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [In der Anomalieerkennung verwendete statistische Verfahren](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Benutzervoreinstellungen](../analysis-workspace/user-preferences.md)
    + Häufig gestellte Fragen zu Workspace {#workspace-faq}
       + [Häufig gestellte Fragen](../analysis-workspace/workspace-faq/faq.md)
