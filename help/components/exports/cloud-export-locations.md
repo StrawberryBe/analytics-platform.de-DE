@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurieren von Cloud-Exportspeicherorten
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1510'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ Informationen zum Verwalten vorhandener Standorte, einschließlich Anzeigen, Bea
 
 1. Wählen Sie die [!UICONTROL **Standorte**] Registerkarte und wählen Sie [!UICONTROL **Ort hinzufügen**].
 
-   ![Schaltfläche &quot;Ort hinzufügen&quot;](assets/location-add.png)
+   ![Exportiert ein Fenster mit ausgewählter Registerkarte Standort , in dem die Schaltfläche Standort hinzufügen hervorgehoben wird](assets/location-add.png)
 
    Oder
 

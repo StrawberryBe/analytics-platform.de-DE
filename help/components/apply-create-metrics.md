@@ -3,10 +3,10 @@ description: In Analysis Workspace gibt es zwei Möglichkeiten zur Verwendung vo
 title: Metriken
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 51%
+source-wordcount: '397'
+ht-degree: 49%
 
 ---
 
@@ -18,14 +18,14 @@ Mit Metriken können Sie Datenpunkte in Analysis Workspace quantifizieren. Sie w
 
 Adobe bietet verschiedene Arten von Metriken zur Verwendung in Analysis Workspace:
 
-* **Standardmetriken**: Beispiele für Standardmetriken sind Personen, Sitzungen, Ereignisse.
+* **Standardmetriken**: Beispiel für Standardmetriken sind Personen, Sitzungen, Ereignisse.
 
 * **Berechnete Metriken** ![Symbol für berechnete Metrik](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg): Benutzerdefinierte Metriken, die auf Standardmetriken, statischen Zahlen oder algorithmischen Funktionen basieren.
 
-* **Vorlagen für berechnete Metriken**  <img src="./assets/adobe-logo.svg" width="18"> : Von Adoben definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um ihre Logik anzupassen.
+* **Berechnete Metrikvorlagen**  <img src="./assets/adobe-logo.svg" width="18"> : Adobe-definierte Metriken, die sich ähnlich wie berechnete Metriken verhalten. Sie können sie unverändert in Workspace-Projekten verwenden oder eine Kopie speichern, um ihre Logik anzupassen.
 
 
-![Metriken in der Benutzeroberfläche](assets/cja-metrics.png)
+![Arbeitsbereich -Bereich, in dem Metriken im linken Bereich hervorgehoben werden.](assets/cja-metrics.png)
 
 Sie können sehen, ob eine Metrik genehmigt wurde. ![Symbol Genehmigt](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  oder nicht. Wenn Sie weitere Details zu einer Metrik wünschen, bewegen Sie den Mauszeiger über die Metrik und wählen Sie ![Infosymbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
@@ -40,7 +40,7 @@ Sie können **[!UICONTROL Komponenten]** > **[!UICONTROL Berechnete Metriken]**.
 
 Um das schnelle Erstellen berechneter Metriken zu vereinfachen, wurde dem Spalten-Kontextmenü von Freiformtabellen die Option **[!UICONTROL Metrik aus Auswahl erstellen]** hinzugefügt. Diese Option wird angezeigt, wenn mindestens eine Spaltenüberschriftszelle ausgewählt ist.
 
-![Aus Auswahl erstellen](assets/create-metric-from-selection.png)
+![Workspace-Bedienfeld-Markierung Aus Auswahl erstellen](assets/create-metric-from-selection.png)
 
 [Berechnete Metriken: implementierungslose Metriken](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=de) (3:42)
 
@@ -48,6 +48,6 @@ Um das schnelle Erstellen berechneter Metriken zu vereinfachen, wurde dem Spalte
 
 Wenn Sie Attributionsmodelle schnell und einfach miteinander vergleichen möchten, klicken Sie mit der rechten Maustaste auf eine Metrik und wählen Sie **[!UICONTROL Attributionsmodelle vergleichen]**:
 
-![Vergleichsattribution](assets/compare-attribution.png)
+![Workspace-Bedienfeld, das die Attributionsmodelle vergleicht](assets/compare-attribution.png)
 
 Dadurch können Sie Attributionsmodelle schnell und einfach miteinander vergleichen, ohne eine Metrik hereinzuziehen und sie zweifach zu konfigurieren.

@@ -4,10 +4,10 @@ description: Erfahren Sie, welche Komponenten Customer Journey Analytics anbiete
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 79%
+source-wordcount: '1146'
+ht-degree: 78%
 
 ---
 
@@ -36,7 +36,7 @@ Komponenten in Analysis Workspace bestehen aus Metriken, Dimensionen, Segmenten 
 
 Klicken Sie in der linken Leiste auf das Symbol **[!UICONTROL Komponenten]**, um auf das Bedienfeld „Komponenten“ zuzugreifen. Sie können zwischen Bedienfeldern (leeres Bedienfeld, [Freiform-Bedienfeld](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) oder dem Bedienfeld [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualisierungen](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) und Komponenten mithilfe der Symbole auf der linken Leiste oder mithilfe von [Tastaturbefehlen](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) wechseln.
 
-![Symbol &quot;Komponenten&quot;](assets/components.png)
+![Arbeitsbereich-Bedienfeld, das das Symbol &quot;Komponenten&quot;in der linken Leiste markiert](assets/components.png)
 
 Siehe [Erstellen eines Projekts](/help/analysis-workspace/home.md), um Informationen über die Verwendung von Komponenten in einem Projekt zu erhalten.
 
@@ -75,7 +75,7 @@ Sie können Komponenten direkt in der linken Leiste verwalten.
    >   Sie können mehrere Komponenten auswählen, indem Sie die Umschalttaste gedrückt halten oder die Befehlstaste (Mac) oder die Strg-Taste (Windows) gedrückt halten.
 
 
-   ![Liste der Komponentenaktionen](assets/component-actions.png)
+   ![Liste der Komponentenaktionen mit Tag, Favorit, Genehmigung, Freigabe und Löschen](assets/component-actions.png)
 
    | Komponentenaktion | Beschreibung |
    |--- |--- |
