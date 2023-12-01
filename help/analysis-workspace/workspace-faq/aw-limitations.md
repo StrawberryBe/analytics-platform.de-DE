@@ -3,10 +3,10 @@ description: Erfahren Sie mehr über bekannte Einschränkungen bei Adobe Analysi
 title: Bekannte Einschränkungen in Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 84%
+source-wordcount: '320'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,6 @@ Im Folgenden finden Sie eine Liste der bekannten Einschränkungen in Analysis Wo
 * „Metrik aus Auswahl erstellen“ ist deaktiviert, wenn Filter als Zeilen einer Tabelle verwendet werden. Darüber hinaus sollte die Option „Metrik aus Auswahl erstellen“ nicht auf datumsorientierte Spalten angewendet werden.
 * Bedingte Formatierung für Aufschlüsselungszeilen kann keine benutzerdefinierten Bereiche verwenden.
 * Tabellengesamtzeilen können nicht als Trend-Ansicht dargestellt werden, wenn die Einstellung für die Berechnung der Summen durch Addition der Zeilenwerte angewendet wird (üblicherweise bei statischen Zeilenelementen).
-* Die [!UICONTROL Beitragsanalyse] kann [!UICONTROL nur] mit der Granularität _Täglich_ ausgeführt werden. Sie kann nicht mit Daten des Typs [!UICONTROL Stündlich], [!UICONTROL Wöchentlich] usw. ausgeführt werden.
 
 ## Visualisierungen
 

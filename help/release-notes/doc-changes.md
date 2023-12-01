@@ -4,10 +4,10 @@ description: Listet Inhaltsaktualisierungen für Dokumentation zu Customer Journ
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 95%
+source-wordcount: '2966'
+ht-degree: 94%
 
 ---
 
@@ -19,6 +19,8 @@ Die folgenden Aktualisierungen wurden seit der ersten Erstellung der Customer Jo
 
 | Funktion | Beschreibung |
 | --- | --- |
+| **Dezember 2023** | |
+| Aktualisierungen der Dokumentation zur Anomalieerkennung | Die Dokumentation zur Anomalieerkennung fand sich zuvor in einem Abschnitt über Virtual Analyst. Die folgenden Änderungen wurden vorgenommen: <ul><li>Der Begriff &quot;Virtual Analyst&quot;wurde aus der Dokumentation entfernt.</li><li>Der Abschnitt zu [Anomalieerkennung](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) wurde direkt unter den Abschnitt &quot;Analysis Workspace&quot;verschoben.</li></ul> |
 | **Oktober 2023** | |
 | Verwenden abgeleiteter Felder zum Festlegen von Zielen | hinzugefügt [Anwendungsfall](../use-cases/goals-using-derived-fields.md) Artikel, in dem erläutert wird, wie abgeleitete Felder zum Festlegen von Zielen/Zielen und zum Reporting zu diesen verwendet werden. |
 | Exportieren von vollständigen Tabellen in die Cloud | Es wurde eine Dokumentation zum Exportieren vollständiger Tabellen mit Millionen von Workspace-Zeilen in Cloud-Ziele hinzugefügt. <p>Der Export vollständiger Tabellen bietet einen einmaligen oder geplanten Versand von Datentabellen, die in Workspace entwickelt wurden. Dabei werden bis zu fünf Aufschlüsselungen, fünf Metriken, Filter und berechnete Metriken in einer verketteten Tabelle unterstützt. Es ist die Weiterentwicklung von Data Warehouse-Berichten in Adobe Analytics, mit vielen neuen, häufig angeforderten Funktionen, die heute nicht in Data Warehouse verfügbar sind.</p><p>Weitere Informationen finden Sie unter [Exportieren von Customer Journey Analytics-Berichten in die Cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=de). | 4. Oktober 2023 |
