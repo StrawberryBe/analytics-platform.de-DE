@@ -4,9 +4,9 @@ description: Erfahren Sie, wie sich in Adobe Experience Platform definierte Date
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Sie können überprüfen, ob eine Richtlinie aktiviert ist, die die Verwendung b
 
 Klicken Sie erneut auf das [!UICONTROL Filtersymbol] in der linken Leiste und klicken Sie unter **[!UICONTROL Data Governance]** auf **[!UICONTROL Richtlinien]**:
 
-![Filtern eingeschlossener Komponenten nach Liste mit ausgewählter Option &quot;Analytics erzwingen&quot;](assets/filter-policies.png)
+![Eingeschlossene Komponenten nach Liste gefiltert, mit ausgewählter Option „Analytics erzwingen“](assets/filter-policies.png)
 
 Klicken Sie auf **[!UICONTROL Anwenden]**, um zu sehen, welche Richtlinien aktiviert sind.
 
@@ -67,7 +67,7 @@ Wenn die Richtlinien **[!UICONTROL Analytics erzwingen]** oder **[!UICONTROL Dow
 
 Diese Komponenten sind in der linken Liste [!UICONTROL Schemafelder]-Liste ausgegraut:
 
-![Ausgegraute Komponenten und die Meldung Richtlinien wurden auf dieses Feld angewendet, um die Verwendung der Daten zu beschränken](assets/component-greyed.png)
+![Ausgegraute Komponenten und die Richtlinienmeldung, dass Richtlinien auf dieses Feld angewendet wurden, um die Verwendung der Daten zu beschränken](assets/component-greyed.png)
 
 Sie können auch keine Datensicht speichern, die gesperrte Felder enthält.
 

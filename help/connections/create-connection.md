@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2798'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Sie müssen über das **Select**-Paket verfügen, um einer Verbindung eine unbeg
 1. Klicken Sie in Customer Journey Analytics auf die Registerkarte **[!UICONTROL Verbindungen]**.
 1. Klicken Sie auf **[!UICONTROL Neue Verbindung erstellen]**.
 
-   ![Unbenannte Verbindungsparameter](assets/create-conn1.png)
+   ![Unbenannte Verbindungseinstellungen](assets/create-conn1.png)
 
 1. Konfigurieren Sie die Verbindungseinstellungen.
 
